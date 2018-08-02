@@ -1,9 +1,15 @@
 namecompare <- function(x,npar=TRUE,print=TRUE) {
+  library(tidyverse)
+  library(stringdist)
+  library(RecordLinkage)
   
-  x<-as.factor(x)
+  
+  x<-as.data.frame(x)
   x<-distinct(x)
+  head(x)
+  
   x[] <- lapply(x, as.character)
-  NamesList<-sapply(x,agrep,x, value=TRUE)
+  NamesList<-sapply(x$x,agrep,x$x, value=TRUE)
   NamesDF<-data.frame(
     Name1 = rep(names(NamesList), lapply(NamesList, length)),
     Name2 = unlist(NamesList))
@@ -12,14 +18,11 @@ namecompare <- function(x,npar=TRUE,print=TRUE) {
   NamesDF$match<-NamesDF$Name1==NamesDF$Name2
   match2<-ifelse(NamesDF$match=="TRUE",1,0) #convert TRUE/FALSEto 0/1
   NamesDF<-cbind(NamesDF,match2)
-  head(NamesDF,40)
-  str(NamesDF)
   NamesDF<-arrange(NamesDF,Name1,Name2) #organize in alphabetica order
   NamesDF<-filter(NamesDF, match==FALSE)  # THIS DELETES ALL NAMES THAT ARE 100% MATCH
   # # Convert to chr
   NamesDF$Name1<-as.character(NamesDF$Name1)
   NamesDF$Name2<-as.character(NamesDF$Name2)
-  str(NamesDF)
   # # Calculate the proportional similarity and # changes required to go from one name to another. Package RecordLinkage
   NamesDF$Name_sim<-levenshteinSim(NamesDF$Name1, NamesDF$Name2)
   NamesDF$Name_dist<-levenshteinDist(NamesDF$Name1, NamesDF$Name2)
