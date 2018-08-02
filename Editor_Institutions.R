@@ -80,7 +80,7 @@ levels(CarnData$Category)
 ##############################################################
 ##############################################################
 #
-# UPLOAD & STANDARDIZE DATA ON EDITORS
+# UPLOAD EDITOR DATA FROM INDIVIDUAL JOURNALS
 #
 ##############################################################
 ##############################################################
@@ -89,6 +89,7 @@ folder <- "./Data/"      # path to folder that holds multiple .csv files
 file_list <- list.files(path=folder, pattern="*.csv") # create list of all .csv files in folder
 
 # read in each .csv file in file_list and create a data frame with the same name as the .csv file
+# Note the ASCII encoding to try and deal with the UTF-8 characters
 for (i in 1:length(file_list)){
   assign(file_list[i], 
          read.csv(paste(folder, file_list[i], sep=''),na.strings = c("","NA"), encoding = "ASCII")
@@ -140,7 +141,13 @@ MARECOL<-MARECOL_21July2018.csv %>% select(JOURNAL,YEAR, INST,COUNTRY)
 # NEED TO SEE WHICH ONES ARE MISSING INSTITUTIONS
 
 
-#### CORRECTIONS
+##############################################################
+##############################################################
+#
+# UPLOAD EDITOR DATA FROM INDIVIDUAL JOURNALS
+#
+##############################################################
+##############################################################
 
 
 ## NOT CORRECT EITHER INST OR CITY STATE!!!
@@ -170,8 +177,6 @@ PLANTECOL$INST[PLANTECOL$LAST_NAME=="Peet"]<-"University of North Carolina-Chape
 PLANTECOL$INST[PLANTECOL$LAST_NAME=="Damman"]<-"University of Connecticut"
 PLANTECOL$INST[PLANTECOL$LAST_NAME=="Pickett" & PLANTECOL$FIRST_NAME=="Steward"]<-"New York Botanical Garden"
 
-PLANTECOL$INST<-as.factor(PLANTECOL$INST)
-
 AG$INST<-as.character(AG$INST)
 AG$STATE<-as.character(AG$STATE)
 AG$COUNTRY<-as.character(AG$COUNTRY)
@@ -179,7 +184,6 @@ AG$INST[AG$LAST_NAME=="Benbi" & AG$FIRST_NAME=="Dinesh"]<-"Punjab Agricultural U
 AG$STATE[AG$LAST_NAME=="Benbi" & AG$FIRST_NAME=="Dinesh"]<-"Punjab"
 AG$COUNTRY[AG$LAST_NAME=="Benbi" & AG$FIRST_NAME=="Dinesh"]<-"India"
 AG$COUNTRY[AG$LAST_NAME=="Pedreira" & AG$FIRST_NAME=="Carlos"]<-"Brazil"
-
 
 EVOL$COUNTRY<-as.character(EVOL$COUNTRY)
 EVOL$STATE<-as.character(EVOL$STATE)
@@ -196,17 +200,20 @@ OECOL$CITY[OECOL$INST=="University of Nevada" & OECOL$LAST_NAME=="Walker"]<-"Las
 OECOL$STATE[OECOL$INST=="University of Nevada" & OECOL$LAST_NAME=="Walker"]<-"NV"
 OECOL$INST[OECOL$INST=="University of Nevada" & OECOL$LAST_NAME=="Hayes"]<-"University of Nevada-Reno"
 
-
-
 AMNAT$INST<-as.character(AMNAT$INST)
 AMNAT$CITY[AMNAT$INST=="University of Hawaii" & AMNAT$LAST_NAME=="Palumbi"]<-"Honolulu"
 AMNAT$STATE[AMNAT$INST=="University of Hawaii" & AMNAT$LAST_NAME=="Palumbi"]<-"HI"
 AMNAT$INST[AMNAT$INST=="University of Hawaii" & AMNAT$LAST_NAME=="Palumbi"]<-"University of Hawaii at Manoa"
 
 
-####################
-# BIND THEM UP 
-####################
+##############################################################
+##############################################################
+#
+# BIND THEM ALL UP INTO ONE FILE  
+#
+##############################################################
+##############################################################
+
 
 ALLDATA<-bind_rows(FUNECOL,MARECOL,NAJFM,NEWPHYT,OIKOS,JZOOL, GCB,BITR,LECO,PLANTECOL,OECOL,JTE,JECOL,JBIOG,JAPE,JANE,FUNECOL,FEM,EVOL,ECOL,ECOG,CONBIO,BIOCON,AREES,AMNAT,AJB,AG)
 
@@ -215,9 +222,14 @@ ALLDATA<-droplevels(ALLDATA)
 ALLDATA$Inst_Prior_Class
 ALLDATA$INST<-as.factor(ALLDATA$INST)
 levels(ALLDATA$INST)
-####################
-# Clean Up
-####################
+
+##############################################################
+##############################################################
+#
+# CONTINUED CLEAN UP OF MASTER FILE  
+#
+##############################################################
+##############################################################
 
 # Remove duplicate rws of each editor for a journal if they have same Inst 
 ALLDATA <- ALLDATA %>% group_by(editor_id,JOURNAL) %>% filter(row_number(INST) == 1)
@@ -227,8 +239,33 @@ ALLDATA$INST[ALLDATA$INST == ""]  <- NA
 ALLDATA<-as.data.frame(ALLDATA)
 
 ###############
-## CLEAN UP THE COUNTRIES
+## CLEAN UP
 ###############
+# SOME NOTES:
+
+# 
+# ANUTECH is a spin-off company started by ANU
+# BFH: Fed Research Center for Foresty and Forest Products - Abbreviation 
+# BFW: Austrian Research Center for Forests
+# BOKU: University of Natural Resources and Life LifeCycleSavingsCSIRO: Commonwealth Scientific and Industrial Research Organization
+# IADIZA: CONICET Instituto Argentino de Investigaciones de las Zonas Aridas
+# ICRAF: International Center for Research in Agroforestry
+# IFREMER: Institut Français de Recherche pour l'exploitation de la Mer
+# IMEDEA: Instituto Mediterraneo de Estudios Avanzados
+# IUCN: International Union for Conservation of Nature and Natural Resources
+# MWRDGC: Metropolitan Water Reclamation District of Greater Chicago
+# NIOO-KNAW: Netherlands Institue of Ecology
+# SEGC: Station DEtudes des Gorilles et Chimpanzes
+# WSL: Swiss Federal Research Institute for Forest Snow and Landscape Research
+# UMCES: University of Maryland Center for Environmental Science. UMCES is one of 12 institutions within the University System of Maryland.
+# UMR EcoFoG: CNRS Unite mixte de recherche Ecologie des forets de Guyane
+# SLU: Swedish University of Agricultural Sciences
+# CSIC: Consejo Superior de Investigaciones Científicas
+# U of N Georgia: Gainesville State College merged with N Georgia COllege and State University
+
+
+
+
 
 ALLDATA$COUNTRY<-as.factor(ALLDATA$COUNTRY)
 levels(ALLDATA$COUNTRY)
@@ -245,49 +282,67 @@ ALLDATA$COUNTRY[ALLDATA$COUNTRY=="United States"]<-"USA"
 ALLDATA$COUNTRY[ALLDATA$INST=="University of New South Wales"]<-"Australia"
 ALLDATA$COUNTRY[ALLDATA$INST=="University of Guelph"]<-"Canada"
 ALLDATA$COUNTRY[ALLDATA$INST=="Instituto Mediterraneo de Estudios Avanzados (IMEDEA)"]<-"Spain"
-
-
-
-#######
-####### NEED TO CONFIRM WHAT PART OF USSR IN WHICH THE AUTHOR WAS BASED
-#######
-ALLDATA$COUNTRY[ALLDATA$COUNTRY=="USSR"]<-"Russia"
-#######
-#######
-#######
 ALLDATA$COUNTRY[ALLDATA$FIRST_NAME=="Jeannine" & ALLDATA$LAST_NAME=="Cavender-Bares"]<-"USA"
+
+
+####### NEED TO CONFIRM WHAT PART OF USSR IN WHICH THE AUTHOR WAS BASED
+ALLDATA$COUNTRY[ALLDATA$COUNTRY=="USSR"]<-"Russia"
 
 
 ALLDATA$COUNTRY<-as.factor(ALLDATA$COUNTRY)
 ALLDATA<-droplevels(ALLDATA)
 levels(ALLDATA$COUNTRY)
 
-########
 ########NEED DO DELETE THESE
-########
 which(ALLDATA$COUNTRY=="")
 
 ###############
-###############
 # CLEAN UP THE INSTITUTIONS
 ###############
-###############
 
-write.csv(ALLDATA,file="SciWri17_Ed_Inst.csv")
-#USE open refine to clean up countries and Inst
-
-# ALLDATA<-read_csv("./Data/SciWri17_Ed_Inst_OR_Clean.csv", col_names=TRUE)
 ALLDATA<-as.data.frame(ALLDATA)
-str(ALLDATA)
 ALLDATA$JOURNAL<-as.factor(ALLDATA$JOURNAL)
 
-ALLDATA$INST[ALLDATA$Column==1149]<-"Forestry and Forest Products Research Institute"
+ALLDATA$INST[ALLDATA$JOURNAL=="AMNAT" & ALLDATA$LAST_NAME=="Case"]<-"University of California San Diego"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Noon"]<-"Colorado State University"
+ALLDATA$COUNTRY[ALLDATA$LAST_NAME=="VanDerHeijden"]<-"Switzerland"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Burgess"]<-"State University of New York College of Environmental Science and Forestry"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Fragoso"]<-"State University of New York College of Environmental Science and Forestry"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Yanai"]<-"State University of New York College of Environmental Science and Forestry"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Hall" & ALLDATA$FIRST_NAME=="Charles" & ALLDATA$JOURNAL=="CONBIO"]<-"State University of New York College of Environmental Science and Forestry"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Fujimori"]<-"Forestry and Forest Products Research Institute"
 
-ALLDATA$INST<-as.factor(ALLDATA$INST)
-ALLDATA$STATE<-as.factor(ALLDATA$STATE)
-ALLDATA$COUNTRY<-as.factor(ALLDATA$COUNTRY)
-ALLDATA$Inst_Prior_Class<-as.factor(ALLDATA$Inst_Prior_Class)
-ALLDATA<-ALLDATA %>% select(-DATA)
+ALLDATA$INST[ALLDATA$LAST_NAME=="Johnson" & ALLDATA$FIRST_NAME=="Lucinda"]<-"University of Minnesota Duluth"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Moen" & ALLDATA$FIRST_NAME=="Ron"]<-"University of Minnesota Duluth"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Sterner" & ALLDATA$FIRST_NAME=="Robert"]<-"University of Minnesota Duluth"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Wiersma" & ALLDATA$FIRST_NAME=="Jochum"]<-"University of Minnesota Crookston"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Smith" & ALLDATA$FIRST_NAME=="Madeleine"]<-"University of Minnesota Crookston"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Sims" & ALLDATA$FIRST_NAME=="Albert"]<-"University of Minnesota Crookston"
+
+ALLDATA$INST[ALLDATA$LAST_NAME=="Sprules" & ALLDATA$FIRST_NAME=="Gary"]<-"University of Toronto Mississauga"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Wagner" & ALLDATA$FIRST_NAME=="Helene"]<-"University of Toronto Mississauga"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Kotanen" & ALLDATA$FIRST_NAME=="Peter"]<-"University of Toronto Mississauga"
+
+ALLDATA$INST[ALLDATA$LAST_NAME=="Loiselle" & ALLDATA$FIRST_NAME=="Bette"]<-"University of Missouri St Louis"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Ricklefs" & ALLDATA$FIRST_NAME=="Robert"]<-"University of Missouri St Louis"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Renner" & ALLDATA$FIRST_NAME=="Susanne"]<-"University of Missouri St Louis"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Sork" & ALLDATA$FIRST_NAME=="Victoria"]<-"University of Missouri St Louis"
+ALLDATA$INST[ALLDATA$INST=="University of Missouri"]<-"University of Missouri Columbia"
+
+
+
+ALLDATA$COUNTRY[ALLDATA$LAST_NAME=="Bieber"]<-"Austria"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Parmentier"]<-"Universite Libre de Bruxelles"
+
+# NEEED TO FIX
+ALLDATA$COUNTRY[ALLDATA$LAST_NAME=="Debussche"]<-"CNRS Centre dEcologie Fonctionnelle et Evolutive"
+
+
+# ALLDATA$INST<-as.factor(ALLDATA$INST)
+# ALLDATA$STATE<-as.factor(ALLDATA$STATE)
+# ALLDATA$COUNTRY<-as.factor(ALLDATA$COUNTRY)
+# ALLDATA$Inst_Prior_Class<-as.factor(ALLDATA$Inst_Prior_Class)
+# ALLDATA<-ALLDATA %>% select(-DATA)
 
 ALLDATA$INST<-as.character(ALLDATA$INST)
 
@@ -315,10 +370,8 @@ ALLDATA$INST<-gsub("Univerisity", "University", ALLDATA$INST)
 ALLDATA$INST<-gsub("Univeristy", "University", ALLDATA$INST)
 ALLDATA$INST<-gsub("Univerist", "University", ALLDATA$INST)
 ALLDATA$INST<-gsub("Universit ", "University", ALLDATA$INST)
-
 ALLDATA$UNIT[ALLDATA$INST=="Pacific S.W. Research Station-US Forest Service"]<-"Pacific S.W. Research Station"
 ALLDATA$INST[ALLDATA$INST=="Pacific S.W. Research Station-US Forest Service"]<-"US Forest Service"
-# ALLDATA$INST[ALLDATA$INST=="Pacific S.W. Research Station-US Forest Service"]<-"USFS-Pacific Southwest Research Station"
 ALLDATA$INST[ALLDATA$INST=="University fo California Berkeley"]<-"University of California-Berkeley"
 ALLDATA$INST[ALLDATA$INST=="US Geological survey"]<-"US Geological Survey"
 ALLDATA$INST[ALLDATA$INST=="Cal State Bakersfield"]<-"California State University-Bakersfield"
@@ -345,9 +398,7 @@ ALLDATA$INST[ALLDATA$INST=="Oregon State"]<-"Oregon State University"
 ALLDATA$INST[ALLDATA$INST=="Rensselaer Poly"]<-"Rensselaer Polytechnic Institute"
 ALLDATA$INST[ALLDATA$INST=="Rutgers U"]<-"Rutgers University"
 ALLDATA$INST[ALLDATA$INST=="Stanford"]<-"Stanford University"
-# ALLDATA$INST[ALLDATA$INST=="State University of New York at Binghamton"]<-"State University of New York-Binghamton"
 ALLDATA$INST[ALLDATA$INST=="State University of New York at Binghamton"]<-"SUNY at Binghamton"
-# ALLDATA$INST[ALLDATA$INST=="Binghamton University-SUNY"]<-"State University of New York-Binghamton"
 ALLDATA$INST[ALLDATA$INST=="Binghamton University-SUNY"]<-"SUNY at Binghamton"
 ALLDATA$INST[ALLDATA$INST=="Texas State"]<-"Texas State University"
 ALLDATA$INST[ALLDATA$INST=="The University of Southwestern Louisiana"]<-"University of Southwestern Louisiana"
@@ -359,18 +410,14 @@ ALLDATA$INST[ALLDATA$INST=="University of California Santa Cruz"]<-"University o
 ALLDATA$INST[ALLDATA$INST=="Uc Merced, University of California"]<-"University of California-Merced"
 ALLDATA$INST[ALLDATA$INST=="UMSL"]<-"University of Missouri-St. Louis"
 ALLDATA$INST[ALLDATA$INST=="University of Carolina Aiken"]<-"University of South Carolina-Aiken"
-# ALLDATA$INST[ALLDATA$INST=="University of Illinois at Urbana-Champaign"]<-"University of Illinois"
 ALLDATA$INST[ALLDATA$INST=="University of Massachusetts Boston"]<-"University of Massachusetts-Boston"
 ALLDATA$INST[ALLDATA$INST=="University of Nevada Las Vegas"]<-"University of Nevada-Las Vegas"
-# ALLDATA$INST[ALLDATA$INST=="University of North Carolina at Chapel Hill"]<-"University of North Carolina-Chapel Hill"
-# ALLDATA$INST[ALLDATA$INST=="University of Texas at Austin"]<-"University of Texas-Austin"
 ALLDATA$INST[ALLDATA$INST=="University of Texas Austin"]<-"University of Texas at Austin"
 ALLDATA$INST[ALLDATA$INST=="Vanderbilt"]<-"Vanderbilt University"
 ALLDATA$INST[ALLDATA$INST=="Virginia Commonweath U"]<-"Virginia Commonweath University"
 ALLDATA$INST[ALLDATA$INST=="Washington State"]<-"Washington State University"
 ALLDATA$INST[ALLDATA$INST=="Washington U"]<-"Washington University"
 ALLDATA$INST[ALLDATA$INST=="Willamette U"]<-"Willamette University"
-# ALLDATA$INST[ALLDATA$INST=="University of Colorado Boulder"]<-"University of Colorado-Boulder"
 ALLDATA$INST[ALLDATA$INST=="University of Pennsylvania, "]<-"University of Pennsylvania"
 ALLDATA$INST[ALLDATA$INST=="University of Pittsburg"]<-"University of Pittsburgh"
 ALLDATA$INST[ALLDATA$INST=="University of Tennesee"]<-"University of Tennessee"
@@ -420,33 +467,24 @@ ALLDATA$INST[ALLDATA$INST=="USFS-Pacific Southwest Research Station"]<-"US Fores
 ALLDATA$INST[ALLDATA$INST=="USFWS-National Wetlands Research Center"]<-"US Fish & Wildlife Service-National Wetlands Research Center"
 ALLDATA$UNIT[ALLDATA$INST=="USGS Forest and Rangeland Ecosystem Science Center"]<-"Forest and Rangeland Ecosystem Science Center"
 ALLDATA$INST[ALLDATA$INST=="USGS Forest and Rangeland Ecosystem Science Center"]<-"US Geological Survey"
-# ALLDATA$INST[ALLDATA$INST=="USGS Western Ecological Research Center"]<-"US Geological Survey-Western Ecological Research Center"
 ALLDATA$UNIT[ALLDATA$INST=="USGS-Northern Prairie Wildlife Research Center"]<-"Northern Prairie Wildlife Research Center"
 ALLDATA$INST[ALLDATA$INST=="USGS-Northern Prairie Wildlife Research Center"]<-"US Geological Survey"
-# ALLDATA$INST[ALLDATA$INST=="USGS-Northern Prairie Wildlife Research Center"]<-"US Geological Survey-Northern Prairie Wildlife Research Center"
 ALLDATA$INST[ALLDATA$INST=="National Museum of Natural History"]<-"Smithsonian National Museum of Natural History"
 ALLDATA$INST[ALLDATA$INST=="Smithsonian"]<-"Smithsonian National Museum of Natural History" #EB Verified
 ALLDATA$INST[ALLDATA$INST=="USDA"]<-"US Department of Agriculture"
 ALLDATA$UNIT[ALLDATA$INST=="USDA Cooperative State Research, Education and Extension Service (CSREES)"]<-"Cooperative State Research, Education, and Extension Service"
 ALLDATA$INST[ALLDATA$INST=="USDA Cooperative State Research, Education and Extension Service (CSREES)"]<-"US Department of Agriculture"
-# ALLDATA$INST[ALLDATA$INST=="USDA Cooperative State Research, Education and Extension Service (CSREES)"]<-"US Department of Agriculture Cooperative State Research, Education, and Extension Service"
 ALLDATA$INST[ALLDATA$INST=="Virginia Tech"]<-"Virginia Polytechnic Institute and State University"
 ALLDATA$INST[ALLDATA$INST=="University of Pennsylvania,"]<-"University of Pennsylvania"
 ALLDATA$INST[ALLDATA$INST=="Division of Reptiles and Amphibians Smithsonian Institute Washington DC"]<-"Smithsonian National Museum of Natural History"
 ALLDATA$INST[ALLDATA$INST=="University of California-At Los Angeles"]<-"University of California-Los Angeles"
 ALLDATA$INST[ALLDATA$INST=="National Museum of Natural History, Smithsonian Institution"]<-"Smithsonian National Museum of Natural History"
-
 ALLDATA$UNIT[ALLDATA$INST=="Citrus Research and Education Center"]<-"Citrus Research and Education Center"
 ALLDATA$INST[ALLDATA$INST=="Citrus Research and Education Center"]<-"University of Florida"
-
 ALLDATA$INST[ALLDATA$INST=="Ohio u"]<-"Ohio University-Main Campus"
 ALLDATA$INST[ALLDATA$INST=="University of South Carolina" & ALLDATA$CITY=="Columbia"]<-"University of South Carolina-Columbia"
-
-
 ALLDATA$UNIT[ALLDATA$INST=="US Department of Agriculture Cooperative State Research, Education, and Extension Service"]<-"Cooperative State Research, Education, and Extension Service"
 ALLDATA$INST[ALLDATA$INST=="US Department of Agriculture Cooperative State Research, Education, and Extension Service"]<-"US Department of Agriculture"
-
-##NEED to 2X 
 ALLDATA$INST[ALLDATA$LAST_NAME=="Bowers" & ALLDATA$CITY=="Vadnais Heights"]<-"Calyx, Inc."
 ALLDATA$INST[ALLDATA$INST=="Arnold Arboretum Of Harvard University"]<-"Harvard University Arnold Arboretum"
 ALLDATA$INST[ALLDATA$INST=="Museum of Comparative Zoology"]<-"Harvard University Museum of Comparative Zoology"
@@ -456,29 +494,18 @@ ALLDATA$INST[ALLDATA$INST=="State University of New York Syracuse"]<-"State Univ
 ALLDATA$INST[ALLDATA$INST=="Arnold Arboretum of Harvard University"]<-"Harvard University Arnold Arboretum"
 ALLDATA$INST[ALLDATA$INST=="Harvard Medical School"]<-"Harvard University Medical School"
 ALLDATA$INST[ALLDATA$INST=="Australian Research Center for Urban "]<-"Smithsonian Tropical Research Institute"
-
-
-# Spell checking, inadvertent apostrophes, etc.
 ALLDATA$INST<-gsub(" INPA", "", ALLDATA$INST)
 ALLDATA$INST<-gsub("--", " ", ALLDATA$INST)
 ALLDATA$INST<-gsub("-", " ", ALLDATA$INST)
 ALLDATA$INST<-gsub(" (CSIRO)", " ", ALLDATA$INST)
 ALLDATA$INST<-gsub(" CSIRO", " ", ALLDATA$INST)
 ALLDATA$INST<-gsub(",CAS", " ", ALLDATA$INST)
-
-
-# ALLDATA$INST[ALLDATA$INST==" INPA"]<-""
-# ALLDATA$INST[ALLDATA$INST==" (CSIRO)"]<-""
-# ALLDATA$INST[ALLDATA$INST==" CSIRO"]<-""
-# ALLDATA$INST[ALLDATA$INST==",CAS"]<-""
-
 ALLDATA$INST<-gsub("Nacaional", "Nacional", ALLDATA$INST)
 ALLDATA$INST<-gsub("British Colombia", "British Columbia", ALLDATA$INST)
 ALLDATA$INST<-gsub("Smithosonian", "Smithsonian", ALLDATA$INST)
 ALLDATA$INST<-gsub("kansas", "Kansas", ALLDATA$INST)
 ALLDATA$INST<-gsub("Sao Paolo", "Sao Paulo", ALLDATA$INST)
 ALLDATA$INST<-gsub("illinois", "Illinois", ALLDATA$INST)
-
 ALLDATA$INST<-gsub("Wuerzburg", "Wurzburg", ALLDATA$INST)
 ALLDATA$INST<-gsub("LaTrobe", "La Trobe", ALLDATA$INST)
 ALLDATA$INST<-gsub("No one by", "no one by", ALLDATA$INST)
@@ -486,22 +513,6 @@ ALLDATA$INST<-gsub("Botannical", "Botanical", ALLDATA$INST)
 ALLDATA$INST<-gsub("Berkely", "Berkeley", ALLDATA$INST)
 ALLDATA$INST<-gsub("Commonweath", "Commonwealth", ALLDATA$INST)
 ALLDATA$INST<-gsub("Archibold", "Archbold", ALLDATA$INST)
-
-# ALLDATA$INST[ALLDATA$INST=="Nacaional"]<-"Nacional"
-# ALLDATA$INST[ALLDATA$INST=="British Colombia"]<-"British Columbia"
-# ALLDATA$INST[ALLDATA$INST=="Smithosonian"]<-"Smithsonian"
-# ALLDATA$INST[ALLDATA$INST=="kansas"]<-"Kansas"
-# ALLDATA$INST[ALLDATA$INST=="Sao Paolo"]<-"Sao Paulo"
-# ALLDATA$INST[ALLDATA$INST=="illinois"]<-"Illinois"
-# ALLDATA$INST[ALLDATA$INST=="Wuerzburg"]<-"Wurzburg"
-# ALLDATA$INST[ALLDATA$INST=="LaTrobe"]<-"La Trobe"
-# ALLDATA$INST[ALLDATA$INST=="no one by"]<-"No one by"
-# ALLDATA$INST[ALLDATA$INST=="Botannical"]<-"Botanical"
-# ALLDATA$INST[ALLDATA$INST=="Berkely"]<-"Berkeley"
-# ALLDATA$INST[ALLDATA$INST=="Commonweath"]<-"Commonwealth"
-# ALLDATA$INST[ALLDATA$INST=="Archibold"]<-"Archbold"
-
-
 ALLDATA$INST<-gsub("Loisisana", "Louisiana", ALLDATA$INST)
 ALLDATA$INST<-gsub("Lousiana", "Louisiana", ALLDATA$INST)
 ALLDATA$INST<-gsub("Bringham", "Brigham", ALLDATA$INST)
@@ -510,17 +521,6 @@ ALLDATA$INST<-gsub("Unversity", "University", ALLDATA$INST)
 ALLDATA$INST<-gsub(",", "", ALLDATA$INST)
 ALLDATA$INST<-gsub("Westleyan", "Wesleyan", ALLDATA$INST)
 ALLDATA$INST<-gsub("'", "", ALLDATA$INST)
-
-# ALLDATA$INST[ALLDATA$INST=="Loisisana"]<-"Louisiana"
-# ALLDATA$INST[ALLDATA$INST=="Lousiana"]<-""
-# ALLDATA$INST[ALLDATA$INST=="Bringham"]<-"Brigham"
-# ALLDATA$INST[ALLDATA$INST=="Connetticut"]<-"Connecticut"
-# ALLDATA$INST[ALLDATA$INST=="Unversity"]<-"University"
-# ALLDATA$INST[ALLDATA$INST==","]<-""
-# ALLDATA$INST[ALLDATA$INST=="Westleyan"]<-"Wesleyan"
-# ALLDATA$INST[ALLDATA$INST=="'"]<-""
-
-
 ALLDATA$INST<-gsub("Veterinary&", "Veterinary and", ALLDATA$INST)
 ALLDATA$INST<-gsub("&", "and", ALLDATA$INST)
 ALLDATA$INST<-gsub("Virginia Tech", "Virginia Polytechnic Institute and State University", ALLDATA$INST)
@@ -529,17 +529,6 @@ ALLDATA$INST<-gsub("Indian Institute of Sciences", "Indian Institute of Science"
 ALLDATA$INST<-gsub("KingS", "Kings", ALLDATA$INST)
 ALLDATA$INST<-gsub("Louisisana", "Louisiana", ALLDATA$INST)
 ALLDATA$INST<-gsub("Universrity", "University", ALLDATA$INST)
-
-# ALLDATA$INST[ALLDATA$INST=="Veterinary&"]<-"Veterinary and"
-# ALLDATA$INST[ALLDATA$INST=="&"]<-"and"
-# ALLDATA$INST[ALLDATA$INST=="Virginia Tech"]<-"Virginia Polytechnic Institute and State University"
-# ALLDATA$INST[ALLDATA$INST=="Austrailan"]<-"Australian"
-# ALLDATA$INST[ALLDATA$INST=="Indian Institute of Sciences"]<-"Indian Institute of Science"
-# ALLDATA$INST[ALLDATA$INST=="KingS"]<-"Kings"
-# ALLDATA$INST[ALLDATA$INST=="Louisisana"]<-"Louisiana"
-# ALLDATA$INST[ALLDATA$INST=="Universrity"]<-"University"
-
-
 ALLDATA$INST<-gsub("Canadian Forestry", "Canadian Forest", ALLDATA$INST)
 ALLDATA$INST<-gsub("Mighican", "Michigan", ALLDATA$INST)
 ALLDATA$INST<-gsub("de Montpellier II", "Montpellier II", ALLDATA$INST)
@@ -549,44 +538,17 @@ ALLDATA$INST<-gsub("Alabama in", "Alabama", ALLDATA$INST)
 ALLDATA$INST<-gsub("Fonctionelle", "Fonctionnelle", ALLDATA$INST)
 ALLDATA$INST<-gsub("-CNRS", "", ALLDATA$INST)
 ALLDATA$INST<-gsub("University of Sherbooke", "Universite de Sherbooke", ALLDATA$INST)
-
-# ALLDATA$INST[ALLDATA$INST=="Canadian Forestry"]<-"Canadian Forest"
-# ALLDATA$INST[ALLDATA$INST=="Mighican"]<-"Michigan"
-# ALLDATA$INST[ALLDATA$INST=="de Montpellier II"]<-"Montpellier II"
-# ALLDATA$INST[ALLDATA$INST=="North Arizona"]<-"Northern Arizona"
-# ALLDATA$INST[ALLDATA$INST==" Wsl"]<-"WSL"
 ALLDATA$INST[ALLDATA$INST=="WSL Swiss Federal Research Institute"]<-"Swiss Federal Research Institute WSL"
-# ALLDATA$INST[ALLDATA$INST=="Alabama in"]<-"Alabama"
-# ALLDATA$INST[ALLDATA$INST=="Fonctionelle"]<-"Fonctionnelle"
-# ALLDATA$INST[ALLDATA$INST=="-CNRS"]<-""
-# ALLDATA$INST[ALLDATA$INST=="University of Sherbooke"]<-"Universite de Sherbooke"
-
-
 ALLDATA$INST<-gsub("(CSIC)", "", ALLDATA$INST)
 ALLDATA$INST<-gsub("Smithsonian Institute", "Smithsonian Institution", ALLDATA$INST)
 ALLDATA$INST<-gsub("Minnestoa", "Minnesota", ALLDATA$INST)
 ALLDATA$INST<-gsub("University of Lausanne", "Universite de Lausanne", ALLDATA$INST)
 ALLDATA$INST<-gsub("Institute of Ecosystem Studies", "Cary Institute of Ecosystem Studies", ALLDATA$INST)
 ALLDATA$INST<-gsub("Environment Bangalore", "Environment", ALLDATA$INST)
-
-# ALLDATA$INST[ALLDATA$INST=="(CSIC)"]<-""
-# ALLDATA$INST[ALLDATA$INST=="Smithsonian Institute"]<-"Smithsonian Institution"
-# ALLDATA$INST[ALLDATA$INST=="Minnestoa"]<-"Minnesota"
-# ALLDATA$INST[ALLDATA$INST=="University of Lausanne"]<-"Universite de Lausanne"
-# ALLDATA$INST[ALLDATA$INST=="Institute of Ecosystem Studies"]<-"Cary Institute of Ecosystem Studies"
 ALLDATA$INST[ALLDATA$INST=="Cary Cary Institute of Ecosystem Studies"]<-"Cary Institute of Ecosystem Studies"
-# ALLDATA$INST[ALLDATA$INST=="Environment Bangalore"]<-"Environment"
-
-
-
 ALLDATA$INST<-gsub(" CATIE","", ALLDATA$INST)
 ALLDATA$INST<-gsub("CATIE ","", ALLDATA$INST)
-# 
-# ALLDATA$INST[ALLDATA$INST==" CATIE"]<-""
-# ALLDATA$INST[ALLDATA$INST=="CATIE "]<-""
 ALLDATA$INST[ALLDATA$INST=="University of California NCEAS"]<-"National Center for Ecological Analysis and Synthesis"
-
-
 ALLDATA$INST<-gsub(" (UNESP)","", ALLDATA$INST)
 ALLDATA$INST<-gsub("Darwin University Darwin","Darwin University", ALLDATA$INST)
 ALLDATA$INST<-gsub("Technion-","", ALLDATA$INST)
@@ -595,40 +557,18 @@ ALLDATA$INST<-gsub("Ossietzky","", ALLDATA$INST)
 ALLDATA$INST<-gsub(",USDA","", ALLDATA$INST)
 ALLDATA$INST<-gsub("UFZ Centre","Helmholtz Centre", ALLDATA$INST)
 ALLDATA$INST<-gsub(" UFZ","", ALLDATA$INST)
-
-
 ALLDATA$INST<-gsub("Helmholtz Centre for Environmental Research","Helmholtz Centre for Environmental Research UFZ", ALLDATA$INST)
-
-
-
 ALLDATA$INST<-gsub("A& M Univ","A & M University", ALLDATA$INST)
 ALLDATA$INST<-gsub("AandM","A & M", ALLDATA$INST)
 ALLDATA$INST<-gsub("Khorasan Agricultural and Natural Resources Res Ctr","Khorasan Agricultural and Natural Resources Research Center", ALLDATA$INST)
 ALLDATA$INST[ALLDATA$INST=="Texas Technical University"]<-"Texas Tech University" 
 ALLDATA$INST[ALLDATA$INST=="Mississippi State Univ"]<-"Mississippi State University" 
 ALLDATA$INST[ALLDATA$INST=="Empresa Brasileira de Pesquisa Agropecuária"]<-"Empresa Brasileira de Pesquisa Agropecuaria" 
-
-# ALLDATA$INST[ALLDATA$INST==" (UNESP)"]<-""
-# ALLDATA$INST[ALLDATA$INST=="Darwin University Darwin"]<-"Darwin University"
-# ALLDATA$INST[ALLDATA$INST=="Technion-"]<-""
 ALLDATA$INST[ALLDATA$INST=="Technion Technion Israel Institute of Technology"]<-"Technion Israel Institute of Technology"
-# ALLDATA$INST[ALLDATA$INST=="Ossietzky"]<-""
-# ALLDATA$INST[ALLDATA$INST==",USDA"]<-""
 ALLDATA$INST[ALLDATA$INST=="Universidad Catolica de Chile"]<-"Pontifica Universidad Catolica de Chile"
-# ALLDATA$INST[ALLDATA$INST=="Pontifica Pontifica Universidad Catolica de Chile"]<-"Pontifica Universidad Catolica de Chile"
-# ALLDATA$INST[ALLDATA$INST=="UFZ Centre"]<-"Helmholtz Centre"
-# ALLDATA$INST[ALLDATA$INST==" UFZ"]<-""
-# ALLDATA$INST[ALLDATA$INST=="Helmholtz Centre for Environmental Research"]<-"Helmholtz Centre for Environmental Research UFZ"
-# ALLDATA$INST[ALLDATA$INST=="dHistoire"]<-"dHistoire Naturelle"
-# ALLDATA$INST[ALLDATA$INST=="A& M Univ"]<-"A & M University"
-
-
 ALLDATA$INST<-gsub("Philips University","Philips University Marburg", ALLDATA$INST)
 ALLDATA$INST[ALLDATA$INST=="University of Marburg"]<-"Philipps University Marburg"
 ALLDATA$INST[ALLDATA$INST=="Philipps University"]<-"Philipps University Marburg"
-
-
-
 ALLDATA$INST<-gsub("in Cornwall","Cornwall", ALLDATA$INST)
 ALLDATA$INST<-gsub("SUNY","State University of New York", ALLDATA$INST)
 ALLDATA$INST<-gsub("USGS","US Geological Survey", ALLDATA$INST)
@@ -644,35 +584,26 @@ ALLDATA$INST<-gsub(" Headquarters","", ALLDATA$INST)
 ALLDATA$INST<-gsub("VUniversity","University", ALLDATA$INST)
 ALLDATA$INST<-gsub(" (IMEDEA)","", ALLDATA$INST)
 ALLDATA$INST<-gsub(" (UNICAMP)","", ALLDATA$INST)
-
-
-
 ALLDATA$INST<-gsub("dHistoire","dHistoire Naturelle", ALLDATA$INST)
 ALLDATA$INST<-gsub("National Museum of Natural History Paris","Museum National dHistoire Naturelle", ALLDATA$INST)
 ALLDATA$INST<-gsub("Naturelle Naturelle","Naturelle", ALLDATA$INST)
-
-# ALLDATA$INST[ALLDATA$INST=="in Cornwall"]<-"Cornwall"
-# ALLDATA$INST[ALLDATA$INST=="SUNY"]<-"State University of New York"
 ALLDATA$INST[ALLDATA$INST=="Museum dHistoire Naturelle"]<-"Museum National dHistoire Naturelle"
-# ALLDATA$INST[ALLDATA$INST=="USGS"]<-"US Geological Survey"
 ALLDATA$INST[ALLDATA$INST=="National Autonomous university of Mexico"]<-"Universidad Nacional Autonoma de Mexico"
-# ALLDATA$INST[ALLDATA$INST=="NC Agricultural"]<-"North Carolina Agricultural"
-# ALLDATA$INST[ALLDATA$INST=="for Forest, Snow, and Landscape Research"]<-"WSL"
-# ALLDATA$INST[ALLDATA$INST==" Company"]<-""
-# ALLDATA$INST[ALLDATA$INST=="CSIRO Plant Industry"]<-""
-# ALLDATA$INST[ALLDATA$INST==" Manaaki Whenua"]<-""
 ALLDATA$INST[ALLDATA$INST=="Landcare Research"]<-"Manaaki Whenua Landcare Research"
-# ALLDATA$INST[ALLDATA$INST==" Headquarters"]<-""
-# ALLDATA$INST[ALLDATA$INST=="VUniversity"]<-"VUniversity"
-# ALLDATA$INST[ALLDATA$INST==" (IMEDEA)"]<-""
-# ALLDATA$INST[ALLDATA$INST==" (UNICAMP)"]<-""
-
-
 ALLDATA$UNIT[ALLDATA$INST=="USGS/NRII"]<-"NRII" 
 ALLDATA$INST[ALLDATA$INST=="USGS/NRII"]<-"US Geological Survey"
-
 ALLDATA$UNIT[ALLDATA$INST=="Florida International University and Center for Tropical Plant Conservation"]<-"Center for Tropical Plant Conservation" 
 ALLDATA$INST[ALLDATA$INST=="Florida International University and Center for Tropical Plant Conservation"]<-"Florida International University" 
+ALLDATA$INST[ALLDATA$INST=="Ecole Normale Supérieure"]<-"Ecole Normale Superieure" 
+ALLDATA$INST[ALLDATA$INST=="Université de Sherbrooke"]<-"Universite de Sherbrooke"
+ALLDATA$INST[ALLDATA$INST=="Pontificia Universidad Católica de Chile"]<-"Pontificia Universidad Catolica de Chile" 
+ALLDATA$INST[ALLDATA$INST=="University of Tromsø"]<-"University of Tromso" 
+ALLDATA$INST[ALLDATA$INST=="Universit\xfc\xbe\x8c\xa3\xa0\xbc Montpellier II"]<-"Universite Montpellier II" 
+ALLDATA$INST[ALLDATA$INST=="Universit\xfc\xbe\x8d\x83\xa0\xbct Z\xfc\xbe\x8c\x93\xa0\xbcrich Irchel"]<-"University of Zurich Irchel" 
+ALLDATA$INST[ALLDATA$INST=="Texas A & M Univ."]<-"Texas A & M University"
+ALLDATA$INST[ALLDATA$INST=="Texas A & M"]<-"Texas A & M University"
+
+# Dividing Some Names for INST into INST and UNIT
 
 ALLDATA$UNIT[ALLDATA$INST=="Harvard University Herbaria"]<-"Herbaria" 
 ALLDATA$INST[ALLDATA$INST=="Harvard University Herbaria"]<-"Harvard University"
@@ -701,35 +632,82 @@ ALLDATA$INST[ALLDATA$INST=="Harvard University Museum of Comparative Zoology"]<-
 ALLDATA$UNIT[ALLDATA$INST=="Wageiningen University Research Center Alterra"]<-"Research Center Alterra"
 ALLDATA$INST[ALLDATA$INST=="Wageiningen University Research Center Alterra"]<-"Wageiningen University" 
 
-ALLDATA$INST[ALLDATA$INST=="Ecole Normale Supérieure"]<-"Ecole Normale Superieure" 
-ALLDATA$INST[ALLDATA$INST=="Université de Sherbrooke"]<-"Universite de Sherbrooke"
-ALLDATA$INST[ALLDATA$INST=="Pontificia Universidad Católica de Chile"]<-"Pontificia Universidad Catolica de Chile" 
-ALLDATA$INST[ALLDATA$INST=="University of Tromsø"]<-"University of Tromso" 
-ALLDATA$INST[ALLDATA$INST=="Universit\xfc\xbe\x8c\xa3\xa0\xbc Montpellier II"]<-"Universite Montpellier II" 
-ALLDATA$INST[ALLDATA$INST=="Universit\xfc\xbe\x8d\x83\xa0\xbct Z\xfc\xbe\x8c\x93\xa0\xbcrich Irchel"]<-"University of Zurich Irchel" 
-ALLDATA$INST[ALLDATA$INST=="Texas A & M Univ."]<-"Texas A & M University"
-ALLDATA$INST[ALLDATA$INST=="Texas A & M"]<-"Texas A & M University"
+###############
+# SAVE THE FILE AS A CSV FOR MANUAL REVIEW
+###############
+write.csv(UNI_LIST, file="uniNameList.csv", row.names = T) #export it as a csv file
+
+
+
+###############
+# AFTER MANUAL REVIEW, 
+# UPLOAD THE CORRECTIONS AND INCORPORATE THEM
+###############
 
 
 corrections1<-read.csv("./Data/uniNameList_corrections_only.csv",encoding = "ASCII",stringsAsFactors = FALSE)
+
 str(corrections1)
 #THIS CHANGES THE UNITS AND INST BASED ON THE CORRECTION IN THE DATAFRAME
 ALLDATA<-left_join(ALLDATA, corrections1,by="INST",copy=TRUE) %>% mutate(INST = ifelse(is.na(INST_CORR), INST, INST_CORR)) %>% mutate(UNIT = ifelse(is.na(UNIT_CORR), UNIT, UNIT_CORR))
 ALLDATA<-ALLDATA %>% select(-INST_CORR,-UNIT_CORR)
 
-# ALLDATA$INST[ALLDATA$INST==" UPV"]<-"Universitat Politecnica de Valencia" 
+# FOR SOME REASON SOME DIDN"T CHANGE< SO NEED TO DO MANUALLY
 ALLDATA$INST[ALLDATA$INST=="USU"]<-"Utah State University"
 ALLDATA$INST[ALLDATA$LAST_NAME=="Luque"]<-"Institut national de recherche en sciences et technologies pour lenvironnement et lagriculture"
 ALLDATA$INST[ALLDATA$INST=="<a0>Forestry and Forest Products Research Institute"]<-"Forestry and Forest Products Research Institute"
 ALLDATA$INST[ALLDATA$INST=="<a0>Universit<e9> Claude Bernard Lyon 1"]<-"Universite Claude Bernard Lyon 1" 
 ALLDATA$INST<-gsub("Landscape<a0>Ecology","Landscape Ecology", ALLDATA$INST)
 ALLDATA$INST<-gsub("Universit<8a>t","Universitat", ALLDATA$INST)
-
-
 ALLDATA$INST<-gsub("Institue",  "Institute", ALLDATA$INST)
 ALLDATA$INST<-gsub("Univerity",  "University", ALLDATA$INST)
 ALLDATA$INST[ALLDATA$INST=="Canadia Forest Service"]<-"Canadian Forest Service"
 ALLDATA$INST[ALLDATA$INST=="lowa State University"]<-"Iowa State University"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Debussche"]<-"CNRS Centre dEcologie Fonctionnelle et Evolutive"
+ALLDATA$COUNTRY[ALLDATA$LAST_NAME=="Gandon"]<-"France"
+ALLDATA$FIRST_NAME[ALLDATA$LAST_NAME=="MONOD"]<-"Theodore"
+ALLDATA$LAST_NAME[ALLDATA$LAST_NAME=="MONOD"]<-"Monod"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Whitmore"]<-"University of Oxford"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Hails"]<-"University of Oxford"
+ALLDATA$UNIT[ALLDATA$LAST_NAME=="Whitmore"]<-"Oxford Forestry Institute"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Leamy"]<-"University of North Carolina Charlotte"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Gustafson"& ALLDATA$FIRST_NAME=="E"]<-"US Forest Service"
+ALLDATA$UNIT[ALLDATA$LAST_NAME=="Gustafson"& ALLDATA$FIRST_NAME=="E"]<-"North Central Research Station"
+ALLDATA$COUNTRY[ALLDATA$LAST_NAME=="Westing"&ALLDATA$FIRST_NAME=="Arthur"]<-"Sweden"
+ALLDATA$COUNTRY[ALLDATA$LAST_NAME=="Galdon"&ALLDATA$FIRST_NAME=="Luis"]<-"Spain"
+
+ALLDATA$INST[ALLDATA$LAST_NAME=="Labandeira"& ALLDATA$FIRST_NAME=="Conrad"]<-"Smithsonian National Museum of Natural History"
+ALLDATA$INST[ALLDATA$LAST_NAME=="SEIDENSTZICKER"& ALLDATA$FIRST_NAME=="JOHN"]<-"Smithsonian National Zoological Park"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Kleiman"& ALLDATA$FIRST_NAME=="Devra"]<-"Smithsonian National Zoological Park"
+ALLDATA$INST[ALLDATA$INST=="Syngenta Crop Protection"]<-"Syngenta Crop Protection Inc"
+
+
+
+##########################################
+# Still left to fix and 2x
+##########################################
+# 2x claudia bieber. CVM is in austria but country is australia
+# 2x ythat Vegetation Survey of Western Australia shouldn’t be Univ of Western Australia
+# ingrid parmentier should be Universite Libre de Bruxelles 2x journal
+# James Cook University ONE OF THESE IS JAMES COOK UNIVERSITY TOWNSVILLE
+# Natiral History Museum need to 2x each some are us some are UK
+# need to 2x University of Illinois Urbana Champaign
+# need to 2x UT Austin
+# NEED TO GET PEOPLE BY CAMPUS UNAM
+# no one by this name
+# NoInst
+# Oregon Trail
+# Pfenning does he have two researcher iD's? 
+# Stephen Simpson Ecology 2002 2x if Oxford, UK, Australia 
+# U of California MANY TO SORT OUT
+# what is NRII?
+##########################################
+
+
+
+
+
+
 
 # This will check if any are still in UTF8 with accents instead of ascii
 asciitest<-stri_enc_mark(ALLDATA$INST)
@@ -745,15 +723,13 @@ summary(asciitest)
 #   '"University of Tromsø"',
 #   '"Universit\xfc\xbe\x8c\xa3\xa0\xbc Montpellier II"',
 #   '"Universit\xfc\xbe\x8d\x83\xa0\xbct Z\xfc\xbe\x8c\x93\xa0\xbcrich Irchel"')
-# # 
-# 
+#  
 # corrections$name<-c('Ecole Normale Superieure', 
 # 'Pontificia Universidad Catolica de Chile', 
 # 'Universite de Sherbrooke', 
 # 'University of Tromso',
 # 'Universite Montpellier II',  
 # 'University of Zurich Irchel')
-
 # 
 # asciitest<-as.data.frame(asciitest)
 # asciitest<-asciitest %>% rename("name"="asciitest")
@@ -761,20 +737,11 @@ summary(asciitest)
 # 
 # ALLDATA_native
 # ALLDATA$INST[corrections2$name] <- corrections2$name1
-# 
-# 
-
-
-
 # ALLDATA$INST<-as.character(ALLDATA$INST)
 # ALLDATA$INST<-str_replace_all(ALLDATA$INST,"\\xa","")
-# 
 # head(ALLDATA$INST,10)
-ALLDATA$INST
+
 ALLDATA$INST<-as_factor(ALLDATA$INST)
-str(ALLDATA$INST)
-# foo<-tbl_df(foo)
-# summary(foo)
 ALLDATA$INST<-na.omit(ALLDATA$INST)
 ALLDATA$INST[] <- lapply(ALLDATA$INST, as.character)
 names(ALLDATA)
@@ -783,39 +750,17 @@ ALLDATA$INST<-trim.trailing(ALLDATA$INST)
 trim.leading <- function (x) sub("^\\s+", "", x)
 ALLDATA$INST<-trim.leading(ALLDATA$INST)
 head(ALLDATA$INST)
-
 ALLDATA<-ALLDATA %>% arrange(INST)
 nchar(ALLDATA$INST[1])
 ALLDATA$INST<-gsub("[.]","",ALLDATA$INST)
-# foo$value<-gsub("[\\]","",foo$value)
 stri_unescape_unicode(ALLDATA$INST)
 iconv(ALLDATA$INST, to = "ASCII//TRANSLIT")
-
-# foo$value<-gsub("[']","",foo$value)
-
-# ALLDATA$INST[ALLDATA$INST==""]<-NA
-summary(ALLDATA$INST)
+# summary(ALLDATA$INST)
 ALLDATA<-ALLDATA %>% filter(ALLDATA$INST!="")
 
-# corrections2$name
-# x <- rbind(foo[1680,],foo[1679,])
-# x <- rbind(foo[4,],foo[3,])
-# <a0>Forestry and Forest Products Research Institute
-# <a0>Universit<e9> Claude Bernard Lyon
-# Encoding(x) <- "UTF-8"
-# iconv(x$value, "UTF-8", "ASCII",sub='') ## replace any non UTF-8 by ''
-# "faile"
 # 
-# foo$value<-iconv(foo$value, "ASCII", "UTF-8")
+# THIS WILL ALLOW YOU DO TO COMPARE ALL NAMES TO ALL NAMES TO SEE IF THERE ARE ANY THAT ARE SIMILAR AND SHOULD BE POOLED
 # 
-# x_2_rep <- stri_replace_all_regex(x_2, parse(text = '\U00000420'), "P")
-# 
-# which(foo$value==".")
- 
-# foo$value<-gsub("[\xa0]","",foo$value)
-
-# foo$value<-gsub("\\\\", "", foo$value, fixed=TRUE)
-
 UNI_LIST<-ALLDATA$INST
 summary(UNI_LIST)
 levels(UNI_LIST)
@@ -825,74 +770,27 @@ str(UNI_LIST)
 UNI_LIST<-distinct(UNI_LIST)
 head(UNI_LIST)
 
-# foo<-slice(foo,3:n())
-# foo2<-foo
-str(UNI_LIST)
-# 
-# foo2col<-NULL
-# foo2col$one<-foo[1:(nrow(foo)/2),]
-# foo2col$two<-foo[(nrow(foo)/2+1):nrow(foo),]
-write.csv(UNI_LIST, file="uniNameList.csv", row.names = T) #export it as a csv file
-# UNI_LIST<-unlist(UNI_LIST)
+# ONE LAST CHECK OF THE NAMES
+write.csv(UNI_LIST, file="uniNameList_post_review.csv", row.names = T) #export it as a csv file
+
 UNI_LIST<-as.factor(UNI_LIST)
 UNI_LIST[] <- lapply(UNI_LIST, as.character)
 str(UNI_LIST)
 NamesList<-sapply(UNI_LIST$UNI_LIST,agrep,UNI_LIST$UNI_LIST, value=TRUE)
-# foo[1343,]
-
-
-
-
-
-
-
-
-
-# 
-# 
-# 
-# jarowinkler(foo,foo)
-# # ALLDATA$INST<-as.factor(ALLDATA$INST)
-# # levels(ALLDATA$INST)
-# foo<-as.data.frame(levels(as.factor(foo)))
-# str(foo)
-# 
-# foo<-na.omit(foo)
-# foo<-droplevels(foo)
-# foo[] <- lapply(foo, as.character)
-# 
-# head(foo)# foo$V1<-as.character(foo$V1)
-# # foo$V2<-as.character(foo$V2)
-
-# foo2<-agrep(foo$V1,foo$V2,value=T)
-library(stringdist)
-# # foo3<-as.data.frame(stringsim(foo$V1, foo$V2, method = "jaccard"))
-# foo<-foo %>% slice(-1)
-# head(foo)
-# str(foo)
-# foo[] <- lapply(foo, as.character)
-# foo  <-tbl_df(foo)
-# # str_replace_all(foo, "[^[:alnum:]]", "")
-# str_replace_all(FIXINST, "[[:punct:]]", "")
-# head(FIXINST)
-# FIXINST  <- gsub("[^0-9A-Za-z///' ]","" , FIXINST ,ignore.case = TRUE)
-# str_replace_all(foo, "[[:punct:]]", " ")
-# head(foo2)
-# NamesList<-sapply(FIXINST,agrep,FIXINST, value=TRUE)
 
  NamesDF<-data.frame(
    Name1 = rep(names(NamesList), lapply(NamesList, length)),
    Name2 = unlist(NamesList))
-#
- summary(NamesDF)
- str(NamesDF)
-#
+
+summary(NamesDF)
+str(NamesDF)
+
 # Create a column to which you will add a logical condition telling you if the names are an EXACT match
- NamesDF$match<-NA
- NamesDF$match<-NamesDF$Name1==NamesDF$Name2
- match2<-ifelse(NamesDF$match=="TRUE",1,0) #convert TRUE/FALSEto 0/1
- NamesDF<-cbind(NamesDF,match2)
- head(NamesDF,40)
+NamesDF$match<-NA
+NamesDF$match<-NamesDF$Name1==NamesDF$Name2
+match2<-ifelse(NamesDF$match=="TRUE",1,0) #convert TRUE/FALSEto 0/1
+NamesDF<-cbind(NamesDF,match2)
+head(NamesDF,40)
 str(NamesDF)
 NamesDF<-arrange(NamesDF,Name1,Name2) #organize in alphabetica order
 NamesDF<-filter(NamesDF, match==FALSE)  # THIS DELETES ALL NAMES THAT ARE 100% MATCH
@@ -901,7 +799,6 @@ head(NamesDF)
 NamesDF$Name1<-as.character(NamesDF$Name1)
 NamesDF$Name2<-as.character(NamesDF$Name2)
 str(NamesDF)
-library(RecordLinkage)
 # # Calculate the proportional similarity and # changes required to go from one name to another. Package RecordLinkage
 NamesDF$Name_sim<-levenshteinSim(NamesDF$Name1, NamesDF$Name2)
 NamesDF$Name_dist<-levenshteinDist(NamesDF$Name1, NamesDF$Name2)
@@ -911,133 +808,24 @@ NamesDF$Name_dist<-levenshteinDist(NamesDF$Name1, NamesDF$Name2)
 NamesDF<-NamesDF[!duplicated(t(apply(NamesDF, 1, sort))),]
 # # this arranges them in order from most similar (1 change required) to least similar.
 # # look carefully at those with a few changes, as they are likely to be a tiny spelling mistake or difference in intials
-
-#
 NamesDF$index<-seq.int(nrow(NamesDF)) #adds a column with an index to make it easier to id which row you need'
 NamesDF <- NamesDF %>% select(index, Name1, Name2, Name_sim,Name_dist) #It's kinda ugly, but this rearranges columns (and dumps the "FALSE")
 NamesDF <- arrange(NamesDF, desc(Name_sim))
 head(NamesDF)
-write.csv(NamesDF, file="uniNameCheck.csv", row.names = T) #export it as a csv file
+write.csv(NamesDF, file="uniNameCheck_each_vs_each.csv", row.names = T) #export it as a csv file
 #
 #
-library(fuzzyjoin)
-library<-c("acuminata", "cetosa","vidris","psittacorum","guianensis")
-data<-c("acuminate","cetosa","acumminata","acuminatadu","tomentosa")
-
-words <- tbl_df(library)
-data <- tbl_df(data)
-str(data)
-str(words)
-str(library)
-joined <- data %>%
-  stringdist_left_join(words, max_dist = 3)
-joined
-
-load("./Data/Consolidated_uni_df.RData")
-str(Consolidated.uni.df)
-words<-Consolidated.uni.df$uni.name
-words<-as.factor(words)
-words<-na.omit(words)
-words<-droplevels(words)
-words[] <- lapply(words, as.character)
-words<-tbl_df(words)
-
-FIXINST<-ALLDATA$INST
-FIXINST<-na.omit(FIXINST)
-head(FIXINST)
-# str_replace_all(FIXINST, "[^[:alnum:]]", " ")
-# str_replace_all(FIXINST, "[[:punct:]]", " ")
-# 
-FIXINST  <- gsub("[^0-9A-Za-z///' ]","" , FIXINST ,ignore.case = TRUE)
-
-# gsub("9", "", FIXINST, fixed = TRUE)
-# FIXINST[56]
-str(FIXINST)
-INST<-as.factor(FIXINST)
-INST<-as.dataframe(levels(INST))
-head(INST)
-summary(INST)
-INST.na=is.na(INST)
-summary(INST.na)
-str(INST)
-# INST<-as.factor(INST)
-INST<-INST %>% slice(-1)
-
-INST<-na.omit(INST)
-INST<-droplevels(INST)
-str(INST)
-summary(INST)
-INST[] <- lapply(INST, as.character)
-data <- tbl_df(INST)
-
-data<-data %>% arrange (value)
-data<-data %>% slice(-1)
-
-words<-words %>% arrange (value)
-words<-words %>% slice(-1)
-
-names(data)
-names(words)
-data<-rename(data,"value"="levels(INST)")
-str(words)
-str(data)
-# 
-
-words[] <- lapply(words, as.character)
-
-data[] <- lapply(data, as.character)
-# https://cran.r-project.org/web/packages/fuzzyjoin/vignettes/stringdist_join.html
-joined <- data %>%
-  stringdist_left_join(words, max_dist = 5)
-joined
-
-# data<-as.vector(data)
-# words<-as.vector(words)
-words2 <- words %>%
-  sample_n(10000)
-
-data2 <- data %>%
-  sample_n(800)
 
 
 
-joined <- data2 %>%
-  stringdist_left_join(words2, max_dist = 2)
-joined
+##############################################################
+##############################################################
+#
+# ANALYSIS - US INST ONLY
+#
+##############################################################
+##############################################################
 
-
-
-
-NameSimilarityDF<-Name.check(foo$V1,foo$V2)
-# WHICH ROWS ARE MISSING INST?
-MISSING_INST<-ALLDATA %>% select(JOURNAL,YEAR,FIRST_NAME,MIDDLE_NAME, LAST_NAME,INST,COUNTRY) %>% filter(is.na(INST)|INST=="")
-MISSING_INST_tbl<-table(MISSING_INST$JOURNAL,MISSING_INST$YEAR)
-
-write.csv(MISSING_INST_tbl,"MISSING_INST_tbl.csv")
-
-write.csv(MISSING_INST,"MISSING_INST.csv")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-# ALLDATA$INST<-gsub("Univ.", "University", ALLDATA$INST)
-
-# US INSTITUTIONS ONLY
 
 USA_INST<-ALLDATA %>% filter(COUNTRY=="USA")
 USA_INST$INST<-as.factor(USA_INST$INST)
@@ -1053,7 +841,7 @@ USA_INST$STATE[USA_INST$STATE=="Arizona"]<-"AZ"
 USA_INST$STATE[USA_INST$STATE=="California"]<-"CA"
 USA_INST$STATE[USA_INST$STATE=="Colorado"]<-"CO"
 USA_INST$STATE[USA_INST$STATE=="Connecticut"]<-"CT"
-USA_INST$STATE[USA_INST$STATE=="DC"]<-"Washington DC"
+USA_INST$STATE[USA_INST$STATE=="Washington DC"]<-"DC"
 USA_INST$STATE[USA_INST$STATE=="Florida"]<-"FL"
 USA_INST$STATE[USA_INST$STATE=="Idaho"]<-"ID"
 USA_INST$STATE[USA_INST$STATE=="Illinois"]<-"IL"
@@ -1062,7 +850,11 @@ USA_INST$STATE[USA_INST$STATE=="Louisiana"]<-"LA"
 USA_INST$STATE[USA_INST$STATE=="Lousiana"]<-"LA"
 USA_INST$STATE[USA_INST$STATE=="South Dakota"]<-"SD"
 USA_INST$STATE[USA_INST$STATE=="Michigan"]<-"MI"
+USA_INST$STATE[USA_INST$STATE=="Maine"]<-"ME"
 USA_INST$STATE[USA_INST$STATE=="Virginia"]<-"VA"
+USA_INST$STATE[USA_INST$STATE=="New Jersey"]<-"NJ"
+USA_INST$STATE[USA_INST$STATE=="Rhode Island"]<-"RI"
+
 USA_INST$STATE[USA_INST$STATE=="Utah"]<-"UT"
 USA_INST$STATE[USA_INST$STATE=="Texas"]<-"TX"
 USA_INST$STATE[USA_INST$STATE=="Tennessee"]<-"TN"
@@ -1092,7 +884,9 @@ USA_INST$STATE[USA_INST$STATE=="Oregon"]<-"AL"
 USA_INST$STATE[USA_INST$STATE=="NoState"]<-NA
 USA_INST$STATE[USA_INST$STATE=="Pennsylvania"]<-"PA"
 USA_INST$STATE[USA_INST$STATE=="Puerto Rico"]<-"PR"
-
+USA_INST$STATE[USA_INST$STATE=="Alaksa"]<-"AK"
+USA_INST$STATE[USA_INST$STATE=="Alaska"]<-"AK"
+USA_INST$STATE[USA_INST$STATE=="District of Columbia"]<-"DC"
 USA_INST$STATE[USA_INST$STATE=="Iowa"]<-"IA"
 USA_INST$STATE[USA_INST$STATE=="Vermont"]<-"VT"
 USA_INST$STATE[USA_INST$STATE=="Arkansa"]<-"AR"
@@ -1118,9 +912,8 @@ CarnData_names$Category<-droplevels(CarnData_names$Category)
 summary(CarnData_names)
 
 str(USA_INST)
-USA_INST_names<-USA_INST %>% select(INST,CITY,STATE, Inst_Prior_Class)  
+USA_INST_names<-USA_INST %>% select(INST,CITY,STATE)  
 USA_INST_names$STATE<-as.character(USA_INST_names$STATE)
-USA_INST_names$Inst_Prior_Class<-as.character(USA_INST_names$Inst_Prior_Class)
 str(USA_INST_names)
 USA_INST_names<-distinct(USA_INST_names)
 foo<-USA_INST_names$INST
@@ -1170,92 +963,6 @@ NamesDF <- arrange(NamesDF, desc(Name_sim))
 head(NamesDF)
 #return(NamesDF)
 write.csv(NamesDF, file="./Data/InstNameCheck_USA.csv", row.names = T) #export it as a csv file
-
-
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# # How similar are things in one and the other 
-# # https://www.r-bloggers.com/fuzzy-string-matching-a-survival-skill-to-tackle-unstructured-information/
-# # Method 1: using the native R adist
-# # It creates a matrix with the Standard Levenshtein distance between the name fields of both sources
-# dist.name<-adist(USA_INST_names$INST,CarnData_names$NAME, partial = TRUE, ignore.case = TRUE)
-# # We now take the pairs with the minimum distance
-# min.name<-apply(dist.name, 1, min)
-# match.s1.s2<-NULL  
-# for(i in 1:nrow(dist.name))
-# {
-#   s2.i<-match(min.name[i],dist.name[i,])
-#   s1.i<-i
-#   match.s1.s2<-rbind(data.frame(s2.i=s2.i,s1.i=s1.i,s2name=CarnData_names[s2.i,]$NAME, s1name=USA_INST_names[s1.i,]$INST, adist=min.name[i]),match.s1.s2)
-# }
-# # and we then can have a look at the results
-# View(match.s1.s2)
-# 
-# 
-# # Now let’s make use of all meaningful implementations of string distance metrics in the stringdist package:
-# # Method 2: applying different string matching methods
-# #osa Optimal string aligment, (restricted Damerau-Levenshtein distance).
-# #lv Levenshtein distance (as in R’s native adist).
-# #dl Full Damerau-Levenshtein distance.
-# #hamming Hamming distance (a and b must have same nr of characters).
-# #lcs Longest common substring distance.
-# #qgram q-gram distance.
-# #cosine cosine distance between q-gram profiles
-# #jaccard Jaccard distance between q-gram profiles
-# #jw Jaro, or Jaro-Winker distance.
-# 
-# #install.packages('stringdist')
-# distance.methods<-c('osa','lv','dl','hamming','lcs','qgram','cosine','jaccard','jw')
-# dist.methods<-list()
-# for(m in 1:length(distance.methods))
-# {
-#   dist.name.enh<-matrix(NA, ncol = length(CarnData_names$NAME),nrow = length(USA_INST_names$INST))
-#   for(i in 1:length(CarnData_names$NAME)) {
-#     for(j in 1:length(USA_INST_names$INST)) { 
-#       dist.name.enh[j,i]<-stringdist(tolower(CarnData_names[i,]$NAME),tolower(USA_INST_names[j,]$INST),method = distance.methods[m])      
-#       #adist.enhance(source2.devices[i,]$name,source1.devices[j,]$name)
-#     }  
-#   }
-#   dist.methods[[distance.methods[m]]]<-dist.name.enh
-# }
-# 
-# match.s1.s2.enh<-NULL
-# for(m in 1:length(dist.methods))
-# {
-#   
-#   dist.matrix<-as.matrix(dist.methods[[distance.methods[m]]])
-#   min.name.enh<-apply(dist.matrix, 1, base::min)
-#   for(i in 1:nrow(dist.matrix))
-#   {
-#     s2.i<-match(min.name.enh[i],dist.matrix[i,])
-#     s1.i<-i
-#     match.s1.s2.enh<-rbind(data.frame(s2.i=s2.i,s1.i=s1.i,s2name=CarnData_names[s2.i,]$NAME, s1name=USA_INST_names[s1.i,]$INST, adist=min.name.enh[i],method=distance.methods[m]),match.s1.s2.enh)
-#   }
-# }
-# # Let's have a look at the results
-# library(reshape2)
-# matched.names.matrix<-dcast(match.s1.s2.enh,s2.i+s1.i+s2name+s1name~method, value.var = "adist")
-# View(matched.names.matrix)
-# 
 
 
 
