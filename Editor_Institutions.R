@@ -33,7 +33,7 @@ library(RecordLinkage)
 
 
 # Clear the environment 
-rm(list=ls())
+# rm(list=ls())
 
 
 ##############################################################
@@ -44,12 +44,12 @@ rm(list=ls())
 ##############################################################
 ##############################################################
 
-CarnCats<-read_csv("./Data/CarnegCategories_2015.csv", col_names = TRUE)
+CarnCats<-read_csv("./Data/carnegie/CarnegCategories_2015.csv", col_names = TRUE)
 CarnCats<-CarnCats %>% select(Value,Label_1) %>% rename(BASIC2015=Value, Classification=Label_1)
 str(CarnCats)
 CarnCats<-as.data.frame(CarnCats)
 
-CarnRanks<-read_csv("./Data/CarnegRankings_2015_Reduced.csv", col_names = TRUE)
+CarnRanks<-read_csv("./Data/carnegie/CarnegRankings_2015_Reduced.csv", col_names = TRUE)
 # CarnRanks<-CarnRanks %>% select(UNITID, NAME, CITY, STABBR,BASIC2015)
 str(CarnRanks)
 CarnRanks<-as.data.frame(CarnRanks)
@@ -72,20 +72,62 @@ CarnData$Category[CarnData$BASIC2015==32]<-"Other"
 CarnData$Category[CarnData$BASIC2015==33]<-"Tribal"
 CarnData$Category<-as.factor(CarnData$Category)
 levels(CarnData$Category)
+summary(CarnData)
+
+rm(CarnCats,CarnRanks)
+
+##############################################################
+##############################################################
+#
+# UPLOAD AND CLEAN DATA FROM DRYAD
+#
+##############################################################
+##############################################################
+
+Cho<-read.csv("./Data/dryad/Dryad_Cho_V2.csv", dec=".", header = TRUE, sep = ",", check.names=FALSE )
+# minor corrections to Cho_V2 Caught by Bruna's 2017 SciWri Class
+Cho$COUNTRY[Cho$LAST_NAME=="Pedreira" & Cho$FIRST_NAME=="Carlos"] <- "Brazil"
+Cho$COUNTRY[Cho$LAST_NAME=="Benbi" & Cho$FIRST_NAME=="Dinesh"] <- "India"
+Cho$COUNTRY[Cho$LAST_NAME=="Borras" & Cho$FIRST_NAME=="Lucas"] <- "Argentina"
+Cho$COUNTRY[Cho$LAST_NAME=="Esker" & Cho$FIRST_NAME=="Paul"] <- "Costa Rica"
+Cho$COUNTRY[Cho$LAST_NAME=="Buresh" & Cho$FIRST_NAME=="Roland"] <- "USA"
+
+Cho$COUNTRY<-as.character(Cho$COUNTRY)
+Cho$COUNTRY[Cho$COUNTRY=="UK"] <- "United Kingdom"
+Cho$COUNTRY[Cho$COUNTRY=="USSR"] <- "Russia"
+Cho$COUNTRY[Cho$COUNTRY=="ITALY"] <- "Italy"
+Cho$COUNTRY[Cho$COUNTRY=="United States"] <- "USA"
+Cho$COUNTRY[Cho$COUNTRY=="Usa"] <- "USA"
+Cho$COUNTRY[Cho$COUNTRY=="UsA"] <- "USA"
+# Convert Country back to factor
+Cho$COUNTRY<-as.factor(Cho$COUNTRY)
+droplevels(Cho$COUNTRY)
+
+# Data on Editors from Espin et al. 2017 
+Espin<-read.csv("./Data/dryad/Dryad.Espin.v1.csv", dec=".", header = TRUE, sep = ",", check.names=FALSE )
 
 
+#Add a tag
+Espin$source<-"EspinDryad"
+Cho$source<-"ChoDryad"
+#Bind the datasets together
+DRYADDATA<-bind_rows(Cho,Espin, id=NULL)
+#Delete these columns
+DRYADDATA<-DRYADDATA %>% select(-geo.code,-INCOME_LEVEL,-REGION)
+str(DRYADDATA)
+rm(Cho,Espin)
 
 
 
 ##############################################################
 ##############################################################
 #
-# UPLOAD EDITOR DATA FROM INDIVIDUAL JOURNALS
+# UPLOAD RAW EDITOR DATA FROM INDIVIDUAL JOURNALS
 #
 ##############################################################
 ##############################################################
 
-folder <- "./Data/"      # path to folder that holds multiple .csv files
+folder <- "./Data/sciwri17_raw_data/"      # path to folder that holds multiple .csv files
 file_list <- list.files(path=folder, pattern="*.csv") # create list of all .csv files in folder
 
 # read in each .csv file in file_list and create a data frame with the same name as the .csv file
@@ -103,7 +145,9 @@ for (i in 1:length(file_list)){
 #                    read.csv(paste(folder, x, sep=''), 
 #                             stringsAsFactors = FALSE)))
 
-
+##################################
+# PRETTY CLOSE
+##################################
 AG<-AGRONOMY_data_11.02.2017.csv %>% select(JOURNAL,YEAR, editor_id,FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,UNIT,CITY,STATE,COUNTRY)
 AJB<-AJB.csv %>% select(JOURNAL,YEAR, editor_id,FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,UNIT,CITY,STATE,COUNTRY)                      
 AMNAT<-AMNAT.csv%>% select(JOURNAL,YEAR, editor_id,FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,UNIT,CITY,STATE,COUNTRY)
@@ -114,7 +158,6 @@ ECOG<-ECOGRAPHY_5112017.csv%>% select(JOURNAL,YEAR, editor_id,FIRST_NAME,MIDDLE_
 ECOL<-ECOLOGY.csv%>% select(JOURNAL,YEAR, editor_id,FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,UNIT,CITY,STATE,COUNTRY)
 EVOL<-EVOL.csv%>% select(JOURNAL,YEAR, editor_id,FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,UNIT,CITY,STATE,COUNTRY)
 FEM<-FEM_7112017.csv%>% select(JOURNAL,YEAR, editor_id,FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,UNIT,CITY,STATE,COUNTRY)
-FUNECOL<-FUNECOLdata_Allen_EB_1dec.csv%>% select(JOURNAL,YEAR, FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,COUNTRY) #NO UNIT, CITY, STATE
 JANE<-JANE.csv  %>% select(JOURNAL,YEAR, editor_id,FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,UNIT,CITY,STATE,COUNTRY)
 JAPE<-JAPE_new.csv%>% select(JOURNAL,YEAR, editor_id,FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,UNIT,CITY,STATE,COUNTRY)
 JBIOG<-JBIOG.csv%>% select(JOURNAL,YEAR, editor_id,FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,UNIT,CITY,STATE,COUNTRY)
@@ -122,29 +165,187 @@ JECOL<-JECOL_new.csv%>% select(JOURNAL,YEAR, editor_id,FIRST_NAME,MIDDLE_NAME,LA
 JTE<-JTE_2015.csv%>% select(JOURNAL,YEAR, editor_id,FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,UNIT,CITY,STATE,COUNTRY)
 OECOL<-OECOL.csv%>% select(JOURNAL,YEAR, editor_id,FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,UNIT,CITY,STATE,COUNTRY)                   
 PLANTECOL<-PLANTECOL_new.csv %>% select(JOURNAL,YEAR, editor_id,FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,UNIT,CITY,STATE,COUNTRY)
+BITR<-BITR.csv %>% select(JOURNAL,YEAR, editor_id,FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,UNIT,CITY,STATE,COUNTRY)
+OIKOS<-OIKOS_21july2018.csv %>% select(JOURNAL,YEAR, editor_id,FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,UNIT,CITY,STATE,COUNTRY)
+
+##################################
+# IN PROGRESS
+##################################
+# FUNECOL NEED TO BE REVIEWWED AND COLS DELETED
+FUNECOL1<-FUNECOLdata_Allen_EB_1dec.csv%>% select(JOURNAL,YEAR, FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,COUNTRY) #NO UNIT, CITY, STATE
+FUNECOL2<-FUNECOL_data_11.03.2017.csv%>% select(JOURNAL,YEAR, FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,UNIT,CITY,STATE,COUNTRY,editor_id) #NO UNIT, CITY, STATE
+
+# REVIEWING AND CORRECTING
+FUNECOL<-full_join(FUNECOL1,FUNECOL2,by=c("YEAR","FIRST_NAME","LAST_NAME"))
+FUNECOL$COUNTRY.x<-gsub("New Zeland","New Zealand", FUNECOL$COUNTRY.x)
+
+rm(FUNECOL1,FUNECOL2)
+colnames(FUNECOL)
+summary(FUNECOL$JOURNAL.x==FUNECOL$JOURNAL.y)
+summary(FUNECOL$MIDDLE_NAME.x==FUNECOL$MIDDLE_NAME.y)
+FUNECOL$COUNTRY.x<-as.character(FUNECOL$COUNTRY.x)
+FUNECOL$COUNTRY.y<-as.character(FUNECOL$COUNTRY.y)
+summary(FUNECOL$COUNTRY.x==FUNECOL$COUNTRY.y)
+country_fix<-which((FUNECOL$COUNTRY.x==FUNECOL$COUNTRY.y)=="FALSE")
+country_fix.df<-FUNECOL[country_fix,]  #KEEP COUNTRIES IN UK AS ORIGINAL NAMES< CONVERT TO UK LATER
+summary(FUNECOL$JOURNAL.x==FUNECOL$JOURNAL.y)
+FUNECOL$INST.x<-as.character(FUNECOL$INST.x)
+FUNECOL$INST.y<-as.character(FUNECOL$INST.y)
+INST_fix<-which((FUNECOL$INST.x==FUNECOL$INST.y)=="FALSE")
+INST_fix.df<-FUNECOL[INST_fix,]  
+INST_fix.df<-filter(INST_fix.df,INST.y!="Noinst")
+INST_fix.df<-filter(INST_fix.df,INST.y!="NoInst")
+FUNECOL$INST.x<-gsub("Colorado State","Colorado State University", FUNECOL$INST.x)
+FUNECOL$INST.x<-gsub("Kentucky","University of Kentucky", FUNECOL$INST.x)
+FUNECOL$INST.x<-gsub("Aberdeen","University of Aberdeen", FUNECOL$INST.x)
+FUNECOL$INST.x<-gsub("Massachusetts","University of Massachusetts at Amherst", FUNECOL$INST.x)
+FUNECOL$INST.x<-gsub("Utah State","Utah State University", FUNECOL$INST.x)
+FUNECOL$INST.x<-gsub("Exeter","University of Exeter", FUNECOL$INST.x)
+FUNECOL$INST.x<-gsub("Edinburgh","University of Edinburgh", FUNECOL$INST.x)
+FUNECOL$INST.x<-gsub("Sheffield","University of Sheffield", FUNECOL$INST.x)
+FUNECOL$INST.x<-gsub("Stellenbosch","University of Stellenbosch", FUNECOL$INST.x)
+summary(FUNECOL$INST.x==FUNECOL$INST.y)
+INST_fix<-which((FUNECOL$INST.x==FUNECOL$INST.y)=="FALSE")
+INST_fix.df<-FUNECOL[INST_fix,]  
+FUNECOL<-FUNECOL %>% select(-JOURNAL.y,-INST.y,-MIDDLE_NAME.y,-COUNTRY.y) %>% rename("JOURNAL"="JOURNAL.x","INST"="INST.x","MIDDLE_NAME"="MIDDLE_NAME.x","COUNTRY"="COUNTRY.x")
+rm(INST_fix.df,INST_fix,country_fix,country_fix.df)
+
+# FUNECOL_NAMES<-FUNECOL %>% group_by(FIRST_NAME,MIDDLE_NAME,LAST_NAME) %>% summarize(n())
+#rm(FUNECOL_NAMES)
+
+
 
 # Need to be completed
 LECO<-LECO_2017.csv %>% select(JOURNAL,YEAR, editor_id,FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,UNIT,CITY,STATE,COUNTRY)
-# JZOOL NEEDS TO HAVE THE EDITOR IDS ADDED IN
-JZOOL<-JZOOL17nov.csv %>% select(JOURNAL,YEAR, INST,COUNTRY)
-GCB<-GCBdata.csv%>% select(JOURNAL,YEAR,INST,COUNTRY)
-BITR<-BITR.csv %>% select(JOURNAL,YEAR, editor_id,FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,UNIT,CITY,STATE,COUNTRY)
-# OIKOS (JOAN)
-OIKOS<-OIKOS_21july2018.csv %>% select(JOURNAL,YEAR, INST,COUNTRY)
-# NEWPHYT (MAIRA)
-NEWPHYT<-NEWPHYT_21july2018.csv %>% select(JOURNAL,YEAR, INST,COUNTRY)
-# NAJFM (MAIRA)
-NAJFM<-NAJFM_21july2018.csv %>% select(JOURNAL,YEAR, INST,COUNTRY)
-# MARECOL
-MARECOL<-MARECOL_21July2018.csv %>% select(JOURNAL,YEAR, INST,COUNTRY)
-# MEPS: NOT EVEN AN EXCEL SHEET
-# NEED TO SEE WHICH ONES ARE MISSING INSTITUTIONS
 
+# JZOOL 
+# 1) NEED to split names
+# 2) disambiguate and ADD EDITOR IDS ADDED IN
+# 3) add unit, City, state?
+# 4) JZOOL FILE IS A PARTIAL!!! NEED TO FILL IN TO OTHER ONE!!!
+
+# JZOOL NEED TO BE REVIEWWED AND COLS DELETED
+JZOOL1<-JZOOL17nov.csv
+JZOOL1$JOURNAL<-as.factor("JZOOL")
+summary(JZOOL1$JOURNAL)
+JZOOL2<-JZOOL.csv
+summary(JZOOL2$JOURNAL)
+JZOOL<-full_join(JZOOL1,JZOOL2,by=c("YEAR","LAST_NAME","FIRST_NAME","MIDDLE_NAME"))
+rm(JZOOL1,JZOOL2)
+str(JZOOL)
+colnames(JZOOL)
+JZOOL$JOURNAL.x<-as.character(JZOOL$JOURNAL.x)
+JZOOL$JOURNAL.y<-as.character(JZOOL$JOURNAL.y)
+summary(JZOOL$JOURNAL.x==JZOOL$JOURNAL.y)
+JZOOL$JOURNAL<-"JZOOL" 
+
+JZOOL$COUNTRY.x<-as.character(JZOOL$COUNTRY.x)
+JZOOL$COUNTRY.y<-as.character(JZOOL$COUNTRY.y)
+summary(JZOOL$COUNTRY.x==JZOOL$COUNTRY.y)
+country_fix<-which((JZOOL$COUNTRY.x==JZOOL$COUNTRY.y)=="FALSE")
+country_fix.df<-JZOOL[country_fix,]  #KEEP COUNTRIES IN UK AS ORIGINAL NAMES< CONVERT TO UK LATER
+
+JZOOL$NAME.x<-as.character(JZOOL$NAME.x)
+JZOOL$NAME.y<-as.character(JZOOL$NAME.y)
+summary(JZOOL$NAME.x==JZOOL$NAME.y)
+NAME_fix<-which((JZOOL$NAME.x==JZOOL$NAME.y)=="FALSE")
+NAME_fix.df<-JZOOL[NAME_fix,]  
+# the different ones are due to periods after initials
+
+JZOOL$INST.x<-as.character(JZOOL$INST.x)
+JZOOL$INST.y<-as.character(JZOOL$INST.y)
+summary(JZOOL$INST.x==JZOOL$INST.y)
+INST_fix<-which((JZOOL$INST.x==JZOOL$INST.y)=="FALSE")
+INST_fix.df<-JZOOL[INST_fix,]  
+
+JZOOL$VOLUME.x<-as.character(JZOOL$VOLUME.x)
+JZOOL$VOLUME.y<-as.character(JZOOL$VOLUME.y)
+summary(JZOOL$VOLUME.x==JZOOL$VOLUME.y)
+vol_fix<-which((JZOOL$VOLUME.x==JZOOL$VOLUME.y)=="FALSE")
+
+
+JZOOL$TITLE.x<-as.character(JZOOL$TITLE.x)
+JZOOL$TITLE<-as.character(JZOOL$TITLE)
+summary(JZOOL$TITLE.x==JZOOL$TITLE)
+title_fix<-which((JZOOL$TITLE.x==JZOOL$TITLE)=="FALSE")
+title_fix.df<-JZOOL[title_fix,]  
+title_fix.df<-select(title_fix.df,TITLE,TITLE.x)
+
+
+JZOOL$ISSUE.x<-as.character(JZOOL$ISSUE.x)
+JZOOL$ISSUE.y<-as.character(JZOOL$ISSUE.y)
+summary(JZOOL$ISSUE.x==JZOOL$ISSUE.y)
+issue_fix<-which((JZOOL$ISSUE.x==JZOOL$ISSUE.y)=="FALSE")
+issue_fix.df<-JZOOL[issue_fix,]
+
+JZOOL[55,]$ISSUE.x<-JZOOL[55,]$ISSUE.y
+JZOOL[56,]$ISSUE.x<-JZOOL[56,]$ISSUE.y
+JZOOL[57,]$ISSUE.x<-JZOOL[57,]$ISSUE.y
+
+JZOOL<-JZOOL %>% select(-JOURNAL.x,-VOLUME.y,-JOURNAL.y,-ISSUE.y,-NAME.x,-NAME.y,-INST.y,-COUNTRY.y,-CATEGORY.y,-TITLE.x) %>% 
+  rename("VOLUME"="VOLUME.x","ISSUE"="ISSUE.x","INST"="INST.x","CATEGORY"="CATEGORY.x","COUNTRY"="COUNTRY.x")
+rm(INST_fix.df,INST_fix,country_fix,country_fix.df,vol_fix,issue_fix,issue_fix.df,NAME_fix,NAME_fix.df,title_fix,title_fix.df)
+
+JZOOL<-JZOOL%>%select(JOURNAL,YEAR, NAME,FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,UNIT,CITY,STATE,COUNTRY)
+
+#TO FILL OUT MISSING INST 
+JZOOL_inst<-JZOOL %>% group_by(FIRST_NAME,MIDDLE_NAME,LAST_NAME,YEAR,INST) %>% summarise(n()) 
+write.csv(JZOOL_inst, file="JZOOL_missing_inst.csv", row.names = T) #export it as a csv file
+
+
+GCB<-GCBdata.csv
+#GCB<-GCBdata.csv%>% select(JOURNAL,YEAR,INST,COUNTRY)
+# GCB Need to 
+# 1) split name 
+# 2) get title abbreviations 
+# 3) Make consistent 
+# 4) only have data 1995-2007, need 2008-2015 
+# 5) disambiguate editors and add editor id numbers
+
+#TO FILL OUT MISSING INST 
+GCB$INST<-as.factor(GCB$INST)
+GCB_inst<-GCB %>% group_by(NAME,YEAR,INST) %>% summarise(n()) 
+write.csv(GCB_inst, file="GCB_missing_inst.csv", row.names = T) #export it as a csv file
+
+
+NEWPHYT<-NEWPHYT_21july2018.csv %>% select(JOURNAL,YEAR, editor_id,FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,UNIT,CITY,STATE,COUNTRY)
+# NEWPHYT (MAIRA): 
+# 1) NEEDS INST
+NEWPHYT$INST<-as.factor(NEWPHYT$INST)
+NEWPHYT_inst<-NEWPHYT %>% group_by(LAST_NAME,FIRST_NAME,MIDDLE_NAME,YEAR,INST) %>% summarise(n()) 
+write.csv(NEWPHYT_inst, file="NEWPHYT_missing_inst.csv", row.names = T) #export it as a csv file
+
+
+
+NAJFM<-NAJFM_21july2018.csv %>% select(JOURNAL,YEAR, editor_id,FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,UNIT,CITY,STATE,COUNTRY)
+# NAJFM (MAIRA): 
+# 1) NEEDS INST
+NAJFM$INST<-as.factor(NAJFM$INST)
+NAJFM_inst<-NAJFM %>% group_by(LAST_NAME,FIRST_NAME,MIDDLE_NAME,YEAR,INST) %>% summarise(n()) 
+write.csv(NAJFM_inst, file="NAJFM_missing_inst.csv", row.names = T) #export it as a csv file
+
+
+
+MARECOL<-MARECOL_21July2018.csv %>% select(JOURNAL,YEAR, NAME,INST,UNIT,CITY,STATE,COUNTRY)
+# MARECOL
+# 1) SPLIT name
+# 2) Disambiguate and add editor ID
+# 3) NEEDS INSTITIONS
+
+MARECOL$INST<-as.factor(MARECOL$INST)
+MARECOL_inst<-MARECOL %>% group_by(NAME,YEAR,INST) %>% summarise(n()) 
+write.csv(MARECOL_inst, file="MARECOL_missing_inst.csv", row.names = T) #export it as a csv file
+
+
+# MEPS: NOT EVEN AN EXCEL SHEET,NEED TO SEE WHICH ONES ARE MISSING INSTITUTIONS
+
+rm(BITR.csv,LECO_2017.csv,PLANTECOL_new.csv,OECOL.csv,JTE_2015.csv,JECOL_new.csv,JBIOG.csv,JAPE_new.csv,JANE.csv,FUNECOLdata_Allen_EB_1dec.csv,FEM_7112017.csv,EVOL.csv, ECOLOGY.csv, ECOGRAPHY_5112017.csv, CONBIO_EKB.csv,BIOCON_TS.csv,AREES.csv,AMNAT.csv,AJB.csv,AGRONOMY_data_11.02.2017.csv)
+rm(JZOOL.csv,JZOOL17nov.csv,GCBdata.csv,OIKOS_21july2018.csv,NEWPHYT_21july2018.csv,NAJFM_21july2018.csv,MARECOL_21July2018.csv,FUNECOL_data_11.03.2017.csv)
 
 ##############################################################
 ##############################################################
 #
-# UPLOAD EDITOR DATA FROM INDIVIDUAL JOURNALS
+# CORRECT RAW EDITOR DATA FROM INDIVIDUAL JOURNALS
 #
 ##############################################################
 ##############################################################
@@ -152,7 +353,9 @@ MARECOL<-MARECOL_21July2018.csv %>% select(JOURNAL,YEAR, INST,COUNTRY)
 
 ## NOT CORRECT EITHER INST OR CITY STATE!!!
 # FEM 1994 Colorado State University     USA       775    Douglas           A   Maguire      Seattle Washington              <NA>   <NA>
-
+JZOOL$JOURNAL<-as.character(JZOOL$JOURNAL)
+JZOOL$JOURNAL[JZOOL$JOURNAL=="JZ"]<-"JZOOL"
+JZOOL$JOURNAL<-as.factor(JZOOL$JOURNAL)
 
 JANE$UNIT<-as.character(JANE$UNIT)
 JANE$INST<-as.character(JANE$INST)
@@ -160,7 +363,7 @@ JANE$UNIT[JANE$editor_id==1702]<-"Deptartment of Biology"
 JANE$INST[JANE$editor_id==1702]<-"University of York"
 JANE$COUNTRY[JANE$editor_id==1702]<-"UK"
 
-JBIOG<-JBIOG.csv%>% select(JOURNAL,YEAR, editor_id,FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,CITY,STATE,COUNTRY)
+# JBIOG<-JBIOG.csv%>% select(JOURNAL,YEAR, editor_id,FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,CITY,STATE,COUNTRY)
 JBIOG$INST<-as.character(JBIOG$INST)
 JBIOG<-JBIOG %>% separate(INST, c("UNIT", "INST"),",",extra="merge",fill="left",remove=TRUE)
 JBIOG$INST[JBIOG$UNIT=="Uc Merced"]<-"University of California-Merced"
@@ -206,6 +409,11 @@ AMNAT$STATE[AMNAT$INST=="University of Hawaii" & AMNAT$LAST_NAME=="Palumbi"]<-"H
 AMNAT$INST[AMNAT$INST=="University of Hawaii" & AMNAT$LAST_NAME=="Palumbi"]<-"University of Hawaii at Manoa"
 
 
+
+
+
+
+
 ##############################################################
 ##############################################################
 #
@@ -213,15 +421,26 @@ AMNAT$INST[AMNAT$INST=="University of Hawaii" & AMNAT$LAST_NAME=="Palumbi"]<-"Un
 #
 ##############################################################
 ##############################################################
+# with MAREcOL
+# ALLDATA<-bind_rows(MARECOL,NAJFM,NEWPHYT,OIKOS,JZOOL, GCB,BITR,LECO,PLANTECOL,OECOL,JTE,JECOL,JBIOG,JAPE,JANE,FUNECOL,FEM,EVOL,ECOL,ECOG,CONBIO,BIOCON,AREES,AMNAT,AJB,AG)
 
+# WITHOUT MARECOL AND OTHER INCOMPLETE JOURNALS
+ALLDATA<-bind_rows(OIKOS,BITR,LECO,PLANTECOL,OECOL,JTE,JECOL,JBIOG,JAPE,JANE,FUNECOL,FEM,EVOL,ECOL,ECOG,CONBIO,BIOCON,AREES,AMNAT,AJB,AG)
+# no marecol, GCB,NAJFM,JZOOL,
 
-ALLDATA<-bind_rows(FUNECOL,MARECOL,NAJFM,NEWPHYT,OIKOS,JZOOL, GCB,BITR,LECO,PLANTECOL,OECOL,JTE,JECOL,JBIOG,JAPE,JANE,FUNECOL,FEM,EVOL,ECOL,ECOG,CONBIO,BIOCON,AREES,AMNAT,AJB,AG)
+# no agronomy
+# ALLDATA<-bind_rows(NAJFM,NEWPHYT,OIKOS,JZOOL,BITR,LECO,PLANTECOL,OECOL,JTE,JECOL,JBIOG,JAPE,JANE,FUNECOL,FEM,EVOL,ECOL,ECOG,CONBIO,BIOCON,AREES,AMNAT,AJB)
+
 
 ALLDATA$JOURNAL<-as.factor(ALLDATA$JOURNAL)
 ALLDATA<-droplevels(ALLDATA)
 ALLDATA$Inst_Prior_Class
 ALLDATA$INST<-as.factor(ALLDATA$INST)
 levels(ALLDATA$INST)
+levels(ALLDATA$JOURNAL)
+ALLDATA$editor_id<-as.factor(ALLDATA$editor_id)
+levels(ALLDATA$editor_id)
+summary(ALLDATA)
 
 ##############################################################
 ##############################################################
@@ -635,6 +854,10 @@ ALLDATA$INST[ALLDATA$INST=="Wageiningen University Research Center Alterra"]<-"W
 ###############
 # SAVE THE FILE AS A CSV FOR MANUAL REVIEW
 ###############
+UNI_LIST<-ALLDATA %>% select(INST,COUNTRY) %>% arrange(COUNTRY,INST)
+UNI_LIST<-unique(UNI_LIST)
+
+head(UNI_LIST,100)
 write.csv(UNI_LIST, file="uniNameList.csv", row.names = T) #export it as a csv file
 
 
@@ -761,16 +984,54 @@ ALLDATA<-ALLDATA %>% filter(ALLDATA$INST!="")
 # 
 # THIS WILL ALLOW YOU DO TO COMPARE ALL NAMES TO ALL NAMES TO SEE IF THERE ARE ANY THAT ARE SIMILAR AND SHOULD BE POOLED
 # 
-UNI_LIST<-ALLDATA$INST
-summary(UNI_LIST)
-levels(UNI_LIST)
-UNI_LIST<-as.data.frame(UNI_LIST)
-summary(UNI_LIST)
-str(UNI_LIST)
-UNI_LIST<-distinct(UNI_LIST)
-head(UNI_LIST)
+# UNI_LIST<-ALLDATA$INST
+# summary(UNI_LIST)
+# levels(UNI_LIST)
+# UNI_LIST<-as.data.frame(UNI_LIST)
+# summary(UNI_LIST)
+# str(UNI_LIST)
+# UNI_LIST<-distinct(UNI_LIST)
+# head(UNI_LIST)
 
 # ONE LAST CHECK OF THE NAMES
+x <- ALLDATA$LAST_NAME
+y<-as.data.frame(x)
+# str(y)
+y<-distinct(y)
+# head(y)
+# 
+y[] <- lapply(y, as.character)
+NamesList<-sapply(y$x,agrep,y$x, value=TRUE)
+NamesDF<-data.frame(
+  Name1 = rep(names(NamesList), lapply(NamesList, length)),
+  Name2 = unlist(NamesList))
+# Create a column to which you will add a logical condition telling you if the names are an EXACT match
+NamesDF$match<-NA
+NamesDF$match<-NamesDF$Name1==NamesDF$Name2
+match2<-ifelse(NamesDF$match=="TRUE",1,0) #convert TRUE/FALSEto 0/1
+NamesDF<-cbind(NamesDF,match2)
+NamesDF<-arrange(NamesDF,Name1,Name2) #organize in alphabetica order
+NamesDF<-filter(NamesDF, match==FALSE)  # THIS DELETES ALL NAMES THAT ARE 100% MATCH
+# # Convert to chr
+NamesDF$Name1<-as.character(NamesDF$Name1)
+NamesDF$Name2<-as.character(NamesDF$Name2)
+# # Calculate the proportional similarity and # changes required to go from one name to another. Package RecordLinkage
+NamesDF$Name_sim<-levenshteinSim(NamesDF$Name1, NamesDF$Name2)
+NamesDF$Name_dist<-levenshteinDist(NamesDF$Name1, NamesDF$Name2)
+# # Because this does all pairwise comparisons, it results in redundancy: "e bruna vs emilio bruna" and "emilio bruna vs e bruna"
+# # are in different rows, even though they are the same "comparison". This deletes one of the two
+NamesDF<-NamesDF[!duplicated(t(apply(NamesDF, 1, sort))),]
+# # this arranges them in order from most similar (1 change required) to least similar.
+# # look carefully at those with a few changes, as they are likely to be a tiny spelling mistake or difference in intials
+NamesDF$index<-seq.int(nrow(NamesDF)) #adds a column with an index to make it easier to id which row you need'
+NamesDF <- NamesDF %>% select(index, Name1, Name2, Name_sim,Name_dist) #It's kinda ugly, but this rearranges columns (and dumps the "FALSE")
+NamesDF <- arrange(NamesDF, desc(Name_sim))
+head(NamesDF)
+# invoking the function
+source("./functions/namecompare.R")
+x <- ALLDATA$LAST_NAME
+y <- namecompare(x)
+
 write.csv(UNI_LIST, file="uniNameList_post_review.csv", row.names = T) #export it as a csv file
 
 UNI_LIST<-as.factor(UNI_LIST)
@@ -821,13 +1082,48 @@ write.csv(NamesDF, file="uniNameCheck_each_vs_each.csv", row.names = T) #export 
 ##############################################################
 ##############################################################
 #
+# ANALYSIS - GLOBAL
+#
+##############################################################
+##############################################################
+
+AnalysisData<-filter(ALLDATA,YEAR>"1984")
+
+eds<-AnalysisData %>% summarise(n_distinct(editor_id))
+eds
+
+
+No_Inst<-AnalysisData %>% summarise(n_distinct(INST))
+No_Inst
+
+# Total Number of Inst (all jrnls pooled)  vs. Year
+
+InstPerYr<-AnalysisData %>% group_by(YEAR) %>% summarize(InstPerYear = n_distinct(INST))
+InstPerYr
+
+EdsPerYr<-AnalysisData %>% group_by(YEAR) %>% summarize(EdsPerYear = n_distinct(editor_id))
+EdsPerYr
+
+
+# Total Editors from each Inst
+EdsByInst<-AnalysisData %>% select(INST,editor_id)
+EdsByInst<-EdsByInst %>% count(INST) 
+EdsByInst<-EdsByInst %>% arrange(desc(n))
+
+EdsByInst_20<-EdsByInst %>% slice(1:20)
+sum(EdsByInst_20$n)/sum(EdsByInst$n)
+
+##############################################################
+##############################################################
+#
 # ANALYSIS - US INST ONLY
 #
 ##############################################################
 ##############################################################
 
 
-USA_INST<-ALLDATA %>% filter(COUNTRY=="USA")
+
+USA_INST<-AnalysisData %>% filter(COUNTRY=="USA")
 USA_INST$INST<-as.factor(USA_INST$INST)
 USA_INST<-droplevels(USA_INST)
 levels(USA_INST$INST)
@@ -994,11 +1290,10 @@ str(foo2)
 foo3<-full_join(foo,foo2,by="NAME", "Source")
 foo3$editor_id<-as.numeric(foo3$editor_id)
 foo3<-filter(foo3,editor_id>0)
-write.csv(foo3,file="./Data/SciWri17_USA_Ed_Inst_Carneg.csv")
+write.csv(foo3,file="./Data/ESA2018_USA_Ed_Inst_Carneg.csv")
 
 
-
-USA_ED_clean<-read_csv("./Data/SciWri17_USA_Ed_Inst_Carneg.csv", col_names=TRUE)
+USA_ED_clean<-read_csv("./Data/ESA2018_USA_Ed_Inst_Carneg.csv", col_names=TRUE)
 
 USA_ED_clean<-USA_ED_clean %>% filter(Classification != "NA")
 USA_ED_clean<-USA_ED_clean %>% filter(Classification != "(Not classified)")
@@ -1024,7 +1319,7 @@ INST$INST<-as.factor(INST$INST)
 inst_names <- INST %>% group_by(INST) %>% filter(row_number(COUNTRY) == 1) %>% arrange(INST)
 write.csv(inst_names,file="INST_names_class.csv")
 
-
+summary(foo4)
 
 percents<-c(87.4,5.2,3.2,2.1,1.4,1.1,0.1)
 lbls <- c("1-Doctoral Univ", "2-Fed Agency", "3-Garden/Museums/NGO/Private Inst.", "4-Baccalaureate Colleges", "5-Smithsonian", "6-Master's Colleges", "7-Industry")
