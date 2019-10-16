@@ -1148,9 +1148,7 @@ distinct(eds_inst_NAs,editor_id,.keep_all= TRUE) %>% group_by(JOURNAL) %>% summa
 # eds_inst_NAs_round1_fixes<-eds_inst_NAs %>% filter(JOURNAL=="BITR"|JOURNAL=="JZOOL"|JOURNAL=="EVOL"|JOURNAL=="AREES") %>% arrange(JOURNAL,YEAR,LAST_NAME)
 # write.csv(eds_inst_NAs_round1_fixes, file="eds_inst_NAs_round1_fixes.csv", row.names = T) #export it as a csv file
 
-eds_inst_NAs_fixes<-eds_inst_NAs %>% filter(JOURNAL=="JECOL") %>% arrange(LAST_NAME,INST,JOURNAL,YEAR)
-# eds_inst_NAs_fixes<-eds_inst_NAs %>% filter(JOURNAL=="JANE") %>% arrange(LAST_NAME,INST,JOURNAL,YEAR)
-# eds_inst_NAs_fixes<-eds_inst_NAs %>% filter(JOURNAL=="JAPE") %>% arrange(LAST_NAME,INST,JOURNAL,YEAR)
+eds_inst_NAs_fixes<-eds_inst_NAs %>% filter(JOURNAL=="PLANTECOL") %>% arrange(LAST_NAME,INST,JOURNAL,YEAR)
 
 head(eds_inst_NAs_fixes,40)
 eds_inst_NAs_fixes$editor_id<-droplevels(eds_inst_NAs_fixes$editor_id)
@@ -1165,13 +1163,13 @@ eds_inst_NAs_fixes<-bind_rows(eds_inst_NAs_fixes,header_for_eds_inst_NAs_fixes) 
 head(eds_inst_NAs_fixes,60)
 # eds_inst_NAs_fixes<-split(eds_inst_NAs_fixes, eds_inst_NAs_fixes$editor_id)
 # write.csv(eds_inst_NAs_fixes, file="./Data/Patrick_James_Data_Corrections/eds_inst_NAs_fixes_round3_BITR.csv", row.names = T) #export it as a csv file
-# write.csv(eds_inst_NAs_fixes, file="./Data/Patrick_James_Data_Corrections/eds_inst_NAs_fixes_JAPE.csv", row.names = T) #export it as a csv file
+
 
 #THis will cross with ALLDATA to include any that have the inst Name.
 
 
 ALLDATA_filtered %>%
-  filter(editor_id %in% eds_inst_NAs_fixes$editor_id)
+  filter(editor_id %in% eds_inst_NAs_round2_fixes$editor_id)
 
 journal_count<-select(eds_inst_NAs,LAST_NAME,FIRST_NAME,JOURNAL) %>% # select variables to summarise
   group_by(JOURNAL) %>% summarise(count=n()) %>% arrange(count)
@@ -1181,7 +1179,7 @@ eds_inst_NAs_first<-eds_inst_NAs %>% group_by(LAST_NAME,FIRST_NAME,JOURNAL) %>% 
 eds_inst_NAs_first %>% group_by(JOURNAL) %>% summarize(n())
 # The editors may have an INST in another year, add it to compare
 eds_inst_NAs_plus<-drop_na(eds_all_inst,INST) 
-eds_inst_NAs_plus<-bind_rows(eds_inst_NAs_first,eds_inst_NAs_plus) %>% group_by(LAST_NAME,FIRST_NAME) %>% filter(n()>1) %>% arrange(LAST_NAME,FIRST_NAME,JOURNAL,YEAR) 
+eds_inst_NAs_plus<-bind_rows(eds_inst_NAs_first,eds_inst_NAs_plus) %>% group_by(LAST_NAME,FIRST_NAME) %>% filter(n()>1) %>% arrange(LAST_NAME,FIRST_NAME,JOURNAL,YEAR)
 
 write.csv(eds_inst_NAs_plus, file="eds_inst_NA.csv", row.names = T) #export it as a csv file
 
