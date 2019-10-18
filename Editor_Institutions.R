@@ -258,10 +258,21 @@ AUK<-select(AUK,-EDITOR_TITLE)
 CONDOR<-select(CONDOR,-EDITOR_TITLE)
 
 
-##################################
-# ASSITIONAL CORRECTIONS
-##################################
-# FUNECOL: REVIEWW AND DELETE COLS AS NEEDED
+##############################################################
+##############################################################
+#
+# CLEAN-UP BY JOURNAL
+#
+##############################################################
+############################################################### 
+
+
+##############################################################
+# FUNECOL
+##############################################################
+
+
+FUNECOL: REVIEWW AND DELETE COLS AS NEEDED
 FUNECOL1<-FUNECOLdata_Allen_EB_1dec.csv%>% select(JOURNAL,YEAR, FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,COUNTRY) #NO UNIT, CITY, STATE
 FUNECOL2<-FUNECOL_data_11.03.2017.csv%>% select(JOURNAL,YEAR, FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,UNIT,CITY,STATE,COUNTRY,editor_id) #NO UNIT, CITY, STATE
 
@@ -306,18 +317,20 @@ rm(INST_fix.df,INST_fix,country_fix,country_fix.df)
 #rm(FUNECOL_NAMES)
 
 
+##############################################################
+# LECO
+# Needs to be completed
+##############################################################
 
-# Need to be completed
+
 LECO<-LECO_2017.csv %>% select(JOURNAL,YEAR, editor_id,FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,UNIT,CITY,STATE,COUNTRY)
 
 
 
-# JZOOL 
-# 1) NEED to split names
-# 2) disambiguate and ADD EDITOR IDS ADDED IN
-# 3) add unit, City, state?
-# 4) JZOOL FILE IS A PARTIAL!!! NEED TO FILL IN TO OTHER ONE!!!
-# JZOOL NEED TO BE REVIEWWED AND COLS DELETED
+##############################################################
+# JZOOL
+##############################################################
+
 JZOOL1<-JZOOL17nov.csv
 JZOOL1$JOURNAL<-as.factor("JZOOL")
 summary(JZOOL1$JOURNAL)
@@ -385,21 +398,27 @@ JZOOL<-JZOOL%>%select(JOURNAL,YEAR, FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,UNIT,C
 JZOOL_inst<-JZOOL %>% group_by(FIRST_NAME,MIDDLE_NAME,LAST_NAME,YEAR,INST) %>% summarise(n()) %>% arrange(LAST_NAME,FIRST_NAME,YEAR)
 write.csv(JZOOL_inst, file="JZOOL_missing_inst.csv", row.names = T) #export it as a csv file
 
-
-GCB<-GCBdata.csv
-#GCB<-GCBdata.csv%>% select(JOURNAL,YEAR,INST,COUNTRY)
+##############################################################
+# GCB
 # GCB Need to 
 # 1) split name 
 # 2) get title abbreviations 
 # 3) Make consistent 
 # 4) only have data 1995-2007 (1995 was vol 1), 2008-2015 
 # 5) disambiguate editors and add editor id numbers
+##############################################################
+
+GCB<-GCBdata.csv
+#GCB<-GCBdata.csv%>% select(JOURNAL,YEAR,INST,COUNTRY)
 
 #TO FILL OUT MISSING INST 
 GCB$INST<-as.factor(GCB$INST)
 GCB_inst<-GCB %>% group_by(NAME,YEAR,INST) %>% summarise(n()) %>% arrange(NAME,YEAR)
 write.csv(GCB_inst, file="GCB_missing_inst.csv", row.names = T) #export it as a csv file
 
+##############################################################
+# NEW PHYT
+##############################################################
 
 NEWPHYT<-NEWPHYT_21july2018.csv %>% select(JOURNAL,YEAR, editor_id,FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,UNIT,CITY,STATE,COUNTRY)
 # NEWPHYT (MAIRA): 
@@ -409,7 +428,9 @@ NEWPHYT_inst<-NEWPHYT %>% group_by(LAST_NAME,FIRST_NAME,MIDDLE_NAME,YEAR,INST) %
 write.csv(NEWPHYT_inst, file="NEWPHYT_missing_inst.csv", row.names = T) #export it as a csv file
 
 
-
+##############################################################
+# NAJFM
+##############################################################
 NAJFM<-NAJFM_21july2018.csv %>% select(JOURNAL,YEAR, editor_id,FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,UNIT,CITY,STATE,COUNTRY)
 # NAJFM (MAIRA): 
 # 1) NEEDS INST
@@ -417,7 +438,9 @@ NAJFM$INST<-as.factor(NAJFM$INST)
 NAJFM_inst<-NAJFM %>% group_by(LAST_NAME,FIRST_NAME,MIDDLE_NAME,YEAR,INST) %>% summarise(n()) %>% arrange(LAST_NAME,FIRST_NAME,YEAR)
 write.csv(NAJFM_inst, file="NAJFM_missing_inst.csv", row.names = T) #export it as a csv file
 
-
+##############################################################
+# MARECOL
+##############################################################
 
 MARECOL<-MARECOL_21July2018.csv %>% select(JOURNAL,YEAR, NAME,INST,UNIT,CITY,STATE,COUNTRY)
 # MARECOL
@@ -430,8 +453,14 @@ MARECOL_inst<-MARECOL %>% group_by(NAME,YEAR,INST) %>% summarise(n()) %>% arrang
 write.csv(MARECOL_inst, file="MARECOL_missing_inst.csv", row.names = T) #export it as a csv file
 
 
+##############################################################
+# MEPS
+##############################################################
 # MEPS: NOT EVEN AN EXCEL SHEET,NEED TO SEE WHICH ONES ARE MISSING INSTITUTIONS
 
+##############################################################
+# AGRONOMY
+##############################################################
 
 # AGRONOMY MISSING INST
 AG$INST<-as.factor(AG$INST)
@@ -439,16 +468,14 @@ AG_inst<-AG %>% group_by(LAST_NAME,FIRST_NAME,MIDDLE_NAME,YEAR,INST) %>% summari
 write.csv(AG_inst, file="AG_missing_inst.csv", row.names = T) #export it as a csv file
 
 ##############################################################
+# FEM
 ##############################################################
-#
-# CORRECT RAW EDITOR DATA FROM INDIVIDUAL JOURNALS
-#
-##############################################################
-##############################################################
-
 
 ## NOT CORRECT EITHER INST OR CITY STATE!!!
 # FEM 1994 Colorado State University     USA       775    Douglas           A   Maguire      Seattle Washington              <NA>   <NA>
+
+
+
 JZOOL$JOURNAL<-as.character(JZOOL$JOURNAL)
 JZOOL$JOURNAL[JZOOL$JOURNAL=="JZ"]<-"JZOOL"
 JZOOL$JOURNAL<-as.factor(JZOOL$JOURNAL)
