@@ -1,7 +1,6 @@
 
 # R CODE FOR IMPORTING, MANIPULATING, AND ANALYZING DATA ON THE INSTITUTIONS OF JOURNAL EDITORS 
 
-
 # Changes to be made: 
 # 1) If possible pull the csv file directly uploaded as "global_uni1" directly from the repo 
 # 2) If possible download "world_university_names.sql" directly from the repo
