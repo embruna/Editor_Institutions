@@ -268,7 +268,7 @@ CONDOR<-select(CONDOR,-EDITOR_TITLE)
 
 
 ##############################################################
-# FUNECOL
+# FUNCTIONAL ECOLOGY
 ##############################################################
 
 
@@ -312,13 +312,21 @@ FUNECOL<-FUNECOL %>% select(-JOURNAL.y,-INST.y,-MIDDLE_NAME.y,-COUNTRY.y) %>% re
 rm(INST_fix.df,INST_fix,country_fix,country_fix.df)
 
 
+FUNECOL$INST[FUNECOL$editor_id==1878 & FUNECOL$LAST_NAME=="Soler"]<-"CSIC"
+
+levels(FUNECOL$UNIT)
+FUNECOL$UNIT<-as.character(FUNECOL$UNIT) # change to 'character'
+FUNECOL$UNIT[FUNECOL$editor_id==1878 & FUNECOL$LAST_NAME=="Soler"]<-"Estacion Experimental de Zonas Aridas"
+FUNECOL$UNIT<-as.factor(FUNECOL$UNIT) # change back to factor 
+FUNECOL$UNIT<-droplevels(FUNECOL$UNIT) 
+
 
 # FUNECOL_NAMES<-FUNECOL %>% group_by(FIRST_NAME,MIDDLE_NAME,LAST_NAME) %>% summarize(n())
 #rm(FUNECOL_NAMES)
 
 
 ##############################################################
-# LECO
+# LANDSCAPE ECOLOGY
 # Needs to be completed
 ##############################################################
 
@@ -326,9 +334,16 @@ rm(INST_fix.df,INST_fix,country_fix,country_fix.df)
 LECO<-LECO_2017.csv %>% select(JOURNAL,YEAR, editor_id,FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,UNIT,CITY,STATE,COUNTRY)
 
 
+LECO$INST<-as.character(LECO$INST)
+LECO$CITY[LECO$INST=="University of Nevada" & LECO$LAST_NAME=="Walker"]<-"Las Vegas"
+
+levels(LECO$STATE) <- c(levels(LECO$STATE),"NV")
+LECO$STATE[LECO$INST=="University of Nevada" & LECO$LAST_NAME=="Walker"]<-"NV"
+LECO$INST[LECO$INST=="University of Nevada" & LECO$LAST_NAME=="Walker"]<-"University of Nevada-Las Vegas"
+
 
 ##############################################################
-# JZOOL
+# JZOOLOGY
 ##############################################################
 
 JZOOL1<-JZOOL17nov.csv
@@ -394,9 +409,15 @@ rm(INST_fix.df,INST_fix,country_fix,country_fix.df,vol_fix,issue_fix,issue_fix.d
 
 JZOOL<-JZOOL%>%select(JOURNAL,YEAR, FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,UNIT,CITY,STATE,COUNTRY)
 
-#TO FILL OUT MISSING INST 
-JZOOL_inst<-JZOOL %>% group_by(FIRST_NAME,MIDDLE_NAME,LAST_NAME,YEAR,INST) %>% summarise(n()) %>% arrange(LAST_NAME,FIRST_NAME,YEAR)
-write.csv(JZOOL_inst, file="JZOOL_missing_inst.csv", row.names = T) #export it as a csv file
+
+JZOOL$JOURNAL<-as.character(JZOOL$JOURNAL)
+JZOOL$JOURNAL[JZOOL$JOURNAL=="JZ"]<-"JZOOL"
+JZOOL$JOURNAL<-as.factor(JZOOL$JOURNAL)
+# 
+# 
+# #TO FILL OUT MISSING INST 
+# JZOOL_inst<-JZOOL %>% group_by(FIRST_NAME,MIDDLE_NAME,LAST_NAME,YEAR,INST) %>% summarise(n()) %>% arrange(LAST_NAME,FIRST_NAME,YEAR)
+# write.csv(JZOOL_inst, file="JZOOL_missing_inst.csv", row.names = T) #export it as a csv file
 
 ##############################################################
 # GCB
@@ -458,14 +479,28 @@ write.csv(MARECOL_inst, file="MARECOL_missing_inst.csv", row.names = T) #export 
 ##############################################################
 # MEPS: NOT EVEN AN EXCEL SHEET,NEED TO SEE WHICH ONES ARE MISSING INSTITUTIONS
 
+
+
+
+
 ##############################################################
 # AGRONOMY
 ##############################################################
 
 # AGRONOMY MISSING INST
 AG$INST<-as.factor(AG$INST)
-AG_inst<-AG %>% group_by(LAST_NAME,FIRST_NAME,MIDDLE_NAME,YEAR,INST) %>% summarise(n()) %>% arrange(LAST_NAME,FIRST_NAME,YEAR)
-write.csv(AG_inst, file="AG_missing_inst.csv", row.names = T) #export it as a csv file
+
+
+AG$INST<-as.character(AG$INST)
+AG$STATE<-as.character(AG$STATE)
+AG$COUNTRY<-as.character(AG$COUNTRY)
+AG$INST[AG$LAST_NAME=="Benbi" & AG$FIRST_NAME=="Dinesh"]<-"Punjab Agricultural University"
+AG$STATE[AG$LAST_NAME=="Benbi" & AG$FIRST_NAME=="Dinesh"]<-"Punjab"
+AG$COUNTRY[AG$LAST_NAME=="Benbi" & AG$FIRST_NAME=="Dinesh"]<-"India"
+AG$COUNTRY[AG$LAST_NAME=="Pedreira" & AG$FIRST_NAME=="Carlos"]<-"Brazil"
+# 
+# AG_inst<-AG %>% group_by(LAST_NAME,FIRST_NAME,MIDDLE_NAME,YEAR,INST) %>% summarise(n()) %>% arrange(LAST_NAME,FIRST_NAME,YEAR)
+# write.csv(AG_inst, file="AG_missing_inst.csv", row.names = T) #export it as a csv file
 
 ##############################################################
 # FEM
@@ -476,15 +511,19 @@ write.csv(AG_inst, file="AG_missing_inst.csv", row.names = T) #export it as a cs
 
 
 
-JZOOL$JOURNAL<-as.character(JZOOL$JOURNAL)
-JZOOL$JOURNAL[JZOOL$JOURNAL=="JZ"]<-"JZOOL"
-JZOOL$JOURNAL<-as.factor(JZOOL$JOURNAL)
+##############################################################
+# J ANIMAL ECOLOGY
+##############################################################
 
 JANE$UNIT<-as.character(JANE$UNIT)
 JANE$INST<-as.character(JANE$INST)
 JANE$UNIT[JANE$editor_id==1702]<-"Deptartment of Biology"
 JANE$INST[JANE$editor_id==1702]<-"University of York"
 JANE$COUNTRY[JANE$editor_id==1702]<-"UK"
+
+##############################################################
+# J BIOGEOGRAPHY
+##############################################################
 
 # JBIOG<-JBIOG.csv%>% select(JOURNAL,YEAR, editor_id,FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,CITY,STATE,COUNTRY)
 JBIOG$INST<-as.character(JBIOG$INST)
@@ -496,6 +535,10 @@ JBIOG$UNIT[JBIOG$UNIT=="Institute For Species Exploration"]<-"Institute For Spec
 JBIOG$INST[JBIOG$UNIT=="Evolution And Marine Biology, University of California"]<-"University of California-Santa Barbara"
 JBIOG$UNIT[JBIOG$FIRST_NAME=="Dov"]<-"Department of Ecology, Evolution, and Marine Biology"
 
+
+##############################################################
+# PLANT ECOLOGY
+##############################################################
 PLANTECOL$INST<-as.character(PLANTECOL$INST)
 PLANTECOL$INST[PLANTECOL$LAST_NAME=="Veblen"]<-"University of Colorado-Boulder"
 PLANTECOL$INST[PLANTECOL$LAST_NAME=="Picket"]<-"New York Botanical Garden"
@@ -503,31 +546,33 @@ PLANTECOL$INST[PLANTECOL$LAST_NAME=="Peet"]<-"University of North Carolina-Chape
 PLANTECOL$INST[PLANTECOL$LAST_NAME=="Damman"]<-"University of Connecticut"
 PLANTECOL$INST[PLANTECOL$LAST_NAME=="Pickett" & PLANTECOL$FIRST_NAME=="Steward"]<-"New York Botanical Garden"
 
-AG$INST<-as.character(AG$INST)
-AG$STATE<-as.character(AG$STATE)
-AG$COUNTRY<-as.character(AG$COUNTRY)
-AG$INST[AG$LAST_NAME=="Benbi" & AG$FIRST_NAME=="Dinesh"]<-"Punjab Agricultural University"
-AG$STATE[AG$LAST_NAME=="Benbi" & AG$FIRST_NAME=="Dinesh"]<-"Punjab"
-AG$COUNTRY[AG$LAST_NAME=="Benbi" & AG$FIRST_NAME=="Dinesh"]<-"India"
-AG$COUNTRY[AG$LAST_NAME=="Pedreira" & AG$FIRST_NAME=="Carlos"]<-"Brazil"
+
+
+##############################################################
+# EVOLUTION
+##############################################################
 
 EVOL$COUNTRY<-as.character(EVOL$COUNTRY)
 EVOL$STATE<-as.character(EVOL$STATE)
 EVOL$COUNTRY[EVOL$LAST_NAME=="Knowlton" & EVOL$FIRST_NAME=="Nancy"]<-"Panama"
 EVOL$STATE[EVOL$LAST_NAME=="Knowlton" & EVOL$FIRST_NAME=="Nancy"]<-NA
 
-LECO$INST<-as.character(LECO$INST)
-LECO$CITY[LECO$INST=="University of Nevada" & LECO$LAST_NAME=="Walker"]<-"Las Vegas"
 
-levels(LECO$STATE) <- c(levels(LECO$STATE),"NV")
-LECO$STATE[LECO$INST=="University of Nevada" & LECO$LAST_NAME=="Walker"]<-"NV"
-LECO$INST[LECO$INST=="University of Nevada" & LECO$LAST_NAME=="Walker"]<-"University of Nevada-Las Vegas"
+
+##############################################################
+# OECOLOGIA
+##############################################################
 
 OECOL$INST<-as.character(OECOL$INST)
 OECOL$CITY[OECOL$INST=="University of Nevada" & OECOL$LAST_NAME=="Walker"]<-"Las Vegas"
 OECOL$STATE[OECOL$INST=="University of Nevada" & OECOL$LAST_NAME=="Walker"]<-"NV"
 OECOL$INST[OECOL$INST=="University of Nevada" & OECOL$LAST_NAME=="Hayes"]<-"University of Nevada-Reno"
 
+
+
+##############################################################
+# AMERICAN NATURALIST
+##############################################################
 AMNAT$INST<-as.character(AMNAT$INST)
 AMNAT$CITY[AMNAT$INST=="University of Hawaii" & AMNAT$LAST_NAME=="Palumbi"]<-"Honolulu"
 AMNAT$STATE[AMNAT$INST=="University of Hawaii" & AMNAT$LAST_NAME=="Palumbi"]<-"HI"
@@ -535,13 +580,7 @@ AMNAT$INST[AMNAT$INST=="University of Hawaii" & AMNAT$LAST_NAME=="Palumbi"]<-"Un
 
 
 
-FUNECOL$INST[FUNECOL$editor_id==1878 & FUNECOL$LAST_NAME=="Soler"]<-"CSIC"
 
-levels(FUNECOL$UNIT)
-FUNECOL$UNIT<-as.character(FUNECOL$UNIT) # change to 'character'
-FUNECOL$UNIT[FUNECOL$editor_id==1878 & FUNECOL$LAST_NAME=="Soler"]<-"Estacion Experimental de Zonas Aridas"
-FUNECOL$UNIT<-as.factor(FUNECOL$UNIT) # change back to factor 
-FUNECOL$UNIT<-droplevels(FUNECOL$UNIT) 
 
 
 
@@ -569,7 +608,6 @@ FUNECOL$UNIT<-droplevels(FUNECOL$UNIT)
 # ALLDATA<-bind_rows(NAJFM,NEWPHYT,OIKOS,JZOOL,BITR,LECO,PLANTECOL,OECOL,JTE,JECOL,JBIOG,JAPE,JANE,FUNECOL,FEM,EVOL,ECOL,ECOG,CONBIO,BIOCON,AREES,AMNAT,AJB)
 
 ALLDATA<-bind_rows(AUK,CONDOR,NEWPHYT,JZOOL,OIKOS,BITR,LECO,PLANTECOL,OECOL,JTE,JECOL,JBIOG,JAPE,JANE,FUNECOL,FEM,EVOL,ECOL,ECOG,CONBIO,BIOCON,AREES,AMNAT,AJB,AG)
-
 
 
 
@@ -644,7 +682,9 @@ JrnlYrs_30
 
 
 
-
+##############################################################
+# CLEAN-UP OF COUNTRIES  / COUNTRY COLUMN
+##############################################################
 
 ALLDATA$COUNTRY<-as.factor(ALLDATA$COUNTRY)
 levels(ALLDATA$COUNTRY)
@@ -663,24 +703,39 @@ ALLDATA$COUNTRY[ALLDATA$INST=="University of Guelph"]<-"Canada"
 ALLDATA$COUNTRY[ALLDATA$INST=="Instituto Mediterraneo de Estudios Avanzados (IMEDEA)"]<-"Spain"
 ALLDATA$COUNTRY[ALLDATA$FIRST_NAME=="Jeannine" & ALLDATA$LAST_NAME=="Cavender-Bares"]<-"USA"
 
+##############################################################
+# COrrecting the country in whihc an Editor is based
+##############################################################
 
-####### NEED TO CONFIRM WHAT PART OF USSR IN WHICH THE AUTHOR WAS BASED
-ALLDATA$COUNTRY[ALLDATA$COUNTRY=="USSR"]<-"Russia"
+ALLDATA$COUNTRY[ALLDATA$LAST_NAME=="Bieber"]<-"Austria"
 
 
 ALLDATA$COUNTRY<-as.factor(ALLDATA$COUNTRY)
 ALLDATA<-droplevels(ALLDATA)
 levels(ALLDATA$COUNTRY)
 
-########NEED DO DELETE THESE
+
+##############################################################
+# STILL TO DO 
+##############################################################
+
+# NEED TO CONFIRM WHAT PART OF USSR IN WHICH THE AUTHOR WAS BASED
+ALLDATA$COUNTRY[ALLDATA$COUNTRY=="USSR"]<-"Russia"
+
+# NEED DO DELETE THESE
 which(ALLDATA$COUNTRY=="")
 
-###############
-# CLEAN UP THE INSTITUTIONS
-###############
+##############################################################
+##############################################################
+# CLEAN-UP OF INSTITUTIONS  
+##############################################################
+##############################################################
+
 
 ALLDATA<-as.data.frame(ALLDATA)
 ALLDATA$JOURNAL<-as.factor(ALLDATA$JOURNAL)
+
+# Correcting the Institution where an Editor is based
 
 ALLDATA$INST[ALLDATA$JOURNAL=="AMNAT" & ALLDATA$LAST_NAME=="Case"]<-"University of California San Diego"
 ALLDATA$INST[ALLDATA$LAST_NAME=="Noon"]<-"Colorado State University"
@@ -701,24 +756,14 @@ ALLDATA$INST[ALLDATA$LAST_NAME=="Wiersma" & ALLDATA$FIRST_NAME=="Jochum"]<-"Univ
 ALLDATA$INST[ALLDATA$LAST_NAME=="Smith" & ALLDATA$FIRST_NAME=="Madeleine"]<-"University of Minnesota Crookston"
 ALLDATA$INST[ALLDATA$LAST_NAME=="Sims" & ALLDATA$FIRST_NAME=="Albert"]<-"University of Minnesota Crookston"
 
-
 levels(ALLDATA$INST) <- c(levels(ALLDATA$INST),"University of Toronto Mississauga")
-
 ALLDATA$INST[ALLDATA$LAST_NAME=="Sprules" & ALLDATA$FIRST_NAME=="Gary"]<-"University of Toronto Mississauga"
 ALLDATA$INST[ALLDATA$LAST_NAME=="Wagner" & ALLDATA$FIRST_NAME=="Helene"]<-"University of Toronto Mississauga"
 ALLDATA$INST[ALLDATA$LAST_NAME=="Kotanen" & ALLDATA$FIRST_NAME=="Peter"]<-"University of Toronto Mississauga"
-
 ALLDATA$INST[ALLDATA$LAST_NAME=="Loiselle" & ALLDATA$FIRST_NAME=="Bette"]<-"University of Missouri St Louis"
 ALLDATA$INST[ALLDATA$LAST_NAME=="Ricklefs" & ALLDATA$FIRST_NAME=="Robert"]<-"University of Missouri St Louis"
 ALLDATA$INST[ALLDATA$LAST_NAME=="Renner" & ALLDATA$FIRST_NAME=="Susanne"]<-"University of Missouri St Louis"
 ALLDATA$INST[ALLDATA$LAST_NAME=="Sork" & ALLDATA$FIRST_NAME=="Victoria"]<-"University of Missouri St Louis"
-
-levels(ALLDATA$INST) <- c(levels(ALLDATA$INST),"University of Missouri Columbia")
-ALLDATA$INST[ALLDATA$INST=="University of Missouri"]<-"University of Missouri Columbia"
-
-
-
-ALLDATA$COUNTRY[ALLDATA$LAST_NAME=="Bieber"]<-"Austria"
 
 levels(ALLDATA$INST) <- c(levels(ALLDATA$INST),"Universite Libre de Bruxelles","CNRS Centre dEcologie Fonctionnelle et Evolutive")
 ALLDATA$INST[ALLDATA$LAST_NAME=="Parmentier"]<-"Universite Libre de Bruxelles"
@@ -731,8 +776,16 @@ ALLDATA$INST[ALLDATA$LAST_NAME=="Debussche"]<-"CNRS Centre dEcologie Fonctionnel
 # ALLDATA$Inst_Prior_Class<-as.factor(ALLDATA$Inst_Prior_Class)
 # ALLDATA<-ALLDATA %>% select(-DATA)
 
-ALLDATA$INST<-as.character(ALLDATA$INST)
+##############################################################
+##############################################################
+# Correcting or systematizing the name/speclling of an institution
+##############################################################
+##############################################################
 
+levels(ALLDATA$INST) <- c(levels(ALLDATA$INST),"University of Missouri Columbia")
+ALLDATA$INST[ALLDATA$INST=="University of Missouri"]<-"University of Missouri Columbia"
+
+ALLDATA$INST<-as.character(ALLDATA$INST)
 ALLDATA$INST<-trimws(ALLDATA$INST, which = "left")
 ALLDATA$INST<-trimws(ALLDATA$INST, which = "right")
 ALLDATA$INST<-gsub("- ", "-", ALLDATA$INST)
@@ -991,7 +1044,12 @@ ALLDATA$INST[ALLDATA$INST=="Universit\xfc\xbe\x8d\x83\xa0\xbct Z\xfc\xbe\x8c\x93
 ALLDATA$INST[ALLDATA$INST=="Texas A & M Univ."]<-"Texas A & M University"
 ALLDATA$INST[ALLDATA$INST=="Texas A & M"]<-"Texas A & M University"
 
+
+##############################################################
+##############################################################
 # Dividing Some Names for INST into INST and UNIT
+##############################################################
+##############################################################
 
 ALLDATA$UNIT[ALLDATA$INST=="Harvard University Herbaria"]<-"Herbaria" 
 ALLDATA$INST[ALLDATA$INST=="Harvard University Herbaria"]<-"Harvard University"
@@ -1022,9 +1080,10 @@ ALLDATA$INST[ALLDATA$INST=="Wageiningen University Research Center Alterra"]<-"W
 
 
 
-###############
+##############################################################
 # SAVE THE FILE AS A CSV FOR MANUAL REVIEW
-###############
+##############################################################
+
 UNI_LIST<-ALLDATA %>% select(INST,COUNTRY) %>% arrange(COUNTRY,INST)
 UNI_LIST<-unique(UNI_LIST)
 
@@ -1033,11 +1092,9 @@ write.csv(UNI_LIST, file="uniNameList.csv", row.names = T) #export it as a csv f
 
 
 
-###############
-# AFTER MANUAL REVIEW, 
-# UPLOAD THE CORRECTIONS AND INCORPORATE THEM
-###############
-
+##############################################################
+# AFTER MANUAL REVIEW, UPLOAD THE CORRECTIONS AND INCORPORATE THEM
+##############################################################
 
 corrections1<-read.csv("./Data/uniNameList_corrections_only.csv",encoding = "ASCII",stringsAsFactors = FALSE)
 
@@ -1046,7 +1103,13 @@ str(corrections1)
 ALLDATA<-left_join(ALLDATA, corrections1,by="INST",copy=TRUE) %>% mutate(INST = ifelse(is.na(INST_CORR), INST, INST_CORR)) %>% mutate(UNIT = ifelse(is.na(UNIT_CORR), UNIT, UNIT_CORR))
 ALLDATA<-ALLDATA %>% select(-INST_CORR,-UNIT_CORR)
 
+
+##############################################################
+##############################################################
 # FOR SOME REASON SOME DIDN"T CHANGE< SO NEED TO DO MANUALLY
+##############################################################
+##############################################################
+
 ALLDATA$INST[ALLDATA$INST=="USU"]<-"Utah State University"
 ALLDATA$INST[ALLDATA$LAST_NAME=="Luque"]<-"Institut national de recherche en sciences et technologies pour lenvironnement et lagriculture"
 ALLDATA$INST[ALLDATA$INST=="<a0>Forestry and Forest Products Research Institute"]<-"Forestry and Forest Products Research Institute"
@@ -1069,15 +1132,15 @@ ALLDATA$INST[ALLDATA$LAST_NAME=="Gustafson"& ALLDATA$FIRST_NAME=="E"]<-"US Fores
 ALLDATA$UNIT[ALLDATA$LAST_NAME=="Gustafson"& ALLDATA$FIRST_NAME=="E"]<-"North Central Research Station"
 ALLDATA$COUNTRY[ALLDATA$LAST_NAME=="Westing"&ALLDATA$FIRST_NAME=="Arthur"]<-"Sweden"
 ALLDATA$COUNTRY[ALLDATA$LAST_NAME=="Galdon"&ALLDATA$FIRST_NAME=="Luis"]<-"Spain"
-
 ALLDATA$INST[ALLDATA$LAST_NAME=="Labandeira"& ALLDATA$FIRST_NAME=="Conrad"]<-"Smithsonian National Museum of Natural History"
 ALLDATA$INST[ALLDATA$LAST_NAME=="SEIDENSTZICKER"& ALLDATA$FIRST_NAME=="JOHN"]<-"Smithsonian National Zoological Park"
 ALLDATA$INST[ALLDATA$LAST_NAME=="Kleiman"& ALLDATA$FIRST_NAME=="Devra"]<-"Smithsonian National Zoological Park"
 ALLDATA$INST[ALLDATA$INST=="Syngenta Crop Protection"]<-"Syngenta Crop Protection Inc"
 
-
+##############################################################
 # CHANGE THOSE WITH BLANK INST to NA
- 
+##############################################################
+
 # ALLDATA$INST[ALLDATA$LAST_NAME=="Angeler" & ALLDATA$YEAR>"2011" & ALLDATA$JOURNAL=="JAPE"]<-NA
 ALLDATA$INST[ALLDATA$INST==""]<-NA
 ALLDATA$INST[ALLDATA$INST=="N/A"]<-NA
@@ -1086,38 +1149,37 @@ ALLDATA$INST[ALLDATA$INST=="."]<-NA
 
 
 
-###############
+##############################################################
 # SAVE THE FILE AS A CSV FOR MANUAL REVIEW AGAIN
-###############
+##############################################################
 UNI_LIST2<-ALLDATA %>% select(INST,COUNTRY) %>% arrange(COUNTRY,INST)
 UNI_LIST2<-UNI_LIST2[!is.na(UNI_LIST2$INST),]
 UNI_LIST2<-UNI_LIST2 %>% group_by(INST,COUNTRY) %>% summarize(count=n())
-
-
 
 write.csv(UNI_LIST2, file="uniNameList2.csv", row.names = T) #export it as a csv file
 
 
 
+##############################################################
 # NOW UPLOAD CORRECTIONS
+##############################################################
 
 corrections2<-read.csv("Data/uniNameList_corrections2.csv",encoding = "ASCII",stringsAsFactors = FALSE)
-
 str(corrections2)
 #THIS CHANGES THE UNITS AND INST BASED ON THE CORRECTION IN THE DATAFRAME
 ALLDATA2<-left_join(ALLDATA, corrections2,by=c("INST","COUNTRY"),copy=TRUE) %>% mutate(INST = ifelse(is.na(INST_CORR), INST, INST_CORR)) %>% mutate(UNIT = ifelse(is.na(UNIT_CORR), UNIT, UNIT_CORR)) %>% mutate(COUNTRY = ifelse(is.na(COUNTRY_CORR), COUNTRY, COUNTRY_CORR))
 ALLDATA<-ALLDATA2 %>% select(-INST_CORR,-UNIT_CORR,-COUNTRY_CORR)
 rm(ALLDATA2)
+
+
 ##############################################################
 ##############################################################
-#
 # DATA CHECK: FILLING IN MISSING INST, CHECKING EDITORS WITH DUPLICATE INST
-#
 ##############################################################
 ##############################################################
 
-#Starting what year? 
 
+# Starting what year? 
 ALLDATA_filtered<-filter(ALLDATA, YEAR>1984)
 summary(ALLDATA_filtered)
 #These are all unique editor x inst combinations (ie. appear once for every inst they have including NA)
@@ -1138,6 +1200,9 @@ eds_inst_NAs %>% group_by(JOURNAL) %>% summarize(count=n()) %>% arrange(desc(cou
 
 distinct(eds_inst_NAs,editor_id,.keep_all= TRUE) %>% group_by(JOURNAL) %>% summarize(count=n()) %>% arrange(desc(count))
 
+
+##############################################################
+
 # NO INST 2x NEEDED
 # AJB 
 # ECOLOGY
@@ -1147,6 +1212,7 @@ distinct(eds_inst_NAs,editor_id,.keep_all= TRUE) %>% group_by(JOURNAL) %>% summa
 # JTE
 # CONBIO: fill in subsequent years for each person, then done.
 
+##############################################################
 
 # WITH PATRICK to ADD INST
 # Round 1: AGRON, ARES, EVOL (DONE)
@@ -1155,8 +1221,10 @@ distinct(eds_inst_NAs,editor_id,.keep_all= TRUE) %>% group_by(JOURNAL) %>% summa
 # Round 3: BITR
 # Round 4: AMNAT
 # Round 5: BIOCON 
+##############################################################
 
 
+##############################################################
 
 # STILL NEED TO ADD INST
 # JZOOL
@@ -1169,6 +1237,7 @@ distinct(eds_inst_NAs,editor_id,.keep_all= TRUE) %>% group_by(JOURNAL) %>% summa
 # PLANTECOL
 # AUK
 # CONDOR
+##############################################################
 
 
 
@@ -1210,7 +1279,6 @@ eds_inst_NAs_plus<-bind_rows(eds_inst_NAs_first,eds_inst_NAs_plus) %>% group_by(
 
 write.csv(eds_inst_NAs_plus, file="eds_inst_NA.csv", row.names = T) #export it as a csv file
 
-
 # These are the Editors for whom there is no institution in any year
 
 
@@ -1246,9 +1314,10 @@ write.csv(eds_inst_NAs_plus, file="eds_inst_NA.csv", row.names = T) #export it a
 
 
 
-
-
+##############################################################
 # This will check if any are still in UTF8 with accents instead of ascii
+##############################################################
+
 asciitest<-stri_enc_mark(ALLDATA$INST)
 asciitest<-as.factor(asciitest)
 summary(asciitest)
@@ -1297,8 +1366,11 @@ iconv(ALLDATA$INST, to = "ASCII//TRANSLIT")
 # summary(ALLDATA$INST)
 ALLDATA<-ALLDATA %>% filter(ALLDATA$INST!="")
 
-# 
+
+##############################################################
 # THIS WILL ALLOW YOU DO TO COMPARE ALL NAMES TO ALL NAMES TO SEE IF THERE ARE ANY THAT ARE SIMILAR AND SHOULD BE POOLED
+##############################################################
+
 # 
 # UNI_LIST<-ALLDATA$INST
 # summary(UNI_LIST)
@@ -1392,6 +1464,39 @@ head(NamesDF)
 write.csv(NamesDF, file="uniNameCheck_each_vs_each.csv", row.names = T) #export it as a csv file
 #
 #
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
