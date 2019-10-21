@@ -265,6 +265,47 @@ CONDOR<-select(CONDOR,-EDITOR_TITLE)
 ##############################################################
 ############################################################### 
 
+##############################################################
+# NO INST 2x NEEDED
+# AJB 
+# ECOLOGY
+# FEM
+# FUNECOL
+# ECOGRAPHY
+# JTE
+##############################################################
+
+
+##############################################################
+# checked by Patrick, need to upload corrections
+# Round 1: AGRON, ARES, EVOL (DONE)
+# Round 2a: CONBIO,NEW PHYT (DONE)
+# Round 2b: NEW PHYT (DONE)
+##############################################################
+
+
+##############################################################
+# WITH PATRICK to ADD INST
+# JAPE
+# JECOL
+# JANE
+# BIOCON
+# LECO: set up for spot checks. If these ok, then no need to do full review.
+# JBIOG: missing + spot review
+# PLANTECOL: set up dfor spot checks. If these ok, then no need to do full review.
+##############################################################
+
+
+##############################################################
+# STILL NEED TO ADD INST
+# JZOOL: will need extensive loopkup
+# OECOL: will need extensive loopkup
+# OIKOS: will need extensive loopkup
+# AUK
+# CONDOR
+##############################################################
+
+
 
 ##############################################################
 # FUNCTIONAL ECOLOGY
@@ -398,32 +439,77 @@ LECO_spotchecks$check<-"spotcheck"
 LECO_checks<-bind_rows(LECO_spotchecks,LECO_checks) %>%arrange(YEAR,LAST_NAME)
 LECO_checks<-LECO_checks %>% distinct(editor_id, INST,.keep_all = TRUE)
 
-
 write.csv(LECO_checks, file="./Data/Patrick_James_Data_Corrections/leco_checks.csv", row.names = T) #export it as a csv file
-
 
 rm(LECO_checks,sub1,sub2,sub3,LECO_ed_checks,LECO_inst_checks)
 
 
 
-
-
-
-
-
-
-
-write.csv(LECO_spotchecks, file="./Data/Patrick_James_Data_Corrections/LECO_spotchecks.csv", row.names = T) #export it as a csv file
-
-
-
-
-
-
-
-
-
-
+##############################################################
+# CONBIO
+# 
+##############################################################
+# 
+# CONBIO$INST<-trimws(CONBIO$INST)
+# CONBIO$UNIT<-trimws(CONBIO$UNIT)
+# CONBIO$CITY <-trimws(CONBIO$CITY)
+# CONBIO$STATE<-trimws(CONBIO$STATE)
+# CONBIO$COUNTRY<-trimws(CONBIO$COUNTRY)
+# CONBIO$INST[CONBIO$INST==""]<-NA
+# CONBIO$UNIT[CONBIO$UNIT==""]<-NA
+# CONBIO$CITY[CONBIO$CITY==""]<-NA
+# CONBIO$STATE[CONBIO$STATE==""]<-NA
+# CONBIO$COUNTRY[CONBIO$COUNTRY==""]<-NA
+# CONBIO<-CONBIO %>% arrange(editor_id,YEAR,INST)
+# 
+# # fill in the institutions in subsequent years (only 1st year recorded) and then look for any thiat might need
+# # to be double checked
+# # CONBIO_fixes<-CONBIO_fixes %>% group_by(editor_id,INST) %>% distinct(editor_id,INST) %>% distinct(editor_id)
+# 
+# head(CONBIO,10)
+# CONBIO<-CONBIO %>% fill(INST)
+# head(CONBIO,10)
+# CONBIO_checks<-CONBIO %>% arrange(editor_id,YEAR,INST)
+# head(CONBIO_checks,10)
+# CONBIO_checks<-CONBIO_checks %>% group_by(editor_id,INST) %>% distinct(editor_id,INST)
+# 
+# # editors with >1 inst : 2x
+# CONBIO_ed_checks<-CONBIO_checks %>%  distinct(editor_id,INST) %>% group_by(editor_id) %>% filter(n()>1) 
+# 
+# # Inst with >1 editors : 2x
+# CONBIO_inst_checks<-CONBIO_checks %>%  distinct(editor_id,INST) %>% group_by(INST) %>% filter(n()>1) 
+# 
+# CONBIO_checks<-bind_rows(CONBIO_inst_checks,CONBIO_ed_checks) %>% distinct(editor_id,INST)
+# 
+# CONBIO_checks<-inner_join(CONBIO,CONBIO_checks) %>% distinct(editor_id,INST,.keep_all = TRUE)
+# 
+# CONBIO_checks$check<-"2x"
+# 
+# sub1<-CONBIO %>% 
+#   group_by(editor_id) %>%
+#   do(sample_n(.,1))
+# 
+# sub2<-CONBIO %>% 
+#   group_by(editor_id) %>%
+#   do(sample_n(.,1))
+# 
+# 
+# sub3<-CONBIO %>% 
+#   group_by(editor_id) %>%
+#   do(sample_n(.,1))
+# 
+# 
+# CONBIO_spotchecks<-unique(bind_rows(sub1,sub2,sub3)) %>% arrange(YEAR,LAST_NAME)
+# 
+# CONBIO_spotchecks$check<-"spotcheck"
+# 
+# CONBIO_spotchecks<-CONBIO_spotchecks[sample(nrow(CONBIO_spotchecks), 50), ]
+# CONBIO_checks<-bind_rows(CONBIO_spotchecks,CONBIO_checks) %>%arrange(YEAR,LAST_NAME)
+# CONBIO_checks<-CONBIO_checks %>% distinct(editor_id, INST,.keep_all = TRUE)
+# 
+# write.csv(CONBIO_checks, file="./Data/Patrick_James_Data_Corrections/CONBIO_checks.csv", row.names = T) #export it as a csv file
+# 
+# rm(CONBIO_checks,sub1,sub2,sub3,CONBIO_ed_checks,CONBIO_inst_checks)
 
 
 
@@ -620,6 +706,78 @@ JBIOG$INST[JBIOG$INST==" School Of Life Sciences, Arizona State University"]<-"A
 JBIOG$UNIT[JBIOG$UNIT=="Institute For Species Exploration"]<-"Institute For Species Exploration,School of Life Sciences"
 JBIOG$INST[JBIOG$UNIT=="Evolution And Marine Biology, University of California"]<-"University of California-Santa Barbara"
 JBIOG$UNIT[JBIOG$FIRST_NAME=="Dov"]<-"Department of Ecology, Evolution, and Marine Biology"
+
+# spot checks of JBIOG
+
+JBIOG$INST<-trimws(JBIOG$INST)
+JBIOG$UNIT<-trimws(JBIOG$UNIT)
+JBIOG$CITY <-trimws(JBIOG$CITY)
+JBIOG$STATE<-trimws(JBIOG$STATE)
+JBIOG$COUNTRY<-trimws(JBIOG$COUNTRY)
+JBIOG$INST[JBIOG$INST==""]<-NA
+JBIOG$UNIT[JBIOG$UNIT==""]<-NA
+JBIOG$CITY[JBIOG$CITY==""]<-NA
+JBIOG$STATE[JBIOG$STATE==""]<-NA
+JBIOG$COUNTRY[JBIOG$COUNTRY==""]<-NA
+JBIOG<-JBIOG %>% arrange(editor_id,YEAR,INST)
+
+# fill in the institutions in subsequent years (only 1st year recorded) and then look for any thiat might need
+
+# NEED TO ADD "missing" to 1st line of group by edito where NA
+JBIOG_1row<-JBIOG %>% group_by(editor_id) %>% 
+  arrange(editor_id,YEAR) %>% 
+  filter(row_number()==1)
+levels(JBIOG_1row$INST)<-c(levels(JBIOG_1row$INST),"missing")
+JBIOG_1row$INST<-replace(JBIOG_1row$INST, is.na(JBIOG_1row$INST), "missing")
+
+JBIOG_remainder<-JBIOG %>% group_by(editor_id) %>% 
+  arrange(editor_id,YEAR) %>% 
+  filter(row_number()>1)
+
+JBIOG<-bind_rows(JBIOG_remainder,JBIOG_1row)
+head(JBIOG,70)
+JBIOG<-JBIOG %>% arrange(editor_id,YEAR) %>% fill(INST)
+head(JBIOG,10)
+JBIOG_checks<-JBIOG %>% arrange(editor_id,YEAR,INST)
+head(JBIOG_checks,10)
+JBIOG_checks<-JBIOG_checks %>% group_by(editor_id,INST) %>% distinct(editor_id,INST)
+
+# editors with >1 inst : 2x
+JBIOG_ed_checks<-JBIOG_checks %>%  distinct(editor_id,INST) %>% group_by(editor_id) %>% filter(n()>1) 
+
+# Inst with >1 editors : 2x
+JBIOG_inst_checks<-JBIOG_checks %>%  distinct(editor_id,INST) %>% group_by(INST) %>% filter(n()>1) 
+
+JBIOG_checks<-bind_rows(JBIOG_inst_checks,JBIOG_ed_checks) %>% distinct(editor_id,INST)
+
+JBIOG_checks<-inner_join(JBIOG,JBIOG_checks) %>% distinct(editor_id,INST,.keep_all = TRUE)
+
+JBIOG_checks$check<-"2x"
+
+sub1<-JBIOG %>% 
+  group_by(editor_id) %>%
+  do(sample_n(.,1))
+
+sub2<-JBIOG %>% 
+  group_by(editor_id) %>%
+  do(sample_n(.,1))
+
+
+sub3<-JBIOG %>% 
+  group_by(editor_id) %>%
+  do(sample_n(.,1))
+
+JBIOG_spotchecks<-unique(bind_rows(sub1,sub2,sub3)) %>% arrange(YEAR,LAST_NAME)
+
+JBIOG_spotchecks$check<-"spotcheck"
+
+JBIOG_checks<-bind_rows(JBIOG_spotchecks,JBIOG_checks) %>%arrange(YEAR,LAST_NAME)
+JBIOG_checks<-JBIOG_checks %>% distinct(editor_id, INST,.keep_all = TRUE)
+
+write.csv(JBIOG_checks, file="./Data/Patrick_James_Data_Corrections/JBIOG_checks.csv", row.names = T) #export it as a csv file
+
+rm(JBIOG_checks,sub1,sub2,sub3,JBIOG_ed_checks,JBIOG_inst_checks,JBIOG_1row,JBIOG_remainder)
+
 
 
 ##############################################################
@@ -1352,83 +1510,8 @@ eds_inst_NAs %>% group_by(JOURNAL) %>% summarize(count=n()) %>% arrange(desc(cou
 distinct(eds_inst_NAs,editor_id,.keep_all= TRUE) %>% group_by(JOURNAL) %>% summarize(count=n()) %>% arrange(desc(count))
 
 
-##############################################################
-
-# NO INST 2x NEEDED
-# AJB 
-# ECOLOGY
-# FEM
-# FUNECOL
-# ECOGRAPHY
-# JTE
-# CONBIO: fill in subsequent years for each person, then done.
-##############################################################
-
-# WITH PATRICK to ADD INST
-# Round 1: AGRON, ARES, EVOL (DONE)
-# Round 2a: CONBIO,NEW PHYT (DONE)
-# Round 2b: CONBIO,NEW PHYT (DONE)
-# Round 3: BITR
-# Round 4: AMNAT
-# Round 5: BIOCON 
-# JAPE
-# JECOL
-# LECO: set up dfor spot checks. If these ok, then no need to do full review.
-# PLANTECOL: : set up dfor spot checks. If these ok, then no need to do full review.
-##############################################################
-
-
-##############################################################
-
-# STILL NEED TO ADD INST
-# JZOOL
-# JBIOG: doesn't look too bad
-# OECOL: will need extensive loopkup
-# OIKOS: will need extensive loopkup
-# AUK
-# CONDOR
-##############################################################
-
-
-
 # eds_inst_NAs_round1_fixes<-eds_inst_NAs %>% filter(JOURNAL=="BITR"|JOURNAL=="JZOOL"|JOURNAL=="EVOL"|JOURNAL=="AREES") %>% arrange(JOURNAL,YEAR,LAST_NAME)
 # write.csv(eds_inst_NAs_round1_fixes, file="eds_inst_NAs_round1_fixes.csv", row.names = T) #export it as a csv file
-
-
-# 
-# ###################
-# # spot checks of plant ecology
-# PLANTECOL_fixes<-ALLDATA %>% filter(JOURNAL=="PLANTECOL")
-# PLANTECOL_fixes$INST[PLANTECOL_fixes$INST==""]<-NA
-# PLANTECOL_fixes$UNIT[PLANTECOL_fixes$UNIT==""]<-NA
-# PLANTECOL_fixes$CITY[PLANTECOL_fixes$CITY==""]<-NA
-# PLANTECOL_fixes$STATE[PLANTECOL_fixes$STATE==""]<-NA
-# PLANTECOL_fixes$COUNTRY[PLANTECOL_fixes$COUNTRY==""]<-NA
-# PLANTECOL_fixes<-PLANTECOL_fixes %>% fill(INST)
-# PLANTECOL_fixes<-PLANTECOL_fixes %>% arrange(editor_id,YEAR,INST)
-# 
-# sub1<-PLANTECOL_fixes %>% 
-#   group_by(editor_id) %>%
-#   do(sample_n(.,1))
-# 
-# sub2<-PLANTECOL_fixes %>% 
-#   group_by(editor_id) %>%
-#   do(sample_n(.,1))
-# 
-# 
-# sub3<-PLANTECOL_fixes %>% 
-#   group_by(editor_id) %>%
-#   do(sample_n(.,1))
-# 
-# 
-# plantecol_spotchecks<-unique(bind_rows(sub1,sub2,sub3)) %>% arrange(YEAR,LAST_NAME)
-# 
-# write.csv(plantecol_spotchecks, file="./Data/Patrick_James_Data_Corrections/plantecol_spotchecks.csv", row.names = T) #export it as a csv file
-# 
-
-
-# eds_inst_NAs_fixes<-eds_inst_NAs %>% filter(JOURNAL=="PLANTECOL") %>% arrange(LAST_NAME,INST,JOURNAL,YEAR)
-########
 
 
 
