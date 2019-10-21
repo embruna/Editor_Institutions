@@ -271,7 +271,7 @@ CONDOR<-select(CONDOR,-EDITOR_TITLE)
 ##############################################################
 
 
-FUNECOL: REVIEWW AND DELETE COLS AS NEEDED
+# FUNECOL: REVIEWW AND DELETE COLS AS NEEDED
 FUNECOL1<-FUNECOLdata_Allen_EB_1dec.csv%>% select(JOURNAL,YEAR, FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,COUNTRY) #NO UNIT, CITY, STATE
 FUNECOL2<-FUNECOL_data_11.03.2017.csv%>% select(JOURNAL,YEAR, FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,UNIT,CITY,STATE,COUNTRY,editor_id) #NO UNIT, CITY, STATE
 
@@ -339,6 +339,93 @@ LECO$CITY[LECO$INST=="University of Nevada" & LECO$LAST_NAME=="Walker"]<-"Las Ve
 levels(LECO$STATE) <- c(levels(LECO$STATE),"NV")
 LECO$STATE[LECO$INST=="University of Nevada" & LECO$LAST_NAME=="Walker"]<-"NV"
 LECO$INST[LECO$INST=="University of Nevada" & LECO$LAST_NAME=="Walker"]<-"University of Nevada-Las Vegas"
+
+LECO$INST[LECO$YEAR==1987 & LECO$LAST_NAME=="Ramos"]<-"missing"
+# spot checks of leco
+
+LECO$INST<-trimws(LECO$INST)
+LECO$UNIT<-trimws(LECO$UNIT)
+LECO$CITY <-trimws(LECO$CITY)
+LECO$STATE<-trimws(LECO$STATE)
+LECO$COUNTRY<-trimws(LECO$COUNTRY)
+LECO$INST[LECO$INST==""]<-NA
+LECO$UNIT[LECO$UNIT==""]<-NA
+LECO$CITY[LECO$CITY==""]<-NA
+LECO$STATE[LECO$STATE==""]<-NA
+LECO$COUNTRY[LECO$COUNTRY==""]<-NA
+LECO<-LECO %>% arrange(editor_id,YEAR,INST)
+
+# fill in the institutions in subsequent years (only 1st year recorded) and then look for any thiat might need
+# to be double checked
+# LECO_fixes<-LECO_fixes %>% group_by(editor_id,INST) %>% distinct(editor_id,INST) %>% distinct(editor_id)
+
+head(LECO,10)
+LECO<-LECO %>% fill(INST)
+head(LECO,10)
+LECO_checks<-LECO %>% arrange(editor_id,YEAR,INST)
+head(LECO_checks,10)
+LECO_checks<-LECO_checks %>% group_by(editor_id,INST) %>% distinct(editor_id,INST)
+
+# editors with >1 inst : 2x
+LECO_ed_checks<-LECO_checks %>%  distinct(editor_id,INST) %>% group_by(editor_id) %>% filter(n()>1) 
+
+# Inst with >1 editors : 2x
+LECO_inst_checks<-LECO_checks %>%  distinct(editor_id,INST) %>% group_by(INST) %>% filter(n()>1) 
+
+LECO_checks<-bind_rows(LECO_inst_checks,LECO_ed_checks) %>% distinct(editor_id,INST)
+
+LECO_checks<-inner_join(LECO,LECO_checks) %>% distinct(editor_id,INST,.keep_all = TRUE)
+
+LECO_checks$check<-"2x"
+
+sub1<-LECO %>% 
+  group_by(editor_id) %>%
+  do(sample_n(.,1))
+
+sub2<-LECO %>% 
+  group_by(editor_id) %>%
+  do(sample_n(.,1))
+
+
+sub3<-LECO %>% 
+  group_by(editor_id) %>%
+  do(sample_n(.,1))
+
+LECO_spotchecks<-unique(bind_rows(sub1,sub2,sub3)) %>% arrange(YEAR,LAST_NAME)
+
+LECO_spotchecks$check<-"spotcheck"
+
+LECO_checks<-bind_rows(LECO_spotchecks,LECO_checks) %>%arrange(YEAR,LAST_NAME)
+LECO_checks<-LECO_checks %>% distinct(editor_id, INST,.keep_all = TRUE)
+
+
+write.csv(LECO_checks, file="./Data/Patrick_James_Data_Corrections/leco_checks.csv", row.names = T) #export it as a csv file
+
+
+rm(LECO_checks,sub1,sub2,sub3,LECO_ed_checks,LECO_inst_checks)
+
+
+
+
+
+
+
+
+
+
+write.csv(LECO_spotchecks, file="./Data/Patrick_James_Data_Corrections/LECO_spotchecks.csv", row.names = T) #export it as a csv file
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ##############################################################
@@ -538,6 +625,9 @@ JBIOG$UNIT[JBIOG$FIRST_NAME=="Dov"]<-"Department of Ecology, Evolution, and Mari
 ##############################################################
 # PLANT ECOLOGY
 ##############################################################
+
+# some editing
+
 PLANTECOL$INST<-as.character(PLANTECOL$INST)
 PLANTECOL$INST[PLANTECOL$LAST_NAME=="Veblen"]<-"University of Colorado-Boulder"
 PLANTECOL$INST[PLANTECOL$LAST_NAME=="Picket"]<-"New York Botanical Garden"
@@ -545,6 +635,65 @@ PLANTECOL$INST[PLANTECOL$LAST_NAME=="Peet"]<-"University of North Carolina-Chape
 PLANTECOL$INST[PLANTECOL$LAST_NAME=="Damman"]<-"University of Connecticut"
 PLANTECOL$INST[PLANTECOL$LAST_NAME=="Pickett" & PLANTECOL$FIRST_NAME=="Steward"]<-"New York Botanical Garden"
 
+PLANTECOL$INST<-trimws(PLANTECOL$INST)
+PLANTECOL$UNIT<-trimws(PLANTECOL$UNIT)
+PLANTECOL$CITY <-trimws(PLANTECOL$CITY)
+PLANTECOL$STATE<-trimws(PLANTECOL$STATE)
+PLANTECOL$COUNTRY<-trimws(PLANTECOL$COUNTRY)
+PLANTECOL$INST[PLANTECOL$INST==""]<-NA
+PLANTECOL$UNIT[PLANTECOL$UNIT==""]<-NA
+PLANTECOL$CITY[PLANTECOL$CITY==""]<-NA
+PLANTECOL$STATE[PLANTECOL$STATE==""]<-NA
+PLANTECOL$COUNTRY[PLANTECOL$COUNTRY==""]<-NA
+PLANTECOL<-PLANTECOL %>% arrange(editor_id,YEAR,INST)
+
+# fill in the institutions in subsequent years (only 1st year recorded) and then look for any thiat might need
+# to be double checked
+PLANTECOL_fixes<-PLANTECOL_fixes %>% group_by(editor_id,INST) %>% distinct(editor_id,INST) %>% distinct(editor_id)
+
+head(PLANTECOL,10)
+PLANTECOL<-PLANTECOL %>% fill(INST)
+head(PLANTECOL,10)
+PLANTECOL_checks<-PLANTECOL %>% arrange(editor_id,YEAR,INST)
+head(PLANTECOL_checks,10)
+PLANTECOL_checks<-PLANTECOL_checks %>% group_by(editor_id,INST) %>% distinct(editor_id,INST)
+
+# editors with >1 inst : 2x
+PLANTECOL_ed_checks<-PLANTECOL_checks %>%  distinct(editor_id,INST) %>% group_by(editor_id) %>% filter(n()>1) 
+
+# Inst with >1 editors : 2x
+PLANTECOL_inst_checks<-PLANTECOL_checks %>%  distinct(editor_id,INST) %>% group_by(INST) %>% filter(n()>1) 
+
+PLANTECOL_checks<-bind_rows(PLANTECOL_inst_checks,PLANTECOL_ed_checks) %>% distinct(editor_id,INST)
+
+PLANTECOL_checks<-inner_join(PLANTECOL,PLANTECOL_checks) %>% distinct(editor_id,INST,.keep_all = TRUE)
+
+PLANTECOL_checks$check<-"2x"
+
+sub1<-PLANTECOL %>% 
+  group_by(editor_id) %>%
+  do(sample_n(.,1))
+
+sub2<-PLANTECOL %>% 
+  group_by(editor_id) %>%
+  do(sample_n(.,1))
+
+
+sub3<-PLANTECOL %>% 
+  group_by(editor_id) %>%
+  do(sample_n(.,1))
+
+plantecol_spotchecks<-unique(bind_rows(sub1,sub2,sub3)) %>% arrange(YEAR,LAST_NAME)
+
+plantecol_spotchecks$check<-"spotcheck"
+
+PLANTECOL_checks<-bind_rows(plantecol_spotchecks,PLANTECOL_checks) %>%arrange(YEAR,LAST_NAME)
+PLANTECOL_checks<-PLANTECOL_checks %>% distinct(editor_id, INST,.keep_all = TRUE)
+
+write.csv(PLANTECOL_checks, file="./Data/Patrick_James_Data_Corrections/plantecol_checks.csv", row.names = T) #export it as a csv file
+
+
+rm(PLANTECOL_checks,sub1,sub2,sub3,PLANTECOL_ed_checks,PLANTECOL_inst_checks)
 
 
 ##############################################################
@@ -729,7 +878,7 @@ which(ALLDATA$COUNTRY=="")
 # CLEAN-UP OF INSTITUTIONS  
 ##############################################################
 ##############################################################
-
+ALLDATA$INST[ALLDATA$INST=="."]<-NA
 
 ALLDATA<-as.data.frame(ALLDATA)
 ALLDATA$JOURNAL<-as.factor(ALLDATA$JOURNAL)
@@ -780,6 +929,9 @@ ALLDATA$INST[ALLDATA$LAST_NAME=="Debussche"]<-"CNRS Centre dEcologie Fonctionnel
 # Correcting or systematizing the name/speclling of an institution
 ##############################################################
 ##############################################################
+
+
+
 
 levels(ALLDATA$INST) <- c(levels(ALLDATA$INST),"University of Missouri Columbia")
 ALLDATA$INST[ALLDATA$INST=="University of Missouri"]<-"University of Missouri Columbia"
@@ -1210,7 +1362,6 @@ distinct(eds_inst_NAs,editor_id,.keep_all= TRUE) %>% group_by(JOURNAL) %>% summa
 # ECOGRAPHY
 # JTE
 # CONBIO: fill in subsequent years for each person, then done.
-
 ##############################################################
 
 # WITH PATRICK to ADD INST
@@ -1220,6 +1371,10 @@ distinct(eds_inst_NAs,editor_id,.keep_all= TRUE) %>% group_by(JOURNAL) %>% summa
 # Round 3: BITR
 # Round 4: AMNAT
 # Round 5: BIOCON 
+# JAPE
+# JECOL
+# LECO: set up dfor spot checks. If these ok, then no need to do full review.
+# PLANTECOL: : set up dfor spot checks. If these ok, then no need to do full review.
 ##############################################################
 
 
@@ -1227,13 +1382,9 @@ distinct(eds_inst_NAs,editor_id,.keep_all= TRUE) %>% group_by(JOURNAL) %>% summa
 
 # STILL NEED TO ADD INST
 # JZOOL
-# JAPE
-# JBIOG
-# JECOL
-# LECO
-# OECOL
-# OIKOS
-# PLANTECOL
+# JBIOG: doesn't look too bad
+# OECOL: will need extensive loopkup
+# OIKOS: will need extensive loopkup
 # AUK
 # CONDOR
 ##############################################################
@@ -1243,7 +1394,50 @@ distinct(eds_inst_NAs,editor_id,.keep_all= TRUE) %>% group_by(JOURNAL) %>% summa
 # eds_inst_NAs_round1_fixes<-eds_inst_NAs %>% filter(JOURNAL=="BITR"|JOURNAL=="JZOOL"|JOURNAL=="EVOL"|JOURNAL=="AREES") %>% arrange(JOURNAL,YEAR,LAST_NAME)
 # write.csv(eds_inst_NAs_round1_fixes, file="eds_inst_NAs_round1_fixes.csv", row.names = T) #export it as a csv file
 
-eds_inst_NAs_fixes<-eds_inst_NAs %>% filter(JOURNAL=="PLANTECOL") %>% arrange(LAST_NAME,INST,JOURNAL,YEAR)
+
+# 
+# ###################
+# # spot checks of plant ecology
+# PLANTECOL_fixes<-ALLDATA %>% filter(JOURNAL=="PLANTECOL")
+# PLANTECOL_fixes$INST[PLANTECOL_fixes$INST==""]<-NA
+# PLANTECOL_fixes$UNIT[PLANTECOL_fixes$UNIT==""]<-NA
+# PLANTECOL_fixes$CITY[PLANTECOL_fixes$CITY==""]<-NA
+# PLANTECOL_fixes$STATE[PLANTECOL_fixes$STATE==""]<-NA
+# PLANTECOL_fixes$COUNTRY[PLANTECOL_fixes$COUNTRY==""]<-NA
+# PLANTECOL_fixes<-PLANTECOL_fixes %>% fill(INST)
+# PLANTECOL_fixes<-PLANTECOL_fixes %>% arrange(editor_id,YEAR,INST)
+# 
+# sub1<-PLANTECOL_fixes %>% 
+#   group_by(editor_id) %>%
+#   do(sample_n(.,1))
+# 
+# sub2<-PLANTECOL_fixes %>% 
+#   group_by(editor_id) %>%
+#   do(sample_n(.,1))
+# 
+# 
+# sub3<-PLANTECOL_fixes %>% 
+#   group_by(editor_id) %>%
+#   do(sample_n(.,1))
+# 
+# 
+# plantecol_spotchecks<-unique(bind_rows(sub1,sub2,sub3)) %>% arrange(YEAR,LAST_NAME)
+# 
+# write.csv(plantecol_spotchecks, file="./Data/Patrick_James_Data_Corrections/plantecol_spotchecks.csv", row.names = T) #export it as a csv file
+# 
+
+
+# eds_inst_NAs_fixes<-eds_inst_NAs %>% filter(JOURNAL=="PLANTECOL") %>% arrange(LAST_NAME,INST,JOURNAL,YEAR)
+########
+
+
+
+
+
+###################
+
+########
+
 
 head(eds_inst_NAs_fixes,40)
 eds_inst_NAs_fixes$editor_id<-droplevels(eds_inst_NAs_fixes$editor_id)
@@ -1275,6 +1469,8 @@ eds_inst_NAs_first %>% group_by(JOURNAL) %>% summarize(n())
 # The editors may have an INST in another year, add it to compare
 eds_inst_NAs_plus<-drop_na(eds_all_inst,INST) 
 eds_inst_NAs_plus<-bind_rows(eds_inst_NAs_first,eds_inst_NAs_plus) %>% group_by(LAST_NAME,FIRST_NAME) %>% filter(n()>1) %>% arrange(LAST_NAME,FIRST_NAME,JOURNAL,YEAR)
+
+
 
 write.csv(eds_inst_NAs_plus, file="eds_inst_NA.csv", row.names = T) #export it as a csv file
 
