@@ -2,14 +2,15 @@ namecompare <- function(x,npar=TRUE,print=TRUE) {
   library(tidyverse)
   library(stringdist)
   library(RecordLinkage)
-  
-  
-  x<-as.data.frame(x)
-  x<-distinct(x)
-  head(x)
-  
-  x[] <- lapply(x, as.character)
-  NamesList<-sapply(x$x,agrep,x$x, value=TRUE)
+  # x<-ALLDATA$LAST_NAME
+  # x<-x[1:100]
+  y<-as.data.frame(x)
+  # str(y)
+  y<-distinct(y)
+  # head(y)
+  # 
+  y[] <- lapply(y, as.character)
+  NamesList<-sapply(y$x,agrep,y$x, value=TRUE)
   NamesDF<-data.frame(
     Name1 = rep(names(NamesList), lapply(NamesList, length)),
     Name2 = unlist(NamesList))
