@@ -1,11 +1,130 @@
 # This generates the list of names and institutions that need to be double checked.
 
 library(tidyverse)
+ALLDATA<-read.csv("./output_review/ALLDATA_add_PJ_data.csv")
+str(ALLDATA)
+##############################################################
+# NO INST 2x NEEDED
+# AJB 
+# ECOLOGY
+# FEM
+# FUNECOL
+# ECOGRAPHY
+# JTE
+##############################################################
+
+##############################################################
+# checked by Patrick, need to upload corrections
+# Round 1: AGRON, ARES, EVOL (DONE)
+# Round 2a: CONBIO,NEW PHYT (DONE)
+# Round 2b: NEW PHYT (DONE)
+# Round 3: BITR
+# Round 4: AMNAT
+# Round 6: JECOL
+# Round 7: JAPE
+##############################################################
+
+
+##############################################################
+# WITH PATRICK to ADD INST
+# Round 5: BIOCON
+# Round 8: PLANTECOL
+# Round 9: JBIOG
+# Round 10: LECO
+##############################################################
+
+
+##############################################################
+# STILL NEED TO ADD INST
+# JANE
+# JZOOL: will need extensive loopkup
+# OECOL: will need extensive loopkup
+# OIKOS: will need extensive loopkup
+# AUK: not for this paper
+# CONDOR: not for this paper
+##############################################################
+
+
+
+ALLDATA$INST[ALLDATA$INST==""]<-NA
+ALLDATA$UNIT[ALLDATA$UNIT==""]<-NA
+ALLDATA$COUNTRY[ALLDATA$COUNTRY==""]<-NA
+
+
+
+# Starting what year? 
+# ALLDATA_filtered<-filter(ALLDATA, YEAR>1984)
+ALLDATA_filtered<-ALLDATA
+
+summary(ALLDATA_filtered)
+#These are all unique editor x inst combinations (ie. appear once for every inst they have including NA)
+eds_all_inst<-ALLDATA_filtered %>% distinct(LAST_NAME,FIRST_NAME,INST, .keep_all= TRUE) %>% arrange(LAST_NAME,FIRST_NAME,INST,JOURNAL)
+head(eds_all_inst,20)
+# only the eds with multiple inst, including NA NOTE THIS DOES NOT INCLUDE ALL YEARS, ONLY ONE!
+eds_multi_inst<-ALLDATA_filtered %>% distinct(LAST_NAME,FIRST_NAME,INST, .keep_all= TRUE) %>% group_by(LAST_NAME,FIRST_NAME) %>% filter(n()>1) %>% arrange(LAST_NAME,FIRST_NAME,INST,JOURNAL)
+head(eds_multi_inst,23)
+
+
+# Editors for which there are NAs, ALL YEARS THEY HAVE NA
+eds_inst_NAs<-ALLDATA_filtered[is.na(ALLDATA_filtered$INST),]
+eds_inst_NAs<-eds_inst_NAs %>% arrange(LAST_NAME,FIRST_NAME,JOURNAL,YEAR) 
+head(eds_inst_NAs,75)
+summary(eds_inst_NAs)
+
+eds_inst_NAs %>% group_by(JOURNAL) %>% summarize(count=n()) %>% arrange(desc(count))
+
+distinct(eds_inst_NAs,editor_id,.keep_all= TRUE) %>% group_by(JOURNAL) %>% summarize(count=n()) %>% arrange(desc(count))
+# 
+# # eds_inst_NAs_round1_fixes<-eds_inst_NAs %>% filter(JOURNAL=="BITR"|JOURNAL=="JZOOL"|JOURNAL=="EVOL"|JOURNAL=="AREES") %>% arrange(JOURNAL,YEAR,LAST_NAME)
+# # write.csv(eds_inst_NAs_round1_fixes, file="eds_inst_NAs_round1_fixes.csv", row.names = T) #export it as a csv file
+# ########
+# head(eds_inst_NAs_fixes,40)
+# eds_inst_NAs_fixes$editor_id<-droplevels(eds_inst_NAs_fixes$editor_id)
+# 
+# header_for_eds_inst_NAs_fixes<-eds_multi_inst %>% filter(editor_id %in% eds_inst_NAs_fixes$editor_id) %>% arrange(editor_id,INST,JOURNAL,LAST_NAME,FIRST_NAME)
+# header_for_eds_inst_NAs_fixes<-header_for_eds_inst_NAs_fixes %>% distinct(LAST_NAME,FIRST_NAME,INST, .keep_all= TRUE) %>% group_by(LAST_NAME,FIRST_NAME) %>% filter(n()>1) %>% arrange(LAST_NAME,FIRST_NAME,INST,JOURNAL)
+# header_for_eds_inst_NAs_fixes$INST <-as.factor(header_for_eds_inst_NAs_fixes$INST)
+# header_for_eds_inst_NAs_fixes <-header_for_eds_inst_NAs_fixes %>% drop_na(INST)
+#  
+# eds_inst_NAs_fixes<-bind_rows(eds_inst_NAs_fixes,header_for_eds_inst_NAs_fixes) %>% arrange(LAST_NAME,FIRST_NAME,INST,JOURNAL,YEAR)
+# head(eds_inst_NAs_fixes,60)
+# # eds_inst_NAs_fixes<-split(eds_inst_NAs_fixes, eds_inst_NAs_fixes$editor_id)
+# # write.csv(eds_inst_NAs_fixes, file="./Data/Patrick_James_Data_Corrections/eds_inst_NAs_fixes_round3_BITR.csv", row.names = T) #export it as a csv file
+# 
+# 
+# #THis will cross with ALLDATA to include any that have the inst Name.
+# 
+# 
+# ALLDATA_filtered %>%
+#   filter(editor_id %in% eds_inst_NAs_round2_fixes$editor_id)
+# 
+# journal_count<-select(eds_inst_NAs,LAST_NAME,FIRST_NAME,JOURNAL) %>% # select variables to summarise
+#   group_by(JOURNAL) %>% summarise(count=n()) %>% arrange(count)
+# journal_count
+# # Editors for which there are NAs, ONLY FIRST YEAR OF NA
+# eds_inst_NAs_first<-eds_inst_NAs %>% group_by(LAST_NAME,FIRST_NAME,JOURNAL) %>% slice(n=1) %>% arrange(LAST_NAME,FIRST_NAME,JOURNAL,YEAR)
+# eds_inst_NAs_first %>% group_by(JOURNAL) %>% summarize(n())
+# # The editors may have an INST in another year, add it to compare
+# eds_inst_NAs_plus<-drop_na(eds_all_inst,INST) 
+# eds_inst_NAs_plus<-bind_rows(eds_inst_NAs_first,eds_inst_NAs_plus) %>% group_by(LAST_NAME,FIRST_NAME) %>% filter(n()>1) %>% arrange(LAST_NAME,FIRST_NAME,JOURNAL,YEAR)
+# 
+# 
+# 
+# write.csv(eds_inst_NAs_plus, file="eds_inst_NA.csv", row.names = T) #export it as a csv file
+# 
+# # These are the Editors for whom there is no institution in any year
+# 
+# 
+# 
+
+
+
+
 #######################
 # JZOOL
 #######################
 
-
+JZOOL_checks<-ALLDATA %>% filter(JOURNAL=="JZOOL")
 JZOOL_checks<-JZOOL %>% arrange(editor_id,YEAR,INST)
 head(JZOOL_checks,10)
 JZOOL_checks<-JZOOL_checks %>% group_by(editor_id,INST) %>% distinct(editor_id,INST)
@@ -54,7 +173,7 @@ rm(JZOOL_checks,sub1,sub2,sub3,JZOOL_ed_checks,JZOOL_inst_checks)
 #######################
 # LECO
 #######################
-
+LECO_checks<-ALLDATA %>% filter(JOURNAL=="LECO")
 LECO_checks<-LECO %>% arrange(editor_id,YEAR,INST)
 head(LECO_checks,10)
 LECO_checks<-LECO_checks %>% group_by(editor_id,INST) %>% distinct(editor_id,INST)
@@ -100,7 +219,7 @@ rm(LECO_checks,sub1,sub2,sub3,LECO_ed_checks,LECO_inst_checks)
 # CONBIO
 #######################
 
-
+CONBIO_checks<-ALLDATA %>% filter(JOURNAL=="CONBIO")
 
 CONBIO_checks<-CONBIO %>% arrange(editor_id,YEAR,INST)
 head(CONBIO_checks,10)
@@ -147,13 +266,14 @@ rm(CONBIO_checks,sub1,sub2,sub3,CONBIO_ed_checks,CONBIO_inst_checks)
 #######################
 # AGrONOMY
 #######################
-
+AG_check<-ALLDATA %>% filter(JOURNAL=="AGRONOMY")
 # AG_inst<-AG %>% group_by(LAST_NAME,FIRST_NAME,MIDDLE_NAME,YEAR,INST) %>% summarise(n()) %>% arrange(LAST_NAME,FIRST_NAME,YEAR)
 # write.csv(AG_inst, file="AG_missing_inst.csv", row.names = T) #export it as a csv file
 
 #######################
 # JBIOG
 #######################
+JBIOG_check<-ALLDATA %>% filter(JOURNAL=="JBIOG")
 JBIOG_checks<-JBIOG %>% arrange(editor_id,YEAR,INST)
 head(JBIOG_checks,10)
 JBIOG_checks<-JBIOG_checks %>% group_by(editor_id,INST) %>% distinct(editor_id,INST)
@@ -199,7 +319,7 @@ rm(JBIOG_checks,sub1,sub2,sub3,JBIOG_ed_checks,JBIOG_inst_checks,JBIOG_1row,JBIO
 #######################
 # NEWPHYT
 #######################
-
+NEWPHYT_check<-ALLDATA %>% filter(JOURNAL=="NEWPHYT")
 # NEWPHYT (MAIRA): 
 # 1) NEEDS INST
 NEWPHYT$INST<-as.factor(NEWPHYT$INST)
@@ -211,7 +331,7 @@ NEWPHYT_inst<-NEWPHYT %>% group_by(LAST_NAME,FIRST_NAME,MIDDLE_NAME,YEAR,INST) %
 # NAJFM
 #######################
 
-
+NAJFM_check<-ALLDATA %>% filter(JOURNAL=="NAJFM")
 # NAJFM (MAIRA): 
 # 1) NEEDS INST
 NAJFM$INST<-as.factor(NAJFM$INST)
@@ -221,7 +341,7 @@ write.csv(NAJFM_inst, file="NAJFM_missing_inst.csv", row.names = T) #export it a
 #######################
 # GCB
 #######################
-
+GCB_check<-ALLDATA %>% filter(JOURNAL=="GCB")
 #TO FILL OUT MISSING INST 
 GCB$INST<-as.factor(GCB$INST)
 GCB_inst<-GCB %>% group_by(NAME,YEAR,INST) %>% summarise(n()) %>% arrange(NAME,YEAR)
@@ -231,7 +351,7 @@ write.csv(GCB_inst, file="GCB_missing_inst.csv", row.names = T) #export it as a 
 #######################
 # PLANTECOL
 #######################
-PLANTECOL_checks<-PLANTECOL %>% arrange(editor_id,YEAR,INST)
+PLANTECOL_checks<-ALLDATA %>% filter(JOURNAL=="PLANTECOL") %>% arrange(editor_id,YEAR,INST)
 head(PLANTECOL_checks,10)
 PLANTECOL_checks<-PLANTECOL_checks %>% group_by(editor_id,INST) %>% distinct(editor_id,INST)
 

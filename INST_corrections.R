@@ -2,6 +2,37 @@
 
 library(tidyverse)
 
+##############################################################
+# NO INST 2x NEEDED
+# AJB 
+# ECOLOGY
+# FEM
+# FUNECOL
+# ECOGRAPHY
+# JTE
+##############################################################
+
+##############################################################
+# checked by Patrick, need to upload corrections
+# Round 1: AGRON, ARES, EVOL (DONE)
+# Round 2a: CONBIO,NEW PHYT (DONE)
+# Round 2b: NEW PHYT (DONE)
+# Round 3: BITR
+# Round 4: AMNAT
+# Round 6: JECOL
+# Round 7: JAPE
+# Round 5: BIOCON
+# Round 8: PLANTECOL
+# Round 9: JBIOG
+# Round 10: LECO
+# JANE
+# JZOOL: will need extensive loopkup
+# OECOL: will need extensive loopkup
+# OIKOS: will need extensive loopkup
+# AUK: not for this paper
+# CONDOR: not for this paper
+##############################################################
+
 
 multi1<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_1.csv", col_names = TRUE)
 multi1<-multi1 %>% fill(INST,UNIT,CITY,STATE)
