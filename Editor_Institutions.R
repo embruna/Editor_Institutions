@@ -1084,7 +1084,7 @@ missing_edID<-ALLDATA %>% group_by(LAST_NAME,FIRST_NAME,JOURNAL) %>% filter(n()>
 
 # TODO: FIND THE DUPLICATED ONES AND CORRECT THEM
 
-alldata_dupes<-duplicated(ALLDATA)
+DISTINCT<-ALLDATA %>% distinct(JOURNAL, YEAR, editor_id, .keep_all = TRUE)
 
 alldata_dupes<-ALLDATA %>% group_by(JOURNAL,LAST_NAME,FIRST_NAME,YEAR) %>% filter(n()>1)
 alldata_dupes<-droplevels(alldata_dupes)
