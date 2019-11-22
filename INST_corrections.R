@@ -56,6 +56,8 @@ JAPE_inst<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrection
 JAPE_inst<-JAPE_inst %>% 
   rename("FIRST_NAME"="FIRST_NA", "MIDDLE_NAME"="MIDDLE_","LAST_NAME"="LAST_NA") %>% 
   fill(INST,UNIT,CITY,STATE,NOTES)%>% filter(JOURNAL=="JAPE")
+JAPE_inst$editor_id<-NULL
+# TODO: something is going on with editot IDS
 
 
 JBIOG_inst<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/newPJCorrectionsDONE_JBIOG.csv", col_names = TRUE)
@@ -180,11 +182,13 @@ head(INST_fix,20)
 # ORIG$source<-"orig"
 # nrow(ORIG)
 
+
+ALLDATA$editor_id<-as.numeric(ALLDATA$editor_id)
 #ARE THERE ANY IN CORRECT that *ARENT* in ALLDATA?
 #THESE NEED TO BE ADDED TO ALLDATA
-C_but_not_O<-anti_join(INST_fix,ALLDATA,by=c("editor_id","JOURNAL","YEAR"),keep=TRUE) #in correct but not orig 24
+C_but_not_O<-anti_join(INST_fix,ALLDATA,by=c("editor_id","JOURNAL","YEAR")) #in correct but not orig 24
 nrow(C_but_not_O)
-C_but_not_O
+summary(C_but_not_O)
 
 #THESE ARE THE ONES IN ALLDATA but not CORRECTED 
 O_butnot_C<-anti_join(ALLDATA,INST_fix,by=c("editor_id","JOURNAL","YEAR")) # in orig but not correct 21221
@@ -206,7 +210,7 @@ both<-select(both,JOURNAL,YEAR,VOLUME,ISSUE,editor_id,
              FIRST_NAME.x,FIRST_NAME.y,MIDDLE_NAME.x,MIDDLE_NAME.y,LAST_NAME.x,LAST_NAME.y,
              TITLE,CATEGORY,INST.x,INST.y,UNIT.x,UNIT.y,CITY.x,CITY.y,STATE.x,STATE.y,
              COUNTRY.x,COUNTRY.y,COUNTRY_Prior_Class,geo.code,geo.code_Prior_Class,
-             GENDER,dupe,NOTES.y)
+             GENDER,NOTES.y)
 
 #CAN QUICKLY ID WHAT NEEDS TO BE FIXED AS FOLLOWS
 

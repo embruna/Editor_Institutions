@@ -160,14 +160,33 @@ for (i in 1:length(file_list)){
          read.csv(paste(folder, file_list[i], sep=''),na.strings = c("","NA"), encoding = "ASCII")
   )}
 
+
+
+
+# ##################################
+# AUK
+# ##################################
+
 AUK_raw<-AUK.csv
 AUK_raw$JOURNAL<-"AUK"
 AUK_raw$editor_id<-NA
+AUK<-AUK_raw%>% select(JOURNAL,YEAR, editor_id,EDITOR_TITLE,FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,UNIT,CITY,STATE,COUNTRY,NOTES)
+
+AUK$INST<-gsub("None given",NA, AUK$INST)
+AUK$UNIT<-gsub("None given",NA, AUK$UNIT)
+AUK$CITY<-gsub("None given",NA, AUK$CITY)
+AUK$STATE<-gsub("None given",NA, AUK$STATE)
+AUK$COUNTRY<-gsub("None given",NA, AUK$COUNTRY)
+
+
+# ##################################
+# CONDOR
+# ##################################
+
 CONDOR_raw<-CONDOR.csv
 CONDOR_raw$JOURNAL<-"CONDOR"
 CONDOR_raw$editor_id<-NA
 
-AUK<-AUK_raw%>% select(JOURNAL,YEAR, editor_id,EDITOR_TITLE,FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,UNIT,CITY,STATE,COUNTRY,NOTES)
 CONDOR<-CONDOR_raw %>% select(JOURNAL,YEAR, editor_id,EDITOR_TITLE,FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,UNIT,CITY,STATE,COUNTRY,NOTES)
 CONDOR$INST<-gsub("None given",NA, CONDOR$INST)
 CONDOR$UNIT<-gsub("None given",NA, CONDOR$UNIT)
@@ -175,11 +194,6 @@ CONDOR$CITY<-gsub("None given",NA, CONDOR$CITY)
 CONDOR$STATE<-gsub("None given",NA, CONDOR$STATE)
 CONDOR$COUNTRY<-gsub("None given",NA, CONDOR$COUNTRY)
 
-AUK$INST<-gsub("None given",NA, AUK$INST)
-AUK$UNIT<-gsub("None given",NA, AUK$UNIT)
-AUK$CITY<-gsub("None given",NA, AUK$CITY)
-AUK$STATE<-gsub("None given",NA, AUK$STATE)
-AUK$COUNTRY<-gsub("None given",NA, AUK$COUNTRY)
 
 # 
 # ##################################
@@ -265,39 +279,6 @@ ALL_AMNAT %>% group_by(YEAR,LAST_NAME,FIRST_NAME) %>% filter(n()>1) %>% summariz
 # FUNECOL2<-FUNECOL_data_11.03.2017.csv%>% select(JOURNAL,YEAR, FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,UNIT,CITY,STATE,COUNTRY,editor_id) #NO UNIT, CITY, STATE
 
 AMNAT<-AMNAT.csv
-AG<-AGRONOMY_data_11.02.2017.csv 
-AJB<-AJB.csv
-AMNAT<-AMNAT.csv
-AREES<-AREES.csv
-BIOCON<-BIOCON_TS.csv
-BITR<-BITR.csv 
-CONBIO<-CONBIO_EKB.csv
-ECOG<-ECOGRAPHY_5112017.csv
-ECOL<-ECOLOGY.csv
-EVOL<-EVOL.csv
-FEM<-FEM_7112017.csv
-GCB<-GCBdata.csv
-JANE<-JANE.csv
-JAPE<-JAPE_new.csv
-JBIOG<-JBIOG.csv
-JECOL<-JECOL_new.csv
-JTE<-JTE_2015.csv
-# JZOOL HAS MULTIPLE DATASETS TO UPLOAD
-JZOOL1<-JZOOL17nov.csv
-JZOOL2<-JZOOL.csv
-LECO<-LECO_2017.csv 
-MARECOL<-MARECOL_21July2018.csv 
-NAJFM<-NAJFM_21july2018.csv 
-NEWPHYT<-NEWPHYT_21july2018.csv
-OECOL<-OECOL.csv
-OIKOS<-OIKOS_21july2018.csv 
-PLANTECOL<-PLANTECOL_new.csv 
-# FUNECOL HAS MULTIPLE DATASETS TO UPLOAD
-FUNECOL1<-FUNECOLdata_Allen_EB_1dec.csv
-FUNECOL2<-FUNECOL_data_11.03.2017.csv
-
-
-
 
 ##############################################################
 ##############################################################
@@ -313,6 +294,10 @@ FUNECOL2<-FUNECOL_data_11.03.2017.csv
 # # FUNECOL: REVIEW AND DELETE COLS AS NEEDED
 # FUNECOL1<-FUNECOLdata_Allen_EB_1dec.csv%>% select(JOURNAL,YEAR, FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,COUNTRY) #NO UNIT, CITY, STATE
 # FUNECOL2<-FUNECOL_data_11.03.2017.csv%>% select(JOURNAL,YEAR, FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,UNIT,CITY,STATE,COUNTRY,editor_id) #NO UNIT, CITY, STATE
+
+# FUNECOL HAS MULTIPLE DATASETS TO UPLOAD
+FUNECOL1<-FUNECOLdata_Allen_EB_1dec.csv
+FUNECOL2<-FUNECOL_data_11.03.2017.csv
 
 # REVIEWING AND CORRECTING
 FUNECOL<-full_join(FUNECOL1,FUNECOL2,by=c("YEAR","FIRST_NAME","LAST_NAME"))
@@ -399,6 +384,9 @@ FUNECOL<-FUNECOL %>% rename("TITLE"="TITLE.x","CATEGORY"="CATEGORY.y")
 ##############################################################
 # LANDSCAPE ECOLOGY
 ##############################################################
+
+LECO<-LECO_2017.csv 
+
 LECO$INST<-as.character(LECO$INST)
 LECO$CITY[LECO$INST=="University of Nevada" & LECO$LAST_NAME=="Walker"]<-"Las Vegas"
 
@@ -439,6 +427,9 @@ LECO<-rename(LECO,"TITLE"="TITLE.x")
 # CONBIO
 # 
 ##############################################################
+
+CONBIO<-CONBIO_EKB.csv
+
 CONBIO$INST<-trimws(CONBIO$INST)
 CONBIO$UNIT<-trimws(CONBIO$UNIT)
 CONBIO$CITY <-trimws(CONBIO$CITY)
@@ -469,6 +460,13 @@ CONBIO<-rename(CONBIO,"TITLE"="TITLE.x")
 ##############################################################
 # JZOOLOGY
 ##############################################################
+
+# JZOOL HAS MULTIPLE DATASETS TO UPLOAD
+JZOOL1<-JZOOL17nov.csv
+JZOOL2<-JZOOL.csv
+
+
+
 JZOOL1$JOURNAL<-as.factor("JZOOL")
 summary(JZOOL1$JOURNAL)
 summary(JZOOL2$JOURNAL)
@@ -580,6 +578,8 @@ head(JZOOL,10)
 # Then need to add a function to upload the corrections/additions
 ##
 
+NEWPHYT<-NEWPHYT_21july2018.csv
+
 head(NEWPHYT,10)
 NEWPHYT<-NEWPHYT %>% rename("TITLE"="TITLE.x")
 
@@ -588,6 +588,8 @@ NEWPHYT<-NEWPHYT %>% rename("TITLE"="TITLE.x")
 ##############################################################
 # BIOCON_corrections
 # These are in "./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_7_JAPE.xlsx"
+
+BIOCON<-BIOCON_TS.csv
 
 
 # DELETE THEIR RECORD FOR GIVEN YEAR (not on board)
@@ -664,6 +666,11 @@ BIOCON<-rename(BIOCON,"TITLE"="TITLE.x")
 ##############################################################
 # AGRONOMY
 ##############################################################
+
+
+
+AG<-AGRONOMY_data_11.02.2017.csv 
+
 # AGRONOMY MISSING INST
 AG$INST<-as.factor(AG$INST)
 
@@ -686,6 +693,10 @@ head(AG,10)
 ##############################################################
 # FEM
 ##############################################################
+
+FEM<-FEM_7112017.csv
+
+
 FEM<-FEM %>% rename("TITLE"="TITLE.x")
 head(FEM,10)
 ## NOT CORRECT EITHER INST OR CITY STATE!!!
@@ -694,6 +705,9 @@ head(FEM,10)
 ##############################################################
 # J ANIMAL ECOLOGY
 ##############################################################
+
+JANE<-JANE.csv
+
 JANE$UNIT<-as.character(JANE$UNIT)
 JANE$INST<-as.character(JANE$INST)
 JANE$UNIT[JANE$editor_id==1702]<-"Deptartment of Biology"
@@ -712,6 +726,9 @@ JANE<-JANE %>% rename("TITLE"="TITLE.x")
 ##############################################################
 # J BIOGEOGRAPHY
 ##############################################################
+
+JBIOG<-JBIOG.csv
+
 # JBIOG<-JBIOG.csv%>% select(JOURNAL,YEAR, editor_id,FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,CITY,STATE,COUNTRY)
 JBIOG$INST<-as.character(JBIOG$INST)
 JBIOG<-JBIOG %>% separate(INST, c("UNIT", "INST"),",",extra="merge",fill="left",remove=TRUE)
@@ -765,6 +782,10 @@ head(JBIOG,10)
 ##############################################################
 # PLANT ECOLOGY
 ##############################################################
+
+PLANTECOL<-PLANTECOL_new.csv 
+
+
 # some editing
 PLANTECOL$INST<-as.character(PLANTECOL$INST)
 PLANTECOL$INST[PLANTECOL$LAST_NAME=="Veblen"]<-"University of Colorado-Boulder"
@@ -801,6 +822,9 @@ head(PLANTECOL,10)
 ##############################################################
 # EVOLUTION
 ##############################################################
+
+EVOL<-EVOL.csv
+
 EVOL$COUNTRY<-as.character(EVOL$COUNTRY)
 EVOL$STATE<-as.character(EVOL$STATE)
 EVOL$COUNTRY[EVOL$LAST_NAME=="Knowlton" & EVOL$FIRST_NAME=="Nancy"]<-"Panama"
@@ -817,6 +841,9 @@ head(EVOL,10)
 ##############################################################
 # AMERICAN NATURALIST
 ##############################################################
+
+AMNAT<-AMNAT.csv
+
 AMNAT$INST<-as.character(AMNAT$INST)
 AMNAT$CITY[AMNAT$INST=="University of Hawaii" & AMNAT$LAST_NAME=="Palumbi"]<-"Honolulu"
 AMNAT$STATE[AMNAT$INST=="University of Hawaii" & AMNAT$LAST_NAME=="Palumbi"]<-"HI"
@@ -835,6 +862,11 @@ head(AMNAT,10)
 ##############################################################
 # JAPE
 ##############################################################
+
+
+JAPE<-JAPE_new.csv
+
+
 head(JAPE,10)
 JAPE<-JAPE %>% rename("TITLE"="TITLE.x")
 head(JAPE,10)
@@ -848,6 +880,9 @@ head(JAPE,10)
 ##############################################################
 # OECOLOGIA
 ##############################################################
+
+OECOL<-OECOL.csv
+
 OECOL$INST<-as.character(OECOL$INST)
 OECOL$CITY[OECOL$INST=="University of Nevada" & OECOL$LAST_NAME=="Walker"]<-"Las Vegas"
 OECOL$STATE[OECOL$INST=="University of Nevada" & OECOL$LAST_NAME=="Walker"]<-"NV"
@@ -864,6 +899,9 @@ head(OECOL,10)
 ##############################################################
 # GCB
 ##############################################################
+
+GCB<-GCBdata.csv
+
 # TODO: GCB Need to 
 GCB<- GCB %>% extract(NAME, c("FIRST_NAME","LAST_NAME"), "([^ ]+) (.*)")
 GCB<-GCB %>% separate(LAST_NAME, c("MIDDLE_NAME", "LAST_NAME"),sep = " ", fill = "left",REMOVE=FALSE)
@@ -892,6 +930,9 @@ head(GCB,10)
 # Need to convert that to a function, e.g., check(NAJFM)
 # Then need to add a function to upload the corrections/additions
 ##
+
+NAJFM<-NAJFM_21july2018.csv 
+
 head(NAJFM,10)
 NAJFM<-NAJFM %>% rename("TITLE"="TITLE.x")
 
@@ -903,6 +944,8 @@ NAJFM<-NAJFM %>% rename("TITLE"="TITLE.x")
 # 1) SPLIT name
 # 2) Disambiguate and add editor ID
 # 3) NEEDS INSTITIONS
+
+MARECOL<-MARECOL_21July2018.csv 
 
 MARECOL$INST<-as.factor(MARECOL$INST)
 MARECOL<-rename(MARECOL,"VOLUME"="Volume","ISSUE"="Issue")
@@ -933,6 +976,7 @@ head(MARECOL,10)
 # ÅJB
 ##############################################################
 
+AJB<-AJB.csv
 head(AJB,10)
 AJB<-rename(AJB,"TITLE"="TITLE.x")
 ##
@@ -946,6 +990,8 @@ AJB<-rename(AJB,"TITLE"="TITLE.x")
 ##############################################################
 # OIKOS
 ##############################################################
+
+OIKOS<-OIKOS_21july2018.csv
 
 head(OIKOS,10)
 OIKOS<-rename(OIKOS,"TITLE"="TITLE.x")
@@ -963,6 +1009,8 @@ OIKOS<-rename(OIKOS,"TITLE"="TITLE.x")
 # ECOGRAPHY
 ##############################################################
 
+ECOG<-ECOGRAPHY_5112017.csv
+
 head(ECOG,10)
 ECOG<-rename(ECOG,"TITLE"="TITLE.x")
 ##
@@ -976,6 +1024,7 @@ ECOG<-rename(ECOG,"TITLE"="TITLE.x")
 # BITR
 ##############################################################
 
+BITR<-BITR.csv 
 head(BITR,10)
 BITR<-rename(BITR,"TITLE"="TITLE.x")
 ##
@@ -989,6 +1038,8 @@ BITR<-rename(BITR,"TITLE"="TITLE.x")
 ##############################################################
 # JECOL
 ##############################################################
+
+JECOL<-JECOL_new.csv
 
 head(JECOL,10)
 JECOL<-rename(JECOL,"TITLE"="TITLE.x")
@@ -1004,6 +1055,7 @@ JECOL<-rename(JECOL,"TITLE"="TITLE.x")
 ##############################################################
 # AREES
 ##############################################################
+AREES<-AREES.csv
 
 head(AREES,10)
 AREES<-rename(AREES,"TITLE"="TITLE.x")
@@ -1019,6 +1071,8 @@ AREES<-rename(AREES,"TITLE"="TITLE.x")
 # JTE
 ##############################################################
 
+JTE<-JTE_2015.csv
+
 head(JTE,10)
 JTE<-rename(JTE,"TITLE"="TITLE.x")
 ##
@@ -1028,9 +1082,7 @@ JTE<-rename(JTE,"TITLE"="TITLE.x")
 # Then need to add a function to upload the corrections/additions
 ##
 
-##############################################################
-# MEPS
-##############################################################
+
 # TODO: MEPS: NOT EVEN AN EXCEL SHEET,NEED TO SEE WHICH ONES ARE MISSING INSTITUTIONS
 
 ##
@@ -1039,6 +1091,14 @@ JTE<-rename(JTE,"TITLE"="TITLE.x")
 # Need to convert that to a function, e.g., check(MEPS)
 # Then need to add a function to upload the corrections/additions
 ##
+
+##############################################################
+# ECOLOGY
+##############################################################
+
+ECOL<-ECOLOGY.csv
+
+
 
 ##############################################################
 ##############################################################
