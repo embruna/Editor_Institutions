@@ -170,6 +170,60 @@ rm(JZOOL_checks,sub1,sub2,sub3,JZOOL_ed_checks,JZOOL_inst_checks)
 
 
 
+
+
+#######################
+# OIKOS
+#######################
+
+OIKOS_checks<-ALLDATA %>% filter(JOURNAL=="OIKOS")
+OIKOS_checks<-OIKOS_checks %>% arrange(editor_id,YEAR,INST)
+head(OIKOS_checks,10)
+# OIKOS_checks<-OIKOS_checks %>% group_by(editor_id,INST) %>% distinct(editor_id,INST,.keep_all=TRUE)
+
+
+
+# editors with >1 inst : 2x
+
+OIKOS_INST_NA<-OIKOS_checks %>%  filter(is.na(INST))  %>% group_by(editor_id) %>% distinct(editor_id,CITY,.keep_all=TRUE)
+# 
+# OIKOS_ed_checks<-OIKOS_checks %>%  distinct(editor_id,INST) %>% group_by(editor_id) %>% filter(n()>1) 
+# 
+# # Inst with >1 editors : 2x
+# OIKOS_inst_checks<-OIKOS_checks %>%  distinct(editor_id,INST) %>% group_by(INST) %>% filter(n()>1) 
+# 
+# OIKOS_checks<-bind_rows(OIKOS_inst_checks,OIKOS_ed_checks) %>% distinct(editor_id,INST)
+# 
+# OIKOS_checks<-inner_join(OIKOS,OIKOS_checks) %>% distinct(editor_id,INST,.keep_all = TRUE)
+# 
+# OIKOS_checks$check<-"2x"
+# 
+# sub1<-OIKOS %>% 
+#   group_by(editor_id) %>%
+#   do(sample_n(.,1))
+# 
+# sub2<-OIKOS %>% 
+#   group_by(editor_id) %>%
+#   do(sample_n(.,1))
+# 
+# 
+# sub3<-OIKOS %>% 
+#   group_by(editor_id) %>%
+#   do(sample_n(.,1))
+# 
+# # OIKOS_spotchecks<-sub1
+# OIKOS_spotchecks<-unique(bind_rows(sub1,sub2,sub3)) %>% arrange(YEAR,LAST_NAME)
+# 
+# OIKOS_spotchecks$check<-"spotcheck"
+# 
+# OIKOS_checks<-bind_rows(OIKOS_spotchecks,OIKOS_checks) %>%arrange(YEAR,LAST_NAME)
+# OIKOS_checks<-OIKOS_checks %>% distinct(editor_id, INST,.keep_all = TRUE)
+
+write.csv(OIKOS_INST_NA, file="./Data/Patrick_James_Data_Corrections/OIKOS_checks.csv", row.names = T) #export it as a csv file
+
+rm(OIKOS_checks,sub1,sub2,sub3,OIKOS_ed_checks,OIKOS_inst_checks)
+
+
 #######################
 # LECO
 #######################
