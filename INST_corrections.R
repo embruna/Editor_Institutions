@@ -196,11 +196,11 @@ both$UNIT.x[both$editor_id.x==455 & both$FIRST_NAME=="Christopher" & both$LAST_N
 both$CITY.x[both$editor_id.x==455 & both$FIRST_NAME=="Christopher" & both$LAST_NAME=="Frissell"]<-"Polson"
 both$CITY.x[both$editor_id.x==1511 & both$LAST_NAME=="Cinner" & both$YEAR>2009 & both$YEAR<2015 ]<-"Townsville"
 both$STATE.x[both$editor_id.x==1511 & both$LAST_NAME=="Cinner" & both$YEAR>2009 & both$YEAR<2015 ]<-"Queensland"
-both$UNIT.x[both$editor_id.x==1511 & both$LAST_NAME=="Cinner" & both$YEAR>2009 & both$YEAR<2015 ]<-"ARC Centre of Excellence for Coral Reef Studies"
-both$INST.x[both$editor_id.x==1511 & both$LAST_NAME=="Cinner" & both$YEAR==2013 ]<-"James Cook University"
-both$NOTES.y[both$editor_id.x==1511 & both$LAST_NAME=="Cinner" & both$YEAR==2013 ]<-"journal front matter has INST=Columbia Univ, but his CV makes no mention of this"
+both$UNIT.x[both$editor_id.x==1511 & both$LAST_NAME=="Cinner"]<-"ARC Centre of Excellence for Coral Reef Studies"
+both$INST.x[both$editor_id.x==1511 & both$LAST_NAME=="Cinner"]<-"James Cook University"
+both$NOTES.y[both$editor_id.x==1511 & both$LAST_NAME=="Cinner" & both$YEAR==2013]<-"journal front matter has INST=Columbia Univ, but his CV makes no mention of this"
 
-# This will replace all the "NA" in CITY.x (origianlly no info) with the value from CITY.y (Patrick's data collection), if there is one 
+# This will replace all the "NA" in STATE.x (origianlly no info) with the value from STATE.y (Patrick's data collection), if there is one 
 both<-both %>% mutate(STATE.x = replace(STATE.x, is.na(STATE.x), STATE.y[is.na(STATE.x)]))
 
 both$STATE.y<-NULL
@@ -211,19 +211,54 @@ both<-both %>% rename("STATE"="STATE.x")
 
 
 # INST DIFFERENCES BETWEEN ALL DATA AND CHECKED FILE
+
+# This will replace all the "NA" and "" in INST.x (origianlly no info) with the value from INST.y (Patrick's data collection), if there is one 
+both<-both %>% mutate(INST.x = replace(INST.x, is.na(INST.x), INST.y[is.na(INST.x)]))
+both <- both %>% mutate(INST.x = replace(INST.x, INST.x == "", NA))
 summary(both$INST.x==both$INST.y) # 235 FALSE
 both$INST_check<-both$INST.x==both$INST.y
+
 INST_check<-filter(both,INST_check=="FALSE")
 INST_check_ok<-filter(both,INST_check==TRUE |is.na(INST_check))
+
 write.csv(INST_check, file="./Data/Patrick_James_Data_Corrections/Complete/INST_corrections_2x.csv", row.names = F) #export it as a csv file
-INST_check_done<-read.csv("./Data/Patrick_James_Data_Corrections/Complete/INST_corrections_2x_done.csv")# CITY DIFFERENCES BETWEEN ALL DATA AND CHECKED FILE
 
-str(INST_check_ok)
-str(INST_check_ok$editor_id.x)
-INST_check_done$editor_id.x<-as.factor(INST_check_done$editor_id.x)
 
-both<-bind_rows(INST_check_ok,INST_check_done)
-head(both,10)
+both$INST.x[both$editor_id.x==1248 & both$JOURNAL=="BITR" & both$YEAR==1987 ]<-"New York Botanical Garden"
+both$INST.x[both$editor_id.x==1704 & both$JOURNAL=="JECOL" & both$YEAR==2009 ]<-"University of Sheffield"
+both$INST.x[both$INST.x=="Unniversity of Stirling" ]<-"University of Stirling"
+
+
+both$UNIT.x[both$editor_id.x=1229 & both$INST.x=="University of Montana"]<-"Savannah River Ecology Laboratory"
+both$INST.x[both$editor_id.x==1229 & both$INST.x=="University of Montana"]<-"University of Georgia"
+
+both$UNIT.x[both$INST.x=="Savannah River Ecology Laboratory" ]<-"Savannah River Ecology Laboratory"
+both$INST.x[both$INST.x=="Savannah River Ecology Laboratory" ]<-"University of Georgia"
+both$UNIT.x[both$INST.y=="University of California Santa Cruz Extension"]<-"UCSC Extension"
+both$INST.x[both$INST.x=="University of California" & both$INST.y=="University of California Davis" ]<-"University of California Davis"
+both$INST.x[both$INST.x=="University of California" & both$INST.y=="University of California Berkeley" ]<-"University of California Berkeley"
+both$INST.x[both$INST.x=="University of California" & both$INST.y=="University of California Riverside" ]<-"University of California Riverside"
+# both$INST.x[both$editor_id.x==1839 & both$JOURNAL=="CONBIO" ]<-"Venezuelan Institute For Scientific Investigation"
+both$INST.x[both$editor_id.x==1218 & both$JOURNAL=="CONBIO" & both$YEAR>1986 & both$YEAR<1992 ]<-"Royal Botanic Gardens Kew"
+both$INST.x[both$INST.x=="Museum Natl Hist Nat"]<-"National History Museum Paris"
+both$INST.x[both$INST.x=="University<ca>of<ca>California<ca>Santa<ca>Cruz"]<-"University of California Santa Cruz"
+both$INST.x[both$INST.y=="Uc Santa Cruz"]<-"University of California Santa Cruz"
+
+both$INST.x[both$LAST_NAME=="Streeter" & both$JOURNAL=="JECOL" & both$YEAR==2009 ]<-"University of Sussex"
+both$INST.x[both$LAST_NAME=="Grover" & both$JOURNAL=="AMNAT"]<-"University of Texas Arlington"
+both$INST.x[both$LAST_NAME=="Noss" & both$JOURNAL=="CONBIO" & both$YEAR==1998 ]<-"Conservation Biology Institute"
+
+both$UNIT.x[both$LAST_NAME=="Dratch" & both$JOURNAL=="CONBIO" & both$INST.x=="National Fish and Wildlife Forensics Laboratory" ]<-"National Fish and Wildlife Forensics Laboratory"
+both$INST.x[both$LAST_NAME=="Dratch" & both$JOURNAL=="CONBIO" & both$INST.x=="National Fish and Wildlife Forensics Laboratory" ]<-"US Fish and Wildlife Service"
+both$INST.x[both$LAST_NAME=="Daszak" & both$JOURNAL=="CONBIO" & both$INST.x=="University of Nevada Reno" ]<-"Consortium for Conservation Medicine"
+
+both$UNIT.x[both$LAST_NAME=="Meffe" & both$JOURNAL=="CONBIO" & both$INST.x=="University of Montana" ]<-"Savanna Riverl Ecological Laboratory"
+both$UNIT.x[both$LAST_NAME=="Meffe" & both$JOURNAL=="CONBIO" & both$UNIT.x=="Savanna Riverl Ecological Laboratory" ]<-"University of Georgia"
+both$UNIT.x[both$JOURNAL=="LECO" & both$INST.x=="Institute of Landscape Ecology of Slovak Academy of Sciences" ]<-"Institute of Landscape Ecology"
+both$INST.x[both$JOURNAL=="LECO" & both$INST.x=="Institute of Landscape Ecology of Slovak Academy of Sciences" ]<-"Slovak Academy of Sciences"
+
+
+
 summary(both$INST.x==both$INST.y)
 both$INST_check<-both$INST.x==both$INST.y
 both$INST.y<-NULL
@@ -238,16 +273,45 @@ both$CITY_check<-both$CITY.x==both$CITY.y
 CITY_check<-filter(both,CITY_check=="FALSE")
 CITY_check_ok<-filter(both,CITY_check==TRUE |is.na(CITY_check))
 write.csv(CITY_check, file="./Data/Patrick_James_Data_Corrections/Complete/CITY_corrections_2x.csv", row.names = F) #export it as a csv file
-CITY_check_done<-read.csv("./Data/Patrick_James_Data_Corrections/Complete/CITY_corrections_2x_done.csv")# CITY DIFFERENCES BETWEEN ALL DATA AND CHECKED FILE
+both$STATE[both$CITY.x=="New Mexico" & both$CITY.y=="Las Cruces"]<-"NM"
+both$CITY.x[both$CITY.x=="New Mexico" & both$CITY.y=="Las Cruces"]<-"Las Cruces"
+both$CITY.x[is.na(both$CITY.x) & both$CITY.y=="Las Cruces"]<-"Las Cruces"
+both$NOTES.y[both$CITY.x=="Basel" & both$CITY.y=="Lausanne"]<-"2x city"
+both$NOTES.y[both$CITY.x=="Brighton" & both$CITY.y=="Toronto"]<-"2x city"
+both$NOTES.y[both$CITY.x=="Zurich" & both$CITY.y=="Basel"]<-"2x city"
+both$NOTES.y[both$CITY.x=="Canberra" & both$CITY.y=="Lyneham"]<-"2x city"
 
-str(CITY_check_ok)
-str(CITY_check_ok$editor_id.x)
-CITY_check_done$editor_id.x<-as.character(CITY_check_done$editor_id.x)
+both$CITY.x[both$CITY.x=="Stanford" & both$CITY.y=="Pacific Grove"]<-"Pacific Grove"
+both$CITY.x[both$CITY.x=="Manhattan" & both$CITY.y=="New York"]<-"New York"
+both$CITY.x[both$CITY.x=="East Lansging" & both$CITY.y=="East Lansing"]<-"East Lansing"
+both$CITY.x[both$CITY.x=="New Yor City" & both$CITY.y=="New York City"]<-"New York"
+both$CITY.x[both$CITY.x=="Manhattan" & both$CITY.y=="New York"]<-"New York"
+both$CITY.x[both$CITY.x=="Los Angeles" & both$CITY.y=="Malibu"]<-"Malibu"
+both$CITY.x[both$CITY.x=="Manhattan" & both$CITY.y=="New York"]<-"New York"
+both$CITY.x[both$CITY.x=="Manhattan" & both$CITY.y=="New York"]<-"New York"
+both$CITY.x[both$CITY.x=="Sheffield S10 2TN"]<-"Sheffield S10 2TN"
 
-both<-bind_rows(CITY_check_ok,CITY_check_done)
-head(both,10)
+both$UNIT.x[both$CITY.x=="\xcaDepartment of Animal Ecology and Tropical Biology (Zoology III)"]<-"Department of Animal Ecology and Tropical Biology (Zoology III)"
+both$CITY.x[both$CITY.x=="\xcaDepartment of Animal Ecology and Tropical Biology (Zoology III)"]<-NA
+
+
+both$NOTES.y[both$CITY.x=="Aberdeen" & both$CITY.y=="Cragiebuckler"]<-"2x city"
+both$CITY.x[both$CITY.x=="Invergowric" & both$CITY.y=="Invergowrie"]<-"Invergowrie"
+both$NOTES.y[both$CITY.x=="Brisbane" & both$CITY.y=="St Lucia"]<-"2x city"
+both$NOTES.y[both$CITY.x=="London" & both$CITY.y=="Ascot"]<-"2x city"
+both$NOTES.y[both$CITY.x=="Williams" & both$CITY.y=="Mystic"]<-"2x city"
+both$NOTES.y[both$CITY.x=="Melbourne" & both$CITY.y=="Parkville"]<-"2x city"
+both$NOTES.y[both$CITY.x=="New Brunswick" & both$CITY.y=="Polson"]<-"2x city"
+both$NOTES.y[both$CITY.x=="London" & both$CITY.y=="Notre Dame"]<-"Notre Dame"
+both$NOTES.y[both$CITY.x=="Canberra" & both$CITY.y=="Lyneham"]<-"2x city"
+both$NOTES.y[both$CITY.x=="Canberra" & both$CITY.y=="Lyneham"]<-"2x city"
+both$NOTES.y[both$CITY.x=="Canberra" & both$CITY.y=="Lyneham"]<-"2x city"
+
+
 summary(both$CITY.x==both$CITY.y)
 both$CITY_check<-both$CITY.x==both$CITY.y
+write.csv(CITY_check, file="./Data/Patrick_James_Data_Corrections/Complete/CITY_corrections_2x.csv", row.names = F) #export it as a csv file
+
 # This will replace all the "NA" in CITY.x (origianlly no info) with the value from CITY.y (Patrick's data collection), if there is one 
 both<-both %>% mutate(CITY.x = replace(CITY.x, is.na(CITY.x), CITY.y[is.na(CITY.x)]))
 
@@ -264,20 +328,50 @@ both<-both %>% rename("CITY"="CITY.x")
 both$UNIT.x[both$UNIT.x == ""] <- NA
 summary(both$UNIT.x==both$UNIT.y) # 7 FALSE
 both$UNIT_check<-both$UNIT.x==both$UNIT.y
+
+
 # No probs, just differences in words ("the, and", etc)
 # This will replace all the "NA" in UNIT.x (origianlly no info) with the value from UNIT.y (Patrick's data collection), if there is one 
 both<-both %>% mutate(UNIT.x = replace(UNIT.x, is.na(UNIT.x), UNIT.y[is.na(UNIT.x)]))
 
+
+both$UNIT.x[both$UNIT.y=="Savannah River Ecology Laboratory"]<-"Savannah River Ecology Laboratory"
 both$UNIT.y<-NULL
 both$UNIT_check<-NULL
 both<-both %>% rename("UNIT"="UNIT.x")
 
 # TODO COUNTRY DIFFERENCES BETWEEN ALL DATA AND CHECKED FILE
+
+
 country_levels<-(c(levels(both$COUNTRY.x),levels(both$COUNTRY.y)))
 levels(both$COUNTRY.x)<-c(country_levels,levels(both$COUNTRY.x))
 levels(both$COUNTRY.y)<-c(country_levels,levels(both$COUNTRY.y))
+
+both <- both %>% mutate(COUNTRY.x = replace(COUNTRY.x, COUNTRY.x == "", NA))
+
+both$COUNTRY.x<-as.factor(both$COUNTRY.x)
+
+# This will replace all the "NA" in CITY.x (origianlly no info) with the value from CITY.y (Patrick's data collection), if there is one 
+both<-both %>% mutate(COUNTRY.x = replace(COUNTRY.x, is.na(COUNTRY.x), COUNTRY.y[is.na(COUNTRY.x)]))
+
+
+levels(both$COUNTRY.x)
+str(both$COUNTRY.x)
+str(both$COUNTRY.y)
+
+
 summary(both$COUNTRY.x==both$COUNTRY.y) # 3552 FALSE
 both$country_check<-both$COUNTRY.x==both$COUNTRY.y
+
+country_check<-filter(both,country_check=="FALSE")
+write.csv(country_check, file="./Data/Patrick_James_Data_Corrections/Complete/COUNTRY_corrections_2x.csv", row.names = F) #export it as a csv file
+
+NEWPHYT	2007	173	1	2712	2712	Owen	K	Atkin	Editor	SE	NA	University of York	Biology	York	N Yorkshire	Australia	United Kingdom	NA	AUS	NA	NA	NA	FALSE
+NEWPHYT	2011	189	1	3923	3923	M	Green	Tjoelker	CoEditor	AE	NA	Texas A & M University	Dept Ecosyst Sci & Management	College Station	Texas	Australia	USA	NA	AUS	NA	NA	NA	FALSE
+CONBIO	1989	3	1	227	227	Arthur	NA	Westing	SE	SE	NA	Stockholm International Peace Research Institute	NA	Oslo	Ohio	Sweden	Norway	NA	USA	NA	NA	NA	FALSE
+CONBIO	1991	5	1	227	227	Arthur	NA	Westing	SE	SE	NA	Westing Associates	NA	Putney	Vermont	Sweden	USA	NA	USA	NA	NA	NA	FALSE
+AMNAT	2013	181	1	247	247	Benjamin	NA	Bolker	Editorial.Board	SE	NA	McMaster University	Ontario Canada	Hamilton	Ontario	USA	Canada	NA	USA	NA	NA	NA	FALSE
+
 
 # TODO NOTES DIFFERENCES BETWEEN ALL DATA AND CHECKED FILE
 summary(both$NOTES==both$NOTES.y) # 3552 FALSE
