@@ -102,113 +102,39 @@ source("institution_cleaner.R")
 INST_fix<-institution_cleaner(INST_fix)
 INST_fix<-INST_fix %>% select(-X1)
 head(INST_fix,20)
-# 
-# levels(as.factor(INST_fix$JOURNAL))
-# 
-# AG_INST_FIX<-INST_fix %>% filter(JOURNAL=="AGRONOMY") %>% 
-#   arrange(editor_id,YEAR) %>% select(-"X1")
-# write.csv(AG_INST_FIX, file="./Data/PJ_INST_FIX/AG_INST_FIX.csv", row.names = T) #export it as a csv file
-# 
-# AG
-# 
-# 
-# AMNAT_INST_FIX<-INST_fix %>% filter(JOURNAL=="AMNAT") %>% 
-#   arrange(editor_id,YEAR) %>% select(-"X1")
-# 
-# 
-# write.csv(AMNAT_INST_FIX, file="./Data/PJ_INST_FIX/AMNAT_INST_FIX.csv", row.names = T) #export it as a csv file
-# 
-# AREES_INST_FIX<-INST_fix %>% filter(JOURNAL=="AREES") %>% 
-#   arrange(editor_id,YEAR) %>% select(-"X1")
-# 
-# 
-# 
-# write.csv(AREES_INST_FIX, file="./Data/PJ_INST_FIX/AREES_INST_FIX.csv", row.names = T) #export it as a csv file
-# 
-# BITR_INST_FIX<-INST_fix %>% filter(JOURNAL=="BITR") %>% 
-#   arrange(editor_id,YEAR) %>% select(-"X1")
-# 
-# write.csv(BITR_INST_FIX, file="./Data/PJ_INST_FIX/BITR_INST_FIX.csv", row.names = T) #export it as a csv file
-# 
-# CONBIO_INST_FIX<-INST_fix %>% filter(JOURNAL=="CONBIO") %>% 
-#   arrange(editor_id,YEAR) %>% select(-"X1")
-# 
-# write.csv(CONBIO_INST_FIX, file="./Data/PJ_INST_FIX/CONBIO_INST_FIX.csv", row.names = T) #export it as a csv file
-# 
-# EVOL_INST_FIX<-INST_fix %>% filter(JOURNAL=="EVOL") %>% 
-#   arrange(editor_id,YEAR) %>% select(-"X1")
-# 
-# write.csv(EVOL_INST_FIX, file="./Data/PJ_INST_FIX/EVOL_INST_FIX.csv", row.names = T) #export it as a csv file
-# 
-# FEM_INST_FIX<-INST_fix %>% filter(JOURNAL=="FEM") %>% 
-#   arrange(editor_id,YEAR) %>% select(-"X1")
-# 
-#   write.csv(FEM_INST_FIX, file="./Data/PJ_INST_FIX/FEM_INST_FIX.csv", row.names = T) #export it as a csv file
-# 
-# NEWPHYT_INST_FIX<-INST_fix %>% filter(JOURNAL=="NEWPHYT") %>% 
-#   arrange(editor_id,YEAR) %>% select(-"X1")
-# 
-# write.csv(NEWPHYT_INST_FIX, file="./Data/PJ_INST_FIX/NEWPHYT_INST_FIX.csv", row.names = T) #export it as a csv file
-# 
-# JECOL_INST_FIX<-INST_fix %>% filter(JOURNAL=="JECOL") %>% 
-#   arrange(editor_id,YEAR) %>% select(-"X1")
-# 
-# write.csv(JECOL_INST_FIX, file="./Data/PJ_INST_FIX/JECOL_INST_FIX.csv", row.names = T) #export it as a csv file
-# 
-# JAPE_INST_FIX<-INST_fix %>% filter(JOURNAL=="JAPE") %>% 
-#   arrange(editor_id,YEAR) %>% select(-"X1")
-# 
-# write.csv(JAPE_INST_FIX, file="./Data/PJ_INST_FIX/JAPE_INST_FIX.csv", row.names = T) #export it as a csv file
-# 
-# 
-# 
-# 
-# LECO_INST_FIX<-INST_fix %>% filter(JOURNAL=="LECO") %>% 
-#   arrange(editor_id,YEAR) %>% select(-"X1")
-# 
-# 
-# write.csv(LECO_INST_FIX, file="./Data/PJ_INST_FIX/LECO_INST_FIX.csv", row.names = T) #export it as a csv file
-# 
-# JBIOG_INST_FIX<-INST_fix %>% filter(JOURNAL=="JBIOG") %>% 
-#   arrange(editor_id,YEAR) %>% select(-"X1")
-# write.csv(JBIOG_INST_FIX, file="./Data/PJ_INST_FIX/JBIOG_INST_FIX.csv", row.names = T) #export it as a csv file
-# 
-# ###########
-# 
-# CORRECT<-INST_fix %>% select(editor_id,JOURNAL,YEAR,LAST_NAME) # 4374
-# CORRECT$source<-"correct"
-# nrow(CORRECT)
-# ORIG<-ALLDATA%>% select(editor_id,JOURNAL,YEAR,LAST_NAME)  # 25602
-# ORIG$source<-"orig"
-# nrow(ORIG)
+#
 
-
-ALLDATA$editor_id<-as.numeric(ALLDATA$editor_id)
-#ARE THERE ANY IN CORRECT that *ARENT* in ALLDATA?
-#THESE NEED TO BE ADDED TO ALLDATA
-C_but_not_O<-anti_join(INST_fix,ALLDATA,by=c("editor_id","JOURNAL","YEAR")) #in correct but not orig 24
+# ALLDATA$editor_id<-as.numeric(ALLDATA$editor_id)
+# ARE THERE ANY IN CORRECT that *ARENT* in ALLDATA?
+# THESE NEED TO BE ADDED TO ALLDATA
+# C_but_not_O<-anti_join(INST_fix,ALLDATA,by=c("editor_id","JOURNAL","YEAR")) %>% arrange(JOURNAL,YEAR,editor_id)  #in correct but not orig 24
+C_but_not_O<-anti_join(INST_fix,ALLDATA,by=c("JOURNAL","YEAR","LAST_NAME")) %>% arrange(JOURNAL,YEAR,editor_id)  #in correct but not orig 24
 nrow(C_but_not_O)
 summary(C_but_not_O)
 
 #THESE ARE THE ONES IN ALLDATA but not CORRECTED 
-O_butnot_C<-anti_join(ALLDATA,INST_fix,by=c("editor_id","JOURNAL","YEAR")) # in orig but not correct 21221
+# O_butnot_C<-anti_join(ALLDATA,INST_fix,by=c("editor_id","JOURNAL","YEAR")) # in orig but not correct 21221
+O_butnot_C<-anti_join(ALLDATA,INST_fix,by=c("JOURNAL","YEAR","LAST_NAME")) # in orig but not correct 21221
 nrow(O_butnot_C)
 O_butnot_C
 
 # THESE ARE THE ONES IN BOTH CORRECTED AND ALLDATA
-O_and_C<-inner_join(ALLDATA,INST_fix,by=c("editor_id","JOURNAL","YEAR")) #in correct but not orig 4381
+# O_and_C<-inner_join(ALLDATA,INST_fix,by=c("editor_id","JOURNAL","YEAR")) #in correct but not orig 4381
+O_and_C<-inner_join(ALLDATA,INST_fix,by=c("LAST_NAME","JOURNAL","YEAR")) #in correct but not orig 4381
 nrow(O_and_C)
 
 
-both<-full_join(ALLDATA,INST_fix,by=c("editor_id","JOURNAL","YEAR")) #in correct but not orig 4381
+# both<-full_join(ALLDATA,INST_fix,by=c("editor_id","JOURNAL","YEAR")) 
+both<-full_join(ALLDATA,INST_fix,by=c("JOURNAL","YEAR","LAST_NAME","FIRST_NAME")) 
 nrow(both)
+nrow(ALLDATA)
 
 head(both)
-
+str(both)
 colnames(both)
-both<-select(both,JOURNAL,YEAR,VOLUME,ISSUE,editor_id,
-             FIRST_NAME.x,FIRST_NAME.y,MIDDLE_NAME.x,MIDDLE_NAME.y,LAST_NAME.x,LAST_NAME.y,
-             TITLE,CATEGORY,INST.x,INST.y,UNIT.x,UNIT.y,CITY.x,CITY.y,STATE.x,STATE.y,
+both<-select(both,JOURNAL,YEAR,VOLUME,ISSUE,editor_id.x,editor_id.y,
+             FIRST_NAME,MIDDLE_NAME.x,MIDDLE_NAME.y,LAST_NAME,
+             TITLE,CATEGORY,CATEGORY.x,INST.x,INST.y,UNIT.x,UNIT.y,CITY.x,CITY.y,STATE.x,STATE.y,
              COUNTRY.x,COUNTRY.y,COUNTRY_Prior_Class,geo.code,geo.code_Prior_Class,
              GENDER,NOTES.y)
 
@@ -230,38 +156,81 @@ both$MIDDLE_check<-NULL
 both<-both %>% rename("MIDDLE_NAME"="MIDDLE_NAME.x")
 
 # LAST NAME IFFERENCES BETWEEN ALL DATA AND CHECKED FILE
-summary(both$LAST_NAME.x==both$LAST_NAME.y) # 21 FALSE
-both$LAST_check<-both$LAST_NAME.x==both$LAST_NAME.y
-# This identifies one mistake in thge original (ALLDATA) that needs to be corrected 
-both$LAST_NAME.x[both$editor_id==1355 & both$FIRST_NAME.x=="Holmes"]<-"Rolston"
-both$LAST_NAME.y<-NULL
-both$LAST_check<-NULL
-both<-both %>% rename("LAST_NAME"="LAST_NAME.x")
+# summary(both$LAST_NAME.x==both$LAST_NAME.y) # 21 FALSE
+# both$LAST_check<-both$LAST_NAME.x==both$LAST_NAME.y
+# # This identifies one mistake in thge original (ALLDATA) that needs to be corrected 
+# str(both)
+both$LAST_NAME[both$editor_id.x==1353 & both$FIRST_NAME=="Holmes"]<-"Rolston"
+both<-both[!(both$editor_id.x==1355 & both$FIRST_NAME=="Holmes"),]
+# both$LAST_NAME.y<-NULL
+# both$LAST_check<-NULL
+# both<-both %>% rename("LAST_NAME"="LAST_NAME.x")
 
 # STATE DIFFERENCES BETWEEN ALL DATA AND CHECKED FILE
 summary(both$STATE.x==both$STATE.y) # 19 FALSE
 both$STATE_check<-both$STATE.x==both$STATE.y
 
-both$STATE.x[both$editor_id==703 & both$LAST_NAME=="Gibson" & both$CITY.x=="Carbondale"]<-"IL"
-both$STATE.x[both$editor_id==330 & both$LAST_NAME=="Moss"]<-NA
-both$STATE.x[both$editor_id==2583 & both$LAST_NAME=="Usher"]<-NA
-both$STATE.x[both$editor_id==1004 & both$LAST_NAME=="Milner-Gulland"]<-NA
-both$STATE.x[both$editor_id==1150 & both$LAST_NAME=="Belovsky" & both$INST.x=="Notre Dame University"]<-NA
-both$STATE.x[both$editor_id==1501 & both$LAST_NAME=="Carlton"]<-"CT"
-both$STATE.x[both$editor_id==1839 & both$LAST_NAME=="Rodriguez"]<-NA
+both$STATE.x[both$YEAR!=1992 & both$FIRST_NAME=="David" & both$LAST_NAME=="Gibson" & both$CITY.x=="Carbondale"]<-"IL"
+both$STATE.x[both$YEAR==1992 & both$CITY.x=="Pensacola" & both$LAST_NAME=="Gibson"]<-"FL"
+both$STATE.x[both$LAST_NAME=="Moss"]<-NA
+both$STATE.x[both$LAST_NAME=="Usher"]<-NA
+both$STATE.x[both$LAST_NAME=="Milner-Gulland"]<-NA
+both$STATE.x[both$LAST_NAME=="Belovsky" & both$INST.x=="Notre Dame University"]<-"IN"
+both$STATE.x[both$FIRST_NAME=="James" & both$LAST_NAME=="Carlton"]<-"CT"
+both$STATE.x[both$FIRST_NAME=="Jon" & both$LAST_NAME=="Rodriguez"]<-NA
 
 both$STATE.y<-NULL
 both$STATE_check<-NULL
 both<-both %>% rename("STATE"="STATE.x")
 
 # This identifies one mistake in thge original (ALLDATA) that needs to be corrected 
-both$LAST_NAME.x[both$editor_id==1355 & both$FIRST_NAME.x=="Holmes"]<-"Rolston"
-both$LAST_NAME.y<-NULL
-both$LAST_check<-NULL
-both<-both %>% rename("LAST_NAME"="LAST_NAME.x")
 
 
-# UNIT DIFFERENCES BETWEEN ALL DATA AND CHECKED FILE
+# INST DIFFERENCES BETWEEN ALL DATA AND CHECKED FILE
+summary(both$INST.x==both$INST.y) # 235 FALSE
+both$INST_check<-both$INST.x==both$INST.y
+INST_check<-filter(both,INST_check=="FALSE")
+INST_check_ok<-filter(both,INST_check==TRUE |is.na(INST_check))
+write.csv(INST_check, file="./Data/Patrick_James_Data_Corrections/Complete/INST_corrections_2x.csv", row.names = F) #export it as a csv file
+INST_check_done<-read.csv("./Data/Patrick_James_Data_Corrections/Complete/INST_corrections_2x_done.csv")# CITY DIFFERENCES BETWEEN ALL DATA AND CHECKED FILE
+
+str(INST_check_ok)
+str(INST_check_ok$editor_id.x)
+INST_check_done$editor_id.x<-as.factor(INST_check_done$editor_id.x)
+
+both<-bind_rows(INST_check_ok,INST_check_done)
+head(both,10)
+summary(both$INST.x==both$INST.y)
+both$INST_check<-both$INST.x==both$INST.y
+both$INST.y<-NULL
+both$INST_check<-NULL
+both<-both %>% rename("INST"="INST.x")
+
+
+
+# CITY DIFFERENCES BETWEEN ALL DATA AND CHECKED FILE
+summary(both$CITY.x==both$CITY.y) # 52 FALSE
+both$CITY_check<-both$CITY.x==both$CITY.y
+CITY_check<-filter(both,CITY_check=="FALSE")
+CITY_check_ok<-filter(both,CITY_check==TRUE |is.na(CITY_check))
+write.csv(CITY_check, file="./Data/Patrick_James_Data_Corrections/Complete/CITY_corrections_2x.csv", row.names = F) #export it as a csv file
+CITY_check_done<-read.csv("./Data/Patrick_James_Data_Corrections/Complete/CITY_corrections_2x_done.csv")# CITY DIFFERENCES BETWEEN ALL DATA AND CHECKED FILE
+
+str(CITY_check_ok)
+str(CITY_check_ok$editor_id.x)
+CITY_check_done$editor_id.x<-as.character(CITY_check_done$editor_id.x)
+
+both<-bind_rows(CITY_check_ok,CITY_check_done)
+head(both,10)
+summary(both$CITY.x==both$CITY.y)
+both$CITY_check<-both$CITY.x==both$CITY.y
+both$CITY.y<-NULL
+both$CITY_check<-NULL
+both<-both %>% rename("CITY"="CITY.x")
+
+
+
+# TODO UNIT DIFFERENCES BETWEEN ALL DATA AND CHECKED FILE
 summary(both$UNIT.x==both$UNIT.y) # 7 FALSE
 both$UNIT_check<-both$UNIT.x==both$UNIT.y
 # No probs, just differences in words ("the, and", etc)
@@ -269,26 +238,16 @@ both$UNIT.y<-NULL
 both$UNIT_check<-NULL
 both<-both %>% rename("UNIT"="UNIT.x")
 
-# INST DIFFERENCES BETWEEN ALL DATA AND CHECKED FILE
-summary(both$INST.x==both$INST.y) # 235 FALSE
-both$INST_check<-both$INST.x==both$INST.y
-
-INST_corrections<-both %>% filter(INST_check==FALSE)
-write.csv(INST_corrections, file="./Data/INST_corrections_2x.csv", row.names = T) #export it as a csv file
-
-# CITY DIFFERENCES BETWEEN ALL DATA AND CHECKED FILE
-summary(both$CITY.x==both$CITY.y) # 52 FALSE
-
-
-# COUNTRY DIFFERENCES BETWEEN ALL DATA AND CHECKED FILE
+# TODO COUNTRY DIFFERENCES BETWEEN ALL DATA AND CHECKED FILE
 country_levels<-(c(levels(both$COUNTRY.x),levels(both$COUNTRY.y)))
 levels(both$COUNTRY.x)<-c(country_levels,levels(both$COUNTRY.x))
 levels(both$COUNTRY.y)<-c(country_levels,levels(both$COUNTRY.y))
 summary(both$COUNTRY.x==both$COUNTRY.y) # 3552 FALSE
 both$country_check<-both$COUNTRY.x==both$COUNTRY.y
 
-
-both$notes_check<-(both$NOTES.x==both$NOTES.y) # 1 FALSE
+# TODO NOTES DIFFERENCES BETWEEN ALL DATA AND CHECKED FILE
+summary(both$NOTES==both$NOTES.y) # 3552 FALSE
+both$notes_check<-(both$NOTES==both$NOTES.y) # 1 FALSE
 
 
 

@@ -163,6 +163,14 @@ for (i in 1:length(file_list)){
 
 
 
+##############################################################
+##############################################################
+#
+# CLEAN-UP BY JOURNAL
+#
+##############################################################
+############################################################### 
+
 # ##################################
 # AUK
 # ##################################
@@ -178,6 +186,7 @@ AUK$CITY<-gsub("None given",NA, AUK$CITY)
 AUK$STATE<-gsub("None given",NA, AUK$STATE)
 AUK$COUNTRY<-gsub("None given",NA, AUK$COUNTRY)
 
+rm(AUK_raw,AUK.csv)
 
 # ##################################
 # CONDOR
@@ -194,54 +203,8 @@ CONDOR$CITY<-gsub("None given",NA, CONDOR$CITY)
 CONDOR$STATE<-gsub("None given",NA, CONDOR$STATE)
 CONDOR$COUNTRY<-gsub("None given",NA, CONDOR$COUNTRY)
 
+rm(CONDOR.csv,CONDOR_raw)
 
-# 
-# ##################################
-# # PRETTY CLOSE
-# ##################################
-# 
-
-str(AMNAT.csv)
-str(AmNat0614.csv)
-
-summary(AMNAT.csv)
-summary(AmNat0614.csv)
-
-
-# TODO: FIGURE OUT WTF AM NAT
-# TODO: AM NAT Needs institutions from 2006-2014 put in
-# NEED TO FIGURE OUT IF AMNAT, AMNAT0614,orAMNATEKB!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
-# AMNATpre2005<-filter(AMNAT.csv, YEAR<2006)
-# summary(AMNATpre2005)
-# AMNATpost2005<-filter(AMNAT.csv, YEAR>2005)
-# summary(AMNATpost2005)
-
-
-# FIND THE DUPLICATES, DELETE THE ONE THAT DOESN'T HAVE THE INST
-ALL_AMNAT<-bind_rows(AMNAT.csv,AmNat0614.csv) %>% arrange(YEAR,LAST_NAME,FIRST_NAME,INST)
-head(ALL_AMNAT,20)
-summary(ALL_AMNAT)
-
-
-foo<-ALL_AMNAT %>% 
-  group_by(YEAR,LAST_NAME,FIRST_NAME) %>% 
-  filter(n()>1) %>% 
-  slice(1) %>% arrange(YEAR)
-
-
-
-ALL_AMNAT %>% group_by(YEAR,LAST_NAME,FIRST_NAME) %>% filter(n()>1) %>% summarize(n=n())
-
-
-# AmNat0614<-AmNat0614.csv %>% select(LAST_NAME,FIRST_NAME,YEAR,INSTITUTION,COUNTRY,GENDER)
-# AMNAT_left<-left_join(AMNAT2006, AmNat0614, by="LAST_NAME", "YEAR")
-# 
-
-# 
-# str(AmNat0614)
-# str(AMNAT2006)
-# antijoiun1_AMNAT<-anti_join(AMNAT2006, AmNat0614, by="YEAR","editor_id")
-# 
 
 
 # 
@@ -278,15 +241,7 @@ ALL_AMNAT %>% group_by(YEAR,LAST_NAME,FIRST_NAME) %>% filter(n()>1) %>% summariz
 # FUNECOL1<-FUNECOLdata_Allen_EB_1dec.csv%>% select(JOURNAL,YEAR, FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,COUNTRY) #NO UNIT, CITY, STATE
 # FUNECOL2<-FUNECOL_data_11.03.2017.csv%>% select(JOURNAL,YEAR, FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,UNIT,CITY,STATE,COUNTRY,editor_id) #NO UNIT, CITY, STATE
 
-AMNAT<-AMNAT.csv
 
-##############################################################
-##############################################################
-#
-# CLEAN-UP BY JOURNAL
-#
-##############################################################
-############################################################### 
 
 ##############################################################
 # FUNCTIONAL ECOLOGY
@@ -381,6 +336,9 @@ summary(FUNECOL$CATEGORY.x==FUNECOL$CATEGORY.y)
 head(FUNECOL,10)
 FUNECOL<-FUNECOL %>% rename("TITLE"="TITLE.x","CATEGORY"="CATEGORY.y")
 
+
+rm(FUNECOLdata_Allen_EB_1dec.csv,FUNECOL_data_11.03.2017.csv,FUNECOLdata_Allen.csv)
+
 ##############################################################
 # LANDSCAPE ECOLOGY
 ##############################################################
@@ -421,7 +379,7 @@ LECO<-rename(LECO,"TITLE"="TITLE.x")
 # Need to convert that to a function, e.g., check(LECO)
 # Then need to add a function to upload the corrections/additions
 ##
-
+rm(LECO_2017.csv)
 
 ##############################################################
 # CONBIO
@@ -456,7 +414,7 @@ CONBIO<-rename(CONBIO,"TITLE"="TITLE.x")
 # Need to convert that to a function, e.g., check(CONBIO)
 # Then need to add a function to upload the corrections/additions
 ##
-
+rm(CONBIO_EKB.csv)
 ##############################################################
 # JZOOLOGY
 ##############################################################
@@ -568,6 +526,7 @@ head(JZOOL,10)
 # Then need to add a function to upload the corrections/additions
 ##
 
+rm(JZOOL_1row,JZOOL_remainder,JZOOL.csv,JZOOL17nov.csv)
 ##############################################################
 # NEW PHYT
 ##############################################################
@@ -582,7 +541,7 @@ NEWPHYT<-NEWPHYT_21july2018.csv
 
 head(NEWPHYT,10)
 NEWPHYT<-NEWPHYT %>% rename("TITLE"="TITLE.x")
-
+rm(NEWPHYT_21july2018.csv)
 ##############################################################
 # BIOLOGICAL CONSERVATION
 ##############################################################
@@ -663,6 +622,9 @@ rm(Pressey_2005,Wright_1998,Kirby_2005,Lind_2005,JPM_2006,WFL_2005,Lipps_2005,WA
 head(BIOCON,10)
 BIOCON<-rename(BIOCON,"TITLE"="TITLE.x")
 
+
+rm(BIOCON_TS.csv,BIOCON_ADDS,BIOCON_TS.csv)
+
 ##############################################################
 # AGRONOMY
 ##############################################################
@@ -690,6 +652,8 @@ head(AG,10)
 # Need to convert that to a function, e.g., check(AGRONOMY)
 # Then need to add a function to upload the corrections/additions
 ##
+
+rm(AGRONOMY_data_11.02.2017.csv)
 ##############################################################
 # FEM
 ##############################################################
@@ -701,7 +665,7 @@ FEM<-FEM %>% rename("TITLE"="TITLE.x")
 head(FEM,10)
 ## NOT CORRECT EITHER INST OR CITY STATE!!!
 # FEM 1994 Colorado State University     USA       775    Douglas           A   Maguire      Seattle Washington              <NA>   <NA>
-
+rm(FEM_7112017.csv)
 ##############################################################
 # J ANIMAL ECOLOGY
 ##############################################################
@@ -721,7 +685,7 @@ JANE<-JANE %>% rename("TITLE"="TITLE.x")
 # Need to convert that to a function, e.g., check(JANE)
 # Then need to add a function to upload the corrections/additions
 ##
-
+rm(JANE.csv)
 
 ##############################################################
 # J BIOGEOGRAPHY
@@ -770,7 +734,7 @@ head(JBIOG,70)
 JBIOG<-JBIOG %>% arrange(editor_id,YEAR) %>% fill(INST) %>% rename("TITLE"="TITLE.x")
 head(JBIOG,10)
 
-
+rm(JBIOG_1row,JBIOG_remainder,JBIOG.csv)
 ##
 # code to generate the list of which ones need to be 2x or have missing names is in 
 # Author_and_Inst_to_Check.R  
@@ -818,7 +782,7 @@ head(PLANTECOL,10)
 # Need to convert that to a function, e.g., check(PLANTECOL)
 # Then need to add a function to upload the corrections/additions
 ##
-
+rm(PLANTECOL_fixes,PLANTECOL_new.csv)
 ##############################################################
 # EVOLUTION
 ##############################################################
@@ -837,11 +801,49 @@ head(EVOL,10)
 # Need to convert that to a function, e.g., check(EVOL)
 # Then need to add a function to upload the corrections/additions
 ##
-
+rm(EVOL.csv)
 ##############################################################
 # AMERICAN NATURALIST
 ##############################################################
 
+summary(AMNAT.csv)
+summary(AmNat0614.csv)
+
+
+# TODO: FIGURE OUT WTF AM NAT
+# TODO: AM NAT Needs institutions from 2006-2014 put in
+# NEED TO FIGURE OUT IF AMNAT, AMNAT0614,orAMNATEKB!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
+# AMNATpre2005<-filter(AMNAT.csv, YEAR<2006)
+# summary(AMNATpre2005)
+# AMNATpost2005<-filter(AMNAT.csv, YEAR>2005)
+# summary(AMNATpost2005)
+
+
+# FIND THE DUPLICATES, DELETE THE ONE THAT DOESN'T HAVE THE INST
+ALL_AMNAT<-bind_rows(AMNAT.csv,AmNat0614.csv) %>% arrange(YEAR,LAST_NAME,FIRST_NAME,INST)
+head(ALL_AMNAT,20)
+summary(ALL_AMNAT)
+
+
+foo<-ALL_AMNAT %>% 
+  group_by(YEAR,LAST_NAME,FIRST_NAME) %>% 
+  filter(n()>1) %>% 
+  slice(1) %>% arrange(YEAR)
+
+
+
+ALL_AMNAT %>% group_by(YEAR,LAST_NAME,FIRST_NAME) %>% filter(n()>1) %>% summarize(n=n())
+
+
+# AmNat0614<-AmNat0614.csv %>% select(LAST_NAME,FIRST_NAME,YEAR,INSTITUTION,COUNTRY,GENDER)
+# AMNAT_left<-left_join(AMNAT2006, AmNat0614, by="LAST_NAME", "YEAR")
+# 
+
+# 
+# str(AmNat0614)
+# str(AMNAT2006)
+# antijoiun1_AMNAT<-anti_join(AMNAT2006, AmNat0614, by="YEAR","editor_id")
+# 
 AMNAT<-AMNAT.csv
 
 AMNAT$INST<-as.character(AMNAT$INST)
@@ -857,7 +859,7 @@ head(AMNAT,10)
 # Then need to add a function to upload the corrections/additions
 ##
 
-
+rm(AMNAT_EKB.csv,AMNAT.csv,AmNat0614.csv)
 
 ##############################################################
 # JAPE
@@ -876,7 +878,7 @@ head(JAPE,10)
 # Need to convert that to a function, e.g., check(AMNAT)
 # Then need to add a function to upload the corrections/additions
 ##
-
+rm(JAPE_new.csv)
 ##############################################################
 # OECOLOGIA
 ##############################################################
@@ -895,7 +897,7 @@ head(OECOL,10)
 # Need to convert that to a function, e.g., check(OECOLOGIA)
 # Then need to add a function to upload the corrections/additions
 ##
-
+rm(OECOL.csv)
 ##############################################################
 # GCB
 ##############################################################
@@ -913,7 +915,7 @@ head(GCB,10)
 # 4) only have data 1995-2007 (1995 was vol 1), 2008-2015 
 # 5) disambiguate editors and add editor id numbers
 
-
+rm(GCBdata.csv)
 ##
 # code to generate the list of which ones need to be 2x or have missing names is in 
 # Author_and_Inst_to_Check.R  
@@ -935,7 +937,7 @@ NAJFM<-NAJFM_21july2018.csv
 
 head(NAJFM,10)
 NAJFM<-NAJFM %>% rename("TITLE"="TITLE.x")
-
+rm(NAJFM_21july2018.csv)
 ##############################################################
 # MARECOL
 ##############################################################
@@ -970,10 +972,10 @@ head(MARECOL,10)
 # Need to convert that to a function, e.g., check(MARECOL)
 # Then need to add a function to upload the corrections/additions
 ##
-
+rm(MARECOL_21July2018.csv)
 
 ##############################################################
-# ÅJB
+# AJB
 ##############################################################
 
 AJB<-AJB.csv
@@ -986,7 +988,7 @@ AJB<-rename(AJB,"TITLE"="TITLE.x")
 # Then need to add a function to upload the corrections/additions
 ##
 
-
+rm(AJB.csv)
 ##############################################################
 # OIKOS
 ##############################################################
@@ -1002,7 +1004,7 @@ OIKOS<-rename(OIKOS,"TITLE"="TITLE.x")
 # Then need to add a function to upload the corrections/additions
 ##
 
-
+rm(OIKOS_21july2018.csv)
 
 
 ##############################################################
@@ -1019,7 +1021,7 @@ ECOG<-rename(ECOG,"TITLE"="TITLE.x")
 # Need to convert that to a function, e.g., check(MEPS)
 # Then need to add a function to upload the corrections/additions
 ##
-
+rm(ECOGRAPHY_5112017.csv)
 ##############################################################
 # BITR
 ##############################################################
@@ -1034,7 +1036,7 @@ BITR<-rename(BITR,"TITLE"="TITLE.x")
 # Then need to add a function to upload the corrections/additions
 ##
 
-
+rm(BITR.csv)
 ##############################################################
 # JECOL
 ##############################################################
@@ -1051,7 +1053,7 @@ JECOL<-rename(JECOL,"TITLE"="TITLE.x")
 ##
 
 
-
+rm(JECOL_new.csv)
 ##############################################################
 # AREES
 ##############################################################
@@ -1066,7 +1068,7 @@ AREES<-rename(AREES,"TITLE"="TITLE.x")
 # Then need to add a function to upload the corrections/additions
 ##
 
-
+rm(AREES.csv)
 ##############################################################
 # JTE
 ##############################################################
@@ -1081,8 +1083,11 @@ JTE<-rename(JTE,"TITLE"="TITLE.x")
 # Need to convert that to a function, e.g., check(MEPS)
 # Then need to add a function to upload the corrections/additions
 ##
+rm(JTE_2015.csv)
 
-
+######################
+# MEEPS
+######################
 # TODO: MEPS: NOT EVEN AN EXCEL SHEET,NEED TO SEE WHICH ONES ARE MISSING INSTITUTIONS
 
 ##
@@ -1097,8 +1102,8 @@ JTE<-rename(JTE,"TITLE"="TITLE.x")
 ##############################################################
 
 ECOL<-ECOLOGY.csv
-
-
+head(ECOL,10)
+rm(ECOLOGY.csv)
 
 ##############################################################
 ##############################################################
@@ -1108,30 +1113,35 @@ ECOL<-ECOLOGY.csv
 ##############################################################
 ##############################################################
 # with ALL
-ALLDATA<-bind_rows(MARECOL,NAJFM,NEWPHYT,JZOOL,GCB,OIKOS,BITR,LECO,PLANTECOL,OECOL,JTE,JECOL,JBIOG,JAPE,JANE,FUNECOL,FEM,EVOL,ECOL,ECOG,CONBIO,BIOCON,AREES,AMNAT,AJB,AG)
+ALLDATA<-bind_rows(MARECOL,NAJFM,NEWPHYT,JZOOL,GCB,
+                   OIKOS,BITR,LECO,PLANTECOL,OECOL,
+                   JTE,JECOL,JBIOG,JAPE,JANE,FUNECOL,
+                   FEM,EVOL,ECOL,ECOG,CONBIO,BIOCON,
+                   AREES,AMNAT,AJB,AG)
 head(ALLDATA,10)
+str(ALLDATA)
 ALLDATA <- ALLDATA %>% select(-NAME) %>% select(JOURNAL,YEAR,VOLUME,ISSUE,editor_id,FIRST_NAME,MIDDLE_NAME,
                                                 LAST_NAME,TITLE,CATEGORY,CATEGORY.x,INST,OLD_INST,INST.2,
                                                 UNIT,CITY,STATE,COUNTRY,COUNTRY_Prior_Class,geo.code,
-                                                geo.code_Prior_Class,NOTES,GENDER,TITLE)
-############
-# check to see what is diff between category and category.x
-ALLDATA$check<-ALLDATA$CATEGORY==ALLDATA$CATEGORY.x
-# those with FALSE are the discrepancy. Turns out it is three where SPECIAL EIDTOR was coded as SE in category.x. 
-# SPecial is correct, so delete CATEGORY.x and check
-ALLDATA<-ALLDATA %>% select(-CATEGORY.x,-check)
-##########
+                                                 geo.code_Prior_Class,NOTES,GENDER,TITLE)
+# ############
+# # check to see what is diff between category and category.x
+# ALLDATA$check<-ALLDATA$CATEGORY==ALLDATA$CATEGORY.x
+# # those with FALSE are the discrepancy. Turns out it is three where SPECIAL EIDTOR was coded as SE in category.x. 
+# # SPecial is correct, so delete CATEGORY.x and check
+# ALLDATA<-ALLDATA %>% select(-CATEGORY.x,-check)
+# ##########
 
 ############
-# THIOS LOOKS FOR DIFF BTWN INST2 and INST
-# TURNS OUT INST is correction of INST2, so delete INST2 and check
-ALLDATA$check<-ALLDATA$INST.2==ALLDATA$INST
-ALLDATA<-ALLDATA %>% select(-INST.2,-check)
+# # THIS LOOKS FOR DIFF BTWN INST2 and INST
+# # TURNS OUT INST is correction of INST2, so delete INST2 and check
+# ALLDATA$check<-ALLDATA$INST.2==ALLDATA$INST
+# ALLDATA<-ALLDATA %>% select(-INST.2,-check)
 ############
 
 ############
 # OLDINST is only a few. delete and recheck
-ALLDATA<-ALLDATA %>% select(-OLD_INST)
+# ALLDATA<-ALLDATA %>% select(-OLD_INST)
 ############
 
 head(ALLDATA,10)
@@ -1140,36 +1150,8 @@ source("institution_cleaner.R")
 ALLDATA<-institution_cleaner(ALLDATA)
 
 # TODO: ADD AN EDITOR_ID to GCB and MARECOL
-missing_edID<-ALLDATA %>% group_by(LAST_NAME,FIRST_NAME,JOURNAL) %>% filter(n()>1) %>% arrange(LAST_NAME)
-
-# TODO: FIND THE DUPLICATED ONES AND CORRECT THEM
-
-DISTINCT<-ALLDATA %>% distinct(JOURNAL, YEAR, editor_id, .keep_all = TRUE)
-
-alldata_dupes<-ALLDATA %>% group_by(JOURNAL,LAST_NAME,FIRST_NAME,YEAR) %>% filter(n()>1)
-alldata_dupes<-droplevels(alldata_dupes)
-levels(alldata_dupes$JOURNAL)
-
-
-
-
-
-
-
-# # foo<-ALLDATA %>% filter(JOURNAL=="NAJFM")
-# # foo<-ALLDATA %>% filter(JOURNAL=="MARECOL")
-# # foo<-ALLDATA %>% filter(JOURNAL=="GCB")
-# # foo<-ALLDATA %>% filter(JOURNAL=="AG")
-# # WITHOUT MARECOL AND GCB
-# # ALLDATA<-bind_rows(NAJFM,NEWPHYT,JZOOL,OIKOS,BITR,LECO,PLANTECOL,OECOL,JTE,JECOL,JBIOG,JAPE,JANE,FUNECOL,FEM,EVOL,ECOL,ECOG,CONBIO,BIOCON,AREES,AMNAT,AJB,AG)
-# 
-# # no marecol, GCB,NAJFM,JZOOL,
-# # ALLDATA<-bind_rows(OIKOS,BITR,LECO,PLANTECOL,OECOL,JTE,JECOL,JBIOG,JAPE,JANE,FUNECOL,FEM,EVOL,ECOL,ECOG,CONBIO,BIOCON,AREES,AMNAT,AJB,AG)
-# 
-# # no agronomy
-# # ALLDATA<-bind_rows(NAJFM,NEWPHYT,OIKOS,JZOOL,BITR,LECO,PLANTECOL,OECOL,JTE,JECOL,JBIOG,JAPE,JANE,FUNECOL,FEM,EVOL,ECOL,ECOG,CONBIO,BIOCON,AREES,AMNAT,AJB)
-# 
-# ALLDATA<-bind_rows(AUK,CONDOR,NEWPHYT,JZOOL,OIKOS,BITR,LECO,PLANTECOL,OECOL,JTE,JECOL,JBIOG,JAPE,JANE,FUNECOL,FEM,EVOL,ECOL,ECOG,CONBIO,BIOCON,AREES,AMNAT,AJB,AG)
+missing_edID<-filter(ALLDATA,is.na(ALLDATA$editor_id))
+summary(missing_edID)
 
 
 
@@ -1194,13 +1176,8 @@ JrnlYrs_30
 # foo<-ALLDATA %>% filter(YEAR>"1984") %>% filter(YEAR<"2015") %>% filter(JOURNAL=="MARECOL") %>% group_by(YEAR) %>% summarize(n())
 # foo
 
-# 
-# # REMOVE THE FILES YOU NO LONGER NEED
-# rm(BITR.csv,LECO_2017.csv,PLANTECOL_new.csv,OECOL.csv,JTE_2015.csv,JECOL_new.csv,JBIOG.csv,JAPE_new.csv,JANE.csv,FUNECOLdata_Allen_EB_1dec.csv,FEM_7112017.csv,EVOL.csv, ECOLOGY.csv, ECOGRAPHY_5112017.csv, CONBIO_EKB.csv,BIOCON_TS.csv,AREES.csv,AMNAT.csv,AJB.csv,AGRONOMY_data_11.02.2017.csv)
-# rm(JZOOL.csv,JZOOL17nov.csv,GCBdata.csv,OIKOS_21july2018.csv,NEWPHYT_21july2018.csv,NAJFM_21july2018.csv,MARECOL_21July2018.csv,FUNECOL_data_11.03.2017.csv)
-# 
+
 # rm(AG,AJB,AMNAT,AREES,BIOCON,BITR,CONBIO,DRYADDATA,ECOG,ECOL,EVOL,FEM,FUNECOL,GCB,GCB_inst,JANE,JAPE,JBIOG,JECOL,JTE,JZOOL,JZOOL_inst,LECO,MARECOL,MARECOL_inst,NAJFM,NAJFM_inst,NEWPHYT,NEWPHYT_inst,OECOL,OIKOS,PLANTECOL)
-# rm(CONDOR.csv,AUK.csv,AUK_raw,CONDOR_raw)
 ##############################################################
 ##############################################################
 #
@@ -1250,11 +1227,11 @@ JrnlYrs_30
 ##############################################################
 
 ALLDATA$COUNTRY[ALLDATA$LAST_NAME=="Bieber"]<-"Austria"
-ALLDATA$COUNTRY[ALLLDDATA$FIRST_NAME=="Jeannine" & ALLDATA$LAST_NAME=="Cavender-Bares"]<-"USA"
+ALLDATA$COUNTRY[ALLDATA$FIRST_NAME=="Jeannine" & ALLDATA$LAST_NAME=="Cavender-Bares"]<-"USA"
 
-DATAFILE$INST[DATAFILE$JOURNAL=="AMNAT" & DATAFILE$LAST_NAME=="Case"]<-"University of California San Diego"
-DATAFILE$INST[DATAFILE$LAST_NAME=="Noon"]<-"Colorado State University"
-DATAFILE$COUNTRY[DATAFILE$LAST_NAME=="VanDerHeijden"]<-"Switzerland"
+ALLDATA$INST[ALLDATA$JOURNAL=="AMNAT" & ALLDATA$LAST_NAME=="Case"]<-"University of California San Diego"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Noon"]<-"Colorado State University"
+ALLDATA$COUNTRY[ALLDATA$LAST_NAME=="VanDerHeijden"]<-"Switzerland"
 
 
 
@@ -1303,6 +1280,7 @@ ALLDATA<-as.data.frame(ALLDATA)
 ALLDATA$JOURNAL<-as.factor(ALLDATA$JOURNAL)
 
 # Correcting the Institution where an Editor is based
+ALLDATA$INST<-as.character(ALLDATA$INST)
 
 ALLDATA$INST[ALLDATA$JOURNAL=="AMNAT" & ALLDATA$LAST_NAME=="Case"]<-"University of California San Diego"
 ALLDATA$INST[ALLDATA$LAST_NAME=="Noon"]<-"Colorado State University"
@@ -1323,7 +1301,6 @@ ALLDATA$INST[ALLDATA$LAST_NAME=="Wiersma" & ALLDATA$FIRST_NAME=="Jochum"]<-"Univ
 ALLDATA$INST[ALLDATA$LAST_NAME=="Smith" & ALLDATA$FIRST_NAME=="Madeleine"]<-"University of Minnesota Crookston"
 ALLDATA$INST[ALLDATA$LAST_NAME=="Sims" & ALLDATA$FIRST_NAME=="Albert"]<-"University of Minnesota Crookston"
 
-levels(ALLDATA$INST) <- c(levels(ALLDATA$INST),"University of Toronto Mississauga")
 ALLDATA$INST[ALLDATA$LAST_NAME=="Sprules" & ALLDATA$FIRST_NAME=="Gary"]<-"University of Toronto Mississauga"
 ALLDATA$INST[ALLDATA$LAST_NAME=="Wagner" & ALLDATA$FIRST_NAME=="Helene"]<-"University of Toronto Mississauga"
 ALLDATA$INST[ALLDATA$LAST_NAME=="Kotanen" & ALLDATA$FIRST_NAME=="Peter"]<-"University of Toronto Mississauga"
@@ -1332,7 +1309,7 @@ ALLDATA$INST[ALLDATA$LAST_NAME=="Ricklefs" & ALLDATA$FIRST_NAME=="Robert"]<-"Uni
 ALLDATA$INST[ALLDATA$LAST_NAME=="Renner" & ALLDATA$FIRST_NAME=="Susanne"]<-"University of Missouri St Louis"
 ALLDATA$INST[ALLDATA$LAST_NAME=="Sork" & ALLDATA$FIRST_NAME=="Victoria"]<-"University of Missouri St Louis"
 
-levels(ALLDATA$INST) <- c(levels(ALLDATA$INST),"Universite Libre de Bruxelles","CNRS Centre dEcologie Fonctionnelle et Evolutive")
+# levels(ALLDATA$INST) <- c(levels(ALLDATA$INST),"Universite Libre de Bruxelles","CNRS Centre dEcologie Fonctionnelle et Evolutive")
 ALLDATA$INST[ALLDATA$LAST_NAME=="Parmentier"]<-"Universite Libre de Bruxelles"
 ALLDATA$INST[ALLDATA$LAST_NAME=="Debussche"]<-"CNRS Centre dEcologie Fonctionnelle et Evolutive"
 
@@ -1352,10 +1329,10 @@ ALLDATA$INST[ALLDATA$LAST_NAME=="Debussche"]<-"CNRS Centre dEcologie Fonctionnel
 
 
 
-levels(ALLDATA$INST) <- c(levels(ALLDATA$INST),"University of Missouri Columbia")
+# levels(ALLDATA$INST) <- c(levels(ALLDATA$INST),"University of Missouri Columbia")
 ALLDATA$INST[ALLDATA$INST=="University of Missouri"]<-"University of Missouri Columbia"
 
-ALLDATA$INST<-as.character(ALLDATA$INST)
+# ALLDATA$INST<-as.character(ALLDATA$INST)
 ALLDATA$INST<-trimws(ALLDATA$INST, which = "left")
 ALLDATA$INST<-trimws(ALLDATA$INST, which = "right")
 ALLDATA$INST<-gsub("- ", "-", ALLDATA$INST)
@@ -1752,6 +1729,45 @@ rm(ALLDATA2)
 ##############################################################
 write.csv(ALLDATA,"./output_review/ALLDATA_add_PJ_data.csv",row.names=FALSE)
 # THIS IS IN Author_and_Inst_to_check.R 
+################
+
+
+
+##############################
+##############################
+# ADD AND PATRICK JAMES CORRECTIONS
+##############################
+##############################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1856,6 +1872,21 @@ ALLDATA<-ALLDATA %>% filter(ALLDATA$INST!="")
 # str(UNI_LIST)
 # UNI_LIST<-distinct(UNI_LIST)
 # head(UNI_LIST)
+
+
+
+# TODO: FIND THE DUPLICATED ONES AND CORRECT THEM
+
+DISTINCT<-ALLDATA %>% distinct(JOURNAL, YEAR, editor_id, .keep_all = TRUE)
+
+alldata_dupes<-ALLDATA %>% group_by(JOURNAL,LAST_NAME,FIRST_NAME,YEAR) %>% filter(n()>1)
+alldata_dupes<-droplevels(alldata_dupes)
+levels(alldata_dupes$JOURNAL)
+
+
+
+
+
 
 # ONE LAST CHECK OF THE NAMES
 x <- ALLDATA$LAST_NAME
