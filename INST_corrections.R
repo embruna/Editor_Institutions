@@ -128,6 +128,13 @@ nrow(O_and_C)
 both<-full_join(ALLDATA,INST_fix,by=c("JOURNAL","YEAR","LAST_NAME","FIRST_NAME")) 
 nrow(both)
 nrow(ALLDATA)
+nrow(INST_fix)
+nrow(C_but_not_O)
+nrow(O_butnot_C)
+nrow(O_and_C)
+nrow(C_but_not_O)+nrow(O_butnot_C)+nrow(O_and_C)
+
+
 
 head(both)
 str(both)
@@ -141,12 +148,12 @@ both<-select(both,JOURNAL,YEAR,VOLUME,ISSUE,editor_id.x,editor_id.y,
 #CAN QUICKLY ID WHAT NEEDS TO BE FIXED AS FOLLOWS
 
 # FIRST NAME DIFFERENCES BETWEEN ALL DATA AND CHECKED FILE
-summary(both$FIRST_NAME.x==both$FIRST_NAME.y) # 10 false
-both$FIRST_check<-both$FIRST_NAME.x==both$FIRST_NAME.y
-#spelling mistake in NAMES.y, so delete that column and the checm column
-both$FIRST_check<-NULL
-both$FIRST_NAME.y<-NULL
-both<-both %>% rename("FIRST_NAME"="FIRST_NAME.x")
+# summary(both$FIRST_NAME.x==both$FIRST_NAME.y) # 10 false
+# both$FIRST_check<-both$FIRST_NAME.x==both$FIRST_NAME.y
+# #spelling mistake in NAMES.y, so delete that column and the checm column
+# both$FIRST_check<-NULL
+# both$FIRST_NAME.y<-NULL
+# both<-both %>% rename("FIRST_NAME"="FIRST_NAME.x")
 
 # MIDDLE NAME DIFFERENCES BETWEEN ALL DATA AND CHECKED FILE
 summary(both$MIDDLE_NAME.x==both$MIDDLE_NAME.y)  # NO FALSE
@@ -160,11 +167,14 @@ both<-both %>% rename("MIDDLE_NAME"="MIDDLE_NAME.x")
 # both$LAST_check<-both$LAST_NAME.x==both$LAST_NAME.y
 # # This identifies one mistake in thge original (ALLDATA) that needs to be corrected 
 # str(both)
-both$LAST_NAME[both$editor_id.x==1353 & both$FIRST_NAME=="Holmes"]<-"Rolston"
-both<-both[!(both$editor_id.x==1355 & both$FIRST_NAME=="Holmes"),]
+both$LAST_NAME[both$editor_id.x==1355 & both$FIRST_NAME=="Holmes"]<-"Rolston"
+both<-both[!(is.na(both$editor_id.x) & both$FIRST_NAME=="Holmes"),]
+
+
 # both$LAST_NAME.y<-NULL
 # both$LAST_check<-NULL
 # both<-both %>% rename("LAST_NAME"="LAST_NAME.x")
+
 
 # STATE DIFFERENCES BETWEEN ALL DATA AND CHECKED FILE
 summary(both$STATE.x==both$STATE.y) # 19 FALSE
@@ -175,9 +185,20 @@ both$STATE.x[both$YEAR==1992 & both$CITY.x=="Pensacola" & both$LAST_NAME=="Gibso
 both$STATE.x[both$LAST_NAME=="Moss"]<-NA
 both$STATE.x[both$LAST_NAME=="Usher"]<-NA
 both$STATE.x[both$LAST_NAME=="Milner-Gulland"]<-NA
+both$INST.x[both$LAST_NAME=="Belovsky" & both$INST.y=="Notre Dame"]<-"Notre Dame University"
+both$CITY.x[both$LAST_NAME=="Belovsky" & both$INST.y=="Notre Dame"]<-"Notre Dame"
 both$STATE.x[both$LAST_NAME=="Belovsky" & both$INST.x=="Notre Dame University"]<-"IN"
 both$STATE.x[both$FIRST_NAME=="James" & both$LAST_NAME=="Carlton"]<-"CT"
 both$STATE.x[both$FIRST_NAME=="Jon" & both$LAST_NAME=="Rodriguez"]<-NA
+both$STATE.x[both$editor_id.x==455 & both$FIRST_NAME=="Christopher" & both$LAST_NAME=="Frissell"]<-"MT"
+both$INST.x[both$editor_id.x==455 & both$FIRST_NAME=="Christopher" & both$LAST_NAME=="Frissell"]<-"University of Montana"
+both$UNIT.x[both$editor_id.x==455 & both$FIRST_NAME=="Christopher" & both$LAST_NAME=="Frissell"]<-"Flathead Lake Biological Station"
+both$CITY.x[both$editor_id.x==455 & both$FIRST_NAME=="Christopher" & both$LAST_NAME=="Frissell"]<-"Polson"
+both$CITY.x[both$editor_id.x==1511 & both$LAST_NAME=="Cinner" & both$YEAR>2009 & both$YEAR<2015 ]<-"Townsville"
+both$STATE.x[both$editor_id.x==1511 & both$LAST_NAME=="Cinner" & both$YEAR>2009 & both$YEAR<2015 ]<-"Queensland"
+both$UNIT.x[both$editor_id.x==1511 & both$LAST_NAME=="Cinner" & both$YEAR>2009 & both$YEAR<2015 ]<-"ARC Centre of Excellence for Coral Reef Studies"
+both$INST.x[both$editor_id.x==1511 & both$LAST_NAME=="Cinner" & both$YEAR==2013 ]<-"James Cook University"
+both$NOTES.y[both$editor_id.x==1511 & both$LAST_NAME=="Cinner" & both$YEAR==2013 ]<-"journal front matter has INST=Columbia Univ, but his CV makes no mention of this"
 
 both$STATE.y<-NULL
 both$STATE_check<-NULL
