@@ -200,6 +200,9 @@ both$UNIT.x[both$editor_id.x==1511 & both$LAST_NAME=="Cinner" & both$YEAR>2009 &
 both$INST.x[both$editor_id.x==1511 & both$LAST_NAME=="Cinner" & both$YEAR==2013 ]<-"James Cook University"
 both$NOTES.y[both$editor_id.x==1511 & both$LAST_NAME=="Cinner" & both$YEAR==2013 ]<-"journal front matter has INST=Columbia Univ, but his CV makes no mention of this"
 
+# This will replace all the "NA" in CITY.x (origianlly no info) with the value from CITY.y (Patrick's data collection), if there is one 
+both<-both %>% mutate(STATE.x = replace(STATE.x, is.na(STATE.x), STATE.y[is.na(STATE.x)]))
+
 both$STATE.y<-NULL
 both$STATE_check<-NULL
 both<-both %>% rename("STATE"="STATE.x")
@@ -245,6 +248,10 @@ both<-bind_rows(CITY_check_ok,CITY_check_done)
 head(both,10)
 summary(both$CITY.x==both$CITY.y)
 both$CITY_check<-both$CITY.x==both$CITY.y
+# This will replace all the "NA" in CITY.x (origianlly no info) with the value from CITY.y (Patrick's data collection), if there is one 
+both<-both %>% mutate(CITY.x = replace(CITY.x, is.na(CITY.x), CITY.y[is.na(CITY.x)]))
+
+
 both$CITY.y<-NULL
 both$CITY_check<-NULL
 both<-both %>% rename("CITY"="CITY.x")
@@ -252,9 +259,15 @@ both<-both %>% rename("CITY"="CITY.x")
 
 
 # TODO UNIT DIFFERENCES BETWEEN ALL DATA AND CHECKED FILE
+# both$UNIT.x<-as.character(both$UNIT.x)
+# both$UNIT.x<-gsub("",NA,both$UNIT.x)
+both$UNIT.x[both$UNIT.x == ""] <- NA
 summary(both$UNIT.x==both$UNIT.y) # 7 FALSE
 both$UNIT_check<-both$UNIT.x==both$UNIT.y
 # No probs, just differences in words ("the, and", etc)
+# This will replace all the "NA" in UNIT.x (origianlly no info) with the value from UNIT.y (Patrick's data collection), if there is one 
+both<-both %>% mutate(UNIT.x = replace(UNIT.x, is.na(UNIT.x), UNIT.y[is.na(UNIT.x)]))
+
 both$UNIT.y<-NULL
 both$UNIT_check<-NULL
 both<-both %>% rename("UNIT"="UNIT.x")
