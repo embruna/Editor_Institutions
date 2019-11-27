@@ -1776,32 +1776,6 @@ rm(ALLDATA2)
 
 
 
-##########################################
-# TODO: Still left to fix and 2x
-##########################################
-
-# 2x claudia bieber. CVM is in austria but country is australia
-# BIOCON: editor_id 2874 and 2875 are the same person!			
-# BIOCON: editor_id 3024 country should be Singapore in 2009
-# JECOL: editor_id 1279 in 2013: country and state mismatch 
-# JECOL editor_ID 703 in 2014: remove zip from state
-# JECOL editor_ID 2408 in 2010-2013 should country be MEX or GER? Apparently MEX (mex in state, not country)
-# JECOL: several have country listed in state column  
-# 2x ythat Vegetation Survey of Western Australia shouldn’t be Univ of Western Australia
-# ingrid parmentier should be Universite Libre de Bruxelles 2x journal
-# James Cook University ONE OF THESE IS JAMES COOK UNIVERSITY TOWNSVILLE
-# Natiral History Museum need to 2x each some are us some are UK
-# need to 2x University of Illinois Urbana Champaign
-# need to 2x UT Austin
-# NEED TO GET PEOPLE BY CAMPUS UNAM
-# no one by this name
-# NoInst
-# Oregon Trail
-# Pfenning does he have two researcher iD's? 
-# Stephen Simpson Ecology 2002 2x if Oxford, UK, Australia 
-# U of California MANY TO SORT OUT
-# what is NRII?
-##########################################
 
 
 ##############################################################
