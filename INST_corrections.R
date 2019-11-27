@@ -431,46 +431,15 @@ both$NOTES[both$INST == "University of Wisconsin"] <- "DOUBLE CHECK WHAT CAMPUS/
 both$NOTES[both$INST == "US Geological Survey"] <- "DOUBLE CHECK WHAT CAMPUS/UNIT"
 
 
-# NO IDEA WHY THIS ISN'T WORKING INSIDE FUNCTION, SO DOING HERE
-both$INST[both$INST == "University of ArKansas"] <- "University of Arkansas"
-
-
-
 
 both<-institution_cleaner(both)
 
 
-
-
+# NO IDEA WHY THIS ISN'T WORKING INSIDE FUNCTION, SO DOING HERE
 both$INST<-gsub("ArKansas","Arkansas", both$INST)
 
 
-# both$INST[both$INST == "UC Davis"] <- "University of California Davis"
-# both$INST[both$INST == "UF"] <- "University of Florida"
-# both$INST[both$INST == "UGA"] <- "University of Georgia"
-# both$INST[both$INST == "UNIV CONNECTICUT"] <- "University of Connecticut"
-# both$INST[both$INST == "Univ Los Andes"] <- "Universidad de los Andes"
-# both$INST[both$INST == "Univ Nacl Autonoma Mexico"] <- "Universidad Nacional Autonoma de Mexico"
-# both$INST[both$INST == "Ume¥ University"] <- "Umea University"
-# both$INST[both$INST == "Texas A and M"] <- "Texas A and M University"
-# both$INST[both$INST == "Purdue"] <- "Purdue University"
-# both$INST[both$INST == "Princeton"] <- "Princeton University"
-# both$INST[both$INST == "Oxford"] <- "Oxford University"
-# both$INST[both$INST == "Cambridge"] <- "University of Cambridge"
-# both$INST[both$INST == "N.C. State"] <- "North Carolina State University"
-# both$INST[both$INST == "LSU"] <- "Louisiana State University"
-# both$INST[both$INST == "double check"] <- "DOUBLE CHECK"
-# both$INST[both$INST == "Auburn"] <- "Auburn University"
-# both$INST[both$INST == "Michigan State"] <- "Michigan State University"
-# both$INST[both$INST == "Berkeley"] <- "University of California Berkeley"
-# both$INST[both$INST == "Duke"] <- "Duke University"
 
-# both$INST[both$INST == "Los Alamos"] <- "Los Alamos National Laboratory"
-# both$INST[both$INST == "Stazione Zoologica \"Anton Dohrn\""] <- "Stazione Zoologica Anton Dohrn"
-# both$INST[both$INST == "Cambridge"] <- "University of Cambridge"
-# both$INST[both$INST == "Cambridge"] <- "University of Cambridge"
-# both$INST[both$INST == "UVA"] <- "University of Virginia"
-# both$INST[both$INST == "US FOREST SERV"] <- "US Forest Service"
 
 levels(as.factor(both$INST))
 
@@ -478,184 +447,81 @@ both$INST<-as.factor(both$INST)
 both$INST<-droplevels(both$INST)
 both_inst_check<-as.data.frame(levels(both$INST))
 write_csv(both_inst_check,"./data/both_inst_check.csv")
-# "St. Andrews"      
-# "Salzburg"  
-# "Plymouth" 
-# "ORNL" 
-# "Aberdeen"                                                                                                                   
-# "Aberystwyth"   
-# "Bangor" 
-# "Michigan State" 
-# "Bogota" 
-# "London"           
-# "Duram"
-# "Glasgow"                                                                                                                    
-# "Göttingen"
-# "Madrid"                                                                                                                     
-# "Maine" 
-# "Norwich"   
-# "SEIDENSTZICKERand Kleiman = Smithsonian National Zoological Park Labandeira: Smithsonian National Museum of Natural History"
-# "Stazione Zoologica \"Anton Dohrn\""  
 
 
+# TODO: FIND ANY editors with >1 editor_id and correct
+
+both$LAST_NAME<-stri_trans_totitle(both$LAST_NAME)
+both$FIRST_NAME<-stri_trans_totitle(both$FIRST_NAME)
+
+both$editor_id.y<-NULL
+both<-both %>% rename("editor_id"="editor_id.x")
+both$editor_id<-as.character(both$editor_id)
+both<-both %>% replace_na(list(editor_id = "TBD", editor_id.y = "TBD"))
+dup_edID<-both %>% 
+  select(LAST_NAME,FIRST_NAME,editor_id) %>% 
+  group_by(LAST_NAME,FIRST_NAME) %>% 
+  mutate(n_id=n_distinct(editor_id)) %>% 
+  filter(n_id>1) %>% 
+  distinct(LAST_NAME,FIRST_NAME,editor_id,.keep_all=TRUE) %>% 
+  arrange(LAST_NAME,FIRST_NAME) 
+dup_edID
+
+# REPLACE THOSE WITH TBD
 
 
+dup_edID2<-both %>% 
+  select(LAST_NAME,FIRST_NAME,editor_id) %>% 
+  group_by(LAST_NAME) %>% 
+  mutate(n_id=n_distinct(editor_id)) %>% 
+  filter(n_id>1) %>% 
+  distinct(LAST_NAME,editor_id,.keep_all=TRUE) %>% 
+  arrange(LAST_NAME) 
+dup_edID2
 
 
+# TODO: find cases where same editor_id for different editors
 
-# 
-# 
-# colnames(both)
-# anti_join(both,ALLDATA)
-# 
-# nrow(O_butnot_C)+nrow(C_but_not_O)+nrow(O_and_C)
-# nrow(ALLDATA)
-# 
-# levels(as.factor(Obut_notC$JOURNAL))
-# ALLDATA
-# foo<-inner_join(CORRECT,ORIG,by=c("editor_id","JOURNAL","YEAR")) #in correct but not orig 24
-# foo$check<-(foo$LAST_NAME.x==foo$LAST_NAME.y)
-# 
-# foo2<-anti_join(CORRECT,ORIG,by=c("editor_id","JOURNAL","YEAR")) # in orig but not correct 21085
-# nrow(ORIG)
-# nrow(CORRECT)
-# nrow(foo)
-# nrow(foo2)
-# 
-# duplicated_ALLDATA<-ALLDATA %>% 
-#   group_by(editor_id,JOURNAL,YEAR) %>% 
-#   filter(n()>1)
-# 
-# 
-# nrow(ORIG)+nrow(foo)
-# nrow(CORRECT)+nrow(foo2)+nrow(foo)
-# not_in_ALLDATA<-anti_join(INST_fix,ALLDATA,by="editor_id","JOURNAL")
-# not_in_ALLDATA<-anti_join(ALLDATA,INST_fix)
-# nrow(ALLDATA)
-# nrow(INST_fix)
-# nrow(not_in_ALLDATA)
-# nrow(not_in_ALLDATA)+nrow(INST_fix)
-# 
-# 
-# str(ALLDATA)
-# str(INST_fix)
-# ALLDATA$editor_id<-as.numeric(ALLDATA$editor_id)
-# levels(as.factor(ALLDATA$JOURNAL))
-# levels(INST_fix$JOURNAL)
-# ALLDATA_FIXES<-inner_join(ALLDATA,INST_fix,by=c("JOURNAL","editor_id","YEAR"))
-# 
-# 
-#   not_in_ALLDATA<-droplevels(not_in_ALLDATA)
-# ###########
-# 
-# # ROADMAP FOR INCLUDING CORRECTIONS
-# CONBIO_ALLDATA<-ALLDATA %>% filter(JOURNAL=="CONBIO")
-# CONBIO_PJ<-read.csv("./Data/PJ_INST_FIX/CONBIO_INST_FIX.csv")
-# str(CONBIO_ALLDATA)
-# str(CONBIO_PJ)
-# CONBIO_PJ<-select(CONBIO_INST_FIX,-JOURNAL,-X1,-FIRST_NA,-MIDDLE_,-LAST_NA)
-# # any that are ONLY in CONBIO_ALLDATA and NOT in PJ
-# CB_noPJ<-anti_join(CONBIO_ALLDATA,CONBIO_PJ,by=c("editor_id","YEAR"))
-# 
-# # those from ALLData also in PJ
-# CB_and_PJ<-semi_join(CONBIO_ALLDATA,CONBIO_PJ,by=c("editor_id","YEAR"))
-# 
-# 
-# # Any in PJ but not in all data
-# CB_PJnoALLDATA<-anti_join(CONBIO_PJ,CONBIO_ALLDATA,by=c("editor_id","YEAR"))
-# # those from PJ also in ALLData PJ
-# CB_PJand_ALLDATA<-semi_join(CONBIO_PJ,CONBIO_ALLDATA,by=c("editor_id","YEAR"))
-# 
-# #now the ones in both (meaning they had to be 2x for some reason)
-# nrow(CB_and_PJ)
-# nrow(CB_PJand_ALLDATA)
-# CB_2check<-full_join(CB_and_PJ,CB_PJand_ALLDATA,by=c("editor_id","YEAR"))
-# str(CB_2check)
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# CONBIO<-droplevels(CONBIO)
-# # CONBIO<-select(CONBIO,-X)
-# CONBIO_PJ<-select(CONBIO_INST_FIX,-X)
-# CONBIO_INST_FIX$editor_id<-as.integer(CONBIO_INST_FIX$editor_id)
-# CB_2check<-full_join(CONBIO,CONBIO_INST_FIX,by=c("editor_id","YEAR"))
-# str(CB_2check)
-# names(CB_2check)
-# 
-# 
-# 
-# which(is.na(CB_2check$JOURNAL.x==CB_2check$JOURNAL.y))
-# CB_2check$INST.CB_2check<-CB_2check$INST.x==CB_2check$INST.y
-# levels(as.factor(CB_2check$INST.CB_2check))
-# CONBIO_INST_fix<-which((CB_2check$INST.x==CB_2check$INST.y)=="FALSE")
-# 
-# CB_2check$UNIT.CB_2check<-CB_2check$UNIT.x==CB_2check$UNIT.y
-# levels(as.factor(CB_2check$UNIT.CB_2check))
-# 
-# CB_2check$CITY.CB_2check<-CB_2check$CITY.x==CB_2check$CITY.y
-# levels(as.factor(CB_2check$CITY.CB_2check))
-# 
-# CB_2check$STATE.CB_2check<-CB_2check$STATE.x==CB_2check$STATE.y
-# levels(as.factor(CB_2check$STATE.CB_2check))
-# 
-# CB_2check$COUNTRY.CB_2check<-CB_2check$COUNTRY.x==CB_2check$COUNTRY.y                               
-# levels(as.factor(CB_2check$COUNTRY.CB_2check))
-# 
-# CONBIO_INST_fix<-which((CB_2check$INST.x==CB_2check$INST.y)=="FALSE"|is.na(CB_2check$INST.x==CB_2check$INST.y))
-# CONBIO_UNIT_fix<-which((CB_2check$UNIT.x==CB_2check$UNIT.y)=="FALSE"|is.na(CB_2check$UNIT.x==CB_2check$UNIT.y))
-# CONBIO_CITY_fix<-which((CB_2check$CITY.x==CB_2check$CITY.y)=="FALSE"|is.na(CB_2check$CITY.x==CB_2check$CITY.y))
-# CONBIO_STATE_fix<-which((CB_2check$STATE.x==CB_2check$STATE.y)=="FALSE"|is.na(CB_2check$STATE.x==CB_2check$STATE.y))
-# CONBIO_COUNTRY_fix<-which((CB_2check$COUNTRY.x==CB_2check$COUNTRY.y)=="FALSE"|is.na(CB_2check$COUNTRY.x==CB_2check$COUNTRY.y))
-# 
-# CB_2check$COUNTRY.x[CB_2check$editor_id==11]<-"England"
-# 
-# # 
-# # 
-# # levels(CB_2check$FIRST_NAME.x)<-c(levels(as.factor(CB_2check$FIRST_NAME.x)),levels(as.factor(CB_2check$FIRST_NAME.y))) # need to have the same levels of factor for x and y
-# # levels(CB_2check$FIRST_NAME.y)<-c(levels(as.factor(CB_2check$FIRST_NAME.x)),levels(as.factor(CB_2check$FIRST_NAME.y)))# need to have the same levels of factor for x and y
-# # CB_2check$FIRST_NAME.CB_2check<-as.factor(CB_2check$FIRST_NAME.x)==as.factor(CB_2check$FIRST_NAME.y)
-# # 
-# # levels(CB_2check$MIDDLE_NAME.x)<-c(levels(as.factor(CB_2check$MIDDLE_NAME.x)),levels(as.factor(CB_2check$MIDDLE_NAME.y))) # need to have the same levels of factor for x and y
-# # levels(CB_2check$MIDDLE_NAME.y)<-c(levels(as.factor(CB_2check$MIDDLE_NAME.x)),levels(as.factor(CB_2check$MIDDLE_NAME.y)))# need to have the same levels of factor for x and y
-# # CB_2check$MIDDLE_NAME.CB_2check<-as.factor(CB_2check$MIDDLE_NAME.x)==as.factor(CB_2check$MIDDLE_NAME.y)
-# # 
-# # levels(CB_2check$LAST_NAME.x)<-c(levels(as.factor(CB_2check$LAST_NAME.x)),levels(as.factor(CB_2check$LAST_NAME.y))) # need to have the same levels of factor for x and y
-# # levels(CB_2check$LAST_NAME.y)<-c(levels(as.factor(CB_2check$LAST_NAME.x)),levels(as.factor(CB_2check$LAST_NAME.y)))# need to have the same levels of factor for x and y
-# CB_2check$FIRST_NAME.test<-CB_2check$FIRST_NAME.x==CB_2check$FIRST_NAME.y
-# CB_2check$MIDDLE_NAME.test<-CB_2check$MIDDLE_NAME.x==CB_2check$MIDDLE_NAME.y
-# CB_2check$LAST_NAME.test<-CB_2check$LAST_NAME.x==CB_2check$LAST_NAME.y
-# 
-# names(CB_2check)
-# 
-#              
-#                
-# 
-# 
-# CB_2check<-CB_2check %>% select("JOURNAL.x","JOURNAL.y","YEAR","editor_id","FIRST_NAME.x","FIRST_NAME.y","FIRST_NAME.test",
-#                       "MIDDLE_NAME.x","MIDDLE_NAME.y","MIDDLE_NAME.test","LAST_NAME.x","LAST_NAME.y","LAST_NAME.test",
-#                       "INST.x","INST.y","INST.test","UNIT.x","UNIT.y","UNIT.CB_2check","CITY.x","CITY.y","CITY.CB_2check",
-#                       "STATE.x","STATE.y","STATE.test","COUNTRY.x","COUNTRY.y","COUNTRY.test","NOTES.x","NOTES.y")
-# 
-# 
-# 
-# CONBIO_INST_checks<-CB_2check[CONBIO_INST_fix,]
-# CONBIO_INST_checks<-arrange(CONBIO_INST_checks,INST.CB_2check)
-# 
-# CONBIO_UNIT_checks<-CB_2check[CONBIO_UNIT_fix,]
-# CONBIO_UNIT_checks<-arrange(CONBIO_UNIT_checks,UNIT.CB_2check)
-# 
-# CONBIO_CITY_checks<-CB_2check[CONBIO_CITY_fix,]
-# CONBIO_CITY_checks<-arrange(CONBIO_CITY_checks,CITY.CB_2check)
-# 
-# CONBIO_STATE_checks<-CB_2check[CONBIO_STATE_fix,]
-# CONBIO_STATE_checks<-arrange(CONBIO_STATE_checks,STATE.CB_2check)
-# 
-# CONBIO_COUNTRY_checks<-CB_2check[CONBIO_COUNTRY_fix,]
-# CONBIO_COUNTRY_checks<-arrange(CONBIO_COUNTRY_checks,COUNTRY.CB_2check)
+
+dup_edID3<-both %>% 
+  select(LAST_NAME,FIRST_NAME,editor_id) %>% 
+  filter(editor_id!="TBD") %>% 
+  group_by(LAST_NAME,FIRST_NAME) %>% 
+  mutate(n_names=n_distinct(editor_id)) %>% 
+  distinct(LAST_NAME,FIRST_NAME,editor_id,.keep_all=TRUE) %>%
+  arrange(desc(LAST_NAME,FIRST_NAME,editor_id)) %>% 
+  filter(n_names>1) 
+dup_edID3
+
+##########################################
+# TODO: Still left to fix and 2x
+##########################################
+
+# 2x claudia bieber. CVM is in austria but country is australia
+# BIOCON: editor_id 2874 and 2875 are the same person!			
+# BIOCON: editor_id 3024 country should be Singapore in 2009
+# JECOL: editor_id 1279 in 2013: country and state mismatch 
+# JECOL editor_ID 703 in 2014: remove zip from state
+# JECOL editor_ID 2408 in 2010-2013 should country be MEX or GER? Apparently MEX (mex in state, not country)
+# JECOL: several have country listed in state column  
+# 2x ythat Vegetation Survey of Western Australia shouldn’t be Univ of Western Australia
+# ingrid parmentier should be Universite Libre de Bruxelles 2x journal
+# James Cook University ONE OF THESE IS JAMES COOK UNIVERSITY TOWNSVILLE
+# Natiral History Museum need to 2x each some are us some are UK
+# NEED TO GET PEOPLE BY CAMPUS UNAM
+# no one by this name
+# NoInst
+# Oregon Trail
+# Pfenning does he have two researcher iD's? 
+# Stephen Simpson Ecology 2002 2x if Oxford, UK, Australia 
+# 1 Traveser  Anna       217             2
+# 2 Traveset  Anna       217             2
+##########################################
+
+
+# TODO: Give editor_IDs to those missing 
+
+# TODO: find duplicated rows
+
+# TODO: 
 
