@@ -449,7 +449,7 @@ both_inst_check<-as.data.frame(levels(both$INST))
 write_csv(both_inst_check,"./data/both_inst_check.csv")
 
 
-# TODO: FIND ANY editors with >1 editor_id and correct
+# TODO: FIND ANY editors with an editor_id and an NA for editor_id and correct
 
 both$LAST_NAME<-stri_trans_totitle(both$LAST_NAME)
 both$FIRST_NAME<-stri_trans_totitle(both$FIRST_NAME)
@@ -467,8 +467,7 @@ dup_edID<-both %>%
   arrange(LAST_NAME,FIRST_NAME) 
 dup_edID
 
-# REPLACE THOSE WITH TBD
-
+# TODO: Same but based on last name (in case the first name is different)
 
 dup_edID2<-both %>% 
   select(LAST_NAME,FIRST_NAME,editor_id) %>% 
@@ -480,9 +479,7 @@ dup_edID2<-both %>%
 dup_edID2
 
 
-# TODO: find cases where same editor_id for different editors
-
-
+# TODO: find cases where diff editor_id for same editors
 dup_edID3<-both %>% 
   select(LAST_NAME,FIRST_NAME,editor_id) %>% 
   filter(editor_id!="TBD") %>% 
@@ -491,7 +488,29 @@ dup_edID3<-both %>%
   distinct(LAST_NAME,FIRST_NAME,editor_id,.keep_all=TRUE) %>%
   arrange(desc(LAST_NAME,FIRST_NAME,editor_id)) %>% 
   filter(n_names>1) 
-dup_edID3
+dup_edID3 
+dup_edID3 <-dup_edID3 %>% group_by(FIRST_NAME,LAST_NAME) %>%  arrange(editor_id) %>% slice(2)
+
+# REMOVE ANY ROWS WITH NO DATA
+both<-both %>% drop_na(LAST_NAME)
+
+# DELETE DUPLICATE ROWS
+both<-distinct(both)
+# nrow(both)
+# both[which(duplicated(both)==TRUE),]
+# nrow(deduped)-nrow(both)
+# colnames(deduped)==colnames(both)
+# cut<- setdiff(both,deduped)
+# setdiff(deduped,both)
+# first<-both
+# second<-deduped
+
+
+
+# TODO: ID ANY WITH NO INST
+missing_INST<-both %>% filter(is.na(INST))
+
+# TODO: Some of the editors are in multiple times because they have multiple jobs. ID and fix
 
 ##########################################
 # TODO: Still left to fix and 2x
@@ -520,12 +539,4 @@ dup_edID3
 
 
 # TODO: Give editor_IDs to those missing 
-
-<<<<<<< HEAD
-# TODO: find duplicated rows
-=======
-# TODO: 
->>>>>>> eaedeb6c51a2225f7060ad9879b76fece99432a5
-
-# TODO: 
 

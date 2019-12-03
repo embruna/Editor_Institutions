@@ -397,10 +397,8 @@ DATAFILE$INST[DATAFILE$INST=="Universit\xfc\xbe\x8c\xa3\xa0\xbc Montpellier II"]
 DATAFILE$INST[DATAFILE$INST=="Universit\xfc\xbe\x8d\x83\xa0\xbct Z\xfc\xbe\x8c\x93\xa0\xbcrich Irchel"]<-"University of Zurich Irchel" 
 DATAFILE$INST[DATAFILE$INST=="Texas A & M Univ."]<-"Texas A & M University"
 DATAFILE$INST[DATAFILE$INST=="Texas A & M"]<-"Texas A & M University"
-
-
 DATAFILE$INST[DATAFILE$INST=="Aberdeen"]<-"University of Aberdeen"
-
+DATAFILE$INST[DATAFILE$INST=="Universityof"]<-"University of"
 DATAFILE$INST[DATAFILE$INST=="Aberystwyth"]<-"Aberystwyth University"
 DATAFILE$INST[DATAFILE$INST=="Alabama A and M"]<-"Alabama A and M University"
 DATAFILE$INST[DATAFILE$INST=="Alterra"]<-"Wageningen University and Research"
