@@ -1831,6 +1831,45 @@ iconv(ALLDATA$INST, to = "ASCII//TRANSLIT")
 ALLDATA<-ALLDATA %>% filter(ALLDATA$INST!="")
 
 
+
+
+####################################
+
+# GO WITH ALLDATA TO INST_corrections.R
+# this is where any corrections are put in'
+# when done, take the resulting df and fo to EditorINst_analyses.R
+
+####################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ##############################################################
 # THIS WILL ALLOW YOU DO TO COMPARE ALL NAMES
 # TO ALL NAMES TO SEE IF THERE ARE ANY THAT ARE 
@@ -1849,13 +1888,38 @@ ALLDATA<-ALLDATA %>% filter(ALLDATA$INST!="")
 
 
 
-# TODO: FIND THE DUPLICATED ONES AND CORRECT THEM
 
-DISTINCT<-ALLDATA %>% distinct(JOURNAL, YEAR, editor_id, .keep_all = TRUE)
 
-alldata_dupes<-ALLDATA %>% group_by(JOURNAL,LAST_NAME,FIRST_NAME,YEAR) %>% filter(n()>1)
-alldata_dupes<-droplevels(alldata_dupes)
-levels(alldata_dupes$JOURNAL)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 
+# # TODO: FIND THE DUPLICATED ONES AND CORRECT THEM
+# 
+# DISTINCT<-ALLDATA %>% distinct(JOURNAL, YEAR, editor_id, .keep_all = TRUE)
+# 
+# alldata_dupes<-ALLDATA %>% group_by(JOURNAL,LAST_NAME,FIRST_NAME,YEAR) %>% filter(n()>1)
+# alldata_dupes<-droplevels(alldata_dupes)
+# levels(alldata_dupes$JOURNAL)
 
 
 
