@@ -1,0 +1,8 @@
+#FUNCTION TO CLEAN AND PROCESS AJB
+clean_AJB <- function(DATAFILE) {
+  DATAFILE<-rename(DATAFILE,"TITLE"="TITLE.x")
+  
+  return(DATAFILE)
+}
+
+

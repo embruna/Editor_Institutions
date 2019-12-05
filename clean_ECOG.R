@@ -1,0 +1,8 @@
+#FUNCTION TO CLEAN AND PROCESS ECOG
+clean_ECOG <- function(DATAFILE) {
+  DATAFILE<-rename(DATAFILE,"TITLE"="TITLE.x")
+  
+  return(DATAFILE)
+}
+
+

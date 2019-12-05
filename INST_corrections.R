@@ -17,45 +17,45 @@ source("institution_cleaner.R")
 # Round 1: AGRON, ARES, EVOL (DONE)
 # Round 2a: CONBIO,NEW PHYT (DONE)
 # Round 2b: NEW PHYT (DONE)
-# Round 3: BITR
-# Round 4: AMNAT
-# Round 6: JECOL
-# Round 7: JAPE
-# Round 5: BIOCON
-# Round 8: PLANTECOL
-# Round 9: JBIOG
-# Round 10: LECO
-# JANE
-# JZOOL: will need extensive loopkup
-# OECOL: will need extensive loopkup
-# OIKOS: will need extensive loopkup
+# Round 3: BITR (DONE)
+# Round 4: AMNAT (DONE, EB 2x)
+# Round 6: JECOL (DONE)
+# Round 7: JAPE (DONE)
+# Round 5: BIOCON (DONE, need to upload and integrate the corrections)
+# Round 8: PLANTECOL (DONE, to be emailed)
+# Round 9: JBIOG (2x in progress, almost done - need to add institutions that were "missing")
+# Round 10: LECO (DONE, 2x the ones "incorrect" to see if the INST value in the table is the corrected or original")
+# JANE: Needs extensive data fill
+# JZOOL: Needs extensive data fill
+# OECOL: Needs extensive data fill
+# OIKOS: (DONE)
 # AUK: not for this paper
 # CONDOR: not for this paper
 ##############################################################
 
 
 multi1<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_1.csv", col_names = TRUE)
-multi1<-multi1 %>% fill(INST,UNIT,CITY,STATE)
+multi1<-multi1 %>% fill(INST,UNIT,CITY,STATE,.direction="down")
 
 multi2a<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_2a.csv", col_names = TRUE)
-multi2a<-multi2a %>% filter(JOURNAL=="CONBIO"|JOURNAL=="NEWPHYT") %>% fill(INST,UNIT,CITY,STATE) #delete out other journals this is conbio and new phyt
+multi2a<-multi2a %>% filter(JOURNAL=="CONBIO"|JOURNAL=="NEWPHYT") %>% fill(INST,UNIT,CITY,STATE,.direction="down") #delete out other journals this is conbio and new phyt
 
 multi2b<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_2b.csv", col_names = TRUE)
-multi2b<-multi2b %>% filter(JOURNAL=="CONBIO"|JOURNAL=="NEWPHYT") %>% fill(INST,UNIT,CITY,STATE) #delete out other journals this is conbio and new phyt
+multi2b<-multi2b %>% filter(JOURNAL=="CONBIO"|JOURNAL=="NEWPHYT") %>% fill(INST,UNIT,CITY,STATE,.direction="down") #delete out other journals this is conbio and new phyt
 
 BITR_inst<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_3_BITR.csv", col_names = TRUE)
-BITR_inst<-BITR_inst %>% fill(INST,UNIT,CITY,STATE)
+BITR_inst<-BITR_inst %>% fill(INST,UNIT,CITY,STATE,.direction="down")
 
-AMNAT_inst<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_4_AMNAT.csv", col_names = TRUE)
-AMNAT_inst<-AMNAT_inst %>% fill(INST,UNIT,CITY,STATE)%>% filter(JOURNAL=="AMNAT")
+AMNAT_inst<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_4_AMNAT.csv", col_names = TRUE,na = c("", "N/A", "NA"), trim_ws = TRUE)
+AMNAT_inst<-AMNAT_inst %>% fill(INST,UNIT,CITY,STATE,.direction="down")%>% filter(JOURNAL=="AMNAT")
 
 JECOL_inst<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_6_JEcol.csv", col_names = TRUE)
-JECOL_inst<-JECOL_inst %>% fill(INST,UNIT,CITY,STATE)%>% filter(JOURNAL=="JECOL")
+JECOL_inst<-JECOL_inst %>% fill(INST,UNIT,CITY,STATE,.direction="down")%>% filter(JOURNAL=="JECOL")
 
 JAPE_inst<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_7_JAPE.csv", col_names = TRUE)
 JAPE_inst<-JAPE_inst %>% 
   rename("FIRST_NAME"="FIRST_NA", "MIDDLE_NAME"="MIDDLE_","LAST_NAME"="LAST_NA") %>% 
-  fill(INST,UNIT,CITY,STATE,NOTES)%>% filter(JOURNAL=="JAPE")
+  fill(INST,UNIT,CITY,STATE,NOTES,.direction="down")%>% filter(JOURNAL=="JAPE")
 JAPE_inst$editor_id<-NULL
 # TODO: something is going on with editot IDS
 
@@ -379,6 +379,7 @@ both$COUNTRY.x[both$COUNTRY.x == "Wales"] <- "United Kingdom"
 both$COUNTRY.x[both$COUNTRY.x == "Scotland"] <- "United Kingdom"
 both$COUNTRY.x[both$COUNTRY.x == "England"] <- "United Kingdom"
 
+
 both$COUNTRY.y<-NULL
 both$country_check<-NULL
 both<-both %>% rename("COUNTRY"="COUNTRY.x")
@@ -535,7 +536,26 @@ missing_INST<-both %>% filter(is.na(INST))
 # Stephen Simpson Ecology 2002 2x if Oxford, UK, Australia 
 # 1 Traveser  Anna       217             2
 # 2 Traveset  Anna       217             2
+# Troy Day not on Amnat board in 12-14, listed as in Australia
 ##########################################
+
+
+TODO: some error checking of states: 
+# canada instead of Canada
+# British Columbia in USA
+# Lower Austria     USA
+# Galicia     USA
+# England     USA
+# Uppland     USA
+# ONtario in USA
+# Gelderland
+
+both$COUNTRY[both$STATE == "British Columbia" & both$COUNTRY == "USA"] <- "Canada"
+both$COUNTRY[both$STATE == "Lower Austria" & both$COUNTRY == "USA"] <- "Canada"
+both$COUNTRY[both$STATE == "Galicia" & both$COUNTRY == "USA"] <- "Canada"
+both$COUNTRY[both$STATE == "England" & both$COUNTRY == "USA"] <- "Canada"
+both$COUNTRY[both$STATE == "Uppland" & both$COUNTRY == "USA"] <- "Canada"
+both$COUNTRY[both$STATE == "Ontario" & both$COUNTRY == "USA"] <- "Canada"
 
 
 # TODO: Give editor_IDs to those missing 

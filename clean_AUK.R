@@ -1,0 +1,16 @@
+#FUNCTION TO CLEAN AND PROCESS AUK
+clean_AUK <- function(DATAFILE) {
+  DATAFILE$JOURNAL<-"AUK"
+  DATAFILE$editor_id<-NA
+  DATAFILE<-DATAFILE%>% select(JOURNAL,YEAR, editor_id,EDITOR_TITLE,FIRST_NAME,
+                     MIDDLE_NAME,LAST_NAME,INST,UNIT,CITY,STATE,
+                     COUNTRY,NOTES)
+  DATAFILE$INST<-gsub("None given",NA, DATAFILE$INST)
+  DATAFILE$UNIT<-gsub("None given",NA, DATAFILE$UNIT)
+  DATAFILE$CITY<-gsub("None given",NA, DATAFILE$CITY)
+  DATAFILE$STATE<-gsub("None given",NA, DATAFILE$STATE)
+  DATAFILE$COUNTRY<-gsub("None given",NA, DATAFILE$COUNTRY)
+  return(DATAFILE)
+}
+
+
