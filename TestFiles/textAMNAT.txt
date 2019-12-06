@@ -1,0 +1,103 @@
+""
+"x"
+"1"
+"O                        O
+.                                                                   The  Amencan  Naturahst
+.                                            Mark A. McPeek, Editor-in-Chief, Dartmouth College                                  7
+‘                                               Judith L. Bronstein, Editor, University ofArizona
+                                                    Ruth G. Shaw, Editor, University of Minnesota                                        '
+'1                                            Craig W. Benkman, Natural History Editor, University of Wyoming
+1.                                                       EDITORIAL BOARD
+‘                       David D. Ackerly, University of Caliﬁn‘nia, Berkeley                       Darren Irwin, University of British Colmnbia
+Dean C. Adams, Iowa State University                                   Iukka lokela, EMVAG/ETH—Ziirich                             .     '
+.                       Elizabeth Adkins—Regan, Cornell University                               Susan Kalisz, University of Pittsburgh                                 .
+.                       Frederick R. Adler, University of Utah               '                    Matt I. Keeling, University of Warwick
+Suzanne H. Alonzo, Yale University                                      Ellen D. Ketterson, Indiana University                                -
+‘                        Priyanga Amarasekare, University of California, Los Angeles                 Christopher A. Klausmeier, Michigan State University
+Maydianne C. B. Andrade, University of Toronto Scarborough               Vlastimil Kfivan, Biology Centre, Ccské Budéjovice
+‘                    Géran Arnqvist, University Of Uppsala                               '    Martin ]. Lechowicz, McGill University                               -
+'I‘ia—Lynn Ashman, U’IM’MU’ of Pittsburgh                                   Mathew A. Leibold, University of Texas at Austin
+‘                        Charles F. Baer, University of Florida                                      John L. Maren, University of Montana
+[                       Uta Berger, Dresden University Of TCC’WOIOSY                             Yannis Michalakis, CNRS-IRD, Montpellier
+Benjamin 301k”, University Of Florida                                   Wolf M. Mooij, Netherlands Institute of Ecology
+
+1                       Daniel I. Bolnick, University of Texas at Austin                           Allen J. Moore, University Of Exeter, Cornwall
+
+‘                       Janette W. Boughman, University of Wisconsin, Madison                   Peter I. Morin, Rutgers—The State University
+
+‘                       Edmund D' Brodie ”1’ University of Virginia                             Michael G. Neubert, Woods Hole Oceanographic Institution
+
+7                        Steven L. Chown, University of Sthlcnbosch                               Tommaso Pizzari, University Of Oxford
+Blmne 1' Cole, Universuy 0f HOUSE”                                      Anna Qvamstrém, University of Uppsala
+.                        Tm] COUISOH’ I "" IP or m! .Collegc, 8tlweod Park                                David N. Reznick, University of California, Riverside
+Gregory E. Demas, [ﬁdlmlﬂ Lhuvershy   .                              Sean H. Rice, Texas Tech University
+‘                       Claire dc Mazancourt, Imperml College, SllWOOd Park                      S r io Rinaldi  Politecnico di Milmzo
+Kathleen Donohue, Duke University                                 De g.        ’                .   .    ‘
+t                                  .   .   . ﬂ  ..  .                               amel L. Roelke, Texas Acﬁ-M Umversxty
+‘                     Robert Dudley, Umvcrsuy of Cahjorma, Berkeley                            .       .    .    .    .      .
+1‘                       Greg Dwyer, University 0 f Chicago                                        PC] Roham, Umversxty 0])Georgm  '
+‘                    Christo her G. Eckert, Queen’s Universit I                               Axel 6' Rossberg: taecn 5 Umvcrsxty Belfast
+P                               )
+Santiago F. Elena, Consejo Superior de Investigaciones Cicnn'ﬁcas             Locke Rowe, thersny of Toronto                                    .
+Elizabeth Elle, Simon Fraser University                                   Oswald 1' SChmlt?’ Yak Umvemty                                   O
+James D. Fry, University of Rochester                                  Ben Sheldon, Unwersxty of Oxford.   _
+Kevin I. Gaston, University of Shefﬁeld                                    Thomas N. Sherratt, Carleton Umvcrsxty '     '
+Greg Gibson, North Carolina State University                             Attdrew Solow, Woods Hole .Ocemzog'rhphtc Insnthtc
+
+:                        Volker Grimm, UfZ Centre for Environmental Research Leipzig—Halle         Dtane 3‘ Srivastava, University of Brmsh Cohmzbm
+
+                       Susan Harrison, University of California, Davis                           3C0"" 1- Steppan, Florida State University                            '
+Stephen B. Heard, University of New Brunswick                           Erik Svensson, Lund University                                     ""
+Michael E. Hellberg, Louisiana State University                           Peter D- Taylor, Queen’s University
+
+‘:                       Ary A. Hoffmann, University of Melbourne                               Egbert H. van Nes, Wageningen University
+
+7                         Carol C. Horvitz, University of Miami                                       David Waxman, University Of Sussex
+Lynne D. Houck, Oregon State University                                 Franz I. Weissing, University of Groningen
+Gregory Hurst, University of Liverpool                                     Stuart West, Edinburgh University
+
+35                      Patricia L. Morse, Managing Editor        .                        Agnes Littmann and Ashley Hastings, Editorial Assistants       _
+
+t                         The American Naturalist (ISSN 0003-0147) is published monthly by     Periodicals postage paid at Chicago, Illinois, and at additional mailing
+The University of Chicago Press, 1427 E. 60th Street, Chicago, llli-     ofﬁce.
+
+‘                        nois 60637. Manuscri ts and editorial corres Iondence should be ad-                                                  ,           ,
+
+7                        dressed to the Managlihg Editor, The Americhh Naturalist, University    POS,TMA,S'TER: Settd address changes to T”? 'Amer 1am Naturalist, Th?    I
+of Chicago Press, 1427 E. 60th Street, Chicago, Illinois 60637. Addi-    Umverstty 9f Chlcago Press, Journals D1v1510n, PO. Box 37005, Chl-    .
+tional information may be obtained at:                                cago, Illmms 60637‘                 .                                _
+httpzllmvw.j0urnals.uchicago.edu/AN/home.html.                          Permissions: Articles may be copied or otherwise reused without permis-
+
+_   .                  .             .                                     sion only to the extent permitted by Sections 107 and 108 of the U.S.
+
+‘                          Subscnpnons to The American Naturalist may be ordered from, and       Copyright Law. Permission to copy articles for personal, internal, class-
+remittance should be made payable to, The American Naturalist.           room, or library use may be obtained from the Copyright Clearance
+Subscription rates for 2010 are $602 for institutions (print + elec-        Center (www.copyright.com). For all other uses, such as copying for
+
+'                          tronic) and $40 for individuals (electronic-only, concurrent with mem-    general distribution, for advertising or promotional purposes, for creat-
+bership in the American Society of Naturalists; print edition available      ing new collective works, or for resale, please contact Permissions Co-
+to U.S. members for an additional $40 per year and to non—U.S.          ordinator, Journals Division, The University Of Chicago Press, 1427 E.
+members for $70 Per Year) For additional ratCS» including single-COPY     60th Street, Chicago, Illinois 60637, USA; fax: (773) 834—3489. E-mail:
+rates, reduced rates for students and retirees, and rates for insitutional    journalpermissions@press.uchicago.edu. Articles in the public domain
+
+‘                           print—only and electronic—only subscriptions, please ViSit                    may be used without permission, but it is customary to contact the       '
+www.journa|s.uchicago.edu/AN/. Additional taxes and/or postage for      author.                                                                '
+non-U.S. subscriptions may apply. Free or deeply discounted access is                       '                                                     :
+available to readers in most developing nations through the Chicago      The paper used if‘ this publication meets the minimum requirements   '
+
+Emerging Nations Initiative (www.journals.uchicago.edu/ceni/).            0‘ American Nattonal 8tandard for lnformahon Sc1ences—             -
+
+‘                                                                                                     Permanence of Paper for Printed Library Materials.
+
+Please direct subscription inquiries, back-issue requests, and address       ANSI 239-48‘1984- @m                                               :
+
+changes to The University of Chicago Press, Journals Division, PO.       TI       -           -  -    -              .          -  -      o      -
+.                                                                                  1e Amenam Naturalist IS prmted on cover stock contammg 100 /0 post   .
+
+Box 37005’ Chtcago, [L 60637’ Telephone: (773) 753'3347 or toll-free     consumer waste and text stock containing 10% postconsumer waste
+
+in the United States and Canada (877) 705-1878. Fax: (773) 753-0811                                                   ‘                '
+
+or toll-free (877) 705—1879. E-mail: subscriptions@press.uchicago.edu.     © 2009 by The University of Chicago. All rights reserved.
+
+"

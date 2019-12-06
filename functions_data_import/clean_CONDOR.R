@@ -1,9 +1,9 @@
 #FUNCTION TO CLEAN AND PROCESS CONDOR
 clean_CONDOR <- function(DATAFILE) {
   
-  DATAFILE_raw$JOURNAL<-"CONDOR"
-  DATAFILE_raw$editor_id<-NA
-  DATAFILE<-DATAFILE_raw %>% select(JOURNAL,YEAR, editor_id,EDITOR_TITLE,
+  DATAFILE$JOURNAL<-"CONDOR"
+  DATAFILE$editor_id<-NA
+  DATAFILE<-DATAFILE %>% select(JOURNAL,YEAR, editor_id,EDITOR_TITLE,
                                     FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,
                                     UNIT,CITY,STATE,COUNTRY,NOTES)
   DATAFILE$INST<-gsub("None given",NA, DATAFILE$INST)

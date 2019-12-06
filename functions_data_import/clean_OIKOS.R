@@ -1,0 +1,8 @@
+#FUNCTION TO CLEAN AND PROCESS OIKOS
+clean_OIKOS <- function(DATAFILE) {
+  DATAFILE<-rename(DATAFILE,"TITLE"="TITLE.x")
+  
+  return(DATAFILE)
+}
+
+

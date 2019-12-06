@@ -1,0 +1,8 @@
+#FUNCTION TO CLEAN AND PROCESS JECOL
+clean_JECOL <- function(DATAFILE) {
+  DATAFILE<-rename(DATAFILE,"TITLE"="TITLE.x")
+  
+  return(DATAFILE)
+}
+
+

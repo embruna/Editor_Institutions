@@ -1,0 +1,8 @@
+#FUNCTION TO CLEAN AND PROCESS JTE
+clean_JTE <- function(DATAFILE) {
+  DATAFILE<-rename(DATAFILE,"TITLE"="TITLE.x")
+  
+  return(DATAFILE)
+}
+
+

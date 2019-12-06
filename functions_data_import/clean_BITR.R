@@ -1,0 +1,8 @@
+#FUNCTION TO CLEAN AND PROCESS BITR
+clean_BITR <- function(DATAFILE) {
+  DATAFILE<-rename(DATAFILE,"TITLE"="TITLE.x")
+  
+  return(DATAFILE)
+}
+
+

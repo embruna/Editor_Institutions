@@ -1,0 +1,7 @@
+#FUNCTION TO CLEAN AND PROCESS NAJFM
+clean_NAJFM <- function(DATAFILE) {
+  DATAFILE<-DATAFILE %>% rename("TITLE"="TITLE.x")
+  return(DATAFILE)
+}
+
+

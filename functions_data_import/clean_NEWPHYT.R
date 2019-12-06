@@ -1,0 +1,9 @@
+#FUNCTION TO CLEAN AND PROCESS NEWPHYT
+clean_NEWPHYT <- function(DATAFILE) {
+  
+  DATAFILE<-DATAFILE %>% rename("TITLE"="TITLE.x")
+  
+  return(DATAFILE)
+}
+
+

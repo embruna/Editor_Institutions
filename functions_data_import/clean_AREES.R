@@ -1,0 +1,8 @@
+#FUNCTION TO CLEAN AND PROCESS AREES
+clean_AREES <- function(DATAFILE) {
+  DATAFILE<-rename(DATAFILE,"TITLE"="TITLE.x")
+  
+  return(DATAFILE)
+}
+
+
