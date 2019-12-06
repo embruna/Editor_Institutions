@@ -1,6 +1,34 @@
 #FUNCTION TO SYSTEMATIZE UNIVERSITY AND PLACE NAMES
 institution_cleaner <- function(DATAFILE) {
 
+  # SOME NOTES:
+  
+  # 
+  # ANUTECH is a spin-off company started by ANU
+  # BFH: Fed Research Center for Foresty and Forest Products - Abbreviation 
+  # BFW: Austrian Research Center for Forests
+  # BOKU: University of Natural Resources and Life LifeCycleSavings
+  #CSIRO: Commonwealth Scientific and Industrial Research Organization
+  # IADIZA: CONICET Instituto Argentino de Investigaciones de las Zonas Aridas
+  # ICRAF: International Center for Research in Agroforestry
+  # IFREMER: Institut Français de Recherche pour l'exploitation de la Mer
+  # IMEDEA: Instituto Mediterraneo de Estudios Avanzados
+  # IUCN: International Union for Conservation of Nature and Natural Resources
+  # MWRDGC: Metropolitan Water Reclamation District of Greater Chicago
+  # NIOO-KNAW: Netherlands Institue of Ecology
+  # SEGC: Station DEtudes des Gorilles et Chimpanzes
+  # WSL: Swiss Federal Research Institute for Forest Snow and Landscape Research
+  # UMCES: University of Maryland Center for Environmental Science. UMCES is one of 12 institutions within the University System of Maryland.
+  # UMR EcoFoG: CNRS Unite mixte de recherche Ecologie des forets de Guyane
+  # SLU: Swedish University of Agricultural Sciences
+  # CSIC: Consejo Superior de Investigaciones Científicas
+  # U of N Georgia: Gainesville State College merged with N Georgia COllege and State University
+  
+  
+  
+  
+  
+  
 DATAFILE$COUNTRY<-as.factor(DATAFILE$COUNTRY)
 levels(DATAFILE$COUNTRY)
 DATAFILE$COUNTRY<-as.character(DATAFILE$COUNTRY)
@@ -16,20 +44,12 @@ DATAFILE$COUNTRY[DATAFILE$COUNTRY=="United States"]<-"USA"
 DATAFILE$COUNTRY[DATAFILE$INST=="University of New South Wales"]<-"Australia"
 DATAFILE$COUNTRY[DATAFILE$INST=="University of Guelph"]<-"Canada"
 DATAFILE$COUNTRY[DATAFILE$INST=="Instituto Mediterraneo de Estudios Avanzados (IMEDEA)"]<-"Spain"
-DATAFILE$COUNTRY[DATAFILE$FIRST_NAME=="Jeannine" & DATAFILE$LAST_NAME=="Cavender-Bares"]<-"USA"
-
 ##############################################################
 # COrrecting the country in whihc an Editor is based
 ##############################################################
-
-DATAFILE$COUNTRY[DATAFILE$LAST_NAME=="Bieber"]<-"Austria"
-
-
 DATAFILE$COUNTRY<-as.factor(DATAFILE$COUNTRY)
 DATAFILE<-droplevels(DATAFILE)
 levels(DATAFILE$COUNTRY)
-
-
 ##############################################################
 # STILL TO DO 
 ##############################################################
@@ -38,7 +58,7 @@ levels(DATAFILE$COUNTRY)
 levels(DATAFILE$COUNTRY) <- c(levels(DATAFILE$COUNTRY),"Russia")
 DATAFILE$COUNTRY[DATAFILE$COUNTRY=="USSR"]<-"Russia"
 
-# NEED DO DELETE THESE
+# TODO: NEED DO DELETE THESE
 which(DATAFILE$COUNTRY=="")
 
 ##############################################################
@@ -47,63 +67,19 @@ which(DATAFILE$COUNTRY=="")
 ##############################################################
 ##############################################################
 DATAFILE$INST[DATAFILE$INST=="."]<-NA
-
 DATAFILE<-as.data.frame(DATAFILE)
 DATAFILE$JOURNAL<-as.factor(DATAFILE$JOURNAL)
-
 # Correcting the Institution where an Editor is based
-
-DATAFILE$INST[DATAFILE$JOURNAL=="AMNAT" & DATAFILE$LAST_NAME=="Case"]<-"University of California San Diego"
-DATAFILE$INST[DATAFILE$LAST_NAME=="Noon"]<-"Colorado State University"
-DATAFILE$COUNTRY[DATAFILE$LAST_NAME=="VanDerHeijden"]<-"Switzerland"
-
 levels(DATAFILE$INST) <- c(levels(DATAFILE$INST),"State University of New York College of Environmental Science and Forestry")
-DATAFILE$INST[DATAFILE$LAST_NAME=="Burgess"]<-"State University of New York College of Environmental Science and Forestry"
-DATAFILE$INST[DATAFILE$LAST_NAME=="Fragoso"]<-"State University of New York College of Environmental Science and Forestry"
-DATAFILE$INST[DATAFILE$LAST_NAME=="Yanai"]<-"State University of New York College of Environmental Science and Forestry"
-DATAFILE$INST[DATAFILE$LAST_NAME=="Hall" & DATAFILE$FIRST_NAME=="Charles" & DATAFILE$JOURNAL=="CONBIO"]<-"State University of New York College of Environmental Science and Forestry"
-
 levels(DATAFILE$INST) <- c(levels(DATAFILE$INST),"Forestry and Forest Products Research Institute","University of Minnesota Duluth","University of Minnesota Crookston")
-DATAFILE$INST[DATAFILE$LAST_NAME=="Fujimori"]<-"Forestry and Forest Products Research Institute"
-DATAFILE$INST[DATAFILE$LAST_NAME=="Johnson" & DATAFILE$FIRST_NAME=="Lucinda"]<-"University of Minnesota Duluth"
-DATAFILE$INST[DATAFILE$LAST_NAME=="Moen" & DATAFILE$FIRST_NAME=="Ron"]<-"University of Minnesota Duluth"
-DATAFILE$INST[DATAFILE$LAST_NAME=="Sterner" & DATAFILE$FIRST_NAME=="Robert"]<-"University of Minnesota Duluth"
-DATAFILE$INST[DATAFILE$LAST_NAME=="Wiersma" & DATAFILE$FIRST_NAME=="Jochum"]<-"University of Minnesota Crookston"
-DATAFILE$INST[DATAFILE$LAST_NAME=="Smith" & DATAFILE$FIRST_NAME=="Madeleine"]<-"University of Minnesota Crookston"
-DATAFILE$INST[DATAFILE$LAST_NAME=="Sims" & DATAFILE$FIRST_NAME=="Albert"]<-"University of Minnesota Crookston"
-
 levels(DATAFILE$INST) <- c(levels(DATAFILE$INST),"University of Toronto Mississauga")
-DATAFILE$INST[DATAFILE$LAST_NAME=="Sprules" & DATAFILE$FIRST_NAME=="Gary"]<-"University of Toronto Mississauga"
-DATAFILE$INST[DATAFILE$LAST_NAME=="Wagner" & DATAFILE$FIRST_NAME=="Helene"]<-"University of Toronto Mississauga"
-DATAFILE$INST[DATAFILE$LAST_NAME=="Kotanen" & DATAFILE$FIRST_NAME=="Peter"]<-"University of Toronto Mississauga"
-DATAFILE$INST[DATAFILE$LAST_NAME=="Loiselle" & DATAFILE$FIRST_NAME=="Bette"]<-"University of Missouri St Louis"
-DATAFILE$INST[DATAFILE$LAST_NAME=="Ricklefs" & DATAFILE$FIRST_NAME=="Robert"]<-"University of Missouri St Louis"
-DATAFILE$INST[DATAFILE$LAST_NAME=="Renner" & DATAFILE$FIRST_NAME=="Susanne"]<-"University of Missouri St Louis"
-DATAFILE$INST[DATAFILE$LAST_NAME=="Sork" & DATAFILE$FIRST_NAME=="Victoria"]<-"University of Missouri St Louis"
-
 levels(DATAFILE$INST) <- c(levels(DATAFILE$INST),"Universite Libre de Bruxelles","CNRS Centre dEcologie Fonctionnelle et Evolutive")
-DATAFILE$INST[DATAFILE$LAST_NAME=="Parmentier"]<-"Universite Libre de Bruxelles"
-DATAFILE$INST[DATAFILE$LAST_NAME=="Debussche"]<-"CNRS Centre dEcologie Fonctionnelle et Evolutive"
-
-
-# DATAFILE$INST<-as.factor(DATAFILE$INST)
-# DATAFILE$STATE<-as.factor(DATAFILE$STATE)
-# DATAFILE$COUNTRY<-as.factor(DATAFILE$COUNTRY)
-# DATAFILE$Inst_Prior_Class<-as.factor(DATAFILE$Inst_Prior_Class)
-# DATAFILE<-DATAFILE %>% select(-DATA)
-
 ##############################################################
 ##############################################################
 # Correcting or systematizing the name/speclling of an institution
 ##############################################################
 ##############################################################
-
-
-
-
 levels(DATAFILE$INST) <- c(levels(DATAFILE$INST),"University of Missouri Columbia")
-DATAFILE$INST[DATAFILE$INST=="University of Missouri"]<-"University of Missouri Columbia" 
-
 DATAFILE$INST<-as.character(DATAFILE$INST)
 DATAFILE$INST<-trimws(DATAFILE$INST, which = "left")
 DATAFILE$INST<-trimws(DATAFILE$INST, which = "right")
@@ -116,7 +92,6 @@ DATAFILE$INST<-gsub("Unniversity","University",DATAFILE$INST)
 DATAFILE$INST<-gsub("Museum Natl Hist Nat","National History Museum Paris",DATAFILE$INST)
 DATAFILE$INST<-gsub("University<ca>of<ca>California<ca>Santa<ca>Cruz","University of California Santa Cruz",DATAFILE$INST)
 DATAFILE$INST<-gsub("Uc Santa Cruz","University of California Santa Cruz",DATAFILE$INST)
-
 # TODO: gsub ArKansas one is not working inside the function and I have no idea why.
 DATAFILE$INST<-gsub("Arkansas","Arkansas", DATAFILE$INST,ignore.case=TRUE)
 DATAFILE$INST<-gsub("UVA","University of Virginia",DATAFILE$INST)
@@ -371,7 +346,6 @@ DATAFILE$INST<-gsub("Naturelle Naturelle","Naturelle", DATAFILE$INST)
 DATAFILE$INST<-gsub("Oregan", "Oregon", DATAFILE$INST)
 DATAFILE$INST<-gsub("Philips University","Philips University Marburg", DATAFILE$INST)
 # DATAFILE$INST<-gsub("(CSIC)", "", DATAFILE$INST)
-
 DATAFILE$INST[DATAFILE$INST=="Cary Cary Institute of Ecosystem Studies"]<-"Cary Institute of Ecosystem Studies"
 DATAFILE$INST[DATAFILE$INST=="University of California NCEAS"]<-"National Center for Ecological Analysis and Synthesis"
 DATAFILE$INST<-gsub("Khorasan Agricultural and Natural Resources Res Ctr","Khorasan Agricultural and Natural Resources Research Center", DATAFILE$INST)
@@ -493,7 +467,7 @@ DATAFILE$INST[DATAFILE$INST=="Woods Hole Oceanographic Institute"]<-"Woods Hole 
 DATAFILE$INST[DATAFILE$INST=="Woods Hole Research Center"]<-"Woods Hole Oceanographic Institution"
 
                                                           
-                                                          ##############################################################
+##############################################################
 ##############################################################
 # Dividing Some Names for INST into INST and UNIT
 ##############################################################
