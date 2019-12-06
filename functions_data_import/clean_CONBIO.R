@@ -20,7 +20,7 @@ clean_CONBIO <- function(DATAFILE) {
   # distinct(editor_id,INST) %>% distinct(editor_id)
   
   head(DATAFILE,10)
-  DATAFILE<-DATAFILE %>% fill(INST)
+  DATAFILE<-DATAFILE %>% fill(INST,.direction="down")
   DATAFILE<-rename(DATAFILE,"TITLE"="TITLE.x")
   
   ##

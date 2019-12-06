@@ -1,0 +1,152 @@
+,JOURNAL,YEAR,FIRST_NAME,MIDDLE_NAME,LAST_NAME,editor_id,INST,UNIT,CITY,STATE,COUNTRY,source,code
+1,PLANTECOL,1985,Eddy,NA,VanDerMaarel,1035,,NA,Uppsala,NA,Sweden,SciWri17,SCIWRI_butnot_DRYAD
+2,PLANTECOL,1986,Eddy,NA,VanDerMaarel,1035,,NA,NA,NA,Sweden,SciWri17,SCIWRI_butnot_DRYAD
+3,PLANTECOL,1987,Eddy,NA,VanDerMaarel,1035,,NA,NA,NA,Sweden,SciWri17,SCIWRI_butnot_DRYAD
+4,PLANTECOL,1988,Eddy,NA,VanDerMaarel,1035,,NA,NA,NA,Sweden,SciWri17,SCIWRI_butnot_DRYAD
+5,PLANTECOL,1989,Eddy,NA,VanDerMaarel,1035,,NA,NA,NA,Sweden,SciWri17,SCIWRI_butnot_DRYAD
+6,FEM,1984,David,M,Griffin,711,ANUTECH,,Canberra,NA,Australia,SciWri17,SCIWRI_butnot_DRYAD
+7,FEM,1984,David,I,Bevege,626,Australian International Development Bureau,NA,Beecroft,NA,Australia,SciWri17,SCIWRI_butnot_DRYAD
+8,FEM,1984,Wilfredo,H,Barrett,NA,Centro de Investigaciones y Experiencias Forestales (CIEF),NA,Buenos Aires,NA,Argentina,SciWri17,SCIWRI_butnot_DRYAD
+9,FEM,1984,M,NA,Rapp,NA,CNRS Centre dEcologie Fonctionnelle et Evolutive,,Montpellier,NA,France,SciWri17,SCIWRI_butnot_DRYAD
+10,FEM,1984,Joe,J,Landsberg,1693,Commonwealth Scientific and Industrial Research Organisation,NA,Canberra,NA,Australia,SciWri17,SCIWRI_butnot_DRYAD
+11,FEM,1984,Frank,J,Newhook,1113,Department of Scientific and Industrial Research,NA,Auckland,NA,New Zealand,SciWri17,SCIWRI_butnot_DRYAD
+12,CONBIO,2012,Peter,NA,Daszak,2791,EcoHealth Alliance,NA,New Yor City,New York,USA,SciWri17,SCIWRI_butnot_DRYAD
+13,FEM,1984,Jean,Paul,Lanly,1695,Food and Agriculture Organization,,Rome,NA,Italy,SciWri17,SCIWRI_butnot_DRYAD
+14,CONBIO,2011,J,Alan,Clark,3887,Fordham University,NA,New York City,New York,USA,SciWri17,SCIWRI_butnot_DRYAD
+15,FEM,1984,J,J,Havel,3895,Forests Department of Western Australia,NA,Perth,NA,Australia,SciWri17,SCIWRI_butnot_DRYAD
+16,FEM,1984,Hans,H,Hattemer,NA,Georg August Universitat Gottingen,NA,Gottingen,NA,Germany,SciWri17,SCIWRI_butnot_DRYAD
+17,CONBIO,2005,E,J,Milner-Gulland,1004,Imperial College London,,London,England,United Kingdom,SciWri17,SCIWRI_butnot_DRYAD
+18,FEM,1984,F,T,Last,1095,Institute of Terrestrial Ecology,NA,Penicuik,NA,United Kingdom,SciWri17,SCIWRI_butnot_DRYAD
+19,FEM,1984,Bjorn,O,Lundgren,311,International Center for Research in Agroforestry,,Nairobi,NA,Kenya,SciWri17,SCIWRI_butnot_DRYAD
+20,OIKOS,2004,Torbjon,NA,Fagerstrom,3543,Lund University,NA,Lund,NA,Sweden,SciWri17,SCIWRI_butnot_DRYAD
+21,ECOGRAPHY,1995,Linus,NA,Svensson,NA,Lund University,Department of Ecology,Lund,NA,Sweden,SciWri17,SCIWRI_butnot_DRYAD
+22,ECOGRAPHY,1996,Linus,NA,Svensson,NA,Lund University,Department of Ecology,Lund,NA,Sweden,SciWri17,SCIWRI_butnot_DRYAD
+23,FEM,1984,Frederick,NA,Owino,1114,Moi University,Forestry and Wildlife,Nairobi,NA,Kenya,SciWri17,SCIWRI_butnot_DRYAD
+24,JTE,2015,Mark-Oliver,Oliver,Rodel,2540,Museum fur Naturkunde,,NA,NA,Germany,SciWri17,SCIWRI_butnot_DRYAD
+25,JTE,2015,Pierre-Michel,NA,Forget,2808,Museum National dHistoire Naturelle,NA,NA,Brunoy,France,SciWri17,SCIWRI_butnot_DRYAD
+26,FEM,1984,Wenyu,NA,Hsiung,3751,Nanjing Forestry University,NA,Nanjing,NA,China,SciWri17,SCIWRI_butnot_DRYAD
+27,FEM,1984,John,C,Tappeiner,1900,Oregon State University,NA,Corvallis,Oregon,USA,SciWri17,SCIWRI_butnot_DRYAD
+28,FEM,1984,L,F,Pravdin,NA,Science Academy of the USSR,Laboratory of Forestry,Moscow,NA,Russia,SciWri17,SCIWRI_butnot_DRYAD
+29,PLANTECOL,2004,Jeannine,NA,Cavender-Bares,NA,Smithsonian Environmental Research Center,NA,Edgewater,Maryland,USA,SciWri17,SCIWRI_butnot_DRYAD
+30,FEM,1984,Folke,NA,Andersson,1048,Swedish University of Agricultural Sciences,NA,Uppsala,NA,Sweden,SciWri17,SCIWRI_butnot_DRYAD
+31,FEM,1984,Zev,NA,Naveh,3846,Technion Israel Institute of Technology,Agricultural Engineering,Haifa,NA,Israel,SciWri17,SCIWRI_butnot_DRYAD
+32,JTE,2015,Rene,GA,Boot,2990,Tropenbos International,NA,NA,Wagen,Netherlands,SciWri17,SCIWRI_butnot_DRYAD
+33,PLANTECOL,2002,David,C,Glenn-Lewin,705,Unity College,NA,Unity ,Maine,USA,SciWri17,SCIWRI_butnot_DRYAD
+34,JTE,2015,Alejandro,NA,Estrada,66,Universidad Nacional Autonoma de Mexico,Institute of Biology,NA,NA,Mexico,SciWri17,SCIWRI_butnot_DRYAD
+35,ECOGRAPHY,1984,Per,NA,Sunding,2930,University Botanical Garden,,Oslo,NA,Norway,SciWri17,SCIWRI_butnot_DRYAD
+36,FEM,1984,E,P,Farrell,964,University College Dublin,NA,Dublin,NA,Ireland,SciWri17,SCIWRI_butnot_DRYAD
+37,FEM,1984,Laurence,NA,Roche,2233,University College of North West Bangor,Department of Forestry and Wood Science,Bangor,NA,United Kingdom,SciWri17,SCIWRI_butnot_DRYAD
+38,CONBIO,2008,Michelle,NA,Pinard,2516,University of Aberdeen,NA,Aberdeen,Scotland,United Kingdom,SciWri17,SCIWRI_butnot_DRYAD
+39,AGRONOMY,1986,Paul,L,Vlek,3240,University of Bonn,Center of Development Research(ZEF),Bonn,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+40,FEM,1984,Oscar,NA,Sziklai,2744,University of British Columbia Vancouver,,Vancouver,NA,Canada,SciWri17,SCIWRI_butnot_DRYAD
+41,CONBIO,2014,Adina,NA,Merenlender,NA,University of California Berkeley,NA,Berkeley,California,USA,SciWri17,SCIWRI_butnot_DRYAD
+42,JTE,2015,Edmund,VJ,Tanner,1032,University of Cambridge,Department of Plant sciences,NA,Cambridge,United Kingdom,SciWri17,SCIWRI_butnot_DRYAD
+43,FEM,1984,Peter,John,McKelvey,NA,University of Canterbury,School of Forestry,Christchurch,NA,New Zealand,SciWri17,SCIWRI_butnot_DRYAD
+44,JTE,2015,Jeremy,NA,Midgley,1766,University of Cape Town,NA,NA,Cape Town,South Africa,SciWri17,SCIWRI_butnot_DRYAD
+45,CONBIO,2003,Reed,NA,Noss,3176,University of Central Florida,NA,Chuluota,Florida,USA,SciWri17,SCIWRI_butnot_DRYAD
+46,FEM,1984,Earl,L,Stone,1030,University of Florida,Institute of Food and Agricultural Sciences IFAS,Gainesville,Florida,USA,SciWri17,SCIWRI_butnot_DRYAD
+47,PLANTECOL,2002,Gidi,NA,Ne'eman,1236,University of Haifa,Department of Biology,Haifa,NA,Israel,SciWri17,SCIWRI_butnot_DRYAD
+48,ECOLOGY,2001,Val,H,Smith,NA,University of Kansas,NA,Lawrence,KS,USA,SciWri17,SCIWRI_butnot_DRYAD
+49,AREES,2001,Daphne,Gail,Fautin,683,University of Kansas,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+50,JTE,2015,Gerhard,NA,Zotz,1279,University of Oldenberg,NA,NA,Oldenberg,Germany,SciWri17,SCIWRI_butnot_DRYAD
+51,ECOGRAPHY,1984,Rolf,NA,Vik,3239,University of Oslo,Natural History Museum,Oslo,NA,Norway,SciWri17,SCIWRI_butnot_DRYAD
+52,ECOGRAPHY,1984,John,E.,Brittain,NA,University of Oslo,Natural History Museum,Oslo,NA,Norway,SciWri17,SCIWRI_butnot_DRYAD
+53,ECOGRAPHY,1984,Albert,NA,Lillehammer,NA,University of Oslo,Natural History Museum,Oslo,NA,Norway,SciWri17,SCIWRI_butnot_DRYAD
+54,ECOGRAPHY,1984,Nils,Christian,Stenseth,2695,University of Oslo,Division of Zoology,Oslo,NA,Norway,SciWri17,SCIWRI_butnot_DRYAD
+55,ECOGRAPHY,1984,Odd,NA,Halvorsen,2719,University of Tromso,Institute of Geology and Biology,Oslo,NA,Norway,SciWri17,SCIWRI_butnot_DRYAD
+56,JTE,2015,Marinus,JA,Werger,2604,University of Utrecht,Department of plant ecology and evolutioanry biology,NA,Utretcht,Netherlands,SciWri17,SCIWRI_butnot_DRYAD
+57,JTE,2015,Brigitte,NA,Fiala,270,University of Wurzburg,NA,ÊDepartment of Animal Ecology and Tropical Biology (Zoology III),Wuzerburg,Germany,SciWri17,SCIWRI_butnot_DRYAD
+58,LECO,1998,E,NA,VanDer,1034,Uppsala University,,Uppsala,NA,Sweden,SciWri17,SCIWRI_butnot_DRYAD
+59,FEM,1984,Stanley,L,Krugman,3383,US Forest Service,NA,Washington DC,Washington DC,USA,SciWri17,SCIWRI_butnot_DRYAD
+60,FEM,1984,Boyd,W,Post,341,US Forest Service,NA,Washington DC,Washington DC,USA,SciWri17,SCIWRI_butnot_DRYAD
+61,PLANTECOL,2002,Marcel,G A,VanDerHeijden,2586,Vrije Universiteit Amsterdam,,Amsterdam,NA,Switzerland,SciWri17,SCIWRI_butnot_DRYAD
+62,JTE,2015,L,A,Bruijnzeel,2134,Vrije Universiteit Amsterdam,,NA,Amsterdam,Netherlands,SciWri17,SCIWRI_butnot_DRYAD
+63,JTE,2015,Frans,NA,Bongers,1055,Wageningen University and Research,,NA,NA,Netherlands,SciWri17,SCIWRI_butnot_DRYAD
+64,JTE,2015,Herbert,HT,Prins,1350,Wageningen University and Research,,NA,Wageningen ,Netherlands,SciWri17,SCIWRI_butnot_DRYAD
+65,CONBIO,2005,Michael,NA,Mascia,2465,World Wildlife Fund,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+66,OIKOS,2007,Jordi,NA,Bascompte,1453,NA,NA,Seville,NA,Spain,SciWri17,SCIWRI_butnot_DRYAD
+67,OIKOS,2008,Christer,NA,Bronmark,405,NA,NA,Lund,NA,Sweden,SciWri17,SCIWRI_butnot_DRYAD
+68,OIKOS,2008,Kathy,NA,Suding,2100,NA,NA,Irvine,CA,USA,SciWri17,SCIWRI_butnot_DRYAD
+69,OIKOS,2008,Thomas,NA,Waite,NA,NA,NA,Columbus,OH,USA,SciWri17,SCIWRI_butnot_DRYAD
+70,OIKOS,2010,Matthijs,NA,Vos,2594,NA,NA,Potsdam,NA,Germany,SciWri17,SCIWRI_butnot_DRYAD
+71,LECO,1988,E,NA,VanDer,1034,NA,NA,NA,NA,Sweden,SciWri17,SCIWRI_butnot_DRYAD
+72,LECO,1989,E,NA,VanDer,1034,NA,NA,NA,NA,Sweden,SciWri17,SCIWRI_butnot_DRYAD
+73,LECO,1990,E,NA,VanDer,1034,NA,NA,NA,NA,Sweden,SciWri17,SCIWRI_butnot_DRYAD
+74,LECO,1991,E,NA,VanDer,1034,NA,NA,NA,NA,Sweden,SciWri17,SCIWRI_butnot_DRYAD
+75,LECO,1992,E,NA,VanDer,1034,NA,NA,NA,NA,Sweden,SciWri17,SCIWRI_butnot_DRYAD
+76,LECO,1993,E,NA,VanDer,1034,NA,NA,NA,NA,Sweden,SciWri17,SCIWRI_butnot_DRYAD
+77,LECO,1994,E,NA,VanDer,1034,NA,NA,NA,NA,Sweden,SciWri17,SCIWRI_butnot_DRYAD
+78,LECO,1995,E,NA,VanDer,1034,NA,NA,NA,NA,Sweden,SciWri17,SCIWRI_butnot_DRYAD
+79,LECO,1996,E,NA,VanDer,1034,NA,NA,NA,NA,Sweden,SciWri17,SCIWRI_butnot_DRYAD
+80,LECO,1997,E,NA,VanDer,1034,NA,NA,NA,NA,Sweden,SciWri17,SCIWRI_butnot_DRYAD
+81,LECO,2012,B,L,Turner,371,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+82,LECO,2012,M,Green,Turner,2580,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+83,LECO,2012,J,A,Wiens,3912,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+84,LECO,2013,B,L,Turner,371,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+85,LECO,2013,M,Green,Turner,2580,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+86,LECO,2013,J,A,Wiens,3912,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+87,JANE,2008,Dan,NA,Tomkins,893,NA,NA,NA,NA,New Zealand,SciWri17,SCIWRI_butnot_DRYAD
+88,JANE,2009,Dan,NA,Tomkins,893,NA,NA,NA,NA,New Zealand,SciWri17,SCIWRI_butnot_DRYAD
+89,JANE,2010,Dan,NA,Tomkins,893,NA,NA,NA,NA,New Zealand,SciWri17,SCIWRI_butnot_DRYAD
+90,JANE,2011,Dan,NA,Tomkins,893,NA,NA,NA,NA,New Zealand,SciWri17,SCIWRI_butnot_DRYAD
+91,JANE,2012,Kevin,NA,McCann,2047,NA,NA,NA,NA,Canada,SciWri17,SCIWRI_butnot_DRYAD
+92,JANE,2012,Dan,NA,Tomkins,893,NA,NA,NA,NA,New Zealand,SciWri17,SCIWRI_butnot_DRYAD
+93,JANE,2013,Andrew,NA,Beckerman,14,NA,NA,NA,NA,United Kingdom,SciWri17,SCIWRI_butnot_DRYAD
+94,JANE,2013,Peter,NA,Bennett,2766,NA,NA,NA,NA,United Kingdom,SciWri17,SCIWRI_butnot_DRYAD
+95,JANE,2013,Chris,NA,Thomas,577,NA,NA,NA,NA,United Kingdom,SciWri17,SCIWRI_butnot_DRYAD
+96,JANE,2013,Dan,NA,Tomkins,893,NA,NA,NA,NA,New Zealand,SciWri17,SCIWRI_butnot_DRYAD
+97,JANE,2013,Jon,NA,Wright,1965,NA,NA,NA,NA,Norway,SciWri17,SCIWRI_butnot_DRYAD
+98,CONBIO,1989,Guillermo,W,Mann,1224,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+99,CONBIO,1990,Guillermo,W,Mann,1224,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+100,CONBIO,1993,James,NA,Karr,1660,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+101,CONBIO,1993,David,NA,Western,912,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+102,CONBIO,1994,David,NA,Ehrenfeld,680,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+103,CONBIO,1995,David,NA,Ehrenfeld,680,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+104,CONBIO,1996,David,NA,Ehrenfeld,680,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+105,CONBIO,1997,David,NA,Ehrenfeld,680,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+106,CONBIO,1997,Gary,K,Meffe,1229,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+107,CONBIO,1997,Dennis,NA,Murphy,796,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+108,CONBIO,1998,David,NA,Ehrenfeld,680,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+109,CONBIO,1998,Reed,NA,Noss,3176,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+110,CONBIO,1999,David,NA,Ehrenfeld,680,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+111,CONBIO,1999,Reed,NA,Noss,3176,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+112,CONBIO,2000,David,NA,Ehrenfeld,680,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+113,CONBIO,2000,Reed,NA,Noss,3176,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+114,CONBIO,2001,David,NA,Ehrenfeld,680,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+115,CONBIO,2001,Reed,NA,Noss,3176,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+116,CONBIO,2002,David,NA,Ehrenfeld,680,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+117,CONBIO,2002,Reed,NA,Noss,3176,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+118,CONBIO,2003,David,NA,Ehrenfeld,680,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+119,CONBIO,2004,David,NA,Ehrenfeld,680,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+120,CONBIO,2004,Reed,NA,Noss,3176,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+121,CONBIO,2005,David,NA,Ehrenfeld,680,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+122,CONBIO,2005,Reed,NA,Noss,3176,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+123,CONBIO,2006,Peter,NA,Daszak,2791,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+124,CONBIO,2006,David,NA,Ehrenfeld,680,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+125,CONBIO,2006,Michael,NA,Mascia,2465,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+126,CONBIO,2006,Reed,NA,Noss,3176,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+127,CONBIO,2007,Peter,NA,Daszak,2791,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+128,CONBIO,2007,David,NA,Ehrenfeld,680,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+129,CONBIO,2007,Reed,NA,Noss,3176,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+130,CONBIO,2008,Peter,NA,Daszak,2791,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+131,CONBIO,2008,David,NA,Ehrenfeld,680,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+132,CONBIO,2008,Reed,NA,Noss,3176,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+133,CONBIO,2009,Peter,NA,Daszak,2791,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+134,CONBIO,2009,David,NA,Ehrenfeld,680,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+135,CONBIO,2009,Reed,NA,Noss,3176,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+136,CONBIO,2010,Peter,NA,Daszak,2791,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+137,CONBIO,2010,David,NA,Ehrenfeld,680,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+138,CONBIO,2010,Gary,K,Meffe,1229,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+139,CONBIO,2010,Reed,NA,Noss,3176,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+140,CONBIO,2010,Kent,H,Redford,2073,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+141,CONBIO,2011,Peter,NA,Daszak,2791,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+142,CONBIO,2011,David,NA,Ehrenfeld,680,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+143,CONBIO,2011,Gary,K,Meffe,1229,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+144,CONBIO,2011,Reed,NA,Noss,3176,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+145,CONBIO,2011,Kent,H,Redford,2073,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+146,CONBIO,2012,David,NA,Ehrenfeld,680,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+147,CONBIO,2012,Gary,K,Meffe,1229,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+148,CONBIO,2013,David,NA,Ehrenfeld,680,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+149,CONBIO,2013,Gary,K,Meffe,1229,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+150,CONBIO,2014,David,NA,Ehrenfeld,680,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD
+151,CONBIO,2014,Gary,K,Meffe,1229,NA,NA,NA,NA,USA,SciWri17,SCIWRI_butnot_DRYAD

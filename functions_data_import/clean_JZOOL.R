@@ -92,7 +92,7 @@ clean_JZOOL <- function(DATAFILE1,DATAFILE2) {
   
   DATAFILE<-bind_rows(DATAFILE_remainder,DATAFILE_1row) 
   head(DATAFILE,10)
-  DATAFILE<-DATAFILE %>% arrange(editor_id,YEAR) %>% fill(INST)
+  DATAFILE<-DATAFILE %>% arrange(editor_id,YEAR) %>% fill(INST,.direction="down")
   head(DATAFILE,10)
   
   ##

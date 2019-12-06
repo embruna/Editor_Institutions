@@ -1,0 +1,72 @@
+,JOURNAL,YEAR,VOLUME,ISSUE,TITLE,NAME,FIRST_NAME,MIDDLE_NAME,LAST_NAME,COUNTRY,GENDER,CATEGORY,NOTES,editor_id,source,code
+1,AREES,2001,32,NA,E,Daniel Simberloff,Daniel,,Simberloff,USA,M,EIC,NA,867,ChoDryad,DRYAD_butnot_SCIWRI
+2,CONBIO,1989,3,1,SE,Andrew P Dobson,Andrew,P,Dobson,USA,M,SE,NA,58,ChoDryad,DRYAD_butnot_SCIWRI
+3,CONBIO,1989,3,1,SE,Stephen Hubbell,Stephen,,Hubbell,USA,M,SE,NA,3364,ChoDryad,DRYAD_butnot_SCIWRI
+4,CONBIO,1991,5,1,SE,Fredrick Grassle,Fredrick,,Grassle,USA,M,SE,NA,1073,ChoDryad,DRYAD_butnot_SCIWRI
+5,CONBIO,1991,5,1,SE,James Karr,James,,Karr,USA,M,SE,NA,1660,ChoDryad,DRYAD_butnot_SCIWRI
+6,CONBIO,1993,7,1,SE,Curt Meine,Curt,,Meine,USA,M,SE,NA,528,ChoDryad,DRYAD_butnot_SCIWRI
+7,CONBIO,1994,8,1,SE,Mary F Willson,Mary,F,Willson,USA,F,SE,NA,2613,ChoDryad,DRYAD_butnot_SCIWRI
+8,CONBIO,2006,20,1,SE,Richard Daszak,Richard,,Daszak,USA,M,SE,NA,3035,ChoDryad,DRYAD_butnot_SCIWRI
+9,CONBIO,2007,21,1,SE,Richard Daszak,Richard,,Daszak,USA,M,SE,NA,3035,ChoDryad,DRYAD_butnot_SCIWRI
+10,CONBIO,2008,22,1,SE,Richard Daszak,Richard,,Daszak,USA,M,SE,NA,3035,ChoDryad,DRYAD_butnot_SCIWRI
+11,CONBIO,2009,23,1,SE,Richard Daszak,Richard,,Daszak,USA,M,SE,NA,3035,ChoDryad,DRYAD_butnot_SCIWRI
+12,CONBIO,2009,23,1,SE,Steven R Beissinger,Steven,R,Beissinger,USA,M,SE,NA,3280,ChoDryad,DRYAD_butnot_SCIWRI
+13,CONBIO,2010,24,1,SE,Richard Daszak,Richard,,Daszak,USA,M,SE,NA,3035,ChoDryad,DRYAD_butnot_SCIWRI
+14,CONBIO,2011,25,1,SE,Richard Daszak,Richard,,Daszak,USA,M,SE,NA,3035,ChoDryad,DRYAD_butnot_SCIWRI
+15,CONBIO,2012,26,1,SE,Richard Daszak,Richard,,Daszak,USA,M,SE,NA,3035,ChoDryad,DRYAD_butnot_SCIWRI
+16,CONBIO,2012,26,1,SE,Rodrigo Medellin,Rodrigo,,Medellin,Mexico,M,SE,NA,3151,ChoDryad,DRYAD_butnot_SCIWRI
+17,ECOLOGY,2001,82,1,BE,Stanley D Smith,Stanley,D,Smith,USA,M,SE,,3475,ChoDryad,DRYAD_butnot_SCIWRI
+18,AGRONOMY,1986,78,1,Associate.Editor,R L Vlek,P,L,Vlek,Germany,NA,SE,,2947,EspinDryad,DRYAD_butnot_SCIWRI
+19,JANE,2008,77,1,AE,Dan Tomkins,Dan,,Tompkins,New Zealand,NA,SE,,894,EspinDryad,DRYAD_butnot_SCIWRI
+20,JANE,2009,78,1,AE,Dan Tomkins,Dan,,Tompkins,New Zealand,NA,SE,,894,EspinDryad,DRYAD_butnot_SCIWRI
+21,JANE,2010,79,1,AE,Dan Tomkins,Dan,,Tompkins,New Zealand,NA,SE,,894,EspinDryad,DRYAD_butnot_SCIWRI
+22,JANE,2011,80,1,AE,Dan Tomkins,Dan,,Tompkins,New Zealand,NA,SE,,894,EspinDryad,DRYAD_butnot_SCIWRI
+23,JANE,2012,81,1,AE,Dan Tomkins,Dan,,Tompkins,New Zealand,NA,SE,,894,EspinDryad,DRYAD_butnot_SCIWRI
+24,JANE,2013,82,1,AE,Dan Tomkins,Dan,,Tompkins,New Zealand,NA,SE,,894,EspinDryad,DRYAD_butnot_SCIWRI
+25,LECO,1988,1,3,SE,E VanDerMaarel,E,,VanDerMaarel,Sweden,NA,SE,NA,1033,EspinDryad,DRYAD_butnot_SCIWRI
+26,LECO,1989,2,3,SE,E VanDerMaarel,E,,VanDerMaarel,Sweden,NA,SE,NA,1033,EspinDryad,DRYAD_butnot_SCIWRI
+27,LECO,1990,5,1,SE,E VanDerMaarel,E,,VanDerMaarel,Sweden,NA,SE,NA,1033,EspinDryad,DRYAD_butnot_SCIWRI
+28,LECO,1991,6,1,SE,E VanDerMaarel,E,,VanDerMaarel,Sweden,NA,SE,NA,1033,EspinDryad,DRYAD_butnot_SCIWRI
+29,LECO,1992,7,1,SE,E VanDerMaarel,E,,VanDerMaarel,Sweden,NA,SE,NA,1033,EspinDryad,DRYAD_butnot_SCIWRI
+30,LECO,1993,8,1,SE,E VanDerMaarel,E,,VanDerMaarel,Sweden,NA,SE,NA,1033,EspinDryad,DRYAD_butnot_SCIWRI
+31,LECO,1994,9,1,SE,E VanDerMaarel,E,,VanDerMaarel,Sweden,NA,SE,NA,1033,EspinDryad,DRYAD_butnot_SCIWRI
+32,LECO,1995,10,1,SE,E VanDerMaarel,E,,VanDerMaarel,Sweden,NA,SE,NA,1033,EspinDryad,DRYAD_butnot_SCIWRI
+33,LECO,1996,11,1,SE,E VanDerMaarel,E,,VanDerMaarel,Sweden,NA,SE,NA,1033,EspinDryad,DRYAD_butnot_SCIWRI
+34,LECO,1997,12,1,SE,E VanDerMaarel,E,,VanDerMaarel,Sweden,NA,SE,NA,1033,EspinDryad,DRYAD_butnot_SCIWRI
+35,LECO,1998,13,1,SE,E VanDerMaarel,E,,VanDerMaarel,Sweden,NA,SE,NA,1033,EspinDryad,DRYAD_butnot_SCIWRI
+36,OIKOS,2006,112,1,Subject.Editor,Henning Adsersen,Henning,,Adsersen,Denmark,NA,SE,NA,1282,EspinDryad,DRYAD_butnot_SCIWRI
+37,OIKOS,2008,117,1,Subject.Editor,Anna Traveser,Anna,,Traveser,Spain,NA,SE,NA,217,EspinDryad,DRYAD_butnot_SCIWRI
+38,OIKOS,2008,117,1,Subject.Editor,Brad Hawkins,Brad,,Hawkins,USA,NA,SE,NA,288,EspinDryad,DRYAD_butnot_SCIWRI
+39,OIKOS,2008,117,1,Subject.Editor,Daniel Gruner,Daniel,,Gruner,USA,NA,SE,NA,713,EspinDryad,DRYAD_butnot_SCIWRI
+40,OIKOS,2008,117,1,Subject.Editor,Frank van Veen,Frank,van,Veen,United Kingdom,NA,SE,NA,1138,EspinDryad,DRYAD_butnot_SCIWRI
+41,OIKOS,2008,117,1,Subject.Editor,Jose Alexandre Diniz-Filho,Jose,Alexandre,Diniz-Filho,Brazil,NA,SE,NA,1547,EspinDryad,DRYAD_butnot_SCIWRI
+42,OIKOS,2008,117,1,Subject.Editor,Jennifer Rudgers,Jennifer,,Rudgers,USA,NA,SE,NA,1850,EspinDryad,DRYAD_butnot_SCIWRI
+43,OIKOS,2008,117,1,Subject.Editor,Jan VanGils,Jan,,VanGils,Netherlands,NA,SE,NA,1923,EspinDryad,DRYAD_butnot_SCIWRI
+44,OIKOS,2008,117,1,Subject.Editor,Karin Johst,Karin,,Johst,Germany,NA,SE,NA,2023,EspinDryad,DRYAD_butnot_SCIWRI
+45,OIKOS,2008,117,1,Subject.Editor,Martin Solan,Martin,,Solan,United Kingdom,NA,SE,NA,2567,EspinDryad,DRYAD_butnot_SCIWRI
+46,OIKOS,2008,117,1,Subject.Editor,Mark Vellend,Mark,,Vellend,USA,NA,SE,NA,2590,EspinDryad,DRYAD_butnot_SCIWRI
+47,OIKOS,2008,117,1,Subject.Editor,Rampal Etienne,Rampal,,Etienne,Netherlands,NA,SE,NA,3053,EspinDryad,DRYAD_butnot_SCIWRI
+48,OIKOS,2008,117,1,Subject.Editor,Stan Boutin,Stan,,Boutin,Canada,NA,SE,NA,3287,EspinDryad,DRYAD_butnot_SCIWRI
+49,OIKOS,2008,117,1,Subject.Editor,Thorsten Wiegand,Thorsten,,Wiegand,Germany,NA,SE,NA,3659,EspinDryad,DRYAD_butnot_SCIWRI
+50,OIKOS,2010,119,NA,Subject.Editor,Robin Wilson,Robin,,Wilson,United Kingdom,NA,SE,NA,3935,EspinDryad,DRYAD_butnot_SCIWRI
+51,PLANTECOL,1985,58,3,EIC,E VanDerMaarel,Eddy,,VanDerMaarel,Sweden,NA,EIC,,1033,EspinDryad,DRYAD_butnot_SCIWRI
+52,PLANTECOL,1986,64,NA,EIC,E VanDerMaarel,Eddy,,VanDerMaarel,Sweden,NA,EIC,,1033,EspinDryad,DRYAD_butnot_SCIWRI
+53,PLANTECOL,1987,68,3,EIC,E VanDerMaarel,Eddy,,VanDerMaarel,Sweden,NA,EIC,,1033,EspinDryad,DRYAD_butnot_SCIWRI
+54,PLANTECOL,1988,73,2,EIC,E VanDerMaarel,Eddy,,VanDerMaarel,Sweden,NA,EIC,,1033,EspinDryad,DRYAD_butnot_SCIWRI
+55,PLANTECOL,1989,80,1,EIC,E VanDerMaarel,Eddy,,VanDerMaarel,Sweden,NA,EIC,,1033,EspinDryad,DRYAD_butnot_SCIWRI
+56,JANE,1995,64,1,SE,Peter Jarman,Peter,NA,Jarman,Australia,NA,SE,NA,2838,EspinDryad,DRYAD_butnot_SCIWRI
+57,JANE,2005,74,1,AE,Lennart Persson,Lennart,NA,Persson,Sweden,NA,SE,NA,2221,EspinDryad,DRYAD_butnot_SCIWRI
+58,JANE,1999,68,1,EIC,Dave Raffaelli,Dave,NA,Raffaelli,United Kingdom,NA,EIC,NA,831,EspinDryad,DRYAD_butnot_SCIWRI
+59,JANE,2012,81,1,AE,Isabel Smallegange,Isabel,NA,Smallegange,United Kingdom,NA,SE,NA,1419,EspinDryad,DRYAD_butnot_SCIWRI
+60,JANE,2011,80,1,AE,Jason Tylianakis,Jason,NA,Tylianakis,New Zealand,NA,SE,NA,1917,EspinDryad,DRYAD_butnot_SCIWRI
+61,JANE,2008,77,1,AE,Andrew White,Andrew,NA,White,United Kingdom,NA,SE,NA,229,EspinDryad,DRYAD_butnot_SCIWRI
+62,JANE,2011,80,1,AE,Sheena Cotter,Sheena,NA,Cotter,United Kingdom,NA,SE,NA,3306,EspinDryad,DRYAD_butnot_SCIWRI
+63,JANE,2011,80,1,AE,John Fryxell,John,NA,Fryxell,Canada,NA,SE,NA,1585,EspinDryad,DRYAD_butnot_SCIWRI
+64,JANE,2013,82,1,AE,Spence Behmer,Spence,NA,Behmer,USA,NA,SE,NA,3279,EspinDryad,DRYAD_butnot_SCIWRI
+65,JANE,2013,82,1,SE,Luca Borger,Luca,NA,Borger,France,NA,SE,NA,2129,EspinDryad,DRYAD_butnot_SCIWRI
+66,JANE,2013,82,1,AE,Dylan Childs,Dylan,NA,Childs,United Kingdom,NA,SE,NA,3948,EspinDryad,DRYAD_butnot_SCIWRI
+67,JANE,2014,83,1,AE,Dylan Childs,Dylan,NA,Childs,United Kingdom,NA,SE,NA,3948,EspinDryad,DRYAD_butnot_SCIWRI
+68,JANE,2014,83,1,AE,Kate Jones,Kate,NA,Jones,United Kingdom,NA,SE,NA,3949,EspinDryad,DRYAD_butnot_SCIWRI
+69,LECO,2011,26,1,Editorial.Board,G Zurlini,G,NA,Zurlini,Italy,NA,SE,NA,1281,EspinDryad,DRYAD_butnot_SCIWRI
+70,LECO,1998,13,1,Editorial.Board,G P Malanson,G,P,Malanson,Canada,NA,SE,NA,1223,EspinDryad,DRYAD_butnot_SCIWRI
+71,LECO,2011,16,1,Editorial.Board,J Nassauer,J,NA,Nassauer,USA,NA,SE,NA,1781,EspinDryad,DRYAD_butnot_SCIWRI

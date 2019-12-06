@@ -1,0 +1,276 @@
+,JOURNAL,YEAR,VOLUME,ISSUE,TITLE,NAME,FIRST_NAME.x,MIDDLE_NAME.x,LAST_NAME.x,COUNTRY.x,GENDER,CATEGORY,NOTES,editor_id,source.x,FIRST_NAME.y,MIDDLE_NAME.y,LAST_NAME.y,INST,UNIT,CITY,STATE,COUNTRY.y,source.y,double.check
+5,AGRONOMY,2008,100,1,SE,Lucas Borras,Lucas,,Borras,Argentina,M,SE,NA,2130,ChoDryad,Lucas,NA,Borras,National University of Rosario,NA,Fort Lauderdale,Florida,USA,SciWri17,country
+6,AGRONOMY,2009,101,1,SE,Lucas Borras,Lucas,,Borras,Argentina,M,SE,NA,2130,ChoDryad,Lucas,NA,Borras,National University of Rosario,NA,Fort Lauderdale,Florida,USA,SciWri17,country
+7,AGRONOMY,2010,102,1,SE,Lucas Borras,Lucas,,Borras,Argentina,M,SE,NA,2130,ChoDryad,Lucas,NA,Borras,National University of Rosario,NA,Fort Lauderdale,Florida,USA,SciWri17,country
+8,AGRONOMY,2011,103,1,SE,Lucas Borras,Lucas,,Borras,Argentina,M,SE,NA,2130,ChoDryad,Lucas,NA,Borras,National University of Rosario,NA,Fort Lauderdale,Florida,USA,SciWri17,country
+9,AGRONOMY,2012,104,1,SE,Lucas Borras,Lucas,,Borras,Argentina,M,SE,NA,2130,ChoDryad,Lucas,NA,Borras,National University of Rosario,NA,Fort Lauderdale,Florida,USA,SciWri17,country
+10,AGRONOMY,2013,105,1,SE,Lucas Borras,Lucas,,Borras,Argentina,M,SE,NA,2130,ChoDryad,Lucas,NA,Borras,National University of Rosario,NA,Fort Lauderdale,Florida,USA,SciWri17,country
+114,JAPE,2015,52,1,Associate.Editor,Claudia Bieber,Claudia,,Bieber,Australia,NA,SE,,399,EspinDryad,Claudia,NA,Bieber,University of Veterinary Medicine,NA,NA,NA,Austria,SciWri17,country
+142,PLANTECOL,2013,214,1,Editorial.Board,Christopher H Lusk,Christopher,H,Lusk,Australia,NA,SE,,515,EspinDryad,Christopher,H,Lusk,University of Waikato,NA,Hamilton,NA,New Zealand,SciWri17,country
+61,JTE,1999,15,1,SE,Rene GA Boot,Rene,GA,Boot,Bolivia,M,SE,NA,2990,ChoDryad,Rene,GA,Boot,Tropenbos International,NA,NA,Wagen,Netherlands,SciWri17,country
+63,JTE,2000,16,1,SE,Rene GA Boot,Rene,GA,Boot,Bolivia,M,SE,NA,2990,ChoDryad,Rene,GA,Boot,Tropenbos International,NA,NA,Wagen,Netherlands,SciWri17,country
+115,JAPE,2015,52,1,Associate.Editor,Jin-tian Li,Jin-tian,,Li,Chile,NA,SE,,1712,EspinDryad,Jin-tian,NA,Li,Sun Yat Sen University,NA,NA,NA,China,SciWri17,country
+118,LECO,2012,27,1,Editorial.Board,B Fu,B,,Fu,China,NA,SE,NA,275,EspinDryad,B,NA,Fu,Chinese Academy of Sciences,NA,Beijing,NA,P.R. China,SciWri17,country
+119,LECO,2013,27,1,Editorial.Board,B Fu,B,,Fu,China,NA,SE,NA,275,EspinDryad,B,NA,Fu,Chinese Academy of Sciences,NA,Beijing,NA,P.R. China,SciWri17,country
+120,LECO,2014,29,1,Editorial.Board,B Fu,B,,Fu,China,NA,SE,NA,275,EspinDryad,B,NA,Fu,Chinese Academy of Sciences,NA,Beijing,NA,P.R. China,SciWri17,country
+71,AMNAT,2015,186,1,Editorial.Board,Vlastimil Krivan,Vlastimil,,Krivan,Czech Republic,NA,SE,NA,3690,EspinDryad,Vlastimil,NA,Krivan,NA,NA,NA,NA,Czech Republicch Republic,SciWri17,country
+76,EVOL,2009,63,NA,AE,Sylvain Gandon,Sylvain,,Gandon,Finland,NA,SE,NA,3335,EspinDryad,Sylvain,NA,Gandon,CNRS Centre dEcologie Fonctionnelle et Evolutive,,Montpellier,Occitanie,France,SciWri17,country
+77,EVOL,2010,64,NA,AE,Sylvain Gandon,Sylvain,,Gandon,Finland,NA,SE,NA,3335,EspinDryad,Sylvain,NA,Gandon,CNRS Centre dEcologie Fonctionnelle et Evolutive,,Montpellier,Occitanie,France,SciWri17,country
+78,EVOL,2011,65,NA,AE,Sylvain Gandon,Sylvain,,Gandon,Finland,NA,SE,NA,3335,EspinDryad,Sylvain,NA,Gandon,CNRS Centre dEcologie Fonctionnelle et Evolutive,,Montpellier,Occitanie,France,SciWri17,country
+116,JAPE,2015,52,1,Associate.Editor,Yann Clough,Yann,,Clough,Germany,NA,SE,,3833,EspinDryad,Yann,NA,Clough,CEC Lund,NA,NA,NA,Sweden,SciWri17,country
+112,JAPE,2005,42,1,Editorial.Board,Robert J Paxton,Robert,J,Paxton,Germany,NA,SE,,3187,EspinDryad,Robert,J,Paxton,University of Tubingen,,Belfast,NA,United Kingdom,SciWri17,country
+67,AGRONOMY,1985,77,1,Associate.Editor,P LG Vlek,P,LG,Vlek,Germany,NA,SE,,2947,EspinDryad,P,LG,Vlek,University of Bonn,Center of Development Research(ZEF),Bonn,NA,USA,SciWri17,country
+85,FEM,1994,63,1,Editorial.Advisory.Board,Dennis P Dykstra,Dennis,P,Dykstra,Indonesia,NA,SE,NA,677,EspinDryad,Dennis,P,Dykstra,Food and Agriculture Organization,,Rome,NA,Italy,SciWri17,country
+70,AGRONOMY,2014,106,1,AE,Saeid Soufizadeh,Saeid,,Soufizadeh,Iran,NA,SE,,3477,EspinDryad,Saeid,NA,Soufizadeh,Shahid Beheshti University,"Dep. of Agroecology, Environ. Sci. Res. Inst.",Tehran,NA,IRAN,SciWri17,country
+36,BIOCON,2004,115,1,EB,AW Fabio Cassola,AW,Fabio,Cassola,Italy,M,SE,,34,ChoDryad,AW,Fabio,Cassola,NA,NA,NA,NA,ITALY,SciWri17,country
+83,FEM,1993,56,1,Editorial.Advisory.Board,D Paul Dijkstra,D,Paul,Dijkstra,Italy,NA,SE,NA,669,EspinDryad,D,Paul,Dijkstra,Northern Arizona University,NA,Flagstaff,Arizona,USA,SciWri17,country
+79,FEM,1989,27,1,Editorial.Advisory.Board,Jumanne A Maghembe,Jumanne,A,Maghembe,Malawi,NA,SE,NA,1735,EspinDryad,Jumanne,A,Maghembe,International Center for Research in Agroforestry,,Nairobi,NA,Kenya,SciWri17,country
+80,FEM,1990,30,1,Editorial.Advisory.Board,Jumanne A Maghembe,Jumanne,A,Maghembe,Malawi,NA,SE,NA,1735,EspinDryad,Jumanne,A,Maghembe,International Center for Research in Agroforestry,,Nairobi,NA,Kenya,SciWri17,country
+81,FEM,1991,40,1,Editorial.Advisory.Board,Jumanne A Maghembe,Jumanne,A,Maghembe,Malawi,NA,SE,NA,1735,EspinDryad,Jumanne,A,Maghembe,International Center for Research in Agroforestry,,Nairobi,NA,Kenya,SciWri17,country
+82,FEM,1992,47,1,Editorial.Advisory.Board,Jumanne A Maghembe,Jumanne,A,Maghembe,Malawi,NA,SE,NA,1735,EspinDryad,Jumanne,A,Maghembe,International Center for Research in Agroforestry,,Nairobi,NA,Kenya,SciWri17,country
+84,FEM,1993,56,1,Editorial.Advisory.Board,Jumanne A Maghembe,Jumanne,A,Maghembe,Malawi,NA,SE,NA,1735,EspinDryad,Jumanne,A,Maghembe,International Center for Research in Agroforestry,,Nairobi,NA,Kenya,SciWri17,country
+86,FEM,1994,63,1,Editorial.Advisory.Board,Jumanne A Maghembe,Jumanne,A,Maghembe,Malawi,NA,SE,NA,1735,EspinDryad,Jumanne,A,Maghembe,International Center for Research in Agroforestry,,Nairobi,NA,Kenya,SciWri17,country
+87,FEM,1995,71,1,Editorial.Advisory.Board,Jumanne A Maghembe,Jumanne,A,Maghembe,Malawi,NA,SE,NA,1735,EspinDryad,Jumanne,A,Maghembe,International Center for Research in Agroforestry,,Nairobi,NA,Kenya,SciWri17,country
+88,FEM,1996,80,1,Editorial.Advisory.Board,Jumanne A Maghembe,Jumanne,A,Maghembe,Malawi,NA,SE,NA,1735,EspinDryad,Jumanne,A,Maghembe,International Center for Research in Agroforestry,,Nairobi,NA,Kenya,SciWri17,country
+89,FEM,1997,90,1,Editorial.Advisory.Board,Jumanne A Maghembe,Jumanne,A,Maghembe,Malawi,NA,SE,NA,1735,EspinDryad,Jumanne,A,Maghembe,International Center for Research in Agroforestry,,Nairobi,NA,Kenya,SciWri17,country
+90,FEM,1998,100,1,Editorial.Advisory.Board,Jumanne A Maghembe,Jumanne,A,Maghembe,Malawi,NA,SE,NA,1735,EspinDryad,Jumanne,A,Maghembe,International Center for Research in Agroforestry,,Nairobi,NA,Kenya,SciWri17,country
+91,FEM,1999,113,1,Editorial.Advisory.Board,Jumanne A Maghembe,Jumanne,A,Maghembe,Malawi,NA,SE,NA,1735,EspinDryad,Jumanne,A,Maghembe,International Center for Research in Agroforestry,,Nairobi,NA,Kenya,SciWri17,country
+92,FEM,2000,125,1,Editorial.Advisory.Board,Jumanne A Maghembe,Jumanne,A,Maghembe,Malawi,NA,SE,NA,1735,EspinDryad,Jumanne,A,Maghembe,International Center for Research in Agroforestry,,Nairobi,NA,Kenya,SciWri17,country
+93,FEM,2001,140,1,Editorial.Advisory.Board,Jumanne A Maghembe,Jumanne,A,Maghembe,Malawi,NA,SE,NA,1735,EspinDryad,Jumanne,A,Maghembe,International Center for Research in Agroforestry,,Nairobi,NA,Kenya,SciWri17,country
+18,CONBIO,2008,22,1,SE,Jon Paul Rodriguez,Jon,Paul,Rodriguez,Mexico,M,SE,NA,1839,ChoDryad,Jon,Paul,Rodriguez,Instituto Venezolano Investigaciones Cientificas,,Altos de Pipe,Miranda,Venezuela,SciWri17,country
+19,CONBIO,2009,23,1,SE,Jon Paul Rodriguez,Jon,Paul,Rodriguez,Mexico,M,SE,NA,1839,ChoDryad,Jon,Paul,Rodriguez,NA,NA,NA,NA,Venezuela,SciWri17,country
+20,CONBIO,2010,24,1,SE,Jon Paul Rodriguez,Jon,Paul,Rodriguez,Mexico,M,SE,NA,1839,ChoDryad,Jon,Paul,Rodriguez,NA,NA,NA,NA,Venezuela,SciWri17,country
+21,CONBIO,2011,25,1,SE,Jon Paul Rodriguez,Jon,Paul,Rodriguez,Mexico,M,SE,NA,1839,ChoDryad,Jon,Paul,Rodriguez,NA,NA,NA,NA,Venezuela,SciWri17,country
+22,CONBIO,2012,26,1,SE,Jon Paul Rodriguez,Jon,Paul,Rodriguez,Mexico,M,SE,NA,1839,ChoDryad,Jon,Paul,Rodriguez,NA,NA,NA,NA,Venezuela,SciWri17,country
+38,JECOL,2005,93,1,SE,Marcel VanDerHeijden,Marcel,,VanDerHeijden,Netherlands,M,SE,NA,2586,ChoDryad,Marcel,NA,VanDerHeijden,Free University Amsterdam,NA,NA,NA,Switzerland,SciWri17,country
+39,JECOL,2006,94,1,SE,Marcel VanDerHeijden,Marcel,,VanDerHeijden,Netherlands,M,SE,NA,2586,ChoDryad,Marcel,NA,VanDerHeijden,Free University Amsterdam,NA,NA,NA,Switzerland,SciWri17,country
+40,JECOL,2007,95,1,SE,Marcel VanDerHeijden,Marcel,,VanDerHeijden,Netherlands,M,SE,NA,2586,ChoDryad,Marcel,NA,VanDerHeijden,Free University Amsterdam,NA,NA,NA,Switzerland,SciWri17,country
+41,JECOL,2008,96,1,SE,Marcel VanDerHeijden,Marcel,,VanDerHeijden,Netherlands,M,SE,NA,2586,ChoDryad,Marcel,NA,VanDerHeijden,Free University Amsterdam,NA,NA,NA,Switzerland,SciWri17,country
+42,JECOL,2009,97,1,SE,Marcel VanDerHeijden,Marcel,,VanDerHeijden,Netherlands,M,SE,NA,2586,ChoDryad,Marcel,NA,VanDerHeijden,ART Research Stationn,NA,NA,Zurich,Switzerland,SciWri17,country
+44,JECOL,2010,98,1,SE,Marcel VanDerHeijden,Marcel,,VanDerHeijden,Netherlands,M,SE,NA,2586,ChoDryad,Marcel,NA,VanDerHeijden,Agroscope Reckenholz Tanikon Research Station,,NA,NA,Switzerland,SciWri17,country
+47,JECOL,2011,99,1,SE,Marcel VanDerHeijden,Marcel,,VanDerHeijden,Netherlands,M,SE,NA,2586,ChoDryad,Marcel,NA,VanDerHeijden,Agroscope Reckenholz Tanikon Research Station,,NA,NA,Switzerland,SciWri17,country
+50,JECOL,2012,100,1,SE,Marcel VanDerHeijden,Marcel,,VanDerHeijden,Netherlands,M,SE,NA,2586,ChoDryad,Marcel,NA,VanDerHeijden,Agroscope Reckenholz Tanikon Research Station,,Zurich,Switzerland,Switzerland,SciWri17,country
+53,JECOL,2013,101,1,SE,Marcel VanDerHeijden,Marcel,,VanDerHeijden,Netherlands,M,SE,NA,2586,ChoDryad,Marcel,NA,VanDerHeijden,Agroscope Reckenholz Tanikon Research Station,,NA,NA,Switzerland,SciWri17,country
+134,PLANTECOL,2003,164,1,Book.Review.Editor,Marcel G A VanDerHeijden,Marcel,G A,VanDerHeijden,Netherlands,NA,SPECIAL,,2586,EspinDryad,Marcel,G A,VanDerHeijden,,NA,NA,NA,Switzerland,SciWri17,country
+135,PLANTECOL,2004,170,1,Book.Review.Editor,Marcel G A VanDerHeijden,Marcel,G A,VanDerHeijden,Netherlands,NA,SPECIAL,,2586,EspinDryad,Marcel,G A,VanDerHeijden,,NA,NA,NA,Switzerland,SciWri17,country
+136,PLANTECOL,2005,176,1,Book.Review.Editor,Marcel G A VanDerHeijden,Marcel,G A,VanDerHeijden,Netherlands,NA,SPECIAL,,2586,EspinDryad,Marcel,G A,VanDerHeijden,,NA,NA,NA,Switzerland,SciWri17,country
+137,PLANTECOL,2006,182,NA,Book.Review.Editor,Marcel G A VanDerHeijden,Marcel,G A,VanDerHeijden,Netherlands,NA,SPECIAL,,2586,EspinDryad,Marcel,G A,VanDerHeijden,,NA,NA,NA,Switzerland,SciWri17,country
+138,PLANTECOL,2007,188,1,Book.Review.Editor,Marcel G A VanDerHeijden,Marcel,G A,VanDerHeijden,Netherlands,NA,SPECIAL,,2586,EspinDryad,Marcel,G A,VanDerHeijden,,NA,NA,NA,Switzerland,SciWri17,country
+139,PLANTECOL,2008,194,1,Book.Review.Editor,Marcel G A VanDerHeijden,Marcel,G A,VanDerHeijden,Netherlands,NA,SPECIAL,,2586,EspinDryad,Marcel,G A,VanDerHeijden,,NA,NA,NA,Switzerland,SciWri17,country
+140,PLANTECOL,2009,200,1,Book.Review.Editor,Marcel G A VanDerHeijden,Marcel,G A,VanDerHeijden,Netherlands,NA,SPECIAL,,2586,EspinDryad,Marcel,G A,VanDerHeijden,,NA,NA,NA,Switzerland,SciWri17,country
+141,PLANTECOL,2010,206,1,Book.Review.Editor,Marcel G A VanDerHeijden,Marcel,G A,VanDerHeijden,Netherlands,NA,SPECIAL,,2586,EspinDryad,Marcel,G A,VanDerHeijden,,NA,NA,NA,Switzerland,SciWri17,country
+100,JANE,2006,75,1,AE,Stuart Bearhop,Stuart,,Bearhop,Northern Ireland,NA,SE,,3278,EspinDryad,Stuart,NA,Bearhop,NA,NA,NA,NA,Ireland,SciWri17,country
+101,JANE,2007,76,1,AE,Stuart Bearhop,Stuart,,Bearhop,Northern Ireland,NA,SE,,3278,EspinDryad,Stuart,NA,Bearhop,NA,NA,NA,NA,Ireland,SciWri17,country
+102,JANE,2008,77,1,AE,Stuart Bearhop,Stuart,,Bearhop,Northern Ireland,NA,SE,,3278,EspinDryad,Stuart,NA,Bearhop,NA,NA,NA,NA,United Kingdom,SciWri17,country
+103,JANE,2009,78,1,AE,Stuart Bearhop,Stuart,,Bearhop,Northern Ireland,NA,SE,"From now on it says associate editor, but they are subject editors",3278,EspinDryad,Stuart,NA,Bearhop,NA,NA,NA,NA,United Kingdom,SciWri17,country
+104,JANE,2010,79,1,AE,Stuart Bearhop,Stuart,,Bearhop,Northern Ireland,NA,SE,"From now on it says associate editor, but they are subject editors",3278,EspinDryad,Stuart,NA,Bearhop,NA,NA,NA,NA,United Kingdom,SciWri17,country
+105,JANE,2011,80,1,AE,Stuart Bearhop,Stuart,,Bearhop,Northern Ireland,NA,SE,,3278,EspinDryad,Stuart,NA,Bearhop,NA,NA,NA,NA,United Kingdom,SciWri17,country
+106,JANE,2012,81,1,AE,Stuart Bearhop,Stuart,,Bearhop,Northern Ireland,NA,SE,,3278,EspinDryad,Stuart,NA,Bearhop,NA,NA,NA,NA,United Kingdom,SciWri17,country
+107,JANE,2013,82,1,AE,Stuart Bearhop,Stuart,,Bearhop,Northern Ireland,NA,SE,,3278,EspinDryad,Stuart,NA,Bearhop,NA,NA,NA,NA,United Kingdom,SciWri17,country
+108,JANE,2014,83,1,AE,Stuart Bearhop,Stuart,,Bearhop,Northern Ireland,NA,SE,,3278,EspinDryad,Stuart,NA,Bearhop,NA,NA,NA,NA,United Kingdom,SciWri17,country
+130,OIKOS,2008,117,1,Subject.Editor,Pia Mutikainen,Pia,,Mutikainen,Switzerland,NA,SE,NA,2878,EspinDryad,Pia,NA,Mutikainen,NA,NA,Oulu,NA,Finland,SciWri17,country
+25,ECOLOGY,2004,85,1,SE,Peter Steinberg,Peter,,Steinberg,United Kingdom,M,SE,,2922,ChoDryad,Peter,NA,Steinberg,University of New South Wales,NA,NA,NA,Australia,SciWri17,country
+26,ECOLOGY,2005,86,1,SE,Peter Steinberg,Peter,,Steinberg,United Kingdom,M,SE,,2922,ChoDryad,Peter,NA,Steinberg,University of New South Wales,NA,NA,NA,Australia,SciWri17,country
+27,ECOLOGY,2006,87,1,SE,Peter Steinberg,Peter,,Steinberg,United Kingdom,M,SE,,2922,ChoDryad,Peter,NA,Steinberg,University of New South Wales,NA,NA,NA,Australia,SciWri17,country
+29,ECOLOGY,2007,88,1,SE,Peter Steinberg,Peter,,Steinberg,United Kingdom,M,SE,,2922,ChoDryad,Peter,NA,Steinberg,University of New South Wales,NA,NA,NA,Australia,SciWri17,country
+30,ECOLOGY,2008,89,1,SE,Peter Steinberg,Peter,,Steinberg,United Kingdom,M,SE,,2922,ChoDryad,Peter,NA,Steinberg,University of New South Wales,NA,NA,NA,Australia,SciWri17,country
+31,ECOLOGY,2009,90,1,SE,Peter Steinberg,Peter,,Steinberg,United Kingdom,M,SE,,2922,ChoDryad,Peter,NA,Steinberg,University of New South Wales,NA,NA,NA,Australia,SciWri17,country
+32,ECOLOGY,2010,91,1,SE,Peter Steinberg,Peter,,Steinberg,United Kingdom,M,SE,,2922,ChoDryad,Peter,NA,Steinberg,University of New South Wales,NA,NA,NA,Australia,SciWri17,country
+33,ECOLOGY,2011,92,1,SE,Peter Steinberg,Peter,,Steinberg,United Kingdom,M,SE,,2922,ChoDryad,Peter,NA,Steinberg,University of New South Wales,NA,NA,NA,Australia,SciWri17,country
+34,ECOLOGY,2012,93,1,SE,Peter Steinberg,Peter,,Steinberg,United Kingdom,M,SE,,2922,ChoDryad,Peter,NA,Steinberg,University of New South Wales,NA,NA,NA,Australia,SciWri17,country
+35,ECOLOGY,2013,94,1,SE,Peter Steinberg,Peter,,Steinberg,United Kingdom,M,SE,,2922,ChoDryad,Peter,NA,Steinberg,University of New South Wales,NA,NA,NA,Australia,SciWri17,country
+72,JBIOG,2013,40,1,Editor,Richard J Ladle,Richard,J,Ladle,United Kingdom,NA,AE,,3125,EspinDryad,Richard,J,Ladle,Universidade Federal de Alagoas,Instituto de Ciências Biológicas e da Saúde,NA,NA,Brazil And UK,SciWri17,country
+2,BITR,2005,37,1,SE,Carlos Peres,Carlos,,Peres,United Kingdom,M,SE,England,551,ChoDryad,Carlos,NA,Peres,University of East Anglia,NA,NA,NA,England,SciWri17,country
+121,OIKOS,1990,57,1,Advisory.Panel,John H Lawton,John,H,Lawton,United Kingdom,NA,SE,NA,1702,EspinDryad,John,H,Lawton,Imperial College London,,Silwood Park,NA,England,SciWri17,country
+122,OIKOS,1992,63,1,Advisory.Panel,John H Lawton,John,H,Lawton,United Kingdom,NA,SE,NA,1702,EspinDryad,John,H,Lawton,Imperial College London,,Silwood Park,NA,England,SciWri17,country
+123,OIKOS,1993,66,1,Advisory.Panel,John H Lawton,John,H,Lawton,United Kingdom,NA,SE,NA,1702,EspinDryad,John,H,Lawton,Imperial College London,,Silwood Park,NA,England,SciWri17,country
+124,OIKOS,1994,69,1,Advisory.Panel,John H Lawton,John,H,Lawton,United Kingdom,NA,SE,NA,1702,EspinDryad,John,H,Lawton,Imperial College London,,Silwood Park,NA,England,SciWri17,country
+125,OIKOS,1995,72,1,Advisory.Panel,John H Lawton,John,H,Lawton,United Kingdom,NA,SE,NA,1702,EspinDryad,John,H,Lawton,Imperial College London,,Silwood Park,NA,England,SciWri17,country
+126,OIKOS,1996,75,1,Advisory.Panel,John H Lawton,John,H,Lawton,United Kingdom,NA,SE,NA,1702,EspinDryad,John,H,Lawton,Imperial College London,,Silwood Park,NA,England,SciWri17,country
+127,OIKOS,1997,79,1,Advisory.Panel,John H Lawton,John,H,Lawton,United Kingdom,NA,SE,NA,1702,EspinDryad,John,H,Lawton,Imperial College London,,Silwood Park,NA,England,SciWri17,country
+128,OIKOS,1998,81,1,Advisory.Panel,John H Lawton,John,H,Lawton,United Kingdom,NA,SE,NA,1702,EspinDryad,John,H,Lawton,Imperial College London,,Silwood Park,NA,England,SciWri17,country
+129,OIKOS,1999,84,1,Advisory.Panel,John H Lawton,John,H,Lawton,United Kingdom,NA,SE,NA,1702,EspinDryad,John,H,Lawton,Imperial College London,,Silwood Park,NA,England,SciWri17,country
+55,JTE,1994,10,1,SE,Marinus JA Werger,Marinus,JA,Werger,United Kingdom,M,SE,NA,2604,ChoDryad,Marinus,JA,Werger,University of Utrecht,Department of plant ecology and evolutioanry biology,NA,Utretcht,Netherlands,SciWri17,country
+56,JTE,1995,11,1,SE,Marinus JA Werger,Marinus,JA,Werger,United Kingdom,M,SE,NA,2604,ChoDryad,Marinus,JA,Werger,University of Utrecht,Department of plant ecology and evolutioanry biology,NA,Utretcht,Netherlands,SciWri17,country
+57,JTE,1996,12,1,SE,Marinus JA Werger,Marinus,JA,Werger,United Kingdom,M,SE,NA,2604,ChoDryad,Marinus,JA,Werger,University of Utrecht,Department of plant ecology and evolutioanry biology,NA,Utretcht,Netherlands,SciWri17,country
+58,JTE,1997,13,1,SE,Marinus JA Werger,Marinus,JA,Werger,United Kingdom,M,SE,NA,2604,ChoDryad,Marinus,JA,Werger,University of Utrecht,Department of plant ecology and evolutioanry biology,NA,Utretcht,Netherlands,SciWri17,country
+59,JTE,1998,14,1,SE,Marinus JA Werger,Marinus,JA,Werger,United Kingdom,M,SE,NA,2604,ChoDryad,Marinus,JA,Werger,University of Utrecht,Department of plant ecology and evolutioanry biology,NA,Utretcht,Netherlands,SciWri17,country
+60,JTE,1999,15,1,SE,Marinus JA Werger,Marinus,JA,Werger,United Kingdom,M,SE,NA,2604,ChoDryad,Marinus,JA,Werger,University of Utrecht,Department of plant ecology and evolutioanry biology,NA,Utretcht,Netherlands,SciWri17,country
+62,JTE,2000,16,1,SE,Marinus JA Werger,Marinus,JA,Werger,United Kingdom,M,SE,NA,2604,ChoDryad,Marinus,JA,Werger,University of Utrecht,Department of plant ecology and evolutioanry biology,NA,Utretcht,Netherlands,SciWri17,country
+64,JTE,2001,17,1,SE,Marinus JA Werger,Marinus,JA,Werger,United Kingdom,M,SE,NA,2604,ChoDryad,Marinus,JA,Werger,University of Utrecht,Department of plant ecology and evolutioanry biology,NA,Utretcht,Netherlands,SciWri17,country
+109,JAPE,1994,31,1,Review.Board,Ian F Spellerberg,Ian,F,Spellerberg,United Kingdom,NA,SE,,1420,EspinDryad,Ian,F,Spellerberg,,NA,Canterbury,NA,New Zealand,SciWri17,country
+110,JAPE,1995,32,1,Review.Board,Ian F Spellerberg,Ian,F,Spellerberg,United Kingdom,NA,SE,,1420,EspinDryad,Ian,F,Spellerberg,,NA,NA,NA,New Zealand,SciWri17,country
+111,JAPE,1996,33,1,Review.Board,Ian F Spellerberg,Ian,F,Spellerberg,United Kingdom,NA,SE,,1420,EspinDryad,Ian,F,Spellerberg,,NA,NA,NA,New Zealand,SciWri17,country
+113,JAPE,2008,45,1,Editor,Phil Hulme,Phil,,Hulme,United Kingdom,NA,AE,,2836,EspinDryad,Phil,NA,Hulme,Lincoln University,NA,NA,NA,New Zealand,SciWri17,country
+1,BITR,1998,30,1,SE,John Proctor,John,,Proctor,United Kingdom,M,SE,,1819,ChoDryad,John,NA,Proctor,University of Stirling,NA,NA,NA,Scotland,SciWri17,country
+131,OIKOS,2009,118,1,Subject.Editor,Martin Solan,Martin,,Solan,United Kingdom,NA,SE,NA,2567,EspinDryad,Martin,NA,Solan,NA,NA,Aberdeenshire,NA,Scotland,SciWri17,country
+132,OIKOS,2010,119,NA,Subject.Editor,Justin Travis,Justin,,Travis,United Kingdom,NA,SE,NA,3910,EspinDryad,Justin,NA,Travis,NA,NA,Aberdeen,NA,Scotland,SciWri17,country
+133,OIKOS,2010,119,1,Subject.Editor,Martin Solan,Martin,,Solan,United Kingdom,NA,SE,NA,2567,EspinDryad,Martin,NA,Solan,NA,NA,Aberdeenshire,NA,Scotland,SciWri17,country
+65,JTE,2002,18,1,EIC,Ian M Turner,Ian,M,Turner,United Kingdom,M,EIC,NA,1425,ChoDryad,Ian,M,Turner,Singapore Botanic Gardens,NA,NA,NA,Singapore,SciWri17,country
+66,JTE,2003,19,1,EIC,Ian M Turner,Ian,M,Turner,United Kingdom,M,EIC,NA,1425,ChoDryad,Ian,M,Turner,Singapore Botanic Gardens,NA,NA,NA,Singapore,SciWri17,country
+12,CONBIO,1987,1,1,SE,Robert May,Robert,,May,United Kingdom,M,SE,NA,3147,ChoDryad,Robert,NA,May,Princeton University,NA,Princeton,New Jersey,USA,SciWri17,country
+14,CONBIO,1988,2,1,SE,Robert May,Robert,,May,United Kingdom,M,SE,NA,3147,ChoDryad,Robert,NA,May,NA,NA,NA,NA,USA,SciWri17,country
+37,JECOL,1985,73,1,SE,J Grace,J,,Grace,United Kingdom,M,SE,probJohnGraceUofEdinborough,3892,ChoDryad,James ,B.,Grace,NA,NA,Baton Rouge,Louisiana,USA,SciWri17,country
+69,AGRONOMY,2014,106,1,AE,James Taylor,James,,Taylor,United Kingdom,NA,SE,,1902,EspinDryad,James,NA,Taylor,Cornell University,Lake Erie Research And Extension Lab,Portland,New York,USA,SciWri17,country
+68,AGRONOMY,2014,106,1,AE,Fernando H Miguez,Fernando,H,Miguez,USA,NA,SE,,1111,EspinDryad,Fernando,H,Miguez,Iowa State University,NA,Ames,Iowa,Argentina,SciWri17,country
+23,CONBIO,2014,28,1,EIC,Mark A Burgman,Mark,A,Burgman,USA,M,EIC,NA,2317,ChoDryad,Mark,A,Burgman,NA,NA,NA,NA,Australia,SciWri17,country
+24,CONBIO,2014,28,1,SE,Susan Hester,Susan,,Hester,USA,F,SE,NA,3357,ChoDryad,Susan,NA,Hester,University of New England,,Armidale,New South Wales,Australia,SciWri17,country
+28,ECOLOGY,2007,88,1,SE,Charles W Fox,Charles,W,Fox,USA,M,SE,,452,ChoDryad,Charles,W,Fox,University of New South Wales,NA,NA,NA,Australia,SciWri17,country
+43,JECOL,2009,97,1,AE,Stephen P Bonser,Stephen,P,Bonser,USA,M,AE,NA,3285,ChoDryad,Stephen,P,Bonser,University of New South Wales,NA,NA,NA,Australia,SciWri17,country
+45,JECOL,2010,98,1,AE,Stephen P Bonser,Stephen,P,Bonser,USA,M,AE,NA,3285,ChoDryad,Stephen,P,Bonser,University of New South Wales,NA,NA,NA,Australia,SciWri17,country
+48,JECOL,2011,99,1,AE,Stephen P Bonser,Stephen,P,Bonser,USA,M,AE,NA,3285,ChoDryad,Stephen,P,Bonser,University of New South Wales,NA,NA,NA,Australia,SciWri17,country
+51,JECOL,2012,100,1,AE,Stephen P Bonser,Stephen,P,Bonser,USA,M,AE,NA,3285,ChoDryad,Stephen,P,Bonser,University of New South Wales,NA,NA,NA,Australia,SciWri17,country
+54,JECOL,2013,101,1,AE,Stephen P Bonser,Stephen,P,Bonser,USA,M,AE,NA,3285,ChoDryad,Stephen,P,Bonser,University of New South Wales,NA,NA,NA,Australia,SciWri17,country
+94,FEM,2002,169,1,Editorial.Advisory.Board,Reinhart T Ceulemans,Reinhart,T,Ceulemans,USA,NA,SE,NA,3014,EspinDryad,Reinhart,T,Ceulemans,University of Antwerp,NA,Antwerpen,NA,Belgium,SciWri17,country
+95,FEM,2003,172,1,Editorial.Advisory.Board,Reinhart T Ceulemans,Reinhart,T,Ceulemans,USA,NA,SE,NA,3014,EspinDryad,Reinhart,T,Ceulemans,University of Antwerp,NA,Antwerpen,NA,Belgium,SciWri17,country
+96,FEM,2004,187,1,Editorial.Advisory.Board,Reinhart T Ceulemans,Reinhart,T,Ceulemans,USA,NA,SE,NA,3014,EspinDryad,Reinhart,T,Ceulemans,University of Antwerp,NA,Antwerpen,NA,Belgium,SciWri17,country
+97,FEM,2005,204,1,Editorial.Advisory.Board,Reinhart T Ceulemans,Reinhart,T,Ceulemans,USA,NA,SE,NA,3014,EspinDryad,Reinhart,T,Ceulemans,University of Antwerp,NA,Antwerpen,NA,Belgium,SciWri17,country
+98,FEM,2006,221,1,Editorial.Advisory.Board,Reinhart T Ceulemans,Reinhart,T,Ceulemans,USA,NA,SE,NA,3014,EspinDryad,Reinhart,T,Ceulemans,University of Antwerp,NA,Antwerpen,NA,Belgium,SciWri17,country
+99,FEM,2007,238,1,Editorial.Advisory.Board,Reinhart T Ceulemans,Reinhart,T,Ceulemans,USA,NA,SE,NA,3014,EspinDryad,Reinhart,T,Ceulemans,University of Antwerp,NA,Antwerpen,NA,Belgium,SciWri17,country
+117,LECO,2009,24,1,SE,D P Anderson,D,P,Anderson,USA,NA,SE,NA,607,EspinDryad,D,P,Anderson,Manaaki Whenua Landcare Research,NA,Lincoln,NA,New Zealand,SciWri17,country
+73,EVOL,1995,49,NA,AE,Nancy Knowlton,Nancy,,Knowlton,USA,NA,SE,NA,2657,EspinDryad,Nancy,NA,Knowlton,Smithsonian Tropical Research Institute,NA,Panama City,NA,Panama,SciWri17,country
+74,EVOL,1996,50,NA,AE,Nancy Knowlton,Nancy,,Knowlton,USA,NA,SE,NA,2657,EspinDryad,Nancy,NA,Knowlton,Smithsonian Tropical Research Institute,NA,Panama City,NA,Panama,SciWri17,country
+75,EVOL,1997,51,NA,AE,Nancy Knowlton,Nancy,,Knowlton,USA,NA,SE,NA,2657,EspinDryad,Nancy,NA,Knowlton,Smithsonian Tropical Research Institute,NA,Panama City,NA,Panama,SciWri17,country
+4,AGRONOMY,2002,94,1,SE,Roland Buresh,Roland,,Buresh,USA,M,SE,NA,3003,ChoDryad,Roland,NA,Buresh,NA,NA,Mankato,Minnesota,Philippines,SciWri17,country
+46,JECOL,2011,99,1,SE,Luis Santamaria Galdon,Luis,Santamaria,Galdon,USA,M,SE,NA,2150,ChoDryad,Luis,Santamaria,Galdon,Instituto Mediterraneo de Estudios Avanzados (IMEDEA),NA,NA,NA,Spain,SciWri17,country
+49,JECOL,2012,100,1,SE,Luis Santamaria Galdon,Luis,Santamaria,Galdon,USA,M,SE,NA,2150,ChoDryad,Luis,Santamaria,Galdon,Instituto Mediterraneo de Estudios Avanzados (IMEDEA),NA,NA,NA,Spain,SciWri17,country
+52,JECOL,2013,101,1,SE,Luis Santamaria Galdon,Luis,Santamaria,Galdon,USA,M,SE,NA,2150,ChoDryad,Luis,Santamaria,Galdon,Instituto Mediterraneo de Estudios Avanzados,,NA,Spain,Spain,SciWri17,country
+11,CONBIO,1987,1,1,SE,Arthur Westing,Arthur,,Westing,USA,M,SE,NA,227,ChoDryad,Arthur,NA,Westing,Stockholm International Peace Research Institute,NA,Stockholm,Uppland,Sweden,SciWri17,country
+13,CONBIO,1988,2,1,SE,Arthur Westing,Arthur,,Westing,USA,M,SE,NA,227,ChoDryad,Arthur,NA,Westing,NA,NA,NA,NA,Sweden,SciWri17,country
+15,CONBIO,1989,3,1,SE,Arthur Westing,Arthur,,Westing,USA,M,SE,NA,227,ChoDryad,Arthur,NA,Westing,NA,NA,NA,Ohio,Sweden,SciWri17,country
+16,CONBIO,1990,4,1,SE,Arthur Westing,Arthur,,Westing,USA,M,SE,NA,227,ChoDryad,Arthur,NA,Westing,NA,NA,NA,NA,Sweden,SciWri17,country
+17,CONBIO,1991,5,1,SE,Arthur Westing,Arthur,,Westing,USA,M,SE,NA,227,ChoDryad,Arthur,NA,Westing,Westing Associates,NA,Putney,Vermont,Sweden,SciWri17,country
+3,AGRONOMY,1996,88,1,SE,Kenneth Moore,Kenneth,,Moore,USA,M,SE,NA,2055,ChoDryad,Kenneth,NA,Moore,Iowa State University,Department of Agronomy,Ames,Iowa,UsA,SciWri17,country
+252,FEM,1985,10,1,Editorial.Advisory.Board,Nicholas Malajczuk,Nicholas,,Malajczuk,Australia,NA,SE,NA,2663,EspinDryad,G,NA,Malajczuk,Department of Conservation and Land Management,NA,South Pert,NA,Australia,SciWri17,first_name
+253,FEM,1986,14,1,Editorial.Advisory.Board,Nicholas Malajczuk,Nicholas,,Malajczuk,Australia,NA,SE,NA,2663,EspinDryad,G,NA,Malajczuk,Department of Conservation and Land Management,NA,South Pert,NA,Australia,SciWri17,first_name
+254,FEM,1987,18,1,Editorial.Advisory.Board,Nicholas Malajczuk,Nicholas,,Malajczuk,Australia,NA,SE,NA,2663,EspinDryad,G,NA,Malajczuk,Department of Conservation and Land Management,NA,South Pert,NA,Australia,SciWri17,first_name
+255,FEM,1988,23,1,Editorial.Advisory.Board,Nicholas Malajczuk,Nicholas,,Malajczuk,Australia,NA,SE,NA,2663,EspinDryad,G,NA,Malajczuk,Department of Conservation and Land Management,NA,South Pert,NA,Australia,SciWri17,first_name
+212,ECOLOGY,2009,90,1,SE,Mou Pu,Mou,,Pu,China,M,SE,,2527,ChoDryad,Pu,NA,Mou ,Beijing Normal University,NA,NA,NA,China,SciWri17,first_name
+213,ECOLOGY,2010,91,1,SE,Paul P Mou,Paul,P,Mou,China,M,SE,,2873,ChoDryad,Pu,P,Mou,Beijing Normal University,NA,NA,NA,China,SciWri17,first_name
+214,ECOLOGY,2011,92,1,SE,Paul P Mou,Paul,P,Mou,China,M,SE,,2873,ChoDryad,Pu,P,Mou,Beijing Normal University,NA,NA,NA,China,SciWri17,first_name
+215,ECOLOGY,2012,93,1,SE,Paul P Mou,Paul,P,Mou,China,M,SE,,2873,ChoDryad,Pu,P,Mou,Beijing Normal University,NA,NA,NA,China,SciWri17,first_name
+216,BIOCON,1985,31,1,EB,TH MONOD,TH,,MONOD,France,M,SE,,3607,ChoDryad,Theodore,NA,Monod,Museum National dHistoire Naturelle,Labratory of General and Apllied Ichthyology,Paris,NA,France,SciWri17,first_name
+217,BIOCON,1986,35,1,EB,TH MONOD,TH,,MONOD,France,M,SE,,3607,ChoDryad,Theodore,NA,Monod,NA,NA,NA,NA,France,SciWri17,first_name
+266,OIKOS,1985,44,1,Editorial.Board,S Ulfstrand,S,,Ulfstrand,Sweden,NA,SE,NA,3490,EspinDryad,Staffan,NA,Ulfstrand,Uppsala University,,Uppsala,NA,Sweden,SciWri17,first_name
+267,OIKOS,1985,44,1,Deputy.EIC,Staffan Ulfstrand,Staffan,,Ulfstrand,Sweden,NA,EIC,NA,3490,EspinDryad,S,NA,Ulfstrand,Uppsala University,,Uppsala,NA,Sweden,SciWri17,first_name
+268,OIKOS,1986,46,1,Editorial.Board,S Ulfstrand,S,,Ulfstrand,Sweden,NA,SE,NA,3490,EspinDryad,Staffan,NA,Ulfstrand,Uppsala University,,Uppsala,NA,Sweden,SciWri17,first_name
+269,OIKOS,1986,46,1,Deputy.EIC,Staffan Ulfstrand,Staffan,,Ulfstrand,Sweden,NA,EIC,NA,3490,EspinDryad,S,NA,Ulfstrand,Uppsala University,,Uppsala,NA,Sweden,SciWri17,first_name
+270,OIKOS,1987,48,1,Editorial.Board,S Ulfstrand,S,,Ulfstrand,Sweden,NA,SE,NA,3490,EspinDryad,Staffan,NA,Ulfstrand,Uppsala University,,Uppsala,NA,Sweden,SciWri17,first_name
+271,OIKOS,1987,48,1,Deputy.EIC,Staffan Ulfstrand,Staffan,,Ulfstrand,Sweden,NA,EIC,NA,3490,EspinDryad,S,NA,Ulfstrand,Uppsala University,,Uppsala,NA,Sweden,SciWri17,first_name
+272,OIKOS,1988,51,1,Editorial.Board,S Ulfstrand,S,,Ulfstrand,Sweden,NA,SE,NA,3490,EspinDryad,Staffan,NA,Ulfstrand,Uppsala University,,Uppsala,NA,Sweden,SciWri17,first_name
+273,OIKOS,1988,51,1,Deputy.EIC,Staffan Ulfstrand,Staffan,,Ulfstrand,Sweden,NA,EIC,NA,3490,EspinDryad,S,NA,Ulfstrand,Uppsala University,,Uppsala,NA,Sweden,SciWri17,first_name
+274,OIKOS,1989,54,1,Editorial.Board,S Ulfstrand,S,,Ulfstrand,Sweden,NA,SE,NA,3490,EspinDryad,Staffan,NA,Ulfstrand,Uppsala University,,Uppsala,NA,Sweden,SciWri17,first_name
+275,OIKOS,1989,54,1,Deputy.EIC,Staffan Ulfstrand,Staffan,,Ulfstrand,Sweden,NA,EIC,NA,3490,EspinDryad,S,NA,Ulfstrand,Uppsala University,,Uppsala,NA,Sweden,SciWri17,first_name
+256,JANE,2007,76,1,AE,Alexandre Roulin,Alexandre,,Roulin,Switzerland,NA,SE,,184,EspinDryad,Alex,NA,Roulin,NA,NA,NA,NA,Switzerland,SciWri17,first_name
+257,JANE,2008,77,1,AE,Alexandre Roulin,Alexandre,,Roulin,Switzerland,NA,SE,,184,EspinDryad,Alex,NA,Roulin,NA,NA,NA,NA,Switzerland,SciWri17,first_name
+258,JANE,2009,78,1,AE,Alexandre Roulin,Alexandre,,Roulin,Switzerland,NA,SE,,184,EspinDryad,Alex,NA,Roulin,NA,NA,NA,NA,Switzerland,SciWri17,first_name
+259,JANE,2010,79,1,AE,Alexandre Roulin,Alexandre,,Roulin,Switzerland,NA,SE,,184,EspinDryad,Alex,NA,Roulin,NA,NA,NA,NA,Switzerland,SciWri17,first_name
+260,JANE,2011,80,1,AE,Alexandre Roulin,Alexandre,,Roulin,Switzerland,NA,SE,,184,EspinDryad,Alex,NA,Roulin,NA,NA,NA,NA,Switzerland,SciWri17,first_name
+261,JANE,2012,81,1,AE,Alexandre Roulin,Alexandre,,Roulin,Switzerland,NA,SE,,184,EspinDryad,Alex,NA,Roulin,NA,NA,NA,NA,Switzerland,SciWri17,first_name
+262,JANE,2013,82,1,AE,Alexandre Roulin,Alexandre,,Roulin,Switzerland,NA,SE,,184,EspinDryad,Alex,NA,Roulin,NA,NA,NA,NA,Switzerland,SciWri17,first_name
+263,JANE,2014,83,1,AE,Alexandre Roulin,Alexandre,,Roulin,Switzerland,NA,SE,,184,EspinDryad,Alex,NA,Roulin,NA,NA,NA,NA,Switzerland,SciWri17,first_name
+218,JECOL,1985,73,1,SE,J Grace,J,,Grace,United Kingdom,M,SE,probJohnGraceUofEdinborough,3892,ChoDryad,James ,B.,Grace,NA,NA,Baton Rouge,Louisiana,USA,SciWri17,first_name
+196,AGRONOMY,1996,88,1,SE,Donavan Taylor,Donavan,,Taylor,USA,M,SE,NA,888,ChoDryad,Donavon,NA,Taylor,University of Wisconsin River Falls,Department of Plant and Earth Science,River Falls,Wisconsin,USA,SciWri17,first_name
+197,AGRONOMY,1999,91,1,SE,Donavan Taylor,Donavan,,Taylor,USA,M,SE,NA,888,ChoDryad,Donavon,NA,Taylor,University of Wisconsin River Falls,Department of Plant and Earth Science,River Falls,Wisconsin,USA,SciWri17,first_name
+198,AGRONOMY,2008,100,1,SE,Erin Ervin,Erin,,Ervin,USA,F,SE,NA,960,ChoDryad,Erik,NA,Ervin,Virginia Polytechnic Institute and State University,Crop and Soil Environmental Sciences Dept,Blacksburg,Virginia,USA,SciWri17,first_name
+199,AGRONOMY,2009,101,1,SE,Erin Ervin,Erin,,Ervin,USA,F,SE,NA,960,ChoDryad,Erik,NA,Ervin,Virginia Polytechnic Institute and State University,Crop and Soil Environmental Sciences Dept,Blacksburg,Virginia,USA,SciWri17,first_name
+200,AGRONOMY,2010,102,1,SE,Erin Ervin,Erin,,Ervin,USA,F,SE,NA,960,ChoDryad,Erik,NA,Ervin,Virginia Polytechnic Institute and State University,Crop and Soil Environmental Sciences Dept,Blacksburg,Virginia,USA,SciWri17,first_name
+201,AGRONOMY,2011,103,1,SE,Erin Ervin,Erin,,Ervin,USA,F,SE,NA,960,ChoDryad,Erik,NA,Ervin,Virginia Polytechnic Institute and State University,Crop and Soil Environmental Sciences Dept,Blacksburg,Virginia,USA,SciWri17,first_name
+202,CONBIO,1999,13,1,SE,MarthaJ Groom,MarthaJ,,Groom,USA,F,SE,NA,2390,ChoDryad,Martha,J,Groom,University of Washington,NA,Seattle,Washington,USA,SciWri17,first_name
+203,CONBIO,2000,14,1,SE,MarthaJ Groom,MarthaJ,,Groom,USA,F,SE,NA,2390,ChoDryad,Martha,J,Groom,NA,NA,NA,NA,USA,SciWri17,first_name
+204,CONBIO,2001,15,1,SE,MarthaJ Groom,MarthaJ,,Groom,USA,F,SE,NA,2390,ChoDryad,Martha,J,Groom,NA,NA,NA,NA,USA,SciWri17,first_name
+205,CONBIO,2002,16,1,SE,MarthaJ Groom,MarthaJ,,Groom,USA,F,SE,NA,2390,ChoDryad,Martha,J,Groom,NA,NA,NA,NA,USA,SciWri17,first_name
+206,CONBIO,2003,17,1,SE,MarthaJ Groom,MarthaJ,,Groom,USA,F,SE,NA,2390,ChoDryad,Martha,J,Groom,NA,NA,NA,NA,USA,SciWri17,first_name
+207,CONBIO,2004,18,1,SE,William C McComb,William,C,McComb,USA,M,SE,NA,3769,ChoDryad,Brenda,C,McComb,US Environmental Protection Agency,NA,NA,NA,USA,SciWri17,first_name
+208,CONBIO,2005,19,1,SE,William C McComb,William,C,McComb,USA,M,SE,NA,3769,ChoDryad,Brenda,C,McComb,NA,NA,NA,NA,USA,SciWri17,first_name
+209,CONBIO,2006,20,1,SE,William C McComb,William,C,McComb,USA,M,SE,NA,3769,ChoDryad,Brenda,C,McComb,NA,NA,NA,NA,USA,SciWri17,first_name
+210,CONBIO,2007,21,1,SE,William C McComb,William,C,McComb,USA,M,SE,NA,3769,ChoDryad,Brenda,C,McComb,University of Massachusetts Amherst,,Amherst,Massachusetts,USA,SciWri17,first_name
+211,CONBIO,2008,22,1,SE,William C McComb,William,C,McComb,USA,M,SE,NA,3769,ChoDryad,Brenda,C,McComb,NA,NA,NA,NA,USA,SciWri17,first_name
+219,AGRONOMY,1985,77,1,Associate.Editor,A R Eaglesham,A,R,Eaglesham,USA,NA,SE,,61,EspinDryad,Allan,R,Eaglesham,Cornell University,Boyce Thompson Institute,Ithaca,New York,USA,SciWri17,first_name
+220,AGRONOMY,1985,77,1,Associate.Editor,A D Halvorson,A,D,Halvorson,USA,NA,SE,,95,EspinDryad,Ardell,D,Halvorson,US Department of Agriculture,ARS,Ft. Collins,Colorado,USA,SciWri17,first_name
+221,AGRONOMY,1985,77,1,Associate.Editor,A A Schneiter,A,A,Schneiter,USA,NA,SE,,192,EspinDryad,Albert,A,Schneiter,North Dakota State University,NA,Fargo,North Dakota,USA,SciWri17,first_name
+222,AGRONOMY,1985,77,1,Associate.Editor,A E Smith,A,E,Smith,USA,NA,SE,,201,EspinDryad,Albert,E,Smith,University of Georgia,Crop & Soil,Athens,Georgia,USA,SciWri17,first_name
+223,AGRONOMY,1985,77,1,Associate.Editor,B L Blad,B,L,Blad,USA,NA,SE,,245,EspinDryad,Blaine,L,Blad,University of Nebraska Lincoln,,Lincoln,Nebraska,USA,SciWri17,first_name
+224,AGRONOMY,1985,77,1,Associate.Editor,D J Eckert,D,J,Eckert,USA,NA,SE,,678,EspinDryad,Donald,J,Eckert,Ohio State University,School of Environment & Nat Resources,Columbus,Ohio,USA,SciWri17,first_name
+225,AGRONOMY,1985,77,1,Associate.Editor,D B Egli,D,B,Egli,USA,NA,SE,,679,EspinDryad,Dennis,B,Egli,University of Kentucky,Dept. of Plant and Soil Science,Lexington,Kentucky,USA,SciWri17,first_name
+226,AGRONOMY,1985,77,1,Associate.Editor,D R Krieg,D,R,Krieg,USA,NA,SE,,752,EspinDryad,Daniel,R,Krieg,Texas Tech University,NA,Lubbock,Texas,USA,SciWri17,first_name
+227,AGRONOMY,1985,77,1,Associate.Editor,D C Reicosky,D,C,Reicosky,USA,NA,SE,,837,EspinDryad,Donald,C,Reicosky,US Department of Agriculture,NA,Morris,Minnesota,USA,SciWri17,first_name
+228,AGRONOMY,1985,77,1,Associate.Editor,H D Skipper,H,D,Skipper,USA,NA,SE,,1363,EspinDryad,Horace,Dean,Skipper,Clemson University,"Ent., Soils, & Pl Sciences",Clemson,South Carolina,USA,SciWri17,first_name
+229,AGRONOMY,1985,77,1,Associate.Editor,I C Anderson,I,C,Anderson,USA,NA,SE,,1387,EspinDryad,Irvin,C,Anderson,Iowa State University,Agronomy Dept,Ames,Iowa,USA,SciWri17,first_name
+230,AGRONOMY,1985,77,1,Associate.Editor,J M Bradford,J,M,Bradford,USA,NA,SE,,1479,EspinDryad,Joe,M,Bradford,US Department of Agriculture,ARS/SARL Cons.& Prod.Sys,Weslaco,Texas,USA,SciWri17,first_name
+231,AGRONOMY,1985,77,1,Technical.Editor,J L Hatfield,J,L,Hatfield,USA,NA,AE,,1627,EspinDryad,Jerry,L,Hatfield,US Department of Agriculture,ARS Natl Lab for Agric & the Environ,Ames,Iowa,USA,SciWri17,first_name
+232,AGRONOMY,1985,77,1,Associate.Editor,J M Norman,J,M,Norman,USA,NA,SE,,1788,EspinDryad,John,M,Norman,University of Wisconsin,Department of Soil Science,Madison,Wisconsin,USA,SciWri17,first_name
+233,AGRONOMY,1985,77,1,Associate.Editor,J F Power,J,F,Power,USA,NA,SE,,1816,EspinDryad,James,F,Power,NA,NA,Lincoln,Nebraska,USA,SciWri17,first_name
+234,AGRONOMY,1985,77,1,Associate.Editor,J F Stone,J,F,Stone,USA,NA,SE,,1893,EspinDryad,John,F,Stone,NA,NA,Stillwater,Oklahoma,USA,SciWri17,first_name
+235,AGRONOMY,1986,78,1,Associate.Editor,A R Eaglesham,A,R,Eaglesham,USA,NA,SE,,61,EspinDryad,Allan,R,Eaglesham,Cornell University,Boyce Thompson Institute,Ithaca,New York,USA,SciWri17,first_name
+236,AGRONOMY,1986,78,1,Associate.Editor,A D Halvorson,A,D,Halvorson,USA,NA,SE,,95,EspinDryad,Ardell,D,Halvorson,US Department of Agriculture,ARS,Ft. Collins,Colorado,USA,SciWri17,first_name
+237,AGRONOMY,1986,78,1,Associate.Editor,A A Schneiter,A,A,Schneiter,USA,NA,SE,,192,EspinDryad,Albert,A,Schneiter,North Dakota State University,NA,Fargo,North Dakota,USA,SciWri17,first_name
+238,AGRONOMY,1986,78,1,Associate.Editor,A E Smith,A,E,Smith,USA,NA,SE,,201,EspinDryad,Albert,E,Smith,University of Georgia,Crop & Soil,Athens,Georgia,USA,SciWri17,first_name
+239,AGRONOMY,1986,78,1,Associate.Editor,B E Anderson,B,E,Anderson,USA,NA,SE,,240,EspinDryad,Bruce,E,Anderson,University of Nebraska Lincoln,,Lincoln,Nebraska,USA,SciWri17,first_name
+240,AGRONOMY,1986,78,1,Associate.Editor,B L Blad,B,L,Blad,USA,NA,SE,,245,EspinDryad,Blaine,L,Blad,University of Nebraska Lincoln,,Lincoln,Nebraska,USA,SciWri17,first_name
+241,AGRONOMY,1986,78,1,Associate.Editor,C S Daughtry,C,S,Daughtry,USA,NA,SE,,431,EspinDryad,Craig,S,Daughtry,US Department of Agriculture,ARS Hydrology Remote Sensing,Beltsville,Maryland,USA,SciWri17,first_name
+242,AGRONOMY,1986,78,1,Associate.Editor,D J Eckert,D,J,Eckert,USA,NA,SE,,678,EspinDryad,Donald,J,Eckert,Ohio State University,School of Environment & Nat Resources,Columbus,Ohio,USA,SciWri17,first_name
+243,AGRONOMY,1986,78,1,Associate.Editor,D L Jeffers,D,L,Jeffers,USA,NA,SE,,737,EspinDryad,Daniel,L,Jeffers,Ohio State University,Dep. of Horticulture & Crop Science,Wooster,Ohio,USA,SciWri17,first_name
+244,AGRONOMY,1986,78,1,Associate.Editor,D R Kreig,D,R,Kreig,USA,NA,SE,,751,EspinDryad,Daniel,R,Kreig,Texas Tech University,NA,Lubbock,Texas,USA,SciWri17,first_name
+245,AGRONOMY,1986,78,1,Associate.Editor,D A Lauer,D,A,Lauer,USA,NA,SE,,756,EspinDryad,David,A,Lauer,NA,NA,Prosser,Washington,USA,SciWri17,first_name
+246,AGRONOMY,1986,78,1,Associate.Editor,D C Reicosky,D,C,Reicosky,USA,NA,SE,,837,EspinDryad,Donald,C,Reicosky,US Department of Agriculture,NA,Morris,Minnesota,USA,SciWri17,first_name
+247,AGRONOMY,1986,78,1,Associate.Editor,D H Smith,D,H,Smith,USA,NA,SE,,870,EspinDryad,Danny,H,Smith,NA,NA,Argyle,Texas,USA,SciWri17,first_name
+248,AGRONOMY,1986,78,1,Associate.Editor,J M Bradford,J,M,Bradford,USA,NA,SE,,1479,EspinDryad,Joe,M,Bradford,US Department of Agriculture,ARS/SARL Cons.& Prod.Sys,Weslaco,Texas,USA,SciWri17,first_name
+249,AGRONOMY,1986,78,1,Technical.Editor,J L Hatfield,J,L,Hatfield,USA,NA,AE,,1627,EspinDryad,Jerry,L,Hatfield,US Department of Agriculture,ARS Natl Lab for Agric & the Environ,Ames,Iowa,USA,SciWri17,first_name
+250,AGRONOMY,1986,78,1,Associate.Editor,J F Power,J,F,Power,USA,NA,SE,,1816,EspinDryad,James,F,Power,NA,NA,Lincoln,Nebraska,USA,SciWri17,first_name
+251,AGRONOMY,2014,106,1,AE,Jack Martin,Jack,,Martin,USA,NA,SE,,3899,EspinDryad,Jack ,NA,Martin,NA,NA,NA,NA,USA,SciWri17,first_name
+264,LECO,2014,29,1,Book.Review.Editor,Daniel M Kashian,Daniel,M,Kashian,USA,NA,SPECIAL,NA,745,EspinDryad,D,M,Kashian,Wayne State University,NA,Detroit,MI,USA,SciWri17,first_name
+265,LECO,2014,29,1,Editorial.Board,D M Kashian,D,M,Kashian,USA,NA,SE,NA,745,EspinDryad,Daniel,M,Kashian,Wayne State University,NA,Detroit,MI,USA,SciWri17,first_name
+181,CONBIO,2012,26,1,SE,Carla Catterakk,Carla,,Catterakk,Australia,F,SE,NA,420,ChoDryad,Carla,NA,Catterall,Griffith University,NA,Brisbane,Queensland,Australia,SciWri17,last_name
+185,FEM,1991,40,1,Editorial.Advisory.Board,Joao S DeQueiroz,Joao,S,DeQueiroz,Botswana,NA,SE,NA,1541,EspinDryad,Joao,S,de Queiroz,University of Botswana,NA,Gaborone,NA,Botswana,SciWri17,last_name
+186,FEM,1992,47,1,Editorial.Advisory.Board,Joao S DeQueiroz,Joao,S,DeQueiroz,Botswana,NA,SE,NA,1541,EspinDryad,Joao,S,de Queiroz,University of Botswana,NA,Gaborone,NA,Botswana,SciWri17,last_name
+187,FEM,1993,56,1,Editorial.Advisory.Board,Joao S DeQueiroz,Joao,S,DeQueiroz,Botswana,NA,SE,NA,1541,EspinDryad,Joao,S,de Queiroz,University of Botswana,NA,Gaborone,NA,Botswana,SciWri17,last_name
+188,FEM,1994,63,1,Editorial.Advisory.Board,Joao S DeQueiroz,Joao,S,DeQueiroz,Botswana,NA,SE,NA,1541,EspinDryad,Joao,S,de Queiroz,University of Botswana,NA,Gaborone,NA,Botswana,SciWri17,last_name
+189,FEM,1995,71,1,Editorial.Advisory.Board,Joao S DeQueiroz,Joao,S,DeQueiroz,Botswana,NA,SE,NA,1541,EspinDryad,Joao,S,de Queiroz,University of Botswana,NA,Gaborone,NA,Botswana,SciWri17,last_name
+182,ECOLOGY,2009,90,1,SE,Mou Pu,Mou,,Pu,China,M,SE,,2527,ChoDryad,Pu,NA,Mou ,Beijing Normal University,NA,NA,NA,China,SciWri17,last_name
+183,BIOCON,1985,31,1,EB,TH MONOD,TH,,MONOD,France,M,SE,,3607,ChoDryad,Theodore,NA,Monod,Museum National dHistoire Naturelle,Labratory of General and Apllied Ichthyology,Paris,NA,France,SciWri17,last_name
+184,BIOCON,1986,35,1,EB,TH MONOD,TH,,MONOD,France,M,SE,,3607,ChoDryad,Theodore,NA,Monod,NA,NA,NA,NA,France,SciWri17,last_name
+194,OIKOS,2009,118,1,Subject.Editor,Anna Traveser,Anna,,Traveser,Spain,NA,SE,NA,217,EspinDryad,Anna,NA,Traveset,NA,NA,Mallorca,NA,Spain,SciWri17,last_name
+195,OIKOS,2010,119,1,Subject.Editor,Anna Traveser,Anna,,Traveser,Spain,NA,SE,NA,217,EspinDryad,Anna,NA,Traveset,NA,NA,Mallorca,NA,Spain,SciWri17,last_name
+191,LECO,1987,1,1,Editorial.Board,E VanDerMaarel,E,,VanDerMaarel,Sweden,NA,SE,,1033,EspinDryad,E,NA,van der Maarel,NA,NA,NA,NA,Sweden,SciWri17,last_name
+190,JAPE,2015,52,1,Associate.Editor,Peter Mannin,Peter,,Mannin,Switzerland,NA,SE,,2863,EspinDryad,Peter,NA,Manning,University of Bern,NA,NA,NA,Switzerland,SciWri17,last_name
+169,AGRONOMY,1993,85,1,SE,John Halvin,John,,Halvin,USA,M,SE,NA,1617,ChoDryad,John,NA,Havlin,North Carolina State University,Department of Soil Science,Raleigh,North Carolina,USA,SciWri17,last_name
+170,AGRONOMY,1996,88,1,SE,John Halvin,John,,Halvin,USA,M,SE,NA,1617,ChoDryad,John,NA,Havlin,North Carolina State University,Department of Soil Science,Raleigh,North Carolina,USA,SciWri17,last_name
+171,AGRONOMY,2002,94,1,SE,John Halvin,John,,Halvin,USA,M,SE,NA,1617,ChoDryad,John,NA,Havlin,North Carolina State University,Department of Soil Science,Raleigh,North Carolina,USA,SciWri17,last_name
+172,AGRONOMY,2005,97,1,SE,John Halvin,John,,Halvin,USA,M,SE,NA,1617,ChoDryad,John,NA,Havlin,North Carolina State University,Department of Soil Science,Raleigh,North Carolina,USA,SciWri17,last_name
+173,AGRONOMY,2008,100,1,SE,Ronald Gehi,Ronald,,Gehi,USA,M,SE,NA,3070,ChoDryad,Ronald,NA,Gehl,NA,NA,Saint George,Kansas,USA,SciWri17,last_name
+174,AGRONOMY,2009,101,1,SE,William Amderson,William,,Amderson,USA,M,SE,NA,3707,ChoDryad,William,NA,Anderson,US Department of Agriculture,ARS Crop Genetics and Breeding Research Unit,Tifton,Georgia,USA,SciWri17,last_name
+175,AGRONOMY,2010,102,1,SE,Saseendran Anapali,Saseendran,,Anapali,USA,M,SE,NA,3268,ChoDryad,Saseendran,NA,Anapalli,US Department of Agriculture,ARS,NA,NA,USA,SciWri17,last_name
+176,AGRONOMY,2010,102,1,SE,William Amderson,William,,Amderson,USA,M,SE,NA,3707,ChoDryad,William,NA,Anderson,US Department of Agriculture,ARS Crop Genetics and Breeding Research Unit,Tifton,Georgia,USA,SciWri17,last_name
+177,AGRONOMY,2011,103,1,SE,Saseendran Anapali,Saseendran,,Anapali,USA,M,SE,NA,3268,ChoDryad,Saseendran,NA,Anapalli,US Department of Agriculture,ARS,NA,NA,USA,SciWri17,last_name
+178,AGRONOMY,2011,103,1,SE,William Amderson,William,,Amderson,USA,M,SE,NA,3707,ChoDryad,William,NA,Anderson,US Department of Agriculture,ARS Crop Genetics and Breeding Research Unit,Tifton,Georgia,USA,SciWri17,last_name
+179,AGRONOMY,2012,104,1,SE,Saseendran Anapali,Saseendran,,Anapali,USA,M,SE,NA,3268,ChoDryad,Saseendran,NA,Anapalli,US Department of Agriculture,ARS,NA,NA,USA,SciWri17,last_name
+180,AGRONOMY,2012,104,1,SE,William Amderson,William,,Amderson,USA,M,SE,NA,3707,ChoDryad,William,NA,Anderson,US Department of Agriculture,ARS Crop Genetics and Breeding Research Unit,Tifton,Georgia,USA,SciWri17,last_name
+192,OIKOS,2006,112,1,Subject.Editor,Kathy Sudig,Kathy,,Sudig,USA,NA,SE,NA,2100,EspinDryad,Kathy,NA,Suding,NA,NA,Irvine,CA,USA,SciWri17,last_name
+193,OIKOS,2007,116,1,Subject.Editor,Kathy Sudig,Kathy,,Sudig,USA,NA,SE,NA,2100,EspinDryad,Kathy,NA,Suding,NA,NA,Irvine,CA,USA,SciWri17,last_name
+152,JTE,1985,1,1,EIC,Adrian G Marshall,Adrian,G,Marshall,United Kingdom,M,EIC,NA,146,ChoDryad,Adrian,Green,Marshall,University of Aberdeen,Department of Zoology,Aberdeen,Scotland,United Kingdom,SciWri17,middle_name
+153,JTE,1990,6,1,EIC,Adrian G Marshall,Adrian,G,Marshall,United Kingdom,M,EIC,NA,146,ChoDryad,Adrian,Green,Marshall,University of Aberdeen,Department of Zoology,Aberdeen,Scotland,United Kingdom,SciWri17,middle_name
+154,JTE,1991,7,1,EIC,Adrian G Marshall,Adrian,G,Marshall,United Kingdom,M,EIC,NA,146,ChoDryad,Adrian,Green,Marshall,University of Aberdeen,Department of Zoology,Aberdeen,Scotland,United Kingdom,SciWri17,middle_name
+155,JTE,1992,8,1,EIC,Adrian G Marshall,Adrian,G,Marshall,United Kingdom,M,EIC,NA,146,ChoDryad,Adrian,Green,Marshall,University of Aberdeen,Department of Zoology,Aberdeen,Scotland,United Kingdom,SciWri17,middle_name
+156,JTE,1993,9,1,EIC,Adrian G Marshall,Adrian,G,Marshall,United Kingdom,M,EIC,NA,146,ChoDryad,Adrian,Green,Marshall,University of Aberdeen,Department of Zoology,Aberdeen,Scotland,United Kingdom,SciWri17,middle_name
+157,JTE,1994,10,1,EIC,Adrian G Marshall,Adrian,G,Marshall,United Kingdom,M,EIC,NA,146,ChoDryad,Adrian,Green,Marshall,University of Aberdeen,Department of Zoology,Aberdeen,Scotland,United Kingdom,SciWri17,middle_name
+158,JTE,1995,11,1,AE,Adrian G Marshall,Adrian,G,Marshall,United Kingdom,M,AE,NA,146,ChoDryad,Adrian,Green,Marshall,University of Aberdeen,Department of Zoology,Aberdeen,Scotland,United Kingdom,SciWri17,middle_name
+166,JTE,1987,3,1,Editor,Adrian Marshall,Adrian,,Marshall,United Kingdom,NA,EIC,NA,146,EspinDryad,Adrian,Green,Marshall,University of Aberdeen,Department of Zoology,Aberdeen,Scotland,United Kingdom,SciWri17,middle_name
+167,JTE,1988,4,1,Editor,Adrian Marshall,Adrian,,Marshall,United Kingdom,NA,EIC,NA,146,EspinDryad,Adrian,Green,Marshall,University of Aberdeen,Department of Zoology,Aberdeen,Scotland,United Kingdom,SciWri17,middle_name
+168,JTE,1989,5,1,Editor,Adrian Marshall,Adrian,,Marshall,United Kingdom,NA,EIC,NA,146,EspinDryad,Adrian,Green,Marshall,University of Aberdeen,Department of Zoology,Aberdeen,Scotland,United Kingdom,SciWri17,middle_name
+151,JECOL,1985,73,1,SE,J Grace,J,,Grace,United Kingdom,M,SE,probJohnGraceUofEdinborough,3892,ChoDryad,James ,B.,Grace,NA,NA,Baton Rouge,Louisiana,USA,SciWri17,middle_name
+143,AGRONOMY,2011,103,1,SE,Johnathon Holman,Johnathon,,Holman,USA,M,SE,NA,1642,ChoDryad,Johnathon,D,Holman,Kansas State University,SW Research Extension Center,Garden City,Kansas,USA,SciWri17,middle_name
+144,AGRONOMY,2012,104,1,SE,Johnathon Holman,Johnathon,,Holman,USA,M,SE,NA,1642,ChoDryad,Johnathon,D,Holman,Kansas State University,SW Research Extension Center,Garden City,Kansas,USA,SciWri17,middle_name
+145,AGRONOMY,2013,105,1,SE,Johnathon Holman,Johnathon,,Holman,USA,M,SE,NA,1642,ChoDryad,Johnathon,D,Holman,Kansas State University,SW Research Extension Center,Garden City,Kansas,USA,SciWri17,middle_name
+146,CONBIO,1999,13,1,SE,MarthaJ Groom,MarthaJ,,Groom,USA,F,SE,NA,2390,ChoDryad,Martha,J,Groom,University of Washington,NA,Seattle,Washington,USA,SciWri17,middle_name
+147,CONBIO,2000,14,1,SE,MarthaJ Groom,MarthaJ,,Groom,USA,F,SE,NA,2390,ChoDryad,Martha,J,Groom,NA,NA,NA,NA,USA,SciWri17,middle_name
+148,CONBIO,2001,15,1,SE,MarthaJ Groom,MarthaJ,,Groom,USA,F,SE,NA,2390,ChoDryad,Martha,J,Groom,NA,NA,NA,NA,USA,SciWri17,middle_name
+149,CONBIO,2002,16,1,SE,MarthaJ Groom,MarthaJ,,Groom,USA,F,SE,NA,2390,ChoDryad,Martha,J,Groom,NA,NA,NA,NA,USA,SciWri17,middle_name
+150,CONBIO,2003,17,1,SE,MarthaJ Groom,MarthaJ,,Groom,USA,F,SE,NA,2390,ChoDryad,Martha,J,Groom,NA,NA,NA,NA,USA,SciWri17,middle_name
+159,AGRONOMY,1985,77,1,Associate.Editor,C C King,C,C,King,USA,NA,SE,,495,EspinDryad,C,Cooper,King,NA,NA,Leighton,Alabama,USA,SciWri17,middle_name
+160,AGRONOMY,1985,77,1,Associate.Editor,H D Skipper,H,D,Skipper,USA,NA,SE,,1363,EspinDryad,Horace,Dean,Skipper,Clemson University,"Ent., Soils, & Pl Sciences",Clemson,South Carolina,USA,SciWri17,middle_name
+161,AGRONOMY,1985,77,1,Associate.Editor,L R Nelson,L,R,Nelson,USA,NA,SE,,2214,EspinDryad,L,A,Nelson,North Carolina State University,NA,Raleigh,North Carolina,USA,SciWri17,middle_name
+162,AGRONOMY,1985,77,1,Associate.Editor,L A Nelson,L,A,Nelson,USA,NA,SE,,2214,EspinDryad,L,R,Nelson,Texas A & M University,NA,College Station,Texas,USA,SciWri17,middle_name
+163,AGRONOMY,1986,78,1,Associate.Editor,C C King,C,C,King,USA,NA,SE,,495,EspinDryad,C,Cooper,King,NA,NA,Leighton,Alabama,USA,SciWri17,middle_name
+164,AGRONOMY,1986,78,1,Associate.Editor,L R Nelson,L,R,Nelson,USA,NA,SE,,2214,EspinDryad,L,A,Nelson,North Carolina State University,NA,Raleigh,North Carolina,USA,SciWri17,middle_name
+165,AGRONOMY,1986,78,1,Associate.Editor,L A Nelson,L,A,Nelson,USA,NA,SE,,2214,EspinDryad,L,R,Nelson,Texas A & M University,NA,College Station,Texas,USA,SciWri17,middle_name

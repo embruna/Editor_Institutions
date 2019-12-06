@@ -37,7 +37,7 @@ clean_JBIOG <- function(DATAFILE) {
   
   DATAFILE<-bind_rows(DATAFILE_remainder,DATAFILE_1row)
   head(DATAFILE,70)
-  DATAFILE<-DATAFILE %>% arrange(editor_id,YEAR) %>% fill(INST) %>% rename("TITLE"="TITLE.x")
+  DATAFILE<-DATAFILE %>% arrange(editor_id,YEAR) %>% fill(INST,.direction="down") %>% rename("TITLE"="TITLE.x")
   head(DATAFILE,10)
   DATAFILE<-DATAFILE %>% arrange(YEAR,LAST_NAME,FIRST_NAME)
   

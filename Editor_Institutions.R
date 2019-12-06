@@ -84,6 +84,7 @@ for (i in 1:length(file_list)){
          read.csv(paste(folder, file_list[i], sep=''),
                   na.strings = c("","NA"), encoding = "ASCII")
   )}
+rm(folder,file_list,i)
 ################################################
 # UPLOAD AND STANDARDIZE AUK AND CONDOR COLLECTED BY Hurtado (MALAS RA) 
 ################################################
@@ -96,6 +97,7 @@ for (i in 1:length(file_list)){
          read.csv(paste(folder, file_list[i], sep=''),
                   na.strings = c("","NA"), encoding = "ASCII")
   )}
+rm(folder,file_list,i)
 ##############################################################
 ##############################################################
 # CLEAN-UP BY JOURNAL
@@ -376,9 +378,20 @@ ALLDATA<-ALLDATA %>% select(-OLD_INST)
 # COrrecting the country and institition where Editors is based
 ##############################################################
 
+ALLDATA$INST<-as.factor(ALLDATA$INST)
+levels(ALLDATA$INST) <- c(levels(ALLDATA$INST),"University of Missouri Columbia",
+                          "CNRS Centre dEcologie Fonctionnelle et Evolutive",
+                          "Forestry and Forest Products Research Institute",
+                          "University of Minnesota Duluth",
+                          "University of Minnesota Crookston",
+                          "State University of New York College of Environmental Science and Forestry",
+                          "Calyx, Inc.","University of North Carolina Charlotte",
+                          "Smithsonian National Museum of Natural History",
+                          "Smithsonian National Zoological Park")
 
-levels(ALLDATA$INST) <- c(levels(ALLDATA$INST),"University of Missouri Columbia")
-levels(ALLDATA$INST) <- c(levels(ALLDATA$INST),"University of Toronto Mississauga")
+
+
+levels(ALLDATA$INST) <- c(levels(ALLDATA$INST),"University of Toronto Mississauga","Universite Libre de Bruxelles")
 ALLDATA$INST[ALLDATA$LAST_NAME=="Sprules" & ALLDATA$FIRST_NAME=="Gary"]<-"University of Toronto Mississauga"
 ALLDATA$INST[ALLDATA$LAST_NAME=="Wagner" & ALLDATA$FIRST_NAME=="Helene"]<-"University of Toronto Mississauga"
 ALLDATA$INST[ALLDATA$LAST_NAME=="Kotanen" & ALLDATA$FIRST_NAME=="Peter"]<-"University of Toronto Mississauga"
@@ -388,7 +401,7 @@ ALLDATA$INST[ALLDATA$LAST_NAME=="Renner" & ALLDATA$FIRST_NAME=="Susanne"]<-"Univ
 ALLDATA$INST[ALLDATA$LAST_NAME=="Sork" & ALLDATA$FIRST_NAME=="Victoria"]<-"University of Missouri St Louis"
 ALLDATA$INST[ALLDATA$LAST_NAME=="Parmentier"]<-"Universite Libre de Bruxelles"
 ALLDATA$INST[ALLDATA$LAST_NAME=="Debussche"]<-"CNRS Centre dEcologie Fonctionnelle et Evolutive"
-levels(ALLDATA$INST) <- c(levels(ALLDATA$INST),"Forestry and Forest Products Research Institute","University of Minnesota Duluth","University of Minnesota Crookston")
+# levels(ALLDATA$INST) <- c(levels(ALLDATA$INST),"Forestry and Forest Products Research Institute","University of Minnesota Duluth","University of Minnesota Crookston")
 ALLDATA$INST[ALLDATA$LAST_NAME=="Fujimori"]<-"Forestry and Forest Products Research Institute"
 ALLDATA$INST[ALLDATA$LAST_NAME=="Johnson" & ALLDATA$FIRST_NAME=="Lucinda"]<-"University of Minnesota Duluth"
 ALLDATA$INST[ALLDATA$LAST_NAME=="Moen" & ALLDATA$FIRST_NAME=="Ron"]<-"University of Minnesota Duluth"
@@ -399,11 +412,12 @@ ALLDATA$INST[ALLDATA$LAST_NAME=="Sims" & ALLDATA$FIRST_NAME=="Albert"]<-"Univers
 ALLDATA$INST[ALLDATA$JOURNAL=="AMNAT" & ALLDATA$LAST_NAME=="Case"]<-"University of California San Diego"
 ALLDATA$INST[ALLDATA$LAST_NAME=="Noon"]<-"Colorado State University"
 ALLDATA$COUNTRY[ALLDATA$LAST_NAME=="VanDerHeijden"]<-"Switzerland"
-levels(ALLDATA$INST) <- c(levels(ALLDATA$INST),"State University of New York College of Environmental Science and Forestry")
+# levels(ALLDATA$INST) <- c(levels(ALLDATA$INST),"State University of New York College of Environmental Science and Forestry")
 ALLDATA$INST[ALLDATA$LAST_NAME=="Burgess"]<-"State University of New York College of Environmental Science and Forestry"
 ALLDATA$INST[ALLDATA$LAST_NAME=="Fragoso"]<-"State University of New York College of Environmental Science and Forestry"
 ALLDATA$INST[ALLDATA$LAST_NAME=="Yanai"]<-"State University of New York College of Environmental Science and Forestry"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Hall" & ALLDATA$FIRST_NAME=="Charles" & ALLDATA$JOURNAL=="CONBIO"]<-"State University of New York College of Environmental Science and Forestry"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Hall" & ALLDATA$FIRST_NAME=="Charles" & ALLDATA$JOURNAL=="CONBIO"]<-
+  "State University of New York College of Environmental Science and Forestry"
 ALLDATA$INST[ALLDATA$INST=="University of Missouri"]<-"University of Missouri Columbia" 
 ALLDATA$COUNTRY[ALLDATA$LAST_NAME=="Bieber"]<-"Austria"
 ALLDATA$COUNTRY[ALLDATA$FIRST_NAME=="Jeannine" & ALLDATA$LAST_NAME=="Cavender-Bares"]<-"USA"
@@ -411,12 +425,28 @@ ALLDATA$INST[ALLDATA$JOURNAL=="AMNAT" & ALLDATA$LAST_NAME=="Case"]<-"University 
 ALLDATA$INST[ALLDATA$LAST_NAME=="Noon"]<-"Colorado State University"
 ALLDATA$COUNTRY[ALLDATA$LAST_NAME=="VanDerHeijden"]<-"Switzerland"
 ALLDATA$INST[ALLDATA$LAST_NAME=="Bowers" & ALLDATA$CITY=="Vadnais Heights"]<-"Calyx, Inc."
+ALLDATA$INST[ALLDATA$LAST_NAME=="Debussche"]<-"CNRS Centre dEcologie Fonctionnelle et Evolutive"
+ALLDATA$COUNTRY[ALLDATA$LAST_NAME=="Gandon"]<-"France"
+ALLDATA$FIRST_NAME[ALLDATA$LAST_NAME=="MONOD"]<-"Theodore"
+ALLDATA$LAST_NAME[ALLDATA$LAST_NAME=="MONOD"]<-"Monod"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Whitmore"]<-"University of Oxford"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Hails"]<-"University of Oxford"
+ALLDATA$UNIT[ALLDATA$LAST_NAME=="Whitmore"]<-"Oxford Forestry Institute"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Leamy"]<-"University of North Carolina Charlotte"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Gustafson"& ALLDATA$FIRST_NAME=="E"]<-"US Forest Service"
+ALLDATA$UNIT[ALLDATA$LAST_NAME=="Gustafson"& ALLDATA$FIRST_NAME=="E"]<-"North Central Research Station"
+ALLDATA$COUNTRY[ALLDATA$LAST_NAME=="Westing"&ALLDATA$FIRST_NAME=="Arthur"]<-"Sweden"
+ALLDATA$COUNTRY[ALLDATA$LAST_NAME=="Galdon"&ALLDATA$FIRST_NAME=="Luis"]<-"Spain"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Labandeira"& ALLDATA$FIRST_NAME=="Conrad"]<-"Smithsonian National Museum of Natural History"
+ALLDATA$INST[ALLDATA$LAST_NAME=="SEIDENSTZICKER"& ALLDATA$FIRST_NAME=="JOHN"]<-"Smithsonian National Zoological Park"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Kleiman"& ALLDATA$FIRST_NAME=="Devra"]<-"Smithsonian National Zoological Park"
+
 
 ##########################
 # Clean Up Institutions and countries
 ##########################
 # head(ALLDATA,10)
-source("institution_cleaner.R")
+source("functions_data_cleaning/institution_cleaner.R")
 ALLDATA<-institution_cleaner(ALLDATA)
 
 
@@ -488,93 +518,43 @@ ALLDATA$JOURNAL<-as.factor(ALLDATA$JOURNAL)
 
 
 
-##############################################################
-# SAVE THE FILE AS A CSV FOR MANUAL REVIEW
-##############################################################
-UNI_LIST<-ALLDATA %>% select(INST,COUNTRY) %>% arrange(COUNTRY,INST)
-UNI_LIST<-unique(UNI_LIST)
 
-head(UNI_LIST,100)
-write.csv(UNI_LIST, file="./output_review/uniNameList.csv", row.names = T) #export it as a csv file
-
-##############################################################
-# AFTER MANUAL REVIEW, UPLOAD THE CORRECTIONS AND INCORPORATE THEM
-##############################################################
-corrections1<-read.csv("./output_review/uniNameList_corrections_only.csv",encoding = "ASCII",stringsAsFactors = FALSE)
-str(corrections1)
-#THIS CHANGES THE UNITS AND INST BASED ON THE CORRECTION IN THE DATAFRAME
-ALLDATA<-left_join(ALLDATA, corrections1,by="INST",copy=TRUE) %>% mutate(INST = ifelse(is.na(INST_CORR), INST, INST_CORR)) %>% mutate(UNIT = ifelse(is.na(UNIT_CORR), UNIT, UNIT_CORR))
-ALLDATA<-ALLDATA %>% select(-INST_CORR,-UNIT_CORR)
-
-##############################################################
-##############################################################
 # FOR SOME REASON SOME DIDN"T CHANGE< SO NEED TO DO MANUALLY
 ##############################################################
 ##############################################################
 
-ALLDATA$INST[ALLDATA$INST=="USU"]<-"Utah State University"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Luque"]<-"Institut national de recherche en sciences et technologies pour lenvironnement et lagriculture"
-ALLDATA$INST[ALLDATA$INST=="<a0>Forestry and Forest Products Research Institute"]<-"Forestry and Forest Products Research Institute"
-ALLDATA$INST[ALLDATA$INST=="<a0>Universit<e9> Claude Bernard Lyon 1"]<-"Universite Claude Bernard Lyon 1" 
-ALLDATA$INST<-gsub("Landscape<a0>Ecology","Landscape Ecology", ALLDATA$INST)
-ALLDATA$INST<-gsub("Universit<8a>t","Universitat", ALLDATA$INST)
-ALLDATA$INST<-gsub("Institue",  "Institute", ALLDATA$INST)
-ALLDATA$INST<-gsub("Univerity",  "University", ALLDATA$INST)
-ALLDATA$INST[ALLDATA$INST=="Canadia Forest Service"]<-"Canadian Forest Service"
-ALLDATA$INST[ALLDATA$INST=="lowa State University"]<-"Iowa State University"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Debussche"]<-"CNRS Centre dEcologie Fonctionnelle et Evolutive"
-ALLDATA$COUNTRY[ALLDATA$LAST_NAME=="Gandon"]<-"France"
-ALLDATA$FIRST_NAME[ALLDATA$LAST_NAME=="MONOD"]<-"Theodore"
-ALLDATA$LAST_NAME[ALLDATA$LAST_NAME=="MONOD"]<-"Monod"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Whitmore"]<-"University of Oxford"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Hails"]<-"University of Oxford"
-ALLDATA$UNIT[ALLDATA$LAST_NAME=="Whitmore"]<-"Oxford Forestry Institute"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Leamy"]<-"University of North Carolina Charlotte"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Gustafson"& ALLDATA$FIRST_NAME=="E"]<-"US Forest Service"
-ALLDATA$UNIT[ALLDATA$LAST_NAME=="Gustafson"& ALLDATA$FIRST_NAME=="E"]<-"North Central Research Station"
-ALLDATA$COUNTRY[ALLDATA$LAST_NAME=="Westing"&ALLDATA$FIRST_NAME=="Arthur"]<-"Sweden"
-ALLDATA$COUNTRY[ALLDATA$LAST_NAME=="Galdon"&ALLDATA$FIRST_NAME=="Luis"]<-"Spain"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Labandeira"& ALLDATA$FIRST_NAME=="Conrad"]<-"Smithsonian National Museum of Natural History"
-ALLDATA$INST[ALLDATA$LAST_NAME=="SEIDENSTZICKER"& ALLDATA$FIRST_NAME=="JOHN"]<-"Smithsonian National Zoological Park"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Kleiman"& ALLDATA$FIRST_NAME=="Devra"]<-"Smithsonian National Zoological Park"
-ALLDATA$INST[ALLDATA$INST=="Syngenta Crop Protection"]<-"Syngenta Crop Protection Inc"
-
 ##############################################################
 # CHANGE THOSE WITH BLANK INST to NA
 ##############################################################
-
 # ALLDATA$INST[ALLDATA$LAST_NAME=="Angeler" & ALLDATA$YEAR>"2011" & ALLDATA$JOURNAL=="JAPE"]<-NA
 ALLDATA$INST[ALLDATA$INST==""]<-NA
 ALLDATA$INST[ALLDATA$INST=="N/A"]<-NA
 ALLDATA$INST[ALLDATA$INST=="."]<-NA
 
-
-
-
-##############################################################
-# SAVE THE FILE AS A CSV FOR MANUAL REVIEW AGAIN
-##############################################################
-UNI_LIST2<-ALLDATA %>% select(INST,COUNTRY) %>% arrange(COUNTRY,INST)
-UNI_LIST2<-UNI_LIST2[!is.na(UNI_LIST2$INST),]
-head(UNI_LIST2,20)
-levels(UNI_LIST2$COUNTRY)<-c(levels(UNI_LIST2$COUNTRY),"missing")
-UNI_LIST2$COUNTRY[is.na(UNI_LIST2$COUNTRY)]<-"missing"
-UNI_LIST2<-UNI_LIST2 %>% group_by(INST,COUNTRY) %>% summarize(count=n())
-
-write.csv(UNI_LIST2, file="./output_review/uniNameList2.csv", row.names = T) #export it as a csv file
+# ##############################################################
+# # SAVE THE FILE AS A CSV FOR MANUAL REVIEW AGAIN
+# ##############################################################
+# UNI_LIST2<-ALLDATA %>% select(INST,COUNTRY) %>% arrange(COUNTRY,INST)
+# UNI_LIST2<-UNI_LIST2[!is.na(UNI_LIST2$INST),]
+# head(UNI_LIST2,20)
+# levels(UNI_LIST2$COUNTRY)<-c(levels(UNI_LIST2$COUNTRY),"missing")
+# UNI_LIST2$COUNTRY[is.na(UNI_LIST2$COUNTRY)]<-"missing"
+# UNI_LIST2<-UNI_LIST2 %>% group_by(INST,COUNTRY) %>% summarize(count=n())
+# 
+# write.csv(UNI_LIST2, file="./output_review/uniNameList2.csv", row.names = T) #export it as a csv file
 
 
 
 ##############################################################
 # NOW UPLOAD CORRECTIONS
 ##############################################################
-
-corrections2<-read.csv("./output_review/uniNameList_corrections2.csv",encoding = "ASCII",stringsAsFactors = FALSE)
-str(corrections2)
-#THIS CHANGES THE UNITS AND INST BASED ON THE CORRECTION IN THE DATAFRAME
-ALLDATA2<-left_join(ALLDATA, corrections2,by=c("INST","COUNTRY"),copy=TRUE) %>% mutate(INST = ifelse(is.na(INST_CORR), INST, INST_CORR)) %>% mutate(UNIT = ifelse(is.na(UNIT_CORR), UNIT, UNIT_CORR)) %>% mutate(COUNTRY = ifelse(is.na(COUNTRY_CORR), COUNTRY, COUNTRY_CORR))
-ALLDATA<-ALLDATA2 %>% select(-INST_CORR,-UNIT_CORR,-COUNTRY_CORR)
-rm(ALLDATA2)
+# 
+# corrections2<-read.csv("./output_review/uniNameList_corrections2.csv",encoding = "ASCII",stringsAsFactors = FALSE)
+# str(corrections2)
+# #THIS CHANGES THE UNITS AND INST BASED ON THE CORRECTION IN THE DATAFRAME
+# ALLDATA2<-left_join(ALLDATA, corrections2,by=c("INST","COUNTRY"),copy=TRUE) %>% mutate(INST = ifelse(is.na(INST_CORR), INST, INST_CORR)) %>% mutate(UNIT = ifelse(is.na(UNIT_CORR), UNIT, UNIT_CORR)) %>% mutate(COUNTRY = ifelse(is.na(COUNTRY_CORR), COUNTRY, COUNTRY_CORR))
+# ALLDATA<-ALLDATA2 %>% select(-INST_CORR,-UNIT_CORR,-COUNTRY_CORR)
+# rm(ALLDATA2)
 
 
 ##############################################################
@@ -588,32 +568,36 @@ rm(ALLDATA2)
 # ADD AND PATRICK JAMES CORRECTIONS
 ##############################
 ##############################
+source("functions_data_cleaning/JamesCorrections.R")
+ALLDATA<-JamesCorrections(ALLDATA)
 
 
 
+##############################################################
+# SAVE THE FILE AS A CSV FOR MANUAL REVIEW
+##############################################################
+INST_LIST<-ALLDATA %>% select(INST,COUNTRY) %>% arrange(COUNTRY,INST)
+INST_LIST<-unique(INST_LIST)
 
+head(INST_LIST,100)
+nrow(INST_LIST)/2
+one<-INST_LIST %>% slice((1:((nrow(INST_LIST)/2))))
+two<-INST_LIST %>% slice(-(1:((nrow(INST_LIST)/2)))) 
+bound<-bind_cols(one,two)
+write.csv(bound, file="./output_review/InstNameList.csv", row.names = T) #export it as a csv file
+rm(bound,one,two)
 
+############
+# TODO: CHANGE THESE
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# ALLDATA$INST<-gsub("Landscape<a0>Ecology","Landscape Ecology", ALLDATA$INST)
+# ALLDATA$INST<-gsub("Universit<8a>t","Universitat", ALLDATA$INST)
+# "<a0>Universit<e9> Claude Bernard Lyon 1"
+# "Universit<e9> de Montr<e9>al"
+# "Universit<e9> du Quebec"
+# "Laboratoire Associe de Modelisation des Plantes<a0>(AMAP)"
+# "Universidad Nacional Aut<a2>noma de M<82>xico"
+# "L<9f>neburg"
 
 
 

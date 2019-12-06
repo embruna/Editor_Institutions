@@ -25,7 +25,7 @@ clean_PLANTECOL <- function(DATAFILE) {
   # to be double checked
   DATAFILE_fixes<-DATAFILE %>% group_by(editor_id,INST) %>% distinct(editor_id,INST) %>% distinct(editor_id)
   head(DATAFILE,10)
-  DATAFILE<-DATAFILE %>% fill(INST) %>% rename("TITLE"="TITLE.x")
+  DATAFILE<-DATAFILE %>% fill(INST,.direction="down") %>% rename("TITLE"="TITLE.x")
   head(DATAFILE,10)
   ##
   # code to generate the list of which ones need to be 2x or have missing names is in 

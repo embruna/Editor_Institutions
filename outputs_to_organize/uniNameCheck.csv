@@ -1,0 +1,936 @@
+index,Name1,Name2,Name_sim,Name_dist
+125,Instituto Nacional de Pesquisas da Amazonia INPA,Instituto Nacional de Pesquisas da Amazonia-INPA,0.98,1
+37,California State University Dominguez Hills,California State University-Dominguez Hills,0.98,1
+382,Universidad Nacaional Autonoma de Mexico,Universidad Nacional Autonoma de Mexico,0.98,1
+832,Xishuangbanna Tropical Botanical Garden,Xishuangbanna Tropical Botannical Garden,0.98,1
+621,University of Massachusetts Amherst,University of Massachusetts-Amherst,0.97,1
+47,Commonwealth Scientific and Industrial Research Organisation (CSIRO),Commonwealth Scientific and Industrial Research Organisation CSIRO,0.97,2
+472,University of California--Berkeley,University of California-Berkeley,0.97,1
+474,University of California-Berkeley,University of California-Berkely,0.97,1
+265,Netherlands Institue of Ecology,Netherlands Institute of Ecology,0.97,1
+809,Virginia Commonwealth University,Virginia Commonweath University,0.97,1
+456,University of British Colombia,University of British Columbia,0.97,1
+491,University of Colorado Boulder,University of Colorado-Boulder,0.97,1
+19,Archbold Biological Station,Archibold Biological Station,0.96,1
+182,Louisiana State University,Louisisana State University,0.96,1
+183,Louisiana State University,Lousiana State University,0.96,1
+29,Brigham Young University,Bringham Young University,0.96,1
+492,University of Connecticut,University of Connetticut,0.96,1
+352,Smithosonian Institution,Smithsonian Institution,0.96,1
+162,kansas State University,Kansas State University,0.96,1
+390,Universite de Montreal,"Universite de Montreal""",0.96,1
+623,University of Melbourne,Unversity of Melbourne,0.96,1
+660,University of Sao Paolo,University of Sao Paulo,0.96,1
+719,University of Wuerzburg,University of Wurzburg,0.96,1
+584,University of illinois,University of Illinois,0.95,1
+145,Iowa State University,lowa State University,0.95,1
+75,CSIRO Plant Industry,CSIRO-Plant Industry,0.95,1
+100,Griffith University,"Griffith University,",0.95,1
+830,Wesleyan University,Westleyan University,0.95,1
+46,Columbia Universily,Columbia University,0.95,1
+176,La Trobe University,LaTrobe University,0.95,1
+268,no one by this name,No one by this name,0.95,1
+380,Univerity of Utah,University of Utah,0.94,1
+355,Southeast Missouri State University,Southwest Missouri State University,0.94,2
+622,University of Massachusetts-Boston,"University of Massachusetts, Boston",0.94,2
+473,University of California--Berkeley,University of California-Berkely,0.94,2
+810,Virginia Polytechnic Institute & State University,Virginia Polytechnic Institute and State University,0.94,3
+591,University of Illinois-Chicago,"University of Illinois, Chicago",0.94,2
+24,Austrailan National University,Australian National University,0.93,2
+271,North Dakota State University,South Dakota State University,0.93,2
+111,Indian Institue of Science,Indian Institute of Sciences,0.93,2
+173,King's College,King'S College,0.93,1
+83,Eastern Michigan University,Western Michigan University,0.93,2
+184,Louisisana State University,Lousiana State University,0.93,2
+817,Washington State University,Washington State Univesrity,0.93,2
+818,Washington State University,Washington State Unviersity,0.93,2
+639,University of Nevada-Reno,"University of Nevada, Reno",0.92,2
+645,University of North Dakota,University of South Dakota,0.92,2
+38,Canadian Forest Service,Canadian Forestry Service,0.92,2
+225,Michigan State University,Mighican State University,0.92,2
+272,Northeastern University,Northwestern University,0.91,2
+85,Environmental Protection Agency,US Environmental Protection Agency,0.91,3
+496,University of Freiburg,University of Fribourg,0.91,2
+831,Xishuangbanna Tropical Botanical Garden,"Xishuangbanna Tropical Botanical Garden,CAS",0.91,4
+17,Agriculture & Agri-Food Canada,Agriculture and Agri-Food Canada,0.91,3
+503,University of Hamburg,University of Marburg,0.90,2
+425,University of Bergen,University of Bern,0.90,2
+601,University of Leiden,University of Leuven,0.90,2
+123,Instituto Nacional de Pesquisas da Amazonia,Instituto Nacional de Pesquisas da Amazonia INPA,0.90,5
+124,Instituto Nacional de Pesquisas da Amazonia,Instituto Nacional de Pesquisas da Amazonia-INPA,0.90,5
+665,University of Tartu,University of Turku,0.89,2
+388,Universite de Montpellier II,Universite Montpellier II,0.89,3
+27,Beijing Forestry University,Nanjing Forestry University,0.89,3
+269,North Arizona University,Northern Arizona University,0.89,3
+360,Swiss Federal Research Institute,Swiss Federal Research Institute Wsl,0.89,4
+361,Swiss Federal Research Institute,WSL Swiss Federal Research Institute,0.89,4
+428,University of Bern,University of Bonn,0.89,2
+653,University of Oslo,University of Oulu,0.89,2
+344,Royal Veterinary and Agricultural University,Royal Veterinary&Agricultural University,0.89,5
+270,North Carolina A&T State University,North Carolina State University,0.89,4
+414,University of Alabama in Huntsville,University of Alabama-Huntsville,0.89,4
+833,"Xishuangbanna Tropical Botanical Garden,CAS",Xishuangbanna Tropical Botannical Garden,0.88,5
+26,Bangor University,Baylor University,0.88,2
+41,Centre d'Ecologie Fonctionelle et Evolutive,Centre d'Ecologie Fonctionnelle et Evolutive-CNRS,0.88,6
+30,Brock University,Brown University,0.88,2
+392,Universite de Sherbrooke,University of Sherbrooke,0.88,3
+475,University of California-Berkely,University of California-Merced,0.88,4
+612,University of Manchester,University of Rochester,0.88,3
+88,Florida Institute of Technology,Georgia Institute of Technology,0.87,4
+476,University of California-Davis,University of California-Irvine,0.87,4
+48,Consejo Superior de Investigaciones Cientificas,Consejo Superior de Investigaciones Cientificas (CSIC),0.87,7
+354,Smithsonian Institute,Smithsonian Institution,0.87,3
+500,University of Gottingen,University of Groningen,0.87,3
+631,University of Minnesota,Unversity of Minnestoa,0.87,3
+666,University of Tennessee,versity of Tennessee,0.87,3
+107,Idaho State University,Utah State University,0.86,3
+384,Universite de Lausanne,University of Lausanne,0.86,3
+424,University of Arkansas,University of Kansas,0.86,3
+504,University of Hamburg,University of Salzburg,0.86,3
+614,University of Marburg,University of Salzburg,0.86,3
+615,University of Marburg,University of Wurzburg,0.86,3
+659,University of Salzburg,University of Wurzburg,0.86,3
+121,Institute of Ecosystem Studies,Cary Institute of Ecosystem Studies,0.86,5
+363,Syngenta Crop Protection,Syngenta Crop Protection Inc,0.86,4
+411,University of Alabama,University of Alaska,0.86,3
+484,University of College,University College,0.86,3
+673,University of Toronto,University of Tromso,0.86,3
+429,University of Bern,University of Bremen,0.85,3
+600,University of Leeds,University of Leiden,0.85,3
+655,University of Otago,University of Oregon,0.85,3
+662,University of Tartu,University of Aarhus,0.85,3
+22,Ashoka Trust for Research in Ecology and the Environment,Ashoka Trust for Research in Ecology and the Environment Bangalore,0.85,10
+479,University of California-Merced,University of California-Berkeley,0.85,5
+507,University of Hawaii-Hilo,University of Hawaii-Manoa,0.85,4
+480,University of California-Santa Cruz,University of California-Santa Barbara,0.84,6
+604,University of Lund,University of Leeds,0.84,3
+658,University of Oulu,University of Tulsa,0.84,3
+701,University of Utah,University of Idaho,0.84,3
+702,University of Utah,University of Otago,0.84,3
+736,University of York,University of Turku,0.84,3
+78,Desert Research Institute,Forest Research Institute,0.84,4
+90,Florida State University,Colorado State University,0.84,4
+43,China Agricultural University,Nanjing Agricultural University,0.84,5
+194,lowa State University,Florida State University,0.83,4
+353,Smithsonian Institute,Smithosonian Institution,0.83,4
+481,University of Canberra,University of Canterbury,0.83,4
+501,University of Gottingen,University of Nottingham,0.83,4
+538,University of Ife,University of Iowa,0.83,3
+576,University of Ife,University of Umea,0.83,3
+693,University of Ulm,University of Umea,0.83,3
+696,University of Ulm,University of Utah,0.83,3
+699,University of Umea,University of Utah,0.83,3
+322,Penn State University,Oregon State University,0.83,4
+370,Texas State University,kansas State University,0.83,4
+371,Texas State University,Kansas State University,0.83,4
+477,University of California-Irvine,University of California-Riverside,0.82,6
+478,University of California-Merced,University of California--Berkeley,0.82,6
+140,Iowa State University,Idaho State University,0.82,4
+284,Ohio State University,Idaho State University,0.82,4
+328,Penn State University,Wayne State University,0.82,4
+807,Utah State University,Texas State University,0.82,4
+400,University of Agricultural Sciences,Swedish University of Agricultural Sciences,0.81,8
+243,Moi University,Miami University,0.81,3
+924,York University,Brock University,0.81,3
+926,York University,Clark University,0.81,3
+927,York University,Emory University,0.81,3
+151,Iowa State University,Ohio State University,0.81,4
+208,lowa State University,Ohio State University,0.81,4
+294,Ohio State University,Utah State University,0.81,4
+407,University of Akron,University of Toronto,0.81,4
+439,University of Bern,University of Vermont,0.81,4
+444,University of Bonn,University of Bologna,0.81,4
+453,University of Bonn,University of Montana,0.81,4
+482,University of Chile,University of Chicago,0.81,4
+483,University of Chile,University of College,0.81,4
+663,University of Tartu,University of Marburg,0.81,4
+703,University of Utah,University of Utrecht,0.81,4
+704,University of Vermont,University of Toronto,0.81,4
+710,University of Wales,University of Salento,0.81,4
+790,Utah State University,Iowa State University,0.81,4
+796,Utah State University,lowa State University,0.81,4
+40,CATIE Center for Tropical Agricultural Research and Education,Center for Tropical Agricultural Research and Education CATIE,0.80,12
+192,lowa State University,Colorado State University,0.80,5
+193,lowa State University,Delaware State University,0.80,5
+209,lowa State University,Oklahoma State University,0.80,5
+223,McMaster University,Lancaster University,0.80,4
+246,Moi University,Ohio University,0.80,3
+398,University College Cork,University College London,0.80,5
+463,University of California,University of California-Davis,0.80,6
+467,University of California,University of California-NCEAS,0.80,6
+505,University of Hawaii,University of Hawaii-Hilo,0.80,5
+595,University of Iowa,University of Hawaii,0.80,4
+605,University of Lund,University of Leiden,0.80,4
+637,University of Nevada,University of Nevada-Reno,0.80,5
+654,University of Oslo,University of Oxford,0.80,4
+707,University of Vigo,University of Vienna,0.80,4
+36,California State University,California State University-Fresno,0.79,7
+619,University of Massachusetts,University of Massachusetts-Boston,0.79,7
+9,Agricultural University,China Agricultural University,0.79,6
+671,University of Texas-Austin,University of Texas-Arlington,0.79,6
+130,Iowa State University,Arizona State University,0.79,5
+138,Iowa State University,Florida State University,0.79,5
+139,Iowa State University,Georgia State University,0.79,5
+146,Iowa State University,Montana State University,0.79,5
+166,kansas State University,Montana State University,0.79,5
+171,Kansas State University,Montana State University,0.79,5
+185,lowa State University,Arizona State University,0.79,5
+196,lowa State University,Georgia State University,0.79,5
+202,lowa State University,Montana State University,0.79,5
+320,Penn State University,Montana State University,0.79,5
+799,Utah State University,Montana State University,0.79,5
+94,French National Institute for Agricultural Research INRA,French National Institute for Agricultural Research Centre de Nancy,0.79,14
+25,Australian National University,ANUTECH Australian National University,0.79,8
+222,Massey University,McMaster University,0.79,4
+308,Oxford University,Stanford University,0.79,4
+383,Universidade Estadual Paulista,Universidade Estadual Paulista (UNESP),0.79,8
+530,University of Ife,University of Ghent,0.79,4
+533,University of Ife,University of Idaho,0.79,4
+541,University of Ife,University of Leeds,0.79,4
+598,University of Iowa,University of Idaho,0.79,4
+626,University of Miami,University of Maine,0.79,4
+931,York University,New York University,0.79,4
+228,Mississippi State Univ,Mississippi State University,0.79,6
+147,Iowa State University,Moscow State University,0.78,5
+203,lowa State University,Moscow State University,0.78,5
+394,University College,University College Cork,0.78,5
+502,University of Hamburg,University of Cambridge,0.78,5
+722,University of Wyoming,University of Groningen,0.78,5
+791,Utah State University,kansas State University,0.78,5
+792,Utah State University,Kansas State University,0.78,5
+42,Charles Darwin University,Charles Darwin University Darwin,0.78,7
+95,Georgia State University,California State University,0.78,6
+362,Swiss Federal Research Institute Wsl,WSL Swiss Federal Research Institute,0.78,8
+519,University of Ife,University of Bern,0.78,4
+464,University of California,University of California-Irvine,0.77,7
+466,University of California,University of California-Merced,0.77,7
+197,lowa State University,Idaho State University,0.77,5
+226,Mississippi State,Mississippi State Univ,0.77,5
+386,Universite de Moncton,Universite de Montreal,0.77,5
+401,University of Agricultural Sciences,University of Agricultural Science Bangalore,0.77,10
+420,University of Alberta,University of Aberdeen,0.77,5
+440,University of Bologna,University of Colorado,0.77,5
+445,University of Bonn,University of Botswana,0.77,5
+609,University of Maine,University of Manitoba,0.77,5
+628,University of Miami,University of Michigan,0.77,5
+651,University of Oslo,University of Oklahoma,0.77,5
+706,University of Vigo,University of Victoria,0.77,5
+708,University of Vigo,University of Virginia,0.77,5
+617,University of Massachusetts,University of Massachusetts Amherst,0.77,8
+618,University of Massachusetts,University of Massachusetts-Amherst,0.77,8
+620,University of Massachusetts,"University of Massachusetts, Boston",0.77,8
+160,Israel Institute of Technology,Technion-Israel Institute of Technology,0.77,9
+458,University of British Columbia,University of British Columbia-Okanagan,0.77,9
+506,University of Hawaii,University of Hawaii-Manoa,0.77,6
+638,University of Nevada,"University of Nevada, Reno",0.77,6
+11,Agricultural University,Kerala Agricultural University,0.77,7
+13,Agricultural University,Punjab Agricultural University,0.77,7
+630,University of Minnesota,University of Minnesota-Duluth,0.77,7
+81,Duke University,Purdue University,0.76,4
+87,Field Museum Of Natural History,Carnegie Museum of Natural History,0.76,8
+298,Open University,Leiden University,0.76,4
+643,University of North Carolina,University of South Carolina-Aiken,0.76,8
+913,Yale University,Tulane University,0.76,4
+933,York University,Oxford University,0.76,4
+450,University of Bonn,University of Joensuu,0.76,5
+606,University of Lund,University of Windsor,0.76,5
+646,University of Oslo,University of Bologna,0.76,5
+676,University of Ulm,University of Alabama,0.76,5
+694,University of Ulm,University of Uppsala,0.76,5
+734,University of York,University of Toronto,0.76,5
+105,Idaho State University,Colorado State University,0.76,6
+137,Iowa State University,Colorado State University,0.76,6
+141,Iowa State University,Illinois State University,0.76,6
+144,Iowa State University,Lousiana State University,0.76,6
+152,Iowa State University,Oklahoma State University,0.76,6
+165,kansas State University,Lousiana State University,0.76,6
+170,Kansas State University,Lousiana State University,0.76,6
+198,lowa State University,Illinois State University,0.76,6
+201,lowa State University,Lousiana State University,0.76,6
+212,lowa State University,Portland State University,0.76,6
+285,Ohio State University,Illinois State University,0.76,6
+323,Penn State University,Portland State University,0.76,6
+632,University of Missouri,University of Mississippi,0.76,6
+803,Utah State University,Oklahoma State University,0.76,6
+821,Wayne State University,Delaware State University,0.76,6
+264,Natural History Museum,Natural History Museum London,0.76,7
+91,Forest Research Institute,Finnish Forest Research Institute,0.76,8
+358,State University of New York,State University of New York-Syracuse,0.76,9
+118,INRA,INTA,0.75,1
+224,Michigan State University,Appalachian State University,0.75,7
+241,Moi University,Kyoto University,0.75,4
+283,Ohio State University,Georgia State University,0.75,6
+310,Penn State University,Arizona State University,0.75,6
+462,University of California,University of California-Berkely,0.75,8
+518,University of Ife,University of Bergen,0.75,5
+520,University of Ife,University of Bremen,0.75,5
+524,University of Ife,University of Exeter,0.75,5
+531,University of Ife,University of Guelph,0.75,5
+542,University of Ife,University of Leiden,0.75,5
+544,University of Ife,University of Leuven,0.75,5
+558,University of Ife,University of Oregon,0.75,5
+579,University of Ife,University of Vienna,0.75,5
+661,University of Stirling,University of Birmingham,0.75,6
+679,University of Ulm,University of Alaska,0.75,5
+695,University of Ulm,University of Urbino,0.75,5
+721,University of Wyoming,University of Birmingham,0.75,6
+723,University of Wyoming,University of Washington,0.75,6
+827,Wayne State University,Montana State University,0.75,6
+869,Yale University,Laval University,0.75,4
+39,Carl-von-Ossietzky University,Carl-von-Ossietzky University Oldenburg,0.74,10
+457,University of British Colombia,University of British Columbia-Okanagan,0.74,10
+12,Agricultural University,Nanjing Agricultural University,0.74,8
+715,University of Wisconsin,University of Wisconsin-Madison,0.74,8
+187,lowa State University,California State University,0.74,7
+494,University of Exeter,University of Exeter Penryn,0.74,7
+737,University of Zurich,University of Zurich-Irchel,0.74,7
+153,Iowa State University,Oregon State University,0.74,6
+210,lowa State University,Oregon State University,0.74,6
+387,Universite de Moncton,"Universite de Montreal""",0.74,6
+449,University of Bonn,University of Hong Kong,0.74,6
+610,University of Maine,University of Minnesota,0.74,6
+751,US Forest Service,"US Forest Service, USDA",0.74,6
+23,Austrailan National University,ANUTECH Australian National University,0.74,10
+570,University of Ife,University of Texas,0.74,5
+489,University of Colorado,University of Colorado Boulder,0.73,8
+490,University of Colorado,University of Colorado-Boulder,0.73,8
+588,University of Illinois,University of Illinois-Chicago,0.73,8
+816,Wageningen University and Research Centre,Wageningen University Research Center-Alterra,0.73,12
+142,Iowa State University,Louisiana State University,0.73,7
+157,Iowa State University,Sao Paulo State University,0.73,7
+163,kansas State University,Louisiana State University,0.73,7
+168,Kansas State University,Louisiana State University,0.73,7
+199,lowa State University,Louisiana State University,0.73,7
+215,lowa State University,Sao Paulo State University,0.73,7
+289,Ohio State University,San Diego State University,0.73,7
+306,Oregon State University,San Diego State University,0.73,7
+669,University of Texas,University of Texas-Austin,0.73,7
+461,University of California,University of California-Berkeley,0.73,9
+499,University of Ghent,University of Kentucky,0.73,6
+627,University of Miami,University of Manitoba,0.73,6
+647,University of Oslo,University of Colorado,0.73,6
+656,University of Oulu,University of Oklahoma,0.73,6
+381,Universidad Catolica de Chile,Pontificia Universidad Catolica de Chile,0.73,11
+819,Washington University,Western Washington University,0.72,8
+375,UFZ Centre for Environmental Research,Helmholtz Centre for Environmental Research-UFZ,0.72,13
+262,Museum National d'Histoire,Museum National d'Histoire Naturelle,0.72,10
+852,Yale University,Colgate University,0.72,5
+914,Yale University,Uppsala University,0.72,5
+282,Ohio State University,Colorado State University,0.72,7
+313,Penn State University,Delaware State University,0.72,7
+317,Penn State University,Lousiana State University,0.72,7
+318,Penn State University,Michigan State University,0.72,7
+319,Penn State University,Mighican State University,0.72,7
+395,University College,University College Dublin,0.72,7
+396,University College,University College London,0.72,7
+795,Utah State University,Lousiana State University,0.72,7
+797,Utah State University,Michigan State University,0.72,7
+798,Utah State University,Mighican State University,0.72,7
+824,Wayne State University,Lousiana State University,0.72,7
+828,Wayne State University,Portland State University,0.72,7
+717,University of Wisconsin,University of Wisconsin-Parkside,0.72,9
+356,State University of New York,State University of New York-Binghamton,0.72,11
+642,University of North Carolina,University of North Carolina-Greensboro,0.72,11
+3,AgResearch,AgResearch Ltd,0.71,4
+389,Universite de Montreal,Universite de Montpellier II,0.71,8
+391,"Universite de Montreal""",Universite de Montpellier II,0.71,8
+404,University of Agriculture,University of Agricultural Sciences,0.71,10
+539,University of Ife,University of Joensuu,0.71,6
+640,University of New England,"University of New England, Armidale",0.71,10
+650,University of Oslo,University of Florida,0.71,6
+682,University of Ulm,University of Alberta,0.71,6
+685,University of Ulm,University of Florida,0.71,6
+686,University of Ulm,University of Hamburg,0.71,6
+697,University of Ulm,University of Utrecht,0.71,6
+590,University of Illinois,"University of Illinois, Chicago",0.71,9
+633,University of Missouri,University of Missouri-Columbia,0.71,9
+634,University of Missouri,University of Missouri-St Louis,0.71,9
+106,Idaho State University,Florida State University,0.71,7
+427,University of Bern,University of Birmingham,0.71,7
+437,University of Bern,University of Peradeniya,0.71,7
+608,University of Maine,University of Manchester,0.71,7
+625,University of Miami,University of Birmingham,0.71,7
+781,Utah State University,Arizona State University,0.71,7
+788,Utah State University,Florida State University,0.71,7
+789,Utah State University,Georgia State University,0.71,7
+229,Moi University,Bangor University,0.71,5
+230,Moi University,Baylor University,0.71,5
+232,Moi University,Boston University,0.71,5
+460,University of California,University of California--Berkeley,0.71,10
+468,University of California,University of California-Riverside,0.71,10
+469,University of California,University of California-San Diego,0.71,10
+922,York University,Bangor University,0.71,5
+923,York University,Baylor University,0.71,5
+132,Iowa State University,California State University,0.70,8
+143,Iowa State University,Louisisana State University,0.70,8
+164,kansas State University,Louisisana State University,0.70,8
+169,Kansas State University,Louisisana State University,0.70,8
+200,lowa State University,Louisisana State University,0.70,8
+277,Ohio State University,California State University,0.70,8
+287,Ohio State University,New Mexico State University,0.70,8
+327,Penn State University,Washington State University,0.70,8
+670,University of Texas,University of Texas-El Paso,0.70,8
+644,University of North Carolina,University of South Carolina-Columbia,0.70,11
+357,State University of New York,State University of New York-Stony Brook,0.70,12
+369,Texas A&M Univ,Texas A&M University,0.70,6
+546,University of Ife,University of Mexico,0.70,6
+548,University of Ife,University of Nevada,0.70,6
+564,University of Ife,University of Regina,0.70,6
+585,University of illinois,University of Illinois-Chicago,0.70,9
+641,University of North Carolina,University of North Carolina-Chapel Hill,0.70,12
+7,Agricultural University,Agricultural University of Norway,0.70,10
+716,University of Wisconsin,University of Wisconsin-Milwaukee,0.70,10
+109,Imperial College,Imperial College London,0.70,7
+406,University of Akron,University of Groningen,0.70,7
+438,University of Bern,University of Tennessee,0.70,7
+451,University of Bonn,University of Minnesota,0.70,7
+455,University of Bonn,University of Tennessee,0.70,7
+566,University of Ife,University of Sheffield,0.70,7
+34,California State University,California State University-Bakersfield,0.69,12
+291,Ohio State University,Sao Paulo State University,0.69,8
+315,Penn State University,Louisiana State University,0.69,8
+324,Penn State University,San Diego State University,0.69,8
+709,University of Waikato,University of Saskatchewan,0.69,8
+793,Utah State University,Louisiana State University,0.69,8
+822,Wayne State University,Louisiana State University,0.69,8
+167,kansas State University,Pennsylvania State University,0.69,9
+172,Kansas State University,Pennsylvania State University,0.69,9
+372,Texas State University,Southwest Texas State University,0.69,10
+471,University of California,University of California-Santa Cruz,0.69,11
+82,Duke University,Syracuse University,0.68,6
+296,Open University,Aberdeen University,0.68,6
+874,Yale University,Marshall University,0.68,6
+934,York University,Stanford University,0.68,6
+6,Agricultural Research Center,US Arid Land Agricultural Research Center,0.68,13
+31,Brock University,Stony Brook University,0.68,7
+122,Institute of Tropical Forestry,International Institute of Tropical Forestry,0.68,14
+435,University of Bern,University of Kentucky,0.68,7
+516,University of Ife,University of Aberdeen,0.68,7
+517,University of Ife,University of Adelaide,0.68,7
+523,University of Ife,University of Delaware,0.68,7
+527,University of Ife,University of Freiburg,0.68,7
+534,University of Ife,University of Illinois,0.68,7
+687,University of Ulm,University of illinois,0.68,7
+688,University of Ulm,University of Illinois,0.68,7
+726,University of York,University of Arkansas,0.68,7
+421,University of Amsterdam,Free University Amsterdam,0.68,8
+447,University of Bonn,University of Connecticut,0.68,8
+448,University of Bonn,University of Connetticut,0.68,8
+629,University of Miami,University of Mississippi,0.68,8
+825,Wayne State University,Michigan State University,0.68,8
+826,Wayne State University,Mighican State University,0.68,8
+195,lowa State University,Fort Valley State University,0.68,9
+276,Ohio State University,Appalachian State University,0.68,9
+780,Utah State University,Appalachian State University,0.68,9
+587,University of illinois,"University of Illinois, Chicago",0.68,10
+8,Agricultural University,Agricultural University Wageningen,0.68,11
+16,Agricultural University,Wageningen Agricultural University,0.68,11
+20,Arizona State University,Arizona State University-West Campus,0.67,12
+77,Desert Research Institute,Finnish Forest Research Institute,0.67,11
+102,Harvard University,Harvard University Herbaria,0.67,9
+148,Iowa State University,New Mexico State University,0.67,9
+174,King's College,King's College London,0.67,7
+205,lowa State University,New Mexico State University,0.67,9
+220,Lund University,Radboud University,0.67,6
+235,Moi University,Clemson University,0.67,6
+236,Moi University,Denison University,0.67,6
+238,Moi University,Hampton University,0.67,6
+242,Moi University,Lanzhou University,0.67,6
+255,Moi University,Waikato University,0.67,6
+297,Open University,Copenhagen University,0.67,7
+316,Penn State University,Louisisana State University,0.67,9
+331,Philipps-University,PhiIipps-University Marburg,0.67,9
+335,Queen's University,Queen's University Kingston,0.67,9
+336,Radboud University,Radboud University Nijmegen,0.67,9
+417,University of Alaska,University of Alaska Fairbanks,0.67,10
+465,University of California,University of California-Los Angeles,0.67,12
+528,University of Ife,University of Georgia,0.67,7
+577,University of Ife,University of Vermont,0.67,7
+636,University of Nevada,University of Nevada-Las Vegas,0.67,10
+711,University of Wales,University of Washington,0.67,8
+744,Unversity of Minnestoa,University of Minnesota-Duluth,0.67,10
+794,Utah State University,Louisisana State University,0.67,9
+808,Utah State University,Washington State University,0.67,9
+823,Wayne State University,Louisisana State University,0.67,9
+10,Agricultural University,Estonian Agricultultural University,0.66,12
+422,University of Amsterdam,VUniversity of University Amsterdam,0.66,12
+718,University of Wisconsin,University of Wisconsin-River Falls,0.66,12
+161,James Cook University,James Cook University Townsville,0.66,11
+342,Royal Botanic Gardens,"Royal Botanic Gardens, Melbourne",0.66,11
+410,University of Alabama,University of Alabama-Huntsville,0.66,11
+150,Iowa State University,North Dakota State University,0.66,10
+158,Iowa State University,South Dakota State University,0.66,10
+207,lowa State University,North Dakota State University,0.66,10
+211,lowa State University,Pennsylvania State University,0.66,10
+216,lowa State University,South Dakota State University,0.66,10
+667,University of Texas,University of Texas at Austin,0.66,10
+668,University of Texas,University of Texas-Arlington,0.66,10
+802,Utah State University,North Dakota State University,0.66,10
+805,Utah State University,South Dakota State University,0.66,10
+155,Iowa State University,San Diego State University,0.65,9
+213,lowa State University,San Diego State University,0.65,9
+419,University of Alaska,University of Saskatchewan,0.65,9
+433,University of Bern,University of Buenos Aires,0.65,9
+731,University of York,University of North Dakota,0.65,9
+485,University of College,University College Cork,0.65,8
+545,University of Ife,University of Melbourne,0.65,8
+569,University of Ife,University of Tennessee,0.65,8
+582,University of Ife,University of Wuerzburg,0.65,8
+683,University of Ulm,University of Amsterdam,0.65,8
+684,University of Ulm,University of Cambridge,0.65,8
+747,US Forest Service,Canadian Forest Service,0.65,8
+338,Rice University,MacQuaire University,0.65,7
+339,Rice University,Macquarie University,0.65,7
+374,Trier University,Macquarie University,0.65,7
+423,University of Arkansas,University of Arkansas-Little Rock,0.65,12
+418,University of Alaska,"University of Alaska, Anchorage",0.65,11
+286,Ohio State University,Mississippi State University,0.64,10
+309,Penn State University,Appalachian State University,0.64,10
+367,Texas A&M,Texas A&M Univ,0.64,5
+811,Vrije Universiteit,Vrije Universiteit Amsterdam,0.64,10
+820,Wayne State University,Appalachian State University,0.64,10
+596,University of Iowa,University of Hawaii-Hilo,0.64,9
+732,University of York,University of North Texas,0.64,9
+32,Brown University,Stony Brook University,0.64,8
+373,Trent University,Wake Forest University,0.64,8
+399,University College Cork,University College of North Wales,0.64,12
+532,University of Ife,University of Helsinki,0.64,8
+540,University of Ife,University of Kentucky,0.64,8
+547,University of Ife,University of Nebraska,0.64,8
+672,University of Toronto,University of Toronto-Mississauga,0.64,12
+714,University of Washington,Victoria University of Wellington,0.64,12
+935,York University,Stony Brook University,0.64,8
+259,Moscow State University,San Francisco State University,0.63,11
+290,Ohio State University,San Francisco State University,0.63,11
+305,Oregon State University,Bowling Green State University,0.63,11
+312,Penn State University,Bowling Green State University,0.63,11
+412,University of Alabama,University of Alaska Fairbanks,0.63,11
+234,Moi University,Carleton University,0.63,7
+379,Umea University,Oklahoma University,0.63,7
+470,University of California,University of California-Santa Barbara,0.63,14
+864,Yale University,Imperial University,0.63,7
+159,Iowa State University,Washington State University,0.63,10
+217,lowa State University,Washington State University,0.63,10
+783,Utah State University,California State University,0.63,10
+33,California State University,California State University Dominguez Hills,0.63,16
+35,California State University,California State University-Dominguez Hills,0.63,16
+493,University of Exeter,University of Exeter in Cornwall,0.63,12
+543,University of Ife,University of Lethbridge,0.63,9
+556,University of Ife,University of New Mexico,0.63,9
+560,University of Ife,University of Peradeniya,0.63,9
+563,University of Ife,University of Queensland,0.63,9
+567,University of Ife,University of Sherbrooke,0.63,9
+652,University of Oslo,"University of Oldenberg,",0.63,9
+657,University of Oulu,"University of Oldenberg,",0.63,9
+692,University of Ulm,"University of Oldenberg,",0.63,9
+154,Iowa State University,Pennsylvania State University,0.62,11
+288,Ohio State University,Pennsylvania State University,0.62,11
+804,Utah State University,Pennsylvania State University,0.62,11
+80,Duke University,Notre Dame University,0.62,8
+175,King'S College,King's College London,0.62,8
+302,Open University,Wageningen University,0.62,8
+340,Rice University,Pepperdine University,0.62,8
+378,Umea University,Notre Dame University,0.62,8
+865,Yale University,Iowa State University,0.62,8
+873,Yale University,lowa State University,0.62,8
+890,Yale University,Notre Dame University,0.62,8
+891,Yale University,Ohio State University,0.62,8
+894,Yale University,Penn State University,0.62,8
+915,Yale University,Utah State University,0.62,8
+929,York University,James Cook University,0.62,8
+99,Georgia State University,California State University-Fresno,0.62,13
+365,Syracuse,SUNY Syracuse,0.62,5
+436,University of Bern,University of Pennsylvania,0.62,10
+446,University of Bonn,University of Buenos Aires,0.62,10
+454,University of Bonn,University of Pennsylvania,0.62,10
+597,University of Iowa,University of Hawaii-Manoa,0.62,10
+149,Iowa State University,North Carolina State University,0.61,12
+206,lowa State University,North Carolina State University,0.61,12
+341,Royal Botanic Gardens,Boyal Botanic Gatdens Edinburgh,0.61,12
+393,"Universite du Quebec""",University du Quebec a Montreal,0.61,12
+413,University of Alabama,"University of Alaska, Anchorage",0.61,12
+720,University of Wurzburg,Leuphana University of Luneburg,0.61,12
+801,Utah State University,North Carolina State University,0.61,12
+227,Mississippi State,Mississippi State University,0.61,11
+314,Penn State University,Fort Valley State University,0.61,11
+385,Universite de Moncton,Universite de Montpellier II,0.61,11
+607,University of Maine,University of Kaiserslautern,0.61,11
+45,CISC,CISRO,0.60,2
+156,Iowa State University,San Francisco State University,0.60,12
+214,lowa State University,San Francisco State University,0.60,12
+249,Moi University,Princeton University,0.60,8
+337,Rice University,Dalhousie University,0.60,8
+376,Umea University,Hiroshima University,0.60,8
+377,Umea University,Kagoshima University,0.60,8
+409,University of Alabama,University of Alabama in Huntsville,0.60,14
+486,University of College,University College Dublin,0.60,10
+487,University of College,University College London,0.60,10
+550,University of Ife,University of Nevada-Reno,0.60,10
+561,University of Ife,University of Puerto Rico,0.60,10
+616,University of Maryland,National University of Ireland,0.60,12
+806,Utah State University,Southwest Texas State University,0.59,13
+301,Open University,Sun Yat-Sen University,0.59,9
+862,Yale University,Idaho State University,0.59,9
+911,Yale University,Texas State University,0.59,9
+920,Yale University,Wayne State University,0.59,9
+191,lowa State University,California State University-Fresno,0.59,14
+92,Forest Research Institute,Forest Research lnstitute Malaysia (FRIM),0.59,17
+402,University of Agriculture,Swedish University of Agricultural Sciences,0.58,18
+321,Penn State University,North Carolina State University,0.58,13
+263,Natural History Museum,"National Natural History Museum, Paris",0.58,16
+521,University of Ife,University of Buenos Aires,0.58,11
+551,University of Ife,"University of Nevada, Reno",0.58,11
+568,University of Ife,University of Stellenbosch,0.58,11
+575,University of Ife,University of Thessaloniki,0.58,11
+405,University of Akron,University of Akron Wayne College,0.58,14
+15,Agricultural University,Royal Veterinary&Agricultural University,0.58,17
+239,Moi University,James Cook University,0.57,9
+256,Moi University,Washington University,0.57,9
+292,Ohio State University,Southeast Missouri State University,0.57,15
+293,Ohio State University,Southwest Missouri State University,0.57,15
+728,University of York,University of North Carolina,0.57,12
+733,University of York,University of Port Elizabeth,0.57,12
+403,University of Agriculture,University of Agricultural Science Bangalore,0.57,19
+434,University of Bern,University of Central Arkansas,0.57,13
+441,University of Bologna,University of Colorado Boulder,0.57,13
+442,University of Bologna,University of Colorado-Boulder,0.57,13
+611,University of Maine,University of Minnesota-Duluth,0.57,13
+237,Moi University,George Mason University,0.57,10
+248,Moi University,Old Dominion University,0.57,10
+866,Yale University,kansas State University,0.57,10
+867,Yale University,Kansas State University,0.57,10
+880,Yale University,Moscow State University,0.57,10
+893,Yale University,Oregon State University,0.57,10
+589,University of Illinois,University of Illinois-Urbana-Champaign,0.56,17
+416,University of Alaska,University of Alabama-Huntsville,0.56,14
+553,University of Ife,University of New England,0.56,11
+136,Iowa State University,California State University-Fresno,0.56,15
+281,Ohio State University,California State University-Fresno,0.56,15
+295,Ohio University,Ohio University-Main Campus,0.56,12
+526,University of Ife,University of Exeter Penryn,0.56,12
+555,University of Ife,University of New Hampshire,0.56,12
+599,University of Iowa,University of KwaZulu-Natal,0.56,12
+613,University of Marburg,PhiIipps-University Marburg,0.56,12
+497,University of Georgia,University of Georgia Marine Institute,0.55,17
+110,Imperial College,Imperial College-Silwood Park,0.55,13
+675,University of Trieste,University of Western Ontario,0.55,13
+713,University of Wales,University of Western Ontario,0.55,13
+253,Moi University,Texas A&M University,0.55,9
+307,Oxford University,Icbs Ufal And Oxford University,0.55,14
+602,University of Lund,Leuphana University of Luneburg,0.55,14
+674,University of Trieste,University of Western Australia,0.55,14
+712,University of Wales,University of Western Australia,0.55,14
+815,Wageningen University and Research Centre,Netherlands Institute of Ecology; Wageningen University and Research Centre,0.55,34
+103,Harvard University,Harvard University Medical School,0.55,15
+252,Moi University,Stony Brook University,0.55,10
+397,University College,University College of North Wales,0.55,15
+724,University of Wyoming,Victoria University of Wellington,0.55,15
+218,Lund University,Brigham Young University,0.54,11
+840,Yale University,Arizona State University,0.54,11
+858,Yale University,Florida State University,0.54,11
+860,Yale University,Georgia State University,0.54,11
+879,Yale University,Montana State University,0.54,11
+97,Georgia State University,California State University-Bakersfield,0.54,18
+559,University of Ife,University of Pennsylvania,0.54,12
+573,University of Ife,University of Texas-Austin,0.54,12
+586,University of illinois,University of Illinois-Urbana-Champaign,0.54,18
+902,Yale University,Sao Paulo State University,0.54,12
+426,University of Bern,Hebrew University of Jerusalem,0.53,14
+452,University of Bonn,University of Minnesota-Duluth,0.53,14
+498,University of Ghent,University of Central Arkansas,0.53,14
+511,University of Ife,National University of Ireland,0.53,14
+594,University of Iowa,National University of Rosario,0.53,14
+648,University of Oslo,University of Colorado Boulder,0.53,14
+649,University of Oslo,University of Colorado-Boulder,0.53,14
+28,Boston University,Boston University Marine Program,0.53,15
+178,Landcare Research,Landcare Research Manaaki Whenua,0.53,15
+180,Landcare Research,Manaaki Whenua Landcare Research,0.53,15
+131,Iowa State University,Arizona State University-West Campus,0.53,17
+186,lowa State University,Arizona State University-West Campus,0.53,17
+14,Agricultural University,Royal Veterinary and Agricultural University,0.52,21
+834,Yale University,Agricultural University,0.52,11
+219,Lund University,Bringham Young University,0.52,12
+853,Yale University,Colorado State University,0.52,12
+854,Yale University,Delaware State University,0.52,12
+863,Yale University,Illinois State University,0.52,12
+872,Yale University,Lousiana State University,0.52,12
+875,Yale University,Michigan State University,0.52,12
+877,Yale University,Mighican State University,0.52,12
+892,Yale University,Oklahoma State University,0.52,12
+896,Yale University,Portland State University,0.52,12
+552,University of Ife,University of New Brunswick,0.52,13
+574,University of Ife,University of Texas-El Paso,0.52,13
+846,Yale University,California State University,0.52,13
+557,University of Ife,University of New South Wales,0.52,14
+581,University of Ife,University of Western Ontario,0.52,14
+408,University of Akron,University of Toronto-Mississauga,0.52,16
+495,University of Exeter,University of Veterinary Medicine,0.52,16
+592,University of Iowa,Agricultural University of Norway,0.52,16
+705,University of Vermont,University of Toronto-Mississauga,0.52,16
+101,Harvard University,Harvard University Arnold Arboretum,0.51,17
+415,University of Alaska,University of Alabama in Huntsville,0.51,17
+189,lowa State University,California State University-Bakersfield,0.51,19
+813,Wageningen University,Wageningen University and Research Centre,0.51,20
+21,ASA-CSSA-SSSA,ASA-CSSA-SSSA Headquarters,0.50,13
+244,Moi University,National Taipei University,0.50,13
+258,Monsanto,Monsanto Company,0.50,8
+260,Museu Nacional,Museum National d'Histoire,0.50,13
+299,Open University,National Taipei University,0.50,13
+311,Penn State University,Arizona State University-West Campus,0.50,18
+333,Queen's U,Queen's University,0.50,9
+430,University of Bern,University of British Colombia,0.50,15
+431,University of Bern,University of British Columbia,0.50,15
+510,University of Ife,Hebrew University of Jerusalem,0.50,15
+512,University of Ife,State University of New York,0.50,14
+535,University of Ife,University of Illinois-Chicago,0.50,15
+549,University of Ife,University of Nevada-Las Vegas,0.50,15
+678,University of Ulm,University of Alabama-Huntsville,0.50,16
+680,University of Ulm,University of Alaska Fairbanks,0.50,15
+689,University of Ulm,University of Illinois-Chicago,0.50,15
+776,USU,USGS,0.50,2
+787,Utah State University,California State University-Fresno,0.50,17
+839,Yale University,Appalachian State University,0.50,14
+859,Yale University,Fort Valley State University,0.50,14
+870,Yale University,Louisiana State University,0.50,13
+900,Yale University,San Diego State University,0.50,13
+912,Yale University,Texas Technical University,0.50,13
+745,US Department of Agriculture,Department of Agriculture and Water Resources,0.49,23
+96,Georgia State University,California State University Dominguez Hills,0.49,22
+98,Georgia State University,California State University-Dominguez Hills,0.49,22
+134,Iowa State University,California State University-Bakersfield,0.49,20
+279,Ohio State University,California State University-Bakersfield,0.49,20
+488,University of College,University College of North Wales,0.48,17
+725,University of York,Agricultural University of Norway,0.48,17
+735,University of York,University of Toronto-Mississauga,0.48,17
+537,University of Ife,"University of Illinois, Chicago",0.48,16
+580,University of Ife,University of Western Australia,0.48,16
+681,University of Ulm,"University of Alaska, Anchorage",0.48,16
+691,University of Ulm,"University of Illinois, Chicago",0.48,16
+84,Emory University,Northern Territory University,0.48,15
+565,University of Ife,University of Rey Juan Carlos,0.48,15
+571,University of Ife,University of Texas at Austin,0.48,15
+572,University of Ife,University of Texas-Arlington,0.48,15
+871,Yale University,Louisisana State University,0.48,14
+886,Yale University,New Mexico State University,0.48,14
+919,Yale University,Washington State University,0.48,14
+844,Yale University,Beijing Normal University,0.48,13
+624,University of Mexico,National Autonomous university of Mexico,0.48,21
+443,University of Bonn,"Royal Holloway, University of London",0.47,19
+603,University of Lund,"Royal Holloway, University of London",0.47,19
+782,Utah State University,Arizona State University-West Campus,0.47,19
+727,University of York,University of Arkansas-Little Rock,0.47,18
+525,University of Ife,University of Exeter in Cornwall,0.47,17
+522,University of Ife,University of Central Arkansas,0.47,16
+814,Wageningen University,Wageningen University Research Center-Alterra,0.47,24
+188,lowa State University,California State University Dominguez Hills,0.47,23
+190,lowa State University,California State University-Dominguez Hills,0.47,23
+251,Moi University,Southern Illinois University,0.46,15
+878,Yale University,Mississippi State University,0.46,15
+907,Yale University,State University of New York,0.46,15
+921,Yale University,Yokohama National University,0.46,15
+245,Moi University,Obafemi Awolowo University,0.46,14
+250,Moi University,Shahid Beheshti University,0.46,14
+330,Pennsylvania,University of Pennsylvania,0.46,14
+677,University of Ulm,University of Alabama in Huntsville,0.46,19
+698,University of Ulm,VUniversity of University Amsterdam,0.46,19
+578,University of Ife,University of Veterinary Medicine,0.45,18
+800,Utah State University,NC Agricultural & Technical State University,0.45,24
+509,University of Ife,Curtin University of Technology,0.45,17
+888,Yale University,North Carolina State University,0.45,17
+368,Texas A&M,Texas A&M University,0.45,11
+851,Yale University,China Agricultural University,0.45,16
+889,Yale University,North Dakota State University,0.45,16
+895,Yale University,Pennsylvania State University,0.45,16
+903,Yale University,South Dakota State University,0.45,16
+932,York University,Northern Territory University,0.45,16
+221,Lund University,Radboud University Nijmegen,0.44,15
+247,Moi University,Ohio University-Main Campus,0.44,15
+459,University of California,"Evolution And Marine Biology, University of California",0.44,30
+755,USGS,USGS/NRII,0.44,5
+133,Iowa State University,California State University Dominguez Hills,0.44,24
+135,Iowa State University,California State University-Dominguez Hills,0.44,24
+278,Ohio State University,California State University Dominguez Hills,0.44,24
+280,Ohio State University,California State University-Dominguez Hills,0.44,24
+508,University of Ife,Ben-Gurion University of the Negev,0.44,19
+785,Utah State University,California State University-Bakersfield,0.44,22
+842,Yale University,Austrailan National University,0.43,17
+843,Yale University,Australian National University,0.43,17
+845,Yale University,Bowling Green State University,0.43,17
+868,Yale University,Kerala Agricultural University,0.43,17
+897,Yale University,Punjab Agricultural University,0.43,17
+901,Yale University,San Francisco State University,0.43,17
+925,York University,Christopher Newport University,0.43,17
+204,lowa State University,NC Agricultural & Technical State University,0.43,25
+325,Penn State University,Virginia Polytechnic Institute & State University,0.43,28
+554,University of Ife,"University of New England, Armidale",0.43,20
+89,Florida International University,Florida International University and Center for Tropical Plant Conservation,0.43,43
+267,Netherlands Institute of Ecology,Netherlands Institute of Ecology; Wageningen University and Research Centre,0.43,43
+583,University of Ife,Victoria University of Wellington,0.42,19
+1,Aberdeen,Aberdeen University,0.42,11
+366,Syracuse,Syracuse University,0.42,11
+529,University of Ife,University of Georgia Marine Institute,0.42,22
+881,Yale University,Nanjing Agricultural University,0.42,18
+928,York University,Icbs Ufal And Oxford University,0.42,18
+257,Moi University,Western Washington University,0.41,17
+329,Pennsylvania,Pennsylvania State University,0.41,17
+266,Netherlands Institue of Ecology,Netherlands Institute of Ecology; Wageningen University and Research Centre,0.41,44
+359,Swiss Federal Institute WSL,"Swiss Federal Institute for Forest, Snow and Landscape Research",0.41,37
+326,Penn State University,Virginia Polytechnic Institute and State University,0.41,30
+700,University of Utah,Ben-Gurion University of the Negev,0.41,20
+829,Wayne State University,Virginia Polytechnic Institute and State University,0.41,30
+850,Yale University,California State University-Fresno,0.41,20
+432,University of Bern,University of British Columbia-Okanagan,0.41,23
+690,University of Ulm,University of Illinois-Urbana-Champaign,0.41,23
+730,University of York,University of North Carolina-Greensboro,0.41,23
+856,Yale University,Florida International University,0.41,19
+906,Yale University,Southwest Texas State University,0.41,19
+930,York University,James Cook University Townsville,0.41,19
+515,University of Ife,State University of New York-Syracuse,0.41,22
+5,Agricultural Research Center,French National Institute for Agricultural Research Centre de Nancy,0.40,40
+729,University of York,University of North Carolina-Chapel Hill,0.40,24
+882,Yale University,National University of Ireland,0.40,18
+883,Yale University,National University of Rosario,0.40,18
+887,Yale University,North Carolina A&T State University,0.40,21
+750,US Forest Service,US Forest Service-Southern Research Station,0.40,26
+784,Utah State University,California State University Dominguez Hills,0.40,26
+786,Utah State University,California State University-Dominguez Hills,0.40,26
+4,Agricultural Research Center,French Agricultural Research Centre for International Development CIRAD,0.39,43
+876,Yale University,Michigan Technological University,0.39,20
+343,Royal Holloway,"Royal Holloway, University of London",0.39,22
+93,Forestry Commission,Forestry Comission Northern Research Station,0.39,27
+536,University of Ife,University of Illinois-Urbana-Champaign,0.38,24
+746,US Fish and Wildlife Service,US Fish & Wildlife Service-National Wetlands Research Center,0.38,37
+112,Indiana University,Indiana University/Purdue University-Fort Wayne,0.38,29
+918,Yale University,Wageningen Agricultural University,0.38,21
+104,Harvard University,Harvard University Museum of Comparative Zoology,0.38,30
+233,Moi University,Boston University Marine Program,0.38,20
+240,Moi University,James Cook University Townsville,0.38,20
+884,Yale University,National University of Singapore,0.38,20
+855,Yale University,Estonian Agricultultural University,0.37,22
+904,Yale University,Southeast Missouri State University,0.37,22
+905,Yale University,Southwest Missouri State University,0.37,22
+2,Aberdeen,University of Aberdeen,0.36,14
+835,Yale University,Agricultural University of Norway,0.36,21
+332,Purdue University,Indiana University/Purdue University-Fort Wayne,0.36,30
+261,Museu Nacional,Museum National d'Histoire Naturelle,0.36,23
+841,Yale University,Arizona State University-West Campus,0.36,23
+513,University of Ife,State University of New York-Binghamton,0.36,25
+848,Yale University,California State University-Bakersfield,0.36,25
+231,Moi University,Ben-Gurion University of the Negev,0.35,22
+836,Yale University,Agricultural University Wageningen,0.35,22
+910,Yale University,State University of New York-Syracuse,0.35,24
+514,University of Ife,State University of New York-Stony Brook,0.35,26
+899,Yale University,Royal Veterinary&Agricultural University,0.35,26
+177,Landcare Research,Danish Forest and Landscape Research Institute,0.35,30
+749,US Forest Service,US Forest Service-Rocky Mountain Research Station,0.35,32
+254,Moi University,VUniversity of University Amsterdam,0.34,23
+838,Yale University,ANUTECH Australian National University,0.34,25
+334,Queen's U,Queen's University Kingston,0.33,18
+349,SLU,USU,0.33,2
+562,University of Ife,University of Quebec in Abitibi-Temiscamingue,0.33,30
+908,Yale University,State University of New York-Binghamton,0.33,26
+748,US Forest Service,US Forest Service-Pacific Southwest Research Station,0.33,35
+847,Yale University,California State University Dominguez Hills,0.33,29
+849,Yale University,California State University-Dominguez Hills,0.33,29
+861,Yale University,Graduate University for Advanced Studies,0.33,27
+909,Yale University,State University of New York-Stony Brook,0.33,27
+179,Landcare Research,Leibniz-Centre for Agricultural Landscape Research,0.32,34
+885,Yale University,NC Agricultural & Technical State University,0.32,30
+898,Yale University,Royal Veterinary and Agricultural University,0.32,30
+303,Open University,Wageningen University and Research Centre,0.32,28
+76,CSIRO Sustainable Ecosystems,Tropical Savannas Management Cooperative Research Centre and CSIRO Sustainable Ecosystems,0.31,61
+635,University of Natal,University of Natural Resources and Applied Life Sciences BOKU,0.31,43
+304,Open University,Wageningen University Research Center-Alterra,0.29,32
+761,USU,US Army,0.29,5
+916,Yale University,Virginia Polytechnic Institute & State University,0.29,35
+812,Wageningen University,Netherlands Institute of Ecology; Wageningen University and Research Centre,0.28,54
+79,Duke University,Indiana University/Purdue University-Fort Wayne,0.28,34
+917,Yale University,Virginia Polytechnic Institute and State University,0.27,37
+664,University of Tartu,University of Natural Resources and Applied Life Sciences BOKU,0.27,45
+57,Cork,Potash Corp,0.27,8
+274,Ohio,Ohio University,0.27,11
+181,Landcare Research,"Swiss Federal Institute for Forest, Snow and Landscape Research",0.25,47
+69,CSIRO,CSIRO Land and Water,0.25,15
+70,CSIRO,CSIRO Plant Industry,0.25,15
+73,CSIRO,CSIRO-Plant Industry,0.25,15
+775,USU,USDA-ARS,0.25,6
+129,INTA,INTA EEA Oliveros,0.24,13
+779,USU,USGS/NRII,0.22,7
+593,University of Iowa,Antioch New England Graduate School and National University of Rwanda,0.22,54
+364,Syracuse,State University of New York-Syracuse,0.22,29
+68,CSIRO,CSIRO Ecosystem Sciences,0.21,19
+72,CSIRO,CSIRO Wildlife & Ecology,0.21,19
+86,ETH Zurich,Eidgenossiche Technische Hochschule (ETH) Zurich,0.21,38
+65,Cork,York University,0.20,12
+273,Ohio,Ohio State University,0.19,17
+837,Yale University,Antioch New England Graduate School and National University of Rwanda,0.19,56
+71,CSIRO,CSIRO Sustainable Ecosystems,0.18,23
+119,INRA,INTA EEA Oliveros,0.18,14
+62,Cork,University College Cork,0.17,19
+300,Open University,Netherlands Institute of Ecology; Wageningen University and Research Centre,0.17,62
+857,Yale University,Florida International University and Center for Tropical Plant Conservation,0.17,62
+51,Cork,Cornell University,0.17,15
+64,Cork,University of York,0.17,15
+50,Cork,Climate Corporation,0.16,16
+55,Cork,New York University,0.16,16
+18,Alterra,Wageningen University Research Center-Alterra,0.16,38
+741,UNL,SUNY Syracuse,0.15,11
+759,USU,SUNY Syracuse,0.15,11
+275,Ohio,Ohio University-Main Campus,0.15,23
+52,Cork,James Cook University,0.14,18
+770,USU,"US Forest Service, USDA",0.13,20
+54,Cork,New York Botanical Garden,0.12,22
+766,USU,US Forest Service,0.12,15
+108,IMEDEA,Instituto mediterraneo de Estudios Avanzados (IMEDEA),0.11,47
+56,Cork,New York Zoological Society,0.11,24
+740,UNL,SUNY at Binghamton,0.11,16
+58,Cork,State University of New York,0.11,25
+753,USGS,USGS Patuxent Wildlife Research Center,0.11,34
+44,CIFOR,Center for International Forestry Research CIFOR,0.10,43
+754,USGS,USGS Western Ecological Research Center,0.10,35
+772,USU,US Geological Survey,0.10,18
+771,USU,US Geological Society,0.10,19
+53,Cork,James Cook University Townsville,0.09,29
+63,Cork,University of Exeter in Cornwall,0.09,29
+61,Cork,State University of New York-Syracuse,0.08,34
+59,Cork,State University of New York-Binghamton,0.08,36
+347,SLU,SUNY Syracuse,0.08,12
+739,UNL,Instituto de Ecologia UNAM,0.08,24
+67,CSIRO,Commonwealth Scientific and Industrial Research Organisation CSIRO,0.08,61
+60,Cork,State University of New York-Stony Brook,0.08,37
+66,CSIRO,Commonwealth Scientific and Industrial Research Organisation (CSIRO),0.07,63
+115,INRA,French National Institute for Agricultural Research INRA,0.07,52
+762,USU,US Department of Agriculture,0.07,26
+765,USU,US Fish and Wildlife Service,0.07,26
+773,USU,US Naval Research Laboratory,0.07,26
+738,UNL,College of Staten Island-CUNY,0.07,27
+116,INRA,Instituto Nacional de Pesquisas da Amazonia INPA,0.06,45
+117,INRA,Instituto Nacional de Pesquisas da Amazonia-INPA,0.06,45
+127,INTA,Instituto Nacional de Pesquisas da Amazonia INPA,0.06,45
+128,INTA,Instituto Nacional de Pesquisas da Amazonia-INPA,0.06,45
+49,Cork,Brazilian Agricultural Research Corporation CIRAD,0.06,46
+345,SLU,Colegio de la Frontera Sur ECOSUR,0.06,31
+756,USU,Colegio de la Frontera Sur ECOSUR,0.06,31
+763,USU,US Environmental Protection Agency,0.06,32
+774,USU,USDA Agricultural Research Service,0.06,32
+752,USGS,Ministry of Agriculture of the USSR,0.06,33
+757,USU,Ministry of Agriculture of the USSR,0.06,33
+74,CSIRO,Tropical Savannas Management Cooperative Research Centre and CSIRO Sustainable Ecosystems,0.06,84
+346,SLU,SUNY at Binghamton,0.06,17
+351,SLU,WSL Swiss Federal Research Institute,0.06,34
+758,USU,SUNY at Binghamton,0.06,17
+120,INRA,International Center for Research in Agroforestry ICRAF,0.05,52
+126,INTA,French National Institute for Agricultural Research INRA,0.05,53
+743,UNL,Universidade Estadual Paulista (UNESP),0.05,36
+777,USU,USGS Patuxent Wildlife Research Center,0.05,36
+778,USU,USGS Western Ecological Research Center,0.05,37
+760,USU,US Arid Land Agricultural Research Center,0.05,39
+742,UNL,Universidade Estadual de Campinas (UNICAMP),0.05,41
+769,USU,US Forest Service-Southern Research Station,0.05,41
+114,INRA,French Agricultural Research Centre for International Development CIRAD,0.04,68
+113,INRA,Brazilian Agricultural Research Corporation CIRAD,0.04,47
+350,SLU,WSL Institute for Snow and Avalanche Research SFL,0.04,47
+768,USU,US Forest Service-Rocky Mountain Research Station,0.04,47
+767,USU,US Forest Service-Pacific Southwest Research Station,0.04,50
+348,SLU,Swiss Federal Institute WSL,0.04,26
+764,USU,US Fish & Wildlife Service-National Wetlands Research Center,0.03,58
