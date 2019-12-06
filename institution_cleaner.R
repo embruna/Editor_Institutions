@@ -24,11 +24,6 @@ institution_cleaner <- function(DATAFILE) {
   # CSIC: Consejo Superior de Investigaciones Científicas
   # U of N Georgia: Gainesville State College merged with N Georgia COllege and State University
   
-  
-  
-  
-  
-  
 DATAFILE$COUNTRY<-as.factor(DATAFILE$COUNTRY)
 levels(DATAFILE$COUNTRY)
 DATAFILE$COUNTRY<-as.character(DATAFILE$COUNTRY)

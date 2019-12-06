@@ -488,328 +488,23 @@ ALLDATA$JOURNAL<-as.factor(ALLDATA$JOURNAL)
 
 
 
-
-# levels(ALLDATA$INST) <- c(levels(ALLDATA$INST),"University of Missouri Columbia")
-ALLDATA$INST[ALLDATA$INST=="University of Missouri"]<-"University of Missouri Columbia"
-
-# ALLDATA$INST<-as.character(ALLDATA$INST)
-ALLDATA$INST<-trimws(ALLDATA$INST, which = "left")
-ALLDATA$INST<-trimws(ALLDATA$INST, which = "right")
-ALLDATA$INST<-gsub("- ", "-", ALLDATA$INST)
-ALLDATA$INST<-gsub(" -", "-", ALLDATA$INST)
-ALLDATA$INST<-gsub(" - ", "-", ALLDATA$INST)
-ALLDATA$INST<-gsub(" at ", "-", ALLDATA$INST)
-ALLDATA$INST<-gsub("The ", "", ALLDATA$INST)
-ALLDATA$INST<-gsub(" Of ", " of ", ALLDATA$INST)
-ALLDATA$INST<-gsub("of California ", "of California-", ALLDATA$INST)
-ALLDATA$INST<-gsub("U ", "University of ", ALLDATA$INST)
-ALLDATA$INST<-gsub("California, ", "California-", ALLDATA$INST)
-ALLDATA$INST<-gsub("U California ", "University of California-", ALLDATA$INST)
-ALLDATA$INST<-gsub("U. of", "University of", ALLDATA$INST)
-ALLDATA$INST<-gsub("Univ. of", "University of", ALLDATA$INST)
-ALLDATA$INST<-gsub("Machigan", "Michigan", ALLDATA$INST)
-ALLDATA$INST<-gsub("N. Prairie", "Northern Prairie", ALLDATA$INST)
-ALLDATA$INST<-gsub("Pacific S.W. Research Station-US Forest Service", "USFS-Pacific Southwest Research Station", ALLDATA$INST)
-ALLDATA$INST<-gsub("N.B.S. ", "USGS-", ALLDATA$INST)
-ALLDATA$INST<-gsub("U.S. ", "US ", ALLDATA$INST)
-ALLDATA$INST<-gsub("Illimois", "Illinois", ALLDATA$INST)
-ALLDATA$INST<-gsub("Univerisity", "University", ALLDATA$INST)
-ALLDATA$INST<-gsub("Univeristy", "University", ALLDATA$INST)
-ALLDATA$INST<-gsub("Univerist", "University", ALLDATA$INST)
-ALLDATA$INST<-gsub("Universit ", "University", ALLDATA$INST)
-ALLDATA$UNIT[ALLDATA$INST=="Pacific S.W. Research Station-US Forest Service"]<-"Pacific S.W. Research Station"
-ALLDATA$INST[ALLDATA$INST=="Pacific S.W. Research Station-US Forest Service"]<-"US Forest Service"
-ALLDATA$INST[ALLDATA$INST=="University fo California Berkeley"]<-"University of California-Berkeley"
-ALLDATA$INST[ALLDATA$INST=="US Geological survey"]<-"US Geological Survey"
-ALLDATA$INST[ALLDATA$INST=="Cal State Bakersfield"]<-"California State University-Bakersfield"
-ALLDATA$INST[ALLDATA$INST=="Universityof Wisconsin-Milwaukee"]<-"University of Wisconsin-Milwaukee"
-ALLDATA$INST[ALLDATA$INST=="Colorado State"]<-"Colorado State University"
-ALLDATA$INST[ALLDATA$INST=="Cornell"]<-"Cornell University"
-ALLDATA$INST[ALLDATA$INST=="East Carolina U"]<-"East Carolina University"
-ALLDATA$INST[ALLDATA$INST=="Florida International U"]<-"Florida International University"
-ALLDATA$INST[ALLDATA$INST=="FSU"]<-"Florida State University"
-ALLDATA$INST[ALLDATA$INST=="Harvard"]<-"Harvard University"
-ALLDATA$INST[ALLDATA$INST=="Illinois State"]<-"Illinois State University"
-ALLDATA$INST[ALLDATA$INST=="Indiana U"]<-"Indiana University"
-ALLDATA$INST[ALLDATA$INST=="Institute of Ecosystem"]<-"Institute of Ecosystem Studies"
-ALLDATA$INST[ALLDATA$INST=="Iowa State"]<-"Iowa State University"
-ALLDATA$INST[ALLDATA$INST=="John Carroll U"]<-"John Carroll University"
-ALLDATA$INST[ALLDATA$INST=="Knoxville"]<-"University of Tennessee"
-ALLDATA$INST[ALLDATA$INST=="Louisiana State"]<-"Louisiana State University"
-ALLDATA$INST[ALLDATA$INST=="Marshall Unin"]<-"Marshall University"
-ALLDATA$INST[ALLDATA$INST=="Miami U"]<-"Miami University"
-ALLDATA$INST[ALLDATA$INST=="Montana State"]<-"Montana State University"
-ALLDATA$INST[ALLDATA$INST=="North Dakota State"]<-"North Dakota State University"
-ALLDATA$INST[ALLDATA$INST=="Ohio State"]<-"Ohio State University"
-ALLDATA$INST[ALLDATA$INST=="Oregon State"]<-"Oregon State University"
-ALLDATA$INST[ALLDATA$INST=="Rensselaer Poly"]<-"Rensselaer Polytechnic Institute"
-ALLDATA$INST[ALLDATA$INST=="Rutgers U"]<-"Rutgers University"
-ALLDATA$INST[ALLDATA$INST=="Stanford"]<-"Stanford University"
-ALLDATA$INST[ALLDATA$INST=="State University of New York at Binghamton"]<-"SUNY at Binghamton"
-ALLDATA$INST[ALLDATA$INST=="Binghamton University-SUNY"]<-"SUNY at Binghamton"
-ALLDATA$INST[ALLDATA$INST=="Texas State"]<-"Texas State University"
-ALLDATA$INST[ALLDATA$INST=="The University of Southwestern Louisiana"]<-"University of Southwestern Louisiana"
-ALLDATA$INST[ALLDATA$INST=="U Arizona"]<-"University of Arizona"
-ALLDATA$INST[ALLDATA$INST=="University of California Irvine"]<-"University of California-Irvine"
-ALLDATA$INST[ALLDATA$INST=="University of California Riverside"]<-"University of California-Riverside"
-ALLDATA$INST[ALLDATA$INST=="University of California at San Diego"]<-"University of California-San Diego"
-ALLDATA$INST[ALLDATA$INST=="University of California Santa Cruz"]<-"University of California-Santa Cruz"
-ALLDATA$INST[ALLDATA$INST=="UC Santa Cruz"]<-"University of California-Santa Cruz"
-ALLDATA$INST[ALLDATA$INST=="Uc Merced, University of California"]<-"University of California-Merced"
-ALLDATA$INST[ALLDATA$INST=="UMSL"]<-"University of Missouri-St. Louis"
-ALLDATA$INST[ALLDATA$INST=="University of Carolina Aiken"]<-"University of South Carolina-Aiken"
-ALLDATA$INST[ALLDATA$INST=="University of Massachusetts Boston"]<-"University of Massachusetts-Boston"
-ALLDATA$INST[ALLDATA$INST=="University of Nevada Las Vegas"]<-"University of Nevada-Las Vegas"
-ALLDATA$INST[ALLDATA$INST=="University of Texas Austin"]<-"University of Texas at Austin"
-ALLDATA$INST[ALLDATA$INST=="Vanderbilt"]<-"Vanderbilt University"
-ALLDATA$INST[ALLDATA$INST=="Virginia Commonweath U"]<-"Virginia Commonweath University"
-ALLDATA$INST[ALLDATA$INST=="Washington State"]<-"Washington State University"
-ALLDATA$INST[ALLDATA$INST=="Washington U"]<-"Washington University"
-ALLDATA$INST[ALLDATA$INST=="Willamette U"]<-"Willamette University"
-ALLDATA$INST[ALLDATA$INST=="University of Pennsylvania, "]<-"University of Pennsylvania"
-ALLDATA$INST[ALLDATA$INST=="University of Pittsburg"]<-"University of Pittsburgh"
-ALLDATA$INST[ALLDATA$INST=="University of Tennesee"]<-"University of Tennessee"
-ALLDATA$INST[ALLDATA$INST=="Acad Natural Science Philadelphia"]<-"Academy of Natural Science Philadelphia"
-ALLDATA$INST[ALLDATA$INST=="Am Mus Nat Hist"]<-"American Museum of Natural History"
-ALLDATA$INST[ALLDATA$INST=="ColoradoState Univ"]<-"Colorado State University"
-ALLDATA$INST[ALLDATA$INST=="Evergreen State College Washington"]<-"Evergreen State College"
-ALLDATA$INST[ALLDATA$INST=="Filed Museum of Natural History"]<-"Field Museum Of Natural History"
-ALLDATA$INST[ALLDATA$INST=="George Mason University Virginia"]<-"George Mason University"
-ALLDATA$INST[ALLDATA$INST=="Insitute of Ecosystem Studies"]<-"Institute of Ecosystem Studies"
-ALLDATA$INST[ALLDATA$INST=="Kenyon College Ohio"]<-"Kenyon College"
-ALLDATA$INST[ALLDATA$INST=="Louisiana State Univeristy"]<-"Louisiana State University"
-ALLDATA$INST[ALLDATA$INST=="Milwaukee Public Mus"]<-"Milwaukee Public Museum"
-ALLDATA$INST[ALLDATA$INST=="Missouri Botanical Gardens"]<-"Missouri Botanical Garden"
-ALLDATA$INST[ALLDATA$INST=="Oklahoma Museum of Natural History"]<-"Oklahoma Mus Nat His"
-ALLDATA$INST[ALLDATA$INST=="Smithsonian(STRI)"]<-"Smithsonian Tropical Research Institute"
-ALLDATA$INST[ALLDATA$INST=="STRI Smithsonian"]<-"Smithsonian Tropical Research Institute"
-ALLDATA$INST[ALLDATA$INST=="U Connecticut"]<-"University of Connecticut"
-ALLDATA$INST[ALLDATA$INST=="University of Alabama Huntsville"]<-"University of Alabama in Huntsville"
-ALLDATA$INST[ALLDATA$INST=="University of Connetticut Storrs"]<-"University of Connecticut"
-ALLDATA$INST[ALLDATA$INST=="University of Michgan"]<-"University of Michigan"
-ALLDATA$INST[ALLDATA$INST=="University of Missouri St Louis"]<-"University of Missouri-St. Louis"
-ALLDATA$INST[ALLDATA$INST=="University of Missouri_St Louis"]<-"University of Missouri-St. Louis"
-ALLDATA$INST[ALLDATA$INST=="University of Wisconsin Milwaukee"]<-"University of Wisconsin-Milwaukee"
-ALLDATA$INST[ALLDATA$INST=="U California Irvine"]<-"University of California-Irvine"
-ALLDATA$INST[ALLDATA$INST=="U California Riverside"]<-"University of California-Riverside"
-ALLDATA$INST[ALLDATA$INST=="University of California at San Diego"]<-"University of California-San Diego"
-ALLDATA$INST[ALLDATA$INST=="U California Santa Barbara"]<-"University of California-Santa Barbara"
-ALLDATA$INST[ALLDATA$INST=="U California Santa Cruz"]<-"University of California-Santa Cruz"
-ALLDATA$INST[ALLDATA$INST=="University of California Los Angeles"]<-"University of California-Los Angeles"
-ALLDATA$INST[ALLDATA$INST=="University of California Berkeley"]<-"University of California-Berkeley"
-ALLDATA$INST[ALLDATA$INST=="University of California Davis"]<-"University of California-Davis"
-ALLDATA$INST[ALLDATA$INST=="University of California Santa Barbara"]<-"University of California-Santa Barbara"
-ALLDATA$INST[ALLDATA$INST=="University of California San Diego"]<-"University of California-San Diego"
-ALLDATA$INST[ALLDATA$INST=="University of California San Diego"]<-"University of California-San Diego"
-ALLDATA$INST[ALLDATA$INST=="Rensselaer Poly"]<-"Rensselaer Polytechnic Institute"
-ALLDATA$INST[ALLDATA$INST=="Oklahoma Mus Nat His"]<-"Oklahoma Museum of Natural History"
-ALLDATA$INST[ALLDATA$INST=="US Forest Service Pacific Southwest Research Station"]<-"USFS-Pacific Southwest Research Station"
-ALLDATA$INST[ALLDATA$INST=="U.S.F.W.S. National Wetlands Research Center"]<-"USFWS-National Wetlands Research Center"
-ALLDATA$INST[ALLDATA$INST=="Arizona State University West"]<-"Arizona State University-West Campus"
-ALLDATA$INST[ALLDATA$INST=="Naval Research Laboratory DC"]<-"US Naval Research Laboratory"
-ALLDATA$INST[ALLDATA$INST=="Temple-Inland Forest"]<-"Temple-Inland Forest Products"
-ALLDATA$INST[ALLDATA$INST=="USDA Forest Service"]<-"US Forest Service"
-ALLDATA$INST[ALLDATA$INST=="USDA Forest Service Rocky Mountain Research Station"]<-"US Forest Service-Rocky Mountain Research Station"
-ALLDATA$INST[ALLDATA$INST=="USDA Forest Service Southern Research Station"]<-"US Forest Service-Southern Research Station"
-ALLDATA$INST[ALLDATA$INST=="USFS-Pacific Southwest Research Station"]<-"US Forest Service-Pacific Southwest Research Station"
-ALLDATA$INST[ALLDATA$INST=="USFWS-National Wetlands Research Center"]<-"US Fish & Wildlife Service-National Wetlands Research Center"
-ALLDATA$UNIT[ALLDATA$INST=="USGS Forest and Rangeland Ecosystem Science Center"]<-"Forest and Rangeland Ecosystem Science Center"
-ALLDATA$INST[ALLDATA$INST=="USGS Forest and Rangeland Ecosystem Science Center"]<-"US Geological Survey"
-ALLDATA$UNIT[ALLDATA$INST=="USGS-Northern Prairie Wildlife Research Center"]<-"Northern Prairie Wildlife Research Center"
-ALLDATA$INST[ALLDATA$INST=="USGS-Northern Prairie Wildlife Research Center"]<-"US Geological Survey"
-ALLDATA$INST[ALLDATA$INST=="National Museum of Natural History"]<-"Smithsonian National Museum of Natural History"
-ALLDATA$INST[ALLDATA$INST=="Smithsonian"]<-"Smithsonian National Museum of Natural History" #EB Verified
-ALLDATA$INST[ALLDATA$INST=="USDA"]<-"US Department of Agriculture"
-ALLDATA$UNIT[ALLDATA$INST=="USDA Cooperative State Research, Education and Extension Service (CSREES)"]<-"Cooperative State Research, Education, and Extension Service"
-ALLDATA$INST[ALLDATA$INST=="USDA Cooperative State Research, Education and Extension Service (CSREES)"]<-"US Department of Agriculture"
-ALLDATA$INST[ALLDATA$INST=="Virginia Tech"]<-"Virginia Polytechnic Institute and State University"
-ALLDATA$INST[ALLDATA$INST=="University of Pennsylvania,"]<-"University of Pennsylvania"
-ALLDATA$INST[ALLDATA$INST=="Division of Reptiles and Amphibians Smithsonian Institute Washington DC"]<-"Smithsonian National Museum of Natural History"
-ALLDATA$INST[ALLDATA$INST=="University of California-At Los Angeles"]<-"University of California-Los Angeles"
-ALLDATA$INST[ALLDATA$INST=="National Museum of Natural History, Smithsonian Institution"]<-"Smithsonian National Museum of Natural History"
-ALLDATA$UNIT[ALLDATA$INST=="Citrus Research and Education Center"]<-"Citrus Research and Education Center"
-ALLDATA$INST[ALLDATA$INST=="Citrus Research and Education Center"]<-"University of Florida"
-ALLDATA$INST[ALLDATA$INST=="Ohio u"]<-"Ohio University-Main Campus"
-ALLDATA$INST[ALLDATA$INST=="University of South Carolina" & ALLDATA$CITY=="Columbia"]<-"University of South Carolina-Columbia"
-ALLDATA$UNIT[ALLDATA$INST=="US Department of Agriculture Cooperative State Research, Education, and Extension Service"]<-"Cooperative State Research, Education, and Extension Service"
-ALLDATA$INST[ALLDATA$INST=="US Department of Agriculture Cooperative State Research, Education, and Extension Service"]<-"US Department of Agriculture"
-
-ALLDATA$INST[ALLDATA$INST=="Arnold Arboretum Of Harvard University"]<-"Harvard University Arnold Arboretum"
-ALLDATA$INST[ALLDATA$INST=="Museum of Comparative Zoology"]<-"Harvard University Museum of Comparative Zoology"
-ALLDATA$INST[ALLDATA$INST=="SUNY"]<-"State University of New York"
-ALLDATA$INST[ALLDATA$INST=="State University of New York at Stony Brook"]<-"State University of New York-Stony Brook"
-ALLDATA$INST[ALLDATA$INST=="State University of New York Syracuse"]<-"State University of New York-Syracuse"
-ALLDATA$INST[ALLDATA$INST=="Arnold Arboretum of Harvard University"]<-"Harvard University Arnold Arboretum"
-ALLDATA$INST[ALLDATA$INST=="Harvard Medical School"]<-"Harvard University Medical School"
-ALLDATA$INST[ALLDATA$INST=="Australian Research Center for Urban "]<-"Smithsonian Tropical Research Institute"
-ALLDATA$INST<-gsub(" INPA", "", ALLDATA$INST)
-ALLDATA$INST<-gsub("--", " ", ALLDATA$INST)
-ALLDATA$INST<-gsub("-", " ", ALLDATA$INST)
-ALLDATA$INST<-gsub(" (CSIRO)", " ", ALLDATA$INST)
-ALLDATA$INST<-gsub(" CSIRO", " ", ALLDATA$INST)
-ALLDATA$INST<-gsub(",CAS", " ", ALLDATA$INST)
-ALLDATA$INST<-gsub("Nacaional", "Nacional", ALLDATA$INST)
-ALLDATA$INST<-gsub("British Colombia", "British Columbia", ALLDATA$INST)
-ALLDATA$INST<-gsub("Smithosonian", "Smithsonian", ALLDATA$INST)
-ALLDATA$INST<-gsub("kansas", "Kansas", ALLDATA$INST)
-ALLDATA$INST<-gsub("Sao Paolo", "Sao Paulo", ALLDATA$INST)
-ALLDATA$INST<-gsub("illinois", "Illinois", ALLDATA$INST)
-ALLDATA$INST<-gsub("Wuerzburg", "Wurzburg", ALLDATA$INST)
-ALLDATA$INST<-gsub("LaTrobe", "La Trobe", ALLDATA$INST)
-ALLDATA$INST<-gsub("No one by", "no one by", ALLDATA$INST)
-ALLDATA$INST<-gsub("Botannical", "Botanical", ALLDATA$INST)
-ALLDATA$INST<-gsub("Berkely", "Berkeley", ALLDATA$INST)
-ALLDATA$INST<-gsub("Commonweath", "Commonwealth", ALLDATA$INST)
-ALLDATA$INST<-gsub("Archibold", "Archbold", ALLDATA$INST)
-ALLDATA$INST<-gsub("Loisisana", "Louisiana", ALLDATA$INST)
-ALLDATA$INST<-gsub("Lousiana", "Louisiana", ALLDATA$INST)
-ALLDATA$INST<-gsub("Bringham", "Brigham", ALLDATA$INST)
-ALLDATA$INST<-gsub("Connetticut", "Connecticut", ALLDATA$INST)
-ALLDATA$INST<-gsub("Unversity", "University", ALLDATA$INST)
-ALLDATA$INST<-gsub(",", "", ALLDATA$INST)
-ALLDATA$INST<-gsub("Westleyan", "Wesleyan", ALLDATA$INST)
-ALLDATA$INST<-gsub("'", "", ALLDATA$INST)
-ALLDATA$INST<-gsub("Veterinary&", "Veterinary and", ALLDATA$INST)
-ALLDATA$INST<-gsub("&", "and", ALLDATA$INST)
-ALLDATA$INST<-gsub("Virginia Tech", "Virginia Polytechnic Institute and State University", ALLDATA$INST)
-ALLDATA$INST<-gsub("Austrailan", "Australian", ALLDATA$INST)
-ALLDATA$INST<-gsub("Indian Institute of Sciences", "Indian Institute of Science", ALLDATA$INST)
-ALLDATA$INST<-gsub("KingS", "Kings", ALLDATA$INST)
-ALLDATA$INST<-gsub("Louisisana", "Louisiana", ALLDATA$INST)
-ALLDATA$INST<-gsub("Universrity", "University", ALLDATA$INST)
-ALLDATA$INST<-gsub("Canadian Forestry", "Canadian Forest", ALLDATA$INST)
-ALLDATA$INST<-gsub("Mighican", "Michigan", ALLDATA$INST)
-ALLDATA$INST<-gsub("de Montpellier II", "Montpellier II", ALLDATA$INST)
-ALLDATA$INST<-gsub("North Arizona", "Northern Arizona", ALLDATA$INST)
-ALLDATA$INST<-gsub("Wsl", "WSL", ALLDATA$INST)
-ALLDATA$INST<-gsub("Alabama in", "Alabama", ALLDATA$INST)
-ALLDATA$INST<-gsub("Fonctionelle", "Fonctionnelle", ALLDATA$INST)
-ALLDATA$INST<-gsub("-CNRS", "", ALLDATA$INST)
-ALLDATA$INST<-gsub("University of Sherbooke", "Universite de Sherbooke", ALLDATA$INST)
-ALLDATA$INST[ALLDATA$INST=="WSL Swiss Federal Research Institute"]<-"Swiss Federal Research Institute WSL"
-# ALLDATA$INST<-gsub("(CSIC)", "", ALLDATA$INST)
-ALLDATA$INST<-gsub("Smithsonian Institute", "Smithsonian Institution", ALLDATA$INST)
-ALLDATA$INST<-gsub("Minnestoa", "Minnesota", ALLDATA$INST)
-ALLDATA$INST<-gsub("University of Lausanne", "Universite de Lausanne", ALLDATA$INST)
-ALLDATA$INST<-gsub("Institute of Ecosystem Studies", "Cary Institute of Ecosystem Studies", ALLDATA$INST)
-ALLDATA$INST<-gsub("Environment Bangalore", "Environment", ALLDATA$INST)
-ALLDATA$INST[ALLDATA$INST=="Cary Cary Institute of Ecosystem Studies"]<-"Cary Institute of Ecosystem Studies"
-ALLDATA$INST<-gsub(" CATIE","", ALLDATA$INST)
-ALLDATA$INST<-gsub("CATIE ","", ALLDATA$INST)
-ALLDATA$INST[ALLDATA$INST=="University of California NCEAS"]<-"National Center for Ecological Analysis and Synthesis"
-ALLDATA$INST<-gsub(" (UNESP)","", ALLDATA$INST)
-ALLDATA$INST<-gsub("Darwin University Darwin","Darwin University", ALLDATA$INST)
-ALLDATA$INST<-gsub("Technion-","", ALLDATA$INST)
-ALLDATA$INST<-gsub("Israel Institute of Technology","Technion Israel Institute of Technology", ALLDATA$INST)
-ALLDATA$INST<-gsub("Ossietzky","", ALLDATA$INST)
-ALLDATA$INST<-gsub(",USDA","", ALLDATA$INST)
-ALLDATA$INST<-gsub("UFZ Centre","Helmholtz Centre", ALLDATA$INST)
-ALLDATA$INST<-gsub(" UFZ","", ALLDATA$INST)
-ALLDATA$INST<-gsub("Helmholtz Centre for Environmental Research","Helmholtz Centre for Environmental Research UFZ", ALLDATA$INST)
-ALLDATA$INST<-gsub("A& M Univ","A & M University", ALLDATA$INST)
-ALLDATA$INST<-gsub("AandM","A & M", ALLDATA$INST)
-ALLDATA$INST<-gsub("Khorasan Agricultural and Natural Resources Res Ctr","Khorasan Agricultural and Natural Resources Research Center", ALLDATA$INST)
-ALLDATA$INST[ALLDATA$INST=="Texas Technical University"]<-"Texas Tech University" 
-ALLDATA$INST[ALLDATA$INST=="Mississippi State Univ"]<-"Mississippi State University" 
-ALLDATA$INST[ALLDATA$INST=="Empresa Brasileira de Pesquisa Agropecuária"]<-"Empresa Brasileira de Pesquisa Agropecuaria" 
-ALLDATA$INST[ALLDATA$INST=="Technion Technion Israel Institute of Technology"]<-"Technion Israel Institute of Technology"
-ALLDATA$INST[ALLDATA$INST=="Universidad Catolica de Chile"]<-"Pontifica Universidad Catolica de Chile"
-ALLDATA$INST<-gsub("Philips University","Philips University Marburg", ALLDATA$INST)
-ALLDATA$INST[ALLDATA$INST=="University of Marburg"]<-"Philipps University Marburg"
-ALLDATA$INST[ALLDATA$INST=="Philipps University"]<-"Philipps University Marburg"
-ALLDATA$INST<-gsub("in Cornwall","Cornwall", ALLDATA$INST)
-ALLDATA$INST<-gsub("SUNY","State University of New York", ALLDATA$INST)
-ALLDATA$INST<-gsub("USGS","US Geological Survey", ALLDATA$INST)
-ALLDATA$INST<-gsub("University of Mexico","Universidad Nacional Autonoma de Mexico", ALLDATA$INST)
-ALLDATA$INST<-gsub("NC Agricultural","North Carolina Agricultural", ALLDATA$INST)
-ALLDATA$INST<-gsub("for Forest, Snow, and Landscape Research","WSL", ALLDATA$INST)
-ALLDATA$INST<-gsub(" Company","", ALLDATA$INST)
-ALLDATA$INST<-gsub("CSIRO Plant Industry","", ALLDATA$INST)
-ALLDATA$INST<-gsub("State University University","State University", ALLDATA$INST)
-ALLDATA$INST<-gsub("North Carolina AandT State University","North Carolina A & T State University", ALLDATA$INST)
-ALLDATA$INST<-gsub(" Manaaki Whenua","", ALLDATA$INST)
-ALLDATA$INST<-gsub(" Headquarters","", ALLDATA$INST)
-ALLDATA$INST<-gsub("VUniversity","University", ALLDATA$INST)
-ALLDATA$INST<-gsub(" (IMEDEA)","", ALLDATA$INST)
-ALLDATA$INST<-gsub(" (UNICAMP)","", ALLDATA$INST)
-ALLDATA$INST<-gsub("dHistoire","dHistoire Naturelle", ALLDATA$INST)
-ALLDATA$INST<-gsub("National Museum of Natural History Paris","Museum National dHistoire Naturelle", ALLDATA$INST)
-ALLDATA$INST<-gsub("Naturelle Naturelle","Naturelle", ALLDATA$INST)
-ALLDATA$INST[ALLDATA$INST=="Museum dHistoire Naturelle"]<-"Museum National dHistoire Naturelle"
-ALLDATA$INST[ALLDATA$INST=="National Autonomous university of Mexico"]<-"Universidad Nacional Autonoma de Mexico"
-ALLDATA$INST[ALLDATA$INST=="Landcare Research"]<-"Manaaki Whenua Landcare Research"
-ALLDATA$UNIT[ALLDATA$INST=="USGS/NRII"]<-"NRII" 
-ALLDATA$INST[ALLDATA$INST=="USGS/NRII"]<-"US Geological Survey"
-ALLDATA$UNIT[ALLDATA$INST=="Florida International University and Center for Tropical Plant Conservation"]<-"Center for Tropical Plant Conservation" 
-ALLDATA$INST[ALLDATA$INST=="Florida International University and Center for Tropical Plant Conservation"]<-"Florida International University" 
-ALLDATA$INST[ALLDATA$INST=="Ecole Normale Supérieure"]<-"Ecole Normale Superieure" 
-ALLDATA$INST[ALLDATA$INST=="Université de Sherbrooke"]<-"Universite de Sherbrooke"
-ALLDATA$INST[ALLDATA$INST=="Pontificia Universidad Católica de Chile"]<-"Pontificia Universidad Catolica de Chile" 
-ALLDATA$INST[ALLDATA$INST=="University of Tromsø"]<-"University of Tromso" 
-ALLDATA$INST[ALLDATA$INST=="Universit\xfc\xbe\x8c\xa3\xa0\xbc Montpellier II"]<-"Universite Montpellier II" 
-ALLDATA$INST[ALLDATA$INST=="Universit\xfc\xbe\x8d\x83\xa0\xbct Z\xfc\xbe\x8c\x93\xa0\xbcrich Irchel"]<-"University of Zurich Irchel" 
-ALLDATA$INST[ALLDATA$INST=="Texas A & M Univ."]<-"Texas A & M University"
-ALLDATA$INST[ALLDATA$INST=="Texas A & M"]<-"Texas A & M University"
-
-
-##############################################################
-##############################################################
-# Dividing Some Names for INST into INST and UNIT
-##############################################################
-##############################################################
-
-ALLDATA$UNIT[ALLDATA$INST=="Harvard University Herbaria"]<-"Herbaria" 
-ALLDATA$INST[ALLDATA$INST=="Harvard University Herbaria"]<-"Harvard University"
-
-ALLDATA$UNIT[ALLDATA$INST=="Harvard University Medical School"]<-"Medical School"
-ALLDATA$INST[ALLDATA$INST=="Harvard University Medical School"]<-"Harvard University"
-
-ALLDATA$UNIT[ALLDATA$INST=="Boston Unveristy Marine Program"]<-"Marine Program"
-ALLDATA$INST[ALLDATA$INST=="Boston Unveristy Marine Program"]<-"Boston Unversity" 
-
-ALLDATA$UNIT[ALLDATA$INST=="Harvard University Museum of Comparative Zoology"]<-"Museum of Comparative Zoology"
-ALLDATA$INST[ALLDATA$INST=="Harvard University Museum of Comparative Zoology"]<-"Harvard University" 
-
-ALLDATA$UNIT[ALLDATA$INST=="Harvard Forest"]<-"Harvard Forest"
-ALLDATA$INST[ALLDATA$INST=="Harvard Forest"]<-"Harvard University" 
-
-ALLDATA$UNIT[ALLDATA$INST=="Harvard University Arnold Arboretum"]<-"Arnold Arboretum"
-ALLDATA$INST[ALLDATA$INST=="Harvard University"]<-"Harvard University" 
-
-ALLDATA$UNIT[ALLDATA$INST=="Instituto de Ecologia UNAM"]<-"Instituto de Ecologia"
-ALLDATA$INST[ALLDATA$INST=="Instituto de Ecologia UNAM"]<-"Universidad Nacional Autonoma de Mexico" 
-
-ALLDATA$UNIT[ALLDATA$INST=="Harvard University Museum of Comparative Zoology"]<-"Museum of Comparative Zoology"
-ALLDATA$INST[ALLDATA$INST=="Harvard University Museum of Comparative Zoology"]<-"Harvard University" 
-
-ALLDATA$UNIT[ALLDATA$INST=="Wageiningen University Research Center Alterra"]<-"Research Center Alterra"
-ALLDATA$INST[ALLDATA$INST=="Wageiningen University Research Center Alterra"]<-"Wageiningen University" 
-
-
-
 ##############################################################
 # SAVE THE FILE AS A CSV FOR MANUAL REVIEW
 ##############################################################
-
 UNI_LIST<-ALLDATA %>% select(INST,COUNTRY) %>% arrange(COUNTRY,INST)
 UNI_LIST<-unique(UNI_LIST)
 
 head(UNI_LIST,100)
 write.csv(UNI_LIST, file="./output_review/uniNameList.csv", row.names = T) #export it as a csv file
 
-
-
 ##############################################################
 # AFTER MANUAL REVIEW, UPLOAD THE CORRECTIONS AND INCORPORATE THEM
 ##############################################################
-
 corrections1<-read.csv("./output_review/uniNameList_corrections_only.csv",encoding = "ASCII",stringsAsFactors = FALSE)
-
 str(corrections1)
 #THIS CHANGES THE UNITS AND INST BASED ON THE CORRECTION IN THE DATAFRAME
 ALLDATA<-left_join(ALLDATA, corrections1,by="INST",copy=TRUE) %>% mutate(INST = ifelse(is.na(INST_CORR), INST, INST_CORR)) %>% mutate(UNIT = ifelse(is.na(UNIT_CORR), UNIT, UNIT_CORR))
 ALLDATA<-ALLDATA %>% select(-INST_CORR,-UNIT_CORR)
-
 
 ##############################################################
 ##############################################################
@@ -887,17 +582,27 @@ rm(ALLDATA2)
 # DATA CHECK: FILLING IN MISSING INST, CHECKING EDITORS WITH DUPLICATE INST
 ##############################################################
 ##############################################################
-# write.csv(ALLDATA,"./output_review/ALLDATA_add_PJ_data.csv",row.names=FALSE)
-# # THIS IS IN Author_and_Inst_to_check.R 
-# ################
-
-
 
 ##############################
 ##############################
 # ADD AND PATRICK JAMES CORRECTIONS
 ##############################
 ##############################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

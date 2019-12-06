@@ -556,7 +556,7 @@ both$COUNTRY[both$STATE == "Galicia" & both$COUNTRY == "USA"] <- "Canada"
 both$COUNTRY[both$STATE == "England" & both$COUNTRY == "USA"] <- "Canada"
 both$COUNTRY[both$STATE == "Uppland" & both$COUNTRY == "USA"] <- "Canada"
 both$COUNTRY[both$STATE == "Ontario" & both$COUNTRY == "USA"] <- "Canada"
-
+levels(both$INST)
 
 # TODO: Give editor_IDs to those missing 
 
