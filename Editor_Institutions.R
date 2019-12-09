@@ -616,6 +616,105 @@ source("functions_data_cleaning/institution_cleaner.R")
 ALLDATA<-institution_cleaner(ALLDATA)
 
 
+levels(as.factor(ALLDATA$INST))
+
+ALLDATA$INST<-as.factor(ALLDATA$INST)
+ALLDATA$INST<-droplevels(ALLDATA$INST)
+ALLDATA_inst_check<-as.data.frame(levels(ALLDATA$INST))
+write_csv(ALLDATA_inst_check,"./data/ALLDATA_inst_check.csv")
+
+
+# TODO: FIND ANY editors with an editor_id and an NA for editor_id and correct
+
+ALLDATA$LAST_NAME<-stri_trans_totitle(ALLDATA$LAST_NAME)
+ALLDATA$FIRST_NAME<-stri_trans_totitle(ALLDATA$FIRST_NAME)
+
+ALLDATA$editor_id.y<-NULL
+ALLDATA<-ALLDATA %>% rename("editor_id"="editor_id.x")
+ALLDATA$editor_id<-as.character(ALLDATA$editor_id)
+ALLDATA<-ALLDATA %>% replace_na(list(editor_id = "TBD", editor_id.y = "TBD"))
+dup_edID<-ALLDATA %>% 
+  select(LAST_NAME,FIRST_NAME,editor_id) %>% 
+  group_by(LAST_NAME,FIRST_NAME) %>% 
+  mutate(n_id=n_distinct(editor_id)) %>% 
+  filter(n_id>1) %>% 
+  distinct(LAST_NAME,FIRST_NAME,editor_id,.keep_all=TRUE) %>% 
+  arrange(LAST_NAME,FIRST_NAME) 
+dup_edID
+write.csv(dup_edID, file="./output_review/dup_edID.csv", row.names = F) #export it as a csv file
+
+
+# TODO: Same but based on last name (in case the first name is different)
+dup_edID2<-ALLDATA %>% 
+  select(LAST_NAME,FIRST_NAME,editor_id) %>% 
+  group_by(LAST_NAME) %>% 
+  mutate(n_id=n_distinct(editor_id)) %>% 
+  filter(n_id>1) %>% 
+  distinct(LAST_NAME,editor_id,.keep_all=TRUE) %>% 
+  arrange(LAST_NAME) 
+dup_edID2
+write.csv(dup_edID2, file="./output_review/dup_edID2.csv", row.names = F) #export it as a csv file
+
+# TODO: find cases where diff editor_id for same editors
+dup_edID3<-ALLDATA %>% 
+  select(LAST_NAME,FIRST_NAME,editor_id) %>% 
+  filter(editor_id!="TBD") %>% 
+  group_by(LAST_NAME,FIRST_NAME) %>% 
+  mutate(n_names=n_distinct(editor_id)) %>% 
+  distinct(LAST_NAME,FIRST_NAME,editor_id,.keep_all=TRUE) %>%
+  arrange(desc(LAST_NAME,FIRST_NAME,editor_id)) %>% 
+  filter(n_names>1) 
+dup_edID3 
+# dup_edID3 <-dup_edID3 %>% group_by(FIRST_NAME,LAST_NAME) %>%  arrange(editor_id) %>% slice(2)
+write.csv(dup_edID3, file="./output_review/dup_edID3.csv", row.names = F) #export it as a csv file
+
+# REMOVE ANY ROWS WITH NO DATA
+ALLDATA<-ALLDATA %>% drop_na(LAST_NAME)
+
+# DELETE DUPLICATE ROWS
+ALLDATA<-distinct(ALLDATA)
+# nrow(ALLDATA)
+# ALLDATA[which(duplicated(ALLDATA)==TRUE),]
+# nrow(deduped)-nrow(ALLDATA)
+# colnames(deduped)==colnames(ALLDATA)
+# cut<- setdiff(ALLDATA,deduped)
+# setdiff(deduped,ALLDATA)
+# first<-ALLDATA
+# second<-deduped
+
+
+
+# TODO: ID ANY WITH NO INST
+missing_INST<-ALLDATA %>% filter(is.na(INST))
+write.csv(missing_INST, file="./output_review/missing_INST.csv", row.names = F) #export it as a csv file
+# TODO: Some of the editors are in multiple times because they have multiple jobs. ID and fix
+
+##########################################
+# TODO: Still left to fix and 2x
+##########################################
+
+# 2x claudia bieber. CVM is in austria but country is australia
+# BIOCON: editor_id 2874 and 2875 are the same person!			
+# BIOCON: editor_id 3024 country should be Singapore in 2009
+# JECOL: editor_id 1279 in 2013: country and state mismatch 
+# JECOL editor_ID 703 in 2014: remove zip from state
+# JECOL editor_ID 2408 in 2010-2013 should country be MEX or GER? Apparently MEX (mex in state, not country)
+# JECOL: several have country listed in state column  
+# 2x ythat Vegetation Survey of Western Australia shouldn’t be Univ of Western Australia
+# ingrid parmentier should be Universite Libre de Bruxelles 2x journal
+# James Cook University ONE OF THESE IS JAMES COOK UNIVERSITY TOWNSVILLE
+# Natiral History Museum need to 2x each some are us some are UK
+# NEED TO GET PEOPLE BY CAMPUS UNAM
+# no one by this name
+# NoInst
+# Oregon Trail
+# Pfenning does he have two researcher iD's? 
+# Stephen Simpson Ecology 2002 2x if Oxford, UK, Australia 
+# 1 Traveser  Anna       217             2
+# 2 Traveset  Anna       217             2
+# Troy Day not on Amnat board in 12-14, listed as in Australia
+##########################################
+
 
 
 
