@@ -77,7 +77,7 @@ clean_AMNAT <- function(DATAFILE1,DATAFILE2) {
     distinct(YEAR,LAST_NAME,FIRST_NAME,INST,.keep_all = TRUE) %>% 
     arrange (LAST_NAME,FIRST_NAME,YEAR)
 
-  
+  DATAFILE<-DATAFILE %>% select(-NAME)
   
   
   # foo<-DATAFILE %>% 
@@ -105,10 +105,33 @@ clean_AMNAT <- function(DATAFILE1,DATAFILE2) {
   DATAFILE$INST[DATAFILE$INST=="University of Hawaii" &
                DATAFILE$LAST_NAME=="Palumbi"]<-"University of Hawaii at Manoa"
   
-  DATAFILE$INST[is.na(DATAFILE$INST)]<-"missing"
-  DATAFILE$UNIT[is.na(DATAFILE$UNIT)]<-"missing"
-  DATAFILE$CITY[is.na(DATAFILE$CITY)]<-"missing"
-  DATAFILE$STATE[is.na(DATAFILE$STATE)]<-"missing"
+  
+  # This will add "missing" to the first row of a group if the first INST is NA
+  
+  DATAFILE<-DATAFILE %>% 
+    group_by(LAST_NAME,FIRST_NAME) %>% 
+    mutate(INST = ifelse((row_number()==1 & is.na(INST)), "missing", INST))
+  
+  
+  DATAFILE<-DATAFILE %>% 
+    group_by(LAST_NAME,FIRST_NAME) %>% 
+    mutate(UNIT = ifelse((row_number()==1 & is.na(UNIT)), "missing", UNIT))
+  
+  DATAFILE<-DATAFILE %>% 
+    group_by(LAST_NAME,FIRST_NAME) %>% 
+    mutate(STATE = ifelse((row_number()==1 & is.na(STATE)), "missing", STATE))
+  
+  
+  DATAFILE<-DATAFILE %>% 
+    group_by(LAST_NAME,FIRST_NAME) %>% 
+    mutate(CITY = ifelse((row_number()==1 & is.na(CITY)), "missing", CITY))
+  
+  
+  
+  # DATAFILE<-DATAFILE %>% fill(INST,UNIT,CITY,STATE,.direction="down")
+  
+    
+
   
   DATAFILE$INST<-trimws(DATAFILE$INST)
   DATAFILE$UNIT<-trimws(DATAFILE$UNIT)

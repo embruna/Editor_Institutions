@@ -28,6 +28,8 @@ DATAFILE$COUNTRY<-as.factor(DATAFILE$COUNTRY)
 levels(DATAFILE$COUNTRY)
 DATAFILE$COUNTRY<-as.character(DATAFILE$COUNTRY)
 DATAFILE$COUNTRY[DATAFILE$COUNTRY=="Australiatralia"]<-"Australia"
+DATAFILE$COUNTRY[DATAFILE$COUNTRY=="ITALY"]<-"Italy"
+DATAFILE$COUNTRY[DATAFILE$COUNTRY=="P. R. China"]<-"China"
 DATAFILE$COUNTRY[DATAFILE$COUNTRY=="MEXICO"]<-"Mexico"
 DATAFILE$COUNTRY[DATAFILE$COUNTRY=="NewZealand"]<-"New Zealand"
 DATAFILE$COUNTRY[DATAFILE$COUNTRY=="PuertoRico"]<-"Puerto Rico"
@@ -156,6 +158,7 @@ DATAFILE$INST<-gsub("Austrailan", "Australian", DATAFILE$INST)
 DATAFILE$INST<-gsub("Indian Institute of Sciences", "Indian Institute of Science", DATAFILE$INST)
 DATAFILE$INST<-gsub("KingS", "Kings", DATAFILE$INST)
 DATAFILE$INST<-gsub("Louisisana", "Louisiana", DATAFILE$INST)
+DATAFILE$COUNTRY<-gsub("P.R. China", "China", DATAFILE$COUNTRY)
 DATAFILE$INST<-gsub("Universrity", "University", DATAFILE$INST)
 DATAFILE$INST<-gsub("Canadian Forestry", "Canadian Forest", DATAFILE$INST)
 DATAFILE$INST<-gsub("Mighican", "Michigan", DATAFILE$INST)
