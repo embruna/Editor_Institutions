@@ -337,9 +337,10 @@ both<-both %>% rename("UNIT"="UNIT.x")
 
 both <- both %>% mutate(COUNTRY.x = replace(COUNTRY.x, COUNTRY.x == "", NA))
 both$COUNTRY.x<-as.factor(both$COUNTRY.x)
+both$COUNTRY.y<-as.factor(both$COUNTRY.y)
 country_levels<-(c(levels(both$COUNTRY.x),levels(both$COUNTRY.y)))
-levels(both$COUNTRY.x)<-c(levels(both$COUNTRY.x),country_levels)
-levels(both$COUNTRY.y)<-c(levels(both$COUNTRY.y),country_levels)
+levels(both$COUNTRY.x)<-c(levels(both$COUNTRY.x),country_levels,NA)
+levels(both$COUNTRY.y)<-c(levels(both$COUNTRY.y),country_levels,NA)
 
 # This will replace all the "NA" in CITY.x (origianlly no info) with the value from CITY.y (Patrick's data collection), if there is one 
 
