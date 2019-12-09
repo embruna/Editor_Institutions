@@ -375,7 +375,7 @@ ALLDATA<-ALLDATA %>% select(-OLD_INST)
 ############
 
 ##############################################################
-# COrrecting the country and institition where Editors is based
+# COrrecting the country and institition where Editors are based
 ##############################################################
 
 ALLDATA$INST<-as.factor(ALLDATA$INST)
@@ -387,7 +387,13 @@ levels(ALLDATA$INST) <- c(levels(ALLDATA$INST),"University of Missouri Columbia"
                           "State University of New York College of Environmental Science and Forestry",
                           "Calyx, Inc.","University of North Carolina Charlotte",
                           "Smithsonian National Museum of Natural History",
-                          "Smithsonian National Zoological Park")
+                          "Smithsonian National Zoological Park",
+                          "Laboratoire Associe de Modelisation des Plantes",
+                          "Southern Illinois University",
+                          "southern illinois u",
+                          "Aarhus University",
+                          "University of St. Andrews",
+                          "university of st andrews")
 
 
 
@@ -440,7 +446,14 @@ ALLDATA$COUNTRY[ALLDATA$LAST_NAME=="Galdon"&ALLDATA$FIRST_NAME=="Luis"]<-"Spain"
 ALLDATA$INST[ALLDATA$LAST_NAME=="Labandeira"& ALLDATA$FIRST_NAME=="Conrad"]<-"Smithsonian National Museum of Natural History"
 ALLDATA$INST[ALLDATA$LAST_NAME=="SEIDENSTZICKER"& ALLDATA$FIRST_NAME=="JOHN"]<-"Smithsonian National Zoological Park"
 ALLDATA$INST[ALLDATA$LAST_NAME=="Kleiman"& ALLDATA$FIRST_NAME=="Devra"]<-"Smithsonian National Zoological Park"
-
+ALLDATA$INST[ALLDATA$LAST_NAME=="Houllier" & (ALLDATA$YEAR>1998 & ALLDATA$YEAR<2003)]<-NA
+ALLDATA$INST[ALLDATA$LAST_NAME=="Houllier" & (ALLDATA$YEAR>1998 & ALLDATA$YEAR<2003)]<-"Laboratoire Associe de Modelisation des Plantes"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Watling"& ALLDATA$INST=="Adelaide"]<-"University of Adelaide"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Boutin" & ALLDATA$INST=="Alberta"]<-"University of Alberta"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Fox" & ALLDATA$INST=="Alberta"]<-"University of Calgary"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Patek" & ALLDATA$INST=="Amherst"]<-"University of Massachusetts at Amherst"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Mcgraw" & ALLDATA$INST=="Arizona"]<-"Arizona State University"
+ALLDATA$COUNTRY[ALLDATA$LAST_NAME=="Vanderheijden" & ALLDATA$INST=="Amsterdam"]<-"Amsterdam"
 
 ##########################
 # Clean Up Institutions and countries
@@ -506,7 +519,6 @@ which(ALLDATA$COUNTRY=="")
 ##############################################################
 ##############################################################
 ALLDATA$INST[ALLDATA$INST=="."]<-NA
-
 ALLDATA<-as.data.frame(ALLDATA)
 ALLDATA$JOURNAL<-as.factor(ALLDATA$JOURNAL)
 
@@ -571,7 +583,26 @@ ALLDATA$INST[ALLDATA$INST=="."]<-NA
 source("functions_data_cleaning/JamesCorrections.R")
 ALLDATA<-JamesCorrections(ALLDATA)
 
+source("functions_data_cleaning/institution_cleaner.R")
+ALLDATA<-institution_cleaner(ALLDATA)
 
+
+checkINST<-ALLDATA %>% 
+  select(INST,COUNTRY) %>% 
+  group_by(INST,COUNTRY) %>% 
+  distinct(INST,COUNTRY) %>% 
+  arrange(INST)
+
+
+checkINST2<-ALLDATA %>% 
+  filter(is.na(INST)) %>% 
+  distinct(JOURNAL,LAST_NAME,COUNTRY) %>% 
+  group_by(JOURNAL) %>% 
+  summarise(n())
+
+ALLDATA %>% 
+  distinct(LAST_NAME,FIRST_NAME) %>% 
+  summarise(n())
 
 ##############################################################
 # SAVE THE FILE AS A CSV FOR MANUAL REVIEW
@@ -587,17 +618,7 @@ bound<-bind_cols(one,two)
 write.csv(bound, file="./output_review/InstNameList.csv", row.names = T) #export it as a csv file
 rm(bound,one,two)
 
-############
-# TODO: CHANGE THESE
 
-# ALLDATA$INST<-gsub("Landscape<a0>Ecology","Landscape Ecology", ALLDATA$INST)
-# ALLDATA$INST<-gsub("Universit<8a>t","Universitat", ALLDATA$INST)
-# "<a0>Universit<e9> Claude Bernard Lyon 1"
-# "Universit<e9> de Montr<e9>al"
-# "Universit<e9> du Quebec"
-# "Laboratoire Associe de Modelisation des Plantes<a0>(AMAP)"
-# "Universidad Nacional Aut<a2>noma de M<82>xico"
-# "L<9f>neburg"
 
 
 
