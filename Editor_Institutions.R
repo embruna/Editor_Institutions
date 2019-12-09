@@ -338,8 +338,8 @@ rm(ECOLOGY.csv, ECOL_raw)
 
 
 ALLDATA<-bind_rows(CONBIO,
-                   # MARECOL,
-                   # NAJFM,
+                   MARECOL,
+                   NAJFM,
                    NEWPHYT,
                    JZOOL,
                    GCB,
@@ -361,11 +361,11 @@ ALLDATA<-bind_rows(CONBIO,
                    AREES,
                    AMNAT,
                    AJB,
-                   # AG,
-                   # CONDOR,
-                   # AUK,
+                   AG,
+                   CONDOR,
+                   AUK,
                    BIOCON)
-
+levels(as.factor(ALLDATA$JOURNAL))
 head(ALLDATA,10)
 str(ALLDATA)
 colnames(ALLDATA)
@@ -624,6 +624,7 @@ ALLDATA_inst_check<-as.data.frame(levels(ALLDATA$INST))
 write_csv(ALLDATA_inst_check,"./data/ALLDATA_inst_check.csv")
 
 
+
 # TODO: FIND ANY editors with an editor_id and an NA for editor_id and correct
 
 ALLDATA$LAST_NAME<-stri_trans_totitle(ALLDATA$LAST_NAME)
@@ -672,7 +673,7 @@ write.csv(dup_edID3, file="./output_review/dup_edID3.csv", row.names = F) #expor
 ALLDATA<-ALLDATA %>% drop_na(LAST_NAME)
 
 # DELETE DUPLICATE ROWS
-ALLDATA<-distinct(ALLDATA)
+ALLDATA<-distinct(ALLDATA,LAST_NAME,FIRST_NAME,YEAR,TITLE,.keep_all = TRUE)
 # nrow(ALLDATA)
 # ALLDATA[which(duplicated(ALLDATA)==TRUE),]
 # nrow(deduped)-nrow(ALLDATA)
@@ -685,7 +686,7 @@ ALLDATA<-distinct(ALLDATA)
 
 
 # TODO: ID ANY WITH NO INST
-missing_INST<-ALLDATA %>% filter(is.na(INST)) %>% group_by(JOURNAL) %>% distinct(LAST_NAME,FIRST_NAME) %>% summarize(n=n()) %>% arrange(desc(n))
+missing_INST<-ALLDATA %>% filter(is.na(INST) | INST=="missing") %>% group_by(JOURNAL) %>% distinct(LAST_NAME,FIRST_NAME) %>% summarize(n=n()) %>% arrange(desc(n))
 
 write.csv(missing_INST, file="./output_review/missing_INST.csv", row.names = F) #export it as a csv file
 # TODO: Some of the editors are in multiple times because they have multiple jobs. ID and fix
@@ -717,7 +718,9 @@ write.csv(missing_INST, file="./output_review/missing_INST.csv", row.names = F) 
 ##########################################
 
 
-
+notre dame	USA
+2	notre dame university	United Kingdom
+3	university of notre dame
 
 checkINST<-ALLDATA %>% 
   select(INST,COUNTRY) %>% 
