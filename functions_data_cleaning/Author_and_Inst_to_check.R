@@ -444,5 +444,29 @@ PLANTECOL_checks<-PLANTECOL_checks %>% distinct(editor_id, INST,.keep_all = TRUE
 write.csv(PLANTECOL_checks, file="./Data/Patrick_James_Data_Corrections/plantecol_checks.csv", row.names = T) #export it as a csv file
 
 
-rm(PLANTECOL_checks,sub1,sub2,sub3,PLANTECOL_ed_checks,PLANTECOL_inst_checks)
+rm(PLANTECOL_checks,sub1,sub2,sub3,PLANTECOL_ed_checks,PLANTECOL_inst_checks) 
 
+
+
+
+##############
+
+#######################
+# AGrONOMY
+#######################
+# all with NA
+# OECOL_check<-ALLDATA %>% filter(JOURNAL=="OECOL") %>% arrange(LAST_NAME,YEAR) %>% filter(is.na(INST)) %>% distinct(LAST_NAME,FIRST_NAME,.keep_all = TRUE)
+OECOL_check<-ALLDATA %>% filter(JOURNAL=="OECOL") %>% arrange(LAST_NAME,YEAR)
+OECOL_check$INST[is.na(OECOL_check$INST)]<-"missing"
+OECOL_check$UNIT[is.na(OECOL_check$UNIT)]<-"missing"
+OECOL_check$CITY[is.na(OECOL_check$CITY)]<-"missing"
+OECOL_check$STATE[is.na(OECOL_check$STATE)]<-"missing"
+OECOL_check<-OECOL_check %>% filter(INST=="missing") %>% arrange(LAST_NAME,YEAR) %>% distinct(LAST_NAME,FIRST_NAME,.keep_all = TRUE)
+write.csv(OECOL_check, file="./Data/Patrick_James_Data_Corrections/OECOL_checks.csv", row.names = T) #export it as a csv file
+# 
+# OECOL_check2<-filter(ALLDATA,JOURNAL=="OECOL") %>% filter(is.na(INST)==FALSE) %>% distinct(LAST_NAME,FIRST_NAME,.keep_all = TRUE)
+# 
+# OECOL_check3<-left_join(OECOL_check,OECOL_check2,by="editor_id.x") %>% select(INST.x,INST.y)
+# # AG_inst<-AG %>% group_by(LAST_NAME,FIRST_NAME,MIDDLE_NAME,YEAR,INST) %>% summarise(n()) %>% arrange(LAST_NAME,FIRST_NAME,YEAR)
+# # write.csv(AG_inst, file="AG_missing_inst.csv", row.names = T) #export it as a csv file
+# OECOL_inst<-OECOL_check %>% distinct(LAST_NAME,FIRST_NAME,INST) %>% group_by(LAST_NAME,FIRST_NAME) %>% summarize(n_distinct(INST))
