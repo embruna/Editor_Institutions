@@ -51,6 +51,7 @@ clean_AMNAT <- function(DATAFILE1,DATAFILE2) {
   DATAFILE<-DATAFILE %>% rename("CATEGORY"="CATEGORY.x")
   
   
+
   DATAFILE$COUNTRY.x<-as.factor(DATAFILE$COUNTRY.x)
   country_levels<-(c(levels(DATAFILE$COUNTRY.x),levels(DATAFILE$COUNTRY.y)))
   levels(DATAFILE$COUNTRY.x)<-c(levels(DATAFILE$COUNTRY.x),country_levels)
