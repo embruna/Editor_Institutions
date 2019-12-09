@@ -180,19 +180,19 @@ both$STATE.x[both$YEAR==1992 & both$CITY.x=="Pensacola" & both$LAST_NAME=="Gibso
 both$STATE.x[both$LAST_NAME=="Moss"]<-NA
 both$STATE.x[both$LAST_NAME=="Usher"]<-NA
 both$STATE.x[both$LAST_NAME=="Milner-Gulland"]<-NA
-both$INST.x[both$LAST_NAME=="Belovsky" & both$INST.y=="Notre Dame"]<-"Notre Dame University"
+both$INST.x[both$LAST_NAME=="Belovsky" & both$INST.y=="Notre Dame"]<-"university of notre dame"
 both$CITY.x[both$LAST_NAME=="Belovsky" & both$INST.y=="Notre Dame"]<-"Notre Dame"
 both$STATE.x[both$LAST_NAME=="Belovsky" & both$INST.x=="Notre Dame University"]<-"IN"
 both$STATE.x[both$FIRST_NAME=="James" & both$LAST_NAME=="Carlton"]<-"CT"
 both$STATE.x[both$FIRST_NAME=="Jon" & both$LAST_NAME=="Rodriguez"]<-NA
 both$STATE.x[both$editor_id.x==455 & both$FIRST_NAME=="Christopher" & both$LAST_NAME=="Frissell"]<-"MT"
-both$INST.x[both$editor_id.x==455 & both$FIRST_NAME=="Christopher" & both$LAST_NAME=="Frissell"]<-"University of Montana"
-both$UNIT.x[both$editor_id.x==455 & both$FIRST_NAME=="Christopher" & both$LAST_NAME=="Frissell"]<-"Flathead Lake Biological Station"
+both$INST.x[both$editor_id.x==455 & both$FIRST_NAME=="Christopher" & both$LAST_NAME=="Frissell"]<-"university of montana"
+both$UNIT.x[both$editor_id.x==455 & both$FIRST_NAME=="Christopher" & both$LAST_NAME=="Frissell"]<-"flathead lake biological station"
 both$CITY.x[both$editor_id.x==455 & both$FIRST_NAME=="Christopher" & both$LAST_NAME=="Frissell"]<-"Polson"
 both$CITY.x[both$editor_id.x==1511 & both$LAST_NAME=="Cinner" & both$YEAR>2009 & both$YEAR<2015 ]<-"Townsville"
 both$STATE.x[both$editor_id.x==1511 & both$LAST_NAME=="Cinner" & both$YEAR>2009 & both$YEAR<2015 ]<-"Queensland"
 both$UNIT.x[both$editor_id.x==1511 & both$LAST_NAME=="Cinner"]<-"ARC Centre of Excellence for Coral Reef Studies"
-both$INST.x[both$editor_id.x==1511 & both$LAST_NAME=="Cinner"]<-"James Cook University"
+both$INST.x[both$editor_id.x==1511 & both$LAST_NAME=="Cinner"]<-"james cook university"
 both$NOTES.y[both$editor_id.x==1511 & both$LAST_NAME=="Cinner" & both$YEAR==2013]<-"journal front matter has INST=Columbia Univ, but his CV makes no mention of this"
 
 # This will replace all the "NA" in STATE.x (origianlly no info) with the value from STATE.y (Patrick's data collection), if there is one 
@@ -206,27 +206,27 @@ both<-both %>% rename("STATE"="STATE.x")
 
 
 # INST DIFFERENCES BETWEEN ALL DATA AND CHECKED FILE
-
+both$INST.x<-as.character(both$INST.x)
 # This will replace all the "NA" and "" in INST.x (origianlly no info) with the value from INST.y (Patrick's data collection), if there is one 
-both<-both %>% mutate(INST.x = replace(INST.x, is.na(INST.x), INST.y[is.na(INST.x)]))
+both<-both %>% mutate(INST.x = replace(INST.x, is.na(INST.x),INST.y[is.na(INST.x)]))
 both <- both %>% mutate(INST.x = replace(INST.x, INST.x == "", NA))
 summary(both$INST.x==both$INST.y) # 235 FALSE
 both$INST_check<-both$INST.x==both$INST.y
 
 INST_check<-filter(both,INST_check=="FALSE")
 INST_check_ok<-filter(both,INST_check==TRUE |is.na(INST_check))
+# 
+# write.csv(INST_check, file="./Data/Patrick_James_Data_Corrections/Complete/INST_corrections_2x.csv", row.names = F) #export it as a csv file
 
-write.csv(INST_check, file="./Data/Patrick_James_Data_Corrections/Complete/INST_corrections_2x.csv", row.names = F) #export it as a csv file
 
-
-both$INST.x[both$editor_id.x==1248 & both$JOURNAL=="BITR" & both$YEAR==1987 ]<-"New York Botanical Garden"
-both$INST.x[both$editor_id.x==1704 & both$JOURNAL=="JECOL" & both$YEAR==2009 ]<-"University of Sheffield"
+both$INST.x[both$editor_id.x==1248 & both$JOURNAL=="BITR" & both$YEAR==1987 ]<-"new york botanical garden"
+both$INST.x[both$editor_id.x==1704 & both$JOURNAL=="JECOL" & both$YEAR==2009 ]<-"university of sheffield"
 # both$INST.x[both$INST.x=="Unniversity of Stirling" ]<-"University of Stirling"
 
-both$UNIT.x[both$editor_id.x==1229 & both$INST.x=="University of Montana"]<-"Savannah River Ecology Laboratory"
-both$INST.x[both$editor_id.x==1229 & both$INST.x=="University of Montana"]<-"University of Georgia"
+both$UNIT.x[both$editor_id.x==1229 & both$INST.x=="University of Montana"]<-"savannah river ecology laboratory"
+both$INST.x[both$editor_id.x==1229 & both$INST.x=="University of Montana"]<-"university of georgia"
 
-both$UNIT.x[both$INST.x=="ALTERRA Research Institute for the Green World" ]<-"ALTERRA Research Institute for the Green World"
+both$UNIT.x[both$INST.x=="ALTERRA Research Institute for the Green World" ]<-"alterra research institute for the green world"
 both$UNIT.x[both$INST.x=="Gatty Marine Lab (University of Saint Andrews)" ]<-"Gatty Marine Lab"
 both$UNIT.x[both$INST.x=="Netherlands Institute of Ecology; Wageningen University and Research Centre Netherlands Institute of Ecology" ]<-"Netherlands Institute of Ecology"
 both$UNIT.x[both$INST.x=="Norwich" ]<-"Norwich Research Park Industrial Biotechnology and Bioenergy Alliance"
@@ -308,7 +308,7 @@ both$NOTES.y[both$CITY.x=="Canberra" & both$CITY.y=="Lyneham"]<-"2x city"
 
 summary(both$CITY.x==both$CITY.y)
 both$CITY_check<-both$CITY.x==both$CITY.y
-write.csv(CITY_check, file="./Data/Patrick_James_Data_Corrections/Complete/CITY_corrections_2x.csv", row.names = F) #export it as a csv file
+# write.csv(CITY_check, file="./Data/Patrick_James_Data_Corrections/Complete/CITY_corrections_2x.csv", row.names = F) #export it as a csv file
 
 # This will replace all the "NA" in CITY.x (origianlly no info) with the value from CITY.y (Patrick's data collection), if there is one 
 both<-both %>% mutate(CITY.x = replace(CITY.x, is.na(CITY.x), CITY.y[is.na(CITY.x)]))
@@ -352,7 +352,7 @@ summary(both$COUNTRY.x==both$COUNTRY.y) # 3552 FALSE
 both$country_check<-both$COUNTRY.x==both$COUNTRY.y
 
 country_check<-filter(both,country_check=="FALSE")
-write.csv(country_check, file="./Data/Patrick_James_Data_Corrections/Complete/COUNTRY_corrections_2x.csv", row.names = F) #export it as a csv file
+# write.csv(country_check, file="./Data/Patrick_James_Data_Corrections/Complete/COUNTRY_corrections_2x.csv", row.names = F) #export it as a csv file
 
 both$COUNTRY.x[both$LAST_NAME=="Tjoelker" & both$JOURNAL=="NEWPHYT" & both$INST=="Texas A & M University"]<-"USA"
 both$COUNTRY.x[both$LAST_NAME=="Atkin" & both$JOURNAL=="NEWPHYT" & both$INST=="University of York"]<-"United Kingdom"
@@ -365,8 +365,8 @@ both$COUNTRY.x[both$LAST_NAME=="Belovsky" & both$JOURNAL=="CONBIO" & both$INST==
 both$UNIT[both$LAST_NAME=="Bolker" & both$JOURNAL=="AMNAT" & both$INST=="McMaster University"]<-NA
 both$COUNTRY.x[both$LAST_NAME=="Bolker" & both$JOURNAL=="AMNAT" & both$INST=="McMaster University"]<-"Canada"
 
-both$UNIT[both$LAST_NAME=="Krivan" & both$JOURNAL=="AMNAT" ]<-"Biology Centre"
-both$INST[both$LAST_NAME=="Krivan" & both$JOURNAL=="AMNAT" ]<-"Academy of Sciences of the Czech Republic"
+both$UNIT[both$LAST_NAME=="Krivan" & both$JOURNAL=="AMNAT" ]<-"biology centre"
+both$INST[both$LAST_NAME=="Krivan" & both$JOURNAL=="AMNAT" ]<-"academy of sciences of the czech republic"
 both$CITY[both$LAST_NAME=="Krivan" & both$JOURNAL=="AMNAT" ]<-"Ceske Budejovice"
 both$STATE[both$LAST_NAME=="Krivan" & both$JOURNAL=="AMNAT"]<-"South Bohemia"
 both$COUNTRY.x[both$LAST_NAME=="Krivan" & both$JOURNAL=="AMNAT"]<-"Czech Republic"
@@ -558,5 +558,7 @@ both$COUNTRY[both$STATE == "Ontario"] <- "Canada"
 both$COUNTRY[both$STATE == "Gelderland"] <- "Netherlands"
 levels(both$INST)
 
+
+both$INST<-tolower(both$INST)
 return(both)
 }

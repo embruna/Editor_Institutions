@@ -335,15 +335,43 @@ rm(ECOLOGY.csv, ECOL_raw)
 ##############################################################
 ##############################################################
 # with ALL
-ALLDATA<-bind_rows(MARECOL,NAJFM,NEWPHYT,JZOOL,GCB,
-                   OIKOS,BITR,LECO,PLANTECOL,OECOL,
-                   JTE,JECOL,JBIOG,JAPE,JANE,FUNECOL,
-                   FEM,EVOL,ECOL,ECOG,CONBIO,BIOCON,
-                   AREES,AMNAT,AJB,AG,CONDOR,AUK)
+
+
+ALLDATA<-bind_rows(CONBIO,
+                   # MARECOL,
+                   # NAJFM,
+                   NEWPHYT,
+                   JZOOL,
+                   GCB,
+                   OIKOS,
+                   BITR,
+                   LECO,
+                   PLANTECOL,
+                   OECOL,
+                   JTE,
+                   JECOL,
+                   JBIOG,
+                   JAPE,
+                   JANE,
+                   FUNECOL,
+                   FEM,
+                   EVOL,
+                   ECOL,
+                   ECOG,
+                   AREES,
+                   AMNAT,
+                   AJB,
+                   # AG,
+                   # CONDOR,
+                   # AUK,
+                   BIOCON)
 
 head(ALLDATA,10)
 str(ALLDATA)
 colnames(ALLDATA)
+summary(ALLDATA)
+
+
 ALLDATA <- ALLDATA %>% 
   select(JOURNAL,YEAR,VOLUME,ISSUE,editor_id,    # deleting "NAME"
          FIRST_NAME,MIDDLE_NAME,
@@ -485,7 +513,7 @@ JrnlYrs_10<-ALLDATA %>% filter(YEAR>=1985,YEAR<=1994) %>% group_by(JOURNAL) %>% 
 JrnlYrs_20<-ALLDATA %>% filter(YEAR>=1985,YEAR<=2004) %>% group_by(JOURNAL) %>% summarise(yrs_per_jrnl=n_distinct(JOURNAL,YEAR)) %>% arrange(yrs_per_jrnl)
 JrnlYrs_30<-ALLDATA %>% filter(YEAR>=1985,YEAR<=2014) %>% group_by(JOURNAL) %>% summarise(yrs_per_jrnl=n_distinct(JOURNAL,YEAR)) %>% arrange(yrs_per_jrnl)
 JrnlYrs_35<-ALLDATA %>% filter(YEAR>=1985,YEAR<=2019) %>% group_by(JOURNAL) %>% summarise(yrs_per_jrnl=n_distinct(JOURNAL,YEAR)) %>% arrange(yrs_per_jrnl)
-JrnlYrs_30
+head(JrnlYrs_30)
 # foo<-ALLDATA %>% filter(YEAR>"1984") %>% filter(YEAR<"2015") %>% filter(JOURNAL=="MARECOL") %>% group_by(YEAR) %>% summarize(n())
 # foo
 
@@ -583,8 +611,12 @@ ALLDATA$INST[ALLDATA$INST=="."]<-NA
 source("functions_data_cleaning/JamesCorrections.R")
 ALLDATA<-JamesCorrections(ALLDATA)
 
+
 source("functions_data_cleaning/institution_cleaner.R")
 ALLDATA<-institution_cleaner(ALLDATA)
+
+
+
 
 
 checkINST<-ALLDATA %>% 
@@ -592,7 +624,35 @@ checkINST<-ALLDATA %>%
   group_by(INST,COUNTRY) %>% 
   distinct(INST,COUNTRY) %>% 
   arrange(INST)
-
+source("./functions_data_cleaning/name.check.R")
+NameSimilarityDF<-name.check(checkINST$INST)
+write.csv(NameSimilarityDF, file="./output_review/NameSimilarityDF_check.csv", row.names = F) #export it as a csv file
+# 
+# checkINST$INST<-gsub(" ","",checkINST$INST)
+# 
+# 
+# 
+# colnames(NameSimilarityDF)
+# 
+# setdiff(NameSimilarityDF$Name1,NameSimilarityDF$Name2)
+# a<-"abcdeg"
+# b<-"abcdefg"
+# 
+# foo<-Reduce(setdiff, strsplit(c(NameSimilarityDF$Name1, NameSimilarityDF$Name2), split = ""))
+# foo<-Reduce(setdiff, )
+# 
+# A<-strsplit(NameSimilarityDF$Name1, split = "")
+# B<-strsplit(NameSimilarityDF$Name2, split = "")
+# foo<-cbind(A[1],B[2])
+# foo<-reduce(setdiff(foo))
+# head(NameSimilarityDF,10)
+# x<-(checkINST$INST)
+# x<-gsub(" ","",x)
+# y = unname(sapply(x, function(x) {
+#   paste(sort(trimws(strsplit(x[1], ',')[[1]])), collapse=',')} ))
+# y
+# 
+# arrange(x[1])
 
 checkINST2<-ALLDATA %>% 
   filter(is.na(INST)) %>% 

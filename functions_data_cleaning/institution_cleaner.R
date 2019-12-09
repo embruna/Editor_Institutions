@@ -50,7 +50,7 @@ levels(DATAFILE$COUNTRY)
 ##############################################################
 
 # NEED TO CONFIRM WHAT PART OF USSR IN WHICH THE AUTHOR WAS BASED
-levels(DATAFILE$COUNTRY) <- c(levels(DATAFILE$COUNTRY),"Russia","Scotland")
+levels(DATAFILE$COUNTRY) <- c(levels(DATAFILE$COUNTRY),"Russia","Scotland","Northern Ireland")
 DATAFILE$COUNTRY[DATAFILE$COUNTRY=="USSR"]<-"Russia"
 
 # TODO: NEED DO DELETE THESE
@@ -372,6 +372,7 @@ DATAFILE$INST[DATAFILE$INST=="Universit\xfc\xbe\x8d\x83\xa0\xbct Z\xfc\xbe\x8c\x
 DATAFILE$INST[DATAFILE$INST=="Texas A & M Univ."]<-"Texas A & M University"
 DATAFILE$INST[DATAFILE$INST=="Texas A & M"]<-"Texas A & M University"
 DATAFILE$INST[DATAFILE$INST=="Aberdeen"]<-"University of Aberdeen"
+DATAFILE$INST[DATAFILE$INST=="Cambridge University"]<-"University of Cambridge"
 DATAFILE$INST[DATAFILE$INST=="Universityof"]<-"University of"
 DATAFILE$INST[DATAFILE$INST=="Aberystwyth"]<-"Aberystwyth University"
 DATAFILE$INST[DATAFILE$INST=="Alabama A and M"]<-"Alabama A and M University"
@@ -597,7 +598,7 @@ DATAFILE$UNIT[DATAFILE$INST=="agresearch"]<-"agresearch ltd"
 DATAFILE$UNIT[DATAFILE$INST=="agriculture and agri food"]<-"agriculture and agri food canada"
 DATAFILE$COUNTRY[DATAFILE$INST=="queens college city university of new york"]<-"USA"
 DATAFILE$COUNTRY[DATAFILE$INST=="northern prairie wildlife research center"]<-"USA"
-DATAFILE$COUNTRY[DATAFILE$INST=="northern prairie wildlife research center"]<-"us geological survey northern prairie wildlife research center"
+DATAFILE$INST[DATAFILE$INST=="northern prairie wildlife research center"]<-"us geological survey northern prairie wildlife research center"
 DATAFILE$COUNTRY[DATAFILE$INST=="ohio northern university"]<-"USA"
 DATAFILE$COUNTRY[DATAFILE$INST=="ohio state university"]<-"USA"
 DATAFILE$COUNTRY[DATAFILE$INST=="ohio wesleyan university"]<-"USA"
@@ -913,6 +914,7 @@ DATAFILE$COUNTRY[DATAFILE$INST=="university of missouri st. louis"]<-"USA"
 DATAFILE$COUNTRY[DATAFILE$INST=="(retired) natural history museum london"]<-"United Kingdom"
 DATAFILE$INST[DATAFILE$INST=="(retired) natural history museum london"]<-"natural history museum"
 DATAFILE$COUNTRY[DATAFILE$INST=="us forest service north central research station"]<-"USA"
+DATAFILE$INST[DATAFILE$INST=="cambridge university"]<-"university of cambridge"
 # DATAFILE$COUNTRY[DATAFILE$INST=="us geological survey us geological survey us geological survey us geological survey northern prairie wildlife research center"]<-"USA"
 # DATAFILE$COUNTRY[DATAFILE$INST=="usfs us forest service us forest service us forest service rocky mountain research station"]<-"USA"
 	NA
