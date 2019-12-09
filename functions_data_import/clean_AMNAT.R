@@ -1,7 +1,8 @@
 #FUNCTION TO CLEAN AND PROCESS AMNAT
 clean_AMNAT <- function(DATAFILE1,DATAFILE2) {
-  
-  # TODO: FIGURE OUT WTF AM NAT
+  # DATAFILE1<-AMNAT1_raw
+  # DATAFILE2<-AMNAT2_raw
+  # # TODO: FIGURE OUT WTF AM NAT
   # TODO: AM NAT Needs institutions from 2006-2014 put in
   # NEED TO FIGURE OUT IF AMNAT, AMNAT0614,orAMNATEKB!!!!!!!!!!!!!!
   # AMNATpre2005<-filter(AMNAT.csv, YEAR<2006)
@@ -11,7 +12,8 @@ clean_AMNAT <- function(DATAFILE1,DATAFILE2) {
   
   # FIND THE DUPLICATES, DELETE THE ONE THAT DOESN'T HAVE THE INST
   DATAFILE<-bind_rows(DATAFILE1,DATAFILE2) %>% 
-    arrange(YEAR,LAST_NAME,FIRST_NAME,INST)
+    arrange(YEAR,LAST_NAME,FIRST_NAME,INST) %>% 
+    distincy(YEAR,LAST_NAME,FIRST_NAME)
   # head(DATAFILE,20)
   # summary(DATAFILE)
   
@@ -41,6 +43,12 @@ clean_AMNAT <- function(DATAFILE1,DATAFILE2) {
                DATAFILE$LAST_NAME=="Palumbi"]<-"University of Hawaii at Manoa"
   DATAFILE<-DATAFILE %>% rename("TITLE"="TITLE.x")
   # head(DATAFILE,10)
+  DATAFILE$INST[is.na(DATAFILE$INST)]<-"missing"
+  DATAFILE$UNIT[is.na(DATAFILE$UNIT)]<-"missing"
+  DATAFILE$CITY[is.na(DATAFILE$CITY)]<-"missing"
+  DATAFILE$STATE[is.na(DATAFILE$STATE)]<-"missing"
+  
+  DATAFILE<-DATAFILE %>% arrange(LAST_NAME,FIRST_NAME,YEAR) 
   return(DATAFILE)
 }
 

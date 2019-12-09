@@ -685,7 +685,8 @@ ALLDATA<-distinct(ALLDATA)
 
 
 # TODO: ID ANY WITH NO INST
-missing_INST<-ALLDATA %>% filter(is.na(INST))
+missing_INST<-ALLDATA %>% filter(is.na(INST)) %>% group_by(JOURNAL) %>% distinct(LAST_NAME,FIRST_NAME) %>% summarize(n=n()) %>% arrange(desc(n))
+
 write.csv(missing_INST, file="./output_review/missing_INST.csv", row.names = F) #export it as a csv file
 # TODO: Some of the editors are in multiple times because they have multiple jobs. ID and fix
 
