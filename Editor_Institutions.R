@@ -690,14 +690,14 @@ ALLDATA_inst_check<-ALLDATA %>%
   select(INST) %>% 
   distinct(INST) %>% 
   arrange(INST)
-write_csv(ALLDATA_inst_check,"./data/ALLDATA_inst_check.csv")
+write_csv(ALLDATA_inst_check,"./output_review/ALLDATA_inst_check.csv")
 
 # LIST OF ALL INSTITIONS BY COUNTRY (easier to see if any were assigned wrong country code)
 ALLDATA_inst_check_by_country<-ALLDATA %>%
   select(INST,COUNTRY) %>% 
   distinct(INST,COUNTRY) %>% 
   arrange(COUNTRY,INST)
-write_csv(ALLDATA_inst_check_by_country,"./data/ALLDATA_inst_check_by_country.csv")
+write_csv(ALLDATA_inst_check_by_country,"./output_review/ALLDATA_inst_check_by_country.csv")
 
 checkINST<-ALLDATA %>% 
   select(INST) %>% 
