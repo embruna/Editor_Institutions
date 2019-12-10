@@ -34,55 +34,84 @@ source("functions_data_cleaning/institution_cleaner.R")
 # CONDOR: not for this paper
 ##############################################################
 
-
+##########
 multi1<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_1.csv", col_names = TRUE)
 multi1<-multi1 %>% fill(INST,UNIT,CITY,STATE,.direction="down")
+##########
 
+##########
 multi2a<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_2a.csv", col_names = TRUE)
 multi2a<-multi2a %>% filter(JOURNAL=="CONBIO"|JOURNAL=="NEWPHYT") %>% fill(INST,UNIT,CITY,STATE,.direction="down") #delete out other journals this is conbio and new phyt
+##########
 
+##########
 multi2b<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_2b.csv", col_names = TRUE)
 multi2b<-multi2b %>% filter(JOURNAL=="CONBIO"|JOURNAL=="NEWPHYT") %>% fill(INST,UNIT,CITY,STATE,.direction="down") #delete out other journals this is conbio and new phyt
+##########
 
+##########
 BITR_inst<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_3_BITR.csv", col_names = TRUE)
 BITR_inst<-BITR_inst %>% fill(INST,UNIT,CITY,STATE,.direction="down")
+##########
 
+##########
 AMNAT_inst<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_4_AMNAT.csv", col_names = TRUE,na = c("", "N/A", "NA"), trim_ws = TRUE)
 AMNAT_inst<-AMNAT_inst %>% fill(INST,UNIT,CITY,STATE,.direction="down")%>% filter(JOURNAL=="AMNAT")
+##########
 
+##########
 JECOL_inst<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_6_JEcol.csv", col_names = TRUE)
 JECOL_inst<-JECOL_inst %>% fill(INST,UNIT,CITY,STATE,.direction="down")%>% filter(JOURNAL=="JECOL")
+##########
 
+##########
 JAPE_inst<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_7_JAPE.csv", col_names = TRUE)
 JAPE_inst<-JAPE_inst %>% 
   rename("FIRST_NAME"="FIRST_NA", "MIDDLE_NAME"="MIDDLE_","LAST_NAME"="LAST_NA") %>% 
   fill(INST,UNIT,CITY,STATE,NOTES,.direction="down")%>% filter(JOURNAL=="JAPE")
 JAPE_inst$editor_id<-NULL
 # TODO: something is going on with editot IDS
+##########
 
-
+##########
 JBIOG_inst<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/newPJCorrectionsDONE_JBIOG.csv", col_names = TRUE)
 JBIOG_inst<-JBIOG_inst %>% select(-X1,-check) %>% rename("NOTES"=`please note here if INCORRECT`)
 # This will keep only the ones we 2x / spotchecked that are correct OR are still missing the INST 
 JBIOG_inst<-JBIOG_inst[(!is.na(JBIOG_inst$NOTES)|
                           (JBIOG_inst$INST=="missing")),]
+##########
 
-
+##########
 LECO_inst<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/newPJCorrections_10_LECO.csv", col_names = TRUE)
 names(LECO_inst)
 LECO_inst<-LECO_inst %>%  select(-X1,-check) %>% rename("NOTES"=`please note if INCORRECT`)
 LECO_inst<-LECO_inst[(!is.na(LECO_inst$NOTES)|
                           (LECO_inst$INST=="missing")),]
-
-# 
+##########
+##########
 # PLANTECOL_inst<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_8_PLANTECOL.csv", col_names = TRUE)
 # PLANTECOL_inst<-PLANTECOL_inst %>%  select(-X1,-check) %>% rename("NOTES"=`Please note here if INCORRECT`)
 # PLANTECOL_inst<-PLANTECOL_inst[(!is.na(PLANTECOL_inst$NOTES)|
 #                         (PLANTECOL_inst$INST=="missing")),]
 # 
 
+##########
+# OIKOS
+##########
+OIKOS_inst<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_OIKOS.csv", col_names = TRUE)
+
+##########
+# OECOLOGIA
+
+##########
+
+##########
+# JANE
+##########
+
+
 #############
-INST_fix<-bind_rows(multi2b,multi2a,multi1,BITR_inst,JECOL_inst,AMNAT_inst,JAPE_inst,JBIOG_inst,LECO_inst) %>% 
+INST_fix<-bind_rows(multi2b,multi2a,multi1,BITR_inst,JECOL_inst,AMNAT_inst,JAPE_inst,JBIOG_inst,LECO_inst,OIKOS_inst) %>% 
   distinct(editor_id,JOURNAL,YEAR,.keep_all= TRUE) %>%     #there are some duplicates, best to remove them
   arrange(JOURNAL,editor_id,YEAR)
 
@@ -132,13 +161,31 @@ nrow(C_but_not_O)+nrow(O_butnot_C)+nrow(O_and_C)
 
 head(both)
 str(both)
+
 colnames(both)
-colnames(both)
-both<-select(both,JOURNAL,YEAR,VOLUME,ISSUE,editor_id.x,editor_id.y,
+both<-select(both,JOURNAL,YEAR,VOLUME.x,VOLUME.y,ISSUE.x,ISSUE.y,editor_id.x,editor_id.y,
              FIRST_NAME,MIDDLE_NAME.x,MIDDLE_NAME.y,LAST_NAME,
-             TITLE,CATEGORY,INST.x,INST.y,UNIT.x,UNIT.y,CITY.x,CITY.y,STATE.x,STATE.y,
+             TITLE.x,TITLE.y,CATEGORY,INST.x,INST.y,UNIT.x,UNIT.y,CITY.x,CITY.y,STATE.x,STATE.y,
              COUNTRY.x,COUNTRY.y,COUNTRY_Prior_Class,geo.code,geo.code_Prior_Class,
              GENDER,NOTES.x,NOTES.y)
+
+
+
+both<-both %>% mutate(VOLUME.x = replace(VOLUME.x, is.na(VOLUME.x),VOLUME.y[is.na(VOLUME.x)]))
+both$VOLUME.y<-NULL
+both<-both %>% rename("VOLUME"="VOLUME.x")
+
+
+
+both<-both %>% mutate(ISSUE.x = replace(ISSUE.x, is.na(ISSUE.x),ISSUE.y[is.na(ISSUE.x)]))
+both$ISSUE.y<-NULL
+both<-both %>% rename("ISSUE"="ISSUE.x")
+
+
+both<-both %>% mutate(TITLE.x = replace(TITLE.x, is.na(TITLE.x),TITLE.y[is.na(TITLE.x)]))
+both$TITLE.y<-NULL
+both<-both %>% rename("TITLE"="TITLE.x")
+
 
 # #CAN QUICKLY ID WHAT NEEDS TO BE FIXED AS FOLLOWS
 # str(both)
@@ -182,6 +229,7 @@ both$STATE.x[both$LAST_NAME=="Usher"]<-NA
 both$STATE.x[both$LAST_NAME=="Milner-Gulland"]<-NA
 both$INST.x[both$LAST_NAME=="Belovsky" & both$INST.y=="Notre Dame"]<-"university of notre dame"
 both$CITY.x[both$LAST_NAME=="Belovsky" & both$INST.y=="Notre Dame"]<-"Notre Dame"
+both$COUNTRY.x[both$LAST_NAME=="Belovsky" & both$INST.x=="university of notre dame"]<-"USA"
 both$STATE.x[both$LAST_NAME=="Belovsky" & both$INST.x=="Notre Dame University"]<-"IN"
 both$STATE.x[both$FIRST_NAME=="James" & both$LAST_NAME=="Carlton"]<-"CT"
 both$STATE.x[both$FIRST_NAME=="Jon" & both$LAST_NAME=="Rodriguez"]<-NA
@@ -464,5 +512,28 @@ levels(both$INST)
 
 
 both$INST<-tolower(both$INST)
+
+
+both<-both %>% 
+  group_by(JOURNAL,LAST_NAME,FIRST_NAME) %>% 
+  mutate(INST = ifelse((row_number()==1 & is.na(INST)), "missing", INST))
+
+
+both<-both %>% 
+  group_by(JOURNAL,LAST_NAME,FIRST_NAME) %>% 
+  mutate(UNIT = ifelse((row_number()==1 & is.na(UNIT)), "missing", UNIT))
+
+both<-both %>% 
+  group_by(JOURNAL,LAST_NAME,FIRST_NAME) %>% 
+  mutate(STATE = ifelse((row_number()==1 & is.na(STATE)), "missing", STATE))
+
+
+both<-both %>% 
+  group_by(JOURNAL,LAST_NAME,FIRST_NAME) %>% 
+  mutate(CITY = ifelse((row_number()==1 & is.na(CITY)), "missing", CITY))
+
+
+both<-both %>% arrange(JOURNAL,LAST_NAME,FIRST_NAME,YEAR)
+
 return(both)
 }

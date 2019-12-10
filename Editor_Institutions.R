@@ -616,209 +616,10 @@ source("functions_data_cleaning/institution_cleaner.R")
 ALLDATA<-institution_cleaner(ALLDATA)
 
 
-levels(as.factor(ALLDATA$INST))
 
-ALLDATA$INST<-as.factor(ALLDATA$INST)
-ALLDATA$INST<-droplevels(ALLDATA$INST)
-ALLDATA_inst_check<-as.data.frame(levels(ALLDATA$INST))
-write_csv(ALLDATA_inst_check,"./data/ALLDATA_inst_check.csv")
-
-
-
-# TODO: FIND ANY editors with an editor_id and an NA for editor_id and correct
-
-ALLDATA$LAST_NAME<-stri_trans_totitle(ALLDATA$LAST_NAME)
-ALLDATA$FIRST_NAME<-stri_trans_totitle(ALLDATA$FIRST_NAME)
-
-ALLDATA$editor_id.y<-NULL
-ALLDATA<-ALLDATA %>% rename("editor_id"="editor_id.x")
-ALLDATA$editor_id<-as.character(ALLDATA$editor_id)
-ALLDATA<-ALLDATA %>% replace_na(list(editor_id = "TBD", editor_id.y = "TBD"))
-dup_edID<-ALLDATA %>% 
-  select(LAST_NAME,FIRST_NAME,editor_id) %>% 
-  group_by(LAST_NAME,FIRST_NAME) %>% 
-  mutate(n_id=n_distinct(editor_id)) %>% 
-  filter(n_id>1) %>% 
-  distinct(LAST_NAME,FIRST_NAME,editor_id,.keep_all=TRUE) %>% 
-  arrange(LAST_NAME,FIRST_NAME) 
-dup_edID
-write.csv(dup_edID, file="./output_review/dup_edID.csv", row.names = F) #export it as a csv file
-
-
-# TODO: Same but based on last name (in case the first name is different)
-dup_edID2<-ALLDATA %>% 
-  select(LAST_NAME,FIRST_NAME,editor_id) %>% 
-  group_by(LAST_NAME) %>% 
-  mutate(n_id=n_distinct(editor_id)) %>% 
-  filter(n_id>1) %>% 
-  distinct(LAST_NAME,editor_id,.keep_all=TRUE) %>% 
-  arrange(LAST_NAME) 
-dup_edID2
-write.csv(dup_edID2, file="./output_review/dup_edID2.csv", row.names = F) #export it as a csv file
-
-# TODO: find cases where diff editor_id for same editors
-dup_edID3<-ALLDATA %>% 
-  select(LAST_NAME,FIRST_NAME,editor_id) %>% 
-  filter(editor_id!="TBD") %>% 
-  group_by(LAST_NAME,FIRST_NAME) %>% 
-  mutate(n_names=n_distinct(editor_id)) %>% 
-  distinct(LAST_NAME,FIRST_NAME,editor_id,.keep_all=TRUE) %>%
-  arrange(desc(LAST_NAME,FIRST_NAME,editor_id)) %>% 
-  filter(n_names>1) 
-dup_edID3 
-# dup_edID3 <-dup_edID3 %>% group_by(FIRST_NAME,LAST_NAME) %>%  arrange(editor_id) %>% slice(2)
-write.csv(dup_edID3, file="./output_review/dup_edID3.csv", row.names = F) #export it as a csv file
-
-# REMOVE ANY ROWS WITH NO DATA
-ALLDATA<-ALLDATA %>% drop_na(LAST_NAME)
-
-# DELETE DUPLICATE ROWS
-ALLDATA<-distinct(ALLDATA,LAST_NAME,FIRST_NAME,YEAR,TITLE,.keep_all = TRUE)
-# nrow(ALLDATA)
-# ALLDATA[which(duplicated(ALLDATA)==TRUE),]
-# nrow(deduped)-nrow(ALLDATA)
-# colnames(deduped)==colnames(ALLDATA)
-# cut<- setdiff(ALLDATA,deduped)
-# setdiff(deduped,ALLDATA)
-# first<-ALLDATA
-# second<-deduped
-
-
-
-# TODO: ID ANY WITH NO INST
-missing_INST<-ALLDATA %>% filter(is.na(INST) | INST=="missing") %>% group_by(JOURNAL) %>% distinct(LAST_NAME,FIRST_NAME) %>% summarize(n=n()) %>% arrange(desc(n))
-
-write.csv(missing_INST, file="./output_review/missing_INST.csv", row.names = F) #export it as a csv file
-# TODO: Some of the editors are in multiple times because they have multiple jobs. ID and fix
-
-##########################################
-# TODO: Still left to fix and 2x
-##########################################
-
-# 2x claudia bieber. CVM is in austria but country is australia
-# BIOCON: editor_id 2874 and 2875 are the same person!			
-# BIOCON: editor_id 3024 country should be Singapore in 2009
-# JECOL: editor_id 1279 in 2013: country and state mismatch 
-# JECOL editor_ID 703 in 2014: remove zip from state
-# JECOL editor_ID 2408 in 2010-2013 should country be MEX or GER? Apparently MEX (mex in state, not country)
-# JECOL: several have country listed in state column  
-# 2x ythat Vegetation Survey of Western Australia shouldn’t be Univ of Western Australia
-# ingrid parmentier should be Universite Libre de Bruxelles 2x journal
-# James Cook University ONE OF THESE IS JAMES COOK UNIVERSITY TOWNSVILLE
-# Natiral History Museum need to 2x each some are us some are UK
-# NEED TO GET PEOPLE BY CAMPUS UNAM
-# no one by this name
-# NoInst
-# Oregon Trail
-# Pfenning does he have two researcher iD's? 
-# Stephen Simpson Ecology 2002 2x if Oxford, UK, Australia 
-# 1 Traveser  Anna       217             2
-# 2 Traveset  Anna       217             2
-# Troy Day not on Amnat board in 12-14, listed as in Australia
-##########################################
-
-
-notre dame	USA
-2	notre dame university	United Kingdom
-3	university of notre dame
-
-checkINST<-ALLDATA %>% 
-  select(INST,COUNTRY) %>% 
-  group_by(INST,COUNTRY) %>% 
-  distinct(INST,COUNTRY) %>% 
-  arrange(INST)
-source("./functions_data_cleaning/name.check.R")
-NameSimilarityDF<-name.check(checkINST$INST)
-write.csv(NameSimilarityDF, file="./output_review/NameSimilarityDF_check.csv", row.names = F) #export it as a csv file
-# 
-# checkINST$INST<-gsub(" ","",checkINST$INST)
-# 
-# 
-# 
-# colnames(NameSimilarityDF)
-# 
-# setdiff(NameSimilarityDF$Name1,NameSimilarityDF$Name2)
-# a<-"abcdeg"
-# b<-"abcdefg"
-# 
-# foo<-Reduce(setdiff, strsplit(c(NameSimilarityDF$Name1, NameSimilarityDF$Name2), split = ""))
-# foo<-Reduce(setdiff, )
-# 
-# A<-strsplit(NameSimilarityDF$Name1, split = "")
-# B<-strsplit(NameSimilarityDF$Name2, split = "")
-# foo<-cbind(A[1],B[2])
-# foo<-reduce(setdiff(foo))
-# head(NameSimilarityDF,10)
-# x<-(checkINST$INST)
-# x<-gsub(" ","",x)
-# y = unname(sapply(x, function(x) {
-#   paste(sort(trimws(strsplit(x[1], ',')[[1]])), collapse=',')} ))
-# y
-# 
-# arrange(x[1])
-
-checkINST2<-ALLDATA %>% 
-  filter(is.na(INST)) %>% 
-  distinct(JOURNAL,LAST_NAME,COUNTRY) %>% 
-  group_by(JOURNAL) %>% 
-  summarise(n())
-
-ALLDATA %>% 
-  distinct(LAST_NAME,FIRST_NAME) %>% 
-  summarise(n())
-
-##############################################################
-# SAVE THE FILE AS A CSV FOR MANUAL REVIEW
-##############################################################
-INST_LIST<-ALLDATA %>% select(INST,COUNTRY) %>% arrange(COUNTRY,INST)
-INST_LIST<-unique(INST_LIST)
-
-head(INST_LIST,100)
-nrow(INST_LIST)/2
-one<-INST_LIST %>% slice((1:((nrow(INST_LIST)/2))))
-two<-INST_LIST %>% slice(-(1:((nrow(INST_LIST)/2)))) 
-bound<-bind_cols(one,two)
-write.csv(bound, file="./output_review/InstNameList.csv", row.names = T) #export it as a csv file
-rm(bound,one,two)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-##############################################################
-# This will check if any are still in UTF8 with accents instead of ascii
-##############################################################
-
-asciitest<-stri_enc_mark(ALLDATA$INST)
-asciitest<-as.factor(asciitest)
-summary(asciitest)
-
+######################################
+#TODO: Correct accents etc into ASCII
+######################################
 # ALLDATA_native<-ALLDATA$INST[asciitest]
 # ALLDATA_native
 # corrections<-NULL
@@ -863,19 +664,159 @@ iconv(ALLDATA$INST, to = "ASCII//TRANSLIT")
 # summary(ALLDATA$INST)
 ALLDATA<-ALLDATA %>% filter(ALLDATA$INST!="")
 
+###############################
+
+###############################
+# REMOVE ANY ROWS WITH NO DATA
+ALLDATA<-ALLDATA %>% drop_na(LAST_NAME,FIRST_NAME)
+###############################
+
+###############################
+# DELETE DUPLICATE ROWS
+# TODO: SEE WHICH ONES ARE BIENBG DROPPED
+ALLDATA<-distinct(ALLDATA,LAST_NAME,FIRST_NAME,YEAR,TITLE,.keep_all = TRUE)
+###############################
 
 
 
-####################################
+###########################
+# TODO: FINAL REVIEW OF DATA
+############################
+############################
+# TODO: Review the insitutions for any duplicates, spelling errors, etc
 
-# GO WITH ALLDATA TO INST_corrections.R
-# this is where any corrections are put in'
-# when done, take the resulting df and fo to EditorINst_analyses.R
+# LIST OF ALL INSTITIONS
+ALLDATA_inst_check<-ALLDATA %>%
+  select(INST) %>% 
+  distinct(INST) %>% 
+  arrange(INST)
+write_csv(ALLDATA_inst_check,"./data/ALLDATA_inst_check.csv")
 
-####################################
+# LIST OF ALL INSTITIONS BY COUNTRY (easier to see if any were assigned wrong country code)
+ALLDATA_inst_check_by_country<-ALLDATA %>%
+  select(INST,COUNTRY) %>% 
+  distinct(INST,COUNTRY) %>% 
+  arrange(COUNTRY,INST)
+write_csv(ALLDATA_inst_check_by_country,"./data/ALLDATA_inst_check_by_country.csv")
+
+checkINST<-ALLDATA %>% 
+  select(INST) %>% 
+  distinct(INST) %>% 
+  arrange(INST)
+# similarity index to to find mispellings etc.
+source("./functions_data_cleaning/name.check.R")
+NameSimilarityDF<-name.check(checkINST$INST)
+write.csv(NameSimilarityDF, file="./output_review/NameSimilarityDF_check.csv", row.names = F) #export it as a csv file
+############################
+
+############################
+# TODO: FIND and correct any editors with both an editor_id and NA for editor_id
+ALLDATA$LAST_NAME<-stri_trans_totitle(ALLDATA$LAST_NAME)
+ALLDATA$FIRST_NAME<-stri_trans_totitle(ALLDATA$FIRST_NAME)
+
+ALLDATA$editor_id.y<-NULL
+ALLDATA<-ALLDATA %>% rename("editor_id"="editor_id.x")
+ALLDATA$editor_id<-as.character(ALLDATA$editor_id)
+ALLDATA<-ALLDATA %>% replace_na(list(editor_id = "TBD", editor_id.y = "TBD"))
+dup_edID<-ALLDATA %>% 
+  select(LAST_NAME,FIRST_NAME,editor_id) %>% 
+  group_by(LAST_NAME,FIRST_NAME) %>% 
+  mutate(n_id=n_distinct(editor_id)) %>% 
+  filter(n_id>1) %>% 
+  distinct(LAST_NAME,FIRST_NAME,editor_id,.keep_all=TRUE) %>% 
+  arrange(LAST_NAME,FIRST_NAME) 
+dup_edID
+write.csv(dup_edID, file="./output_review/dup_edID.csv", row.names = F) #export it as a csv file
+############################
+
+############################
+# TODO: Same as above based on last name (in case the first name is different)
+dup_edID2<-ALLDATA %>% 
+  select(LAST_NAME,FIRST_NAME,editor_id) %>% 
+  group_by(LAST_NAME) %>% 
+  mutate(n_id=n_distinct(editor_id)) %>% 
+  filter(n_id>1) %>% 
+  distinct(LAST_NAME,editor_id,.keep_all=TRUE) %>% 
+  arrange(LAST_NAME) 
+dup_edID2
+write.csv(dup_edID2, file="./output_review/dup_edID2.csv", row.names = F) #export it as a csv file
+############################
+
+############################
+# TODO: find cases where the same editor has >1 editor_id
+dup_edID3<-ALLDATA %>% 
+  select(LAST_NAME,FIRST_NAME,editor_id) %>% 
+  filter(editor_id!="TBD") %>% 
+  group_by(LAST_NAME,FIRST_NAME) %>% 
+  mutate(n_names=n_distinct(editor_id)) %>% 
+  distinct(LAST_NAME,FIRST_NAME,editor_id,.keep_all=TRUE) %>%
+  arrange(desc(LAST_NAME,FIRST_NAME,editor_id)) %>% 
+  filter(n_names>1) 
+dup_edID3 
+# dup_edID3 <-dup_edID3 %>% group_by(FIRST_NAME,LAST_NAME) %>%  arrange(editor_id) %>% slice(2)
+write.csv(dup_edID3, file="./output_review/dup_edID3.csv", row.names = F) #export it as a csv file
+############################
+
+############################
+# TODO: ID ANY EDITORS WITH NO INST LISTED
+# could be na or missing
+missing_INST<-ALLDATA %>% filter(is.na(INST) | INST=="missing") %>% group_by(JOURNAL) %>% distinct(LAST_NAME,FIRST_NAME) %>% summarize(n=n()) %>% arrange(desc(n))
+
+write.csv(missing_INST, file="./output_review/missing_INST.csv", row.names = F) #export it as a csv file
+############################
+
+############################
+# TODO: Some of the editors are in multiple times because they have multiple jobs. ID and fix
+# ie they could be listed in seperate rows as EIC and SE
+
+############################
+
+############################
+# TODO: Still left to fix and 2x
+##########################################
+# 2x claudia bieber. CVM is in austria but country is australia
+# BIOCON: editor_id 2874 and 2875 are the same person!			
+# BIOCON: editor_id 3024 country should be Singapore in 2009
+# JECOL: editor_id 1279 in 2013: country and state mismatch 
+# JECOL editor_ID 703 in 2014: remove zip from state
+# JECOL editor_ID 2408 in 2010-2013 should country be MEX or GER? Apparently MEX (mex in state, not country)
+# JECOL: several have country listed in state column  
+# 2x ythat Vegetation Survey of Western Australia shouldn’t be Univ of Western Australia
+# ingrid parmentier should be Universite Libre de Bruxelles 2x journal
+# James Cook University ONE OF THESE IS JAMES COOK UNIVERSITY TOWNSVILLE
+# Natiral History Museum need to 2x each some are us some are UK
+# NEED TO GET PEOPLE BY CAMPUS UNAM
+# no one by this name
+# NoInst
+# Oregon Trail
+# Pfenning does he have two researcher iD's? 
+# Stephen Simpson Ecology 2002 2x if Oxford, UK, Australia 
+# 1 Traveser  Anna       217             2
+# 2 Traveset  Anna       217             2
+# Troy Day not on Amnat board in 12-14, listed as in Australia
+##########################################
 
 
 
+
+
+############################
+# SUMMARY OF HOW MANY MISSING INST BY JOURNAL
+
+checkINST2<-ALLDATA %>% 
+  filter(is.na(INST)|INST=="missing") %>% 
+  distinct(JOURNAL,LAST_NAME,COUNTRY) %>% 
+  group_by(JOURNAL) %>% 
+  summarise(n())
+checkINST2
+############################
+
+############################
+# Summary of how many editors
+ALLDATA %>% 
+  distinct(LAST_NAME,FIRST_NAME) %>% 
+  summarise(n())
+############################
 
 
 
@@ -918,44 +859,6 @@ ALLDATA<-ALLDATA %>% filter(ALLDATA$INST!="")
 # str(UNI_LIST)
 # UNI_LIST<-distinct(UNI_LIST)
 # head(UNI_LIST)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# 
-# # TODO: FIND THE DUPLICATED ONES AND CORRECT THEM
-# 
-# DISTINCT<-ALLDATA %>% distinct(JOURNAL, YEAR, editor_id, .keep_all = TRUE)
-# 
-# alldata_dupes<-ALLDATA %>% group_by(JOURNAL,LAST_NAME,FIRST_NAME,YEAR) %>% filter(n()>1)
-# alldata_dupes<-droplevels(alldata_dupes)
-# levels(alldata_dupes$JOURNAL)
-
-
-
 
 
 

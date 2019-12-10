@@ -17,7 +17,7 @@ rm(Carnegie_raw)
 ##############################################################
 ##############################################################
 # ALLDATA<-both
-ALLDATA<-read.csv("./output/ALLDATA.csv",stringsAsFactors = FALSE)
+# ALLDATA<-read.csv("./output/ALLDATA.csv",stringsAsFactors = FALSE)
 
 AnalysisData<-filter(ALLDATA,YEAR>"1984")
 
@@ -45,6 +45,34 @@ EdsByInst<-EdsByInst %>% arrange(desc(n))
 EdsByInst_20<-EdsByInst %>% slice(1:20)
 sum(EdsByInst_20$n)/sum(EdsByInst$n)
 
+
+##############################################################
+##############################################################
+#
+# ANALYSIS - ADD COUNTRY CODES AND WORLD BANK CATEGORIES
+#
+##############################################################
+##############################################################
+
+source("./functions_analysis/Country.Codes.R")
+Country.Codes(ALLDATA)
+
+
+source("./functions_analysis/AddIncomeRegion.R")
+AddIncomeRegion(ALLDATA)
+
+
+
+##############################################################
+##############################################################
+#
+# ANALYSIS - RICHNESS AND DIVERSITY 
+
+
+##############################################################
+##############################################################
+
+
 ##############################################################
 ##############################################################
 #
@@ -52,6 +80,9 @@ sum(EdsByInst_20$n)/sum(EdsByInst$n)
 #
 ##############################################################
 ##############################################################
+
+
+
 
 summary(ALLDATA$INST)
 
