@@ -45,6 +45,21 @@ EdsByInst<-EdsByInst %>% arrange(desc(n))
 EdsByInst_20<-EdsByInst %>% slice(1:20)
 sum(EdsByInst_20$n)/sum(EdsByInst$n)
 
+
+##############################################################
+##############################################################
+#
+# ANALYSIS - RICHNESS AND DIVERSITY
+#
+##############################################################
+##############################################################
+
+source("./functions_analysis/Country.Codes.R")
+Country.Codes(ALLDATA)
+
+
+source("./functions_analysis/AddIncomeRegion.R")
+AddIncomeRegion(ALLDATA)
 ##############################################################
 ##############################################################
 #
