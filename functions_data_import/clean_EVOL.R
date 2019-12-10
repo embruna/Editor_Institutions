@@ -1,6 +1,13 @@
 #FUNCTION TO CLEAN AND PROCESS EVOL
 clean_EVOL <- function(DATAFILE) {
   
+  
+  DATAFILE$INST<-as.character(DATAFILE$INST)
+  DATAFILE$STATE<-as.character(DATAFILE$STATE)
+  DATAFILE$UNIT<-as.character(DATAFILE$UNIT)
+  DATAFILE$CITY<-as.character(DATAFILE$CITY)
+  
+  
   DATAFILE$COUNTRY<-as.character(DATAFILE$COUNTRY)
   DATAFILE$STATE<-as.character(DATAFILE$STATE)
   DATAFILE$COUNTRY[DATAFILE$LAST_NAME=="Knowlton" & DATAFILE$FIRST_NAME=="Nancy"]<-"Panama"
@@ -8,6 +15,12 @@ clean_EVOL <- function(DATAFILE) {
   DATAFILE<-DATAFILE %>% rename("TITLE"="TITLE.x")
   head(DATAFILE,10)
   # This will add "missing" to the first row of a group if the first INST is NA
+  
+  DATAFILE$INST<-trimws(DATAFILE$INST)
+  DATAFILE$UNIT<-trimws(DATAFILE$UNIT)
+  DATAFILE$CITY<-trimws(DATAFILE$CITY)
+  DATAFILE$STATE<-trimws(DATAFILE$STATE)
+  
   
   DATAFILE<-DATAFILE %>% 
     group_by(LAST_NAME,FIRST_NAME) %>% 

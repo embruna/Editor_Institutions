@@ -617,55 +617,6 @@ ALLDATA<-institution_cleaner(ALLDATA)
 
 
 
-######################################
-#TODO: Correct accents etc into ASCII
-######################################
-# ALLDATA_native<-ALLDATA$INST[asciitest]
-# ALLDATA_native
-# corrections<-NULL
-# original<-c('"Ecole Normale Supérieure"',  
-#   '"Pontificia Universidad Católica de Chile"',   
-#   '"Université de Sherbrooke"',
-#   '"University of Tromsø"',
-#   '"Universit\xfc\xbe\x8c\xa3\xa0\xbc Montpellier II"',
-#   '"Universit\xfc\xbe\x8d\x83\xa0\xbct Z\xfc\xbe\x8c\x93\xa0\xbcrich Irchel"')
-#  
-# corrections$name<-c('Ecole Normale Superieure', 
-# 'Pontificia Universidad Catolica de Chile', 
-# 'Universite de Sherbrooke', 
-# 'University of Tromso',
-# 'Universite Montpellier II',  
-# 'University of Zurich Irchel')
-# 
-# asciitest<-as.data.frame(asciitest)
-# asciitest<-asciitest %>% rename("name"="asciitest")
-# corrections2<-bind_cols(asciitest,corrections)
-# 
-# ALLDATA_native
-# ALLDATA$INST[corrections2$name] <- corrections2$name1
-# ALLDATA$INST<-as.character(ALLDATA$INST)
-# ALLDATA$INST<-str_replace_all(ALLDATA$INST,"\\xa","")
-# head(ALLDATA$INST,10)
-
-ALLDATA$INST<-as_factor(ALLDATA$INST)
-ALLDATA$INST<-na.omit(ALLDATA$INST)
-ALLDATA$INST[] <- lapply(ALLDATA$INST, as.character)
-names(ALLDATA)
-trim.trailing <- function (x) sub("\\s+$", "", x)
-ALLDATA$INST<-trim.trailing(ALLDATA$INST)
-trim.leading <- function (x) sub("^\\s+", "", x)
-ALLDATA$INST<-trim.leading(ALLDATA$INST)
-head(ALLDATA$INST)
-ALLDATA<-ALLDATA %>% arrange(INST)
-nchar(ALLDATA$INST[1])
-ALLDATA$INST<-gsub("[.]","",ALLDATA$INST)
-stri_unescape_unicode(ALLDATA$INST)
-iconv(ALLDATA$INST, to = "ASCII//TRANSLIT")
-# summary(ALLDATA$INST)
-ALLDATA<-ALLDATA %>% filter(ALLDATA$INST!="")
-
-###############################
-
 ###############################
 # REMOVE ANY ROWS WITH NO DATA
 ALLDATA<-ALLDATA %>% drop_na(LAST_NAME,FIRST_NAME)
@@ -794,9 +745,59 @@ write.csv(missing_INST, file="./output_review/missing_INST.csv", row.names = F) 
 # 1 Traveser  Anna       217             2
 # 2 Traveset  Anna       217             2
 # Troy Day not on Amnat board in 12-14, listed as in Australia
+# FUNECOL Data import function has some that still need to be corrected
 ##########################################
 
 
+
+######################################
+#TODO: Correct accents etc into ASCII
+######################################
+# ALLDATA_native<-ALLDATA$INST[asciitest]
+# ALLDATA_native
+# corrections<-NULL
+# original<-c('"Ecole Normale Supérieure"',  
+#   '"Pontificia Universidad Católica de Chile"',   
+#   '"Université de Sherbrooke"',
+#   '"University of Tromsø"',
+#   '"Universit\xfc\xbe\x8c\xa3\xa0\xbc Montpellier II"',
+#   '"Universit\xfc\xbe\x8d\x83\xa0\xbct Z\xfc\xbe\x8c\x93\xa0\xbcrich Irchel"')
+#  
+# corrections$name<-c('Ecole Normale Superieure', 
+# 'Pontificia Universidad Catolica de Chile', 
+# 'Universite de Sherbrooke', 
+# 'University of Tromso',
+# 'Universite Montpellier II',  
+# 'University of Zurich Irchel')
+# 
+# asciitest<-as.data.frame(asciitest)
+# asciitest<-asciitest %>% rename("name"="asciitest")
+# corrections2<-bind_cols(asciitest,corrections)
+# 
+# ALLDATA_native
+# ALLDATA$INST[corrections2$name] <- corrections2$name1
+# ALLDATA$INST<-as.character(ALLDATA$INST)
+# ALLDATA$INST<-str_replace_all(ALLDATA$INST,"\\xa","")
+# head(ALLDATA$INST,10)
+
+ALLDATA$INST<-as_factor(ALLDATA$INST)
+ALLDATA$INST<-na.omit(ALLDATA$INST)
+ALLDATA$INST[] <- lapply(ALLDATA$INST, as.character)
+names(ALLDATA)
+trim.trailing <- function (x) sub("\\s+$", "", x)
+ALLDATA$INST<-trim.trailing(ALLDATA$INST)
+trim.leading <- function (x) sub("^\\s+", "", x)
+ALLDATA$INST<-trim.leading(ALLDATA$INST)
+head(ALLDATA$INST)
+ALLDATA<-ALLDATA %>% arrange(INST)
+nchar(ALLDATA$INST[1])
+ALLDATA$INST<-gsub("[.]","",ALLDATA$INST)
+stri_unescape_unicode(ALLDATA$INST)
+iconv(ALLDATA$INST, to = "ASCII//TRANSLIT")
+# summary(ALLDATA$INST)
+ALLDATA<-ALLDATA %>% filter(ALLDATA$INST!="")
+
+###############################
 
 
 

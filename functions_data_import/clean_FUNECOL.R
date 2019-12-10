@@ -52,7 +52,8 @@ clean_FUNECOL <- function(DATAFILE1,DATAFILE2) {
   INST_fix<-which((DATAFILE$INST.x==DATAFILE$INST.y)=="FALSE")
   INST_fix.df<-DATAFILE[INST_fix,]  
   DATAFILE<-DATAFILE %>% select(-JOURNAL.y,-INST.y,-MIDDLE_NAME.y,-COUNTRY.y,-VOLUME.y,-ISSUE.y) %>% rename("JOURNAL"="JOURNAL.x","INST"="INST.x","VOLUME"="VOLUME.x","ISSUE"="ISSUE.x","MIDDLE_NAME"="MIDDLE_NAME.x","COUNTRY"="COUNTRY.x")
-  rm(INST_fix.df,INST_fix,country_fix,country_fix.df)
+  # rm(INST_fix.df,INST_fix,country_fix,country_fix.df)
+  rm(INST_fix.df,INST_fix,country_fix)
   
   DATAFILE$INST[DATAFILE$editor_id==1878 & DATAFILE$LAST_NAME=="Soler"]<-"CSIC"
   # levels(DATAFILE$UNIT)
@@ -65,8 +66,21 @@ clean_FUNECOL <- function(DATAFILE1,DATAFILE2) {
   # levels(DATAFILE$CATEGORY.y)
   # summary(DATAFILE$CATEGORY.x==DATAFILE$CATEGORY.y)
   # head(DATAFILE,10)
-  DATAFILE<-DATAFILE %>% rename("TITLE"="TITLE.x","CATEGORY"="CATEGORY.y")
+  DATAFILE$TITLE.x<-NULL
+  DATAFILE<-DATAFILE %>% rename("CATEGORY"="CATEGORY.y")
+  
   # This will add "missing" to the first row of a group if the first INST is NA
+  
+  
+  DATAFILE$INST<-as.character(DATAFILE$INST)
+  DATAFILE$UNIT<-as.character(DATAFILE$UNIT)
+  DATAFILE$CITY<-as.character(DATAFILE$CITY)
+  DATAFILE$STATE<-as.character(DATAFILE$STATE)
+  
+  DATAFILE$INST<-trimws(DATAFILE$INST)
+  DATAFILE$UNIT<-trimws(DATAFILE$UNIT)
+  DATAFILE$CITY<-trimws(DATAFILE$CITY)
+  DATAFILE$STATE<-trimws(DATAFILE$STATE)
   
   DATAFILE<-DATAFILE %>% 
     group_by(LAST_NAME,FIRST_NAME) %>% 
@@ -86,14 +100,7 @@ clean_FUNECOL <- function(DATAFILE1,DATAFILE2) {
     group_by(LAST_NAME,FIRST_NAME) %>% 
     mutate(CITY = ifelse((row_number()==1 & is.na(CITY)), "missing", CITY))
   
-  DATAFILE$INST<-trimws(DATAFILE$INST)
-  DATAFILE$UNIT<-trimws(DATAFILE$UNIT)
-  DATAFILE$CITY<-trimws(DATAFILE$CITY)
-  DATAFILE$STATE<-trimws(DATAFILE$STATE)
-  
-  
-  
-  
+
   # DATAFILE<-DATAFILE %>% fill(INST,UNIT,CITY,STATE,.direction="down")
   
   

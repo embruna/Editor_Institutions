@@ -10,6 +10,18 @@ clean_FEM <- function(DATAFILE) {
   
   # This will add "missing" to the first row of a group if the first INST is NA
   
+  DATAFILE$INST<-as.character(DATAFILE$INST)
+  DATAFILE$UNIT<-as.character(DATAFILE$UNIT)
+  DATAFILE$CITY<-as.character(DATAFILE$CITY)
+  DATAFILE$STATE<-as.character(DATAFILE$STATE)
+  
+  DATAFILE$INST<-trimws(DATAFILE$INST)
+  DATAFILE$UNIT<-trimws(DATAFILE$UNIT)
+  DATAFILE$CITY<-trimws(DATAFILE$CITY)
+  DATAFILE$STATE<-trimws(DATAFILE$STATE)
+  
+ 
+  
   DATAFILE<-DATAFILE %>% 
     group_by(LAST_NAME,FIRST_NAME) %>% 
     mutate(INST = ifelse((row_number()==1 & is.na(INST)), "missing", INST))
@@ -27,12 +39,6 @@ clean_FEM <- function(DATAFILE) {
   DATAFILE<-DATAFILE %>% 
     group_by(LAST_NAME,FIRST_NAME) %>% 
     mutate(CITY = ifelse((row_number()==1 & is.na(CITY)), "missing", CITY))
-  
-  DATAFILE$INST<-trimws(DATAFILE$INST)
-  DATAFILE$UNIT<-trimws(DATAFILE$UNIT)
-  DATAFILE$CITY<-trimws(DATAFILE$CITY)
-  DATAFILE$STATE<-trimws(DATAFILE$STATE)
-  
   
   
   
