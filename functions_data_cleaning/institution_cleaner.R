@@ -1087,10 +1087,6 @@ DATAFILE$INST[DATAFILE$INST==  "humboldt university berlin"]<-"humboldt universi
     # DATAFILE$INST[DATAFILE$INST==  ]<-
     # DATAFILE$INST[DATAFILE$INST==  ]<-
     
-# DATAFILE$COUNTRY[DATAFILE$INST=="us geological survey us geological survey us geological survey us geological survey northern prairie wildlife research center"]<-"USA"
-# DATAFILE$COUNTRY[DATAFILE$INST=="usfs us forest service us forest service us forest service rocky mountain research station"]<-"USA"
-	NA
-
 # DATAFILE$INST<-gsub('[[:punct:] ]+',' ',DATAFILE$INST)  
 	
 	

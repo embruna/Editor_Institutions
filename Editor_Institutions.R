@@ -807,7 +807,9 @@ checkINST2<-ALLDATA %>%
   filter(is.na(INST)|INST=="missing") %>% 
   distinct(JOURNAL,LAST_NAME,COUNTRY) %>% 
   group_by(JOURNAL) %>% 
-  summarise(n())
+  summarise(n=n()) %>% 
+  arrange(desc(n))
+
 checkINST2
 ############################
 
