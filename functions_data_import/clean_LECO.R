@@ -29,12 +29,67 @@ clean_LECO <- function(DATAFILE) {
   DATAFILE<-DATAFILE %>% fill(INST,.direction="down")
   DATAFILE<-DATAFILE %>% select(-X,-X.1,-X.2,-X.3,-X.4)
   DATAFILE<-rename(DATAFILE,"TITLE"="TITLE.x")
-  ##
-  # code to generate the list of which ones need to be 2x or have missing names is in 
-  # Author_and_Inst_to_Check.R  
-  # Need to convert that to a function, e.g., check(LECO)
-  # Then need to add a function to upload the corrections/additions
-  ##
+  
+  # This will add "missing" to the first row of a group if the first INST is NA
+  
+  DATAFILE<-DATAFILE %>% 
+    group_by(LAST_NAME,FIRST_NAME) %>% 
+    mutate(INST = ifelse((row_number()==1 & is.na(INST)), "missing", INST))
+  
+  
+  DATAFILE<-DATAFILE %>% 
+    group_by(LAST_NAME,FIRST_NAME) %>% 
+    mutate(UNIT = ifelse((row_number()==1 & is.na(UNIT)), "missing", UNIT))
+  
+  DATAFILE<-DATAFILE %>% 
+    group_by(LAST_NAME,FIRST_NAME) %>% 
+    mutate(STATE = ifelse((row_number()==1 & is.na(STATE)), "missing", STATE))
+  
+  
+  DATAFILE<-DATAFILE %>% 
+    group_by(LAST_NAME,FIRST_NAME) %>% 
+    mutate(CITY = ifelse((row_number()==1 & is.na(CITY)), "missing", CITY))
+  
+  DATAFILE$INST<-trimws(DATAFILE$INST)
+  DATAFILE$UNIT<-trimws(DATAFILE$UNIT)
+  DATAFILE$CITY<-trimws(DATAFILE$CITY)
+  DATAFILE$STATE<-trimws(DATAFILE$STATE)
+  
+  
+  
+  
+  # DATAFILE<-DATAFILE %>% fill(INST,UNIT,CITY,STATE,.direction="down")
+  
+  
+  DATAFILE<-DATAFILE %>% arrange(LAST_NAME,FIRST_NAME,YEAR) 
+  DATAFILE<-DATAFILE %>% fill(INST,UNIT,STATE,CITY,.direction="down")
+  # 
+  DATAFILE<-DATAFILE %>% 
+    group_by(LAST_NAME,FIRST_NAME) %>% 
+    mutate(INST = ifelse((row_number()>1 & INST=="missing"),NA, INST))
+  
+  
+  
+  DATAFILE<-DATAFILE %>% 
+    group_by(LAST_NAME,FIRST_NAME) %>% 
+    mutate(UNIT = ifelse((row_number()>1 & UNIT=="missing"),NA, UNIT))
+  
+  
+  
+  DATAFILE<-DATAFILE %>% 
+    group_by(LAST_NAME,FIRST_NAME) %>% 
+    mutate(CITY = ifelse((row_number()>1 & CITY=="missing"),NA, CITY))
+  
+  
+  
+  DATAFILE<-DATAFILE %>% 
+    group_by(LAST_NAME,FIRST_NAME) %>% 
+    mutate(STATE = ifelse((row_number()>1 & STATE=="missing"),NA, STATE))
+  
+  
+  
+  
+  
   return(DATAFILE)
 }
 
