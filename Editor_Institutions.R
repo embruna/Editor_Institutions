@@ -746,6 +746,7 @@ write.csv(missing_INST, file="./output_review/missing_INST.csv", row.names = F) 
 # 2 Traveset  Anna       217             2
 # Troy Day not on Amnat board in 12-14, listed as in Australia
 # FUNECOL Data import function has some that still need to be corrected
+# COuntries: California, Germanny
 ##########################################
 
 
