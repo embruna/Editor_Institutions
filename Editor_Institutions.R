@@ -615,8 +615,6 @@ ALLDATA<-JamesCorrections(ALLDATA)
 source("functions_data_cleaning/institution_cleaner.R")
 ALLDATA<-institution_cleaner(ALLDATA)
 
-
-
 ###############################
 # REMOVE ANY ROWS WITH NO DATA
 ALLDATA<-ALLDATA %>% drop_na(LAST_NAME,FIRST_NAME)
@@ -628,6 +626,17 @@ ALLDATA<-ALLDATA %>% drop_na(LAST_NAME,FIRST_NAME)
 ALLDATA<-distinct(ALLDATA,LAST_NAME,FIRST_NAME,YEAR,TITLE,.keep_all = TRUE)
 ###############################
 
+###########################
+###########################
+###########################
+
+# save a clean version to be used for analyses
+
+###########################
+###########################
+###########################
+
+write.csv(ALLDATA,"./data_clean/InstitutionData_clean.csv",row.names = FALSE)
 
 
 ###########################
