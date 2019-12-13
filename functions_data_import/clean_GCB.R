@@ -5,7 +5,7 @@ clean_GCB <- function(DATAFILE) {
   DATAFILE<-DATAFILE %>% separate(LAST_NAME, c("MIDDLE_NAME", "LAST_NAME"),sep = " ", extra="merge", fill = "left",remove=FALSE)
   DATAFILE$editor_id<-NA
   # head(DATAFILE,10)
-  
+  DATAFILE<-DATAFILE %>% select(JOURNAL,YEAR,VOLUME,ISSUE,TITLE,editor_id,FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,COUNTRY,GENDER,CATEGORY,NOTES)  
   
   DATAFILE$INST<-as.character(DATAFILE$INST)
   DATAFILE$STATE<-NA

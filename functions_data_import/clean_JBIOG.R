@@ -9,18 +9,24 @@ clean_JBIOG <- function(DATAFILE) {
   DATAFILE$INST[DATAFILE$UNIT=="Evolution And Marine Biology, University of California"]<-"University of California-Santa Barbara"
   DATAFILE$UNIT[DATAFILE$FIRST_NAME=="Dov"]<-"Department of Ecology, Evolution, and Marine Biology"
   
+  DATAFILE$INST<-as.character(DATAFILE$INST)
+  DATAFILE$STATE<-as.character(DATAFILE$STATE)
+  DATAFILE$COUNTRY<-as.character(DATAFILE$COUNTRY)
+  DATAFILE$UNIT<-as.character(DATAFILE$UNIT)
+  DATAFILE$CITY<-as.character(DATAFILE$CITY)
+  
   # spot checks of DATAFILE
   DATAFILE$INST<-trimws(DATAFILE$INST)
   DATAFILE$UNIT<-trimws(DATAFILE$UNIT)
   DATAFILE$CITY <-trimws(DATAFILE$CITY)
   DATAFILE$STATE<-trimws(DATAFILE$STATE)
   DATAFILE$COUNTRY<-trimws(DATAFILE$COUNTRY)
-  DATAFILE$INST[DATAFILE$INST==""]<-NA
-  DATAFILE$UNIT[DATAFILE$UNIT==""]<-NA
-  DATAFILE$CITY[DATAFILE$CITY==""]<-NA
-  DATAFILE$STATE[DATAFILE$STATE==""]<-NA
-  DATAFILE$COUNTRY[DATAFILE$COUNTRY==""]<-NA
-  DATAFILE<-DATAFILE %>% arrange(editor_id,YEAR,INST)
+  # DATAFILE$INST[DATAFILE$INST==""]<-NA
+  # DATAFILE$UNIT[DATAFILE$UNIT==""]<-NA
+  # DATAFILE$CITY[DATAFILE$CITY==""]<-NA
+  # DATAFILE$STATE[DATAFILE$STATE==""]<-NA
+  # DATAFILE$COUNTRY[DATAFILE$COUNTRY==""]<-NA
+  # DATAFILE<-DATAFILE %>% arrange(editor_id,YEAR,INST)
   
   # fill in the institutions in subsequent years (only 1st year recorded) and then look for any thiat might need
   
@@ -37,9 +43,6 @@ clean_JBIOG <- function(DATAFILE) {
   # 
   # DATAFILE<-bind_rows(DATAFILE_remainder,DATAFILE_1row)
   # head(DATAFILE,70)
-  DATAFILE<-DATAFILE %>% arrange(editor_id,YEAR) %>% fill(INST,.direction="down") %>% rename("TITLE"="TITLE.x")
-  head(DATAFILE,10)
-  DATAFILE<-DATAFILE %>% arrange(YEAR,LAST_NAME,FIRST_NAME)
   # This will add "missing" to the first row of a group if the first INST is NA
   
   DATAFILE<-DATAFILE %>% 
@@ -60,16 +63,13 @@ clean_JBIOG <- function(DATAFILE) {
     group_by(LAST_NAME,FIRST_NAME) %>% 
     mutate(CITY = ifelse((row_number()==1 & is.na(CITY)), "missing", CITY))
   
-  DATAFILE$INST<-trimws(DATAFILE$INST)
-  DATAFILE$UNIT<-trimws(DATAFILE$UNIT)
-  DATAFILE$CITY<-trimws(DATAFILE$CITY)
-  DATAFILE$STATE<-trimws(DATAFILE$STATE)
-  
-  
-  
-  
+
   # DATAFILE<-DATAFILE %>% fill(INST,UNIT,CITY,STATE,.direction="down")
-  
+  # 
+  # 
+  # DATAFILE<-DATAFILE %>% arrange(LAST_NAME,FIRST_NAME,YEAR) 
+  # DATAFILE<-DATAFILE %>% fill(INST,UNIT,STATE,CITY,.direction="down")
+  # 
   
   DATAFILE<-DATAFILE %>% arrange(LAST_NAME,FIRST_NAME,YEAR) 
   DATAFILE<-DATAFILE %>% fill(INST,UNIT,STATE,CITY,.direction="down")
@@ -95,6 +95,8 @@ clean_JBIOG <- function(DATAFILE) {
   DATAFILE<-DATAFILE %>% 
     group_by(LAST_NAME,FIRST_NAME) %>% 
     mutate(STATE = ifelse((row_number()>1 & STATE=="missing"),NA, STATE))
+  
+  
   
   
   

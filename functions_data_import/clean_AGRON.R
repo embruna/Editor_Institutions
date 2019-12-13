@@ -4,6 +4,14 @@ clean_AGRON <- function(DATAFILE) {
   # AGRONOMY MISSING INST
   # DATAFILE$INST<-as.factor(DATAFILE$INST)
   
+  DATAFILE$INST[DATAFILE$LAST_NAME=="Benbi" & DATAFILE$FIRST_NAME=="Dinesh"]<-"Punjab Agricultural University"
+  DATAFILE$STATE[DATAFILE$LAST_NAME=="Benbi" & DATAFILE$FIRST_NAME=="Dinesh"]<-"Punjab"
+  DATAFILE$COUNTRY[DATAFILE$LAST_NAME=="Benbi" & DATAFILE$FIRST_NAME=="Dinesh"]<-"India"
+  DATAFILE$COUNTRY[DATAFILE$LAST_NAME=="Pedreira" & DATAFILE$FIRST_NAME=="Carlos"]<-"Brazil"
+  # DATAFILE<-DATAFILE %>% rename("TITLE"="TITLE.x")
+
+  # This will add "missing" to the first row of a group if the first INST is NA
+  
   DATAFILE$INST<-as.character(DATAFILE$INST)
   DATAFILE$STATE<-as.character(DATAFILE$STATE)
   DATAFILE$COUNTRY<-as.character(DATAFILE$COUNTRY)
@@ -13,15 +21,6 @@ clean_AGRON <- function(DATAFILE) {
   DATAFILE$UNIT<-trimws(DATAFILE$UNIT)
   DATAFILE$CITY<-trimws(DATAFILE$CITY)
   DATAFILE$STATE<-trimws(DATAFILE$STATE)
-  
-  
-  DATAFILE$INST[DATAFILE$LAST_NAME=="Benbi" & DATAFILE$FIRST_NAME=="Dinesh"]<-"Punjab Agricultural University"
-  DATAFILE$STATE[DATAFILE$LAST_NAME=="Benbi" & DATAFILE$FIRST_NAME=="Dinesh"]<-"Punjab"
-  DATAFILE$COUNTRY[DATAFILE$LAST_NAME=="Benbi" & DATAFILE$FIRST_NAME=="Dinesh"]<-"India"
-  DATAFILE$COUNTRY[DATAFILE$LAST_NAME=="Pedreira" & DATAFILE$FIRST_NAME=="Carlos"]<-"Brazil"
-  # DATAFILE<-DATAFILE %>% rename("TITLE"="TITLE.x")
-
-  # This will add "missing" to the first row of a group if the first INST is NA
   
   DATAFILE<-DATAFILE %>% 
     group_by(LAST_NAME,FIRST_NAME) %>% 

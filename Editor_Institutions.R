@@ -412,20 +412,44 @@ levels(ALLDATA$INST) <- c(levels(ALLDATA$INST),"University of Missouri Columbia"
                           "Forestry and Forest Products Research Institute",
                           "University of Minnesota Duluth",
                           "University of Minnesota Crookston",
+                          "University of Toronto Mississauga",
                           "State University of New York College of Environmental Science and Forestry",
                           "Calyx, Inc.","University of North Carolina Charlotte",
                           "Smithsonian National Museum of Natural History",
                           "Smithsonian National Zoological Park",
                           "Laboratoire Associe de Modelisation des Plantes",
                           "Southern Illinois University",
+                          "universite libre de bruxelles",
                           "southern illinois u",
                           "Aarhus University",
                           "University of St. Andrews",
-                          "university of st andrews")
+                          "university of st andrews",
+                          "university of uppsala")
 
 
 
-levels(ALLDATA$INST) <- c(levels(ALLDATA$INST),"University of Toronto Mississauga","Universite Libre de Bruxelles")
+
+	
+
+
+ALLDATA$LAST_NAME[ALLDATA$LAST_NAME=="VanDer" & ALLDATA$JOURNAL=="LECO"]<-"van der Maarel"
+ALLDATA$INST[ALLDATA$LAST_NAME=="van der Maarel" & ALLDATA$JOURNAL=="LECO"]<-"university of uppsala"
+ALLDATA$editor_id[ALLDATA$LAST_NAME=="van der Maarel" & ALLDATA$JOURNAL=="LECO"]<-1033
+ALLDATA$editor_id[ALLDATA$LAST_NAME=="Smith" & ALLDATA$FIRST_NAME=="Melinda"]<-2566
+  ALLDATA$editor_id[ALLDATA$LAST_NAME=="Smith" & ALLDATA$FIRST_NAME=="Danny"]<-NA
+  ALLDATA$LAST_NAME[ALLDATA$LAST_NAME=="MOYLE" & ALLDATA$FIRST_NAME=="PETER"]<-"Moyle"
+  ALLDATA$FIRST_NAME[ALLDATA$LAST_NAME=="Moyle" & ALLDATA$FIRST_NAME=="PETER"]<-"Peter"
+  ALLDATA$editor_id[ALLDATA$LAST_NAME=="Moyle" & ALLDATA$FIRST_NAME=="Peter"]<-2874
+  ALLDATA$LAST_NAME[ALLDATA$LAST_NAME=="LI" & ALLDATA$FIRST_NAME=="Feng-Min"]<-"Li"
+  ALLDATA$editor_id[ALLDATA$LAST_NAME=="Li" & ALLDATA$FIRST_NAME=="Feng-Min"]<-1098
+  ALLDATA$editor_id[ALLDATA$LAST_NAME=="Lee" & ALLDATA$FIRST_NAME=="Carol"]<-3860
+  ALLDATA$editor_id[ALLDATA$LAST_NAME=="Fry" & ALLDATA$FIRST_NAME=="James"]<-3891
+  ALLDATA$LAST_NAME[ALLDATA$LAST_NAME=="DeWalt" & ALLDATA$FIRST_NAME=="Saara"]<-"Dewalt"
+  ALLDATA$editor_id[ALLDATA$LAST_NAME=="Dewalt" & ALLDATA$FIRST_NAME=="Saara"]<-3311
+  ALLDATA$LAST_NAME[ALLDATA$LAST_NAME=="DeVictor" & ALLDATA$FIRST_NAME=="Vincent"]<-"Devictor"
+  ALLDATA$editor_id[ALLDATA$LAST_NAME=="Devictor" & ALLDATA$FIRST_NAME=="Vincent"]<-3681
+  ALLDATA$LAST_NAME[ALLDATA$LAST_NAME=="COE" & ALLDATA$FIRST_NAME=="M"]<-"Coe"
+  ALLDATA$editor_id[ALLDATA$LAST_NAME=="Coe" & ALLDATA$FIRST_NAME=="M"]<-2332
 ALLDATA$INST[ALLDATA$LAST_NAME=="Sprules" & ALLDATA$FIRST_NAME=="Gary"]<-"University of Toronto Mississauga"
 ALLDATA$INST[ALLDATA$LAST_NAME=="Wagner" & ALLDATA$FIRST_NAME=="Helene"]<-"University of Toronto Mississauga"
 ALLDATA$INST[ALLDATA$LAST_NAME=="Kotanen" & ALLDATA$FIRST_NAME=="Peter"]<-"University of Toronto Mississauga"
@@ -433,11 +457,12 @@ ALLDATA$INST[ALLDATA$LAST_NAME=="Loiselle" & ALLDATA$FIRST_NAME=="Bette"]<-"Univ
 ALLDATA$INST[ALLDATA$LAST_NAME=="Ricklefs" & ALLDATA$FIRST_NAME=="Robert"]<-"University of Missouri St Louis"
 ALLDATA$INST[ALLDATA$LAST_NAME=="Renner" & ALLDATA$FIRST_NAME=="Susanne"]<-"University of Missouri St Louis"
 ALLDATA$INST[ALLDATA$LAST_NAME=="Sork" & ALLDATA$FIRST_NAME=="Victoria"]<-"University of Missouri St Louis"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Parmentier"]<-"Universite Libre de Bruxelles"
+# ALLDATA$INST[ALLDATA$LAST_NAME=="Parmentier"]<-"universite libre de bruxelles"
 ALLDATA$INST[ALLDATA$LAST_NAME=="Debussche"]<-"CNRS Centre dEcologie Fonctionnelle et Evolutive"
 # levels(ALLDATA$INST) <- c(levels(ALLDATA$INST),"Forestry and Forest Products Research Institute","University of Minnesota Duluth","University of Minnesota Crookston")
 ALLDATA$INST[ALLDATA$LAST_NAME=="Fujimori"]<-"Forestry and Forest Products Research Institute"
 ALLDATA$INST[ALLDATA$LAST_NAME=="Johnson" & ALLDATA$FIRST_NAME=="Lucinda"]<-"University of Minnesota Duluth"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Parmentier" & ALLDATA$JOURNAL=="BITR"]<-"universite libre de bruxelles"
 ALLDATA$INST[ALLDATA$LAST_NAME=="Moen" & ALLDATA$FIRST_NAME=="Ron"]<-"University of Minnesota Duluth"
 ALLDATA$INST[ALLDATA$LAST_NAME=="Sterner" & ALLDATA$FIRST_NAME=="Robert"]<-"University of Minnesota Duluth"
 ALLDATA$INST[ALLDATA$LAST_NAME=="Wiersma" & ALLDATA$FIRST_NAME=="Jochum"]<-"University of Minnesota Crookston"
@@ -482,6 +507,7 @@ ALLDATA$INST[ALLDATA$LAST_NAME=="Fox" & ALLDATA$INST=="Alberta"]<-"University of
 ALLDATA$INST[ALLDATA$LAST_NAME=="Patek" & ALLDATA$INST=="Amherst"]<-"University of Massachusetts at Amherst"
 ALLDATA$INST[ALLDATA$LAST_NAME=="Mcgraw" & ALLDATA$INST=="Arizona"]<-"Arizona State University"
 ALLDATA$COUNTRY[ALLDATA$LAST_NAME=="Vanderheijden" & ALLDATA$INST=="Amsterdam"]<-"Amsterdam"
+
 
 ##########################
 # Clean Up Institutions and countries
@@ -536,7 +562,7 @@ levels(ALLDATA$COUNTRY)
 ##############################################################
 
 # NEED TO CONFIRM WHAT PART OF USSR IN WHICH THE AUTHOR WAS BASED
-ALLDATA$COUNTRY[ALLDATA$COUNTRY=="USSR"]<-"Russia"
+# ALLDATA$COUNTRY[ALLDATA$COUNTRY=="USSR"]<-"Russia"
 
 # NEED DO DELETE THESE
 which(ALLDATA$COUNTRY=="")
@@ -615,6 +641,18 @@ ALLDATA<-JamesCorrections(ALLDATA)
 source("functions_data_cleaning/institution_cleaner.R")
 ALLDATA<-institution_cleaner(ALLDATA)
 
+
+
+##########################################
+ALLDATA$INST <- ifelse(ALLDATA$ascii == FALSE, iconv(ALLDATA$INST,from="UTF-8", to="ASCII","o"), ALLDATA$INST)   
+gsub("goottingen","gottingen",ALLDATA$INST)
+gsub("istituto per looambiente marino costiero","istituto per lambiente marino costiero",ALLDATA$INST)
+gsub("macaulayooinstitute","istituto per lambiente marino costiero",ALLDATA$INST)
+gsub("universitoo de montreal","macaulay land use research institute",ALLDATA$INST)
+ALLDATA$ascii<-NULL
+
+
+
 ###############################
 # REMOVE ANY ROWS WITH NO DATA
 ALLDATA<-ALLDATA %>% drop_na(LAST_NAME,FIRST_NAME)
@@ -647,8 +685,8 @@ write.csv(ALLDATA,"./data_clean/InstitutionData_clean.csv",row.names = FALSE)
 
 # LIST OF ALL INSTITIONS
 ALLDATA_inst_check<-ALLDATA %>%
-  select(INST) %>% 
-  distinct(INST) %>% 
+  select(INST,COUNTRY) %>% 
+  distinct(INST,COUNTRY) %>% 
   arrange(INST)
 write_csv(ALLDATA_inst_check,"./output_review/ALLDATA_inst_check.csv")
 
@@ -755,61 +793,7 @@ write.csv(missing_INST, file="./output_review/missing_INST.csv", row.names = F) 
 # 2 Traveset  Anna       217             2
 # Troy Day not on Amnat board in 12-14, listed as in Australia
 # FUNECOL Data import function has some that still need to be corrected
-# COuntries: California, Germanny
-##########################################
-
-
-
-######################################
-#TODO: Correct accents etc into ASCII
-######################################
-# ALLDATA_native<-ALLDATA$INST[asciitest]
-# ALLDATA_native
-# corrections<-NULL
-# original<-c('"Ecole Normale Supérieure"',  
-#   '"Pontificia Universidad Católica de Chile"',   
-#   '"Université de Sherbrooke"',
-#   '"University of Tromsø"',
-#   '"Universit\xfc\xbe\x8c\xa3\xa0\xbc Montpellier II"',
-#   '"Universit\xfc\xbe\x8d\x83\xa0\xbct Z\xfc\xbe\x8c\x93\xa0\xbcrich Irchel"')
-#  
-# corrections$name<-c('Ecole Normale Superieure', 
-# 'Pontificia Universidad Catolica de Chile', 
-# 'Universite de Sherbrooke', 
-# 'University of Tromso',
-# 'Universite Montpellier II',  
-# 'University of Zurich Irchel')
-# 
-# asciitest<-as.data.frame(asciitest)
-# asciitest<-asciitest %>% rename("name"="asciitest")
-# corrections2<-bind_cols(asciitest,corrections)
-# 
-# ALLDATA_native
-# ALLDATA$INST[corrections2$name] <- corrections2$name1
-# ALLDATA$INST<-as.character(ALLDATA$INST)
-# ALLDATA$INST<-str_replace_all(ALLDATA$INST,"\\xa","")
-# head(ALLDATA$INST,10)
-
-ALLDATA$INST<-as_factor(ALLDATA$INST)
-ALLDATA$INST<-na.omit(ALLDATA$INST)
-ALLDATA$INST[] <- lapply(ALLDATA$INST, as.character)
-names(ALLDATA)
-trim.trailing <- function (x) sub("\\s+$", "", x)
-ALLDATA$INST<-trim.trailing(ALLDATA$INST)
-trim.leading <- function (x) sub("^\\s+", "", x)
-ALLDATA$INST<-trim.leading(ALLDATA$INST)
-head(ALLDATA$INST)
-ALLDATA<-ALLDATA %>% arrange(INST)
-nchar(ALLDATA$INST[1])
-ALLDATA$INST<-gsub("[.]","",ALLDATA$INST)
-stri_unescape_unicode(ALLDATA$INST)
-iconv(ALLDATA$INST, to = "ASCII//TRANSLIT")
-# summary(ALLDATA$INST)
-ALLDATA<-ALLDATA %>% filter(ALLDATA$INST!="")
-
-###############################
-
-
+# COuntries: , Germanny
 
 ############################
 # SUMMARY OF HOW MANY MISSING INST BY JOURNAL
