@@ -432,8 +432,10 @@ levels(ALLDATA$INST) <- c(levels(ALLDATA$INST),"University of Missouri Columbia"
 	
 
 
+ALLDATA<-ALLDATA[!(ALLDATA$LAST_NAME=="Duggan" & ALLDATA$YEAR==2008),] #not in the front matter
 ALLDATA$LAST_NAME[ALLDATA$LAST_NAME=="VanDer" & ALLDATA$JOURNAL=="LECO"]<-"van der Maarel"
 ALLDATA$INST[ALLDATA$LAST_NAME=="van der Maarel" & ALLDATA$JOURNAL=="LECO"]<-"university of uppsala"
+ALLDATA$UNIT[ALLDATA$LAST_NAME=="Meffe" & ALLDATA$JOURNAL=="CONBIO" & ALLDATA$INST=="University of Montana"]<-NA
 ALLDATA$editor_id[ALLDATA$LAST_NAME=="van der Maarel" & ALLDATA$JOURNAL=="LECO"]<-1033
 ALLDATA$editor_id[ALLDATA$LAST_NAME=="Smith" & ALLDATA$FIRST_NAME=="Melinda"]<-2566
   ALLDATA$editor_id[ALLDATA$LAST_NAME=="Smith" & ALLDATA$FIRST_NAME=="Danny"]<-NA
@@ -794,7 +796,7 @@ write.csv(missing_INST, file="./output_review/missing_INST.csv", row.names = F) 
 # Troy Day not on Amnat board in 12-14, listed as in Australia
 # FUNECOL Data import function has some that still need to be corrected
 # COuntries: , Germanny
-
+# helen james smithsonian is nat museum nat hst smithsonian
 ############################
 # SUMMARY OF HOW MANY MISSING INST BY JOURNAL
 
