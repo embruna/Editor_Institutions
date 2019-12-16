@@ -432,6 +432,7 @@ levels(ALLDATA$INST) <- c(levels(ALLDATA$INST),"University of Missouri Columbia"
 	
 
 
+ALLDATA<-ALLDATA[!(ALLDATA$LAST_NAME=="Duggan" & ALLDATA$YEAR==2008),] #not in the front matter
 ALLDATA$LAST_NAME[ALLDATA$LAST_NAME=="VanDer" & ALLDATA$JOURNAL=="LECO"]<-"van der Maarel"
 ALLDATA$INST[ALLDATA$LAST_NAME=="van der Maarel" & ALLDATA$JOURNAL=="LECO"]<-"university of uppsala"
 ALLDATA$editor_id[ALLDATA$LAST_NAME=="van der Maarel" & ALLDATA$JOURNAL=="LECO"]<-1033

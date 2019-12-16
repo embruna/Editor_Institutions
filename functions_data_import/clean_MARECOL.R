@@ -23,6 +23,7 @@ clean_MARECOL <- function(DATAFILE) {
   DATAFILE$UNIT<-as.character(DATAFILE$UNIT)
   DATAFILE$CITY<-as.character(DATAFILE$CITY)
   DATAFILE$STATE<-as.character(DATAFILE$STATE)
+  DATAFILE$COUNTRY<-as.character(DATAFILE$COUNTRY)
   
   DATAFILE$INST<-trimws(DATAFILE$INST)
   DATAFILE$UNIT<-trimws(DATAFILE$UNIT)
@@ -47,12 +48,16 @@ clean_MARECOL <- function(DATAFILE) {
     group_by(LAST_NAME,FIRST_NAME) %>% 
     mutate(CITY = ifelse((row_number()==1 & is.na(CITY)), "missing", CITY))
   
+  DATAFILE<-DATAFILE %>% 
+    group_by(LAST_NAME,FIRST_NAME) %>% 
+    mutate(COUNTRY = ifelse((row_number()==1 & is.na(COUNTRY)), "missing", COUNTRY))
+  
   
   # DATAFILE<-DATAFILE %>% fill(INST,UNIT,CITY,STATE,.direction="down")
   
   
   DATAFILE<-DATAFILE %>% arrange(LAST_NAME,FIRST_NAME,YEAR) 
-  DATAFILE<-DATAFILE %>% fill(INST,UNIT,STATE,CITY,.direction="down")
+  DATAFILE<-DATAFILE %>% fill(INST,UNIT,STATE,CITY,COUNTRY,.direction="down")
   # 
   DATAFILE<-DATAFILE %>% 
     group_by(LAST_NAME,FIRST_NAME) %>% 
@@ -76,6 +81,10 @@ clean_MARECOL <- function(DATAFILE) {
     group_by(LAST_NAME,FIRST_NAME) %>% 
     mutate(STATE = ifelse((row_number()>1 & STATE=="missing"),NA, STATE))
   
+  
+  DATAFILE<-DATAFILE %>% 
+    group_by(LAST_NAME,FIRST_NAME) %>% 
+    mutate(COUNTRY = ifelse((row_number()>1 & COUNTRY=="missing"),NA, COUNTRY))
   
   
   
