@@ -424,7 +424,11 @@ levels(ALLDATA$INST) <- c(levels(ALLDATA$INST),"University of Missouri Columbia"
                           "Aarhus University",
                           "University of St. Andrews",
                           "university of st andrews",
-                          "university of uppsala")
+                          "university of uppsala",
+                          "NERC Centre for Population Biology",
+                          "Massey University",
+                          "University of Bialystok",
+                          "manaaki whenua landcare research")
 
 
 
@@ -467,6 +471,25 @@ ALLDATA$INST[ALLDATA$LAST_NAME=="Johnson" & ALLDATA$FIRST_NAME=="Lucinda"]<-"Uni
 ALLDATA$INST[ALLDATA$LAST_NAME=="Parmentier" & ALLDATA$JOURNAL=="BITR"]<-"universite libre de bruxelles"
 ALLDATA$INST[ALLDATA$LAST_NAME=="Moen" & ALLDATA$FIRST_NAME=="Ron"]<-"University of Minnesota Duluth"
 ALLDATA$INST[ALLDATA$LAST_NAME=="Sterner" & ALLDATA$FIRST_NAME=="Robert"]<-"University of Minnesota Duluth"
+ALLDATA$INST[ALLDATA$LAST_NAME=="VanDerHeijden" & ALLDATA$FIRST_NAME=="Marcel"]<-"Free University Amsterdam"
+ALLDATA$INST[ALLDATA$LAST_NAME=="VanDamme" & ALLDATA$FIRST_NAME=="Raoul"]<-"University of Antwerp"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Badyaev" & ALLDATA$FIRST_NAME=="Alexander"]<-"University of Arizona"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Davidowitz" & ALLDATA$FIRST_NAME=="Goggy"]<-"University of Arizona"
+ALLDATA$INST[ALLDATA$LAST_NAME=="McGraw" & ALLDATA$FIRST_NAME=="Kevi"]<-"Arizona State University"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Jones" & ALLDATA$INST=="Ascot"]<-"NERC Centre for Population Biology"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Jones" & ALLDATA$INST=="Cardiff"]<-"Cardiff University"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Raubenheimer" & ALLDATA$FIRST_NAME=="David"]<-"Massey University"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Niu" & ALLDATA$FIRST_NAME=="Shuli"]<-"Chinese Academy of Sciences"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Konarzewski" & ALLDATA$INST=="Bialystok"]<-"University of Bialystok"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Newman" & ALLDATA$INST=="Bristol"]<-"University of Bristol"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Bergelson" & ALLDATA$INST=="Chicago"]<-"University of Chicago"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Turnbull" & ALLDATA$INST=="Christchurch"]<-"University of Canterbury"
+ALLDATA$INST[ALLDATA$LAST_NAME=="McGlone" & ALLDATA$INST=="Christchurch"]<-"manaaki whenua landcare research"
+ALLDATA$INST[ALLDATA$LAST_NAME=="Boggs" & ALLDATA$INST=="Colorado"]<-"Stanford University"
+
+
+
+
 ALLDATA$INST[ALLDATA$LAST_NAME=="Wiersma" & ALLDATA$FIRST_NAME=="Jochum"]<-"University of Minnesota Crookston"
 ALLDATA$INST[ALLDATA$LAST_NAME=="Smith" & ALLDATA$FIRST_NAME=="Madeleine"]<-"University of Minnesota Crookston"
 ALLDATA$INST[ALLDATA$LAST_NAME=="Sims" & ALLDATA$FIRST_NAME=="Albert"]<-"University of Minnesota Crookston"
@@ -788,6 +811,7 @@ write.csv(missing_INST, file="./output_review/missing_INST.csv", row.names = F) 
 # NEED TO GET PEOPLE BY CAMPUS UNAM
 # no one by this name
 # NoInst
+# Some others at imperail college (Ascot) are also NERC Centre for Population Biology (silwood park)
 # Oregon Trail
 # Pfenning does he have two researcher iD's? 
 # Stephen Simpson Ecology 2002 2x if Oxford, UK, Australia 
