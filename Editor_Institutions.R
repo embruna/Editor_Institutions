@@ -832,7 +832,23 @@ checkINST2<-ALLDATA %>%
   arrange(desc(n))
 
 checkINST2
+sum(checkINST2$n)
 ############################
+
+
+############################
+# SUMMARY OF HOW MANY DIFFERENT RECORDS MISSING INST
+
+checkINST3<-ALLDATA %>% 
+  filter(is.na(INST)|INST=="missing") %>% 
+  group_by(JOURNAL) %>% 
+  summarise(n=n()) %>% 
+  arrange(desc(n))
+
+checkINST3
+sum(checkINST3$n)
+############################
+
 
 ############################
 # Summary of how many editors
