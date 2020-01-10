@@ -665,11 +665,11 @@ ALLDATA<-JamesCorrections(ALLDATA)
 
 source("functions_data_cleaning/institution_cleaner.R")
 ALLDATA<-institution_cleaner(ALLDATA)
-
-
-
-##########################################
-ALLDATA$INST <- ifelse(ALLDATA$ascii == FALSE, iconv(ALLDATA$INST,from="UTF-8", to="ASCII","o"), ALLDATA$INST)   
+# 
+# ALLDATA$ascii<- ALLDATA$INST == stringi::stri_enc_toascii(ALLDATA$INST)
+# which(ALLDATA$ascii==FALSE)
+# ##########################################
+# ALLDATA$INST <- ifelse(ALLDATA$ascii == FALSE, iconv(ALLDATA$INST,from="UTF-8", to="ASCII","o"), ALLDATA$INST)   
 gsub("goottingen","gottingen",ALLDATA$INST)
 gsub("istituto per looambiente marino costiero","istituto per lambiente marino costiero",ALLDATA$INST)
 gsub("macaulayooinstitute","istituto per lambiente marino costiero",ALLDATA$INST)
