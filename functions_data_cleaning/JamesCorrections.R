@@ -85,8 +85,78 @@ JBIOG_inst<-JBIOG_inst[(!is.na(JBIOG_inst$NOTES)|
 LECO_inst<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/newPJCorrections_10_LECO.csv", col_names = TRUE)
 names(LECO_inst)
 LECO_inst<-LECO_inst %>%  select(-X1,-check) %>% rename("NOTES"=`please note if INCORRECT`)
-LECO_inst<-LECO_inst[(!is.na(LECO_inst$NOTES)|
-                          (LECO_inst$INST=="missing")),]
+# LECO_inst<-LECO_inst[(!is.na(LECO_inst$NOTES)|
+#                           (LECO_inst$INST=="missing")),]
+
+LECO_inst$editor_id<-as.character(LECO_inst$editor_id)
+
+# NEW df with LANDSCAPEECO
+LANDSCAPEECO<-filter(ORIGINAL_DATA,JOURNAL=="LECO")
+
+# remove OECOL FROM THE COMPLETE DATASET, WILL REBIND AFTER ADDING CORRECTIONS
+ORIGINAL_DATA<-ORIGINAL_DATA %>% filter(JOURNAL!="LECO")
+
+# INSERT THE CORRECTIONS TO OECOL AND FILL
+LANDSCAPEECO<-LANDSCAPEECO %>% na_if("missing")
+LECO_inst<-LECO_inst %>% na_if("missing")
+
+# LECO_inst$editor_id<-as.factor(LECO_inst$editor_id)
+LANDSCAPEECO$INST<-as.character(LANDSCAPEECO$INST)
+LANDSCAPEECO<-full_join(LANDSCAPEECO, LECO_inst, by = c("LAST_NAME","FIRST_NAME","YEAR"),all = T) %>%
+  group_by(LAST_NAME,FIRST_NAME) %>%
+  mutate(CITY.x = ifelse((is.na(CITY.x)|CITY.x=="missing"), CITY.y, CITY.x)) %>%
+  select(-CITY.y) %>%
+  rename("CITY"="CITY.x") %>%
+  mutate(INST.x = ifelse((is.na(INST.x)|INST.x=="missing"), INST.y, INST.x)) %>%
+  select(-INST.y) %>%
+  rename("INST"="INST.x") %>%
+  select(-JOURNAL.y) %>%
+  rename("JOURNAL"="JOURNAL.x") %>%
+  mutate(MIDDLE_NAME.x = ifelse((is.na(MIDDLE_NAME.x)|MIDDLE_NAME.x=="missing"), MIDDLE_NAME.y, MIDDLE_NAME.x)) %>%
+  select(-MIDDLE_NAME.y) %>%
+  rename("MIDDLE_NAME"="MIDDLE_NAME.x") %>%
+  mutate(NOTES.x = ifelse((is.na(NOTES.x)|NOTES.x=="missing"), NOTES.y, NOTES.x)) %>%
+  select(-NOTES.y) %>%
+  rename("NOTES"="NOTES.x") %>%
+  mutate(editor_id.x = ifelse((is.na(editor_id.x)|editor_id.x=="missing"), editor_id.y, editor_id.x)) %>%
+  rename("editor_id"="editor_id.x") %>%
+  mutate(UNIT.x = ifelse((is.na(UNIT.x)|UNIT.x=="missing"), UNIT.y, UNIT.x)) %>%
+    select(-editor_id.y) %>%
+  select(-UNIT.y) %>%
+  rename("UNIT"="UNIT.x") %>%
+  mutate(STATE.x = ifelse((is.na(STATE.x)|STATE.x=="missing"), STATE.y, STATE.x)) %>%
+  select(-STATE.y) %>%
+  rename("STATE"="STATE.x") %>%
+  select(-COUNTRY.y) %>%
+  rename("COUNTRY"="COUNTRY.x")
+
+LANDSCAPEECO$JOURNAL<-"LECO"
+
+
+  
+  
+colnames(LANDSCAPEECO)
+LANDSCAPEECO$LAST_NAME[LANDSCAPEECO$LAST_NAME=="Lookinbill"]<-"Lookingbill"
+LANDSCAPEECO$CITY[LANDSCAPEECO$LAST_NAME=="Overton"]<-NA
+LANDSCAPEECO$geo.code[LANDSCAPEECO$LAST_NAME=="Betts"]<-"CAN"
+
+
+LANDSCAPEECO<-LANDSCAPEECO %>% group_by(editor_id) %>%
+  fill(INST,CITY,.direction="down")
+
+# LANDSCAPEECO$editor_id<-as.factor(LANDSCAPEECO$editor_id)
+
+# Rebind the ORIGINAL DATA AND NOW CORRECTED LANDSCAPEECO
+
+str(ORIGINAL_DATA)
+str(LANDSCAPEECO)
+str(LECO_inst)
+ORIGINAL_DATA<-bind_rows(ORIGINAL_DATA,LANDSCAPEECO)
+
+rm(LANDSCAPEECO,LECO_inst)
+
+
+
 ##########
 ##########
 # PLANTECOL_inst<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_8_PLANTECOL.csv", col_names = TRUE)
@@ -102,8 +172,71 @@ OIKOS_inst<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrectio
 
 ##########
 # OECOLOGIA
+# 
+# ##########
+OECOL_inst<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_OECOL.csv", col_names = TRUE)
+names(OECOL_inst)
+OECOL_inst<-OECOL_inst %>%  select(-X1)
+OECOL_inst<-OECOL_inst[!(OECOL_inst$LAST_NAME=="Gough" & OECOL_inst$YEAR==2012),]
+OECOL_inst<-OECOL_inst[!(OECOL_inst$LAST_NAME=="Heimpel" & OECOL_inst$YEAR==2012),]
+OECOL_inst<-OECOL_inst[!(OECOL_inst$LAST_NAME=="Ibanez" & OECOL_inst$YEAR==2012),]
+OECOL_inst<-OECOL_inst[!(OECOL_inst$LAST_NAME=="Layman" & OECOL_inst$YEAR==2012),]
+OECOL_inst<-OECOL_inst[!(OECOL_inst$LAST_NAME=="Le Galliard" & OECOL_inst$YEAR==2012),]
 
-##########
+OECOL_inst<-OECOL_inst %>% select(JOURNAL, YEAR,editor_id, FIRST_NAME, 
+                                  MIDDLE_NAME, LAST_NAME, INST,CITY,NOTES) 
+
+
+# NEW df with OECOLOGIA
+OECOLOGIA<-filter(ORIGINAL_DATA,JOURNAL=="OECOL")
+
+# remove OECOL FROM THE COMPLETE DATASET, WILL REBIND AFTER ADDING CORRECTIONS 
+ORIGINAL_DATA<-ORIGINAL_DATA %>% filter(JOURNAL!="OECOL")
+
+# INSERT THE CORRECTIONS TO OECOL AND FILL
+OECOLOGIA<-OECOLOGIA %>% na_if("missing")
+OECOL_inst<-OECOL_inst %>% na_if("missing")
+
+OECOL_inst$editor_id<-as.factor(OECOL_inst$editor_id)
+OECOLOGIA$INST<-as.character(OECOLOGIA$INST)
+OECOLOGIA<-full_join(OECOLOGIA, OECOL_inst, by = c("LAST_NAME","FIRST_NAME","YEAR"),all = T) %>% 
+  group_by(LAST_NAME,FIRST_NAME) %>% 
+  mutate(CITY.x = ifelse((is.na(CITY.x)|CITY.x=="missing"), CITY.y, CITY.x)) %>%  
+  select(-CITY.y) %>% 
+  rename("CITY"="CITY.x") %>% 
+  mutate(INST.x = ifelse((is.na(INST.x)|INST.x=="missing"), INST.y, INST.x)) %>%  
+  select(-INST.y) %>% 
+  rename("INST"="INST.x") %>% 
+  select(-JOURNAL.y) %>% 
+  rename("JOURNAL"="JOURNAL.x") %>% 
+  mutate(MIDDLE_NAME.x = ifelse((is.na(MIDDLE_NAME.x)|MIDDLE_NAME.x=="missing"), MIDDLE_NAME.y, MIDDLE_NAME.x)) %>%  
+  select(-MIDDLE_NAME.y) %>% 
+  rename("MIDDLE_NAME"="MIDDLE_NAME.x") %>% 
+  mutate(NOTES.x = ifelse((is.na(NOTES.x)|NOTES.x=="missing"), NOTES.y, NOTES.x)) %>%  
+  select(-NOTES.y) %>% 
+  rename("NOTES"="NOTES.x") %>% 
+  mutate(editor_id.x = ifelse((is.na(editor_id.x)|editor_id.x=="missing"), editor_id.y, editor_id.x)) %>%  
+  select(-editor_id.y) %>% 
+  rename("editor_id"="editor_id.x") 
+
+OECOLOGIA$JOURNAL<-"OECOL"
+
+OECOLOGIA<-OECOLOGIA %>% group_by(editor_id) %>% 
+  fill(INST,CITY,.direction="down")
+
+OECOLOGIA$editor_id<-as.factor(OECOLOGIA$editor_id)
+
+# Rebind the ORIGINAL DATA AND NOW CORRECTED OECOLOGIA
+
+str(ORIGINAL_DATA)
+str(OECOLOGIA)
+ORIGINAL_DATA<-bind_rows(ORIGINAL_DATA,OECOLOGIA)
+
+rm(OECOLOGIA,OECOL_inst)
+
+
+
+
 
 ##########
 # JANE
@@ -111,10 +244,13 @@ OIKOS_inst<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrectio
 
 
 #############
-INST_fix<-bind_rows(multi2b,multi2a,multi1,BITR_inst,JECOL_inst,AMNAT_inst,JAPE_inst,JBIOG_inst,LECO_inst,OIKOS_inst) %>% 
+INST_fix<-bind_rows(multi2b,multi2a,multi1,BITR_inst,JECOL_inst,AMNAT_inst,JAPE_inst,JBIOG_inst,OIKOS_inst) %>% 
   distinct(editor_id,JOURNAL,YEAR,.keep_all= TRUE) %>%     #there are some duplicates, best to remove them
   arrange(JOURNAL,editor_id,YEAR)
+rm(multi2b,multi2a,multi1,BITR_inst,JECOL_inst,AMNAT_inst,JAPE_inst,JBIOG_inst,OIKOS_inst)
 
+# colnames(INST_fix)
+# colnames(OECOL_inst)
 
 INST_fix$INST[INST_fix$INST=="UNKNOWN"]<-NA
 INST_fix$INST[INST_fix$INST=="unknown"]<-NA
@@ -126,6 +262,7 @@ INST_fix$STATE[INST_fix$STATE=="unknown"]<-NA
 
 INST_fix<-institution_cleaner(INST_fix)
 INST_fix<-INST_fix %>% select(-X1)
+
 head(INST_fix,20)
 #
 
@@ -148,6 +285,14 @@ O_butnot_C
 O_and_C<-inner_join(ORIGINAL_DATA,INST_fix,by=c("LAST_NAME","JOURNAL","YEAR")) #in correct but not orig 4381
 nrow(O_and_C)
 
+colnames(ORIGINAL_DATA)
+colnames(INST_fix)
+str(ORIGINAL_DATA)
+str(INST_fix)
+
+INST_fix$editor_id<-as.character(INST_fix$editor_id)
+
+
 
 # both<-full_join(ORIGINAL_DATA,INST_fix,by=c("editor_id","JOURNAL","YEAR")) 
 both<-full_join(ORIGINAL_DATA,INST_fix,by=c("JOURNAL","YEAR","LAST_NAME","FIRST_NAME")) 
@@ -169,7 +314,7 @@ both<-select(both,JOURNAL,YEAR,VOLUME.x,VOLUME.y,ISSUE.x,ISSUE.y,editor_id.x,edi
              COUNTRY.x,COUNTRY.y,COUNTRY_Prior_Class,geo.code,geo.code_Prior_Class,
              GENDER,NOTES.x,NOTES.y)
 
-
+colnames(both)
 
 both<-both %>% mutate(VOLUME.x = replace(VOLUME.x, is.na(VOLUME.x),VOLUME.y[is.na(VOLUME.x)]))
 both$VOLUME.y<-NULL
@@ -185,6 +330,8 @@ both<-both %>% rename("ISSUE"="ISSUE.x")
 both<-both %>% mutate(TITLE.x = replace(TITLE.x, is.na(TITLE.x),TITLE.y[is.na(TITLE.x)]))
 both$TITLE.y<-NULL
 both<-both %>% rename("TITLE"="TITLE.x")
+
+
 
 
 # #CAN QUICKLY ID WHAT NEEDS TO BE FIXED AS FOLLOWS
@@ -514,6 +661,12 @@ levels(both$INST)
 both$INST<-tolower(both$INST)
 
 
+both$editor_id.y<-NULL
+both<-both %>% rename("editor_id"="editor_id.x")
+
+both<-both[!(is.na(both$JOURNAL) & is.na(both$YEAR)),]
+
+
 both<-both %>% 
   group_by(JOURNAL,LAST_NAME,FIRST_NAME) %>% 
   mutate(INST = ifelse((row_number()==1 & is.na(INST)), "missing", INST))
@@ -534,6 +687,11 @@ both<-both %>%
 
 
 both<-both %>% arrange(JOURNAL,LAST_NAME,FIRST_NAME,YEAR)
+
+colnames(both)
+str(both)
+colnames(ALLDATA)
+colnames(both)==colnames(ALLDATA)
 
 return(both)
 }

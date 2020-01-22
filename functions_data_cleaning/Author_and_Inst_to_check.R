@@ -224,6 +224,62 @@ write.csv(OIKOS_INST_NA, file="./Data/Patrick_James_Data_Corrections/OIKOS_check
 rm(OIKOS_checks,sub1,sub2,sub3,OIKOS_ed_checks,OIKOS_inst_checks)
 
 
+
+#######################
+# JANE
+#######################
+
+JANE_checks<-ALLDATA %>% filter(JOURNAL=="JANE")
+JANE_checks<-JANE_checks %>% arrange(editor_id,YEAR,INST)
+head(JANE_checks,10)
+# JANE_checks<-JANE_checks %>% group_by(editor_id,INST) %>% distinct(editor_id,INST,.keep_all=TRUE)
+
+
+
+# editors with >1 inst : 2x
+JANE_checks$INST[is.na(JANE_checks$INST)]<-"missing"
+JANE_checks$CITY[is.na(JANE_checks$CITY)]<-"missing"
+JANE_checks$STATE[is.na(JANE_checks$STATE)]<-"missing"
+JANE_checks$UNIT[is.na(JANE_checks$UNIT)]<-"missing"
+JANE_INST_NA<-JANE_checks %>%  filter(is.na(INST)| INST=="missing")  %>% group_by(editor_id) %>% distinct(editor_id,CITY,.keep_all=TRUE)
+# 
+# JANE_ed_checks<-JANE_checks %>%  distinct(editor_id,INST) %>% group_by(editor_id) %>% filter(n()>1) 
+# 
+# # Inst with >1 editors : 2x
+# JANE_inst_checks<-JANE_checks %>%  distinct(editor_id,INST) %>% group_by(INST) %>% filter(n()>1) 
+# 
+# JANE_checks<-bind_rows(JANE_inst_checks,JANE_ed_checks) %>% distinct(editor_id,INST)
+# 
+# JANE_checks<-inner_join(JANE,JANE_checks) %>% distinct(editor_id,INST,.keep_all = TRUE)
+# 
+# JANE_checks$check<-"2x"
+# 
+# sub1<-JANE %>% 
+#   group_by(editor_id) %>%
+#   do(sample_n(.,1))
+# 
+# sub2<-JANE %>% 
+#   group_by(editor_id) %>%
+#   do(sample_n(.,1))
+# 
+# 
+# sub3<-JANE %>% 
+#   group_by(editor_id) %>%
+#   do(sample_n(.,1))
+# 
+# # JANE_spotchecks<-sub1
+# JANE_spotchecks<-unique(bind_rows(sub1,sub2,sub3)) %>% arrange(YEAR,LAST_NAME)
+# 
+# JANE_spotchecks$check<-"spotcheck"
+# 
+# JANE_checks<-bind_rows(JANE_spotchecks,JANE_checks) %>%arrange(YEAR,LAST_NAME)
+# JANE_checks<-JANE_checks %>% distinct(editor_id, INST,.keep_all = TRUE)
+
+write.csv(JANE_INST_NA, file="./Data/Patrick_James_Data_Corrections/JANE_checks.csv", row.names = T) #export it as a csv file
+
+rm(JANE_checks,sub1,sub2,sub3,JANE_ed_checks,JANE_inst_checks)
+
+
 #######################
 # LECO
 #######################
@@ -461,7 +517,7 @@ OECOL_check$INST[is.na(OECOL_check$INST)]<-"missing"
 OECOL_check$UNIT[is.na(OECOL_check$UNIT)]<-"missing"
 OECOL_check$CITY[is.na(OECOL_check$CITY)]<-"missing"
 OECOL_check$STATE[is.na(OECOL_check$STATE)]<-"missing"
-OECOL_check<-OECOL_check %>% filter(INST=="missing") %>% arrange(LAST_NAME,YEAR) %>% distinct(LAST_NAME,FIRST_NAME,.keep_all = TRUE)
+OECOL_check<-OECOL_check %>% filter(INST=="missing" |INST== "DOUBLE CHECK INST") %>% arrange(LAST_NAME,YEAR) %>% distinct(LAST_NAME,FIRST_NAME,.keep_all = TRUE)
 write.csv(OECOL_check, file="./Data/Patrick_James_Data_Corrections/OECOL_checks.csv", row.names = T) #export it as a csv file
 # 
 # OECOL_check2<-filter(ALLDATA,JOURNAL=="OECOL") %>% filter(is.na(INST)==FALSE) %>% distinct(LAST_NAME,FIRST_NAME,.keep_all = TRUE)
