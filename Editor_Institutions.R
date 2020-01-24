@@ -183,7 +183,7 @@ rm(AGRONOMY_data_11.02.2017.csv,AG_raw)
 FEM_raw<-FEM_7112017.csv
 source("functions_data_import/clean_FEM.R")
 FEM<-clean_FEM(FEM_raw)
-rm(FEM_7112017.csv)
+rm(FEM_7112017.csv,FEM_raw)
 ##############################################################
 # J ANIMAL ECOLOGY
 ##############################################################
@@ -230,7 +230,7 @@ rm(AMNAT_EKB.csv)
 JAPE_raw<-JAPE_new.csv
 source("functions_data_import/clean_JAPE.R")
 JAPE<-clean_JAPE(JAPE_raw)
-rm(JAPE_new.csv)
+rm(JAPE_new.csv,JAPE_raw)
 ##############################################################
 # OECOLOGIA
 ##############################################################
@@ -371,6 +371,35 @@ str(ALLDATA)
 colnames(ALLDATA)
 summary(ALLDATA)
 
+rm(CONBIO,
+  MARECOL,
+  NAJFM,
+  NEWPHYT,
+  JZOOL,
+  GCB,
+  OIKOS,
+  BITR,
+  LECO,
+  PLANTECOL,
+  OECOL,
+  JTE,
+  JECOL,
+  JBIOG,
+  JAPE,
+  JANE,
+  FUNECOL,
+  FEM,
+  EVOL,
+  ECOL,
+  ECOG,
+  AREES,
+  AMNAT,
+  AJB,
+  AG,
+  CONDOR,
+  AUK,
+  BIOCON)
+
 
 ALLDATA <- ALLDATA %>% 
   select(JOURNAL,YEAR,VOLUME,ISSUE,editor_id,    # deleting "NAME"
@@ -403,148 +432,31 @@ ALLDATA<-ALLDATA %>% select(-OLD_INST)
 ############
 
 ##############################################################
-# COrrecting the country and institition where Editors are based
+# COrrecting the country names
 ##############################################################
 
-ALLDATA$INST<-as.factor(ALLDATA$INST)
-levels(ALLDATA$INST) <- c(levels(ALLDATA$INST),"University of Missouri Columbia",
-                          "CNRS Centre dEcologie Fonctionnelle et Evolutive",
-                          "Forestry and Forest Products Research Institute",
-                          "University of Minnesota Duluth",
-                          "University of Minnesota Crookston",
-                          "University of Toronto Mississauga",
-                          "State University of New York College of Environmental Science and Forestry",
-                          "Calyx, Inc.","University of North Carolina Charlotte",
-                          "Smithsonian National Museum of Natural History",
-                          "Smithsonian National Zoological Park",
-                          "Laboratoire Associe de Modelisation des Plantes",
-                          "Southern Illinois University",
-                          "universite libre de bruxelles",
-                          "southern illinois u",
-                          "Aarhus University",
-                          "University of St. Andrews",
-                          "university of st andrews",
-                          "university of uppsala",
-                          "NERC Centre for Population Biology",
-                          "Massey University",
-                          "University of Bialystok",
-                          "manaaki whenua landcare research")
+source("functions_data_cleaning/country_cleaner.R")
+ALLDATA<-country_cleaner(ALLDATA)
 
+##############################################################
+# COrrecting Editor Info (INST, editor_ID, etc.)
+##############################################################
 
-
-
-	
-
-
-ALLDATA<-ALLDATA[!(ALLDATA$LAST_NAME=="Duggan" & ALLDATA$YEAR==2008),] #not in the front matter
-ALLDATA$LAST_NAME[ALLDATA$LAST_NAME=="VanDer" & ALLDATA$JOURNAL=="LECO"]<-"van der Maarel"
-ALLDATA$INST[ALLDATA$LAST_NAME=="van der Maarel" & ALLDATA$JOURNAL=="LECO"]<-"university of uppsala"
-ALLDATA$UNIT[ALLDATA$LAST_NAME=="Meffe" & ALLDATA$JOURNAL=="CONBIO" & ALLDATA$INST=="University of Montana"]<-NA
-ALLDATA$editor_id[ALLDATA$LAST_NAME=="van der Maarel" & ALLDATA$JOURNAL=="LECO"]<-1033
-ALLDATA$editor_id[ALLDATA$LAST_NAME=="Smith" & ALLDATA$FIRST_NAME=="Melinda"]<-2566
-  ALLDATA$editor_id[ALLDATA$LAST_NAME=="Smith" & ALLDATA$FIRST_NAME=="Danny"]<-NA
-  ALLDATA$LAST_NAME[ALLDATA$LAST_NAME=="MOYLE" & ALLDATA$FIRST_NAME=="PETER"]<-"Moyle"
-  ALLDATA$FIRST_NAME[ALLDATA$LAST_NAME=="Moyle" & ALLDATA$FIRST_NAME=="PETER"]<-"Peter"
-  ALLDATA$editor_id[ALLDATA$LAST_NAME=="Moyle" & ALLDATA$FIRST_NAME=="Peter"]<-2874
-  ALLDATA$LAST_NAME[ALLDATA$LAST_NAME=="LI" & ALLDATA$FIRST_NAME=="Feng-Min"]<-"Li"
-  ALLDATA$editor_id[ALLDATA$LAST_NAME=="Li" & ALLDATA$FIRST_NAME=="Feng-Min"]<-1098
-  ALLDATA$editor_id[ALLDATA$LAST_NAME=="Lee" & ALLDATA$FIRST_NAME=="Carol"]<-3860
-  ALLDATA$editor_id[ALLDATA$LAST_NAME=="Fry" & ALLDATA$FIRST_NAME=="James"]<-3891
-  ALLDATA$LAST_NAME[ALLDATA$LAST_NAME=="DeWalt" & ALLDATA$FIRST_NAME=="Saara"]<-"Dewalt"
-  ALLDATA$editor_id[ALLDATA$LAST_NAME=="Dewalt" & ALLDATA$FIRST_NAME=="Saara"]<-3311
-  ALLDATA$LAST_NAME[ALLDATA$LAST_NAME=="DeVictor" & ALLDATA$FIRST_NAME=="Vincent"]<-"Devictor"
-  ALLDATA$editor_id[ALLDATA$LAST_NAME=="Devictor" & ALLDATA$FIRST_NAME=="Vincent"]<-3681
-  ALLDATA$LAST_NAME[ALLDATA$LAST_NAME=="COE" & ALLDATA$FIRST_NAME=="M"]<-"Coe"
-  ALLDATA$editor_id[ALLDATA$LAST_NAME=="Coe" & ALLDATA$FIRST_NAME=="M"]<-2332
-ALLDATA$INST[ALLDATA$LAST_NAME=="Sprules" & ALLDATA$FIRST_NAME=="Gary"]<-"University of Toronto Mississauga"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Wagner" & ALLDATA$FIRST_NAME=="Helene"]<-"University of Toronto Mississauga"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Kotanen" & ALLDATA$FIRST_NAME=="Peter"]<-"University of Toronto Mississauga"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Loiselle" & ALLDATA$FIRST_NAME=="Bette"]<-"University of Missouri St Louis"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Ricklefs" & ALLDATA$FIRST_NAME=="Robert"]<-"University of Missouri St Louis"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Renner" & ALLDATA$FIRST_NAME=="Susanne"]<-"University of Missouri St Louis"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Sork" & ALLDATA$FIRST_NAME=="Victoria"]<-"University of Missouri St Louis"
-# ALLDATA$INST[ALLDATA$LAST_NAME=="Parmentier"]<-"universite libre de bruxelles"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Debussche"]<-"CNRS Centre dEcologie Fonctionnelle et Evolutive"
-# levels(ALLDATA$INST) <- c(levels(ALLDATA$INST),"Forestry and Forest Products Research Institute","University of Minnesota Duluth","University of Minnesota Crookston")
-ALLDATA$INST[ALLDATA$LAST_NAME=="Fujimori"]<-"Forestry and Forest Products Research Institute"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Johnson" & ALLDATA$FIRST_NAME=="Lucinda"]<-"University of Minnesota Duluth"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Parmentier" & ALLDATA$JOURNAL=="BITR"]<-"universite libre de bruxelles"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Moen" & ALLDATA$FIRST_NAME=="Ron"]<-"University of Minnesota Duluth"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Sterner" & ALLDATA$FIRST_NAME=="Robert"]<-"University of Minnesota Duluth"
-ALLDATA$INST[ALLDATA$LAST_NAME=="VanDerHeijden" & ALLDATA$FIRST_NAME=="Marcel"]<-"Free University Amsterdam"
-ALLDATA$INST[ALLDATA$LAST_NAME=="VanDamme" & ALLDATA$FIRST_NAME=="Raoul"]<-"University of Antwerp"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Badyaev" & ALLDATA$FIRST_NAME=="Alexander"]<-"University of Arizona"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Davidowitz" & ALLDATA$FIRST_NAME=="Goggy"]<-"University of Arizona"
-ALLDATA$INST[ALLDATA$LAST_NAME=="McGraw" & ALLDATA$FIRST_NAME=="Kevi"]<-"Arizona State University"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Jones" & ALLDATA$INST=="Ascot"]<-"NERC Centre for Population Biology"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Jones" & ALLDATA$INST=="Cardiff"]<-"Cardiff University"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Raubenheimer" & ALLDATA$FIRST_NAME=="David"]<-"Massey University"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Niu" & ALLDATA$FIRST_NAME=="Shuli"]<-"Chinese Academy of Sciences"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Konarzewski" & ALLDATA$INST=="Bialystok"]<-"University of Bialystok"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Newman" & ALLDATA$INST=="Bristol"]<-"University of Bristol"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Bergelson" & ALLDATA$INST=="Chicago"]<-"University of Chicago"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Turnbull" & ALLDATA$INST=="Christchurch"]<-"University of Canterbury"
-ALLDATA$INST[ALLDATA$LAST_NAME=="McGlone" & ALLDATA$INST=="Christchurch"]<-"manaaki whenua landcare research"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Boggs" & ALLDATA$INST=="Colorado"]<-"Stanford University"
-
-
-
-
-ALLDATA$INST[ALLDATA$LAST_NAME=="Wiersma" & ALLDATA$FIRST_NAME=="Jochum"]<-"University of Minnesota Crookston"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Smith" & ALLDATA$FIRST_NAME=="Madeleine"]<-"University of Minnesota Crookston"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Sims" & ALLDATA$FIRST_NAME=="Albert"]<-"University of Minnesota Crookston"
-ALLDATA$INST[ALLDATA$JOURNAL=="AMNAT" & ALLDATA$LAST_NAME=="Case"]<-"University of California San Diego"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Noon"]<-"Colorado State University"
-ALLDATA$COUNTRY[ALLDATA$LAST_NAME=="VanDerHeijden"]<-"Switzerland"
-# levels(ALLDATA$INST) <- c(levels(ALLDATA$INST),"State University of New York College of Environmental Science and Forestry")
-ALLDATA$INST[ALLDATA$LAST_NAME=="Burgess"]<-"State University of New York College of Environmental Science and Forestry"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Fragoso"]<-"State University of New York College of Environmental Science and Forestry"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Yanai"]<-"State University of New York College of Environmental Science and Forestry"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Hall" & ALLDATA$FIRST_NAME=="Charles" & ALLDATA$JOURNAL=="CONBIO"]<-
-  "State University of New York College of Environmental Science and Forestry"
-ALLDATA$INST[ALLDATA$INST=="University of Missouri"]<-"University of Missouri Columbia" 
-ALLDATA$COUNTRY[ALLDATA$LAST_NAME=="Bieber"]<-"Austria"
-ALLDATA$COUNTRY[ALLDATA$FIRST_NAME=="Jeannine" & ALLDATA$LAST_NAME=="Cavender-Bares"]<-"USA"
-ALLDATA$INST[ALLDATA$JOURNAL=="AMNAT" & ALLDATA$LAST_NAME=="Case"]<-"University of California San Diego"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Noon"]<-"Colorado State University"
-ALLDATA$COUNTRY[ALLDATA$LAST_NAME=="VanDerHeijden"]<-"Switzerland"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Bowers" & ALLDATA$CITY=="Vadnais Heights"]<-"Calyx, Inc."
-ALLDATA$INST[ALLDATA$LAST_NAME=="Debussche"]<-"CNRS Centre dEcologie Fonctionnelle et Evolutive"
-ALLDATA$COUNTRY[ALLDATA$LAST_NAME=="Gandon"]<-"France"
-ALLDATA$FIRST_NAME[ALLDATA$LAST_NAME=="MONOD"]<-"Theodore"
-ALLDATA$LAST_NAME[ALLDATA$LAST_NAME=="MONOD"]<-"Monod"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Whitmore"]<-"University of Oxford"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Hails"]<-"University of Oxford"
-ALLDATA$UNIT[ALLDATA$LAST_NAME=="Whitmore"]<-"Oxford Forestry Institute"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Leamy"]<-"University of North Carolina Charlotte"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Gustafson"& ALLDATA$FIRST_NAME=="E"]<-"US Forest Service"
-ALLDATA$UNIT[ALLDATA$LAST_NAME=="Gustafson"& ALLDATA$FIRST_NAME=="E"]<-"North Central Research Station"
-ALLDATA$COUNTRY[ALLDATA$LAST_NAME=="Westing"&ALLDATA$FIRST_NAME=="Arthur"]<-"Sweden"
-ALLDATA$COUNTRY[ALLDATA$LAST_NAME=="Galdon"&ALLDATA$FIRST_NAME=="Luis"]<-"Spain"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Labandeira"& ALLDATA$FIRST_NAME=="Conrad"]<-"Smithsonian National Museum of Natural History"
-ALLDATA$INST[ALLDATA$LAST_NAME=="SEIDENSTZICKER"& ALLDATA$FIRST_NAME=="JOHN"]<-"Smithsonian National Zoological Park"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Kleiman"& ALLDATA$FIRST_NAME=="Devra"]<-"Smithsonian National Zoological Park"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Houllier" & (ALLDATA$YEAR>1998 & ALLDATA$YEAR<2003)]<-NA
-ALLDATA$INST[ALLDATA$LAST_NAME=="Houllier" & (ALLDATA$YEAR>1998 & ALLDATA$YEAR<2003)]<-"Laboratoire Associe de Modelisation des Plantes"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Watling"& ALLDATA$INST=="Adelaide"]<-"University of Adelaide"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Boutin" & ALLDATA$INST=="Alberta"]<-"University of Alberta"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Fox" & ALLDATA$INST=="Alberta"]<-"University of Calgary"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Patek" & ALLDATA$INST=="Amherst"]<-"University of Massachusetts at Amherst"
-ALLDATA$INST[ALLDATA$LAST_NAME=="Mcgraw" & ALLDATA$INST=="Arizona"]<-"Arizona State University"
-ALLDATA$COUNTRY[ALLDATA$LAST_NAME=="Vanderheijden" & ALLDATA$INST=="Amsterdam"]<-"Amsterdam"
-
+source("functions_data_cleaning/editor_cleaner.R")
+ALLDATA<-editor_cleaner(ALLDATA)
 
 ##########################
 # Clean Up Institutions and countries
 ##########################
 # head(ALLDATA,10)
-source("functions_data_cleaning/institution_cleaner.R")
-ALLDATA<-institution_cleaner(ALLDATA)
+# source("functions_data_cleaning/institution_cleaner.R")
+# ALLDATA<-institution_cleaner(ALLDATA)
 
 
 ##########################
 # TODO: ADD AN EDITOR_ID to GCB and MARECOL
-missing_edID<-filter(ALLDATA,is.na(ALLDATA$editor_id))
+summary(ALLDATA$editor_id)
+missing_edID<-filter(ALLDATA,is.na(editor_id))
 missing_edID$JOURNAL<-as.factor(missing_edID$JOURNAL)
 ALLDATA$JOURNAL<-as.factor(ALLDATA$JOURNAL)
 summary(missing_edID)
@@ -597,7 +509,7 @@ which(ALLDATA$COUNTRY=="")
 # CLEAN-UP OF INSTITUTIONS  
 ##############################################################
 ##############################################################
-ALLDATA$INST[ALLDATA$INST=="."]<-NA
+# ALLDATA$INST[ALLDATA$INST=="."]<-NA
 ALLDATA<-as.data.frame(ALLDATA)
 ALLDATA$JOURNAL<-as.factor(ALLDATA$JOURNAL)
 
@@ -618,9 +530,9 @@ ALLDATA$JOURNAL<-as.factor(ALLDATA$JOURNAL)
 # CHANGE THOSE WITH BLANK INST to NA
 ##############################################################
 # ALLDATA$INST[ALLDATA$LAST_NAME=="Angeler" & ALLDATA$YEAR>"2011" & ALLDATA$JOURNAL=="JAPE"]<-NA
-ALLDATA$INST[ALLDATA$INST==""]<-NA
-ALLDATA$INST[ALLDATA$INST=="N/A"]<-NA
-ALLDATA$INST[ALLDATA$INST=="."]<-NA
+# ALLDATA$INST[ALLDATA$INST==""]<-NA
+# ALLDATA$INST[ALLDATA$INST=="N/A"]<-NA
+# ALLDATA$INST[ALLDATA$INST=="."]<-NA
 
 # ##############################################################
 # # SAVE THE FILE AS A CSV FOR MANUAL REVIEW AGAIN
@@ -658,23 +570,30 @@ ALLDATA$INST[ALLDATA$INST=="."]<-NA
 ##############################
 # ADD AND PATRICK JAMES CORRECTIONS
 ##############################
-##############################
+##################
+# 
 source("functions_data_cleaning/JamesCorrections.R")
 ALLDATA<-JamesCorrections(ALLDATA)
 
+############
 
+# foo<-as.data.frame(levels(ALLDATA$COUNTRY))
 source("functions_data_cleaning/institution_cleaner.R")
 ALLDATA<-institution_cleaner(ALLDATA)
-# 
+
+ALLDATA$INST<-as.factor(ALLDATA$INST)
+
+foo<-as.data.frame(levels(ALLDATA$INST))
+levels(as.factor(ALLDATA$COUNTRY))
 # ALLDATA$ascii<- ALLDATA$INST == stringi::stri_enc_toascii(ALLDATA$INST)
 # which(ALLDATA$ascii==FALSE)
 # ##########################################
 # ALLDATA$INST <- ifelse(ALLDATA$ascii == FALSE, iconv(ALLDATA$INST,from="UTF-8", to="ASCII","o"), ALLDATA$INST)   
-gsub("goottingen","gottingen",ALLDATA$INST)
-gsub("istituto per looambiente marino costiero","istituto per lambiente marino costiero",ALLDATA$INST)
-gsub("macaulayooinstitute","istituto per lambiente marino costiero",ALLDATA$INST)
-gsub("universitoo de montreal","macaulay land use research institute",ALLDATA$INST)
-ALLDATA$ascii<-NULL
+# gsub("goottingen","gottingen",ALLDATA$INST)
+# gsub("istituto per looambiente marino costiero","istituto per lambiente marino costiero",ALLDATA$INST)
+# gsub("macaulayooinstitute","istituto per lambiente marino costiero",ALLDATA$INST)
+# gsub("universitoo de montreal","macaulay land use research institute",ALLDATA$INST)
+# ALLDATA$ascii<-NULL
 
 
 
@@ -728,6 +647,9 @@ checkINST<-ALLDATA %>%
   arrange(INST)
 # similarity index to to find mispellings etc.
 source("./functions_data_cleaning/name.check.R")
+checkINST$INST<-as.character(checkINST$INST)
+checkINST$INST[checkINST$INST==""]<-NA
+str(checkINST$INST)
 NameSimilarityDF<-name.check(checkINST$INST)
 write.csv(NameSimilarityDF, file="./output_review/NameSimilarityDF_check.csv", row.names = F) #export it as a csv file
 ############################

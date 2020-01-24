@@ -1,4 +1,4 @@
-#FUNCTION TO SYSTEMATIZE UNIVERSITY AND PLACE NAMES
+#FUNCTION TO SYSTEMATIZE UNIVERSITY NAMES AND LOCATIONS
 institution_cleaner <- function(DATAFILE) {
   # DATAFILE<-ALLDATA
   # SOME NOTES:
@@ -25,20 +25,20 @@ institution_cleaner <- function(DATAFILE) {
   # CSIC: Consejo Superior de Investigaciones Científicas
   # U of N Georgia: Gainesville State College merged with N Georgia COllege and State University
   
-DATAFILE$COUNTRY<-as.factor(DATAFILE$COUNTRY)
-levels(DATAFILE$COUNTRY)
-DATAFILE$COUNTRY<-as.character(DATAFILE$COUNTRY)
-DATAFILE$COUNTRY[DATAFILE$COUNTRY=="Australiatralia"]<-"Australia"
-DATAFILE$COUNTRY[DATAFILE$COUNTRY=="ITALY"]<-"Italy"
-DATAFILE$COUNTRY[DATAFILE$COUNTRY=="P. R. China"]<-"China"
-DATAFILE$COUNTRY[DATAFILE$COUNTRY=="MEXICO"]<-"Mexico"
-DATAFILE$COUNTRY[DATAFILE$COUNTRY=="NewZealand"]<-"New Zealand"
-DATAFILE$COUNTRY[DATAFILE$COUNTRY=="PuertoRico"]<-"Puerto Rico"
-DATAFILE$COUNTRY[DATAFILE$COUNTRY=="The Netherlands"]<-"Netherlands"
-DATAFILE$COUNTRY[DATAFILE$COUNTRY=="UK"]<-"United Kingdom"
-DATAFILE$COUNTRY[DATAFILE$COUNTRY=="US"]<-"USA"
-DATAFILE$COUNTRY[DATAFILE$COUNTRY=="Usa"]<-"USA"
-DATAFILE$COUNTRY[DATAFILE$COUNTRY=="United States"]<-"USA"
+# DATAFILE$COUNTRY<-as.factor(DATAFILE$COUNTRY)
+# levels(DATAFILE$COUNTRY)
+
+  DATAFILE$INST[DATAFILE$INST==""]<-NA
+  DATAFILE$INST[DATAFILE$INST=="N/A"]<-NA
+  DATAFILE$INST[DATAFILE$INST=="."]<-NA
+  
+  
+  
+  DATAFILE$COUNTRY<-as.character(DATAFILE$COUNTRY)
+
+
+
+
 DATAFILE$COUNTRY[DATAFILE$INST=="University of New South Wales"]<-"Australia"
 DATAFILE$COUNTRY[DATAFILE$INST=="University of Guelph"]<-"Canada"
 DATAFILE$COUNTRY[DATAFILE$INST=="Instituto Mediterraneo de Estudios Avanzados (IMEDEA)"]<-"Spain"
@@ -80,6 +80,38 @@ DATAFILE$JOURNAL<-as.factor(DATAFILE$JOURNAL)
 ##############################################################
 ##############################################################
 # levels(DATAFILE$INST) <- c(levels(DATAFILE$INST),"University of Missouri Columbia")
+
+
+DATAFILE$INST<-as.factor(DATAFILE$INST)
+levels(DATAFILE$INST) <- c(levels(DATAFILE$INST),"University of Missouri Columbia",
+                           "lancaster university",
+                           "landcaster university",
+                           "lancaster",
+                           "csiro",
+                           "australian commonwealth scientific and research organization",
+                           "CNRS Centre dEcologie Fonctionnelle et Evolutive",
+                           "Forestry and Forest Products Research Institute",
+                           "University of Minnesota Duluth",
+                           "University of Minnesota Crookston",
+                           "University of Toronto Mississauga",
+                           "State University of New York College of Environmental Science and Forestry",
+                           "Calyx, Inc.","University of North Carolina Charlotte",
+                           "Smithsonian National Museum of Natural History",
+                           "Smithsonian National Zoological Park",
+                           "Laboratoire Associe de Modelisation des Plantes",
+                           "Southern Illinois University",
+                           "universite libre de bruxelles",
+                           "southern illinois u",
+                           "Aarhus University",
+                           "University of St. Andrews",
+                           "university of st andrews",
+                           "university of uppsala",
+                           "NERC Centre for Population Biology",
+                           "Massey University",
+                           "University of Bialystok",
+                           "manaaki whenua landcare research")
+
+
 DATAFILE$INST<-as.character(DATAFILE$INST)
 DATAFILE$INST<-trimws(DATAFILE$INST, which = "left")
 DATAFILE$INST<-trimws(DATAFILE$INST, which = "right")
@@ -168,7 +200,7 @@ DATAFILE$INST<-gsub("Austrailan", "Australian", DATAFILE$INST)
 DATAFILE$INST<-gsub("Indian Institute of Sciences", "Indian Institute of Science", DATAFILE$INST)
 DATAFILE$INST<-gsub("KingS", "Kings", DATAFILE$INST)
 DATAFILE$INST<-gsub("Louisisana", "Louisiana", DATAFILE$INST)
-DATAFILE$COUNTRY<-gsub("P.R. China", "China", DATAFILE$COUNTRY)
+
 DATAFILE$INST<-gsub("Universrity", "University", DATAFILE$INST)
 DATAFILE$INST<-gsub("Canadian Forestry", "Canadian Forest", DATAFILE$INST)
 DATAFILE$INST<-gsub("Mighican", "Michigan", DATAFILE$INST)
@@ -181,8 +213,6 @@ DATAFILE$INST<-gsub("-CNRS", "", DATAFILE$INST)
 # DATAFILE$INST<-gsub("University of Sherbooke", "Universite de Sherbooke", DATAFILE$INST)
 DATAFILE$INST<-gsub("Smithsonian Institute", "Smithsonian Institution", DATAFILE$INST)
 DATAFILE$INST<-gsub("Minnestoa", "Minnesota", DATAFILE$INST)
-DATAFILE$COUNTRY<-gsub("IRAN", "Iran", DATAFILE$COUNTRY)
-DATAFILE$COUNTRY<-gsub("California", "USA", DATAFILE$COUNTRY)
 DATAFILE$INST<-gsub("University of Lausanne", "Universite de Lausanne", DATAFILE$INST)
 DATAFILE$INST[DATAFILE$INST=="Institute of Ecosystem Studies"]<-"Cary Institute of Ecosystem Studies"
 DATAFILE$INST[DATAFILE$INST=="institute of ecosystem studies"]<-"cary institute of ecosystem studies"
@@ -823,7 +853,7 @@ DATAFILE$INST[DATAFILE$INST=="agriculture and agri food"]<-"agriculture and agri
 DATAFILE$COUNTRY[DATAFILE$INST=="alaska science center"]<-"USA"
 DATAFILE$COUNTRY[DATAFILE$INST=="amherst college"]<-"USA"	
 DATAFILE$COUNTRY[DATAFILE$INST=="austin peay state university"]<-"USA"	
-DATAFILE$COUNTRY[DATAFILE$INST=="australian commonwealth scientific and research organization"]<-"Australia"	
+DATAFILE$COUNTRY[DATAFILE$INST=="australian commonwealth scientific and research organization"]<-"Australia"
 DATAFILE$COUNTRY[DATAFILE$INST=="australian museum"]<-"Australia"	
 DATAFILE$COUNTRY[DATAFILE$INST=="australian national wildlife collection"]<-"Australia"	
 DATAFILE$COUNTRY[DATAFILE$INST=="aves argentinas"]<-"Argentina"	
@@ -1295,7 +1325,7 @@ DATAFILE$INST[DATAFILE$INST==  "humboldt university berlin"]<-"humboldt universi
     DATAFILE$COUNTRY[DATAFILE$INST=="arete associates"]<-"USA"
     DATAFILE$UNIT[DATAFILE$INST=="arnold arboretum of harvard university"]<-"arnold arboretum"
     DATAFILE$INST[DATAFILE$INST=="arnold arboretum of harvard university"]<-"harvard university"
-    DATAFILE$COUNTRY[DATAFILE$INST=="australian commonwealth scientific and research organization"]<-"csiro"
+    DATAFILE$INST[DATAFILE$INST=="australian commonwealth scientific and research organization"]<-"csiro"
     DATAFILE$COUNTRY[DATAFILE$INST=="australian national university"]<-"Australia"
     DATAFILE$INST[DATAFILE$INST=="basf plant science"]<-"basf"
     DATAFILE$COUNTRY[DATAFILE$INST=="biological centre"]<-"Netherlands"
@@ -1352,7 +1382,7 @@ DATAFILE$INST[DATAFILE$INST==  "humboldt university berlin"]<-"humboldt universi
     DATAFILE$COUNTRY[DATAFILE$INST=="laboratorio di geologia marina del cnr"]<-"Italy"
     DATAFILE$COUNTRY[DATAFILE$INST=="lakehead university"]<-"Canada"
     DATAFILE$INST[DATAFILE$INST=="lancaster"]<-"lancaster university"
-    DATAFILE$COUNTRY[DATAFILE$INST=="lancaster university"]<-"UK"
+    DATAFILE$COUNTRY[DATAFILE$INST=="lancaster university"]<-"United Kingdom"
     DATAFILE$COUNTRY[DATAFILE$INST=="leibniz institut fur meereswissenschaften ifmgeomar"]<-"Germany"
     DATAFILE$INST[DATAFILE$INST=="lincoln university"]<-"university of lincoln"
     DATAFILE$INST[DATAFILE$INST=="ludwig maximilian universitat munchen"]<-"ludwig maximilian university of munich"
@@ -1505,6 +1535,13 @@ DATAFILE$INST[DATAFILE$INST==  "humboldt university berlin"]<-"humboldt universi
     DATAFILE$INST[DATAFILE$INST=="seattle wa"]<-"2x seattle"
 	
 	
+    gsub("goottingen","gottingen",DATAFILE$INST)
+    gsub("istituto per looambiente marino costiero","istituto per lambiente marino costiero",DATAFILE$INST)
+    gsub("macaulayooinstitute","istituto per lambiente marino costiero",DATAFILE$INST)
+    gsub("universitoo de montreal","macaulay land use research institute",DATAFILE$INST)
+    DATAFILE$ascii<-NULL
+    
+    
 return(DATAFILE)
 
 }
