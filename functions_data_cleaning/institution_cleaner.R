@@ -1321,7 +1321,7 @@ DATAFILE$INST[DATAFILE$INST==  "humboldt university berlin"]<-"humboldt universi
     DATAFILE$INST[DATAFILE$INST=="agricultural university wageningen"]<-"wageningen agricultural university"
     DATAFILE$INST[DATAFILE$INST=="alberta"]<-"university of alberta"
     DATAFILE$COUNTRY[DATAFILE$INST=="alexandra university"]<-"Egypt"
-    DATAFILE$COUNTRY[DATAFILE$INST=="alfred wegener institut fur polar und meeresforschung"]<-"Germanny"
+    DATAFILE$COUNTRY[DATAFILE$INST=="alfred wegener institut fur polar und meeresforschung"]<-"Germany"
     DATAFILE$COUNTRY[DATAFILE$INST=="arete associates"]<-"USA"
     DATAFILE$UNIT[DATAFILE$INST=="arnold arboretum of harvard university"]<-"arnold arboretum"
     DATAFILE$INST[DATAFILE$INST=="arnold arboretum of harvard university"]<-"harvard university"

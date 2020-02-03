@@ -38,9 +38,7 @@ clean_JAPE <- function(DATAFILE) {
   #   mutate(INST = ifelse((row_number()==1 & INST=="missing"), "missing", (fill(INST,.direction="down"))))
   # 
   
-  DATAFILE<-DATAFILE %>% arrange(LAST_NAME,FIRST_NAME,YEAR) 
-  DATAFILE<-DATAFILE %>% fill(INST,UNIT,STATE,CITY,.direction="down")
-  # 
+ 
   DATAFILE<-DATAFILE %>% 
     group_by(LAST_NAME,FIRST_NAME) %>% 
     mutate(INST = ifelse((row_number()>1 & INST=="missing"),NA, INST))
@@ -58,6 +56,12 @@ clean_JAPE <- function(DATAFILE) {
     mutate(STATE = ifelse((row_number()>1 & STATE=="missing"),NA, STATE))
   
   
+  
+  
+  DATAFILE<-DATAFILE %>% 
+    arrange(LAST_NAME,FIRST_NAME,YEAR) %>% 
+    group_by(LAST_NAME,FIRST_NAME) %>% 
+    fill(INST,UNIT,STATE,CITY,.direction="down")
   ##
   # code to generate the list of which ones need to be 2x or have missing names is in 
   # Author_and_Inst_to_Check.R  
