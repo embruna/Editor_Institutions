@@ -633,7 +633,12 @@ DATAFILE$INST<-gsub("Aut\xfc\xbe\x8c\xa6\x84\xbcnoma","Autonoma", DATAFILE$INST)
 DATAFILE$INST<-gsub("Montr\xfc\xbe\x8e\x96\x94\xbcal","Montreal", DATAFILE$INST)
 DATAFILE$INST<-gsub("<a0>Universit<e9>","Universite", DATAFILE$INST)
 DATAFILE$INST<-gsub("\xfc\xbe\x8c\x86\x84\xbc","", DATAFILE$INST)
+DATAFILE$INST<-gsub("RWTH Aachen\xcaUniversity","RWTH Aachen University", DATAFILE$INST)
+DATAFILE$INST<-gsub("Macquarie University \xca","Macquarie University", DATAFILE$INST)
+DATAFILE$INST<-gsub("leibniz institute for zoo and wildlife research\xfc\xbe\x98\x96\x8c\xbc","leibniz institute for zoo and wildlife research", DATAFILE$INST)
 
+
+DATAFILE$INST<-as.character(DATAFILE$INST)
 DATAFILE$INST<-tolower(DATAFILE$INST)
 
 DATAFILE$INST<-gsub("(retired) natural history museum london","natural history museum", DATAFILE$INST)

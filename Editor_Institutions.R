@@ -430,8 +430,10 @@ ALLDATA<-ALLDATA %>% select(-INST.2,-check)
 # OLDINST is only a few. delete and recheck
 ALLDATA<-ALLDATA %>% select(-OLD_INST)
 ############
-
+# ALLDATA_2<-ALLDATA to avoid having to redo the whole thing to error check below
+# ALLDATA<-ALLDATA_2
 str(ALLDATA)
+
 source("functions_data_cleaning/PJ_OECOL_corrections.R")
 ALLDATA<-PJ_OECOL_corrections(ALLDATA)
 DATA<-as_tibble(ALLDATA[[1]])
@@ -449,6 +451,12 @@ ALLDATA<-PJ_OIKOS_corrections(ALLDATA)
 DATA<-as_tibble(ALLDATA[[1]])
 OIKOS<-as_tibble(ALLDATA[[2]])
 ALLDATA<-bind_rows(DATA,OIKOS)
+
+source("functions_data_cleaning/PJ_JANE_corrections.R")
+ALLDATA<-PJ_JANE_corrections(ALLDATA)
+DATA<-as_tibble(ALLDATA[[1]])
+JANE<-as_tibble(ALLDATA[[2]])
+ALLDATA<-bind_rows(DATA,JANE)
 
 
 source("functions_data_cleaning/editor_cleaner.R")
@@ -899,13 +907,18 @@ write.csv(dup_edID3, file="./output_review/dup_edID3.csv", row.names = F) #expor
 ############################
 
 ############################
-# TODO: ID ANY EDITORS WITH NO INST LISTED
+# summary of editors per journal with no INST
 # could be na or missing
 missing_INST<-ALLDATA %>% filter(is.na(INST) | INST=="missing") %>% group_by(JOURNAL) %>% distinct(LAST_NAME,FIRST_NAME) %>% summarize(n=n()) %>% arrange(desc(n))
 
 write.csv(missing_INST, file="./output_review/missing_INST.csv", row.names = F) #export it as a csv file
+
 ############################
 
+
+
+missing_INST_names<-ALLDATA %>% select(JOURNAL, YEAR,editor_id,FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,NOTES) %>% filter(is.na(INST) | INST=="missing") %>% group_by(JOURNAL,LAST_NAME,FIRST_NAME,YEAR) %>% arrange(JOURNAL,LAST_NAME,FIRST_NAME,YEAR)
+write.csv(missing_INST_names, file="./output_review/missing_INST_editor_names.csv", row.names = F) #export it as a csv file
 ############################
 # TODO: Some of the editors are in multiple times because they have multiple jobs. ID and fix
 # ie they could be listed in seperate rows as EIC and SE
