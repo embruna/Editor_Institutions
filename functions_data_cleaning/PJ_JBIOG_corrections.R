@@ -29,8 +29,8 @@ JBIOG_inst<-JBIOG_inst %>% na_if("missing")
 
 JBIOG$INST<-as.character(JBIOG$INST)
 
-JBIOG_inst$editor_id<-as.factor(JBIOG_inst$editor_id)
-JBIOG$editor_id<-as.factor(JBIOG$editor_id)
+JBIOG_inst$editor_id<-as.character(JBIOG_inst$editor_id)
+JBIOG$editor_id<-as.character(JBIOG$editor_id)
 colnames(JBIOG)
 colnames(JBIOG_inst)
 JBIOG<-full_join(JBIOG, JBIOG_inst, by = c("LAST_NAME","FIRST_NAME","YEAR"),all = T)
@@ -64,14 +64,9 @@ JBIOG <- JBIOG %>%
 #   select(-UNIT.y) %>%
 #   rename("UNIT"="UNIT.x")
 JBIOG <- JBIOG %>%
-  mutate(STATE.x = ifelse((is.na(STATE.x)|STATE.x=="missing"), STATE.y, STATE.x)) %>%
-  select(-STATE.y) %>%
-  rename("STATE"="STATE.x") %>% 
   mutate(STATE = ifelse(is.na(correct_STATE), STATE, correct_STATE)) %>%
   select(-correct_STATE)
 JBIOG <- JBIOG %>%
-  select(-COUNTRY.y) %>%
-  rename("COUNTRY"="COUNTRY.x") %>% 
   mutate(COUNTRY = ifelse(is.na(correct_COUNTRY), COUNTRY, correct_COUNTRY)) %>%
   select(-correct_COUNTRY)
 JBIOG <- JBIOG %>%

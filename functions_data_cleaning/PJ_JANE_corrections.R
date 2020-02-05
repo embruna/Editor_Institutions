@@ -27,8 +27,8 @@ JANE_inst<-JANE_inst %>% na_if("missing")
 
 JANE$INST<-as.character(JANE$INST)
 
-JANE_inst$editor_id<-as.factor(JANE_inst$editor_id)
-JANE$editor_id<-as.factor(JANE$editor_id)
+JANE_inst$editor_id<-as.character(JANE_inst$editor_id)
+JANE$editor_id<-as.character(JANE$editor_id)
 # 
 JANE<-full_join(JANE, JANE_inst, by = c("LAST_NAME","FIRST_NAME","YEAR"),all = T)
 

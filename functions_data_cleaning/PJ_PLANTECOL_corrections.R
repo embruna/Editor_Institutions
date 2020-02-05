@@ -29,8 +29,8 @@ PLANTECOL_inst<-PLANTECOL_inst %>% na_if("missing")
 
 PLANTECOL$INST<-as.character(PLANTECOL$INST)
 
-PLANTECOL_inst$editor_id<-as.factor(PLANTECOL_inst$editor_id)
-PLANTECOL$editor_id<-as.factor(PLANTECOL$editor_id)
+PLANTECOL_inst$editor_id<-as.character(PLANTECOL_inst$editor_id)
+PLANTECOL$editor_id<-as.character(PLANTECOL$editor_id)
 colnames(PLANTECOL)
 colnames(PLANTECOL_inst)
 PLANTECOL<-full_join(PLANTECOL, PLANTECOL_inst, by = c("LAST_NAME","FIRST_NAME","YEAR"),all = T)

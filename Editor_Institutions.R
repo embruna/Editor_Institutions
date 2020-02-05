@@ -437,7 +437,7 @@ str(ALLDATA)
 source("functions_data_cleaning/PJ_OECOL_corrections.R")
 DATA_LIST<-PJ_OECOL_corrections(ALLDATA)
 ALLDATA<-as_tibble(DATA_LIST[[1]])
-OECOLOGIA<-as.tibble(DATA_LIST[[2]])
+OECOLOGIA<-as_tibble(DATA_LIST[[2]])
 ALLDATA<-bind_rows(ALLDATA,OECOLOGIA)
 rm(DATA_LIST,OECOLOGIA)
 
@@ -796,7 +796,7 @@ dup_edID4
 
 
 # dup_edID3 <-dup_edID3 %>% group_by(FIRST_NAME,LAST_NAME) %>%  arrange(editor_id) %>% slice(2)
-write.csv(dup_edID3, file="./output_review/dup_edID3.csv", row.names = F) #export it as a csv file
+write.csv(dup_edID4, file="./output_review/dup_edID4.csv", row.names = F) #export it as a csv file
 ############################
 
 
@@ -816,6 +816,28 @@ missing_INST_names<-ALLDATA %>%
   filter(row_number()==1 | row_number()==n()) %>% 
   arrange(JOURNAL,LAST_NAME,FIRST_NAME,YEAR)
 write.csv(missing_INST_names, file="./output_review/missing_INST_editor_names.csv", row.names = F) #export it as a csv file
+############################
+
+############################
+# Cases of editors with >1 INST (including NA, TBD, errors of spelling)
+dup_INST<-ALLDATA %>% 
+  select(LAST_NAME,FIRST_NAME,JOURNAL,INST,YEAR) %>%
+  distinct(LAST_NAME,FIRST_NAME,INST,.keep_all = TRUE) %>%  
+  # filter(editor_id!="TBD") %>% 
+  group_by(LAST_NAME,FIRST_NAME) %>% 
+# dup_INST$first_init<-str_sub(dup_edID4$FIRST_NAME, start = 1, end = 1)
+# dup_INST<-dup_INST %>% 
+# group_by(LAST_NAME,first_init) %>% 
+  mutate(n_INST=n_distinct(INST)) %>%
+  filter(n_INST>1) %>% 
+  select(LAST_NAME,FIRST_NAME,INST,YEAR,JOURNAL) %>% 
+  arrange(LAST_NAME,FIRST_NAME,YEAR)
+  
+dup_INST
+write.csv(dup_INST, file="./output_review/eds_dup_INST.csv", row.names = F) #export it as a csv file
+
+
+
 ############################
 # TODO: Some of the editors are in multiple times because they have multiple jobs. ID and fix
 # ie they could be listed in seperate rows as EIC and SE

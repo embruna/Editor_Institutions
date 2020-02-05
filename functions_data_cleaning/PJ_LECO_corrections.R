@@ -1,5 +1,5 @@
 PJ_LECO_corrections <- function(ORIGINAL_DATA) {
-  # ORIGINAL_DATA<-DATA  
+  # ORIGINAL_DATA<-ALLDATA  
   library(tidyverse)
   
 LECO_inst<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/newPJCorrections_10_LECO.csv", col_names = TRUE)
@@ -25,8 +25,8 @@ LECO_inst<-LECO_inst %>% na_if("missing")
 
 LANDSCAPEECO$INST<-as.character(LANDSCAPEECO$INST)
 
-LECO_inst$editor_id<-as.factor(LECO_inst$editor_id)
-LANDSCAPEECO$editor_id<-as.factor(LANDSCAPEECO$editor_id)
+LECO_inst$editor_id<-as.character(LECO_inst$editor_id)
+LANDSCAPEECO$editor_id<-as.character(LANDSCAPEECO$editor_id)
 # 
 LANDSCAPEECO<-full_join(LANDSCAPEECO, LECO_inst, by = c("LAST_NAME","FIRST_NAME","YEAR"),all = T)
 
@@ -60,11 +60,14 @@ LANDSCAPEECO <- LANDSCAPEECO %>%
 # LANDSCAPEECO <- LANDSCAPEECO %>%
 #   select(-COUNTRY.y) %>%
 #   rename("COUNTRY"="COUNTRY.x")
-LANDSCAPEECO <- LANDSCAPEECO %>%
+# str(LANDSCAPEECO$editor_id.x)
+# str(LANDSCAPEECO$editor_id.y)
+
+LANDSCAPEECO<- LANDSCAPEECO %>%
   mutate(editor_id.x = ifelse((is.na(editor_id.x)|editor_id.x=="missing"), editor_id.y, editor_id.x)) %>%
   select(-editor_id.y) %>%
   rename("editor_id"="editor_id.x")
-# 
+# # 
 LANDSCAPEECO$JOURNAL<-"LECO"
 # 
 # LANDSCAPEECO$LAST_NAME[LANDSCAPEECO$LAST_NAME=="Lookinbill"]<-"Lookingbill"

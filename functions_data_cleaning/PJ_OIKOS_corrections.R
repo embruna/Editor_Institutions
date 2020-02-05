@@ -28,8 +28,8 @@ OIKOS_inst<-OIKOS_inst %>% na_if("missing")
 
 OIKOS$INST<-as.character(OIKOS$INST)
 
-OIKOS_inst$editor_id<-as.factor(OIKOS_inst$editor_id)
-OIKOS$editor_id<-as.factor(OIKOS$editor_id)
+OIKOS_inst$editor_id<-as.character(OIKOS_inst$editor_id)
+OIKOS$editor_id<-as.character(OIKOS$editor_id)
 # 
 OIKOS<-full_join(OIKOS, OIKOS_inst, by = c("LAST_NAME","FIRST_NAME","YEAR"),all = T)
 
