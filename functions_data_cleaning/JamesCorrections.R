@@ -75,45 +75,9 @@ JAPE_inst$editor_id<-NULL
 ##########
 
 ##########
-JBIOG_inst<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/newPJCorrectionsDONE_JBIOG.csv", col_names = TRUE)
-JBIOG_inst<-JBIOG_inst %>% select(-X1,-check) %>% rename("NOTES"=`please note here if INCORRECT`)
-# This will keep only the ones we 2x / spotchecked that are correct OR are still missing the INST 
-JBIOG_inst<-JBIOG_inst[(!is.na(JBIOG_inst$NOTES)|
-                          (JBIOG_inst$INST=="missing")),]
-
-##########
-
-
-##########
-# LECO SEPARATE FUNCTION
-
-##########
-
-
-
-##########
-# PLANTECOL_inst<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_8_PLANTECOL.csv", col_names = TRUE)
-# PLANTECOL_inst<-PLANTECOL_inst %>%  select(-X1,-check) %>% rename("NOTES"=`Please note here if INCORRECT`)
-# PLANTECOL_inst<-PLANTECOL_inst[(!is.na(PLANTECOL_inst$NOTES)|
-#                         (PLANTECOL_inst$INST=="missing")),]
-
-
-##########
-# # OIKOS
-# ##########
-# OIKOS_inst<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_OIKOS.csv", col_names = TRUE)
-# # sep function
-
-##########
-# OECOLOGIA
-###########
-
 # SEPARATE FUNCTION
-
-
-##########
-# JANE
-##########
+# JBIOG LECO PLANTECOL OIKOS  OECOLOGIA JANE 
+###########
 
 
 #############
@@ -123,10 +87,10 @@ JBIOG_inst<-JBIOG_inst[(!is.na(JBIOG_inst$NOTES)|
 # rm(multi2b,multi2a,multi1,BITR_inst,JECOL_inst,AMNAT_inst,JAPE_inst,JBIOG_inst,OIKOS_inst)
 
 # NO OIKOS
-INST_fix<-bind_rows(multi2b,multi2a,multi1,BITR_inst,JECOL_inst,AMNAT_inst,JAPE_inst,JBIOG_inst) %>% 
+INST_fix<-bind_rows(multi2b,multi2a,multi1,BITR_inst,JECOL_inst,AMNAT_inst,JAPE_inst) %>% 
   distinct(LAST_NAME,JOURNAL,YEAR,.keep_all= TRUE) %>%     #there are some duplicates, best to remove them
   arrange(JOURNAL,editor_id,YEAR)
-rm(multi2b,multi2a,multi1,BITR_inst,JECOL_inst,AMNAT_inst,JAPE_inst,JBIOG_inst)
+rm(multi2b,multi2a,multi1,BITR_inst,JECOL_inst,AMNAT_inst,JAPE_inst)
 
 
 # colnames(INST_fix)

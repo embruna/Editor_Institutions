@@ -435,28 +435,47 @@ ALLDATA<-ALLDATA %>% select(-OLD_INST)
 str(ALLDATA)
 
 source("functions_data_cleaning/PJ_OECOL_corrections.R")
-ALLDATA<-PJ_OECOL_corrections(ALLDATA)
-DATA<-as_tibble(ALLDATA[[1]])
-OECOLOGIA<-as.tibble(ALLDATA[[2]])
-ALLDATA<-bind_rows(DATA,OECOLOGIA)
+DATA_LIST<-PJ_OECOL_corrections(ALLDATA)
+ALLDATA<-as_tibble(DATA_LIST[[1]])
+OECOLOGIA<-as.tibble(DATA_LIST[[2]])
+ALLDATA<-bind_rows(ALLDATA,OECOLOGIA)
+rm(DATA_LIST,OECOLOGIA)
 
 source("functions_data_cleaning/PJ_LECO_corrections.R")
-ALLDATA<-PJ_LECO_corrections(ALLDATA)
-DATA<-as_tibble(ALLDATA[[1]])
-LECO<-as_tibble(ALLDATA[[2]])
-ALLDATA<-bind_rows(DATA,LECO)
+DATA_LIST<-PJ_LECO_corrections(ALLDATA)
+ALLDATA<-as_tibble(DATA_LIST[[1]])
+LECO<-as_tibble(DATA_LIST[[2]])
+ALLDATA<-bind_rows(ALLDATA,LECO)
+rm(DATA_LIST,LECO)
 
 source("functions_data_cleaning/PJ_OIKOS_corrections.R")
-ALLDATA<-PJ_OIKOS_corrections(ALLDATA)
-DATA<-as_tibble(ALLDATA[[1]])
-OIKOS<-as_tibble(ALLDATA[[2]])
-ALLDATA<-bind_rows(DATA,OIKOS)
+DATA_LIST<-PJ_OIKOS_corrections(ALLDATA)
+ALLDATA<-as_tibble(DATA_LIST[[1]])
+OIKOS<-as_tibble(DATA_LIST[[2]])
+ALLDATA<-bind_rows(ALLDATA,OIKOS)
+rm(DATA_LIST,OIKOS)
 
 source("functions_data_cleaning/PJ_JANE_corrections.R")
-ALLDATA<-PJ_JANE_corrections(ALLDATA)
-DATA<-as_tibble(ALLDATA[[1]])
-JANE<-as_tibble(ALLDATA[[2]])
-ALLDATA<-bind_rows(DATA,JANE)
+DATA_LIST<-PJ_JANE_corrections(ALLDATA)
+ALLDATA<-as_tibble(DATA_LIST[[1]])
+JANE<-as_tibble(DATA_LIST[[2]])
+ALLDATA<-bind_rows(ALLDATA,JANE)
+rm(DATA_LIST,JANE)
+
+source("functions_data_cleaning/PJ_JBIOG_corrections.R")
+DATA_LIST<-PJ_JBIOG_corrections(ALLDATA)
+ALLDATA<-as_tibble(DATA_LIST[[1]])
+JBIOG<-as_tibble(DATA_LIST[[2]])
+ALLDATA<-bind_rows(ALLDATA,JBIOG)
+rm(DATA_LIST,JBIOG)
+
+source("functions_data_cleaning/PJ_PLANTECOL_corrections.R")
+DATA_LIST<-PJ_PLANTECOL_corrections(ALLDATA)
+ALLDATA<-as_tibble(DATA_LIST[[1]])
+PLANTECOL<-as_tibble(DATA_LIST[[2]])
+ALLDATA<-bind_rows(ALLDATA,PLANTECOL)
+rm(DATA_LIST,PLANTECOL)
+
 
 
 source("functions_data_cleaning/editor_cleaner.R")
@@ -485,152 +504,6 @@ ALLDATA<-country_cleaner(ALLDATA)
 
 source("functions_data_cleaning/institution_cleaner.R")
 ALLDATA<-institution_cleaner(ALLDATA)
-
-
-
-
-
-
-
-# str(ALLDATA)
-# str(INST_fix)
-# colnames(ALLDATA)
-# colnames(INST_fix)
-# nrow(ALLDATA)
-# nrow(INST_fix)
-# ALLDATA$CODE<-"ORIGINAL"
-# INST_fix$CODE<-"CHECK"
-# CLEAN<-anti_join(ALLDATA,INST_fix,by="JOURNAL","YEAR","editor_id")
-# nrow(CLEAN)
-# DIRTY<-semi_join(ALLDATA,INST_fix,by="JOURNAL","YEAR","editor_id")
-# nrow(DIRTY)
-# 
-# # COMP<-comparedf(DIRTY,INST_fix)
-# # summary(COMP)
-# 
-# ALLDATA$VOLUME<-as.character(ALLDATA$VOLUME)
-# ALLDATA$ISSUE<-as.character(ALLDATA$ISSUE)
-# MEGA<-bind_rows(ALLDATA,INST_fix)
-# MEGA <-na_if(MEGA,"missing")
-# 
-# 
-# source("functions_data_cleaning/editor_cleaner.R")
-# MEGA<-editor_cleaner(MEGA)
-# 
-# source("functions_data_cleaning/country_cleaner.R")
-# MEGA<-country_cleaner(MEGA)
-# 
-# 
-# source("functions_data_cleaning/institution_cleaner.R")
-# MEGA<-institution_cleaner(MEGA)
-# 
-# MEGA<-distinct(MEGA)
-# 
-# MEGA<-MEGA %>% group_by(JOURNAL,YEAR,LAST_NAME,FIRST_NAME) %>% 
-#   mutate(dupe = n()>1) %>% 
-#   arrange(JOURNAL,YEAR,LAST_NAME)
-# 
-# MEGA_CLEAN<-MEGA %>% filter(dupe==FALSE)
-# MEGA_DIRTY<-MEGA %>% filter(dupe==TRUE)
-# # colnames(MEGA_DIRTY)
-# # MEGA_DIRTY<-MEGA_DIRTY[c(1:10,12:20,22,21,11)]
-# # 
-# DIRTY_count <- MEGA_DIRTY %>% count(JOURNAL, YEAR, LAST_NAME,FIRST_NAME, sort=TRUE)
-# 
-# MEGA_DIRTY2 <-MEGA_DIRTY%>% 
-#   group_by(JOURNAL,YEAR,VOLUME,ISSUE) %>%
-#   mutate_each(funs(replace(., is.na(.), stats::na.omit(.)))) %>%
-#   unique()
-# 
-# 
-# INST_fix$VOLUME<-as.character(INST_fix$VOLUME)
-# INST_fix$ISSUE<-as.integer(INST_fix$ISSUE)
-# both<-full_join(INST_fix,ALLDATA,by=c("JOURNAL","YEAR","LAST_NAME"))
-# both<-distinct(both,.keep_all= TRUE)
-# 
-# 
-# colnames(both)
-# both<-both %>% select(JOURNAL,YEAR,editor_id.x,editor_id.y,FIRST_NAME,MIDDLE_NAME.x,MIDDLE_NAME.y,
-#                       LAST_NAME,INST.x,INST.y,UNIT.x,UNIT.y,CITY.x,CITY.y,STATE.x,STATE.y,
-#                       COUNTRY.x,COUNTRY.y,NOTES.x,NOTES.y,VOLUME.x,VOLUME.y,ISSUE.x,ISSUE.y,
-#                       TITLE.x,TITLE.y,CATEGORY,COUNTRY_Prior_Class,geo.code,geo.code_Prior_Class,GENDER)
-# # # UNIQUE
-# # foo1<-both[duplicated(!both[c("JOURNAL","LAST_NAME","FIRST_NAME","YEAR")]),]
-# # DUPLICATED
-# 
-# 
-# foo2<-both[duplicated(both[c("JOURNAL","LAST_NAME","FIRST_NAME","YEAR")]),]
-# foo<-both[duplicated(both$JOURNAL)|duplicated(both$YEAR) | duplicated(both$LAST_NAME)|duplicated(both$FIRST_NAME),]
-# # both$COUNTRY.x<-tolower(both$COUNTRY.x)
-# # both$COUNTRY.y<-tolower(both$COUNTRY.y)
-# both$UNIT.x<-tolower(both$UNIT.x)
-# both$UNIT.y<-tolower(both$UNIT.y)
-# both$CITY.x<-tolower(both$CITY.x)
-# both$CITY.y<-tolower(both$CITY.y)
-# both$STATE.x<-tolower(both$STATE.x)
-# both$STATE.y<-tolower(both$STATE.y)
-# both$INST.x<-tolower(both$INST.x)
-# 
-# both$INST.y<-toString(both$INST.y)
-# both$INST.y<-tolower(both$INST.y)
-# 
-# 
-# ABCOUNTRY<-as.data.frame(both$COUNTRY.x)
-# COUNTRY<-rename(ABCOUNTRY,"COUNTRY"="both$COUNTRY.x")
-# LAST_NAME<-both$LAST_NAME
-# COUNTRY<-country_cleaner(COUNTRY)
-# both$COUNTRY.x<-"foo"
-# 
-# 
-# source("functions_data_cleaning/country_cleaner.R")
-# ALLDATA<-country_cleaner(ALLDATA)
-# 
-# ##############################################################
-# # COrrecting Editor Info (INST, editor_ID, etc.)
-# ##############################################################
-# 
-# source("functions_data_cleaning/editor_cleaner.R")
-# ALLDATA<-editor_cleaner(ALLDATA)
-# 
-# ##########################
-# # Clean Up Institutions and countries
-# ##########################
-# # head(ALLDATA,10)
-# source("functions_data_cleaning/institution_cleaner.R")
-# ALLDATA<-institution_cleaner(ALLDATA)
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# ##############################################################
-# # COrrecting the country names
-# ##############################################################
-# 
-# source("functions_data_cleaning/country_cleaner.R")
-# ALLDATA<-country_cleaner(ALLDATA)
-# 
-# ##############################################################
-# # COrrecting Editor Info (INST, editor_ID, etc.)
-# ##############################################################
-# 
-# source("functions_data_cleaning/editor_cleaner.R")
-# ALLDATA<-editor_cleaner(ALLDATA)
-# 
-# ##########################
-# # Clean Up Institutions and countries
-# ##########################
-# # head(ALLDATA,10)
-# source("functions_data_cleaning/institution_cleaner.R")
-# ALLDATA<-institution_cleaner(ALLDATA)
 
 
 ##########################
@@ -698,7 +571,6 @@ ALLDATA$JOURNAL<-as.factor(ALLDATA$JOURNAL)
 # Correcting or systematizing the name/speclling of an institution
 ##############################################################
 ##############################################################
-
 
 
 
@@ -906,6 +778,28 @@ dup_edID3
 write.csv(dup_edID3, file="./output_review/dup_edID3.csv", row.names = F) #export it as a csv file
 ############################
 
+
+############################
+# TODO: find cases where the all potential cases of editor with >1 editor_id, including missing
+dup_edID4<-ALLDATA %>% 
+  select(LAST_NAME,FIRST_NAME,editor_id,JOURNAL) %>% 
+  # filter(editor_id!="TBD") %>% 
+  group_by(LAST_NAME) 
+dup_edID4$first_init<-str_sub(dup_edID4$FIRST_NAME, start = 1, end = 1)
+dup_edID4<-dup_edID4 %>% 
+  group_by(LAST_NAME,first_init) %>% 
+  distinct(LAST_NAME,first_init,editor_id,.keep_all=TRUE) %>%  
+  mutate(n_names=n_distinct(editor_id)) %>% 
+    arrange(desc(LAST_NAME,FIRST_NAME,editor_id)) %>% 
+  filter(n_names>1)
+dup_edID4 
+
+
+# dup_edID3 <-dup_edID3 %>% group_by(FIRST_NAME,LAST_NAME) %>%  arrange(editor_id) %>% slice(2)
+write.csv(dup_edID3, file="./output_review/dup_edID3.csv", row.names = F) #export it as a csv file
+############################
+
+
 ############################
 # summary of editors per journal with no INST
 # could be na or missing
@@ -914,10 +808,13 @@ missing_INST<-ALLDATA %>% filter(is.na(INST) | INST=="missing") %>% group_by(JOU
 write.csv(missing_INST, file="./output_review/missing_INST.csv", row.names = F) #export it as a csv file
 
 ############################
-
-
-
-missing_INST_names<-ALLDATA %>% select(JOURNAL, YEAR,editor_id,FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,NOTES) %>% filter(is.na(INST) | INST=="missing") %>% group_by(JOURNAL,LAST_NAME,FIRST_NAME,YEAR) %>% arrange(JOURNAL,LAST_NAME,FIRST_NAME,YEAR)
+# peoplw with NA INST
+missing_INST_names<-ALLDATA %>% 
+  select(JOURNAL, YEAR,editor_id,FIRST_NAME,MIDDLE_NAME,LAST_NAME,INST,NOTES) %>% 
+  filter(is.na(INST) | INST=="missing") %>% 
+  group_by(JOURNAL,LAST_NAME,FIRST_NAME) %>% 
+  filter(row_number()==1 | row_number()==n()) %>% 
+  arrange(JOURNAL,LAST_NAME,FIRST_NAME,YEAR)
 write.csv(missing_INST_names, file="./output_review/missing_INST_editor_names.csv", row.names = F) #export it as a csv file
 ############################
 # TODO: Some of the editors are in multiple times because they have multiple jobs. ID and fix
