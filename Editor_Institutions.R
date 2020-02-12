@@ -505,6 +505,11 @@ ALLDATA<-country_cleaner(ALLDATA)
 source("functions_data_cleaning/institution_cleaner.R")
 ALLDATA<-institution_cleaner(ALLDATA)
 
+source("functions_data_cleaning/editor_ID_corrections.R")
+ALLDATA<-editor_ID_corrections(ALLDATA)
+
+
+
 
 ##########################
 # TODO: ADD AN EDITOR_ID to GCB and MARECOL

@@ -7,7 +7,7 @@ institution_cleaner <- function(DATAFILE) {
   # ANUTECH is a spin-off company started by ANU
   # BFH: Fed Research Center for Foresty and Forest Products - Abbreviation 
   # BFW: Austrian Research Center for Forests
-  # BOKU: University of Natural Resources and Life LifeCycleSavings
+  # BOKU: university of natural resources and applied life sciences vienna
   # CSIRO: Commonwealth Scientific and Industrial Research Organization
   # IADIZA: CONICET Instituto Argentino de Investigaciones de las Zonas Aridas
   # ICRAF: International Center for Research in Agroforestry
@@ -27,8 +27,7 @@ institution_cleaner <- function(DATAFILE) {
   
 # DATAFILE$COUNTRY<-as.factor(DATAFILE$COUNTRY)
 # levels(DATAFILE$COUNTRY)
-
-  DATAFILE$INST[DATAFILE$INST==""]<-NA
+    DATAFILE$INST[DATAFILE$INST==""]<-NA
   DATAFILE$INST[DATAFILE$INST=="N/A"]<-NA
   DATAFILE$INST[DATAFILE$INST=="."]<-NA
   
@@ -105,11 +104,54 @@ levels(DATAFILE$INST) <- c(levels(DATAFILE$INST),"University of Missouri Columbi
                            "Aarhus University",
                            "University of St. Andrews",
                            "university of st andrews",
+                           "university of pittsburgh",
                            "university of uppsala",
                            "NERC Centre for Population Biology",
                            "Massey University",
                            "University of Bialystok",
-                           "manaaki whenua landcare research")
+                           "manaaki whenua landcare research",
+                           "university of newcastle",
+                           "university of natural resources and applied life sciences vienna",
+                           "universidade federal de goias",
+                           "universidade de brasilia",
+                           "boku",
+                           "csic donana biological station",
+                           "imperial college london",
+                           "institute of terrestrial ecology",
+                           "joint nature conservation committee",
+                           "kings college",
+                           "macaulay land use research institute",
+                           "nerc centre for ecology and hydrology",
+                           "nerc centre for ecology and hydrology banchory",
+                           "nerc centre for ecology and hydrology monks wood",
+                           "netherlands institute of ecology nioo knaw",
+                           "northeastern university",
+                           "now the usda arid land agricultural research center",
+                           "oregon state university",
+                           "pennsylvania state university",
+                           "southwest texas state university",
+                           "technical university of darmstadt",
+                           "truman state university",
+                           "universidad de alicante",
+                           "universidad de vigo",
+                           "universidad rey juan carlos",
+                           "universitat osnabruck",
+                           "university of costa rica",
+                           "university of exeter",
+                           "university of glasgow",
+                           "university of kwazulu natal",
+                           "university of london imperial college of science and technology",
+                           "university of montreal",
+                           "university of oregon",
+                           "university of oxford",
+                           "university of oxford",
+                           "university of quebec",
+                           "university of salento",
+                           "university of umea",
+                           "university of wageningen",
+                           "university of waikato",
+                           "utrecht university",
+                           "wageningen agricultural university and research center alterra")
 
 
 DATAFILE$INST<-as.character(DATAFILE$INST)
@@ -130,6 +172,7 @@ DATAFILE$INST<-gsub("univesity ", "university ", DATAFILE$INST)
 DATAFILE$INST<-gsub("universityof", "university of ", DATAFILE$INST)
 DATAFILE$INST<-gsub("ofarizona", "of arizona", DATAFILE$INST)
 DATAFILE$INST<-gsub("unviersity", "university", DATAFILE$INST)
+DATAFILE$INST<-gsub("unviversityof", "university of", DATAFILE$INST)
 DATAFILE$INST<-gsub("univesrity", "university", DATAFILE$INST)
 DATAFILE$INST<-gsub("Unniversity","University",DATAFILE$INST)
 DATAFILE$INST<-gsub("Museum Natl Hist Nat","national museum of natural history france",DATAFILE$INST)
@@ -200,7 +243,7 @@ DATAFILE$INST<-gsub("Austrailan", "Australian", DATAFILE$INST)
 DATAFILE$INST<-gsub("Indian Institute of Sciences", "Indian Institute of Science", DATAFILE$INST)
 DATAFILE$INST<-gsub("KingS", "Kings", DATAFILE$INST)
 DATAFILE$INST<-gsub("Louisisana", "Louisiana", DATAFILE$INST)
-
+DATAFILE$INST<-gsub("university queensland", "university of queensland", DATAFILE$INST)
 DATAFILE$INST<-gsub("Universrity", "University", DATAFILE$INST)
 DATAFILE$INST<-gsub("Canadian Forestry", "Canadian Forest", DATAFILE$INST)
 DATAFILE$INST<-gsub("Mighican", "Michigan", DATAFILE$INST)
@@ -286,6 +329,7 @@ DATAFILE$INST[DATAFILE$INST=="Willamette U"]<-"Willamette University"
 DATAFILE$INST[DATAFILE$INST=="University of Pennsylvania, "]<-"University of Pennsylvania"
 DATAFILE$INST[DATAFILE$INST=="University of Pittsburg"]<-"University of Pittsburgh"
 DATAFILE$INST[DATAFILE$INST=="University of Tennesee"]<-"University of Tennessee"
+DATAFILE$INST[DATAFILE$INST=="University of Tennese"]<-"University of Tennessee"
 DATAFILE$INST[DATAFILE$INST=="Acad Natural Science Philadelphia"]<-"Academy of Natural Science Philadelphia"
 DATAFILE$INST[DATAFILE$INST=="Am Mus Nat Hist"]<-"American Museum of Natural History"
 DATAFILE$INST[DATAFILE$INST=="ColoradoState Univ"]<-"Colorado State University"
@@ -327,6 +371,8 @@ DATAFILE$INST[DATAFILE$INST=="Naval Research Laboratory DC"]<-"USONR Naval Resea
 DATAFILE$INST[DATAFILE$INST=="Temple-Inland Forest"]<-"Temple-Inland Forest Products"
 DATAFILE$INST[DATAFILE$INST=="USDA Forest Service"]<-"USFS"
 DATAFILE$INST[DATAFILE$INST=="USDA Forest Service Rocky Mountain Research Station"]<-"USFS Rocky Mountain Research Station"
+DATAFILE$INST[DATAFILE$INST=="university of newcastle upon tyne"]<-"newcastle university"
+DATAFILE$INST[DATAFILE$INST=="university of newcastle upon tuyne"]<-"newcastle university"
 DATAFILE$INST[DATAFILE$INST=="USDA Forest Service Southern Research Station"]<-"USFS Southern Research Station"
 DATAFILE$INST[DATAFILE$INST=="USFS-Pacific Southwest Research Station"]<-"USFS Pacific Southwest Research Station"
 DATAFILE$INST[DATAFILE$INST=="USFWS-National Wetlands Research Center"]<-"USFS National Wetlands Research Center"
@@ -368,6 +414,7 @@ DATAFILE$INST<-gsub(" (UNESP)","", DATAFILE$INST)
 DATAFILE$INST[DATAFILE$INST=="Universidade Estadual Paulista (UNESP)"]<-"Universidade Estadual Paulista"
 DATAFILE$INST<-gsub("Darwin University Darwin","Darwin University", DATAFILE$INST)
 DATAFILE$INST<-gsub("Technion-","", DATAFILE$INST)
+DATAFILE$INST<-gsub("university california","university of california", DATAFILE$INST)
 DATAFILE$INST<-gsub("Israel Institute of Technology","Technion Israel Institute of Technology", DATAFILE$INST)
 DATAFILE$INST<-gsub("Ossietzky","", DATAFILE$INST)
 DATAFILE$INST<-gsub(",USDA","", DATAFILE$INST)
@@ -428,6 +475,13 @@ DATAFILE$INST[DATAFILE$INST=="Universityof"]<-"University of"
 DATAFILE$INST[DATAFILE$INST=="Aberystwyth"]<-"Aberystwyth University"
 DATAFILE$INST[DATAFILE$INST=="Alabama A and M"]<-"Alabama A and M University"
 DATAFILE$INST[DATAFILE$INST=="Alterra"]<-"Wageningen University and Research"
+DATAFILE$INST[DATAFILE$INST=="Waginen University"]<-"Wageningen University and Research"
+DATAFILE$INST[DATAFILE$INST=="Wageningen"]<-"Wageningen University and Research"
+DATAFILE$INST[DATAFILE$INST=="Wageningen University"]<-"Wageningen University and Research"
+DATAFILE$NOTES[DATAFILE$INST=="usgs and university of miami"]<-"secondary inst: university of miami"
+DATAFILE$INST[DATAFILE$INST=="usgs and university of miami"]<-"usgs"
+DATAFILE$NOTES[DATAFILE$INST=="usgs and university of california santa barbara"]<-"secondary inst: university of california santa barbara"
+DATAFILE$INST[DATAFILE$INST=="usgs and university of california santa barbara"]<-"usgs"
 DATAFILE$INST[DATAFILE$INST=="ALTERRA Research Institute for the Green World"]<-"Wageningen University and Research"
 DATAFILE$INST[DATAFILE$INST=="Assicuates"]<-"Associates"
 DATAFILE$INST[DATAFILE$INST=="Bangor"]<-"Bangor University"
@@ -521,6 +575,8 @@ DATAFILE$INST[DATAFILE$INST=="Western Michigan University"]<-"Western Michigan 
 DATAFILE$INST[DATAFILE$INST=="Wisconsin"]<-"University of Wisconsin"
 DATAFILE$INST[DATAFILE$INST=="Woods Hole Oceanographic Institute"]<-"Woods Hole Oceanographic Institution"
 DATAFILE$INST[DATAFILE$INST=="Woods Hole Research Center"]<-"Woods Hole Oceanographic Institution"
+DATAFILE$NOTES[DATAFILE$INST=="university of natural resources and applied life sciences boku"]<-"institution aka BOKU"
+DATAFILE$INST[DATAFILE$INST=="university of natural resources and applied life sciences boku"]<-"university of natural resources and applied life sciences vienna"
 
 DATAFILE$INST[DATAFILE$INST=="USU"]<-"Utah State University"
 DATAFILE$INST[DATAFILE$LAST_NAME=="Luque"]<-"Institut national de recherche en sciences et technologies pour lenvironnement et lagriculture"
@@ -574,6 +630,8 @@ DATAFILE$INST[DATAFILE$INST=="University of Texas At Austin"]<-"University of Te
 DATAFILE$INST[DATAFILE$INST=="University of Wisconsin"]<-"University of Wisconsin"
 DATAFILE$INST[DATAFILE$INST=="Victorian School of forestry"]<-"Victorian School of Forestry"
 DATAFILE$INST[DATAFILE$INST=="VRije Universiteit Amsterdam"]<-"Vrije Universiteit Amsterdam"
+DATAFILE$INST[DATAFILE$INST=="vrije university amsterdam"]<-"vrije universiteit amsterdam"
+DATAFILE$INST[DATAFILE$INST=="vrije universiteit"]<-"vrije universiteit amsterdam"
 DATAFILE$INST[DATAFILE$INST=="Washington U St Louis"]<-"Washington University in St Louis"
 DATAFILE$INST[DATAFILE$INST=="Western Cotton Research Lab."]<-"USDA Western Cotton Research Lab"
 DATAFILE$INST[DATAFILE$INST=="Western Michigan University"]<-"Western Michigan University"
@@ -649,14 +707,18 @@ DATAFILE$INST<-gsub("acadia u","aarhus university", DATAFILE$INST)
 DATAFILE$INST<-gsub("university of aarhus","aarhus university", DATAFILE$INST)
 DATAFILE$INST<-gsub("university of aarhus","aarhus university", DATAFILE$INST)
 DATAFILE$INST<-gsub("universityniversity","university", DATAFILE$INST)
-
-
+DATAFILE$INST[DATAFILE$INST=="queen mary university of london"]<-"queen mary university of london"
+DATAFILE$INST[DATAFILE$INST=="queen marys university of london"]<-"queen mary university of london"
+DATAFILE$INST[DATAFILE$INST=="university of london queen mary"]<-"queen mary university of london"
+DATAFILE$INST[DATAFILE$INST=="queen marys university"]<-"queen mary university of london"
 DATAFILE$UNIT[DATAFILE$INST=="acadia u"]<-"aarhus university"
 DATAFILE$UNIT[DATAFILE$INST=="aberdeen university"]<-"university of aberdeen"
 DATAFILE$UNIT[DATAFILE$INST=="agresearch"]<-"agresearch ltd"
+
 DATAFILE$UNIT[DATAFILE$INST=="agriculture and agri food"]<-"agriculture and agri food canada"
 DATAFILE$COUNTRY[DATAFILE$INST=="queens college city university of new york"]<-"USA"
 DATAFILE$INST[DATAFILE$INST=="northern prairie wildlife research center"]<-"usgs northern prairie wildlife research center"
+DATAFILE$INST[DATAFILE$INST=="usgs prairie wildlife research center"]<-"usgs northern prairie wildlife research center"
 DATAFILE$COUNTRY[DATAFILE$INST=="usgs northern prairie wildlife research center"]<-"USA"
 DATAFILE$COUNTRY[DATAFILE$INST=="ohio northern university"]<-"USA"
 DATAFILE$COUNTRY[DATAFILE$INST=="ohio state university"]<-"USA"
@@ -664,6 +726,7 @@ DATAFILE$COUNTRY[DATAFILE$INST=="ohio wesleyan university"]<-"USA"
 DATAFILE$COUNTRY[DATAFILE$INST=="oklahoma state university"]<-"USA"
 DATAFILE$COUNTRY[DATAFILE$INST=="old dominion university"]<-"USA"
 DATAFILE$COUNTRY[DATAFILE$INST=="oregon state university"]<-"USA"
+DATAFILE$COUNTRY[DATAFILE$INST=="vrije university amsterdam"]<-"Netherlands"
 DATAFILE$COUNTRY[DATAFILE$INST=="penn state university"]<-"USA"
 DATAFILE$INST<-gsub("penn state university","pennsylvaia state university", DATAFILE$INST)
 DATAFILE$COUNTRY[DATAFILE$INST=="portland state university"]<-"USA"
@@ -803,7 +866,9 @@ DATAFILE$COUNTRY[DATAFILE$INST=="open university"]<-"United Kingdom"
 DATAFILE$COUNTRY[DATAFILE$INST=="palacky university"]<-"Czech Republic"
 DATAFILE$COUNTRY[DATAFILE$INST=="percy fitzpatrick institute"]<-"South Africa"
 DATAFILE$COUNTRY[DATAFILE$INST=="point blue conservation"]<-"USA"
+DATAFILE$INST[DATAFILE$INST=="queens university of belfast"]<-"queens university belfast"
 DATAFILE$COUNTRY[DATAFILE$INST=="queens university of belfast"]<-"Northern Ireland"
+DATAFILE$COUNTRY[DATAFILE$INST=="queens university belfast"]<-"Northern Ireland"
 DATAFILE$COUNTRY[DATAFILE$INST=="rangeland ecosystem science center"]<-"USA"
 DATAFILE$COUNTRY[DATAFILE$INST=="tabor college"]<-"USA"
 DATAFILE$COUNTRY[DATAFILE$INST=="snake river field station"]<-"USA" #USGS
@@ -874,7 +939,10 @@ DATAFILE$COUNTRY[DATAFILE$INST=="california state university san marcos"]<-"USA"
 DATAFILE$COUNTRY[DATAFILE$INST=="canadian wildlife service"]<-"Canada"	
 DATAFILE$COUNTRY[DATAFILE$INST=="catholic university of chile"]<-"Chile"	
 DATAFILE$COUNTRY[DATAFILE$INST=="centre national de la recherche scientifique"]<-"France"	
-DATAFILE$COUNTRY[DATAFILE$INST=="citadel military college of south carolina"]<-"USA"	
+DATAFILE$COUNTRY[DATAFILE$INST=="citadel military college of south carolina"]<-"USA"
+DATAFILE$COUNTRY[DATAFILE$INST=="university of pittsburgh"]<-"USA"
+DATAFILE$CITY[DATAFILE$INST=="university of pittsburgh"]<-"Pittsburgh"
+DATAFILE$STATE[DATAFILE$INST=="university of pittsburgh"]<-"PA"
 DATAFILE$COUNTRY[DATAFILE$INST=="city university of new york"]<-"USA"	
 DATAFILE$COUNTRY[DATAFILE$INST=="college of new jersey"]<-"USA"	
 DATAFILE$COUNTRY[DATAFILE$INST=="college of william and mary"]<-"USA"	
@@ -1091,13 +1159,17 @@ DATAFILE$INST[DATAFILE$INST==  "humboldt university berlin"]<-"humboldt universi
     DATAFILE$INST[DATAFILE$INST== "tufts" ]<-"tufts university"
     DATAFILE$INST[DATAFILE$INST==  "tuniversity of dresden"]<-"university of dresden"
     DATAFILE$INST[DATAFILE$INST==  "unc chapel hill"]<-"university of north carolina chapel hill"
-    DATAFILE$INST[DATAFILE$INST==  "univ london imperial coll sci technol and med"]<-"imperial college of science technology and medicine"
     DATAFILE$INST[DATAFILE$INST== "universidad autonoma del estado hidalgo" ]<-"universidad autonoma del estado de hidalgo"
+    DATAFILE$INST[DATAFILE$INST==  "university of london college imperial college of science"]<-"university of london imperial college of science technology and medicine" 
+    DATAFILE$INST[DATAFILE$INST==  "university of london imperial college of science technology"]<-"university of london imperial college of science technology and medicine" 
+    DATAFILE$INST[DATAFILE$INST==  "univ london imperial coll sci technol and med"]<-"imperial college of science technology and medicine"
     DATAFILE$INST[DATAFILE$INST== "universidad nacional aut<a2>noma de m<82>xico"  ]<-"universidad nacional autonoma de mexico" 
     DATAFILE$INST[DATAFILE$INST== "universidade de s?o paulo"  ]<-"universidade de sao paulo" 
     DATAFILE$INST[DATAFILE$INST== "universidade estadual paulista (unesp)"  ]<-"universidade estadual paulista" 
     DATAFILE$INST[DATAFILE$INST==  "universidade estadual de campinas (unicamp)"   ]<-"universidade estadual de campinas"   
-    DATAFILE$INST[DATAFILE$INST== "universidade federal do rio grande do norte (university of floridarn)"  ]<-"universidade federal do rio grande do norte" 
+    DATAFILE$INST[DATAFILE$INST== "universidade federal do rio grande do norte (university of floridarn)"  ]<-"universidade federal do rio grande do norte"
+    DATAFILE$INST[DATAFILE$INST== "university fed goias"  ]<-"universidade federal de goias"
+    DATAFILE$INST[DATAFILE$INST== "university of brasilia"  ]<-"universidade de brasilia"
     DATAFILE$INST[DATAFILE$INST== "universita die napoli \"frederico ii\""  ]<-"universita die napoli frederico ii" 
     DATAFILE$INST[DATAFILE$INST==  "universite de quebec a monteal" ]<-"universite de quebec a montreal" 
     DATAFILE$INST[DATAFILE$INST==  "university lyon 1 cnrs" ]<-"university lyon 1" 
@@ -1140,7 +1212,11 @@ DATAFILE$INST[DATAFILE$INST==  "humboldt university berlin"]<-"humboldt universi
     DATAFILE$INST[DATAFILE$INST== "university groningen" ]<-"university of groningen"
     DATAFILE$INST[DATAFILE$INST== "university los andes" ]<- "universidad de los andes"
     DATAFILE$INST[DATAFILE$INST== "university of los andes" ]<-"universidad de los andes"
+    DATAFILE$INST[DATAFILE$INST== "university tasmania"]<- "university of tasmania"
     DATAFILE$INST[DATAFILE$INST== "versity of tennessee "]<- "university of tennessee"
+    DATAFILE$INST[DATAFILE$INST== "university of tennesse"]<- "university of tennessee"
+    DATAFILE$INST[DATAFILE$INST== "versity of tennessee"]<- "university of tennessee"
+    DATAFILE$INST[DATAFILE$INST== "university tennessee"]<- "university of tennessee"
     DATAFILE$INST[DATAFILE$INST== "netherlands institute for sea research" ]<-	"royal netherlands institute for sea research"
     DATAFILE$INST[DATAFILE$INST==  "university aberdeen" ]<-"university of aberdeen"
     DATAFILE$INST[DATAFILE$INST== "city university of new york" ]<- "cuny city university of new york"
@@ -1169,7 +1245,10 @@ DATAFILE$INST[DATAFILE$INST==  "humboldt university berlin"]<-"humboldt universi
     DATAFILE$INST[DATAFILE$INST=="investigador conicet"]<-"CONICET CCT Mendoza"
     DATAFILE$INST[DATAFILE$INST=="centro nacional patagonico conicet"]<-"conicet centro nacional patagonico"
     DATAFILE$INST[DATAFILE$INST=="ibigeo conicet"]<-"conicet ibigeo"
-    DATAFILE$INST[DATAFILE$INST=="university of copenhagen"]<-"copenhagen university"
+    DATAFILE$INST[DATAFILE$INST=="copenhagen university"]<-"university of copenhagen"
+    DATAFILE$INST[DATAFILE$INST=="university copenhagen"]<-"university of copenhagen"
+    DATAFILE$INST[DATAFILE$INST=="university of pk"]<-"university of copenhagen"
+    
     DATAFILE$INST[DATAFILE$INST=="cisc"]<-"csic consejo superior de investigaciones cientificas"
     DATAFILE$INST[DATAFILE$INST=="consejo superior de investigaciones cientificas"]<-"csic consejo superior de investigaciones cientificas"
     DATAFILE$INST[DATAFILE$INST=="estacion biologica donana"]<-"csic donana biological station"
@@ -1322,6 +1401,8 @@ DATAFILE$INST[DATAFILE$INST==  "humboldt university berlin"]<-"humboldt universi
     gsub("us department of agriculture","usda",DATAFILE$INST)
 
     
+    DATAFILE<-DATAFILE[!(DATAFILE$INST=="no one by this name" & DATAFILE$JOURNAL=="JECOL"),]
+    
     DATAFILE$INST[DATAFILE$INST=="(retired) natural history museum london"]<-"retired"
     DATAFILE$INST[DATAFILE$INST=="agricultural university wageningen"]<-"wageningen agricultural university"
     DATAFILE$INST[DATAFILE$INST=="alberta"]<-"university of alberta"
@@ -1439,6 +1520,7 @@ DATAFILE$INST[DATAFILE$INST==  "humboldt university berlin"]<-"humboldt universi
     DATAFILE$INST[DATAFILE$INST=="state university of new york stony brook"]<-"suny stony brook"
     DATAFILE$INST[DATAFILE$INST=="station detudes des gorilles et chimpanzes (segc)"]<-"station detudes des gorilles et chimpanzes"
     DATAFILE$INST[DATAFILE$INST=="swedish agricultural university"]<-"swedish university of agricultural sciences"
+    DATAFILE$INST[DATAFILE$INST=="swedish university of agricultural science"]<-"swedish university of agricultural sciences"
     DATAFILE$INST[DATAFILE$INST=="swiss federal institute wsl"]<-"swiss federal institute for forest snow and landscape research"
     DATAFILE$UNIT[DATAFILE$INST=="tidewater agricultural res and ext ctr"]<-"tidewater agricultural res and ext ctr"
     DATAFILE$INST[DATAFILE$INST=="tidewater agricultural res and ext ctr"]<-"virginia polytechnic institute and state university"
@@ -1485,7 +1567,49 @@ DATAFILE$INST[DATAFILE$INST==  "humboldt university berlin"]<-"humboldt universi
     DATAFILE$INST[DATAFILE$INST=="us arid land agricultural research center"]<-"usda arid land agricultural research center"
     DATAFILE$INST[DATAFILE$INST=="us geological society"]<-"us geological survey"
     DATAFILE$INST[DATAFILE$INST=="virginia commonwealth u"]<-"virginia commonwealth university"
-	# TODO: check to see if these are working because it may be an ascii problem
+    DATAFILE$INST[DATAFILE$INST=="biological station of donana"]<-"csic donana biological station"
+    DATAFILE$INST[DATAFILE$INST=="imperial college of london"]<-"imperial college london"
+    DATAFILE$INST[DATAFILE$INST=="institute¬†of terrestrial ecology"]<-"institute of terrestrial ecology"
+    DATAFILE$INST[DATAFILE$INST=="joint nature conservation committee¬†"]<-"joint nature conservation committee"
+    DATAFILE$INST[DATAFILE$INST=="king‚Äôs college"]<-"kings college"
+    DATAFILE$INST[DATAFILE$INST=="macaulay¬†institute"]<-"macaulay land use research institute"
+    DATAFILE$INST[DATAFILE$INST=="ceh"]<-"nerc centre for ecology and hydrology"
+    DATAFILE$INST[DATAFILE$INST=="nerc ctr ecol and hydrol"]<-"nerc centre for ecology and hydrology"
+    DATAFILE$INST[DATAFILE$INST=="ceh banchory"]<-"nerc centre for ecology and hydrology banchory"
+    DATAFILE$INST[DATAFILE$INST=="ceh monks wood"]<-"nerc centre for ecology and hydrology monks wood"
+    DATAFILE$INST[DATAFILE$INST=="netherlands inst ecol nioo knaw"]<-"netherlands institute of ecology nioo knaw"
+    DATAFILE$INST[DATAFILE$INST=="northeastern univ"]<-"northeastern university"
+    DATAFILE$INST[DATAFILE$INST=="western cotton research lab"]<-"now the usda arid land agricultural research center"
+    DATAFILE$INST[DATAFILE$INST=="oregon state univ"]<-"oregon state university"
+    DATAFILE$INST[DATAFILE$INST=="penn state"]<-"pennsylvania state university"
+    DATAFILE$INST[DATAFILE$INST=="sw texas state university"]<-"southwest texas state university"
+    DATAFILE$INST[DATAFILE$INST=="tech university darmstadt"]<-"technical university of darmstadt"
+    DATAFILE$INST[DATAFILE$INST=="technische universitat darmstadt"]<-"technical university of darmstadt"
+    DATAFILE$INST[DATAFILE$INST=="truman state"]<-"truman state university"
+    DATAFILE$INST[DATAFILE$INST=="university of alicante"]<-"universidad de alicante"
+    DATAFILE$INST[DATAFILE$INST=="university of vigo"]<-"universidad de vigo"
+    DATAFILE$INST[DATAFILE$INST=="university of rey juan carlos"]<-"universidad rey juan carlos"
+    DATAFILE$INST[DATAFILE$INST=="universitat osnabr√ºck"]<-"universitat osnabruck"
+    DATAFILE$INST[DATAFILE$INST=="universidad de costa rica"]<-"university of costa rica"
+    DATAFILE$INST[DATAFILE$INST=="university exeter"]<-"university of exeter"
+    DATAFILE$INST[DATAFILE$INST=="university glasgow"]<-"university of glasgow"
+    DATAFILE$INST[DATAFILE$INST=="university of natal"]<-"university of kwazulu natal"
+    DATAFILE$INST[DATAFILE$INST=="university of london college imperial college of science and technology"]<-"university of london imperial college of science and technology"
+    DATAFILE$INST[DATAFILE$INST=="university of london imperial college of science and technology"]<-"university of london imperial college of science and technology"
+    DATAFILE$INST[DATAFILE$INST=="universit√© de montreal"]<-"university of montreal"
+    DATAFILE$INST[DATAFILE$INST=="university oregon"]<-"university of oregon"
+    DATAFILE$INST[DATAFILE$INST=="oxford university"]<-"university of oxford"
+    DATAFILE$INST[DATAFILE$INST=="university oxford"]<-"university of oxford"
+    DATAFILE$INST[DATAFILE$INST=="universite du quebec"]<-"university of quebec"
+    DATAFILE$INST[DATAFILE$INST=="universita del salento"]<-"university of salento"
+    DATAFILE$INST[DATAFILE$INST=="umea univ"]<-"university of umea"
+    DATAFILE$INST[DATAFILE$INST=="university¬†of¬†wageningen"]<-"university of wageningen"
+    DATAFILE$INST[DATAFILE$INST=="waikato university"]<-"university of waikato"
+    DATAFILE$INST[DATAFILE$INST=="utrecht"]<-"utrecht university"
+    DATAFILE$INST[DATAFILE$INST=="wageningen university research center alterra"]<-"wageningen agricultural university and research center alterra"
+    
+    
+    # TODO: check to see if these are working because it may be an ascii problem
     # university of st andrews	university of st. andrews
     DATAFILE$INST[DATAFILE$INST== "university of floridaz center for environmental research" ]<-"helmholtz centre for environmental research"
     

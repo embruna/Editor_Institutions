@@ -37,39 +37,65 @@ library(tidyverse)
 
 ##########
 multi1<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_1.csv", col_names = TRUE)
-multi1<-multi1 %>% fill(INST,UNIT,CITY,STATE,.direction="down")
+multi1<-multi1 %>%
+  group_by(LAST_NAME,FIRST_NAME) %>% 
+  arrange(YEAR) %>% 
+  fill(INST,UNIT,CITY,STATE,.direction="down")
 ##########
 
 ##########
 multi2a<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_2a.csv", col_names = TRUE)
-multi2a<-multi2a %>% filter(JOURNAL=="CONBIO"|JOURNAL=="NEWPHYT") %>% fill(INST,UNIT,CITY,STATE,.direction="down") #delete out other journals this is conbio and new phyt
+multi2a<-multi2a %>% filter(JOURNAL=="CONBIO"|JOURNAL=="NEWPHYT") %>% 
+  group_by(LAST_NAME,FIRST_NAME) %>% 
+  arrange(YEAR) %>% 
+  fill(INST,UNIT,CITY,STATE,.direction="down") #delete out other journals this is conbio and new phyt
 ##########
 
 ##########
 multi2b<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_2b.csv", col_names = TRUE)
-multi2b<-multi2b %>% filter(JOURNAL=="CONBIO"|JOURNAL=="NEWPHYT") %>% fill(INST,UNIT,CITY,STATE,.direction="down") #delete out other journals this is conbio and new phyt
+multi2b<-multi2b %>% 
+  filter(JOURNAL=="CONBIO"|JOURNAL=="NEWPHYT") %>% 
+  group_by(LAST_NAME,FIRST_NAME) %>% 
+  arrange(YEAR) %>% 
+  fill(INST,UNIT,CITY,STATE,.direction="down") #delete out other journals this is conbio and new phyt
 ##########
 
 ##########
 BITR_inst<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_3_BITR.csv", col_names = TRUE)
-BITR_inst<-BITR_inst %>% fill(INST,UNIT,CITY,STATE,.direction="down")
+
+BITR_inst<-BITR_inst %>% 
+  group_by(LAST_NAME,FIRST_NAME) %>% 
+  arrange(YEAR) %>% 
+  fill(INST,UNIT,CITY,STATE,.direction="down")
+
 ##########
 
 ##########
 AMNAT_inst<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_4_AMNAT.csv", col_names = TRUE,na = c("", "N/A", "NA"), trim_ws = TRUE)
-AMNAT_inst<-AMNAT_inst %>% fill(INST,UNIT,CITY,STATE,.direction="down")%>% filter(JOURNAL=="AMNAT")
+AMNAT_inst<-AMNAT_inst %>% 
+  group_by(LAST_NAME,FIRST_NAME) %>% 
+  arrange(YEAR) %>% 
+  fill(INST,UNIT,CITY,STATE,.direction="down") %>% 
+  filter(JOURNAL=="AMNAT")
 ##########
 
 ##########
 JECOL_inst<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_6_JEcol.csv", col_names = TRUE)
-JECOL_inst<-JECOL_inst %>% fill(INST,UNIT,CITY,STATE,.direction="down")%>% filter(JOURNAL=="JECOL")
+JECOL_inst<-JECOL_inst %>% 
+  group_by(LAST_NAME,FIRST_NAME) %>%
+  arrange(YEAR) %>% 
+  fill(INST,UNIT,CITY,STATE,.direction="down") %>% 
+  filter(JOURNAL=="JECOL")
 ##########
 
 ##########
 JAPE_inst<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_7_JAPE.csv", col_names = TRUE)
 JAPE_inst<-JAPE_inst %>% 
   rename("FIRST_NAME"="FIRST_NA", "MIDDLE_NAME"="MIDDLE_","LAST_NAME"="LAST_NA") %>% 
-  fill(INST,UNIT,CITY,STATE,NOTES,.direction="down")%>% filter(JOURNAL=="JAPE")
+  group_by(LAST_NAME,FIRST_NAME) %>% 
+  arrange(YEAR) %>% 
+  fill(INST,UNIT,CITY,STATE,COUNTRY,NOTES,.direction="down") %>% 
+  filter(JOURNAL=="JAPE")
 JAPE_inst$editor_id<-NULL
 # TODO: something is going on with editot IDS
 ##########

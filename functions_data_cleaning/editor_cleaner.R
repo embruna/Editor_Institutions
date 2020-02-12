@@ -5,9 +5,14 @@
     # DATAFILE<-ALLDATA
     # SOME NOTES:
     
+    
+    DATAFILE$FIRST_NAME<-trimws(DATAFILE$FIRST_NAME)
+    DATAFILE$LAST_NAME<-trimws(DATAFILE$LAST_NAME)
     str(DATAFILE$editor_id)
     DATAFILE$INST<-as.factor(DATAFILE$INST)
     levels(DATAFILE$INST) <- c(levels(DATAFILE$INST),"University of Missouri Columbia",
+                               "university college dublin",
+                               "university of sheffield",
                                "leibniz institute for zoo and wildlife research",
                                "kansas state university",
                                "CNRS Centre dEcologie Fonctionnelle et Evolutive",
@@ -31,12 +36,34 @@
                                "NERC Centre for Population Biology",
                                "Massey University",
                                "University of Bialystok",
-                               "manaaki whenua landcare research")
+                               "manaaki whenua landcare research",
+                               "queens university belfast",
+                               "university of wisconsin milwaukee",
+                               "university of copenhagen",
+                               "no one by this name",
+                               "university of sydney",
+                               "university of vienna"
+                               )
     
     
     #### 
     # These corrections are from PJ review of files
     #####
+    
+    
+    DATAFILE$INST[DATAFILE$LAST_NAME=="Voigt"& DATAFILE$JOURNAL=="OECOL" &
+                    (DATAFILE$YEAR==2013|DATAFILE$YEAR==2014)]<-"leibniz institute for zoo and wildlife research"
+    
+    DATAFILE$INST[DATAFILE$LAST_NAME=="Rees"& DATAFILE$JOURNAL=="JECOL" &
+                    DATAFILE$YEAR==2012]<-"university of sheffield"
+    
+    DATAFILE$INST[DATAFILE$LAST_NAME=="Holzner"& DATAFILE$JOURNAL=="PLANTECOL" &
+                    (DATAFILE$YEAR>1984 & DATAFILE$YEAR<1988)]<-"university of vienna"
+    
+    DATAFILE$notes[DATAFILE$LAST_NAME=="Holzner"& DATAFILE$JOURNAL=="PLANTECOL" &
+                    (DATAFILE$YEAR>1984 & DATAFILE$YEAR<1988)]<-"2x inst"
+    
+    
     DATAFILE<-DATAFILE[!(DATAFILE$LAST_NAME=="Bever" & DATAFILE$YEAR==2012 & DATAFILE$JOURNAL=="OECOL"),]
     DATAFILE<-DATAFILE[!(DATAFILE$LAST_NAME=="Lichstein" & DATAFILE$YEAR==2012 & DATAFILE$JOURNAL=="OECOL"),]
     DATAFILE<-DATAFILE[!(DATAFILE$LAST_NAME=="Gough" & DATAFILE$YEAR==2012 & DATAFILE$JOURNAL=="OECOL"),]
@@ -45,14 +72,12 @@
     DATAFILE<-DATAFILE[!(DATAFILE$LAST_NAME=="Layman" & DATAFILE$YEAR==2012 & DATAFILE$JOURNAL=="OECOL"),]
     DATAFILE<-DATAFILE[!(DATAFILE$LAST_NAME=="Le Galliard" & DATAFILE$YEAR==2012 & DATAFILE$JOURNAL=="OECOL"),]
 
-    DATAFILE$INST[DATAFILE$LAST_NAME=="Voigt"& DATAFILE$JOURNAL=="OECOL" &
-                    (DATAFILE$YEAR==2013|DATAFILE$YEAR==2014)]<-"leibniz institute for zoo and wildlife research"
-
     DATAFILE<-DATAFILE[!(DATAFILE$LAST_NAME=="Masters" & DATAFILE$YEAR==2010 & DATAFILE$JOURNAL=="JBIOG"),]
     DATAFILE<-DATAFILE[!(DATAFILE$LAST_NAME=="Holland" & DATAFILE$YEAR==1985 & DATAFILE$JOURNAL=="JBIOG"),]
     DATAFILE<-DATAFILE[!(DATAFILE$LAST_NAME=="Lambers" & DATAFILE$YEAR==1993 & DATAFILE$JOURNAL=="PLANTECOL"),]
     DATAFILE<-DATAFILE[!(DATAFILE$LAST_NAME=="Bond" & DATAFILE$YEAR==2004 & DATAFILE$JOURNAL=="PLANTECOL"),]
     DATAFILE<-DATAFILE[!(DATAFILE$LAST_NAME=="Kollmann" & DATAFILE$YEAR==2007 & DATAFILE$JOURNAL=="PLANTECOL"),]
+    
     
     DATAFILE$CITY[DATAFILE$LAST_NAME=="Overton"& DATAFILE$JOURNAL=="LECO"]<-NA
     
@@ -85,10 +110,10 @@
     DATAFILE$UNIT[DATAFILE$LAST_NAME=="Gustafson"& DATAFILE$FIRST_NAME=="E"]<-"North Central Research Station"
     DATAFILE$UNIT[DATAFILE$LAST_NAME=="With"& DATAFILE$FIRST_NAME=="Kimberly" & DATAFILE$YEAR==2004]<-"Division of Biology"
     DATAFILE$INST[DATAFILE$LAST_NAME=="With"& DATAFILE$FIRST_NAME=="Kimberly" & DATAFILE$YEAR==2004]<-"kansas state university"
-    DATAFILE$STATE[DATAFILE$LAST_NAME=="With"& DATAFILE$FIRST_NAME=="Kimberly" & DATAFILE$YEAR==2004]<-"KS"	
-    DATAFILE$CITY[DATAFILE$LAST_NAME=="With"& DATAFILE$FIRST_NAME=="Kimberly" & DATAFILE$YEAR==2004]<-"Manhattan"	
+    DATAFILE$STATE[DATAFILE$LAST_NAME=="With"& DATAFILE$FIRST_NAME=="Kimberly" & DATAFILE$YEAR==2004]<-"KS"
+    DATAFILE$CITY[DATAFILE$LAST_NAME=="With"& DATAFILE$FIRST_NAME=="Kimberly" & DATAFILE$YEAR==2004]<-"Manhattan"
     
-    
+    DATAFILE$editor_id[DATAFILE$LAST_NAME=="VanDonk" & DATAFILE$JOURNAL=="ECOLOGY"]<-"1037"
     DATAFILE$editor_id[DATAFILE$LAST_NAME=="VanDerMaarel" & DATAFILE$JOURNAL=="LECO"]<-"1033"
     DATAFILE$editor_id[DATAFILE$LAST_NAME=="Smith" & DATAFILE$FIRST_NAME=="Melinda"]<-"2566"
     DATAFILE$editor_id[DATAFILE$LAST_NAME=="Smith" & DATAFILE$FIRST_NAME=="Danny"]<-NA
@@ -99,7 +124,12 @@
     DATAFILE$editor_id[DATAFILE$LAST_NAME=="Dewalt" & DATAFILE$FIRST_NAME=="Saara"]<-3311
     DATAFILE$editor_id[DATAFILE$LAST_NAME=="Devictor" & DATAFILE$FIRST_NAME=="Vincent"]<-3681
     DATAFILE$editor_id[DATAFILE$LAST_NAME=="Coe" & DATAFILE$FIRST_NAME=="M"]<-2332
+    DATAFILE$editor_id[DATAFILE$LAST_NAME=="Krams" & DATAFILE$FIRST_NAME=="Indrikis"]<-70
     
+    DATAFILE$INST[DATAFILE$LAST_NAME=="Wardle" & DATAFILE$YEAR==2012 & DATAFILE$JOURNAL=="PLANTECOL"]<-"university of sydney"
+    DATAFILE$INST[DATAFILE$LAST_NAME=="Fenchel" & DATAFILE$FIRST_NAME=="Tom" & DATAFILE$JOURNAL=="FUNECOL"]<-"university of copenhagen"
+    DATAFILE$INST[DATAFILE$LAST_NAME=="White" & DATAFILE$JOURNAL=="JECOL" & DATAFILE$YEAR==1992]<-"university college dublin"
+    DATAFILE$INST[DATAFILE$LAST_NAME=="DeSteven" & DATAFILE$JOURNAL=="ECOLOGY" & DATAFILE$YEAR==1999]<-"university of wisconsin milwaukee"
     DATAFILE$INST[DATAFILE$LAST_NAME=="VanDerMaarel" & DATAFILE$JOURNAL=="LECO"]<-"university of uppsala"
     DATAFILE$INST[DATAFILE$LAST_NAME=="Sprules" & DATAFILE$FIRST_NAME=="Gary"]<-"University of Toronto Mississauga"
     DATAFILE$INST[DATAFILE$LAST_NAME=="Wagner" & DATAFILE$FIRST_NAME=="Helene"]<-"University of Toronto Mississauga"
@@ -121,6 +151,7 @@
     DATAFILE$INST[DATAFILE$LAST_NAME=="Badyaev" & DATAFILE$FIRST_NAME=="Alexander"]<-"University of Arizona"
     DATAFILE$INST[DATAFILE$LAST_NAME=="Davidowitz" & DATAFILE$FIRST_NAME=="Goggy"]<-"University of Arizona"
     DATAFILE$INST[DATAFILE$LAST_NAME=="McGraw" & DATAFILE$FIRST_NAME=="Kevi"]<-"Arizona State University"
+    DATAFILE$INST[DATAFILE$LAST_NAME=="Cotter" & DATAFILE$FIRST_NAME=="Sheena"]<-"queens university belfast"
     DATAFILE$INST[DATAFILE$LAST_NAME=="Jones" & DATAFILE$INST=="Ascot"]<-"NERC Centre for Population Biology"
     DATAFILE$INST[DATAFILE$LAST_NAME=="Jones" & DATAFILE$INST=="Cardiff"]<-"Cardiff University"
     DATAFILE$INST[DATAFILE$LAST_NAME=="Raubenheimer" & DATAFILE$FIRST_NAME=="David"]<-"Massey University"
