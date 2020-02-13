@@ -96,6 +96,7 @@ JECOL_inst<-JECOL_inst %>%
 ##########
 JAPE_inst<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_7_JAPE.csv", col_names = TRUE)
 JAPE_inst[JAPE_inst=="missing"]<-NA
+JAPE_inst[JAPE_inst=="unknown"]<-NA
 JAPE_inst<-JAPE_inst %>% 
   rename("FIRST_NAME"="FIRST_NA", "MIDDLE_NAME"="MIDDLE_","LAST_NAME"="LAST_NA") %>% 
   group_by(LAST_NAME,FIRST_NAME) %>% 

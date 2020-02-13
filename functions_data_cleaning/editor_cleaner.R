@@ -11,6 +11,7 @@
     str(DATAFILE$editor_id)
     DATAFILE$INST<-as.factor(DATAFILE$INST)
     levels(DATAFILE$INST) <- c(levels(DATAFILE$INST),"University of Missouri Columbia",
+                               "california state university long beach",
                                "university college dublin",
                                "university of sheffield",
                                "leibniz institute for zoo and wildlife research",
@@ -28,6 +29,7 @@
                                "Southern Illinois University",
                                "universite libre de bruxelles",
                                "Free University Amsterdam",
+                               "universitat osnabruck",
                                "southern illinois u",
                                "Aarhus University",
                                "University of St. Andrews",
@@ -42,10 +44,11 @@
                                "university of copenhagen",
                                "no one by this name",
                                "university of sydney",
-                               "university of vienna"
+                               "university of vienna",
+                               "Fundacion Cedrela",
+                               "university of gottingen",
+                               "university of wageningen"
                                )
-    
-    
     #### 
     # These corrections are from PJ review of files
     #####
@@ -104,7 +107,6 @@
     
     DATAFILE$FIRST_NAME[DATAFILE$LAST_NAME=="Moyle" & DATAFILE$FIRST_NAME=="PETER"]<-"Peter"
     DATAFILE$FIRST_NAME[DATAFILE$LAST_NAME=="MONOD"]<-"Theodore"
-    
     DATAFILE$UNIT[DATAFILE$LAST_NAME=="Meffe" & DATAFILE$JOURNAL=="CONBIO" & DATAFILE$INST=="University of Montana"]<-NA
     DATAFILE$UNIT[DATAFILE$LAST_NAME=="Whitmore"]<-"Oxford Forestry Institute"
     DATAFILE$UNIT[DATAFILE$LAST_NAME=="Gustafson"& DATAFILE$FIRST_NAME=="E"]<-"North Central Research Station"
@@ -125,7 +127,11 @@
     DATAFILE$editor_id[DATAFILE$LAST_NAME=="Devictor" & DATAFILE$FIRST_NAME=="Vincent"]<-3681
     DATAFILE$editor_id[DATAFILE$LAST_NAME=="Coe" & DATAFILE$FIRST_NAME=="M"]<-2332
     DATAFILE$editor_id[DATAFILE$LAST_NAME=="Krams" & DATAFILE$FIRST_NAME=="Indrikis"]<-70
-    
+    DATAFILE$INST[DATAFILE$LAST_NAME=="Fernandez-Juricic" & DATAFILE$JOURNAL=="JAPE" & DATAFILE$YEAR==2008]<-"california state university long beach"
+    DATAFILE$INST[DATAFILE$LAST_NAME=="Zuidema" & DATAFILE$JOURNAL=="JECOL" & DATAFILE$YEAR==2007]<-"university of wageningen"
+    DATAFILE$INST[DATAFILE$LAST_NAME=="VanDerPutten" & DATAFILE$JOURNAL=="OIKOS"]<-"university of wageningen"
+    DATAFILE$INST[DATAFILE$LAST_NAME=="Lieth" & DATAFILE$FIRST_NAME=="Helmut" & DATAFILE$JOURNAL=="JBIOG"]<-"universitat osnabruck"
+    DATAFILE$INST[DATAFILE$LAST_NAME=="Polle" & DATAFILE$FIRST_NAME=="Andrea" & DATAFILE$JOURNAL=="NEWPHYTE"]<-"university of gottingen"
     DATAFILE$INST[DATAFILE$LAST_NAME=="Wardle" & DATAFILE$YEAR==2012 & DATAFILE$JOURNAL=="PLANTECOL"]<-"university of sydney"
     DATAFILE$INST[DATAFILE$LAST_NAME=="Fenchel" & DATAFILE$FIRST_NAME=="Tom" & DATAFILE$JOURNAL=="FUNECOL"]<-"university of copenhagen"
     DATAFILE$INST[DATAFILE$LAST_NAME=="White" & DATAFILE$JOURNAL=="JECOL" & DATAFILE$YEAR==1992]<-"university college dublin"
@@ -150,8 +156,9 @@
     DATAFILE$INST[DATAFILE$LAST_NAME=="VanDamme" & DATAFILE$FIRST_NAME=="Raoul"]<-"University of Antwerp"
     DATAFILE$INST[DATAFILE$LAST_NAME=="Badyaev" & DATAFILE$FIRST_NAME=="Alexander"]<-"University of Arizona"
     DATAFILE$INST[DATAFILE$LAST_NAME=="Davidowitz" & DATAFILE$FIRST_NAME=="Goggy"]<-"University of Arizona"
-    DATAFILE$INST[DATAFILE$LAST_NAME=="McGraw" & DATAFILE$FIRST_NAME=="Kevi"]<-"Arizona State University"
+    DATAFILE$INST[DATAFILE$LAST_NAME=="McGraw" & DATAFILE$FIRST_NAME=="Kevin"]<-"Arizona State University"
     DATAFILE$INST[DATAFILE$LAST_NAME=="Cotter" & DATAFILE$FIRST_NAME=="Sheena"]<-"queens university belfast"
+    DATAFILE$INST[DATAFILE$LAST_NAME=="Norden" & DATAFILE$JOURNAL=="FUNECOL"]<-"Fundacion Cedrela"
     DATAFILE$INST[DATAFILE$LAST_NAME=="Jones" & DATAFILE$INST=="Ascot"]<-"NERC Centre for Population Biology"
     DATAFILE$INST[DATAFILE$LAST_NAME=="Jones" & DATAFILE$INST=="Cardiff"]<-"Cardiff University"
     DATAFILE$INST[DATAFILE$LAST_NAME=="Raubenheimer" & DATAFILE$FIRST_NAME=="David"]<-"Massey University"

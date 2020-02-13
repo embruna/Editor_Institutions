@@ -152,7 +152,8 @@ levels(DATAFILE$INST) <- c(levels(DATAFILE$INST),"University of Missouri Columbi
                            "university of wageningen",
                            "university of waikato",
                            "utrecht university",
-                           "wageningen agricultural university and research center alterra")
+                           "wageningen agricultural university and research center alterra",
+                           "institute of terrestrial ecology")
 
 
 DATAFILE$INST<-as.character(DATAFILE$INST)
@@ -701,6 +702,17 @@ DATAFILE$INST<-gsub("leibniz institute for zoo and wildlife research\xfc\xbe\x98
 DATAFILE$INST<-as.character(DATAFILE$INST)
 DATAFILE$INST<-tolower(DATAFILE$INST)
 
+DATAFILE$INST[grepl("Brown Univ", DATAFILE$INST, ignore.case=TRUE)] <- "brown university"
+DATAFILE$INST[grepl("Cary", DATAFILE$INST, ignore.case=TRUE)] <- "cary institute of ecosystem studies"
+DATAFILE$INST[grepl("ets ingenieros", DATAFILE$INST, ignore.case=TRUE)] <- "ets ingenieros de montes"
+gsub("macaulayooinstitute","istituto per lambiente marino costiero",DATAFILE$INST)
+DATAFILE$INST[grepl("macaulay", DATAFILE$INST, ignore.case=TRUE)] <- "macaulay land use research institute"
+DATAFILE$INST[grepl("osna", DATAFILE$INST, ignore.case=TRUE)] <- "universitat osnabruck"
+DATAFILE$INST[grepl("de montreal", DATAFILE$INST, ignore.case=TRUE)] <- "university of montreal"
+
+DATAFILE$INST<-ifelse(grepl("terrestrial ecology",DATAFILE$INST),"institute of terrestrial ecology",DATAFILE$INST)
+# DATAFILE$INST<-ifelse((DATAFILE$COUNTRY="Canada" & grepl("queen",DATAFILE$INST)),"queens university",DATAFILE$INST)
+
 DATAFILE$INST<-gsub("(retired) natural history museum london","natural history museum", DATAFILE$INST)
 DATAFILE$INST<-gsub("university of aarhus","aarhus university", DATAFILE$INST)
 
@@ -710,6 +722,8 @@ DATAFILE$INST<-gsub("university of aarhus","aarhus university", DATAFILE$INST)
 DATAFILE$INST<-gsub("university of aarhus","aarhus university", DATAFILE$INST)
 DATAFILE$INST<-gsub("universityniversity","university", DATAFILE$INST)
 DATAFILE$INST[DATAFILE$INST=="queen mary university of london"]<-"queen mary university of london"
+DATAFILE$INST[DATAFILE$INST=="institute for terrestrial ecology" & DATAFILE$COUNTRY=="United Kingdom"]<-"institute of terrestrial ecology"
+
 DATAFILE$INST[DATAFILE$INST=="queen marys university of london"]<-"queen mary university of london"
 DATAFILE$INST[DATAFILE$INST=="university of london queen mary"]<-"queen mary university of london"
 DATAFILE$INST[DATAFILE$INST=="queen marys university"]<-"queen mary university of london"
@@ -1058,7 +1072,8 @@ DATAFILE$INST[DATAFILE$INST== "pennsylvaia state university"]<-"pennsylvania sta
 DATAFILE$INST[DATAFILE$INST=="phiiipps university marburg"  ]<-"philipps university marburg"
 DATAFILE$INST[DATAFILE$INST=="simon fraser university\v" ]<-"simon fraser university"
 DATAFILE$INST[DATAFILE$INST== "landcaster university"]<-"lancaster university"
-DATAFILE$INST[DATAFILE$INST== "agr univ norway"]<-"agricultural university of norway" 
+DATAFILE$INST[DATAFILE$INST== "agr univ norway"]<-"agricultural university of norway"
+DATAFILE$INST[DATAFILE$INST== "agr university norway"]<-"agricultural university of norway"
 DATAFILE$INST[DATAFILE$INST=="albert ludwigs universitatfreiburg" ]<-"university of freiburg"
 DATAFILE$INST[DATAFILE$INST== "asa cssa sssa"]<-"american society of agronomy"
 DATAFILE$INST[DATAFILE$INST== "austral center for scientific research"  ]<-"conicet austral center for scientific research"  
