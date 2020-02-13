@@ -37,6 +37,7 @@ library(tidyverse)
 
 ##########
 multi1<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_1.csv", col_names = TRUE)
+multi1[multi1=="missing"]<-NA
 multi1<-multi1 %>%
   group_by(LAST_NAME,FIRST_NAME) %>% 
   arrange(YEAR) %>% 
@@ -45,6 +46,7 @@ multi1<-multi1 %>%
 
 ##########
 multi2a<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_2a.csv", col_names = TRUE)
+multi2a[multi2a=="missing"]<-NA
 multi2a<-multi2a %>% filter(JOURNAL=="CONBIO"|JOURNAL=="NEWPHYT") %>% 
   group_by(LAST_NAME,FIRST_NAME) %>% 
   arrange(YEAR) %>% 
@@ -53,6 +55,7 @@ multi2a<-multi2a %>% filter(JOURNAL=="CONBIO"|JOURNAL=="NEWPHYT") %>%
 
 ##########
 multi2b<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_2b.csv", col_names = TRUE)
+multi2b[multi2b=="missing"]<-NA
 multi2b<-multi2b %>% 
   filter(JOURNAL=="CONBIO"|JOURNAL=="NEWPHYT") %>% 
   group_by(LAST_NAME,FIRST_NAME) %>% 
@@ -62,7 +65,7 @@ multi2b<-multi2b %>%
 
 ##########
 BITR_inst<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_3_BITR.csv", col_names = TRUE)
-
+BITR_inst[BITR_inst=="missing"]<-NA
 BITR_inst<-BITR_inst %>% 
   group_by(LAST_NAME,FIRST_NAME) %>% 
   arrange(YEAR) %>% 
@@ -72,6 +75,7 @@ BITR_inst<-BITR_inst %>%
 
 ##########
 AMNAT_inst<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_4_AMNAT.csv", col_names = TRUE,na = c("", "N/A", "NA"), trim_ws = TRUE)
+AMNAT_inst[AMNAT_inst=="missing"]<-NA
 AMNAT_inst<-AMNAT_inst %>% 
   group_by(LAST_NAME,FIRST_NAME) %>% 
   arrange(YEAR) %>% 
@@ -81,6 +85,7 @@ AMNAT_inst<-AMNAT_inst %>%
 
 ##########
 JECOL_inst<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_6_JEcol.csv", col_names = TRUE)
+JECOL_inst[JECOL_inst=="missing"]<-NA
 JECOL_inst<-JECOL_inst %>% 
   group_by(LAST_NAME,FIRST_NAME) %>%
   arrange(YEAR) %>% 
@@ -90,6 +95,7 @@ JECOL_inst<-JECOL_inst %>%
 
 ##########
 JAPE_inst<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_7_JAPE.csv", col_names = TRUE)
+JAPE_inst[JAPE_inst=="missing"]<-NA
 JAPE_inst<-JAPE_inst %>% 
   rename("FIRST_NAME"="FIRST_NA", "MIDDLE_NAME"="MIDDLE_","LAST_NAME"="LAST_NA") %>% 
   group_by(LAST_NAME,FIRST_NAME) %>% 
@@ -573,11 +579,11 @@ both<-both[!(is.na(both$JOURNAL) & is.na(both$YEAR)),]
 
 both<-both %>% arrange(JOURNAL,LAST_NAME,FIRST_NAME,YEAR)
 
-colnames(both)
-str(as.data.frame(both))
-str(ALLDATA)
-colnames(ALLDATA)
-colnames(both)==colnames(ALLDATA)
+# colnames(both)
+# str(as.data.frame(both))
+# str(ALLDATA)
+# colnames(ALLDATA)
+# colnames(both)==colnames(ALLDATA)
 
 
 

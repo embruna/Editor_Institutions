@@ -115,6 +115,7 @@ levels(DATAFILE$INST) <- c(levels(DATAFILE$INST),"University of Missouri Columbi
                            "universidade federal de goias",
                            "universidade de brasilia",
                            "boku",
+                           "bangor university",
                            "csic donana biological station",
                            "imperial college london",
                            "institute of terrestrial ecology",
@@ -296,6 +297,7 @@ DATAFILE$INST[DATAFILE$INST=="John Carroll U"]<-"John Carroll University"
 DATAFILE$INST[DATAFILE$INST=="Knoxville"]<-"University of Tennessee"
 DATAFILE$INST[DATAFILE$INST=="Louisiana State"]<-"Louisiana State University"
 DATAFILE$INST[DATAFILE$INST=="Marshall Unin"]<-"Marshall University"
+DATAFILE$INST[DATAFILE$INST=="university of bangor"]<-"bangor university"
 DATAFILE$INST[DATAFILE$INST=="Miami U"]<-"Miami University"
 DATAFILE$INST[DATAFILE$INST=="Montana State"]<-"Montana State University"
 DATAFILE$INST[DATAFILE$INST=="North Dakota State"]<-"North Dakota State University"

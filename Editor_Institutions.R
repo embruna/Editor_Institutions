@@ -434,6 +434,10 @@ ALLDATA<-ALLDATA %>% select(-OLD_INST)
 # ALLDATA<-ALLDATA_2
 str(ALLDATA)
 
+ALLDATA[ALLDATA=="missing"]<-NA
+
+
+
 source("functions_data_cleaning/PJ_OECOL_corrections.R")
 DATA_LIST<-PJ_OECOL_corrections(ALLDATA)
 ALLDATA<-as_tibble(DATA_LIST[[1]])
@@ -701,7 +705,28 @@ ALLDATA<-distinct(ALLDATA,JOURNAL,LAST_NAME,FIRST_NAME,YEAR,TITLE,.keep_all = TR
 
 write.csv(ALLDATA,"./data_clean/InstitutionData_clean.csv",row.names = FALSE)
 
-
+# ALLDATA<-ALLDATA %>% filter(JOURNAL=="AJB"|
+#                               JOURNAL=="AMNAT"|
+#                             JOURNAL=="AREES"|
+#                             JOURNAL== "BIOCON"|
+#                             JOURNAL== "BITR"|
+#                             JOURNAL== "CONBIO"|
+#                             JOURNAL== "ECOGRAPHY"|
+#                             JOURNAL== "ECOLOGY" | 
+#                             JOURNAL== "EVOL"|
+#                             JOURNAL== "FEM"|
+#                             JOURNAL== "FUNECOL"|
+#                             JOURNAL=="JANE"|
+#                             JOURNAL=="JAPE"|
+#                             JOURNAL=="JBIOG"|
+#                             JOURNAL== "JECOL"|
+#                             JOURNAL== "JTE"|
+#                             JOURNAL== "JZOOL"|
+#                             JOURNAL== "LECO"|
+#                             JOURNAL=="NEWPHYT"|
+#                             JOURNAL=="OECOL"|
+#                             JOURNAL== "OIKOS"|
+#                             JOURNAL== "PLANTECOL")
 ###########################
 # TODO: FINAL REVIEW OF DATA
 ############################
