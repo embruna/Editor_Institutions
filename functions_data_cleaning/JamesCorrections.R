@@ -442,6 +442,11 @@ both$country_check<-both$COUNTRY.x==both$COUNTRY.y
 country_check<-filter(both,country_check=="FALSE")
 # write.csv(country_check, file="./Data/Patrick_James_Data_Corrections/Complete/COUNTRY_corrections_2x.csv", row.names = F) #export it as a csv file
 
+
+both$FIRST_NAME[both$LAST_NAME=="Weiher" & both$JOURNAL=="PLANTECOL"]<-"Ewan"
+both$FIRST_NAME[both$LAST_NAME=="Olsvig-Whittaker" & both$JOURNAL=="PLANTECOL"]<-"D"
+both$MIDDLE_NAME[both$LAST_NAME=="Olsvig-Whittaker" & both$JOURNAL=="PLANTECOL"]<-"L"
+
 both$COUNTRY.x[both$LAST_NAME=="Tjoelker" & both$JOURNAL=="NEWPHYT" & both$INST=="Texas A & M University"]<-"USA"
 both$COUNTRY.x[both$LAST_NAME=="Atkin" & both$JOURNAL=="NEWPHYT" & both$INST=="University of York"]<-"United Kingdom"
 both$COUNTRY.x[both$LAST_NAME=="Long" & both$JOURNAL=="JECOL" & both$INST=="University of Essex"]<-"United Kingdom"
