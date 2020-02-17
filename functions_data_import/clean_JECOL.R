@@ -1,5 +1,6 @@
 #FUNCTION TO CLEAN AND PROCESS JECOL
 clean_JECOL <- function(DATAFILE) {
+  # DATAFILE<-JECOL_raw
   DATAFILE<-rename(DATAFILE,"TITLE"="TITLE.x")
   # This will add "missing" to the first row of a group if the first INST is NA
   
@@ -32,7 +33,9 @@ clean_JECOL <- function(DATAFILE) {
     mutate(CITY = ifelse((row_number()==1 & is.na(CITY)), "missing", CITY))
   
   
-  DATAFILE<-DATAFILE %>% arrange(LAST_NAME,FIRST_NAME,YEAR) 
+  DATAFILE<-DATAFILE %>% 
+    group_by(LAST_NAME,FIRST_NAME,COUNTRY) %>% 
+    arrange(YEAR) 
   DATAFILE<-DATAFILE %>% fill(INST,UNIT,STATE,CITY,.direction="down")
   # 
   DATAFILE<-DATAFILE %>% 

@@ -98,10 +98,12 @@ levels(DATAFILE$INST) <- c(levels(DATAFILE$INST),"University of Missouri Columbi
                            "Smithsonian National Museum of Natural History",
                            "Smithsonian National Zoological Park",
                            "Laboratoire Associe de Modelisation des Plantes",
+                           "fao food and agriculture organization",
                            "Southern Illinois University",
                            "universite libre de bruxelles",
                            "southern illinois u",
                            "Aarhus University",
+                           "franklin and marshall university",
                            "University of St. Andrews",
                            "university of st andrews",
                            "university of pittsburgh",
@@ -298,6 +300,7 @@ DATAFILE$INST[DATAFILE$INST=="John Carroll U"]<-"John Carroll University"
 DATAFILE$INST[DATAFILE$INST=="Knoxville"]<-"University of Tennessee"
 DATAFILE$INST[DATAFILE$INST=="Louisiana State"]<-"Louisiana State University"
 DATAFILE$INST[DATAFILE$INST=="Marshall Unin"]<-"Marshall University"
+DATAFILE$INST[DATAFILE$INST=="franklin and farshall"]<-"franklin and marshall university"
 DATAFILE$INST[DATAFILE$INST=="university of bangor"]<-"bangor university"
 DATAFILE$INST[DATAFILE$INST=="Miami U"]<-"Miami University"
 DATAFILE$INST[DATAFILE$INST=="Montana State"]<-"Montana State University"
@@ -1418,7 +1421,7 @@ DATAFILE$INST[DATAFILE$INST==  "humboldt university berlin"]<-"humboldt universi
     gsub("us department of agriculture","usda",DATAFILE$INST)
 
     
-    DATAFILE<-DATAFILE[!(DATAFILE$INST=="no one by this name" & DATAFILE$JOURNAL=="JECOL"),]
+    # DATAFILE<-DATAFILE[!(DATAFILE$INST=="no one by this name" & DATAFILE$JOURNAL=="JECOL"),]
     
     DATAFILE$INST[DATAFILE$INST=="(retired) natural history museum london"]<-"retired"
     DATAFILE$INST[DATAFILE$INST=="agricultural university wageningen"]<-"wageningen agricultural university"
@@ -1585,6 +1588,7 @@ DATAFILE$INST[DATAFILE$INST==  "humboldt university berlin"]<-"humboldt universi
     DATAFILE$INST[DATAFILE$INST=="us geological society"]<-"us geological survey"
     DATAFILE$INST[DATAFILE$INST=="virginia commonwealth u"]<-"virginia commonwealth university"
     DATAFILE$INST[DATAFILE$INST=="biological station of donana"]<-"csic donana biological station"
+    DATAFILE$INST[DATAFILE$INST=="food and agriculture organization fao"]<-"fao food and agriculture organization"
     DATAFILE$INST[DATAFILE$INST=="imperial college of london"]<-"imperial college london"
     DATAFILE$INST[DATAFILE$INST=="institute¬†of terrestrial ecology"]<-"institute of terrestrial ecology"
     DATAFILE$INST[DATAFILE$INST=="joint nature conservation committee¬†"]<-"joint nature conservation committee"

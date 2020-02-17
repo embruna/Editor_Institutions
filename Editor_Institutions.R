@@ -435,7 +435,7 @@ ALLDATA<-ALLDATA %>% select(-OLD_INST)
 str(ALLDATA)
 
 ALLDATA[ALLDATA=="missing"]<-NA
-
+ALLDATA$INST[ALLDATA$INST=="double check"]<-NA
 
 
 source("functions_data_cleaning/PJ_OECOL_corrections.R")

@@ -59,8 +59,8 @@ clean_JAPE <- function(DATAFILE) {
   
   
   DATAFILE<-DATAFILE %>% 
-    arrange(LAST_NAME,FIRST_NAME,YEAR) %>% 
-    group_by(LAST_NAME,FIRST_NAME) %>% 
+    group_by(LAST_NAME,FIRST_NAME,COUNTRY) %>% 
+    arrange(YEAR) %>%
     fill(INST,UNIT,STATE,CITY,.direction="down")
   ##
   # code to generate the list of which ones need to be 2x or have missing names is in 

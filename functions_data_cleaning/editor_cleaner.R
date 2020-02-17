@@ -11,11 +11,15 @@
     str(DATAFILE$editor_id)
     DATAFILE$INST<-as.factor(DATAFILE$INST)
     levels(DATAFILE$INST) <- c(levels(DATAFILE$INST),"University of Missouri Columbia",
+                               "cinvestav irapuato",
                                "california state university long beach",
+                               "dsir land resources",
+                               "max planck institute for chemical ecology",
                                "university college dublin",
                                "university of sheffield",
                                "leibniz institute for zoo and wildlife research",
                                "kansas state university",
+                               "csiro ecosystem sciences",
                                "CNRS Centre dEcologie Fonctionnelle et Evolutive",
                                "Forestry and Forest Products Research Institute",
                                "University of Minnesota Duluth",
@@ -25,6 +29,10 @@
                                "Calyx, Inc.","University of North Carolina Charlotte",
                                "Smithsonian National Museum of Natural History",
                                "Smithsonian National Zoological Park",
+                               "australian national university",
+                               "university of california irvine",
+                               "university of california davis",
+                               "university of california berkeley",
                                "Laboratoire Associe de Modelisation des Plantes",
                                "Southern Illinois University",
                                "universite libre de bruxelles",
@@ -127,6 +135,18 @@
     DATAFILE$editor_id[DATAFILE$LAST_NAME=="Devictor" & DATAFILE$FIRST_NAME=="Vincent"]<-3681
     DATAFILE$editor_id[DATAFILE$LAST_NAME=="Coe" & DATAFILE$FIRST_NAME=="M"]<-2332
     DATAFILE$editor_id[DATAFILE$LAST_NAME=="Krams" & DATAFILE$FIRST_NAME=="Indrikis"]<-70
+    
+    
+    DATAFILE$INST[DATAFILE$LAST_NAME=="Lonsdale" & DATAFILE$JOURNAL=="JAPE" & DATAFILE$FIRST_NAME=="W"& (DATAFILE$YEAR>1998| DATAFILE$YEAR<2003)]<-"csiro ecosystem sciences"
+    DATAFILE$INST[DATAFILE$LAST_NAME=="Heil" & DATAFILE$JOURNAL=="JECOL" & DATAFILE$FIRST_NAME=="Martin" & DATAFILE$INST=="max planck university"]<-"max planck institute for chemical ecology"
+    DATAFILE$INST[DATAFILE$LAST_NAME=="Heil" & DATAFILE$JOURNAL=="JECOL" & DATAFILE$FIRST_NAME=="Martin" & DATAFILE$YEAR>2009]<-"cinvestav irapuato"
+    DATAFILE$INST[DATAFILE$LAST_NAME=="McGlone" & DATAFILE$JOURNAL=="JBIOG" & DATAFILE$INST=="christchurch"]<-"dsir land resources"
+    DATAFILE$INST[DATAFILE$LAST_NAME=="Williams" & DATAFILE$JOURNAL=="FUNECOL" & DATAFILE$FIRST_NAME=="Caroline"& (DATAFILE$YEAR>2008| DATAFILE$YEAR<2012)]<-"university of california berkeley"
+    DATAFILE$INST[DATAFILE$LAST_NAME=="Wainwright" & DATAFILE$JOURNAL=="FUNECOL" & DATAFILE$FIRST_NAME=="Peter" & (DATAFILE$YEAR>2008| DATAFILE$YEAR<2012)]<-"university of california davis"
+    DATAFILE$INST[DATAFILE$LAST_NAME=="Treseder" & DATAFILE$JOURNAL=="FUNECOL" & DATAFILE$FIRST_NAME=="Kathleen"& (DATAFILE$YEAR>2008| DATAFILE$YEAR<2016)]<-"university of california irvine"
+    DATAFILE$INST[DATAFILE$LAST_NAME=="Carroll" & DATAFILE$JOURNAL=="FUNECOL" & DATAFILE$FIRST_NAME=="Scott"& (DATAFILE$YEAR>2006| DATAFILE$YEAR<2016)]<-"university of california davis"
+    DATAFILE$INST[DATAFILE$LAST_NAME=="Campbell" & DATAFILE$JOURNAL=="FUNECOL" & DATAFILE$FIRST_NAME=="Diane"]<-"university of california irvine"
+    DATAFILE$INST[DATAFILE$LAST_NAME=="Farquhar" & DATAFILE$JOURNAL=="FUNECOL" & DATAFILE$FIRST_NAME=="Graham"]<-"australian national university"
     DATAFILE$INST[DATAFILE$LAST_NAME=="Fernandez-Juricic" & DATAFILE$JOURNAL=="JAPE" & DATAFILE$YEAR==2008]<-"california state university long beach"
     DATAFILE$INST[DATAFILE$LAST_NAME=="Zuidema" & DATAFILE$JOURNAL=="JECOL" & DATAFILE$YEAR==2007]<-"university of wageningen"
     DATAFILE$INST[DATAFILE$LAST_NAME=="VanDerPutten" & DATAFILE$JOURNAL=="OIKOS"]<-"university of wageningen"

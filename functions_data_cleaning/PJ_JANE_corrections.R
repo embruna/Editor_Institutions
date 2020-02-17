@@ -74,7 +74,7 @@ JANE$JOURNAL<-"JANE"
 # JANE$CITY[JANE$LAST_NAME=="Overton"]<-NA
 # JANE$geo.code[JANE$LAST_NAME=="Betts"]<-"CAN"
 colnames(JANE)
-JANE<-JANE %>% group_by(LAST_NAME,FIRST_NAME) %>% 
+JANE<-JANE %>% group_by(LAST_NAME,FIRST_NAME,COUNTRY) %>% 
   fill(INST,CITY,.direction="down")
 # 
 # JANE$editor_id<-as.factor(JANE$editor_id)

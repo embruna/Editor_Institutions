@@ -19,7 +19,7 @@ colnames(PLANTECOL)
 colnames(ORIGINAL_DATA)
 
 
-# remove OECOL FROM THE COMPLETE DATASET, WILL REBIND AFTER ADDING CORRECTIONS
+# remove PLANTECOL FROM THE COMPLETE DATASET, WILL REBIND AFTER ADDING CORRECTIONS
 ORIGINAL_DATA<-ORIGINAL_DATA %>% filter(JOURNAL!="PLANTECOL")
 
 # INSERT THE CORRECTIONS TO OECOL AND FILL
@@ -34,18 +34,25 @@ PLANTECOL$editor_id<-as.character(PLANTECOL$editor_id)
 colnames(PLANTECOL)
 colnames(PLANTECOL_inst)
 PLANTECOL<-full_join(PLANTECOL, PLANTECOL_inst, by = c("LAST_NAME","FIRST_NAME","YEAR"),all = T)
+
+PLANTECOL<-PLANTECOL %>% 
+  group_by(LAST_NAME,FIRST_NAME,COUNTRY) %>% 
+  fill(correct_INST,correct_CITY,correct_STATE,correct_FIRST_NAME,correct_MIDDLE_NAME,.direction="down")
+
+
+
 colnames(PLANTECOL)
 PLANTECOL <- PLANTECOL %>%
   mutate(CITY.x = ifelse((is.na(CITY.x)|CITY.x=="missing"), CITY.y, CITY.x)) %>%
   select(-CITY.y) %>%
   rename("CITY"="CITY.x") %>%
-  mutate(CITY = ifelse(is.na(correct_CITY), CITY, correct_CITY)) %>%
+  mutate(CITY = ifelse(is.na(correct_CITY)==FALSE, correct_CITY, CITY)) %>%
   select(-correct_CITY)
 PLANTECOL <- PLANTECOL %>%
   mutate(INST.x = ifelse((is.na(INST.x)|INST.x=="missing"), INST.y, INST.x)) %>%
   select(-INST.y) %>%
   rename("INST"="INST.x") %>% 
-  mutate(INST = ifelse(is.na(correct_INST), INST, correct_INST)) %>%
+  mutate(INST = ifelse(!is.na(correct_INST), correct_INST, INST)) %>%
   select(-correct_INST)
 PLANTECOL <- PLANTECOL %>%
   select(-JOURNAL.y) %>%
@@ -54,13 +61,13 @@ PLANTECOL <- PLANTECOL %>%
   mutate(MIDDLE_NAME.x = ifelse((is.na(MIDDLE_NAME.x)|MIDDLE_NAME.x=="missing"), MIDDLE_NAME.y, MIDDLE_NAME.x)) %>%
   select(-MIDDLE_NAME.y) %>%
   rename("MIDDLE_NAME"="MIDDLE_NAME.x") %>% 
-  mutate(MIDDLE_NAME = ifelse(is.na(correct_MIDDLE_NAME), MIDDLE_NAME, correct_MIDDLE_NAME)) %>%
+  mutate(MIDDLE_NAME = ifelse(!is.na(correct_MIDDLE_NAME), correct_MIDDLE_NAME,MIDDLE_NAME)) %>%
   select(-correct_MIDDLE_NAME)
+# PLANTECOL <- PLANTECOL %>%
+#   mutate(FIRST_NAME = ifelse(!is.na(correct_FIRST_NAME), correct_FIRST_NAME,FIRST_NAME)) %>%
+#   select(-correct_FIRST_NAME)
 PLANTECOL <- PLANTECOL %>%
-  mutate(FIRST_NAME = ifelse(is.na(correct_FIRST_NAME), FIRST_NAME, correct_FIRST_NAME)) %>%
-  select(-correct_FIRST_NAME)
-PLANTECOL <- PLANTECOL %>%
-  mutate(NOTES.x = ifelse((is.na(NOTES.x)|NOTES.x=="missing"), NOTES.y, NOTES.x)) %>%
+  mutate(NOTES.x = ifelse((!is.na(NOTES.x)|NOTES.x=="missing"), NOTES.y, NOTES.x)) %>%
   select(-NOTES.y) %>%
   rename("NOTES"="NOTES.x")
 # PLANTECOL <- PLANTECOL %>%
@@ -68,7 +75,7 @@ PLANTECOL <- PLANTECOL %>%
 #   select(-UNIT.y) %>%
 #   rename("UNIT"="UNIT.x")
 PLANTECOL <- PLANTECOL %>%
-  mutate(STATE = ifelse(is.na(correct_STATE), STATE, correct_STATE)) %>%
+  mutate(STATE = ifelse(!is.na(correct_STATE), correct_STATE,STATE)) %>%
   select(-correct_STATE)
 # PLANTECOL <- PLANTECOL %>%
 #   select(-COUNTRY.y) %>%
@@ -86,7 +93,7 @@ PLANTECOL$JOURNAL<-"PLANTECOL"
 # PLANTECOL$CITY[PLANTECOL$LAST_NAME=="Overton"]<-NA
 # PLANTECOL$geo.code[PLANTECOL$LAST_NAME=="Betts"]<-"CAN"
 
-PLANTECOL<-PLANTECOL %>% group_by(LAST_NAME,FIRST_NAME) %>% 
+PLANTECOL<-PLANTECOL %>% group_by(LAST_NAME,FIRST_NAME,COUNTRY) %>% 
   fill(INST,CITY,.direction="down")
 # 
 # PLANTECOL$editor_id<-as.factor(PLANTECOL$editor_id)
