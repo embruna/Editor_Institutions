@@ -582,6 +582,18 @@ both<-both[!(is.na(both$JOURNAL) & is.na(both$YEAR)),]
 #   group_by(JOURNAL,LAST_NAME,FIRST_NAME) %>%
 #   mutate(CITY = ifelse((row_number()==1 & is.na(CITY)), "missing", CITY))
 # 
+new_row<-both %>% 
+  filter(LAST_NAME=="Willis" & JOURNAL=="JECOL" & YEAR==1994)
+new_row$YEAR<-1992
+both<-rbind(new_row,both)
+both$INST[both$LAST_NAME=="Willis"& both$JOURNAL=="JECOL" &
+                (both$YEAR>1990|both$YEAR<2007)]<-"university of sheffield"
+both$CITY[both$LAST_NAME=="Willis"& both$JOURNAL=="JECOL" &
+            (both$YEAR>1990|both$YEAR<2007)]<-"Sheffield"
+both$STATE[both$LAST_NAME=="Willis"& both$JOURNAL=="JECOL" &
+            (both$YEAR>1990|both$YEAR<2007)]<-"S Yorkshire"
+both$COUNTRY[both$LAST_NAME=="Willis"& both$JOURNAL=="JECOL" &
+             (both$YEAR>1990|both$YEAR<2007)]<-"United Kingdom"
 
 both<-both %>% arrange(JOURNAL,LAST_NAME,FIRST_NAME,YEAR)
 

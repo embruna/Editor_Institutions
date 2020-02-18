@@ -1421,8 +1421,6 @@ DATAFILE$INST[DATAFILE$INST==  "humboldt university berlin"]<-"humboldt universi
     gsub("us department of agriculture","usda",DATAFILE$INST)
 
     
-    # DATAFILE<-DATAFILE[!(DATAFILE$INST=="no one by this name" & DATAFILE$JOURNAL=="JECOL"),]
-    
     DATAFILE$INST[DATAFILE$INST=="(retired) natural history museum london"]<-"retired"
     DATAFILE$INST[DATAFILE$INST=="agricultural university wageningen"]<-"wageningen agricultural university"
     DATAFILE$INST[DATAFILE$INST=="alberta"]<-"university of alberta"
@@ -1514,7 +1512,7 @@ DATAFILE$INST[DATAFILE$INST==  "humboldt university berlin"]<-"humboldt universi
     DATAFILE$COUNTRY[DATAFILE$INST=="new york botanical garden"]<-"USA"
     DATAFILE$INST[DATAFILE$INST=="newfoundland"]<-"missing"
     DATAFILE$INST[DATAFILE$INST=="nioo"]<-"netherlands institute of ecology"
-    DATAFILE$NOTES[DATAFILE$INST=="no one by this name"]<-"2x if on ed board this year"
+    # DATAFILE$NOTES[DATAFILE$INST=="no one by this name"]<-"2x if on ed board this year"
     DATAFILE$INST[DATAFILE$INST=="northeast fisheries science center"]<-"noaa northeast fisheries science center"
     DATAFILE$INST[DATAFILE$INST=="oklahoma university"]<-"university of oklahoma"
     DATAFILE$COUNTRY[DATAFILE$INST=="oxford university"]<-"United Kingdom"
@@ -1691,6 +1689,7 @@ DATAFILE$INST[DATAFILE$INST==  "humboldt university berlin"]<-"humboldt universi
     gsub("universitoo de montreal","macaulay land use research institute",DATAFILE$INST)
     DATAFILE$ascii<-NULL
     
+    DATAFILE<-DATAFILE %>% filter(!INST=="no one by this name")
     
 return(DATAFILE)
 

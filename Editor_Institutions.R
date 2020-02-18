@@ -480,8 +480,8 @@ PLANTECOL<-as_tibble(DATA_LIST[[2]])
 ALLDATA<-bind_rows(ALLDATA,PLANTECOL)
 rm(DATA_LIST,PLANTECOL)
 
-
-
+# ALLDATA_ORIG_FOR_TESTING<-ALLDATA
+# ALLDATA<-ALLDATA_ORIG_FOR_TESTING
 source("functions_data_cleaning/editor_cleaner.R")
 ALLDATA<-editor_cleaner(ALLDATA)
 
@@ -491,6 +491,8 @@ ALLDATA<-country_cleaner(ALLDATA)
 
 source("functions_data_cleaning/institution_cleaner.R")
 ALLDATA<-institution_cleaner(ALLDATA)
+
+
 
 
 
