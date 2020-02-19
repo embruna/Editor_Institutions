@@ -26,7 +26,10 @@ clean_LECO <- function(DATAFILE) {
   # fill in the institutions in subsequent years (only 1st year recorded) and then look for any thiat might need
   # to be double checked
   head(DATAFILE,10)
-  DATAFILE<-DATAFILE %>% fill(INST,.direction="down")
+  DATAFILE<-DATAFILE %>%
+    group_by(LAST_NAME,FIRST_NAME) %>% 
+    fill(INST,.direction="down")
+  
   DATAFILE<-DATAFILE %>% select(-X,-X.1,-X.2,-X.3,-X.4)
   DATAFILE<-rename(DATAFILE,"TITLE"="TITLE.x")
   

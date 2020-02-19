@@ -110,7 +110,7 @@ rm(folder,file_list,i)
 AUK_raw<-AUK.csv
 source("functions_data_import/clean_AUK.R")
 AUK<-clean_AUK(AUK_raw)
-rm(AUK_raw,AUK.csv)
+rm(AUK_raw,AUK.csv,clean_AUK)
 ##############################################################
 # CONDOR
 ##############################################################
@@ -445,6 +445,8 @@ OECOLOGIA<-as_tibble(DATA_LIST[[2]])
 ALLDATA<-bind_rows(ALLDATA,OECOLOGIA)
 rm(DATA_LIST,OECOLOGIA)
 
+
+#TODO: LECO NEEDS CORRECTION!!!!! James indicates mistakes, but not what they are.
 source("functions_data_cleaning/PJ_LECO_corrections.R")
 DATA_LIST<-PJ_LECO_corrections(ALLDATA)
 ALLDATA<-as_tibble(DATA_LIST[[1]])
@@ -482,12 +484,15 @@ rm(DATA_LIST,PLANTECOL)
 
 # ALLDATA_ORIG_FOR_TESTING<-ALLDATA
 # ALLDATA<-ALLDATA_ORIG_FOR_TESTING
+
+#this adds a column to flag all those needing an INST check
+ALLDATA$INST_CHECK<-NA
+
 source("functions_data_cleaning/editor_cleaner.R")
 ALLDATA<-editor_cleaner(ALLDATA)
 
 source("functions_data_cleaning/country_cleaner.R")
 ALLDATA<-country_cleaner(ALLDATA)
-
 
 source("functions_data_cleaning/institution_cleaner.R")
 ALLDATA<-institution_cleaner(ALLDATA)
