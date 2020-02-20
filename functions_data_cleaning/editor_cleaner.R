@@ -62,6 +62,9 @@
     #####
     
     
+    DATAFILE$LAST_NAME[DATAFILE$LAST_NAME=="Cymerman"& DATAFILE$JOURNAL=="LECO"]<-"Hepinstall-Cymerman"
+    
+    
     DATAFILE$INST[DATAFILE$LAST_NAME=="Voigt"& DATAFILE$JOURNAL=="OECOL" &
                     (DATAFILE$YEAR==2013|DATAFILE$YEAR==2014)]<-"leibniz institute for zoo and wildlife research"
     
@@ -74,6 +77,11 @@
     DATAFILE$INST_CHECK[DATAFILE$LAST_NAME=="Holzner"& DATAFILE$JOURNAL=="PLANTECOL" &
                     (DATAFILE$YEAR>1984 & DATAFILE$YEAR<1988)]<-"2x inst"
     
+    DATAFILE$CITY[DATAFILE$LAST_NAME=="Korner"& DATAFILE$JOURNAL=="OECOL" &
+                          (DATAFILE$YEAR>1989 & DATAFILE$YEAR<2015)]<-"Basel"
+    
+    DATAFILE$COUNTRY[DATAFILE$LAST_NAME=="Korner"& DATAFILE$JOURNAL=="OECOL" &
+                    (DATAFILE$YEAR>1989 & DATAFILE$YEAR<2015)]<-"Switzerland"
     
     DATAFILE<-DATAFILE[!(DATAFILE$LAST_NAME=="Bever" & DATAFILE$YEAR==2012 & DATAFILE$JOURNAL=="OECOL"),]
     DATAFILE<-DATAFILE[!(DATAFILE$LAST_NAME=="Lichstein" & DATAFILE$YEAR==2012 & DATAFILE$JOURNAL=="OECOL"),]

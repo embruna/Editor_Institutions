@@ -66,7 +66,7 @@ OECOLOGIA<-full_join(OECOLOGIA, OECOL_inst, by = c("LAST_NAME","FIRST_NAME","YEA
 
 OECOLOGIA$JOURNAL<-"OECOL"
 
-OECOLOGIA<-OECOLOGIA %>% group_by(editor_id) %>%
+OECOLOGIA<-foo<-OECOLOGIA %>% group_by(LAST_NAME,FIRST_NAME,COUNTRY) %>%
   fill(INST,CITY,.direction="down")
 
 OECOLOGIA$editor_id<-as.factor(OECOLOGIA$editor_id)

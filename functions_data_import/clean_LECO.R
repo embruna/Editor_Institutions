@@ -1,6 +1,6 @@
 #FUNCTION TO CLEAN AND PROCESS LECO
 clean_LECO <- function(DATAFILE) {
-  
+  # DATAFILE<-LECO_raw
   DATAFILE$INST<-as.character(DATAFILE$INST)
   DATAFILE$CITY[DATAFILE$INST=="University of Nevada" & DATAFILE$LAST_NAME=="Walker"]<-"Las Vegas"
   
@@ -64,7 +64,7 @@ clean_LECO <- function(DATAFILE) {
   # DATAFILE<-DATAFILE %>% fill(INST,UNIT,CITY,STATE,.direction="down")
   
   
-  DATAFILE<-DATAFILE %>% arrange(LAST_NAME,FIRST_NAME,YEAR) 
+  DATAFILE<-DATAFILE %>% group_by(LAST_NAME,FIRST_NAME)
   DATAFILE<-DATAFILE %>% fill(INST,UNIT,STATE,CITY,.direction="down")
   # 
   DATAFILE<-DATAFILE %>% 
