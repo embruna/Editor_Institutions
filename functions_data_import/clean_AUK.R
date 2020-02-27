@@ -5,6 +5,7 @@ clean_AUK <- function(DATAFILE) {
   DATAFILE<-DATAFILE%>% select(JOURNAL,YEAR, editor_id,EDITOR_TITLE,FIRST_NAME,
                      MIDDLE_NAME,LAST_NAME,INST,UNIT,CITY,STATE,
                      COUNTRY,NOTES)
+  DATAFILE<-DATAFILE %>% rename("TITLE"="EDITOR_TITLE") 
   DATAFILE$INST<-gsub("None given",NA, DATAFILE$INST)
   DATAFILE$UNIT<-gsub("None given",NA, DATAFILE$UNIT)
   DATAFILE$CITY<-gsub("None given",NA, DATAFILE$CITY)

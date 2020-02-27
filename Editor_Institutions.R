@@ -520,8 +520,6 @@ source("functions_data_cleaning/editor_ID_corrections.R")
 ALLDATA<-editor_ID_corrections(ALLDATA)
 
 
-
-
 ##########################
 # TODO: ADD AN EDITOR_ID to GCB and MARECOL
 summary(ALLDATA$editor_id)
@@ -579,6 +577,7 @@ which(ALLDATA$COUNTRY=="")
 ##############################################################
 ##############################################################
 # ALLDATA$INST[ALLDATA$INST=="."]<-NA
+ALLDATA$INST[ALLDATA$INST=="missing"]<-NA
 ALLDATA<-as.data.frame(ALLDATA)
 ALLDATA$JOURNAL<-as.factor(ALLDATA$JOURNAL)
 

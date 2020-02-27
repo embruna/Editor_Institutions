@@ -98,6 +98,7 @@ levels(DATAFILE$INST) <- c(levels(DATAFILE$INST),"University of Missouri Columbi
                            "Smithsonian National Museum of Natural History",
                            "Smithsonian National Zoological Park",
                            "Laboratoire Associe de Modelisation des Plantes",
+                           "conicet consejo nacional de investigaciones cientificas y tecnicas",
                            "fao food and agriculture organization",
                            "Southern Illinois University",
                            "universite libre de bruxelles",
@@ -156,6 +157,23 @@ levels(DATAFILE$INST) <- c(levels(DATAFILE$INST),"University of Missouri Columbi
                            "utrecht university",
                            "wageningen agricultural university and research center alterra",
                            "institute of terrestrial ecology")
+
+
+DATAFILE$CITY[DATAFILE$CITY=="W<9f>rzburg"]<-"Wurzburg"
+DATAFILE$CITY[DATAFILE$CITY=="K<9a>ln"]<-"Cologne"
+DATAFILE$CITY[DATAFILE$CITY=="G<9a>ttingen"]<-"Gottingen"
+DATAFILE$CITY[DATAFILE$CITY=="Z<81>rich"]<-"Zurich"
+DATAFILE$CITY[DATAFILE$CITY=="M<9f>nchen"]<-"Munich"
+
+DATAFILE$STATE[DATAFILE$STATE=="Z<81>rich"]<-"Zurich"
+
+DATAFILE$UNIT[DATAFILE$UNIT=="Estaci<f3>n Biol<f3>gica de Do<f1>ana"]<-"Estacion Biologica de Donana"
+DATAFILE$UNIT[DATAFILE$UNIT=="Departamento de Ecolog<90>a"]<-"Departamento de Ecologia"
+DATAFILE$UNIT[DATAFILE$UNIT=="FB Biologie/Chemie/<80>kologie"]<-"FB Biologie/Chemiekologie"
+DATAFILE$UNIT[DATAFILE$UNIT=="Institut f<99>r Biologie (II)"]<-"Institut fur Biologie (II)"
+
+
+
 
 
 DATAFILE$INST<-as.character(DATAFILE$INST)
@@ -1090,8 +1108,9 @@ DATAFILE$INST[DATAFILE$INST== "cnrs centre decologie fonctionnelle et evolutive"
 DATAFILE$INST[DATAFILE$INST== "christ church"]<-"christchurch"
 DATAFILE$INST[DATAFILE$INST=="cisro sustainable ecosystems" ]<-"csiro sustainable ecosystems"
 DATAFILE$INST[DATAFILE$INST=="columbia universily" ]<-"columbia university"
-DATAFILE$INST[DATAFILE$INST== "commonwealth scientific and industrial research organisation" ]<-"csiro"
-DATAFILE$INST[DATAFILE$INST== "commonwealth scientific and industrial research organisation (csiro)"]<-"csiro"
+DATAFILE$INST[DATAFILE$INST== "commonwealth scientific and industrial research organisation" ]<-"csiro commonwealth scientific and industrial research organisation"
+DATAFILE$INST[DATAFILE$INST== "csiro" ]<-"csiro commonwealth scientific and industrial research organisation"
+DATAFILE$INST[DATAFILE$INST== "commonwealth scientific and industrial research organisation (csiro)"]<-"csiro commonwealth scientific and industrial research organisation"
 DATAFILE$INST[DATAFILE$INST== "cisro" & DATAFILE$UNIT=="Tropical Ecosystems"]<-"csiro tropical ecosystems"
 DATAFILE$INST[DATAFILE$INST== "consejo nacl invest cient and tecn"]<-"consejo nacional de investigaciones cientificas y tecnicas" 
 DATAFILE$INST[DATAFILE$INST== "davis"]<-"university of california davis"
@@ -1267,6 +1286,7 @@ DATAFILE$INST[DATAFILE$INST==  "humboldt university berlin"]<-"humboldt universi
     DATAFILE$INST[DATAFILE$INST=="centre decologie fonctionnelle et evolutive cnrs"]<-"cnrs institut des sciences de levolution montpellier"
     DATAFILE$INST[DATAFILE$INST=="consejo nacional de investigaciones cientificas y tecnicas"]<-"conicet"
     DATAFILE$INST[DATAFILE$INST=="investigador conicet"]<-"CONICET CCT Mendoza"
+    DATAFILE$INST[DATAFILE$INST=="conicet"]<-"conicet consejo nacional de investigaciones cientificas y tecnicas"
     DATAFILE$INST[DATAFILE$INST=="centro nacional patagonico conicet"]<-"conicet centro nacional patagonico"
     DATAFILE$INST[DATAFILE$INST=="ibigeo conicet"]<-"conicet ibigeo"
     DATAFILE$INST[DATAFILE$INST=="copenhagen university"]<-"university of copenhagen"
@@ -1433,7 +1453,7 @@ DATAFILE$INST[DATAFILE$INST==  "humboldt university berlin"]<-"humboldt universi
     DATAFILE$COUNTRY[DATAFILE$INST=="arete associates"]<-"USA"
     DATAFILE$UNIT[DATAFILE$INST=="arnold arboretum of harvard university"]<-"arnold arboretum"
     DATAFILE$INST[DATAFILE$INST=="arnold arboretum of harvard university"]<-"harvard university"
-    DATAFILE$INST[DATAFILE$INST=="australian commonwealth scientific and research organization"]<-"csiro"
+    DATAFILE$INST[DATAFILE$INST=="australian commonwealth scientific and research organization"]<-"csiro commonwealth scientific and industrial research organisation"
     DATAFILE$COUNTRY[DATAFILE$INST=="australian national university"]<-"Australia"
     DATAFILE$INST[DATAFILE$INST=="basf plant science"]<-"basf"
     DATAFILE$COUNTRY[DATAFILE$INST=="biological centre"]<-"Netherlands"
@@ -1633,7 +1653,7 @@ DATAFILE$INST[DATAFILE$INST==  "humboldt university berlin"]<-"humboldt universi
     DATAFILE$INST[DATAFILE$INST=="waikato university"]<-"university of waikato"
     DATAFILE$INST[DATAFILE$INST=="utrecht"]<-"utrecht university"
     DATAFILE$INST[DATAFILE$INST=="wageningen university research center alterra"]<-"wageningen agricultural university and research center alterra"
-    
+    DATAFILE$INST[DATAFILE$INST=="retired"]<-"unaffiliated"
     
     # TODO: check to see if these are working because it may be an ascii problem
     # university of st andrews	university of st. andrews
@@ -1695,7 +1715,18 @@ DATAFILE$INST[DATAFILE$INST==  "humboldt university berlin"]<-"humboldt universi
     gsub("universitoo de montreal","macaulay land use research institute",DATAFILE$INST)
     DATAFILE$ascii<-NULL
     
+    # ALLDATA$validEnc<-validEnc(ALLDATA$COUNTRY)
+    # summary(ALLDATA$validEnc<-validEnc(ALLDATA$COUNTRY))
+    # foo<-ALLDATA %>% filter(validEnc==FALSE)
+    # foo<-distinct(foo, COUNTRY)
+    #DONT FORGET - FILTER WILL REMOVE ALL WITH NA in the conditions
+    DATAFILE<-DATAFILE %>% replace_na(list(INST = "missing"))
     DATAFILE<-DATAFILE %>% filter(!INST=="no one by this name")
+    
+    # DATAFILE<-DATAFILE %>% filter(INST==!"no one by this name")
+    # DATAFILE<-DATAFILE[!DATAFILE$INST == "no one by this name", ]
+    
+    
     
 return(DATAFILE)
 
