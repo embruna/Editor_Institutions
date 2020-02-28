@@ -872,41 +872,16 @@ dup_INST<-ALLDATA %>%
 dup_INST
 write.csv(dup_INST, file="./output_review/eds_dup_INST.csv", row.names = F) #export it as a csv file
 
-
-
 ############################
 # TODO: Some of the editors are in multiple times because they have multiple jobs. ID and fix
 # ie they could be listed in seperate rows as EIC and SE
-
-############################
-
-############################
-# TODO: Still left to fix and 2x
-##########################################
-# 2x claudia bieber. CVM is in austria but country is australia
-# BIOCON: editor_id 2874 and 2875 are the same person!			
-# BIOCON: editor_id 3024 country should be Singapore in 2009
-# JECOL: editor_id 1279 in 2013: country and state mismatch 
-# JECOL editor_ID 703 in 2014: remove zip from state
-# JECOL editor_ID 2408 in 2010-2013 should country be MEX or GER? Apparently MEX (mex in state, not country)
-# JECOL: several have country listed in state column  
-# 2x ythat Vegetation Survey of Western Australia shouldn’t be Univ of Western Australia
-# ingrid parmentier should be Universite Libre de Bruxelles 2x journal
-# James Cook University ONE OF THESE IS JAMES COOK UNIVERSITY TOWNSVILLE
-# Natiral History Museum need to 2x each some are us some are UK
+# Editor ID 1972 missing last name
+# 2x that Vegetation Survey of Western Australia shouldn’t be Univ of Western Australia
 # NEED TO GET PEOPLE BY CAMPUS UNAM
-# no one by this name
-# NoInst
-# Some others at imperail college (Ascot) are also NERC Centre for Population Biology (silwood park)
+# Some others at imperial college (Ascot) are also NERC Centre for Population Biology (silwood park)
 # Oregon Trail
-# Pfenning does he have two researcher iD's? 
-# Stephen Simpson Ecology 2002 2x if Oxford, UK, Australia 
-# 1 Traveser  Anna       217             2
-# 2 Traveset  Anna       217             2
-# Troy Day not on Amnat board in 12-14, listed as in Australia
-# FUNECOL Data import function has some that still need to be corrected
-# COuntries: , Germanny
-# helen james smithsonian is nat museum nat hst smithsonian
+# check to see if these are working because it may be an ascii problem
+#   university of st andrews	university of st. andrews
 ############################
 # SUMMARY OF HOW MANY MISSING INST BY JOURNAL
 
@@ -942,18 +917,6 @@ ALLDATA %>%
   distinct(LAST_NAME,FIRST_NAME) %>% 
   summarise(n())
 ############################
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

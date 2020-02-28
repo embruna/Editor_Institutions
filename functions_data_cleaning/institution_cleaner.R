@@ -55,7 +55,7 @@ levels(DATAFILE$COUNTRY)
 levels(DATAFILE$COUNTRY) <- c(levels(DATAFILE$COUNTRY),"Russia","Scotland","Northern Ireland")
 DATAFILE$COUNTRY[DATAFILE$COUNTRY=="USSR"]<-"Russia"
 
-# TODO: NEED DO DELETE THESE
+#DELETE THESE
 which(DATAFILE$COUNTRY=="")
 
 ##############################################################
@@ -1655,8 +1655,12 @@ DATAFILE$INST[DATAFILE$INST==  "humboldt university berlin"]<-"humboldt universi
     DATAFILE$INST[DATAFILE$INST=="wageningen university research center alterra"]<-"wageningen agricultural university and research center alterra"
     DATAFILE$INST[DATAFILE$INST=="retired"]<-"unaffiliated"
     
-    # TODO: check to see if these are working because it may be an ascii problem
-    # university of st andrews	university of st. andrews
+    
+    
+    DATAFILE$COUNTRY[DATAFILE$INST=="cinvestav irapuato"]<-"Mexico"
+    DATAFILE$STATE[DATAFILE$INST=="cinvestav irapuato"]<-"Guanajuato"
+    DATAFILE$CITY[DATAFILE$INST=="cinvestav irapuato"]<-"Irapuato"
+    
     DATAFILE$INST[DATAFILE$INST== "university of floridaz center for environmental research" ]<-"helmholtz centre for environmental research"
     
     DATAFILE$INST<-gsub('[.]','',DATAFILE$INST)  

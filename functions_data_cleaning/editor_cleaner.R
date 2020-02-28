@@ -55,6 +55,7 @@
                                "university of vienna",
                                "Fundacion Cedrela",
                                "university of gottingen",
+                               "smithsonian national museum of natural history",
                                "university of wageningen"
                                )
     #### 
@@ -144,7 +145,7 @@
     DATAFILE$editor_id[DATAFILE$LAST_NAME=="Coe" & DATAFILE$FIRST_NAME=="M"]<-2332
     DATAFILE$editor_id[DATAFILE$LAST_NAME=="Krams" & DATAFILE$FIRST_NAME=="Indrikis"]<-70
     
-    
+    DATAFILE$INST[DATAFILE$LAST_NAME=="James" & DATAFILE$FIRST_NAME=="Helen" & DATAFILE$JOURNAL=="AUK"]<-"smithsonian national museum of natural history"
     DATAFILE$INST[DATAFILE$LAST_NAME=="Lonsdale" & DATAFILE$JOURNAL=="JAPE" & DATAFILE$FIRST_NAME=="W"& (DATAFILE$YEAR>1998| DATAFILE$YEAR<2003)]<-"csiro ecosystem sciences"
     DATAFILE$INST[DATAFILE$LAST_NAME=="Heil" & DATAFILE$JOURNAL=="JECOL" & DATAFILE$FIRST_NAME=="Martin" & DATAFILE$INST=="max planck university"]<-"max planck institute for chemical ecology"
     DATAFILE$INST[DATAFILE$LAST_NAME=="Heil" & DATAFILE$JOURNAL=="JECOL" & DATAFILE$FIRST_NAME=="Martin" & DATAFILE$YEAR>2009]<-"cinvestav irapuato"
@@ -237,7 +238,6 @@
     DATAFILE$COUNTRY[DATAFILE$LAST_NAME=="Galdon"&DATAFILE$FIRST_NAME=="Luis"]<-"Spain"
     
     DATAFILE$CITY[DATAFILE$LAST_NAME=="VanDerHeijden" & DATAFILE$INST=="Amsterdam"]<-"Amsterdam"
-    
     
   return(DATAFILE)
   
