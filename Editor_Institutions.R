@@ -338,7 +338,7 @@ rm(ECOLOGY.csv, ECOL_raw)
 
 
 ALLDATA<-bind_rows(CONBIO,
-                   MARECOL,
+                   # MARECOL,
                    NAJFM,
                    NEWPHYT,
                    JZOOL,
@@ -365,6 +365,8 @@ ALLDATA<-bind_rows(CONBIO,
                    CONDOR,
                    AUK,
                    BIOCON)
+
+
 levels(as.factor(ALLDATA$JOURNAL))
 head(ALLDATA,10)
 str(ALLDATA)
@@ -409,6 +411,8 @@ ALLDATA <- ALLDATA %>%
          geo.code_Prior_Class,NOTES,GENDER,TITLE)
 # ############
 # # check to see what is diff between category and category.x
+ALLDATA$CATEGORY<-as.character(ALLDATA$CATEGORY)
+ALLDATA$CATEGORY.x<-as.character(ALLDATA$CATEGORY.x)
 ALLDATA$check<-ALLDATA$CATEGORY==ALLDATA$CATEGORY.x
 summary(ALLDATA$check)
 # those with FALSE are the discrepancy. Turns out it is three where
@@ -536,7 +540,28 @@ ALLDATA$editor_id<-as.factor(ALLDATA$editor_id)
 levels(ALLDATA$editor_id)
 summary(ALLDATA)
 ##########################
+# ALLDATA$CATEGORY<-as.factor(ALLDATA$CATEGORY)
+ALLDATA$TITLE[is.na(ALLDATA$TITLE) & ALLDATA$CATEGORY=="SE"]<-"SE"
+ALLDATA$TITLE[is.na(ALLDATA$TITLE) & ALLDATA$CATEGORY=="AE"]<-"AE"
+ALLDATA$TITLE[is.na(ALLDATA$TITLE) & ALLDATA$CATEGORY=="EIC"]<-"EIC"
+ALLDATA$TITLE[is.na(ALLDATA$TITLE) & ALLDATA$CATEGORY=="SPECIAL"]<-"SPECIAL"
 
+ALLDATA$TITLE[is.na(ALLDATA$TITLE) & is.na(ALLDATA$CATEGORY)]<-"Missing"
+ALLDATA$TITLE[ALLDATA$TITLE=="Missing" & is.na(ALLDATA$CATEGORY)]<-"Missing"
+ALLDATA$CATEGORY[is.na(ALLDATA$CATEGORY)]<-"Missing"
+
+
+###REMOVE THE PRODUCTION STAFF
+ALLDATA$TITLE[ALLDATA$TITLE=="Editorial Assistants"]<-"Editorial Assistant"
+ALLDATA$TITLE[ALLDATA$TITLE=="ME"]<-"Managing Editor"
+ALLDATA$CATEGORY[ALLDATA$TITLE=="Editorial Assistant"]<-"Production"
+ALLDATA$CATEGORY[ALLDATA$TITLE=="Assistant Managing Editor"]<-"Production"
+ALLDATA$CATEGORY[ALLDATA$TITLE=="Managing Editor"]<-"Production"
+ALLDATA$CATEGORY[ALLDATA$TITLE=="Managing editor"]<-"Production"
+ALLDATA$CATEGORY[ALLDATA$TITLE=="Production Editor"]<-"Production"
+
+ALLDATA<-ALLDATA %>% filter(CATEGORY!="Production")
+##############
 # HOW MANY YEARS OF EACH JOURNAL?
 str(ALLDATA)
 JrnlYrs_10<-ALLDATA %>% filter(YEAR>=1985,YEAR<=1994) %>% group_by(JOURNAL) %>% summarise(yrs_per_jrnl=n_distinct(JOURNAL,YEAR)) %>% arrange(yrs_per_jrnl)
@@ -913,9 +938,21 @@ sum(checkINST3$n)
 
 ############################
 # Summary of how many editors
-ALLDATA %>% 
-  distinct(LAST_NAME,FIRST_NAME) %>% 
-  summarise(n())
+foo<-ALLDATA %>% 
+  filter(JOURNAL!="CONDOR") %>%
+  filter(JOURNAL!="AUK") %>%
+  filter(JOURNAL!="AGRONOMY") %>%
+  filter(JOURNAL!="NAJFM") %>%
+  filter(JOURNAL!="MARECOL") %>%
+  filter(JOURNAL!="GCB") %>%
+  distinct(LAST_NAME,FIRST_NAME,INST) %>% 
+  
+  group_by(INST) %>% 
+  summarise(n=n()) %>% 
+  arrange(desc(n))  
+  foo$counter<-(seq(1:nrow(foo))-1)
+  foo$cumsum<-(cumsum(foo$n)-307) 
+  foo$prop<-(foo$cumsum/(sum(foo$n)-307)) *100
 ############################
 
 

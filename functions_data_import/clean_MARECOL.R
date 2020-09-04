@@ -1,14 +1,14 @@
 #FUNCTION TO CLEAN AND PROCESS MARECOL
 clean_MARECOL <- function(DATAFILE) {
-  
+  # DATAFILE<-MARECOL_21July2018.csv
   DATAFILE<-rename(DATAFILE,"VOLUME"="Volume","ISSUE"="Issue")
   # str(DATAFILE)
   DATAFILE$no<-NULL
   DATAFILE$editor_id<-NA
   # DATAFILE<- DATAFILE %>% extract(NAME, c("FIRST_NAME","LAST_NAME"), "([^ ]+) (.*)")
   
-  
-  DATAFILE<- DATAFILE %>% extract(NAME, c("FIRST_NAME","LAST_NAME"), "([^ ]+) (.*)")
+  DATAFILE$NAME<-as.character(DATAFILE$NAME)
+  DATAFILE<- DATAFILE %>% extract(NAME, c("FIRST_NAME","LAST_NAME"),sep = " ", extra="merge", fill = "left",remove=FALSE)
   DATAFILE<-DATAFILE %>% separate(LAST_NAME, c("MIDDLE_NAME", "LAST_NAME"),sep = " ", extra="merge", fill = "left",remove=FALSE)
   DATAFILE<-DATAFILE %>% separate(LAST_NAME, c("MIDDLE_NAME", "LAST_NAME"),sep = ". ", extra="merge",fill = "left",remove=FALSE)
   DATAFILE$FIRST_NAME<-gsub("[.]","",DATAFILE$FIRST_NAME)

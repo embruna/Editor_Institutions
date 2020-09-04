@@ -1,7 +1,11 @@
 #FUNCTION TO CLEAN AND PROCESS GCB
 clean_GCB <- function(DATAFILE) {
-  library(tidyverse)
-  DATAFILE<- DATAFILE %>% extract(NAME, c("FIRST_NAME","LAST_NAME"), "([^ ]+) (.*)")
+  # DATAFILE<-GCBdata.csv
+    library(tidyverse)
+  str(DATAFILE$NAME)
+  DATAFILE$NAME<-as.vector(DATAFILE$NAME)
+  # DATAFILE<- DATAFILE %>% separate(NAME, c("FIRST_NAME","LAST_NAME"), "([^ ]+) (.*)")
+  DATAFILE<- DATAFILE %>% separate(NAME, c("FIRST_NAME","LAST_NAME"),sep = " ", extra="merge", fill = "left",remove=FALSE)
   DATAFILE<-DATAFILE %>% separate(LAST_NAME, c("MIDDLE_NAME", "LAST_NAME"),sep = " ", extra="merge", fill = "left",remove=FALSE)
   DATAFILE$editor_id<-NA
   # head(DATAFILE,10)

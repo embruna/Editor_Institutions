@@ -1,4 +1,5 @@
 #FUNCTION TO CLEAN AND PROCESS BIOCON
+# DATAFILE<-BIOCON_TS.csv
 clean_BIOCON <- function(DATAFILE) {
     # DELETE THEIR RECORD FOR GIVEN YEAR (not on board)
   DATAFILE<-DATAFILE[!(DATAFILE$editor_id==2399 & DATAFILE$YEAR==1997),]
@@ -61,20 +62,26 @@ clean_BIOCON <- function(DATAFILE) {
   # DATAFILE<-DATAFILE %>% fill(INST,UNIT,CITY,STATE,COUNTRY,.direction="down")
   
   # This will add "missing" to the first row of a group if the first INST is NA
-  
+  str(DATAFILE$LAST_NAME)
+  DATAFILE$LAST_NAME<-as.character(DATAFILE$LAST_NAME)
+  DATAFILE$FIRST_NAME<-as.character(DATAFILE$FIRST_NAME)
+  DATAFILE$INST<-as.character(DATAFILE$INST)
   DATAFILE<-DATAFILE %>% 
     group_by(LAST_NAME,FIRST_NAME) %>% 
     mutate(INST = ifelse((row_number()==1 & is.na(INST)), "missing", INST))
   
+  DATAFILE$UNIT<-as.character(DATAFILE$UNIT)
   
   DATAFILE<-DATAFILE %>% 
     group_by(LAST_NAME,FIRST_NAME) %>% 
     mutate(UNIT = ifelse((row_number()==1 & is.na(UNIT)), "missing", UNIT))
+  DATAFILE$STATE<-as.character(DATAFILE$STATE)
   
   DATAFILE<-DATAFILE %>% 
     group_by(LAST_NAME,FIRST_NAME) %>% 
     mutate(STATE = ifelse((row_number()==1 & is.na(STATE)), "missing", STATE))
   
+  DATAFILE$CITY<-as.character(DATAFILE$CITY)
   
   DATAFILE<-DATAFILE %>% 
     group_by(LAST_NAME,FIRST_NAME) %>% 
