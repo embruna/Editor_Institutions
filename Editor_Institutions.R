@@ -1,13 +1,5 @@
 
 # R CODE FOR IMPORTING, MANIPULATING, AND ANALYZING DATA ON THE INSTITUTIONS OF JOURNAL EDITORS 
-
-# Changes to be made: 
-# 1) If possible pull the csv file directly uploaded as "global_uni1" directly from the repo 
-# 2) If possible download "world_university_names.sql" directly from the repo
-# 3) I did a bunch of hacking around to get the countries and uni names, when should be able to get 
-#    much more easily by making quesries using SQL tools. 
-# 4) WHY IS IT PUTTING AMERICAN UNIVERSITY - DUBAI in INDIA? Change country code un unis.df
-
 # R & Package versions:
 # R version = 3.3.1 (2016-06-21)
 # tidyverse = 1.1.1
@@ -62,9 +54,6 @@ DRYADDATA<-bind_rows(Cho,Espin, id=NULL)
 DRYADDATA<-DRYADDATA %>% select(-geo.code,-INCOME_LEVEL,-REGION)
 levels(as.factor(DRYADDATA$JOURNAL))
 rm(Cho,Espin)
-
-# TODO: NEED TO USE THE ALLDATA FILE, WHEN CORRECTED, TO MAKE ANY NECESSARY CORRECTIONS TO THE 
-# ALREADY ARCHIVED CHO AND ESPIN DATA.  THIS WILL ALSO GIVE YOU THE MOST UP TO DATE ARCHIVE 
 
 ##############################################################
 ##############################################################
@@ -338,7 +327,7 @@ rm(ECOLOGY.csv, ECOL_raw)
 
 
 ALLDATA<-bind_rows(CONBIO,
-                   # MARECOL,
+                   MARECOL,
                    NAJFM,
                    NEWPHYT,
                    JZOOL,
@@ -492,6 +481,8 @@ ALLDATA_ORIG_FOR_TESTING<-ALLDATA
 #this adds a column to flag all those needing an INST check
 ALLDATA$INST_CHECK<-NA
 
+
+
 source("functions_data_cleaning/editor_cleaner.R")
 ALLDATA<-editor_cleaner(ALLDATA)
 
@@ -509,8 +500,17 @@ ALLDATA<-institution_cleaner(ALLDATA)
 # ADD PATRICK JAMES CORRECTIONS
 ########################
 str(ALLDATA)
+
+
 # ALLDATA$VOLUME.check<-ALLDATA$VOLUME.x==ALLDATA$VOLUME.y
 # summary(ALLDATA$VOLUME.x==ALLDATA$VOLUME.y)
+
+
+# source("functions_data_cleaning/institution_cleaner.R")
+# ALLDATA<-institution_cleaner(ALLDATA)
+
+
+
 source("functions_data_cleaning/JamesCorrections.R")
 ALLDATA<-JamesCorrections(ALLDATA)
 
@@ -523,6 +523,11 @@ ALLDATA<-institution_cleaner(ALLDATA)
 source("functions_data_cleaning/editor_ID_corrections.R")
 ALLDATA<-editor_ID_corrections(ALLDATA)
 
+ALLDATA<-as_tibble(ALLDATA)
+ALLDATA$CITY<-tolower(ALLDATA$CITY)
+ALLDATA$FIRST_NAME<-tolower(ALLDATA$FIRST_NAME)
+ALLDATA$LAST_NAME<-tolower(ALLDATA$LAST_NAME)
+ALLDATA$MIDDLE_NAME<-tolower(ALLDATA$MIDDLE_NAME)
 
 ##########################
 # TODO: ADD AN EDITOR_ID to GCB and MARECOL
@@ -712,6 +717,7 @@ ALLDATA$JOURNAL<-as.factor(ALLDATA$JOURNAL)
 
 ###############################
 # REMOVE ANY ROWS WITH NO DATA
+ALLDATA<-as_tibble(ALLDATA)
 ALLDATA<-ALLDATA %>% drop_na(LAST_NAME,FIRST_NAME)
 ###############################
 
@@ -736,32 +742,48 @@ ALLDATA<-distinct(ALLDATA,JOURNAL,LAST_NAME,FIRST_NAME,YEAR,TITLE,.keep_all = TR
 
 write.csv(ALLDATA,"./data_clean/InstitutionData_clean.csv",row.names = FALSE)
 
-# ALLDATA<-ALLDATA %>% filter(JOURNAL=="AJB"|
-#                               JOURNAL=="AMNAT"|
-#                             JOURNAL=="AREES"|
-#                             JOURNAL== "BIOCON"|
-#                             JOURNAL== "BITR"|
-#                             JOURNAL== "CONBIO"|
-#                             JOURNAL== "ECOGRAPHY"|
-#                             JOURNAL== "ECOLOGY" | 
-#                             JOURNAL== "EVOL"|
-#                             JOURNAL== "FEM"|
-#                             JOURNAL== "FUNECOL"|
-#                             JOURNAL=="JANE"|
-#                             JOURNAL=="JAPE"|
-#                             JOURNAL=="JBIOG"|
-#                             JOURNAL== "JECOL"|
-#                             JOURNAL== "JTE"|
-#                             JOURNAL== "JZOOL"|
-#                             JOURNAL== "LECO"|
-#                             JOURNAL=="NEWPHYT"|
-#                             JOURNAL=="OECOL"|
-#                             JOURNAL== "OIKOS"|
-#                             JOURNAL== "PLANTECOL")
+
+#EXCLUDE CONDOR, AUK, AG, NAJFM, MARECOL, GCB
+# 
+ALLDATA_ORIG_FOR_TESTING<-ALLDATA
+# ALLDATA<-ALLDATA_ORIG_FOR_TESTING
+# ALLDATA<-ALLDATA %>% filter(JOURNAL!="CONDOR"&JOURNAL!="AUK"&JOURNAL!="AGRONOMY"&
+#                               JOURNAL!="NAJFM"&JOURNAL!="MARECOL"&JOURNAL!="GCB")
+ALLDATA<-ALLDATA %>% filter(JOURNAL!="AGRONOMY"&JOURNAL!="NAJFM"&JOURNAL!="MARECOL")
+
 ###########################
 # TODO: FINAL REVIEW OF DATA
 ############################
 ############################
+# # TODO: Check for people at institutions with > 1 campus
+# colnames(ALLDATA)
+MultiCampus<-ALLDATA %>%
+  filter(INST=="university of arkansas"|
+           INST=="university of alaska"|
+           INST=="university of california"|
+           INST=="university of hawaii"|
+           INST=="university of massachusetts"|
+           INST=="university of minnesota"|
+           INST=="university of nevada"|
+           INST=="university of north carolina"|
+           INST=="university of south carolina"|
+           INST=="university of texas"|
+           INST=="university of washington"|
+           INST=="usgs united states geological survey"|
+           INST=="smithsonian institution"|
+           INST=="csiro commonwealth scientific and industrial research organisation"|
+           INST=="conicet consejo nacional de investigaciones cientificas y tecnicas"|
+           INST=="james cook university"|
+           INST=="north carolina"|
+           INST=="usfs us forest service"|
+           INST=="usda us department of agriculture"|
+           INST=="university of north carolina") %>%
+  distinct(editor_id,INST,CITY,.keep_all=TRUE) %>%
+  select(JOURNAL,YEAR,,editor_id, FIRST_NAME, MIDDLE_NAME, LAST_NAME, INST, UNIT, CITY, COUNTRY)
+# 
+write.csv(MultiCampus,"./output_review/MultiCampus.csv",row.names = FALSE)
+
+
 # TODO: Review the insitutions for any duplicates, spelling errors, etc
 
 # LIST OF ALL INSTITIONS
@@ -778,6 +800,11 @@ ALLDATA_inst_check_by_country<-ALLDATA %>%
   arrange(COUNTRY,INST)
 write_csv(ALLDATA_inst_check_by_country,"./output_review/ALLDATA_inst_check_by_country.csv")
 
+
+
+
+
+
 checkINST<-ALLDATA %>% 
   select(INST) %>% 
   distinct(INST) %>% 
@@ -791,10 +818,39 @@ NameSimilarityDF<-name.check(checkINST$INST)
 write.csv(NameSimilarityDF, file="./output_review/NameSimilarityDF_check.csv", row.names = F) #export it as a csv file
 ############################
 
+
+# LIST OF ALL INSTITIONS with city (to tell apart U of C, U Texas, etc)
+ALLDATA_inst_city_check_by_country<-ALLDATA %>%
+  select(INST,CITY,COUNTRY) %>% 
+  distinct(INST,CITY,COUNTRY) %>% 
+  arrange(COUNTRY,INST,CITY) %>% 
+  group_by(INST) %>% 
+  mutate(n=n()) %>%
+  arrange(desc(n)) %>% 
+  filter(n>1)  
+write_csv(ALLDATA_inst_city_check_by_country,"./output_review/ALLDATA_inst_city_check_by_country.csv")
+
+checkINST<-ALLDATA %>% 
+  select(INST) %>% 
+  distinct(INST) %>% 
+  arrange(INST)
+# similarity index to to find mispellings etc.
+source("./functions_data_cleaning/name.check.R")
+checkINST$INST<-as.character(checkINST$INST)
+checkINST$INST[checkINST$INST==""]<-NA
+str(checkINST$INST)
+NameSimilarityDF<-name.check(checkINST$INST)
+write.csv(NameSimilarityDF, file="./output_review/NameSimilarityDF_check.csv", row.names = F) #export it as a csv file
+############################
+
+
+
+
+
 ############################
 # TODO: FIND and correct any editors with both an editor_id and NA for editor_id
-ALLDATA$LAST_NAME<-stri_trans_totitle(ALLDATA$LAST_NAME)
-ALLDATA$FIRST_NAME<-stri_trans_totitle(ALLDATA$FIRST_NAME)
+# ALLDATA$LAST_NAME<-stri_trans_totitle(ALLDATA$LAST_NAME)
+# ALLDATA$FIRST_NAME<-stri_trans_totitle(ALLDATA$FIRST_NAME)
 
 # ALLDATA$editor_id.y<-NULL
 # ALLDATA<-ALLDATA %>% rename("editor_id"="editor_id.x")
@@ -839,6 +895,20 @@ dup_edID3
 write.csv(dup_edID3, file="./output_review/dup_edID3.csv", row.names = F) #export it as a csv file
 ############################
 
+############################
+# TODO: find cases where the diff editors has same editor_id
+dup_edIDx<-ALLDATA %>% 
+  select(JOURNAL,LAST_NAME,editor_id) %>% 
+  filter(editor_id!="TBD") %>% 
+  group_by(editor_id) %>% 
+  mutate(n_eds=n_distinct(LAST_NAME)) %>% 
+  distinct(LAST_NAME,editor_id,.keep_all=TRUE) %>%
+  arrange(desc(editor_id,LAST_NAME,FIRST_NAME)) %>% 
+  filter(n_eds>1) 
+dup_edIDx 
+# dup_edID3 <-dup_edID3 %>% group_by(FIRST_NAME,LAST_NAME) %>%  arrange(editor_id) %>% slice(2)
+write.csv(dup_edIDx, file="./output_review/dup_edIDx.csv", row.names = F) #export it as a csv file
+############################
 
 ############################
 # TODO: find cases where the all potential cases of editor with >1 editor_id, including missing
@@ -897,16 +967,6 @@ dup_INST<-ALLDATA %>%
 dup_INST
 write.csv(dup_INST, file="./output_review/eds_dup_INST.csv", row.names = F) #export it as a csv file
 
-############################
-# TODO: Some of the editors are in multiple times because they have multiple jobs. ID and fix
-# ie they could be listed in seperate rows as EIC and SE
-# Editor ID 1972 missing last name
-# 2x that Vegetation Survey of Western Australia shouldn’t be Univ of Western Australia
-# NEED TO GET PEOPLE BY CAMPUS UNAM
-# Some others at imperial college (Ascot) are also NERC Centre for Population Biology (silwood park)
-# Oregon Trail
-# check to see if these are working because it may be an ascii problem
-#   university of st andrews	university of st. andrews
 ############################
 # SUMMARY OF HOW MANY MISSING INST BY JOURNAL
 
@@ -1070,3 +1130,4 @@ head(NamesDF)
 write.csv(NamesDF, file="uniNameCheck_each_vs_each.csv", row.names = T) #export it as a csv file
 #
 #
+

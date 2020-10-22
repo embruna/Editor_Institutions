@@ -3,12 +3,13 @@ AnalysisData<-read_csv("./data_clean/InstitutionData_clean.csv")
 AnalysisData$JOURNAL<-as.factor(AnalysisData$JOURNAL)
 AnalysisData$INST<-as.factor(AnalysisData$INST)
 AnalysisData<-AnalysisData %>%    
-  filter(!JOURNAL %in% c("NAJFM","OECOL","NAJFM")) %>%
+  filter(!JOURNAL %in% c("NAJFM","AGRONOMY","MARECOL")) %>%
   filter(!INST=="missing") %>% 
-  na.omit(INST)
+  drop_na(INST) %>% 
+  select(-COUNTRY_Prior_Class,-geo.code,
+         -geo.code_Prior_Class,
+         -GENDER, -NOTES,-INST_CHECK)
 
-
-summary(AnalysisData)
 
 AnalysisData<-droplevels(AnalysisData)
 ##############################################################
@@ -37,7 +38,7 @@ summary(AnalysisData$YEAR)
 
 
 
-eds<-AnalysisData %>% summarise(n_distinct(editor_id.x))
+eds<-AnalysisData %>% summarise(n_distinct(editor_id))
 eds
 
 
@@ -45,23 +46,59 @@ No_Inst<-AnalysisData %>% summarise(n_distinct(INST))
 No_Inst
 
 # Total Number of Inst (all jrnls pooled)  vs. Year
-
 InstPerYr<-AnalysisData %>% group_by(YEAR) %>% summarize(InstPerYear = n_distinct(INST))
 InstPerYr
 
-EdsPerYr<-AnalysisData %>% group_by(YEAR) %>% summarize(EdsPerYear = n_distinct(editor_id.x))
+EdsPerYr<-AnalysisData %>% group_by(YEAR) %>% summarize(EdsPerYear = n_distinct(editor_id))
 EdsPerYr
 
 
-# Total Institutions from each Inst
-EdsByInst<-AnalysisData %>% select(INST,editor_id.x)
-EdsByInst<-EdsByInst %>% count(INST) 
-EdsByInst<-EdsByInst %>% arrange(desc(n))
+# Total "Editorial Years" for each Inst
+EdsByInst<-AnalysisData %>% 
+  select(INST,editor_id) %>% 
+  count(INST) %>% 
+  arrange(desc(n)) %>% 
+  mutate(perc=n/sum(n)*100)
+EdsByInst
 
-EdsByInst_70<-EdsByInst %>% slice(1:70)
-EdsByInst_70
-sum(EdsByInst_20$n)/sum(EdsByInst$n)
 
+topX<-10
+EdsByInst_topX<-EdsByInst %>% 
+  slice(1:topX)
+EdsByInst_topX
+
+
+# Inst of individual editors (accross all years)
+Inst_by_Ed<-AnalysisData %>% 
+  select(INST,editor_id,COUNTRY) %>% 
+  group_by(INST,COUNTRY) %>% 
+  summarize(n=n_distinct(editor_id)) %>% 
+  arrange(desc(n)) %>% 
+  ungroup() %>% 
+  mutate(perc=n/sum(n)*100) %>% 
+  mutate(cumPerc=cumsum(perc))
+Inst_by_Ed
+sum(Inst_by_Ed$n)
+
+topY<-200
+Inst_by_Ed_topY<-Inst_by_Ed %>% 
+  slice(1:topY)
+Inst_by_Ed_topY
+
+
+Ed_by_name<-AnalysisData %>% 
+  group_by(FIRST_NAME) %>% 
+  summarize(n=n_distinct(editor_id)) %>% 
+  arrange(desc(n))
+Ed_by_name
+
+
+
+Ed_by_country<-AnalysisData %>% 
+  group_by(COUNTRY) %>% 
+  summarize(n=n_distinct(editor_id)) %>% 
+  arrange(desc(n))
+Ed_by_country
 
 ##############################################################
 ##############################################################
@@ -72,11 +109,11 @@ sum(EdsByInst_20$n)/sum(EdsByInst$n)
 ##############################################################
 
 source("./functions_analysis/Country.Codes.R")
-Country.Codes(ALLDATA)
+AnalysisData<-Country.Codes(AnalysisData)
 
 
 source("./functions_analysis/AddIncomeRegion.R")
-AddIncomeRegion(ALLDATA)
+AnalysisData<-AddIncomeRegion(AnalysisData)
 
 
 
@@ -117,7 +154,7 @@ INSTperYR
 ##############################################################
 # Institutional Diversity (all journals pooled) 
 # Used in Figure --
-DivDataPooled<-AnalysisData %>% group_by(YEAR, INST) %>% summarize(Total = n_distinct(editor_id.x)) 
+DivDataPooled<-AnalysisData %>% group_by(YEAR, INST) %>% summarize(Total = n_distinct(editor_id)) 
 # DivDataPooled<-as.data.frame(EdsPerCountryPerJrnlPerYr.LONG)
 DivDataPooled<-DivDataPooled %>% group_by(YEAR, INST) %>% summarise(Total_Eds=sum(Total))
 DivDataPooled<-spread(DivDataPooled, INST, Total_Eds) 
@@ -253,13 +290,13 @@ plotPOOLEDsimpdiv
 # Number and Pcnt of Editors from Each Country (all journals and years pooled)
 # Used for Fig 2A
 Editor.Inst<-AnalysisData %>%  group_by(INST) %>% 
-  summarize(N_Inst = n_distinct(editor_id.x)) %>% 
+  summarize(N_Inst = n_distinct(editor_id)) %>% 
   mutate(Pcnt_Inst= (N_Inst/sum(N_Inst)*100)) %>% 
   arrange(desc(Pcnt_Inst))
 Editor.Inst
 
 
-cutoff = 90 # This is how many countries you want on the chart, all the rest will be in "OTHER"
+cutoff = 20 # This is how many countries you want on the chart, all the rest will be in "OTHER"
 editor.INST<-arrange(Editor.Inst, desc(Pcnt_Inst)) %>% select(INST,N_Inst,Pcnt_Inst)
 most.common.Institutions<-slice(Editor.Inst, 1:cutoff)
 least.common.Institutions<-slice(Editor.Inst, (cutoff+1):nrow(Editor.Inst)) 
@@ -280,7 +317,7 @@ most.common.Institutions
 order<-seq(1:nrow(most.common.Institutions))
 most.common.Institutions$INST<- factor(most.common.Institutions$INST,most.common.Institutions$INST[levels = order])
 # levels(most.common.Institutions$geo.code)
-rm(order,editor.Inst,least.common.Institutions)
+rm(order,editor.INST,least.common.Institutions)
 
 InstED<-arrange(most.common.Institutions) %>%  ggplot(aes(x=INST, y=Pcnt_Inst)) +
   geom_bar(colour="black", stat="identity")+

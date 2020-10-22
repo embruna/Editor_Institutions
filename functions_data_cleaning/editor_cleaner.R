@@ -11,7 +11,36 @@
     str(DATAFILE$editor_id)
     DATAFILE$INST<-as.factor(DATAFILE$INST)
     levels(DATAFILE$INST) <- c(levels(DATAFILE$INST),"University of Missouri Columbia",
+                               "University of Washington Seattle",
+                               "dsir land resources",
+                               "csic estacion experimental de zonas aridas",
+                               "csic national museum of natural sciences",
+                               "University of Washington Bothell",
+                               "james cook university",
+                               "ARC Centre of Excellence for Coral Reef Studies",
+                               "university of montana",
+                               "Flathead Lake Biological Station",
+                               "university of notre dame",
+                               "mount allison university",
                                "cinvestav irapuato",
+                               "neri",
+                               "memorial university of newfoundland",
+                               "unaffiliated",
+                               "Chinese Academy of Sciences",
+                               "University of Massachusetts at Amherst",
+                               "University of Chicago",
+                               "University of Calgary",
+                               "University of Adelaide",
+                               "University of Alberta",
+                               "US Forest Service",
+                               "University of Bristol",
+                               "University of Canterbury",
+                               "Stanford University",
+                               "NERC Centre for Population Biology",
+                               "Cardiff University",
+                               "University of Arizona",
+                               "University of Arizona",
+                               "University of Antwerp",
                                "california state university long beach",
                                "dsir land resources",
                                "max planck institute for chemical ecology",
@@ -56,7 +85,210 @@
                                "Fundacion Cedrela",
                                "university of gottingen",
                                "smithsonian national museum of natural history",
-                               "university of wageningen"
+                               "university of wageningen",
+                               "University of Missouri St Louis",
+                               "university of colorado boulder",
+                               "university of chicago",
+                               "australian national university",
+                               "georgia institute of technology",
+                               "mcmaster university",
+                               "university of toronto",
+                               "university of illinois",
+                               "university of texas austin",
+                               "university of maryland baltimore county",
+                               "university of st andrews",
+                               "university of oxford",
+                               "university of minnesota duluth",
+                               "indiana university",
+                               "indiana university",
+                               "duke university",
+                               "stanford university",
+                               "university of utah",
+                               "university of minnesota",
+                               "university of chicago",
+                               "michigan state university",
+                               "smithsonian national museum of natural history",
+                               "university of california santa barbara",
+                               "university of paris",
+                               "norther arizona university",
+                               "university of southampton",
+                               "university of cape town",
+                               "arizona state university",
+                               "wildlife institute of india",
+                               "ashoka trust for research in ecology and the environment",
+                               "university of leiden",
+                               "university of oklahoma",
+                               "university of liverpool",
+                               "station biologique de la tour du valat",
+                               "unaffiliated",
+                               "australian national university",
+                               "universidade estadual de campinas",
+                               "missouri botanical garden",
+                               "university of illinois urbana champaign",
+                               "usgs patuxent wildlife research center",
+                               "curtin university of technology",
+                               "smithsonian tropical research institute",
+                               "university of british columbia",
+                               "university of houston",
+                               "kent state university",
+                               "university of minnesota",
+                               "michigan state university",
+                               "university of southern california",
+                               "university of queensland",
+                               "monash university",
+                               "university of oxford",
+                               "university of edinburgh",
+                               "indiana university",
+                               "university of georgia",
+                               "university of helsinki",
+                               "monash university",
+                               "university of arizona",
+                               "university of iowa",
+                               "university of british columbia",
+                               "unversity of michigan",
+                               "cnrs roscoff biological station",
+                               "university of leiden",
+                               "university of georgia",
+                               "iowa state university",
+                               "university of exeter",
+                               "university of strathclyde",
+                               "flinders university",
+                               "worldfish centre",
+                               "netherlands institute of ecology",
+                               "western ecosystem technology",
+                               "university of guelph",
+                               "university of aberdeen",
+                               "tel aviv university",
+                               "queen mary university of london",
+                               "imperial college london",
+                               "university of oxford",
+                               "university of cantebury",
+                               "soafd fisheries laboratory",
+                               "university of glasgow ",
+                               "australian national university",
+                               "liverpool john moores university",
+                               "silsoe research institute",
+                               "purdue university",
+                               "university of oxford",
+                               "game conservancy",
+                               "university of essex",
+                               "university of reading",
+                               "institute of terrestrial ecology",
+                               "university of nottingham",
+                               "central electricity research laboratories",
+                               "imperial college london",
+                               "central science laboratory",
+                               "afrc institute for grassland and animal production",
+                               "fauna and flora international",
+                               "institute of terrestrial ecology",
+                               "university of hong kong",
+                               "university of washington",
+                               "natural history museum london",
+                               "nerc centre for ecology and hydrology",
+                               "universidade federal de goias",
+                               "csic - ipna",
+                               "durham university",
+                               "auckland university of technology",
+                               "university of evora",
+                               "universite de montpellier",
+                               "university of zurich",
+                               "university college london",
+                               "goethe university frankfurt",
+                               "university of gottingen",
+                               "university of otago",
+                               "university of california san diego",
+                               "yale university",
+                               "museo de la plata",
+                               "university of umea",
+                               "university of umea",
+                               "chinese academy of sciences",
+                               "queens university belfast",
+                               "university of kwazulu natal",
+                               "university of ft hare",
+                               "university of athens",
+                               "university of edinburgh",
+                               "royal botanic gardens kew",
+                               "royal botanic garden edinburgh",
+                               "university of wisconsin",
+                               "university of azores",
+                               "national & kapodistrian university",
+                               "university of amsterdam",
+                               "university of hull",
+                               "radboud university nijmegen",
+                               "university of wales",
+                               "cardiff university",
+                               "university of sheffield",
+                               "cambridge university",
+                               "swansea university",
+                               "oxford brookes university",
+                               "university of essex",
+                               "radboud university nijmegen",
+                               "leiden university",
+                               "wageningen university and research",
+                               "university college dublin",
+                               "zoological society of london",
+                               "lancaster university",
+                               "university of sydney",
+                               "vrije universiteit amsterdam",
+                               "university of toronto",
+                               "wesleyan university",
+                               "university of wales",
+                               "western sydney university",
+                               "university of calgary",
+                               "lancaster university",
+                               "university of indiana",
+                               "swiss federal institute of technology",
+                               "university of umea",
+                               "simon fraser university",
+                               "university of vienna",
+                               "university of texas arlington",
+                               "university of minnesota",
+                               "smithsonian tropical research institute",
+                               "university of michigan",
+                               "royal holloway university of london",
+                               "university of basel",
+                               "university of turku ",
+                               "florida international university",
+                               "cnrs institut ecologie et environnement",
+                               "university of florida",
+                               "george washington university",
+                               "university of bielefeld",
+                               "estonian university of life sciences",
+                               "universite de rennes 1",
+                               "university of vienna",
+                               "university of california san diego",
+                               "rice university",
+                               "utah state university",
+                               "university of queensland",
+                               "university of kansas",
+                               "university of innsbruck ",
+                               "technical university of munich",
+                               "queens university",
+                               "lund university",
+                               "geological survey of denmark",
+                               "swedish university of agricultural sciences",
+                               "university of copenhagen",
+                               "Oxford Forestry Institute",
+                               "agricultural university of norway",
+                               "norwegian university of science and technology",
+                               "university of helsinki",
+                               "swiss federal institute of aquatic science and technology",
+                               "university of california santa cruz",
+                               "british trust for ornithology",
+                               "evergreen state college",
+                               "university of freiburg",
+                               "swedish university of agricultural sciences",
+                               "university of hong kong",
+                               "mediterranean institute for advanced studies",
+                               "technical university of berlin",
+                               "university of virginia",
+                               "university of aberdeen",
+                               "university of cambridge",
+                               "university of haifa-oranim",
+                               "university of eastern finland",
+                               "vrije universiteit amsterdam",
+                               "university of north carolina chapel hill",
+                               "university college dublin"
                                )
     #### 
     # These corrections are from PJ review of files
@@ -145,6 +377,11 @@
     DATAFILE$editor_id[DATAFILE$LAST_NAME=="Coe" & DATAFILE$FIRST_NAME=="M"]<-2332
     DATAFILE$editor_id[DATAFILE$LAST_NAME=="Krams" & DATAFILE$FIRST_NAME=="Indrikis"]<-70
     
+    
+    
+    
+    
+    ##########
     DATAFILE$INST[DATAFILE$LAST_NAME=="James" & DATAFILE$FIRST_NAME=="Helen" & DATAFILE$JOURNAL=="AUK"]<-"smithsonian national museum of natural history"
     DATAFILE$INST[DATAFILE$LAST_NAME=="Lonsdale" & DATAFILE$JOURNAL=="JAPE" & DATAFILE$FIRST_NAME=="W"& (DATAFILE$YEAR>1998| DATAFILE$YEAR<2003)]<-"csiro ecosystem sciences"
     DATAFILE$INST[DATAFILE$LAST_NAME=="Heil" & DATAFILE$JOURNAL=="JECOL" & DATAFILE$FIRST_NAME=="Martin" & DATAFILE$INST=="max planck university"]<-"max planck institute for chemical ecology"
@@ -185,7 +422,7 @@
     DATAFILE$INST[DATAFILE$LAST_NAME=="VanDamme" & DATAFILE$FIRST_NAME=="Raoul"]<-"University of Antwerp"
     DATAFILE$INST[DATAFILE$LAST_NAME=="Badyaev" & DATAFILE$FIRST_NAME=="Alexander"]<-"University of Arizona"
     DATAFILE$INST[DATAFILE$LAST_NAME=="Davidowitz" & DATAFILE$FIRST_NAME=="Goggy"]<-"University of Arizona"
-    DATAFILE$INST[DATAFILE$LAST_NAME=="McGraw" & DATAFILE$FIRST_NAME=="Kevin"]<-"Arizona State University"
+    DATAFILE$INST[DATAFILE$LAST_NAME=="McGraw" & DATAFILE$FIRST_NAME=="Kevin"]<-"arizona state university"
     DATAFILE$INST[DATAFILE$LAST_NAME=="Cotter" & DATAFILE$FIRST_NAME=="Sheena"]<-"queens university belfast"
     DATAFILE$INST[DATAFILE$LAST_NAME=="Norden" & DATAFILE$JOURNAL=="FUNECOL"]<-"Fundacion Cedrela"
     DATAFILE$INST[DATAFILE$LAST_NAME=="Jones" & DATAFILE$INST=="Ascot"]<-"NERC Centre for Population Biology"
@@ -201,20 +438,30 @@
     DATAFILE$INST[DATAFILE$LAST_NAME=="Wiersma" & DATAFILE$FIRST_NAME=="Jochum"]<-"University of Minnesota Crookston"
     DATAFILE$INST[DATAFILE$LAST_NAME=="Smith" & DATAFILE$FIRST_NAME=="Madeleine"]<-"University of Minnesota Crookston"
     DATAFILE$INST[DATAFILE$LAST_NAME=="Sims" & DATAFILE$FIRST_NAME=="Albert"]<-"University of Minnesota Crookston"
-    DATAFILE$INST[DATAFILE$JOURNAL=="AMNAT" & DATAFILE$LAST_NAME=="Case"]<-"University of California San Diego"
-    DATAFILE$INST[DATAFILE$LAST_NAME=="Noon"]<-"Colorado State University"
+    DATAFILE$INST[DATAFILE$JOURNAL=="AMNAT" & DATAFILE$LAST_NAME=="Case"]<-"university of california san diego"
+    # DATAFILE$INST[DATAFILE$LAST_NAME=="Noon"]<-"Colorado State University"
     DATAFILE$INST[DATAFILE$LAST_NAME=="Burgess"]<-"State University of New York College of Environmental Science and Forestry"
     DATAFILE$INST[DATAFILE$LAST_NAME=="Fragoso"]<-"State University of New York College of Environmental Science and Forestry"
     DATAFILE$INST[DATAFILE$LAST_NAME=="Yanai"]<-"State University of New York College of Environmental Science and Forestry"
     DATAFILE$INST[DATAFILE$LAST_NAME=="Hall" & DATAFILE$FIRST_NAME=="Charles" & DATAFILE$JOURNAL=="CONBIO"]<-
       "State University of New York College of Environmental Science and Forestry"
+    DATAFILE$INST[DATAFILE$LAST_NAME=="Pressey" & DATAFILE$YEAR==2006 & DATAFILE$JOURNAL=="CONBIO"]<-
+      "unaffiliated"
+    DATAFILE$INST[DATAFILE$LAST_NAME=="Damgaard" & (DATAFILE$YEAR>2005 & DATAFILE$YEAR<2010) & DATAFILE$JOURNAL=="FUNECOL"]<-
+      "neri"
+    DATAFILE$INST[DATAFILE$LAST_NAME=="Leroux" & DATAFILE$YEAR==2015 & DATAFILE$JOURNAL=="FUNECOL"]<-
+      "memorial university of newfoundland"
+    DATAFILE$INST[DATAFILE$LAST_NAME=="Noon" & DATAFILE$YEAR==2012 & DATAFILE$JOURNAL=="CONBIO"]<-
+      "university of colorado boulder"
+    DATAFILE$INST[DATAFILE$LAST_NAME=="Noon" & DATAFILE$YEAR==2014 & DATAFILE$JOURNAL=="CONBIO"]<-
+      "university of colorado boulder"
     DATAFILE$INST[DATAFILE$INST=="University of Missouri"]<-"University of Missouri Columbia" 
-    DATAFILE$INST[DATAFILE$JOURNAL=="AMNAT" & DATAFILE$LAST_NAME=="Case"]<-"University of California San Diego"
-    DATAFILE$INST[DATAFILE$LAST_NAME=="Noon"]<-"Colorado State University"
+    DATAFILE$INST[DATAFILE$JOURNAL=="AMNAT" & DATAFILE$LAST_NAME=="Case"]<-"university of california san diego"
+    # DATAFILE$INST[DATAFILE$LAST_NAME=="Noon"]<-"Colorado State University"
     DATAFILE$INST[DATAFILE$LAST_NAME=="Bowers" & DATAFILE$CITY=="Vadnais Heights"]<-"Calyx, Inc."
     DATAFILE$INST[DATAFILE$LAST_NAME=="Debussche"]<-"CNRS Centre dEcologie Fonctionnelle et Evolutive"
-    DATAFILE$INST[DATAFILE$LAST_NAME=="Whitmore"]<-"University of Oxford"
-    DATAFILE$INST[DATAFILE$LAST_NAME=="Hails"]<-"University of Oxford"
+    DATAFILE$INST[DATAFILE$LAST_NAME=="Whitmore"]<-"university of oxford"
+    DATAFILE$INST[DATAFILE$LAST_NAME=="Hails"]<-"university of oxford"
     DATAFILE$INST[DATAFILE$LAST_NAME=="Leamy"]<-"University of North Carolina Charlotte"
     DATAFILE$INST[DATAFILE$LAST_NAME=="Gustafson"& DATAFILE$FIRST_NAME=="E"]<-"US Forest Service"
     DATAFILE$INST[DATAFILE$LAST_NAME=="Labandeira"& DATAFILE$FIRST_NAME=="Conrad"]<-"Smithsonian National Museum of Natural History"
@@ -226,7 +473,27 @@
     DATAFILE$INST[DATAFILE$LAST_NAME=="Boutin" & DATAFILE$INST=="Alberta"]<-"University of Alberta"
     DATAFILE$INST[DATAFILE$LAST_NAME=="Fox" & DATAFILE$INST=="Alberta"]<-"University of Calgary"
     DATAFILE$INST[DATAFILE$LAST_NAME=="Patek" & DATAFILE$INST=="Amherst"]<-"University of Massachusetts at Amherst"
-    DATAFILE$INST[DATAFILE$LAST_NAME=="Mcgraw" & DATAFILE$INST=="Arizona"]<-"Arizona State University"
+    DATAFILE$INST[DATAFILE$LAST_NAME=="Mcgraw" & DATAFILE$INST=="Arizona"]<-"arizona state university"
+    DATAFILE$INST[DATAFILE$LAST_NAME=="Marzluff" & DATAFILE$INST=="University of Washington"]<-"University of Washington Seattle"
+    DATAFILE$INST[DATAFILE$LAST_NAME=="Felsenstein" & DATAFILE$INST=="University of Washington"]<-"University of Washington Seattle"
+    DATAFILE$INST[DATAFILE$LAST_NAME=="Tewksbury" & DATAFILE$INST=="University of Washington"]<-"University of Washington Seattle"
+    DATAFILE$INST[DATAFILE$LAST_NAME=="Kareiva" & DATAFILE$INST=="University of Washington"]<-"University of Washington Seattle"
+    DATAFILE$INST[DATAFILE$LAST_NAME=="Williams-Guillen" & DATAFILE$INST=="University of Washington"]<-"University of Washington Bothell"
+    DATAFILE$INST[DATAFILE$LAST_NAME=="Slatkin" & DATAFILE$INST=="University of Washington"]<-"University of Washington Seattle"
+    DATAFILE$INST[DATAFILE$LAST_NAME=="Huey" & DATAFILE$INST=="University of Washington"]<-"University of Washington Seattle"
+    DATAFILE$INST[DATAFILE$LAST_NAME=="Olmstead" & DATAFILE$INST=="University of Washington"]<-"University of Washington Seattle"
+    DATAFILE$INST[DATAFILE$LAST_NAME=="Rohwer" & DATAFILE$INST=="University of Washington"]<-"University of Washington Seattle"
+    DATAFILE$INST[DATAFILE$LAST_NAME=="Brubaker" & DATAFILE$INST=="University of Washington"]<-"University of Washington Seattle"
+    DATAFILE$INST[DATAFILE$LAST_NAME=="Naiman" & DATAFILE$INST=="University of Washington"]<-"University of Washington Seattle"
+    DATAFILE$INST[DATAFILE$LAST_NAME=="Schindler" & DATAFILE$INST=="University of Washington"]<-"University of Washington Seattle"
+    DATAFILE$INST[DATAFILE$LAST_NAME=="Wingfield" & DATAFILE$INST=="University of Washington"]<-"University of Washington Seattle"
+    DATAFILE$INST[DATAFILE$LAST_NAME=="Thomas" & DATAFILE$INST=="University of Washington"]<-"University of Washington Seattle"
+    DATAFILE$INST[DATAFILE$LAST_NAME=="Klicka" & DATAFILE$INST=="University of Washington"]<-"University of Washington Seattle"
+    DATAFILE$INST[DATAFILE$LAST_NAME=="Bryson" & DATAFILE$INST=="University of Washington"]<-"University of Washington Seattle"
+    
+    
+    
+    
     
     DATAFILE$COUNTRY[DATAFILE$LAST_NAME=="VanDerHeijden"]<-"Switzerland"
     # levels(DATAFILE$INST) <- c(levels(DATAFILE$INST),"State University of New York College of Environmental Science and Forestry")
@@ -236,6 +503,8 @@
     DATAFILE$COUNTRY[DATAFILE$LAST_NAME=="Gandon"]<-"France"
     DATAFILE$COUNTRY[DATAFILE$LAST_NAME=="Westing"&DATAFILE$FIRST_NAME=="Arthur"]<-"Sweden"
     DATAFILE$COUNTRY[DATAFILE$LAST_NAME=="Galdon"&DATAFILE$FIRST_NAME=="Luis"]<-"Spain"
+    
+    
     
     DATAFILE$CITY[DATAFILE$LAST_NAME=="VanDerHeijden" & DATAFILE$INST=="Amsterdam"]<-"Amsterdam"
     
