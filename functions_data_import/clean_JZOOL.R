@@ -1,10 +1,15 @@
 #FUNCTION TO CLEAN AND PROCESS JZOOL
 clean_JZOOL <- function(DATAFILE1,DATAFILE2) {
-  
+  # DATAFILE1<-JZOOL1
+  # DATAFILE2<-JZOOL2
   DATAFILE1$JOURNAL<-as.factor("JZOOL")
+  DATAFILE2$JOURNAL<-as.factor("JZOOL")
   summary(DATAFILE1$JOURNAL)
   summary(DATAFILE2$JOURNAL)
-  DATAFILE<-full_join(DATAFILE1,DATAFILE2,by=c("YEAR","LAST_NAME","FIRST_NAME","MIDDLE_NAME"))
+  DATAFILE1<-as_tibble(DATAFILE1)
+  DATAFILE2<-as_tibble(DATAFILE2)
+  DATAFILE<-full_join(DATAFILE1,DATAFILE2,by=c("YEAR","LAST_NAME","FIRST_NAME"))
+  
   rm(DATAFILE1,DATAFILE2)
   str(DATAFILE)
   colnames(DATAFILE)
@@ -16,9 +21,19 @@ clean_JZOOL <- function(DATAFILE1,DATAFILE2) {
   DATAFILE$COUNTRY.x<-as.character(DATAFILE$COUNTRY.x)
   DATAFILE$COUNTRY.y<-as.character(DATAFILE$COUNTRY.y)
   summary(DATAFILE$COUNTRY.x==DATAFILE$COUNTRY.y)
+  DATAFILE$country_check<-(DATAFILE$COUNTRY.x==DATAFILE$COUNTRY.y)
   country_fix<-which((DATAFILE$COUNTRY.x==DATAFILE$COUNTRY.y)=="FALSE")
   country_fix.df<-DATAFILE[country_fix,]  #KEEP COUNTRIES IN UK AS ORIGINAL NAMES< CONVERT TO UK LATER
+
+  DATAFILE <- DATAFILE %>% mutate(COUNTRY.x=ifelse(COUNTRY.y=="UK", COUNTRY.y,
+                                                   ifelse(is.na(COUNTRY.x), COUNTRY.y,COUNTRY.x)))
+                                                   
+    
   
+  
+  
+  
+    
   DATAFILE$NAME.x<-as.character(DATAFILE$NAME.x)
   DATAFILE$NAME.y<-as.character(DATAFILE$NAME.y)
   summary(DATAFILE$NAME.x==DATAFILE$NAME.y)
@@ -37,6 +52,7 @@ clean_JZOOL <- function(DATAFILE1,DATAFILE2) {
   summary(DATAFILE$VOLUME.x==DATAFILE$VOLUME.y)
   vol_fix<-which((DATAFILE$VOLUME.x==DATAFILE$VOLUME.y)=="FALSE")
   
+  DATAFILE$TITLE.x<-gsub("[.]"," ", DATAFILE$TITLE.x)
   DATAFILE$TITLE.x<-as.character(DATAFILE$TITLE.x)
   DATAFILE$TITLE<-as.character(DATAFILE$TITLE)
   summary(DATAFILE$TITLE.x==DATAFILE$TITLE)
@@ -54,8 +70,15 @@ clean_JZOOL <- function(DATAFILE1,DATAFILE2) {
   DATAFILE[56,]$ISSUE.x<-DATAFILE[56,]$ISSUE.y
   DATAFILE[57,]$ISSUE.x<-DATAFILE[57,]$ISSUE.y
   
-  DATAFILE<-DATAFILE %>% select(-JOURNAL.x,-VOLUME.y,-JOURNAL.y,-ISSUE.y,-NAME.x,-NAME.y,-INST.y,-COUNTRY.y,-CATEGORY.y,-TITLE.x) %>% 
-    rename("VOLUME"="VOLUME.x","ISSUE"="ISSUE.x","INST"="INST.x","CATEGORY"="CATEGORY.x","COUNTRY"="COUNTRY.x")
+  DATAFILE<-DATAFILE %>% select(-JOURNAL.x,-VOLUME.y,-JOURNAL.y,-ISSUE.y,-NAME.x,-NAME.y,
+                                -MIDDLE_NAME.y,-INST.y,-COUNTRY.y,-CATEGORY.y,TITLE.x) 
+  DATAFILE<-DATAFILE %>% rename("VOLUME"="VOLUME.x","ISSUE"="ISSUE.x",
+                                "CATEGORY"="CATEGORY.x","MIDDLE_NAME"="MIDDLE_NAME.x",
+                                "INST"="INST.x","COUNTRY"="COUNTRY.x")
+
+  
+  
+   
   rm(INST_fix.df,INST_fix,country_fix,country_fix.df,vol_fix,issue_fix,issue_fix.df,NAME_fix,NAME_fix.df,title_fix,title_fix.df)
   # str(DATAFILE)
   DATAFILE<-DATAFILE%>%select(JOURNAL,YEAR, VOLUME,ISSUE,editor_id,FIRST_NAME,MIDDLE_NAME,LAST_NAME,TITLE,CATEGORY,INST,UNIT,CITY,STATE,COUNTRY,geo.code,NOTES,GENDER)
@@ -74,7 +97,7 @@ clean_JZOOL <- function(DATAFILE1,DATAFILE2) {
   DATAFILE$CITY[DATAFILE$CITY==""]<-NA
   DATAFILE$STATE[DATAFILE$STATE==""]<-NA
   DATAFILE$COUNTRY[DATAFILE$COUNTRY==""]<-NA
-  DATAFILE<-DATAFILE %>% arrange(editor_id,YEAR,INST) %>% select(-VOLUME, -ISSUE, -TITLE,-CATEGORY,-geo.code)
+  DATAFILE<-DATAFILE %>% arrange(editor_id,YEAR,INST) #%>% select(-VOLUME, -ISSUE, -TITLE,-CATEGORY,-geo.code)
   str(DATAFILE)
   # fill in the institutions in subsequent years (only 1st year recorded) and then look for any thiat might need
   # to be double checked
@@ -92,10 +115,26 @@ clean_JZOOL <- function(DATAFILE1,DATAFILE2) {
   
   DATAFILE<-bind_rows(DATAFILE_remainder,DATAFILE_1row) 
   head(DATAFILE,10)
-  DATAFILE<-DATAFILE %>% arrange(editor_id,YEAR) %>% fill(INST,.direction="down")
+  DATAFILE<-DATAFILE %>% arrange(editor_id,YEAR) %>% fill(INST,TITLE,.direction="down")
   head(DATAFILE,10)
   
-  ##
+  # summary(as.factor(ALLDATA$CATEGORY))
+  # DATAFILE$TITLE<-as.factor(DATAFILE$TITLE)
+  levels(DATAFILE$TITLE)
+  
+  DATAFILE <- DATAFILE %>% mutate(CATEGORY=ifelse(TITLE=="Editor In Chief", "EIC",
+                                                  ifelse(TITLE=="Managing Editor", "EIC",
+                                                         ifelse(TITLE=="Editorial Board", "SE",
+                                                                ifelse(TITLE=="Consultant Editors", "SPECIAL",
+                                                                       ifelse(TITLE=="Short Communications Editor", "SPECIAL",
+                                                                              ifelse(TITLE=="Reviews Editor", "SPECIAL",
+                                                                                     ifelse(TITLE=="Sections Editor", "SPECIAL",
+                                                                                            ifelse(TITLE=="Editor","AE",NA)))))))))
+  
+                                                  
+                                                  
+  
+
   # code to generate the list of which ones need to be 2x or have missing names is in 
   # Author_and_Inst_to_Check.R  
   # Need to convert that to a function, e.g., check(DATAFILE)

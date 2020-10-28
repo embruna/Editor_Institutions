@@ -4,6 +4,7 @@ editor_ID_corrections <- function(DATAFILE) {
   library(tidyverse)
   DATAFILE$editor_id<-as.numeric(as.character(DATAFILE$editor_id))
   DATAFILE$editor_id[DATAFILE$LAST_NAME=="hockey" & DATAFILE$FIRST_NAME=="p"]<-2829
+  DATAFILE$editor_id[DATAFILE$LAST_NAME=="vannes" & DATAFILE$FIRST_NAME=="egbert"]<-1039
   DATAFILE$editor_id[DATAFILE$LAST_NAME=="mcgraw" & DATAFILE$FIRST_NAME=="kevin"]<-2048
   DATAFILE$editor_id[DATAFILE$LAST_NAME=="mcwilliams" & DATAFILE$FIRST_NAME=="scott"]<-3404
   DATAFILE$editor_id[DATAFILE$LAST_NAME=="adkins-regan" & DATAFILE$FIRST_NAME=="elizabeth"]<-928
@@ -98,7 +99,54 @@ editor_ID_corrections <- function(DATAFILE) {
   DATAFILE$editor_id[DATAFILE$LAST_NAME=="vandermaarel" & (DATAFILE$FIRST_NAME=="e"| DATAFILE$FIRST_NAME=="eddy")]<-1033
   DATAFILE$editor_id[DATAFILE$LAST_NAME=="hepinstall-cymerman"& DATAFILE$FIRST_NAME=="j"]<-1533
   
+  DATAFILE$editor_id[DATAFILE$LAST_NAME=="dyer" & DATAFILE$FIRST_NAME=="andrew" &
+                       DATAFILE$INST=="university of south carolina aiken"]<-3849
   
-  DATAFILE$editor_id<-as.factor(DATAFILE$editor_id)
-return(DATAFILE)
+  DATAFILE$editor_id[DATAFILE$LAST_NAME=="field" & DATAFILE$FIRST_NAME=="chris" &
+                       DATAFILE$JOURNAL=="gcb"]<-447
+  
+  DATAFILE$editor_id[DATAFILE$LAST_NAME=="franklin" & DATAFILE$FIRST_NAME=="janet" &
+                       DATAFILE$JOURNAL=="leco"]<-3889
+  
+  DATAFILE$editor_id[DATAFILE$LAST_NAME=="houck" & DATAFILE$FIRST_NAME=="lynne" &
+                       DATAFILE$JOURNAL=="amnat"]<-2174
+  
+  DATAFILE$editor_id[DATAFILE$LAST_NAME=="lawes" & DATAFILE$FIRST_NAME=="michael" &
+                       DATAFILE$JOURNAL=="plantecol"]<-2442
+  
+  DATAFILE$editor_id[DATAFILE$LAST_NAME=="lack" & DATAFILE$FIRST_NAME=="andrew" &
+                       DATAFILE$MIDDLE_NAME=="j"]<-130
+  
+  DATAFILE$editor_id[DATAFILE$LAST_NAME=="lomolino" & DATAFILE$FIRST_NAME=="mark" &
+                        DATAFILE$MIDDLE_NAME=="v"]<-2453
+  
+  DATAFILE$editor_id[DATAFILE$LAST_NAME=="long" & DATAFILE$FIRST_NAME=="stephen" &
+                       DATAFILE$JOURNAL=="gcb"]<-3395
+  
+  DATAFILE$editor_id[DATAFILE$LAST_NAME=="niemela" & DATAFILE$FIRST_NAME=="j" &
+                       DATAFILE$JOURNAL=="leco"]<-1787
+  
+  DATAFILE$editor_id[DATAFILE$LAST_NAME=="rozema" & DATAFILE$FIRST_NAME=="j" &
+                       DATAFILE$JOURNAL=="plantecol"]<-1849
+  
+  
+  DATAFILE$editor_id[DATAFILE$LAST_NAME=="tjoelker" & DATAFILE$FIRST_NAME=="m" &
+                       DATAFILE$JOURNAL=="newphyt"]<-2577
+  
+  DATAFILE$editor_id[DATAFILE$LAST_NAME=="wagner" & DATAFILE$FIRST_NAME=="helene" &
+                       DATAFILE$JOURNAL=="leco"]<-1373
+  
+  
+  DATAFILE$editor_id[DATAFILE$LAST_NAME=="vandermeijden" & DATAFILE$FIRST_NAME=="eddy"]<-1036
+  
+  DATAFILE$editor_id[DATAFILE$LAST_NAME=="dekroon" & DATAFILE$FIRST_NAME=="hans"]<-1296
+  
+  DATAFILE$editor_id[DATAFILE$LAST_NAME=="vangroenendael" & DATAFILE$FIRST_NAME=="jan"]<-1924
+  
+  DATAFILE$editor_id[DATAFILE$LAST_NAME=="hansson" & DATAFILE$FIRST_NAME=="lennart" &
+                       DATAFILE$INST=="swedish university of agricultural sciences"]<-2162
+  
+ DATAFILE$editor_id<-as.factor(DATAFILE$editor_id)
+
+ return(DATAFILE)
 }

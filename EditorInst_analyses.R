@@ -3,7 +3,7 @@ AnalysisData<-read_csv("./data_clean/InstitutionData_clean.csv")
 AnalysisData$JOURNAL<-as.factor(AnalysisData$JOURNAL)
 AnalysisData$INST<-as.factor(AnalysisData$INST)
 AnalysisData<-AnalysisData %>%    
-  filter(!JOURNAL %in% c("NAJFM","AGRONOMY","MARECOL")) %>%
+  filter(!JOURNAL %in% c("najfm","agronomy","marecol","auk","condor")) %>%
   filter(!INST=="missing") %>% 
   drop_na(INST) %>% 
   select(-COUNTRY_Prior_Class,-geo.code,
@@ -30,26 +30,66 @@ rm(Carnegie_raw)
 ##############################################################
 ##############################################################
 
+str(AnalysisData)
+AnalysisData$FIRST_NAME<-as.factor(AnalysisData$FIRST_NAME)
+AnalysisData$MIDDLE_NAME<-as.factor(AnalysisData$MIDDLE_NAME)
+AnalysisData$LAST_NAME<-as.factor(AnalysisData$LAST_NAME)
+AnalysisData$TITLE<-as.factor(AnalysisData$TITLE)
+AnalysisData$CATEGORY<-as.factor(AnalysisData$CATEGORY)
+
 ##############################################################
 FirstYear=1985
 LastYear=2014
 AnalysisData <- AnalysisData %>% filter(YEAR>0|is.na(YEAR)==FALSE) %>% filter(YEAR>=FirstYear) %>% filter(YEAR<=LastYear)
 summary(AnalysisData$YEAR)
 
+# HOW MANY JOURNALS AND WHAT ARE THEY
+jrnls<-AnalysisData %>% summarise(n_distinct(JOURNAL))
+jrnls_list<-AnalysisData %>% 
+  group_by(JOURNAL) %>% 
+  summarize(n_distinct(JOURNAL))
+jrnls_list
 
-
+# EDS - HOW MANY AND HOW MANY PER JOURNAL
 eds<-AnalysisData %>% summarise(n_distinct(editor_id))
 eds
 
+eds_per_jrnl<-AnalysisData %>% 
+  group_by(JOURNAL) %>% 
+  summarize(n_eds=n_distinct(editor_id)) %>% 
+  arrange(desc(n_eds))
+eds_per_jrnl
 
+# INST and No PER JOURNAL
 No_Inst<-AnalysisData %>% summarise(n_distinct(INST))
 No_Inst
 
+inst_per_jrnl<-AnalysisData %>% 
+  group_by(JOURNAL) %>% 
+  summarize(n_inst=n_distinct(INST)) %>% 
+  arrange(desc(n_inst))
+inst_per_jrnl
+
+
+# INST PER EDITOR
+inst_per_ed<-AnalysisData %>% 
+  group_by(JOURNAL) %>% 
+  summarize(n_eds=n_distinct(editor_id),n_inst=n_distinct(INST)) %>% 
+  mutate(inst_per_ed=n_inst/n_eds) %>% 
+  arrange((inst_per_ed))
+inst_per_ed
+
+
+
 # Total Number of Inst (all jrnls pooled)  vs. Year
-InstPerYr<-AnalysisData %>% group_by(YEAR) %>% summarize(InstPerYear = n_distinct(INST))
+InstPerYr<-AnalysisData %>% 
+  group_by(YEAR) %>% 
+  summarize(InstPerYear = n_distinct(INST))
 InstPerYr
 
-EdsPerYr<-AnalysisData %>% group_by(YEAR) %>% summarize(EdsPerYear = n_distinct(editor_id))
+EdsPerYr<-AnalysisData %>% 
+  group_by(YEAR) %>% 
+  summarize(EdsPerYear = n_distinct(editor_id))
 EdsPerYr
 
 

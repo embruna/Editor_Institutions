@@ -144,6 +144,7 @@ LANDSCAPEECO<-LANDSCAPEECO %>% group_by(LAST_NAME,FIRST_NAME) %>%
 
 # rm(LANDSCAPEECO,LECO_inst)
 LANDSCAPEECO$editor_id<-as.character(LANDSCAPEECO$editor_id)
+LANDSCAPEECO$JOURNAL<-"LECO"
 ORIGINAL_DATA$editor_id<-as.character(ORIGINAL_DATA$editor_id)
 return_list <- list(ORIGINAL_DATA,LANDSCAPEECO)
 return(return_list)

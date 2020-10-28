@@ -326,6 +326,66 @@ rm(ECOLOGY.csv, ECOL_raw)
 # with ALL
 
 
+
+CONBIO$VOLUME<-as.character(CONBIO$VOLUME)
+MARECOL$VOLUME<-as.character(MARECOL$VOLUME)
+NAJFM$VOLUME<-as.character(NAJFM$VOLUME)
+NEWPHYT$VOLUME<-as.character(NEWPHYT$VOLUME)
+JZOOL$VOLUME<-as.character(JZOOL$VOLUME)
+GCB$VOLUME<-as.character(GCB$VOLUME)
+OIKOS$VOLUME<-as.character(OIKOS$VOLUME)
+BITR$VOLUME<-as.character(BITR$VOLUME)
+LECO$VOLUME<-as.character(LECO$VOLUME)
+PLANTECOL$VOLUME<-as.character(PLANTECOL$VOLUME)
+OECOL$VOLUME<-as.character(OECOL$VOLUME)
+JTE$VOLUME<-as.character(JTE$VOLUME)
+JECOL$VOLUME<-as.character(JECOL$VOLUME)
+JBIOG$VOLUME<-as.character(JBIOG$VOLUME)
+JAPE$VOLUME<-as.character(JAPE$VOLUME)
+JANE$VOLUME<-as.character(JANE$VOLUME)
+FUNECOL$VOLUME<-as.character(FUNECOL$VOLUME)
+FEM$VOLUME<-as.character(FEM$VOLUME)
+EVOL$VOLUME<-as.character(EVOL$VOLUME)
+# ECOL$VOLUME<-as.character(ECOL$VOLUME)
+ECOG$VOLUME<-as.character(ECOG$VOLUME)
+AREES$VOLUME<-as.character(AREES$VOLUME)
+AMNAT$VOLUME<-as.character(AMNAT$VOLUME)
+AJB$VOLUME<-as.character(AJB$VOLUME)
+AG$VOLUME<-as.character(AG$VOLUME)
+# CONDOR$VOLUME<-as.character(CONDOR$VOLUME)
+# AUK$VOLUME<-as.character(AUK$VOLUME)
+BIOCON$VOLUME<-as.character(BIOCON$VOLUME)
+  
+
+CONBIO$ISSUE<-as.character(CONBIO$ISSUE)
+MARECOL$ISSUE<-as.character(MARECOL$ISSUE)
+NAJFM$ISSUE<-as.character(NAJFM$ISSUE)
+NEWPHYT$ISSUE<-as.character(NEWPHYT$ISSUE)
+JZOOL$ISSUE<-as.character(JZOOL$ISSUE)
+GCB$ISSUE<-as.character(GCB$ISSUE)
+OIKOS$ISSUE<-as.character(OIKOS$ISSUE)
+BITR$ISSUE<-as.character(BITR$ISSUE)
+LECO$ISSUE<-as.character(LECO$ISSUE)
+PLANTECOL$ISSUE<-as.character(PLANTECOL$ISSUE)
+OECOL$ISSUE<-as.character(OECOL$ISSUE)
+JTE$ISSUE<-as.character(JTE$ISSUE)
+JECOL$ISSUE<-as.character(JECOL$ISSUE)
+JBIOG$ISSUE<-as.character(JBIOG$ISSUE)
+JAPE$ISSUE<-as.character(JAPE$ISSUE)
+JANE$ISSUE<-as.character(JANE$ISSUE)
+FUNECOL$ISSUE<-as.character(FUNECOL$ISSUE)
+FEM$ISSUE<-as.character(FEM$ISSUE)
+EVOL$ISSUE<-as.character(EVOL$ISSUE)
+# ECOL$ISSUE<-as.character(ECOL$ISSUE)
+ECOG$ISSUE<-as.character(ECOG$ISSUE)
+AREES$ISSUE<-as.character(AREES$ISSUE)
+AMNAT$ISSUE<-as.character(AMNAT$ISSUE)
+AJB$ISSUE<-as.character(AJB$ISSUE)
+AG$ISSUE<-as.character(AG$ISSUE)
+# CONDOR$ISSUE<-as.character(CONDOR$ISSUE)
+# AUK$ISSUE<-as.character(AUK$ISSUE)
+BIOCON$ISSUE<-as.character(BIOCON$ISSUE)
+
 ALLDATA<-bind_rows(CONBIO,
                    MARECOL,
                    NAJFM,
@@ -431,6 +491,8 @@ ALLDATA[ALLDATA=="missing"]<-NA
 ALLDATA$INST[ALLDATA$INST=="double check"]<-NA
 
 
+
+
 source("functions_data_cleaning/PJ_OECOL_corrections.R")
 DATA_LIST<-PJ_OECOL_corrections(ALLDATA)
 ALLDATA<-as_tibble(DATA_LIST[[1]])
@@ -481,6 +543,9 @@ ALLDATA_ORIG_FOR_TESTING<-ALLDATA
 #this adds a column to flag all those needing an INST check
 ALLDATA$INST_CHECK<-NA
 
+colnames(ALLDATA)
+
+
 
 
 source("functions_data_cleaning/editor_cleaner.R")
@@ -529,43 +594,158 @@ ALLDATA$FIRST_NAME<-tolower(ALLDATA$FIRST_NAME)
 ALLDATA$LAST_NAME<-tolower(ALLDATA$LAST_NAME)
 ALLDATA$MIDDLE_NAME<-tolower(ALLDATA$MIDDLE_NAME)
 
+##############################
+## ADD MISSING EDITOR_IDs
+##############################
+ALLDATA$editor_id<-as.numeric(as.character(ALLDATA$editor_id))
+max(na.omit(ALLDATA$editor_id))+1
+
+missing_edID<-ALLDATA %>% 
+  filter(is.na(editor_id)) %>% 
+  select(LAST_NAME,FIRST_NAME) %>% 
+  group_by(LAST_NAME, FIRST_NAME) %>% 
+  slice(n=1)
+
+no_edID<-inner_join(ALLDATA,missing_edID) %>% 
+  filter(is.na(editor_id)) %>% 
+  select(JOURNAL,YEAR,editor_id,FIRST_NAME,MIDDLE_NAME,LAST_NAME,TITLE,INST) %>% 
+  group_by(FIRST_NAME,MIDDLE_NAME,LAST_NAME) %>% 
+  slice(n=1) %>% 
+  arrange(LAST_NAME,FIRST_NAME,MIDDLE_NAME) %>% 
+  ungroup() %>% 
+  select(LAST_NAME,FIRST_NAME)
+start_no<-max(na.omit(ALLDATA$editor_id))+1
+end_no<-max(start_no+nrow(no_edID))-1
+no_edID$editor_id<-seq(from=start_no,
+          to=end_no,
+          by=1)
+
+ALLDATA<-full_join(ALLDATA,no_edID,by=c("LAST_NAME","FIRST_NAME")) %>% 
+  mutate(editor_id.x = ifelse(is.na(editor_id.x), editor_id.y, editor_id.x)) %>% 
+  rename(editor_id=editor_id.x) %>% 
+  select(-editor_id.y)
+    
+
 ##########################
-# TODO: ADD AN EDITOR_ID to GCB and MARECOL
-summary(ALLDATA$editor_id)
-missing_edID<-filter(ALLDATA,is.na(editor_id))
-missing_edID$JOURNAL<-as.factor(missing_edID$JOURNAL)
-ALLDATA$JOURNAL<-as.factor(ALLDATA$JOURNAL)
-summary(missing_edID)
-ALLDATA<-droplevels(ALLDATA)
-ALLDATA$Inst_Prior_Class
-ALLDATA$INST<-as.factor(ALLDATA$INST)
-levels(ALLDATA$INST)
-levels(ALLDATA$JOURNAL)
-ALLDATA$editor_id<-as.factor(ALLDATA$editor_id)
-levels(ALLDATA$editor_id)
-summary(ALLDATA)
+# # TODO: ADD AN EDITOR_ID to GCB and MARECOL
+# summary(ALLDATA$editor_id)
+# missing_edID<-filter(ALLDATA,is.na(editor_id))
+# missing_edID$JOURNAL<-as.factor(missing_edID$JOURNAL)
+# ALLDATA$JOURNAL<-as.factor(ALLDATA$JOURNAL)
+# summary(missing_edID)
+# ALLDATA<-droplevels(ALLDATA)
+# ALLDATA$Inst_Prior_Class
+# ALLDATA$INST<-as.factor(ALLDATA$INST)
+# levels(ALLDATA$INST)
+# levels(ALLDATA$JOURNAL)
+# ALLDATA$editor_id<-as.factor(ALLDATA$editor_id)
+# levels(ALLDATA$editor_id)
+# summary(ALLDATA)
 ##########################
+#convert to lower case
+ALLDATA$CATEGORY<-tolower(ALLDATA$CATEGORY)
+ALLDATA$TITLE<-tolower(ALLDATA$TITLE)
+
+
 # ALLDATA$CATEGORY<-as.factor(ALLDATA$CATEGORY)
-ALLDATA$TITLE[is.na(ALLDATA$TITLE) & ALLDATA$CATEGORY=="SE"]<-"SE"
-ALLDATA$TITLE[is.na(ALLDATA$TITLE) & ALLDATA$CATEGORY=="AE"]<-"AE"
-ALLDATA$TITLE[is.na(ALLDATA$TITLE) & ALLDATA$CATEGORY=="EIC"]<-"EIC"
-ALLDATA$TITLE[is.na(ALLDATA$TITLE) & ALLDATA$CATEGORY=="SPECIAL"]<-"SPECIAL"
+ALLDATA$TITLE[is.na(ALLDATA$TITLE) & ALLDATA$CATEGORY=="se"]<-"se"
+ALLDATA$TITLE[is.na(ALLDATA$TITLE) & ALLDATA$CATEGORY=="ae"]<-"ae"
+ALLDATA$TITLE[is.na(ALLDATA$TITLE) & ALLDATA$CATEGORY=="eic"]<-"eic"
+ALLDATA$TITLE[is.na(ALLDATA$TITLE) & ALLDATA$CATEGORY=="special"]<-"special"
 
-ALLDATA$TITLE[is.na(ALLDATA$TITLE) & is.na(ALLDATA$CATEGORY)]<-"Missing"
-ALLDATA$TITLE[ALLDATA$TITLE=="Missing" & is.na(ALLDATA$CATEGORY)]<-"Missing"
-ALLDATA$CATEGORY[is.na(ALLDATA$CATEGORY)]<-"Missing"
+ALLDATA$TITLE[is.na(ALLDATA$TITLE) & is.na(ALLDATA$CATEGORY)]<-"TBD"
+ALLDATA$TITLE[ALLDATA$TITLE=="missing" & is.na(ALLDATA$CATEGORY)]<-"TBD"
+ALLDATA$CATEGORY[is.na(ALLDATA$CATEGORY)]<-"TBD"
 
 
-###REMOVE THE PRODUCTION STAFF
-ALLDATA$TITLE[ALLDATA$TITLE=="Editorial Assistants"]<-"Editorial Assistant"
-ALLDATA$TITLE[ALLDATA$TITLE=="ME"]<-"Managing Editor"
-ALLDATA$CATEGORY[ALLDATA$TITLE=="Editorial Assistant"]<-"Production"
-ALLDATA$CATEGORY[ALLDATA$TITLE=="Assistant Managing Editor"]<-"Production"
-ALLDATA$CATEGORY[ALLDATA$TITLE=="Managing Editor"]<-"Production"
-ALLDATA$CATEGORY[ALLDATA$TITLE=="Managing editor"]<-"Production"
-ALLDATA$CATEGORY[ALLDATA$TITLE=="Production Editor"]<-"Production"
+ALLDATA$TITLE<-trimws(ALLDATA$TITLE,which="both")
+ALLDATA$TITLE<-tolower(ALLDATA$TITLE)
+levels(as.factor(ALLDATA$TITLE))
+levels(as.factor(ALLDATA$CATEGORY))
+need_category<-filter(ALLDATA,CATEGORY=="bissing")
+levels(as.factor(need_category$TITLE))
 
-ALLDATA<-ALLDATA %>% filter(CATEGORY!="Production")
+
+ALLDATA$CATEGORY[ALLDATA$TITLE=="associate editor"]<-"ae"
+ALLDATA$CATEGORY[ALLDATA$TITLE=="associate editors"]<-"ae"
+
+ALLDATA$CATEGORY[ALLDATA$TITLE=="board of reviewing editors"]<-"se"
+ALLDATA$CATEGORY[ALLDATA$TITLE=="editorial board"]<-"se"
+ALLDATA$CATEGORY[ALLDATA$TITLE=="early career board mentor"]<-"se"
+
+ALLDATA$CATEGORY[ALLDATA$TITLE=="chief editor"]<-"eic"
+ALLDATA$CATEGORY[ALLDATA$TITLE=="editor in chief"]<-"eic"
+ALLDATA$CATEGORY[ALLDATA$TITLE=="editors in chief"]<-"eic"
+
+ALLDATA$CATEGORY[ALLDATA$TITLE=="co-founding editor"]<-"oversight"
+
+ALLDATA$CATEGORY[ALLDATA$TITLE=="abstract translators"]<-"service"
+ALLDATA$CATEGORY[ALLDATA$TITLE=="associate book review editor"]<-"special"
+ALLDATA$CATEGORY[ALLDATA$TITLE=="book review editor"]<-"special"
+ALLDATA$CATEGORY[ALLDATA$TITLE=="book review editorial"]<-"special"
+ALLDATA$CATEGORY[ALLDATA$TITLE=="early career editorial board"]<-"special"
+ALLDATA$CATEGORY[ALLDATA$TITLE=="in memoriam editor"]<-"special"
+ALLDATA$CATEGORY[ALLDATA$TITLE=="in memoriam editor"]<-"special"
+ALLDATA$CATEGORY[ALLDATA$TITLE=="latin american editorial board"]<-"special"                                             
+ALLDATA$CATEGORY[ALLDATA$TITLE=="in memoriam editor"]<-"special"
+ALLDATA$CATEGORY[ALLDATA$TITLE=="memorials editor"]<-"special"
+ALLDATA$CATEGORY[ALLDATA$TITLE=="in memoriam editor"]<-"special"
+
+ALLDATA$CATEGORY[ALLDATA$TITLE=="journal director"]<-"production"
+ALLDATA$CATEGORY[ALLDATA$TITLE=="journals director"]<-"production"
+ALLDATA$CATEGORY[ALLDATA$TITLE=="translator"]<-"production"
+ALLDATA$CATEGORY[ALLDATA$TITLE=="spanish abstract translations" ]<-"production"
+ALLDATA$CATEGORY[ALLDATA$TITLE=="assistant editors"]<-"production"
+ALLDATA$CATEGORY[ALLDATA$TITLE=="central ornithology publications office coordinator"]<-"production"
+ALLDATA$CATEGORY[ALLDATA$TITLE=="copy editor"]<-"production"
+ALLDATA$CATEGORY[ALLDATA$TITLE=="copyeditor"]<-"production"
+
+# DOUBLE CHECK!!!!     
+ALLDATA$CATEGORY[ALLDATA$TITLE=="manager"]<-"production"
+ALLDATA$CATEGORY[ALLDATA$TITLE=="office coordinator"]<-"production"
+ALLDATA$CATEGORY[ALLDATA$TITLE=="proof editor"]<-"production"
+ALLDATA$CATEGORY[ALLDATA$TITLE=="project manager"]<-"production"
+ALLDATA$CATEGORY[ALLDATA$TITLE=="review editor"]<-"production"
+ALLDATA$CATEGORY[ALLDATA$TITLE=="review manager" ]<-"production"
+ALLDATA$CATEGORY[ALLDATA$TITLE=="editorial advisory board"]<-"oversight"
+ALLDATA$CATEGORY[ALLDATA$TITLE=="editor"]<-"se" #OIKOS
+ALLDATA$CATEGORY[ALLDATA$TITLE=="editors"]<-"se" 
+ALLDATA$CATEGORY[ALLDATA$TITLE=="interim editor"]<-"eic" 
+ALLDATA$CATEGORY[ALLDATA$TITLE=="missing"]<-"TBD"     
+ALLDATA$CATEGORY[ALLDATA$TITLE=="outgoing editor"]<-"eic"     
+ALLDATA$CATEGORY[ALLDATA$TITLE=="editor elect"]<-"se"     
+
+levels(as.factor(ALLDATA$TITLE))
+levels(as.factor(ALLDATA$CATEGORY))
+
+
+###RECATOEGORIZE THE PRODUCTION STAFF
+ALLDATA$CATEGORY[ALLDATA$TITLE=="editorial assistants"]<-"production"
+ALLDATA$CATEGORY[ALLDATA$TITLE=="me"]<-"Production" #ME = Managing Editor
+ALLDATA$CATEGORY[ALLDATA$TITLE=="editorial assistant"]<-"production"
+ALLDATA$CATEGORY[ALLDATA$TITLE=="assistant managing editor"]<-"production"
+ALLDATA$CATEGORY[ALLDATA$TITLE=="managing editor"]<-"production"
+ALLDATA$CATEGORY[ALLDATA$TITLE=="production editor"]<-"production"
+ALLDATA$CATEGORY[ALLDATA$TITLE=="publications committee" ]<-"oversight" #JZOOL
+ALLDATA$CATEGORY[ALLDATA$TITLE=="assistant editor"]<-"production"#JZOOL
+
+
+ALLDATA<-ALLDATA %>% filter(CATEGORY!="production"|CATEGORY!="oversight")
+
+ALLDATA<-ALLDATA %>% filter(CATEGORY=="se"|CATEGORY=="eic"|CATEGORY=="ae"|CATEGORY=="special"|CATEGORY=="TBD")
+# ALLDATA<-ALLDATA %>% filter(CATEGORY!="Production"|CATEGORY!="Oversight")
+
+#########################################################################################
+#########################################################################################
+#########################################################################################
+# TODO: NEED TO CONVERT THE DIFFERENT CATEGORIES TO SHORTCUT TITLES
+levels(as.factor(ALLDATA$TITLE))
+levels(as.factor(ALLDATA$CATEGORY))
+
+#########################################################################################
+#########################################################################################
+#########################################################################################
+
 ##############
 # HOW MANY YEARS OF EACH JOURNAL?
 str(ALLDATA)
@@ -730,6 +910,35 @@ foo[duplicated(foo[,1:4]),]
 ALLDATA<-distinct(ALLDATA,JOURNAL,LAST_NAME,FIRST_NAME,YEAR,TITLE,.keep_all = TRUE)
 ###############################
 
+
+
+
+
+############################
+# TODO: missing an editor_ID
+
+ALLDATA$editor_id<-as.character(ALLDATA$editor_id)
+ALLDATA<-ALLDATA %>% replace_na(list(editor_id = "TBD"))
+no_edID<-ALLDATA %>% 
+  filter(editor_id=="TBD"|editor_id=="missing"|is.na(editor_id)) %>% 
+  select(LAST_NAME,FIRST_NAME,MIDDLE_NAME) %>% 
+  group_by(LAST_NAME, FIRST_NAME,MIDDLE_NAME) %>% 
+  slice(n=1)
+no_edID
+
+no_edID<-inner_join(ALLDATA,no_edID) %>% 
+  select(JOURNAL,YEAR,editor_id,FIRST_NAME,MIDDLE_NAME,LAST_NAME,TITLE,INST) %>% 
+  group_by(FIRST_NAME,MIDDLE_NAME,LAST_NAME,editor_id) %>% 
+  slice(n=1) %>% 
+  arrange(LAST_NAME,FIRST_NAME,MIDDLE_NAME,editor_id)
+
+write.csv(no_edID, file="./output_review/no_editor_ID.csv", row.names = F) #export it as a csv file
+############################
+
+
+
+
+
 ###########################
 ###########################
 ###########################
@@ -749,7 +958,11 @@ ALLDATA_ORIG_FOR_TESTING<-ALLDATA
 # ALLDATA<-ALLDATA_ORIG_FOR_TESTING
 # ALLDATA<-ALLDATA %>% filter(JOURNAL!="CONDOR"&JOURNAL!="AUK"&JOURNAL!="AGRONOMY"&
 #                               JOURNAL!="NAJFM"&JOURNAL!="MARECOL"&JOURNAL!="GCB")
-ALLDATA<-ALLDATA %>% filter(JOURNAL!="AGRONOMY"&JOURNAL!="NAJFM"&JOURNAL!="MARECOL")
+ALLDATA<-ALLDATA %>% filter(JOURNAL!="agronomy")
+ALLDATA<-ALLDATA %>% filter(JOURNAL!="najfm")
+ALLDATA<-ALLDATA %>% filter(JOURNAL!="auk")
+ALLDATA<-ALLDATA %>% filter(JOURNAL!="marecol")
+ALLDATA<-ALLDATA %>% filter(JOURNAL!="condor")
 
 ###########################
 # TODO: FINAL REVIEW OF DATA
@@ -802,13 +1015,12 @@ write_csv(ALLDATA_inst_check_by_country,"./output_review/ALLDATA_inst_check_by_c
 
 
 
-
-
-
 checkINST<-ALLDATA %>% 
   select(INST) %>% 
   distinct(INST) %>% 
   arrange(INST)
+
+
 # similarity index to to find mispellings etc.
 source("./functions_data_cleaning/name.check.R")
 checkINST$INST<-as.character(checkINST$INST)
@@ -842,6 +1054,7 @@ str(checkINST$INST)
 NameSimilarityDF<-name.check(checkINST$INST)
 write.csv(NameSimilarityDF, file="./output_review/NameSimilarityDF_check.csv", row.names = F) #export it as a csv file
 ############################
+
 
 
 
@@ -921,7 +1134,7 @@ dup_edID4<-dup_edID4 %>%
   group_by(LAST_NAME,first_init) %>% 
   distinct(LAST_NAME,first_init,editor_id,.keep_all=TRUE) %>%  
   mutate(n_names=n_distinct(editor_id)) %>% 
-    arrange(desc(LAST_NAME,FIRST_NAME,editor_id)) %>% 
+    arrange(LAST_NAME,first_init,FIRST_NAME,editor_id) %>% 
   filter(n_names>1)
 dup_edID4 
 
@@ -946,12 +1159,12 @@ missing_INST_names<-ALLDATA %>%
   group_by(JOURNAL,LAST_NAME,FIRST_NAME) %>% 
   filter(row_number()==1 | row_number()==n()) %>% 
   arrange(JOURNAL,LAST_NAME,FIRST_NAME,YEAR)
-write.csv(missing_INST_names, file="./output_review/missing_INST_editor_names.csv", row.names = F) #export it as a csv file
+write.csv( , file="./output_review/missing_INST_editor_names.csv", row.names = F) #export it as a csv file
 ############################
 
 ############################
 # Cases of editors with >1 INST (including NA, TBD, errors of spelling)
-dup_INST<-ALLDATA %>% 
+multiple_INST<-ALLDATA %>% 
   select(LAST_NAME,FIRST_NAME,JOURNAL,INST,YEAR) %>%
   distinct(LAST_NAME,FIRST_NAME,INST,.keep_all = TRUE) %>%  
   # filter(editor_id!="TBD") %>% 
@@ -964,8 +1177,8 @@ dup_INST<-ALLDATA %>%
   select(LAST_NAME,FIRST_NAME,INST,YEAR,JOURNAL) %>% 
   arrange(LAST_NAME,FIRST_NAME,YEAR)
   
-dup_INST
-write.csv(dup_INST, file="./output_review/eds_dup_INST.csv", row.names = F) #export it as a csv file
+multiple_INST
+write.csv(multiple_INST, file="./output_review/eds_multiple_INST.csv", row.names = F) #export it as a csv file
 
 ############################
 # SUMMARY OF HOW MANY MISSING INST BY JOURNAL
@@ -994,6 +1207,42 @@ checkINST3<-ALLDATA %>%
 checkINST3
 sum(checkINST3$n)
 ############################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ############################
