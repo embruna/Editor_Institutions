@@ -1,96 +1,106 @@
-PJ_OIKOS_corrections <- function(ORIGINAL_DATA) {
-  # ORIGINAL_DATA<-ALLDATA  
+PJ_OIKOS_corrections <- function(original_data) {
+  # original_data<-alldata
   library(tidyverse)
 
+
+  oikos_inst <- read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_OIKOS.csv", col_names = TRUE)
+  oikos_inst<-oikos_inst %>%
+    mutate(across(everything(), as.character))
+  names(oikos_inst)
+
+  oikos_inst <- oikos_inst %>% select(-"...1")
+  oikos_inst <- oikos_inst %>% select(
+    journal, year, editor_id, first_name,
+    middle_name, last_name, inst, city, notes
+  )
+
+  # original_data<-ALLDATA
+  OIKOS <- filter(original_data, journal == "OIKOS")
+
+  colnames(OIKOS)
+  colnames(original_data)
+
+
+  # remove OECOL FROM THE COMPLETE DATASET, WILL REBIND AFTER ADDING CORRECTIONS
+  original_data <- original_data %>% filter(journal != "OIKOS")
+
+  # INSERT THE CORRECTIONS TO OECOL AND FILL
+  OIKOS <- OIKOS %>% na_if("missing")
+  oikos_inst <- oikos_inst %>% na_if("missing")
+
+
+  OIKOS$inst <- as.character(OIKOS$inst)
+
+  oikos_inst$editor_id <- as.character(oikos_inst$editor_id)
+  OIKOS$editor_id <- as.character(OIKOS$editor_id)
+  #
+  OIKOS <- full_join(OIKOS, oikos_inst, by = c("last_name", "first_name", "year"), all = T)
+
+  OIKOS <- OIKOS %>%
+    mutate(city.x = ifelse((is.na(city.x) | city.x == "missing"), city.y, city.x)) %>%
+    select(-city.y) %>%
+    rename("city" = "city.x")
+  OIKOS <- OIKOS %>%
+    mutate(inst.x = ifelse((is.na(inst.x) | inst.x == "missing"), inst.y, inst.x)) %>%
+    select(-inst.y) %>%
+    rename("inst" = "inst.x")
+  OIKOS <- OIKOS %>%
+    select(-journal.y) %>%
+    rename("journal" = "journal.x")
+  OIKOS <- OIKOS %>%
+    mutate(middle_name.x = ifelse((is.na(middle_name.x) | middle_name.x == "missing"), middle_name.y, middle_name.x)) %>%
+    select(-middle_name.y) %>%
+    rename("middle_name" = "middle_name.x")
+  OIKOS <- OIKOS %>%
+    mutate(notes.x = ifelse((is.na(notes.x) | notes.x == "missing"), notes.y, notes.x)) %>%
+    select(-notes.y) %>%
+    rename("notes" = "notes.x")
+  # OIKOS <- OIKOS %>%
+  #   mutate(UNIT.x = ifelse((is.na(UNIT.x)|UNIT.x=="missing"), UNIT.y, UNIT.x)) %>%
+  #   select(-UNIT.y) %>%
+  #   rename("UNIT"="UNIT.x")
+  # OIKOS <- OIKOS %>%
+  #   mutate(state.x = ifelse((is.na(state.x)|state.x=="missing"), state.y, state.x)) %>%
+  #   select(-state.y) %>%
+  #   rename("state"="state.x")
+  # OIKOS <- OIKOS %>%
+  #   select(-COUNTRY.y) %>%
+  #   rename("COUNTRY"="COUNTRY.x")
+  OIKOS <- OIKOS %>%
+    mutate(editor_id.x = ifelse((is.na(editor_id.x) | editor_id.x == "missing"), editor_id.y, editor_id.x)) %>%
+    select(-editor_id.y) %>%
+    rename("editor_id" = "editor_id.x")
+  #
+  OIKOS$journal <- "OIKOS"
+  #
+  # OIKOS$last_name[OIKOS$last_name=="Lookinbill"]<-"Lookingbill"
+  # OIKOS$city[OIKOS$last_name=="Overton"]<-NA
+  # OIKOS$geo.code[OIKOS$last_name=="Betts"]<-"CAN"
+
+  OIKOS <- OIKOS %>%
+    group_by(last_name, first_name) %>%
+    fill(inst, city, .direction = "down")
+  #
+  # OIKOS$editor_id<-as.factor(OIKOS$editor_id)
+  # #
+  # # Rebind the ORIGINAL DATA AND NOW CORRECTED OIKOS
+  #
+  # str(original_data)
+  # str(OIKOS)
+  # OIKOS$editor_id<-as.factor(OIKOS$editor_id)
+  # str(oikos_inst)
+  # original_data<-bind_rows(original_data,OIKOS)
+  # colnames(original_data)
+
+  # rm(OIKOS,oikos_inst)
+  OIKOS$editor_id <- as.character(OIKOS$editor_id)
   
-OIKOS_inst<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_OIKOS.csv", col_names = TRUE)
   
-names(OIKOS_inst)
-
-OIKOS_inst<-OIKOS_inst %>%  select(-X1) 
-OIKOS_inst<-OIKOS_inst %>% select(JOURNAL, YEAR,editor_id, FIRST_NAME,
-                                MIDDLE_NAME, LAST_NAME, INST,CITY,NOTES)
-
-# ORIGINAL_DATA<-ALLDATA
-OIKOS<-filter(ORIGINAL_DATA,JOURNAL=="OIKOS")
-
-colnames(OIKOS)
-colnames(ORIGINAL_DATA)
-
-
-# remove OECOL FROM THE COMPLETE DATASET, WILL REBIND AFTER ADDING CORRECTIONS
-ORIGINAL_DATA<-ORIGINAL_DATA %>% filter(JOURNAL!="OIKOS")
-
-# INSERT THE CORRECTIONS TO OECOL AND FILL
-OIKOS<-OIKOS %>% na_if("missing")
-OIKOS_inst<-OIKOS_inst %>% na_if("missing")
-
-
-OIKOS$INST<-as.character(OIKOS$INST)
-
-OIKOS_inst$editor_id<-as.character(OIKOS_inst$editor_id)
-OIKOS$editor_id<-as.character(OIKOS$editor_id)
-# 
-OIKOS<-full_join(OIKOS, OIKOS_inst, by = c("LAST_NAME","FIRST_NAME","YEAR"),all = T)
-
-OIKOS <- OIKOS %>%
-  mutate(CITY.x = ifelse((is.na(CITY.x)|CITY.x=="missing"), CITY.y, CITY.x)) %>%
-  select(-CITY.y) %>%
-  rename("CITY"="CITY.x")
-OIKOS <- OIKOS %>%
-  mutate(INST.x = ifelse((is.na(INST.x)|INST.x=="missing"), INST.y, INST.x)) %>%
-  select(-INST.y) %>%
-  rename("INST"="INST.x")
-OIKOS <- OIKOS %>%
-  select(-JOURNAL.y) %>%
-  rename("JOURNAL"="JOURNAL.x")
-OIKOS <- OIKOS %>%
-  mutate(MIDDLE_NAME.x = ifelse((is.na(MIDDLE_NAME.x)|MIDDLE_NAME.x=="missing"), MIDDLE_NAME.y, MIDDLE_NAME.x)) %>%
-  select(-MIDDLE_NAME.y) %>%
-  rename("MIDDLE_NAME"="MIDDLE_NAME.x")
-OIKOS <- OIKOS %>%
-  mutate(NOTES.x = ifelse((is.na(NOTES.x)|NOTES.x=="missing"), NOTES.y, NOTES.x)) %>%
-  select(-NOTES.y) %>%
-  rename("NOTES"="NOTES.x")
-# OIKOS <- OIKOS %>%
-#   mutate(UNIT.x = ifelse((is.na(UNIT.x)|UNIT.x=="missing"), UNIT.y, UNIT.x)) %>%
-#   select(-UNIT.y) %>%
-#   rename("UNIT"="UNIT.x")
-# OIKOS <- OIKOS %>%
-#   mutate(STATE.x = ifelse((is.na(STATE.x)|STATE.x=="missing"), STATE.y, STATE.x)) %>%
-#   select(-STATE.y) %>%
-#   rename("STATE"="STATE.x")
-# OIKOS <- OIKOS %>%
-#   select(-COUNTRY.y) %>%
-#   rename("COUNTRY"="COUNTRY.x")
-OIKOS <- OIKOS %>%
-  mutate(editor_id.x = ifelse((is.na(editor_id.x)|editor_id.x=="missing"), editor_id.y, editor_id.x)) %>%
-  select(-editor_id.y) %>%
-  rename("editor_id"="editor_id.x")
-# 
-OIKOS$JOURNAL<-"OIKOS"
-# 
-# OIKOS$LAST_NAME[OIKOS$LAST_NAME=="Lookinbill"]<-"Lookingbill"
-# OIKOS$CITY[OIKOS$LAST_NAME=="Overton"]<-NA
-# OIKOS$geo.code[OIKOS$LAST_NAME=="Betts"]<-"CAN"
-
-OIKOS<-OIKOS %>% group_by(LAST_NAME,FIRST_NAME) %>% 
-  fill(INST,CITY,.direction="down")
-# 
-# OIKOS$editor_id<-as.factor(OIKOS$editor_id)
-# # 
-# # Rebind the ORIGINAL DATA AND NOW CORRECTED OIKOS
-# 
-# str(ORIGINAL_DATA)
-# str(OIKOS)
-# OIKOS$editor_id<-as.factor(OIKOS$editor_id)
-# str(OIKOS_inst)
-# ORIGINAL_DATA<-bind_rows(ORIGINAL_DATA,OIKOS)
-# colnames(ORIGINAL_DATA)
-
-# rm(OIKOS,OIKOS_inst)
-OIKOS$editor_id<-as.character(OIKOS$editor_id)
-ORIGINAL_DATA$editor_id<-as.character(ORIGINAL_DATA$editor_id)
-return_list <- list(ORIGINAL_DATA,OIKOS)
-return(return_list)
+  
+  OIKOS<-OIKOS %>%
+    mutate(across(everything(), as.character))
+  
+  original_data$editor_id <- as.character(original_data$editor_id)
+  return_list <- list(original_data, OIKOS)
+  return(return_list)
 }

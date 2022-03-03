@@ -72,6 +72,8 @@ clean_GCB <- function(DATAFILE) {
   
   
   
+  DATAFILE<-DATAFILE %>%
+    mutate(across(everything(), as.character))
 
   return(DATAFILE)
 }

@@ -143,6 +143,8 @@ clean_CONBIO <- function(DATAFILE) {
   
   
   
+  DATAFILE<-DATAFILE %>%
+    mutate(across(everything(), as.character))
   return(DATAFILE)
 }
 

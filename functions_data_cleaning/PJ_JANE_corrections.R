@@ -1,96 +1,107 @@
-PJ_JANE_corrections <- function(ORIGINAL_DATA) {
-  # ORIGINAL_DATA<-ALLDATA  
+PJ_JANE_corrections <- function(original_data) {
+  # original_data<-alldata
   library(tidyverse)
+
+  jane_inst <- read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_JANE.csv", col_names = TRUE)
+  names(jane_inst)
+  jane_inst<-jane_inst %>%
+    mutate(across(everything(), as.character))
   
-JANE_inst<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_JANE.csv", col_names = TRUE)
-names(JANE_inst)
-JANE_inst<-JANE_inst %>%  select(-X1)
-JANE_inst<-JANE_inst %>% select(JOURNAL, YEAR,editor_id, FIRST_NAME,
-                                MIDDLE_NAME, LAST_NAME, INST,CITY,NOTES)
+  jane_inst <- jane_inst %>% select(-"...1")
+  jane_inst <- jane_inst %>% select(
+    journal, year, editor_id, first_name,
+    middle_name, last_name, inst, city, notes
+  )
 
-JANE_inst<-JANE_inst %>% filter_all(any_vars(!is.na(.)))
+  jane_inst <- jane_inst %>% filter_all(any_vars(!is.na(.)))
 
-# ORIGINAL_DATA<-ALLDATA
-JANE<-filter(ORIGINAL_DATA,JOURNAL=="JANE")
+  # original_data<-ALLDATA
+  JANE <- filter(original_data, journal == "JANE")
 
-colnames(JANE)
-colnames(ORIGINAL_DATA)
-
-
-# remove JANE FROM THE COMPLETE DATASET, WILL REBIND AFTER ADDING CORRECTIONS
-ORIGINAL_DATA<-ORIGINAL_DATA %>% filter(JOURNAL!="JANE")
-
-# INSERT THE CORRECTIONS TO JANE AND FILL
-JANE<-JANE %>% na_if("missing")
-JANE_inst<-JANE_inst %>% na_if("missing")
+  colnames(JANE)
+  colnames(original_data)
 
 
-JANE$INST<-as.character(JANE$INST)
+  # remove JANE FROM THE COMPLETE DATASET, WILL REBIND AFTER ADDING CORRECTIONS
+  original_data <- original_data %>% filter(journal != "JANE")
 
-JANE_inst$editor_id<-as.character(JANE_inst$editor_id)
-JANE$editor_id<-as.character(JANE$editor_id)
-# 
-JANE<-full_join(JANE, JANE_inst, by = c("LAST_NAME","FIRST_NAME","YEAR"),all = T)
+  # INSERT THE CORRECTIONS TO JANE AND FILL
+  JANE <- JANE %>% na_if("missing")
+  jane_inst <- jane_inst %>% na_if("missing")
 
-JANE <- JANE %>%
-  mutate(CITY.x = ifelse((is.na(CITY.x)|CITY.x=="missing"), CITY.y, CITY.x)) %>%
-  select(-CITY.y) %>%
-  rename("CITY"="CITY.x")
-JANE <- JANE %>%
-  mutate(INST.x = ifelse((is.na(INST.x)|INST.x=="missing"), INST.y, INST.x)) %>%
-  select(-INST.y) %>%
-  rename("INST"="INST.x")
-JANE <- JANE %>%
-  select(-JOURNAL.y) %>%
-  rename("JOURNAL"="JOURNAL.x")
-JANE <- JANE %>%
-  mutate(MIDDLE_NAME.x = ifelse((is.na(MIDDLE_NAME.x)|MIDDLE_NAME.x=="missing"), MIDDLE_NAME.y, MIDDLE_NAME.x)) %>%
-  select(-MIDDLE_NAME.y) %>%
-  rename("MIDDLE_NAME"="MIDDLE_NAME.x")
-JANE <- JANE %>%
-  mutate(NOTES.x = ifelse((is.na(NOTES.x)|NOTES.x=="missing"), NOTES.y, NOTES.x)) %>%
-  select(-NOTES.y) %>%
-  rename("NOTES"="NOTES.x")
-# JANE <- JANE %>%
-#   mutate(UNIT.x = ifelse((is.na(UNIT.x)|UNIT.x=="missing"), UNIT.y, UNIT.x)) %>%
-#   select(-UNIT.y) %>%
-#   rename("UNIT"="UNIT.x")
-# JANE <- JANE %>%
-#   mutate(STATE.x = ifelse((is.na(STATE.x)|STATE.x=="missing"), STATE.y, STATE.x)) %>%
-#   select(-STATE.y) %>%
-#   rename("STATE"="STATE.x")
-# JANE <- JANE %>%
-#   select(-COUNTRY.y) %>%
-#   rename("COUNTRY"="COUNTRY.x")
-JANE <- JANE %>%
-  mutate(editor_id.x = ifelse((is.na(editor_id.x)|editor_id.x=="missing"), editor_id.y, editor_id.x)) %>%
-  select(-editor_id.y) %>%
-  rename("editor_id"="editor_id.x")
-# 
-JANE$JOURNAL<-"JANE"
 
-# 
-# JANE$LAST_NAME[JANE$LAST_NAME=="Lookinbill"]<-"Lookingbill"
-# JANE$CITY[JANE$LAST_NAME=="Overton"]<-NA
-# JANE$geo.code[JANE$LAST_NAME=="Betts"]<-"CAN"
-colnames(JANE)
-JANE<-JANE %>% group_by(LAST_NAME,FIRST_NAME,COUNTRY) %>% 
-  fill(INST,CITY,.direction="down")
-# 
-# JANE$editor_id<-as.factor(JANE$editor_id)
-# # 
-# # Rebind the ORIGINAL DATA AND NOW CORRECTED JANE
-# 
-# str(ORIGINAL_DATA)
-# str(JANE)
-# JANE$editor_id<-as.factor(JANE$editor_id)
-# str(JANE_inst)
-# ORIGINAL_DATA<-bind_rows(ORIGINAL_DATA,JANE)
-# colnames(ORIGINAL_DATA)
+  JANE$inst <- as.character(JANE$inst)
 
-# rm(JANE,JANE_inst)
-JANE$editor_id<-as.character(JANE$editor_id)
-ORIGINAL_DATA$editor_id<-as.character(ORIGINAL_DATA$editor_id)
-return_list <- list(ORIGINAL_DATA,JANE)
-return(return_list)
+  jane_inst$editor_id <- as.character(jane_inst$editor_id)
+  JANE$editor_id <- as.character(JANE$editor_id)
+  #
+  JANE <- full_join(JANE, jane_inst, by = c("last_name", "first_name", "year"), all = T)
+
+  JANE <- JANE %>%
+    mutate(city.x = ifelse((is.na(city.x) | city.x == "missing"), city.y, city.x)) %>%
+    select(-city.y) %>%
+    rename("city" = "city.x")
+  JANE <- JANE %>%
+    mutate(inst.x = ifelse((is.na(inst.x) | inst.x == "missing"), inst.y, inst.x)) %>%
+    select(-inst.y) %>%
+    rename("inst" = "inst.x")
+  JANE <- JANE %>%
+    select(-journal.y) %>%
+    rename("journal" = "journal.x")
+  JANE <- JANE %>%
+    mutate(middle_name.x = ifelse((is.na(middle_name.x) | middle_name.x == "missing"), middle_name.y, middle_name.x)) %>%
+    select(-middle_name.y) %>%
+    rename("middle_name" = "middle_name.x")
+  JANE <- JANE %>%
+    mutate(notes.x = ifelse((is.na(notes.x) | notes.x == "missing"), notes.y, notes.x)) %>%
+    select(-notes.y) %>%
+    rename("notes" = "notes.x")
+  # JANE <- JANE %>%
+  #   mutate(UNIT.x = ifelse((is.na(UNIT.x)|UNIT.x=="missing"), UNIT.y, UNIT.x)) %>%
+  #   select(-UNIT.y) %>%
+  #   rename("UNIT"="UNIT.x")
+  # JANE <- JANE %>%
+  #   mutate(STATE.x = ifelse((is.na(STATE.x)|STATE.x=="missing"), STATE.y, STATE.x)) %>%
+  #   select(-STATE.y) %>%
+  #   rename("STATE"="STATE.x")
+  # JANE <- JANE %>%
+  #   select(-country.y) %>%
+  #   rename("country"="country.x")
+  JANE <- JANE %>%
+    mutate(editor_id.x = ifelse((is.na(editor_id.x) | editor_id.x == "missing"), editor_id.y, editor_id.x)) %>%
+    select(-editor_id.y) %>%
+    rename("editor_id" = "editor_id.x")
+  #
+  JANE$journal <- "JANE"
+
+  #
+  # JANE$last_name[JANE$last_name=="Lookinbill"]<-"Lookingbill"
+  # JANE$city[JANE$last_name=="Overton"]<-NA
+  # JANE$geo.code[JANE$last_name=="Betts"]<-"CAN"
+  colnames(JANE)
+  JANE <- JANE %>%
+    group_by(last_name, first_name, country) %>%
+    fill(inst, city, .direction = "down")
+  #
+  # JANE$editor_id<-as.factor(JANE$editor_id)
+  # #
+  # # Rebind the ORIGINAL DATA AND NOW CORRECTED JANE
+  #
+  # str(original_data)
+  # str(JANE)
+  # JANE$editor_id<-as.factor(JANE$editor_id)
+  # str(jane_inst)
+  # original_data<-bind_rows(original_data,JANE)
+  # colnames(original_data)
+
+  # rm(JANE,jane_inst)
+  JANE$editor_id <- as.character(JANE$editor_id)
+  
+  
+  JANE<-JANE %>%
+    mutate(across(everything(), as.character))
+  
+  original_data$editor_id <- as.character(original_data$editor_id)
+  return_list <- list(original_data, JANE)
+  return(return_list)
 }

@@ -130,6 +130,8 @@ clean_FUNECOL <- function(DATAFILE1,DATAFILE2) {
     mutate(STATE = ifelse((row_number()>1 & STATE=="missing"),NA, STATE))
   
   
+  DATAFILE<-DATAFILE %>%
+    mutate(across(everything(), as.character))
   
     return(DATAFILE)
 }

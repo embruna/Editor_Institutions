@@ -1,84 +1,111 @@
 # This will load and the corrected files and make the required changes.
-PJ_OECOL_corrections <- function(ORIGINAL_DATA) {
-  # ORIGINAL_DATA<-ALLDATA  
+PJ_OECOL_corrections <- function(original_data) {
+  # original_data<-alldata
   library(tidyverse)
+
+  oecol_inst <- read.csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_OECOL.csv", encoding = "ascii")
   
-OECOL_inst<-read.csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_OECOL.csv", encoding="ascii")
-names(OECOL_inst)
-OECOL_inst<-OECOL_inst %>%  select(-X,-editor_id.y) %>%
-  rename("editor_id"="editor_id.x")
-names(OECOL_inst)
-OECOL_inst<-OECOL_inst %>% select(JOURNAL, YEAR,editor_id, FIRST_NAME,
-                                  MIDDLE_NAME, LAST_NAME, INST,CITY,NOTES)
+  oecol_inst<-oecol_inst %>%
+    mutate(across(everything(), as.character))
+  
+  
+  names(oecol_inst)
+  oecol_inst <- oecol_inst %>%
+    select(-X, -editor_id.y) %>%
+    rename("editor_id" = "editor_id.x")
+  names(oecol_inst)
+  oecol_inst <- oecol_inst %>% select(
+    journal, year, editor_id, first_name,
+    middle_name, last_name, inst, city, notes
+  )
 
 
-# NEW df with OECOLOGIA
-OECOLOGIA<-filter(ORIGINAL_DATA,JOURNAL=="OECOL")
+  # NEW df with oecologia
+  oecologia <- filter(original_data, journal == "OECOL")
 
-# remove OECOL FROM THE COMPLETE DATASET, WILL REBIND AFTER ADDING CORRECTIONS
-ORIGINAL_DATA<-ORIGINAL_DATA %>% filter(JOURNAL!="OECOL")
+  # remove OECOL FROM THE COMPLETE DATASET, WILL REBIND AFTER ADDING CORRECTIONS
+  original_data <- original_data %>% filter(journal != "OECOL")
 
-# INSERT THE CORRECTIONS TO OECOL AND FILL
-OECOLOGIA<-OECOLOGIA %>% na_if("missing")
-OECOL_inst<-OECOL_inst %>% na_if("missing")
-# colnames(OECOLOGIA)
-# colnames(OECOL_inst)
-# str(OECOLOGIA)
-# str(OECOL_inst)
-OECOL_inst$editor_id<-as.factor(OECOL_inst$editor_id)
-OECOL_inst$INST<-as.character(OECOL_inst$INST)
-OECOLOGIA$INST<-as.character(OECOLOGIA$INST)
+  # INSERT THE CORRECTIONS TO OECOL AND FILL
+  oecologia <- oecologia %>% na_if("missing")
+  oecol_inst <- oecol_inst %>% na_if("missing")
+  # colnames(oecologia)
+  # colnames(oecol_inst)
+  # str(oecologia)
+  # str(oecol_inst)
+  oecol_inst$editor_id <- as.factor(oecol_inst$editor_id)
+  oecol_inst$inst <- as.character(oecol_inst$inst)
+  oecologia$inst <- as.character(oecologia$inst)
 
-OECOL_inst$MIDDLE_NAME<-as.character(OECOL_inst$MIDDLE_NAME)
-OECOLOGIA$MIDDLE_NAME<-as.character(OECOLOGIA$MIDDLE_NAME)
+  oecol_inst$middle_name <- as.character(oecol_inst$middle_name)
+  oecologia$middle_name <- as.character(oecologia$middle_name)
 
-OECOL_inst$LAST_NAME<-as.character(OECOL_inst$LAST_NAME)
-OECOLOGIA$LAST_NAME<-as.character(OECOLOGIA$LAST_NAME)
+  oecol_inst$last_name <- as.character(oecol_inst$last_name)
+  oecologia$last_name <- as.character(oecologia$last_name)
 
-OECOL_inst$FIRST_NAME<-as.character(OECOL_inst$FIRST_NAME)
-OECOLOGIA$FIRST_NAME<-as.character(OECOLOGIA$FIRST_NAME)
+  oecol_inst$first_name <- as.character(oecol_inst$first_name)
+  oecologia$first_name <- as.character(oecologia$first_name)
 
-OECOL_inst$CITY<-as.character(OECOL_inst$CITY)
-OECOLOGIA$CITY<-as.character(OECOLOGIA$CITY)
+  oecol_inst$city <- as.character(oecol_inst$city)
+  oecologia$city <- as.character(oecologia$city)
 
-OECOL_inst$NOTES<-as.character(OECOL_inst$NOTES)
-OECOLOGIA$NOTES<-as.character(OECOLOGIA$NOTES)
+  oecol_inst$notes <- as.character(oecol_inst$notes)
+  oecologia$notes <- as.character(oecologia$notes)
+  
+  oecologia <- full_join(oecologia, oecol_inst, by = c("last_name", "first_name", "year"), all = T) %>%
+    group_by(last_name, first_name) %>%
+    mutate(city.x = ifelse((is.na(city.x) | city.x == "missing"), city.y, city.x)) %>%
+    select(-city.y) %>%
+    rename("city" = "city.x") %>%
+    mutate(inst.x = ifelse((is.na(inst.x) | inst.x == "missing"), inst.y, inst.x)) %>%
+    select(-inst.y) %>%
+    rename("inst" = "inst.x") %>%
+    select(-journal.y) %>%
+    rename("journal" = "journal.x") %>%
+    mutate(middle_name.x = ifelse((is.na(middle_name.x) | middle_name.x == "missing"), middle_name.y, middle_name.x)) %>%
+    select(-middle_name.y) %>%
+    rename("middle_name" = "middle_name.x") %>%
+    mutate(notes.x = ifelse((is.na(notes.x) | notes.x == "missing"), notes.y, notes.x)) %>%
+    select(-notes.y) %>%
+    rename("notes" = "notes.x") 
+  # %>%
+  #   mutate(editor_id.x = ifelse((is.na(editor_id.x) | editor_id.x == "missing"), editor_id.y, editor_id.x)) %>%
+  #   select(-editor_id.y) %>%
+  #   rename("editor_id" = "editor_id.x")
 
-OECOLOGIA<-full_join(OECOLOGIA, OECOL_inst, by = c("LAST_NAME","FIRST_NAME","YEAR"),all = T) %>%
-  group_by(LAST_NAME,FIRST_NAME) %>%
-  mutate(CITY.x = ifelse((is.na(CITY.x)|CITY.x=="missing"), CITY.y, CITY.x)) %>%
-  select(-CITY.y) %>%
-  rename("CITY"="CITY.x") %>%
-  mutate(INST.x = ifelse((is.na(INST.x)|INST.x=="missing"), INST.y, INST.x)) %>%
-  select(-INST.y) %>%
-  rename("INST"="INST.x") %>%
-  select(-JOURNAL.y) %>%
-  rename("JOURNAL"="JOURNAL.x") %>%
-  mutate(MIDDLE_NAME.x = ifelse((is.na(MIDDLE_NAME.x)|MIDDLE_NAME.x=="missing"), MIDDLE_NAME.y, MIDDLE_NAME.x)) %>%
-  select(-MIDDLE_NAME.y) %>%
-  rename("MIDDLE_NAME"="MIDDLE_NAME.x") %>%
-  mutate(NOTES.x = ifelse((is.na(NOTES.x)|NOTES.x=="missing"), NOTES.y, NOTES.x)) %>%
-  select(-NOTES.y) %>%
-  rename("NOTES"="NOTES.x") %>%
-  mutate(editor_id.x = ifelse((is.na(editor_id.x)|editor_id.x=="missing"), editor_id.y, editor_id.x)) %>%
-  select(-editor_id.y) %>%
-  rename("editor_id"="editor_id.x")
+  oecologia$journal <- "OECOL"
+  
+  oecologia <- oecologia %>%
+    group_by(last_name, first_name, country) %>%
+    fill(inst, city, .direction = "down")
 
-OECOLOGIA$JOURNAL<-"OECOL"
+  
+  
+  oecologia<-oecologia %>%
+    mutate(across(everything(), as.character))
+  
+  
+  oecologia <- oecologia %>%
+     mutate(editor_id.x = ifelse((is.na(editor_id.x) | editor_id.x == "missing"), editor_id.y, editor_id.x)) %>%
+     select(-editor_id.y) %>%
+     rename("editor_id" = "editor_id.x")
+  
+  
+  oecologia$editor_id <- as.factor(oecologia$editor_id)
 
-OECOLOGIA<-foo<-OECOLOGIA %>% group_by(LAST_NAME,FIRST_NAME,COUNTRY) %>%
-  fill(INST,CITY,.direction="down")
+  # Rebind the ORIGINAL DATA AND NOW CORRECTED oecologia
+  str(original_data)
+  str(oecologia)
 
-OECOLOGIA$editor_id<-as.factor(OECOLOGIA$editor_id)
-
-# Rebind the ORIGINAL DATA AND NOW CORRECTED OECOLOGIA
-str(ORIGINAL_DATA)
-str(OECOLOGIA)
-
-# ORIGINAL_DATA<-bind_rows(ORIGINAL_DATA,OECOLOGIA)
-# rm(OECOLOGIA,OECOL_inst)
-OECOLOGIA$editor_id<-as.character(OECOLOGIA$editor_id)
-ORIGINAL_DATA$editor_id<-as.character(ORIGINAL_DATA$editor_id)
-return_list <- list(ORIGINAL_DATA,OECOLOGIA)
-return(return_list)
+  # original_data<-bind_rows(original_data,oecologia)
+  # rm(oecologia,oecol_inst)
+  oecologia$editor_id <- as.character(oecologia$editor_id)
+  
+  
+  oecologia<-oecologia %>%
+    mutate(across(everything(), as.character))
+  
+  original_data$editor_id <- as.character(original_data$editor_id)
+  return_list <- list(original_data, oecologia)
+  return(return_list)
 }

@@ -91,6 +91,8 @@ clean_LECO <- function(DATAFILE) {
   
   
   
+  DATAFILE<-DATAFILE %>%
+    mutate(across(everything(), as.character))
   
   
   return(DATAFILE)

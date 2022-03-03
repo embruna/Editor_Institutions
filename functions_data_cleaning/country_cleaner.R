@@ -1,33 +1,22 @@
-#FUNCTION TO SYSTEMATIZE and CORRECT COUNTRY NAMES
-country_cleaner <- function(DATAFILE) {
+# FUNCTION TO SYSTEMATIZE and CORRECT country NAMES
+country_cleaner <- function(datafile) {
+  # datafile<-alldata
   
-  
-  # DATAFILE<-ALLDATA
-  # SOME NOTES:
-  
-  # DATAFILE$COUNTRY<-as.factor(DATAFILE$COUNTRY)
-  # levels(DATAFILE$COUNTRY)
-  DATAFILE$COUNTRY<-as.character(DATAFILE$COUNTRY)
-  DATAFILE$COUNTRY[DATAFILE$COUNTRY=="australiatralia"]<-"australia"
-  # DATAFILE$COUNTRY[DATAFILE$COUNTRY=="italy"]<-"italy"
-  DATAFILE$COUNTRY[DATAFILE$COUNTRY=="p. r. china"]<-"china"
-  # DATAFILE$COUNTRY[DATAFILE$COUNTRY=="mexico"]<-"mexico"
-  DATAFILE$COUNTRY[DATAFILE$COUNTRY=="newzealand"]<-"new zealand"
-  DATAFILE$COUNTRY[DATAFILE$COUNTRY=="n. ireland"]<-"northern ireland"
-  DATAFILE$COUNTRY[DATAFILE$COUNTRY=="puertorico"]<-"puerto rico"
-  DATAFILE$COUNTRY[DATAFILE$COUNTRY=="the netherlands"]<-"netherlands"
-  DATAFILE$COUNTRY[DATAFILE$COUNTRY=="uk"]<-"united kingdom"
-  DATAFILE$COUNTRY[DATAFILE$COUNTRY=="us"]<-"usa"
-  # DATAFILE$COUNTRY[DATAFILE$COUNTRY=="usa"]<-"usa"
-  # DATAFILE$COUNTRY[DATAFILE$COUNTRY=="usa"]<-"usa"
-  DATAFILE$COUNTRY[DATAFILE$COUNTRY=="united states"]<-"usa"
-  DATAFILE$COUNTRY[DATAFILE$COUNTRY=="missing"]<-NA
-  # DATAFILE$COUNTRY<-gsub("iran", "iran", DATAFILE$COUNTRY)
-  DATAFILE$COUNTRY<-gsub("california", "usa", DATAFILE$COUNTRY)
-  DATAFILE$COUNTRY<-gsub("germanny", "germany", DATAFILE$COUNTRY)
-  DATAFILE$COUNTRY<-gsub("p.r. china", "china", DATAFILE$COUNTRY)
-  
-  
-  return(DATAFILE)
-  
+  datafile$country <- as.character(datafile$country)
+  datafile$country[datafile$country == "australiatralia"] <- "australia"
+  datafile$country[datafile$country == "p. r. china"] <- "china"
+  datafile$country[datafile$country == "newzealand"] <- "new zealand"
+  datafile$country[datafile$country == "n. ireland"] <- "northern ireland"
+  datafile$country[datafile$country == "puertorico"] <- "puerto rico"
+  datafile$country[datafile$country == "the netherlands"] <- "netherlands"
+  datafile$country[datafile$country == "uk"] <- "united kingdom"
+  datafile$country[datafile$country == "us"] <- "usa"
+  datafile$country[datafile$country == "united states"] <- "usa"
+  datafile$country[datafile$country == "missing"] <- NA
+  datafile$country <- gsub("california", "usa", datafile$country)
+  datafile$country <- gsub("germanny", "germany", datafile$country)
+  datafile$country <- gsub("p.r. china", "china", datafile$country)
+
+
+  return(datafile)
 }

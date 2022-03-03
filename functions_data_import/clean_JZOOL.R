@@ -141,6 +141,13 @@ clean_JZOOL <- function(DATAFILE1,DATAFILE2) {
   # Then need to add a function to upload the corrections/additions
   ##
   
+  
+  DATAFILE<-DATAFILE %>%
+    mutate(across(everything(), as.character))
+
+  
+  DATAFILE$editor_id<-as.character(DATAFILE$editor_id)
+    
   return(DATAFILE)
 }
 

@@ -98,7 +98,12 @@ clean_JBIOG <- function(DATAFILE) {
   
   
   
+  DATAFILE<-DATAFILE %>%
+    mutate(across(everything(), as.character))
   
+  
+  DATAFILE<-DATAFILE %>%
+    mutate(across(everything(), as.character))
   
   return(DATAFILE)
 }

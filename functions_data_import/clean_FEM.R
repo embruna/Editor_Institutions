@@ -79,6 +79,8 @@ clean_FEM <- function(DATAFILE) {
     mutate(STATE = ifelse((row_number()>1 & STATE=="missing"),NA, STATE))
   
   
+  DATAFILE<-DATAFILE %>%
+    mutate(across(everything(), as.character))
   
   
   return(DATAFILE)

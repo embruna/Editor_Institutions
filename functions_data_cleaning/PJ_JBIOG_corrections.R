@@ -1,102 +1,112 @@
-PJ_JBIOG_corrections <- function(ORIGINAL_DATA) {
-  # ORIGINAL_DATA<-ALLDATA  
+pj_jbiog_corrections <- function(original_data) {
+  # original_data<-alldata
   library(tidyverse)
 
+
+  jbiog_inst <- read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_JBIOG.csv", col_names = TRUE)
   
-JBIOG_inst<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_JBIOG.csv", col_names = TRUE)
+  jbiog_inst<-jbiog_inst %>%
+    mutate(across(everything(), as.character))
   
-names(JBIOG_inst)
+  names(jbiog_inst)
 
-JBIOG_inst<-JBIOG_inst %>%  select(-X1) 
-JBIOG_inst<-JBIOG_inst %>% select(JOURNAL, YEAR,editor_id, FIRST_NAME,
-                                MIDDLE_NAME, LAST_NAME, INST,CITY,NOTES,
-                                correct_INST,correct_CITY,correct_STATE,correct_COUNTRY)
+  jbiog_inst <- jbiog_inst %>% select(-"...1")
+  jbiog_inst <- jbiog_inst %>% select(
+    journal, year, editor_id, first_name,
+    middle_name, last_name, inst, city, notes,
+    correct_inst, correct_city, correct_state, correct_country
+  )
 
-# ORIGINAL_DATA<-ALLDATA
-JBIOG<-filter(ORIGINAL_DATA,JOURNAL=="JBIOG")
+  # original_data<-ALLDATA
+  JBIOG <- filter(original_data, journal == "JBIOG")
 
-colnames(JBIOG)
-colnames(ORIGINAL_DATA)
-
-
-# remove OECOL FROM THE COMPLETE DATASET, WILL REBIND AFTER ADDING CORRECTIONS
-ORIGINAL_DATA<-ORIGINAL_DATA %>% filter(JOURNAL!="JBIOG")
-
-# INSERT THE CORRECTIONS TO OECOL AND FILL
-JBIOG<-JBIOG %>% na_if("missing")
-JBIOG_inst<-JBIOG_inst %>% na_if("missing")
+  colnames(JBIOG)
+  colnames(original_data)
 
 
-JBIOG$INST<-as.character(JBIOG$INST)
+  # remove OECOL FROM THE COMPLETE DATASET, WILL REBIND AFTER ADDING CORRECTIONS
+  original_data <- original_data %>% filter(journal != "JBIOG")
 
-JBIOG_inst$editor_id<-as.character(JBIOG_inst$editor_id)
-JBIOG$editor_id<-as.character(JBIOG$editor_id)
-colnames(JBIOG)
-colnames(JBIOG_inst)
-JBIOG<-full_join(JBIOG, JBIOG_inst, by = c("LAST_NAME","FIRST_NAME","YEAR"),all = T)
-colnames(JBIOG)
-JBIOG <- JBIOG %>%
-  mutate(CITY.x = ifelse((is.na(CITY.x)|CITY.x=="missing"), CITY.y, CITY.x)) %>%
-  select(-CITY.y) %>%
-  rename("CITY"="CITY.x") %>%
-  mutate(CITY = ifelse(is.na(correct_CITY), CITY, correct_CITY)) %>%
-  select(-correct_CITY)
-JBIOG <- JBIOG %>%
-  mutate(INST.x = ifelse((is.na(INST.x)|INST.x=="missing"), INST.y, INST.x)) %>%
-  select(-INST.y) %>%
-  rename("INST"="INST.x") %>% 
-  mutate(INST = ifelse(is.na(correct_INST), INST, correct_INST)) %>%
-  select(-correct_INST)
-JBIOG <- JBIOG %>%
-  select(-JOURNAL.y) %>%
-  rename("JOURNAL"="JOURNAL.x")
-JBIOG <- JBIOG %>%
-  mutate(MIDDLE_NAME.x = ifelse((is.na(MIDDLE_NAME.x)|MIDDLE_NAME.x=="missing"), MIDDLE_NAME.y, MIDDLE_NAME.x)) %>%
-  select(-MIDDLE_NAME.y) %>%
-  rename("MIDDLE_NAME"="MIDDLE_NAME.x")
+  # INSERT THE CORRECTIONS TO OECOL AND FILL
+  JBIOG <- JBIOG %>% na_if("missing")
+  jbiog_inst <- jbiog_inst %>% na_if("missing")
 
-JBIOG <- JBIOG %>%
-  mutate(NOTES.x = ifelse((is.na(NOTES.x)|NOTES.x=="missing"), NOTES.y, NOTES.x)) %>%
-  select(-NOTES.y) %>%
-  rename("NOTES"="NOTES.x")
-# JBIOG <- JBIOG %>%
-#   mutate(UNIT.x = ifelse((is.na(UNIT.x)|UNIT.x=="missing"), UNIT.y, UNIT.x)) %>%
-#   select(-UNIT.y) %>%
-#   rename("UNIT"="UNIT.x")
-JBIOG <- JBIOG %>%
-  mutate(STATE = ifelse(is.na(correct_STATE), STATE, correct_STATE)) %>%
-  select(-correct_STATE)
-JBIOG <- JBIOG %>%
-  mutate(COUNTRY = ifelse(is.na(correct_COUNTRY), COUNTRY, correct_COUNTRY)) %>%
-  select(-correct_COUNTRY)
-JBIOG <- JBIOG %>%
-  mutate(editor_id.x = ifelse((is.na(editor_id.x)|editor_id.x=="missing"), editor_id.y, editor_id.x)) %>%
-  select(-editor_id.y) %>%
-  rename("editor_id"="editor_id.x")
-# 
-JBIOG$JOURNAL<-"JBIOG"
-# 
-# JBIOG$LAST_NAME[JBIOG$LAST_NAME=="Lookinbill"]<-"Lookingbill"
-# JBIOG$CITY[JBIOG$LAST_NAME=="Overton"]<-NA
-# JBIOG$geo.code[JBIOG$LAST_NAME=="Betts"]<-"CAN"
 
-JBIOG<-JBIOG %>% group_by(LAST_NAME,FIRST_NAME) %>% 
-  fill(INST,CITY,.direction="down")
-# 
-# JBIOG$editor_id<-as.factor(JBIOG$editor_id)
-# # 
-# # Rebind the ORIGINAL DATA AND NOW CORRECTED JBIOG
-# 
-# str(ORIGINAL_DATA)
-# str(JBIOG)
-# JBIOG$editor_id<-as.factor(JBIOG$editor_id)
-# str(JBIOG_inst)
-# ORIGINAL_DATA<-bind_rows(ORIGINAL_DATA,JBIOG)
-# colnames(ORIGINAL_DATA)
+  JBIOG$inst <- as.character(JBIOG$inst)
 
-# rm(JBIOG,JBIOG_inst)
-JBIOG$editor_id<-as.character(JBIOG$editor_id)
-ORIGINAL_DATA$editor_id<-as.character(ORIGINAL_DATA$editor_id)
-return_list <- list(ORIGINAL_DATA,JBIOG)
-return(return_list)
+  jbiog_inst$editor_id <- as.character(jbiog_inst$editor_id)
+  JBIOG$editor_id <- as.character(JBIOG$editor_id)
+  colnames(JBIOG)
+  colnames(jbiog_inst)
+  JBIOG <- full_join(JBIOG, jbiog_inst, by = c("last_name", "first_name", "year"), all = T)
+  colnames(JBIOG)
+  JBIOG <- JBIOG %>%
+    mutate(city.x = ifelse((is.na(city.x) | city.x == "missing"), city.y, city.x)) %>%
+    select(-city.y) %>%
+    rename("city" = "city.x") %>%
+    mutate(city = ifelse(is.na(correct_city), city, correct_city)) %>%
+    select(-correct_city)
+  JBIOG <- JBIOG %>%
+    mutate(inst.x = ifelse((is.na(inst.x) | inst.x == "missing"), inst.y, inst.x)) %>%
+    select(-inst.y) %>%
+    rename("inst" = "inst.x") %>%
+    mutate(inst = ifelse(is.na(correct_inst), inst, correct_inst)) %>%
+    select(-correct_inst)
+  JBIOG <- JBIOG %>%
+    select(-journal.y) %>%
+    rename("journal" = "journal.x")
+  JBIOG <- JBIOG %>%
+    mutate(middle_name.x = ifelse((is.na(middle_name.x) | middle_name.x == "missing"), middle_name.y, middle_name.x)) %>%
+    select(-middle_name.y) %>%
+    rename("middle_name" = "middle_name.x")
+
+  JBIOG <- JBIOG %>%
+    mutate(notes.x = ifelse((is.na(notes.x) | notes.x == "missing"), notes.y, notes.x)) %>%
+    select(-notes.y) %>%
+    rename("notes" = "notes.x")
+  # JBIOG <- JBIOG %>%
+  #   mutate(UNIT.x = ifelse((is.na(UNIT.x)|UNIT.x=="missing"), UNIT.y, UNIT.x)) %>%
+  #   select(-UNIT.y) %>%
+  #   rename("UNIT"="UNIT.x")
+  JBIOG <- JBIOG %>%
+    mutate(state = ifelse(is.na(correct_state), state, correct_state)) %>%
+    select(-correct_state)
+  JBIOG <- JBIOG %>%
+    mutate(country = ifelse(is.na(correct_country), country, correct_country)) %>%
+    select(-correct_country)
+  JBIOG <- JBIOG %>%
+    mutate(editor_id.x = ifelse((is.na(editor_id.x) | editor_id.x == "missing"), editor_id.y, editor_id.x)) %>%
+    select(-editor_id.y) %>%
+    rename("editor_id" = "editor_id.x")
+  #
+  JBIOG$journal <- "JBIOG"
+  #
+  # JBIOG$last_name[JBIOG$last_name=="Lookinbill"]<-"Lookingbill"
+  # JBIOG$city[JBIOG$last_name=="Overton"]<-NA
+  # JBIOG$geo.code[JBIOG$last_name=="Betts"]<-"CAN"
+
+  JBIOG <- JBIOG %>%
+    group_by(last_name, first_name) %>%
+    fill(inst, city, .direction = "down")
+  #
+  # JBIOG$editor_id<-as.factor(JBIOG$editor_id)
+  # #
+  # # Rebind the ORIGINAL DATA AND NOW CORRECTED JBIOG
+  #
+  # str(original_data)
+  # str(JBIOG)
+  # JBIOG$editor_id<-as.factor(JBIOG$editor_id)
+  # str(jbiog_inst)
+  # original_data<-bind_rows(original_data,JBIOG)
+  # colnames(original_data)
+
+  # rm(JBIOG,jbiog_inst)
+  JBIOG$editor_id <- as.character(JBIOG$editor_id)
+  
+  JBIOG<-JBIOG %>%
+    mutate(across(everything(), as.character))
+  
+  original_data$editor_id <- as.character(original_data$editor_id)
+  return_list <- list(original_data, JBIOG)
+  return(return_list)
 }

@@ -62,6 +62,9 @@ clean_JECOL <- function(DATAFILE) {
   
   
   
+  DATAFILE<-DATAFILE %>%
+    mutate(across(everything(), as.character))
+  
   return(DATAFILE)
 }
 

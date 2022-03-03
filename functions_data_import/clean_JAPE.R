@@ -68,6 +68,12 @@ clean_JAPE <- function(DATAFILE) {
   # Need to convert that to a function, e.g., check(AMNAT)
   # Then need to add a function to upload the corrections/additions
   ##
+  
+  
+  
+  DATAFILE<-DATAFILE %>%
+    mutate(across(everything(), as.character))
+  
   return(DATAFILE)
 }
 

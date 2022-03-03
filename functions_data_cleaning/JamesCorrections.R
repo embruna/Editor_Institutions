@@ -1,1568 +1,1585 @@
 # This will load and the corrected files and make the required changes.
-JamesCorrections <- function(ORIGINAL_DATA) {
-  # ORIGINAL_DATA<-ALLDATA  
-library(tidyverse)
+JamesCorrections <- function(original_data) {
+  # original_data<-alldata
+  # colnames(alldata)
+  library(tidyverse)
 
   # source("functions_data_cleaning/institution_cleaner.R")
-##############################################################
-# NO INST 2x NEEDED
-# AJB 
-# ECOLOGY
-# FEM
-# FUNECOL
-# ECOGRAPHY
-# JTE
-##############################################################
-
-##############################################################
-# checked by Patrick, need to upload corrections
-# Round 1: AGRON, ARES, EVOL (DONE)
-# Round 2a: CONBIO,NEW PHYT (DONE)
-# Round 2b: NEW PHYT (DONE)
-# Round 3: BITR (DONE)
-# Round 4: AMNAT (DONE, EB 2x)
-# Round 6: JECOL (DONE)
-# Round 7: JAPE (DONE)
-# Round 5: BIOCON (DONE, need to upload and integrate the corrections)
-# Round 8: PLANTECOL (DONE, to be emailed)
-# Round 9: JBIOG (2x in progress, almost done - need to add institutions that were "missing")
-# Round 10: LECO (DONE, 2x the ones "incorrect" to see if the INST value in the table is the corrected or original")
-# JANE: Needs extensive data fill
-# JZOOL: Needs extensive data fill
-# OECOL: Needs extensive data fill
-# OIKOS: (DONE)
-# AUK: not for this paper
-# CONDOR: not for this paper
-##############################################################
-
-##########
-multi1<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_1.csv", col_names = TRUE)
-multi1[multi1=="missing"]<-NA
-multi1<-multi1 %>%
-  group_by(LAST_NAME,FIRST_NAME) %>% 
-  arrange(YEAR) %>% 
-  fill(INST,UNIT,CITY,STATE,.direction="down")
-##########
-
-##########
-multi2a<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_2a.csv", col_names = TRUE)
-multi2a[multi2a=="missing"]<-NA
-multi2a<-multi2a %>% filter(JOURNAL=="CONBIO"|JOURNAL=="NEWPHYT") %>% 
-  group_by(LAST_NAME,FIRST_NAME) %>% 
-  arrange(YEAR) %>% 
-  fill(INST,UNIT,CITY,STATE,.direction="down") #delete out other journals this is conbio and new phyt
-##########
-
-##########
-multi2b<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_2b.csv", col_names = TRUE)
-multi2b[multi2b=="missing"]<-NA
-multi2b<-multi2b %>% 
-  filter(JOURNAL=="CONBIO"|JOURNAL=="NEWPHYT") %>% 
-  group_by(LAST_NAME,FIRST_NAME) %>% 
-  arrange(YEAR) %>% 
-  fill(INST,UNIT,CITY,STATE,.direction="down") #delete out other journals this is conbio and new phyt
-##########
-
-##########
-BITR_inst<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_3_BITR.csv", col_names = TRUE)
-BITR_inst[BITR_inst=="missing"]<-NA
-BITR_inst<-BITR_inst %>% 
-  group_by(LAST_NAME,FIRST_NAME) %>% 
-  arrange(YEAR) %>% 
-  fill(INST,UNIT,CITY,STATE,.direction="down")
-
-##########
-
-##########
-AMNAT_inst<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_4_AMNAT.csv", col_names = TRUE,na = c("", "N/A", "NA"), trim_ws = TRUE)
-AMNAT_inst[AMNAT_inst=="missing"]<-NA
-AMNAT_inst<-AMNAT_inst %>% 
-  group_by(LAST_NAME,FIRST_NAME) %>% 
-  arrange(YEAR) %>% 
-  fill(INST,UNIT,CITY,STATE,.direction="down") %>% 
-  filter(JOURNAL=="AMNAT")
-##########
-
-##########
-JECOL_inst<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_6_JEcol.csv", col_names = TRUE)
-JECOL_inst[JECOL_inst=="missing"]<-NA
-JECOL_inst<-JECOL_inst %>% 
-  group_by(LAST_NAME,FIRST_NAME) %>%
-  arrange(YEAR) %>% 
-  fill(INST,UNIT,CITY,STATE,.direction="down") %>% 
-  filter(JOURNAL=="JECOL")
-##########
-
-##########
-JAPE_inst<-read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_7_JAPE.csv", col_names = TRUE)
-JAPE_inst[JAPE_inst=="missing"]<-NA
-JAPE_inst[JAPE_inst=="unknown"]<-NA
-JAPE_inst<-JAPE_inst %>% 
-  rename("FIRST_NAME"="FIRST_NA", "MIDDLE_NAME"="MIDDLE_","LAST_NAME"="LAST_NA") %>% 
-  group_by(LAST_NAME,FIRST_NAME) %>% 
-  arrange(YEAR) %>% 
-  fill(INST,UNIT,CITY,STATE,COUNTRY,NOTES,.direction="down") %>% 
-  filter(JOURNAL=="JAPE")
-JAPE_inst$editor_id<-NULL
-# TODO: something is going on with editor IDS
-##########
-
-##########
-# SEPARATE FUNCTION
-# JBIOG
-# LECO
-# PLANTECOL
-# OIKOS
-# OECOLOGIA
-# JANE 
-###########
-
-
-#############
-# INST_fix<-bind_rows(multi2b,multi2a,multi1,BITR_inst,JECOL_inst,AMNAT_inst,JAPE_inst,JBIOG_inst,OIKOS_inst) %>% 
-#   distinct(editor_id,JOURNAL,YEAR,.keep_all= TRUE) %>%     #there are some duplicates, best to remove them
-#   arrange(JOURNAL,editor_id,YEAR)
-# rm(multi2b,multi2a,multi1,BITR_inst,JECOL_inst,AMNAT_inst,JAPE_inst,JBIOG_inst,OIKOS_inst)
-
-# NO OIKOS
-INST_fix<-bind_rows(multi2b,multi2a,multi1,BITR_inst,JECOL_inst,AMNAT_inst,JAPE_inst) %>% 
-  distinct(LAST_NAME,JOURNAL,YEAR,.keep_all= TRUE) %>%     #there are some duplicates, best to remove them
-  arrange(JOURNAL,editor_id,YEAR)
-rm(multi2b,multi2a,multi1,BITR_inst,JECOL_inst,AMNAT_inst,JAPE_inst)
-
-
-# colnames(INST_fix)
-# colnames(OECOL_inst)
-
-INST_fix$INST[INST_fix$INST=="UNKNOWN"]<-NA
-INST_fix$INST[INST_fix$INST=="unknown"]<-NA
-INST_fix$UNIT[INST_fix$UNIT=="UNKNOWN"]<-NA
-INST_fix$CITY[INST_fix$CITY=="UNKNOWN"]<-NA
-INST_fix$STATE[INST_fix$STATE=="UNKNOWN"]<-NA
-INST_fix$STATE[INST_fix$STATE=="unknown"]<-NA
-
-
-# INST_fix<-institution_cleaner(INST_fix)
-INST_fix<-INST_fix %>% select(-X1)
-
-head(INST_fix,20)
-colnames(INST_fix)
-
-
-
-INST_fix$INST<-tolower(INST_fix$INST)
-INST_fix$UNIT<-tolower(INST_fix$UNIT)
-INST_fix$CITY<-tolower(INST_fix$CITY)
-INST_fix$STATE<-tolower(INST_fix$STATE)
-INST_fix$COUNTRY<-tolower(INST_fix$COUNTRY)
-INST_fix$NOTES<-tolower(INST_fix$NOTES)
-INST_fix$JOURNAL<-tolower(INST_fix$JOURNAL)
-INST_fix$FIRST_NAME<-tolower(INST_fix$FIRST_NAME)
-INST_fix$MIDDLE_NAME<-tolower(INST_fix$MIDDLE_NAME)
-INST_fix$LAST_NAME<-tolower(INST_fix$LAST_NAME)
-
-#
-# 
-# # ORIGINAL_DATA$editor_id<-as.numeric(ORIGINAL_DATA$editor_id)
-# # ARE THERE ANY IN CORRECT that *ARENT* in ORIGINAL_DATA?
-# # THESE NEED TO BE ADDED TO ORIGINAL_DATA
-# # C_but_not_O<-anti_join(INST_fix,ORIGINAL_DATA,by=c("editor_id","JOURNAL","YEAR")) %>% arrange(JOURNAL,YEAR,editor_id)  #in correct but not orig 24
-# C_but_not_O<-anti_join(INST_fix,ORIGINAL_DATA,by=c("JOURNAL","YEAR","LAST_NAME")) %>% arrange(JOURNAL,YEAR,editor_id)  #in correct but not orig 24
-# nrow(C_but_not_O)
-# summary(C_but_not_O)
-# 
-# #THESE ARE THE ONES IN ORIGINAL_DATA but not CORRECTED 
-# # O_butnot_C<-anti_join(ORIGINAL_DATA,INST_fix,by=c("editor_id","JOURNAL","YEAR")) # in orig but not correct 21221
-# O_butnot_C<-anti_join(ORIGINAL_DATA,INST_fix,by=c("JOURNAL","YEAR","LAST_NAME")) # in orig but not correct 21221
-# nrow(O_butnot_C)
-# O_butnot_C
-# 
-# # THESE ARE THE ONES IN BOTH CORRECTED AND ORIGINAL_DATA
-# # O_and_C<-inner_join(ORIGINAL_DATA,INST_fix,by=c("editor_id","JOURNAL","YEAR")) #in correct but not orig 4381
-# O_and_C<-inner_join(ORIGINAL_DATA,INST_fix,by=c("LAST_NAME","JOURNAL","YEAR")) #in correct but not orig 4381
-# nrow(O_and_C)
-# 
-# colnames(ORIGINAL_DATA)
-# colnames(INST_fix)
-# str(ORIGINAL_DATA)
-# str(INST_fix)
-
-
-
-# both<-full_join(ORIGINAL_DATA,INST_fix,by=c("editor_id","JOURNAL","YEAR")) 
-
-INST_fix$editor_id<-as.character(INST_fix$editor_id)
-str(INST_fix$editor_id)
-str(ORIGINAL_DATA$editor_id)
-ORIGINAL_DATA$editor_id<-as.factor(ORIGINAL_DATA$editor_id)
-INST_fix$editor_id<-as.factor(INST_fix$editor_id)
-
-both<-full_join(ORIGINAL_DATA,INST_fix,by=c("JOURNAL","YEAR","LAST_NAME","FIRST_NAME")) 
-nrow(both)
-nrow(ORIGINAL_DATA)
-nrow(INST_fix)
-colnames(both)
-str(both)
-
-# nrow(C_but_not_O)
-# nrow(O_butnot_C)
-# nrow(O_and_C)
-# nrow(C_but_not_O)+nrow(O_butnot_C)+nrow(O_and_C)
-
-head(both)
-str(both)
-
-colnames(both)
-both<-select(both,JOURNAL,YEAR,VOLUME,ISSUE,editor_id.x,editor_id.y,
-             FIRST_NAME,MIDDLE_NAME.x,MIDDLE_NAME.y,LAST_NAME,
-             TITLE,CATEGORY,INST.x,INST.y,UNIT.x,UNIT.y,CITY.x,CITY.y,STATE.x,STATE.y,
-             COUNTRY.x,COUNTRY.y,COUNTRY_Prior_Class,geo.code,geo.code_Prior_Class,
-             NOTES.x,NOTES.y,GENDER)
-
-colnames(both)
-both[both=="missing"]<-NA
-both[both=="unknown"]<-NA
-
-
-# both<-both %>% mutate(VOLUME.x = replace(VOLUME.x, is.na(VOLUME.x),VOLUME.y[is.na(VOLUME.x)]))
-# both$VOLUME.y<-NULL
-# both<-both %>% rename("VOLUME"="VOLUME.x")
-
-
-# 
-# both<-both %>% mutate(ISSUE.x = replace(ISSUE.x, is.na(ISSUE.x),ISSUE.y[is.na(ISSUE.x)]))
-# both$ISSUE.y<-NULL
-# both<-both %>% rename("ISSUE"="ISSUE.x")
-
-# 
-# both<-both %>% mutate(TITLE.x = replace(TITLE.x, is.na(TITLE.x),TITLE.y[is.na(TITLE.x)]))
-# both$TITLE.y<-NULL
-# both<-both %>% rename("TITLE"="TITLE.x")
-# 
-
-
-
-# #CAN QUICKLY ID WHAT NEEDS TO BE FIXED AS FOLLOWS
-# str(both)
-# # FIRST NAME DIFFERENCES BETWEEN ALL DATA AND CHECKED FILE
-# summary(both$FIRST_NAME.x==both$FIRST_NAME.y) # 10 false
-# both$FIRST_check<-both$FIRST_NAME.x==both$FIRST_NAME.y
-# #spelling mistake in NAMES.y, so delete that column and the checm column
-# both$FIRST_check<-NULL
-# both$FIRST_NAME.y<-NULL
-# both<-both %>% rename("FIRST_NAME"="FIRST_NAME.x")
-
-# MIDDLE NAME DIFFERENCES BETWEEN ALL DATA AND CHECKED FILE
-summary(both$MIDDLE_NAME.x==both$MIDDLE_NAME.y)  # NO FALSE
-both$MIDDLE_check<-both$MIDDLE_NAME.x==both$MIDDLE_NAME.y
-both$MIDDLE_NAME.y<-NULL
-both$MIDDLE_check<-NULL
-both<-both %>% rename("MIDDLE_NAME"="MIDDLE_NAME.x")
-
-# LAST NAME IFFERENCES BETWEEN ALL DATA AND CHECKED FILE
-# summary(both$LAST_NAME.x==both$LAST_NAME.y) # 21 FALSE
-# both$LAST_check<-both$LAST_NAME.x==both$LAST_NAME.y
-# # This identifies one mistake in thge original (ORIGINAL_DATA) that needs to be corrected
-# str(both)
-both$LAST_NAME[both$editor_id.x==1355 & both$FIRST_NAME=="holmes"]<-"rolston"
-both<-both[!(is.na(both$editor_id.x) & both$FIRST_NAME=="holmes"),]
-
-
-# both$LAST_NAME.y<-NULL
-# both$LAST_check<-NULL
-# both<-both %>% rename("LAST_NAME"="LAST_NAME.x")
-
-
-# state differences between all data and checked file
-summary(both$STATE.x==both$STATE.y) # 19 false
-both$STATE_check<-both$STATE.x==both$STATE.y
-both$STATE.x[both$STATE.x=="missing"]<-NA
-both$STATE.x[both$YEAR!=1992 & both$FIRST_NAME=="david" & both$LAST_NAME=="gibson" & both$CITY.x=="carbondale"]<-"il"
-both$STATE.x[both$YEAR==1992 & both$CITY.x=="pensacola" & both$LAST_NAME=="gibson"]<-"fl"
-both$STATE.x[both$STATE.x=="england"]<-NA
-both$STATE.x[both$LAST_NAME=="moss"]<-NA
-both$STATE.x[both$LAST_NAME=="usher"]<-NA
-both$STATE.x[both$LAST_NAME=="milner-gulland"]<-NA
-both$INST.y[both$LAST_NAME=="belovsky" & both$INST.y=="notre dame"]<-"university of notre dame"
-both$CITY.x[both$LAST_NAME=="belovsky" & both$INST.y=="notre dame"]<-"notre dame"
-both$COUNTRY.x[both$LAST_NAME=="belovsky" & both$INST.y=="university of notre dame"]<-"usa"
-both$STATE.x[both$LAST_NAME=="belovsky" & both$INST.y=="notre dame university"]<-"in"
-both$STATE.x[both$FIRST_NAME=="james" & both$LAST_NAME=="carlton"]<-"ct"
-both$STATE.x[both$FIRST_NAME=="jon" & both$LAST_NAME=="rodriguez"]<-NA
-both$STATE.x[both$editor_id.x==455 & both$FIRST_NAME=="christopher" & both$LAST_NAME=="frissell"]<-"mt"
-both$INST.y[both$editor_id.x==455 & both$FIRST_NAME=="christopher" & both$LAST_NAME=="frissell"]<-"university of montana"
-both$UNIT.x[both$editor_id.x==455 & both$FIRST_NAME=="christopher" & both$LAST_NAME=="frissell"]<-"flathead lake biological station"
-both$CITY.x[both$editor_id.x==455 & both$FIRST_NAME=="christopher" & both$LAST_NAME=="frissell"]<-"polson"
-both$CITY.x[both$editor_id.x==1511 & both$LAST_NAME=="cinner" & both$YEAR>2009 & both$YEAR<2015 ]<-"townsville"
-both$STATE.x[both$editor_id.x==1511 & both$LAST_NAME=="cinner" & both$YEAR>2009 & both$YEAR<2015 ]<-"queensland"
-both$UNIT.x[both$editor_id.x==1511 & both$LAST_NAME=="cinner"]<-"arc centre of excellence for coral reef studies"
-both$INST.y[both$editor_id.x==1511 & both$LAST_NAME=="cinner"]<-"james cook university"
-both$NOTES.y[both$editor_id.x==1511 & both$LAST_NAME=="cinner" & both$YEAR==2013]<-"journal front matter has inst=columbia univ, but his cv makes no mention of this"
-
-# this will replace all the "na" in STATE.x (origianlly no info) with the value from STATE.y (patrick's data collection), if there is one
-both<-both %>% mutate(STATE.x = replace(STATE.x, is.na(STATE.x), STATE.y[is.na(STATE.x)]))
-
-
-both$STATE.y<-NULL
-both$STATE_check<-NULL
-both<-both %>% rename("STATE"="STATE.x")
-
-# this identifies one mistake in thge original (original_data) that needs to be corrected
-both$UNIT.x[both$UNIT.x=="estaci<f3>n biol<f3>gica de do<f1>ana"]<-"estacion biologica donana"
-both$UNIT.y[both$UNIT.y=="estaci<f3>n biol<f3>gica de do<f1>ana"]<-"estacion biologica donana"
-both$UNIT.x<-gsub("estaci\xf3n biol\xf3gica de do\xf1ana","estacion biologica donana",both$UNIT.x)
-both$UNIT.x<-gsub("biologie/chemie/\x80kologie","biochemical ecology",both$UNIT.x)
-both$UNIT.x<-gsub("f\x99r","fur",both$UNIT.x)
-both$UNIT.x<-gsub("ecolog\x90a","ecologia",both$UNIT.x)
-
-# inst differences between all data and checked file
-both$INST.y<-as.character(both$INST.y)
-both$INST.y<-tolower(both$INST.y)
-both$INST.y<-tolower(both$INST.y)
-both$UNIT.x<-tolower(both$UNIT.x)
-both$UNIT.y<-tolower(both$UNIT.y)
-
-
-# this will replace all the "na" and "" in INST.x (origianlly no info) with the value from INST.y (patrick's data collection), if there is one
-both<-both %>% mutate(INST.x = replace(INST.x, is.na(INST.x),INST.y[is.na(INST.x)]))
-both <- both %>% mutate(INST.x = replace(INST.x, INST.x == "", NA))
-summary(both$INST.y==both$INST.y) # 235 false
-both$inst_check<-both$INST.y==both$INST.y
-
-inst_check<-filter(both,inst_check=="FALSE")
-inst_check_ok<-filter(both,inst_check==TRUE |is.na(inst_check))
-#
-# write.csv(inst_check, file="./data/patrick_james_data_corrections/complete/inst_corrections_2x.csv", row.names = f) #export it as a csv file
-
-
-both$INST.y[both$editor_id.x==1248 & both$JOURNAL=="bitr" & both$YEAR==1987 ]<-"new york botanical garden"
-both$INST.y[both$editor_id.x==1704 & both$JOURNAL=="jecol" & both$YEAR==2009 ]<-"university of sheffield"
-# both$INST.y[both$INST.y=="unniversity of stirling" ]<-"university of stirling"
-
-both$UNIT.x[both$editor_id.x==1229 & both$INST.y=="university of montana"]<-"savannah river ecology laboratory"
-both$INST.y[both$editor_id.x==1229 & both$INST.y=="university of montana"]<-"university of georgia"
-
-both$UNIT.x[both$INST.y=="alterra research institute for the green world" ]<-"alterra research institute for the green world"
-both$UNIT.x[both$INST.y=="gatty marine lab (university of saint andrews)" ]<-"gatty marine lab"
-both$UNIT.x[both$INST.y=="netherlands institute of ecology; wageningen university and research centre netherlands institute of ecology" ]<-"netherlands institute of ecology"
-both$UNIT.x[both$INST.y=="norwich" ]<-"norwich research park industrial biotechnology and bioenergy alliance"
-both$UNIT.x[both$INST.y=="scripps institute of oceanography" ]<-"scripps institution of oceanography"
-both$UNIT.x[both$INST.y=="scripps institution  of oceanography" ]<-"scripps institution of oceanography"
-both$UNIT.x[both$INST.y=="scripps institute of oceanography" ]<-"gatty marine lab"
-
-
-
-both$UNIT.x[both$INST.y=="savannah river ecology laboratory" ]<-"savannah river ecology laboratory"
-both$INST.y[both$INST.y=="savannah river ecology laboratory" ]<-"university of georgia"
-both$UNIT.x[both$INST.y=="university of california santa cruz extension"]<-"ucsc extension"
-both$INST.y[both$INST.y=="university of california" & both$INST.y=="university of california davis" ]<-"university of california davis"
-both$INST.y[both$INST.y=="university of california" & both$INST.y=="university of california berkeley" ]<-"university of california berkeley"
-both$INST.y[both$INST.y=="university of california" & both$INST.y=="university of california riverside" ]<-"university of california riverside"
-# both$INST.y[both$editor_id.x==1839 & both$JOURNAL=="conbio" ]<-"venezuelan institute for scientific investigation"
-both$INST.y[both$editor_id.x==1218 & both$JOURNAL=="conbio" & both$YEAR>1986 & both$YEAR<1992 ]<-"royal botanic gardens kew"
-# both$INST.y[both$INST.y=="museum natl hist nat"]<-"national history museum paris"
-# both$INST.y[both$INST.y=="university<ca>of<ca>california<ca>santa<ca>cruz"]<-"university of california santa cruz"
-# both$INST.y[both$INST.y=="uc santa cruz"]<-"university of california santa cruz"
-
-both$INST.y[both$LAST_NAME=="streeter" & both$JOURNAL=="jecol" & both$YEAR==2009 ]<-"university of sussex"
-both$INST.y[both$LAST_NAME=="grover" & both$JOURNAL=="amnat"]<-"university of texas arlington"
-both$INST.y[both$LAST_NAME=="noss" & both$JOURNAL=="conbio" & both$YEAR==1998 ]<-"conservation biology institute"
-
-both$UNIT.x[both$LAST_NAME=="dratch" & both$JOURNAL=="conbio" & both$INST.y=="national fish and wildlife forensics laboratory" ]<-"national fish and wildlife forensics laboratory"
-both$INST.y[both$LAST_NAME=="dratch" & both$JOURNAL=="conbio" & both$INST.y=="national fish and wildlife forensics laboratory" ]<-"us fish and wildlife service"
-both$INST.y[both$LAST_NAME=="daszak" & both$JOURNAL=="conbio" & both$INST.y=="university of nevada reno" ]<-"consortium for conservation medicine"
-
-both$UNIT.x[both$LAST_NAME=="meffe" & both$JOURNAL=="conbio" & both$INST.y=="university of montana" ]<-"savanna riverl ecological laboratory"
-both$UNIT.x[both$LAST_NAME=="meffe" & both$JOURNAL=="conbio" & both$UNIT.x=="savanna riverl ecological laboratory" ]<-"university of georgia"
-both$UNIT.x[both$JOURNAL=="leco" & both$INST.y=="institute of landscape ecology of slovak academy of sciences" ]<-"institute of landscape ecology"
-both$INST.y[both$JOURNAL=="leco" & both$INST.y=="institute of landscape ecology of slovak academy of sciences" ]<-"slovak academy of sciences"
-
-summary(both$INST.y==both$INST.y)
-both$inst_check<-both$INST.y==both$INST.y
-both$INST.y<-NULL
-both$inst_check<-NULL
-both<-both %>% rename("INST"="INST.x")
-
-# city differences between all data and checked file
-summary(both$CITY.x==both$CITY.y) # 52 false
-both$city_check<-both$CITY.x==both$CITY.y
-city_check<-filter(both,city_check=="false")
-city_check_ok<-filter(both,city_check==TRUE |is.na(city_check))
-write.csv(city_check, file="./data/patrick_james_data_corrections/complete/city_corrections_2x.csv", row.names = FALSE) #export it as a csv file
-both$STATE[both$CITY.x=="new mexico" & both$CITY.y=="las cruces"]<-"nm"
-both$CITY.x[both$CITY.x=="new mexico" & both$CITY.y=="las cruces"]<-"las cruces"
-both$CITY.x[is.na(both$CITY.x) & both$CITY.y=="las cruces"]<-"las cruces"
-both$NOTES.y[both$CITY.x=="basel" & both$CITY.y=="lausanne"]<-"2x city"
-both$NOTES.y[both$CITY.x=="brighton" & both$CITY.y=="toronto"]<-"2x city"
-both$NOTES.y[both$CITY.x=="zurich" & both$CITY.y=="basel"]<-"2x city"
-both$NOTES.y[both$CITY.x=="canberra" & both$CITY.y=="lyneham"]<-"2x city"
-
-both$CITY.x[both$CITY.x=="stanford" & both$CITY.y=="pacific grove"]<-"pacific grove"
-both$CITY.x[both$CITY.x=="manhattan" & both$CITY.y=="new york"]<-"new york"
-both$CITY.x[both$CITY.x=="east lansging" & both$CITY.y=="east lansing"]<-"east lansing"
-both$CITY.x[both$CITY.x=="new yor city" & both$CITY.y=="new york city"]<-"new york"
-both$CITY.x[both$CITY.x=="manhattan" & both$CITY.y=="new york"]<-"new york"
-both$CITY.x[both$CITY.x=="los angeles" & both$CITY.y=="malibu"]<-"malibu"
-both$CITY.x[both$CITY.x=="manhattan" & both$CITY.y=="new york"]<-"new york"
-both$CITY.x[both$CITY.x=="manhattan" & both$CITY.y=="new york"]<-"new york"
-both$CITY.x[both$CITY.x=="sheffield s10 2tn"]<-"sheffield s10 2tn"
-
-both$UNIT.x[both$CITY.x=="\xcadepartment of animal ecology and tropical biology (zoology iii)"]<-"department of animal ecology and tropical biology (zoology iii)"
-both$CITY.x[both$CITY.x=="\xcadepartment of animal ecology and tropical biology (zoology iii)"]<-NA
-
-both$NOTES.y[both$CITY.x=="aberdeen" & both$CITY.y=="cragiebuckler"]<-"2x city"
-both$CITY.x[both$CITY.x=="invergowric" & both$CITY.y=="invergowrie"]<-"invergowrie"
-both$NOTES.y[both$CITY.x=="brisbane" & both$CITY.y=="st lucia"]<-"2x city"
-both$NOTES.y[both$CITY.x=="london" & both$CITY.y=="ascot"]<-"2x city"
-both$NOTES.y[both$CITY.x=="williams" & both$CITY.y=="mystic"]<-"2x city"
-both$NOTES.y[both$CITY.x=="melbourne" & both$CITY.y=="parkville"]<-"2x city"
-both$NOTES.y[both$CITY.x=="new brunswick" & both$CITY.y=="polson"]<-"2x city"
-both$NOTES.y[both$CITY.x=="london" & both$CITY.y=="notre dame"]<-"notre dame"
-both$NOTES.y[both$CITY.x=="canberra" & both$CITY.y=="lyneham"]<-"2x city"
-both$NOTES.y[both$CITY.x=="canberra" & both$CITY.y=="lyneham"]<-"2x city"
-both$NOTES.y[both$CITY.x=="canberra" & both$CITY.y=="lyneham"]<-"2x city"
-
-summary(both$CITY.x==both$CITY.y)
-both$city_check<-both$CITY.x==both$CITY.y
-# write.csv(city_check, file="./data/patrick_james_data_corrections/complete/city_corrections_2x.csv", row.names = f) #export it as a csv file
-
-# this will replace all the "na" in city.x (origianlly no info) with the value from city.y (patrick's data collection), if there is one
-both<-both %>% mutate(CITY.x = replace(CITY.x, is.na(CITY.x), CITY.y[is.na(CITY.x)]))
-
-both$CITY.y<-NULL
-both$city_check<-NULL
-both<-both %>% rename("CITY"="CITY.x")
-# str(both)
-
-# todo unit differences between all data and checked file
-# both$UNIT.x<-as.character(both$UNIT.x)
-# both$UNIT.x<-gsub("",na,both$UNIT.x)
-both$UNIT.x[both$UNIT.x == ""] <- NA
-summary(both$UNIT.x==both$UNIT.y) # 7 false
-both$unit_check<-both$UNIT.x==both$UNIT.y
-
-# no probs, just differences in words ("the, and", etc)
-# this will replace all the "na" in unit.x (origianlly no info) with the value from unit.y (patrick's data collection), if there is one
-both<-both %>% mutate(UNIT.x = replace(UNIT.x, is.na(UNIT.x), UNIT.y[is.na(UNIT.x)]))
-
-both$UNIT.x[both$UNIT.y=="savannah river ecology laboratory"]<-"savannah river ecology laboratory"
-both$UNIT.y<-NULL
-both$unit_check<-NULL
-both<-both %>% rename("UNIT"="UNIT.x")
-
-# todo country differences between all data and checked file
-
-both <- both %>% mutate(COUNTRY.x = replace(COUNTRY.x, COUNTRY.x == "", NA))
-both$COUNTRY.x<-as.factor(both$COUNTRY.x)
-both$COUNTRY.y<-as.factor(both$COUNTRY.y)
-country_levels<-(c(levels(both$COUNTRY.x),levels(both$COUNTRY.y)))
-levels(both$COUNTRY.x)<-c(levels(both$COUNTRY.x),country_levels,NA)
-levels(both$COUNTRY.y)<-c(levels(both$COUNTRY.y),country_levels,NA)
-
-# this will replace all the "na" in city.x (origianlly no info) with the value from city.y (patrick's data collection), if there is one
-
-levels(both$COUNTRY.x)
-str(both$COUNTRY.x)
-str(both$COUNTRY.y)
-
-both<-both %>% mutate(COUNTRY.x = replace(COUNTRY.x, is.na(COUNTRY.x), COUNTRY.y[is.na(COUNTRY.x)]))
-summary(both$COUNTRY.x==both$COUNTRY.y) # 3552 false
-both$country_check<-both$COUNTRY.x==both$COUNTRY.y
-
-country_check<-filter(both,country_check=="FALSE")
-# write.csv(country_check, file="./data/patrick_james_data_corrections/complete/country_corrections_2x.csv", row.names = f) #export it as a csv file
-
-
-both$FIRST_NAME[both$LAST_NAME=="weiher" & both$JOURNAL=="plantecol"]<-"ewan"
-both$MIDDLE_NAME[both$LAST_NAME=="long" & both$FIRST_NAME=="steve" & both$JOURNAL=="gcb"]<-"p"
-both$FIRST_NAME[both$LAST_NAME=="long" & both$FIRST_NAME=="steve" & both$JOURNAL=="gcb"]<-"stephen"
-both$INST[both$LAST_NAME=="long" & both$FIRST_NAME=="stephen" &
-            both$JOURNAL=="gcb" & both$YEAR>1999]<-"university of illinois"
-
-both$FIRST_NAME[both$LAST_NAME=="olsvig-whittaker" & both$JOURNAL=="plantecol"]<-"d"
-both$MIDDLE_NAME[both$LAST_NAME=="olsvig-whittaker" & both$JOURNAL=="plantecol"]<-"l"
-
-both$COUNTRY.x[both$LAST_NAME=="tjoelker" & both$JOURNAL=="newphyt" & both$INST=="texas a & m university"]<-"usa"
-both$COUNTRY.x[both$LAST_NAME=="atkin" & both$JOURNAL=="newphyt" & both$INST=="university of york"]<-"united kingdom"
-both$COUNTRY.x[both$LAST_NAME=="long" & both$JOURNAL=="jecol" & both$INST=="university of essex"]<-"united kingdom"
-both$COUNTRY.x[both$LAST_NAME=="westing" & both$JOURNAL=="conbio" & both$INST=="stockholm international peace research institute"]<-"sweden"
-both$CITY[both$LAST_NAME=="westing" & both$JOURNAL=="conbio" & both$INST=="stockholm international peace research institute"]<-"stockholm"
-both$STATE[both$LAST_NAME=="westing" & both$JOURNAL=="conbio" & both$INST=="stockholm international peace research institute"]<-NA
-both$COUNTRY.x[both$LAST_NAME=="westing" & both$JOURNAL=="conbio" & both$INST=="westing associates"]<-"usa"
-both$COUNTRY.x[both$LAST_NAME=="belovsky" & both$JOURNAL=="conbio" & both$INST=="utah state university"]<-"usa"
-both$UNIT[both$LAST_NAME=="bolker" & both$JOURNAL=="amnat" & both$INST=="mcmaster university"]<-NA
-both$COUNTRY.x[both$LAST_NAME=="bolker" & both$JOURNAL=="amnat" & both$INST=="mcmaster university"]<-"canada"
-
-both$UNIT[both$LAST_NAME=="krivan" & both$JOURNAL=="amnat" ]<-"biology centre"
-both$INST[both$LAST_NAME=="krivan" & both$JOURNAL=="amnat" ]<-"academy of sciences of the czech republic"
-both$CITY[both$LAST_NAME=="krivan" & both$JOURNAL=="amnat" ]<-"ceske budejovice"
-both$STATE[both$LAST_NAME=="krivan" & both$JOURNAL=="amnat"]<-"south bohemia"
-both$COUNTRY.x[both$LAST_NAME=="krivan" & both$JOURNAL=="amnat"]<-"czech republic"
-
-both$NOTES.y[both$COUNTRY.y == "wales"] <- "wales"
-both$NOTES.y[both$COUNTRY.y == "scotland"] <- "scotland"
-both$NOTES.y[both$COUNTRY.y == "england"] <- "england"
-both$NOTES.y[both$COUNTRY.x == "wales"] <- "wales"
-both$NOTES.y[both$COUNTRY.x == "scotland"] <- "scotland"
-both$NOTES.y[both$COUNTRY.x == "england"] <- "england"
-both$COUNTRY.x[both$COUNTRY.x == "wales"] <- "united kingdom"
-both$COUNTRY.x[both$COUNTRY.x == "scotland"] <- "united kingdom"
-both$COUNTRY.x[both$COUNTRY.x == "england"] <- "united kingdom"
-
-
-both$COUNTRY.y<-NULL
-both$COUNTRY_check<-NULL
-both<-both %>% rename("COUNTRY"="COUNTRY.x")
-
-# todo notes differences between all data and checked file
-
-str(both$NOTES.x)
-both$NOTES <-paste(both$NOTES.x,both$NOTES.y, sep= " / ")
-both$NOTES[both$NOTES == "na / na"] <- NA
-both$NOTES <-gsub(" / na","",both$NOTES)
-both$NOTES <-gsub("na / ","",both$NOTES)
-both$NOTES.x<-NULL
-both$NOTES.y<-NULL
-both$NOTES[both$INST=="lyme regis"]<-"is this ghillean prance unattached?"
-both$NOTES[both$INST=="neri"]<-"no longer exists: https://tethys.pnnl.gov/institution/national-environmental-research-institute-neri"
-both$NOTES[both$LAST_NAME=="boggs"]<-"2x carol boggs has inst colorado but should be stanford"
-# both$NOTES[both$INST == "biological centre"] <- "double check inst"
-# both$NOTES[both$INST == "biological institute"] <- "double check inst"
-# both$NOTES[both$INST == "bogota"] <- "double check inst"
-# both$NOTES[both$INST == "disteba university of salento"] <- "double check inst -  / disteba universita di lecce"
-# both$NOTES[both$INST == "haus nr.9"] <- "double check inst"
-# both$NOTES[both$INST == "james cook university townsville"] <- "double check inst"
-# both$NOTES[both$INST == "lancaster"] <- "double check inst"
-# both$NOTES[both$INST == "london"] <- "double check inst"
-# both$NOTES[both$INST == "madrid"] <- "double check inst"
-# both$NOTES[both$INST == "maine"] <- "double check inst"
-# both$NOTES[is.na(both$INST)] <- "double check inst"
-# both$NOTES[both$INST == "royal botanic gardens melbourne university of melbourne"] <- "double check inst"
-# both$NOTES[both$INST == "salzburg"] <- "double check inst"
-# both$NOTES[both$INST == "swansea"] <- "double check inst"
-# both$NOTES[both$INST == "sydney"] <- "double check inst"
-# both$NOTES[both$INST == "seidenstzicker& kleiman = smithsonian national zoological park, labandeira: smithsonian national museum of natural history"] <- "double check inst"
-# both$NOTES[both$INST == "montpellier"] <- "double check inst"
-# both$NOTES[both$INST == "double check"] <- "double check inst"
-# both$NOTES[both$INST == "cnrs"] <- "double check what campus/unit"
-# both$NOTES[both$INST == "csiro"] <- "double check what campus/unit"
-# both$NOTES[both$INST == "smithsonian institution"] <- "double check what campus/unit"
-# both$NOTES[both$INST == "university of arkansas"] <- "double check what campus/unit"
-# both$NOTES[both$INST == "university of british columbia"] <- "double check what campus/unit"
-# both$NOTES[both$INST == "university of california"] <- "double check what campus/unit"
-# both$NOTES[both$INST == "university of exeter"] <- "double check what campus/unit"
-# both$NOTES[both$INST == "university of georgia"] <- "double check what campus/unit"
-# both$NOTES[both$INST == "university of illinois"] <- "double check what campus/unit"
-# both$NOTES[both$INST == "university of massachusetts"] <- "double check what campus/unit"
-# both$NOTES[both$INST == "university of minnesota"] <- "double check what campus/unit"
-# both$NOTES[both$INST == "university of south carolina"] <- "double check what campus/unit"
-# both$NOTES[both$INST == "university of texas"] <- "double check what campus/unit"
-# both$NOTES[both$INST == "university of toronto"] <- "double check what campus/unit"
-# both$NOTES[both$INST == "university of wisconsin"] <- "double check what campus/unit"
-# both$NOTES[both$INST == "us geological survey"] <- "double check what campus/unit"
-
-
-
-# both<-institution_cleaner(both)
-
-
-# no idea why this isn't working inside function, so doing here
-both$INST<-gsub("arkansas","arkansas", both$INST)
-
-
-# todo: some error checking of states:
-# canada instead of canada
-# british columbia in usa
-# lower austria     usa
-# galicia     usa
-# england     usa
-# uppland     usa
-# ontario in usa
-# gelderland
-
-both$COUNTRY[both$STATE == "british columbia" & both$COUNTRY == "usa"] <- "canada"
-both$COUNTRY[both$STATE == "lower austria" & both$COUNTRY == "usa"] <- "canada"
-both$COUNTRY[both$STATE == "galicia" & both$COUNTRY == "usa"] <- "spain"
-both$COUNTRY[both$STATE == "england" & both$COUNTRY == "usa"] <- "united kingdom"
-both$COUNTRY[both$STATE == "uppland" & both$COUNTRY == "usa"] <- "sweden"
-both$COUNTRY[both$STATE == "ontario"] <- "canada"
-both$COUNTRY[both$STATE == "gelderland"] <- "netherlands"
-levels(both$INST)
-
-
-
-
-colnames(both)
-both$editor_id.y<-NULL
-both<-both %>% rename("editor_id"="editor_id.x")
-
-both<-both[!(is.na(both$JOURNAL) & is.na(both$YEAR)),]
-
-# 
-# both<-both %>%
-#   group_by(journal,LAST_NAME,first_name) %>%
-#   mutate(inst = ifelse((row_number()==1 & is.na(inst)), "missing", inst))
-# 
-# 
-# both<-both %>%
-#   group_by(journal,LAST_NAME,first_name) %>%
-#   mutate(unit = ifelse((row_number()==1 & is.na(unit)), "missing", unit))
-# 
-# both<-both %>%
-#   group_by(journal,LAST_NAME,first_name) %>%
-#   mutate(state = ifelse((row_number()==1 & is.na(state)), "missing", state))
-# 
-# 
-# both<-both %>%
-#   group_by(journal,LAST_NAME,first_name) %>%
-#   mutate(city = ifelse((row_number()==1 & is.na(city)), "missing", city))
-# 
-new_row<-both %>% 
-  filter(LAST_NAME=="willis" & JOURNAL=="jecol" & YEAR==1994)
-new_row$YEAR<-1992
-both<-rbind(new_row,both)
-both$INST[both$LAST_NAME=="willis"& both$JOURNAL=="jecol" &
-                (both$YEAR>1990|both$YEAR<2007)]<-"university of sheffield"
-both$CITY[both$LAST_NAME=="willis"& both$JOURNAL=="jecol" &
-            (both$YEAR>1990|both$YEAR<2007)]<-"sheffield"
-both$STATE[both$LAST_NAME=="willis"& both$JOURNAL=="jecol" &
-            (both$YEAR>1990|both$YEAR<2007)]<-"s yorkshire"
-both$COUNTRY[both$LAST_NAME=="willis"& both$JOURNAL=="jecol" &
-             (both$YEAR>1990|both$YEAR<2007)]<-"united kingdom"
-
-both<-both %>% arrange(JOURNAL,LAST_NAME,FIRST_NAME,YEAR)
-
-# colnames(both)
-# str(as.data.frame(both))
-# str(alldata)
-# colnames(alldata)
-# colnames(both)==colnames(alldata)
-
-
-
-
-
-# added eb 11 october 2020
-both$FIRST_NAME<-tolower(both$FIRST_NAME)
-both$LAST_NAME<-tolower(both$LAST_NAME)
-both$MIDDLE_NAME<-tolower(both$MIDDLE_NAME)
-
-both$INST[both$INST=="double check"]<-NA
-
-both$INST[both$LAST_NAME=="charlesworth" & both$YEAR==1991 & both$JOURNAL=="amnat"]<-"university of chicago"
-both$INST[both$LAST_NAME=="chesson" & both$YEAR==1991 & both$JOURNAL=="amnat"]<-"australian national university"
-both$INST[both$LAST_NAME=="chesson" & both$YEAR==1995 & both$JOURNAL=="amnat"]<-"australian national university"
-both$INST[both$LAST_NAME=="duffy" & both$YEAR==2015 & both$JOURNAL=="amnat"]<-"georgia institute of technology"
-both$INST[both$LAST_NAME=="dworkin" & both$YEAR==2015 & both$JOURNAL=="amnat"]<-"mcmaster university"
-both$INST[both$LAST_NAME=="frederickson" & both$YEAR==2015 & both$JOURNAL=="amnat"]<-"university of toronto"
-both$INST[both$LAST_NAME=="fuller" & both$YEAR==2015 & both$JOURNAL=="amnat"]<-"university of illinois"
-both$INST[both$LAST_NAME=="kirkpatrick" & both$YEAR==1991 & both$JOURNAL=="amnat"]<-"university of texas austin"
-both$INST[both$LAST_NAME=="leips" & both$YEAR==2015 & both$JOURNAL=="amnat"]<-"university of maryland baltimore county"
-both$INST[both$LAST_NAME=="meagher" & both$YEAR==1991 & both$JOURNAL=="amnat"]<-"university of st andrews"
-both$INST[both$LAST_NAME=="mooney" & both$YEAR==1985 & both$JOURNAL=="amnat"]<-"stanford university"
-both$INST[both$LAST_NAME=="mooney" & both$YEAR==1990 & both$JOURNAL=="amnat"]<-"stanford university"
-both$INST[both$LAST_NAME=="pagel" & both$YEAR==1997 & both$JOURNAL=="amnat"]<-"university of oxford"
-both$INST[both$LAST_NAME=="pastor" & both$YEAR==1991 & both$JOURNAL=="amnat"]<-"university of minnesota duluth"
-both$INST[both$LAST_NAME=="real" & both$YEAR==1991 & both$JOURNAL=="amnat"]<-"indiana university"
-both$INST[both$LAST_NAME=="real" & both$YEAR==1993 & both$JOURNAL=="amnat"]<-"indiana university"
-both$INST[both$LAST_NAME=="roth" & both$YEAR==1991 & both$JOURNAL=="amnat"]<-"duke university"
-both$INST[both$LAST_NAME=="roughgarden" & both$YEAR==1985 & both$JOURNAL=="amnat"]<-"stanford university"
-both$INST[both$LAST_NAME=="roughgarden" & both$YEAR==1990 & both$JOURNAL=="amnat"]<-"stanford university"
-both$INST[both$LAST_NAME=="seger" & both$YEAR==1991 & both$JOURNAL=="amnat"]<-"university of utah"
-both$INST[both$LAST_NAME=="tilma" & both$YEAR==1991 & both$JOURNAL=="amnat"]<-"university of minnesota"
-both$INST[both$LAST_NAME=="tilma" & both$YEAR==1994 & both$JOURNAL=="amnat"]<-"university of minnesota"
-both$INST[both$LAST_NAME=="whitlock" & both$YEAR==2005 & both$JOURNAL=="amnat"]<-"university of british columbia"
-both$INST[both$LAST_NAME=="wu" & both$YEAR==1991 & both$JOURNAL=="amnat"]<-"university of chicago"
-both$INST[both$LAST_NAME=="foote" & both$YEAR==2004 & both$JOURNAL=="arees"]<-"university of chicago"
-both$INST[both$LAST_NAME=="werner" & both$YEAR==1985 & both$JOURNAL=="arees"]<-"michigan state university"
-both$INST[both$LAST_NAME=="wing" & both$YEAR==1999 & both$JOURNAL=="arees"]<-"smithsonian national museum of natural history"
-both$INST[both$LAST_NAME=="wing" & both$YEAR==2003 & both$JOURNAL=="arees"]<-"smithsonian national museum of natural history"
-both$INST[both$LAST_NAME=="andelman" & both$YEAR==2006 & both$JOURNAL=="biocon"]<-"university of california santa barbara"
-both$INST[both$LAST_NAME=="bourliere" & both$YEAR==1986 & both$JOURNAL=="biocon"]<-"university of paris"
-both$INST[both$LAST_NAME=="dirzo" & both$YEAR==1998 & both$JOURNAL=="biocon"]<-"northern arizona university"
-both$INST[both$LAST_NAME=="duffey" & both$YEAR==1989 & both$JOURNAL=="biocon"]<-"unaffiliated"
-both$INST[both$LAST_NAME=="duffey" & both$YEAR==2014 & both$JOURNAL=="biocon"]<-"unaffiliated"
-both$INST[both$LAST_NAME=="hawkins" & both$YEAR==2008 & both$JOURNAL=="biocon"]<-"university of southampton"
-both$INST[both$LAST_NAME=="hawkins" & both$YEAR==2014 & both$JOURNAL=="biocon"]<-"university of southampton"
-both$INST[both$LAST_NAME=="hockey" & both$YEAR==1997 & both$JOURNAL=="biocon"]<-"university of cape town"
-both$INST[both$LAST_NAME=="hockey" & both$YEAR==2007 & both$JOURNAL=="biocon"]<-"university of cape town"
-both$INST[both$LAST_NAME=="hockey" & both$YEAR==2008 & both$JOURNAL=="biocon"]<-"university of cape town"
-both$INST[both$LAST_NAME=="hockey" & both$YEAR==2009 & both$JOURNAL=="biocon"]<-"university of cape town"
-both$INST[both$LAST_NAME=="johnsingh" & both$YEAR==2006 & both$JOURNAL=="biocon"]<-"wildlife institute of india"
-both$INST[both$LAST_NAME=="krishnaswamy" & both$YEAR==2014 & both$JOURNAL=="biocon"]<-"ashoka trust for research in ecology and the environment"
-both$INST[both$LAST_NAME=="kuenen" & both$YEAR==1986 & both$JOURNAL=="biocon"]<-"university of leiden"
-both$INST[both$LAST_NAME=="lomolino" & both$YEAR==1998 & both$JOURNAL=="biocon"]<-"university of oklahoma"
-both$INST[both$LAST_NAME=="marrs" & both$YEAR==2014 & both$JOURNAL=="biocon"]<-"university of liverpool"
-both$INST[both$LAST_NAME=="mcnicholl" & both$YEAR==1990 & both$JOURNAL=="biocon"]<-"unaffiliated"
-both$INST[both$LAST_NAME=="mcnicholl" & both$YEAR==1993 & both$JOURNAL=="biocon"]<-"unaffiliated"
-both$INST[both$LAST_NAME=="morgan" & both$YEAR==1987 & both$JOURNAL=="biocon"]<-"station biologique de la tour du valat"
-both$INST[both$LAST_NAME=="morgan" & both$YEAR==2004 & both$JOURNAL=="biocon"]<-"station biologique de la tour du valat"
-both$INST[both$LAST_NAME=="peterken" & both$YEAR==1998 & both$JOURNAL=="biocon"]<-"unaffiliated"
-both$INST[both$LAST_NAME=="peterken" & both$YEAR==2009 & both$JOURNAL=="biocon"]<-"unaffiliated"
-both$INST[both$LAST_NAME=="scott" & both$YEAR==1986 & both$JOURNAL=="biocon"]<-"unaffiliated"
-both$INST[both$LAST_NAME=="westhoff" & both$YEAR==1985 & both$JOURNAL=="biocon"]<-"unaffiliated"
-both$INST[both$LAST_NAME=="westhoff" & both$YEAR==1988 & both$JOURNAL=="biocon"]<-"unaffiliated"
-both$INST[both$LAST_NAME=="anderson" & both$YEAR==1993 & both$JOURNAL=="bitr"]<-"australian national university"
-both$INST[both$LAST_NAME=="anderson" & both$YEAR==1997 & both$JOURNAL=="bitr"]<-"australian national university"
-both$INST[both$LAST_NAME=="benson" & both$YEAR==1993 & both$JOURNAL=="bitr"]<-"universidade estadual de campinas"
-both$INST[both$LAST_NAME=="benson" & both$YEAR==1996 & both$JOURNAL=="bitr"]<-"universidade estadual de campinas"
-both$INST[both$LAST_NAME=="berry" & both$YEAR==1996 & both$JOURNAL=="bitr"]<-"missouri botanical garden"
-both$INST[both$LAST_NAME=="berry" & both$YEAR==1997 & both$JOURNAL=="bitr"]<-"missouri botanical garden"
-both$INST[both$LAST_NAME=="brown" & both$YEAR==1993 & both$JOURNAL=="bitr"]<-"university of illinois urbana champaign"
-both$INST[both$LAST_NAME=="brown" & both$YEAR==1996 & both$JOURNAL=="bitr"]<-"university of illinois urbana champaign"
-both$INST[both$LAST_NAME=="foster" & both$YEAR==1996 & both$JOURNAL=="bitr"]<-"usgs patuxent wildlife research center"
-both$INST[both$LAST_NAME=="fox" & both$YEAR==1993 & both$JOURNAL=="bitr"]<-"curtin university of technology"
-both$INST[both$LAST_NAME=="fox" & both$YEAR==1997 & both$JOURNAL=="bitr"]<-"curtin university of technology"
-both$INST[both$LAST_NAME=="west-eberhard" & both$YEAR==1993 & both$JOURNAL=="bitr"]<-"smithsonian tropical research institute"
-both$INST[both$LAST_NAME=="west-eberhard" & both$YEAR==1996 & both$JOURNAL=="bitr"]<-"smithsonian tropical research institute"
-both$INST[both$LAST_NAME=="angert" & both$YEAR==2015 & both$JOURNAL=="evol"]<-"university of british columbia"
-both$INST[both$LAST_NAME=="azevedo" & both$YEAR==2015 & both$JOURNAL=="evol"]<-"university of houston"
-both$INST[both$LAST_NAME=="case" & both$YEAR==2015 & both$JOURNAL=="evol"]<-"kent state university"
-both$INST[both$LAST_NAME=="dean" & both$YEAR==2015 & both$JOURNAL=="evol"]<-"university of minnesota"
-both$INST[both$LAST_NAME=="dworkin" & both$YEAR==2015 & both$JOURNAL=="evol"]<-"michigan state university"
-both$INST[both$LAST_NAME=="edmands" & both$YEAR==2015 & both$JOURNAL=="evol"]<-"university of southern california"
-both$INST[both$LAST_NAME=="engelstadter" & both$YEAR==2015 & both$JOURNAL=="evol"]<-"university of queensland"
-both$INST[both$LAST_NAME=="evans" & both$YEAR==2015 & both$JOURNAL=="evol"]<-"monash university"
-both$INST[both$LAST_NAME=="friedman" & both$YEAR==2015 & both$JOURNAL=="evol"]<-"university of oxford"
-both$INST[both$LAST_NAME=="hadfield" & both$YEAR==2015 & both$JOURNAL=="evol"]<-"university of edinburgh"
-both$INST[both$LAST_NAME=="hahn" & both$YEAR==2015 & both$JOURNAL=="evol"]<-"indiana university"
-both$INST[both$LAST_NAME=="hall" & both$YEAR==2015 & both$JOURNAL=="evol"]<-"university of georgia"
-both$INST[both$LAST_NAME=="kisdi" & both$YEAR==2015 & both$JOURNAL=="evol"]<-"university of helsinki"
-both$INST[both$LAST_NAME=="laine" & both$YEAR==2015 & both$JOURNAL=="evol"]<-"university of helsinki"
-both$INST[both$LAST_NAME=="marshall" & both$YEAR==2015 & both$JOURNAL=="evol"]<-"monash university"
-both$INST[both$LAST_NAME=="masel" & both$YEAR==2015 & both$JOURNAL=="evol"]<-"university of arizona"
-both$INST[both$LAST_NAME=="mcadam" & both$YEAR==2015 & both$JOURNAL=="evol"]<-"university of guelph"
-both$INST[both$LAST_NAME=="neiman" & both$YEAR==2015 & both$JOURNAL=="evol"]<-"university of iowa"
-both$INST[both$LAST_NAME=="redfield" & both$YEAR==2015 & both$JOURNAL=="evol"]<-"university of british columbia"
-both$INST[both$LAST_NAME=="robosky" & both$YEAR==2015 & both$JOURNAL=="evol"]<-"university of michigan"
-both$INST[both$LAST_NAME=="roze" & both$YEAR==2015 & both$JOURNAL=="evol"]<-"cnrs roscoff biological station"
-both$INST[both$LAST_NAME=="rozen" & both$YEAR==2015 & both$JOURNAL=="evol"]<-"university of leiden"
-both$INST[both$LAST_NAME=="sweigart" & both$YEAR==2015 & both$JOURNAL=="evol"]<-"university of georgia"
-both$INST[both$LAST_NAME=="tobias" & both$YEAR==2015 & both$JOURNAL=="evol"]<-"university of oxford"
-both$INST[both$LAST_NAME=="valenzuela" & both$YEAR==2015 & both$JOURNAL=="evol"]<-"iowa state university"
-both$INST[both$LAST_NAME=="bearhop" & both$YEAR==2008 & both$JOURNAL=="jane"]<-"university of exeter"
-both$INST[both$LAST_NAME=="bearhop" & both$YEAR==2014 & both$JOURNAL=="jane"]<-"university of exeter"
-both$INST[both$LAST_NAME=="gurney" & both$YEAR==1999 & both$JOURNAL=="jane"]<-"university of strathclyde"
-both$INST[both$LAST_NAME=="gurney" & both$YEAR==2014 & both$JOURNAL=="jane"]<-"university of strathclyde"
-both$INST[both$LAST_NAME=="hall" & both$YEAR==1999 & both$JOURNAL=="jane"]<-"flinders university"
-both$INST[both$LAST_NAME=="hall" & both$YEAR==2009 & both$JOURNAL=="jane"]<-"worldfish centre"
-both$INST[both$LAST_NAME=="lessells" & both$YEAR==1994 & both$JOURNAL=="jane"]<-"netherlands institute of ecology"
-both$INST[both$LAST_NAME=="lessells" & both$YEAR==2014 & both$JOURNAL=="jane"]<-"netherlands institute of ecology"
-both$INST[both$LAST_NAME=="manly" & both$YEAR==2005 & both$JOURNAL=="jane"]<-"western ecosystem technology"
-both$INST[both$LAST_NAME=="manly" & both$YEAR==2013 & both$JOURNAL=="jane"]<-"western ecosystem technology"
-both$INST[both$LAST_NAME=="may" & both$YEAR==1991 & both$JOURNAL=="jane"]<-"university of oxford"
-both$INST[both$LAST_NAME=="may" & both$YEAR==1996 & both$JOURNAL=="jane"]<-"university of oxford"
-both$INST[both$LAST_NAME=="mccann" & both$YEAR==2005 & both$JOURNAL=="jane"]<-"university of guelph"
-both$INST[both$LAST_NAME=="mccleery" & both$YEAR==2008 & both$JOURNAL=="jane"]<-"university of oxford"
-both$INST[both$LAST_NAME=="mcintyre" & both$YEAR==1985 & both$JOURNAL=="jane"]<-"university of aberdeen"
-both$INST[both$LAST_NAME=="mcintyre" & both$YEAR==1990 & both$JOURNAL=="jane"]<-"university of aberdeen"
-both$INST[both$LAST_NAME=="meiri" & both$YEAR==2011 & both$JOURNAL=="jane"]<-"tel aviv university"
-both$INST[both$LAST_NAME=="meiri" & both$YEAR==2014 & both$JOURNAL=="jane"]<-"tel aviv university"
-both$INST[both$LAST_NAME=="o'gorman" & both$YEAR==2013 & both$JOURNAL=="jane"]<-"queen mary university of london"
-both$INST[both$LAST_NAME=="o'gorman" & both$YEAR==2014 & both$JOURNAL=="jane"]<-"imperial college london"
-both$INST[both$LAST_NAME=="rogers" & both$YEAR==1994 & both$JOURNAL=="jane"]<-"university of oxford"
-both$INST[both$LAST_NAME=="rogers" & both$YEAR==1996 & both$JOURNAL=="jane"]<-"university of oxford"
-both$INST[both$LAST_NAME=="stouffer" & both$YEAR==2013 & both$JOURNAL=="jane"]<-"university of canterbury"
-both$INST[both$LAST_NAME=="stouffer" & both$YEAR==2014 & both$JOURNAL=="jane"]<-"university of canterbury"
-both$INST[both$LAST_NAME=="thorpe" & both$YEAR==1994 & both$JOURNAL=="jane"]<-"soafd fisheries laboratory"
-both$INST[both$LAST_NAME=="thorpe" & both$YEAR==1997 & both$JOURNAL=="jane"]<-"university of glasgow "
-both$INST[both$LAST_NAME=="vanderpol" & both$YEAR==2013 & both$JOURNAL=="jane"]<-"australian national university"
-both$INST[both$LAST_NAME=="vanderpol" & both$YEAR==2014 & both$JOURNAL=="jane"]<-"australian national university"
-both$INST[both$LAST_NAME=="block" & both$YEAR==1985 & both$JOURNAL=="jape"]<-"liverpool john moores university"
-both$INST[both$LAST_NAME=="block" & both$YEAR==1989 & both$JOURNAL=="jape"]<-"liverpool john moores university"
-both$INST[both$LAST_NAME=="bullock" & both$YEAR==2000 & both$JOURNAL=="jape"]<-"institute of terrestrial ecology"
-both$INST[both$LAST_NAME=="bullock" & both$YEAR==2003 & both$JOURNAL=="jape"]<-"institute of terrestrial ecology"
-both$INST[both$LAST_NAME=="clarke" & both$YEAR==1989 & both$JOURNAL=="jape"]<-"institute of terrestrial ecology"
-both$INST[both$LAST_NAME=="day" & both$YEAR==1988 & both$JOURNAL=="jape"]<-"silsoe research institute"
-both$INST[both$LAST_NAME=="day" & both$YEAR==1996 & both$JOURNAL=="jape"]<-"silsoe research institute"
-both$INST[both$LAST_NAME=="fernande-juricic" & both$YEAR==2010 & both$JOURNAL=="jape"]<-"purdue university"
-both$INST[both$LAST_NAME=="freckleto" & both$YEAR==2005 & both$JOURNAL=="jape"]<-"university of oxford"
-both$INST[both$LAST_NAME=="hill" & both$YEAR==1993 & both$JOURNAL=="jape"]<-"game conservancy"
-both$INST[both$LAST_NAME=="hill" & both$YEAR==1999 & both$JOURNAL=="jape"]<-"university of cambridge"
-both$INST[both$LAST_NAME=="mason" & both$YEAR==1989 & both$JOURNAL=="jape"]<-"university of essex"
-both$INST[both$LAST_NAME=="mason" & both$YEAR==1996 & both$JOURNAL=="jape"]<-"university of essex"
-both$INST[both$LAST_NAME=="mead" & both$YEAR==1985 & both$JOURNAL=="jape"]<-"university of reading"
-both$INST[both$LAST_NAME=="mead" & both$YEAR==1987 & both$JOURNAL=="jape"]<-"university of reading"
-both$INST[both$LAST_NAME=="miles" & both$YEAR==1988 & both$JOURNAL=="jape"]<-"institute of terrestrial ecology"
-both$INST[both$LAST_NAME=="miles" & both$YEAR==1991 & both$JOURNAL=="jape"]<-"institute of terrestrial ecology"
-both$INST[both$LAST_NAME=="monteith" & both$YEAR==1985 & both$JOURNAL=="jape"]<-"university of nottingham"
-both$INST[both$LAST_NAME=="monteith" & both$YEAR==1987 & both$JOURNAL=="jape"]<-"university of nottingham"
-both$INST[both$LAST_NAME=="roberts" & both$YEAR==1985 & both$JOURNAL=="jape"]<-"central electricity research laboratories"
-both$INST[both$LAST_NAME=="roberts" & both$YEAR==1987 & both$JOURNAL=="jape"]<-"central electricity research laboratories"
-both$INST[both$LAST_NAME=="rutter" & both$YEAR==1985 & both$JOURNAL=="jape"]<-"imperial college london"
-both$INST[both$LAST_NAME=="rutter" & both$YEAR==1988 & both$JOURNAL=="jape"]<-"imperial college london"
-both$INST[both$LAST_NAME=="smith" & both$YEAR==2005 & both$JOURNAL=="jape"]<-"central science laboratory"
-both$INST[both$LAST_NAME=="smith" & both$YEAR==2006 & both$JOURNAL=="jape"]<-"central science laboratory"
-both$INST[both$LAST_NAME=="thomas" & both$YEAR==1989 & both$JOURNAL=="jape"]<-"afrc institute for grassland and animal production"
-both$INST[both$LAST_NAME=="thomas" & both$YEAR==1997 & both$JOURNAL=="jape"]<-"afrc institute for grassland and animal production"
-both$INST[both$LAST_NAME=="walpole" & both$YEAR==2006 & both$JOURNAL=="jape"]<-"fauna and flora international"
-both$INST[both$LAST_NAME=="walpole" & both$YEAR==2009 & both$JOURNAL=="jape"]<-"fauna and flora international"
-both$INST[both$LAST_NAME=="welch" & both$YEAR==1988 & both$JOURNAL=="jape"]<-"institute of terrestrial ecology"
-both$INST[both$LAST_NAME=="welch" & both$YEAR==1996 & both$JOURNAL=="jape"]<-"institute of terrestrial ecology"
-both$INST[both$LAST_NAME=="ali" & both$YEAR==2013 & both$JOURNAL=="jbiog"]<-"university of hong kong"
-both$INST[both$LAST_NAME=="ali" & both$YEAR==2014 & both$JOURNAL=="jbiog"]<-"university of hong kong"
-both$INST[both$LAST_NAME=="bryson" & both$YEAR==2014 & both$JOURNAL=="jbiog"]<-"university of washington"
-both$INST[both$LAST_NAME=="carine" & both$YEAR==2010 & both$JOURNAL=="jbiog"]<-"natural history museum london"
-both$INST[both$LAST_NAME=="carine" & both$YEAR==2014 & both$JOURNAL=="jbiog"]<-"natural history museum london"
-both$INST[both$LAST_NAME=="cavers" & both$YEAR==2014 & both$JOURNAL=="jbiog"]<-"nerc centre for ecology and hydrology"
-both$INST[both$LAST_NAME=="chapman" & both$YEAR==2014 & both$JOURNAL=="jbiog"]<-"nerc centre for ecology and hydrology"
-both$INST[both$LAST_NAME=="diniz-filho" & both$YEAR==2005 & both$JOURNAL=="jbiog"]<-"universidade federal de goias"
-both$INST[both$LAST_NAME=="diniz-filho" & both$YEAR==2006 & both$JOURNAL=="jbiog"]<-"universidade federal de goias"
-both$INST[both$LAST_NAME=="emerson" & both$YEAR==2013 & both$JOURNAL=="jbiog"]<-"csic - ipna"
-both$INST[both$LAST_NAME=="emerson" & both$YEAR==2014 & both$JOURNAL=="jbiog"]<-"csic - ipna"
-both$INST[both$LAST_NAME=="gaither" & both$YEAR==2014 & both$JOURNAL=="jbiog"]<-"durham university"
-both$INST[both$LAST_NAME=="gilman" & both$YEAR==2010 & both$JOURNAL=="jbiog"]<-"auckland university of technology"
-both$INST[both$LAST_NAME=="gilman" & both$YEAR==2014 & both$JOURNAL=="jbiog"]<-"auckland university of technology"
-both$INST[both$LAST_NAME=="guilhaumon" & both$YEAR==2013 & both$JOURNAL=="jbiog"]<-"university of evora"
-both$INST[both$LAST_NAME=="guilhaumon" & both$YEAR==2014 & both$JOURNAL=="jbiog"]<-"universite de montpellier"
-both$INST[both$LAST_NAME=="hansen" & both$YEAR==2011 & both$JOURNAL=="jbiog"]<-"university of kwazulu natal"
-both$INST[both$LAST_NAME=="hansen" & both$YEAR==2014 & both$JOURNAL=="jbiog"]<-"university of zurich"
-both$INST[both$LAST_NAME=="harrison" & both$YEAR==1985 & both$JOURNAL=="jbiog"]<-"university college london"
-both$INST[both$LAST_NAME=="harrison" & both$YEAR==2004 & both$JOURNAL=="jbiog"]<-"university college london"
-both$INST[both$LAST_NAME=="higgins" & both$YEAR==2013 & both$JOURNAL=="jbiog"]<-"goethe university frankfurt"
-both$INST[both$LAST_NAME=="higgins" & both$YEAR==2014 & both$JOURNAL=="jbiog"]<-"university of otago"
-both$INST[both$LAST_NAME=="holger" & both$YEAR==2014 & both$JOURNAL=="jbiog"]<-"university of gottingen"
-both$INST[both$LAST_NAME=="kreft" & both$YEAR==2014 & both$JOURNAL=="jbiog"]<-"university of gottingen"
-both$INST[both$LAST_NAME=="holland" & both$YEAR==1986 & both$JOURNAL=="jbiog"]<-"university of otago"
-both$INST[both$LAST_NAME=="holland" & both$YEAR==2003 & both$JOURNAL=="jbiog"]<-"university of otago"
-both$INST[both$LAST_NAME=="jetz" & both$YEAR==2006 & both$JOURNAL=="jbiog"]<-"university of california san diego"
-both$INST[both$LAST_NAME=="jetz" & both$YEAR==2014 & both$JOURNAL=="jbiog"]<-"yale university"
-both$INST[both$LAST_NAME=="katinas" & both$YEAR==2014 & both$JOURNAL=="jbiog"]<-"museo de la plata"
-both$INST[both$LAST_NAME=="kullman" & both$YEAR==1991 & both$JOURNAL=="jbiog"]<-"university of umea"
-both$INST[both$LAST_NAME=="kullman" & both$YEAR==2004 & both$JOURNAL=="jbiog"]<-"university of umea"
-both$INST[both$LAST_NAME=="lei" & both$YEAR==2014 & both$JOURNAL=="jbiog"]<-"chinese academy of sciences"
-both$INST[both$LAST_NAME=="maggs" & both$YEAR==2008 & both$JOURNAL=="jbiog"]<-"queens university belfast"
-both$INST[both$LAST_NAME=="maggs" & both$YEAR==2014 & both$JOURNAL=="jbiog"]<-"queens university belfast"
-both$INST[both$LAST_NAME=="masters" & both$YEAR==2011 & both$JOURNAL=="jbiog"]<-"university of kwazulu natal"
-both$INST[both$LAST_NAME=="masters" & both$YEAR==2012 & both$JOURNAL=="jbiog"]<-"university of ft hare"
-both$INST[both$LAST_NAME=="parmakelis" & both$YEAR==2013 & both$JOURNAL=="jbiog"]<-"university of athens"
-both$INST[both$LAST_NAME=="parmakelis" & both$YEAR==2014 & both$JOURNAL=="jbiog"]<-"university of athens"
-both$INST[both$LAST_NAME=="paulay" & both$YEAR==2014 & both$JOURNAL=="jbiog"]<-"university of florida"
-both$INST[both$LAST_NAME=="phillimore" & both$YEAR==2013 & both$JOURNAL=="jbiog"]<-"university of edinburgh"
-both$INST[both$LAST_NAME=="phillimore" & both$YEAR==2014 & both$JOURNAL=="jbiog"]<-"university of edinburgh"
-both$INST[both$LAST_NAME=="prance" & both$YEAR==2000 & both$JOURNAL=="jbiog"]<-"royal botanic gardens kew"
-both$INST[both$LAST_NAME=="prance" & both$YEAR==2004 & both$JOURNAL=="jbiog"]<-"royal botanic gardens kew"
-both$INST[both$LAST_NAME=="richardson" & both$YEAR==2011 & both$JOURNAL=="jbiog"]<-"royal botanic garden edinburgh"
-both$INST[both$LAST_NAME=="richardson" & both$YEAR==2014 & both$JOURNAL=="jbiog"]<-"royal botanic garden edinburgh"
-both$INST[both$LAST_NAME=="schaefer" & both$YEAR==2014 & both$JOURNAL=="jbiog"]<-"technical university of munich"
-both$INST[both$LAST_NAME=="stearns" & both$YEAR==1985 & both$JOURNAL=="jbiog"]<-"university of wisconsin"
-both$INST[both$LAST_NAME=="stearns" & both$YEAR==1990 & both$JOURNAL=="jbiog"]<-"university of wisconsin"
-both$INST[both$LAST_NAME=="triantis" & both$YEAR==2010 & both$JOURNAL=="jbiog"]<-"university of azores"
-both$INST[both$LAST_NAME=="triantis" & both$YEAR==2014 & both$JOURNAL=="jbiog"]<-"national & kapodistrian university"
-both$INST[both$LAST_NAME=="vanderhammen" & both$YEAR==1985 & both$JOURNAL=="jbiog"]<-"university of amsterdam"
-both$INST[both$LAST_NAME=="vanderhammen" & both$YEAR==1990 & both$JOURNAL=="jbiog"]<-"university of amsterdam"
-both$INST[both$LAST_NAME=="watts" & both$YEAR==1985 & both$JOURNAL=="jbiog"]<-"university of hull"
-both$INST[both$LAST_NAME=="watts" & both$YEAR==1995 & both$JOURNAL=="jbiog"]<-"university of hull"
-both$INST[both$LAST_NAME=="dekroon" & both$YEAR==2002 & both$JOURNAL=="jecol"]<-"radboud university nijmegen"
-both$INST[both$LAST_NAME=="dekroon" & both$YEAR==2004 & both$JOURNAL=="jecol"]<-"radboud university nijmegen"
-both$INST[both$LAST_NAME=="etherington" & both$YEAR==1985 & both$JOURNAL=="jecol"]<-"cardiff university"
-both$INST[both$LAST_NAME=="etherington" & both$YEAR==1990 & both$JOURNAL=="jecol"]<-"university of wales"
-both$INST[both$LAST_NAME=="gray" & both$YEAR==1991 & both$JOURNAL=="jecol"]<-"cardiff university"
-both$INST[both$LAST_NAME=="hopkins" & both$YEAR==1985 & both$JOURNAL=="jecol"]<-"university of sheffield"
-both$INST[both$LAST_NAME=="huntely" & both$YEAR==1987 & both$JOURNAL=="jecol"]<-"cambridge university"
-both$INST[both$LAST_NAME=="huntley" & both$YEAR==1985 & both$JOURNAL=="jecol"]<-"cambridge university"
-both$INST[both$LAST_NAME=="huntley" & both$YEAR==1988 & both$JOURNAL=="jecol"]<-"cambridge university"
-both$INST[both$LAST_NAME=="lack" & both$YEAR==1987 & both$JOURNAL=="jecol"]<-"swansea university"
-both$INST[both$LAST_NAME=="lack" & both$YEAR==1990 & both$JOURNAL=="jecol"]<-"oxford brookes university"
-both$INST[both$LAST_NAME=="long" & both$YEAR==1986 & both$JOURNAL=="jecol"]<-"university of essex"
-both$INST[both$LAST_NAME=="ouborg" & both$YEAR==2003 & both$JOURNAL=="jecol"]<-"radboud university nijmegen"
-both$INST[both$LAST_NAME=="ouborg" & both$YEAR==2004 & both$JOURNAL=="jecol"]<-"radboud university nijmegen"
-both$INST[both$LAST_NAME=="vandermeijden" & both$YEAR==1989 & both$JOURNAL=="jecol"]<-"leiden university"
-both$INST[both$LAST_NAME=="vandermeijden" & both$YEAR==1993 & both$JOURNAL=="jecol"]<-"leiden university"
-both$INST[both$LAST_NAME=="vangroenendael" & both$YEAR==1992 & both$JOURNAL=="jecol"]<-"wageningen university and research"
-both$INST[both$LAST_NAME=="white" & both$YEAR==1986 & both$JOURNAL=="jecol"]<-"university college dublin"
-both$INST[both$LAST_NAME=="albon" & both$YEAR==1995 & both$JOURNAL=="jzool"]<-"zoological society of london"
-both$INST[both$LAST_NAME=="ayers" & both$YEAR==1985 & both$JOURNAL=="newphyt"]<-"lancaster university"
-both$INST[both$LAST_NAME=="ayers" & both$YEAR==2002 & both$JOURNAL=="newphyt"]<-"lancaster university"
-both$INST[both$LAST_NAME=="barbour" & both$YEAR==2015 & both$JOURNAL=="newphyt"]<-"university of sydney"
-both$INST[both$LAST_NAME=="graham" & both$YEAR==2015 & both$JOURNAL=="newphyt"]<-"university of florida"
-both$INST[both$LAST_NAME=="schat" & both$YEAR==2015 & both$JOURNAL=="newphyt"]<-"vrije universiteit amsterdam"
-both$INST[both$LAST_NAME=="smith" & both$YEAR==2015 & both$JOURNAL=="newphyt"]<-"university of cambridge"
-both$INST[both$LAST_NAME=="stinchcombe" & both$YEAR==2014 & both$JOURNAL=="newphyt"]<-"university of toronto"
-both$INST[both$LAST_NAME=="sultan" & both$YEAR==2004 & both$JOURNAL=="newphyt"]<-"wesleyan university"
-both$INST[both$LAST_NAME=="sultan" & both$YEAR==2009 & both$JOURNAL=="newphyt"]<-"wesleyan university"
-both$INST[both$LAST_NAME=="syrett" & both$YEAR==1985 & both$JOURNAL=="newphyt"]<-"university of wales"
-both$INST[both$LAST_NAME=="syrett" & both$YEAR==1989 & both$JOURNAL=="newphyt"]<-"university of wales"
-both$INST[both$LAST_NAME=="tjoelker" & both$YEAR==2014 & both$JOURNAL=="newphyt"]<-"western sydney university"
-both$INST[both$LAST_NAME=="vamosi" & both$YEAR==2015 & both$JOURNAL=="newphyt"]<-"university of calgary"
-both$INST[both$LAST_NAME=="west" & both$YEAR==1994 & both$JOURNAL=="newphyt"]<-"university of cambridge"
-both$INST[both$LAST_NAME=="wolfenden" & both$YEAR==1990 & both$JOURNAL=="newphyt"]<-"lancaster university"
-both$INST[both$LAST_NAME=="wolfenden" & both$YEAR==1991 & both$JOURNAL=="newphyt"]<-"lancaster university"
-both$INST[both$LAST_NAME=="wolfenden" & both$YEAR==1996 & both$JOURNAL=="newphyt"]<-"lancaster university"
-both$INST[both$LAST_NAME=="bever" & both$YEAR==2013 & both$JOURNAL=="oecol"]<-"university of indiana"
-both$INST[both$LAST_NAME=="buchmann" & both$YEAR==2004 & both$JOURNAL=="oecol"]<-"swiss federal institute of technology"
-both$INST[both$LAST_NAME=="buchmann" & both$YEAR==2014 & both$JOURNAL=="oecol"]<-"swiss federal institute of technology"
-both$INST[both$LAST_NAME=="diehl" & both$YEAR==2011 & both$JOURNAL=="oecol"]<-"university of umea"
-both$INST[both$LAST_NAME=="elle" & both$YEAR==2013 & both$JOURNAL=="oecol"]<-"simon fraser university"
-both$INST[both$LAST_NAME=="fiedler" & both$YEAR==2005 & both$JOURNAL=="oecol"]<-"university of vienna"
-both$INST[both$LAST_NAME=="fiedler" & both$YEAR==2014 & both$JOURNAL=="oecol"]<-"university of vienna"
-both$INST[both$LAST_NAME=="gough" & both$YEAR==2013 & both$JOURNAL=="oecol"]<-"university of texas arlington"
-both$INST[both$LAST_NAME=="gough" & both$YEAR==2014 & both$JOURNAL=="oecol"]<-"university of texas arlington"
-both$INST[both$LAST_NAME=="heimpel" & both$YEAR==2013 & both$JOURNAL=="oecol"]<-"university of minnesota"
-both$INST[both$LAST_NAME=="heimpel" & both$YEAR==2014 & both$JOURNAL=="oecol"]<-"university of minnesota"
-both$INST[both$LAST_NAME=="herre" & both$YEAR==2014 & both$JOURNAL=="oecol"]<-"smithsonian tropical research institute"
-both$INST[both$LAST_NAME=="ibanez" & both$YEAR==2013 & both$JOURNAL=="oecol"]<-"university of michigan"
-both$INST[both$LAST_NAME=="ibanez" & both$YEAR==2014 & both$JOURNAL=="oecol"]<-"university of michigan"
-both$INST[both$LAST_NAME=="koricheva" & both$YEAR==2006 & both$JOURNAL=="oecol"]<-"royal holloway university of london"
-both$INST[both$LAST_NAME=="koricheva" & both$YEAR==2014 & both$JOURNAL=="oecol"]<-"royal holloway university of london"
-both$INST[both$LAST_NAME=="korner" & both$YEAR==1992 & both$JOURNAL=="oecol"]<-"university of basel"
-both$INST[both$LAST_NAME=="korner" & both$YEAR==2014 & both$JOURNAL=="oecol"]<-"university of basel"
-both$INST[both$LAST_NAME=="laaksonen" & both$YEAR==2014 & both$JOURNAL=="oecol"]<-"university of turku "
-both$INST[both$LAST_NAME=="layman" & both$YEAR==2013 & both$JOURNAL=="oecol"]<-"florida international university"
-both$INST[both$LAST_NAME=="layman" & both$YEAR==2014 & both$JOURNAL=="oecol"]<-"florida international university"
-both$INST[both$LAST_NAME=="legalliard" & both$YEAR==2012 & both$JOURNAL=="oecol"]<-"cnrs institut ecologie et environnement"
-both$INST[both$LAST_NAME=="legalliard" & both$YEAR==2014 & both$JOURNAL=="oecol"]<-"cnrs institut ecologie et environnement"
-both$INST[both$LAST_NAME=="lichstein" & both$YEAR==2013 & both$JOURNAL=="oecol"]<-"university of florida"
-both$INST[both$LAST_NAME=="lichstein" & both$YEAR==2014 & both$JOURNAL=="oecol"]<-"university of florida"
-both$INST[both$LAST_NAME=="lill" & both$YEAR==2012 & both$JOURNAL=="oecol"]<-"george washington university"
-both$INST[both$LAST_NAME=="lill" & both$YEAR==2014 & both$JOURNAL=="oecol"]<-"george washington university"
-both$INST[both$LAST_NAME=="muller" & both$YEAR==2011 & both$JOURNAL=="oecol"]<-"university of bielefeld"
-both$INST[both$LAST_NAME=="muller" & both$YEAR==2014 & both$JOURNAL=="oecol"]<-"university of bielefeld"
-both$INST[both$LAST_NAME=="niinemets" & both$YEAR==2014 & both$JOURNAL=="oecol"]<-"estonian university of life sciences"
-both$INST[both$LAST_NAME=="prinzing" & both$YEAR==2013 & both$JOURNAL=="oecol"]<-"universite de rennes 1"
-both$INST[both$LAST_NAME=="schaller" & both$YEAR==1985 & both$JOURNAL=="oecol"]<-"university of vienna"
-both$INST[both$LAST_NAME=="schaller" & both$YEAR==1986 & both$JOURNAL=="oecol"]<-"university of vienna"
-both$INST[both$LAST_NAME=="shurin" & both$YEAR==2011 & both$JOURNAL=="oecol"]<-"university of california san diego"
-both$INST[both$LAST_NAME=="shurin" & both$YEAR==2014 & both$JOURNAL=="oecol"]<-"university of california san diego"
-both$INST[both$LAST_NAME=="siemann" & both$YEAR==2012 & both$JOURNAL=="oecol"]<-"rice university"
-both$INST[both$LAST_NAME=="siemann" & both$YEAR==2014 & both$JOURNAL=="oecol"]<-"rice university"
-both$INST[both$LAST_NAME=="stark" & both$YEAR==2012 & both$JOURNAL=="oecol"]<-"utah state university"
-both$INST[both$LAST_NAME=="stark" & both$YEAR==2014 & both$JOURNAL=="oecol"]<-"utah state university"
-both$INST[both$LAST_NAME=="stewart" & both$YEAR==1998 & both$JOURNAL=="oecol"]<-"university of queensland"
-both$INST[both$LAST_NAME=="ward" & both$YEAR==2014 & both$JOURNAL=="oecol"]<-"university of kansas"
-both$INST[both$LAST_NAME=="weisser" & both$YEAR==1985 & both$JOURNAL=="oecol"]<-"university of innsbruck "
-both$INST[both$LAST_NAME=="weisser" & both$YEAR==2014 & both$JOURNAL=="oecol"]<-"technical university of munich"
-both$INST[both$LAST_NAME=="ziegler" & both$YEAR==1985 & both$JOURNAL=="oecol"]<-"technical university of munich"
-both$INST[both$LAST_NAME=="ziegler" & both$YEAR==2007 & both$JOURNAL=="oecol"]<-"technical university of munich"
-both$INST[both$LAST_NAME=="aarsen" & both$YEAR==2007 & both$JOURNAL=="oikos"]<-"queens university"
-both$INST[both$LAST_NAME=="aarsen" & both$YEAR==2014 & both$JOURNAL=="oikos"]<-"queens university"
-both$INST[both$LAST_NAME=="abbot" & both$YEAR==2013 & both$JOURNAL=="oikos"]<-"lund university"
-both$INST[both$LAST_NAME=="abbot" & both$YEAR==2014 & both$JOURNAL=="oikos"]<-"lund university"
-both$INST[both$LAST_NAME=="andersen" & both$YEAR==1985 & both$JOURNAL=="oikos"]<-"geological survey of denmark"
-both$INST[both$LAST_NAME=="andersen" & both$YEAR==1989 & both$JOURNAL=="oikos"]<-"geological survey of denmark"
-both$INST[both$LAST_NAME=="andersson" & both$YEAR==1985 & both$JOURNAL=="oikos"]<-"swedish university of agricultural sciences"
-both$INST[both$LAST_NAME=="andersson" & both$YEAR==1989 & both$JOURNAL=="oikos"]<-"swedish university of agricultural sciences"
-both$INST[both$LAST_NAME=="boomsma" & both$YEAR==2011 & both$JOURNAL=="oikos"]<-"university of copenhagen"
-both$INST[both$LAST_NAME=="dahl" & both$YEAR==1985 & both$JOURNAL=="oikos"]<-"agricultural university of norway"
-both$INST[both$LAST_NAME=="dahl" & both$YEAR==1989 & both$JOURNAL=="oikos"]<-"agricultural university of norway"
-both$INST[both$LAST_NAME=="grae" & both$YEAR==2012 & both$JOURNAL=="oikos"]<-"norwegian university of science and technology"
-both$INST[both$LAST_NAME=="grae" & both$YEAR==2014 & both$JOURNAL=="oikos"]<-"norwegian university of science and technology"
-both$INST[both$LAST_NAME=="jarvinen" & both$YEAR==1989 & both$JOURNAL=="oikos"]<-"university of helsinki"
-both$INST[both$LAST_NAME=="malian" & both$YEAR==2012 & both$JOURNAL=="oikos"]<-"swiss federal institute of aquatic science and technology"
-both$INST[both$LAST_NAME=="malian" & both$YEAR==2014 & both$JOURNAL=="oikos"]<-"swiss federal institute of aquatic science and technology"
-both$INST[both$LAST_NAME=="moore" & both$YEAR==2011 & both$JOURNAL=="oikos"]<-"university of california santa cruz"
-both$INST[both$LAST_NAME=="moore" & both$YEAR==2014 & both$JOURNAL=="oikos"]<-"university of california santa cruz"
-both$INST[both$LAST_NAME=="robinson" & both$YEAR==2011 & both$JOURNAL=="oikos"]<-"british trust for ornithology"
-both$INST[both$LAST_NAME=="robinson" & both$YEAR==2014 & both$JOURNAL=="oikos"]<-"british trust for ornithology"
-both$INST[both$LAST_NAME=="roy" & both$YEAR==2012 & both$JOURNAL=="oikos"]<-"evergreen state college"
-both$INST[both$LAST_NAME=="roy" & both$YEAR==2014 & both$JOURNAL=="oikos"]<-"evergreen state college"
-both$INST[both$LAST_NAME=="scherer_lorenzon" & both$YEAR==2014 & both$JOURNAL=="oikos"]<-"university of freiburg"
-both$INST[both$LAST_NAME=="solbrek" & both$YEAR==2011 & both$JOURNAL=="oikos"]<-"swedish university of agricultural sciences"
-both$INST[both$LAST_NAME=="sun" & both$YEAR==2014 & both$JOURNAL=="oikos"]<-"university of hong kong"
-both$INST[both$LAST_NAME=="traveser" & both$YEAR==2011 & both$JOURNAL=="oikos"]<-"mediterranean institute for advanced studies"
-both$INST[both$LAST_NAME=="traveser" & both$YEAR==2014 & both$JOURNAL=="oikos"]<-"mediterranean institute for advanced studies"
-both$INST[both$LAST_NAME=="bornkamm" & both$YEAR==1985 & both$JOURNAL=="plantecol"]<-"technical university of berlin"
-both$INST[both$LAST_NAME=="bornkamm" & both$YEAR==1989 & both$JOURNAL=="plantecol"]<-"technical university of berlin"
-both$INST[both$LAST_NAME=="epstein" & both$YEAR==2012 & both$JOURNAL=="plantecol"]<-"university of virginia"
-both$INST[both$LAST_NAME=="gimingham" & both$YEAR==1985 & both$JOURNAL=="plantecol"]<-"university of aberdeen"
-both$INST[both$LAST_NAME=="gimingham" & both$YEAR==1989 & both$JOURNAL=="plantecol"]<-"university of aberdeen"
-both$INST[both$LAST_NAME=="grubb" & both$YEAR==1985 & both$JOURNAL=="plantecol"]<-"university of cambridge"
-both$INST[both$LAST_NAME=="grubb" & both$YEAR==1986 & both$JOURNAL=="plantecol"]<-"university of cambridge"
-both$INST[both$LAST_NAME=="ne'eman" & both$YEAR==2012 & both$JOURNAL=="plantecol"]<-"university of haifa-oranim"
-both$INST[both$LAST_NAME=="oksanen" & both$YEAR==1989 & both$JOURNAL=="plantecol"]<-"university of eastern finland"
-both$INST[both$LAST_NAME=="rozema" & both$YEAR==2012 & both$JOURNAL=="plantecol"]<-"vrije universiteit amsterdam"
-both$INST[both$LAST_NAME=="walsh" & both$YEAR==2012 & both$JOURNAL=="plantecol"]<-"university of north carolina chapel hill"
-both$INST[both$LAST_NAME=="white" & both$YEAR==1985 & both$JOURNAL=="plantecol"]<-"university college dublin"
-both$INST[both$LAST_NAME=="white" & both$YEAR==1989 & both$JOURNAL=="plantecol"]<-"university college dublin"
-
-both$INST[both$editor_id==1747 & both$YEAR==2011 & both$JOURNAL=="jbiog"]<-"university of oxford"
-
-both$INST[both$editor_id==3892 & both$YEAR==1985]<-"louisiana state university"
-
-both$INST[both$editor_id==716 & both$LAST_NAME=="hansen" & both$JOURNAL=="jbiog"]<-"university of zurich"
-both$COUNTRY[both$editor_id==716 & both$LAST_NAME=="hansen" & both$JOURNAL=="jbiog"]<-"switzerland"
-both$INST[both$editor_id==1849 & both$INST=="university of stirling"]<-"vrije universiteit amsterdam"
-# both$INST[both$editor_id==105 & both$JOURNAL=="agronomy"]<-"california state university fresno"
-# both$INST[both$editor_id==1673 & both$YEAR==2014]<-"california state university sacramento"
-
-both$editor_id[both$JOURNAL=="gcb" & both$LAST_NAME=="korner" & both$FIRST_NAME=="christian"]<-499
-both$INST[both$editor_id==499 & both$YEAR>1989]<-"university of basel"
-both$CITY[both$CITY=="turtu"& both$editor_id==3587]<-"turku"
-
-both$CITY[both$CITY=="universidade estadual paulista"& both$editor_id==2383]<-"rio claro"
-both$CITY[both$CITY=="universidade estadual paulista"& both$editor_id==1225]<-"sao paulo"
-
-both$INST[both$editor_id==2358 & both$JOURNAL=="jane"]<-"university college cork"
-both$CITY[both$editor_id==2358 & both$JOURNAL=="jane"]<-"cork"
-
-both$INST[both$editor_id==1417 & both$YEAR=="1992"]<-"usfs pacific southwest research station"
-
-both$INST[both$editor_id==190]<-"kansas state university"
-
-both$INST[both$editor_id==1763]<-"universidade de sao paulo"
-both$INST[both$editor_id==2819]<-"universidade de sao paulo"
-
-both$STATE[both$CITY=="para"]<-"para"
-both$CITY[both$CITY=="para"]<-NA
-
-both$CITY[both$CITY=="washington"]<-"washington dc"
-both$CITY[both$CITY=="washington, dc"]<-"washington dc"
-both$CITY[both$CITY=="dc"]<-"washington dc"
-both$CITY[both$CITY=="district of columbia"]<-"washington dc"
-both$STATE[both$CITY=="washington dc"]<-"washington dc"
-
-both$CITY[both$CITY=="st louis"]<-"st louis"
-
-both$CITY[both$CITY=="fredricton"]<-"fredericton"
-
-
-both$COUNTRY[both$editor_id==3359 & both$YEAR==2014]<-"new zealand"
-
-
-both$COUNTRY[both$COUNTRY=="west germany"]<-"germany"
-
-
-colnames(both)
-both<-both %>% group_by(JOURNAL,editor_id,LAST_NAME,FIRST_NAME) %>% 
-  arrange(YEAR) %>% 
-  fill(INST,.direction="down")
-
-
-both$FIRST_NAME[both$LAST_NAME=="lack" & both$FIRST_NAME=="alan" &
-                  both$MIDDLE_NAME=="j"]<-"andrew"
-
-
-both$FIRST_NAME[both$LAST_NAME=="lomolino" & both$FIRST_NAME=="m" &
-                  both$INST=="university of oklahoma"]<-"mark"
-
-both$MIDDLE_NAME[both$LAST_NAME=="lomolino" & both$FIRST_NAME=="mark" &
-                   both$INST=="university of oklahoma"]<-"v"
-
-
-both$FIRST_NAME[both$LAST_NAME=="houck" & both$FIRST_NAME=="lynn" &
-                  both$JOURNAL=="amnat"]<-"lynne"
-
-
-both$FIRST_NAME[both$LAST_NAME=="dustin" & both$FIRST_NAME=="marshall" &
-                  both$JOURNAL=="evol" & both$YEAR==2014]<-"dustin"
-
-
-both$LAST_NAME[both$LAST_NAME=="hannson" & both$FIRST_NAME=="l" & both$JOURNAL=="leco"]<-"hansson"
-both$FIRST_NAME[both$LAST_NAME=="hansson" & both$FIRST_NAME=="l" & both$JOURNAL=="leco"]<-"lennart"
-both$FIRST_NAME[both$LAST_NAME=="wagner" & both$FIRST_NAME=="h" & both$JOURNAL=="leco"]<-"helene"
-both$LAST_NAME[both$LAST_NAME=="aarsen" & both$editor_id=="2119"]<-"aarssen"
-both$LAST_NAME[both$LAST_NAME=="tilma" & both$editor_id=="891"]<-"tilman"
-both$FIRST_NAME[both$editor_id=="570"]<-"christer"
-both$LAST_NAME[both$editor_id=="570"]<-"solbreck"
-both$UNIT[both$editor_id=="1605"]<-"citrus res & educ ctr"
-both$LAST_NAME[both$editor_id=="2760"]<-"ayres"
-both$LAST_NAME[both$LAST_NAME=="freckleto" & both$JOURNAL=="jape"]<-"freckelton"
-both$editor_id[both$LAST_NAME=="freckleto" & both$JOURNAL=="jape"]<-"3063"
-both$FIRST_NAME[both$LAST_NAME=="boomsma" & both$JOURNAL=="oikos"]<-"jacobus"
-
-both$FIRST_NAME[both$LAST_NAME=="ouborg" & both$JOURNAL=="jecol"]<-"n"
-both$MIDDLE_NAME[both$LAST_NAME=="ouborg" & both$JOURNAL=="jecol"]<-"joop"
-both$NOTES[both$LAST_NAME=="block" & both$editor_id=="3714"]<-"from 1993 record"
-both$LAST_NAME[both$editor_id=="283"]<-"graae"
-both$FIRST_NAME[both$LAST_NAME=="ward" & both$JOURNAL=="oecol"]<-"joy"
-both$editor_id[both$LAST_NAME=="ward" & both$JOURNAL=="oecol"]<-"1938"
-both$CITY[both$LAST_NAME=="ward" & both$JOURNAL=="oecol"]<-"lawrence"
-both$LAST_NAME[both$editor_id=="283"]<-"graae"
-both$FIRST_NAME[both$LAST_NAME=="ward" & both$JOURNAL=="oecol"]<-"joy"
-
-both$LAST_NAME[both$editor_id=="564"]<-"leroy"
-both$FIRST_NAME[both$editor_id=="564"]<-"carri"
-both$MIDDLE_NAME[both$editor_id=="564"]<-NA
-both$LAST_NAME[both$editor_id=="2552"]<-"scherer-lorenzen"
-both$LAST_NAME[both$editor_id=="519"]<-"melian"
-both$FIRST_NAME[both$editor_id=="1323"]<-"holger"
-both$LAST_NAME[both$editor_id=="1323"]<-"kreft"
-both$LAST_NAME[both$editor_id=="217"]<-"traveset"
-both$NOTES[both$editor_id=="102"& both$JOURNAL=="oecol"]<-"city listed as washington dc in frontmatter"
-both$FIRST_NAME[both$editor_id=="2672" & both$JOURNAL=="biocon"]<-"n"
-both$MIDDLE_NAME[both$editor_id=="2672" & both$JOURNAL=="biocon"]<-"c"
-
-both$FIRST_NAME[both$editor_id=="753" & both$JOURNAL=="biocon"]<-"d"
-both$MIDDLE_NAME[both$editor_id=="753" & both$JOURNAL=="biocon"]<-"j"
-
-both$LAST_NAME[both$editor_id=="2154" & both$JOURNAL=="jbiog"]<-"gillman" 
-both$MIDDLE_NAME[both$FIRST_NAME == "par" & both$LAST_NAME=="hockey"]<-"ar" 
-both$FIRST_NAME[both$FIRST_NAME == "par" & both$LAST_NAME=="hockey"]<-"p"
-
-both$INST[(both$editor_id=="3252" |both$editor_id=="453"|both$editor_id=="1973") & both$INST=="queensland"]<-"university of queensland"
-both$INST[both$LAST_NAME=="vellend" & both$JOURNAL=="oikos"]<-"cornell university"
-both$INST[both$INST=="wyoming" & both$LAST_NAME=="benkman"]<-"university of wyoming"
-both$INST[both$JOURNAL=="funecol" & both$LAST_NAME=="blanckenhorn"]<-"university of zurich irchel"
-both$CITY[both$LAST_NAME=="hixon" & both$INST=="university of hawaii"]<-"honolulu"
-both$INST[both$INST=="zurich" & both$LAST_NAME=="tschirren"]<-"university of zurich"
-both$INST[both$INST=="vermont" & both$LAST_NAME=="brody"]<-"university of vermont"
-both$INST[both$INST=="utah" & both$LAST_NAME=="ehleringer"]<-"university of utah"
-both$INST[both$INST=="utah" & both$LAST_NAME=="caldwell"]<-"utah state university"
-both$INST[both$LAST_NAME=="herrera" & both$INST=="csic consejo superior de investigaciones cientificas"]<-"csic donana biological station"
-both$INST[both$LAST_NAME=="herrera" & both$FIRST_NAME=="carlos"]<-"csic donana biological station"
-both$INST[both$LAST_NAME=="herrera" & both$FIRST_NAME=="carlos"]<-"csic donana biological station"
-both$INST[both$LAST_NAME=="jordano"]<-"csic donana biological station"
-both$UNIT[both$LAST_NAME=="jordano"& both$INST=="csic donana biological station"]<-"csic donana biological station"
-
-both$COUNTRY[both$LAST_NAME=="laaksonen" & both$JOURNAL=="oecol"]<-"finland"
-both$INST[both$LAST_NAME=="angilletta" & both$INST=="indiana"]<-"indiana state university"
-both$INST[both$LAST_NAME=="reynolds" & both$INST=="indiana"]<-"indiana university bloomington"
-both$INST[both$LAST_NAME=="pienkowski" & both$COUNTRY=="united kingdom"]<-"joint nature conservation committee"
-
-both$INST[both$LAST_NAME=="cavers" & both$INST=="nerc centre for ecology and hydrology"]<-"nerc centre for ecology and hydrology edinburgh"
-both$INST[both$LAST_NAME=="chapman" & both$INST=="nerc centre for ecology and hydrology"]<-"nerc centre for ecology and hydrology edinburgh"
-both$INST[both$CITY=="wallingford" & both$INST=="nerc centre for ecology and hydrology"]<-"nerc centre for ecology and hydrology wallingford"
-both$INST[both$CITY=="bailrigg" & both$INST=="nerc centre for ecology and hydrology"]<-"nerc centre for ecology and hydrology bailrigg"
-
-
-both$INST[both$LAST_NAME=="croxall"]<-"nerc british antarctic survey"
-both$INST[both$LAST_NAME=="pywell" & both$UNIT=="center for ecology and hydrology"]<-"nerc centre for ecology and hydrology wallingford"
-
-
-both$INST[both$LAST_NAME=="harwood" & both$INST=="nerc natural environment research council"]<-"nerc sea mammal research unit"
-
-both$INST[both$LAST_NAME=="montevecchi"]<-"memorial university of newfoundland"
-both$INST[both$editor_id==3772]<-"memorial university of newfoundland"
-
-both$INST[both$editor_id==1158]<-"university of georgia caes griffin campus"
-both$UNIT[both$editor_id==1158]<-"caes griffin campus-ag experiment station"
-
-
-both$INST[both$editor_id==1410]<-"universite montpellier 2"
-
-both$INST[both$LAST_NAME=="hauber" & both$YEAR==2017]<-"cuny hunter college"
-
-both$INST[both$editor_id==1972 & both$YEAR==2004]<-"kansas state university"
-both$LAST_NAME[both$editor_id==1972 & both$YEAR==2004]<-"with"
-both$MIDDLE_NAME[both$editor_id==1972 & both$YEAR==2004]<-"a"
-
-
-
-
-both$LAST_NAME[both$LAST_NAME=="van der maarel" & both$JOURNAL=="leco"]<-"vandermaarel"
-both$LAST_NAME[both$LAST_NAME=="vander" & both$JOURNAL=="leco"]<-"vandermaarel"
-both$INST[both$LAST_NAME=="vandermaarel" & both$JOURNAL=="leco"]<-"university of uppsala"
-	
-both$INST[both$LAST_NAME=="cymerman" & both$JOURNAL=="leco"]<-"university of georgia"
-both$CITY[both$LAST_NAME=="cymerman" & both$JOURNAL=="leco"]<-"athens"
-both$LAST_NAME[both$LAST_NAME=="cymerman" & both$JOURNAL=="leco"]<-"hepinstall-cymerman"
-
-
-both$INST[both$editor_id==381 & both$JOURNAL=="leco" & both$YEAR==2015]<-"leibniz university hannover"
-both$INST[both$editor_id==1480 & both$JOURNAL=="leco" & both$YEAR==2004]<-"roskilde university"
-both$INST[both$editor_id==2316 & both$JOURNAL=="leco" & both$YEAR==2015]<-"swiss federal institute for forest snow and landscape research wsl"
-both$INST[both$editor_id==1990 & both$JOURNAL=="leco" & both$YEAR==2015]<-"michigan state university"
-both$INST[both$editor_id==1520 & both$JOURNAL=="leco" & both$YEAR==2015]<-"north carolina state university"
-both$INST[both$editor_id==448 & both$JOURNAL=="leco" & both$YEAR==2004]<-"usfs rocky mountain research station"
-both$INST[both$editor_id==3067 & both$JOURNAL=="leco" & both$YEAR==1997]<-"appalachian environmental laboratory"
-both$INST[both$editor_id==2387 & both$JOURNAL=="leco" & (both$YEAR>=1987 & both$YEAR<=1992)]<-"institut botanique"
-# both$INST[both$editor_id==2387 & both$JOURNAL=="leco" & both$YEAR==1992]<-"institut botanique"
-both$INST[both$editor_id==1192 & both$JOURNAL=="leco" & (both$YEAR>=1987 & both$YEAR<=1996)]<-"institute geography and geoecology"
-# both$INST[both$editor_id==1192 & both$JOURNAL=="leco" & both$YEAR==1996]<-"institute geography and geoecology"
-both$INST[both$editor_id==3744 & both$JOURNAL=="leco" & (both$YEAR>=1987 & both$YEAR<=1997)]<-"technical university of munich"
-# both$INST[both$editor_id==3744 & both$JOURNAL=="leco" & both$YEAR==1997]<-"technical university of munich"
-both$INST[both$editor_id==1080 & both$JOURNAL=="leco" & both$YEAR==2015]<-"agroscope"
-both$COUNTRY[both$editor_id==1080 & both$JOURNAL=="leco" & both$YEAR==2015]<-"netherlands"
-both$INST[both$editor_id==492 & both$JOURNAL=="leco" & both$YEAR==1997]<-"south dakota state university"
-both$INST[both$editor_id==1089 & both$JOURNAL=="leco" & both$YEAR==2004]<-"swiss federal institute for forest snow and landscape research wsl"
-both$INST[both$editor_id==3126 & both$JOURNAL=="leco" & both$YEAR==2015]<-"university of bari"
-both$INST[both$editor_id==3592 & both$JOURNAL=="leco" & both$YEAR==2015]<-"university of richmond"
-both$LAST_NAME[both$editor_id==3592 & both$JOURNAL=="leco" & both$YEAR==2015]<-"lookingbill"
-both$INST[both$editor_id==2674 & both$JOURNAL=="leco" & (both$YEAR>=1993 & both$YEAR<=1997)]<-"hiroshima university"
-# both$INST[both$editor_id==2674 & both$JOURNAL=="leco" & both$YEAR==1997]<-"hiroshima university"
-both$INST[both$editor_id==1781 & both$JOURNAL=="leco" & both$YEAR==2004]<-"university of michigan"
-both$INST[both$editor_id==2885 & both$JOURNAL=="leco" & both$YEAR==1993]<-"institute for forestry and nature research"
-both$INST[both$editor_id==2885 & both$JOURNAL=="leco" & both$YEAR==1997]<-"institute for forestry and nature research"
-both$INST[both$editor_id==2885 & both$JOURNAL=="leco" & both$YEAR==2004]<-"alterra research institute for the green world"
-both$INST[both$editor_id==177 & both$JOURNAL=="leco" & (both$YEAR>=1987 & both$YEAR<=1997)]<-"ets ingenieros de montes"
-# both$INST[both$editor_id==177 & both$JOURNAL=="leco" & both$YEAR==1997]<-"ets ingenieros de montes"
-both$INST[both$editor_id==2907 & both$JOURNAL=="leco" & (both$YEAR>=1987 & both$YEAR<=1992)]<-"university of new mexico"
-# both$INST[both$editor_id==2907 & both$JOURNAL=="leco" & both$YEAR==1992]<-"university of new mexico"
-both$INST[both$editor_id==3791 & both$JOURNAL=="leco" & both$YEAR==2004]<-"colorado state university"
-both$INST[both$editor_id==2546 & both$JOURNAL=="leco" & (both$YEAR>=1987 & both$YEAR<=1997)]<-"center of biological and ecological sciences"
-# both$INST[both$editor_id==2546 & both$JOURNAL=="leco" & both$YEAR==1997]<-"center of biological and ecological sciences"
-both$INST[both$editor_id==571 & both$JOURNAL=="leco" & (both$YEAR>=1987 & both$YEAR<=1992)]<-"harvard university"
-# both$INST[both$editor_id==571 & both$JOURNAL=="leco" & both$YEAR==1992]<-"harvard university"
-both$INST[both$editor_id==1906 & both$JOURNAL=="leco" & both$YEAR==2015]<-"harvard university"
-both$INST[both$editor_id==371 & both$JOURNAL=="leco" & both$YEAR==2013]<-"arizona state university"
-both$INST[both$editor_id==2580 & both$JOURNAL=="leco"]<-"university of wisconsin madison"
-both$INST[both$editor_id==3756 & both$JOURNAL=="funecol"]<-"university of wisconsin madison"
-both$INST[both$editor_id==111 & both$JOURNAL=="ecology"]<-"university of wisconsin madison"
-both$INST[both$editor_id==111 & both$JOURNAL=="amnat"]<-"university of wisconsin madison"
-both$INST[both$editor_id==2159 & both$JOURNAL=="ajb"]<-"university of wisconsin madison"
-both$INST[both$editor_id==955 & both$JOURNAL=="jecol"]<-"university of wisconsin madison"
-both$INST[both$editor_id==3294 & both$JOURNAL=="amnat"]<-"university of wisconsin madison"
-both$INST[both$editor_id==1661 & both$JOURNAL=="oecol"]<-"university of wisconsin madison"
-both$INST[both$editor_id==1815 & both$JOURNAL=="funecol"]<-"university of wisconsin madison"
-both$INST[both$editor_id==874 & both$JOURNAL=="ajb"]<-"university of wisconsin madison"
-both$INST[both$editor_id==1134 & both$JOURNAL=="jbiog"]<-"university of wisconsin madison"
-both$INST[both$editor_id==901 & both$JOURNAL=="oecol"]<-"university of wisconsin madison"
-
-both$INST[both$editor_id==3912 & both$JOURNAL=="leco" & (both$YEAR>=1993 & both$YEAR<=1997)]<-"oregon state university"
-# both$INST[both$editor_id==3912 & both$JOURNAL=="leco" & both$YEAR==1997]<-"oregon state university"
-both$INST[both$editor_id==602 & both$JOURNAL=="leco" & both$YEAR==2015]<-"university of wolverhampton"
-both$INST[both$editor_id==3824 & both$JOURNAL=="leco" & both$YEAR==2015]<-"chinese academy of sciences"
-both$INST[both$editor_id==1428 & both$JOURNAL=="leco" & (both$YEAR>=1987 & both$YEAR<=1992)]<-"international institute for aerospace survey and earth sciences"
-# both$INST[both$editor_id==1428 & both$JOURNAL=="leco" & both$YEAR==1992]<-"international institute for aerospace survey and earth sciences"
-both$INST[both$editor_id==1045 & both$JOURNAL=="leco" & (both$YEAR>=1987 & both$YEAR<=1992)]<-"university of arizona"
-# both$INST[both$editor_id==1045 & both$JOURNAL=="leco" & both$YEAR==1992]<-"university of arizona"
-both$INST[both$editor_id==3669 & both$JOURNAL=="oecol" & both$YEAR==2013]<-"estonian university of life sciences"
-
-both$FIRST_NAME[both$LAST_NAME=="barry" & both$JOURNAL=="marecol" & (both$YEAR==2006|both$YEAR==2005)]<-"j"
-both$MIDDLE_NAME[both$LAST_NAME=="barry" & both$JOURNAL=="marecol" & (both$YEAR==2006|both$YEAR==2005)]<-"p"
-
-
-both$FIRST_NAME[both$LAST_NAME=="cadena" & both$JOURNAL=="condor"]<-"c"
-both$MIDDLE_NAME[both$LAST_NAME=="cadena" & both$JOURNAL=="condor"]<-"daniel"
-both$LAST_NAME[both$LAST_NAME=="cadenaordonez" & both$JOURNAL=="auk"]<-"cadena"
-both$FIRST_NAME[both$LAST_NAME=="cadena" & both$JOURNAL=="auk"]<-"c"
-both$MIDDLE_NAME[both$LAST_NAME=="cadena" & both$JOURNAL=="auk"]<-"daniel"
-
-both$FIRST_NAME[both$LAST_NAME=="arnold" & both$FIRST_NAME=="w" & both$JOURNAL=="auk"]<-"todd"
-both$MIDDLE_NAME[both$LAST_NAME=="arnold" & both$FIRST_NAME=="todd" & both$JOURNAL=="auk"]<-"w"
-
-both$FIRST_NAME[both$LAST_NAME=="dumbacher" & both$JOURNAL=="auk"]<-"john"
-
-
-both$INST[both$editor_id==898 & both$INST=="conicet consejo nacional de investigaciones cientificas y tecnicas"]<-"conicet cct mendoza"
-both$INST[both$LAST_NAME=="areta" & both$INST=="conicet consejo nacional de investigaciones cientificas y tecnicas"]<-"conicet ibigeo"
-both$INST[both$editor_id==2340 & both$INST=="csiro commonwealth scientific and industrial research organisation"]<-"csiro sustainable ecosystems"
-both$INST[both$editor_id==1693 & both$INST=="csiro commonwealth scientific and industrial research organisation"]<-"csiro forest research"
-both$INST[both$editor_id==196 & both$INST=="csiro commonwealth scientific and industrial research organisation"]<-"csiro entomology"
-both$INST[both$LAST_NAME=="thrall" & both$YEAR==2010]<-"csiro plant industry"
-both$INST[both$LAST_NAME=="rothstein" & both$INST=="university of california"]<-"university of california santa barbara"
-both$INST[both$LAST_NAME=="powell" & both$INST=="university of alaska"]<-"university of alaska fairbanks"
-both$INST[both$editor_id==2281 & both$INST=="csiro commonwealth scientific and industrial research organisation"]<-"csiro land and water"
-# both$INST[both$editor_id==2281 & both$JOURNAL=="jecol" & (both$YEAR>1987 & both$YEAR<1994)]<-"csiro land and water"
-both$INST[both$editor_id==2281 & both$UNIT=="division of wildlife and ecology" & both$CITY=="lyneham"]<-"csiro wildlife and ecology"
-both$INST[both$editor_id==2281 & both$CITY=="lyneham"]<-"csiro wildlife and ecology"
-both$INST[both$LAST_NAME=="austin" & both$CITY=="lyneham"]<-"csiro wildlife and ecology"
-both$INST[both$LAST_NAME=="austin" & both$JOURNAL=="jecol"& (both$YEAR>1987 & both$YEAR<1994)]<-"csiro wildlife and ecology"
-# both$INST[both$editor_id==2281 & (both$YEAR==1988 | both$YEAR==1989) & both$JOURNAL=="jecol"]<-"csiro wildlife and ecology"
-both$INST[both$editor_id==2868 & both$INST=="csiro commonwealth scientific and industrial research organisation" & both$CITY=="canberra"]<-"csiro land and water"
-both$INST[both$editor_id==2281 & both$CITY=="canberra"]<-"csiro land and water"
-both$INST[both$editor_id==2281 & both$INST=="csiro commonwealth scientific and industrial research organisation"]<-"csiro land and water"
-both$INST[both$editor_id==3598 & both$INST=="csiro commonwealth scientific and industrial research organisation"]<-"csiro sustainable ecosystems"
-both$INST[both$editor_id==392 & both$INST=="csiro commonwealth scientific and industrial research organisation"]<-"csiro forest research"
-both$INST[both$editor_id==1160 & both$INST=="csiro commonwealth scientific and industrial research organisation"]<-"csiro wildlife and ecology"
-both$INST[both$editor_id==3091 & both$INST=="csiro commonwealth scientific and industrial research organisation"]<-"csiro wildlife and ecology"
-both$INST[both$editor_id==911 & both$INST=="csiro commonwealth scientific and industrial research organisation"]<-"csiro sustainable ecosystems"
-both$INST[both$editor_id==1094 & both$INST=="csiro commonwealth scientific and industrial research organisation"]<-"csiro ecosystem sciences"
-both$INST[both$LAST_NAME=="doerr" & both$INST=="csiro commonwealth scientific and industrial research organisation"]<-"csiro ecosystem sciences"
-both$INST[both$editor_id==1493 & both$INST=="csiro commonwealth scientific and industrial research organisation"]<-"csiro forest research"
-both$INST[both$editor_id==2867 & both$INST=="csiro commonwealth scientific and industrial research organisation"]<-"university of adelaide"
-both$INST[both$editor_id==3091 & both$INST=="csiro commonwealth scientific and industrial research organisation"]<-"csiro wildlife and ecology"
-both$INST[both$editor_id==2340 & both$INST=="csiro commonwealth scientific and industrial research organisation"]<-"csiro computing research"
-both$INST[both$editor_id==2699 & both$INST=="csiro commonwealth scientific and industrial research organisation"]<-"csiro plant industry"
-both$INST[both$LAST_NAME=="thrall" & both$INST=="csiro commonwealth scientific and industrial research organisation"]<-"csiro plant industry"
-both$INST[both$editor_id==342 & both$INST=="james cook university"]<-"james cook university brisbane"
-both$INST[both$editor_id==1561 & both$INST=="james cook university"]<-"james cook university townsville"
-both$INST[both$editor_id==3027 & both$INST=="james cook university"]<-"james cook university townsville"
-both$INST[both$LAST_NAME=="crozier" & both$INST=="james cook university"]<-"james cook university townsville"
-both$INST[both$editor_id==3305 & both$INST=="james cook university"]<-"james cook university townsville"
-both$INST[both$editor_id==2745 & both$INST=="james cook university"]<-"james cook university brisbane"
-both$INST[both$editor_id==621 & both$INST=="james cook university"]<-"james cook university townsville"
-both$INST[both$editor_id==2971 & both$INST=="james cook university"]<-"james cook university townsville"
-both$INST[both$editor_id==3857 & both$INST=="james cook university"]<-"james cook university townsville"
-both$INST[both$editor_id==2095 & both$INST=="north carolina"]<-"university of north carolina chapel hill"
-both$INST[both$LAST_NAME=="petit" & both$INST=="smithsonian institution"]<-"smithsonian national zoological park"
-both$INST[both$LAST_NAME=="fleischer" & both$INST=="smithsonian institution"]<-"smithsonian national zoological park"
-both$INST[both$editor_id==323 & both$INST=="smithsonian institute"]<-"smithsonian institution national museum of natural history"
-both$INST[both$editor_id==3593 & both$INST=="smithsonian institute"]<-"smithsonian institution"
-both$INST[both$LAST_NAME=="sedinger" & both$INST=="university of alaska"]<-"university of alaska fairbanks"
-both$INST[both$editor_id==3207 & both$INST=="university of alaska"]<-"university of alaska fairbanks"
-both$INST[both$editor_id==1062 & both$INST=="university of alaska"]<-"university of alaska fairbanks"
-both$INST[both$editor_id==1062 & both$INST=="university of california"]<-"university of california berkeley"
-both$INST[both$editor_id==1561 & both$INST=="university of california"]<-"university of california santa barbara"
-both$INST[both$editor_id==1871 & both$INST=="university of california"]<-"university of california los angeles"
-both$INST[both$editor_id==1886 & both$INST=="university of california"]<-"university of california davis"
-both$INST[both$editor_id==3330 & both$INST=="university of california"]<-"university of california irvine"
-both$INST[both$editor_id==3333 & both$INST=="university of california"]<-"university of california santa barbara"
-both$INST[both$editor_id==3444 & both$INST=="university of california"]<-"university of california santa barbara"
-both$INST[both$editor_id==3786 & both$INST=="university of california"]<-"university of california santa barbara"
-both$INST[both$editor_id==3804 & both$INST=="university of california"]<-"university of california berkeley"
-both$INST[both$LAST_NAME=="eadie" & both$INST=="university of california"]<-"university of california davis"
-both$INST[both$editor_id==566 & both$INST=="university of california"]<-"university of california davis"
-both$INST[both$editor_id==1655 & both$INST=="university of california"]<-"university of california danr"
-both$INST[both$editor_id==1220 & both$INST=="university of california"]<-"university of california los angeles"
-both$INST[both$editor_id==2058 & both$INST=="university of california"]<-"university of california los angeles"
-both$INST[both$editor_id==2525 & both$INST=="university of california"]<-"university of california riverside"
-both$INST[both$editor_id==2411 & both$INST=="university of hawaii"]<-"university of hawaii manoa"
-both$INST[both$editor_id==672 & both$INST=="university of hawaii"]<-"university of hawaii manoa"
-both$INST[both$editor_id==2097 & both$INST=="university of massachusetts"]<-"university of massachusetts amherst"
-both$INST[both$LAST_NAME=="kroodsma" & both$INST=="university of massachusetts"]<-"university of massachusetts amherst"
-both$INST[both$LAST_NAME=="byers" & both$INST=="university of massachusetts"]<-"university of massachusetts amherst"
-both$INST[both$editor_id==1435 & both$INST=="university of massachusetts"]<-"university of massachusetts amherst"
-both$INST[both$editor_id==1025 & both$INST=="university of minnesota"]<-"university of minnesota twin cities"
-both$INST[both$editor_id==1799 & both$INST=="university of minnesota"]<-"university of minnesota twin cities"
-both$INST[both$editor_id==2035 & both$INST=="university of minnesota"]<-"university of minnesota twin cities"
-both$INST[both$editor_id==3218 & both$INST=="university of minnesota"]<-"university of minnesota twin cities"
-both$INST[both$editor_id==972 & both$INST=="university of minnesota"]<-"university of minnesota twin cities"
-both$INST[both$editor_id==891 & both$INST=="university of minnesota"]<-"university of minnesota twin cities"
-both$INST[both$editor_id==3360 & both$INST=="university of minnesota"]<-"university of minnesota twin cities"
-both$INST[both$LAST_NAME=="arnold" & both$INST=="university of minnesota"]<-"university of minnesota twin cities"
-both$INST[both$editor_id==1817 & both$INST=="university of minnesota"]<-"university of minnesota twin cities"
-both$INST[both$editor_id==48 & both$INST=="university of minnesota"]<-"university of minnesota twin cities"
-both$INST[both$editor_id==936 & both$INST=="university of minnesota"]<-"university of minnesota twin cities"
-both$INST[both$editor_id==1506 & both$INST=="university of minnesota"]<-"university of minnesota twin cities"
-both$INST[both$editor_id==52 & both$INST=="university of minnesota"]<-"university of minnesota twin cities"
-both$INST[both$editor_id==792 & both$INST=="university of minnesota"]<-"university of minnesota twin cities"
-both$INST[both$editor_id==1781 & both$INST=="university of minnesota"]<-"university of minnesota twin cities"
-both$INST[both$editor_id==1200 & both$INST=="university of minnesota"]<-"university of minnesota twin cities"
-both$INST[both$editor_id==2872 & both$INST=="university of minnesota"]<-"university of minnesota twin cities"
-both$INST[both$editor_id==2905 & both$INST=="university of minnesota"]<-"university of minnesota twin cities"
-both$INST[both$LAST_NAME=="klicka" & both$INST=="university of nevada"]<-"university of nevada las vegas"
-both$INST[both$editor_id==2253 & both$INST=="university of nevada"]<-"university of nevada las vegas"
-both$INST[both$editor_id==2352 & both$INST=="university of north carolina"]<-"university of north carolina chapel hill"
-both$INST[both$editor_id==820 & both$INST=="university of north carolina"]<-"university of north carolina chapel hill"
-both$INST[both$editor_id==3200 & both$INST=="university of south carolina"]<-"university of south carolina columbia"
-both$INST[both$editor_id==1749 & both$INST=="university of texas"]<-"university of texas austin"
-both$INST[both$editor_id==3137 & both$INST=="university of texas"]<-"university of texas austin"
-both$INST[both$editor_id==3535 & both$INST=="university of texas"]<-"university of texas austin"
-both$INST[both$editor_id==723 & both$INST=="university of texas"]<-"university of texas austin"
-both$INST[both$editor_id==1691 & both$INST=="university of texas"]<-"university of texas san antonio"
-both$INST[both$editor_id==3229 & both$INST=="university of washington"]<-"university of washington seattle"
-both$INST[both$editor_id==3179 & both$INST=="university of washington"]<-"university of washington seattle"
-both$INST[both$editor_id==3487 & both$INST=="university of washington"]<-"university of washington seattle"
-both$INST[both$editor_id==858 & both$INST=="university of washington"]<-"university of washington seattle"
-both$INST[both$editor_id==3183 & both$INST=="university of washington"]<-"university of washington seattle"
-both$INST[both$editor_id==3001 & both$INST=="university of washington"]<-"university of washington seattle"
-both$INST[both$editor_id==1213 & both$INST=="university of washington"]<-"university of washington seattle"
-both$INST[both$editor_id==1668 & both$INST=="university of washington"]<-"university of washington seattle"
-both$INST[both$editor_id==590 & both$INST=="usda us department of agriculture"]<-"usda ars"
-both$INST[both$editor_id==1799 & both$INST=="usfs us forest service"]<-"usfs research and development"
-both$INST[both$editor_id==467 & both$INST=="usfs us forest service"]<-"usfs southern research station"
-both$INST[both$editor_id==1327 & both$INST=="usfs us forest service"]<-"usfs southern research station"
-both$INST[both$editor_id==446 & both$INST=="usfs us forest service"]<-"usfs pacific southwest research station"
-both$INST[both$editor_id==3341 & both$INST=="usfs us forest service"]<-"usfs pacific southwest research station"
-both$INST[both$editor_id==2178 & both$INST=="usfs us forest service"]<-"usfs northern research station"
-both$INST[both$editor_id==2170 & both$INST=="usfs us forest service"]<-"usfs northern research station"
-both$INST[both$editor_id==724 & both$INST=="usfs us forest service"]<-"usfs northern research station"
-both$INST[both$editor_id==798 & both$INST=="usfs us forest service"]<-"usfs rocky mountain research station"
-both$INST[both$editor_id==3310 & both$INST=="usfs us forest service"]<-"usfs rocky mountain research station"
-both$INST[both$editor_id==1783 & both$INST=="usfs us forest service"]<-"usfs rocky mountain research station"
-both$INST[both$editor_id==448 & both$INST=="usfs us forest service"]<-"usfs rocky mountain research station"
-both$INST[both$editor_id==2613 & both$INST=="usfs us forest service"]<-"usfs pacific northwest research station"
-both$INST[both$editor_id==2555 & both$INST=="usfs us forest service"]<-"usfs rocky mountain research station"
-both$INST[both$editor_id==3310 & both$INST=="usfs us forest service"]<-"usfs rocky mountain research station"
-both$INST[both$editor_id==135 & both$INST=="usfs us forest service"]<-"usfs northern research station"
-both$INST[both$editor_id==448 & both$INST=="usfs us forest service"]<-"usfs rocky mountain research station"
-both$INST[both$LAST_NAME=="monahan" & both$INST=="usfs us forest service"]<-"usfs rocky mountain research station"
-both$INST[both$editor_id==766 & both$INST=="usfs us forest service"]<-"usfs northern research station"
-both$INST[both$editor_id==1566 & both$INST=="usfs us forest service"]<-"usfs institute of pacific islands dorestry"
-both$INST[both$editor_id==1107 & both$INST=="usfs us forest service"]<-"usfs pacific northwest research station"
-both$INST[both$editor_id==2178 & both$INST=="usfs us forest service"]<-"usfs northern research station"
-both$INST[both$editor_id==2075 & both$INST=="usfs us forest service"]<-"usfs southern research station"
-both$INST[both$editor_id==671 & both$INST=="usfs us forest service"]<-"usfs northern research station"
-both$INST[both$editor_id==975 & both$INST=="usfs us forest service"]<-"usfs northern research station"
-both$INST[both$editor_id==1127 & both$INST=="us forest serv"]<-"usfs international institute of tropical forestry"
-both$INST[both$editor_id==139 & both$INST=="usfs us forest service"]<-"usfs international institute of tropical forestry"
-both$INST[both$editor_id==909 & both$INST=="usfs us forest service"]<-"usfs pacific southwest research station"
-both$INST[both$editor_id==139 & both$INST=="usfs us forest service"]<-"usfs international institute of tropical forestry"
-both$INST[both$editor_id==1580 & both$INST=="usfs us forest service"]<-"usfs pacific northwest research station"
-both$INST[both$editor_id==341 & both$INST=="usfs us forest service"]<-"usfs northern research station"
-both$INST[both$editor_id==1255 & both$INST=="usfs us forest service"]<-"usfs southern research station"
-both$INST[both$editor_id==1909 & both$INST=="usfs us forest service"]<-"usfs southern research station"
-both$INST[both$editor_id==3383 & both$INST=="usfs us forest service"]<-"usfs southern research station"
-both$INST[both$editor_id==1604 & both$INST=="usgs united states geological survey"]<-"usgs national wetlands research center"
-both$INST[both$editor_id==1786 & both$INST=="usgs united states geological survey"]<-"usgs patuxent wildlife research center"
-both$INST[both$editor_id==663 & both$INST=="usgs united states geological survey"]<-"usgs national wetlands research center"
-both$INST[both$editor_id==663 & both$JOURNAL=="amnat" & (both$YEAR>2005  &  both$YEAR<2010)]<-"usgs national wetlands research center"
-both$INST[both$editor_id==1604 & both$INST=="usgs united states geological survey"]<-"usgs national wetlands research center"
-both$INST[both$LAST_NAME=="piatt" & both$INST=="usgs united states geological survey"]<-"usgs alaska science center"
-both$INST[both$LAST_NAME=="weathers" & both$INST=="university of california"]<-"university of california davis"
-both$INST[both$LAST_NAME=="gutierrez" & both$INST=="university of minnesota"]<-"university of minnesota twin cities"
-both$INST[both$editor_id==1854 & both$INST=="usgs united states geological survey"]<-"usgs patuxent wildlife research center"
-both$INST[both$editor_id==2037 & both$INST=="usgs united states geological survey"]<-"usgs western ecological research center"
-both$INST[both$editor_id==2037 & both$JOURNAL=="ecology"& (both$YEAR>2005 & both$YEAR<2016)]<-"usgs western ecological research center"
-both$INST[both$LAST_NAME=="lafferty" & both$FIRST_NAME=="kevin" & both$YEAR==2005]<-"usgs western ecological research center"
-both$INST[both$editor_id==3643 & both$INST=="usgs united states geological survey"]<-"usgs fort collins science center"
-both$INST[both$editor_id==1848 & both$INST=="usgs united states geological survey"]<-"usgs patuxent wildlife research center"
-both$INST[both$editor_id==486 & both$INST=="usgs united states geological survey"]<-"usgs florence bascom geoscience center"
-
-
-both$INST[both$LAST_NAME=="niewiarowski" & both$INST=="ohio"]<-"university of akron"
-both$INST[both$editor_id==1254 & both$INST=="ohio"]<-"ohio university"
-both$INST[both$editor_id==2835]<-"pennsylvania state university"
-both$INST[both$editor_id==3101]<-"university of washington seattle"
-both$INST[both$editor_id==1612]<-"university of texas arlington"
-both$INST[both$editor_id==697]<-"suny stony brook"
-both$INST[both$editor_id==3069]<-"suny stony brook"
-both$INST[both$editor_id==1364 & both$YEAR==2000]<-"university of freiburg"
-both$FIRST_NAME[both$editor_id==1364]<-"hanns-christof"
-
-both$INST[both$editor_id==1278]<-"suny stony brook"
-both$INST[both$editor_id==3807]<-"suny binghamton"
-both$INST[both$editor_id==1404]<-"finnish game and fisheries research institute"
-both$UNIT[both$editor_id==1404]<-"oulu game and fisheries research"
-
-
-
-
-both$INST[both$LAST_NAME=="hepinstall-cymerman" & both$JOURNAL=="leco"]<-"university of georgia"
-both$INST[both$LAST_NAME=="cymerman" & both$JOURNAL=="leco"]<-"university of georgia"
-both$CITY[both$LAST_NAME=="cymerman" & both$JOURNAL=="leco"]<-"athens"
-both$INST[both$LAST_NAME=="tjoelker" & both$JOURNAL=="funecol" & both$YEAR>2011]<-"western sydney university"
-both$INST[both$INST=="carnegie institution" & both$JOURNAL=="gcb"]<-"carnegie institution of washington"
-
-
-both$INST[both$INST=="national autonomous universidad nacional autonoma de mexico"]<-"universidad nacional autonoma de mexico"
-
-
-both$INST[(both$editor_id==500|both$editor_id==876|both$editor_id==1125|
-             both$editor_id==1779|both$editor_id==2295|both$editor_id==2607|
-             both$editor_id==2841|both$editor_id==3202|both$editor_id==3234|
-             both$editor_id==3342|both$editor_id==3425|both$editor_id==7) &
-            both$INST=="university of british columbia"]<-"university of british columbia vancouver"
-
-
-both$INST[both$LAST_NAME=="martin" & 
-            both$FIRST_NAME=="kathy" & 
-            both$INST=="university of british columbia"]<-"university of british columbia vancouver"
-
-
-
-
-
-
-
-
-
-
-
-both$FIRST_NAME[both$editor_id==3378]<-"s"
-
-
-
-# weisser vs weiser
-
-
-both$INST[both$LAST_NAME == "weisser" & both$JOURNAL=="oecol" &
-            (both$YEAR>2006 & both$YEAR<2014)]<-"university of jena"
-both$editor_id[both$LAST_NAME == "weisser" & both$JOURNAL=="oecol" &
-                 (both$YEAR>2006 & both$YEAR<2015)]<-NA
-# 
-# both$LAST_NAME[both$LAST_NAME=="de kroon" & both$FIRST_NAME=="hans"]<-"hans"
-# 
-# both$LAST_NAME[both$LAST_NAME=="van groenendael" & both$FIRST_NAME=="jan"]<-"vangroenendael"
-# 
-# both$LAST_NAME[both$LAST_NAME=="van der meijden" & both$FIRST_NAME=="eddy"]<-"vandermeijden"
-# 
-# both$LAST_NAME[both$LAST_NAME=="van der meijden" & both$FIRST_NAME=="eddy"]<-"vandermeijden"
-# 
-# both$LAST_NAME[both$LAST_NAME=="van der meijden" & both$FIRST_NAME=="eddy"]<-"vandermeijden"
-
-both$LAST_NAME<-gsub("[[:space:]]", "", both$LAST_NAME)
-
-
-
-
-
-both$LAST_NAME[both$LAST_NAME == "weisser" & both$JOURNAL=="oecol" & (both$YEAR>1983 & both$YEAR<2007)]<-"weiser"
-both$MIDDLE_NAME[both$LAST_NAME == "weiser" & both$JOURNAL=="oecol" &
-                   both$YEAR<2007]<-NA
-
-both<-both[!(both$editor_id=="3798" & both$JOURNAL=="oecol" & both$LAST_NAME=="weiser" & both$YEAR>2006),]
-both<-both[!(both$LAST_NAME=="mason" & both$FIRST_NAME=="christoph" & both$JOURNAL=="jape"),]
-both<-both[!(both$LAST_NAME=="fernande-juricic" & both$JOURNAL=="jape" & both$YEAR==2010),]
-both<-both[!(both$editor_id=="1261" & both$JOURNAL=="oecol" & both$YEAR==1999),]
-both<-both[!(both$editor_id=="3669" & both$JOURNAL=="oecol" & both$YEAR==2012),]
-both<-both[!(both$editor_id=="2069" & both$JOURNAL=="plantecol" & both$YEAR==2007),]
-both<-both[!(both$editor_id=="1079" & both$JOURNAL=="plantecol" & both$YEAR==2007),]
-both<-both[!(both$editor_id=="100" & both$JOURNAL=="plantecol" & both$YEAR==1991),]
-both<-both[!(both$editor_id=="2896" & both$JOURNAL=="plantecol" & both$YEAR==2004),]
-both<-both[!(both$editor_id=="1057" & both$JOURNAL=="biocon" & both$YEAR==1985),]
-both<-both[!(both$editor_id=="56" & both$JOURNAL=="biocon" & both$YEAR==1985),]
-both<-both[!(both$editor_id=="2914" & both$JOURNAL=="biocon" & both$YEAR==1985),]
-both<-both[!(both$editor_id=="753" & both$JOURNAL=="biocon" & both$YEAR==1985),]
-both<-both[!(both$editor_id=="56" & both$JOURNAL=="biocon" & both$YEAR==1986),]
-both<-both[!(both$editor_id=="3355" & both$JOURNAL=="biocon" & both$YEAR==1998),]
-both<-both[!(both$editor_id=="1402" & both$JOURNAL=="oecol" & both$YEAR==2012),]
-both<-both[!(both$editor_id=="3944" & both$JOURNAL=="oecol" & both$YEAR==1992),]
-both<-both[!(both$editor_id=="1819" & both$JOURNAL=="bitr" & both$YEAR==1997),]
-both<-both[!(both$editor_id=="591" & both$JOURNAL=="evol" & both$YEAR==2015),]
-both<-both[!(both$editor_id=="2047" & both$JOURNAL=="jane" & both$YEAR==2012),]
-both<-both[!(is.na(both$editor_id) & both$JOURNAL=="jape" & both$LAST_NAME=="croxall"),]
-both<-both[!(both$editor_id=="3584" & both$JOURNAL=="leco" & both$YEAR==2015),]
-# on advisory board but not ed board
-both<-both[!(both$editor_id=="371" & both$JOURNAL=="leco" & both$YEAR==2012),]
-both<-both[!(both$editor_id=="371" & both$JOURNAL=="leco" & both$YEAR==2013),]
-both<-both[!(both$editor_id=="23" & both$JOURNAL=="oecol" & both$YEAR==2011),]
-both<-both[!(both$LAST_NAME=="banks-lei" & both$JOURNAL=="jape" & both$YEAR==2013),]
-
-
-
-# country city unit corrections
-both$CITY[both$UNIT=="ontario canada"]<-"gainesville"
-both$STATE[both$UNIT=="ontario canada"]<-"fl"
-both$UNIT[both$UNIT=="ontario canada"]<-"dept. of biology"
-both$COUNTRY[both$INST=="university of florida"]<-"usa"
-both$COUNTRY[both$CITY=="latvia"]<-"latvia"
-both$CITY[both$CITY=="latvia"]<-NA
-both$CITY[both$CITY=="ann arbon"]<-"ann arbor"
-
-both$CITY<-gsub("st. ","st ",both$CITY)
-both$CITY<-gsub("saint ","st ",both$CITY)
-both$INST<-gsub("st. ","st ",both$INST)
-both$INST<-gsub("saint ","st ",both$INST)
-both$CITY<-gsub("saint ","st ",both$CITY)
-both$CITY<-gsub("ft. ","fort ",both$CITY)
-both$CITY<-gsub("ft c","fort c ",both$CITY)
-
-# both$CITY<-gsub("w\x9frzburg","wurzburg",both$CITY)
-# both$CITY<-gsub("k\x9aln","cologne",both$CITY)
-# both$CITY<-gsub("m\x9fnchen","munich",both$CITY)
-# both$CITY<-gsub("g\x9attingen","gottingen",both$CITY)
-# both$CITY<-gsub("z\x81rich","zurich",both$CITY)
-
-# both$CITY<-tolower(both$CITY)
-
-both$CITY<-gsub("edinburgh eh9 3jz","edinburgh",both$CITY)
-both$CITY<-gsub("quebec city","quebec",both$CITY)
-both$CITY<-gsub("fuzerbrook","furzebrook",both$CITY)
-both$CITY<-gsub("e lansing","east lansing",both$CITY)
-both$CITY<-gsub("hickory coners","hickory corners",both$CITY)
-both$CITY<-gsub("rodenbosch","rondebosch",both$CITY)
-both$CITY<-gsub("rodenbosch","rondebosch",both$CITY)
-both$CITY<-gsub("santa cruz, california, usa","santa cruz",both$CITY)
-both$CITY<-gsub("auburn, alabama, usa","auburn",both$CITY)
-both$CITY<-gsub("cambridge, massachusetts, usa","cambridge",both$CITY)
-both$CITY<-gsub("sheffield s10 2tn","sheffield",both$CITY)
-both$CITY<-gsub("mississippi state","",both$CITY)
-both$CITY<-gsub("storrs","storrs",both$CITY)
-both$CITY<-gsub("starrs","storrs",both$CITY)
-both$CITY<-gsub("champaign","urbana-champaign",both$CITY)
-both$CITY<-gsub("urbana","urbana-champaign",both$CITY)
-both$CITY<-gsub("guleph","guelph",both$CITY)
-both$CITY<-gsub("goettingen","gottingen",both$CITY)
-both$CITY<-gsub("osnabrück","osnabruck",both$CITY)
-both$CITY<-gsub("montana","",both$CITY)
-both$CITY<-gsub("antwerpen","antwerp",both$CITY)
-both$CITY<-gsub("brasília","brasilia",both$CITY)
-both$CITY<-gsub("p.r.","",both$CITY)
-both$CITY<-gsub("denmark","",both$CITY)
-both$CITY<-gsub("mexico d.f.","mexico city",both$CITY)
-both$CITY<-gsub("stockolm","stockholm",both$CITY)
-both$CITY<-gsub("nottinghamuk","nottingham",both$CITY)
-both$CITY<-gsub("stonybrook","stony brook",both$CITY)
-both$CITY<-gsub("tufts","medford",both$CITY)
-both$CITY<-gsub("tuscon","tucson",both$CITY)
-both$CITY<-gsub("new york city","new york",both$CITY)
-both$CITY<-gsub("notre dame","south bend",both$CITY)
-
-both$CITY<-gsub("st martin d'heres cedex","st martin dheres cedex",both$CITY)
-both$CITY<-gsub("st-jean-sur-richelieu","st jean sur richelieu",both$CITY)
-
-# notes
-both$NOTES[both$CITY=="latvia"]<-NA
-both$NOTES[both$editor_id==130 & both$YEAR==1990]<-"inst was formerly oxford polytechnic"
-both$NOTES[both$editor_id==3395 & both$YEAR==1986]<-"not 100% regarding inst"
-both$NOTES[both$editor_id==289 & both$YEAR==1985]<-"not 100% regarding inst"
-both$NOTES[both$editor_id==722 & both$YEAR==1985]<-"not 100% regarding inst; city in 1993 paper & jrnl front mattter don't match"
-
-
-both$editor_id[both$LAST_NAME=="fedler" & both$FIRST_NAME=="anthony" & both$JOURNAL=="najfm"]<-NA
-both$INST[both$INST=="university of wisconsin eauniversity of claire"]<-"university of wisconsin eau claire"
-
-return(both)
+  ##############################################################
+  # NO inst 2x NEEDED
+  # AJB
+  # ECOLOGY
+  # FEM
+  # FUNECOL
+  # ECOGRAPHY
+  # JTE
+  ##############################################################
+
+  ##############################################################
+  # checked by Patrick, need to upload corrections
+  # Round 1: AGRON, ARES, EVOL (DONE)
+  # Round 2a: CONBIO,NEW PHYT (DONE)
+  # Round 2b: NEW PHYT (DONE)
+  # Round 3: BITR (DONE)
+  # Round 4: AMNAT (DONE, EB 2x)
+  # Round 6: JECOL (DONE)
+  # Round 7: JAPE (DONE)
+  # Round 5: BIOCON (DONE, need to upload and integrate the corrections)
+  # Round 8: PLANTECOL (DONE, to be emailed)
+  # Round 9: JBIOG (2x in progress, almost done - need to add institutions that were "missing")
+  # Round 10: LECO (DONE, 2x the ones "incorrect" to see if the inst value in the table is the corrected or original")
+  # JANE: Needs extensive data fill
+  # JZOOL: Needs extensive data fill
+  # OECOL: Needs extensive data fill
+  # OIKOS: (DONE)
+  # AUK: not for this paper
+  # CONDOR: not for this paper
+  ##############################################################
+
+  ##########
+  multi1 <- read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_1.csv", col_names = TRUE)
+  multi1[multi1 == "missing"] <- NA
+  multi1 <- multi1 %>%
+    group_by(last_name, first_name) %>%
+    arrange(year) %>%
+    fill(inst, unit, city, state, .direction = "down")
+  ##########
+
+  ##########
+  multi2a <- read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_2a.csv", col_names = TRUE)
+  multi2a[multi2a == "missing"] <- NA
+  multi2a <- multi2a %>%
+    filter(journal == "CONBIO" | journal == "NEWPHYT") %>%
+    group_by(last_name, first_name) %>%
+    arrange(year) %>%
+    fill(inst, unit, city, state, .direction = "down") # delete out other journals this is conbio and new phyt
+  ##########
+
+  ##########
+  multi2b <- read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_2b.csv", col_names = TRUE)
+  multi2b[multi2b == "missing"] <- NA
+  multi2b <- multi2b %>%
+    filter(journal == "CONBIO" | journal == "NEWPHYT") %>%
+    group_by(last_name, first_name) %>%
+    arrange(year) %>%
+    fill(inst, unit, city, state, .direction = "down") # delete out other journals this is conbio and new phyt
+  ##########
+
+  ##########
+  BITR_inst <- read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_3_BITR.csv", col_names = TRUE)
+  BITR_inst[BITR_inst == "missing"] <- NA
+  BITR_inst <- BITR_inst %>%
+    group_by(last_name, first_name) %>%
+    arrange(year) %>%
+    fill(inst, unit, city, state, .direction = "down")
+
+  ##########
+
+  ##########
+  AMNAT_inst <- read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_4_AMNAT.csv", col_names = TRUE, na = c("", "N/A", "NA"), trim_ws = TRUE)
+  AMNAT_inst[AMNAT_inst == "missing"] <- NA
+  AMNAT_inst <- AMNAT_inst %>%
+    group_by(last_name, first_name) %>%
+    arrange(year) %>%
+    fill(inst, unit, city, state, .direction = "down") %>%
+    filter(journal == "AMNAT")
+  ##########
+
+  ##########
+  JECOL_inst <- read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_6_JEcol.csv", col_names = TRUE)
+  JECOL_inst[JECOL_inst == "missing"] <- NA
+  JECOL_inst <- JECOL_inst %>%
+    group_by(last_name, first_name) %>%
+    arrange(year) %>%
+    fill(inst, unit, city, state, .direction = "down") %>%
+    filter(journal == "JECOL")
+  ##########
+
+  ##########
+  JAPE_inst <- read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_7_JAPE.csv", col_names = TRUE)
+  JAPE_inst[JAPE_inst == "missing"] <- NA
+  JAPE_inst[JAPE_inst == "unknown"] <- NA
+  JAPE_inst <- JAPE_inst %>%
+    rename("first_name" = "first_na", "middle_name" = "middle_", "last_name" = "last_na") %>%
+    group_by(last_name, first_name) %>%
+    arrange(year) %>%
+    fill(inst, unit, city, state, country, notes, .direction = "down") %>%
+    filter(journal == "JAPE")
+  JAPE_inst$editor_id <- NULL
+  # TODO: something is going on with editor IDS
+  ##########
+
+  ##########
+  # SEPARATE FUNCTION
+  # JBIOG
+  # LECO
+  # PLANTECOL
+  # OIKOS
+  # OECOLOGIA
+  # JANE
+  ###########
+
+
+  #############
+  # inst_fix<-bind_rows(multi2b,multi2a,multi1,BITR_inst,JECOL_inst,AMNAT_inst,JAPE_inst,JBIOG_inst,OIKOS_inst) %>%
+  #   distinct(editor_id,journal,year,.keep_all= TRUE) %>%     #there are some duplicates, best to remove them
+  #   arrange(journal,editor_id,year)
+  # rm(multi2b,multi2a,multi1,BITR_inst,JECOL_inst,AMNAT_inst,JAPE_inst,JBIOG_inst,OIKOS_inst)
+
+  # NO OIKOS
+  inst_fix <- bind_rows(multi2b, multi2a, multi1, BITR_inst, JECOL_inst, AMNAT_inst, JAPE_inst) %>%
+    distinct(last_name, journal, year, .keep_all = TRUE) %>% # there are some duplicates, best to remove them
+    arrange(journal, editor_id, year)
+  rm(multi2b, multi2a, multi1, BITR_inst, JECOL_inst, AMNAT_inst, JAPE_inst)
+
+  
+  inst_fix<-inst_fix %>%
+    mutate(across(everything(), as.character))
+  
+  
+  
+  # colnames(inst_fix)
+  # colnames(OECOL_inst)
+
+  inst_fix$inst[inst_fix$inst == "UNKNOWN"] <- NA
+  inst_fix$inst[inst_fix$inst == "unknown"] <- NA
+  inst_fix$unit[inst_fix$unit == "UNKNOWN"] <- NA
+  inst_fix$city[inst_fix$city == "UNKNOWN"] <- NA
+  inst_fix$state[inst_fix$state == "UNKNOWN"] <- NA
+  inst_fix$state[inst_fix$state == "unknown"] <- NA
+
+
+  # inst_fix<-institution_cleaner(inst_fix)
+  inst_fix <- inst_fix %>% select(-"...1")
+
+  head(inst_fix, 20)
+  colnames(inst_fix)
+
+
+
+  inst_fix$inst <- tolower(inst_fix$inst)
+  inst_fix$unit <- tolower(inst_fix$unit)
+  inst_fix$city <- tolower(inst_fix$city)
+  inst_fix$state <- tolower(inst_fix$state)
+  inst_fix$country <- tolower(inst_fix$country)
+  inst_fix$notes <- tolower(inst_fix$notes)
+  inst_fix$journal <- tolower(inst_fix$journal)
+  inst_fix$first_name <- tolower(inst_fix$first_name)
+  inst_fix$middle_name <- tolower(inst_fix$middle_name)
+  inst_fix$last_name <- tolower(inst_fix$last_name)
+
+  #
+  #
+  # # original_data$editor_id<-as.numeric(original_data$editor_id)
+  # # ARE THERE ANY IN CORRECT that *ARENT* in original_data?
+  # # THESE NEED TO BE ADDED TO original_data
+  # # C_but_not_O<-anti_join(inst_fix,original_data,by=c("editor_id","journal","year")) %>% arrange(journal,year,editor_id)  #in correct but not orig 24
+  # C_but_not_O<-anti_join(inst_fix,original_data,by=c("journal","year","last_name")) %>% arrange(journal,year,editor_id)  #in correct but not orig 24
+  # nrow(C_but_not_O)
+  # summary(C_but_not_O)
+  #
+  # #THESE ARE THE ONES IN original_data but not CORRECTED
+  # # O_butnot_C<-anti_join(original_data,inst_fix,by=c("editor_id","journal","year")) # in orig but not correct 21221
+  # O_butnot_C<-anti_join(original_data,inst_fix,by=c("journal","year","last_name")) # in orig but not correct 21221
+  # nrow(O_butnot_C)
+  # O_butnot_C
+  #
+  # # THESE ARE THE ONES IN BOTH CORRECTED AND original_data
+  # # O_and_C<-inner_join(original_data,inst_fix,by=c("editor_id","journal","year")) #in correct but not orig 4381
+  # O_and_C<-inner_join(original_data,inst_fix,by=c("last_name","journal","year")) #in correct but not orig 4381
+  # nrow(O_and_C)
+  #
+  # colnames(original_data)
+  # colnames(inst_fix)
+  # str(original_data)
+  # str(inst_fix)
+
+
+
+  # both<-full_join(original_data,inst_fix,by=c("editor_id","journal","year"))
+
+  inst_fix$editor_id <- as.character(inst_fix$editor_id)
+  str(inst_fix$editor_id)
+  str(original_data$editor_id)
+  original_data$editor_id <- as.factor(original_data$editor_id)
+  inst_fix$editor_id <- as.factor(inst_fix$editor_id)
+
+  both <- full_join(original_data, inst_fix, by = c("journal", "year", "last_name", "first_name"))
+  nrow(both)
+  nrow(original_data)
+  nrow(inst_fix)
+  colnames(both)
+  str(both)
+
+  # nrow(C_but_not_O)
+  # nrow(O_butnot_C)
+  # nrow(O_and_C)
+  # nrow(C_but_not_O)+nrow(O_butnot_C)+nrow(O_and_C)
+
+  head(both)
+  str(both)
+
+  colnames(both)
+  both <- select(
+    both, journal, year, volume, issue, editor_id.x, editor_id.y,
+    first_name, middle_name.x, middle_name.y, last_name,
+    title, category, inst.x, inst.y, unit.x, unit.y, city.x, city.y, state.x, state.y,
+    country.x, country.y, country_prior_class, geo.code, geo.code_prior_class,
+    notes.x, notes.y, gender
+  )
+
+  colnames(both)
+  both[both == "missing"] <- NA
+  both[both == "unknown"] <- NA
+
+
+  # both<-both %>% mutate(volume.x = replace(volume.x, is.na(volume.x),volume.y[is.na(volume.x)]))
+  # both$volume.y<-NULL
+  # both<-both %>% rename("volume"="volume.x")
+
+
+  #
+  # both<-both %>% mutate(issue.x = replace(issue.x, is.na(issue.x),issue.y[is.na(issue.x)]))
+  # both$issue.y<-NULL
+  # both<-both %>% rename("issue"="issue.x")
+
+  #
+  # both<-both %>% mutate(title.x = replace(title.x, is.na(title.x),title.y[is.na(title.x)]))
+  # both$title.y<-NULL
+  # both<-both %>% rename("title"="title.x")
+  #
+ 
+
+
+  # #CAN QUICKLY ID WHAT NEEDS TO BE FIXED AS FOLLOWS
+  # str(both)
+  # # FIRST NAME DIFFERENCES BETWEEN ALL DATA AND CHECKED FILE
+  # summary(both$first_name.x==both$first_name.y) # 10 false
+  # both$FIRST_check<-both$first_name.x==both$first_name.y
+  # #spelling mistake in NAMES.y, so delete that column and the checm column
+  # both$FIRST_check<-NULL
+  # both$first_name.y<-NULL
+  # both<-both %>% rename("first_name"="first_name.x")
+
+  # MIDDLE NAME DIFFERENCES BETWEEN ALL DATA AND CHECKED FILE
+  summary(both$middle_name.x == both$middle_name.y) # NO FALSE
+  both$middle_check <- both$middle_name.x == both$middle_name.y
+  both$middle_name.y <- NULL
+  both$middle_check <- NULL
+  both <- both %>% rename("middle_name" = "middle_name.x")
+
+  # LAST NAME IFFERENCES BETWEEN ALL DATA AND CHECKED FILE
+  # summary(both$last_name.x==both$last_name.y) # 21 FALSE
+  # both$LAST_check<-both$last_name.x==both$last_name.y
+  # # This identifies one mistake in thge original (original_data) that needs to be corrected
+  # str(both)
+  both$last_name[both$editor_id.x == 1355 & both$first_name == "holmes"] <- "rolston"
+  both <- both[!(is.na(both$editor_id.x) & both$first_name == "holmes"), ]
+
+
+  # both$last_name.y<-NULL
+  # both$LAST_check<-NULL
+  # both<-both %>% rename("last_name"="last_name.x")
+
+
+  # state differences between all data and checked file
+  summary(both$state.x == both$state.y) # 19 false
+  both$state_check <- both$state.x == both$state.y
+  both$state.x[both$state.x == "missing"] <- NA
+  both$state.x[both$year != 1992 & both$first_name == "david" & both$last_name == "gibson" & both$city.x == "carbondale"] <- "il"
+  both$state.x[both$year == 1992 & both$city.x == "pensacola" & both$last_name == "gibson"] <- "fl"
+  both$state.x[both$state.x == "england"] <- NA
+  both$state.x[both$last_name == "moss"] <- NA
+  both$state.x[both$last_name == "usher"] <- NA
+  both$state.x[both$last_name == "milner-gulland"] <- NA
+  both$inst.y[both$last_name == "belovsky" & both$inst.y == "notre dame"] <- "university of notre dame"
+  both$city.x[both$last_name == "belovsky" & both$inst.y == "notre dame"] <- "notre dame"
+  both$country.x[both$last_name == "belovsky" & both$inst.y == "university of notre dame"] <- "usa"
+  both$state.x[both$last_name == "belovsky" & both$inst.y == "notre dame university"] <- "in"
+  both$state.x[both$first_name == "james" & both$last_name == "carlton"] <- "ct"
+  both$state.x[both$first_name == "jon" & both$last_name == "rodriguez"] <- NA
+  both$state.x[both$editor_id.x == 455 & both$first_name == "christopher" & both$last_name == "frissell"] <- "mt"
+  both$inst.y[both$editor_id.x == 455 & both$first_name == "christopher" & both$last_name == "frissell"] <- "university of montana"
+  both$unit.x[both$editor_id.x == 455 & both$first_name == "christopher" & both$last_name == "frissell"] <- "flathead lake biological station"
+  both$city.x[both$editor_id.x == 455 & both$first_name == "christopher" & both$last_name == "frissell"] <- "polson"
+  both$city.x[both$editor_id.x == 1511 & both$last_name == "cinner" & both$year > 2009 & both$year < 2015] <- "townsville"
+  both$state.x[both$editor_id.x == 1511 & both$last_name == "cinner" & both$year > 2009 & both$year < 2015] <- "queensland"
+  both$unit.x[both$editor_id.x == 1511 & both$last_name == "cinner"] <- "arc centre of excellence for coral reef studies"
+  both$inst.y[both$editor_id.x == 1511 & both$last_name == "cinner"] <- "james cook university"
+  both$notes.y[both$editor_id.x == 1511 & both$last_name == "cinner" & both$year == 2013] <- "journal front matter has inst=columbia univ, but his cv makes no mention of this"
+
+  # this will replace all the "na" in state.x (origianlly no info) with the value from state.y (patrick's data collection), if there is one
+  both <- both %>% mutate(state.x = replace(state.x, is.na(state.x), state.y[is.na(state.x)]))
+
+
+  both$state.y <- NULL
+  both$state_check <- NULL
+  both <- both %>% rename("state" = "state.x")
+
+  # this identifies one mistake in thge original (original_data) that needs to be corrected
+  both$unit.x[both$unit.x == "estaci<f3>n biol<f3>gica de do<f1>ana"] <- "estacion biologica donana"
+  both$unit.y[both$unit.y == "estaci<f3>n biol<f3>gica de do<f1>ana"] <- "estacion biologica donana"
+  both$unit.x <- gsub("estaci\xf3n biol\xf3gica de do\xf1ana", "estacion biologica donana", both$unit.x)
+  both$unit.x <- gsub("biologie/chemie/\x80kologie", "biochemical ecology", both$unit.x)
+  both$unit.x <- gsub("f\x99r", "fur", both$unit.x)
+  both$unit.x <- gsub("ecolog\x90a", "ecologia", both$unit.x)
+
+  # inst differences between all data and checked file
+  both$inst.y <- as.character(both$inst.y)
+  both$inst.y <- tolower(both$inst.y)
+  both$inst.y <- tolower(both$inst.y)
+  both$unit.x <- tolower(both$unit.x)
+  both$unit.y <- tolower(both$unit.y)
+# both[7358,14]
+
+  # this will replace all the "na" and "" in inst.x (origianlly no info) with the value from inst.y (patrick's data collection), if there is one
+  both <- both %>% mutate(inst.x = replace(inst.x, is.na(inst.x), inst.y[is.na(inst.x)]))
+  both <- both %>% mutate(inst.x = replace(inst.x, inst.x == "", NA))
+  summary(both$inst.y == both$inst.y) # 235 false
+  both$inst_check <- both$inst.y == both$inst.y
+
+  inst_check <- filter(both, inst_check == "FALSE")
+  inst_check_ok <- filter(both, inst_check == TRUE | is.na(inst_check))
+  #
+  # write.csv(inst_check, file="./data/patrick_james_data_corrections/complete/inst_corrections_2x.csv", row.names = f) #export it as a csv file
+
+
+  both$inst.y[both$editor_id.x == 1248 & both$journal == "bitr" & both$year == 1987] <- "new york botanical garden"
+  both$inst.y[both$editor_id.x == 1704 & both$journal == "jecol" & both$year == 2009] <- "university of sheffield"
+  # both$inst.y[both$inst.y=="unniversity of stirling" ]<-"university of stirling"
+
+  both$unit.x[both$editor_id.x == 1229 & both$inst.y == "university of montana"] <- "savannah river ecology laboratory"
+  both$inst.y[both$editor_id.x == 1229 & both$inst.y == "university of montana"] <- "university of georgia"
+
+  both$unit.x[both$inst.y == "alterra research institute for the green world"] <- "alterra research institute for the green world"
+  both$unit.x[both$inst.y == "gatty marine lab (university of saint andrews)"] <- "gatty marine lab"
+  both$unit.x[both$inst.y == "netherlands institute of ecology; wageningen university and research centre netherlands institute of ecology"] <- "netherlands institute of ecology nioo knaw"
+  both$unit.x[both$inst.y == "norwich"] <- "norwich research park industrial biotechnology and bioenergy alliance"
+  both$unit.x[both$inst.y == "scripps institute of oceanography"] <- "scripps institution of oceanography"
+  both$unit.x[both$inst.y == "scripps institution  of oceanography"] <- "scripps institution of oceanography"
+  both$unit.x[both$inst.y == "scripps institute of oceanography"] <- "gatty marine lab"
+
+
+
+  both$unit.x[both$inst.y == "savannah river ecology laboratory"] <- "savannah river ecology laboratory"
+  both$inst.y[both$inst.y == "savannah river ecology laboratory"] <- "university of georgia"
+  both$unit.x[both$inst.y == "university of california santa cruz extension"] <- "ucsc extension"
+  both$inst.y[both$inst.y == "university of california" & both$inst.y == "university of california davis"] <- "university of california davis"
+  both$inst.y[both$inst.y == "university of california" & both$inst.y == "university of california berkeley"] <- "university of california berkeley"
+  both$inst.y[both$inst.y == "university of california" & both$inst.y == "university of california riverside"] <- "university of california riverside"
+  # both$inst.y[both$editor_id.x==1839 & both$journal=="conbio" ]<-"venezuelan institute for scientific investigation"
+  both$inst.y[both$editor_id.x == 1218 & both$journal == "conbio" & both$year > 1986 & both$year < 1992] <- "royal botanic gardens kew"
+  # both$inst.y[both$inst.y=="museum natl hist nat"]<-"national history museum paris"
+  # both$inst.y[both$inst.y=="university<ca>of<ca>california<ca>santa<ca>cruz"]<-"university of california santa cruz"
+  # both$inst.y[both$inst.y=="uc santa cruz"]<-"university of california santa cruz"
+
+  both$inst.y[both$last_name == "streeter" & both$journal == "jecol" & both$year == 2009] <- "university of sussex"
+  both$inst.y[both$last_name == "grover" & both$journal == "amnat"] <- "university of texas arlington"
+  both$inst.y[both$last_name == "noss" & both$journal == "conbio" & both$year == 1998] <- "conservation biology institute"
+
+  both$unit.x[both$last_name == "dratch" & both$journal == "conbio" & both$inst.y == "national fish and wildlife forensics laboratory"] <- "national fish and wildlife forensics laboratory"
+  both$inst.y[both$last_name == "dratch" & both$journal == "conbio" & both$inst.y == "national fish and wildlife forensics laboratory"] <- "us fish and wildlife service"
+  both$inst.y[both$last_name == "daszak" & both$journal == "conbio" & both$inst.y == "university of nevada reno"] <- "consortium for conservation medicine"
+
+  both$unit.x[both$last_name == "meffe" & both$journal == "conbio" & both$inst.y == "university of montana"] <- "savanna riverl ecological laboratory"
+  both$unit.x[both$last_name == "meffe" & both$journal == "conbio" & both$unit.x == "savanna riverl ecological laboratory"] <- "university of georgia"
+  both$unit.x[both$journal == "leco" & both$inst.y == "institute of landscape ecology of slovak academy of sciences"] <- "institute of landscape ecology"
+  both$inst.y[both$journal == "leco" & both$inst.y == "institute of landscape ecology of slovak academy of sciences"] <- "slovak academy of sciences"
+
+  summary(both$inst.y == both$inst.y)
+  both$inst_check <- both$inst.y == both$inst.y
+  both$inst.y <- NULL
+  both$inst_check <- NULL
+  both <- both %>% rename("inst" = "inst.x")
+
+  # city differences between all data and checked file
+  summary(both$city.x == both$city.y) # 52 false
+  both$city_check <- both$city.x == both$city.y
+  city_check <- filter(both, city_check == "false")
+  city_check_ok <- filter(both, city_check == TRUE | is.na(city_check))
+  write.csv(city_check, file = "./data/patrick_james_data_corrections/complete/city_corrections_2x.csv", row.names = FALSE) # export it as a csv file
+  both$state[both$city.x == "new mexico" & both$city.y == "las cruces"] <- "nm"
+  both$city.x[both$city.x == "new mexico" & both$city.y == "las cruces"] <- "las cruces"
+  both$city.x[is.na(both$city.x) & both$city.y == "las cruces"] <- "las cruces"
+  both$notes.y[both$city.x == "basel" & both$city.y == "lausanne"] <- "2x city"
+  both$notes.y[both$city.x == "brighton" & both$city.y == "toronto"] <- "2x city"
+  both$notes.y[both$city.x == "zurich" & both$city.y == "basel"] <- "2x city"
+  both$notes.y[both$city.x == "canberra" & both$city.y == "lyneham"] <- "2x city"
+
+  both$city.x[both$city.x == "stanford" & both$city.y == "pacific grove"] <- "pacific grove"
+  both$city.x[both$city.x == "manhattan" & both$city.y == "new york"] <- "new york"
+  both$city.x[both$city.x == "east lansging" & both$city.y == "east lansing"] <- "east lansing"
+  both$city.x[both$city.x == "new yor city" & both$city.y == "new york city"] <- "new york"
+  both$city.x[both$city.x == "manhattan" & both$city.y == "new york"] <- "new york"
+  both$city.x[both$city.x == "los angeles" & both$city.y == "malibu"] <- "malibu"
+  both$city.x[both$city.x == "manhattan" & both$city.y == "new york"] <- "new york"
+  both$city.x[both$city.x == "manhattan" & both$city.y == "new york"] <- "new york"
+  both$city.x[both$city.x == "sheffield s10 2tn"] <- "sheffield s10 2tn"
+
+  both$unit.x[both$city.x == "\xcadepartment of animal ecology and tropical biology (zoology iii)"] <- "department of animal ecology and tropical biology (zoology iii)"
+  both$city.x[both$city.x == "\xcadepartment of animal ecology and tropical biology (zoology iii)"] <- NA
+
+  both$notes.y[both$city.x == "aberdeen" & both$city.y == "cragiebuckler"] <- "2x city"
+  both$city.x[both$city.x == "invergowric" & both$city.y == "invergowrie"] <- "invergowrie"
+  both$notes.y[both$city.x == "brisbane" & both$city.y == "st lucia"] <- "2x city"
+  both$notes.y[both$city.x == "london" & both$city.y == "ascot"] <- "2x city"
+  both$notes.y[both$city.x == "williams" & both$city.y == "mystic"] <- "2x city"
+  both$notes.y[both$city.x == "melbourne" & both$city.y == "parkville"] <- "2x city"
+  both$notes.y[both$city.x == "new brunswick" & both$city.y == "polson"] <- "2x city"
+  both$notes.y[both$city.x == "london" & both$city.y == "notre dame"] <- "notre dame"
+  both$notes.y[both$city.x == "canberra" & both$city.y == "lyneham"] <- "2x city"
+  both$notes.y[both$city.x == "canberra" & both$city.y == "lyneham"] <- "2x city"
+  both$notes.y[both$city.x == "canberra" & both$city.y == "lyneham"] <- "2x city"
+
+  summary(both$city.x == both$city.y)
+  both$city_check <- both$city.x == both$city.y
+  # write.csv(city_check, file="./data/patrick_james_data_corrections/complete/city_corrections_2x.csv", row.names = f) #export it as a csv file
+
+  # this will replace all the "na" in city.x (origianlly no info) with the value from city.y (patrick's data collection), if there is one
+  both <- both %>% mutate(city.x = replace(city.x, is.na(city.x), city.y[is.na(city.x)]))
+
+  both$city.y <- NULL
+  both$city_check <- NULL
+  both <- both %>% rename("city" = "city.x")
+  # str(both)
+
+  # todo unit differences between all data and checked file
+  # both$unit.x<-as.character(both$unit.x)
+  # both$unit.x<-gsub("",na,both$unit.x)
+  both$unit.x[both$unit.x == ""] <- NA
+  summary(both$unit.x == both$unit.y) # 7 false
+  both$unit_check <- both$unit.x == both$unit.y
+
+  # no probs, just differences in words ("the, and", etc)
+  # this will replace all the "na" in unit.x (origianlly no info) with the value from unit.y (patrick's data collection), if there is one
+  both <- both %>% mutate(unit.x = replace(unit.x, is.na(unit.x), unit.y[is.na(unit.x)]))
+
+  both$unit.x[both$unit.y == "savannah river ecology laboratory"] <- "savannah river ecology laboratory"
+  both$unit.y <- NULL
+  both$unit_check <- NULL
+  both <- both %>% rename("unit" = "unit.x")
+
+  # todo country differences between all data and checked file
+
+  both <- both %>% mutate(country.x = replace(country.x, country.x == "", NA))
+  both$country.x <- as.factor(both$country.x)
+  both$country.y <- as.factor(both$country.y)
+  country_levels <- (c(levels(both$country.x), levels(both$country.y)))
+  levels(both$country.x) <- c(levels(both$country.x), country_levels, NA)
+  levels(both$country.y) <- c(levels(both$country.y), country_levels, NA)
+
+  # this will replace all the "na" in city.x (origianlly no info) with the value from city.y (patrick's data collection), if there is one
+
+  levels(both$country.x)
+  str(both$country.x)
+  str(both$country.y)
+
+  both <- both %>% mutate(country.x = replace(country.x, is.na(country.x), country.y[is.na(country.x)]))
+  summary(both$country.x == both$country.y) # 3552 false
+  both$country_check <- both$country.x == both$country.y
+
+  country_check <- filter(both, country_check == "FALSE")
+  # write.csv(country_check, file="./data/patrick_james_data_corrections/complete/country_corrections_2x.csv", row.names = f) #export it as a csv file
+
+
+  both$first_name[both$last_name == "weiher" & both$journal == "plantecol"] <- "ewan"
+  both$middle_name[both$last_name == "long" & both$first_name == "steve" & both$journal == "gcb"] <- "p"
+  both$first_name[both$last_name == "long" & both$first_name == "steve" & both$journal == "gcb"] <- "stephen"
+  both$inst[both$last_name == "long" & both$first_name == "stephen" &
+    both$journal == "gcb" & both$year > 1999] <- "university of illinois"
+
+  both$first_name[both$last_name == "olsvig-whittaker" & both$journal == "plantecol"] <- "d"
+  both$middle_name[both$last_name == "olsvig-whittaker" & both$journal == "plantecol"] <- "l"
+
+  both$country.x[both$last_name == "tjoelker" & both$journal == "newphyt" & both$inst == "texas a & m university"] <- "usa"
+  both$country.x[both$last_name == "atkin" & both$journal == "newphyt" & both$inst == "university of york"] <- "united kingdom"
+  both$country.x[both$last_name == "long" & both$journal == "jecol" & both$inst == "university of essex"] <- "united kingdom"
+  both$country.x[both$last_name == "westing" & both$journal == "conbio" & both$inst == "stockholm international peace research institute"] <- "sweden"
+  both$city[both$last_name == "westing" & both$journal == "conbio" & both$inst == "stockholm international peace research institute"] <- "stockholm"
+  both$state[both$last_name == "westing" & both$journal == "conbio" & both$inst == "stockholm international peace research institute"] <- NA
+  both$country.x[both$last_name == "westing" & both$journal == "conbio" & both$inst == "westing associates"] <- "usa"
+  both$country.x[both$last_name == "belovsky" & both$journal == "conbio" & both$inst == "utah state university"] <- "usa"
+  both$unit[both$last_name == "bolker" & both$journal == "amnat" & both$inst == "mcmaster university"] <- NA
+  both$country.x[both$last_name == "bolker" & both$journal == "amnat" & both$inst == "mcmaster university"] <- "canada"
+
+  both$unit[both$last_name == "krivan" & both$journal == "amnat"] <- "biology centre"
+  both$inst[both$last_name == "krivan" & both$journal == "amnat"] <- "academy of sciences of the czech republic"
+  both$city[both$last_name == "krivan" & both$journal == "amnat"] <- "ceske budejovice"
+  both$state[both$last_name == "krivan" & both$journal == "amnat"] <- "south bohemia"
+  both$country.x[both$last_name == "krivan" & both$journal == "amnat"] <- "czech republic"
+
+  both$notes.y[both$country.y == "wales"] <- "wales"
+  both$notes.y[both$country.y == "scotland"] <- "scotland"
+  both$notes.y[both$country.y == "england"] <- "england"
+  both$notes.y[both$country.x == "wales"] <- "wales"
+  both$notes.y[both$country.x == "scotland"] <- "scotland"
+  both$notes.y[both$country.x == "england"] <- "england"
+  both$country.x[both$country.x == "wales"] <- "united kingdom"
+  both$country.x[both$country.x == "scotland"] <- "united kingdom"
+  both$country.x[both$country.x == "england"] <- "united kingdom"
+
+
+  both$country.y <- NULL
+  both$country_check <- NULL
+  both <- both %>% rename("country" = "country.x")
+
+  # todo notes differences between all data and checked file
+
+  str(both$notes.x)
+  both$notes <- paste(both$notes.x, both$notes.y, sep = " / ")
+  both$notes[both$notes == "na / na"] <- NA
+  both$notes <- gsub(" / na", "", both$notes)
+  both$notes <- gsub("na / ", "", both$notes)
+  both$notes.x <- NULL
+  both$notes.y <- NULL
+  both$notes[both$inst == "lyme regis"] <- "is this ghillean prance unattached?"
+  both$notes[both$inst == "neri"] <- "no longer exists: https://tethys.pnnl.gov/institution/national-environmental-research-institute-neri"
+  both$notes[both$last_name == "boggs"] <- "2x carol boggs has inst colorado but should be stanford"
+  # both$notes[both$inst == "biological centre"] <- "double check inst"
+  # both$notes[both$inst == "biological institute"] <- "double check inst"
+  # both$notes[both$inst == "bogota"] <- "double check inst"
+  # both$notes[both$inst == "disteba university of salento"] <- "double check inst -  / disteba universita di lecce"
+  # both$notes[both$inst == "haus nr.9"] <- "double check inst"
+  # both$notes[both$inst == "james cook university townsville"] <- "double check inst"
+  # both$notes[both$inst == "lancaster"] <- "double check inst"
+  # both$notes[both$inst == "london"] <- "double check inst"
+  # both$notes[both$inst == "madrid"] <- "double check inst"
+  # both$notes[both$inst == "maine"] <- "double check inst"
+  # both$notes[is.na(both$inst)] <- "double check inst"
+  # both$notes[both$inst == "royal botanic gardens melbourne university of melbourne"] <- "double check inst"
+  # both$notes[both$inst == "salzburg"] <- "double check inst"
+  # both$notes[both$inst == "swansea"] <- "double check inst"
+  # both$notes[both$inst == "sydney"] <- "double check inst"
+  # both$notes[both$inst == "seidenstzicker& kleiman = smithsonian national zoological park, labandeira: smithsonian national museum of natural history"] <- "double check inst"
+  # both$notes[both$inst == "montpellier"] <- "double check inst"
+  # both$notes[both$inst == "double check"] <- "double check inst"
+  # both$notes[both$inst == "cnrs"] <- "double check what campus/unit"
+  # both$notes[both$inst == "csiro"] <- "double check what campus/unit"
+  # both$notes[both$inst == "smithsonian institution"] <- "double check what campus/unit"
+  # both$notes[both$inst == "university of arkansas"] <- "double check what campus/unit"
+  # both$notes[both$inst == "university of british columbia"] <- "double check what campus/unit"
+  # both$notes[both$inst == "university of california"] <- "double check what campus/unit"
+  # both$notes[both$inst == "university of exeter"] <- "double check what campus/unit"
+  # both$notes[both$inst == "university of georgia"] <- "double check what campus/unit"
+  # both$notes[both$inst == "university of illinois"] <- "double check what campus/unit"
+  # both$notes[both$inst == "university of massachusetts"] <- "double check what campus/unit"
+  # both$notes[both$inst == "university of minnesota"] <- "double check what campus/unit"
+  # both$notes[both$inst == "university of south carolina"] <- "double check what campus/unit"
+  # both$notes[both$inst == "university of texas"] <- "double check what campus/unit"
+  # both$notes[both$inst == "university of toronto"] <- "double check what campus/unit"
+  # both$notes[both$inst == "university of wisconsin"] <- "double check what campus/unit"
+  # both$notes[both$inst == "us geological survey"] <- "double check what campus/unit"
+
+
+
+  # both<-institution_cleaner(both)
+
+
+  # no idea why this isn't working inside function, so doing here
+  both$inst <- gsub("arkansas", "arkansas", both$inst)
+
+
+  # todo: some error checking of states:
+  # canada instead of canada
+  # british columbia in usa
+  # lower austria     usa
+  # galicia     usa
+  # england     usa
+  # uppland     usa
+  # ontario in usa
+  # gelderland
+
+  both$country[both$state == "british columbia" & both$country == "usa"] <- "canada"
+  both$country[both$state == "lower austria" & both$country == "usa"] <- "canada"
+  both$country[both$state == "galicia" & both$country == "usa"] <- "spain"
+  both$country[both$state == "england" & both$country == "usa"] <- "united kingdom"
+  both$country[both$state == "uppland" & both$country == "usa"] <- "sweden"
+  both$country[both$state == "ontario"] <- "canada"
+  both$country[both$state == "gelderland"] <- "netherlands"
+  levels(both$inst)
+
+
+
+
+  colnames(both)
+  both$editor_id.y <- NULL
+  both <- both %>% rename("editor_id" = "editor_id.x")
+
+  both <- both[!(is.na(both$journal) & is.na(both$year)), ]
+
+  #
+  # both<-both %>%
+  #   group_by(journal,last_name,first_name) %>%
+  #   mutate(inst = ifelse((row_number()==1 & is.na(inst)), "missing", inst))
+  #
+  #
+  # both<-both %>%
+  #   group_by(journal,last_name,first_name) %>%
+  #   mutate(unit = ifelse((row_number()==1 & is.na(unit)), "missing", unit))
+  #
+  # both<-both %>%
+  #   group_by(journal,last_name,first_name) %>%
+  #   mutate(state = ifelse((row_number()==1 & is.na(state)), "missing", state))
+  #
+  #
+  # both<-both %>%
+  #   group_by(journal,last_name,first_name) %>%
+  #   mutate(city = ifelse((row_number()==1 & is.na(city)), "missing", city))
+  #
+  new_row <- both %>%
+    filter(last_name == "willis" & journal == "jecol" & year == 1994)
+  new_row$year <- 1992
+  both <- rbind(new_row, both)
+  both$inst[both$last_name == "willis" & both$journal == "jecol" &
+    (both$year > 1990 | both$year < 2007)] <- "university of sheffield"
+  both$city[both$last_name == "willis" & both$journal == "jecol" &
+    (both$year > 1990 | both$year < 2007)] <- "sheffield"
+  both$state[both$last_name == "willis" & both$journal == "jecol" &
+    (both$year > 1990 | both$year < 2007)] <- "s yorkshire"
+  both$country[both$last_name == "willis" & both$journal == "jecol" &
+    (both$year > 1990 | both$year < 2007)] <- "united kingdom"
+
+  both <- both %>% arrange(journal, last_name, first_name, year)
+
+  # colnames(both)
+  # str(as.data.frame(both))
+  # str(alldata)
+  # colnames(alldata)
+  # colnames(both)==colnames(alldata)
+
+
+
+
+
+  # added eb 11 october 2020
+  both$first_name <- tolower(both$first_name)
+  both$last_name <- tolower(both$last_name)
+  both$middle_name <- tolower(both$middle_name)
+
+  both$inst[both$inst == "double check"] <- NA
+
+  both$inst[both$last_name == "charlesworth" & both$year == 1991 & both$journal == "amnat"] <- "university of chicago"
+  both$inst[both$last_name == "chesson" & both$year == 1991 & both$journal == "amnat"] <- "australian national university"
+  both$inst[both$last_name == "chesson" & both$year == 1995 & both$journal == "amnat"] <- "australian national university"
+  both$inst[both$last_name == "duffy" & both$year == 2015 & both$journal == "amnat"] <- "georgia institute of technology"
+  both$inst[both$last_name == "dworkin" & both$year == 2015 & both$journal == "amnat"] <- "mcmaster university"
+  both$inst[both$last_name == "frederickson" & both$year == 2015 & both$journal == "amnat"] <- "university of toronto"
+  both$inst[both$last_name == "fuller" & both$year == 2015 & both$journal == "amnat"] <- "university of illinois"
+  both$inst[both$last_name == "kirkpatrick" & both$year == 1991 & both$journal == "amnat"] <- "university of texas austin"
+  both$inst[both$last_name == "leips" & both$year == 2015 & both$journal == "amnat"] <- "university of maryland baltimore county"
+  both$inst[both$last_name == "meagher" & both$year == 1991 & both$journal == "amnat"] <- "university of st andrews"
+  both$inst[both$last_name == "mooney" & both$year == 1985 & both$journal == "amnat"] <- "stanford university"
+  both$inst[both$last_name == "mooney" & both$year == 1990 & both$journal == "amnat"] <- "stanford university"
+  both$inst[both$last_name == "pagel" & both$year == 1997 & both$journal == "amnat"] <- "university of oxford"
+  both$inst[both$last_name == "pastor" & both$year == 1991 & both$journal == "amnat"] <- "university of minnesota duluth"
+  both$inst[both$last_name == "real" & both$year == 1991 & both$journal == "amnat"] <- "indiana university"
+  both$inst[both$last_name == "real" & both$year == 1993 & both$journal == "amnat"] <- "indiana university"
+  both$inst[both$last_name == "roth" & both$year == 1991 & both$journal == "amnat"] <- "duke university"
+  both$inst[both$last_name == "roughgarden" & both$year == 1985 & both$journal == "amnat"] <- "stanford university"
+  both$inst[both$last_name == "roughgarden" & both$year == 1990 & both$journal == "amnat"] <- "stanford university"
+  both$inst[both$last_name == "seger" & both$year == 1991 & both$journal == "amnat"] <- "university of utah"
+  both$inst[both$last_name == "tilma" & both$year == 1991 & both$journal == "amnat"] <- "university of minnesota"
+  both$inst[both$last_name == "tilma" & both$year == 1994 & both$journal == "amnat"] <- "university of minnesota"
+  both$inst[both$last_name == "whitlock" & both$year == 2005 & both$journal == "amnat"] <- "university of british columbia"
+  both$inst[both$last_name == "wu" & both$year == 1991 & both$journal == "amnat"] <- "university of chicago"
+  both$inst[both$last_name == "foote" & both$year == 2004 & both$journal == "arees"] <- "university of chicago"
+  both$inst[both$last_name == "werner" & both$year == 1985 & both$journal == "arees"] <- "michigan state university"
+  both$inst[both$last_name == "wing" & both$year == 1999 & both$journal == "arees"] <- "smithsonian national museum of natural history"
+  both$inst[both$last_name == "wing" & both$year == 2003 & both$journal == "arees"] <- "smithsonian national museum of natural history"
+  both$inst[both$last_name == "andelman" & both$year == 2006 & both$journal == "biocon"] <- "university of california santa barbara"
+  both$inst[both$last_name == "bourliere" & both$year == 1986 & both$journal == "biocon"] <- "university of paris"
+  both$inst[both$last_name == "dirzo" & both$year == 1998 & both$journal == "biocon"] <- "northern arizona university"
+  both$inst[both$last_name == "duffey" & both$year == 1989 & both$journal == "biocon"] <- "unaffiliated"
+  both$inst[both$last_name == "duffey" & both$year == 2014 & both$journal == "biocon"] <- "unaffiliated"
+  both$inst[both$last_name == "hawkins" & both$year == 2008 & both$journal == "biocon"] <- "university of southampton"
+  both$inst[both$last_name == "hawkins" & both$year == 2014 & both$journal == "biocon"] <- "university of southampton"
+  both$inst[both$last_name == "hockey" & both$year == 1997 & both$journal == "biocon"] <- "university of cape town"
+  both$inst[both$last_name == "hockey" & both$year == 2007 & both$journal == "biocon"] <- "university of cape town"
+  both$inst[both$last_name == "hockey" & both$year == 2008 & both$journal == "biocon"] <- "university of cape town"
+  both$inst[both$last_name == "hockey" & both$year == 2009 & both$journal == "biocon"] <- "university of cape town"
+  both$inst[both$last_name == "johnsingh" & both$year == 2006 & both$journal == "biocon"] <- "wildlife institute of india"
+  both$inst[both$last_name == "krishnaswamy" & both$year == 2014 & both$journal == "biocon"] <- "ashoka trust for research in ecology and the environment"
+  both$inst[both$last_name == "kuenen" & both$year == 1986 & both$journal == "biocon"] <- "university of leiden"
+  both$inst[both$last_name == "lomolino" & both$year == 1998 & both$journal == "biocon"] <- "university of oklahoma"
+  both$inst[both$last_name == "marrs" & both$year == 2014 & both$journal == "biocon"] <- "university of liverpool"
+  both$inst[both$last_name == "mcnicholl" & both$year == 1990 & both$journal == "biocon"] <- "unaffiliated"
+  both$inst[both$last_name == "mcnicholl" & both$year == 1993 & both$journal == "biocon"] <- "unaffiliated"
+  both$inst[both$last_name == "morgan" & both$year == 1987 & both$journal == "biocon"] <- "station biologique de la tour du valat"
+  both$inst[both$last_name == "morgan" & both$year == 2004 & both$journal == "biocon"] <- "station biologique de la tour du valat"
+  both$inst[both$last_name == "peterken" & both$year == 1998 & both$journal == "biocon"] <- "unaffiliated"
+  both$inst[both$last_name == "peterken" & both$year == 2009 & both$journal == "biocon"] <- "unaffiliated"
+  both$inst[both$last_name == "scott" & both$year == 1986 & both$journal == "biocon"] <- "unaffiliated"
+  both$inst[both$last_name == "westhoff" & both$year == 1985 & both$journal == "biocon"] <- "unaffiliated"
+  both$inst[both$last_name == "westhoff" & both$year == 1988 & both$journal == "biocon"] <- "unaffiliated"
+  both$inst[both$last_name == "anderson" & both$year == 1993 & both$journal == "bitr"] <- "australian national university"
+  both$inst[both$last_name == "anderson" & both$year == 1997 & both$journal == "bitr"] <- "australian national university"
+  both$inst[both$last_name == "benson" & both$year == 1993 & both$journal == "bitr"] <- "universidade estadual de campinas"
+  both$inst[both$last_name == "benson" & both$year == 1996 & both$journal == "bitr"] <- "universidade estadual de campinas"
+  both$inst[both$last_name == "berry" & both$year == 1996 & both$journal == "bitr"] <- "missouri botanical garden"
+  both$inst[both$last_name == "berry" & both$year == 1997 & both$journal == "bitr"] <- "missouri botanical garden"
+  both$inst[both$last_name == "brown" & both$year == 1993 & both$journal == "bitr"] <- "university of illinois urbana champaign"
+  both$inst[both$last_name == "brown" & both$year == 1996 & both$journal == "bitr"] <- "university of illinois urbana champaign"
+  both$inst[both$last_name == "foster" & both$year == 1996 & both$journal == "bitr"] <- "usgs patuxent wildlife research center"
+  both$inst[both$last_name == "fox" & both$year == 1993 & both$journal == "bitr"] <- "curtin university of technology"
+  both$inst[both$last_name == "fox" & both$year == 1997 & both$journal == "bitr"] <- "curtin university of technology"
+  both$inst[both$last_name == "west-eberhard" & both$year == 1993 & both$journal == "bitr"] <- "smithsonian tropical research institute"
+  both$inst[both$last_name == "west-eberhard" & both$year == 1996 & both$journal == "bitr"] <- "smithsonian tropical research institute"
+  both$inst[both$last_name == "angert" & both$year == 2015 & both$journal == "evol"] <- "university of british columbia"
+  both$inst[both$last_name == "azevedo" & both$year == 2015 & both$journal == "evol"] <- "university of houston"
+  both$inst[both$last_name == "case" & both$year == 2015 & both$journal == "evol"] <- "kent state university"
+  both$inst[both$last_name == "dean" & both$year == 2015 & both$journal == "evol"] <- "university of minnesota"
+  both$inst[both$last_name == "dworkin" & both$year == 2015 & both$journal == "evol"] <- "michigan state university"
+  both$inst[both$last_name == "edmands" & both$year == 2015 & both$journal == "evol"] <- "university of southern california"
+  both$inst[both$last_name == "engelstadter" & both$year == 2015 & both$journal == "evol"] <- "university of queensland"
+  both$inst[both$last_name == "evans" & both$year == 2015 & both$journal == "evol"] <- "monash university"
+  both$inst[both$last_name == "friedman" & both$year == 2015 & both$journal == "evol"] <- "university of oxford"
+  both$inst[both$last_name == "hadfield" & both$year == 2015 & both$journal == "evol"] <- "university of edinburgh"
+  both$inst[both$last_name == "hahn" & both$year == 2015 & both$journal == "evol"] <- "indiana university"
+  both$inst[both$last_name == "hall" & both$year == 2015 & both$journal == "evol"] <- "university of georgia"
+  both$inst[both$last_name == "kisdi" & both$year == 2015 & both$journal == "evol"] <- "university of helsinki"
+  both$inst[both$last_name == "laine" & both$year == 2015 & both$journal == "evol"] <- "university of helsinki"
+  both$inst[both$last_name == "marshall" & both$year == 2015 & both$journal == "evol"] <- "monash university"
+  both$inst[both$last_name == "masel" & both$year == 2015 & both$journal == "evol"] <- "university of arizona"
+  both$inst[both$last_name == "mcadam" & both$year == 2015 & both$journal == "evol"] <- "university of guelph"
+  both$inst[both$last_name == "neiman" & both$year == 2015 & both$journal == "evol"] <- "university of iowa"
+  both$inst[both$last_name == "redfield" & both$year == 2015 & both$journal == "evol"] <- "university of british columbia"
+  both$inst[both$last_name == "robosky" & both$year == 2015 & both$journal == "evol"] <- "university of michigan"
+  both$inst[both$last_name == "roze" & both$year == 2015 & both$journal == "evol"] <- "roscoff biological station"
+  both$inst[both$last_name == "decamps" & both$journal == "leco"] <- "cnrs centre delaboration de materiaux et detudes structurales"
+  both$inst[both$last_name == "weimerskirch" & both$journal == "jane"] <- "centre detudes biologiques de chize"
+  both$inst[both$last_name == "rozen" & both$year == 2015 & both$journal == "evol"] <- "university of leiden"
+  both$inst[both$last_name == "sweigart" & both$year == 2015 & both$journal == "evol"] <- "university of georgia"
+  both$inst[both$last_name == "tobias" & both$year == 2015 & both$journal == "evol"] <- "university of oxford"
+  both$inst[both$last_name == "valenzuela" & both$year == 2015 & both$journal == "evol"] <- "iowa state university"
+  both$inst[both$last_name == "bearhop" & both$year == 2008 & both$journal == "jane"] <- "university of exeter"
+  both$inst[both$last_name == "bearhop" & both$year == 2014 & both$journal == "jane"] <- "university of exeter"
+  both$inst[both$last_name == "gurney" & both$year == 1999 & both$journal == "jane"] <- "university of strathclyde"
+  both$inst[both$last_name == "gurney" & both$year == 2014 & both$journal == "jane"] <- "university of strathclyde"
+  both$inst[both$last_name == "hall" & both$year == 1999 & both$journal == "jane"] <- "flinders university"
+  both$inst[both$last_name == "hall" & both$year == 2009 & both$journal == "jane"] <- "worldfish centre"
+  both$inst[both$last_name == "lessells" & both$year == 1994 & both$journal == "jane"] <- "netherlands institute of ecology nioo knaw"
+  both$inst[both$last_name == "lessells" & both$year == 2014 & both$journal == "jane"] <- "netherlands institute of ecology nioo knaw"
+  both$inst[both$last_name == "manly" & both$year == 2005 & both$journal == "jane"] <- "western ecosystem technology"
+  both$inst[both$last_name == "manly" & both$year == 2013 & both$journal == "jane"] <- "western ecosystem technology"
+  both$inst[both$last_name == "may" & both$year == 1991 & both$journal == "jane"] <- "university of oxford"
+  both$inst[both$last_name == "may" & both$year == 1996 & both$journal == "jane"] <- "university of oxford"
+  both$inst[both$last_name == "mccann" & both$year == 2005 & both$journal == "jane"] <- "university of guelph"
+  both$inst[both$last_name == "mccleery" & both$year == 2008 & both$journal == "jane"] <- "university of oxford"
+  both$inst[both$last_name == "mcintyre" & both$year == 1985 & both$journal == "jane"] <- "university of aberdeen"
+  both$inst[both$last_name == "mcintyre" & both$year == 1990 & both$journal == "jane"] <- "university of aberdeen"
+  both$inst[both$last_name == "meiri" & both$year == 2011 & both$journal == "jane"] <- "tel aviv university"
+  both$inst[both$last_name == "meiri" & both$year == 2014 & both$journal == "jane"] <- "tel aviv university"
+  both$inst[both$last_name == "o'gorman" & both$year == 2013 & both$journal == "jane"] <- "queen mary university of london"
+  both$inst[both$last_name == "o'gorman" & both$year == 2014 & both$journal == "jane"] <- "imperial college london"
+  both$inst[both$last_name == "rogers" & both$year == 1994 & both$journal == "jane"] <- "university of oxford"
+  both$inst[both$last_name == "rogers" & both$year == 1996 & both$journal == "jane"] <- "university of oxford"
+  both$inst[both$last_name == "stouffer" & both$year == 2013 & both$journal == "jane"] <- "university of canterbury"
+  both$inst[both$last_name == "stouffer" & both$year == 2014 & both$journal == "jane"] <- "university of canterbury"
+  both$inst[both$last_name == "thorpe" & both$year == 1994 & both$journal == "jane"] <- "soafd fisheries laboratory"
+  both$inst[both$last_name == "thorpe" & both$year == 1997 & both$journal == "jane"] <- "university of glasgow "
+  both$inst[both$last_name == "vanderpol" & both$year == 2013 & both$journal == "jane"] <- "australian national university"
+  both$inst[both$last_name == "vanderpol" & both$year == 2014 & both$journal == "jane"] <- "australian national university"
+  both$inst[both$last_name == "block" & both$year == 1985 & both$journal == "jape"] <- "liverpool john moores university"
+  both$inst[both$last_name == "block" & both$year == 1989 & both$journal == "jape"] <- "liverpool john moores university"
+  both$inst[both$last_name == "bullock" & both$year == 2000 & both$journal == "jape"] <- "institute of terrestrial ecology"
+  both$inst[both$last_name == "bullock" & both$year == 2003 & both$journal == "jape"] <- "institute of terrestrial ecology"
+  both$inst[both$last_name == "clarke" & both$year == 1989 & both$journal == "jape"] <- "institute of terrestrial ecology"
+  both$inst[both$last_name == "day" & both$year == 1988 & both$journal == "jape"] <- "silsoe research institute"
+  both$inst[both$last_name == "day" & both$year == 1996 & both$journal == "jape"] <- "silsoe research institute"
+  both$inst[both$last_name == "fernande-juricic" & both$year == 2010 & both$journal == "jape"] <- "purdue university"
+  both$inst[both$last_name == "freckleto" & both$year == 2005 & both$journal == "jape"] <- "university of oxford"
+  both$inst[both$last_name == "hill" & both$year == 1993 & both$journal == "jape"] <- "game conservancy"
+  both$inst[both$last_name == "hill" & both$year == 1999 & both$journal == "jape"] <- "university of cambridge"
+  both$inst[both$last_name == "mason" & both$year == 1989 & both$journal == "jape"] <- "university of essex"
+  both$inst[both$last_name == "mason" & both$year == 1996 & both$journal == "jape"] <- "university of essex"
+  both$inst[both$last_name == "mead" & both$year == 1985 & both$journal == "jape"] <- "university of reading"
+  both$inst[both$last_name == "mead" & both$year == 1987 & both$journal == "jape"] <- "university of reading"
+  both$inst[both$last_name == "miles" & both$year == 1988 & both$journal == "jape"] <- "institute of terrestrial ecology"
+  both$inst[both$last_name == "miles" & both$year == 1991 & both$journal == "jape"] <- "institute of terrestrial ecology"
+  both$inst[both$last_name == "monteith" & both$year == 1985 & both$journal == "jape"] <- "university of nottingham"
+  both$inst[both$last_name == "monteith" & both$year == 1987 & both$journal == "jape"] <- "university of nottingham"
+  both$inst[both$last_name == "roberts" & both$year == 1985 & both$journal == "jape"] <- "central electricity research laboratories"
+  both$inst[both$last_name == "roberts" & both$year == 1987 & both$journal == "jape"] <- "central electricity research laboratories"
+  both$inst[both$last_name == "rutter" & both$year == 1985 & both$journal == "jape"] <- "imperial college london"
+  both$inst[both$last_name == "rutter" & both$year == 1988 & both$journal == "jape"] <- "imperial college london"
+  both$inst[both$last_name == "smith" & both$year == 2005 & both$journal == "jape"] <- "central science laboratory"
+  both$inst[both$last_name == "smith" & both$year == 2006 & both$journal == "jape"] <- "central science laboratory"
+  both$inst[both$last_name == "thomas" & both$year == 1989 & both$journal == "jape"] <- "afrc institute for grassland and animal production"
+  both$inst[both$last_name == "thomas" & both$year == 1997 & both$journal == "jape"] <- "afrc institute for grassland and animal production"
+  both$inst[both$last_name == "walpole" & both$year == 2006 & both$journal == "jape"] <- "fauna and flora international"
+  both$inst[both$last_name == "walpole" & both$year == 2009 & both$journal == "jape"] <- "fauna and flora international"
+  both$inst[both$last_name == "welch" & both$year == 1988 & both$journal == "jape"] <- "institute of terrestrial ecology"
+  both$inst[both$last_name == "welch" & both$year == 1996 & both$journal == "jape"] <- "institute of terrestrial ecology"
+  both$inst[both$last_name == "ali" & both$year == 2013 & both$journal == "jbiog"] <- "university of hong kong"
+  both$inst[both$last_name == "ali" & both$year == 2014 & both$journal == "jbiog"] <- "university of hong kong"
+  both$inst[both$last_name == "bryson" & both$year == 2014 & both$journal == "jbiog"] <- "university of washington"
+  both$inst[both$last_name == "carine" & both$year == 2010 & both$journal == "jbiog"] <- "natural history museum london"
+  both$inst[both$last_name == "carine" & both$year == 2014 & both$journal == "jbiog"] <- "natural history museum london"
+  both$inst[both$last_name == "cavers" & both$year == 2014 & both$journal == "jbiog"] <- "nerc centre for ecology and hydrology"
+  both$inst[both$last_name == "chapman" & both$year == 2014 & both$journal == "jbiog"] <- "nerc centre for ecology and hydrology"
+  both$inst[both$last_name == "diniz-filho" & both$year == 2005 & both$journal == "jbiog"] <- "universidade federal de goias"
+  both$inst[both$last_name == "diniz-filho" & both$year == 2006 & both$journal == "jbiog"] <- "universidade federal de goias"
+  both$inst[both$last_name == "emerson" & both$year == 2013 & both$journal == "jbiog"] <- "csic - ipna"
+  both$inst[both$last_name == "emerson" & both$year == 2014 & both$journal == "jbiog"] <- "csic - ipna"
+  both$inst[both$last_name == "gaither" & both$year == 2014 & both$journal == "jbiog"] <- "durham university"
+  both$inst[both$last_name == "gilman" & both$year == 2010 & both$journal == "jbiog"] <- "auckland university of technology"
+  both$inst[both$last_name == "gilman" & both$year == 2014 & both$journal == "jbiog"] <- "auckland university of technology"
+  both$inst[both$last_name == "guilhaumon" & both$year == 2013 & both$journal == "jbiog"] <- "university of evora"
+  both$inst[both$last_name == "guilhaumon" & both$year == 2014 & both$journal == "jbiog"] <- "universite de montpellier"
+  both$inst[both$last_name == "hansen" & both$year == 2011 & both$journal == "jbiog"] <- "university of kwazulu natal"
+  both$inst[both$last_name == "hansen" & both$year == 2014 & both$journal == "jbiog"] <- "university of zurich"
+  both$inst[both$last_name == "harrison" & both$year == 1985 & both$journal == "jbiog"] <- "university college london"
+  both$inst[both$last_name == "harrison" & both$year == 2004 & both$journal == "jbiog"] <- "university college london"
+  both$inst[both$last_name == "higgins" & both$year == 2013 & both$journal == "jbiog"] <- "goethe university frankfurt"
+  both$inst[both$last_name == "higgins" & both$year == 2014 & both$journal == "jbiog"] <- "university of otago"
+  both$inst[both$last_name == "holger" & both$year == 2014 & both$journal == "jbiog"] <- "university of gottingen"
+  both$inst[both$last_name == "kreft" & both$year == 2014 & both$journal == "jbiog"] <- "university of gottingen"
+  both$inst[both$last_name == "holland" & both$year == 1986 & both$journal == "jbiog"] <- "university of otago"
+  both$inst[both$last_name == "holland" & both$year == 2003 & both$journal == "jbiog"] <- "university of otago"
+  both$inst[both$last_name == "jetz" & both$year == 2006 & both$journal == "jbiog"] <- "university of california san diego"
+  both$inst[both$last_name == "jetz" & both$year == 2014 & both$journal == "jbiog"] <- "yale university"
+  both$inst[both$last_name == "katinas" & both$year == 2014 & both$journal == "jbiog"] <- "museo de la plata"
+  both$inst[both$last_name == "kullman" & both$year == 1991 & both$journal == "jbiog"] <- "university of umea"
+  both$inst[both$last_name == "kullman" & both$year == 2004 & both$journal == "jbiog"] <- "university of umea"
+  both$inst[both$last_name == "lei" & both$year == 2014 & both$journal == "jbiog"] <- "chinese academy of sciences"
+  both$inst[both$last_name == "maggs" & both$year == 2008 & both$journal == "jbiog"] <- "queens university belfast"
+  both$inst[both$last_name == "maggs" & both$year == 2014 & both$journal == "jbiog"] <- "queens university belfast"
+  both$inst[both$last_name == "masters" & both$year == 2011 & both$journal == "jbiog"] <- "university of kwazulu natal"
+  both$inst[both$last_name == "masters" & both$year == 2012 & both$journal == "jbiog"] <- "university of ft hare"
+  both$inst[both$last_name == "parmakelis" & both$year == 2013 & both$journal == "jbiog"] <- "university of athens"
+  both$inst[both$last_name == "parmakelis" & both$year == 2014 & both$journal == "jbiog"] <- "university of athens"
+  both$inst[both$last_name == "paulay" & both$year == 2014 & both$journal == "jbiog"] <- "university of florida"
+  both$inst[both$last_name == "phillimore" & both$year == 2013 & both$journal == "jbiog"] <- "university of edinburgh"
+  both$inst[both$last_name == "phillimore" & both$year == 2014 & both$journal == "jbiog"] <- "university of edinburgh"
+  both$inst[both$last_name == "prance" & both$year == 2000 & both$journal == "jbiog"] <- "royal botanic gardens kew"
+  both$inst[both$last_name == "prance" & both$year == 2004 & both$journal == "jbiog"] <- "royal botanic gardens kew"
+  both$inst[both$last_name == "richardson" & both$year == 2011 & both$journal == "jbiog"] <- "royal botanic garden edinburgh"
+  both$inst[both$last_name == "richardson" & both$year == 2014 & both$journal == "jbiog"] <- "royal botanic garden edinburgh"
+  both$inst[both$last_name == "schaefer" & both$year == 2014 & both$journal == "jbiog"] <- "technical university of munich"
+  both$inst[both$last_name == "stearns" & both$year == 1985 & both$journal == "jbiog"] <- "university of wisconsin"
+  both$inst[both$last_name == "stearns" & both$year == 1990 & both$journal == "jbiog"] <- "university of wisconsin"
+  both$inst[both$last_name == "triantis" & both$year == 2010 & both$journal == "jbiog"] <- "university of azores"
+  both$inst[both$last_name == "triantis" & both$year == 2014 & both$journal == "jbiog"] <- "national & kapodistrian university"
+  both$inst[both$last_name == "vanderhammen" & both$year == 1985 & both$journal == "jbiog"] <- "university of amsterdam"
+  both$inst[both$last_name == "vanderhammen" & both$year == 1990 & both$journal == "jbiog"] <- "university of amsterdam"
+  both$inst[both$last_name == "watts" & both$year == 1985 & both$journal == "jbiog"] <- "university of hull"
+  both$inst[both$last_name == "watts" & both$year == 1995 & both$journal == "jbiog"] <- "university of hull"
+  both$inst[both$last_name == "dekroon" & both$year == 2002 & both$journal == "jecol"] <- "radboud university nijmegen"
+  both$inst[both$last_name == "dekroon" & both$year == 2004 & both$journal == "jecol"] <- "radboud university nijmegen"
+  both$inst[both$last_name == "etherington" & both$year == 1985 & both$journal == "jecol"] <- "cardiff university"
+  both$inst[both$last_name == "etherington" & both$year == 1990 & both$journal == "jecol"] <- "university of wales"
+  both$inst[both$last_name == "gray" & both$year == 1991 & both$journal == "jecol"] <- "cardiff university"
+  both$inst[both$last_name == "hopkins" & both$year == 1985 & both$journal == "jecol"] <- "university of sheffield"
+  both$inst[both$last_name == "huntely" & both$year == 1987 & both$journal == "jecol"] <- "cambridge university"
+  both$inst[both$last_name == "huntley" & both$year == 1985 & both$journal == "jecol"] <- "cambridge university"
+  both$inst[both$last_name == "huntley" & both$year == 1988 & both$journal == "jecol"] <- "cambridge university"
+  both$inst[both$last_name == "lack" & both$year == 1987 & both$journal == "jecol"] <- "swansea university"
+  both$inst[both$last_name == "lack" & both$year == 1990 & both$journal == "jecol"] <- "oxford brookes university"
+  both$inst[both$last_name == "long" & both$year == 1986 & both$journal == "jecol"] <- "university of essex"
+  both$inst[both$last_name == "ouborg" & both$year == 2003 & both$journal == "jecol"] <- "radboud university nijmegen"
+  both$inst[both$last_name == "ouborg" & both$year == 2004 & both$journal == "jecol"] <- "radboud university nijmegen"
+  both$inst[both$last_name == "vandermeijden" & both$year == 1989 & both$journal == "jecol"] <- "leiden university"
+  both$inst[both$last_name == "vandermeijden" & both$year == 1993 & both$journal == "jecol"] <- "leiden university"
+  both$inst[both$last_name == "vangroenendael" & both$year == 1992 & both$journal == "jecol"] <- "wageningen university and research"
+  both$inst[both$last_name == "white" & both$year == 1986 & both$journal == "jecol"] <- "university college dublin"
+  both$inst[both$last_name == "albon" & both$year == 1995 & both$journal == "jzool"] <- "zoological society of london"
+  both$inst[both$last_name == "ayers" & both$year == 1985 & both$journal == "newphyt"] <- "lancaster university"
+  both$inst[both$last_name == "ayers" & both$year == 2002 & both$journal == "newphyt"] <- "lancaster university"
+  both$inst[both$last_name == "barbour" & both$year == 2015 & both$journal == "newphyt"] <- "university of sydney"
+  both$inst[both$last_name == "graham" & both$year == 2015 & both$journal == "newphyt"] <- "university of florida"
+  both$inst[both$last_name == "schat" & both$year == 2015 & both$journal == "newphyt"] <- "vrije universiteit amsterdam"
+  both$inst[both$last_name == "smith" & both$year == 2015 & both$journal == "newphyt"] <- "university of cambridge"
+  both$inst[both$last_name == "stinchcombe" & both$year == 2014 & both$journal == "newphyt"] <- "university of toronto"
+  both$inst[both$last_name == "sultan" & both$year == 2004 & both$journal == "newphyt"] <- "wesleyan university"
+  both$inst[both$last_name == "sultan" & both$year == 2009 & both$journal == "newphyt"] <- "wesleyan university"
+  both$inst[both$last_name == "syrett" & both$year == 1985 & both$journal == "newphyt"] <- "university of wales"
+  both$inst[both$last_name == "syrett" & both$year == 1989 & both$journal == "newphyt"] <- "university of wales"
+  both$inst[both$last_name == "tjoelker" & both$year == 2014 & both$journal == "newphyt"] <- "western sydney university"
+  both$inst[both$last_name == "vamosi" & both$year == 2015 & both$journal == "newphyt"] <- "university of calgary"
+  both$inst[both$last_name == "west" & both$year == 1994 & both$journal == "newphyt"] <- "university of cambridge"
+  both$inst[both$last_name == "wolfenden" & both$year == 1990 & both$journal == "newphyt"] <- "lancaster university"
+  both$inst[both$last_name == "wolfenden" & both$year == 1991 & both$journal == "newphyt"] <- "lancaster university"
+  both$inst[both$last_name == "wolfenden" & both$year == 1996 & both$journal == "newphyt"] <- "lancaster university"
+  both$inst[both$last_name == "bever" & both$year == 2013 & both$journal == "oecol"] <- "university of indiana"
+  both$inst[both$last_name == "buchmann" & both$year == 2004 & both$journal == "oecol"] <- "swiss federal institute of technology"
+  both$inst[both$last_name == "buchmann" & both$year == 2014 & both$journal == "oecol"] <- "swiss federal institute of technology"
+  both$inst[both$last_name == "diehl" & both$year == 2011 & both$journal == "oecol"] <- "university of umea"
+  both$inst[both$last_name == "elle" & both$year == 2013 & both$journal == "oecol"] <- "simon fraser university"
+  both$inst[both$last_name == "fiedler" & both$year == 2005 & both$journal == "oecol"] <- "university of vienna"
+  both$inst[both$last_name == "fiedler" & both$year == 2014 & both$journal == "oecol"] <- "university of vienna"
+  both$inst[both$last_name == "gough" & both$year == 2013 & both$journal == "oecol"] <- "university of texas arlington"
+  both$inst[both$last_name == "gough" & both$year == 2014 & both$journal == "oecol"] <- "university of texas arlington"
+  both$inst[both$last_name == "heimpel" & both$year == 2013 & both$journal == "oecol"] <- "university of minnesota"
+  both$inst[both$last_name == "heimpel" & both$year == 2014 & both$journal == "oecol"] <- "university of minnesota"
+  both$inst[both$last_name == "herre" & both$year == 2014 & both$journal == "oecol"] <- "smithsonian tropical research institute"
+  both$inst[both$last_name == "ibanez" & both$year == 2013 & both$journal == "oecol"] <- "university of michigan"
+  both$inst[both$last_name == "ibanez" & both$year == 2014 & both$journal == "oecol"] <- "university of michigan"
+  both$inst[both$last_name == "koricheva" & both$year == 2006 & both$journal == "oecol"] <- "royal holloway university of london"
+  both$inst[both$last_name == "koricheva" & both$year == 2014 & both$journal == "oecol"] <- "royal holloway university of london"
+  both$inst[both$last_name == "korner" & both$year == 1992 & both$journal == "oecol"] <- "university of basel"
+  both$inst[both$last_name == "korner" & both$year == 2014 & both$journal == "oecol"] <- "university of basel"
+  both$inst[both$last_name == "laaksonen" & both$year == 2014 & both$journal == "oecol"] <- "university of turku "
+  both$inst[both$last_name == "layman" & both$year == 2013 & both$journal == "oecol"] <- "florida international university"
+  both$inst[both$last_name == "layman" & both$year == 2014 & both$journal == "oecol"] <- "florida international university"
+  both$inst[both$last_name == "legalliard" & both$year == 2012 & both$journal == "oecol"] <- "cnrs institut ecologie et environnement"
+  both$inst[both$last_name == "legalliard" & both$year == 2014 & both$journal == "oecol"] <- "cnrs institut ecologie et environnement"
+  both$inst[both$last_name == "lichstein" & both$year == 2013 & both$journal == "oecol"] <- "university of florida"
+  both$inst[both$last_name == "lichstein" & both$year == 2014 & both$journal == "oecol"] <- "university of florida"
+  both$inst[both$last_name == "lill" & both$year == 2012 & both$journal == "oecol"] <- "george washington university"
+  both$inst[both$last_name == "lill" & both$year == 2014 & both$journal == "oecol"] <- "george washington university"
+  both$inst[both$last_name == "muller" & both$year == 2011 & both$journal == "oecol"] <- "university of bielefeld"
+  both$inst[both$last_name == "muller" & both$year == 2014 & both$journal == "oecol"] <- "university of bielefeld"
+  both$inst[both$last_name == "niinemets" & both$year == 2014 & both$journal == "oecol"] <- "estonian university of life sciences"
+  both$inst[both$last_name == "prinzing" & both$year == 2013 & both$journal == "oecol"] <- "universite de rennes 1"
+  both$inst[both$last_name == "schaller" & both$year == 1985 & both$journal == "oecol"] <- "university of vienna"
+  both$inst[both$last_name == "schaller" & both$year == 1986 & both$journal == "oecol"] <- "university of vienna"
+  both$inst[both$last_name == "shurin" & both$year == 2011 & both$journal == "oecol"] <- "university of california san diego"
+  both$inst[both$last_name == "shurin" & both$year == 2014 & both$journal == "oecol"] <- "university of california san diego"
+  both$inst[both$last_name == "siemann" & both$year == 2012 & both$journal == "oecol"] <- "rice university"
+  both$inst[both$last_name == "siemann" & both$year == 2014 & both$journal == "oecol"] <- "rice university"
+  both$inst[both$last_name == "stark" & both$year == 2012 & both$journal == "oecol"] <- "utah state university"
+  both$inst[both$last_name == "stark" & both$year == 2014 & both$journal == "oecol"] <- "utah state university"
+  both$inst[both$last_name == "stewart" & both$year == 1998 & both$journal == "oecol"] <- "university of queensland"
+  both$inst[both$last_name == "ward" & both$year == 2014 & both$journal == "oecol"] <- "university of kansas"
+  both$inst[both$last_name == "weisser" & both$year == 1985 & both$journal == "oecol"] <- "university of innsbruck "
+  both$inst[both$last_name == "weisser" & both$year == 2014 & both$journal == "oecol"] <- "technical university of munich"
+  both$inst[both$last_name == "ziegler" & both$year == 1985 & both$journal == "oecol"] <- "technical university of munich"
+  both$inst[both$last_name == "ziegler" & both$year == 2007 & both$journal == "oecol"] <- "technical university of munich"
+  both$inst[both$last_name == "aarsen" & both$year == 2007 & both$journal == "oikos"] <- "queens university"
+  both$inst[both$last_name == "aarsen" & both$year == 2014 & both$journal == "oikos"] <- "queens university"
+  both$inst[both$last_name == "abbot" & both$year == 2013 & both$journal == "oikos"] <- "lund university"
+  both$inst[both$last_name == "abbot" & both$year == 2014 & both$journal == "oikos"] <- "lund university"
+  both$inst[both$last_name == "andersen" & both$year == 1985 & both$journal == "oikos"] <- "geological survey of denmark"
+  both$inst[both$last_name == "andersen" & both$year == 1989 & both$journal == "oikos"] <- "geological survey of denmark"
+  both$inst[both$last_name == "andersson" & both$year == 1985 & both$journal == "oikos"] <- "swedish university of agricultural sciences"
+  both$inst[both$last_name == "andersson" & both$year == 1989 & both$journal == "oikos"] <- "swedish university of agricultural sciences"
+  both$inst[both$last_name == "boomsma" & both$year == 2011 & both$journal == "oikos"] <- "university of copenhagen"
+  both$inst[both$last_name == "dahl" & both$year == 1985 & both$journal == "oikos"] <- "agricultural university of norway"
+  both$inst[both$last_name == "dahl" & both$year == 1989 & both$journal == "oikos"] <- "agricultural university of norway"
+  both$inst[both$last_name == "grae" & both$year == 2012 & both$journal == "oikos"] <- "norwegian university of science and technology"
+  both$inst[both$last_name == "grae" & both$year == 2014 & both$journal == "oikos"] <- "norwegian university of science and technology"
+  both$inst[both$last_name == "jarvinen" & both$year == 1989 & both$journal == "oikos"] <- "university of helsinki"
+  both$inst[both$last_name == "malian" & both$year == 2012 & both$journal == "oikos"] <- "swiss federal institute of aquatic science and technology"
+  both$inst[both$last_name == "malian" & both$year == 2014 & both$journal == "oikos"] <- "swiss federal institute of aquatic science and technology"
+  both$inst[both$last_name == "moore" & both$year == 2011 & both$journal == "oikos"] <- "university of california santa cruz"
+  both$inst[both$last_name == "moore" & both$year == 2014 & both$journal == "oikos"] <- "university of california santa cruz"
+  both$inst[both$last_name == "robinson" & both$year == 2011 & both$journal == "oikos"] <- "british trust for ornithology"
+  both$inst[both$last_name == "robinson" & both$year == 2014 & both$journal == "oikos"] <- "british trust for ornithology"
+  both$inst[both$last_name == "roy" & both$year == 2012 & both$journal == "oikos"] <- "evergreen state college"
+  both$inst[both$last_name == "roy" & both$year == 2014 & both$journal == "oikos"] <- "evergreen state college"
+  both$inst[both$last_name == "scherer_lorenzon" & both$year == 2014 & both$journal == "oikos"] <- "university of freiburg"
+  both$inst[both$last_name == "solbrek" & both$year == 2011 & both$journal == "oikos"] <- "swedish university of agricultural sciences"
+  both$inst[both$last_name == "sun" & both$year == 2014 & both$journal == "oikos"] <- "university of hong kong"
+  both$inst[both$last_name == "traveser" & both$year == 2011 & both$journal == "oikos"] <- "mediterranean institute for advanced studies"
+  both$inst[both$last_name == "traveser" & both$year == 2014 & both$journal == "oikos"] <- "mediterranean institute for advanced studies"
+  both$inst[both$last_name == "bornkamm" & both$year == 1985 & both$journal == "plantecol"] <- "technical university of berlin"
+  both$inst[both$last_name == "bornkamm" & both$year == 1989 & both$journal == "plantecol"] <- "technical university of berlin"
+  both$inst[both$last_name == "epstein" & both$year == 2012 & both$journal == "plantecol"] <- "university of virginia"
+  both$inst[both$last_name == "gimingham" & both$year == 1985 & both$journal == "plantecol"] <- "university of aberdeen"
+  both$inst[both$last_name == "gimingham" & both$year == 1989 & both$journal == "plantecol"] <- "university of aberdeen"
+  both$inst[both$last_name == "grubb" & both$year == 1985 & both$journal == "plantecol"] <- "university of cambridge"
+  both$inst[both$last_name == "grubb" & both$year == 1986 & both$journal == "plantecol"] <- "university of cambridge"
+  both$inst[both$last_name == "ne'eman" & both$year == 2012 & both$journal == "plantecol"] <- "university of haifa-oranim"
+  both$inst[both$last_name == "oksanen" & both$year == 1989 & both$journal == "plantecol"] <- "university of eastern finland"
+  both$inst[both$last_name == "rozema" & both$year == 2012 & both$journal == "plantecol"] <- "vrije universiteit amsterdam"
+  both$inst[both$last_name == "walsh" & both$year == 2012 & both$journal == "plantecol"] <- "university of north carolina chapel hill"
+  both$inst[both$last_name == "white" & both$year == 1985 & both$journal == "plantecol"] <- "university college dublin"
+  both$inst[both$last_name == "white" & both$year == 1989 & both$journal == "plantecol"] <- "university college dublin"
+
+  both$inst[both$editor_id == 1747 & both$year == 2011 & both$journal == "jbiog"] <- "university of oxford"
+
+  both$inst[both$editor_id == 3892 & both$year == 1985] <- "louisiana state university"
+
+  both$inst[both$editor_id == 716 & both$last_name == "hansen" & both$journal == "jbiog"] <- "university of zurich"
+  both$country[both$editor_id == 716 & both$last_name == "hansen" & both$journal == "jbiog"] <- "switzerland"
+  both$inst[both$editor_id == 1849 & both$inst == "university of stirling"] <- "vrije universiteit amsterdam"
+  # both$inst[both$editor_id==105 & both$journal=="agronomy"]<-"california state university fresno"
+  # both$inst[both$editor_id==1673 & both$year==2014]<-"california state university sacramento"
+
+  both$editor_id[both$journal == "gcb" & both$last_name == "korner" & both$first_name == "christian"] <- 499
+  both$inst[both$editor_id == 499 & both$year > 1989] <- "university of basel"
+  both$city[both$city == "turtu" & both$editor_id == 3587] <- "turku"
+
+  both$city[both$city == "universidade estadual paulista" & both$editor_id == 2383] <- "rio claro"
+  both$city[both$city == "universidade estadual paulista" & both$editor_id == 1225] <- "sao paulo"
+
+  both$inst[both$editor_id == 2358 & both$journal == "jane"] <- "university college cork"
+  both$city[both$editor_id == 2358 & both$journal == "jane"] <- "cork"
+
+  both$inst[both$editor_id == 1417 & both$year == "1992"] <- "usfs pacific southwest research station"
+
+  both$inst[both$editor_id == 190] <- "kansas state university"
+
+  both$inst[both$editor_id == 1763] <- "universidade de sao paulo"
+  both$inst[both$editor_id == 2819] <- "universidade de sao paulo"
+
+  both$state[both$city == "para"] <- "para"
+  both$city[both$city == "para"] <- NA
+
+  both$city[both$city == "washington"] <- "washington dc"
+  both$city[both$city == "washington, dc"] <- "washington dc"
+  both$city[both$city == "dc"] <- "washington dc"
+  both$city[both$city == "district of columbia"] <- "washington dc"
+  both$state[both$city == "washington dc"] <- "washington dc"
+
+  both$city[both$city == "st louis"] <- "st louis"
+
+  both$city[both$city == "fredricton"] <- "fredericton"
+
+
+  both$country[both$editor_id == 3359 & both$year == 2014] <- "new zealand"
+
+
+  both$country[both$country == "west germany"] <- "germany"
+
+
+  colnames(both)
+  both <- both %>%
+    group_by(journal, editor_id, last_name, first_name) %>%
+    arrange(year) %>%
+    fill(inst, .direction = "down")
+
+
+  both$first_name[both$last_name == "lack" & both$first_name == "alan" &
+    both$middle_name == "j"] <- "andrew"
+
+
+  both$first_name[both$last_name == "lomolino" & both$first_name == "m" &
+    both$inst == "university of oklahoma"] <- "mark"
+
+  both$middle_name[both$last_name == "lomolino" & both$first_name == "mark" &
+    both$inst == "university of oklahoma"] <- "v"
+
+
+  both$first_name[both$last_name == "houck" & both$first_name == "lynn" &
+    both$journal == "amnat"] <- "lynne"
+
+
+  both$first_name[both$last_name == "dustin" & both$first_name == "marshall" &
+    both$journal == "evol" & both$year == 2014] <- "dustin"
+
+
+  both$last_name[both$last_name == "hannson" & both$first_name == "l" & both$journal == "leco"] <- "hansson"
+  both$first_name[both$last_name == "hansson" & both$first_name == "l" & both$journal == "leco"] <- "lennart"
+  both$first_name[both$last_name == "wagner" & both$first_name == "h" & both$journal == "leco"] <- "helene"
+  both$last_name[both$last_name == "aarsen" & both$editor_id == "2119"] <- "aarssen"
+  both$last_name[both$last_name == "tilma" & both$editor_id == "891"] <- "tilman"
+  both$first_name[both$editor_id == "570"] <- "christer"
+  both$last_name[both$editor_id == "570"] <- "solbreck"
+  both$unit[both$editor_id == "1605"] <- "citrus res & educ ctr"
+  both$last_name[both$editor_id == "2760"] <- "ayres"
+  both$last_name[both$last_name == "freckleto" & both$journal == "jape"] <- "freckelton"
+  both$editor_id[both$last_name == "freckleto" & both$journal == "jape"] <- "3063"
+  both$first_name[both$last_name == "boomsma" & both$journal == "oikos"] <- "jacobus"
+
+  both$first_name[both$last_name == "ouborg" & both$journal == "jecol"] <- "n"
+  both$middle_name[both$last_name == "ouborg" & both$journal == "jecol"] <- "joop"
+  both$notes[both$last_name == "block" & both$editor_id == "3714"] <- "from 1993 record"
+  both$last_name[both$editor_id == "283"] <- "graae"
+  both$first_name[both$last_name == "ward" & both$journal == "oecol"] <- "joy"
+  both$editor_id[both$last_name == "ward" & both$journal == "oecol"] <- "1938"
+  both$city[both$last_name == "ward" & both$journal == "oecol"] <- "lawrence"
+  both$last_name[both$editor_id == "283"] <- "graae"
+  both$first_name[both$last_name == "ward" & both$journal == "oecol"] <- "joy"
+
+  both$last_name[both$editor_id == "564"] <- "leroy"
+  both$first_name[both$editor_id == "564"] <- "carri"
+  both$middle_name[both$editor_id == "564"] <- NA
+  both$last_name[both$editor_id == "2552"] <- "scherer-lorenzen"
+  both$last_name[both$editor_id == "519"] <- "melian"
+  both$first_name[both$editor_id == "1323"] <- "holger"
+  both$last_name[both$editor_id == "1323"] <- "kreft"
+  both$last_name[both$editor_id == "217"] <- "traveset"
+  both$notes[both$editor_id == "102" & both$journal == "oecol"] <- "city listed as washington dc in frontmatter"
+  both$first_name[both$editor_id == "2672" & both$journal == "biocon"] <- "n"
+  both$middle_name[both$editor_id == "2672" & both$journal == "biocon"] <- "c"
+
+  both$first_name[both$editor_id == "753" & both$journal == "biocon"] <- "d"
+  both$middle_name[both$editor_id == "753" & both$journal == "biocon"] <- "j"
+
+  both$last_name[both$editor_id == "2154" & both$journal == "jbiog"] <- "gillman"
+  both$middle_name[both$first_name == "par" & both$last_name == "hockey"] <- "ar"
+  both$first_name[both$first_name == "par" & both$last_name == "hockey"] <- "p"
+
+  both$inst[(both$editor_id == "3252" | both$editor_id == "453" | both$editor_id == "1973") & both$inst == "queensland"] <- "university of queensland"
+  both$inst[both$last_name == "vellend" & both$journal == "oikos"] <- "cornell university"
+  both$inst[both$inst == "wyoming" & both$last_name == "benkman"] <- "university of wyoming"
+  both$inst[both$journal == "funecol" & both$last_name == "blanckenhorn"] <- "university of zurich irchel"
+  both$city[both$last_name == "hixon" & both$inst == "university of hawaii"] <- "honolulu"
+  both$inst[both$inst == "zurich" & both$last_name == "tschirren"] <- "university of zurich"
+  both$inst[both$inst == "vermont" & both$last_name == "brody"] <- "university of vermont"
+  both$inst[both$inst == "utah" & both$last_name == "ehleringer"] <- "university of utah"
+  both$inst[both$inst == "utah" & both$last_name == "caldwell"] <- "utah state university"
+  both$inst[both$last_name == "herrera" & both$inst == "csic consejo superior de investigaciones cientificas"] <- "csic donana biological station"
+  both$inst[both$last_name == "herrera" & both$first_name == "carlos"] <- "csic donana biological station"
+  both$inst[both$last_name == "bascompte" & both$first_name == "jordi"] <- "csic donana biological station"
+  both$inst[both$last_name == "herrera" & both$first_name == "carlos"] <- "csic donana biological station"
+  both$inst[both$editor_id == 878 & both$inst == "csic consejo superior de investigaciones cientificas"] <- "csic donana biological station"
+  both$inst[both$editor_id == 1494 & both$journal == "jape"] <- "csic donana biological station"
+  both$inst[both$editor_id == 3320 & both$journal == "amnat"] <- "csic uv instituto de biología integrativa de sistemas"
+  both$inst[both$editor_id == 2522 & both$journal == "oecol"] <- "csic zaidin experimental station"
+  both$inst[both$last_name == "jordano"] <- "csic donana biological station"
+  both$unit[both$last_name == "jordano" & both$inst == "csic donana biological station"] <- "csic donana biological station"
+
+  both$country[both$last_name == "laaksonen" & both$journal == "oecol"] <- "finland"
+  both$inst[both$last_name == "angilletta" & both$inst == "indiana"] <- "indiana state university"
+  both$inst[both$last_name == "reynolds" & both$inst == "indiana"] <- "indiana university bloomington"
+  both$inst[both$last_name == "pienkowski" & both$country == "united kingdom"] <- "joint nature conservation committee"
+
+  both$inst[both$last_name == "cavers" & both$inst == "nerc centre for ecology and hydrology"] <- "nerc centre for ecology and hydrology edinburgh"
+  both$inst[both$last_name == "chapman" & both$inst == "nerc centre for ecology and hydrology"] <- "nerc centre for ecology and hydrology edinburgh"
+  both$inst[both$city == "wallingford" & both$inst == "nerc centre for ecology and hydrology"] <- "nerc centre for ecology and hydrology wallingford"
+  both$inst[both$city == "bailrigg" & both$inst == "nerc centre for ecology and hydrology"] <- "nerc centre for ecology and hydrology bailrigg"
+
+
+  both$inst[both$last_name == "croxall"] <- "nerc british antarctic survey"
+  both$inst[both$last_name == "pywell" & both$unit == "center for ecology and hydrology"] <- "nerc centre for ecology and hydrology wallingford"
+
+
+  both$inst[both$last_name == "harwood" & both$inst == "nerc natural environment research council"] <- "nerc sea mammal research unit"
+
+  both$inst[both$last_name == "montevecchi"] <- "memorial university of newfoundland"
+  both$inst[both$editor_id == 3772] <- "memorial university of newfoundland"
+
+  both$inst[both$editor_id == 1158] <- "university of georgia caes griffin campus"
+  both$unit[both$editor_id == 1158] <- "caes griffin campus-ag experiment station"
+
+
+  both$inst[both$editor_id == 1410] <- "universite montpellier 2"
+
+  both$inst[both$last_name == "hauber" & both$year == 2017] <- "cuny hunter college"
+
+  both$inst[both$editor_id == 1972 & both$year == 2004] <- "kansas state university"
+  both$last_name[both$editor_id == 1972 & both$year == 2004] <- "with"
+  both$middle_name[both$editor_id == 1972 & both$year == 2004] <- "a"
+
+
+
+
+  both$last_name[both$last_name == "van der maarel" & both$journal == "leco"] <- "vandermaarel"
+  both$last_name[both$last_name == "vander" & both$journal == "leco"] <- "vandermaarel"
+  both$inst[both$last_name == "vandermaarel" & both$journal == "leco"] <- "university of uppsala"
+
+  both$inst[both$last_name == "cymerman" & both$journal == "leco"] <- "university of georgia"
+  both$city[both$last_name == "cymerman" & both$journal == "leco"] <- "athens"
+  both$last_name[both$last_name == "cymerman" & both$journal == "leco"] <- "hepinstall-cymerman"
+
+
+  both$inst[both$editor_id == 381 & both$journal == "leco" & both$year == 2015] <- "leibniz university hannover"
+  both$inst[both$editor_id == 1480 & both$journal == "leco" & both$year == 2004] <- "roskilde university"
+  both$inst[both$editor_id == 2316 & both$journal == "leco" & both$year == 2015] <- "swiss federal institute for forest snow and landscape research wsl"
+  both$inst[both$editor_id == 1990 & both$journal == "leco" & both$year == 2015] <- "michigan state university"
+  both$inst[both$editor_id == 1520 & both$journal == "leco" & both$year == 2015] <- "north carolina state university"
+  both$inst[both$editor_id == 448 & both$journal == "leco" & both$year == 2004] <- "usfs rocky mountain research station"
+  both$inst[both$editor_id == 3067 & both$journal == "leco" & both$year == 1997] <- "appalachian environmental laboratory"
+  both$inst[both$editor_id == 2387 & both$journal == "leco" & (both$year >= 1987 & both$year <= 1992)] <- "institut botanique"
+  # both$inst[both$editor_id==2387 & both$journal=="leco" & both$year==1992]<-"institut botanique"
+  both$inst[both$editor_id == 1192 & both$journal == "leco" & (both$year >= 1987 & both$year <= 1996)] <- "institute geography and geoecology"
+  # both$inst[both$editor_id==1192 & both$journal=="leco" & both$year==1996]<-"institute geography and geoecology"
+  both$inst[both$editor_id == 3744 & both$journal == "leco" & (both$year >= 1987 & both$year <= 1997)] <- "technical university of munich"
+  # both$inst[both$editor_id==3744 & both$journal=="leco" & both$year==1997]<-"technical university of munich"
+  both$inst[both$editor_id == 1080 & both$journal == "leco" & both$year == 2015] <- "agroscope"
+  both$country[both$editor_id == 1080 & both$journal == "leco" & both$year == 2015] <- "netherlands"
+  both$inst[both$editor_id == 492 & both$journal == "leco" & both$year == 1997] <- "south dakota state university"
+  both$inst[both$editor_id == 1089 & both$journal == "leco" & both$year == 2004] <- "swiss federal institute for forest snow and landscape research wsl"
+  both$inst[both$editor_id == 3126 & both$journal == "leco" & both$year == 2015] <- "university of bari"
+  both$inst[both$editor_id == 3592 & both$journal == "leco" & both$year == 2015] <- "university of richmond"
+  both$last_name[both$editor_id == 3592 & both$journal == "leco" & both$year == 2015] <- "lookingbill"
+  both$inst[both$editor_id == 2674 & both$journal == "leco" & (both$year >= 1993 & both$year <= 1997)] <- "hiroshima university"
+  # both$inst[both$editor_id==2674 & both$journal=="leco" & both$year==1997]<-"hiroshima university"
+  both$inst[both$editor_id == 1781 & both$journal == "leco" & both$year == 2004] <- "university of michigan"
+  both$inst[both$editor_id == 2885 & both$journal == "leco" & (both$year >= 1993 & both$year <= 1997)] <- "institute for forestry and nature research"
+  # both$inst[both$editor_id==2885 & both$journal=="leco" & both$year<=1997]<-"institute for forestry and nature research"
+  both$inst[both$editor_id == 2885 & both$journal == "leco" & both$year == 2004] <- "alterra research institute for the green world"
+  both$inst[both$editor_id == 177 & both$journal == "leco" & (both$year >= 1987 & both$year <= 1997)] <- "ets ingenieros de montes"
+  # both$inst[both$editor_id==177 & both$journal=="leco" & both$year==1997]<-"ets ingenieros de montes"
+  both$inst[both$editor_id == 2907 & both$journal == "leco" & (both$year >= 1987 & both$year <= 1992)] <- "university of new mexico"
+  # both$inst[both$editor_id==2907 & both$journal=="leco" & both$year==1992]<-"university of new mexico"
+  both$inst[both$editor_id == 3791 & both$journal == "leco" & both$year == 2004] <- "colorado state university"
+  both$inst[both$editor_id == 2546 & both$journal == "leco" & (both$year >= 1987 & both$year <= 1997)] <- "center of biological and ecological sciences"
+  # both$inst[both$editor_id==2546 & both$journal=="leco" & both$year==1997]<-"center of biological and ecological sciences"
+  both$inst[both$editor_id == 571 & both$journal == "leco" & (both$year >= 1987 & both$year <= 1992)] <- "harvard university"
+  # both$inst[both$editor_id==571 & both$journal=="leco" & both$year==1992]<-"harvard university"
+  both$inst[both$editor_id == 1906 & both$journal == "leco" & both$year == 2015] <- "harvard university"
+  both$inst[both$editor_id == 371 & both$journal == "leco" & both$year == 2013] <- "arizona state university"
+  both$inst[both$editor_id == 2580 & both$journal == "leco"] <- "university of wisconsin madison"
+  both$inst[both$editor_id == 3756 & both$journal == "funecol"] <- "university of wisconsin madison"
+  both$inst[both$editor_id == 111 & both$journal == "ecology"] <- "university of wisconsin madison"
+  both$inst[both$editor_id == 111 & both$journal == "amnat"] <- "university of wisconsin madison"
+  both$inst[both$editor_id == 2159 & both$journal == "ajb"] <- "university of wisconsin madison"
+  both$inst[both$editor_id == 955 & both$journal == "jecol"] <- "university of wisconsin madison"
+  both$inst[both$editor_id == 3294 & both$journal == "amnat"] <- "university of wisconsin madison"
+  both$inst[both$editor_id == 1661 & both$journal == "oecol"] <- "university of wisconsin madison"
+  both$inst[both$editor_id == 1815 & both$journal == "funecol"] <- "university of wisconsin madison"
+  both$inst[both$editor_id == 874 & both$journal == "ajb"] <- "university of wisconsin madison"
+  both$inst[both$editor_id == 1134 & both$journal == "jbiog"] <- "university of wisconsin madison"
+  both$inst[both$editor_id == 901 & both$journal == "oecol"] <- "university of wisconsin madison"
+
+  both$inst[both$editor_id == 3912 & both$journal == "leco" & (both$year >= 1993 & both$year <= 1997)] <- "oregon state university"
+  # both$inst[both$editor_id==3912 & both$journal=="leco" & both$year==1997]<-"oregon state university"
+  both$inst[both$editor_id == 602 & both$journal == "leco" & both$year == 2015] <- "university of wolverhampton"
+  both$inst[both$editor_id == 3824 & both$journal == "leco" & both$year == 2015] <- "chinese academy of sciences"
+  both$inst[both$editor_id == 1428 & both$journal == "leco" & (both$year >= 1987 & both$year <= 1992)] <- "international institute for aerospace survey and earth sciences"
+  # both$inst[both$editor_id==1428 & both$journal=="leco" & both$year==1992]<-"international institute for aerospace survey and earth sciences"
+  both$inst[both$editor_id == 1045 & both$journal == "leco" & (both$year >= 1987 & both$year <= 1992)] <- "university of arizona"
+  # both$inst[both$editor_id==1045 & both$journal=="leco" & both$year==1992]<-"university of arizona"
+  both$inst[both$editor_id == 3669 & both$journal == "oecol" & both$year == 2013] <- "estonian university of life sciences"
+
+  both$first_name[both$last_name == "barry" & both$journal == "marecol" & (both$year == 2006 | both$year == 2005)] <- "j"
+  both$middle_name[both$last_name == "barry" & both$journal == "marecol" & (both$year == 2006 | both$year == 2005)] <- "p"
+
+
+  both$first_name[both$last_name == "cadena" & both$journal == "condor"] <- "c"
+  both$middle_name[both$last_name == "cadena" & both$journal == "condor"] <- "daniel"
+  both$last_name[both$last_name == "cadenaordonez" & both$journal == "auk"] <- "cadena"
+  both$first_name[both$last_name == "cadena" & both$journal == "auk"] <- "c"
+  both$middle_name[both$last_name == "cadena" & both$journal == "auk"] <- "daniel"
+
+  both$first_name[both$last_name == "arnold" & both$first_name == "w" & both$journal == "auk"] <- "todd"
+  both$middle_name[both$last_name == "arnold" & both$first_name == "todd" & both$journal == "auk"] <- "w"
+
+  both$first_name[both$last_name == "dumbacher" & both$journal == "auk"] <- "john"
+
+
+  both$inst[both$editor_id == 898 & both$inst == "conicet consejo nacional de investigaciones cientificas y tecnicas"] <- "conicet cct mendoza"
+  both$inst[both$last_name == "areta" & both$inst == "conicet consejo nacional de investigaciones cientificas y tecnicas"] <- "conicet ibigeo"
+  both$inst[both$editor_id == 2340 & both$inst == "csiro commonwealth scientific and industrial research organisation"] <- "csiro sustainable ecosystems"
+  both$inst[both$editor_id == 1693 & both$inst == "csiro commonwealth scientific and industrial research organisation"] <- "csiro forest research"
+  both$inst[both$editor_id == 196 & both$inst == "csiro commonwealth scientific and industrial research organisation"] <- "csiro entomology"
+  both$inst[both$last_name == "thrall" & both$year == 2010] <- "csiro plant industry"
+  both$inst[both$last_name == "rothstein" & both$inst == "university of california"] <- "university of california santa barbara"
+  both$inst[both$last_name == "powell" & both$inst == "university of alaska"] <- "university of alaska fairbanks"
+  both$inst[both$editor_id == 2281 & both$inst == "csiro commonwealth scientific and industrial research organisation"] <- "csiro land and water"
+  # both$inst[both$editor_id==2281 & both$journal=="jecol" & (both$year>1987 & both$year<1994)]<-"csiro land and water"
+  both$inst[both$editor_id == 2281 & both$unit == "division of wildlife and ecology" & both$city == "lyneham"] <- "csiro wildlife and ecology"
+  both$inst[both$editor_id == 2281 & both$city == "lyneham"] <- "csiro wildlife and ecology"
+  both$inst[both$last_name == "austin" & both$city == "lyneham"] <- "csiro wildlife and ecology"
+  both$inst[both$last_name == "austin" & both$journal == "jecol" & (both$year > 1987 & both$year < 1994)] <- "csiro wildlife and ecology"
+  # both$inst[both$editor_id==2281 & (both$year==1988 | both$year==1989) & both$journal=="jecol"]<-"csiro wildlife and ecology"
+  both$inst[both$editor_id == 2868 & both$inst == "csiro commonwealth scientific and industrial research organisation" & both$city == "canberra"] <- "csiro land and water"
+  both$inst[both$editor_id == 2281 & both$city == "canberra"] <- "csiro land and water"
+  both$inst[both$editor_id == 2281 & both$inst == "csiro commonwealth scientific and industrial research organisation"] <- "csiro land and water"
+  both$inst[both$editor_id == 3598 & both$inst == "csiro commonwealth scientific and industrial research organisation"] <- "csiro sustainable ecosystems"
+  both$inst[both$editor_id == 392 & both$inst == "csiro commonwealth scientific and industrial research organisation"] <- "csiro forest research"
+  both$inst[both$editor_id == 1160 & both$inst == "csiro commonwealth scientific and industrial research organisation"] <- "csiro wildlife and ecology"
+  both$inst[both$editor_id == 3091 & both$inst == "csiro commonwealth scientific and industrial research organisation"] <- "csiro wildlife and ecology"
+  both$inst[both$editor_id == 911 & both$inst == "csiro commonwealth scientific and industrial research organisation"] <- "csiro sustainable ecosystems"
+  both$inst[both$editor_id == 1094 & both$inst == "csiro commonwealth scientific and industrial research organisation"] <- "csiro ecosystem sciences"
+  both$inst[both$last_name == "doerr" & both$inst == "csiro commonwealth scientific and industrial research organisation"] <- "csiro ecosystem sciences"
+  both$inst[both$editor_id == 1493 & both$inst == "csiro commonwealth scientific and industrial research organisation"] <- "csiro forest research"
+  both$inst[both$editor_id == 2867 & both$inst == "csiro commonwealth scientific and industrial research organisation"] <- "university of adelaide"
+  both$inst[both$editor_id == 3091 & both$inst == "csiro commonwealth scientific and industrial research organisation"] <- "csiro wildlife and ecology"
+  both$inst[both$editor_id == 2340 & both$inst == "csiro commonwealth scientific and industrial research organisation"] <- "csiro computing research"
+  both$inst[both$editor_id == 2699 & both$inst == "csiro commonwealth scientific and industrial research organisation"] <- "csiro plant industry"
+  both$inst[both$last_name == "thrall" & both$inst == "csiro commonwealth scientific and industrial research organisation"] <- "csiro plant industry"
+  both$inst[both$editor_id == 342 & both$inst == "james cook university"] <- "james cook university brisbane"
+  both$inst[both$editor_id == 1561 & both$inst == "james cook university"] <- "james cook university townsville"
+  both$inst[both$editor_id == 3027 & both$inst == "james cook university"] <- "james cook university townsville"
+  both$inst[both$last_name == "crozier" & both$inst == "james cook university"] <- "james cook university townsville"
+  both$inst[both$editor_id == 3305 & both$inst == "james cook university"] <- "james cook university townsville"
+  both$inst[both$editor_id == 2745 & both$inst == "james cook university"] <- "james cook university brisbane"
+  both$inst[both$editor_id == 621 & both$inst == "james cook university"] <- "james cook university townsville"
+  both$inst[both$editor_id == 2971 & both$inst == "james cook university"] <- "james cook university townsville"
+  both$inst[both$editor_id == 3857 & both$inst == "james cook university"] <- "james cook university townsville"
+  both$inst[both$editor_id == 2095 & both$inst == "north carolina"] <- "university of north carolina chapel hill"
+  both$inst[both$last_name == "petit" & both$inst == "smithsonian institution"] <- "smithsonian national zoological park"
+  both$inst[both$last_name == "fleischer" & both$inst == "smithsonian institution"] <- "smithsonian national zoological park"
+  both$inst[both$editor_id == 323 & both$inst == "smithsonian institute"] <- "smithsonian institution national museum of natural history"
+  both$inst[both$editor_id == 3593 & both$inst == "smithsonian institute"] <- "smithsonian institution"
+  both$inst[both$last_name == "sedinger" & both$inst == "university of alaska"] <- "university of alaska fairbanks"
+  both$inst[both$editor_id == 3207 & both$inst == "university of alaska"] <- "university of alaska fairbanks"
+  both$inst[both$editor_id == 1062 & both$inst == "university of alaska"] <- "university of alaska fairbanks"
+  both$inst[both$editor_id == 1062 & both$inst == "university of california"] <- "university of california berkeley"
+  both$inst[both$editor_id == 1561 & both$inst == "university of california"] <- "university of california santa barbara"
+  both$inst[both$editor_id == 1871 & both$inst == "university of california"] <- "university of california los angeles"
+  both$inst[both$editor_id == 1886 & both$inst == "university of california"] <- "university of california davis"
+  both$inst[both$editor_id == 3330 & both$inst == "university of california"] <- "university of california irvine"
+  both$inst[both$editor_id == 3333 & both$inst == "university of california"] <- "university of california santa barbara"
+  both$inst[both$editor_id == 3444 & both$inst == "university of california"] <- "university of california santa barbara"
+  both$inst[both$editor_id == 3786 & both$inst == "university of california"] <- "university of california santa barbara"
+  both$inst[both$editor_id == 3804 & both$inst == "university of california"] <- "university of california berkeley"
+  both$inst[both$last_name == "eadie" & both$inst == "university of california"] <- "university of california davis"
+  both$inst[both$editor_id == 566 & both$inst == "university of california"] <- "university of california davis"
+  both$inst[both$editor_id == 1655 & both$inst == "university of california"] <- "university of california danr"
+  both$inst[both$editor_id == 1220 & both$inst == "university of california"] <- "university of california los angeles"
+  both$inst[both$editor_id == 2058 & both$inst == "university of california"] <- "university of california los angeles"
+  both$inst[both$editor_id == 2525 & both$inst == "university of california"] <- "university of california riverside"
+  both$inst[both$editor_id == 2411 & both$inst == "university of hawaii"] <- "university of hawaii manoa"
+  both$inst[both$editor_id == 672 & both$inst == "university of hawaii"] <- "university of hawaii manoa"
+  both$inst[both$editor_id == 2097 & both$inst == "university of massachusetts"] <- "university of massachusetts amherst"
+  both$inst[both$last_name == "kroodsma" & both$inst == "university of massachusetts"] <- "university of massachusetts amherst"
+  both$inst[both$last_name == "byers" & both$inst == "university of massachusetts"] <- "university of massachusetts amherst"
+  both$inst[both$editor_id == 1435 & both$inst == "university of massachusetts"] <- "university of massachusetts amherst"
+  both$inst[both$editor_id == 1025 & both$inst == "university of minnesota"] <- "university of minnesota twin cities"
+  both$inst[both$editor_id == 1799 & both$inst == "university of minnesota"] <- "university of minnesota twin cities"
+  both$inst[both$editor_id == 2035 & both$inst == "university of minnesota"] <- "university of minnesota twin cities"
+  both$inst[both$editor_id == 3218 & both$inst == "university of minnesota"] <- "university of minnesota twin cities"
+  both$inst[both$editor_id == 972 & both$inst == "university of minnesota"] <- "university of minnesota twin cities"
+  both$inst[both$editor_id == 891 & both$inst == "university of minnesota"] <- "university of minnesota twin cities"
+  both$inst[both$editor_id == 3360 & both$inst == "university of minnesota"] <- "university of minnesota twin cities"
+  both$inst[both$last_name == "arnold" & both$inst == "university of minnesota"] <- "university of minnesota twin cities"
+  both$inst[both$editor_id == 1817 & both$inst == "university of minnesota"] <- "university of minnesota twin cities"
+  both$inst[both$editor_id == 48 & both$inst == "university of minnesota"] <- "university of minnesota twin cities"
+  both$inst[both$editor_id == 936 & both$inst == "university of minnesota"] <- "university of minnesota twin cities"
+  both$inst[both$editor_id == 1506 & both$inst == "university of minnesota"] <- "university of minnesota twin cities"
+  both$inst[both$editor_id == 52 & both$inst == "university of minnesota"] <- "university of minnesota twin cities"
+  both$inst[both$editor_id == 792 & both$inst == "university of minnesota"] <- "university of minnesota twin cities"
+  both$inst[both$editor_id == 1781 & both$inst == "university of minnesota"] <- "university of minnesota twin cities"
+  both$inst[both$editor_id == 1200 & both$inst == "university of minnesota"] <- "university of minnesota twin cities"
+  both$inst[both$editor_id == 2872 & both$inst == "university of minnesota"] <- "university of minnesota twin cities"
+  both$inst[both$editor_id == 2905 & both$inst == "university of minnesota"] <- "university of minnesota twin cities"
+  both$inst[both$last_name == "klicka" & both$inst == "university of nevada"] <- "university of nevada las vegas"
+  both$inst[both$editor_id == 2253 & both$inst == "university of nevada"] <- "university of nevada las vegas"
+  both$inst[both$editor_id == 2352 & both$inst == "university of north carolina"] <- "university of north carolina chapel hill"
+  both$inst[both$editor_id == 820 & both$inst == "university of north carolina"] <- "university of north carolina chapel hill"
+  both$inst[both$editor_id == 3200 & both$inst == "university of south carolina"] <- "university of south carolina columbia"
+  both$inst[both$editor_id == 1749 & both$inst == "university of texas"] <- "university of texas austin"
+  both$inst[both$editor_id == 3137 & both$inst == "university of texas"] <- "university of texas austin"
+  both$inst[both$editor_id == 3535 & both$inst == "university of texas"] <- "university of texas austin"
+  both$inst[both$editor_id == 723 & both$inst == "university of texas"] <- "university of texas austin"
+  both$inst[both$editor_id == 1691 & both$inst == "university of texas"] <- "university of texas san antonio"
+  both$inst[both$editor_id == 3229 & both$inst == "university of washington"] <- "university of washington seattle"
+  both$inst[both$editor_id == 3179 & both$inst == "university of washington"] <- "university of washington seattle"
+  both$inst[both$editor_id == 3487 & both$inst == "university of washington"] <- "university of washington seattle"
+  both$inst[both$editor_id == 858 & both$inst == "university of washington"] <- "university of washington seattle"
+  both$inst[both$editor_id == 3183 & both$inst == "university of washington"] <- "university of washington seattle"
+  both$inst[both$editor_id == 3001 & both$inst == "university of washington"] <- "university of washington seattle"
+  both$inst[both$editor_id == 1213 & both$inst == "university of washington"] <- "university of washington seattle"
+  both$inst[both$editor_id == 1668 & both$inst == "university of washington"] <- "university of washington seattle"
+  both$inst[both$editor_id == 590 & both$inst == "usda us department of agriculture"] <- "usda ars"
+  both$inst[both$editor_id == 1799 & both$inst == "usfs us forest service"] <- "usfs research and development"
+  both$inst[both$editor_id == 467 & both$inst == "usfs us forest service"] <- "usfs southern research station"
+  both$inst[both$editor_id == 1327 & both$inst == "usfs us forest service"] <- "usfs southern research station"
+  both$inst[both$editor_id == 446 & both$inst == "usfs us forest service"] <- "usfs pacific southwest research station"
+  both$inst[both$editor_id == 3341 & both$inst == "usfs us forest service"] <- "usfs pacific southwest research station"
+  both$inst[both$editor_id == 2178 & both$inst == "usfs us forest service"] <- "usfs northern research station"
+  both$inst[both$editor_id == 2170 & both$inst == "usfs us forest service"] <- "usfs northern research station"
+  both$inst[both$editor_id == 724 & both$inst == "usfs us forest service"] <- "usfs northern research station"
+  both$inst[both$editor_id == 798 & both$inst == "usfs us forest service"] <- "usfs rocky mountain research station"
+  both$inst[both$editor_id == 3310 & both$inst == "usfs us forest service"] <- "usfs rocky mountain research station"
+  both$inst[both$editor_id == 1783 & both$inst == "usfs us forest service"] <- "usfs rocky mountain research station"
+  both$inst[both$editor_id == 448 & both$inst == "usfs us forest service"] <- "usfs rocky mountain research station"
+  both$inst[both$editor_id == 2613 & both$inst == "usfs us forest service"] <- "usfs pacific northwest research station"
+  both$inst[both$editor_id == 2555 & both$inst == "usfs us forest service"] <- "usfs rocky mountain research station"
+  both$inst[both$editor_id == 3310 & both$inst == "usfs us forest service"] <- "usfs rocky mountain research station"
+  both$inst[both$editor_id == 135 & both$inst == "usfs us forest service"] <- "usfs northern research station"
+  both$inst[both$editor_id == 448 & both$inst == "usfs us forest service"] <- "usfs rocky mountain research station"
+  both$inst[both$last_name == "monahan" & both$inst == "usfs us forest service"] <- "usfs rocky mountain research station"
+  both$inst[both$editor_id == 766 & both$inst == "usfs us forest service"] <- "usfs northern research station"
+  both$inst[both$editor_id == 1566 & both$inst == "usfs us forest service"] <- "usfs institute of pacific islands dorestry"
+  both$inst[both$editor_id == 1107 & both$inst == "usfs us forest service"] <- "usfs pacific northwest research station"
+  both$inst[both$editor_id == 2178 & both$inst == "usfs us forest service"] <- "usfs northern research station"
+  both$inst[both$editor_id == 2075 & both$inst == "usfs us forest service"] <- "usfs southern research station"
+  both$inst[both$editor_id == 671 & both$inst == "usfs us forest service"] <- "usfs northern research station"
+  both$inst[both$editor_id == 975 & both$inst == "usfs us forest service"] <- "usfs northern research station"
+  both$inst[both$editor_id == 1127 & both$inst == "us forest serv"] <- "usfs international institute of tropical forestry"
+  both$inst[both$editor_id == 139 & both$inst == "usfs us forest service"] <- "usfs international institute of tropical forestry"
+  both$inst[both$editor_id == 909 & both$inst == "usfs us forest service"] <- "usfs pacific southwest research station"
+  both$inst[both$editor_id == 139 & both$inst == "usfs us forest service"] <- "usfs international institute of tropical forestry"
+  both$inst[both$editor_id == 1580 & both$inst == "usfs us forest service"] <- "usfs pacific northwest research station"
+  both$inst[both$editor_id == 341 & both$inst == "usfs us forest service"] <- "usfs northern research station"
+  both$inst[both$editor_id == 1255 & both$inst == "usfs us forest service"] <- "usfs southern research station"
+  both$inst[both$editor_id == 1909 & both$inst == "usfs us forest service"] <- "usfs southern research station"
+  both$inst[both$editor_id == 3383 & both$inst == "usfs us forest service"] <- "usfs southern research station"
+  both$inst[both$editor_id == 1604 & both$inst == "usgs united states geological survey"] <- "usgs national wetlands research center"
+  both$inst[both$editor_id == 1786 & both$inst == "usgs united states geological survey"] <- "usgs patuxent wildlife research center"
+  both$inst[both$editor_id == 663 & both$inst == "usgs united states geological survey"] <- "usgs national wetlands research center"
+  both$inst[both$editor_id == 663 & both$journal == "amnat" & (both$year > 2005 & both$year < 2010)] <- "usgs national wetlands research center"
+  both$inst[both$editor_id == 1604 & both$inst == "usgs united states geological survey"] <- "usgs national wetlands research center"
+  both$inst[both$last_name == "piatt" & both$inst == "usgs united states geological survey"] <- "usgs alaska science center"
+  both$inst[both$last_name == "weathers" & both$inst == "university of california"] <- "university of california davis"
+  both$inst[both$last_name == "gutierrez" & both$inst == "university of minnesota"] <- "university of minnesota twin cities"
+  both$inst[both$editor_id == 1854 & both$inst == "usgs united states geological survey"] <- "usgs patuxent wildlife research center"
+  both$inst[both$editor_id == 2037 & both$inst == "usgs united states geological survey"] <- "usgs western ecological research center"
+  both$inst[both$editor_id == 2037 & both$journal == "ecology" & (both$year > 2005 & both$year < 2016)] <- "usgs western ecological research center"
+  both$inst[both$last_name == "lafferty" & both$first_name == "kevin" & both$year == 2005] <- "usgs western ecological research center"
+  both$inst[both$editor_id == 3643 & both$inst == "usgs united states geological survey"] <- "usgs fort collins science center"
+  both$inst[both$editor_id == 1848 & both$inst == "usgs united states geological survey"] <- "usgs patuxent wildlife research center"
+  both$inst[both$editor_id == 486 & both$inst == "usgs united states geological survey"] <- "usgs florence bascom geoscience center"
+
+
+  both$inst[both$last_name == "niewiarowski" & both$inst == "ohio"] <- "university of akron"
+  both$inst[both$editor_id == 1254 & both$inst == "ohio"] <- "ohio university"
+  both$inst[both$editor_id == 2835] <- "pennsylvania state university"
+  both$inst[both$editor_id == 3101] <- "university of washington seattle"
+  both$inst[both$editor_id == 1612] <- "university of texas arlington"
+  both$inst[both$editor_id == 697] <- "suny stony brook"
+  both$inst[both$editor_id == 3069] <- "suny stony brook"
+  both$inst[both$editor_id == 1364 & both$year == 2000] <- "university of freiburg"
+  both$first_name[both$editor_id == 1364] <- "hanns-christof"
+
+  both$inst[both$editor_id == 1278] <- "suny stony brook"
+  both$inst[both$editor_id == 3807] <- "suny binghamton"
+  both$inst[both$editor_id == 1404] <- "finnish game and fisheries research institute"
+  both$unit[both$editor_id == 1404] <- "oulu game and fisheries research"
+
+
+
+
+  both$inst[both$last_name == "hepinstall-cymerman" & both$journal == "leco"] <- "university of georgia"
+  both$inst[both$last_name == "cymerman" & both$journal == "leco"] <- "university of georgia"
+  both$city[both$last_name == "cymerman" & both$journal == "leco"] <- "athens"
+  both$inst[both$last_name == "tjoelker" & both$journal == "funecol" & both$year > 2011] <- "western sydney university"
+  both$inst[both$inst == "carnegie institution" & both$journal == "gcb"] <- "carnegie institution of washington"
+
+
+  both$inst[both$inst == "national autonomous universidad nacional autonoma de mexico"] <- "universidad nacional autonoma de mexico"
+
+
+  both$inst[(both$editor_id == 500 | both$editor_id == 876 | both$editor_id == 1125 |
+    both$editor_id == 1779 | both$editor_id == 2295 | both$editor_id == 2607 |
+    both$editor_id == 2841 | both$editor_id == 3202 | both$editor_id == 3234 |
+    both$editor_id == 3342 | both$editor_id == 3425 | both$editor_id == 7) &
+    both$inst == "university of british columbia"] <- "university of british columbia vancouver"
+
+
+  both$inst[both$last_name == "martin" &
+    both$first_name == "kathy" &
+    both$inst == "university of british columbia"] <- "university of british columbia vancouver"
+
+
+
+
+
+
+
+
+
+
+
+  both$first_name[both$editor_id == 3378] <- "s"
+
+
+
+  # weisser vs weiser
+
+
+  both$inst[both$last_name == "weisser" & both$journal == "oecol" &
+    (both$year > 2006 & both$year < 2014)] <- "university of jena"
+  both$editor_id[both$last_name == "weisser" & both$journal == "oecol" &
+    (both$year > 2006 & both$year < 2015)] <- NA
+  #
+  # both$last_name[both$last_name=="de kroon" & both$first_name=="hans"]<-"hans"
+  #
+  # both$last_name[both$last_name=="van groenendael" & both$first_name=="jan"]<-"vangroenendael"
+  #
+  # both$last_name[both$last_name=="van der meijden" & both$first_name=="eddy"]<-"vandermeijden"
+  #
+  # both$last_name[both$last_name=="van der meijden" & both$first_name=="eddy"]<-"vandermeijden"
+  #
+  # both$last_name[both$last_name=="van der meijden" & both$first_name=="eddy"]<-"vandermeijden"
+
+  both$last_name <- gsub("[[:space:]]", "", both$last_name)
+
+
+
+
+
+  both$last_name[both$last_name == "weisser" & both$journal == "oecol" & (both$year > 1983 & both$year < 2007)] <- "weiser"
+  both$middle_name[both$last_name == "weiser" & both$journal == "oecol" &
+    both$year < 2007] <- NA
+
+  both <- both[!(both$editor_id == "3798" & both$journal == "oecol" & both$last_name == "weiser" & both$year > 2006), ]
+  both <- both[!(both$last_name == "mason" & both$first_name == "christoph" & both$journal == "jape"), ]
+  both <- both[!(both$last_name == "fernande-juricic" & both$journal == "jape" & both$year == 2010), ]
+  both <- both[!(both$editor_id == "1261" & both$journal == "oecol" & both$year == 1999), ]
+  both <- both[!(both$editor_id == "3669" & both$journal == "oecol" & both$year == 2012), ]
+  both <- both[!(both$editor_id == "2069" & both$journal == "plantecol" & both$year == 2007), ]
+  both <- both[!(both$editor_id == "1079" & both$journal == "plantecol" & both$year == 2007), ]
+  both <- both[!(both$editor_id == "100" & both$journal == "plantecol" & both$year == 1991), ]
+  both <- both[!(both$editor_id == "2896" & both$journal == "plantecol" & both$year == 2004), ]
+  both <- both[!(both$editor_id == "1057" & both$journal == "biocon" & both$year == 1985), ]
+  both <- both[!(both$editor_id == "56" & both$journal == "biocon" & both$year == 1985), ]
+  both <- both[!(both$editor_id == "2914" & both$journal == "biocon" & both$year == 1985), ]
+  both <- both[!(both$editor_id == "753" & both$journal == "biocon" & both$year == 1985), ]
+  both <- both[!(both$editor_id == "56" & both$journal == "biocon" & both$year == 1986), ]
+  both <- both[!(both$editor_id == "3355" & both$journal == "biocon" & both$year == 1998), ]
+  both <- both[!(both$editor_id == "1402" & both$journal == "oecol" & both$year == 2012), ]
+  both <- both[!(both$editor_id == "3944" & both$journal == "oecol" & both$year == 1992), ]
+  both <- both[!(both$editor_id == "1819" & both$journal == "bitr" & both$year == 1997), ]
+  both <- both[!(both$editor_id == "591" & both$journal == "evol" & both$year == 2015), ]
+  both <- both[!(both$editor_id == "2047" & both$journal == "jane" & both$year == 2012), ]
+  both <- both[!(is.na(both$editor_id) & both$journal == "jape" & both$last_name == "croxall"), ]
+  both <- both[!(both$editor_id == "3584" & both$journal == "leco" & both$year == 2015), ]
+  # on advisory board but not ed board
+  both <- both[!(both$editor_id == "371" & both$journal == "leco" & both$year == 2012), ]
+  both <- both[!(both$editor_id == "371" & both$journal == "leco" & both$year == 2013), ]
+  both <- both[!(both$editor_id == "23" & both$journal == "oecol" & both$year == 2011), ]
+  both <- both[!(both$last_name == "banks-lei" & both$journal == "jape" & both$year == 2013), ]
+
+
+
+  # country city unit corrections
+  both$city[both$unit == "ontario canada"] <- "gainesville"
+  both$state[both$unit == "ontario canada"] <- "fl"
+  both$unit[both$unit == "ontario canada"] <- "dept. of biology"
+  both$country[both$inst == "university of florida"] <- "usa"
+  both$country[both$city == "latvia"] <- "latvia"
+  both$city[both$city == "latvia"] <- NA
+  both$city[both$city == "ann arbon"] <- "ann arbor"
+
+  both$city <- gsub("st. ", "st ", both$city)
+  both$city <- gsub("saint ", "st ", both$city)
+  both$inst <- gsub("st. ", "st ", both$inst)
+  both$inst <- gsub("saint ", "st ", both$inst)
+  both$city <- gsub("saint ", "st ", both$city)
+  both$city <- gsub("ft. ", "fort ", both$city)
+  both$city <- gsub("ft c", "fort c ", both$city)
+
+  # both$city<-gsub("w\x9frzburg","wurzburg",both$city)
+  # both$city<-gsub("k\x9aln","cologne",both$city)
+  # both$city<-gsub("m\x9fnchen","munich",both$city)
+  # both$city<-gsub("g\x9attingen","gottingen",both$city)
+  # both$city<-gsub("z\x81rich","zurich",both$city)
+
+  # both$city<-tolower(both$city)
+
+  both$city <- gsub("edinburgh eh9 3jz", "edinburgh", both$city)
+  both$city <- gsub("quebec city", "quebec", both$city)
+  both$city <- gsub("fuzerbrook", "furzebrook", both$city)
+  both$city <- gsub("e lansing", "east lansing", both$city)
+  both$city <- gsub("hickory coners", "hickory corners", both$city)
+  both$city <- gsub("rodenbosch", "rondebosch", both$city)
+  both$city <- gsub("rodenbosch", "rondebosch", both$city)
+  both$city <- gsub("santa cruz, california, usa", "santa cruz", both$city)
+  both$city <- gsub("auburn, alabama, usa", "auburn", both$city)
+  both$city <- gsub("cambridge, massachusetts, usa", "cambridge", both$city)
+  both$city <- gsub("sheffield s10 2tn", "sheffield", both$city)
+  both$city <- gsub("mississippi state", "", both$city)
+  both$city <- gsub("storrs", "storrs", both$city)
+  both$city <- gsub("starrs", "storrs", both$city)
+  both$city <- gsub("champaign", "urbana-champaign", both$city)
+  both$city <- gsub("urbana", "urbana-champaign", both$city)
+  both$city <- gsub("guleph", "guelph", both$city)
+  both$city <- gsub("goettingen", "gottingen", both$city)
+  both$city <- gsub("osnabrück", "osnabruck", both$city)
+  both$city <- gsub("montana", "", both$city)
+  both$city <- gsub("antwerpen", "antwerp", both$city)
+  both$city <- gsub("brasília", "brasilia", both$city)
+  both$city <- gsub("p.r.", "", both$city)
+  both$city <- gsub("denmark", "", both$city)
+  both$city <- gsub("mexico d.f.", "mexico city", both$city)
+  both$city <- gsub("stockolm", "stockholm", both$city)
+  both$city <- gsub("nottinghamuk", "nottingham", both$city)
+  both$city <- gsub("stonybrook", "stony brook", both$city)
+  both$city <- gsub("tufts", "medford", both$city)
+  both$city <- gsub("tuscon", "tucson", both$city)
+  both$city <- gsub("new york city", "new york", both$city)
+  both$city <- gsub("notre dame", "south bend", both$city)
+
+  both$city <- gsub("st martin d'heres cedex", "st martin dheres cedex", both$city)
+  both$city <- gsub("st-jean-sur-richelieu", "st jean sur richelieu", both$city)
+
+  # notes
+  both$notes[both$city == "latvia"] <- NA
+  both$notes[both$editor_id == 130 & both$year == 1990] <- "inst was formerly oxford polytechnic"
+  both$notes[both$editor_id == 3395 & both$year == 1986] <- "not 100% regarding inst"
+  both$notes[both$editor_id == 289 & both$year == 1985] <- "not 100% regarding inst"
+  both$notes[both$editor_id == 722 & both$year == 1985] <- "not 100% regarding inst; city in 1993 paper & jrnl front mattter don't match"
+
+
+  both$editor_id[both$last_name == "fedler" & both$first_name == "anthony" & both$journal == "najfm"] <- NA
+  both$inst[both$inst == "university of wisconsin eauniversity of claire"] <- "university of wisconsin eau claire"
+
+  return(both)
 }

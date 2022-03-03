@@ -164,6 +164,8 @@ clean_AMNAT <- function(DATAFILE1,DATAFILE2) {
   
   
   
+  DATAFILE<-DATAFILE %>%
+    mutate(across(everything(), as.character))
   return(DATAFILE)
 }
 

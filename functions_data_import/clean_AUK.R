@@ -68,9 +68,11 @@ clean_AUK <- function(DATAFILE) {
     group_by(LAST_NAME,FIRST_NAME) %>% 
     mutate(STATE = ifelse((row_number()>1 & STATE=="missing"),NA, STATE))
   
+  DATAFILE$TITLE<-tolower(DATAFILE$TITLE)
   
   
-  
+  DATAFILE<-DATAFILE %>%
+    mutate(across(everything(), as.character)) 
   return(DATAFILE)
 }
 

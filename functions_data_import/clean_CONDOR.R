@@ -1,6 +1,6 @@
 #FUNCTION TO CLEAN AND PROCESS CONDOR
 clean_CONDOR <- function(DATAFILE) {
-  
+  # DATAFILE<-CONDOR_raw
   DATAFILE$JOURNAL<-"CONDOR"
   DATAFILE$editor_id<-NA
   DATAFILE<-DATAFILE %>% select(JOURNAL,YEAR, editor_id,EDITOR_TITLE,
@@ -73,6 +73,14 @@ clean_CONDOR <- function(DATAFILE) {
   
   
   
+  # names(DATAFILE)
+  # DATAFILE$TITLE<-as.factor(DATAFILE$TITLE)
+  # titles<-levels(DATAFILE$TITLE)
+  
+  DATAFILE$TITLE<-tolower(DATAFILE$TITLE)
+  
+  DATAFILE<-DATAFILE %>%
+    mutate(across(everything(), as.character))
   
   
   return(DATAFILE)

@@ -87,7 +87,8 @@ clean_MARECOL <- function(DATAFILE) {
     group_by(LAST_NAME,FIRST_NAME) %>% 
     mutate(COUNTRY = ifelse((row_number()>1 & COUNTRY=="missing"),NA, COUNTRY))
   
-  
+  DATAFILE<-DATAFILE %>%
+    mutate(across(everything(), as.character))
   
   return(DATAFILE)
 }

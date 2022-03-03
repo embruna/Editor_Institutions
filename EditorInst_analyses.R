@@ -1,26 +1,30 @@
 
-AnalysisData<-read_csv("./data_clean/InstitutionData_clean.csv")
-AnalysisData$JOURNAL<-as.factor(AnalysisData$JOURNAL)
-AnalysisData$INST<-as.factor(AnalysisData$INST)
-AnalysisData<-AnalysisData %>%    
-  filter(!JOURNAL %in% c("najfm","agronomy","marecol","auk","condor")) %>%
-  filter(!INST=="missing") %>% 
-  drop_na(INST) %>% 
-  select(-COUNTRY_Prior_Class,-geo.code,
-         -geo.code_Prior_Class,
-         -GENDER, -NOTES,-INST_CHECK)
+
+library(tidyverse)
+analysis_data<-read_csv("./data_clean/InstitutionData_clean.csv")
+colnames(analysis_data)<-tolower(colnames(analysis_data))
+
+analysis_data$journal<-as.factor(analysis_data$journal)
+analysis_data$inst<-as.factor(analysis_data$inst)
+analysis_data<-analysis_data %>%    
+  filter(!journal %in% c("najfm","agronomy","marecol","auk","condor")) %>%
+  filter(!inst=="missing") %>% 
+  drop_na(inst) %>% 
+  select(-country_prior_class,-geo.code,
+         # -geo.code_Prior_Class,
+         -gender, -notes,-inst_check)
 
 
-AnalysisData<-droplevels(AnalysisData)
+analysis_data<-droplevels(analysis_data)
 ##############################################################
 ##############################################################
 # UPLOAD & STANDARDIZE DATA ON CARNEGIE CLASSIFICATIONS
 ##############################################################
 ##############################################################
-Carnegie_raw<-read_csv("./Data/carnegie/CarnegCategories_2015.csv", col_names = TRUE)
+carnegie_raw<-read_csv("./Data/carnegie/CarnegCategories_2015.csv", col_names = TRUE)
 source("CarnegieCats.R")
-Carnegie<-CarnegieCats(Carnegie_raw)
-rm(Carnegie_raw)
+carnegie<-CarnegieCats(carnegie_raw)
+rm(carnegie_raw)
 
 ##############################################################
 ##############################################################
@@ -30,51 +34,51 @@ rm(Carnegie_raw)
 ##############################################################
 ##############################################################
 
-str(AnalysisData)
-AnalysisData$FIRST_NAME<-as.factor(AnalysisData$FIRST_NAME)
-AnalysisData$MIDDLE_NAME<-as.factor(AnalysisData$MIDDLE_NAME)
-AnalysisData$LAST_NAME<-as.factor(AnalysisData$LAST_NAME)
-AnalysisData$TITLE<-as.factor(AnalysisData$TITLE)
-AnalysisData$CATEGORY<-as.factor(AnalysisData$CATEGORY)
+str(analysis_data)
+analysis_data$first_name<-as.factor(analysis_data$first_name)
+analysis_data$middle_name<-as.factor(analysis_data$middle_name)
+analysis_data$last_name<-as.factor(analysis_data$last_name)
+analysis_data$title<-as.factor(analysis_data$title)
+analysis_data$category<-as.factor(analysis_data$category)
 
 ##############################################################
-FirstYear=1985
-LastYear=2014
-AnalysisData <- AnalysisData %>% filter(YEAR>0|is.na(YEAR)==FALSE) %>% filter(YEAR>=FirstYear) %>% filter(YEAR<=LastYear)
-summary(AnalysisData$YEAR)
+first_year=1985
+last_year=2014
+analysis_data <- analysis_data %>% filter(year>0|is.na(year)==FALSE) %>% filter(year>=first_year) %>% filter(year<=last_year)
+summary(analysis_data$year)
 
-# HOW MANY JOURNALS AND WHAT ARE THEY
-jrnls<-AnalysisData %>% summarise(n_distinct(JOURNAL))
-jrnls_list<-AnalysisData %>% 
-  group_by(JOURNAL) %>% 
-  summarize(n_distinct(JOURNAL))
+# HOW MANY journalS AND WHAT ARE THEY
+jrnls<-analysis_data %>% summarise(n_distinct(journal))
+jrnls_list<-analysis_data %>% 
+  group_by(journal) %>% 
+  summarize(n_distinct(journal))
 jrnls_list
 
-# EDS - HOW MANY AND HOW MANY PER JOURNAL
-eds<-AnalysisData %>% summarise(n_distinct(editor_id))
+# EDS - HOW MANY AND HOW MANY PER journal
+eds<-analysis_data %>% summarise(n_distinct(editor_id))
 eds
 
-eds_per_jrnl<-AnalysisData %>% 
-  group_by(JOURNAL) %>% 
+eds_per_jrnl<-analysis_data %>% 
+  group_by(journal) %>% 
   summarize(n_eds=n_distinct(editor_id)) %>% 
   arrange(desc(n_eds))
 eds_per_jrnl
 
-# INST and No PER JOURNAL
-No_Inst<-AnalysisData %>% summarise(n_distinct(INST))
+# inst and No PER journal
+No_Inst<-analysis_data %>% summarise(n_distinct(inst))
 No_Inst
 
-inst_per_jrnl<-AnalysisData %>% 
-  group_by(JOURNAL) %>% 
-  summarize(n_inst=n_distinct(INST)) %>% 
+inst_per_jrnl<-analysis_data %>% 
+  group_by(journal) %>% 
+  summarize(n_inst=n_distinct(inst)) %>% 
   arrange(desc(n_inst))
 inst_per_jrnl
 
 
-# INST PER EDITOR
-inst_per_ed<-AnalysisData %>% 
-  group_by(JOURNAL) %>% 
-  summarize(n_eds=n_distinct(editor_id),n_inst=n_distinct(INST)) %>% 
+# inst PER EDITOR
+inst_per_ed<-analysis_data %>% 
+  group_by(journal) %>% 
+  summarize(n_eds=n_distinct(editor_id),n_inst=n_distinct(inst)) %>% 
   mutate(inst_per_ed=n_inst/n_eds) %>% 
   arrange((inst_per_ed))
 inst_per_ed
@@ -82,21 +86,21 @@ inst_per_ed
 
 
 # Total Number of Inst (all jrnls pooled)  vs. Year
-InstPerYr<-AnalysisData %>% 
-  group_by(YEAR) %>% 
-  summarize(InstPerYear = n_distinct(INST))
+InstPerYr<-analysis_data %>% 
+  group_by(year) %>% 
+  summarize(InstPerYear = n_distinct(inst))
 InstPerYr
 
-EdsPerYr<-AnalysisData %>% 
-  group_by(YEAR) %>% 
+EdsPerYr<-analysis_data %>% 
+  group_by(year) %>% 
   summarize(EdsPerYear = n_distinct(editor_id))
 EdsPerYr
 
 
 # Total "Editorial Years" for each Inst
-EdsByInst<-AnalysisData %>% 
-  select(INST,editor_id) %>% 
-  count(INST) %>% 
+EdsByInst<-analysis_data %>% 
+  select(inst,editor_id) %>% 
+  count(inst) %>% 
   arrange(desc(n)) %>% 
   mutate(perc=n/sum(n)*100)
 EdsByInst
@@ -109,9 +113,9 @@ EdsByInst_topX
 
 
 # Inst of individual editors (accross all years)
-Inst_by_Ed<-AnalysisData %>% 
-  select(INST,editor_id,COUNTRY) %>% 
-  group_by(INST,COUNTRY) %>% 
+Inst_by_Ed<-analysis_data %>% 
+  select(inst,editor_id,country) %>% 
+  group_by(inst,country) %>% 
   summarize(n=n_distinct(editor_id)) %>% 
   arrange(desc(n)) %>% 
   ungroup() %>% 
@@ -126,34 +130,59 @@ Inst_by_Ed_topY<-Inst_by_Ed %>%
 Inst_by_Ed_topY
 
 
-Ed_by_name<-AnalysisData %>% 
-  group_by(FIRST_NAME) %>% 
+Ed_by_name<-analysis_data %>% 
+  group_by(first_name) %>% 
   summarize(n=n_distinct(editor_id)) %>% 
-  arrange(desc(n))
+  arrange(desc(n)) %>% 
+  mutate(cumulative=cumsum(n),cumper=cumulative/sum(n)*100) 
 Ed_by_name
 
 
-
-Ed_by_country<-AnalysisData %>% 
-  group_by(COUNTRY) %>% 
+Ed_by_name_LAST<-analysis_data %>% 
+  group_by(last_name) %>% 
   summarize(n=n_distinct(editor_id)) %>% 
-  arrange(desc(n))
+  arrange(desc(n)) %>% 
+  mutate(cumulative=cumsum(n),cumper=cumulative/sum(n)*100) 
+Ed_by_name_LAST
+
+
+
+editors <- analysis_data %>% select(first_name,last_name,middle_name,editor_id)
+years_per_person<-analysis_data %>% 
+  group_by(editor_id) %>% 
+  summarize(yrs=n()) %>% 
+  left_join(editors) %>% 
+  group_by(editor_id) %>%
+  slice(n=1) %>% 
+  arrange(desc(yrs))
+years_per_person
+  mutate(cumulative=cumsum(n),cumper=cumulative/sum(n)*100) 
+Ed_by_name_LAST
+
+
+
+
+Ed_by_country<-analysis_data %>% 
+  group_by(country) %>% 
+  summarize(n=n_distinct(editor_id)) %>% 
+  arrange(desc(n)) %>% 
+  mutate(cumulative=cumsum(n),cumper=cumulative/sum(n)*100) 
 Ed_by_country
 
 ##############################################################
 ##############################################################
 
-# ANALYSIS - ADD COUNTRY CODES AND WORLD BANK CATEGORIES
+# ANALYSIS - ADD country CODES AND WORLD BANK CATEGORIES
 
 ##############################################################
 ##############################################################
-
+analysis_data<-analysis_data %>% rename("COUNTRY"="country")
 source("./functions_analysis/Country.Codes.R")
-AnalysisData<-Country.Codes(AnalysisData)
+analysis_data<-Country.Codes(analysis_data)
 
 
 source("./functions_analysis/AddIncomeRegion.R")
-AnalysisData<-AddIncomeRegion(AnalysisData)
+analysis_data<-AddIncomeRegion(analysis_data)
 
 
 
@@ -171,22 +200,22 @@ AnalysisData<-AddIncomeRegion(AnalysisData)
 # Use Rarefaction curves generated by vegan then convert back to tibble
 library(vegan)
 
-InstAcum<-AnalysisData %>% group_by(YEAR,INST) %>% summarize(yr_tot = n_distinct(INST))
-InstAcum<-spread(InstAcum, INST,yr_tot) 
+InstAcum<-analysis_data %>% group_by(year,inst) %>% summarize(yr_tot = n_distinct(inst))
+InstAcum<-spread(InstAcum, inst,yr_tot) 
 InstAcum[is.na(InstAcum)] <- 0
 InstAcum<-ungroup(InstAcum)
-InstAcum<-select(InstAcum,-YEAR)
+InstAcum<-select(InstAcum,-year)
 InstAcum<-specaccum(InstAcum, "collector")
 InstAcum<-as_tibble(InstAcum$richness)
 names(InstAcum)[1] <- "CumulativeRichness"
-InstAcum$YEAR<-seq(FirstYear,LastYear,1)
+InstAcum$year<-seq(first_year,last_year,1)
 InstAcum
 
 ##############################################################
 # Annual Institutional Richness: Number of countries represented in year X 
 # Used in Figure ---
-INSTperYR<-AnalysisData %>% group_by(YEAR) %>% summarize(AnnualRichness = n_distinct(INST)) 
-INSTperYR
+instperYR<-analysis_data %>% group_by(year) %>% summarize(AnnualRichness = n_distinct(inst)) 
+instperYR
 ##############################################################
 
 ##############################################################
@@ -194,32 +223,32 @@ INSTperYR
 ##############################################################
 # Institutional Diversity (all journals pooled) 
 # Used in Figure --
-DivDataPooled<-AnalysisData %>% group_by(YEAR, INST) %>% summarize(Total = n_distinct(editor_id)) 
+DivDataPooled<-analysis_data %>% group_by(year, inst) %>% summarize(Total = n_distinct(editor_id)) 
 # DivDataPooled<-as.data.frame(EdsPerCountryPerJrnlPerYr.LONG)
-DivDataPooled<-DivDataPooled %>% group_by(YEAR, INST) %>% summarise(Total_Eds=sum(Total))
-DivDataPooled<-spread(DivDataPooled, INST, Total_Eds) 
+DivDataPooled<-DivDataPooled %>% group_by(year, inst) %>% summarise(Total_Eds=sum(Total))
+DivDataPooled<-spread(DivDataPooled, inst, Total_Eds) 
 DivDataPooled[is.na(DivDataPooled)] <- 0
 DivDataPooled<-ungroup(DivDataPooled)
 # 4: Geo Diverisity using Inverse Simpson's Index (expressed as 1/D)
-IsimpDivTable <- diversity((DivDataPooled %>% select(-YEAR)), index="invsimpson") #Need to strip away the journal and year columns for vegan to do the analysis
+IsimpDivTable <- diversity((DivDataPooled %>% select(-year)), index="invsimpson") #Need to strip away the journal and year columns for vegan to do the analysis
 # Table DIVERSITY with Results and Journals
 IsimpDivTable <- data.frame(IsimpDivTable)
-IsimpDivTable$YEAR <-DivDataPooled$YEAR #Add year as a column
+IsimpDivTable$year <-DivDataPooled$year #Add year as a column
 IsimpDivTable<-rename(IsimpDivTable, InvSimpson=IsimpDivTable) #rename the columns
-IsimpDivTable <- IsimpDivTable[c("YEAR","InvSimpson")] #reorder the columns
+IsimpDivTable <- IsimpDivTable[c("year","InvSimpson")] #reorder the columns
 IsimpDivTable<-as_tibble(IsimpDivTable)
 
 # THIS CALCLULATES THE SIMPSONS INDEX (expressed as 1-D)
-simpDivTable <- diversity((DivDataPooled %>% select(-YEAR)), index="simpson") #Need to strip away the journal and year columns for vegan to do the analysis
+simpDivTable <- diversity((DivDataPooled %>% select(-year)), index="simpson") #Need to strip away the journal and year columns for vegan to do the analysis
 # Table DIVERSITY with Results and Journals
 simpDivTable <- data.frame(simpDivTable)
-simpDivTable$YEAR <-DivDataPooled$YEAR #Add year as a column
+simpDivTable$year <-DivDataPooled$year #Add year as a column
 simpDivTable<-rename(simpDivTable, Simpson=simpDivTable) #rename the columns
-simpDivTable <- simpDivTable[c("YEAR","Simpson")] #reorder the columns
+simpDivTable <- simpDivTable[c("year","Simpson")] #reorder the columns
 simpDivTable<-as_tibble(simpDivTable)
 
-IsimpDivTable<-full_join(INSTperYR,IsimpDivTable, by="YEAR")
-IsimpDivTable<-full_join(IsimpDivTable,simpDivTable, by="YEAR")
+IsimpDivTable<-full_join(instperYR,IsimpDivTable, by="year")
+IsimpDivTable<-full_join(IsimpDivTable,simpDivTable, by="year")
 rm(simpDivTable)
 
 
@@ -234,14 +263,14 @@ IsimpDivTable
 # Fig 1A: Total Number of Editors (all journals pooled)  vs. Year
 ##############################################################
 
-plotTOTALedsYear<-ggplot(EdsPerYr, aes(x=YEAR, y=EdsPerYear)) +
+plotTOTALedsYear<-ggplot(EdsPerYr, aes(x=year, y=EdsPerYear)) +
   xlab("Year")+
   ylab("N")+
   geom_line(size=1, color="blue")+
   ggtitle('(A) Number of Editors') + 
   geom_point(color="black", shape=1)+
   scale_y_continuous(breaks=seq(0, 1500, 150))+
-  scale_x_continuous(breaks=seq(FirstYear, LastYear+1, 5))
+  scale_x_continuous(breaks=seq(first_year, last_year+1, 5))
 
 plotTOTALedsYear<-plotTOTALedsYear+theme_classic()+
   theme( axis.text=element_text(colour="black", size = 10),  
@@ -258,28 +287,28 @@ plotTOTALedsYear
 # Fig. 1B: Cumulative Inst Richness
 ##############################################################
 # PUT THE NECESSARY DATA IN ONE DATAFRAME 
-jointINSTperYR<-INSTperYR
+jointinstperYR<-instperYR
 jointedAccDF<-InstAcum
 
-jointInstperYR<-rename(jointINSTperYR,Countries=AnnualRichness)
-jointRichness<-full_join(jointINSTperYR, jointedAccDF, by = "YEAR")
+jointInstperYR<-rename(jointinstperYR,Countries=AnnualRichness)
+jointRichness<-full_join(jointinstperYR, jointedAccDF, by = "year")
 jointRichness<-gather(jointRichness, "Richness","N", 2:3)
 jointRichness[jointRichness=="Countries"]<-"Annual"
 jointRichness[jointRichness=="CumulativeRichness"]<-"Cumulative"
 rm(jointInstperYR,jointedAccDF)
 
 #plot cumulative and annual richness same plot
-jointRichnessPlot<-ggplot(jointRichness, aes(x=YEAR, y=N, group = Richness, colour = Richness)) +
+jointRichnessPlot<-ggplot(jointRichness, aes(x=year, y=N, group = Richness, colour = Richness)) +
   geom_line(size=1) +
   scale_color_manual(values=c("blue", "red"))+
-  geom_text(data = jointRichness[jointRichness$YEAR=="2012" & jointRichness$Richness=="Annual",], aes(label = Richness), hjust = 1.0, vjust = 2.5, size=3.5) +
-  geom_text(data = jointRichness[jointRichness$YEAR=="2012" & jointRichness$Richness=="Cumulative",], aes(label = Richness), hjust = 2.0, vjust = 1.35, size=3.5) +
+  geom_text(data = jointRichness[jointRichness$year=="2012" & jointRichness$Richness=="Annual",], aes(label = Richness), hjust = 1.0, vjust = 2.5, size=3.5) +
+  geom_text(data = jointRichness[jointRichness$year=="2012" & jointRichness$Richness=="Cumulative",], aes(label = Richness), hjust = 2.0, vjust = 1.35, size=3.5) +
   xlab("Year")+
   ylab("Richness")+
   ggtitle('(B) Editor Instgraphic Richness')+
   geom_point(color="black", shape=1)+
   scale_y_continuous(limits = c(25, 1500))+
-  scale_x_continuous(breaks=seq(FirstYear, LastYear+1, 5))
+  scale_x_continuous(breaks=seq(first_year, last_year+1, 5))
 
 jointRichnessPlot<-jointRichnessPlot+theme_classic()+
   theme(axis.text=element_text(colour="black", size = 10),         #sets x axis title size, style, distance from axis #add , face = "bold" if you want bold
@@ -291,20 +320,20 @@ jointRichnessPlot<-jointRichnessPlot+theme_classic()+
 jointRichnessPlot
 
 ##############################################################
-# Plot 1C: COMMUNITY (POOLED JOURNALS) LEVEL DIVERSITY
+# Plot 1C: COMMunitY (POOLED journalS) LEVEL DIVERSITY
 ##############################################################
-IsimpDivTable$YEAR
+IsimpDivTable$year
 IsimpDivTable$InvSimpson
-plotPOOLINSTimpdiv<-ggplot(IsimpDivTable, aes(x=YEAR, y=InvSimpson)) +
+plotPOOLinstimpdiv<-ggplot(IsimpDivTable, aes(x=year, y=InvSimpson)) +
   geom_line(size=1, color="blue") + # Use hollow circles
   xlab("Year")+
   ylab(bquote('D'[2]))+
   ggtitle('(C) Editor Institutional Diversity')+
   geom_point(color="black", shape=1)+
   scale_y_continuous(limits = c(0, 80))+
-  scale_x_continuous(breaks=seq(FirstYear, LastYear+1, 5))
+  scale_x_continuous(breaks=seq(first_year, last_year+1, 5))
 
-plotPOOLINSTimpdiv<-plotPOOLEDsimpdiv+theme_classic()+
+plotPOOLinstimpdiv<-plotPOOLEDsimpdiv+theme_classic()+
   theme(axis.title.x=element_text(colour="black", size = 14, vjust=0),            #sets x axis title size, style, distance from axis #add , face = "bold" if you want bold
         axis.text=element_text(colour="black", size = 10),
         plot.margin=unit(c(1,5,1,1),"lines"),
@@ -329,7 +358,7 @@ plotPOOLEDsimpdiv
 ##############################################################
 # Number and Pcnt of Editors from Each Country (all journals and years pooled)
 # Used for Fig 2A
-Editor.Inst<-AnalysisData %>%  group_by(INST) %>% 
+Editor.Inst<-analysis_data %>%  group_by(inst) %>% 
   summarize(N_Inst = n_distinct(editor_id)) %>% 
   mutate(Pcnt_Inst= (N_Inst/sum(N_Inst)*100)) %>% 
   arrange(desc(Pcnt_Inst))
@@ -337,7 +366,7 @@ Editor.Inst
 
 
 cutoff = 20 # This is how many countries you want on the chart, all the rest will be in "OTHER"
-editor.INST<-arrange(Editor.Inst, desc(Pcnt_Inst)) %>% select(INST,N_Inst,Pcnt_Inst)
+editor.inst<-arrange(Editor.Inst, desc(Pcnt_Inst)) %>% select(inst,N_Inst,Pcnt_Inst)
 most.common.Institutions<-slice(Editor.Inst, 1:cutoff)
 least.common.Institutions<-slice(Editor.Inst, (cutoff+1):nrow(Editor.Inst)) 
 least.common.Institutions$geo.code<-"OTHER"
@@ -350,16 +379,16 @@ least.common.Institutions<-least.common.Institutions %>%
   rename(Pcnt_Inst = `sum(Pcnt_Inst)`) %>% 
   slice(1:1)
 most.common.Institutions<-bind_rows(most.common.Institutions, least.common.Institutions)
-# most.common.Institutions$INST<-as.factor(most.common.Institutions$INST)
+# most.common.Institutions$inst<-as.factor(most.common.Institutions$inst)
 most.common.Institutions
 
 # This is needed to put them in order in the plot with OTHER at the end of the graph
 order<-seq(1:nrow(most.common.Institutions))
-most.common.Institutions$INST<- factor(most.common.Institutions$INST,most.common.Institutions$INST[levels = order])
+most.common.Institutions$inst<- factor(most.common.Institutions$inst,most.common.Institutions$inst[levels = order])
 # levels(most.common.Institutions$geo.code)
-rm(order,editor.INST,least.common.Institutions)
+rm(order,editor.inst,least.common.Institutions)
 
-InstED<-arrange(most.common.Institutions) %>%  ggplot(aes(x=INST, y=Pcnt_Inst)) +
+InstED<-arrange(most.common.Institutions) %>%  ggplot(aes(x=inst, y=Pcnt_Inst)) +
   geom_bar(colour="black", stat="identity")+
   coord_flip()+
   ylab("Percent") +
@@ -380,17 +409,17 @@ InstED
 ###########################3
 
 # Second question
-years_with_an_editor<-AnalysisData %>% select(YEAR,INST) %>% 
-  distinct(YEAR,INST) %>%  
+years_with_an_editor<-analysis_data %>% select(year,inst) %>% 
+  distinct(year,inst) %>%  
   # Count how many observations had counts > 0 for each site
-  group_by(INST) %>%
+  group_by(inst) %>%
   summarize(years=n()) %>% 
   arrange(desc(years))
 years_with_an_editor
 ##############################################################
 ##############################################################
 #
-# ANALYSIS - US INST ONLY
+# ANALYSIS - US inst ONLY
 #
 ##############################################################
 ##############################################################
@@ -400,7 +429,7 @@ years_with_an_editor
 ##############################################################
 ##############################################################
 #
-# ANALYSIS - US INST ONLY
+# ANALYSIS - US inst ONLY
 #
 ##############################################################
 ##############################################################
@@ -408,99 +437,99 @@ years_with_an_editor
 
 
 
-summary(ALLDATA$INST)
+summary(ALLDATA$inst)
 
-USA_INST<-AnalysisData %>% filter(COUNTRY=="USA")
-USA_INST$INST<-as.factor(USA_INST$INST)
-USA_INST<-droplevels(USA_INST)
-levels(USA_INST$INST)
-USA_INST$STATE<-as.character(USA_INST$STATE)
-levels(USA_INST$STATE)
-USA_INST$STATE
-# USA_INST$STATE<-state.abb[grep(foo, state.name)]
-# USA_INST$STATE
-USA_INST$STATE[USA_INST$STATE=="Alabama"]<-"AL"
-USA_INST$STATE[USA_INST$STATE=="Arizona"]<-"AZ"
-USA_INST$STATE[USA_INST$STATE=="California"]<-"CA"
-USA_INST$STATE[USA_INST$STATE=="Colorado"]<-"CO"
-USA_INST$STATE[USA_INST$STATE=="Connecticut"]<-"CT"
-USA_INST$STATE[USA_INST$STATE=="Washington DC"]<-"DC"
-USA_INST$STATE[USA_INST$STATE=="Florida"]<-"FL"
-USA_INST$STATE[USA_INST$STATE=="Idaho"]<-"ID"
-USA_INST$STATE[USA_INST$STATE=="Illinois"]<-"IL"
-USA_INST$STATE[USA_INST$STATE=="Kentucky"]<-"KY"
-USA_INST$STATE[USA_INST$STATE=="Louisiana"]<-"LA"
-USA_INST$STATE[USA_INST$STATE=="Lousiana"]<-"LA"
-USA_INST$STATE[USA_INST$STATE=="South Dakota"]<-"SD"
-USA_INST$STATE[USA_INST$STATE=="Michigan"]<-"MI"
-USA_INST$STATE[USA_INST$STATE=="Maine"]<-"ME"
-USA_INST$STATE[USA_INST$STATE=="Virginia"]<-"VA"
-USA_INST$STATE[USA_INST$STATE=="New Jersey"]<-"NJ"
-USA_INST$STATE[USA_INST$STATE=="Rhode Island"]<-"RI"
+USA_inst<-analysis_data %>% filter(geo.code=="USA")
+USA_inst$inst<-as.factor(USA_inst$inst)
+USA_inst<-droplevels(USA_inst)
+levels(USA_inst$inst)
+USA_inst$state<-as.character(USA_inst$state)
+levels(USA_inst$state)
+USA_inst$state
+# USA_inst$state<-state.abb[grep(foo, state.name)]
+# USA_inst$state
+USA_inst$state[USA_inst$state=="Alabama"]<-"AL"
+USA_inst$state[USA_inst$state=="Arizona"]<-"AZ"
+USA_inst$state[USA_inst$state=="California"]<-"CA"
+USA_inst$state[USA_inst$state=="Colorado"]<-"CO"
+USA_inst$state[USA_inst$state=="Connecticut"]<-"CT"
+USA_inst$state[USA_inst$state=="Washington DC"]<-"DC"
+USA_inst$state[USA_inst$state=="Florida"]<-"FL"
+USA_inst$state[USA_inst$state=="Idaho"]<-"ID"
+USA_inst$state[USA_inst$state=="Illinois"]<-"IL"
+USA_inst$state[USA_inst$state=="Kentucky"]<-"KY"
+USA_inst$state[USA_inst$state=="Louisiana"]<-"LA"
+USA_inst$state[USA_inst$state=="Lousiana"]<-"LA"
+USA_inst$state[USA_inst$state=="South Dakota"]<-"SD"
+USA_inst$state[USA_inst$state=="Michigan"]<-"MI"
+USA_inst$state[USA_inst$state=="Maine"]<-"ME"
+USA_inst$state[USA_inst$state=="Virginia"]<-"VA"
+USA_inst$state[USA_inst$state=="New Jersey"]<-"NJ"
+USA_inst$state[USA_inst$state=="Rhode Island"]<-"RI"
 
-USA_INST$STATE[USA_INST$STATE=="Utah"]<-"UT"
-USA_INST$STATE[USA_INST$STATE=="Texas"]<-"TX"
-USA_INST$STATE[USA_INST$STATE=="Tennessee"]<-"TN"
-USA_INST$STATE[USA_INST$STATE=="Wisconsin"]<-"WI"
-USA_INST$STATE[USA_INST$STATE=="West Virginia"]<-"WV"
-USA_INST$STATE[USA_INST$STATE=="VI"]<-"VA"
-USA_INST$STATE[USA_INST$STATE=="West Virgina"]<-"WV"
-USA_INST$STATE[USA_INST$STATE=="South Carolina"]<-"SC"
-USA_INST$STATE[USA_INST$STATE=="Washington"]<-"WA"
-USA_INST$STATE[USA_INST$STATE=="Washington "]<-"WA"
-USA_INST$STATE[USA_INST$STATE=="Wyoming"]<-"WY"
-USA_INST$STATE[USA_INST$STATE=="Maryland"]<-"MD"
-USA_INST$STATE[USA_INST$STATE=="Massachusetts"]<-"MA"
-USA_INST$STATE[USA_INST$STATE=="Mississippi"]<-"MS"
-USA_INST$STATE[USA_INST$STATE=="PE"]<-"PA"
-USA_INST$STATE[USA_INST$STATE=="Minnesota"]<-"MN"
-USA_INST$STATE[USA_INST$STATE=="North Dakota"]<-"ND"
-USA_INST$STATE[USA_INST$STATE=="North Carolina"]<-"NC"
-USA_INST$STATE[USA_INST$STATE=="Nevada"]<-"NV"
-USA_INST$STATE[USA_INST$STATE=="New Hampshire"]<-"NH"
-USA_INST$STATE[USA_INST$STATE=="New Mexico"]<-"NM"
-USA_INST$STATE[USA_INST$STATE=="New York"]<-"NY"
-USA_INST$STATE[USA_INST$STATE=="Nebraska"]<-"NE"
-USA_INST$STATE[USA_INST$STATE=="Montana"]<-"MT"
-USA_INST$STATE[USA_INST$STATE=="Missouri"]<-"MO"
-USA_INST$STATE[USA_INST$STATE=="Oregon"]<-"AL"
-USA_INST$STATE[USA_INST$STATE=="NoState"]<-NA
-USA_INST$STATE[USA_INST$STATE=="Pennsylvania"]<-"PA"
-USA_INST$STATE[USA_INST$STATE=="Puerto Rico"]<-"PR"
-USA_INST$STATE[USA_INST$STATE=="Alaksa"]<-"AK"
-USA_INST$STATE[USA_INST$STATE=="Alaska"]<-"AK"
-USA_INST$STATE[USA_INST$STATE=="District of Columbia"]<-"DC"
-USA_INST$STATE[USA_INST$STATE=="Iowa"]<-"IA"
-USA_INST$STATE[USA_INST$STATE=="Vermont"]<-"VT"
-USA_INST$STATE[USA_INST$STATE=="Arkansa"]<-"AR"
-USA_INST$STATE[USA_INST$STATE=="Arkansas"]<-"AR"
-USA_INST$STATE[USA_INST$STATE=="Kansas"]<-"KS"
-USA_INST$STATE[USA_INST$STATE=="Georgia"]<-"GA"
-USA_INST$STATE[USA_INST$STATE=="Hawaii"]<-"HI"
-USA_INST$STATE[USA_INST$STATE=="Oklahoma"]<-"OK"
-USA_INST$STATE[USA_INST$STATE=="Indiana"]<-"IN"
-USA_INST$STATE[USA_INST$STATE=="Ohio"]<-"OH"
-USA_INST$STATE[USA_INST$STATE==""]<-NA
-USA_INST$STATE<-as.factor(USA_INST$STATE)
-USA_INST$STATE<-droplevels(USA_INST$STATE)
-levels(USA_INST$STATE)
-summary(USA_INST$STATE)
-# nlevels(USA_INST$STATE)
+USA_inst$state[USA_inst$state=="Utah"]<-"UT"
+USA_inst$state[USA_inst$state=="Texas"]<-"TX"
+USA_inst$state[USA_inst$state=="Tennessee"]<-"TN"
+USA_inst$state[USA_inst$state=="Wisconsin"]<-"WI"
+USA_inst$state[USA_inst$state=="West Virginia"]<-"WV"
+USA_inst$state[USA_inst$state=="VI"]<-"VA"
+USA_inst$state[USA_inst$state=="West Virgina"]<-"WV"
+USA_inst$state[USA_inst$state=="South Carolina"]<-"SC"
+USA_inst$state[USA_inst$state=="Washington"]<-"WA"
+USA_inst$state[USA_inst$state=="Washington "]<-"WA"
+USA_inst$state[USA_inst$state=="Wyoming"]<-"WY"
+USA_inst$state[USA_inst$state=="Maryland"]<-"MD"
+USA_inst$state[USA_inst$state=="Massachusetts"]<-"MA"
+USA_inst$state[USA_inst$state=="Mississippi"]<-"MS"
+USA_inst$state[USA_inst$state=="PE"]<-"PA"
+USA_inst$state[USA_inst$state=="Minnesota"]<-"MN"
+USA_inst$state[USA_inst$state=="North Dakota"]<-"ND"
+USA_inst$state[USA_inst$state=="North Carolina"]<-"NC"
+USA_inst$state[USA_inst$state=="Nevada"]<-"NV"
+USA_inst$state[USA_inst$state=="New Hampshire"]<-"NH"
+USA_inst$state[USA_inst$state=="New Mexico"]<-"NM"
+USA_inst$state[USA_inst$state=="New York"]<-"NY"
+USA_inst$state[USA_inst$state=="Nebraska"]<-"NE"
+USA_inst$state[USA_inst$state=="Montana"]<-"MT"
+USA_inst$state[USA_inst$state=="Missouri"]<-"MO"
+USA_inst$state[USA_inst$state=="Oregon"]<-"AL"
+USA_inst$state[USA_inst$state=="NoState"]<-NA
+USA_inst$state[USA_inst$state=="Pennsylvania"]<-"PA"
+USA_inst$state[USA_inst$state=="Puerto Rico"]<-"PR"
+USA_inst$state[USA_inst$state=="Alaksa"]<-"AK"
+USA_inst$state[USA_inst$state=="Alaska"]<-"AK"
+USA_inst$state[USA_inst$state=="District of Columbia"]<-"DC"
+USA_inst$state[USA_inst$state=="Iowa"]<-"IA"
+USA_inst$state[USA_inst$state=="Vermont"]<-"VT"
+USA_inst$state[USA_inst$state=="Arkansa"]<-"AR"
+USA_inst$state[USA_inst$state=="Arkansas"]<-"AR"
+USA_inst$state[USA_inst$state=="Kansas"]<-"KS"
+USA_inst$state[USA_inst$state=="Georgia"]<-"GA"
+USA_inst$state[USA_inst$state=="Hawaii"]<-"HI"
+USA_inst$state[USA_inst$state=="Oklahoma"]<-"OK"
+USA_inst$state[USA_inst$state=="Indiana"]<-"IN"
+USA_inst$state[USA_inst$state=="Ohio"]<-"OH"
+USA_inst$state[USA_inst$state==""]<-NA
+USA_inst$state<-as.factor(USA_inst$state)
+USA_inst$state<-droplevels(USA_inst$state)
+levels(USA_inst$state)
+summary(USA_inst$state)
+# nlevels(USA_inst$state)
 
 #Need to match up the names used in Carengie Classification with names used in ALLDATA
 str(CarnData)
-CarnData_names<-CarnData %>% select(NAME,CITY,STABBR,Category)  
+CarnData_names<-CarnData %>% select(NAME,city,STABBR,Category)  
 CarnData_names<-CarnData_names %>% filter(Category=="Doctoral"|Category=="Masters"|Category=="Baccalaureate"|Category=="Tribal")
 CarnData_names$Category<-droplevels(CarnData_names$Category)
 summary(CarnData_names)
 
-str(USA_INST)
-USA_INST_names<-USA_INST %>% select(INST,CITY,STATE)  
-USA_INST_names$STATE<-as.character(USA_INST_names$STATE)
-str(USA_INST_names)
-USA_INST_names<-distinct(USA_INST_names)
-foo<-USA_INST_names$INST
-foo2<-USA_INST_names$INST
+str(USA_inst)
+USA_inst_names<-USA_inst %>% select(inst,city,state)  
+USA_inst_names$state<-as.character(USA_inst_names$state)
+str(USA_inst_names)
+USA_inst_names<-distinct(USA_inst_names)
+foo<-USA_inst_names$inst
+foo2<-USA_inst_names$inst
 foo3<- cbind.data.frame(foo,foo2)
 str(foo3)
 names(foo3)[1] <- "Name1"
@@ -549,14 +578,14 @@ write.csv(NamesDF, file="./Data/InstNameCheck_USA.csv", row.names = T) #export i
 
 
 
-USA_INST$editor_id<-as.factor(USA_INST$editor_id)
-summary(USA_INST$editor_id)
-USA_INST$INST<-as.character(USA_INST$INST)
-# foo<-USA_INST$INST
-foo<-USA_INST
+USA_inst$editor_id<-as.factor(USA_inst$editor_id)
+summary(USA_inst$editor_id)
+USA_inst$inst<-as.character(USA_inst$inst)
+# foo<-USA_inst$inst
+foo<-USA_inst
 
 foo<-as.data.frame(foo)
-foo<-foo %>% rename(NAME=INST)
+foo<-foo %>% rename(NAME=inst)
 foo$NAME<-as.character(foo$NAME)
 foo$source<-"class"
 str(foo)
@@ -597,14 +626,14 @@ str(foo4)
 foo5<-stringdistmatrix(foo3$NAME,method="dl")
 
 
-INST<-na.omit(INST)
-INST<-as.data.frame(INST)
-summary(INST)
-str(INST)
-INST$INST<-as.factor(INST$INST)
+inst<-na.omit(inst)
+inst<-as.data.frame(inst)
+summary(inst)
+str(inst)
+inst$inst<-as.factor(inst$inst)
 
-inst_names <- INST %>% group_by(INST) %>% filter(row_number(COUNTRY) == 1) %>% arrange(INST)
-write.csv(inst_names,file="INST_names_class.csv")
+inst_names <- inst %>% group_by(inst) %>% filter(row_number(country) == 1) %>% arrange(inst)
+write.csv(inst_names,file="inst_names_class.csv")
 
 summary(foo4)
 
@@ -638,7 +667,7 @@ numLines <- R.utils::countLines("./Data/world_university_names.sql")
 FullUniDB <- readLines("./Data/world_university_names.sql",n=numLines)
 
 
-# CREATE THE DATABASE OF COUNTRY CODES & NAMES
+# CREATE THE DATABASE OF country CODES & NAMES
 countries.df<-FullUniDB[34:279]
 
 countries.df<-gsub("(", "", countries.df, fixed=TRUE)
@@ -794,4 +823,4 @@ Consolidated.uni.df$uni.code <- paste(Consolidated.uni.df$ISO3,"-",Consolidated.
 
 # Now do a similarity analysis of name remove the duplicates
 # DO SOME ERROR CORRECTION:
-# 1) SOME ARE MISSING UNI NAMES, EG, INST NAME IS "UNIVERSITY": COUNT CHARACTERS,SORT, AND LOOK AT ONES WITH LEAST CAHARACTERS
+# 1) SOME ARE MISSING UNI NAMES, EG, inst NAME IS "UNIVERSITY": COUNT CHARACTERS,SORT, AND LOOK AT ONES WITH LEAST CAHARACTERS
