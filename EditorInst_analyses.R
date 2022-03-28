@@ -21,10 +21,10 @@ analysis_data<-droplevels(analysis_data)
 # UPLOAD & STANDARDIZE DATA ON CARNEGIE CLASSIFICATIONS
 ##############################################################
 ##############################################################
-carnegie_raw<-read_csv("./Data/carnegie/CarnegCategories_2015.csv", col_names = TRUE)
-source("CarnegieCats.R")
-carnegie<-CarnegieCats(carnegie_raw)
-rm(carnegie_raw)
+# carnegie_raw<-read_csv("./Data/carnegie/CarnegCategories_2015.csv")
+source("CarnegieCats_2021.R")
+carnegie<-CarnegieCats_2021("basic2021")
+
 
 ##############################################################
 ##############################################################

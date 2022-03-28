@@ -793,30 +793,53 @@ write_csv(no_edID, file = "./output_review/no_editor_ID.csv") # export it as a c
 ############################
 
 write_csv(editors, "./data_clean/InstitutionData_clean.csv")
-# 
+
+
+
+
+
+
+
 # library(tidyverse)
 # editors <- read_csv("./data_clean/InstitutionData_clean.csv")
 #
 editors_ORIG_FOR_TESTING <- editors
 
+
+
+# REVIEW FOR FINAL CLEANING -----------------------------------------------
 editors <- editors %>% 
   mutate(across(everything(), as.factor))
+
 summary(editors)
 
-inst_missing<-editors %>% filter(is.na(inst)) %>% group_by(journal) %>% summarize(n=n())
-sum(inst_missing$n)
-# editors<-editors_ORIG_FOR_TESTING
-# editors<-editors %>% filter(journal!="CONDOR"&journal!="AUK"&journal!="AGRONOMY"&
-#                               journal!="NAJFM"&journal!="MARECOL"&journal!="GCB")
-editors <- editors %>% filter(journal != "agronomy")
-editors <- editors %>% filter(journal != "najfm")
-editors <- editors %>% filter(journal != "auk")
-editors <- editors %>% filter(journal != "marecol")
-editors <- editors %>% filter(journal != "condor")
 
-###########################
-# TODO: FINAL REVIEW OF DATA
-############################
+# how many misisng INST?
+inst_missing<-editors %>%
+  filter(is.na(inst)) %>% 
+  group_by(journal) %>% 
+  summarize(n=n())
+sum(inst_missing$n)
+
+# what journals are these in?
+inst_missing<-editors %>%
+  filter(is.na(inst)) %>% 
+  group_by(journal) %>% 
+  summarize(n=n()) %>% 
+  arrange(desc(n))
+inst_missing
+# 
+# 
+# # editors<-editors_ORIG_FOR_TESTING
+# # editors<-editors %>% filter(journal!="CONDOR"&journal!="AUK"&journal!="AGRONOMY"&
+# #                               journal!="NAJFM"&journal!="MARECOL"&journal!="GCB")
+# editors <- editors %>% filter(journal != "agronomy")
+# editors <- editors %>% filter(journal != "najfm")
+# editors <- editors %>% filter(journal != "auk")
+# editors <- editors %>% filter(journal != "marecol")
+# editors <- editors %>% filter(journal != "condor")
+
+
 
 # # TODO: Check for people at institutions with > 1 campus
 # colnames(editors)
@@ -845,7 +868,7 @@ MultiCampus <- editors %>%
   distinct(editor_id, inst, city, .keep_all = TRUE) %>%
   select(journal, year, , editor_id, first_name, middle_name, last_name, inst, unit, city, country) %>% 
   arrange(editor_id,last_name)
-
+MultiCampus
 MultiCampus %>% group_by(journal) %>% summarize(n())
 
 write_csv(MultiCampus, "./output_review/MultiCampus.csv")
@@ -965,13 +988,13 @@ write_csv(dup_edID3, file = "./output_review/dup_edID3.csv") # export it as a cs
 ############################
 # TODO: find cases where the diff editors has same editor_id
 dup_edIDx <- editors %>%
-  select(journal, last_name, editor_id) %>%
+  select(journal, last_name, first_name, editor_id) %>%
   filter(editor_id != "TBD") %>%
   group_by(editor_id) %>%
   mutate(n_eds = n_distinct(last_name)) %>%
-  distinct(last_name, editor_id, .keep_all = TRUE) %>%
-  arrange(desc(editor_id, last_name, first_name)) %>%
-  filter(n_eds > 1)
+  distinct(last_name,first_name,  editor_id, .keep_all = TRUE) %>%
+  filter(n_eds > 1) %>% 
+  arrange(desc(editor_id))
 dup_edIDx
 # dup_edID3 <-dup_edID3 %>% group_by(first_name,last_name) %>%  arrange(editor_id) %>% slice(2)
 write_csv(dup_edIDx, file = "./output_review/dup_edIDx.csv") # export it as a csv file
@@ -1020,6 +1043,20 @@ missing_inst_names <- editors %>%
   arrange(journal, last_name, first_name, year)
 write_csv(missing_inst_names, file = "./output_review/missing_inst_editor_names.csv") # export it as a csv file
 ############################
+
+############################
+# peoplw with NA inst by journal
+missing_inst_names <- editors %>%
+  select(journal, year, editor_id, first_name, middle_name, last_name, inst, notes) %>%
+  filter(is.na(inst) | inst == "missing") %>%
+  group_by(journal, last_name, first_name) %>%
+  filter(row_number() == 1 | row_number() == n()) %>%
+  group_by(journal) %>% 
+  summarize(n=n())
+  arrange(journal, last_name, first_name, year)
+# write_csv(missing_inst_names, file = "./output_review/missing_inst_editor_names.csv") # export it as a csv file
+############################
+
 
 ############################
 # Cases of editors with >1 inst (including NA, TBD, errors of spelling)

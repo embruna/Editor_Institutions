@@ -303,6 +303,8 @@ JamesCorrections <- function(original_data) {
   both$unit.x[both$editor_id.x == 455 & both$first_name == "christopher" & both$last_name == "frissell"] <- "flathead lake biological station"
   both$city.x[both$editor_id.x == 455 & both$first_name == "christopher" & both$last_name == "frissell"] <- "polson"
   both$city.x[both$editor_id.x == 1511 & both$last_name == "cinner" & both$year > 2009 & both$year < 2015] <- "townsville"
+  both$inst.x[both$editor_id.x == 1511 & both$last_name == "cinner" & both$journal == "conbio"] <- "james cook university"
+  both$inst.y[both$editor_id.y == 1511 & both$last_name == "cinner" & both$journal == "conbio"] <- "james cook university"
   both$state.x[both$editor_id.x == 1511 & both$last_name == "cinner" & both$year > 2009 & both$year < 2015] <- "queensland"
   both$unit.x[both$editor_id.x == 1511 & both$last_name == "cinner"] <- "arc centre of excellence for coral reef studies"
   both$inst.y[both$editor_id.x == 1511 & both$last_name == "cinner"] <- "james cook university"
@@ -629,7 +631,9 @@ JamesCorrections <- function(original_data) {
   new_row <- both %>%
     filter(last_name == "willis" & journal == "jecol" & year == 1994)
   new_row$year <- 1992
-  both <- rbind(new_row, both)
+  new_row<-new_row %>% mutate(across(everything(), as.character)) 
+  both<-both %>% mutate(across(everything(), as.character)) 
+  both <- bind_rows(new_row, both)
   both$inst[both$last_name == "willis" & both$journal == "jecol" &
     (both$year > 1990 | both$year < 2007)] <- "university of sheffield"
   both$city[both$last_name == "willis" & both$journal == "jecol" &
