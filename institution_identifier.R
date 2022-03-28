@@ -24,7 +24,7 @@ inst_all$counter<-seq_along(inst_all$inst)
 # inst<-inst_all %>% slice(301:700)
 # inst <- inst_all
 
-inst<-inst_all %>% slice(1:200)
+inst<-inst_all %>% slice(783:800)
 uni_results_match<- data.frame(id=NA, 
                                display_name=NA, 
                                ror=NA, 
@@ -76,7 +76,7 @@ uni_results_match
 write_csv(uni_results_match, "./output_review/uni_results_match.csv")
 write_csv(uni_results_no_match, "./output_review/uni_results_no_match.csv")
 
-
+#TODO: https://twitter.com/researchremix/status/1501682528184197121 wikipdata for carnegie
 # Notes -------------------------------------------------------------------
 
 
