@@ -1,0 +1,166 @@
+---
+title: Institutional affiliations of editors in ecology, evolution, and conservation   
+author:
+  - name: Emilio M. Bruna
+    affiliation: "1,2"
+  - name: Author Two
+    affiliation: "1"
+address:
+  - code: "1"
+    address: Department of Wildlife Ecology and Conservation, University of Florida, PO Box 110430, Gainesville, Florida, 32611 USA
+  - code: "2"
+    address: Center for Latin American Studies, University of Florida, PO Box 110530, Gainesville, Florida, 32611-0530 USA
+
+corresp_author_name:  "E. M. Bruna"
+corresp_author_email: "embruna@ufl.edu"
+
+subject:
+  - "Science, society & policy"
+  # - "subject 2"
+  # - "subject 3"
+
+keywords:
+  - Editorial boards
+  - Implicit bias
+  - Global North
+  - Global South
+
+abstract: |
+  The abstract text goes here. The abstract text goes here. The abstract text goes here. The abstract text goes here. The abstract text goes here. The abstract text goes here. The abstract text goes here. The abstract text goes here.
+
+## Remove this if not required
+ethics: |
+  Please provide details on the ethics.
+  
+data_accessibility: |
+  Data used in this manuscript are archived at the Dryad Digital Repository (_url added upon acceptance_). Code used for analyses and to generate figures is archived Zenodo (_url added upon acceptance_) with updates available at Github.
+
+author_contributions: |
+  Contributorship roles (e.g., CRediT, https://casrai.org/credit/):   
+  EMB: Conceptualization,Methodology, Investigation, Formal analysis, Data curation, Visualization, Writing - Original Draft Preparation, Writing - Review & Editing, Project administration, Supervision   
+
+## Remove this if not required
+conflict_of_interest: |
+  Bruna was Editor-in-Chief of _Biotropica_ from 2013-2019 and is currently the Secretary of the Ecological Society of America, which publishes the journal _Ecology_. None of the other autors have any conflicts-of-interest to declare.
+
+## Remove this if not required
+funding: |
+  This project was supported by grants from the Mindlin Foundation, the UF Center for Latin American Studies, and the UF Informatics Institute.
+
+## Remove this if not required
+# disclaimer: |
+#   Please provide disclaimer text here.
+
+## Remove this if not required
+acknowledgements: |
+  The authors thank -- --, -- --, and -- -- for their feedback on drafts of the manuscript and assistance with data collection. 
+
+bibliography: refs.bib
+# cls: rsos.cls
+## change to true to add optional line numbering
+lineno: true
+
+site: bookdown::bookdown_site
+output: 
+  bookdown::pdf_book:
+    base_format: rticles::rsos_article
+---
+
+# Introduction  
+<!-- Place `\EndFirstPage` at the point where the plain text on the first page stops. Warning: excess text will be hidden behind the copyright box. The example below contains line 1 to 19 in the code. Lines 14 to 17 are hidden behind the copyright box. -->
+
+p1: institutional affiliation matters in publishing, which is a critical element of professional advancement. Work in fields like econ has shown that... 
+
+[@addisEditorialBoardsItalian2003] 
+
+p2: documenting institutional affiliations is an essential first step is assessing the potential for such impacts. Studies documenting such affiliations are rare in the natural sciences. Furthermore, most studies take a relatively short "snapshot", which makes it impossible to evaluate potential temporal trends in relation to increased awareness and the global expansion of the scholarship.   
+
+p3: What is known about editorial boards of EEC journals We used data on the institutional affiliations of over XXXX scientists to test the prediction that (i) the editorial boards of journals in ecology, evolution, and conservation would exhibit patterns of institutional dominance similar to those observed in other fields, but that (ii) this dominance would decrease overtime. However, we also predicted that (iii) increases in the  institutional diversity of editorial boards would result from adding novel institutions in Europe and North America, and not from adding editors based at institutions in the Global South. 
+
+\EndFirstPage  
+
+# Methods
+## Data Collection
+
+Subsection text here.
+
+### Additional Subsection if necessary
+
+## Analysis
+
+# Results
+
+## Institutional dominance
+
+## Temporal trends
+
+# Discussion
+
+## Temporal Patterns
+
+Subsubsection text here.
+
+Line 1
+
+Line 2
+
+Line 3
+
+Line 4
+
+Line 5
+
+Line 6
+
+Line 7
+
+Line 8
+
+Line 9
+
+Line 10
+
+Line 11
+
+Line 12
+
+Line 13
+
+Line 14
+
+Line 15
+
+Line 16
+
+Line 17
+
+Line 18
+
+Line 19
+
+\EndFirstPage
+
+# Lists
+
+* one
+* two
+* three
+
+* fruits
+    + apples
+        - macintosh
+        - red delicious
+    + pears
+    + peaches
+* vegetables
+    + broccoli
+    + chard
+
+## Citations
+
+Blabla \cite{Lannes} blabla. Blabla \cite{HJ2} blabla. Blabla \cite{BF, Lannes} blabla. Blabla \cite{Benjamin1967, HJ2, HJ3, HP2} blabla.
+
+```{r nice-plot, fig.cap="The caption"}
+plot(mtcars[, 1:3])
+```
+
