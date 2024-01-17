@@ -1,0 +1,561 @@
+﻿journal,year,editor_id,first_name,middle_name,last_name,inst,unit,city,state,country,notes
+CONBIO,2013,1463,Joel,NA,Berger,University of Montana Wildlife Conservation Society, Div Biol Sci,Missoula,MT,USA,University of Montana
+CONBIO,2014,1463,Joel,NA,Berger,,,,,USA,NA
+CONBIO,2012,2317,Mark,A,Burgman,University of Melbourne,Botany,Parkville,Victoria,Australia,NA
+CONBIO,2013,2317,Mark,A,Burgman,,,,,Australia,NA
+CONBIO,2014,2317,Mark,A,Burgman,,,,,Australia,NA
+CONBIO,2013,3865,Douglas,A,Clark,University of Saskatchewan,UNKNOWN,Saskatoon,Saskatchewan,Canada,NA
+CONBIO,2014,3865,Douglas,A,Clark,,,,,Canada,NA
+CONBIO,2011,3887,J,Alan,Clark,Fordham University,UNKNOWN,New York City,New York,USA,NA
+CONBIO,2012,3887,J,Alan,Clark,,,,,USA,NA
+EVOL,2010,2139,Lynda,NA,Delph,Indiana University,UNKNOWN,Bloomington,IN,USA,NA
+NEWPHYT,2013,2139,Lynda,F,Delph,Indiana University,UNKNOWN,Bloomington,IN,USA,NA
+NEWPHYT,2014,2139,Lynda,F,Delph,,,,,USA,NA
+NEWPHYT,2015,2139,Lynda,F,Delph,,Department of Biology,,,USA,NA
+PLANTECOL,2011,1395,Ian,A,Dickie,Manaaki Whenua Landcare Research,UNKNOWN,Lincoln,UNKNOWN,New Zealand,NA
+NEWPHYT,2013,1395,Ian,A,Dickie,Lincoln University ,,Lincoln,,New Zealand,NA
+NEWPHYT,2014,1395,Ian,A,Dickie,Lincoln University ,,Lincoln,,New Zealand,NA
+NEWPHYT,2015,1395,Ian,A,Dickie,,Bioprotect Res Ctr,,,New Zealand,NA
+CONBIO,2012,261,Brett,NA,Dickson,Northern Arizona University,UNKNOWN,Flagstaff,Arizona,USA,NA
+CONBIO,2013,261,Brett,NA,Dickson,,,,,USA,NA
+CONBIO,2014,261,Brett,NA,Dickson,,,,,USA,NA
+BITR,2013,672,Donald,NA,Drake,University of Hawaii Manoa,Botany,Honolulu,Hawaii,USA,NA
+CONBIO,2014,672,Donald,NA,Drake,University of Hawaii Manoa,,Honolulu,Hawaii,USA,NA
+NEWPHYT,2011,1605,J,H,Graham,University of Florida,UNKNOWN,Lake Alfred ,Florida,USA,NA
+NEWPHYT,2012,1605,J,H,Graham,,,,Florida,USA,NA
+NEWPHYT,2013,1605,J,H,Graham,,,,Florida,USA,NA
+NEWPHYT,2014,1605,J,H,Graham,,,,Florida,USA,NA
+NEWPHYT,2015,1605,Jim,H,Graham,,,,Florida,USA,NA
+CONBIO,2010,3598,Tara,NA,Martin,CSIRO,UNKNOWN,Dutton Park,Queensland,Australia,NA
+CONBIO,2011,3598,Tara,NA,Martin,,,,,Australia,NA
+CONBIO,2012,3598,Tara,NA,Martin,,,,,Australia,NA
+CONBIO,2013,3598,Tara,NA,Martin,,,,,Australia,NA
+CONBIO,2014,3598,Tara,NA,Martin,,,,,Australia,NA
+JAPE,2013,1339,Hamish,NA,McCallum,Griffith University,UNKNOWN,Nathan,Queensland,Australia,NA
+CONBIO,2014,1339,Hamish,NA,McCallum,Griffith University,Environm Futures Res Inst,Nathan,Queensland,Australia,NA
+CONBIO,1994,817,David,NA,Perry,Oregon State University,UNKNOWN,Corvallis,Oregon,USA,NA
+CONBIO,1995,817,David,NA,Perry,,,,,USA,NA
+CONBIO,1996,817,David,NA,Perry,,,,,USA,NA
+CONBIO,1997,817,David,NA,Perry,,,,,USA,NA
+NEWPHYT,2010,2515,Marinus,NA,Pilon,Colorado State University,UNKNOWN,Fort Collins,Colorado,USA,NA
+NEWPHYT,2011,2515,Marinus,NA,Pilon,Colorado State University,UNKNOWN,Fort Collins,Colorado,USA,NA
+NEWPHYT,2012,2515,Marinus,NA,Pilon,,,,,USA,NA
+NEWPHYT,2013,2515,Marinus,NA,Pilon,,,,,USA,NA
+NEWPHYT,2014,2515,Marinus,NA,Pilon,,,,,USA,NA
+NEWPHYT,2015,2515,Marinus,NA,Pilon,,Biology,,,USA,NA
+OIKOS,1996,3439,Stuart,L,Pimm,University of Tennessee,Zoology,Knoxville,TN,USA,NA
+CONBIO,1998,3439,Stuart,L,Pimm,University of Tennessee,Zoology,Knoxville,TN,USA,NA
+CONBIO,1999,3439,Stuart,L,Pimm,,,,,USA,NA
+CONBIO,2000,3439,Stuart,L,Pimm,,,,,USA,NA
+CONBIO,2001,3439,Stuart,L,Pimm,,,,,USA,NA
+BITR,2008,2516,Michelle,NA,Pinard,University of Aberdeen,UNKNOWN,Aberdeen,Scotland,United Kingdom,NA
+CONBIO,2009,2516,Michelle,NA,Pinard,University of Aberdeen,UNKNOWN,Aberdeen,Scotland,United Kingdom,NA
+CONBIO,2010,2516,Michelle,NA,Pinard,,,,,United Kingdom,NA
+CONBIO,2011,2516,Michelle,NA,Pinard,,,,,United Kingdom,NA
+CONBIO,2012,2516,Michelle,NA,Pinard,,IBES,,,United Kingdom,NA
+NEWPHYT,2006,168,Andrea,NA,Polle,Göttingen,UNKNOWN,Gottingen,UNKNOWN,Germany,NA
+NEWPHYT,2007,168,Andrea,NA,Polle,,,,,Germany,NA
+NEWPHYT,2008,168,Andrea,NA,Polle,,,,,Germany,NA
+NEWPHYT,2009,168,Andrea,NA,Polle,,,,,Germany,NA
+NEWPHYT,2010,168,Andrea,NA,Polle,,,,,Germany,NA
+NEWPHYT,2011,168,Andrea,NA,Polle,,,,,Germany,NA
+NEWPHYT,2012,168,Andrea,NA,Polle,,,,,Germany,NA
+NEWPHYT,2013,168,Andrea,NA,Polle,,,,,Germany,NA
+NEWPHYT,2014,168,Andrea,NA,Polle,,,,,Germany,NA
+NEWPHYT,2015,168,Andrea,NA,Polle,,Dept Forest Bot & Tree Physiol,,,Germany,NA
+CONBIO,2001,1347,Hugh,NA,Possingham,University of Queensland,UNKNOWN,Brisbane,Queensland,Australia,NA
+CONBIO,2002,1347,Hugh,NA,Possingham,,,,,Australia,NA
+CONBIO,2003,1347,Hugh,NA,Possingham,,,,,Australia,NA
+CONBIO,2004,1347,Hugh,NA,Possingham,,,,,Australia,NA
+CONBIO,2005,1347,Hugh,NA,Possingham,,,,,Australia,NA
+CONBIO,2008,342,Bob,NA,Pressey,James Cook University,UNKNOWN,UNKNOWN,Queensland,Australia,NA
+CONBIO,2000,342,Bob,NA,Pressey,New South Wales National Parks and Wildlife Service,,,New South Wales,Australia,NA
+CONBIO,2006,342,Bob,NA,Pressey,UNKNOWN,UNKNOWN,Invergowrie,New South Wales,Australia,NA
+CONBIO,2007,342,Bob,NA,Pressey,University of Queensland,UNKNOWN,Brisbane,Queensland,Australia,NA
+CONBIO,2001,342,Bob,NA,Pressey,New South Wales National Parks and Wildlife Service,,,New South Wales,Australia,NA
+CONBIO,2002,342,Bob,NA,Pressey,,,,,Australia,NA
+CONBIO,2003,342,Bob,NA,Pressey,,,,,Australia,NA
+CONBIO,2004,342,Bob,NA,Pressey,,,,,Australia,NA
+CONBIO,2005,342,Bob,NA,Pressey,,,,,Australia,NA
+CONBIO,2009,342,Bob,NA,Pressey,James Cook University,,UNKNOWN,Queensland,Australia,NA
+CONBIO,1994,3197,Richard,B,Primack,Boston University,Department of Biology,Boston,Massachusetts,USA,NA
+CONBIO,1995,3197,Richard,B,Primack,,,,,USA,NA
+CONBIO,1996,3197,Richard,B,Primack,,,,,USA,NA
+CONBIO,1997,3197,Richard,B,Primack,,,,,USA,NA
+CONBIO,1998,3197,Richard,B,Primack,,,,,USA,NA
+CONBIO,1999,3197,Richard,B,Primack,,,,,USA,NA
+CONBIO,2003,1120,Francis,E,Putz,University of Florida,UNKNOWN,Gainesville,Florida,USA,NA
+CONBIO,2004,1120,Francis,E,Putz,University of Florida,,Gainesville,Florida,USA,NA
+CONBIO,2005,1120,Francis,E,Putz,University of Florida,,Gainesville,Florida,USA,NA
+CONBIO,2006,1120,Francis,E,Putz,University of Florida,,Gainesville,Florida,USA,NA
+CONBIO,2007,1120,Francis,E,Putz,University of Florida,,Gainesville,Florida,USA,NA
+EVOL,1986,2532,Mark,D,Rausher,Duke University,UNKNOWN,Durham,NC,,NA
+NEWPHYT,2003,2532,Mark,D,Rausher,Duke University,UNKNOWN,Durham,NC,USA,NA
+NEWPHYT,2004,2532,Mark,D,Rausher,,,,,USA,NA
+NEWPHYT,2005,2532,Mark,D,Rausher,,,,,USA,NA
+NEWPHYT,2006,2532,Mark,D,Rausher,,,,,USA,NA
+NEWPHYT,2007,2532,Mark,D,Rausher,,,,,USA,NA
+NEWPHYT,2008,2532,Mark,D,Rausher,,,,,USA,NA
+NEWPHYT,2009,2532,Mark,D,Rausher,,,,,USA,NA
+NEWPHYT,2010,2532,Mark,D,Rausher,,,,,USA,NA
+NEWPHYT,2011,2532,Mark,D,Rausher,,,,,USA,NA
+NEWPHYT,2012,2532,Mark,D,Rausher,,,,,USA,NA
+NEWPHYT,2013,2532,Mark,D,Rausher,,,,,USA,NA
+NEWPHYT,2014,2532,Mark,D,Rausher,,,,,USA,NA
+NEWPHYT,2015,2532,Mark,D,Rausher,,,,,USA,NA
+CONBIO,1987,1250,G,Carlton,Ray,University of Virginia,UNKNOWN,Charlottesville,Virginia,USA,NA
+CONBIO,1988,1250,G,Carlton,Ray,,,,,USA,NA
+CONBIO,2012,2073,Kent,H,Redford,Archipelago Consulting,UNKNOWN,Portland,Maine,USA,NA
+CONBIO,1998,2073,Kent,H,Redford,NYZS/Wildlife Conservation Society,UNKNOWN,Bronx,NY,USA,NA
+CONBIO,1999,2073,Kent,H,Redford,,,,,USA,NA
+CONBIO,2000,2073,Kent,H,Redford,,,,,USA,NA
+CONBIO,2001,2073,Kent,H,Redford,,,,,USA,NA
+CONBIO,2002,2073,Kent,H,Redford,,,,,USA,NA
+CONBIO,2003,2073,Kent,H,Redford,,,,,USA,NA
+CONBIO,2004,2073,Kent,H,Redford,,,,,USA,NA
+CONBIO,2005,2073,Kent,H,Redford,Wildlife Conservation Society ,,,,USA,NA
+CONBIO,2006,2073,Kent,H,Redford,,,,,USA,NA
+CONBIO,2007,2073,Kent,H,Redford,,,,,USA,NA
+CONBIO,2008,2073,Kent,H,Redford,,,,,USA,NA
+CONBIO,2009,2073,Kent,H,Redford,,,,,USA,NA
+CONBIO,2010,2073,Kent,H,Redford,,,,,USA,NA
+CONBIO,2011,2073,Kent,H,Redford,,,,,USA,NA
+CONBIO,2013,2073,Kent,H,Redford,Archipelago Consulting,,Portland,Maine,USA,NA
+CONBIO,2014,2073,Kent,H,Redford,,,,,USA,NA
+NEWPHYT,2008,2685,Natalia,NA,Requena,Karlsruhe,UNKNOWN,UNKNOWN,Karlsruhe,Germany,NA
+NEWPHYT,2009,2685,Natalia,NA,Requena,,,,,Germany,NA
+NEWPHYT,2010,2685,Natalia,NA,Requena,,,,,Germany,NA
+NEWPHYT,2011,2685,Natalia,NA,Requena,,,,,Germany,NA
+NEWPHYT,2012,2685,Natalia,NA,Requena,,,,,Germany,NA
+NEWPHYT,2013,2685,Natalia,NA,Requena,,,,,Germany,NA
+NEWPHYT,2014,2685,Natalia,NA,Requena,,,,,Germany,NA
+NEWPHYT,2015,2685,Natalia,NA,Requena,,,,,Germany,NA
+AJB,1997,2229,Loren,NA,Rieseberg,Indiana University,UNKNOWN,Bloomington,Indiana,USA,NA
+NEWPHYT,2001,2229,Loren,NA,Rieseberg,Indiana University,UNKNOWN,Bloomington,Indiana,USA,NA
+NEWPHYT,2002,2229,Loren,NA,Rieseberg,,,,,USA,NA
+NEWPHYT,2003,2229,Loren,NA,Rieseberg,,,,,USA,NA
+NEWPHYT,2004,2229,Loren,NA,Rieseberg,,,,,USA,NA
+CONBIO,2000,562,Callum,NA,Roberts,University of York,UNKNOWN,York,England,United Kingdom,NA
+CONBIO,2001,562,Callum,NA,Roberts,,,,,United Kingdom,NA
+CONBIO,2002,562,Callum,NA,Roberts,,,,,United Kingdom,NA
+CONBIO,2003,562,Callum,NA,Roberts,,,,,United Kingdom,NA
+CONBIO,1994,1838,John,G,Robinson,NYZS/Wildlife Conservation Society,UNKNOWN,Bronx,New York,USA,NA
+CONBIO,1995,1838,John,G,Robinson,,,,,USA,NA
+CONBIO,1996,1838,John,G,Robinson,,,,,USA,NA
+CONBIO,1997,1838,John,G,Robinson,,,,,USA,NA
+CONBIO,1998,1838,John,G,Robinson,,,,,USA,NA
+CONBIO,1999,1838,John,G,Robinson,,,,,USA,NA
+CONBIO,2000,1838,John,G,Robinson,,,,,USA,NA
+CONBIO,2001,1838,John,G,Robinson,,,,,USA,NA
+CONBIO,2002,1838,John,G,Robinson,,,,,USA,NA
+CONBIO,2003,1838,John,G,Robinson,,,,,USA,NA
+CONBIO,2004,1838,John,G,Robinson,,,,,USA,NA
+CONBIO,2005,1838,John,G,Robinson,Wildlife Conservation Society ,,,,USA,NA
+CONBIO,2006,1838,John,G,Robinson,,,,,USA,NA
+CONBIO,2007,1838,John,G,Robinson,,,,,USA,NA
+CONBIO,2008,1838,John,G,Robinson,,,,,USA,NA
+CONBIO,2009,1838,John,G,Robinson,,,,,USA,NA
+CONBIO,2010,1838,John,G,Robinson,,,,,USA,NA
+CONBIO,2011,1838,John,G,Robinson,,,,,USA,NA
+CONBIO,2012,1838,John,G,Robinson,,,,,USA,NA
+CONBIO,2013,1838,John,G,Robinson,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,USA,NA
+CONBIO,2014,1838,John,G,Robinson,,,,,USA,NA
+BITR,2002,3455,Scott,K,Robinson,Illinois Natural History Survey,UNKNOWN,Champaign,Illinois,USA,NA
+OECOL,2005,3455,Scott,K,Robinson,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,USA,NA
+CONBIO,1995,3455,Scott,K,Robinson,Illinois Natural History Survey,UNKNOWN,Champaign,Illinois,USA,NA
+CONBIO,1996,3455,Scott,K,Robinson,,,,,USA,NA
+CONBIO,1997,3455,Scott,K,Robinson,,,,,USA,NA
+CONBIO,1998,3455,Scott,K,Robinson,,,,,USA,NA
+CONBIO,1999,3455,Scott,K,Robinson,,,,,USA,NA
+CONBIO,2000,3455,Scott,K,Robinson,,,,,USA,NA
+CONBIO,2001,3455,Scott,K,Robinson,,,,,USA,NA
+CONBIO,2008,1839,Jon,Paul,Rodriguez,Venezuelan Institute For Scientific Investigation,Center for Ecology,Caracas,unknown,Venezuela,NA
+CONBIO,2009,1839,Jon,Paul,Rodriguez,,,,,Venezuela,NA
+CONBIO,2010,1839,Jon,Paul,Rodriguez,,,,,Venezuela,NA
+CONBIO,2011,1839,Jon,Paul,Rodriguez,,,,,Venezuela,NA
+CONBIO,2012,1839,Jon,Paul,Rodriguez,,,,,Venezuela,NA
+CONBIO,2013,1839,Jon,Paul,Rodriguez,,,,,Venezuela,NA
+CONBIO,2014,1839,Jon,Paul,Rodriguez,,,,,Venezuela,NA
+CONBIO,1994,1355,Holmes,NA,Rolston,Colorado State University,UNKNOWN,Fort Colllins,Colorado,USA,NA
+CONBIO,1995,1355,Holmes,NA,Rolston,,,,,USA,NA
+CONBIO,1996,1355,Holmes,NA,Rolston,,,,,USA,NA
+CONBIO,1997,1355,Holmes,NA,Rolston,,,,,USA,NA
+CONBIO,1998,1355,Holmes,NA,Rolston,,,,,USA,NA
+CONBIO,2010,2543,Murray,NA,Rudd,University of York,UNKNOWN,York,England,United Kingdom,NA
+CONBIO,2011,2543,Murray,NA,Rudd,,,,,United Kingdom,NA
+CONBIO,2012,2543,Murray,NA,Rudd,,,,,United Kingdom,NA
+CONBIO,1994,2736,Oliver,A,Ryder,Zoological Society of San Diego,UNKNOWN,San Diego,California,USA,NA
+CONBIO,1995,2736,Oliver,A,Ryder,,,,,USA,NA
+CONBIO,1996,2736,Oliver,A,Ryder,,,,,USA,NA
+CONBIO,1997,2736,Oliver,A,Ryder,,,,,USA,NA
+CONBIO,1998,2736,Oliver,A,Ryder,,,,,USA,NA
+CONBIO,1994,2686,Nils,NA,Ryman,Stockholm University,UNKNOWN,Stockholm,Uppland,Sweden,NA
+CONBIO,1995,2686,Nils,NA,Ryman,,,,,Sweden,NA
+CONBIO,1996,2686,Nils,NA,Ryman,,,,,Sweden,NA
+CONBIO,1997,2686,Nils,NA,Ryman,,,,,Sweden,NA
+CONBIO,1998,2686,Nils,NA,Ryman,,,,,Sweden,NA
+CONBIO,1999,2686,Nils,NA,Ryman,,,,,Sweden,NA
+CONBIO,2000,2686,Nils,NA,Ryman,,,,,Sweden,NA
+CONBIO,2001,2686,Nils,NA,Ryman,,,,,Sweden,NA
+NEWPHYT,2014,187,Ari,NA,Sadanandom,University of Durham,School of Biological and Biomedical Sciences ,Durham,England,United Kingdom,NA
+NEWPHYT,2015,187,Ari,NA,Sadanandom,,,,,United Kingdom,NA
+CONBIO,2005,3841,Yvonne,NA,Sadovy,University of Hong Kong,UNKNOWN,Pokfulam,Hong Kong,China,NA
+CONBIO,2006,3841,Yvonne,NA,Sadovy,,,,,China,NA
+CONBIO,2007,3841,Yvonne,NA,Sadovy,,,,,China,NA
+CONBIO,2008,3841,Yvonne,NA,Sadovy,,,,,China,NA
+CONBIO,2009,3841,Yvonne,NA,Sadovy,,,,,China,NA
+CONBIO,2001,2548,Michael,NA,Samways,University of Natal,UNKNOWN,Pietermaritzburg,KwaZulu-Natal,South Africa,NA
+CONBIO,2003,2548,Michael,NA,Samways,University of Stellenbosch,UNKNOWN,Stellenbosch,Western Cape,South Africa,NA
+CONBIO,2002,2548,Michael,NA,Samways,University of Natal,,Pietermaritzburg,KwaZulu-Natal,South Africa,NA
+CONBIO,2004,2548,Michael,NA,Samways,University of Stellenbosch,,Stellenbosch,Western Cape,South Africa,NA
+CONBIO,2005,2548,Michael,NA,Samways,,,,,South Africa,NA
+CONBIO,2006,2548,Michael,NA,Samways,,,,,South Africa,NA
+CONBIO,2007,2548,Michael,NA,Samways,,,,,South Africa,NA
+CONBIO,2008,2548,Michael,NA,Samways,,,,,South Africa,NA
+CONBIO,2009,2548,Michael,NA,Samways,,,,,South Africa,NA
+NEWPHYT,1990,854,Dale,NA,Sanders,University of York,UNKNOWN,York,N Yorkshire,United Kingdom,NA
+NEWPHYT,1991,854,Dale,NA,Sanders,,,,,United Kingdom,NA
+NEWPHYT,1992,854,Dale,NA,Sanders,,,,,United Kingdom,NA
+NEWPHYT,1993,854,Dale,NA,Sanders,,,,,United Kingdom,NA
+NEWPHYT,1994,854,Dale,NA,Sanders,,,,,United Kingdom,NA
+NEWPHYT,1995,854,Dale,NA,Sanders,,,,,United Kingdom,NA
+NEWPHYT,1996,854,Dale,NA,Sanders,,,,,United Kingdom,NA
+NEWPHYT,1997,854,Dale,NA,Sanders,,,,,United Kingdom,NA
+NEWPHYT,1998,854,Dale,NA,Sanders,,,,,United Kingdom,NA
+NEWPHYT,1999,854,Dale,NA,Sanders,,,,,United Kingdom,NA
+NEWPHYT,2000,854,Dale,NA,Sanders,,,,,United Kingdom,NA
+NEWPHYT,2001,854,Dale,NA,Sanders,,,,,United Kingdom,NA
+NEWPHYT,2002,854,Dale,NA,Sanders,,Department of Biology,,,United Kingdom,NA
+CONBIO,1994,856,Denis,A,Saunders,CSIRO,Wildlife and Ecology,Canberra,UNKNOWN,Australia,NA
+CONBIO,1995,856,Denis,A,Saunders,,,,,Australia,NA
+CONBIO,1996,856,Denis,A,Saunders,,,,,Australia,NA
+CONBIO,1997,856,Denis,A,Saunders,,,,,Australia,NA
+CONBIO,1998,856,Denis,A,Saunders,,,,,Australia,NA
+CONBIO,1999,856,Denis,A,Saunders,,,,,Australia,NA
+CONBIO,2000,856,Denis,A,Saunders,,,,,Australia,NA
+CONBIO,2001,856,Denis,A,Saunders,,,,,Australia,NA
+CONBIO,2002,856,Denis,A,Saunders,,,,,Australia,NA
+NEWPHYT,2006,1357,Henk,NA,Schat,University of Amsterdam,UNKNOWN,Amsterdam,The Netherlands ,Netherlands,NA
+NEWPHYT,2007,1357,Henk,NA,Schat,,,,,Netherlands,NA
+NEWPHYT,2008,1357,Henk,NA,Schat,,,,,Netherlands,NA
+NEWPHYT,2009,1357,Henk,NA,Schat,,,,,Netherlands,NA
+NEWPHYT,2010,1357,Henk,NA,Schat,,,,,Netherlands,NA
+NEWPHYT,2011,1357,Henk,NA,Schat,,,,,Netherlands,NA
+NEWPHYT,2012,1357,Henk,NA,Schat,,,,,Netherlands,NA
+NEWPHYT,2013,1357,Henk,NA,Schat,,,,,Netherlands,NA
+NEWPHYT,2014,1357,Henk,NA,Schat,,,,,Netherlands,NA
+NEWPHYT,2015,1357,Henk,NA,Schat,UNKNOWN,,UNKNOWN,UNKNOWN,Netherlands,NA
+CONBIO,1987,3942,Stephen,NA,Schneider,National Center for Atmospheric Research,UNKNOWN,Santa Barbara,California,USA,NA
+CONBIO,1993,3942,Stephen,NA,Schneider,Stanford University,,Stanford,,USA,NA
+CONBIO,1988,3942,Stephen,NA,Schneider,National Center for Atmospheric Research,,Santa Barbara,,USA,NA
+CONBIO,1989,3942,Stephen,NA,Schneider,,,,,USA,NA
+CONBIO,1990,3942,Stephen,NA,Schneider,,,,,USA,NA
+CONBIO,1991,3942,Stephen,NA,Schneider,,,,,USA,NA
+CONBIO,1992,3942,Stephen,NA,Schneider,,,,,USA,NA
+CONBIO,1994,3942,Stephen,NA,Schneider,Stanford University,,Stanford,,USA,NA
+CONBIO,1995,3942,Stephen,NA,Schneider,,,,,USA,NA
+CONBIO,1996,3942,Stephen,NA,Schneider,,,,,USA,NA
+CONBIO,1997,3942,Stephen,NA,Schneider,,,,,USA,NA
+CONBIO,2012,2555,Michael,K,Schwartz,USDA Forest Service,Rocky Mt Res Stn,Missoula,Montana,USA,NA
+CONBIO,2013,2555,Michael,K,Schwartz,,,,,USA,NA
+CONBIO,2014,2555,Michael,K,Schwartz,,,,,USA,NA
+CONBIO,1999,2085,Kim,T,Scribner,Michigan State University,UNKNOWN,East Lansing,Michigan,USA,NA
+CONBIO,2000,2085,Kim,T,Scribner,,,,,USA,NA
+CONBIO,2001,2085,Kim,T,Scribner,,,,,USA,NA
+CONBIO,2002,2085,Kim,T,Scribner,,,,,USA,NA
+CONBIO,2003,2085,Kim,T,Scribner,,,,,USA,NA
+CONBIO,2004,2085,Kim,T,Scribner,,,,,USA,NA
+CONBIO,2005,2085,Kim,T,Scribner,,,,,USA,NA
+CONBIO,2006,2085,Kim,T,Scribner,,,,,USA,NA
+CONBIO,2013,2087,Kathleen,NA,Segerson,University of Connecticut,Economics,Storrs,Connecticut,,NA
+CONBIO,2014,2087,Kathleen,NA,Segerson,,,,,USA,NA
+NEWPHYT,2007,2557,Marc-Andre,NA,Selosse,CNRS,Ctr Ecol Fonct & Evolut,UNKNOWN,Montpellier,France,NA
+NEWPHYT,2008,2557,Marc-Andre,NA,Selosse,,,,,France,NA
+NEWPHYT,2009,2557,Marc-Andre,NA,Selosse,,,,,France,NA
+NEWPHYT,2011,2557,Marc-Andre,NA,Selosse,,,,,France,NA
+NEWPHYT,2012,2557,Marc-Andre,NA,Selosse,,,,,France,NA
+NEWPHYT,2013,2557,Marc-Andre,NA,Selosse,,,,,France,NA
+NEWPHYT,2014,2557,Marc-Andre,NA,Selosse,Museum Natl Hist Nat, Dept Systemat & Evolut,,Paris,France,NA
+NEWPHYT,2015,2557,Marc-Andre,NA,Selosse,,,,,France,NA
+CONBIO,1992,2560,Mark,NA,Shaffer,Wilderness Society,UNKNOWN,UNKNOWN,UNKNOWN,USA,NA
+CONBIO,1993,2560,Mark,NA,Shaffer,,,,,USA,NA
+CONBIO,1998,3217,Rebecca,R,Sharitz,University of Georgia,UNKNOWN,Athens,Georgia,USA,NA
+CONBIO,1999,3217,Rebecca,R,Sharitz,,,,,USA,NA
+CONBIO,2000,3217,Rebecca,R,Sharitz,,,,,USA,NA
+CONBIO,2001,3217,Rebecca,R,Sharitz,,,,,USA,NA
+EVOL,1996,3218,Ruth,Green,Shaw,University of Edinburgh,UNKNOWN,Edinburgh,Scotland,United Kingdom,NA
+EVOL,1997,3218,Ruth,Green,Shaw,University of Minnesota Twin Cities,,St. Paul,Minnesota,USA,NA
+NEWPHYT,2005,3218,Ruth,NA,Shaw,University of Minnesota Twin Cities,,St. Paul,Minnesota,USA,NA
+NEWPHYT,2006,3218,Ruth,NA,Shaw,,,,,USA,NA
+NEWPHYT,2007,3218,Ruth,NA,Shaw,,,,,USA,NA
+NEWPHYT,2008,3218,Ruth,NA,Shaw,,,,,USA,NA
+NEWPHYT,2009,3218,Ruth,NA,Shaw,,,,,USA,NA
+CONBIO,1987,1361,Herman,H,Shugart,University of Virginia,UNKNOWN,Charlottesville,Virginia,USA,NA
+CONBIO,1988,1361,Herman,H,Shugart,,,,,USA,NA
+CONBIO,1989,1361,Herman,H,Shugart,,,,,USA,NA
+CONBIO,1990,1361,Herman,H,Shugart,,,,,USA,NA
+CONBIO,2002,2091,Kathryn,E,Sieving,University of Florida,Wildlife Ecology & Conservation,Gainesville,Florida,USA,NA
+CONBIO,2003,2091,Kathryn,E,Sieving,University of Florida,Wildlife Ecology & Conservation,Gainesville,Florida,USA,NA
+CONBIO,2004,2091,Kathryn,E,Sieving,University of Florida,Wildlife Ecology & Conservation,Gainesville,Florida,USA,NA
+CONBIO,2005,2091,Kathryn,E,Sieving,University of Florida,Wildlife Ecology & Conservation,Gainesville,Florida,USA,NA
+CONBIO,2006,2091,Kathryn,E,Sieving,University of Florida,Wildlife Ecology & Conservation,Gainesville,Florida,USA,NA
+CONBIO,2007,2091,Kathryn,E,Sieving,University of Florida,Wildlife Ecology & Conservation,Gainesville,Florida,USA,NA
+CONBIO,2008,2091,Kathryn,E,Sieving,University of Florida,Wildlife Ecology & Conservation,Gainesville,Florida,USA,NA
+CONBIO,2009,2091,Kathryn,E,Sieving,University of Florida,Wildlife Ecology & Conservation,Gainesville,Florida,USA,NA
+CONBIO,1987,867,Daniel,NA,Simberloff,Florida State University,UNKNOWN,Tallahassee,Florida,USA,NA
+AREES,2002,867,Daniel,NA,Simberloff,University of Tennessee,,Knoxville,TN,USA,NA
+CONBIO,1988,867,Daniel,NA,Simberloff,Florida State University,,Tallahassee,Florida,USA,NA
+CONBIO,1989,867,Daniel,NA,Simberloff,,,,,USA,NA
+CONBIO,1990,867,Daniel,NA,Simberloff,,,,,USA,NA
+CONBIO,1991,867,Daniel,NA,Simberloff,,,,,USA,NA
+CONBIO,2010,1873,Javier,A,Simonetti,University of Chile,UNKNOWN,Santiago,Santiago Metropolitan Region,Chile,NA
+CONBIO,2011,1873,Javier,A,Simonetti,,,,,Chile,NA
+CONBIO,2012,1873,Javier,A,Simonetti,,,,,Chile,NA
+CONBIO,2013,1873,Javier,A,Simonetti,,,,,Chile,NA
+NEWPHYT,2011,201,A,Green,Smith,Cambridge,UNKNOWN,Cambridge,England,United Kingdom,NA
+NEWPHYT,2012,201,A,Green,Smith,,,,,United Kingdom,NA
+NEWPHYT,2013,201,A,Green,Smith,,,,,United Kingdom,NA
+NEWPHYT,2014,201,A,Green,Smith,,,,,United Kingdom,NA
+NEWPHYT,2015,201,Alison,Green,Smith,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,United Kingdom,NA
+CONBIO,2005,2693,Navjot,S,Sodhi,National University of Singapore,UNKNOWN,UNKNOWN,UNKNOWN,Singapore,NA
+CONBIO,2006,2693,Navjot,S,Sodhi,,,,,Singapore,NA
+CONBIO,2007,2693,Navjot,S,Sodhi,,,,,Singapore,NA
+CONBIO,2008,2693,Navjot,S,Sodhi,,,,,Singapore,NA
+CONBIO,2009,2693,Navjot,S,Sodhi,,,,,Singapore,NA
+CONBIO,2010,2693,Navjot,S,Sodhi,,,,,Singapore,NA
+EVOL,2004,2921,Pamela,NA,Soltis,University of Florida,UNKNOWN,Gainesville,FL,USA,NA
+CONBIO,1995,2921,Pamela,S,Soltis,Washington State University,UNKNOWN,Pullman,Washington,USA,NA
+CONBIO,1996,2921,Pamela,S,Soltis,,,,,USA,NA
+CONBIO,1997,2921,Pamela,S,Soltis,,,,,USA,NA
+CONBIO,1993,1883,James,NA,Spotila,Drexel University,UNKNOWN,Philadelphia,Pennsylvania,USA,NA
+CONBIO,1994,1883,James,NA,Spotila,,,,,USA,NA
+CONBIO,1995,1883,James,NA,Spotila,,,,,USA,NA
+CONBIO,1996,1883,James,NA,Spotila,,,,,USA,NA
+CONBIO,1997,1883,James,NA,Spotila,,,,,USA,NA
+CONBIO,1998,1883,James,NA,Spotila,,,,,USA,NA
+CONBIO,2013,875,Dale,NA,Squires,National Marine Fisheries Service,SW Fisheries Sci Ctr,La Jolla,CA,USA,NA
+CONBIO,2014,875,Dale,NA,Squires,,,,,USA,NA
+CONBIO,1999,2571,Melanie,IJ,Stiassny,American Museum of Natural History,UNKNOWN,New York City,New York,USA,NA
+CONBIO,2000,2571,Melanie,IJ,Stiassny,,,,,USA,NA
+CONBIO,2001,2571,Melanie,IJ,Stiassny,,,,,USA,NA
+NEWPHYT,2013,1892,J,R,Stinchcombe,University of Toronto,UNKNOWN,Toronto,Ontario,Canada,NA
+NEWPHYT,2015,1892,J,R,Stinchcombe,,,,,Canada,NA
+NEWPHYT,2014,1892,John,R,Stinchcombe,,,,,Canada,NA
+NEWPHYT,2004,3943,Steven,H,Strauss,Oregon State,UNKNOWN,Corvallis,Oregon,USA,NA
+NEWPHYT,2005,3943,Steven,H,Strauss,,,,,USA,NA
+NEWPHYT,2006,3943,Steven,H,Strauss,,,,,USA,NA
+NEWPHYT,2007,3943,Steven,H,Strauss,,,,,USA,NA
+NEWPHYT,2009,3943,Steven,H,Strauss,,,,,USA,NA
+NEWPHYT,2010,3943,Steven,H,Strauss,,,,,USA,NA
+NEWPHYT,2011,3943,Steven,H,Strauss,,,,,USA,NA
+NEWPHYT,2012,3943,Steven,H,Strauss,,,,,USA,NA
+NEWPHYT,1985,881,D,P,Stribley,Rothamsted Experimental Station,UNKNOWN,Harpenden,Herts,United Kingdom,NA
+NEWPHYT,1986,881,D,P,Stribley,,,,,United Kingdom,NA
+NEWPHYT,1987,881,D,P,Stribley,,,,,United Kingdom,NA
+NEWPHYT,1988,881,D,P,Stribley,,,,,United Kingdom,NA
+NEWPHYT,1989,881,D,P,Stribley,,,,,United Kingdom,NA
+NEWPHYT,1990,881,D,P,Stribley,,,,,United Kingdom,NA
+NEWPHYT,1996,881,D,P,Stribley,Lancaster,,UNKNOWN,UNKNOWN,United Kingdom,NA
+ECOLOGY,2004,3483,Sonia,E,Sultan,Wesleyan University,UNKNOWN,Middletown,Connecticut,USA,NA
+NEWPHYT,2004,3483,Sonia,NA,Sultan,,,,,USA,NA
+NEWPHYT,2005,3483,Sonia,NA,Sultan,,,,,USA,NA
+NEWPHYT,2006,3483,Sonia,NA,Sultan,,,,,USA,NA
+NEWPHYT,2007,3483,Sonia,NA,Sultan,,,,,USA,NA
+NEWPHYT,2008,3483,Sonia,NA,Sultan,,,,,USA,NA
+NEWPHYT,2009,3483,Sonia,NA,Sultan,,,,,USA,NA
+NEWPHYT,1985,2932,P,J,Syrett,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,United Kingdom,NA
+NEWPHYT,1986,2932,P,J,Syrett,,,,,United Kingdom,NA
+NEWPHYT,1987,2932,P,J,Syrett,,,,,United Kingdom,NA
+NEWPHYT,1988,2932,P,J,Syrett,,,,,United Kingdom,NA
+NEWPHYT,1989,2932,P,J,Syrett,,,,,United Kingdom,NA
+NEWPHYT,1999,2697,Nicholas,J,Talbot,University of Exeter,UNKNOWN,Exeter,England,United Kingdom,NA
+NEWPHYT,2000,2697,Nicholas,J,Talbot,,,,,United Kingdom,NA
+NEWPHYT,2001,2697,Nicholas,J,Talbot,,,,,United Kingdom,NA
+NEWPHYT,2002,2697,Nicholas,J,Talbot,,,,,United Kingdom,NA
+NEWPHYT,2003,2697,Nicholas,J,Talbot,,,,,United Kingdom,NA
+NEWPHYT,2004,2697,Nicholas,J,Talbot,,,,,United Kingdom,NA
+NEWPHYT,2005,2697,Nicholas,J,Talbot,,,,,United Kingdom,NA
+NEWPHYT,2006,2697,Nicholas,J,Talbot,,,,,United Kingdom,NA
+NEWPHYT,2007,2697,Nicholas,J,Talbot,,,,,United Kingdom,NA
+NEWPHYT,2008,2697,Nicholas,J,Talbot,,,,,United Kingdom,NA
+NEWPHYT,2009,2697,Nicholas,J,Talbot,,,,,United Kingdom,NA
+CONBIO,1989,3485,Stanley,NA,Temple,University of Wisconsin,UNKNOWN,Madison,Wisconsin,USA,NA
+CONBIO,1990,3485,Stanley,NA,Temple,,,,,USA,NA
+CONBIO,2011,889,David,NA,Theobald,Colorado State University,,Fort Colllins,Colorado,USA,NA
+CONBIO,2012,889,David,NA,Theobald,,,,,USA,NA
+NEWPHYT,1992,3877,Howard,NA,Thomas,Aberystwyth,UNKNOWN,Aberystwyth,Ceredigion,United Kingdom,NA
+NEWPHYT,1993,3877,Howard,NA,Thomas,,,,,United Kingdom,NA
+NEWPHYT,1994,3877,Howard,NA,Thomas,,,,,United Kingdom,NA
+NEWPHYT,1995,3877,Howard,NA,Thomas,,,,,United Kingdom,NA
+NEWPHYT,1996,3877,Howard,NA,Thomas,,,,,United Kingdom,NA
+NEWPHYT,1997,3877,Howard,NA,Thomas,,,,,United Kingdom,NA
+NEWPHYT,1998,3877,Howard,NA,Thomas,,,,,United Kingdom,NA
+NEWPHYT,1999,3877,Howard,NA,Thomas,,,,,United Kingdom,NA
+NEWPHYT,2000,3877,Howard,NA,Thomas,,,,,United Kingdom,NA
+NEWPHYT,2001,3877,Howard,NA,Thomas,,,,,United Kingdom,NA
+NEWPHYT,2002,3877,Howard,NA,Thomas,,,,,United Kingdom,NA
+NEWPHYT,2003,3877,Howard,NA,Thomas,,,,,United Kingdom,NA
+NEWPHYT,2004,3877,Howard,NA,Thomas,,,,,United Kingdom,NA
+NEWPHYT,2005,3877,Howard,NA,Thomas,,,,,United Kingdom,NA
+NEWPHYT,2006,3877,Howard,NA,Thomas,,,,,United Kingdom,NA
+NEWPHYT,2007,3877,Howard,NA,Thomas,,,,,United Kingdom,NA
+NEWPHYT,2011,3923,M,Green,Tjoelker,Texas A&M,Dept Ecosyst Sci & Management,College Station,Texas,USA,NA
+NEWPHYT,2012,3923,M,Green,Tjoelker, University of Western Sydney,Hawkesbury Institute for the Environment,Penrith,New South Wales,Australia,NA
+NEWPHYT,2013,3923,M,Green,Tjoelker,,,,,Australia,NA
+NEWPHYT,2015,3923,M,Green,Tjoelker,,,,,Australia,NA
+NEWPHYT,2014,2577,Mark,Green,Tjoelker,,,,,Australia,NA
+CONBIO,1987,1426,Itaru,NA,Uchida,Himeji City Aquarium,UNKNOWN,Himeji,Kansai,Japan,NA
+CONBIO,1988,1426,Itaru,NA,Uchida,,,,,Japan,NA
+CONBIO,1989,1426,Itaru,NA,Uchida,,,,,Japan,NA
+CONBIO,1990,1426,Itaru,NA,Uchida,,,,,Japan,NA
+CONBIO,1991,1426,Itaru,NA,Uchida,,,,,Japan,NA
+EVOL,2009,1920,Jana,NA,Vamosi,University of Calgary,UNKNOWN,Calgary,AB,Canada,NA
+NEWPHYT,2015,1920,Jana,NA,Vamosi,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,Canada,NA
+CONBIO,2001,2593,Marc-Andre,NA,Villard,Universite de Moncton,UNKNOWN,Moncton,New Brunswick,Canada,NA
+CONBIO,2002,2593,Marc-Andre,NA,Villard,,,,,Canada,NA
+CONBIO,2003,2593,Marc-Andre,NA,Villard,,,,,Canada,NA
+CONBIO,2004,2593,Marc-Andre,NA,Villard,,,,,Canada,NA
+EVOL,1986,3241,Robert,C,Vrijenhoek,Rutgers University,UNKNOWN,New Brunswick,NJ,USA,NA
+CONBIO,1988,3241,Robert,NA,Vrijenhoek,Rutgers University,UNKNOWN,New Brunswick,NJ,USA,NA
+CONBIO,1989,3241,Robert,NA,Vrijenhoek,,,,,USA,NA
+CONBIO,1990,3241,Robert,NA,Vrijenhoek,,,,,USA,NA
+CONBIO,1991,3241,Robert,NA,Vrijenhoek,,,,,USA,NA
+CONBIO,1992,3241,Robert,NA,Vrijenhoek,,,,,USA,NA
+CONBIO,1993,3241,Robert,NA,Vrijenhoek,,,,,USA,NA
+CONBIO,1994,3241,Robert,NA,Vrijenhoek,,,,,USA,NA
+CONBIO,1999,3243,Robin,S,Waples,National Marine Fisheries Service,UNKNOWN,Seattle,Washington,USA,NA
+CONBIO,2000,3243,Robin,S,Waples,,,,,USA,NA
+CONBIO,2001,3243,Robin,S,Waples,,,,,USA,NA
+CONBIO,2002,3243,Robin,S,Waples,,,,,USA,NA
+CONBIO,2003,3243,Robin,S,Waples,,,,,USA,NA
+CONBIO,2004,3243,Robin,S,Waples,,,,,USA,NA
+CONBIO,2005,3243,Robin,S,Waples,,,,,USA,NA
+CONBIO,2006,3243,Robin,S,Waples,,,,,USA,NA
+CONBIO,2007,3243,Robin,S,Waples,,,,,USA,NA
+CONBIO,2008,3243,Robin,S,Waples,,,,,USA,NA
+CONBIO,2009,3243,Robin,S,Waples,,,,,USA,NA
+CONBIO,2010,3243,Robin,S,Waples,,,,,USA,NA
+CONBIO,2011,3243,Robin,S,Waples,,,,,USA,NA
+CONBIO,2012,3243,Robin,S,Waples,,,,,USA,NA
+CONBIO,2013,3243,Robin,S,Waples,,,,,USA,NA
+CONBIO,2014,3243,Robin,S,Waples,,,,,USA,NA
+CONBIO,2011,1943,James,EM,Watson,University of Queensland,UNKNOWN,Brisbane,Queensland,Australia,NA
+CONBIO,2012,1943,James,EM,Watson,,,St Lucia,,Australia,NA
+CONBIO,2013,1943,James,EM,Watson,,,,,Australia,NA
+CONBIO,2014,1943,James,EM,Watson,,,,,Australia,NA
+NEWPHYT,1985,3247,R,Green,West,Cambridge,UNKNOWN,Cambridge,England,United Kingdom,NA
+NEWPHYT,1986,3247,R,Green,West,,,,,United Kingdom,NA
+NEWPHYT,1987,3247,R,Green,West,,,,,United Kingdom,NA
+NEWPHYT,1988,3247,R,Green,West,,,,,United Kingdom,NA
+NEWPHYT,1989,3247,R,Green,West,,,,,United Kingdom,NA
+NEWPHYT,1990,3247,R,Green,West,,,,,United Kingdom,NA
+NEWPHYT,1991,3247,R,Green,West,,,,,United Kingdom,NA
+NEWPHYT,1992,3247,R,Green,West,,,,,United Kingdom,NA
+NEWPHYT,1993,3247,R,Green,West,,,,,United Kingdom,NA
+NEWPHYT,1994,3247,Richard,Green,West,,,,,United Kingdom,NA
+CONBIO,1987,912,David,NA,Western,New York Zoological Society,UNKNOWN,Bronx,New York,USA,NA
+CONBIO,1988,912,David,NA,Western,,,,,USA,NA
+CONBIO,1989,912,David,NA,Western,,,,,USA,NA
+CONBIO,1990,912,David,NA,Western,,,,,USA,NA
+CONBIO,1991,912,David,NA,Western,,,,,USA,NA
+CONBIO,1992,912,David,NA,Western,,,,,USA,NA
+CONBIO,1993,912,David,NA,Western,,,,,USA,NA
+CONBIO,1987,227,Arthur,NA,Westing,Stockholm International Peace Research Institute,UNKNOWN,Stockholm,Uppland,Sweden,NA
+CONBIO,1991,227,Arthur,NA,Westing,Westing Associates,UNKNOWN,Putney,Vermont,USA,NA
+CONBIO,1988,227,Arthur,NA,Westing,Stockholm International Peace Research Institute,,Stockholm,Uppland,Sweden,NA
+CONBIO,1989,227,Arthur,NA,Westing,International Peace Research Institute ,,Oslo,UNKNOWN,Norway,NA
+CONBIO,1990,227,Arthur,NA,Westing,,,,,Sweden,NA
+CONBIO,1992,918,David,NA,Wilcove,Environmental Defense Fund,UNKNOWN,Washington DC,Washington DC,USA,NA
+CONBIO,1991,918,David,NA,Wilcove,Wilderness Society,,,,USA,NA
+CONBIO,1993,918,David,NA,Wilcove,Environmental Defense Fund,,,,USA,NA
+CONBIO,1994,918,David,NA,Wilcove,,,,,USA,NA
+CONBIO,1995,918,David,NA,Wilcove,,,,,USA,NA
+CONBIO,1996,918,David,NA,Wilcove,,,,,USA,NA
+CONBIO,1997,918,David,NA,Wilcove,,,,,USA,NA
+CONBIO,1998,918,David,NA,Wilcove,,,,,USA,NA
+CONBIO,1999,918,David,NA,Wilcove,,,,,USA,NA
+CONBIO,2000,918,David,NA,Wilcove,,,,,USA,NA
+CONBIO,1987,375,Bruce,NA,Wilcox,Stanford University,Center for Conservation Biology,Stanford,California,USA,NA
+CONBIO,1988,375,Bruce,NA,Wilcox,,,,,USA,NA
+CONBIO,2002,2957,Paul,NA,Williams,The Natural History Museum,UNKNOWN,London,England,UK,NA
+CONBIO,2003,2957,Paul,NA,Williams,,,,,UK,NA
+CONBIO,2004,2957,Paul,NA,Williams,,,,,UK,NA
+CONBIO,2005,2957,Paul,NA,Williams,,,,,UK,NA
+CONBIO,2000,2613,Mary,F,Willson,Nature Conservancy,UNKNOWN,Arlington,Virginia,USA,NA
+CONBIO,1995,2613,Mary,F,Willson,US Forest Service,,Juneau,Alaska,USA,NA
+CONBIO,1996,2613,Mary,F,Willson,,,,,USA,NA
+CONBIO,1997,2613,Mary,F,Willson,,,,,USA,NA
+CONBIO,1998,2613,Mary,F,Willson,,,,,USA,NA
+CONBIO,1999,2613,Mary,F,Willson,,,,,USA,NA
+CONBIO,2001,2613,Mary,F,Willson,University of Alaska ,,Fairbanks,,USA,NA
+CONBIO,2002,2613,Mary,F,Willson,,,,,USA,NA
+CONBIO,2003,2613,Mary,F,Willson,,,,,USA,NA
+CONBIO,2004,2613,Mary,F,Willson,,,,,USA,NA
+NEWPHYT,1990,1963,J,NA,Wolfenden,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,United Kingdom,NA
+NEWPHYT,1991,1963,J,NA,Wolfenden,,,,,United Kingdom,NA
+NEWPHYT,1992,1963,J,NA,Wolfenden,University of Lancaster,,Lancaster,Lancashire,United Kingdom,NA
+NEWPHYT,1993,1963,J,NA,Wolfenden,,,,,United Kingdom,NA
+NEWPHYT,1994,1963,J,NA,Wolfenden,,,,,United Kingdom,NA
+NEWPHYT,1995,1963,J,NA,Wolfenden,,,,,United Kingdom,NA
+NEWPHYT,1996,1963,John,NA,Wolfenden,,,,,United Kingdom,NA
+JBIOG,1992,1144,F,Ian,Woodward,UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN,NA,NA
+NEWPHYT,1993,1144,F,Ian,Woodward,Sheffield,UNKNOWN,Sheffield,South Yorkshire,United Kingdom,NA
+NEWPHYT,1994,1144,F,Ian,Woodward,,,,,United Kingdom,NA
+NEWPHYT,1995,1144,F,Ian,Woodward,,,,,United Kingdom,NA
+NEWPHYT,1996,1144,F,Ian,Woodward,,,,,United Kingdom,NA
+NEWPHYT,1997,1144,F,Ian,Woodward,,,,,United Kingdom,NA
+NEWPHYT,1998,1144,F,Ian,Woodward,,,,,United Kingdom,NA
+NEWPHYT,1999,1144,F,Ian,Woodward,,,,,United Kingdom,NA
+NEWPHYT,2000,1144,F,Ian,Woodward,,,,,United Kingdom,NA
+NEWPHYT,2001,1144,F,Ian,Woodward,,,,,United Kingdom,NA
+NEWPHYT,2002,1144,F,Ian,Woodward,,,,,United Kingdom,NA
+NEWPHYT,2003,1144,F,Ian,Woodward,,,,,United Kingdom,NA
+NEWPHYT,2004,1144,F,Ian,Woodward,,,,,United Kingdom,NA
+NEWPHYT,2005,1144,F,Ian,Woodward,,,,,United Kingdom,NA
+NEWPHYT,2006,1144,F,Ian,Woodward,,,,,United Kingdom,NA
+NEWPHYT,2007,1144,F,Ian,Woodward,,,,,United Kingdom,NA
+NEWPHYT,2008,1144,F,Ian,Woodward,,,,,United Kingdom,NA
+NEWPHYT,2009,1144,F,Ian,Woodward,,,,,United Kingdom,NA
+NEWPHYT,2010,1144,F,Ian,Woodward,,,,,United Kingdom,NA
+NEWPHYT,2011,1144,F,Ian,Woodward,,,,,United Kingdom,NA
+NEWPHYT,2012,1144,F,Ian,Woodward,,,,,United Kingdom,NA
+NEWPHYT,1985,2618,M,M,Yeoman,University of Edinburgh,UNKNOWN,Edinburgh,Scotland,United Kingdom,NA
+NEWPHYT,1986,2618,M,M,Yeoman,,,,,United Kingdom,NA
+NEWPHYT,1987,2618,M,M,Yeoman,,,,,United Kingdom,NA
+NEWPHYT,1988,2618,M,M,Yeoman,,,,,United Kingdom,NA
+NEWPHYT,1989,2618,M,M,Yeoman,,,,,United Kingdom,NA
+NEWPHYT,1990,2618,M,M,Yeoman,,,,,United Kingdom,NA
+NEWPHYT,1991,2618,M,M,Yeoman,,,,,United Kingdom,NA
+NEWPHYT,1992,2618,M,M,Yeoman,,,,,United Kingdom,NA
+NEWPHYT,1993,2618,M,M,Yeoman,,,,,United Kingdom,NA
+NEWPHYT,1994,2618,M,M,Yeoman,,,,,United Kingdom,NA
+NEWPHYT,1995,2618,M,M,Yeoman,,,,,United Kingdom,NA
+BIOCON,2004,236,Andrew,NA,Young,CSIRO,UNKNOWN,Canberra,UNKNOWN,Australia,NA
+CONBIO,2003,236,Andrew,NA,Young,CSIRO-Plant Industry ,UNKNOWN,UNKNOWN,UNKNOWN,Australia,NA
+CONBIO,2004,236,Andrew,NA,Young,,,,,Australia,NA
+CONBIO,2005,236,Andrew,NA,Young,,,,,Australia,NA
+CONBIO,2006,236,Andrew,NA,Young,,,,,Australia,NA
+CONBIO,2007,236,Andrew,NA,Young,,,,,Australia,NA
+CONBIO,2008,236,Andrew,NA,Young,,,,,Australia,NA
+CONBIO,2009,236,Andrew,NA,Young,,,,,Australia,NA
+CONBIO,2010,236,Andrew,NA,Young,,,,,Australia,NA
+CONBIO,2011,236,Andrew,NA,Young,,,,,Australia,NA
+CONBIO,2012,236,Andrew,NA,Young,,,,,Australia,NA
+CONBIO,2013,236,Andrew,NA,Young,,,,,Australia,NA
+CONBIO,2014,236,Andrew,NA,Young,,,,,Australia,NA
+CONBIO,2010,3509,Steve,NA,Zack,Wildlife Conservation Society,UNKNOWN,Portland,Oregon,USA,NA
+CONBIO,2011,3509,Steve,NA,Zack,,,,,USA,NA
+CONBIO,2012,3509,Steve,NA,Zack,,,,,USA,NA
+CONBIO,2013,3509,Steve,NA,Zack,,,,,USA,NA
+CONBIO,2014,3509,Steve,NA,Zack,,,,,USA,NA
+CONBIO,1988,237,Amotz,NA,Zahavi,Tel Aviv University,Institute for Nature Conservation Research,Tel Aviv,Gush Dan,Israel,NA
+CONBIO,1989,237,Amotz,NA,Zahavi,,,,,Israel,NA
+CONBIO,1990,237,Amotz,NA,Zahavi,,,,,Israel,NA
+CONBIO,1991,237,Amotz,NA,Zahavi,,,,,Israel,NA
+CONBIO,1992,237,Amotz,NA,Zahavi,,,,,Israel,NA
+CONBIO,1993,237,Amotz,NA,Zahavi,,,,,Israel,NA
+CONBIO,2005,2621,Michaela,NA,Zint,University of Michigan,UNKNOWN,Ann Arbor,Michigan,USA,NA
+CONBIO,2006,2621,Michaela,NA,Zint,,,,,USA,NA
+CONBIO,2007,2621,Michaela,NA,Zint,,,,,USA,NA
+CONBIO,2008,2621,Michaela,NA,Zint,,,,,USA,NA
+NEWPHYT,2015,1686,Jorg,NA,Kudla,University of Munster,UNKNOWN,Munster,UNKNOWN,Germany,NA

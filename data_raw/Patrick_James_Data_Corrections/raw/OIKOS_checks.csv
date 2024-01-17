@@ -1,0 +1,156 @@
+"","JOURNAL","YEAR","VOLUME","ISSUE","editor_id","FIRST_NAME","MIDDLE_NAME","LAST_NAME","TITLE","CATEGORY","INST","UNIT","CITY","STATE","COUNTRY","COUNTRY_Prior_Class","geo.code","geo.code_Prior_Class","NOTES","GENDER","dupe"
+"1","OIKOS",2004,104,1,54,"Andre","M","DeRoos","Subject.Editor","SE",NA,NA,"Amsterdam",NA,"Netherlands",NA,"NLD",NA,NA,NA,FALSE
+"2","OIKOS",2011,120,1,124,"Anders",NA,"Klemetsen","Subject.Editor","SE",NA,NA,NA,NA,"Norway",NA,"NOR",NA,NA,NA,FALSE
+"3","OIKOS",2014,123,1,131,"Anna-Liisa",NA,"Laine","Subject.Editor","SE",NA,NA,NA,NA,"Finland",NA,"FIN",NA,NA,NA,FALSE
+"4","OIKOS",1985,44,1,193,"A",NA,"Semb-Johansson","Editorial.Board","SE",NA,NA,"Oslo",NA,"Norway",NA,"NOR",NA,NA,NA,FALSE
+"5","OIKOS",2009,118,1,217,"Anna",NA,"Traveset","Subject.Editor","SE",NA,NA,"Mallorca",NA,"Spain",NA,"ESP",NA,NA,NA,FALSE
+"6","OIKOS",2011,120,1,217,"Anna",NA,"Traveser","Subject.Editor","SE",NA,NA,NA,NA,"Spain",NA,"ESP",NA,NA,NA,FALSE
+"7","OIKOS",2008,117,1,244,"Beatrix",NA,"Beisner","Subject.Editor","SE",NA,NA,"Montreal",NA,"Canada",NA,"CAN",NA,NA,NA,FALSE
+"8","OIKOS",2012,121,1,253,"Ben",NA,"Chapman","Subject.Editor","SE",NA,NA,NA,NA,"Sweden",NA,"SWE",NA,NA,NA,FALSE
+"9","OIKOS",2012,121,1,268,"Bruno",NA,"Ernande","Subject.Editor","SE",NA,NA,NA,NA,"France",NA,"FRA",NA,NA,NA,FALSE
+"10","OIKOS",2012,121,1,283,"Bente",NA,"Grae","Subject.Editor","SE",NA,NA,NA,NA,"Norway",NA,"NOR",NA,NA,NA,FALSE
+"11","OIKOS",2009,118,1,288,"Brad",NA,"Hawkins","Subject.Editor","SE",NA,NA,"Irvine","CA","USA",NA,"USA",NA,NA,NA,FALSE
+"12","OIKOS",2011,120,1,288,"Brad",NA,"Hawkins","Subject.Editor","SE",NA,NA,NA,NA,"USA",NA,"USA",NA,NA,NA,FALSE
+"13","OIKOS",2007,116,1,405,"Christer",NA,"Bronmark","Subject.Editor","SE",NA,NA,"Lund",NA,"Sweden",NA,"SWE",NA,NA,NA,FALSE
+"14","OIKOS",2006,112,1,514,"Chris",NA,"Lortie","Subject.Editor","SE",NA,NA,"Vancouver",NA,"Canada",NA,"CAN",NA,NA,NA,FALSE
+"15","OIKOS",2011,120,1,514,"Chris",NA,"Lortie","Subject.Editor","SE",NA,NA,NA,NA,"Canada",NA,"CAN",NA,NA,NA,FALSE
+"16","OIKOS",2012,121,1,519,"Carlos",NA,"Malian","Subject.Editor","SE",NA,NA,NA,NA,"Switzerland",NA,"CHE",NA,NA,NA,FALSE
+"17","OIKOS",1985,44,1,538,"C","Overgaard","Nielsen","Editorial.Board","SE",NA,NA,"Copenhagen",NA,"Denmark",NA,"DNK",NA,NA,NA,FALSE
+"18","OIKOS",2012,121,1,564,"Carry","Le","Roy","Subject.Editor","SE",NA,NA,NA,NA,"USA",NA,"USA",NA,NA,NA,FALSE
+"19","OIKOS",2011,120,1,570,"Chrsiter",NA,"Solbrek","Subject.Editor","SE",NA,NA,NA,NA,"Sweden",NA,"SWE",NA,NA,NA,FALSE
+"20","OIKOS",2012,121,1,575,"Christopher",NA,"Swan","Subject.Editor","SE",NA,NA,NA,NA,"USA",NA,"USA",NA,NA,NA,FALSE
+"21","OIKOS",2012,121,1,632,"Dries",NA,"Bonte","Acting.Director.In.Chief","EIC",NA,NA,NA,NA,"Belgium",NA,"BEL",NA,NA,NA,FALSE
+"22","OIKOS",2011,120,1,646,"David",NA,"Chalcraft","Subject.Editor","SE",NA,NA,NA,NA,"USA",NA,"USA",NA,NA,NA,FALSE
+"23","OIKOS",2009,118,1,713,"Daniel",NA,"Gruner","Subject.Editor","SE",NA,NA,"Bodega Bay","CA","USA",NA,"USA",NA,NA,NA,FALSE
+"24","OIKOS",2010,119,1,713,"Daniel",NA,"Gruner","Subject.Editor","SE",NA,NA,"College Park","MD","USA",NA,"USA",NA,NA,NA,FALSE
+"25","OIKOS",2011,120,1,713,"Daniel",NA,"Gruner","Subject.Editor","SE",NA,NA,NA,NA,"USA",NA,"USA",NA,NA,NA,FALSE
+"26","OIKOS",2004,104,1,720,"Dag","O","Hessen","Subject.Editor","SE",NA,NA,"Oslo",NA,"Norway",NA,"NOR",NA,NA,NA,FALSE
+"27","OIKOS",2014,123,1,783,"Daniel",NA,"Mayor","Subject.Editor","SE",NA,NA,NA,NA,"United Kingdom",NA,"GBR",NA,NA,NA,FALSE
+"28","OIKOS",2011,120,1,838,"Daniel",NA,"Reuman","Subject.Editor","SE",NA,NA,NA,NA,"United Kingdom",NA,"GBR",NA,NA,NA,FALSE
+"29","OIKOS",2008,117,1,898,"Diego",NA,"Vazquez","Subject.Editor","SE",NA,NA,"Mendoza",NA,"Argentina",NA,"ARG",NA,NA,NA,FALSE
+"30","OIKOS",2011,120,1,898,"Diego",NA,"Vazquez","Subject.Editor","SE",NA,NA,NA,NA,"Argentina",NA,"ARG",NA,NA,NA,FALSE
+"31","OIKOS",2008,117,1,942,"Enrique",NA,"Chaneton","Subject.Editor","SE",NA,NA,"Buenos Aires",NA,"Argentina",NA,"ARG",NA,NA,NA,FALSE
+"32","OIKOS",2011,120,1,942,"Enrique",NA,"Chaneton","Subject.Editor","SE",NA,NA,NA,NA,"Argentina",NA,"ARG",NA,NA,NA,FALSE
+"33","OIKOS",1985,44,1,954,"E",NA,"Dahl","Editorial.Board","SE",NA,NA,"As-NLH",NA,"Norway",NA,"NOR",NA,NA,NA,FALSE
+"34","OIKOS",1985,44,1,977,"E",NA,"Haukioja","Editorial.Board","SE",NA,NA,"Turku",NA,"Finland",NA,"FIN",NA,NA,NA,FALSE
+"35","OIKOS",2005,108,1,1019,"Esa",NA,"Ranta","Subject.Editor","SE",NA,NA,"Helsinki",NA,"Finland",NA,"FIN",NA,NA,NA,FALSE
+"36","OIKOS",2008,117,1,1025,"Eric",NA,"Seabloom","Subject.Editor","SE",NA,NA,"Corvallis","OR","USA",NA,"USA",NA,NA,NA,FALSE
+"37","OIKOS",2011,120,1,1025,"Eric",NA,"Seabloom","Subject.Editor","SE",NA,NA,NA,NA,"USA",NA,"USA",NA,NA,NA,FALSE
+"38","OIKOS",1985,44,1,1048,"F",NA,"Andersson","Editorial.Board","SE",NA,NA,"Uppsala",NA,"Sweden",NA,"SWE",NA,NA,NA,FALSE
+"39","OIKOS",2009,118,1,1138,"Frank","van","Veen","Subject.Editor","SE",NA,NA,"Silwood Park",NA,"United Kingdom",NA,"GBR",NA,NA,NA,FALSE
+"40","OIKOS",2011,120,1,1138,"Frank","van","Veen","Subject.Editor","SE",NA,NA,NA,NA,"United Kingdom",NA,"GBR",NA,NA,NA,FALSE
+"41","OIKOS",2008,117,1,1142,"Franz",NA,"Weissing","Subject.Editor","SE",NA,NA,"Groningen",NA,"Netherlands",NA,"NLD",NA,NA,NA,FALSE
+"42","OIKOS",2011,120,1,1142,"Franz",NA,"Weissing","Subject.Editor","SE",NA,NA,NA,NA,"Netherlands",NA,"NLD",NA,NA,NA,FALSE
+"43","OIKOS",2008,117,1,1339,"Hamish",NA,"McCallum","Subject.Editor","SE",NA,NA,"Hobart","Tasmania","Australia",NA,"AUS",NA,NA,NA,FALSE
+"44","OIKOS",2011,120,1,1339,"Hamish",NA,"McCallum","Subject.Editor","SE",NA,NA,NA,NA,"Australia",NA,"AUS",NA,NA,NA,FALSE
+"45","OIKOS",2005,108,1,1359,"Heikki",NA,"Setala","Subject.Editor","SE",NA,NA,"Helsinki",NA,"Finland",NA,"FIN",NA,NA,NA,FALSE
+"46","OIKOS",2007,116,1,1359,"Heikki",NA,"Setala","Subject.Editor","SE",NA,NA,"Jyvaskyla",NA,"Finland",NA,"FIN",NA,NA,NA,FALSE
+"47","OIKOS",2011,120,1,1359,"Heikki",NA,"Setala","Subject.Editor","SE",NA,NA,NA,NA,"Finland",NA,"FIN",NA,NA,NA,FALSE
+"48","OIKOS",2013,122,1,1430,"Jessica",NA,"Abbot","Subject.Editor","SE",NA,NA,NA,NA,"Sweden",NA,"SWE",NA,NA,NA,FALSE
+"49","OIKOS",2011,120,1,1445,"Joseph",NA,"Bailey","Subject.Editor","SE",NA,NA,NA,NA,"USA",NA,"USA",NA,NA,NA,FALSE
+"50","OIKOS",2007,116,1,1453,"Jordi",NA,"Bascompte","Subject.Editor","SE",NA,NA,"Seville",NA,"Spain",NA,"ESP",NA,NA,NA,FALSE
+"51","OIKOS",2011,120,1,1474,"Jaobus",NA,"Boomsma","Subject.Editor","SE",NA,NA,NA,NA,"Denmark",NA,"DNK",NA,NA,NA,FALSE
+"52","OIKOS",2012,121,1,1490,"James",NA,"Bullock","Subject.Editor","SE",NA,NA,NA,NA,"United Kingdom",NA,"GBR",NA,NA,NA,FALSE
+"53","OIKOS",2012,121,1,1492,"Joshep",NA,"Bump","Subject.Editor","SE",NA,NA,NA,NA,"USA",NA,"USA",NA,NA,NA,FALSE
+"54","OIKOS",2009,118,1,1547,"Jose","Alexandre","Diniz-Filho","Subject.Editor","SE",NA,NA,"Goias",NA,"Brazil",NA,"BRA",NA,NA,NA,FALSE
+"55","OIKOS",2008,117,1,1552,"Jennifer",NA,"Dunne","Subject.Editor","SE",NA,NA,"Santa Fe","NM","USA",NA,"USA",NA,NA,NA,FALSE
+"56","OIKOS",2011,120,1,1552,"Jennifer",NA,"Dunne","Subject.Editor","SE",NA,NA,NA,NA,"USA",NA,"USA",NA,NA,NA,FALSE
+"57","OIKOS",2012,121,1,1678,"Johan",NA,"Kotze","Subject.Editor","SE",NA,NA,NA,NA,"Finland",NA,"FIN",NA,NA,NA,FALSE
+"58","OIKOS",2004,104,1,1715,"Jan",NA,"Lindstrom","Subject.Editor","SE",NA,NA,"Glasgow",NA,"United Kingdom",NA,"GBR",NA,NA,NA,FALSE
+"59","OIKOS",2005,108,1,1757,"Jane",NA,"Memmott","Subject.Editor","SE",NA,NA,"Bristol",NA,"United Kingdom",NA,"GBR",NA,NA,NA,FALSE
+"60","OIKOS",2008,117,1,1846,"James","D","Roth","Subject.Editor","SE",NA,NA,"Orlando","FL","USA",NA,"USA",NA,NA,NA,FALSE
+"61","OIKOS",2011,120,1,1846,"James","D","Roth","Subject.Editor","SE",NA,NA,NA,NA,"USA",NA,"USA",NA,NA,NA,FALSE
+"62","OIKOS",2009,118,1,1850,"Jennifer",NA,"Rudgers","Subject.Editor","SE",NA,NA,"Houston","TX","USA",NA,"USA",NA,NA,NA,FALSE
+"63","OIKOS",2011,120,1,1850,"Jennifer",NA,"Rudgers","Subject.Editor","SE",NA,NA,NA,NA,"USA",NA,"USA",NA,NA,NA,FALSE
+"64","OIKOS",2007,116,1,1866,"Jonathan",NA,"Shurin","Subject.Editor","SE",NA,NA,"Vancouver","British Columbia","Canada",NA,"CAN",NA,NA,NA,FALSE
+"65","OIKOS",2011,120,1,1866,"Jonathan",NA,"Shurin","Subject.Editor","SE",NA,NA,NA,NA,"Canada",NA,"CAN",NA,NA,NA,FALSE
+"66","OIKOS",2011,120,1,1918,"Jotaro",NA,"Urabe","Subject.Editor","SE",NA,NA,NA,NA,"Japan",NA,"JPN",NA,NA,NA,FALSE
+"67","OIKOS",2009,118,1,1923,"Jan",NA,"VanGils","Subject.Editor","SE",NA,NA,"Nieuwersluis",NA,"Netherlands",NA,"NLD",NA,NA,NA,FALSE
+"68","OIKOS",2011,120,1,1923,"Jan",NA,"VanGils","Subject.Editor","SE",NA,NA,NA,NA,"Netherlands",NA,"NLD",NA,NA,NA,FALSE
+"69","OIKOS",2007,116,1,1932,"John",NA,"Vucetich","Subject.Editor","SE",NA,NA,"Houghton","MI","USA",NA,"USA",NA,NA,NA,FALSE
+"70","OIKOS",2011,120,1,1932,"John",NA,"Vucetich","Subject.Editor","SE",NA,NA,NA,NA,"USA",NA,"USA",NA,NA,NA,FALSE
+"71","OIKOS",2013,122,1,1979,"Koos",NA,"Biesmeijer","Subject.Editor","SE",NA,NA,NA,NA,"Netherlands",NA,"NLD",NA,NA,NA,FALSE
+"72","OIKOS",2009,118,1,2023,"Karin",NA,"Johst","Subject.Editor","SE",NA,NA,"Leipzig",NA,"Germany",NA,"DEU",NA,NA,NA,FALSE
+"73","OIKOS",2011,120,1,2023,"Karin",NA,"Johst","Subject.Editor","SE",NA,NA,NA,NA,"Germany",NA,"DEU",NA,NA,NA,FALSE
+"74","OIKOS",2013,122,1,2054,"Kailen",NA,"Mooney","Subject.Editor","SE",NA,NA,NA,NA,"USA",NA,"USA",NA,NA,NA,FALSE
+"75","OIKOS",2007,116,1,2082,"Kenneth",NA,"Schmidt","Subject.Editor","SE",NA,NA,"Lubbock","TX","USA",NA,"USA",NA,NA,NA,FALSE
+"76","OIKOS",2013,122,1,2082,"Kenneth",NA,"Schmidt","Subject.Editor","SE",NA,NA,NA,NA,"USA",NA,"USA",NA,NA,NA,FALSE
+"77","OIKOS",2006,112,1,2100,"Kathy",NA,"Suding","Subject.Editor","SE",NA,NA,"Irvine","CA","USA",NA,"USA",NA,NA,NA,FALSE
+"78","OIKOS",2007,116,1,2119,"Lonnie","W","Aarsen","Subject.Editor","SE",NA,NA,"Kingston","Ontario","Canada",NA,"CAN",NA,NA,NA,FALSE
+"79","OIKOS",2011,120,1,2119,"Lonnie","W","Aarsen","Subject.Editor","SE",NA,NA,NA,NA,"Canada",NA,"CAN",NA,NA,NA,FALSE
+"80","OIKOS",2004,104,1,2216,"Lauri",NA,"Oksanen","Subject.Editor","SE",NA,NA,"Umea",NA,"Sweden",NA,"SWE",NA,NA,NA,FALSE
+"81","OIKOS",2005,108,1,2221,"Lennart",NA,"Persson","Subject.Editor","SE",NA,NA,"Umea",NA,"Sweden",NA,"SWE",NA,NA,NA,FALSE
+"82","OIKOS",2012,121,1,2259,"Louie","H","Yang","Subject.Editor","SE",NA,NA,NA,NA,"USA",NA,"USA",NA,NA,NA,FALSE
+"83","OIKOS",2007,116,1,2283,"Mathew",NA,"Ayres","Subject.Editor","SE",NA,NA,"Hanover","NH","USA",NA,"USA",NA,NA,NA,FALSE
+"84","OIKOS",2011,120,1,2283,"Mathew",NA,"Ayres","Subject.Editor","SE",NA,NA,NA,NA,"USA",NA,"USA",NA,NA,NA,FALSE
+"85","OIKOS",2013,122,1,2297,"Matty","P","Berg","Subject.Editor","SE",NA,NA,NA,NA,"Netherlands",NA,"NLD",NA,NA,NA,FALSE
+"86","OIKOS",2006,112,1,2304,"Mike",NA,"Bonsall","Subject.Editor","SE",NA,NA,"Oxford",NA,"United Kingdom",NA,"GBR",NA,NA,NA,FALSE
+"87","OIKOS",2011,120,1,2304,"Mike",NA,"Bonsall","Subject.Editor","SE",NA,NA,NA,NA,"United Kingdom",NA,"GBR",NA,NA,NA,FALSE
+"88","OIKOS",2012,121,1,2308,"Mathew",NA,"Bracken","Subject.Editor","SE",NA,NA,NA,NA,"USA",NA,"USA",NA,NA,NA,FALSE
+"89","OIKOS",2004,104,1,2371,"Mads",NA,"Forchhammer","Subject.Editor","SE",NA,NA,"Copenhagen",NA,"Denmark",NA,"DNK",NA,NA,NA,FALSE
+"90","OIKOS",2012,121,1,2466,"Margie",NA,"Mayfield","Subject.Editor","SE",NA,NA,NA,NA,"Australia",NA,"AUS",NA,NA,NA,FALSE
+"91","OIKOS",2004,104,1,2498,"Mikael",NA,"Ohlson","Subject.Editor","SE",NA,NA,"As",NA,"Norway",NA,"NOR",NA,NA,NA,FALSE
+"92","OIKOS",2011,120,1,2530,"Martin",NA,"Quigley","Subject.Editor","SE",NA,NA,NA,NA,"USA",NA,"USA",NA,NA,NA,FALSE
+"93","OIKOS",2014,123,1,2552,"Michael",NA,"Scherer_Lorenzon","Subject.Editor","SE",NA,NA,NA,NA,"Germany",NA,"DEU",NA,NA,NA,FALSE
+"94","OIKOS",2009,118,1,2567,"Martin",NA,"Solan","Subject.Editor","SE",NA,NA,"Aberdeenshire",NA,"Scotland",NA,"GBR",NA,NA,NA,FALSE
+"95","OIKOS",2011,120,1,2567,"Martin",NA,"Solan","Subject.Editor","SE",NA,NA,NA,NA,"United Kingdom",NA,"GBR",NA,NA,NA,FALSE
+"96","OIKOS",2014,123,1,2574,"Mei",NA,"Sun","Subject.Editor","SE",NA,NA,NA,NA,"China",NA,"CHN",NA,NA,NA,FALSE
+"97","OIKOS",2012,121,1,2576,"Matthew",NA,"Symonds","Subject.Editor","SE",NA,NA,NA,NA,"Australia",NA,"AUS",NA,NA,NA,FALSE
+"98","OIKOS",2009,118,1,2590,"Mark",NA,"Vellend","Subject.Editor","SE",NA,NA,"Ithaca","NY","USA",NA,"USA",NA,NA,NA,FALSE
+"99","OIKOS",2011,120,1,2590,"Mark",NA,"Vellend","Subject.Editor","SE",NA,NA,NA,NA,"USA",NA,"USA",NA,NA,NA,FALSE
+"100","OIKOS",2010,119,1,2594,"Matthijs",NA,"Vos","Subject.Editor","SE",NA,NA,"Potsdam",NA,"Germany",NA,"DEU",NA,NA,NA,FALSE
+"101","OIKOS",2011,120,1,2594,"Matthijs",NA,"Vos","Subject.Editor","SE",NA,NA,NA,NA,"Germany",NA,"DEU",NA,NA,NA,FALSE
+"102","OIKOS",2013,122,1,2615,"Monica",NA,"Winder","Subject.Editor","SE",NA,NA,NA,NA,"Sweden",NA,"SWE",NA,NA,NA,FALSE
+"103","OIKOS",2007,116,1,2648,"Nicholas",NA,"Gotelli","Subject.Editor","SE",NA,NA,"Burlington","VT","USA",NA,"USA",NA,NA,NA,FALSE
+"104","OIKOS",2005,108,1,2715,"Ove",NA,"Eriksson","Subject.Editor","SE",NA,NA,"Stockholm",NA,"Sweden",NA,"SWE",NA,NA,NA,FALSE
+"105","OIKOS",1985,44,1,2723,"O",NA,"Jarvinen","Editorial.Board","SE",NA,NA,"Helsinki",NA,"Finland",NA,"FIN",NA,NA,NA,FALSE
+"106","OIKOS",2007,116,1,2732,"Owen",NA,"Petchey","Subject.Editor","SE",NA,NA,"Sheffield",NA,"United Kingdom",NA,"GBR",NA,NA,NA,FALSE
+"107","OIKOS",2011,120,1,2819,"Paulo",NA,"Guimaraes","Subject.Editor","SE",NA,NA,NA,NA,"Brazil",NA,"BRA",NA,NA,NA,FALSE
+"108","OIKOS",2006,112,1,2878,"Pia",NA,"Mutikainen","Subject.Editor","SE",NA,NA,"Oulu",NA,"Finland",NA,"FIN",NA,NA,NA,FALSE
+"109","OIKOS",2009,118,1,2878,"Pia",NA,"Mutikainen","Subject.Editor","SE",NA,NA,"Zurich",NA,"Switzerland",NA,"CHE",NA,NA,NA,FALSE
+"110","OIKOS",2012,121,1,2941,"Peter",NA,"Todd","Subject.Editor","SE",NA,NA,NA,NA,"Singapore",NA,"SGP",NA,NA,NA,FALSE
+"111","OIKOS",2013,122,1,3000,"Rein",NA,"Brys","Subject.Editor","SE",NA,NA,NA,NA,"Belgium",NA,"BEL",NA,NA,NA,FALSE
+"112","OIKOS",2009,118,1,3053,"Rampal",NA,"Etienne","Subject.Editor","SE",NA,NA,"Groningen",NA,"Netherlands",NA,"NLD",NA,NA,NA,FALSE
+"113","OIKOS",2011,120,1,3053,"Rampal",NA,"Etienne","Subject.Editor","SE",NA,NA,NA,NA,"Netherlands",NA,"NLD",NA,NA,NA,FALSE
+"114","OIKOS",2012,121,1,3153,"Richard",NA,"Michalet","Subject.Editor","SE",NA,NA,NA,NA,"France",NA,"FRA",NA,NA,NA,FALSE
+"115","OIKOS",2010,119,1,3185,"Robin",NA,"Pakeman","Subject.Editor","SE",NA,NA,"Leeds",NA,"United Kingdom",NA,"GBR",NA,NA,NA,FALSE
+"116","OIKOS",2011,120,1,3185,"Robin",NA,"Pakeman","Subject.Editor","SE",NA,NA,NA,NA,"United Kingdom",NA,"GBR",NA,NA,NA,FALSE
+"117","OIKOS",2011,120,1,3205,"Robin",NA,"Robinson","Subject.Editor","SE",NA,NA,NA,NA,"United Kingdom",NA,"GBR",NA,NA,NA,FALSE
+"118","OIKOS",2010,119,1,3228,"Richard",NA,"Stevens","Subject.Editor","SE",NA,NA,"Baton Rouge","LA","USA",NA,"USA",NA,NA,NA,FALSE
+"119","OIKOS",2011,120,1,3228,"Richard",NA,"Stevens","Subject.Editor","SE",NA,NA,NA,NA,"USA",NA,"USA",NA,NA,NA,FALSE
+"120","OIKOS",2011,120,1,3259,"Regino",NA,"Zamora","Subject.Editor","SE",NA,NA,NA,NA,"Spain",NA,"ESP",NA,NA,NA,FALSE
+"121","OIKOS",2011,120,1,3265,"Stefano",NA,"Allesina","Subject.Editor","SE",NA,NA,NA,NA,"USA",NA,"USA",NA,NA,NA,FALSE
+"122","OIKOS",1985,44,1,3271,"S","T","Andersen","Editorial.Board","SE",NA,NA,"Copenhagen",NA,"Denmark",NA,"DNK",NA,NA,NA,FALSE
+"123","OIKOS",2009,118,1,3287,"Stan",NA,"Boutin","Subject.Editor","SE",NA,NA,"Edmonton","Alberta","Canada",NA,"CAN",NA,NA,NA,FALSE
+"124","OIKOS",2011,120,1,3287,"Stan",NA,"Boutin","Subject.Editor","SE",NA,NA,NA,NA,"Canada",NA,"CAN",NA,NA,NA,FALSE
+"125","OIKOS",2014,123,1,3351,"Susan",NA,"Harrison","Subject.Editor","SE",NA,NA,NA,NA,"USA",NA,"USA",NA,NA,NA,FALSE
+"126","OIKOS",2005,108,1,3384,"Stig",NA,"Larsson","Subject.Editor","SE",NA,NA,"Uppsala",NA,"Sweden",NA,"SWE",NA,NA,NA,FALSE
+"127","OIKOS",2013,122,1,3502,"Shawn",NA,"Wilder","Subject.Editor","SE",NA,NA,NA,NA,"Australia",NA,"AUS",NA,NA,NA,FALSE
+"128","OIKOS",2014,123,1,3508,"Sa",NA,"Xiao","Subject.Editor","SE",NA,NA,NA,NA,"China",NA,"CHN",NA,NA,NA,FALSE
+"129","OIKOS",2004,104,1,3514,"Tim",NA,"Benton","Subject.Editor","SE",NA,NA,"Aberdeen",NA,"United Kingdom",NA,"GBR",NA,NA,NA,FALSE
+"130","OIKOS",2007,116,1,3514,"Tim",NA,"Benton","Subject.Editor","SE",NA,NA,"Leeds",NA,"United Kingdom",NA,"GBR",NA,NA,NA,FALSE
+"131","OIKOS",2011,120,1,3514,"Tim",NA,"Benton","EIC","EIC",NA,NA,NA,NA,"United Kingdom",NA,"GBR",NA,NA,NA,FALSE
+"132","OIKOS",2013,122,1,3523,"Timothy",NA,"Cavagnaro","Subject.Editor","SE",NA,NA,NA,NA,"Australia",NA,"AUS",NA,NA,NA,FALSE
+"133","OIKOS",2007,116,1,3550,"Tadashi",NA,"Fukami","Subject.Editor","SE",NA,NA,"Honolulu","HI","USA",NA,"USA",NA,NA,NA,FALSE
+"134","OIKOS",2010,119,1,3550,"Tadashi",NA,"Fukami","Subject.Editor","SE",NA,NA,"Stanford","CA","USA",NA,"USA",NA,NA,NA,FALSE
+"135","OIKOS",2008,117,1,3581,"Tiffany",NA,"Knight","Subject.Editor","SE",NA,NA,"Saint Louis","MO","USA",NA,"USA",NA,NA,NA,FALSE
+"136","OIKOS",2008,117,1,3649,"Thomas",NA,"Valone","Subject.Editor","SE",NA,NA,"Saint Louis","MO","USA",NA,"USA",NA,NA,NA,FALSE
+"137","OIKOS",2009,118,1,3659,"Thorsten",NA,"Wiegand","Subject.Editor","SE",NA,NA,"Leipzig",NA,"Germany",NA,"DEU",NA,NA,NA,FALSE
+"138","OIKOS",2011,120,1,3659,"Thorsten",NA,"Wiegand","Subject.Editor","SE",NA,NA,NA,NA,"Germany",NA,"DEU",NA,NA,NA,FALSE
+"139","OIKOS",2008,117,1,3665,"Ulrich",NA,"Brose","Subject.Editor","SE",NA,NA,"Darmstadt",NA,"Germany",NA,"DEU",NA,NA,NA,FALSE
+"140","OIKOS",2011,120,1,3665,"Ulrich",NA,"Brose","Subject.Editor","SE",NA,NA,NA,NA,"Germany",NA,"DEU",NA,NA,NA,FALSE
+"141","OIKOS",2004,104,1,3688,"Veijo",NA,"Kaitala","Subject.Editor","SE",NA,NA,"Helsinki",NA,"Finland",NA,"FIN",NA,NA,NA,FALSE
+"142","OIKOS",2012,121,1,3776,"Wendt",NA,"Muller","Subject.Editor","SE",NA,NA,NA,NA,"Belgium",NA,"BEL",NA,NA,NA,FALSE
+"143","OIKOS",2011,120,1,3813,"Werner",NA,"Ulrich","Subject.Editor","SE",NA,NA,NA,NA,"Poland",NA,"POL",NA,NA,NA,FALSE
+"144","OIKOS",2008,117,1,3814,"Wim",NA,"VanDerPutten","Subject.Editor","SE",NA,NA,"Heteren",NA,"Netherlands",NA,"NLD",NA,NA,NA,FALSE
+"145","OIKOS",2011,120,1,3814,"Wim",NA,"VanDerPutten","Subject.Editor","SE",NA,NA,NA,NA,"Netherlands",NA,"NLD",NA,NA,NA,FALSE
+"146","OIKOS",2010,119,1,3870,"Dustin",NA,"Marshall","Subject.Editor","SE",NA,NA,"Queensland",NA,"Australia",NA,"AUS",NA,NA,NA,FALSE
+"147","OIKOS",2011,120,1,3870,"Dustin",NA,"Marshall","Subject.Editor","SE",NA,NA,NA,NA,"Australia",NA,"AUS",NA,NA,NA,FALSE
+"148","OIKOS",2008,117,1,3888,"Jeremy","W","Fox","Subject.Editor","SE",NA,NA,"Calgary","Alberta","Canada",NA,"CAN",NA,NA,NA,FALSE
+"149","OIKOS",2011,120,1,3888,"Jeremy","W","Fox","Subject.Editor","SE",NA,NA,NA,NA,"Canada",NA,"CAN",NA,NA,NA,FALSE
+"150","OIKOS",2011,120,1,3901,"Jonathan","W","Moore","Subject.Editor","SE",NA,NA,NA,NA,"USA",NA,"USA",NA,NA,NA,FALSE
+"151","OIKOS",2010,119,1,3910,"Justin",NA,"Travis","Subject.Editor","SE",NA,NA,"Aberdeen",NA,"Scotland",NA,"GBR",NA,NA,NA,FALSE
+"152","OIKOS",2011,120,1,3910,"Justin",NA,"Travis","Subject.Editor","SE",NA,NA,NA,NA,"United Kingdom",NA,"GBR",NA,NA,NA,FALSE
+"153","OIKOS",2012,121,1,3916,"Lars-Anders",NA,"Hansson","Subject.Editor","SE",NA,NA,NA,NA,"Sweden",NA,"SWE",NA,NA,NA,FALSE
+"154","OIKOS",2011,120,1,3946,"Tom",NA,"Webb","Subject.Editor","SE",NA,NA,NA,NA,"United Kingdom",NA,"GBR",NA,NA,NA,FALSE
+"155","OIKOS",2008,117,1,NA,"Thomas",NA,"Waite","Subject.Editor","SE",NA,NA,"Columbus","OH","USA",NA,"USA",NA,NA,NA,FALSE

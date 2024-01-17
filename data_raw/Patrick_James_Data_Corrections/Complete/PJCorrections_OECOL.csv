@@ -1,0 +1,165 @@
+,journal,year,volume,issue,editor_id.x,editor_id.y,first_name,middle_name,last_name,title,category,inst,unit,city,state,country,country_prior_class,geo.code,geo.code_prior_class,gender,notes
+29,OECOL,1985,65,2,2361,NA,Michael,NA,Evenari,Editorial.Board,SE,pen patr,missing,Jerusalem ,missing,Israel,NA,ISR,NA,NA,DOUBLE CHECK INST
+63,OECOL,1985,65,2,1320,NA,Heinrich,NA,Kaiser,Editorial.Board,SE,RWTH Aachen University,missing,Aachen,missing,Germany,NA,DEU,NA,NA,DOUBLE CHECK INST
+77,OECOL,1985,65,2,2725,NA,Otto,L,Lange,Editorial.Board,SE,University of Wurzburg,missing,Würzburg,missing,Germany,NA,DEU,NA,NA,DOUBLE CHECK INST
+78,OECOL,1985,65,2,3761,NA,Walter,NA,Larcher,Editorial.Board,SE,University of Innsbruck,missing,Innsbruck,missing,Austria,NA,AUT,NA,NA,DOUBLE CHECK INST
+97,OECOL,1985,65,2,799,NA,Dietrich,NA,Neumann,Editorial.Board,SE,Univeristy of Cologne ,missing,Köln,missing,Germany,NA,DEU,NA,NA,DOUBLE CHECK INST
+107,OECOL,1985,65,2,1811,NA,John,NA,Phillipson,Editorial.Board,SE,University of Oxford,missing,Oxford,missing,United Kingdom,NA,GBR,NA,NA,DOUBLE CHECK INST
+117,OECOL,1985,65,2,1352,NA,Hermann,NA,Remmert,EIC,EIC,University of Marburg,missing,Marburg/Lahn,missing,Germany,NA,DEU,NA,NA,DOUBLE CHECK INST
+122,OECOL,1985,65,2,1128,NA,Friedrich,NA,Schaller,Editorial.Board,SE,NA,missing,Wien,missing,Austria,NA,AUT,NA,NA,DOUBLE CHECK INST
+126,OECOL,1985,65,2,1024,NA,Ernst-Detlef,NA,Schulze,EIC,EIC,University of Bayreuth,missing,Bayreuth,missing,Germany,NA,DEU,NA,NA,DOUBLE CHECK INST
+154,OECOL,1985,65,2,225,NA,Andrew,NA,Watkinson,Editorial.Board,SE,University of East Anglia ,missing,Norwich,missing,United Kingdom,NA,GBR,NA,NA,DOUBLE CHECK INST
+155,OECOL,1985,65,2,3817,NA,Wolfgang,W,Wieser,Editorial.Board,SE,University of Innsbruck,missing,Innsbruck,missing,Austria,NA,AUT,NA,NA,DOUBLE CHECK INST
+163,OECOL,1985,65,2,1384,NA,Hubert,NA,Ziegler,Editorial.Board,SE,NA,missing,München,missing,Germany,NA,DEU,NA,NA,DOUBLE CHECK INST
+164,OECOL,1985,65,2,1385,NA,Helmut,NA,Zwolfer,Editorial.Board,SE,University of Bayreuth,missing,Bayreuth,missing,Germany,NA,DEU,NA,NA,DOUBLE CHECK INST
+90,OECOL,1986,68,2,1727,NA,Jane,NA,Lubchenco,Editorial.Board,SE,Oregon State University ,missing,Corvallis,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+146,OECOL,1986,68,2,2699,NA,Neil,J,Turner,Editorial.Board,SE,CSIRO,missing,Wembley,missing,Australia,NA,AUS,NA,NA,DOUBLE CHECK INST
+11,OECOL,1987,71,2,17,NA,Andreas,NA,Bertsch,Editorial.Board,SE,University of Marburg,missing,Marburg,missing,Germany,NA,DEU,NA,NA,DOUBLE CHECK INST
+121,OECOL,1988,75,1,2551,NA,Matthias,NA,Schaefer,Editorial.Board,SE,University of Gottingen,missing,Göttingen,missing,Germany,NA,DEU,NA,NA,DOUBLE CHECK INST
+73,OECOL,1989,78,1,499,NA,Christian,NA,Korner,Editorial.Board,SE,University of Innsbruck,missing,Innsbruck,missing,Austria,NA,AUT,NA,NA,DOUBLE CHECK INST
+10,OECOL,1990,82,1,1053,NA,Frank,NA,Berendse,Editorial.Board,SE,Center for Agrobiological Research,missing,Wageningen,missing,Netherlands,NA,NLD,NA,NA,DOUBLE CHECK INST
+54,OECOL,1990,82,1,3566,NA,Tadaki,NA,Hirose,Editorial.Board,SE,Tohoku University ,missing,Sendai,missing,Japan,NA,JPN,NA,NA,DOUBLE CHECK INST
+69,OECOL,1990,82,1,1668,NA,Joel,NA,Kingsolver,Editorial.Board,SE,University of Washington ,missing,Seattle ,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+101,OECOL,1990,82,1,3180,NA,Ram,NA,Oren,Editorial.Board,SE,Duke University,missing,Durham,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+149,OECOL,1990,82,1,2946,NA,Peter,NA,Vitousek,Editorial.Board,SE,Stanford University ,missing,Stanford,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+159,OECOL,1990,82,1,1380,NA,Henk,NA,Wolda,Editorial.Board,SE,Smithsonian tropical research Institute,missing,Panama,missing,Balboa,NA,PAN,NA,NA,DOUBLE CHECK INST
+5,OECOL,1991,85,3,1051,NA,Franz,NA,Bairlein,Editorial.Board,SE,Institute Vogelforsch,missing,Wilhelmshaven ,missing,Germany,NA,DEU,NA,NA,DOUBLE CHECK INST
+23,OECOL,1991,85,3,252,NA,Brenda,NA,Casper,Editorial.Board,SE,University of Pennsylvania,missing,Philadelphia,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+24,OECOL,1991,85,3,953,NA,Elvira,NA,Cuevas,Editorial.Board,SE,Venezuelan institute for scientific research,missing,Caracas,missing,Venezuela,NA,VEN,NA,NA,DOUBLE CHECK INST
+52,OECOL,1991,85,3,480,NA,Carlos,M,Herrera,Editorial.Board,SE,Biological Station of Donana,missing,Sevilla,missing,Spain,NA,ESP,NA,NA,DOUBLE CHECK INST
+115,OECOL,1991,85,3,2226,NA,Leslie,NA,Real,Editorial.Board,SE,UNC Chapel Hill,missing,Chapel Hill,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+13,OECOL,1992,89,1,1471,NA,Jacques,NA,Blondel,Editorial.Board,SE,CNRS,missing,Montpellier,missing,France,NA,FRA,NA,NA,DOUBLE CHECK INST
+44,OECOL,1992,89,1,1398,NA,Ilkka,NA,Hanski,Editorial.Board,SE,University of Helsinki,missing,Helsinki,missing,Finland,NA,FIN,NA,NA,DOUBLE CHECK INST
+68,OECOL,1992,89,1,3944,NA,Tomohiko,NA,Kikuchi,Editorial.Board,SE,NA,missing,Amakusa,missing,Japan,NA,JPN,NA,NA,DOUBLE CHECK INST
+104,OECOL,1992,89,1,544,NA,Christian,NA,Otto,Editorial.Board,SE,Umea University,missing,Umea,missing,Sweden,NA,SWE,NA,NA,DOUBLE CHECK INST
+147,OECOL,1992,89,1,3490,NA,Staffan,NA,Ulfstrand,Editorial.Board,SE,University of Uppsala,missing,Uppsala ,missing,Sweden,NA,SWE,NA,NA,DOUBLE CHECK INST
+116,OECOL,1994,97,1,2074,NA,Karsten,NA,Reise,Editorial.Board,SE,Biological Institute Helgoland,missing,List,missing,Germany,NA,DEU,NA,NA,DOUBLE CHECK INST
+133,OECOL,1994,97,1,867,NA,Daniel,NA,Simberloff,Editorial.Board,SE,Florida State University ,missing,Tallahassee,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+55,OECOL,1995,101,1,2831,NA,Peter,NA,Hogberg,Editorial.Board,SE,Swedish University of Agricultural Science,missing,Umea,missing,Sweden,NA,SWE,NA,NA,DOUBLE CHECK INST
+56,OECOL,1995,101,1,724,NA,David,NA,Hollinger,Editorial.Board,SE,US Forest Service,missing,Durham,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+87,OECOL,1995,101,1,764,NA,David,NA,Lincoln,Editorial.Board,SE,University of South Carolina,missing,Columbia,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+124,OECOL,1995,101,1,351,NA,Bernhard,NA,Schmid,Editorial.Board,SE,University of Zurich,missing,Zurich,missing,Switzerland,NA,CHE,NA,NA,DOUBLE CHECK INST
+145,OECOL,1996,105,1,3648,NA,Teja,NA,Tscharntke,Editorial.Board,SE,University of Gottingen,missing,Gottingen,missing,Germany,NA,DEU,NA,NA,DOUBLE CHECK INST
+17,OECOL,1997,109,4,2996,NA,Roland,NA,Brandl,Editorial.Board,SE,UFZ Helmholtz Ctr Environm Res,missing,Bad Lauchstadt,missing,Germany,NA,DEU,NA,NA,DOUBLE CHECK INST
+49,OECOL,1997,109,4,1308,NA,Hermann,NA,Heilmeier,Editorial.Board,SE,University of Wurzburg,missing,Tharandt,missing,Germany,NA,DEU,NA,NA,DOUBLE CHECK INST
+61,OECOL,1997,109,4,3371,NA,Sven,NA,Jonasson,Editorial.Board,SE,University of Copenhagen ,missing,Copenhagen,missing,Denmark,NA,DNK,NA,NA,DOUBLE CHECK INST
+160,OECOL,1997,109,4,3706,NA,Volkmar,NA,Wolters,Editorial.Board,SE,University of Giessen,missing,Giessen,missing,Germany,NA,DEU,NA,NA,DOUBLE CHECK INST
+31,OECOL,1998,113,4,2001,NA,Konrad,NA,Fiedler,Editorial.Board,SE,University of Bayreuth,missing,Bayreuth,missing,Germany,NA,DEU,NA,NA,DOUBLE CHECK INST
+45,OECOL,1998,113,4,98,NA,Alan,NA,Hastings,Editorial.Board,SE,University of California Davis,missing,Davis,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+109,OECOL,1998,113,4,168,NA,Andrea,NA,Polle,Editorial.Board,SE,University of Gottingen,missing,Gottingen,missing,Germany,NA,DEU,NA,NA,DOUBLE CHECK INST
+118,OECOL,1998,113,4,1843,NA,Jay,NA,Rosenheim,Editorial.Board,SE,University of California Davis,missing,Davis,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+120,OECOL,1998,113,4,1853,NA,Jose,NA,Sarukhan,Editorial.Board,SE,National Autonomous University Mexico,missing,Mexico City,missing,Mexico,NA,MEX,NA,NA,DOUBLE CHECK INST
+123,OECOL,1998,113,4,3462,NA,Stefan,NA,Scheu,Editorial.Board,SE,Technical University of Darmstadt,missing,Darmstadt,missing,Germany,NA,DEU,NA,NA,DOUBLE CHECK INST
+135,OECOL,1998,113,4,2096,NA,Ken,NA,Spitze,Editorial.Board,SE,University of Miami,missing,Coral Gables,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+139,OECOL,1998,113,4,1261,NA,Glenn,NA,Stewart,Editorial.Board,SE,NA,missing,Brisbane,missing,Australia,NA,AUS,NA,NA,DOUBLE CHECK INST
+43,OECOL,1999,118,4,3347,NA,Stefan,NA,Halle,Editorial.Board,SE,Friedrich-Schiller University of Jena,missing,Jena,missing,Germany,NA,DEU,NA,NA,DOUBLE CHECK INST
+100,OECOL,1999,118,4,2501,NA,Markku,NA,Orell,Editorial.Board,SE,University of Oulu,missing,Oulu,missing,Finland,NA,FIN,NA,NA,DOUBLE CHECK INST
+140,OECOL,1999,118,4,208,NA,Allan,NA,Stewart-Oaten,Editorial.Board,SE,University of California Santa Barbara,missing,Santa Barbara,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+156,OECOL,1999,118,4,2606,NA,Mark,NA,Westoby,Editorial.Board,SE,Macquarie University  ,missing,New South Wales,missing,Australia,NA,AUS,NA,NA,DOUBLE CHECK INST
+161,OECOL,1999,118,4,923,NA,Dan,NA,Yakir,Editorial.Board,SE,Weizmann Institute of Science,missing,Rehovot,missing,Israel,NA,ISR,NA,NA,DOUBLE CHECK INST
+14,OECOL,2000,122,4,1981,NA,Katrin,NA,Bohning-Gaese,Editorial.Board,SE,RWTH Aachen University,missing,Aachen,missing,Germany,NA,DEU,NA,NA,DOUBLE CHECK INST
+26,OECOL,2000,122,4,3315,NA,Sebastian,NA,Diehl,Editorial.Board,SE,University of Munich,missing,Munchen,missing,Germany,NA,DEU,NA,NA,DOUBLE CHECK INST
+35,OECOL,2000,122,4,77,NA,Anders,NA,Forsman,Editorial.Board,SE,University of Vaxjo,missing,Vaxjo,missing,Sweden,NA,SWE,NA,NA,DOUBLE CHECK INST
+37,OECOL,2000,122,4,1589,NA,Jean-Michel,NA,Gaillard,Editorial.Board,SE,University of Lyon,missing,Villeurbanne,missing,France,NA,FRA,NA,NA,DOUBLE CHECK INST
+89,OECOL,2000,122,4,2455,NA,Michel,NA,Loreau,Editorial.Board,SE,University of Paris,missing,Paris,missing,France,NA,FRA,NA,NA,DOUBLE CHECK INST
+110,OECOL,2000,122,4,1346,NA,Hendrik,NA,Poorter,Editorial.Board,SE,University of Utrecht,missing,Utrecht,missing,Netherlands,NA,NLD,NA,NA,DOUBLE CHECK INST
+60,OECOL,2001,126,4,3105,NA,Robert,NA,Jackson,Editorial.Board,SE,Duke University,missing,Durham,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+80,OECOL,2001,126,4,307,NA,Beverly,NA,Law,Editorial.Board,SE,Oregon State University ,missing,Corvallis,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+132,OECOL,2001,126,4,3800,NA,Whendee,NA,Silver,Editorial.Board,SE,University of California Berkeley,missing,Berkeley,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+18,OECOL,2002,130,4,2632,NA,Nina,NA,Buchmann,Editorial.Board,SE,Max Planck Institute of Biogeochemistry,missing,Jena,missing,Germany,NA,DEU,NA,NA,DOUBLE CHECK INST
+125,OECOL,2002,130,4,2740,NA,Oswald,J,Schmitz,Editorial.Board,SE,Yale University,missing,New Haven,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+19,OECOL,2003,134,4,2319,NA,Mercedes,NA,Bustamante,Editorial.Board,SE,University of Brasilia,missing,Brasilia,missing,Brazil,NA,BRA,NA,NA,DOUBLE CHECK INST
+33,OECOL,2003,134,4,2368,NA,Mary,NA,Firestone,Editorial.Board,SE,University of California Berkeley,missing,Berkeley,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+39,OECOL,2003,134,4,1591,NA,Jorg,NA,Ganzhorn,Editorial.Board,SE,University of Hamburg,missing,Hamburg,missing,Germany,NA,DEU,NA,NA,DOUBLE CHECK INST
+57,OECOL,2003,134,4,1646,NA,Jef,NA,Huisman,Editorial.Board,SE,University of Amsterdam,missing,Amsterdam,missing,Netherlands,NA,NLD,NA,NA,DOUBLE CHECK INST
+95,OECOL,2003,134,4,782,NA,Diethart,NA,Matthies,Editorial.Board,SE,University of Marburg,missing,Marburg,missing,Germany,NA,DEU,NA,NA,DOUBLE CHECK INST
+102,OECOL,2003,134,4,541,NA,Colin,NA,Orians,Editorial.Board,SE,Tufts University,missing,Medford,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+134,OECOL,2003,134,4,3672,NA,Ulrich,NA,Sommer,Editorial.Board,SE,Institut Meereskunde,missing,Kiel,missing,Germany,NA,DEU,NA,NA,DOUBLE CHECK INST
+72,OECOL,2004,138,1,1677,NA,Julia,NA,Koricheva,Editorial.Board,SE,University of Turku,missing,Turku,missing,Finland,NA,FIN,NA,NA,DOUBLE CHECK INST
+136,OECOL,2004,138,1,363,NA,Bernhard,NA,Stadler,Editorial.Board,SE,University of Bayreuth,missing,Bayreuth,missing,Germany,NA,DEU,NA,NA,DOUBLE CHECK INST
+150,OECOL,2004,138,1,586,NA,Carol,NA,Vleck,Editorial.Board,SE,Iowa State University,missing,Ames,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+4,OECOL,2005,142,1,3274,NA,Sven,NA,Bacher,Editorial.Board,SE,Zoological Institute,missing,Bern,missing,Switzerland,NA,CHE,NA,NA,DOUBLE CHECK INST
+20,OECOL,2005,142,1,3844,NA,Zoe,Green,Cardon,Editorial.Board,SE,University of Connecticut,missing,Storrs,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+46,OECOL,2005,142,1,3354,NA,Stephan,NA,Hattenschwiler,Editorial.Board,SE,CNRS,missing,Montpellier,missing,France,NA,FRA,NA,NA,DOUBLE CHECK INST
+92,OECOL,2005,142,1,995,NA,Elizabeth,NA,Marschall,Editorial.Board,SE,Ohio State University,missing,Columbus,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+94,OECOL,2005,142,1,520,NA,Carlos,NA,MartinezDelRio,Editorial.Board,SE,University of Wyoming,missing,Laramie,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+138,OECOL,2005,142,1,1421,NA,Ingolf,NA,Steffan-Dewenter,Editorial.Board,SE,University of Gottingen,missing,Gottingen,missing,Germany,NA,DEU,NA,NA,DOUBLE CHECK INST
+7,OECOL,2006,146,4,1284,NA,Hormoz,NA,BassiriRad,Editorial.Board,SE,University of Illinois,missing,Chicago,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+67,OECOL,2006,146,4,2432,NA,Michael,NA,Keough,Editorial.Board,SE,University of Melbourne,missing,Victoria,missing,Australia,NA,AUS,NA,NA,DOUBLE CHECK INST
+148,OECOL,2006,146,4,1136,NA,Fernando,NA,Valladares,Editorial.Board,SE,Centro de ciencias medioambientales,missing,Madrid,missing,Spain,NA,ESP,NA,NA,DOUBLE CHECK INST
+162,OECOL,2006,146,4,1382,NA,Hannu,NA,Ylonen,Editorial.Board,SE,University of Jyvaskyla,missing,Jyvaskyla,missing,Finland,NA,FIN,NA,NA,DOUBLE CHECK INST
+41,OECOL,2007,150,4,88,NA,Andrew,NA,Gonzalez,Editorial.Board,SE,McGill University,missing,Montreal,missing,Canada,NA,CAN,NA,NA,DOUBLE CHECK INST
+53,OECOL,2007,150,4,2015,NA,Kouki,NA,Hikosaka,Editorial.Board,SE,Tohoku University,missing,Aoba,missing,Japan,NA,JPN,NA,NA,DOUBLE CHECK INST
+66,OECOL,2007,150,4,3116,NA,Richard,NA,Karban,Editorial.Board,SE,University of California Davis,missing,Davis,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+152,OECOL,2007,150,4,1374,NA,Hakan,NA,Wallander,Editorial.Board,SE,Lund University ,missing,Lund,missing,Sweden,NA,SWE,NA,NA,DOUBLE CHECK INST
+36,OECOL,2008,154,4,2376,NA,Miguel,NA,Franco,Handling.Editor,SE,University of Plymouth,missing,Plymouth,missing,United Kingdom,NA,GBR,NA,NA,DOUBLE CHECK INST
+64,OECOL,2008,154,4,985,NA,Elisabeth,KV,Kalko,Handling.Editor,SE,Ulm University,missing,Ulm,missing,Germany,NA,DEU,NA,NA,DOUBLE CHECK INST
+84,OECOL,2008,154,4,1326,NA,Herwig,NA,Leirs,Handling.Editor,SE,University of Antwerp,missing,Antwerpen,missing,Belgium,NA,BEL,NA,NA,DOUBLE CHECK INST
+114,OECOL,2008,154,4,1822,NA,Jacek,NA,Radwan,Handling.Editor,SE,Jagiellonian University,missing,Krakow,missing,Poland,NA,POL,NA,NA,DOUBLE CHECK INST
+131,OECOL,2008,154,4,1362,NA,Heli,NA,Siitari,Handling.Editor,SE,University of Jyvaskyla,missing,Jyvaskyla,missing,Finland,NA,FIN,NA,NA,DOUBLE CHECK INST
+141,OECOL,2008,154,4,1897,NA,Janne,NA,Sundell,Handling.Editor,SE,University of Helsinki,missing,Helsinki,missing,Finland,NA,FIN,NA,NA,DOUBLE CHECK INST
+9,OECOL,2009,158,4,243,NA,Brian,NA,Beckage,Handling.Editor,SE,University of Vermont,missing,Burlingotn,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+47,OECOL,2009,158,4,99,NA,Andrew,NA,Hector,Handling.Editor,SE,University of Zurich,missing,Zurich,missing,Switzerland,NA,CHE,NA,NA,DOUBLE CHECK INST
+105,OECOL,2009,158,4,2504,NA,Meelis,NA,Partel,Handling.Editor,SE,University of Tartu,missing,Tartu,missing,Estonia,NA,EST,NA,NA,DOUBLE CHECK INST
+3,OECOL,2010,162,1,1148,NA,Gerardo,NA,Avalos,Handling.Editor,SE,University of Costa Rica,missing,San Pedro,missing,Costa Rica,NA,CRI,NA,NA,DOUBLE CHECK INST
+32,OECOL,2010,162,1,2716,NA,Oyvind,NA,Fiksen,Handling.Editor,SE,University of Bergen,missing,Bergen,missing,Norway,NA,NOR,NA,NA,DOUBLE CHECK INST
+71,OECOL,2010,162,1,1404,NA,Ilpo,NA,Kojola,Handling.Editor,SE,Oulu Game & Fisheries Res,missing,Oulu,missing,Finland,NA,FIN,NA,NA,DOUBLE CHECK INST
+74,OECOL,2010,162,1,2851,NA,Pawel,NA,Koteja,Handling.Editor,SE,Jagiellonian University,missing,Krakow,missing,Poland,NA,POL,NA,NA,DOUBLE CHECK INST
+83,OECOL,2010,162,1,992,NA,Esa,NA,Lehikoinen,Handling.Editor,SE,University of Turku,missing,Turku,missing,Finland,NA,FIN,NA,NA,DOUBLE CHECK INST
+91,OECOL,2010,162,1,2460,NA,Michael,NA,Madritch,Handling.Editor,SE,Appalachian State University,missing,Boone,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+99,OECOL,2010,162,1,2730,NA,Ola,NA,Olsson,Handling.Editor,SE,Lund University,missing,Lund,missing,Sweden,NA,SWE,NA,NA,DOUBLE CHECK INST
+129,OECOL,2010,162,1,1866,NA,Jonathan,NA,Shurin,Handling.Editor,SE,University of British Columbia,missing,Vancouver,missing,Canada,NA,CAN,NA,NA,DOUBLE CHECK INST
+1,OECOL,2011,165,1,1434,NA,Jon,NA,Agren,Handling.Editor,SE,Uppsala University,missing,Uppsala,missing,Sweden,NA,SWE,NA,NA,DOUBLE CHECK INST
+6,OECOL,2011,165,1,2124,NA,Leon,NA,Barmuta,Handling.Editor,SE,University of Tasmania,missing,Tas,missing,Australia,NA,AUS,NA,NA,DOUBLE CHECK INST
+21,OECOL,2011,165,1,3723,NA,Walter,NA,Carson,Handling.Editor,SE,University of Pittsburgh,missing,Pittsburgh,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+22,OECOL,2011,165,1,1502,NA,Jerome,NA,Casas,Handling.Editor,SE,University of Tours,missing,Tours,missing,France,NA,FRA,NA,NA,DOUBLE CHECK INST
+28,OECOL,2011,165,1,1174,NA,Goran,NA,Ericsson,Handling.Editor,SE,Swedish University of Agricultural Sciences,missing,Umea,missing,Sweden,NA,SWE,NA,NA,DOUBLE CHECK INST
+34,OECOL,2011,165,1,2003,NA,Klaus,NA,Fischer,Handling.Editor,SE,Ernst Moritz Arndt University Greifswald,missing,Greifswald,missing,Germany,NA,DEU,NA,NA,DOUBLE CHECK INST
+40,OECOL,2011,165,1,459,NA,Catherine,NA,Gehring,Handling.Editor,SE,Northern Arizona University ,missing,Flagstaff,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+88,OECOL,2011,165,1,993,NA,Elena,NA,Litchman,Handling.Editor,SE,Michigan State University ,missing,Hickory Corners,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+93,OECOL,2011,165,1,1336,NA,Helene,NA,Marsh,Handling.Editor,SE,James Cook University,missing,Townsville,missing,Australia,NA,AUS,NA,NA,DOUBLE CHECK INST
+96,OECOL,2011,165,1,534,NA,Caroline,NA,Mueller,Handling.Editor,SE,University of Bielefeld,missing,Bielefeld,missing,Germany,NA,DEU,NA,NA,DOUBLE CHECK INST
+106,OECOL,2011,165,1,2892,NA,Pedro,NA,Peres-Neto,Handling.Editor,SE,University of Quebec,missing,Montreal,missing,Canada,NA,CAN,NA,NA,DOUBLE CHECK INST
+111,OECOL,2011,165,1,1348,NA,Hannu,NA,Poysa,Handling.Editor,SE,Finnish Game and Fisheries Research Institute,missing,Joensuu,missing,Finland,NA,FIN,NA,NA,DOUBLE CHECK INST
+127,OECOL,2011,165,1,2239,NA,Lin,NA,Schwarzkopf,Handling.Editor,SE,James Cook University,missing,Townsville,missing,Australia,NA,AUS,NA,NA,DOUBLE CHECK INST
+128,OECOL,2011,165,1,3466,NA,Susan,NA,Schwinning,Handling.Editor,SE,SW Texas State University ,missing,San Marcos,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+158,OECOL,2011,165,1,599,NA,Christian,NA,Wirth,Handling.Editor,SE,University of Leipzig,missing,Johannisallee,missing,Germany,NA,DEU,NA,NA,DOUBLE CHECK INST
+8,OECOL,2012,170,2,3278,NA,Stuart,NA,Bearhop,Handling.Editor,SE,University of Exeter ,missing,Cornwall,missing,United Kingdom,NA,GBR,NA,NA,DOUBLE CHECK INST
+12,OECOL,2012,170,2,1465,NA,James,NA,Bever,Handling.Editor,SE,NA,missing,NA,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+27,OECOL,2012,170,2,959,NA,Elizabeth,NA,Elle,Handling.Editor,SE,Simon Fraser University,missing,Burnaby,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+42,OECOL,2012,170,2,2158,NA,Laura,NA,Gough,Handling.Editor,SE,NA,missing,NA,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+50,OECOL,2012,170,2,1200,NA,George,NA,Heimpel,Handling.Editor,SE,NA,missing,NA,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+58,OECOL,2012,170,2,1400,NA,Ines,NA,Ibanez,Handling.Editor,SE,NA,missing,NA,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+62,OECOL,2012,170,2,1402,NA,Indrikis,NA,Krams,Handling.Editor,SE,University of Daugavpils,missing,Latvia,missing,Latvia,NA,LVA,NA,NA,DOUBLE CHECK INST
+81,OECOL,2012,170,2,504,NA,Craig,A,Layman,Handling.Editor,SE,NA,missing,NA,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+82,OECOL,2012,170,2,1705,NA,Jean-Francois,NA,Le Galliard,Handling.Editor,SE,NA,missing,NA,missing,France,NA,FRA,NA,NA,DOUBLE CHECK INST
+85,OECOL,2012,170,2,1713,NA,Jeremy,NA,Lichstein,Handling.Editor,SE,NA,missing,NA,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+86,OECOL,2012,170,2,1714,NA,John,T,Lill,Handling.Editor,SE,NA,missing,NA,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+98,OECOL,2012,170,2,3669,NA,Ulo,NA,Niinemets,Handling.Editor,SE,NA,missing,NA,missing,Estonia,NA,EST,NA,NA,DOUBLE CHECK INST
+103,OECOL,2012,170,2,2887,NA,Peggy,NA,Ostrom,Handling.Editor,SE,Michigan State University ,missing,E Lansing,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+130,OECOL,2012,170,2,1026,NA,Evan,NA,Siemann,Handling.Editor,SE,NA,missing,NA,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+137,OECOL,2012,170,2,1889,NA,John,NA,Stark,Handling.Editor,SE,NA,missing,NA,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+15,OECOL,2013,171,1,2988,NA,Riccardo,NA,Bommarco,Handling.Editor,SE,Swedish University of Agricultural Sciences,missing,Uppsala,missing,Sweden,NA,SWE,NA,NA,DOUBLE CHECK INST
+75,OECOL,2013,171,1,1405,NA,Indrikis,NA,Krams,Handling.Editor,SE,University of Daugavpils,missing,Latvia,missing,Latvia,NA,LVA,NA,NA,DOUBLE CHECK INST
+76,OECOL,2013,171,1,3587,NA,Toni,NA,Laaksonen,Handling.Editor,SE,University of Turku,missing,Turtu,missing,Finland,NA,FIN,NA,NA,DOUBLE CHECK INST
+113,OECOL,2013,171,1,172,NA,Andreas,NA,Prinzing,Handling.Editor,SE,NA,missing,NA,missing,France,NA,FRA,NA,NA,DOUBLE CHECK INST
+142,OECOL,2013,171,1,3484,NA,Steve,NA,Swearer,Handling.Editor,SE,University of Melbourne,missing,Melbourne,missing,Australia,NA,AUS,NA,NA,DOUBLE CHECK INST
+151,OECOL,2013,171,1,587,NA,Christian,NA,Voigt,Handling.Editor,SE,Leibniz Institute for Zoo & Wildlife Research ,missing,Berlin,missing,Germany,NA,DEU,NA,NA,DOUBLE CHECK INST
+2,OECOL,2014,174,1,1441,NA,Juan,NA,Armesto,Handling.Editor,SE,Pontificia Universidad Catolica de Chile,missing,Santiago,missing,Chile,NA,CHL,NA,NA,DOUBLE CHECK INST
+16,OECOL,2014,174,1,633,NA,Dave,NA,Bowling,Handling.Editor,SE,University of Utah,missing,Salt Lake City,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+25,OECOL,2014,174,1,3040,NA,Raphael,NA,Didham,Editorial.Board,SE,University of Western Australia,missing,Crawley,missing,United Kingdom,NA,GBR,NA,NA,DOUBLE CHECK INST
+30,OECOL,2014,174,1,2644,NA,Nina,NA,Farwig,Handling.Editor,SE,University of Mainz,missing,Marburg,missing,Germany,NA,DEU,NA,NA,DOUBLE CHECK INST
+38,OECOL,2014,174,1,458,NA,Candace,NA,Galen,Handling.Editor,SE,University of Missouri,missing,Columbia,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+48,OECOL,2014,174,1,2408,NA,Martin,NA,Heil,Handling.Editor,SE,CINVESTAV Irapuato,missing,Irapuato,missing,Mexico,NA,MEX,NA,NA,DOUBLE CHECK INST
+51,OECOL,2014,174,1,102,NA,Allen,NA,Herre,Handling.Editor,SE,NA,missing,"Washington, DC",missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+59,OECOL,2014,174,1,2420,NA,Moshe,NA,Inbar,Handling.Editor,SE,University of Haifa,missing,Haifa,missing,Israel,NA,ISR,NA,NA,DOUBLE CHECK INST
+65,OECOL,2014,174,1,2426,NA,Merijn,NA,Kant,Handling.Editor,SE,University of Amsterdam,missing,Amsterdam,missing,Netherlands,NA,NLD,NA,NA,DOUBLE CHECK INST
+70,OECOL,2014,174,1,1673,NA,Jamie,NA,Kneitel,Handling.Editor,SE,California State University ,missing,Sacramento,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+79,OECOL,2014,174,1,1699,NA,Jennifer,NA,Lau,Handling.Editor,SE,Michigan State University,missing,Hickory Corners,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+108,OECOL,2014,174,1,555,NA,Corne,MJ,Pieterse,Handling.Editor,SE,University of Utrecht,missing,Utrecht,missing,Netherlands,NA,NLD,NA,NA,DOUBLE CHECK INST
+112,OECOL,2014,174,1,2522,NA,Maria,J,Pozo,Handling.Editor,SE,CSIC,missing,Granada,missing,Spain,NA,ESP,NA,NA,DOUBLE CHECK INST
+119,OECOL,2014,174,1,1851,NA,Joel,NA,Sachs,Handling.Editor,SE,University of California Riverside,missing,Riverside ,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+143,OECOL,2014,174,1,1905,NA,Jennifer,NA,Thaler,Handling.Editor,SE,Cornell University ,missing,Ithaca,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+144,OECOL,2014,174,1,1369,NA,Heather,NA,Throop,Handling.Editor,SE,New Mexico State University ,missing,Las Cruces,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+153,OECOL,2014,174,1,2255,NA,Laurence,NA,Ward,Handling.Editor,SE,NA,missing,Lawrence,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST
+157,OECOL,2014,174,1,232,NA,Aaron,NA,Wirsing,Handling.Editor,SE,University of Washington,missing,Seattle,missing,USA,NA,USA,NA,NA,DOUBLE CHECK INST

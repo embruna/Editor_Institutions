@@ -1,0 +1,320 @@
+JOURNAL,YEAR,VOLUME,ISSUE,editor_id,FIRST_NAME,MIDDLE_NAME,LAST_NAME,NAME,TITLE.x,CATEGORY,INST,UNIT,CITY,STATE,COUNTRY,geo.code
+JTE,2012,28,1,1425,Ian,M,Turner,Ian M Turner,EIC,EIC,Journal of Tropical Ecology,,"Winchelsea,",East Sussex,UK,GBR
+JTE,2015,31,1,2808,Pierre-Michel,,Forget,Pierre-Michel Forget,SE,SE,Museum National d'Histoire,,,Brunoy,France,FRA
+JTE,2015,31,1,66,Alejandro,,Estrada,Alejandro Estrada,SE,SE,National Autonomous university of Mexico,Institute of Biology,,,Mexico,MEX
+JTE,2015,31,1,270,Brigitte,,Fiala,Brigitte Fiala,SE,SE,University of Wuerzburg,,ÊDepartment of Animal Ecology and Tropical Biology (Zoology III),Wuzerburg,Germany,DEU
+JTE,2015,31,1,1279,Gerhard,,Zotz,Gerhard Zotz,SE,SE,"University of Oldenberg, ",,,Oldenberg,Germany,DEU
+JTE,2015,31,1,2134,L,A,Bruijnzeel,L A Bruijnzeel,SE,SE,Vrije Universiteit ,,,Amsterdam,Netherlands,NLD
+JTE,2015,31,1,1766,Jeremy,,Midgley,Jeremy Midgley,SE,SE,University of Cape Town,,,Cape Town,South Africa,ZAF
+JTE,2015,31,1,1055,Frans,,Bongers,Frans Bongers,SE,SE,Wageningen Agricultural University,,,,The Netherlands,NLD
+JTE,2015,31,1,2990,Rene,GA,Boot,Rene GA Boot,SE,SE,Tropenbos International,,,Wagen,Netherlands,NLD
+JTE,2015,31,1,1350,Herbert,HT,Prins,Herbert HT Prins,SE,SE,Wageningen Agricultural University,Department of Forestry,,Wageningen ,Netherlands,NLD
+JTE,2015,31,1,1032,Edmund,VJ,Tanner,Edmund VJ Tanner,SE,SE,University of Cambridge,Department of Plant sciences,,Cambridge,UK,GBR
+JTE,2015,31,1,2604,Marinus,JA,Werger,Marinus JA Werger,SE,SE,University of Utrecht,Department of plant ecology and evolutioanry biology,,Utretcht,Netherlands,NLD
+JTE,2015,31,1,2540,Mark-Oliver,Oliver,Rodel,Mark-Oliver Rodel,,SE, Museum fu_r Naturkunde,,,,Germany,
+JTE,2014,30,1,66,Alejandro,,Estrada,Alejandro Estrada,SE,SE,National Autonomous university of Mexico,Institute of Biology,,,Mexico,MEX
+JTE,2014,30,1,270,Brigitte,,Fiala,Brigitte Fiala,SE,SE,University of Wuerzburg,,ÊDepartment of Animal Ecology and Tropical Biology (Zoology III),Wuzerburg,Germany,DEU
+JTE,2014,30,1,1032,Edmund,VJ,Tanner,Edmund VJ Tanner,SE,SE,University of Cambridge,Department of Plant sciences,,Cambridge,UK,GBR
+JTE,2014,30,1,1055,Frans,,Bongers,Frans Bongers,SE,SE,Wageningen Agricultural University,Department of Forestry,,Wageningen ,Netherlands,NLD
+JTE,2014,30,1,1279,Gerhard,,Zotz,Gerhard Zotz,SE,SE,"University of Oldenberg, ",,,Oldenberg,Germany,DEU
+JTE,2014,30,1,1350,Herbert,HT,Prins,Herbert HT Prins,SE,SE,Wageningen Agricultural University,Department of Forestry,,Wageningen ,Netherlands,NLD
+JTE,2014,30,1,1425,Ian,M,Turner,Ian M Turner,EIC,EIC,Journal of Tropical Ecology,,"Winchelsea,",East Sussex,UK,GBR
+JTE,2014,30,1,1766,Jeremy,,Midgley,Jeremy Midgley,SE,SE,University of Cape Town,,,Cape Town,South Africa,ZAF
+JTE,2014,30,1,2134,L,A,Bruijnzeel,L A Bruijnzeel,SE,SE,Vrije Universiteit ,,,Amsterdam,Netherlands,NLD
+JTE,2014,30,1,2604,Marinus,JA,Werger,Marinus JA Werger,SE,SE,University of Utrecht,Department of plant ecology and evolutioanry biology,,Utretcht,Netherlands,NLD
+JTE,2014,30,1,2540,Mark-Oliver,,Rodel,Mark-Oliver Rodel,SE,SE,Museum fu_r Naturkunde,,,,Germany,DEU
+JTE,2014,30,1,2631,Nick,D,Brown,Nick D Brown,SE,SE,University of Oxford,Department of Plant sciences,,Oxford,UK,GBR
+JTE,2014,30,1,2808,Pierre-Michel,,Forget,Pierre-Michel Forget,SE,SE,Museum National d'Histoire,,,Brunoy,France,FRA
+JTE,2014,30,1,2990,Rene,GA,Boot,Rene GA Boot,SE,SE,Tropenbos International,,,Wagen,Netherlands,NLD
+JTE,2013,29,1,583,Caroline,EG,Tutin,Caroline EG Tutin,SE,SE,Station D'Etudes des Gorilles et Chimpanzes (SEGC),,,,Gabon,GAB
+JTE,2013,29,1,1032,Edmund,VJ,Tanner,Edmund VJ Tanner,SE,SE,University of Cambridge,Department of Plant sciences,,Cambridge,UK,GBR
+JTE,2013,29,1,1055,Frans,,Bongers,Frans Bongers,SE,SE,Wageningen Agricultural University,Department of Forestry,,Wageningen ,Netherlands,NLD
+JTE,2013,29,1,1350,Herbert,HT,Prins,Herbert HT Prins,SE,SE,Wageningen Agricultural University,Department of Forestry,,Wageningen ,Netherlands,NLD
+JTE,2013,29,1,1425,Ian,M,Turner,Ian M Turner,EIC,EIC,Journal of Tropical Ecology,,"Winchelsea,",East Sussex,UK,GBR
+JTE,2013,29,1,2134,L,A,Bruijnzeel,L A Bruijnzeel,SE,SE,Vrije Universiteit ,,,Amsterdam,Netherlands,NLD
+JTE,2013,29,1,2604,Marinus,JA,Werger,Marinus JA Werger,SE,SE,University of Utrecht,Department of plant ecology and evolutioanry biology,,Utretcht,Netherlands,NLD
+JTE,2013,29,1,2631,Nick,D,Brown,Nick D Brown,SE,SE,University of Oxford,Department of Plant sciences,,Oxford,UK,GBR
+JTE,2013,29,1,2808,Pierre-Michel,,Forget,Pierre-Michel Forget,SE,SE,Museum National d'Histoire,,,Brunoy,France,FRA
+JTE,2013,29,1,2990,Rene,GA,Boot,Rene GA Boot,SE,SE,Tropenbos International,,,Wagen,Netherlands,NLD
+JTE,2012,28,1,583,Caroline,EG,Tutin,Caroline EG Tutin,SE,SE,Station D'Etudes des Gorilles et Chimpanzes (SEGC),,,,Gabon,GAB
+JTE,2012,28,1,1032,Edmund,VJ,Tanner,Edmund VJ Tanner,SE,SE,University of Cambridge,Department of Plant sciences,,Cambridge,UK,GBR
+JTE,2012,28,1,1055,Frans,,Bongers,Frans Bongers,SE,SE,Wageningen Agricultural University,Department of Forestry,,Wageningen ,Netherlands,NLD
+JTE,2012,28,1,1350,Herbert,HT,Prins,Herbert HT Prins,SE,SE,Wageningen Agricultural University,Department of Forestry,,Wageningen ,Netherlands,NLD
+JTE,2012,28,1,1425,Ian,M,Turner,Ian M Turner,EIC,EIC,Journal of Tropical Ecology,,"Winchelsea,",East Sussex,UK,GBR
+JTE,2012,28,1,2134,L,A,Bruijnzeel,L A Bruijnzeel,SE,SE,Vrije Universiteit ,,,Amsterdam,Netherlands,NLD
+JTE,2012,28,1,2604,Marinus,JA,Werger,Marinus JA Werger,SE,SE,University of Utrecht,Department of plant ecology and evolutioanry biology,,Utretcht,Netherlands,NLD
+JTE,2012,28,1,2631,Nick,D,Brown,Nick D Brown,SE,SE,University of Oxford,Department of Plant sciences,,Oxford,UK,GBR
+JTE,2012,28,1,2808,Pierre-Michel,,Forget,Pierre-Michel Forget,SE,SE,Museum National d'Histoire,,,Brunoy,France,FRA
+JTE,2012,28,1,2990,Rene,GA,Boot,Rene GA Boot,SE,SE,Tropenbos International,,,Wagen,Netherlands,NLD
+JTE,2011,27,1,583,Caroline,EG,Tutin,Caroline EG Tutin,SE,SE,Station D'Etudes des Gorilles et Chimpanzes (SEGC),,,,Gabon,GAB
+JTE,2011,27,1,1032,Edmund,VJ,Tanner,Edmund VJ Tanner,SE,SE,University of Cambridge,Department of Plant sciences,,Cambridge,UK,GBR
+JTE,2011,27,1,1055,Frans,,Bongers,Frans Bongers,SE,SE,Wageningen Agricultural University,Department of Forestry,,Wageningen ,Netherlands,NLD
+JTE,2011,27,1,1350,Herbert,HT,Prins,Herbert HT Prins,SE,SE,Wageningen Agricultural University,Department of Forestry,,Wageningen ,Netherlands,NLD
+JTE,2011,27,1,1425,Ian,M,Turner,Ian M Turner,EIC,EIC,Journal of Tropical Ecology,,"Winchelsea,",East Sussex,UK,GBR
+JTE,2011,27,1,2134,L,A,Bruijnzeel,L A Bruijnzeel,SE,SE,Vrije Universiteit ,,,Amsterdam,Netherlands,NLD
+JTE,2011,27,1,2604,Marinus,JA,Werger,Marinus JA Werger,SE,SE,University of Utrecht,Department of plant ecology and evolutioanry biology,,Utretcht,Netherlands,NLD
+JTE,2011,27,1,2631,Nick,D,Brown,Nick D Brown,SE,SE,University of Oxford,Department of Plant sciences,,Oxford,UK,GBR
+JTE,2011,27,1,2808,Pierre-Michel,,Forget,Pierre-Michel Forget,SE,SE,Museum National d'Histoire,,,Brunoy,France,FRA
+JTE,2011,27,1,2990,Rene,GA,Boot,Rene GA Boot,SE,SE,Tropenbos International,,,Wagen,Netherlands,NLD
+JTE,2010,26,2,583,Caroline,EG,Tutin,Caroline EG Tutin,SE,SE,Station D'Etudes des Gorilles et Chimpanzes (SEGC),,,,Gabon,GAB
+JTE,2010,26,2,1032,Edmund,VJ,Tanner,Edmund VJ Tanner,SE,SE,University of Cambridge,Department of Plant sciences,,Cambridge,UK,GBR
+JTE,2010,26,2,1055,Frans,,Bongers,Frans Bongers,SE,SE,Wageningen Agricultural University,Department of Forestry,,Wageningen ,Netherlands,NLD
+JTE,2010,26,2,1350,Herbert,HT,Prins,Herbert HT Prins,SE,SE,Wageningen Agricultural University,Department of Forestry,,Wageningen ,Netherlands,NLD
+JTE,2010,26,2,1425,Ian,M,Turner,Ian M Turner,EIC,EIC,Journal of Tropical Ecology,,"Winchelsea,",East Sussex,UK,GBR
+JTE,2010,26,2,2134,L,A,Bruijnzeel,L A Bruijnzeel,SE,SE,Vrije Universiteit ,,,Amsterdam,Netherlands,NLD
+JTE,2010,26,2,2604,Marinus,JA,Werger,Marinus JA Werger,SE,SE,University of Utrecht,Department of plant ecology and evolutioanry biology,,Utretcht,Netherlands,NLD
+JTE,2010,26,2,2631,Nick,D,Brown,Nick D Brown,SE,SE,University of Oxford,Department of Plant sciences,,Oxford,UK,GBR
+JTE,2010,26,2,2808,Pierre-Michel,,Forget,Pierre-Michel Forget,SE,SE,Museum National d'Histoire,,,Brunoy,France,FRA
+JTE,2010,26,2,2990,Rene,GA,Boot,Rene GA Boot,SE,SE,Tropenbos International,,,Wagen,Netherlands,NLD
+JTE,2009,25,1,583,Caroline,EG,Tutin,Caroline EG Tutin,SE,SE,Station D'Etudes des Gorilles et Chimpanzes (SEGC),,,,Gabon,GAB
+JTE,2009,25,1,1032,Edmund,VJ,Tanner,Edmund VJ Tanner,SE,SE,University of Cambridge,Department of Plant sciences,,Cambridge,UK,GBR
+JTE,2009,25,1,1055,Frans,,Bongers,Frans Bongers,SE,SE,Wageningen Agricultural University,Department of Forestry,,Wageningen ,Netherlands,NLD
+JTE,2009,25,1,1350,Herbert,HT,Prins,Herbert HT Prins,SE,SE,Wageningen Agricultural University,Department of Forestry,,Wageningen ,Netherlands,NLD
+JTE,2009,25,1,1425,Ian,M,Turner,Ian M Turner,EIC,EIC,Journal of Tropical Ecology,,"Winchelsea,",East Sussex,UK,GBR
+JTE,2009,25,1,2134,L,A,Bruijnzeel,L A Bruijnzeel,SE,SE,Vrije Universiteit ,,,Amsterdam,Netherlands,NLD
+JTE,2009,25,1,2604,Marinus,JA,Werger,Marinus JA Werger,SE,SE,University of Utrecht,Department of plant ecology and evolutioanry biology,,Utretcht,Netherlands,NLD
+JTE,2009,25,1,2631,Nick,D,Brown,Nick D Brown,SE,SE,University of Oxford,Department of Plant sciences,,Oxford,UK,GBR
+JTE,2009,25,1,2808,Pierre-Michel,,Forget,Pierre-Michel Forget,SE,SE,Museum National d'Histoire,,,Brunoy,France,FRA
+JTE,2009,25,1,2990,Rene,GA,Boot,Rene GA Boot,SE,SE,Tropenbos International,,,Wagen,Netherlands,NLD
+JTE,2008,24,1,583,Caroline,EG,Tutin,Caroline EG Tutin,SE,SE,Station D'Etudes des Gorilles et Chimpanzes (SEGC),,,,Gabon,GAB
+JTE,2008,24,1,1032,Edmund,VJ,Tanner,Edmund VJ Tanner,SE,SE,University of Cambridge,Department of Plant sciences,,Cambridge,UK,GBR
+JTE,2008,24,1,1055,Frans,,Bongers,Frans Bongers,SE,SE,Wageningen Agricultural University,Department of Forestry,,Wageningen ,Netherlands,NLD
+JTE,2008,24,1,1350,Herbert,HT,Prins,Herbert HT Prins,SE,SE,Wageningen Agricultural University,Department of Forestry,,Wageningen ,Netherlands,NLD
+JTE,2008,24,1,1425,Ian,M,Turner,Ian M Turner,EIC,EIC,Journal of Tropical Ecology,,"Winchelsea,",East Sussex,UK,GBR
+JTE,2008,24,1,2134,L,A,Bruijnzeel,L A Bruijnzeel,SE,SE,Vrije Universiteit ,,,Amsterdam,Netherlands,NLD
+JTE,2008,24,1,2604,Marinus,JA,Werger,Marinus JA Werger,SE,SE,University of Utrecht,Department of plant ecology and evolutioanry biology,,Utretcht,Netherlands,NLD
+JTE,2008,24,1,2631,Nick,D,Brown,Nick D Brown,SE,SE,University of Oxford,Department of Plant sciences,,Oxford,UK,GBR
+JTE,2008,24,1,2808,Pierre-Michel,,Forget,Pierre-Michel Forget,SE,SE,Museum National d'Histoire,,,Brunoy,France,FRA
+JTE,2008,24,1,2990,Rene,GA,Boot,Rene GA Boot,SE,SE,Tropenbos International,,,Wagen,Netherlands,NLD
+JTE,2007,23,1,583,Caroline,EG,Tutin,Caroline EG Tutin,SE,SE,Station D'Etudes des Gorilles et Chimpanzes (SEGC),,,,Gabon,GAB
+JTE,2007,23,1,1032,Edmund,VJ,Tanner,Edmund VJ Tanner,SE,SE,University of Cambridge,Department of Plant sciences,,Cambridge,UK,GBR
+JTE,2007,23,1,1350,Herbert,HT,Prins,Herbert HT Prins,SE,SE,Wageningen Agricultural University,Department of Forestry,,Wageningen ,Netherlands,NLD
+JTE,2007,23,1,1425,Ian,M,Turner,Ian M Turner,EIC,EIC,Journal of Tropical Ecology,,"Winchelsea,",East Sussex,UK,GBR
+JTE,2007,23,1,2604,Marinus,JA,Werger,Marinus JA Werger,SE,SE,University of Utrecht,Department of plant ecology and evolutioanry biology,,Utretcht,Netherlands,NLD
+JTE,2007,23,1,2808,Pierre-Michel,,Forget,Pierre-Michel Forget,SE,SE,Museum National d'Histoire,,,Brunoy,France,FRA
+JTE,2006,22,1,583,Caroline,EG,Tutin,Caroline EG Tutin,SE,SE,Station D'Etudes des Gorilles et Chimpanzes (SEGC),,,,Gabon,GAB
+JTE,2006,22,1,1032,Edmund,VJ,Tanner,Edmund VJ Tanner,SE,SE,University of Cambridge,Department of Plant sciences,,Cambridge,UK,GBR
+JTE,2006,22,1,1055,Frans,,Bongers,Frans Bongers,SE,SE,Wageningen Agricultural University,Department of Forestry,,Wageningen ,Netherlands,NLD
+JTE,2006,22,1,1350,Herbert,HT,Prins,Herbert HT Prins,SE,SE,Wageningen Agricultural University,Department of Forestry,,Wageningen ,Netherlands,NLD
+JTE,2006,22,1,1425,Ian,M,Turner,Ian M Turner,EIC,EIC,Journal of Tropical Ecology,,"Winchelsea,",East Sussex,UK,GBR
+JTE,2006,22,1,2134,L,A,Bruijnzeel,L A Bruijnzeel,SE,SE,Vrije Universiteit ,,,Amsterdam,Netherlands,NLD
+JTE,2006,22,1,2604,Marinus,JA,Werger,Marinus JA Werger,SE,SE,University of Utrecht,Department of plant ecology and evolutioanry biology,,Utretcht,Netherlands,NLD
+JTE,2006,22,1,2631,Nick,D,Brown,Nick D Brown,SE,SE,University of Oxford,Department of Plant sciences,,Oxford,UK,GBR
+JTE,2006,22,1,2808,Pierre-Michel,,Forget,Pierre-Michel Forget,SE,SE,Museum National d'Histoire,,,Brunoy,France,FRA
+JTE,2006,22,1,2990,Rene,GA,Boot,Rene GA Boot,SE,SE,Tropenbos International,,,Wagen,Netherlands,NLD
+JTE,2005,21,1,583,Caroline,EG,Tutin,Caroline EG Tutin,SE,SE,Station D'Etudes des Gorilles et Chimpanzes (SEGC),,,,Gabon,GAB
+JTE,2005,21,1,1032,Edmund,VJ,Tanner,Edmund VJ Tanner,SE,SE,University of Cambridge,Department of Plant sciences,,Cambridge,UK,GBR
+JTE,2005,21,1,1055,Frans,,Bongers,Frans Bongers,SE,SE,Wageningen Agricultural University,Department of Forestry,,Wageningen ,Netherlands,NLD
+JTE,2005,21,1,1350,Herbert,HT,Prins,Herbert HT Prins,SE,SE,Wageningen Agricultural University,Department of Forestry,,Wageningen ,Netherlands,NLD
+JTE,2005,21,1,1425,Ian,M,Turner,Ian M Turner,EIC,EIC,Journal of Tropical Ecology,,"Winchelsea,",East Sussex,UK,GBR
+JTE,2005,21,1,2134,L,A,Bruijnzeel,L A Bruijnzeel,SE,SE,Vrije Universiteit ,,,Amsterdam,Netherlands,NLD
+JTE,2005,21,1,2604,Marinus,JA,Werger,Marinus JA Werger,SE,SE,University of Utrecht,Department of plant ecology and evolutioanry biology,,Utretcht,Netherlands,NLD
+JTE,2005,21,1,2631,Nick,D,Brown,Nick D Brown,SE,SE,University of Oxford,Department of Plant sciences,,Oxford,UK,GBR
+JTE,2005,21,1,2808,Pierre-Michel,,Forget,Pierre-Michel Forget,SE,SE,Museum National d'Histoire,,,Brunoy,France,FRA
+JTE,2005,21,1,2990,Rene,GA,Boot,Rene GA Boot,SE,SE,Tropenbos International,,,Wagen,Netherlands,NLD
+JTE,2004,20,1,583,Caroline,EG,Tutin,Caroline EG Tutin,SE,SE,Station D'Etudes des Gorilles et Chimpanzes (SEGC),,,,Gabon,GAB
+JTE,2004,20,1,1032,Edmund,VJ,Tanner,Edmund VJ Tanner,SE,SE,University of Cambridge,Department of Plant sciences,,Cambridge,UK,GBR
+JTE,2004,20,1,1055,Frans,,Bongers,Frans Bongers,SE,SE,Wageningen Agricultural University,Department of Forestry,,Wageningen ,Netherlands,NLD
+JTE,2004,20,1,1350,Herbert,HT,Prins,Herbert HT Prins,SE,SE,Wageningen Agricultural University,Department of Forestry,,Wageningen ,Netherlands,NLD
+JTE,2004,20,1,1425,Ian,M,Turner,Ian M Turner,EIC,EIC,Journal of Tropical Ecology,,"Winchelsea,",East Sussex,UK,GBR
+JTE,2004,20,1,2134,L,A,Bruijnzeel,L A Bruijnzeel,SE,SE,Vrije Universiteit ,,,Amsterdam,Netherlands,NLD
+JTE,2004,20,1,2604,Marinus,JA,Werger,Marinus JA Werger,SE,SE,University of Utrecht,Department of plant ecology and evolutioanry biology,,Utretcht,Netherlands,NLD
+JTE,2004,20,1,2631,Nick,D,Brown,Nick D Brown,SE,SE,University of Oxford,Department of Plant sciences,,Oxford,UK,GBR
+JTE,2004,20,1,2808,Pierre-Michel,,Forget,Pierre-Michel Forget,SE,SE,Museum National d'Histoire,,,Brunoy,France,FRA
+JTE,2004,20,1,2990,Rene,GA,Boot,Rene GA Boot,SE,SE,Tropenbos International,,,Wagen,Netherlands,NLD
+JTE,2003,19,1,583,Caroline,EG,Tutin,Caroline EG Tutin,SE,SE,Station D'Etudes des Gorilles et Chimpanzes (SEGC),,,,Gabon,GAB
+JTE,2003,19,1,1032,Edmund,VJ,Tanner,Edmund VJ Tanner,SE,SE,University of Cambridge,Department of Plant sciences,,Cambridge,UK,GBR
+JTE,2003,19,1,1055,Frans,,Bongers,Frans Bongers,SE,SE,Wageningen Agricultural University,Department of Forestry,,Wageningen ,Netherlands,NLD
+JTE,2003,19,1,1350,Herbert,HT,Prins,Herbert HT Prins,SE,SE,Wageningen Agricultural University,Department of Forestry,,Wageningen ,Netherlands,NLD
+JTE,2003,19,1,1425,Ian,M,Turner,Ian M Turner,EIC,EIC,Singapore Botanic Gardens,,,,Singapore,GBR
+JTE,2003,19,1,2134,L,A,Bruijnzeel,L A Bruijnzeel,SE,SE,Vrije Universiteit ,,,Amsterdam,Netherlands,NLD
+JTE,2003,19,1,2604,Marinus,JA,Werger,Marinus JA Werger,SE,SE,University of Utrecht,Department of plant ecology and evolutioanry biology,,Utretcht,Netherlands,NLD
+JTE,2003,19,1,2631,Nick,D,Brown,Nick D Brown,SE,SE,University of Oxford,Department of Plant sciences,,Oxford,UK,GBR
+JTE,2003,19,1,2808,Pierre-Michel,,Forget,Pierre-Michel Forget,SE,SE,Museum National d'Histoire,,,Brunoy,France,FRA
+JTE,2003,19,1,2990,Rene,GA,Boot,Rene GA Boot,SE,SE,Tropenbos International,,,Wagen,Netherlands,NLD
+JTE,2002,18,1,583,Caroline,EG,Tutin,Caroline EG Tutin,SE,SE,Station D'Etudes des Gorilles et Chimpanzes (SEGC),,,,Gabon,GAB
+JTE,2002,18,1,1032,Edmund,VJ,Tanner,Edmund VJ Tanner,SE,SE,University of Cambridge,Department of Plant sciences,,Cambridge,UK,GBR
+JTE,2002,18,1,1055,Frans,,Bongers,Frans Bongers,SE,SE,Wageningen Agricultural University,Department of Forestry,,Wageningen ,Netherlands,NLD
+JTE,2002,18,1,1350,Herbert,HT,Prins,Herbert HT Prins,SE,SE,Wageningen Agricultural University,Department of Forestry,,Wageningen ,Netherlands,NLD
+JTE,2002,18,1,1425,Ian,M,Turner,Ian M Turner,EIC,EIC,Singapore Botanic Gardens,,,,Singapore,GBR
+JTE,2002,18,1,2134,L,A,Bruijnzeel,L A Bruijnzeel,SE,SE,Vrije Universiteit ,,,Amsterdam,Netherlands,NLD
+JTE,2002,18,1,2604,Marinus,JA,Werger,Marinus JA Werger,SE,SE,University of Utrecht,Department of plant ecology and evolutioanry biology,,Utretcht,Netherlands,NLD
+JTE,2002,18,1,2631,Nick,D,Brown,Nick D Brown,SE,SE,University of Oxford,Department of Plant sciences,,Oxford,UK,GBR
+JTE,2002,18,1,2808,Pierre-Michel,,Forget,Pierre-Michel Forget,SE,SE,Museum National d'Histoire,,,Brunoy,France,FRA
+JTE,2002,18,1,2990,Rene,GA,Boot,Rene GA Boot,SE,SE,Tropenbos International,,,Wagen,Netherlands,NLD
+JTE,2001,17,1,583,Caroline,EG,Tutin,Caroline EG Tutin,SE,SE,Station D'Etudes des Gorilles et Chimpanzes (SEGC),,,,Gabon,GAB
+JTE,2001,17,1,800,David,M,Newbery,David M Newbery,EIC,EIC,University of Bern , Geobotanisch institute,,Bern,Switzerland,CHE
+JTE,2001,17,1,1032,Edmund,VJ,Tanner,Edmund VJ Tanner,SE,SE,University of Cambridge,Department of Plant sciences,,Cambridge,UK,GBR
+JTE,2001,17,1,1032,Edmund,VJ,Tanner,Edmund VJ Tanner,BE,SE,University of Cambridge,Department of Plant sciences,,Cambridge,UK,GBR
+JTE,2001,17,1,1055,Frans,,Bongers,Frans Bongers,SE,SE,Wageningen Agricultural University,Department of Forestry,,Wageningen ,Netherlands,NLD
+JTE,2001,17,1,1350,Herbert,HT,Prins,Herbert HT Prins,SE,SE,Wageningen Agricultural University,Department of Forestry,,Wageningen ,Netherlands,NLD
+JTE,2001,17,1,1425,Ian,M,Turner,Ian M Turner,AE,AE,Singapore Botanic Gardens,,,,Singapore,SGP
+JTE,2001,17,1,2134,L,A,Bruijnzeel,L A Bruijnzeel,SE,SE,Vrije Universiteit ,,,Amsterdam,Netherlands,NLD
+JTE,2001,17,1,2604,Marinus,JA,Werger,Marinus JA Werger,SE,SE,University of Utrecht,Department of plant ecology and evolutioanry biology,,Utretcht,Netherlands,NLD
+JTE,2001,17,1,2631,Nick,D,Brown,Nick D Brown,SE,SE,University of Oxford,Department of Plant sciences,,Oxford,UK,GBR
+JTE,2001,17,1,2808,Pierre-Michel,,Forget,Pierre-Michel Forget,SE,SE,Museum National d'Histoire,,,Brunoy,France,FRA
+JTE,2000,16,1,583,Caroline,EG,Tutin,Caroline EG Tutin,SE,SE,Station D'Etudes des Gorilles et Chimpanzes (SEGC),,,,Gabon,GAB
+JTE,2000,16,1,800,David,M,Newbery,David M Newbery,EIC,EIC,University of Bern , Geobotanisch institute,,Bern,Switzerland,CHE
+JTE,2000,16,1,1032,Edmund,VJ,Tanner,Edmund VJ Tanner,SE,SE,University of Cambridge,Department of Plant sciences,,Cambridge,UK,GBR
+JTE,2000,16,1,1032,Edmund,VJ,Tanner,Edmund VJ Tanner,BE,SE,University of Cambridge,Department of Plant sciences,,Cambridge,UK,GBR
+JTE,2000,16,1,1055,Frans,,Bongers,Frans Bongers,SE,SE,Wageningen Agricultural University,Department of Forestry,,Wageningen ,Netherlands,NLD
+JTE,2000,16,1,1350,Herbert,HT,Prins,Herbert HT Prins,SE,SE,Wageningen Agricultural University,Department of Forestry,,Wageningen ,Netherlands,NLD
+JTE,2000,16,1,1425,Ian,M,Turner,Ian M Turner,AE,AE,Singapore Botanic Gardens,,,,Singapore,SGP
+JTE,2000,16,1,2134,L,A,Bruijnzeel,L A Bruijnzeel,SE,SE,Vrije Universiteit ,,,Amsterdam,Netherlands,NLD
+JTE,2000,16,1,2604,Marinus,JA,Werger,Marinus JA Werger,SE,SE,University of Utrecht,Department of plant ecology and evolutioanry biology,,Utretcht,Netherlands,NLD
+JTE,2000,16,1,2631,Nick,D,Brown,Nick D Brown,SE,SE,University of Oxford,Department of Plant sciences,,Oxford,UK,GBR
+JTE,2000,16,1,2808,Pierre-Michel,,Forget,Pierre-Michel Forget,SE,SE,Museum National d'Histoire,,,Brunoy,France,FRA
+JTE,2000,16,1,2990,Rene,GA,Boot,Rene GA Boot,SE,SE,Tropenbos International,,,Wagen,Netherlands,NLD
+JTE,1999,15,1,583,Caroline,EG,Tutin,Caroline EG Tutin,SE,SE,Station D'Etudes des Gorilles et Chimpanzes (SEGC),,,,Gabon,GAB
+JTE,1999,15,1,800,David,M,Newbery,David M Newbery,EIC,EIC,University of Bern , Geobotanisch institute,,Bern,Switzerland,CHE
+JTE,1999,15,1,1032,Edmund,VJ,Tanner,Edmund VJ Tanner,SE,SE,University of Cambridge,Department of Plant sciences,,Cambridge,UK,GBR
+JTE,1999,15,1,1032,Edmund,VJ,Tanner,Edmund VJ Tanner,BE,SE,University of Cambridge,Department of Plant sciences,,Cambridge,UK,GBR
+JTE,1999,15,1,1055,Frans,,Bongers,Frans Bongers,SE,SE,Wageningen Agricultural University,Department of Forestry,,Wageningen ,Netherlands,NLD
+JTE,1999,15,1,1350,Herbert,HT,Prins,Herbert HT Prins,SE,SE,Wageningen Agricultural University,Department of Forestry,,Wageningen ,Netherlands,NLD
+JTE,1999,15,1,2134,L,A,Bruijnzeel,L A Bruijnzeel,SE,SE,Vrije Universiteit ,,,Amsterdam,Netherlands,NLD
+JTE,1999,15,1,2604,Marinus,JA,Werger,Marinus JA Werger,SE,SE,University of Utrecht,Department of plant ecology and evolutioanry biology,,Utretcht,Netherlands,NLD
+JTE,1999,15,1,2631,Nick,D,Brown,Nick D Brown,SE,SE,University of Oxford,Department of Plant sciences,,Oxford,UK,GBR
+JTE,1999,15,1,2808,Pierre-Michel,,Forget,Pierre-Michel Forget,SE,SE,Museum National d'Histoire,,,Brunoy,France,FRA
+JTE,1999,15,1,2990,Rene,GA,Boot,Rene GA Boot,SE,SE,Tropenbos International,,,Wagen,Netherlands,NLD
+JTE,1998,14,1,583,Caroline,EG,Tutin,Caroline EG Tutin,SE,SE,Station D'Etudes des Gorilles et Chimpanzes (SEGC),,,,Gabon,GAB
+JTE,1998,14,1,800,David,M,Newbery,David M Newbery,EIC,EIC,University of Bern , Geobotanisch institute,,Bern,Switzerland,CHE
+JTE,1998,14,1,1032,Edmund,VJ,Tanner,Edmund VJ Tanner,SE,SE,University of Cambridge,Department of Plant sciences,,Cambridge,UK,GBR
+JTE,1998,14,1,1055,Frans,,Bongers,Frans Bongers,SE,SE,Wageningen Agricultural University,Department of Forestry,,Wageningen ,Netherlands,NLD
+JTE,1998,14,1,2134,L,A,Bruijnzeel,L A Bruijnzeel,SE,SE,Vrije Universiteit ,,,Amsterdam,Netherlands,NLD
+JTE,1998,14,1,2604,Marinus,JA,Werger,Marinus JA Werger,SE,SE,University of Utrecht,Department of plant ecology and evolutioanry biology,,Utretcht,Netherlands,NLD
+JTE,1998,14,1,2631,Nick,D,Brown,Nick D Brown,SE,SE,University of Oxford,Department of Plant sciences,,Oxford,UK,GBR
+JTE,1997,13,1,800,David,M,Newbery,David M Newbery,SE,SE,University of Bern , Geobotanisch institute,,Bern,Switzerland,CHE
+JTE,1997,13,1,824,Derek,E,Pomeroy,Derek E Pomeroy,SE,SE,Makarere University,"Institute of Environment & Natural Resources, ",,Kampala,Uganda,UGA
+JTE,1997,13,1,763,Diana,,Lieberman,Diana Lieberman,SE,SE,University of North Dakota,Department of Biology,,North Dakota,USA,USA
+JTE,1997,13,1,1032,Edmund,VJ,Tanner,Edmund VJ Tanner,SE,SE,University of Cambridge,Department of Plant sciences,,Cambridge,UK,GBR
+JTE,1997,13,1,1032,Edmund,VJ,Tanner,Edmund VJ Tanner,BE,SE,University of Cambridge,Department of Plant sciences,,Cambridge,UK,GBR
+JTE,1997,13,1,1055,Frans,,Bongers,Frans Bongers,SE,SE,Wageningen Agricultural University,Department of Forestry,,Wageningen ,Netherlands,NLD
+JTE,1997,13,1,1350,Herbert,HT,Prins,Herbert HT Prins,SE,SE,Wageningen Agricultural University,Department of Forestry,,Wageningen ,Netherlands,NLD
+JTE,1997,13,1,2604,Marinus,JA,Werger,Marinus JA Werger,SE,SE,University of Utrecht,Department of plant ecology and evolutioanry biology,,Utretcht,Netherlands,NLD
+JTE,1997,13,1,2449,Milton,,Lieberman,Milton Lieberman,SE,SE,University of North Dakota,,,North Dakota,USA,USA
+JTE,1997,13,1,2494,Mohd,,Nordin,Mohd Nordin,SE,SE,University Kebangsaan,,Bangi,Selangor,Malaysia,MYS
+JTE,1997,13,1,3119,Roger,,Kitching,Roger Kitching,SE,SE,"Griffith University,",Faculty of Environmental Science,Nathan,Queensaland,Australia,AUS
+JTE,1996,12,1,800,David,M,Newbery,David M Newbery,EIC,EIC,Univesity of Sterling,Department of Biological and Molecular Sciences,Sterling,Scotland,UK,GBR
+JTE,1996,12,1,824,Derek,E,Pomeroy,Derek E Pomeroy,SE,SE,Makarere University,"Institute of Environment & Natural Resources, ",,Kampala,Uganda,UGA
+JTE,1996,12,1,763,Diana,,Lieberman,Diana Lieberman,SE,SE,University of North Dakota,Department of Biology,,North Dakota,USA,USA
+JTE,1996,12,1,1032,Edmund,VJ,Tanner,Edmund VJ Tanner,SE,SE,University of Cambridge,Department of Plant sciences,,Cambridge,UK,GBR
+JTE,1996,12,1,1055,Frans,,Bongers,Frans Bongers,SE,SE,Wageningen Agricultural University,Department of Forestry,,Wageningen ,Netherlands,NLD
+JTE,1996,12,1,2604,Marinus,JA,Werger,Marinus JA Werger,SE,SE,University of Utrecht,Department of plant ecology and evolutioanry biology,,Utretcht,Netherlands,NLD
+JTE,1996,12,1,2449,Milton,,Lieberman,Milton Lieberman,SE,SE,University of North Dakota,,,North Dakota,USA,USA
+JTE,1996,12,1,2494,Mohd,,Nordin,Mohd Nordin,SE,SE,University Kebangsaan,,Bangi,Selangor,Malaysia,MYS
+JTE,1996,12,1,3119,Roger,,Kitching,Roger Kitching,SE,SE,"Griffith University,",Faculty of Environmental Science,Nathan,Queensaland,Australia,AUS
+JTE,1995,11,1,146,Adrian,Green,Marshall,Adrian G Marshall,AE,AE,University of Aberdeen,Department of Zoology,Aberdeen,Scotland,UK,GBR
+JTE,1995,11,1,800,David,M,Newbery,David M Newbery,EIC,EIC,Univesity of Sterling,Department of Biological and Molecular Sciences,Sterling,Scotland,UK,GBR
+JTE,1995,11,1,824,Derek,E,Pomeroy,Derek E Pomeroy,SE,SE,Makarere University,"Institute of Environment & Natural Resources, ",,Kampala,Uganda,UGA
+JTE,1995,11,1,763,Diana,,Lieberman,Diana Lieberman,SE,SE,University of North Dakota,Department of Biology,,North Dakota,USA,USA
+JTE,1995,11,1,2604,Marinus,JA,Werger,Marinus JA Werger,SE,SE,University of Utrecht,Department of plant ecology and evolutioanry biology,,Utretcht,Netherlands,NLD
+JTE,1995,11,1,2449,Milton,,Lieberman,Milton Lieberman,SE,SE,University of North Dakota,,,North Dakota,USA,USA
+JTE,1995,11,1,2494,Mohd,,Nordin,Mohd Nordin,SE,SE,University Kebangsaan,,Bangi,Selangor,Malaysia,MYS
+JTE,1994,10,1,146,Adrian,Green,Marshall,Adrian G Marshall,EIC,EIC,University of Aberdeen,Department of Zoology,Aberdeen,Scotland,UK,GBR
+JTE,1994,10,1,807,D,UU,Okali,D UU Okali,SE,SE,University of ibadan,Department of forest resources and management,,Ibadan,Nigeria,NGA
+JTE,1994,10,1,800,David,M,Newbery,David M Newbery,AE,AE,Univesity of Sterling,Department of Biological and Molecular Sciences,Sterling,Scotland,UK,GBR
+JTE,1994,10,1,763,Diana,,Lieberman,Diana Lieberman,SE,SE,University of North Dakota,Department of Biology,,North Dakota,USA,USA
+JTE,1994,10,1,1001,Ernesto,,Medina,Ernesto Medina,SE,SE, Centro de Ecologia,,,Caracas,Venezuela,VEN
+JTE,1994,10,1,1104,Francois,P,Malaisse,Francois P Malaisse,SE,SE,Jaldin Botanique Nacional de Belgique,,,,Belgium,BEL
+JTE,1994,10,1,1277,Gong,,Wooi-Khoon,Gong Wooi-Khoon,SE,SE,Universiti Sains,Department of Biology,,Penang,Malaysia,MYS
+JTE,1994,10,1,1667,Jiro,,Kikkawa,Jiro Kikkawa,SE,SE,University of Queensland,Department of zoology,St Lucia,Brisban ,Australia,AUS
+JTE,1994,10,1,2604,Marinus,JA,Werger,Marinus JA Werger,SE,SE,University of Utrecht,Department of plant ecology and evolutioanry biology,,Utretcht,Netherlands,NLD
+JTE,1994,10,1,2575,Michael,D,Swaine,Michael D Swaine,AE,AE,University of Aberdeen ,Department of Plant sciences,,scotland,UK,GBR
+JTE,1994,10,1,2900,P,S,Ramakrishnan,P S Ramakrishnan,SE,SE,Jawaharlal Nehru University ,School of environmental sciences,,New Delhi,India,IND
+JTE,1993,9,1,146,Adrian,Green,Marshall,Adrian G Marshall,EIC,EIC,University of Aberdeen,Department of Zoology,Aberdeen,Scotland,UK,GBR
+JTE,1993,9,1,807,D,UU,Okali,D UU Okali,SE,SE,University of ibadan,Department of forest resources and management,,Ibadan,Nigeria,NGA
+JTE,1993,9,1,800,David,M,Newbery,David M Newbery,AE,AE,Univesity of Sterling,Department of Biological and Molecular Sciences,Sterling,Scotland,UK,GBR
+JTE,1993,9,1,763,Diana,,Lieberman,Diana Lieberman,SE,SE,University of North Dakota,Department of Biology,,North Dakota,USA,USA
+JTE,1993,9,1,1001,Ernesto,,Medina,Ernesto Medina,SE,SE, Centro de Ecologia,,,Caracas,Venezuela,VEN
+JTE,1993,9,1,1104,Francois,P,Malaisse,Francois P Malaisse,SE,SE,Jaldin Botanique Nacional de Belgique,,,,Belgium,BEL
+JTE,1993,9,1,1277,Gong,,Wooi-Khoon,Gong Wooi-Khoon,SE,SE,Universiti Sains,Department of Biology,,Penang,Malaysia,MYS
+JTE,1993,9,1,1667,Jiro,,Kikkawa,Jiro Kikkawa,SE,SE,University of Queensland,Department of zoology,St Lucia,Brisban ,Australia,AUS
+JTE,1993,9,1,2604,Marinus,JA,Werger,Marinus JA Werger,SE,SE,University of Utrecht,Department of plant ecology and evolutioanry biology,,Utretcht,Netherlands,NLD
+JTE,1993,9,1,2575,Michael,D,Swaine,Michael D Swaine,AE,AE,University of Aberdeen ,Department of Plant sciences,,scotland,UK,GBR
+JTE,1993,9,1,2900,P,S,Ramakrishnan,P S Ramakrishnan,SE,SE,Jawaharlal Nehru University ,School of environmental sciences,,New Delhi,India,IND
+JTE,1992,8,1,146,Adrian,Green,Marshall,Adrian G Marshall,EIC,EIC,University of Aberdeen,Department of Zoology,Aberdeen,Scotland,UK,GBR
+JTE,1992,8,1,807,D,UU,Okali,D UU Okali,SE,SE,University of ibadan,Department of forest resources and management,,Ibadan,Nigeria,NGA
+JTE,1992,8,1,763,Diana,,Lieberman,Diana Lieberman,SE,SE,University of North Dakota,Department of Biology,,North Dakota,USA,USA
+JTE,1992,8,1,1001,Ernesto,,Medina,Ernesto Medina,SE,SE, Centro de Ecologia,,,Caracas,Venezuela,VEN
+JTE,1992,8,1,1104,Francois,P,Malaisse,Francois P Malaisse,SE,SE,Jaldin Botanique Nacional de Belgique,,,,Belgium,BEL
+JTE,1992,8,1,1277,Gong,,Wooi-Khoon,Gong Wooi-Khoon,SE,SE,Universiti Sains,Department of Biology,,Penang,Malaysia,MYS
+JTE,1992,8,1,1667,Jiro,,Kikkawa,Jiro Kikkawa,SE,SE,University of Queensland,Department of zoology,St Lucia,Brisban ,Australia,AUS
+JTE,1992,8,1,2604,Marinus,JA,Werger,Marinus JA Werger,SE,SE,University of Utrecht,Department of plant ecology and evolutioanry biology,,Utretcht,Netherlands,NLD
+JTE,1992,8,1,2575,Michael,D,Swaine,Michael D Swaine,AE,AE,University of Aberdeen ,Department of Plant sciences,,scotland,UK,GBR
+JTE,1992,8,1,2900,P,S,Ramakrishnan,P S Ramakrishnan,SE,SE,Jawaharlal Nehru University ,School of environmental sciences,,New Delhi,India,IND
+JTE,1991,7,1,146,Adrian,Green,Marshall,Adrian G Marshall,EIC,EIC,University of Aberdeen,Department of Zoology,Aberdeen,Scotland,UK,GBR
+JTE,1991,7,1,457,Christopher,G,Gakahu,Christopher G Gakahu,SE,SE,Moi University,Wildlife Management Department,,Eldoret,Kenya,KEN
+JTE,1991,7,1,807,D,UU,Okali,D UU Okali,SE,SE,University of ibadan,Department of forest resources and management,,Ibadan,Nigeria,NGA
+JTE,1991,7,1,763,Diana,,Lieberman,Diana Lieberman,SE,SE,University of North Dakota,Department of Biology,,North Dakota,USA,USA
+JTE,1991,7,1,1001,Ernesto,,Medina,Ernesto Medina,SE,SE, Centro de Ecologia,,,Caracas,Venezuela,VEN
+JTE,1991,7,1,1104,Francois,P,Malaisse,Francois P Malaisse,SE,SE,Jaldin Botanique Nacional de Belgique,,,,Belgium,BEL
+JTE,1991,7,1,1277,Gong,,Wooi-Khoon,Gong Wooi-Khoon,SE,SE,Universiti Sains,Department of Biology,,Penang,Malaysia,MYS
+JTE,1991,7,1,1667,Jiro,,Kikkawa,Jiro Kikkawa,SE,SE,University of Queensland,Department of zoology,St Lucia,Brisban ,Australia,AUS
+JTE,1991,7,1,2604,Marinus,JA,Werger,Marinus JA Werger,SE,SE,University of Utrecht,Department of plant ecology and evolutioanry biology,,Utretcht,Netherlands,NLD
+JTE,1991,7,1,2575,Michael,D,Swaine,Michael D Swaine,AE,AE,University of Aberdeen ,Department of Plant sciences,,scotland,UK,GBR
+JTE,1991,7,1,2900,P,S,Ramakrishnan,P S Ramakrishnan,SE,SE,Jawaharlal Nehru University ,School of environmental sciences,,New Delhi,India,IND
+JTE,1990,6,1,146,Adrian,Green,Marshall,Adrian G Marshall,EIC,EIC,University of Aberdeen,Department of Zoology,Aberdeen,Scotland,UK,GBR
+JTE,1990,6,1,457,Christopher,G,Gakahu,Christopher G Gakahu,SE,SE,Moi University,Wildlife Management Department,,Eldoret,Kenya,KEN
+JTE,1990,6,1,807,D,UU,Okali,D UU Okali,SE,SE,University of ibadan,Department of forest resources and management,,Ibadan,Nigeria,NGA
+JTE,1990,6,1,763,Diana,,Lieberman,Diana Lieberman,SE,SE,University of North Dakota,Department of Biology,,North Dakota,USA,USA
+JTE,1990,6,1,1001,Ernesto,,Medina,Ernesto Medina,SE,SE, Centro de Ecologia,,,Caracas,Venezuela,VEN
+JTE,1990,6,1,1104,Francois,P,Malaisse,Francois P Malaisse,SE,SE,Jaldin Botanique Nacional de Belgique,,,,Belgium,BEL
+JTE,1990,6,1,1277,Gong,,Wooi-Khoon,Gong Wooi-Khoon,SE,SE,Universiti Sains,Department of Biology,,Penang,Malaysia,MYS
+JTE,1990,6,1,1667,Jiro,,Kikkawa,Jiro Kikkawa,SE,SE,University of Queensland,Department of zoology,St Lucia,Brisban ,Australia,AUS
+JTE,1990,6,1,2604,Marinus,JA,Werger,Marinus JA Werger,SE,SE,University of Utrecht,Department of plant ecology and evolutioanry biology,,Utretcht,Netherlands,NLD
+JTE,1990,6,1,2575,Michael,D,Swaine,Michael D Swaine,AE,AE,University of Aberdeen ,Department of Plant sciences,,scotland,UK,GBR
+JTE,1990,6,1,2900,P,S,Ramakrishnan,P S Ramakrishnan,SE,SE,Jawaharlal Nehru University ,School of environmental sciences,,New Delhi,India,IND
+JTE,1989,5,1,146,Adrian,Green,Marshall,Adrian Marshall,Editor,EIC,University of Aberdeen,Department of Zoology,Aberdeen,Scotland,UK,GBR
+JTE,1989,5,1,457,C,Green,Gakahu,C Green Gakahu,Editorial.Board,SE,Moi University,Wildlife Management Department,,Eldoret,Kenya,KEN
+JTE,1989,5,1,763,D,,Lieberman,D Lieberman,Editorial.Board,SE,University of North Dakota,Department of Biology,,North Dakota,USA,USA
+JTE,1989,5,1,807,D,UU,Okali,D UU Okali,Editorial.Board,SE,University of ibadan,Department of forest resources and management,,Ibadan,Nigeria,NGA
+JTE,1989,5,1,1001,E,,Medina,E Medina,Editorial.Board,SE, Centro de Ecologia,,,Caracas,Venezuela,VEN
+JTE,1989,5,1,1277,Gong,,Wooi-Khoon,Gong Wooi-Khoon,Editorial.Board,SE,Universiti Sains,Department of Biology,,Penang,Malaysia,MYS
+JTE,1989,5,1,1588,J,I,Furtado,J I Furtado,Editorial.Board,SE,Commonwealth Secretariat ,,,London,UK,GBR
+JTE,1989,5,1,1667,J,,Kikkawa,J Kikkawa,Editorial.Board,SE,University of Queensland,Department of zoology,St Lucia,Brisban ,Australia,AUS
+JTE,1989,5,1,2575,M,D,Swaine,M D Swaine,Deputy.Editor,AE,University of Aberdeen ,Department of Plant sciences,,scotland,UK,GBR
+JTE,1989,5,1,2604,M,JA,Werger,M JA Werger,Editorial.Board,SE,University of Utrecht,Department of plant ecology and evolutioanry biology,,Utretcht,Netherlands,NLD
+JTE,1989,5,1,2900,P,S,Ramakrishnan,P S Ramakrishnan,Editorial.Board,SE,Jawaharlal Nehru University ,School of environmental sciences,,New Delhi,India,IND
+JTE,1988,4,1,146,Adrian,Green,Marshall,Adrian Marshall,Editor,EIC,University of Aberdeen,Department of Zoology,Aberdeen,Scotland,UK,GBR
+JTE,1988,4,1,457,C,Green,Gakahu,C Green Gakahu,Editorial.Board,SE,Moi University,Wildlife Management Department,,Eldoret,Kenya,KEN
+JTE,1988,4,1,735,D,H,Janzen,D H Janzen,Editorial.Board,SE,"University of Pennsylvania, ",Department of Biology,Philadelphia ,Pennsylvania,USA,USA
+JTE,1988,4,1,807,D,UU,Okali,D UU Okali,Editorial.Board,SE,University of ibadan,Department of forest resources and management,,Ibadan,Nigeria,NGA
+JTE,1988,4,1,1001,E,,Medina,E Medina,Editorial.Board,SE, Centro de Ecologia,,,Caracas,Venezuela,VEN
+JTE,1988,4,1,1588,J,I,Furtado,J I Furtado,Editorial.Board,SE,Commonwealth Secretariat ,,,London,UK,GBR
+JTE,1988,4,1,1667,J,,Kikkawa,J Kikkawa,Editorial.Board,SE,University of Queensland,Department of zoology,St Lucia,Brisban ,Australia,AUS
+JTE,1988,4,1,2380,M,,Gadgil,M Gadgil,Editorial.Board,SE,Indian Institute of Sciences,,Bangalore,Karanataka,India,IND
+JTE,1988,4,1,2575,M,D,Swaine,M D Swaine,Deputy.Editor,AE,University of Aberdeen ,Department of Plant sciences,,scotland,UK,GBR
+JTE,1988,4,1,2604,M,JA,Werger,M JA Werger,Editorial.Board,SE,University of Utrecht,Department of plant ecology and evolutioanry biology,,Utretcht,Netherlands,NLD
+JTE,1988,4,1,3459,Sanga,,Sabhasri,Sanga Sabhasri,Editorial.Board,SE,"Ministry of technology, environment and sciences",,,Bangkok,Thailand,THA
+JTE,1987,3,1,146,Adrian,Green,Marshall,Adrian Marshall,Editor,EIC,University of Aberdeen,Department of Zoology,Aberdeen,Scotland,UK,GBR
+JTE,1987,3,1,735,D,H,Janzen,D H Janzen,Editorial.Board,SE,"University of Pennsylvania, ",Department of Biology,Philadelphia ,Pennsylvania,USA,USA
+JTE,1987,3,1,807,D,UU,Okali,D UU Okali,Editorial.Board,SE,University of ibadan,Department of forest resources and management,,Ibadan,Nigeria,NGA
+JTE,1987,3,1,1001,E,,Medina,E Medina,Editorial.Board,SE, Centro de Ecologia,,,Caracas,Venezuela,VEN
+JTE,1987,3,1,1588,J,I,Furtado,J I Furtado,Editorial.Board,SE,Commonwealth Secretariat ,,,London,UK,GBR
+JTE,1987,3,1,1667,J,,Kikkawa,J Kikkawa,Editorial.Board,SE,University of Queensland,Department of zoology,St Lucia,Brisban ,Australia,AUS
+JTE,1987,3,1,2380,M,,Gadgil,M Gadgil,Editorial.Board,SE,Indian Institute of Sciences,,Bangalore,Karanataka,India,IND
+JTE,1987,3,1,2575,M,D,Swaine,M D Swaine,Deputy.Editor,AE,University of Aberdeen ,Department of Plant sciences,,scotland,UK,GBR
+JTE,1987,3,1,2604,M,JA,Werger,M JA Werger,Editorial.Board,SE,University of Utrecht,Department of plant ecology and evolutioanry biology,,Utretcht,Netherlands,NLD
+JTE,1987,3,1,3459,Sanga,,Sabhasri,Sanga Sabhasri,Editorial.Board,SE,"Ministry of technology, environment and sciences",,,Bangkok,Thailand,THA
+JTE,1986,2,1,145,Adrian,Green,Marshal,Adrian Green Marshal,Editor,EIC,University of Aberdeen,Department of Zoology,Aberdeen,Scotland,UK,GBR
+JTE,1986,2,1,735,D,H,Janzen,D H Janzen,Editorial.Board,SE,"University of Pennsylvania, ",Department of Biology,Philadelphia ,Pennsylvania,USA,USA
+JTE,1986,2,1,807,D,UU,Okali,D UU Okali,Editorial.Board,SE,University of ibadan,Department of forest resources and management,,Ibadan,Nigeria,NGA
+JTE,1986,2,1,1001,E,,Medina,E Medina,Editorial.Board,SE, Centro de Ecologia,,,Caracas,Venezuela,VEN
+JTE,1986,2,1,1588,J,I,Furtado,J I Furtado,Editorial.Board,SE,Commonwealth Secretariat ,,,London,UK,GBR
+JTE,1986,2,1,1667,J,,Kikkawa,J Kikkawa,Editorial.Board,SE,University of Queensland,Department of zoology,St Lucia,Brisban ,Australia,AUS
+JTE,1986,2,1,2380,M,,Gadgil,M Gadgil,Editorial.Board,SE,Indian Institute of Sciences,,Bangalore,Karanataka,India,IND
+JTE,1986,2,1,2575,M,D,Swaine,M D Swaine,Deputy.Editor,AE,University of Aberdeen ,Department of Plant sciences,,scotland,UK,GBR
+JTE,1986,2,1,2604,M,JA,Werger,M JA Werger,Editorial.Board,SE,University of Utrecht,Department of plant ecology and evolutioanry biology,,Utretcht,Netherlands,NLD
+JTE,1986,2,1,3459,Sanga,,Sabhasri,Sanga Sabhasri,Editorial.Board,SE,"Ministry of technology, environment and sciences",,,Bangkok,Thailand,THA
+JTE,1986,2,1,3617,T,R,Odhiambo,T R Odhiambo,Editorial.Board,SE,International Centre of Insect Physiology and Ecology,,,Nairobi,Kenya,KEN
+JTE,1985,1,1,146,Adrian,Green,Marshall,Adrian G Marshall,EIC,EIC,University of Aberdeen,Department of Zoology,Aberdeen,Scotland,UK,GBR
+JTE,1985,1,1,807,D,UU,Okali,D UU Okali,SE,SE,University of ibadan,Department of forest resources and management,,Ibadan,Nigeria,NGA
+JTE,1985,1,1,735,Dan,H,Janzen,Dan H Janzen,SE,SE,"University of Pennsylvania, ",Department of Biology,Philadelphia ,Pennsylvania,USA,USA
+JTE,1985,1,1,1001,Ernesto,,Medina,Ernesto Medina,SE,SE, Centro de Ecologia,,,Caracas,Venezuela,VEN
+JTE,1985,1,1,1667,Jiro,,Kikkawa,Jiro Kikkawa,SE,SE,University of Queensland,Department of zoology,St Lucia,Brisban ,Australia,AUS
+JTE,1985,1,1,1588,Jose,I,Furtado,Jose I Furtado,SE,SE,Commonwealth Secretariat ,,,London,UK,GBR
+JTE,1985,1,1,2380,Madhav,,Gadgil,Madhav Gadgil,SE,SE,Indian Institute of Sciences,,Bangalore,Karanataka,India,IND
+JTE,1985,1,1,2604,Marinus,JA,Werger,Marinus JA Werger,SE,SE,University of Utrecht,Department of plant ecology and evolutioanry biology,,Utretcht,Netherlands,NLD
+JTE,1985,1,1,2575,Michael,D,Swaine,Michael D Swaine,AE,AE,University of Aberdeen ,Department of Plant sciences,,scotland,UK,GBR
+JTE,1985,1,1,3459,Sanga,,Sabhasri,Sanga Sabhasri,SE,SE,"Ministry of technology, environment and sciences",,,Bangkok,Thailand,THA
+JTE,1985,1,1,3617,Thomas,R,Odhiambo,Thomas R Odhiambo,SE,SE,International Centre of Insect Physiology and Ecology,,,,Kenya,KEN

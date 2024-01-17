@@ -1,0 +1,960 @@
+JOURNAL,YEAR,VOLUME,ISSUE,editor_id,FIRST_NAME,MIDDLE_NAME,LAST_NAME,NAME,TITLE.x,CATEGORY,INST,UNIT,CITY,STATE,COUNTRY,geo.code
+JAPE,1985,22,1,242,B,L,Bayne,B L Bayne,Review.Board,SE,,,,,UK,GBR
+JAPE,1985,22,1,629,David,E,Bignell,David E Bignell,Review.Board,SE,,,,,UK,GBR
+JAPE,1985,22,1,3714,William,C,Block,William C Block,Editor,EIC,,,,,UK,GBR
+JAPE,1985,22,1,24,Anthony,David,Bradshaw,Anthony David Bradshaw,Review.Board,SE,,,,,UK,GBR
+JAPE,1985,22,1,1521,J,P,Cooper,J P Cooper,Review.Board,SE,,,,,UK,GBR
+JAPE,1985,22,1,1531,John,Patrick,Croxall,John Patrick Croxall,Review.Board,SE,,,,,UK,GBR
+JAPE,1985,22,1,3048,Ron,W,Edwards,Ron W Edwards,Review.Board,SE,,,,,UK,GBR
+JAPE,1985,22,1,3569,Tom,C,Hutchinson,Tom C Hutchinson,Review.Board,SE,Trent University,,,,Canada,CAN
+JAPE,1985,22,1,3150,Roger,,Mead,Roger Mead,Review.Board,SE,,,,,UK,GBR
+JAPE,1985,22,1,1773,John,Lennox,Monteith,John Lennox Monteith,Review.Board,SE,,,,,UK,GBR
+JAPE,1985,22,1,2484,Michael,Green,Morris,Michael Green Morris,Review.Board,SE,,,,,UK,GBR
+JAPE,1985,22,1,3784,Wendy,A,Rees,Wendy A Rees,Review.Board,SE,Mount Makulu Research Station,,,,Zambia,ZMB
+JAPE,1985,22,1,3630,T,M,Roberts,T M Roberts,Editor,EIC,,,,,UK,GBR
+JAPE,1985,22,1,186,Arthur,John,Rutter,Arthur John Rutter,Review.Board,SE,,,,,UK,GBR
+JAPE,1985,22,1,3222,Roy,W,Snaydon,Roy W Snaydon,Review.Board,SE,,,,,UK,GBR
+JAPE,1985,22,1,1884,Janet,I,Sprent,Janet I Sprent,Review.Board,SE,,,,,UK,GBR
+JAPE,1986,23,1,242,B,L,Bayne,B L Bayne,Review.Board,SE,,,,,UK,GBR
+JAPE,1986,23,1,629,David,E,Bignell,David E Bignell,Review.Board,SE,,,,,UK,GBR
+JAPE,1986,23,1,3714,William,C,Block,William C Block,Editor,EIC,,,,,UK,GBR
+JAPE,1986,23,1,2629,Nigel,,Bonner,Nigel Bonner,Review.Board,SE,,,,,UK,GBR
+JAPE,1986,23,1,24,Anthony,David,Bradshaw,Anthony David Bradshaw,Review.Board,SE,,,,,UK,GBR
+JAPE,1986,23,1,1521,J,P,Cooper,J P Cooper,Review.Board,SE,,,,,UK,GBR
+JAPE,1986,23,1,1531,John,Patrick,Croxall,John Patrick Croxall,Review.Board,SE,,,,,UK,GBR
+JAPE,1986,23,1,3048,Ron,W,Edwards,Ron W Edwards,Review.Board,SE,,,,,UK,GBR
+JAPE,1986,23,1,3569,Tom,C,Hutchinson,Tom C Hutchinson,Review.Board,SE,Trent University,,,,Canada,CAN
+JAPE,1986,23,1,3150,Roger,,Mead,Roger Mead,Review.Board,SE,,,,,UK,GBR
+JAPE,1986,23,1,1773,John,Lennox,Monteith,John Lennox Monteith,Review.Board,SE,,,,,UK,GBR
+JAPE,1986,23,1,2484,Michael,Green,Morris,Michael Green Morris,Review.Board,SE,,,,,UK,GBR
+JAPE,1986,23,1,3784,Wendy,A,Rees,Wendy A Rees,Review.Board,SE,Mount Makulu Research Station,,,,Zambia,ZMB
+JAPE,1986,23,1,3630,T,M,Roberts,T M Roberts,Editor,EIC,,,,,UK,GBR
+JAPE,1986,23,1,2910,Peter,,Rothery,Peter Rothery,Review.Board,SE,,,,,UK,GBR
+JAPE,1986,23,1,186,Arthur,John,Rutter,Arthur John Rutter,Review.Board,SE,,,,,UK,GBR
+JAPE,1986,23,1,3222,Roy,W,Snaydon,Roy W Snaydon,Review.Board,SE,,,,,UK,GBR
+JAPE,1986,23,1,1884,Janet,I,Sprent,Janet I Sprent,Review.Board,SE,,,,,UK,GBR
+JAPE,1987,24,1,242,B,L,Bayne,B L Bayne,Review.Board,SE,,,,,UK,GBR
+JAPE,1987,24,1,629,David,E,Bignell,David E Bignell,Review.Board,SE,,,,,UK,GBR
+JAPE,1987,24,1,3714,William,C,Block,William C Block,Editor,EIC,,,,,UK,GBR
+JAPE,1987,24,1,2629,Nigel,,Bonner,Nigel Bonner,Review.Board,SE,,,,,UK,GBR
+JAPE,1987,24,1,24,Anthony,David,Bradshaw,Anthony David Bradshaw,Review.Board,SE,,,,,UK,GBR
+JAPE,1987,24,1,1521,J,P,Cooper,J P Cooper,Review.Board,SE,,,,,UK,GBR
+JAPE,1987,24,1,1531,John,Patrick,Croxall,John Patrick Croxall,Review.Board,SE,,,,,UK,GBR
+JAPE,1987,24,1,3048,Ron,W,Edwards,Ron W Edwards,Review.Board,SE,,,,,UK,GBR
+JAPE,1987,24,1,3569,Tom,C,Hutchinson,Tom C Hutchinson,Review.Board,SE,Trent University,,,,Canada,CAN
+JAPE,1987,24,1,3150,Roger,,Mead,Roger Mead,Review.Board,SE,,,,,UK,GBR
+JAPE,1987,24,1,1773,John,Lennox,Monteith,John Lennox Monteith,Review.Board,SE,,,,,UK,GBR
+JAPE,1987,24,1,2484,Michael,Green,Morris,Michael Green Morris,Review.Board,SE,,,,,UK,GBR
+JAPE,1987,24,1,3784,Wendy,A,Rees,Wendy A Rees,Review.Board,SE,Mount Makulu Research Station,,,,Zambia,ZMB
+JAPE,1987,24,1,3630,T,M,Roberts,T M Roberts,Editor,EIC,,,,,UK,GBR
+JAPE,1987,24,1,2910,Peter,,Rothery,Peter Rothery,Review.Board,SE,,,,,UK,GBR
+JAPE,1987,24,1,186,Arthur,John,Rutter,Arthur John Rutter,Review.Board,SE,,,,,UK,GBR
+JAPE,1987,24,1,3222,Roy,W,Snaydon,Roy W Snaydon,Review.Board,SE,,,,,UK,GBR
+JAPE,1987,24,1,1884,Janet,I,Sprent,Janet I Sprent,Review.Board,SE,,,,,UK,GBR
+JAPE,1988,25,1,242,B,L,Bayne,B L Bayne,Review.Board,SE,,,,,UK,GBR
+JAPE,1988,25,1,629,David,E,Bignell,David E Bignell,Review.Board,SE,,,,,UK,GBR
+JAPE,1988,25,1,3714,William,C,Block,William C Block,Editor,EIC,,,,,UK,GBR
+JAPE,1988,25,1,2629,Nigel,,Bonner,Nigel Bonner,Review.Board,SE,,,,,UK,GBR
+JAPE,1988,25,1,24,Anthony,David,Bradshaw,Anthony David Bradshaw,Review.Board,SE,,,,,UK,GBR
+JAPE,1988,25,1,1531,John,Patrick,Croxall,John Patrick Croxall,Review.Board,SE,,,,,UK,GBR
+JAPE,1988,25,1,3730,W,,Day,W Day,Review.Board,SE,,,,,UK,GBR
+JAPE,1988,25,1,3048,Ron,W,Edwards,Ron W Edwards,Review.Board,SE,,,,,UK,GBR
+JAPE,1988,25,1,2410,Mark,O,Hill,Mark O Hill,Review.Board,SE,,,,,UK,GBR
+JAPE,1988,25,1,3569,Tom,C,Hutchinson,Tom C Hutchinson,Review.Board,SE,Trent University,,,,Canada,CAN
+JAPE,1988,25,1,2840,Paul,Gordon,Jarvis,Paul Gordon Jarvis,Review.Board,SE,,,,,UK,GBR
+JAPE,1988,25,1,3143,Rob,H,Marrs,Rob H Marrs,Review.Board,SE,,,,,UK,GBR
+JAPE,1988,25,1,1767,John,,Miles,John Miles,Editor,EIC,,,,,UK,GBR
+JAPE,1988,25,1,2484,Michael,Green,Morris,Michael Green Morris,Review.Board,SE,,,,,UK,GBR
+JAPE,1988,25,1,3784,Wendy,A,Rees,Wendy A Rees,Review.Board,SE,Mount Makulu Research Station,,,,Zambia,ZMB
+JAPE,1988,25,1,2910,Peter,,Rothery,Peter Rothery,Review.Board,SE,,,,,UK,GBR
+JAPE,1988,25,1,186,Arthur,John,Rutter,Arthur John Rutter,Review.Board,SE,,,,,UK,GBR
+JAPE,1988,25,1,3222,Roy,W,Snaydon,Roy W Snaydon,Review.Board,SE,,,,,UK,GBR
+JAPE,1988,25,1,1420,Ian,F,Spellerberg,Ian F Spellerberg,Review.Board,SE,,,,,UK,GBR
+JAPE,1988,25,1,1884,Janet,I,Sprent,Janet I Sprent,Review.Board,SE,,,,,UK,GBR
+JAPE,1988,25,1,910,David,,Welch,David Welch,Review.Board,SE,,,,,UK,GBR
+JAPE,1989,26,1,242,B,L,Bayne,B L Bayne,Review.Board,SE,,,,,UK,GBR
+JAPE,1989,26,1,629,David,E,Bignell,David E Bignell,Review.Board,SE,,,,,UK,GBR
+JAPE,1989,26,1,3714,William,C,Block,William C Block,Editor,EIC,,,,,UK,GBR
+JAPE,1989,26,1,2629,Nigel,,Bonner,Nigel Bonner,Review.Board,SE,,,,,UK,GBR
+JAPE,1989,26,1,3020,Ralph,T,Clarke,Ralph T Clarke,Review.Board,SE,,,,,UK,GBR
+JAPE,1989,26,1,1531,John,Patrick,Croxall,John Patrick Croxall,Review.Board,SE,,,,,UK,GBR
+JAPE,1989,26,1,3730,W,,Day,W Day,Review.Board,SE,,,,,UK,GBR
+JAPE,1989,26,1,2410,Mark,O,Hill,Mark O Hill,Review.Board,SE,,,,,UK,GBR
+JAPE,1989,26,1,3569,Tom,C,Hutchinson,Tom C Hutchinson,Review.Board,SE,Trent University,,,,Canada,CAN
+JAPE,1989,26,1,2840,Paul,Gordon,Jarvis,Paul Gordon Jarvis,Review.Board,SE,,,,,UK,GBR
+JAPE,1989,26,1,3143,Rob,H,Marrs,Rob H Marrs,Review.Board,SE,,,,,UK,GBR
+JAPE,1989,26,1,521,Christopher,,Mason,Christopher Mason,Review.Board,SE,,,,,UK,GBR
+JAPE,1989,26,1,1767,John,,Miles,John Miles,Editor,EIC,,,,,UK,GBR
+JAPE,1989,26,1,2484,Michael,Green,Morris,Michael Green Morris,Review.Board,SE,,,,,UK,GBR
+JAPE,1989,26,1,2910,Peter,,Rothery,Peter Rothery,Review.Board,SE,,,,,UK,GBR
+JAPE,1989,26,1,3222,Roy,W,Snaydon,Roy W Snaydon,Review.Board,SE,,,,,UK,GBR
+JAPE,1989,26,1,1420,Ian,F,Spellerberg,Ian F Spellerberg,Review.Board,SE,,,,,UK,GBR
+JAPE,1989,26,1,1884,Janet,I,Sprent,Janet I Sprent,Review.Board,SE,,,,,UK,GBR
+JAPE,1989,26,1,1368,Henry,,Thomas,Henry Thomas,Review.Board,SE,,,,,UK,GBR
+JAPE,1989,26,1,910,David,,Welch,David Welch,Review.Board,SE,,,,,UK,GBR
+JAPE,1990,27,1,242,B,L,Bayne,B L Bayne,Review.Board,SE,,,,,UK,GBR
+JAPE,1990,27,1,629,David,E,Bignell,David E Bignell,Review.Board,SE,,,,,UK,GBR
+JAPE,1990,27,1,2629,Nigel,,Bonner,Nigel Bonner,Review.Board,SE,,,,,UK,GBR
+JAPE,1990,27,1,3020,Ralph,T,Clarke,Ralph T Clarke,Review.Board,SE,,,,,UK,GBR
+JAPE,1990,27,1,1531,John,Patrick,Croxall,John Patrick Croxall,Review.Board,SE,,,,,UK,GBR
+JAPE,1990,27,1,3730,W,,Day,W Day,Review.Board,SE,,,,,UK,GBR
+JAPE,1990,27,1,2410,Mark,O,Hill,Mark O Hill,Review.Board,SE,,,,,UK,GBR
+JAPE,1990,27,1,3569,Tom,C,Hutchinson,Tom C Hutchinson,Review.Board,SE,Trent University,,,,Canada,CAN
+JAPE,1990,27,1,2840,Paul,Gordon,Jarvis,Paul Gordon Jarvis,Review.Board,SE,,,,,UK,GBR
+JAPE,1990,27,1,3143,Rob,H,Marrs,Rob H Marrs,Review.Board,SE,,,,,UK,GBR
+JAPE,1990,27,1,521,Christopher,,Mason,Christopher Mason,Review.Board,SE,,,,,UK,GBR
+JAPE,1990,27,1,1767,John,,Miles,John Miles,Editor,EIC,,,,,UK,GBR
+JAPE,1990,27,1,2484,Michael,Green,Morris,Michael Green Morris,Review.Board,SE,,,,,UK,GBR
+JAPE,1990,27,1,2910,Peter,,Rothery,Peter Rothery,Review.Board,SE,,,,,UK,GBR
+JAPE,1990,27,1,3222,Roy,W,Snaydon,Roy W Snaydon,Review.Board,SE,,,,,UK,GBR
+JAPE,1990,27,1,1420,Ian,F,Spellerberg,Ian F Spellerberg,Review.Board,SE,,,,,UK,GBR
+JAPE,1990,27,1,1884,Janet,I,Sprent,Janet I Sprent,Review.Board,SE,,,,,UK,GBR
+JAPE,1990,27,1,1368,Henry,,Thomas,Henry Thomas,Review.Board,SE,,,,,UK,GBR
+JAPE,1990,27,1,2703,Nigel,,Webb,Nigel Webb,Editor,EIC,,,,,UK,GBR
+JAPE,1990,27,1,910,David,,Welch,David Welch,Review.Board,SE,,,,,UK,GBR
+JAPE,1991,28,1,242,B,L,Bayne,B L Bayne,Review.Board,SE,,,,,UK,GBR
+JAPE,1991,28,1,629,David,E,Bignell,David E Bignell,Review.Board,SE,,,,,UK,GBR
+JAPE,1991,28,1,2629,Nigel,,Bonner,Nigel Bonner,Review.Board,SE,,,,,UK,GBR
+JAPE,1991,28,1,3020,Ralph,T,Clarke,Ralph T Clarke,Review.Board,SE,,,,,UK,GBR
+JAPE,1991,28,1,1531,John,Patrick,Croxall,John Patrick Croxall,Review.Board,SE,,,,,UK,GBR
+JAPE,1991,28,1,3730,W,,Day,W Day,Review.Board,SE,,,,,UK,GBR
+JAPE,1991,28,1,2410,Mark,O,Hill,Mark O Hill,Review.Board,SE,,,,,UK,GBR
+JAPE,1991,28,1,3569,Tom,C,Hutchinson,Tom C Hutchinson,Review.Board,SE,Trent University,,,,Canada,CAN
+JAPE,1991,28,1,2840,Paul,Gordon,Jarvis,Paul Gordon Jarvis,Review.Board,SE,,,,,UK,GBR
+JAPE,1991,28,1,3143,Rob,H,Marrs,Rob H Marrs,Review.Board,SE,,,,,UK,GBR
+JAPE,1991,28,1,521,Christopher,,Mason,Christopher Mason,Review.Board,SE,,,,,UK,GBR
+JAPE,1991,28,1,1767,John,,Miles,John Miles,Editor,EIC,,,,,UK,GBR
+JAPE,1991,28,1,2484,Michael,Green,Morris,Michael Green Morris,Review.Board,SE,,,,,UK,GBR
+JAPE,1991,28,1,2910,Peter,,Rothery,Peter Rothery,Review.Board,SE,,,,,UK,GBR
+JAPE,1991,28,1,3222,Roy,W,Snaydon,Roy W Snaydon,Review.Board,SE,,,,,UK,GBR
+JAPE,1991,28,1,1420,Ian,F,Spellerberg,Ian F Spellerberg,Review.Board,SE,,,,,UK,GBR
+JAPE,1991,28,1,1884,Janet,I,Sprent,Janet I Sprent,Review.Board,SE,,,,,UK,GBR
+JAPE,1991,28,1,1368,Henry,,Thomas,Henry Thomas,Review.Board,SE,,,,,UK,GBR
+JAPE,1991,28,1,2703,Nigel,,Webb,Nigel Webb,Editor,EIC,,,,,UK,GBR
+JAPE,1991,28,1,910,David,,Welch,David Welch,Review.Board,SE,,,,,UK,GBR
+JAPE,1992,29,1,242,B,L,Bayne,B L Bayne,Review.Board,SE,,,,,UK,GBR
+JAPE,1992,29,1,629,David,E,Bignell,David E Bignell,Review.Board,SE,,,,,UK,GBR
+JAPE,1992,29,1,2629,Nigel,,Bonner,Nigel Bonner,Review.Board,SE,,,,,UK,GBR
+JAPE,1992,29,1,3020,Ralph,T,Clarke,Ralph T Clarke,Review.Board,SE,,,,,UK,GBR
+JAPE,1992,29,1,1531,John,Patrick,Croxall,John Patrick Croxall,Review.Board,SE,,,,,UK,GBR
+JAPE,1992,29,1,3730,W,,Day,W Day,Review.Board,SE,,,,,UK,GBR
+JAPE,1992,29,1,2410,Mark,O,Hill,Mark O Hill,Review.Board,SE,,,,,UK,GBR
+JAPE,1992,29,1,3569,Tom,C,Hutchinson,Tom C Hutchinson,Review.Board,SE,Trent University,,,,Canada,CAN
+JAPE,1992,29,1,1316,Hugh,AP,Ingram,Hugh AP Ingram,Editor,EIC,,,,,UK,GBR
+JAPE,1992,29,1,2840,Paul,Gordon,Jarvis,Paul Gordon Jarvis,Review.Board,SE,,,,,UK,GBR
+JAPE,1992,29,1,3143,Rob,H,Marrs,Rob H Marrs,Review.Board,SE,,,,,UK,GBR
+JAPE,1992,29,1,521,Christopher,,Mason,Christopher Mason,Review.Board,SE,,,,,UK,GBR
+JAPE,1992,29,1,2484,Michael,Green,Morris,Michael Green Morris,Review.Board,SE,,,,,UK,GBR
+JAPE,1992,29,1,2910,Peter,,Rothery,Peter Rothery,Review.Board,SE,,,,,UK,GBR
+JAPE,1992,29,1,3222,Roy,W,Snaydon,Roy W Snaydon,Review.Board,SE,,,,,UK,GBR
+JAPE,1992,29,1,1420,Ian,F,Spellerberg,Ian F Spellerberg,Review.Board,SE,,,,,UK,GBR
+JAPE,1992,29,1,1884,Janet,I,Sprent,Janet I Sprent,Review.Board,SE,,,,,UK,GBR
+JAPE,1992,29,1,1368,Henry,,Thomas,Henry Thomas,Review.Board,SE,,,,,UK,GBR
+JAPE,1992,29,1,2703,Nigel,,Webb,Nigel Webb,Editor,EIC,,,,,UK,GBR
+JAPE,1992,29,1,910,David,,Welch,David Welch,Review.Board,SE,,,,,UK,GBR
+JAPE,1993,30,1,242,B,L,Bayne,B L Bayne,Review.Board,SE,,,,,UK,GBR
+JAPE,1993,30,1,629,David,E,Bignell,David E Bignell,Review.Board,SE,,,,,UK,GBR
+JAPE,1993,30,1,2629,Nigel,,Bonner,Nigel Bonner,Review.Board,SE,,,,,UK,GBR
+JAPE,1993,30,1,3020,Ralph,T,Clarke,Ralph T Clarke,Review.Board,SE,,,,,UK,GBR
+JAPE,1993,30,1,1531,John,Patrick,Croxall,John Patrick Croxall,Review.Board,SE,,,,,UK,GBR
+JAPE,1993,30,1,3730,W,,Day,W Day,Review.Board,SE,,,,,UK,GBR
+JAPE,1993,30,1,722,David,A,Hill,David A Hill,Review.Board,SE,,,,,UK,GBR
+JAPE,1993,30,1,2410,Mark,O,Hill,Mark O Hill,Review.Board,SE,,,,,UK,GBR
+JAPE,1993,30,1,3569,Tom,C,Hutchinson,Tom C Hutchinson,Review.Board,SE,Trent University,,,,Canada,CAN
+JAPE,1993,30,1,1316,Hugh,AP,Ingram,Hugh AP Ingram,Editor,EIC,,,,,UK,GBR
+JAPE,1993,30,1,2840,Paul,Gordon,Jarvis,Paul Gordon Jarvis,Review.Board,SE,,,,,UK,GBR
+JAPE,1993,30,1,3143,Rob,H,Marrs,Rob H Marrs,Review.Board,SE,,,,,UK,GBR
+JAPE,1993,30,1,521,Christopher,,Mason,Christopher Mason,Review.Board,SE,,,,,UK,GBR
+JAPE,1993,30,1,2484,Michael,Green,Morris,Michael Green Morris,Review.Board,SE,,,,,UK,GBR
+JAPE,1993,30,1,2910,Peter,,Rothery,Peter Rothery,Review.Board,SE,,,,,UK,GBR
+JAPE,1993,30,1,3222,Roy,W,Snaydon,Roy W Snaydon,Review.Board,SE,,,,,UK,GBR
+JAPE,1993,30,1,1420,Ian,F,Spellerberg,Ian F Spellerberg,Review.Board,SE,,,,,UK,GBR
+JAPE,1993,30,1,1884,Janet,I,Sprent,Janet I Sprent,Review.Board,SE,,,,,UK,GBR
+JAPE,1993,30,1,1368,Henry,,Thomas,Henry Thomas,Review.Board,SE,,,,,UK,GBR
+JAPE,1993,30,1,2703,Nigel,,Webb,Nigel Webb,Editor,EIC,,,,,UK,GBR
+JAPE,1993,30,1,910,David,,Welch,David Welch,Review.Board,SE,,,,,UK,GBR
+JAPE,1994,31,1,242,B,L,Bayne,B L Bayne,Review.Board,SE,,,,,UK,GBR
+JAPE,1994,31,1,629,David,E,Bignell,David E Bignell,Review.Board,SE,,,,,UK,GBR
+JAPE,1994,31,1,2629,Nigel,,Bonner,Nigel Bonner,Review.Board,SE,,,,,UK,GBR
+JAPE,1994,31,1,3020,Ralph,T,Clarke,Ralph T Clarke,Review.Board,SE,,,,,UK,GBR
+JAPE,1994,31,1,1531,John,Patrick,Croxall,John Patrick Croxall,Review.Board,SE,,,,,UK,GBR
+JAPE,1994,31,1,3730,W,,Day,W Day,Review.Board,SE,,,,,UK,GBR
+JAPE,1994,31,1,722,David,A,Hill,David A Hill,Review.Board,SE,,,,,UK,GBR
+JAPE,1994,31,1,2410,Mark,O,Hill,Mark O Hill,Review.Board,SE,,,,,UK,GBR
+JAPE,1994,31,1,3569,Tom,C,Hutchinson,Tom C Hutchinson,Review.Board,SE,Trent University,,,,Canada,CAN
+JAPE,1994,31,1,1316,Hugh,AP,Ingram,Hugh AP Ingram,Editor,EIC,,,,,UK,GBR
+JAPE,1994,31,1,2840,Paul,Gordon,Jarvis,Paul Gordon Jarvis,Review.Board,SE,,,,,UK,GBR
+JAPE,1994,31,1,3143,Rob,H,Marrs,Rob H Marrs,Review.Board,SE,,,,,UK,GBR
+JAPE,1994,31,1,521,Christopher,,Mason,Christopher Mason,Review.Board,SE,,,,,UK,GBR
+JAPE,1994,31,1,2484,Michael,Green,Morris,Michael Green Morris,Review.Board,SE,,,,,UK,GBR
+JAPE,1994,31,1,2910,Peter,,Rothery,Peter Rothery,Review.Board,SE,,,,,UK,GBR
+JAPE,1994,31,1,3222,Roy,W,Snaydon,Roy W Snaydon,Review.Board,SE,,,,,UK,GBR
+JAPE,1994,31,1,1420,Ian,F,Spellerberg,Ian F Spellerberg,Review.Board,SE,,,,,UK,GBR
+JAPE,1994,31,1,1884,Janet,I,Sprent,Janet I Sprent,Review.Board,SE,,,,,UK,GBR
+JAPE,1994,31,1,1368,Henry,,Thomas,Henry Thomas,Review.Board,SE,,,,,UK,GBR
+JAPE,1994,31,1,2703,Nigel,,Webb,Nigel Webb,Editor,EIC,,,,,UK,GBR
+JAPE,1994,31,1,910,David,,Welch,David Welch,Review.Board,SE,,,,,UK,GBR
+JAPE,1995,32,1,242,B,L,Bayne,B L Bayne,Review.Board,SE,,,,,UK,GBR
+JAPE,1995,32,1,629,David,E,Bignell,David E Bignell,Review.Board,SE,,,,,UK,GBR
+JAPE,1995,32,1,2629,Nigel,,Bonner,Nigel Bonner,Review.Board,SE,,,,,UK,GBR
+JAPE,1995,32,1,3020,Ralph,T,Clarke,Ralph T Clarke,Review.Board,SE,,,,,UK,GBR
+JAPE,1995,32,1,1531,John,Patrick,Croxall,John Patrick Croxall,Review.Board,SE,,,,,UK,GBR
+JAPE,1995,32,1,3730,W,,Day,W Day,Review.Board,SE,,,,,UK,GBR
+JAPE,1995,32,1,722,David,A,Hill,David A Hill,Review.Board,SE,,,,,UK,GBR
+JAPE,1995,32,1,2410,Mark,O,Hill,Mark O Hill,Review.Board,SE,,,,,UK,GBR
+JAPE,1995,32,1,3569,Tom,C,Hutchinson,Tom C Hutchinson,Review.Board,SE,Trent University,,,,Canada,CAN
+JAPE,1995,32,1,1316,Hugh,AP,Ingram,Hugh AP Ingram,Editor,EIC,,,,,UK,GBR
+JAPE,1995,32,1,2840,Paul,Gordon,Jarvis,Paul Gordon Jarvis,Review.Board,SE,,,,,UK,GBR
+JAPE,1995,32,1,3143,Rob,H,Marrs,Rob H Marrs,Review.Board,SE,,,,,UK,GBR
+JAPE,1995,32,1,521,Christopher,,Mason,Christopher Mason,Review.Board,SE,,,,,UK,GBR
+JAPE,1995,32,1,2484,Michael,Green,Morris,Michael Green Morris,Review.Board,SE,,,,,UK,GBR
+JAPE,1995,32,1,2910,Peter,,Rothery,Peter Rothery,Review.Board,SE,,,,,UK,GBR
+JAPE,1995,32,1,3222,Roy,W,Snaydon,Roy W Snaydon,Review.Board,SE,,,,,UK,GBR
+JAPE,1995,32,1,1420,Ian,F,Spellerberg,Ian F Spellerberg,Review.Board,SE,,,,,UK,GBR
+JAPE,1995,32,1,1884,Janet,I,Sprent,Janet I Sprent,Review.Board,SE,,,,,UK,GBR
+JAPE,1995,32,1,1368,Henry,,Thomas,Henry Thomas,Review.Board,SE,,,,,UK,GBR
+JAPE,1995,32,1,2703,Nigel,,Webb,Nigel Webb,Editor,EIC,,,,,UK,GBR
+JAPE,1995,32,1,910,David,,Welch,David Welch,Review.Board,SE,,,,,UK,GBR
+JAPE,1996,33,1,3020,Ralph,T,Clarke,Ralph T Clarke,Review.Board,SE,,,,,UK,GBR
+JAPE,1996,33,1,3730,W,,Day,W Day,Review.Board,SE,,,,,UK,GBR
+JAPE,1996,33,1,3075,Rhys,E,Green,Rhys E Green,Review.Board,SE,,,,,UK,GBR
+JAPE,1996,33,1,104,Alison,,Hester,Alison Hester,Review.Board,SE,,,,,UK,GBR
+JAPE,1996,33,1,722,David,A,Hill,David A Hill,Review.Board,SE,,,,,UK,GBR
+JAPE,1996,33,1,2410,Mark,O,Hill,Mark O Hill,Review.Board,SE,,,,,UK,GBR
+JAPE,1996,33,1,3569,Tom,C,Hutchinson,Tom C Hutchinson,Review.Board,SE,Trent University,,,,Canada,CAN
+JAPE,1996,33,1,1316,Hugh,AP,Ingram,Hugh AP Ingram,Editor,AE,,,,,UK,GBR
+JAPE,1996,33,1,2840,Paul,Gordon,Jarvis,Paul Gordon Jarvis,Review.Board,SE,,,,,UK,GBR
+JAPE,1996,33,1,3143,Rob,H,Marrs,Rob H Marrs,Review.Board,SE,,,,,UK,GBR
+JAPE,1996,33,1,521,Christopher,,Mason,Christopher Mason,Review.Board,SE,,,,,UK,GBR
+JAPE,1996,33,1,785,David,I,McCracken,David I McCracken,Review.Board,SE,,,,,UK,GBR
+JAPE,1996,33,1,3422,Steve,J,Ormerod,Steve J Ormerod,Review.Board,SE,,,,,UK,GBR
+JAPE,1996,33,1,2513,Mike,W,Pienkowski,Mike W Pienkowski,Editor-Executive.Editor,EIC,,,,,UK,GBR
+JAPE,1996,33,1,2910,Peter,,Rothery,Peter Rothery,Review.Board,SE,,,,,UK,GBR
+JAPE,1996,33,1,3222,Roy,W,Snaydon,Roy W Snaydon,Review.Board,SE,,,,,UK,GBR
+JAPE,1996,33,1,1420,Ian,F,Spellerberg,Ian F Spellerberg,Review.Board,SE,,,,,UK,GBR
+JAPE,1996,33,1,1884,Janet,I,Sprent,Janet I Sprent,Review.Board,SE,,,,,UK,GBR
+JAPE,1996,33,1,1368,Henry,,Thomas,Henry Thomas,Review.Board,SE,,,,,UK,GBR
+JAPE,1996,33,1,1913,Jo,,Treweek,Jo Treweek,Review.Board,SE,,,,,UK,GBR
+JAPE,1996,33,1,2250,Les,Green,Underhill,Les Green Underhill,Review.Board,SE,,,,,South Africa,ZAF
+JAPE,1996,33,1,225,Andrew,R,Watkinson,Andrew R Watkinson,Editor,AE,,,,,UK,GBR
+JAPE,1996,33,1,2703,Nigel,,Webb,Nigel Webb,Editor,AE,,,,,UK,GBR
+JAPE,1996,33,1,910,David,,Welch,David Welch,Review.Board,SE,,,,,UK,GBR
+JAPE,1997,34,1,3020,Ralph,T,Clarke,Ralph T Clarke,Review.Board,SE,,,,,UK,GBR
+JAPE,1997,34,1,2145,Les,Green,Firbank,Les Green Firbank,Review.Board,SE,,,,,UK,GBR
+JAPE,1997,34,1,3075,Rhys,E,Green,Rhys E Green,Review.Board,SE,,,,,UK,GBR
+JAPE,1997,34,1,104,Alison,,Hester,Alison Hester,Review.Board,SE,,,,,UK,GBR
+JAPE,1997,34,1,722,David,A,Hill,David A Hill,Review.Board,SE,,,,,UK,GBR
+JAPE,1997,34,1,2410,Mark,O,Hill,Mark O Hill,Review.Board,SE,,,,,UK,GBR
+JAPE,1997,34,1,2840,Paul,Gordon,Jarvis,Paul Gordon Jarvis,Review.Board,SE,,,,,UK,GBR
+JAPE,1997,34,1,3766,W,M,Lonsdale,W M Lonsdale,Review.Board,SE,CSIRO European Laboratory,,,,France,FRA
+JAPE,1997,34,1,3143,Rob,H,Marrs,Rob H Marrs,Review.Board,SE,,,,,UK,GBR
+JAPE,1997,34,1,785,David,I,McCracken,David I McCracken,Review.Board,SE,,,,,UK,GBR
+JAPE,1997,34,1,3422,Steve,J,Ormerod,Steve J Ormerod,Review.Board,SE,,,,,UK,GBR
+JAPE,1997,34,1,2513,Mike,W,Pienkowski,Mike W Pienkowski,Editor-Executive.Editor,EIC,,,,,UK,GBR
+JAPE,1997,34,1,2910,Peter,,Rothery,Peter Rothery,Review.Board,SE,,,,,UK,GBR
+JAPE,1997,34,1,3222,Roy,W,Snaydon,Roy W Snaydon,Review.Board,SE,,,,,UK,GBR
+JAPE,1997,34,1,1884,Janet,I,Sprent,Janet I Sprent,Review.Board,SE,,,,,UK,GBR
+JAPE,1997,34,1,1368,Henry,,Thomas,Henry Thomas,Review.Board,SE,,,,,UK,GBR
+JAPE,1997,34,1,1913,Jo,,Treweek,Jo Treweek,Review.Board,SE,,,,,UK,GBR
+JAPE,1997,34,1,2250,Les,Green,Underhill,Les Green Underhill,Review.Board,SE,,,,,South Africa,ZAF
+JAPE,1997,34,1,225,Andrew,R,Watkinson,Andrew R Watkinson,Editor,AE,,,,,UK,GBR
+JAPE,1998,35,1,2145,Les,Green,Firbank,Les Green Firbank,Review.Board,SE,,,,,UK,GBR
+JAPE,1998,35,1,3075,Rhys,E,Green,Rhys E Green,Review.Board,SE,,,,,UK,GBR
+JAPE,1998,35,1,104,Alison,,Hester,Alison Hester,Review.Board,SE,,,,,UK,GBR
+JAPE,1998,35,1,722,David,A,Hill,David A Hill,Review.Board,SE,,,,,UK,GBR
+JAPE,1998,35,1,2410,Mark,O,Hill,Mark O Hill,Review.Board,SE,,,,,UK,GBR
+JAPE,1998,35,1,3766,W,M,Lonsdale,W M Lonsdale,Review.Board,SE,CSIRO European Laboratory,,,,France,FRA
+JAPE,1998,35,1,3143,Rob,H,Marrs,Rob H Marrs,Review.Board,SE,,,,,UK,GBR
+JAPE,1998,35,1,785,David,I,McCracken,David I McCracken,Review.Board,SE,,,,,UK,GBR
+JAPE,1998,35,1,3422,Steve,J,Ormerod,Steve J Ormerod,Review.Board,SE,,,,,UK,GBR
+JAPE,1998,35,1,2513,Mike,W,Pienkowski,Mike W Pienkowski,Editor-Executive.Editor,EIC,,,,,UK,GBR
+JAPE,1998,35,1,2910,Peter,,Rothery,Peter Rothery,Review.Board,SE,,,,,UK,GBR
+JAPE,1998,35,1,3222,Roy,W,Snaydon,Roy W Snaydon,Review.Board,SE,,,,,UK,GBR
+JAPE,1998,35,1,1913,Jo,,Treweek,Jo Treweek,Review.Board,SE,,,,,UK,GBR
+JAPE,1998,35,1,2250,Les,Green,Underhill,Les Green Underhill,Review.Board,SE,,,,,South Africa,ZAF
+JAPE,1998,35,1,225,Andrew,R,Watkinson,Andrew R Watkinson,Editor,AE,,,,,UK,GBR
+JAPE,1998,35,1,2703,Nigel,,Webb,Nigel Webb,Review.Board,SE,,,,,UK,GBR
+JAPE,1999,36,1,2145,Les,Green,Firbank,Les Green Firbank,Review.Board,SE,,,,,UK,GBR
+JAPE,1999,36,1,3075,Rhys,E,Green,Rhys E Green,Review.Board,SE,,,,,UK,GBR
+JAPE,1999,36,1,104,Alison,,Hester,Alison Hester,Review.Board,SE,,,,,UK,GBR
+JAPE,1999,36,1,722,David,A,Hill,David A Hill,Review.Board,SE,,,,,UK,GBR
+JAPE,1999,36,1,2410,Mark,O,Hill,Mark O Hill,Review.Board,SE,,,,,UK,GBR
+JAPE,1999,36,1,3766,W,M,Lonsdale,W M Lonsdale,Review.Board,SE,CSIRO European Laboratory,,,,Australia,AUS
+JAPE,1999,36,1,3143,Rob,H,Marrs,Rob H Marrs,Review.Board,SE,,,,,UK,GBR
+JAPE,1999,36,1,785,David,I,McCracken,David I McCracken,Review.Board,SE,,,,,UK,GBR
+JAPE,1999,36,1,3422,Steve,J,Ormerod,Steve J Ormerod,Review.Board,SE,,,,,UK,GBR
+JAPE,1999,36,1,2513,Mike,W,Pienkowski,Mike W Pienkowski,Editor-Executive.Editor,EIC,,,,,UK,GBR
+JAPE,1999,36,1,2910,Peter,,Rothery,Peter Rothery,Review.Board,SE,,,,,UK,GBR
+JAPE,1999,36,1,3222,Roy,W,Snaydon,Roy W Snaydon,Review.Board,SE,,,,,UK,GBR
+JAPE,1999,36,1,1913,Jo,,Treweek,Jo Treweek,Review.Board,SE,,,,,UK,GBR
+JAPE,1999,36,1,2250,Les,Green,Underhill,Les Green Underhill,Review.Board,SE,,,,,South Africa,ZAF
+JAPE,1999,36,1,225,Andrew,R,Watkinson,Andrew R Watkinson,Editor,AE,,,,,UK,GBR
+JAPE,1999,36,1,2703,Nigel,,Webb,Nigel Webb,Review.Board,SE,,,,,UK,GBR
+JAPE,2000,37,1,2625,Nigel,D,Barlow,Nigel D Barlow,Review.Board,SE,AgResearch,,,,New Zealand,NZL
+JAPE,2000,37,1,1490,James,M,Bullock,James M Bullock,Review.Board,SE,,,,,UK,GBR
+JAPE,2000,37,1,435,Christopher,R,Dickman,Christopher R Dickman,Review.Board,SE,University of Sydney,,,,Australia,AUS
+JAPE,2000,37,1,2145,Les,Green,Firbank,Les Green Firbank,Review.Board,SE,,,,,UK,GBR
+JAPE,2000,37,1,3063,Robert,P,Freckleton,Robert P Freckleton,Review.Board,SE,,,,,UK,GBR
+JAPE,2000,37,1,3075,Rhys,E,Green,Rhys E Green,Review.Board,SE,,,,,UK,GBR
+JAPE,2000,37,1,104,Alison,,Hester,Alison Hester,Review.Board,SE,,,,,UK,GBR
+JAPE,2000,37,1,2410,Mark,O,Hill,Mark O Hill,Review.Board,SE,,,,,UK,GBR
+JAPE,2000,37,1,1209,Glenn,R,Iason,Glenn R Iason,Review.Board,SE,,,,,UK,GBR
+JAPE,2000,37,1,3766,W,M,Lonsdale,W M Lonsdale,Review.Board,SE,CSIRO European Laboratory,,,,Australia,AUS
+JAPE,2000,37,1,785,David,I,McCracken,David I McCracken,Review.Board,SE,,,,,UK,GBR
+JAPE,2000,37,1,3422,Steve,J,Ormerod,Steve J Ormerod,Editor-Executive.Editor,EIC,,,,,UK,GBR
+JAPE,2000,37,1,2513,Mike,W,Pienkowski,Mike W Pienkowski,Editor,AE,,,,,UK,GBR
+JAPE,2000,37,1,2910,Peter,,Rothery,Peter Rothery,Review.Board,SE,,,,,UK,GBR
+JAPE,2000,37,1,1913,Jo,,Treweek,Jo Treweek,Review.Board,SE,,,,,UK,GBR
+JAPE,2000,37,1,2250,Les,Green,Underhill,Les Green Underhill,Review.Board,SE,,,,,South Africa,ZAF
+JAPE,2000,37,1,225,Andrew,R,Watkinson,Andrew R Watkinson,Editor,AE,,,,,UK,GBR
+JAPE,2000,37,1,2703,Nigel,,Webb,Nigel Webb,Review.Board,SE,,,,,UK,GBR
+JAPE,2001,38,1,2625,Nigel,D,Barlow,Nigel D Barlow,Editor,AE,AgResearch,,,,New Zealand,NZL
+JAPE,2001,38,1,1490,James,M,Bullock,James M Bullock,Review.Board,SE,,,,,UK,GBR
+JAPE,2001,38,1,435,Christopher,R,Dickman,Christopher R Dickman,Review.Board,SE,University of Sydney,,,,Australia,AUS
+JAPE,2001,38,1,442,Chris,S,Elphick,Chris S Elphick,Review.Board,SE,University of Connecticut,,,,USA,USA
+JAPE,2001,38,1,2145,Les,Green,Firbank,Les Green Firbank,Review.Board,SE,,,,,UK,GBR
+JAPE,2001,38,1,3063,Robert,P,Freckleton,Robert P Freckleton,Review.Board,SE,,,,,UK,GBR
+JAPE,2001,38,1,3075,Rhys,E,Green,Rhys E Green,Review.Board,SE,,,,,UK,GBR
+JAPE,2001,38,1,104,Alison,,Hester,Alison Hester,Review.Board,SE,,,,,UK,GBR
+JAPE,2001,38,1,2410,Mark,O,Hill,Mark O Hill,Review.Board,SE,,,,,UK,GBR
+JAPE,2001,38,1,1209,Glenn,R,Iason,Glenn R Iason,Review.Board,SE,,,,,UK,GBR
+JAPE,2001,38,1,3766,W,M,Lonsdale,W M Lonsdale,Review.Board,SE,CSIRO European Laboratory,,,,Australia,AUS
+JAPE,2001,38,1,3898,Jon,,Marshall,Jon Marshall,Editor,AE,,,,,UK,GBR
+JAPE,2001,38,1,785,David,I,McCracken,David I McCracken,Review.Board,SE,,,,,UK,GBR
+JAPE,2001,38,1,2670,Nicholas,J,Mills,Nicholas J Mills,Review.Board,SE,"University of California, Berkely",,,,USA,USA
+JAPE,2001,38,1,3408,Suzanne,J,Milton,Suzanne J Milton,Review.Board,SE,University of Cape Town,,,,South Africa,ZAF
+JAPE,2001,38,1,1786,James,D,Nichols,James D Nichols,Review.Board,SE,US Geological Survey,,,,USA,USA
+JAPE,2001,38,1,3422,Steve,J,Ormerod,Steve J Ormerod,Editor-Executive.Editor,EIC,,,,,UK,GBR
+JAPE,2001,38,1,3187,Robert,J,Paxton,Robert J Paxton,Review.Board,SE,University of Tébingen,,,,Germany,DEU
+JAPE,2001,38,1,2910,Peter,,Rothery,Peter Rothery,Review.Board,SE,,,,,UK,GBR
+JAPE,2001,38,1,3456,Stephen,P,Rushton,Stephen P Rushton,Review.Board,SE,,,,,UK,GBR
+JAPE,2001,38,1,2703,Nigel,,Webb,Nigel Webb,Review.Board,SE,,,,,UK,GBR
+JAPE,2002,39,1,2625,Nigel,D,Barlow,Nigel D Barlow,Editor,AE,AgResearch,,,,New Zealand,NZL
+JAPE,2002,39,1,3881,Jacques,,Baudry,Jacques Baudry,Review.Board,SE,,,,,France,FRA
+JAPE,2002,39,1,1490,James,M,Bullock,James M Bullock,Review.Board,SE,,,,,UK,GBR
+JAPE,2002,39,1,435,Christopher,R,Dickman,Christopher R Dickman,Review.Board,SE,University of Sydney,,,,Australia,AUS
+JAPE,2002,39,1,442,Chris,S,Elphick,Chris S Elphick,Review.Board,SE,University of Connecticut,,,,USA,USA
+JAPE,2002,39,1,2145,Les,Green,Firbank,Les Green Firbank,Review.Board,SE,,,,,UK,GBR
+JAPE,2002,39,1,3063,Robert,P,Freckleton,Robert P Freckleton,Review.Board,SE,,,,,UK,GBR
+JAPE,2002,39,1,3075,Rhys,E,Green,Rhys E Green,Review.Board,SE,,,,,UK,GBR
+JAPE,2002,39,1,104,Alison,,Hester,Alison Hester,Review.Board,SE,,,,,UK,GBR
+JAPE,2002,39,1,2410,Mark,O,Hill,Mark O Hill,Review.Board,SE,,,,,UK,GBR
+JAPE,2002,39,1,1209,Glenn,R,Iason,Glenn R Iason,Review.Board,SE,,,,,UK,GBR
+JAPE,2002,39,1,3766,W,M,Lonsdale,W M Lonsdale,Review.Board,SE,CSIRO European Laboratory,,,,Australia,AUS
+JAPE,2002,39,1,3898,Jon,,Marshall,Jon Marshall,Editor,AE,,,,,UK,GBR
+JAPE,2002,39,1,785,David,I,McCracken,David I McCracken,Review.Board,SE,,,,,UK,GBR
+JAPE,2002,39,1,2670,Nicholas,J,Mills,Nicholas J Mills,Review.Board,SE,"University of California, Berkely",,,,USA,USA
+JAPE,2002,39,1,1004,Eleanor,Jane,Milner-Gulland,Eleanor Jane Milner-Gulland,Review.Board,SE,,,,,UK,GBR
+JAPE,2002,39,1,3408,Suzanne,J,Milton,Suzanne J Milton,Review.Board,SE,University of Cape Town,,,,South Africa,ZAF
+JAPE,2002,39,1,1786,James,D,Nichols,James D Nichols,Review.Board,SE,US Geological Survey,,,,USA,USA
+JAPE,2002,39,1,3422,Steve,J,Ormerod,Steve J Ormerod,Editor-Executive.Editor,EIC,,,,,UK,GBR
+JAPE,2002,39,1,3187,Robert,J,Paxton,Robert J Paxton,Review.Board,SE,University of Tébingen,,,,Germany,DEU
+JAPE,2002,39,1,2910,Peter,,Rothery,Peter Rothery,Review.Board,SE,,,,,UK,GBR
+JAPE,2002,39,1,3456,Stephen,P,Rushton,Stephen P Rushton,Editor,AE,,,,,UK,GBR
+JAPE,2002,39,1,3456,Stephen,P,Rushton,Stephen P Rushton,Review.Board,SE,,,,,UK,GBR
+JAPE,2002,39,1,2703,Nigel,,Webb,Nigel Webb,Review.Board,SE,,,,,UK,GBR
+JAPE,2002,39,1,3914,Jeremy,,Wilson,Jeremy Wilson,Review.Board,SE,,,,,UK,GBR
+JAPE,2003,40,1,1447,Jan,P,Bakker,Jan P Bakker,Review.Board,SE,University of Groningen,,,,The Netherlands,NLD
+JAPE,2003,40,1,3881,Jacques,,Baudry,Jacques Baudry,Review.Board,SE,,,,,France,FRA
+JAPE,2003,40,1,1490,James,M,Bullock,James M Bullock,Review.Board,SE,,,,,UK,GBR
+JAPE,2003,40,1,435,Christopher,R,Dickman,Christopher R Dickman,Review.Board,SE,University of Sydney,,,,Australia,AUS
+JAPE,2003,40,1,442,Chris,S,Elphick,Chris S Elphick,Review.Board,SE,University of Connecticut,,,,USA,USA
+JAPE,2003,40,1,3063,Robert,P,Freckleton,Robert P Freckleton,Review.Board,SE,,,,,UK,GBR
+JAPE,2003,40,1,2827,Pall,,Hersteinsson,Pall Hersteinsson,Review.Board,SE,,,,,Iceland,ISL
+JAPE,2003,40,1,2410,Mark,O,Hill,Mark O Hill,Review.Board,SE,,,,,UK,GBR
+JAPE,2003,40,1,1209,Glenn,R,Iason,Glenn R Iason,Review.Board,SE,,,,,UK,GBR
+JAPE,2003,40,1,3898,Jon,,Marshall,Jon Marshall,Editor,AE,,,,,UK,GBR
+JAPE,2003,40,1,785,David,I,McCracken,David I McCracken,Review.Board,SE,,,,,UK,GBR
+JAPE,2003,40,1,2670,Nicholas,J,Mills,Nicholas J Mills,Review.Board,SE,"University of California, Berkely",,,,USA,USA
+JAPE,2003,40,1,1004,Eleanor,Jane,Milner-Gulland,Eleanor Jane Milner-Gulland,Review.Board,SE,,,,,UK,GBR
+JAPE,2003,40,1,3408,Suzanne,J,Milton,Suzanne J Milton,Review.Board,SE,University of Cape Town,,,,South Africa,ZAF
+JAPE,2003,40,1,1786,James,D,Nichols,James D Nichols,Review.Board,SE,US Geological Survey,,,,USA,USA
+JAPE,2003,40,1,3422,Steve,J,Ormerod,Steve J Ormerod,Editor-Executive.Editor,EIC,,,,,UK,GBR
+JAPE,2003,40,1,3187,Robert,J,Paxton,Robert J Paxton,Review.Board,SE,University of Tébingen,,,,Germany,DEU
+JAPE,2003,40,1,2910,Peter,,Rothery,Peter Rothery,Review.Board,SE,,,,,UK,GBR
+JAPE,2003,40,1,3456,Stephen,P,Rushton,Stephen P Rushton,Editor,AE,,,,,UK,GBR
+JAPE,2003,40,1,3648,Teja,,Tscharntke,Teja Tscharntke,Review.Board,SE,,,,,Germany,DEU
+JAPE,2003,40,1,3914,Jeremy,,Wilson,Jeremy Wilson,Review.Board,SE,,,,,UK,GBR
+JAPE,2004,41,1,1447,Jan,P,Bakker,Jan P Bakker,Review.Board,SE,University of Groningen,,,,The Netherlands,NLD
+JAPE,2004,41,1,3881,Jacques,,Baudry,Jacques Baudry,Review.Board,SE,,,,,France,FRA
+JAPE,2004,41,1,435,Christopher,R,Dickman,Christopher R Dickman,Review.Board,SE,University of Sydney,,,,Australia,AUS
+JAPE,2004,41,1,442,Chris,S,Elphick,Chris S Elphick,Review.Board,SE,University of Connecticut,,,,USA,USA
+JAPE,2004,41,1,3063,Robert,P,Freckleton,Robert P Freckleton,Review.Board,SE,,,,,UK,GBR
+JAPE,2004,41,1,2827,Pall,,Hersteinsson,Pall Hersteinsson,Review.Board,SE,,,,,Iceland,ISL
+JAPE,2004,41,1,2410,Mark,O,Hill,Mark O Hill,Review.Board,SE,,,,,UK,GBR
+JAPE,2004,41,1,1209,Glenn,R,Iason,Glenn R Iason,Review.Board,SE,,,,,UK,GBR
+JAPE,2004,41,1,3898,Jon,,Marshall,Jon Marshall,Editor,AE,,,,,UK,GBR
+JAPE,2004,41,1,785,David,I,McCracken,David I McCracken,Review.Board,SE,,,,,UK,GBR
+JAPE,2004,41,1,2670,Nicholas,J,Mills,Nicholas J Mills,Review.Board,SE,"University of California, Berkely",,,,USA,USA
+JAPE,2004,41,1,1004,Eleanor,Jane,Milner-Gulland,Eleanor Jane Milner-Gulland,Review.Board,SE,,,,,UK,GBR
+JAPE,2004,41,1,3408,Suzanne,J,Milton,Suzanne J Milton,Review.Board,SE,University of Cape Town,,,,South Africa,ZAF
+JAPE,2004,41,1,1786,James,D,Nichols,James D Nichols,Review.Board,SE,US Geological Survey,,,,USA,USA
+JAPE,2004,41,1,3422,Steve,J,Ormerod,Steve J Ormerod,Editor-Executive.Editor,EIC,,,,,UK,GBR
+JAPE,2004,41,1,3187,Robert,J,Paxton,Robert J Paxton,Review.Board,SE,University of Tébingen,,,,Germany,DEU
+JAPE,2004,41,1,2910,Peter,,Rothery,Peter Rothery,Review.Board,SE,,,,,UK,GBR
+JAPE,2004,41,1,3456,Stephen,P,Rushton,Stephen P Rushton,Editor,AE,,,,,UK,GBR
+JAPE,2004,41,1,3211,Roy,,Sanderson,Roy Sanderson,Review.Board,SE,,,,,UK,GBR
+JAPE,2004,41,1,3648,Teja,,Tscharntke,Teja Tscharntke,Review.Board,SE,,,,,Germany,DEU
+JAPE,2004,41,1,3914,Jeremy,,Wilson,Jeremy Wilson,Review.Board,SE,,,,,UK,GBR
+JAPE,2005,42,1,1447,Jan,P,Bakker,Jan P Bakker,Editorial.Board,SE,University of Groningen,,,,The Netherlands,NLD
+JAPE,2005,42,1,3881,Jacques,,Baudry,Jacques Baudry,Editorial.Board,SE,,,,,France,FRA
+JAPE,2005,42,1,3829,Yvonne,,Buckley,Yvonne Buckley,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2005,42,1,435,Christopher,R,Dickman,Christopher R Dickman,Associate.Editor,SE,University of Sydney,,,,Australia,AUS
+JAPE,2005,42,1,442,Chris,S,Elphick,Chris S Elphick,Associate.Editor,SE,University of Connecticut,,,,USA,USA
+JAPE,2005,42,1,3063,Robert,P,Freckleton,Robert P Freckleton,Editor-Executive.Editor,EIC,,,,,UK,GBR
+JAPE,2005,42,1,1597,Jennifer,,Gill,Jennifer Gill,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2005,42,1,2813,Paul,,Giller,Paul Giller,Editor,AE,,,,,Ireland,IRL
+JAPE,2005,42,1,2827,Pall,,Hersteinsson,Pall Hersteinsson,Editorial.Board,SE,,,,,Iceland,ISL
+JAPE,2005,42,1,2410,Mark,O,Hill,Mark O Hill,Editorial.Board,SE,,,,,UK,GBR
+JAPE,2005,42,1,2836,Phil,,Hulme,Phil Hulme,Editor,AE,,,,,UK,GBR
+JAPE,2005,42,1,785,David,I,McCracken,David I McCracken,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2005,42,1,2670,Nicholas,J,Mills,Nicholas J Mills,Editorial.Board,SE,"University of California, Berkely",,,,USA,USA
+JAPE,2005,42,1,1004,Eleanor,Jane,Milner-Gulland,Eleanor Jane Milner-Gulland,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2005,42,1,3408,Suzanne,J,Milton,Suzanne J Milton,Associate.Editor,SE,University of Cape Town,,,,South Africa,ZAF
+JAPE,2005,42,1,1786,James,D,Nichols,James D Nichols,Editorial.Board,SE,US Geological Survey,,,,USA,USA
+JAPE,2005,42,1,3187,Robert,J,Paxton,Robert J Paxton,Editorial.Board,SE,University of Tébingen,,,,Germany,DEU
+JAPE,2005,42,1,2910,Peter,,Rothery,Peter Rothery,Editorial.Board,SE,,,,,UK,GBR
+JAPE,2005,42,1,3456,Stephen,P,Rushton,Stephen P Rushton,Editor,AE,,,,,UK,GBR
+JAPE,2005,42,1,3211,Roy,,Sanderson,Roy Sanderson,Editorial.Board,SE,,,,,UK,GBR
+JAPE,2005,42,1,1260,Graham,,Smith,Graham Smith,Editorial.Board,SE,,,,,UK,GBR
+JAPE,2005,42,1,2923,Philip,A,Stephens,Philip A Stephens,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2005,42,1,3648,Teja,,Tscharntke,Teja Tscharntke,Editorial.Board,SE,,,,,Germany,DEU
+JAPE,2005,42,1,3914,Jeremy,,Wilson,Jeremy Wilson,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2006,43,1,1447,Jan,P,Bakker,Jan P Bakker,Editorial.Board,SE,University of Groningen,,,,The Netherlands,NLD
+JAPE,2006,43,1,3881,Jacques,,Baudry,Jacques Baudry,Editorial.Board,SE,,,,,France,FRA
+JAPE,2006,43,1,1481,Justin,S,Brashares,Justin S Brashares,Associate.Editor,SE,"University of California, Berkely",,,,USA,USA
+JAPE,2006,43,1,3829,Yvonne,,Buckley,Yvonne Buckley,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2006,43,1,2322,Marc,,Cadotte,Marc Cadotte,Associate.Editor,SE,,,,,USA,USA
+JAPE,2006,43,1,1522,Joan,,Cossentine,Joan Cossentine,Associate.Editor,SE,,,,,Canada,CAN
+JAPE,2006,43,1,435,Christopher,R,Dickman,Christopher R Dickman,Associate.Editor,SE,University of Sydney,,,,Australia,AUS
+JAPE,2006,43,1,442,Chris,S,Elphick,Chris S Elphick,Associate.Editor,SE,University of Connecticut,,,,USA,USA
+JAPE,2006,43,1,65,Andreas,,Erhardt,Andreas Erhardt,Associate.Editor,SE,,,,,Switzerland,CHE
+JAPE,2006,43,1,3063,Robert,P,Freckleton,Robert P Freckleton,Editor,AE,,,,,UK,GBR
+JAPE,2006,43,1,454,Chris,LJ,Frid,Chris LJ Frid,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2006,43,1,1597,Jennifer,,Gill,Jennifer Gill,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2006,43,1,2813,Paul,,Giller,Paul Giller,Editor-Executive.Editor,EIC,,,,,Ireland,IRL
+JAPE,2006,43,1,2827,Pall,,Hersteinsson,Pall Hersteinsson,Editorial.Board,SE,,,,,Iceland,ISL
+JAPE,2006,43,1,2410,Mark,O,Hill,Mark O Hill,Editorial.Board,SE,,,,,UK,GBR
+JAPE,2006,43,1,2836,Phil,,Hulme,Phil Hulme,Editor,AE,,,,,UK,GBR
+JAPE,2006,43,1,2025,K,Ullas,Karanth,K Ullas Karanth,Associate.Editor,SE,Wildlife Conservation Society,,,,India,IND
+JAPE,2006,43,1,1708,Jack,J,Lennon,Jack J Lennon,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2006,43,1,1709,Jan,,Leps,Jan Leps,Associate.Editor,SE,,,,,Czech Republic,CZE
+JAPE,2006,43,1,785,David,I,McCracken,David I McCracken,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2006,43,1,2670,Nicholas,J,Mills,Nicholas J Mills,Editorial.Board,SE,"University of California, Berkely",,,,USA,USA
+JAPE,2006,43,1,1004,Eleanor,Jane,Milner-Gulland,Eleanor Jane Milner-Gulland,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2006,43,1,3408,Suzanne,J,Milton,Suzanne J Milton,Associate.Editor,SE,University of Cape Town,,,,South Africa,ZAF
+JAPE,2006,43,1,1786,James,D,Nichols,James D Nichols,Editorial.Board,SE,US Geological Survey,,,,USA,USA
+JAPE,2006,43,1,3187,Robert,J,Paxton,Robert J Paxton,Editorial.Board,SE,University of Tébingen,,,,Germany,DEU
+JAPE,2006,43,1,174,Andres,,Punt,Andres Punt,Associate.Editor,SE,,,,,USA,USA
+JAPE,2006,43,1,3198,Richard,F,Pywell,Richard F Pywell,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2006,43,1,3904,John,S,Richardson,John S Richardson,Associate.Editor,SE,University of British Columbia,,,,Canada,CAN
+JAPE,2006,43,1,2910,Peter,,Rothery,Peter Rothery,Editorial.Board,SE,,,,,UK,GBR
+JAPE,2006,43,1,3211,Roy,,Sanderson,Roy Sanderson,Editorial.Board,SE,,,,,UK,GBR
+JAPE,2006,43,1,1260,Graham,,Smith,Graham Smith,Editorial.Board,SE,,,,,UK,GBR
+JAPE,2006,43,1,1421,Ingolf,,Steffan-Dewenter,Ingolf Steffan-Dewenter,Associate.Editor,SE,,,,,Germany,DEU
+JAPE,2006,43,1,2923,Philip,A,Stephens,Philip A Stephens,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2006,43,1,3486,Simon,,Thirgood,Simon Thirgood,Editor,AE,,,,,UK,GBR
+JAPE,2006,43,1,890,Des,,Thompson,Des Thompson,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2006,43,1,2936,Paul,M,Thompson,Paul M Thompson,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2006,43,1,3648,Teja,,Tscharntke,Teja Tscharntke,Editorial.Board,SE,,,,,Germany,DEU
+JAPE,2006,43,1,3814,Wim,H,VanDerPutten,Wim H VanDerPutten,Associate.Editor,SE,Netherlands Institute of Ecology; Wageningen University and Research Centre,,,,The Netherlands,NLD
+JAPE,2006,43,1,2598,Matthew,J,Walpole,Matthew J Walpole,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2006,43,1,3914,Jeremy,,Wilson,Jeremy Wilson,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2007,44,1,1481,Justin,S,Brashares,Justin S Brashares,Associate.Editor,SE,"University of California, Berkely",,,,USA,USA
+JAPE,2007,44,1,3829,Yvonne,,Buckley,Yvonne Buckley,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2007,44,1,1494,Javier,,Bustamante,Javier Bustamante,Associate.Editor,SE,,,,,Spain,ESP
+JAPE,2007,44,1,2322,Marc,,Cadotte,Marc Cadotte,Associate.Editor,SE,,,,,USA,USA
+JAPE,2007,44,1,1522,Joan,,Cossentine,Joan Cossentine,Associate.Editor,SE,,,,,Canada,CAN
+JAPE,2007,44,1,435,Christopher,R,Dickman,Christopher R Dickman,Associate.Editor,SE,University of Sydney,,,,Australia,AUS
+JAPE,2007,44,1,442,Chris,S,Elphick,Chris S Elphick,Associate.Editor,SE,University of Connecticut,,,,USA,USA
+JAPE,2007,44,1,65,Andreas,,Erhardt,Andreas Erhardt,Associate.Editor,SE,,,,,Switzerland,CHE
+JAPE,2007,44,1,3063,Robert,P,Freckleton,Robert P Freckleton,Editor,AE,,,,,UK,GBR
+JAPE,2007,44,1,454,Chris,LJ,Frid,Chris LJ Frid,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2007,44,1,1597,Jennifer,,Gill,Jennifer Gill,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2007,44,1,2813,Paul,,Giller,Paul Giller,Editor-Executive.Editor,EIC,,,,,Ireland,IRL
+JAPE,2007,44,1,3081,Rosie,,Hails,Rosie Hails,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2007,44,1,1079,Fangliang,,He,Fangliang He,Associate.Editor,SE,,,,,Canada,CAN
+JAPE,2007,44,1,2407,Mark,,Hebblewhite,Mark Hebblewhite,Associate.Editor,SE,,,,,USA,USA
+JAPE,2007,44,1,2836,Phil,,Hulme,Phil Hulme,Editor,AE,,,,,UK,GBR
+JAPE,2007,44,1,2025,K,Ullas,Karanth,K Ullas Karanth,Associate.Editor,SE,Wildlife Conservation Society,,,,India,IND
+JAPE,2007,44,1,747,David,,Kleijn,David Kleijn,Associate.Editor,SE,,,,,The Netherlands,NLD
+JAPE,2007,44,1,1708,Jack,J,Lennon,Jack J Lennon,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2007,44,1,1709,Jan,,Leps,Jan Leps,Associate.Editor,SE,,,,,Czech Republic,CZE
+JAPE,2007,44,1,785,David,I,McCracken,David I McCracken,Editor,AE,,,,,UK,GBR
+JAPE,2007,44,1,1004,Eleanor,Jane,Milner-Gulland,Eleanor Jane Milner-Gulland,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2007,44,1,3408,Suzanne,J,Milton,Suzanne J Milton,Associate.Editor,SE,University of Cape Town,,,,South Africa,ZAF
+JAPE,2007,44,1,3772,William,,Montevecchi,William Montevecchi,Associate.Editor,SE,,,,,Canada,CAN
+JAPE,2007,44,1,174,Andres,,Punt,Andres Punt,Associate.Editor,SE,,,,,USA,USA
+JAPE,2007,44,1,3198,Richard,F,Pywell,Richard F Pywell,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2007,44,1,3904,John,S,Richardson,John S Richardson,Associate.Editor,SE,University of British Columbia,,,,Canada,CAN
+JAPE,2007,44,1,1848,J,Andrew,Royle,J Andrew Royle,Associate.Editor,SE,US Geological Survey,,,,USA,USA
+JAPE,2007,44,1,196,Andy,,Sheppard,Andy Sheppard,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2007,44,1,1421,Ingolf,,Steffan-Dewenter,Ingolf Steffan-Dewenter,Associate.Editor,SE,,,,,Germany,DEU
+JAPE,2007,44,1,2923,Philip,A,Stephens,Philip A Stephens,Editor,AE,,,,,UK,GBR
+JAPE,2007,44,1,3486,Simon,,Thirgood,Simon Thirgood,Editor,AE,,,,,UK,GBR
+JAPE,2007,44,1,890,Des,,Thompson,Des Thompson,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2007,44,1,2936,Paul,M,Thompson,Paul M Thompson,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2007,44,1,3814,Wim,H,VanDerPutten,Wim H VanDerPutten,Associate.Editor,SE,Netherlands Institute of Ecology; Wageningen University and Research Centre,,,,The Netherlands,NLD
+JAPE,2007,44,1,2598,Matthew,J,Walpole,Matthew J Walpole,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2007,44,1,2608,Mark,,Whittingham,Mark Whittingham,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2007,44,1,593,Chris,,Wilcox,Chris Wilcox,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2007,44,1,3914,Jeremy,,Wilson,Jeremy Wilson,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2008,45,1,1452,Jos,,Barlow,Jos Barlow,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2008,45,1,3829,Yvonne,,Buckley,Yvonne Buckley,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2008,45,1,1494,Javier,,Bustamante,Javier Bustamante,Associate.Editor,SE,,,,,Spain,ESP
+JAPE,2008,45,1,2322,Marc,,Cadotte,Marc Cadotte,Associate.Editor,SE,,,,,USA,USA
+JAPE,2008,45,1,3833,Yann,,Clough,Yann Clough,Associate.Editor,SE,,,,,Germany,DEU
+JAPE,2008,45,1,1522,Joan,,Cossentine,Joan Cossentine,Associate.Editor,SE,,,,,Canada,CAN
+JAPE,2008,45,1,435,Christopher,R,Dickman,Christopher R Dickman,Associate.Editor,SE,University of Sydney,,,,Australia,AUS
+JAPE,2008,45,1,1554,Johan,T,DuToit,Johan T DuToit,Associate.Editor,SE,Utah State University,,,,USA,USA
+JAPE,2008,45,1,442,Chris,S,Elphick,Chris S Elphick,Associate.Editor,SE,University of Connecticut,,,,USA,USA
+JAPE,2008,45,1,65,Andreas,,Erhardt,Andreas Erhardt,Associate.Editor,SE,,,,,Switzerland,CHE
+JAPE,2008,45,1,965,Esteban,,Fernandez-Juricic,Esteban Fernandez-Juricic,Associate.Editor,SE,,,,,USA,USA
+JAPE,2008,45,1,3063,Robert,P,Freckleton,Robert P Freckleton,Editor,AE,,,,,UK,GBR
+JAPE,2008,45,1,2378,Morten,,Frederiksen,Morten Frederiksen,Associate.Editor,SE,,,,,Denmark,DNK
+JAPE,2008,45,1,454,Chris,LJ,Frid,Chris LJ Frid,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2008,45,1,1597,Jennifer,,Gill,Jennifer Gill,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2008,45,1,2813,Paul,,Giller,Paul Giller,Editor-Executive.Editor,EIC,,,,,Ireland,IRL
+JAPE,2008,45,1,3081,Rosie,,Hails,Rosie Hails,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2008,45,1,718,Daniel,,Haydon,Daniel Haydon,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2008,45,1,1079,Fangliang,,He,Fangliang He,Associate.Editor,SE,,,,,Canada,CAN
+JAPE,2008,45,1,2407,Mark,,Hebblewhite,Mark Hebblewhite,Associate.Editor,SE,,,,,USA,USA
+JAPE,2008,45,1,2836,Phil,,Hulme,Phil Hulme,Editor,AE,,,,,UK,GBR
+JAPE,2008,45,1,1659,Julia,,Jones,Julia Jones,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2008,45,1,2025,K,Ullas,Karanth,K Ullas Karanth,Associate.Editor,SE,Wildlife Conservation Society,,,,India,IND
+JAPE,2008,45,1,747,David,,Kleijn,David Kleijn,Associate.Editor,SE,,,,,The Netherlands,NLD
+JAPE,2008,45,1,1708,Jack,J,Lennon,Jack J Lennon,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2008,45,1,1709,Jan,,Leps,Jan Leps,Associate.Editor,SE,,,,,Czech Republic,CZE
+JAPE,2008,45,1,2860,Paul,,Lukacs,Paul Lukacs,Associate.Editor,SE,,,,,USA,USA
+JAPE,2008,45,1,1748,Jason,,Matthiopoulos,Jason Matthiopoulos,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2008,45,1,2468,Michael,A,McCarthy,Michael A McCarthy,Associate.Editor,SE,"Royal Botanic Gardens, Melbourne",,,,Australia,AUS
+JAPE,2008,45,1,785,David,I,McCracken,David I McCracken,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2008,45,1,1004,Eleanor,Jane,Milner-Gulland,Eleanor Jane Milner-Gulland,Editor,AE,,,,,UK,GBR
+JAPE,2008,45,1,3772,William,,Montevecchi,William Montevecchi,Associate.Editor,SE,,,,,Canada,CAN
+JAPE,2008,45,1,2964,Quentin,,Paynter,Quentin Paynter,Associate.Editor,SE,,,,,New Zealand,NZL
+JAPE,2008,45,1,2679,Nathalie,,Pettorelli,Nathalie Pettorelli,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2008,45,1,174,Andres,,Punt,Andres Punt,Associate.Editor,SE,,,,,USA,USA
+JAPE,2008,45,1,1831,Jonathan,,Rhodes,Jonathan Rhodes,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2008,45,1,3904,John,S,Richardson,John S Richardson,Associate.Editor,SE,University of British Columbia,,,,Canada,CAN
+JAPE,2008,45,1,1848,J,Andrew,Royle,J Andrew Royle,Associate.Editor,SE,US Geological Survey,,,,USA,USA
+JAPE,2008,45,1,196,Andy,,Sheppard,Andy Sheppard,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2008,45,1,1421,Ingolf,,Steffan-Dewenter,Ingolf Steffan-Dewenter,Associate.Editor,SE,,,,,Germany,DEU
+JAPE,2008,45,1,2923,Philip,A,Stephens,Philip A Stephens,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2008,45,1,3486,Simon,,Thirgood,Simon Thirgood,Editor,AE,,,,,UK,GBR
+JAPE,2008,45,1,890,Des,,Thompson,Des Thompson,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2008,45,1,2936,Paul,M,Thompson,Paul M Thompson,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2008,45,1,3814,Wim,H,VanDerPutten,Wim H VanDerPutten,Associate.Editor,SE,Netherlands Institute of Ecology; Wageningen University and Research Centre,,,,The Netherlands,NLD
+JAPE,2008,45,1,2598,Matthew,J,Walpole,Matthew J Walpole,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2008,45,1,2608,Mark,,Whittingham,Mark Whittingham,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2008,45,1,593,Chris,,Wilcox,Chris Wilcox,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2008,45,1,377,Brenden,,Wintle,Brenden Wintle,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2009,46,1,1452,Jos,,Barlow,Jos Barlow,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2009,46,1,3829,Yvonne,,Buckley,Yvonne Buckley,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2009,46,1,1494,Javier,,Bustamante,Javier Bustamante,Associate.Editor,SE,,,,,Spain,ESP
+JAPE,2009,46,1,3833,Yann,,Clough,Yann Clough,Associate.Editor,SE,,,,,Germany,DEU
+JAPE,2009,46,1,1522,Joan,,Cossentine,Joan Cossentine,Associate.Editor,SE,,,,,Canada,CAN
+JAPE,2009,46,1,435,Christopher,R,Dickman,Christopher R Dickman,Associate.Editor,SE,University of Sydney,,,,Australia,AUS
+JAPE,2009,46,1,437,Christl,,Donnelly,Christl Donnelly,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2009,46,1,2640,Nicholas,,Dulvy,Nicholas Dulvy,Associate.Editor,SE,,,,,Canada,CAN
+JAPE,2009,46,1,1554,Johan,T,DuToit,Johan T DuToit,Associate.Editor,SE,Utah State University,,,,USA,USA
+JAPE,2009,46,1,442,Chris,S,Elphick,Chris S Elphick,Associate.Editor,SE,University of Connecticut,,,,USA,USA
+JAPE,2009,46,1,65,Andreas,,Erhardt,Andreas Erhardt,Associate.Editor,SE,,,,,Switzerland,CHE
+JAPE,2009,46,1,965,Esteban,,Fernandez-Juricic,Esteban Fernandez-Juricic,Associate.Editor,SE,,,,,USA,USA
+JAPE,2009,46,1,3063,Robert,P,Freckleton,Robert P Freckleton,Editor,AE,,,,,UK,GBR
+JAPE,2009,46,1,2378,Morten,,Frederiksen,Morten Frederiksen,Associate.Editor,SE,,,,,Denmark,DNK
+JAPE,2009,46,1,454,Chris,LJ,Frid,Chris LJ Frid,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2009,46,1,1597,Jennifer,,Gill,Jennifer Gill,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2009,46,1,3081,Rosie,,Hails,Rosie Hails,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2009,46,1,718,Daniel,,Haydon,Daniel Haydon,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2009,46,1,1079,Fangliang,,He,Fangliang He,Associate.Editor,SE,,,,,Canada,CAN
+JAPE,2009,46,1,2407,Mark,,Hebblewhite,Mark Hebblewhite,Associate.Editor,SE,,,,,USA,USA
+JAPE,2009,46,1,2836,Phil,,Hulme,Phil Hulme,Editor,AE,,,,,UK,GBR
+JAPE,2009,46,1,1659,Julia,,Jones,Julia Jones,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2009,46,1,2025,K,Ullas,Karanth,K Ullas Karanth,Associate.Editor,SE,Wildlife Conservation Society,,,,India,IND
+JAPE,2009,46,1,747,David,,Kleijn,David Kleijn,Associate.Editor,SE,,,,,The Netherlands,NLD
+JAPE,2009,46,1,1708,Jack,J,Lennon,Jack J Lennon,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2009,46,1,1709,Jan,,Leps,Jan Leps,Associate.Editor,SE,,,,,Czech Republic,CZE
+JAPE,2009,46,1,2860,Paul,,Lukacs,Paul Lukacs,Associate.Editor,SE,,,,,USA,USA
+JAPE,2009,46,1,1748,Jason,,Matthiopoulos,Jason Matthiopoulos,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2009,46,1,2468,Michael,A,McCarthy,Michael A McCarthy,Associate.Editor,SE,"Royal Botanic Gardens, Melbourne",,,,Australia,AUS
+JAPE,2009,46,1,785,David,I,McCracken,David I McCracken,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2009,46,1,1757,Jane,,Memmott,Jane Memmott,Editor-Executive.Editor,EIC,,,,,UK,GBR
+JAPE,2009,46,1,1004,Eleanor,Jane,Milner-Gulland,Eleanor Jane Milner-Gulland,Editor,AE,,,,,UK,GBR
+JAPE,2009,46,1,3772,William,,Montevecchi,William Montevecchi,Associate.Editor,SE,,,,,Canada,CAN
+JAPE,2009,46,1,2964,Quentin,,Paynter,Quentin Paynter,Associate.Editor,SE,,,,,New Zealand,NZL
+JAPE,2009,46,1,2679,Nathalie,,Pettorelli,Nathalie Pettorelli,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2009,46,1,174,Andres,,Punt,Andres Punt,Associate.Editor,SE,,,,,USA,USA
+JAPE,2009,46,1,1831,Jonathan,,Rhodes,Jonathan Rhodes,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2009,46,1,3904,John,S,Richardson,John S Richardson,Associate.Editor,SE,University of British Columbia,,,,Canada,CAN
+JAPE,2009,46,1,1848,J,Andrew,Royle,J Andrew Royle,Associate.Editor,SE,US Geological Survey,,,,USA,USA
+JAPE,2009,46,1,196,Andy,,Sheppard,Andy Sheppard,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2009,46,1,1421,Ingolf,,Steffan-Dewenter,Ingolf Steffan-Dewenter,Associate.Editor,SE,,,,,Germany,DEU
+JAPE,2009,46,1,2923,Philip,A,Stephens,Philip A Stephens,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2009,46,1,3486,Simon,,Thirgood,Simon Thirgood,Editor,AE,,,,,UK,GBR
+JAPE,2009,46,1,890,Des,,Thompson,Des Thompson,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2009,46,1,2936,Paul,M,Thompson,Paul M Thompson,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2009,46,1,3814,Wim,H,VanDerPutten,Wim H VanDerPutten,Associate.Editor,SE,Netherlands Institute of Ecology; Wageningen University and Research Centre,,,,The Netherlands,NLD
+JAPE,2009,46,1,2598,Matthew,J,Walpole,Matthew J Walpole,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2009,46,1,2608,Mark,,Whittingham,Mark Whittingham,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2009,46,1,593,Chris,,Wilcox,Chris Wilcox,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2009,46,1,377,Brenden,,Wintle,Brenden Wintle,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2010,47,1,2757,Paul,,Armsworth,Paul Armsworth,Associate.Editor,SE,,,,,USA,USA
+JAPE,2010,47,1,3272,Shelley,,Arnott,Shelley Arnott,Associate.Editor,SE,,,,,Canada,CAN
+JAPE,2010,47,1,1452,Jos,,Barlow,Jos Barlow,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2010,47,1,2125,Lesley,,Batty,Lesley Batty,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2010,47,1,1481,Justin,S,Brashares,Justin S Brashares,Associate.Editor,SE,"University of California, Berkely",,,,USA,USA
+JAPE,2010,47,1,3829,Yvonne,,Buckley,Yvonne Buckley,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2010,47,1,1290,Harald,,Bugmann,Harald Bugmann,Associate.Editor,SE,,,,,Switzerland,CHE
+JAPE,2010,47,1,2322,Marc,,Cadotte,Marc Cadotte,Editor,AE,,,,,USA,USA
+JAPE,2010,47,1,3833,Yann,,Clough,Yann Clough,Associate.Editor,SE,,,,,Germany,DEU
+JAPE,2010,47,1,1522,Joan,,Cossentine,Joan Cossentine,Associate.Editor,SE,,,,,Canada,CAN
+JAPE,2010,47,1,435,Christopher,R,Dickman,Christopher R Dickman,Associate.Editor,SE,University of Sydney,,,,Australia,AUS
+JAPE,2010,47,1,437,Christl,,Donnelly,Christl Donnelly,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2010,47,1,2640,Nicholas,,Dulvy,Nicholas Dulvy,Associate.Editor,SE,,,,,Canada,CAN
+JAPE,2010,47,1,1554,Johan,T,DuToit,Johan T DuToit,Associate.Editor,SE,Utah State University,,,,USA,USA
+JAPE,2010,47,1,442,Chris,S,Elphick,Chris S Elphick,Associate.Editor,SE,University of Connecticut,,,,USA,USA
+JAPE,2010,47,1,965,Esteban,,Fernandez-Juricic,Esteban Fernandez-Juricic,Associate.Editor,SE,,,,,USA,USA
+JAPE,2010,47,1,1573,Jennifer,,Firn,Jennifer Firn,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2010,47,1,2378,Morten,,Frederiksen,Morten Frederiksen,Associate.Editor,SE,,,,,Denmark,DNK
+JAPE,2010,47,1,454,Chris,LJ,Frid,Chris LJ Frid,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2010,47,1,1597,Jennifer,,Gill,Jennifer Gill,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2010,47,1,3081,Rosie,,Hails,Rosie Hails,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2010,47,1,1079,Fangliang,,He,Fangliang He,Associate.Editor,SE,,,,,Canada,CAN
+JAPE,2010,47,1,2407,Mark,,Hebblewhite,Mark Hebblewhite,Associate.Editor,SE,,,,,USA,USA
+JAPE,2010,47,1,2836,Phil,,Hulme,Phil Hulme,Editor,AE,,,,,UK,GBR
+JAPE,2010,47,1,1659,Julia,,Jones,Julia Jones,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2010,47,1,2025,K,Ullas,Karanth,K Ullas Karanth,Associate.Editor,SE,Wildlife Conservation Society,,,,India,IND
+JAPE,2010,47,1,747,David,,Kleijn,David Kleijn,Associate.Editor,SE,,,,,The Netherlands,NLD
+JAPE,2010,47,1,755,Doug,,Landis,Doug Landis,Associate.Editor,SE,,,,,USA,USA
+JAPE,2010,47,1,1708,Jack,J,Lennon,Jack J Lennon,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2010,47,1,1709,Jan,,Leps,Jan Leps,Associate.Editor,SE,,,,,Czech Republic,CZE
+JAPE,2010,47,1,2726,Owen,,Lewis,Owen Lewis,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2010,47,1,2860,Paul,,Lukacs,Paul Lukacs,Associate.Editor,SE,,,,,USA,USA
+JAPE,2010,47,1,1748,Jason,,Matthiopoulos,Jason Matthiopoulos,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2010,47,1,2468,Michael,A,McCarthy,Michael A McCarthy,Associate.Editor,SE,"Royal Botanic Gardens, Melbourne",,,,Australia,AUS
+JAPE,2010,47,1,785,David,I,McCracken,David I McCracken,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2010,47,1,1757,Jane,,Memmott,Jane Memmott,Editor-Executive.Editor,EIC,,,,,UK,GBR
+JAPE,2010,47,1,1004,Eleanor,Jane,Milner-Gulland,Eleanor Jane Milner-Gulland,Editor,AE,,,,,UK,GBR
+JAPE,2010,47,1,3772,William,,Montevecchi,William Montevecchi,Associate.Editor,SE,,,,,Canada,CAN
+JAPE,2010,47,1,1006,Eric,,Morgan,Eric Morgan,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2010,47,1,1793,Juliet,,Osborne,Juliet Osborne,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2010,47,1,2964,Quentin,,Paynter,Quentin Paynter,Associate.Editor,SE,,,,,New Zealand,NZL
+JAPE,2010,47,1,2679,Nathalie,,Pettorelli,Nathalie Pettorelli,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2010,47,1,2517,Michael,,Pocock,Michael Pocock,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2010,47,1,174,Andres,,Punt,Andres Punt,Associate.Editor,SE,,,,,USA,USA
+JAPE,2010,47,1,1831,Jonathan,,Rhodes,Jonathan Rhodes,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2010,47,1,3904,John,S,Richardson,John S Richardson,Associate.Editor,SE,University of British Columbia,,,,Canada,CAN
+JAPE,2010,47,1,1848,J,Andrew,Royle,J Andrew Royle,Associate.Editor,SE,US Geological Survey,,,,USA,USA
+JAPE,2010,47,1,196,Andy,,Sheppard,Andy Sheppard,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2010,47,1,1421,Ingolf,,Steffan-Dewenter,Ingolf Steffan-Dewenter,Associate.Editor,SE,,,,,Germany,DEU
+JAPE,2010,47,1,2923,Philip,A,Stephens,Philip A Stephens,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2010,47,1,890,Des,,Thompson,Des Thompson,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2010,47,1,2608,Mark,,Whittingham,Mark Whittingham,Editor,AE,,,,,UK,GBR
+JAPE,2010,47,1,593,Chris,,Wilcox,Chris Wilcox,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2010,47,1,376,Brian,,Wilsey,Brian Wilsey,Associate.Editor,SE,,,,,USA,USA
+JAPE,2010,47,1,3914,Jeremy,,Wilson,Jeremy Wilson,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2010,47,1,377,Brenden,,Wintle,Brenden Wintle,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2011,48,1,608,David,,Angeler,David Angeler,Associate.Editor,SE,,,,,Sweden,SWE
+JAPE,2011,48,1,2757,Paul,,Armsworth,Paul Armsworth,Associate.Editor,SE,,,,,USA,USA
+JAPE,2011,48,1,3272,Shelley,,Arnott,Shelley Arnott,Associate.Editor,SE,,,,,Canada,CAN
+JAPE,2011,48,1,2280,Mel,,Austen,Mel Austen,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2011,48,1,1452,Jos,,Barlow,Jos Barlow,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2011,48,1,2125,Lesley,,Batty,Lesley Batty,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2011,48,1,3829,Yvonne,,Buckley,Yvonne Buckley,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2011,48,1,1290,Harald,,Bugmann,Harald Bugmann,Associate.Editor,SE,,,,,Switzerland,CHE
+JAPE,2011,48,1,2322,Marc,,Cadotte,Marc Cadotte,Editor,AE,,,,,USA,USA
+JAPE,2011,48,1,3833,Yann,,Clough,Yann Clough,Associate.Editor,SE,,,,,Germany,DEU
+JAPE,2011,48,1,1522,Joan,,Cossentine,Joan Cossentine,Associate.Editor,SE,,,,,Canada,CAN
+JAPE,2011,48,1,435,Christopher,R,Dickman,Christopher R Dickman,Associate.Editor,SE,University of Sydney,,,,Australia,AUS
+JAPE,2011,48,1,2640,Nicholas,,Dulvy,Nicholas Dulvy,Associate.Editor,SE,,,,,Canada,CAN
+JAPE,2011,48,1,1554,Johan,T,DuToit,Johan T DuToit,Associate.Editor,SE,Utah State University,,,,USA,USA
+JAPE,2011,48,1,442,Chris,S,Elphick,Chris S Elphick,Associate.Editor,SE,University of Connecticut,,,,USA,USA
+JAPE,2011,48,1,965,Esteban,,Fernandez-Juricic,Esteban Fernandez-Juricic,Associate.Editor,SE,,,,,USA,USA
+JAPE,2011,48,1,1573,Jennifer,,Firn,Jennifer Firn,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2011,48,1,2378,Morten,,Frederiksen,Morten Frederiksen,Associate.Editor,SE,,,,,Denmark,DNK
+JAPE,2011,48,1,454,Chris,LJ,Frid,Chris LJ Frid,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2011,48,1,1597,Jennifer,,Gill,Jennifer Gill,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2011,48,1,3081,Rosie,,Hails,Rosie Hails,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2011,48,1,2407,Mark,,Hebblewhite,Mark Hebblewhite,Associate.Editor,SE,,,,,USA,USA
+JAPE,2011,48,1,727,Danny,,Hooftman,Danny Hooftman,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2011,48,1,2836,Phil,,Hulme,Phil Hulme,Editor,AE,,,,,UK,GBR
+JAPE,2011,48,1,1659,Julia,,Jones,Julia Jones,Editor,AE,,,,,UK,GBR
+JAPE,2011,48,1,2025,K,Ullas,Karanth,K Ullas Karanth,Associate.Editor,SE,Wildlife Conservation Society,,,,India,IND
+JAPE,2011,48,1,747,David,,Kleijn,David Kleijn,Associate.Editor,SE,,,,,The Netherlands,NLD
+JAPE,2011,48,1,755,Doug,,Landis,Doug Landis,Associate.Editor,SE,,,,,USA,USA
+JAPE,2011,48,1,1708,Jack,J,Lennon,Jack J Lennon,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2011,48,1,1709,Jan,,Leps,Jan Leps,Associate.Editor,SE,,,,,Czech Republic,CZE
+JAPE,2011,48,1,2726,Owen,,Lewis,Owen Lewis,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2011,48,1,2860,Paul,,Lukacs,Paul Lukacs,Associate.Editor,SE,,,,,USA,USA
+JAPE,2011,48,1,1748,Jason,,Matthiopoulos,Jason Matthiopoulos,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2011,48,1,2468,Michael,A,McCarthy,Michael A McCarthy,Associate.Editor,SE,"Royal Botanic Gardens, Melbourne",,,,Australia,AUS
+JAPE,2011,48,1,785,David,I,McCracken,David I McCracken,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2011,48,1,1757,Jane,,Memmott,Jane Memmott,Editor-Executive.Editor,EIC,,,,,UK,GBR
+JAPE,2011,48,1,1004,Eleanor,Jane,Milner-Gulland,Eleanor Jane Milner-Gulland,Editor,AE,,,,,UK,GBR
+JAPE,2011,48,1,3772,William,,Montevecchi,William Montevecchi,Associate.Editor,SE,,,,,Canada,CAN
+JAPE,2011,48,1,1006,Eric,,Morgan,Eric Morgan,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2011,48,1,1793,Juliet,,Osborne,Juliet Osborne,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2011,48,1,2964,Quentin,,Paynter,Quentin Paynter,Associate.Editor,SE,,,,,New Zealand,NZL
+JAPE,2011,48,1,2679,Nathalie,,Pettorelli,Nathalie Pettorelli,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2011,48,1,2517,Michael,,Pocock,Michael Pocock,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2011,48,1,174,Andres,,Punt,Andres Punt,Associate.Editor,SE,,,,,USA,USA
+JAPE,2011,48,1,1831,Jonathan,,Rhodes,Jonathan Rhodes,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2011,48,1,3904,John,S,Richardson,John S Richardson,Associate.Editor,SE,University of British Columbia,,,,Canada,CAN
+JAPE,2011,48,1,1848,J,Andrew,Royle,J Andrew Royle,Associate.Editor,SE,US Geological Survey,,,,USA,USA
+JAPE,2011,48,1,196,Andy,,Sheppard,Andy Sheppard,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2011,48,1,1421,Ingolf,,Steffan-Dewenter,Ingolf Steffan-Dewenter,Associate.Editor,SE,,,,,Germany,DEU
+JAPE,2011,48,1,2923,Philip,A,Stephens,Philip A Stephens,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2011,48,1,890,Des,,Thompson,Des Thompson,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2011,48,1,3814,Wim,H,VanDerPutten,Wim H VanDerPutten,Associate.Editor,SE,Netherlands Institute of Ecology; Wageningen University and Research Centre,,,,The Netherlands,NLD
+JAPE,2011,48,1,3242,Richard,,Wadsworth,Richard Wadsworth,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2011,48,1,2608,Mark,,Whittingham,Mark Whittingham,Editor,AE,,,,,UK,GBR
+JAPE,2011,48,1,593,Chris,,Wilcox,Chris Wilcox,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2011,48,1,376,Brian,,Wilsey,Brian Wilsey,Associate.Editor,SE,,,,,USA,USA
+JAPE,2011,48,1,3914,Jeremy,,Wilson,Jeremy Wilson,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2011,48,1,377,Brenden,,Wintle,Brenden Wintle,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2012,49,1,608,David,,Angeler,David Angeler,Associate.Editor,SE,,,,,Sweden,SWE
+JAPE,2012,49,1,2757,Paul,,Armsworth,Paul Armsworth,Associate.Editor,SE,,,,,USA,USA
+JAPE,2012,49,1,3272,Shelley,,Arnott,Shelley Arnott,Associate.Editor,SE,,,,,Canada,CAN
+JAPE,2012,49,1,2280,Mel,,Austen,Mel Austen,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2012,49,1,1452,Jos,,Barlow,Jos Barlow,Editor,AE,,,,,UK,GBR
+JAPE,2012,49,1,2125,Lesley,,Batty,Lesley Batty,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2012,49,1,2294,Malcom,,Bennett,Malcom Bennett,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2012,49,1,2303,Michael,,Bode,Michael Bode,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2012,49,1,2771,Paulo,,Brando,Paulo Brando,Associate.Editor,SE,,,,,Brazil,BRA
+JAPE,2012,49,1,3829,Yvonne,,Buckley,Yvonne Buckley,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2012,49,1,1290,Harald,,Bugmann,Harald Bugmann,Associate.Editor,SE,,,,,Switzerland,CHE
+JAPE,2012,49,1,2322,Marc,,Cadotte,Marc Cadotte,Editor,AE,,,,,USA,USA
+JAPE,2012,49,1,3833,Yann,,Clough,Yann Clough,Associate.Editor,SE,,,,,Germany,DEU
+JAPE,2012,49,1,1522,Joan,,Cossentine,Joan Cossentine,Associate.Editor,SE,,,,,Canada,CAN
+JAPE,2012,49,1,951,Erika,,Crispo,Erika Crispo,Associate.Editor,SE,,,,,Canada,CAN
+JAPE,2012,49,1,435,Christopher,R,Dickman,Christopher R Dickman,Associate.Editor,SE,University of Sydney,,,,Australia,AUS
+JAPE,2012,49,1,2640,Nicholas,,Dulvy,Nicholas Dulvy,Associate.Editor,SE,,,,,Canada,CAN
+JAPE,2012,49,1,1554,Johan,T,DuToit,Johan T DuToit,Associate.Editor,SE,Utah State University,,,,USA,USA
+JAPE,2012,49,1,442,Chris,S,Elphick,Chris S Elphick,Associate.Editor,SE,University of Connecticut,,,,USA,USA
+JAPE,2012,49,1,965,Esteban,,Fernandez-Juricic,Esteban Fernandez-Juricic,Associate.Editor,SE,,,,,USA,USA
+JAPE,2012,49,1,1573,Jennifer,,Firn,Jennifer Firn,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2012,49,1,2378,Morten,,Frederiksen,Morten Frederiksen,Associate.Editor,SE,,,,,Denmark,DNK
+JAPE,2012,49,1,454,Chris,LJ,Frid,Chris LJ Frid,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2012,49,1,1597,Jennifer,,Gill,Jennifer Gill,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2012,49,1,3081,Rosie,,Hails,Rosie Hails,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2012,49,1,2407,Mark,,Hebblewhite,Mark Hebblewhite,Associate.Editor,SE,,,,,USA,USA
+JAPE,2012,49,1,727,Danny,,Hooftman,Danny Hooftman,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2012,49,1,2836,Phil,,Hulme,Phil Hulme,Editor,AE,,,,,UK,GBR
+JAPE,2012,49,1,2025,K,Ullas,Karanth,K Ullas Karanth,Associate.Editor,SE,Wildlife Conservation Society,,,,India,IND
+JAPE,2012,49,1,2844,Paul,,Kardol,Paul Kardol,Associate.Editor,SE,,,,,Sweden,SWE
+JAPE,2012,49,1,747,David,,Kleijn,David Kleijn,Associate.Editor,SE,,,,,The Netherlands,NLD
+JAPE,2012,49,1,755,Doug,,Landis,Doug Landis,Associate.Editor,SE,,,,,USA,USA
+JAPE,2012,49,1,1709,Jan,,Leps,Jan Leps,Associate.Editor,SE,,,,,Czech Republic,CZE
+JAPE,2012,49,1,2726,Owen,,Lewis,Owen Lewis,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2012,49,1,2860,Paul,,Lukacs,Paul Lukacs,Associate.Editor,SE,,,,,USA,USA
+JAPE,2012,49,1,1748,Jason,,Matthiopoulos,Jason Matthiopoulos,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2012,49,1,785,David,I,McCracken,David I McCracken,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2012,49,1,1004,Eleanor,Jane,Milner-Gulland,Eleanor Jane Milner-Gulland,Editor-Executive.Editor,EIC,,,,,UK,GBR
+JAPE,2012,49,1,3772,William,,Montevecchi,William Montevecchi,Associate.Editor,SE,,,,,Canada,CAN
+JAPE,2012,49,1,1006,Eric,,Morgan,Eric Morgan,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2012,49,1,1793,Juliet,,Osborne,Juliet Osborne,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2012,49,1,2964,Quentin,,Paynter,Quentin Paynter,Associate.Editor,SE,,,,,New Zealand,NZL
+JAPE,2012,49,1,2679,Nathalie,,Pettorelli,Nathalie Pettorelli,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2012,49,1,2517,Michael,,Pocock,Michael Pocock,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2012,49,1,174,Andres,,Punt,Andres Punt,Associate.Editor,SE,,,,,USA,USA
+JAPE,2012,49,1,1831,Jonathan,,Rhodes,Jonathan Rhodes,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2012,49,1,3904,John,S,Richardson,John S Richardson,Associate.Editor,SE,University of British Columbia,,,,Canada,CAN
+JAPE,2012,49,1,1848,J,Andrew,Royle,J Andrew Royle,Associate.Editor,SE,US Geological Survey,,,,USA,USA
+JAPE,2012,49,1,3461,Santiago,,Saura,Santiago Saura,Associate.Editor,SE,,,,,Spain,ESP
+JAPE,2012,49,1,196,Andy,,Sheppard,Andy Sheppard,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2012,49,1,1421,Ingolf,,Steffan-Dewenter,Ingolf Steffan-Dewenter,Associate.Editor,SE,,,,,Germany,DEU
+JAPE,2012,49,1,2923,Philip,A,Stephens,Philip A Stephens,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2012,49,1,890,Des,,Thompson,Des Thompson,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2012,49,1,3495,Steve,,Votier,Steve Votier,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2012,49,1,2608,Mark,,Whittingham,Mark Whittingham,Editor,AE,,,,,UK,GBR
+JAPE,2012,49,1,593,Chris,,Wilcox,Chris Wilcox,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2012,49,1,376,Brian,,Wilsey,Brian Wilsey,Associate.Editor,SE,,,,,USA,USA
+JAPE,2012,49,1,3914,Jeremy,,Wilson,Jeremy Wilson,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2012,49,1,377,Brenden,,Wintle,Brenden Wintle,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2013,50,1,608,David,,Angeler,David Angeler,Associate.Editor,SE,,,,,Sweden,SWE
+JAPE,2013,50,1,2757,Paul,,Armsworth,Paul Armsworth,Associate.Editor,SE,,,,,USA,USA
+JAPE,2013,50,1,3272,Shelley,,Arnott,Shelley Arnott,Associate.Editor,SE,,,,,Canada,CAN
+JAPE,2013,50,1,390,Christina,,Banks-Leite,Christina Banks-Leite,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2013,50,1,1452,Jos,,Barlow,Jos Barlow,Editor,AE,,,,,UK,GBR
+JAPE,2013,50,1,2125,Lesley,,Batty,Lesley Batty,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2013,50,1,1470,Julia,,Blanchard,Julia Blanchard,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2013,50,1,2303,Michael,,Bode,Michael Bode,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2013,50,1,2771,Paulo,,Brando,Paulo Brando,Associate.Editor,SE,,,,,Brazil,BRA
+JAPE,2013,50,1,3829,Yvonne,,Buckley,Yvonne Buckley,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2013,50,1,1290,Harald,,Bugmann,Harald Bugmann,Associate.Editor,SE,,,,,Switzerland,CHE
+JAPE,2013,50,1,2322,Marc,,Cadotte,Marc Cadotte,Editor,AE,,,,,USA,USA
+JAPE,2013,50,1,3833,Yann,,Clough,Yann Clough,Associate.Editor,SE,,,,,Germany,DEU
+JAPE,2013,50,1,951,Erika,,Crispo,Erika Crispo,Associate.Editor,SE,,,,,Canada,CAN
+JAPE,2013,50,1,3681,Vincent,,Devictor,Vincent Devictor,Associate.Editor,SE,,,,,France,FRA
+JAPE,2013,50,1,435,Christopher,R,Dickman,Christopher R Dickman,Associate.Editor,SE,University of Sydney,,,,Australia,AUS
+JAPE,2013,50,1,2640,Nicholas,,Dulvy,Nicholas Dulvy,Associate.Editor,SE,,,,,Canada,CAN
+JAPE,2013,50,1,1554,Johan,T,DuToit,Johan T DuToit,Associate.Editor,SE,Utah State University,,,,USA,USA
+JAPE,2013,50,1,442,Chris,S,Elphick,Chris S Elphick,Associate.Editor,SE,University of Connecticut,,,,USA,USA
+JAPE,2013,50,1,965,Esteban,,Fernandez-Juricic,Esteban Fernandez-Juricic,Associate.Editor,SE,,,,,USA,USA
+JAPE,2013,50,1,1573,Jennifer,,Firn,Jennifer Firn,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2013,50,1,1578,Jacqui,,Frair,Jacqui Frair,Associate.Editor,SE,,,,,USA,USA
+JAPE,2013,50,1,2378,Morten,,Frederiksen,Morten Frederiksen,Associate.Editor,SE,,,,,Denmark,DNK
+JAPE,2013,50,1,454,Chris,LJ,Frid,Chris LJ Frid,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2013,50,1,3930,Richard,,Fuller,Richard Fuller,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2013,50,1,3081,Rosie,,Hails,Rosie Hails,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2013,50,1,727,Danny,,Hooftman,Danny Hooftman,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2013,50,1,2836,Phil,,Hulme,Phil Hulme,Editor,AE,,,,,UK,GBR
+JAPE,2013,50,1,1659,Julia,,Jones,Julia Jones,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2013,50,1,2844,Paul,,Kardol,Paul Kardol,Associate.Editor,SE,,,,,Sweden,SWE
+JAPE,2013,50,1,747,David,,Kleijn,David Kleijn,Associate.Editor,SE,,,,,The Netherlands,NLD
+JAPE,2013,50,1,755,Doug,,Landis,Doug Landis,Associate.Editor,SE,,,,,USA,USA
+JAPE,2013,50,1,2726,Owen,,Lewis,Owen Lewis,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2013,50,1,2860,Paul,,Lukacs,Paul Lukacs,Associate.Editor,SE,,,,,USA,USA
+JAPE,2013,50,1,1748,Jason,,Matthiopoulos,Jason Matthiopoulos,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2013,50,1,1339,Hamish,,McCallum,Hamish McCallum,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2013,50,1,150,Ailsa,,McKenzie,Ailsa McKenzie,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2013,50,1,1004,Eleanor,Jane,Milner-Gulland,Eleanor Jane Milner-Gulland,Editor-Executive.Editor,EIC,,,,,UK,GBR
+JAPE,2013,50,1,1770,Jeroen,,Minderman,Jeroen Minderman,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2013,50,1,1006,Eric,,Morgan,Eric Morgan,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2013,50,1,1793,Juliet,,Osborne,Juliet Osborne,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2013,50,1,3619,Tomas,,Part,Tomas Part,Associate.Editor,SE,,,,,Sweden,SWE
+JAPE,2013,50,1,2964,Quentin,,Paynter,Quentin Paynter,Associate.Editor,SE,,,,,New Zealand,NZL
+JAPE,2013,50,1,2679,Nathalie,,Pettorelli,Nathalie Pettorelli,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2013,50,1,2517,Michael,,Pocock,Michael Pocock,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2013,50,1,174,Andres,,Punt,Andres Punt,Associate.Editor,SE,,,,,USA,USA
+JAPE,2013,50,1,1831,Jonathan,,Rhodes,Jonathan Rhodes,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2013,50,1,3461,Santiago,,Saura,Santiago Saura,Associate.Editor,SE,,,,,Spain,ESP
+JAPE,2013,50,1,196,Andy,,Sheppard,Andy Sheppard,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2013,50,1,1421,Ingolf,,Steffan-Dewenter,Ingolf Steffan-Dewenter,Associate.Editor,SE,,,,,Germany,DEU
+JAPE,2013,50,1,2923,Philip,A,Stephens,Philip A Stephens,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2013,50,1,209,Angela,,Strecker,Angela Strecker,Associate.Editor,SE,,,,,USA,USA
+JAPE,2013,50,1,890,Des,,Thompson,Des Thompson,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2013,50,1,3495,Steve,,Votier,Steve Votier,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2013,50,1,3498,Shiqiang,,Wan,Shiqiang Wan,Associate.Editor,SE,,,,,China,CHN
+JAPE,2013,50,1,2608,Mark,,Whittingham,Mark Whittingham,Editor,AE,,,,,UK,GBR
+JAPE,2013,50,1,376,Brian,,Wilsey,Brian Wilsey,Associate.Editor,SE,,,,,USA,USA
+JAPE,2013,50,1,3914,Jeremy,,Wilson,Jeremy Wilson,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2013,50,1,377,Brenden,,Wintle,Brenden Wintle,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2014,51,1,608,David,,Angeler,David Angeler,Associate.Editor,SE,,,,,Sweden,SWE
+JAPE,2014,51,1,2757,Paul,,Armsworth,Paul Armsworth,Associate.Editor,SE,,,,,USA,USA
+JAPE,2014,51,1,3272,Shelley,,Arnott,Shelley Arnott,Associate.Editor,SE,,,,,Canada,CAN
+JAPE,2014,51,1,390,Christina,,Banks-Leite,Christina Banks-Leite,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2014,51,1,1452,Jos,,Barlow,Jos Barlow,Editor,AE,,,,,UK,GBR
+JAPE,2014,51,1,3882,Joseph,,Bennett,Joseph Bennett,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2014,51,1,1470,Julia,,Blanchard,Julia Blanchard,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2014,51,1,2303,Michael,,Bode,Michael Bode,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2014,51,1,2771,Paulo,,Brando,Paulo Brando,Associate.Editor,SE,,,,,Brazil,BRA
+JAPE,2014,51,1,1290,Harald,,Bugmann,Harald Bugmann,Associate.Editor,SE,,,,,Switzerland,CHE
+JAPE,2014,51,1,2322,Marc,,Cadotte,Marc Cadotte,Editor,AE,,,,,USA,USA
+JAPE,2014,51,1,3833,Yann,,Clough,Yann Clough,Associate.Editor,SE,,,,,Germany,DEU
+JAPE,2014,51,1,951,Erika,,Crispo,Erika Crispo,Associate.Editor,SE,,,,,Canada,CAN
+JAPE,2014,51,1,3681,Vincent,,Devictor,Vincent Devictor,Associate.Editor,SE,,,,,France,FRA
+JAPE,2014,51,1,435,Christopher,R,Dickman,Christopher R Dickman,Associate.Editor,SE,University of Sydney,,,,Australia,AUS
+JAPE,2014,51,1,1554,Johan,T,DuToit,Johan T DuToit,Associate.Editor,SE,Utah State University,,,,USA,USA
+JAPE,2014,51,1,442,Chris,S,Elphick,Chris S Elphick,Associate.Editor,SE,University of Connecticut,,,,USA,USA
+JAPE,2014,51,1,965,Esteban,,Fernandez-Juricic,Esteban Fernandez-Juricic,Associate.Editor,SE,,,,,USA,USA
+JAPE,2014,51,1,1572,John,,Finn,John Finn,Associate.Editor,SE,,,,,Ireland,IRL
+JAPE,2014,51,1,1573,Jennifer,,Firn,Jennifer Firn,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2014,51,1,1578,Jacqui,,Frair,Jacqui Frair,Associate.Editor,SE,,,,,USA,USA
+JAPE,2014,51,1,2378,Morten,,Frederiksen,Morten Frederiksen,Associate.Editor,SE,,,,,Denmark,DNK
+JAPE,2014,51,1,454,Chris,LJ,Frid,Chris LJ Frid,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2014,51,1,3930,Richard,,Fuller,Richard Fuller,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2014,51,1,3081,Rosie,,Hails,Rosie Hails,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2014,51,1,727,Danny,,Hooftman,Danny Hooftman,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2014,51,1,2836,Phil,,Hulme,Phil Hulme,Editor,AE,,,,,UK,GBR
+JAPE,2014,51,1,1659,Julia,,Jones,Julia Jones,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2014,51,1,1403,Ian,,Kaplan,Ian Kaplan,Associate.Editor,SE,,,,,USA,USA
+JAPE,2014,51,1,2844,Paul,,Kardol,Paul Kardol,Associate.Editor,SE,,,,,Sweden,SWE
+JAPE,2014,51,1,747,David,,Kleijn,David Kleijn,Associate.Editor,SE,,,,,The Netherlands,NLD
+JAPE,2014,51,1,2726,Owen,,Lewis,Owen Lewis,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2014,51,1,2860,Paul,,Lukacs,Paul Lukacs,Associate.Editor,SE,,,,,USA,USA
+JAPE,2014,51,1,1748,Jason,,Matthiopoulos,Jason Matthiopoulos,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2014,51,1,1339,Hamish,,McCallum,Hamish McCallum,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2014,51,1,150,Ailsa,,McKenzie,Ailsa McKenzie,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2014,51,1,1004,Eleanor,Jane,Milner-Gulland,Eleanor Jane Milner-Gulland,Editor-Executive.Editor,EIC,,,,,UK,GBR
+JAPE,2014,51,1,1770,Jeroen,,Minderman,Jeroen Minderman,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2014,51,1,1006,Eric,,Morgan,Eric Morgan,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2014,51,1,1793,Juliet,,Osborne,Juliet Osborne,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2014,51,1,3619,Tomas,,Part,Tomas Part,Associate.Editor,SE,,,,,Sweden,SWE
+JAPE,2014,51,1,2964,Quentin,,Paynter,Quentin Paynter,Associate.Editor,SE,,,,,New Zealand,NZL
+JAPE,2014,51,1,2679,Nathalie,,Pettorelli,Nathalie Pettorelli,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2014,51,1,2517,Michael,,Pocock,Michael Pocock,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2014,51,1,174,Andres,,Punt,Andres Punt,Associate.Editor,SE,,,,,USA,USA
+JAPE,2014,51,1,1831,Jonathan,,Rhodes,Jonathan Rhodes,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2014,51,1,3461,Santiago,,Saura,Santiago Saura,Associate.Editor,SE,,,,,Spain,ESP
+JAPE,2014,51,1,196,Andy,,Sheppard,Andy Sheppard,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2014,51,1,1421,Ingolf,,Steffan-Dewenter,Ingolf Steffan-Dewenter,Associate.Editor,SE,,,,,Germany,DEU
+JAPE,2014,51,1,2923,Philip,A,Stephens,Philip A Stephens,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2014,51,1,209,Angela,,Strecker,Angela Strecker,Associate.Editor,SE,,,,,USA,USA
+JAPE,2014,51,1,890,Des,,Thompson,Des Thompson,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2014,51,1,3495,Steve,,Votier,Steve Votier,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2014,51,1,3498,Shiqiang,,Wan,Shiqiang Wan,Associate.Editor,SE,,,,,China,CHN
+JAPE,2014,51,1,2608,Mark,,Whittingham,Mark Whittingham,Editor,AE,,,,,UK,GBR
+JAPE,2014,51,1,376,Brian,,Wilsey,Brian Wilsey,Associate.Editor,SE,,,,,USA,USA
+JAPE,2014,51,1,3914,Jeremy,,Wilson,Jeremy Wilson,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2014,51,1,377,Brenden,,Wintle,Brenden Wintle,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2015,52,1,608,David,,Angeler,David Angeler,Associate.Editor,SE,,,,,Sweden,SWE
+JAPE,2015,52,1,3272,Shelley,,Arnott,Shelley Arnott,Associate.Editor,SE,,,,,Canada,CAN
+JAPE,2015,52,1,390,Christina,,Banks-Leite,Christina Banks-Leite,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2015,52,1,391,Christopher,,Baraloto,Christopher Baraloto,Associate.Editor,SE,,,,,French Guiana,GUF
+JAPE,2015,52,1,1452,Jos,,Barlow,Jos Barlow,Editor,AE,,,,,UK,GBR
+JAPE,2015,52,1,3277,Silke,,Bauer,Silke Bauer,Associate.Editor,SE,,,,,The Netherlands,NLD
+JAPE,2015,52,1,3882,Joseph,,Bennett,Joseph Bennett,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2015,52,1,399,Claudia,,Bieber,Claudia Bieber,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2015,52,1,1470,Julia,,Blanchard,Julia Blanchard,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2015,52,1,2771,Paulo,,Brando,Paulo Brando,Associate.Editor,SE,,,,,Brazil,BRA
+JAPE,2015,52,1,1290,Harald,,Bugmann,Harald Bugmann,Associate.Editor,SE,,,,,Switzerland,CHE
+JAPE,2015,52,1,2322,Marc,,Cadotte,Marc Cadotte,Editor-Executive.Editor,EIC,,,,,USA,USA
+JAPE,2015,52,1,3830,Yong,,Cao,Yong Cao,Associate.Editor,SE,,,,,USA,USA
+JAPE,2015,52,1,1161,Guillaume,,Chapron,Guillaume Chapron,Associate.Editor,SE,,,,,Sweden,SWE
+JAPE,2015,52,1,3833,Yann,,Clough,Yann Clough,Associate.Editor,SE,,,,,Germany,DEU
+JAPE,2015,52,1,951,Erika,,Crispo,Erika Crispo,Associate.Editor,SE,,,,,Canada,CAN
+JAPE,2015,52,1,3681,Vincent,,Devictor,Vincent Devictor,Associate.Editor,SE,,,,,France,FRA
+JAPE,2015,52,1,3314,Sarah,,Diamond,Sarah Diamond,Associate.Editor,SE,,,,,USA,USA
+JAPE,2015,52,1,435,Christopher,R,Dickman,Christopher R Dickman,Associate.Editor,SE,University of Sydney,,,,Australia,AUS
+JAPE,2015,52,1,3536,Tim,,Diekotter,Tim Diekotter,Associate.Editor,SE,,,,,Germany,DEU
+JAPE,2015,52,1,673,Don,,Driscoll,Don Driscoll,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2015,52,1,1554,Johan,T,DuToit,Johan T DuToit,Associate.Editor,SE,Utah State University,,,,USA,USA
+JAPE,2015,52,1,965,Esteban,,Fernandez-Juricic,Esteban Fernandez-Juricic,Associate.Editor,SE,,,,,USA,USA
+JAPE,2015,52,1,1572,John,,Finn,John Finn,Associate.Editor,SE,,,,,Ireland,IRL
+JAPE,2015,52,1,1573,Jennifer,,Firn,Jennifer Firn,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2015,52,1,1578,Jacqui,,Frair,Jacqui Frair,Associate.Editor,SE,,,,,USA,USA
+JAPE,2015,52,1,454,Chris,LJ,Frid,Chris LJ Frid,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2015,52,1,3930,Richard,,Fuller,Richard Fuller,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2015,52,1,3081,Rosie,,Hails,Rosie Hails,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2015,52,1,2404,Mattew,,Hayward,Mattew Hayward,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2015,52,1,1631,Jani,,Heino,Jani Heino,Associate.Editor,SE,,,,,Finland,FIN
+JAPE,2015,52,1,727,Danny,,Hooftman,Danny Hooftman,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2015,52,1,1655,Jeremy,,James,Jeremy James,Associate.Editor,SE,,,,,USA,USA
+JAPE,2015,52,1,1659,Julia,,Jones,Julia Jones,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2015,52,1,1403,Ian,,Kaplan,Ian Kaplan,Associate.Editor,SE,,,,,USA,USA
+JAPE,2015,52,1,2844,Paul,,Kardol,Paul Kardol,Associate.Editor,SE,,,,,Sweden,SWE
+JAPE,2015,52,1,747,David,,Kleijn,David Kleijn,Associate.Editor,SE,,,,,The Netherlands,NLD
+JAPE,2015,52,1,2726,Owen,,Lewis,Owen Lewis,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2015,52,1,1712,Jin-tian,,Li,Jin-tian Li,Associate.Editor,SE,,,,,Chile,CHL
+JAPE,2015,52,1,2860,Paul,,Lukacs,Paul Lukacs,Associate.Editor,SE,,,,,USA,USA
+JAPE,2015,52,1,2863,Peter,,Mannin,Peter Mannin,Associate.Editor,SE,,,,,Switzerland,CHE
+JAPE,2015,52,1,1339,Hamish,,McCallum,Hamish McCallum,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2015,52,1,150,Ailsa,,McKenzie,Ailsa McKenzie,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2015,52,1,1770,Jeroen,,Minderman,Jeroen Minderman,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2015,52,1,1774,Joslin,,Moore,Joslin Moore,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2015,52,1,159,Akira,,Mori,Akira Mori,Associate.Editor,SE,,,,,Japan,JPN
+JAPE,2015,52,1,1778,Jorg,,Muller,Jorg Muller,Associate.Editor,SE,,,,,Germany,DEU
+JAPE,2015,52,1,3170,Ralph,Mac,Nally,Ralph Mac Nally,Associate.Editor,SE,University of Canberra,,,,Australia,AUS
+JAPE,2015,52,1,1343,Henrik,,Osterblom,Henrik Osterblom,Associate.Editor,SE,,,,,Sweden,SWE
+JAPE,2015,52,1,3619,Tomas,,Part,Tomas Part,Associate.Editor,SE,,,,,Sweden,SWE
+JAPE,2015,52,1,2964,Quentin,,Paynter,Quentin Paynter,Associate.Editor,SE,,,,,New Zealand,NZL
+JAPE,2015,52,1,2517,Michael,,Pocock,Michael Pocock,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2015,52,1,174,Andres,,Punt,Andres Punt,Associate.Editor,SE,,,,,USA,USA
+JAPE,2015,52,1,1831,Jonathan,,Rhodes,Jonathan Rhodes,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2015,52,1,1841,Jason,,Rohr,Jason Rohr,Associate.Editor,SE,,,,,USA,USA
+JAPE,2015,52,1,196,Andy,,Sheppard,Andy Sheppard,Associate.Editor,SE,,,,,Australia,AUS
+JAPE,2015,52,1,3639,Tadeu,,Siqueira,Tadeu Siqueira,Associate.Editor,SE,,,,,Brazil,BRA
+JAPE,2015,52,1,1259,Gavin,,Siriwardena,Gavin Siriwardena,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2015,52,1,2244,Lara,,Souza,Lara Souza,Associate.Editor,SE,,,,,USA,USA
+JAPE,2015,52,1,2923,Philip,A,Stephens,Philip A Stephens,Editor,AE,,,,,UK,GBR
+JAPE,2015,52,1,209,Angela,,Strecker,Angela Strecker,Associate.Editor,SE,,,,,USA,USA
+JAPE,2015,52,1,890,Des,,Thompson,Des Thompson,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2015,52,1,3703,Verena,,Trenkel,Verena Trenkel,Associate.Editor,SE,,,,,France,FRA
+JAPE,2015,52,1,3495,Steve,,Votier,Steve Votier,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2015,52,1,3498,Shiqiang,,Wan,Shiqiang Wan,Associate.Editor,SE,,,,,China,CHN
+JAPE,2015,52,1,2608,Mark,,Whittingham,Mark Whittingham,Editor,AE,,,,,UK,GBR
+JAPE,2015,52,1,3503,Steve,,Wills,Steve Wills,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2015,52,1,376,Brian,,Wilsey,Brian Wilsey,Associate.Editor,SE,,,,,USA,USA
+JAPE,2015,52,1,3914,Jeremy,,Wilson,Jeremy Wilson,Associate.Editor,SE,,,,,UK,GBR
+JAPE,2015,52,1,377,Brenden,,Wintle,Brenden Wintle,Associate.Editor,SE,,,,,Australia,AUS

@@ -1,0 +1,1301 @@
+JOURNAL,YEAR,VOLUME,ISSUE,editor_id,FIRST_NAME,MIDDLE_NAME,LAST_NAME,NAME,TITLE.x,CATEGORY,INST,UNIT,CITY,STATE,COUNTRY,geo.code
+EVOL,1985,39,NA,3709,William,R,Atchley,William R Atchley,Special.Editor,SPECIAL, University of Wisconsin,,Madison,WI,USA,USA
+EVOL,1985,39,NA,3721,Wesley,M,Brown,Wesley M Brown,AE,SE,University of Michigan,,Ann Arbor,MI,USA,USA
+EVOL,1985,39,NA,31,Allan,M,Campbell,Allan M Campbell,Special.Editor,SPECIAL, Stanford University,,Stanford,CA,USA,USA
+EVOL,1985,39,NA,3521,Ted,J,Case,Ted J Case,AE,SE, University of California- San Diego,,La Jolla,CA,USA,USA
+EVOL,1985,39,NA,3027,Rossiter,H,Crozier,Rossiter H Crozier,AE,SE, University of New South Wales,,Sydney,NSW,Australia,AUS
+EVOL,1985,39,NA,59,Arthur,E,Dunham,Arthur E Dunham,AE,SE,Univeristy of Pennsylvania,,Philadelphia,PA,USA,USA
+EVOL,1985,39,NA,1561,John,A,Endler,John A Endler,AE,SE, University of Utah,,Salt Lake City,UT,USA,USA
+EVOL,1985,39,NA,3737,William,R,Engels,William R Engels,AE,SE, University of Wisconsin,,Madison,WI,USA,USA
+EVOL,1985,39,NA,3867,Daniel,,Fisher,Daniel Fisher,AE,SE,University of Michigan,,Ann Arbor,MI,USA,USA
+EVOL,1985,39,NA,1579,Joseph,,Frankel,Joseph Frankel,Special.Editor,SPECIAL,University of Iowa,,Iowa City,IA,USA,USA
+EVOL,1985,39,NA,2823,Paul,H,Harvey,Paul H Harvey,AE,SE,Princeton University,,Princeton,NJ,USA,USA
+EVOL,1985,39,NA,1314,Henry,S,Horn,Henry S Horn,AE,SE,Princeton University,,Princeton,NJ,USA,USA
+EVOL,1985,39,NA,734,David,,Jablonski,David Jablonski,AE,SE,University of Arizona,,Tuscon,AZ,USA,USA
+EVOL,1985,39,NA,3156,Roger,,Milkman,Roger Milkman,Editor,EIC,University of Iowa,,Iowa City,IA,USA,USA
+EVOL,1985,39,NA,1772,Jeffry,B,Mitton,Jeffry B Mitton,Special.Editor,SPECIAL, University of Colorado,,Denver,CO,USA,USA
+EVOL,1985,39,NA,797,David,L,Nanney,David L Nanney,Special.Editor,SPECIAL, University of Illinois,,Champaign,IL,USA,USA
+EVOL,1985,39,NA,858,Douglas,W,Schemske,Douglas W Schemske,AE,SE, University of Chicago,,Chicago,IL,USA,USA
+EVOL,1985,39,NA,2565,Montgomery,,Slatkin,Montgomery Slatkin,AE,SE,University of Washington,,Seattle,WA,USA,USA
+EVOL,1985,39,NA,1882,Janice,B,Spofford,Janice B Spofford,AE,SE, University of Chicago,,Chicago,IL,USA,USA
+EVOL,1985,39,NA,573,Curtis,,Strobeck,Curtis Strobeck,AE,SE,University of Alberta,,Edmonton,AB,Canada,CAN
+EVOL,1985,39,NA,3499,Stephen,Green,Weller,Stephen Green Weller,AE,SE,University of Illimois at Chicago,,Chicago,IL,USA,USA
+EVOL,1986,40,NA,3709,William,R,Atchley,William R Atchley,AE,SE, University of Wisconsin,,Madison,WI,USA,USA
+EVOL,1986,40,NA,31,Allan,M,Campbell,Allan M Campbell,Special.Editor,SPECIAL, Stanford University,,Stanford,CA,USA,USA
+EVOL,1986,40,NA,3521,Ted,J,Case,Ted J Case,AE,SE, University of California at San Diego,,La Jolla,CA,USA,USA
+EVOL,1986,40,NA,648,Deborah,,Charlesworth,Deborah Charlesworth,AE,SE,University of Chicago,,Chicago,IL,USA,USA
+EVOL,1986,40,NA,943,Eric,L,Charnov,Eric L Charnov,AE,SE, University of Utah,,Salt Lake City,UT,USA,USA
+EVOL,1986,40,NA,1509,James,M,Cheverud,James M Cheverud,AE,SE, Northwestern University,,Evanston,IL,USA,USA
+EVOL,1986,40,NA,1524,Jerry,A,Coyne,Jerry A Coyne,AE,SE, University of Maryland,,College Park,MD,USA,USA
+EVOL,1986,40,NA,3027,Rossiter,H,Crozier,Rossiter H Crozier,AE,SE, University of New South Wales,,Sydney,NSW,Australia,AUS
+EVOL,1986,40,NA,1561,John,A,Endler,John A Endler,AE,SE,University of Utah,,Salt Lake City,UT,USA,USA
+EVOL,1986,40,NA,3737,William,R,Engels,William R Engels,AE,SE,University of Wisconsin,,Madison,WI,USA,USA
+EVOL,1986,40,NA,1579,Joseph,,Frankel,Joseph Frankel,Special.Editor,SPECIAL,University of Iowa,,Iowa City,IA,USA,USA
+EVOL,1986,40,NA,734,David,,Jablonski,David Jablonski,AE,SE,University of Chicago,,Chicago,IL,USA,USA
+EVOL,1986,40,NA,308,Bruce,,Levin,Bruce Levin,AE,SE,University of Massachusetts- Amherst,,Amherst,MA,USA,USA
+EVOL,1986,40,NA,3156,Roger,,Milkman,Roger Milkman,Editor,EIC,University of Iowa,,Iowa City,IA,USA,USA
+EVOL,1986,40,NA,1772,Jeffry,B,Mitton,Jeffry B Mitton,Special.Editor,SPECIAL,University of Colorado,,Boulder,CO,USA,USA
+EVOL,1986,40,NA,3611,Terumi,,Mukai,Terumi Mukai,AE,SE,Kyushu University,,Fukuoka,Kyushu,Japan,JPN
+EVOL,1986,40,NA,797,David,L,Nanney,David L Nanney,Special.Editor,SPECIAL, University of Illinois,,Champaign,IL,USA,USA
+EVOL,1986,40,NA,2532,Mark,D,Rausher,Mark D Rausher,AE,SE, Duke University,,Durham,NC,USA,USA
+EVOL,1986,40,NA,858,Douglas,W,Schemske,Douglas W Schemske,AE,SE, University of Chicago,,Chicago,IL,USA,USA
+EVOL,1986,40,NA,2565,Montgomery,,Slatkin,Montgomery Slatkin,AE,SE,University of California- Berkeley,,Berkeley,CA,USA,USA
+EVOL,1986,40,NA,1882,Janice,B,Spofford,Janice B Spofford,AE,SE,University of Chicago,,Chicago,IL,USA,USA
+EVOL,1986,40,NA,207,Andrew,Green,Stephenson,Andrew Green Stephenson,AE,SE,Pennsylvania State University,,University Park,PA,USA,USA
+EVOL,1986,40,NA,2584,Marcy,K,Uyenoyama,Marcy K Uyenoyama,AE,SE, Duke University,,Durham,NC,USA,USA
+EVOL,1986,40,NA,3241,Robert,C,Vrijenhoek,Robert C Vrijenhoek,AE,SE, Rutgers University,,New Brunswick,NJ,USA,USA
+EVOL,1986,40,NA,2595,Michael,J,Wade,Michael J Wade,AE,SE, University of Chicago,,Chicago,IL,USA,USA
+EVOL,1987,41,NA,1047,Fred,W,Allendorf,Fred W Allendorf,AE,SE, University of Montana,,Missoula,MT,USA,USA
+EVOL,1987,41,NA,383,Charles,F,Aquadro,Charles F Aquadro,AE,SE, Cornell University,,Ithaca,NY,USA,USA
+EVOL,1987,41,NA,31,Allan,M,Campbell,Allan M Campbell,Special.Editor,SPECIAL, Stanford University,,Stanford,CA,USA,USA
+EVOL,1987,41,NA,3521,Ted,J,Case,Ted J Case,AE,SE, University of California at San Diego,,La Jolla,CA,USA,USA
+EVOL,1987,41,NA,645,Douglas,R,Cavener,Douglas R Cavener,AE,SE, Vanderbilt University,,Nashville,TN,USA,USA
+EVOL,1987,41,NA,648,Deborah,,Charlesworth,Deborah Charlesworth,AE,SE,University of Chicago,,Chicago,IL,USA,USA
+EVOL,1987,41,NA,1509,James,M,Cheverud,James M Cheverud,AE,SE, Northwestern University,,Evanston,IL,USA,USA
+EVOL,1987,41,NA,1524,Jerry,A,Coyne,Jerry A Coyne,AE,SE, University of Chicago,,Chicago,IL,USA,USA
+EVOL,1987,41,NA,1561,John,A,Endler,John A Endler,AE,SE,University of Utah,,Salt Lake City,UT,USA,USA
+EVOL,1987,41,NA,1579,Joseph,,Frankel,Joseph Frankel,Special.Editor,SPECIAL,University of Iowa,,Iowa City,IA,USA,USA
+EVOL,1987,41,NA,1620,James,L,Hamrick,James L Hamrick,AE,SE, University of Georgia,,Athens,GA,USA,USA
+EVOL,1987,41,NA,308,Bruce,,Levin,Bruce Levin,AE,SE,University of Massachusetts- Amherst,,Amherst,MA,USA,USA
+EVOL,1987,41,NA,1772,Jeffry,B,Mitton,Jeffry B Mitton,Special.Editor,SPECIAL,University of Colorado,,Boulder,CO,USA,USA
+EVOL,1987,41,NA,3774,William,S,Moore,William S Moore,AE,SE, Wayne State University,,Detroit,MI,USA,USA
+EVOL,1987,41,NA,3611,Terumi,,Mukai,Terumi Mukai,AE,SE,Kyushu University,,Fukuoka,Kyushu,Japan,JPN
+EVOL,1987,41,NA,797,David,L,Nanney,David L Nanney,Special.Editor,SPECIAL,University of Illinois,,Champaign,IL,USA,USA
+EVOL,1987,41,NA,332,Brian,,Nichols,Brian Nichols,AE,SE,University of Illimois at Chicago,,Chicago,IL,USA,USA
+EVOL,1987,41,NA,2532,Mark,D,Rausher,Mark D Rausher,AE,SE, Duke University,,Durham,NC,USA,USA
+EVOL,1987,41,NA,858,Douglas,W,Schemske,Douglas W Schemske,AE,SE,University of Chicago,,Chicago,IL,USA,USA
+EVOL,1987,41,NA,864,Daniel,J,Schoen,Daniel J Schoen,AE,SE, McGill University,,Montreal,QC,Canada,CAN
+EVOL,1987,41,NA,2565,Montgomery,,Slatkin,Montgomery Slatkin,AE,SE,University of California- Berkeley,,Berkeley,CA,USA,USA
+EVOL,1987,41,NA,1882,Janice,B,Spofford,Janice B Spofford,AE,SE,University of Chicago,,Chicago,IL,USA,USA
+EVOL,1987,41,NA,207,Andrew,Green,Stephenson,Andrew Green Stephenson,AE,SE,Pennsylvania State University,,University Park,PA,USA,USA
+EVOL,1987,41,NA,2584,Marcy,K,Uyenoyama,Marcy K Uyenoyama,AE,SE,Duke University,,Durham,NC,USA,USA
+EVOL,1987,41,NA,3241,Robert,C,Vrijenhoek,Robert C Vrijenhoek,Editor,EIC,Rutgers Univeristy,,New Brunswick,NJ,USA,USA
+EVOL,1988,42,NA,1047,Fred,W,Allendorf,Fred W Allendorf,AE,SE,Univeristy of Montana,,Missoula,MT,USA,USA
+EVOL,1988,42,NA,383,Charles,F,Aquadro,Charles F Aquadro,AE,SE, Cornell University,,Ithaca,NY,USA,USA
+EVOL,1988,42,NA,1288,H,Jane,Brockmann,H Jane Brockmann,AE,SE,University of Florida,,Gainesville,FL,USA,USA
+EVOL,1988,42,NA,31,Allan,M,Campbell,Allan M Campbell,Special.Editor,SPECIAL,Stanford University,,Stanford,CA,USA,USA
+EVOL,1988,42,NA,645,Douglas,R,Cavener,Douglas R Cavener,AE,SE,Vanderbilt University,,Nashville,TN,USA,USA
+EVOL,1988,42,NA,648,Deborah,,Charlesworth,Deborah Charlesworth,AE,SE,University of Chicago,,Chicago,IL,USA,USA
+EVOL,1988,42,NA,1509,James,M,Cheverud,James M Cheverud,AE,SE, Northwestern University,,Evanston,IL,USA,USA
+EVOL,1988,42,NA,1524,Jerry,A,Coyne,Jerry A Coyne,AE,SE,University of Chicago,,Chicago,CA,USA,USA
+EVOL,1988,42,NA,1168,Gerdien,,DeJong,Gerdien DeJong,AE,SE,University of Utrecht,,Utrecht,Utrecht,Netherlands,NLD
+EVOL,1988,42,NA,1561,John,A,Endler,John A Endler,Special.Editor,SPECIAL,University of California- Santa Barbara,,Santa Barbara,CA,USA,USA
+EVOL,1988,42,NA,1620,James,L,Hamrick,James L Hamrick,AE,SE,University of Georgia,,Athens,GA,USA,USA
+EVOL,1988,42,NA,3348,Steven,N,Handel,Steven N Handel,AE,SE, Rutgers University,,New Brunswick,NJ,USA,USA
+EVOL,1988,42,NA,2825,Philip,W,Hedrick,Philip W Hedrick,AE,SE,University of Kansas,,Lawrence,KS,USA,USA
+EVOL,1988,42,NA,1654,John,,Jaenike,John Jaenike,AE,SE,University of Rochester,,Rochester,NY,USA,USA
+EVOL,1988,42,NA,2433,Margaret,Green,Kidwell,Margaret Green Kidwell,AE,SE,University of Arizona,,Tuscon,AZ,USA,USA
+EVOL,1988,42,NA,2041,Karel,F,Liem,Karel F Liem,AE,SE, Harvard University,,Cambridge,MA,USA,USA
+EVOL,1988,42,NA,2456,Michael,R,Lynch,Michael R Lynch,AE,SE,University of Illinois,,Champaign,IL,USA,USA
+EVOL,1988,42,NA,3154,Richard,E,Michod,Richard E Michod,Special.Editor,SPECIAL,University of Arizona,,Tuscon,AZ,USA,USA
+EVOL,1988,42,NA,1772,Jeffry,B,Mitton,Jeffry B Mitton,Special.Editor,SPECIAL,University of Colorado,,Boulder,CO,USA,USA
+EVOL,1988,42,NA,3774,William,S,Moore,William S Moore,AE,SE, Wayne State University,,Detroit,MI,USA,USA
+EVOL,1988,42,NA,3611,Terumi,,Mukai,Terumi Mukai,AE,SE,Kyushu University,,Fukuoka,Kyushu,Japan,JPN
+EVOL,1988,42,NA,332,Brian,,Nichols,Brian Nichols,AE,SE,University of Illinois at Chicago,,Chicago,IL,USA,USA
+EVOL,1988,42,NA,2060,Karl,J,Niklas,Karl J Niklas,AE,SE,Cornell University,,Ithaca,NY,USA,USA
+EVOL,1988,42,NA,2532,Mark,D,Rausher,Mark D Rausher,AE,SE, Duke University,,Durham,NC,USA,USA
+EVOL,1988,42,NA,864,Daniel,J,Schoen,Daniel J Schoen,AE,SE, McGill University,,Montreal,QC,Canada,CAN
+EVOL,1988,42,NA,2919,Peter,E,Smouse,Peter E Smouse,AE,SE,University of Michigan,,Ann Arbor,MI,USA,USA
+EVOL,1988,42,NA,2695,Nils,CHR,Stenseth,Nils CHR Stenseth,AE,SE,University of Oslo,,Oslo,Ostlandet,Norway,NOR
+EVOL,1988,42,NA,207,Andrew,Green,Stephenson,Andrew Green Stephenson,AE,SE,Pennsylvania State University,,University Park,PA,USA,USA
+EVOL,1988,42,NA,885,David,L,Swofford,David L Swofford,Special.Editor,SPECIAL,Illinois Natural History Survey ,,Champaign,IL,USA,USA
+EVOL,1988,42,NA,2584,Marcy,K,Uyenoyama,Marcy K Uyenoyama,AE,SE,Duke University,,Durham,NC,USA,USA
+EVOL,1988,42,NA,3241,Robert,C,Vrijenhoek,Robert C Vrijenhoek,Editor,EIC,Rutgers Univeristy,,New Brunswick,NJ,USA,USA
+EVOL,1989,43,NA,1047,Fred,W,Allendorf,Fred W Allendorf,AE,SE,University of Montana,,Missoula,MT,USA,USA
+EVOL,1989,43,NA,1442,Jonathan,,Arnold,Jonathan Arnold,AE,SE,University of Georgia,,Athens,GA,USA,USA
+EVOL,1989,43,NA,3276,Spencer,Ch,Barrett,Spencer Ch Barrett,AE,SE, University of Toronto,,Toronto,ON,Canada,CAN
+EVOL,1989,43,NA,1288,H,Jane,Brockmann,H Jane Brockmann,AE,SE,University of Florida,,Gainesville,FL,USA,USA
+EVOL,1989,43,NA,2314,Michael,Green,Bulmer,Michael Green Bulmer,AE,SE,University of Oxford,,Oxford,Oxfordshire,United Kingdom,GBR
+EVOL,1989,43,NA,40,Andrew,Green,Clark,Andrew Green Clark,AE,SE,Pennsylvania State University,,University Park,PA,USA,USA
+EVOL,1989,43,NA,1168,Gerdien,,DeJong,Gerdien DeJong,AE,SE,University of Utrecht,,Utrecht,Utrecht,Netherlands,NLD
+EVOL,1989,43,NA,2350,Michael,E,Douglas,Michael E Douglas,Special.Editor,SPECIAL, Arizona State University,,Tempe,AZ,USA,USA
+EVOL,1989,43,NA,1561,John,A,Endler,John A Endler,Special.Editor,SPECIAL,University of California- Santa Barbara,,Santa Barbara,CA,USA,USA
+EVOL,1989,43,NA,2004,Karl,W,Flessa,Karl W Flessa,Special.Editor,SPECIAL,University of Arizona,,Tuscon,AZ,USA,USA
+EVOL,1989,43,NA,3348,Steven,N,Handel,Steven N Handel,AE,SE, Rutgers University,,New Brunswick,NJ,USA,USA
+EVOL,1989,43,NA,2825,Philip,W,Hedrick,Philip W Hedrick,AE,SE,Univeristy of Kansas,,Lawrence,KS,USA,USA
+EVOL,1989,43,NA,3096,Rodney,L,Honeycutt,Rodney L Honeycutt,AE,SE, Museum of Comparative Zoology,,Cambridge,MA,USA,USA
+EVOL,1989,43,NA,3101,Raymond,B,Huey,Raymond B Huey,AE,SE,University of Washington,,Seattle,WA,USA,USA
+EVOL,1989,43,NA,1654,John,,Jaenike,John Jaenike,AE,SE,University of Rochester,,Rochester,NY,USA,USA
+EVOL,1989,43,NA,2433,Margaret,Green,Kidwell,Margaret Green Kidwell,AE,SE,University of Arizona,,Tuscon,AZ,USA,USA
+EVOL,1989,43,NA,2041,Karel,F,Liem,Karel F Liem,AE,SE, Harvard University,,Cambridge,MA,USA,USA
+EVOL,1989,43,NA,2456,Michael,R,Lynch,Michael R Lynch,AE,SE,University of Illinois,,Champaign,IL,USA,USA
+EVOL,1989,43,NA,3603,Thomas,R,Meagher,Thomas R Meagher,AE,SE,Rutgers University,,New Brunswick,NJ,USA,USA
+EVOL,1989,43,NA,3154,Richard,E,Michod,Richard E Michod,Special.Editor,SPECIAL,University of Arizona,,Tuscon,AZ,USA,USA
+EVOL,1989,43,NA,1772,Jeffry,B,Mitton,Jeffry B Mitton,Special.Editor,SPECIAL,University of Colorado,,Boulder,CO,USA,USA
+EVOL,1989,43,NA,3774,William,S,Moore,William S Moore,AE,SE, Wayne State University,,Detroit,MI,USA,USA
+EVOL,1989,43,NA,2060,Karl,J,Niklas,Karl J Niklas,AE,SE, Cornell University,,Ithaca,NY,USA,USA
+EVOL,1989,43,NA,1803,James,L,Patton,James L Patton,AE,SE, University of California- Berkeley,,Berkeley,CA,USA,USA
+EVOL,1989,43,NA,1836,John,M,Ringo,John M Ringo,AE,SE, University of Maine,,Orono,ME,USA,USA
+EVOL,1989,43,NA,852,Daniel,I,Rubenstein,Daniel I Rubenstein,AE,SE, Princeton University,,Princeton,NJ,USA,USA
+EVOL,1989,43,NA,2919,Peter,E,Smouse,Peter E Smouse,AE,SE,University of Michigan,,Ann Arbor,MI,USA,USA
+EVOL,1989,43,NA,2695,Nils,CHR,Stenseth,Nils CHR Stenseth,AE,SE,University of Oslo,,Oslo,Ostlandet,Norway,NOR
+EVOL,1989,43,NA,207,Andrew,Green,Stephenson,Andrew Green Stephenson,AE,SE,Pennsylvania State University,,University Park,PA,USA,USA
+EVOL,1989,43,NA,3241,Robert,C,Vrijenhoek,Robert C Vrijenhoek,Editor,EIC,Rutgers Univeristy,,New Brunswick,NJ,USA,USA
+EVOL,1990,44,NA,1442,Jonathan,,Arnold,Jonathan Arnold,AE,SE,University of Georgia,,Athens,GA,USA,USA
+EVOL,1990,44,NA,3276,Spencer,Ch,Barrett,Spencer Ch Barrett,AE,SE, University of Toronto,,Toronto,ON,Canada,CAN
+EVOL,1990,44,NA,2296,May,R,Berenbaum,May R Berenbaum,AE,SE, University of Illinois,,Champaign,IL,USA,USA
+EVOL,1990,44,NA,1489,James,J,Bull,James J Bull,AE,SE, University of Texas,,Austin,TX,USA,USA
+EVOL,1990,44,NA,2314,Michael,Green,Bulmer,Michael Green Bulmer,AE,SE,University of Oxford,,Oxford,Oxfordshire,United Kingdom,GBR
+EVOL,1990,44,NA,40,Andrew,Green,Clark,Andrew Green Clark,AE,SE,Pennsylvania State University,,University Park,PA,USA,USA
+EVOL,1990,44,NA,1297,Hugh,,Dingle,Hugh Dingle,Special.Editor,SPECIAL,University of California- Davis,,Davis,CA,USA,USA
+EVOL,1990,44,NA,2349,Michael,J,Donoghue,Michael J Donoghue,AE,SE, University of Arizona,,Tuscon,AZ,USA,USA
+EVOL,1990,44,NA,2350,Michael,E,Douglas,Michael E Douglas,Special.Editor,SPECIAL, Arizona State University,,Tempe,AZ,USA,USA
+EVOL,1990,44,NA,1561,John,A,Endler,John A Endler,Editor,EIC,University of California- Santa Barbara,,Santa Barbara,CA,USA,USA
+EVOL,1990,44,NA,2004,Karl,W,Flessa,Karl W Flessa,Special.Editor,SPECIAL, University of Arizona,,Tuscon,AZ,USA,USA
+EVOL,1990,44,NA,2825,Philip,W,Hedrick,Philip W Hedrick,AE,SE, Pennsylvania State University,,State College,PE,USA,USA
+EVOL,1990,44,NA,481,Carole,S,Hickman,Carole S Hickman,AE,SE, University of California,,Oakland,CA,USA,USA
+EVOL,1990,44,NA,3095,Robert,D,Holt,Robert D Holt,AE,SE, University of Kansas,,Lawrence,KS,USA,USA
+EVOL,1990,44,NA,3096,Rodney,L,Honeycutt,Rodney L Honeycutt,AE,SE, Texas A&M University,,College Station,TX,USA,USA
+EVOL,1990,44,NA,3101,Raymond,B,Huey,Raymond B Huey,AE,SE, University of Washington,,Seattle,WA,USA,USA
+EVOL,1990,44,NA,1652,Jeremy,,Jackson,Jeremy Jackson,AE,SE,Smithsonian Tropical Research Institute,,Miami,FL,USA,USA
+EVOL,1990,44,NA,1654,John,,Jaenike,John Jaenike,AE,SE,University of Rochester,,Rochester,NY,USA,USA
+EVOL,1990,44,NA,129,Armand,,Kuris,Armand Kuris,Special.Editor,SPECIAL,University of California- Santa Barbara,,Santa Barbara,CA,USA,USA
+EVOL,1990,44,NA,3134,Richard,E,Lenski,Richard E Lenski,AE,SE,University of California- Irvine,,Irvine,CA,USA,USA
+EVOL,1990,44,NA,2456,Michael,R,Lynch,Michael R Lynch,AE,SE, University of Oregon,,Eugene,OR,USA,USA
+EVOL,1990,44,NA,3595,Trudy,Fc,Mackay,Trudy Fc Mackay,AE,SE, North Carolina State University,,Raleigh,NC,USA,USA
+EVOL,1990,44,NA,3597,Therese,A,Markow,Therese A Markow,AE,SE,Arizona State University,,Tempe,AZ,USA,USA
+EVOL,1990,44,NA,3603,Thomas,R,Meagher,Thomas R Meagher,AE,SE, Rutgers University,,New Brunswick,NJ,USA,USA
+EVOL,1990,44,NA,3154,Richard,E,Michod,Richard E Michod,Special.Editor,SPECIAL, University of Arizona,,Tuscon,AZ,USA,USA
+EVOL,1990,44,NA,2219,Linda,,Partridge,Linda Partridge,AE,SE,University of Edinburgh,,Edinburgh,Scotland,United Kingdom,GBR
+EVOL,1990,44,NA,1803,James,L,Patton,James L Patton,AE,SE, University of California,,Oakland,CA,USA,USA
+EVOL,1990,44,NA,1836,John,M,Ringo,John M Ringo,AE,SE, University of Maine,,Orono,ME,USA,USA
+EVOL,1990,44,NA,852,Daniel,I,Rubenstein,Daniel I Rubenstein,AE,SE, Princeton University,,Princeton,NJ,USA,USA
+EVOL,1990,44,NA,1857,Johanna,M,Schmitt,Johanna M Schmitt,AE,SE, Brown University,,Providence,RI,USA,USA
+EVOL,1990,44,NA,2695,Nils,CHR,Stenseth,Nils CHR Stenseth,AE,SE, University of Oslo,,Oslo,Ostlandet,Norway,NOR
+EVOL,1990,44,NA,3231,Randy,,Thornhill,Randy Thornhill,AE,SE,University of New Mexico,,Albuquerque,NM,USA,USA
+EVOL,1991,45,NA,1442,Jonathan,,Arnold,Jonathan Arnold,AE,SE,Univeristy of Georgia,,Athens,GA,USA,USA
+EVOL,1991,45,NA,3276,Spencer,Ch,Barrett,Spencer Ch Barrett,AE,SE, University of Toronto,,Toronto,ON,Canada,CAN
+EVOL,1991,45,NA,2296,May,R,Berenbaum,May R Berenbaum,Special.Editor,SPECIAL, University of Illinois,,Champaign,IL,USA,USA
+EVOL,1991,45,NA,1489,James,J,Bull,James J Bull,AE,SE, University of Texas,,Austin,TX,USA,USA
+EVOL,1991,45,NA,2314,Michael,Green,Bulmer,Michael Green Bulmer,AE,SE,Univeristy of Oxford,,Oxford,Oxfordshire,United Kingdom,GBR
+EVOL,1991,45,NA,254,Brian,,Charlesworth,Brian Charlesworth,AE,SE,University of Chicago,,Chicago,IL,USA,USA
+EVOL,1991,45,NA,40,Andrew,Green,Clark,Andrew Green Clark,AE,SE,Pennsylvania State University,,University Park,PA,USA,USA
+EVOL,1991,45,NA,1297,Hugh,,Dingle,Hugh Dingle,Special.Editor,SPECIAL,University of California- Davis,,Davis,CA,USA,USA
+EVOL,1991,45,NA,2349,Michael,J,Donoghue,Michael J Donoghue,AE,SE, University of Arizona,,Tuscon,AZ,USA,USA
+EVOL,1991,45,NA,2350,Michael,E,Douglas,Michael E Douglas,Special.Editor,SPECIAL, Arizona State University,,Tempe,AZ,USA,USA
+EVOL,1991,45,NA,1561,John,A,Endler,John A Endler,Editor,EIC,University of California- Santa Barbara,,Santa Barbara,CA,USA,USA
+EVOL,1991,45,NA,1621,James,,Hanken,James Hanken,AE,SE,University of Colorado- Boulder,,Boulder,CO,USA,USA
+EVOL,1991,45,NA,3084,Richard,,Harrison,Richard Harrison,AE,SE,Cornell University,,Ithaca,NY,USA,USA
+EVOL,1991,45,NA,1202,Godfrey,,Hewitt,Godfrey Hewitt,AE,SE,University of East Anglia,,Norwich,Norfolk,United Kingdom,GBR
+EVOL,1991,45,NA,481,Carole,S,Hickman,Carole S Hickman,AE,SE,University of California- Berkeley,,Berkeley,CA,USA,USA
+EVOL,1991,45,NA,3095,Robert,D,Holt,Robert D Holt,AE,SE, University of Kansas,,Lawrence,KS,USA,USA
+EVOL,1991,45,NA,3096,Rodney,L,Honeycutt,Rodney L Honeycutt,AE,SE, Texas A&M University,,College Station,TX,USA,USA
+EVOL,1991,45,NA,1652,Jeremy,,Jackson,Jeremy Jackson,AE,SE,Smithsonian Tropical Research Institute,,Miami,FL,USA,USA
+EVOL,1991,45,NA,129,Armand,,Kuris,Armand Kuris,Special.Editor,SPECIAL,University of California- Santa Barbara,,Santa Barbara,CA,USA,USA
+EVOL,1991,45,NA,2443,Marcy,,Lawton,Marcy Lawton,Special.Editor,SPECIAL,University of Alabama- Huntsville,,Huntsville,AL,USA,USA
+EVOL,1991,45,NA,3134,Richard,E,Lenski,Richard E Lenski,AE,SE,University of California- Irvine,,Irvine,CA,USA,USA
+EVOL,1991,45,NA,3837,Yan,B,Linhart,Yan B Linhart,AE,SE, University of Colorado- Boulder,,Boulder,CO,USA,USA
+EVOL,1991,45,NA,3595,Trudy,Fc,Mackay,Trudy Fc Mackay,AE,SE, North Carolina State University,,Raleigh,NC,USA,USA
+EVOL,1991,45,NA,3597,Therese,A,Markow,Therese A Markow,AE,SE,Arizona State University,,Tempe,AZ,USA,USA
+EVOL,1991,45,NA,3603,Thomas,R,Meagher,Thomas R Meagher,AE,SE, Rutgers University,,New Brunswick,NJ,USA,USA
+EVOL,1991,45,NA,2481,Michael,M,Miyamoto,Michael M Miyamoto,AE,SE, University of Florida,,Gainesville,FL,USA,USA
+EVOL,1991,45,NA,2060,Karl,J,Niklas,Karl J Niklas,AE,SE, Cornell University,,Ithaca,NY,USA,USA
+EVOL,1991,45,NA,2219,Linda,,Partridge,Linda Partridge,AE,SE,University of Edinburgh,,Edinburgh,Scotland,United Kingdom,GBR
+EVOL,1991,45,NA,1803,James,L,Patton,James L Patton,AE,SE,University of California- Berkeley,,Berkeley,CA,USA,USA
+EVOL,1991,45,NA,839,David,,Reznick,David Reznick,AE,SE,University of California- Riverside,,Riverside,CA,USA,USA
+EVOL,1991,45,NA,1836,John,M,Ringo,John M Ringo,AE,SE, University of Maine,,Orono,ME,USA,USA
+EVOL,1991,45,NA,1857,Johanna,M,Schmitt,Johanna M Schmitt,AE,SE, Brown University,,Providence,RI,USA,USA
+EVOL,1991,45,NA,1861,Jon,,Seger,Jon Seger,AE,SE,University of Utah,,Salt Lake City,UT,USA,USA
+EVOL,1991,45,NA,2916,Philip,M,Service,Philip M Service,AE,SE, Northern Arizona University,,Flagstaff,AZ,USA,USA
+EVOL,1991,45,NA,352,Brad,,Shaffer,Brad Shaffer,AE,SE,University of California- Davis,,Davis,CA,USA,USA
+EVOL,1991,45,NA,3231,Randy,,Thornhill,Randy Thornhill,AE,SE,Univeristy of New Mexico,,Albuquerque,NM,USA,USA
+EVOL,1992,46,NA,2296,May,R,Berenbaum,May R Berenbaum,Special.Editor,SPECIAL, University of Illinois,,Champaign,IL,USA,USA
+EVOL,1992,46,NA,1489,James,J,Bull,James J Bull,AE,SE, University of Texas,,Austin,TX,USA,USA
+EVOL,1992,46,NA,642,Diane,,Campbell,Diane Campbell,AE,SE,University of California- Irvine,,Irvine,CA,USA,USA
+EVOL,1992,46,NA,254,Brian,,Charlesworth,Brian Charlesworth,AE,SE,University of Chicago,,Chicago,IL,USA,USA
+EVOL,1992,46,NA,2349,Michael,J,Donoghue,Michael J Donoghue,AE,SE, University of Arizona,,Tuscon,AZ,USA,USA
+EVOL,1992,46,NA,2350,Michael,E,Douglas,Michael E Douglas,Special.Editor,SPECIAL, Arizona State University,,Tempe,AZ,USA,USA
+EVOL,1992,46,NA,1561,John,A,Endler,John A Endler,Editor,EIC,University of California- Santa Barbara,,Santa Barbara,CA,USA,USA
+EVOL,1992,46,NA,458,Candace,,Galen,Candace Galen,AE,SE,University of Missouri,,Columbia,MO,USA,USA
+EVOL,1992,46,NA,3078,Richard,K,Grosberg,Richard K Grosberg,AE,SE,University of California- Davis,,Davis,CA,USA,USA
+EVOL,1992,46,NA,1621,James,,Hanken,James Hanken,AE,SE,University of Colorado- Boulder,,Boulder,CO,USA,USA
+EVOL,1992,46,NA,3084,Richard,,Harrison,Richard Harrison,AE,SE,Cornell University,,Ithaca,NY,USA,USA
+EVOL,1992,46,NA,1202,Godfrey,,Hewitt,Godfrey Hewitt,AE,SE,University of East Anglia,,Norwich,Norfolk,United Kingdom,GBR
+EVOL,1992,46,NA,481,Carole,S,Hickman,Carole S Hickman,AE,SE,University of California- Berkeley,,Berkeley,CA,USA,USA
+EVOL,1992,46,NA,3095,Robert,D,Holt,Robert D Holt,AE,SE, University of Kansas,,Lawrence,KS,USA,USA
+EVOL,1992,46,NA,1652,Jeremy,,Jackson,Jeremy Jackson,AE,SE,Smithsonian Tropical Research Institute,,Miami,FL,USA,USA
+EVOL,1992,46,NA,129,Armand,,Kuris,Armand Kuris,Special.Editor,SPECIAL,University of California- Santa Barbara,,Santa Barbara,CA,USA,USA
+EVOL,1992,46,NA,1216,George,V,Lauder,George V Lauder,Special.Editor,SPECIAL,University of California- Irvine,,Irvine,CA,USA,USA
+EVOL,1992,46,NA,2443,Marcy,,Lawton,Marcy Lawton,Special.Editor,SPECIAL,University of Alabama- Huntsville,,Huntsville,AL,USA,USA
+EVOL,1992,46,NA,3134,Richard,E,Lenski,Richard E Lenski,AE,SE, Michigan State University,,East Lansing,MI,USA,USA
+EVOL,1992,46,NA,3837,Yan,B,Linhart,Yan B Linhart,AE,SE,University of Colorado- Boulder,,Boulder,CO,USA,USA
+EVOL,1992,46,NA,3595,Trudy,Fc,Mackay,Trudy Fc Mackay,AE,SE, North Carolina State University,,Raleigh,NC,USA,USA
+EVOL,1992,46,NA,3597,Therese,A,Markow,Therese A Markow,AE,SE,Arizona State University,,Tempe,AZ,USA,USA
+EVOL,1992,46,NA,3603,Thomas,R,Meagher,Thomas R Meagher,AE,SE, Rutgers University,,New Brunswick,NJ,USA,USA
+EVOL,1992,46,NA,2481,Michael,M,Miyamoto,Michael M Miyamoto,AE,SE, University of Florida,,Gainesville,FL,USA,USA
+EVOL,1992,46,NA,2060,Karl,J,Niklas,Karl J Niklas,AE,SE, Cornell University,,Ithaca,NY,USA,USA
+EVOL,1992,46,NA,163,A,Richard,Palmer,A Richard Palmer,AE,SE, University of Alberta,,Edmonton,AB,Canada,CAN
+EVOL,1992,46,NA,2503,Matthew,,Parker,Matthew Parker,AE,SE,State University of New York at Binghamton,,Binghamton,NY,USA,USA
+EVOL,1992,46,NA,2219,Linda,,Partridge,Linda Partridge,AE,SE,University of Edinburgh,,Edinburgh,Scotland,United Kingdom,GBR
+EVOL,1992,46,NA,839,David,,Reznick,David Reznick,AE,SE,University of California- Riverside,,Riverside,CA,USA,USA
+EVOL,1992,46,NA,862,Dolph,,Schluter,Dolph Schluter,AE,SE,University of British Columbia,,Vancouver,BC,Canada,CAN
+EVOL,1992,46,NA,1857,Johanna,M,Schmitt,Johanna M Schmitt,AE,SE, Brown University,,Providence,RI,USA,USA
+EVOL,1992,46,NA,1861,Jon,,Seger,Jon Seger,AE,SE,University of Utah,,Salt Lake City,UT,USA,USA
+EVOL,1992,46,NA,2916,Philip,M,Service,Philip M Service,AE,SE,Northern Arizona University,,Flagstaff,AZ,USA,USA
+EVOL,1992,46,NA,352,Brad,,Shaffer,Brad Shaffer,AE,SE,University of California- Davis,,Davis,CA,USA,USA
+EVOL,1992,46,NA,195,Art,,Shapiro,Art Shapiro,Special.Editor,SPECIAL,University of California- Davis,,Davis,CA,USA,USA
+EVOL,1992,46,NA,3231,Randy,,Thornhill,Randy Thornhill,AE,SE,University of New Mexico,,Albuquerque,NM,USA,USA
+EVOL,1992,46,NA,1935,J,Bruce,Walsh,J Bruce Walsh,AE,SE, University of Arizona,,Tuscon,AZ,USA,USA
+EVOL,1992,46,NA,3815,Ward,B,Watt,Ward B Watt,AE,SE, Stanford University,,Stanford,CA,USA,USA
+EVOL,1993,47,NA,2296,May,R,Berenbaum,May R Berenbaum,Special.Editor,SPECIAL, University of Illinois,,Champaign,IL,USA,USA
+EVOL,1993,47,NA,642,Diane,,Campbell,Diane Campbell,AE,SE,University of California- Irvine,,Irvine,CA,USA,USA
+EVOL,1993,47,NA,2135,Lin,,Chao,Lin Chao,AE,SE,University of Maryland,,College Park,MD,USA,USA
+EVOL,1993,47,NA,254,Brian,,Charlesworth,Brian Charlesworth,AE,SE,University of Chicago,,Chicago,IL,USA,USA
+EVOL,1993,47,NA,2350,Michael,E,Douglas,Michael E Douglas,Special.Editor,SPECIAL, Arizona State University,,Tempe,AZ,USA,USA
+EVOL,1993,47,NA,3735,Walter,,Eanes,Walter Eanes,AE,SE,State University of New York at Stony Brook,,Stony Brook,NY,USA,USA
+EVOL,1993,47,NA,458,Candace,,Galen,Candace Galen,AE,SE,University of Missouri,,Columbia,MO,USA,USA
+EVOL,1993,47,NA,3078,Richard,K,Grosberg,Richard K Grosberg,AE,SE,University of California- Davis,,Davis,CA,USA,USA
+EVOL,1993,47,NA,1621,James,,Hanken,James Hanken,AE,SE,University of Colorado- Boulder,,Boulder,CO,USA,USA
+EVOL,1993,47,NA,3084,Richard,,Harrison,Richard Harrison,AE,SE,Cornell University,,Ithaca,NY,USA,USA
+EVOL,1993,47,NA,1202,Godfrey,,Hewitt,Godfrey Hewitt,AE,SE,University of East Anglia,,Norwich,Norfolk,United Kingdom,GBR
+EVOL,1993,47,NA,3095,Robert,D,Holt,Robert D Holt,AE,SE, University of Kansas,,Lawrence,KS,USA,USA
+EVOL,1993,47,NA,129,Armand,,Kuris,Armand Kuris,Special.Editor,SPECIAL,University of California- Santa Barbara,,Santa Barbara,CA,USA,USA
+EVOL,1993,47,NA,1216,George,V,Lauder,George V Lauder,Special.Editor,SPECIAL,University of California- Irvine,,Irvine,CA,USA,USA
+EVOL,1993,47,NA,2443,Marcy,,Lawton,Marcy Lawton,Special.Editor,SPECIAL,University of Alabama- Huntsville,,Huntsville,AL,USA,USA
+EVOL,1993,47,NA,3837,Yan,B,Linhart,Yan B Linhart,AE,SE,University of Colorado- Boulder,,Boulder,CO,USA,USA
+EVOL,1993,47,NA,773,David,R,Maddison,David R Maddison,AE,SE, University of Arizona,,Tuscon,AZ,USA,USA
+EVOL,1993,47,NA,3603,Thomas,R,Meagher,Thomas R Meagher,AE,SE, Rutgers University,,New Brunswick,NJ,USA,USA
+EVOL,1993,47,NA,2060,Karl,J,Niklas,Karl J Niklas,AE,SE, Cornell University,,Ithaca,NY,USA,USA
+EVOL,1993,47,NA,163,A,Richard,Palmer,A Richard Palmer,AE,SE, University of Alberta,,Edmonton,AB,Canada,CAN
+EVOL,1993,47,NA,2503,Matthew,,Parker,Matthew Parker,AE,SE,State University of New York at Binghamton,,Binghamton,NY,USA,USA
+EVOL,1993,47,NA,839,David,,Reznick,David Reznick,AE,SE,University of California- Riverside,,Riverside,CA,USA,USA
+EVOL,1993,47,NA,862,Dolph,,Schluter,Dolph Schluter,AE,SE,University of British Columbia,,Vancouver,BC,Canada,CAN
+EVOL,1993,47,NA,1861,Jon,,Seger,Jon Seger,AE,SE,University of Utah,,Salt Lake City,UT,USA,USA
+EVOL,1993,47,NA,2916,Philip,M,Service,Philip M Service,AE,SE, Northern Arizona University,,Flagstaff,AZ,USA,USA
+EVOL,1993,47,NA,1360,H,Bradley,Shaffer,H Bradley Shaffer,AE,SE, University of California- Davis,,Davis,CA,USA,USA
+EVOL,1993,47,NA,3808,Wolfgang,,Stephan,Wolfgang Stephan,AE,SE,University of Maryland,,College Park,MD,USA,USA
+EVOL,1993,47,NA,372,Blaire,,VanValkenburgh,Blaire VanValkenburgh,AE,SE,University of California- Los Angeles,,Los Angeles,CA,USA,USA
+EVOL,1993,47,NA,1267,Geerat,J,Vermeij,Geerat J Vermeij,Editor,EIC,University of California- Davis,,Davis,CA,USA,USA
+EVOL,1993,47,NA,1935,J,Bruce,Walsh,J Bruce Walsh,AE,SE, University of Arizona,,Tuscon,AZ,USA,USA
+EVOL,1993,47,NA,3815,Ward,B,Watt,Ward B Watt,AE,SE, Stanford University,,Stanford,CA,USA,USA
+EVOL,1994,48,NA,2750,Peter,A,Abrams,Peter A Abrams,AE,SE,University of British Columbia,,Vancouver,BC,Canada,CAN
+EVOL,1994,48,NA,16,Albert,F,Bennett,Albert F Bennett,AE,SE, Michigan State University,,East Lansing,MI,USA,USA
+EVOL,1994,48,NA,2296,May,R,Berenbaum,May R Berenbaum,Special.Editor,SPECIAL, University of Illinois,,Champaign,IL,USA,USA
+EVOL,1994,48,NA,642,Diane,,Campbell,Diane Campbell,AE,SE,University of California- Irvine,,Irvine,CA,USA,USA
+EVOL,1994,48,NA,1500,James,R,Carey,James R Carey,AE,SE,University of California- Davis,,Davis,CA,USA,USA
+EVOL,1994,48,NA,1532,James,W,Curtsinger,James W Curtsinger,AE,SE, University of Minnesota,,St. Paul,MN,USA,USA
+EVOL,1994,48,NA,2350,Michael,E,Douglas,Michael E Douglas,Special.Editor,SPECIAL, Arizona State University,,Tempe,AZ,USA,USA
+EVOL,1994,48,NA,682,Daphne,J,Fairbairn,Daphne J Fairbairn,AE,SE, Concordia University,,Montreal,QC,Canada,CAN
+EVOL,1994,48,NA,458,Candace,,Galen,Candace Galen,AE,SE,University of Missouri,,Columbia,MO,USA,USA
+EVOL,1994,48,NA,3078,Richard,K,Grosberg,Richard K Grosberg,AE,SE,University of California- Davis,,Davis,CA,USA,USA
+EVOL,1994,48,NA,3564,Thomas,J,Hilbish,Thomas J Hilbish,AE,SE, University of South Carolina,,Columbia,SC,USA,USA
+EVOL,1994,48,NA,3095,Robert,D,Holt,Robert D Holt,AE,SE, University of Kansas,,Lawrence,KS,USA,USA
+EVOL,1994,48,NA,729,Daniel,J,Howard,Daniel J Howard,AE,SE,New Mexico State University,,Las Cruces,NM,USA,USA
+EVOL,1994,48,NA,129,Armand,,Kuris,Armand Kuris,Special.Editor,SPECIAL,University of California- Santa Barbara,,Santa Barbara,CA,USA,USA
+EVOL,1994,48,NA,133,Allan,,Larson,Allan Larson,AE,SE,Washington University,,St. Louis,MO,USA,USA
+EVOL,1994,48,NA,1216,George,V,Lauder,George V Lauder,Special.Editor,SPECIAL,University of California- Irvine,,Irvine,CA,USA,USA
+EVOL,1994,48,NA,2443,Marcy,,Lawton,Marcy Lawton,Special.Editor,SPECIAL,University of Alabama- Huntsville,,Huntsville,AL,USA,USA
+EVOL,1994,48,NA,773,David,R,Maddison,David R Maddison,AE,SE, University of Arizona,,Tuscon,AZ,USA,USA
+EVOL,1994,48,NA,531,Charles,,Mitter,Charles Mitter,AE,SE,University of Maryland,,College Park,MD,USA,USA
+EVOL,1994,48,NA,2060,Karl,J,Niklas,Karl J Niklas,AE,SE,Cornell University,,Ithaca,NY,USA,USA
+EVOL,1994,48,NA,163,A,Richard,Palmer,A Richard Palmer,AE,SE,University of Alberta,,Edmonton,AB,Canada,CAN
+EVOL,1994,48,NA,2503,Matthew,,Parker,Matthew Parker,AE,SE,State University of New York at Binghamton,,Binghamton,NY,USA,USA
+EVOL,1994,48,NA,2525,Mary,V,Price,Mary V Price,AE,SE,University of California- Riverside,,Riverside,CA,USA,USA
+EVOL,1994,48,NA,3786,William,R,Rice,William R Rice,AE,SE,University of California- Santa Cruz,,Santa Cruz,CA,USA,USA
+EVOL,1994,48,NA,3697,V,Louise,Roth,V Louise Roth,AE,SE,Duke University,,Durham,NC,USA,USA
+EVOL,1994,48,NA,2547,Michael,J,Ryan,Michael J Ryan,AE,SE,University of Texas,,Austin,TX,USA,USA
+EVOL,1994,48,NA,862,Dolph,,Schluter,Dolph Schluter,AE,SE,University of British Columbia,,Vancouver,BC,Canada,CAN
+EVOL,1994,48,NA,3808,Wolfgang,,Stephan,Wolfgang Stephan,AE,SE,University of Maryland,,College Park,MD,USA,USA
+EVOL,1994,48,NA,372,Blaire,,VanValkenburgh,Blaire VanValkenburgh,AE,SE,University of California- Los Angeles,,Los Angeles,CA,USA,USA
+EVOL,1994,48,NA,1267,Geerat,J,Vermeij,Geerat J Vermeij,Editor,EIC,University of California- Davis,,Davis,CA,USA,USA
+EVOL,1994,48,NA,3494,Sara,,Via,Sara Via,AE,SE,University of Oregon,,Eugene,OR,USA,USA
+EVOL,1994,48,NA,1269,Gunter,P,Wagner,Gunter P Wagner,AE,SE, Yale University,,New Haven,CT,USA,USA
+EVOL,1994,48,NA,901,Donald,M,Waller,Donald M Waller,AE,SE, University of Wisconsin,,Madison,WI,USA,USA
+EVOL,1994,48,NA,1935,J,Bruce,Walsh,J Bruce Walsh,AE,SE, University of Arizona,,Tuscon,AZ,USA,USA
+EVOL,1994,48,NA,1948,John,,Werren,John Werren,AE,SE,University of Rochester,,Rochester,NY,USA,USA
+EVOL,1994,48,NA,3261,Robert,M,Zink,Robert M Zink,AE,SE,University of Minnesota,,St. Paul,MN,USA,USA
+EVOL,1995,49,NA,2750,Peter,A,Abrams,Peter A Abrams,AE,SE,University of Minnesota,,St. Paul,MN,USA,USA
+EVOL,1995,49,NA,16,Albert,F,Bennett,Albert F Bennett,AE,SE,University of California- Irvine,,Irvine,CA,USA,USA
+EVOL,1995,49,NA,2296,May,R,Berenbaum,May R Berenbaum,Special.Editor,SPECIAL,University of Illinois,,Champaign,IL,USA,USA
+EVOL,1995,49,NA,1500,James,R,Carey,James R Carey,AE,SE,University of California- Davis,,Davis,CA,USA,USA
+EVOL,1995,49,NA,1524,Jerry,A,Coyne,Jerry A Coyne,Special.Editor,SPECIAL,University of Chicago,,Chicago,IL,USA,USA
+EVOL,1995,49,NA,1532,James,W,Curtsinger,James W Curtsinger,AE,SE,University of Minnesota,,St. Paul,MN,USA,USA
+EVOL,1995,49,NA,2350,Michael,E,Douglas,Michael E Douglas,Special.Editor,SPECIAL,Arizona State University,,Tempe,AZ,USA,USA
+EVOL,1995,49,NA,682,Daphne,J,Fairbairn,Daphne J Fairbairn,AE,SE,Concordia University,,Montreal,QC,Canada,CAN
+EVOL,1995,49,NA,98,Alan,,Hastings,Alan Hastings,AE,SE,University of California- Davis,,Davis,CA,USA,USA
+EVOL,1995,49,NA,3564,Thomas,J,Hilbish,Thomas J Hilbish,AE,SE,University of South Carolina,,Columbia,SC,USA,USA
+EVOL,1995,49,NA,3095,Robert,D,Holt,Robert D Holt,AE,SE, University of Kansas,,Lawrence,KS,USA,USA
+EVOL,1995,49,NA,729,Daniel,J,Howard,Daniel J Howard,AE,SE, New Mexico State University,,Las Cruces,NM,USA,USA
+EVOL,1995,49,NA,2657,Nancy,,Knowlton,Nancy Knowlton,AE,SE,Smithsonian Tropical Research Institute,,Panama City,Panama,USA,USA
+EVOL,1995,49,NA,129,Armand,,Kuris,Armand Kuris,Special.Editor,SPECIAL,University of California- Santa Barbara,,Santa Barbara,CA,USA,USA
+EVOL,1995,49,NA,133,Allan,,Larson,Allan Larson,AE,SE,Washington University,,St. Louis,MO,USA,USA
+EVOL,1995,49,NA,1216,George,V,Lauder,George V Lauder,Special.Editor,SPECIAL,University of California- Irvine,,Irvine,CA,USA,USA
+EVOL,1995,49,NA,2443,Marcy,,Lawton,Marcy Lawton,Special.Editor,SPECIAL,University of Alabama- Huntsville,,Huntsville,AL,USA,USA
+EVOL,1995,49,NA,773,David,R,Maddison,David R Maddison,AE,SE, University of Arizona,,Tuscon,AZ,USA,USA
+EVOL,1995,49,NA,3605,Thomas,,Mitchell-Olds,Thomas Mitchell-Olds,AE,SE,University of Montana,,Missoula,MT,USA,USA
+EVOL,1995,49,NA,531,Charles,,Mitter,Charles Mitter,AE,SE,University of Maryland,,College Park,MD,USA,USA
+EVOL,1995,49,NA,2060,Karl,J,Niklas,Karl J Niklas,AE,SE, Cornell University,,Ithaca,NY,USA,USA
+EVOL,1995,49,NA,163,A,Richard,Palmer,A Richard Palmer,AE,SE, University of Alberta,,Edmonton,AB,Canada,CAN
+EVOL,1995,49,NA,2525,Mary,V,Price,Mary V Price,AE,SE,University of California- Riverside,,Riverside,CA,USA,USA
+EVOL,1995,49,NA,3786,William,R,Rice,William R Rice,AE,SE,University of California- Santa Cruz,,Santa Cruz,CA,USA,USA
+EVOL,1995,49,NA,3697,V,Louise,Roth,V Louise Roth,AE,SE, Duke University,,Durham,NC,USA,USA
+EVOL,1995,49,NA,2547,Michael,J,Ryan,Michael J Ryan,AE,SE, University of Texas,,Austin,TX,USA,USA
+EVOL,1995,49,NA,1875,Jack,W,Sites,Jack W Sites,AE,SE, Brigham Young University,,Provo,UT,USA,USA
+EVOL,1995,49,NA,202,Allison,,Snow,Allison Snow,AE,SE,Ohio State University,,Columbus,OH,USA,USA
+EVOL,1995,49,NA,3808,Wolfgang,,Stephan,Wolfgang Stephan,AE,SE,University of Maryland,,College Park,MD,USA,USA
+EVOL,1995,49,NA,372,Blaire,,VanValkenburgh,Blaire VanValkenburgh,AE,SE,University of California- Los Angeles,,Los Angeles,CA,USA,USA
+EVOL,1995,49,NA,1267,Geerat,J,Vermeij,Geerat J Vermeij,Editor,EIC,University of California- Davis,,Davis,CA,USA,USA
+EVOL,1995,49,NA,3494,Sara,,Via,Sara Via,AE,SE,Cornell University,,Ithaca,NY,USA,USA
+EVOL,1995,49,NA,1269,Gunter,P,Wagner,Gunter P Wagner,AE,SE,Yale University,,New Haven,CT,USA,USA
+EVOL,1995,49,NA,901,Donald,M,Waller,Donald M Waller,AE,SE,University of Wisconsin,,Madison,WI,USA,USA
+EVOL,1995,49,NA,1935,J,Bruce,Walsh,J Bruce Walsh,AE,SE,University of Arizona,,Tuscon,AZ,USA,USA
+EVOL,1995,49,NA,1948,John,,Werren,John Werren,AE,SE,University of Rochester,,Rochester,NY,USA,USA
+EVOL,1995,49,NA,3261,Robert,M,Zink,Robert M Zink,AE,SE,University of Minnesota,,St. Paul,MN,USA,USA
+EVOL,1996,50,NA,2750,Peter,A,Abrams,Peter A Abrams,AE,SE,University of Maryland,,College Park,MD,USA,USA
+EVOL,1996,50,NA,2296,May,R,Berenbaum,May R Berenbaum,Special.Editor,SPECIAL,University of Illinois,,Champaign,IL,USA,USA
+EVOL,1996,50,NA,1500,James,R,Carey,James R Carey,AE,SE,University of California- Davis,,Davis,CA,USA,USA
+EVOL,1996,50,NA,1517,James,P,Collins,James P Collins,AE,SE, Arizona State University,,Tempe,AZ,USA,USA
+EVOL,1996,50,NA,1524,Jerry,A,Coyne,Jerry A Coyne,Special.Editor,SPECIAL, University of Chicago,,Chicago,IL,USA,USA
+EVOL,1996,50,NA,1532,James,W,Curtsinger,James W Curtsinger,AE,SE, University of Minnesota,,St. Paul,MN,USA,USA
+EVOL,1996,50,NA,3039,Rob,,Desalle,Rob Desalle,AE,SE,American Museum of Natural History,,New York,NY,USA,USA
+EVOL,1996,50,NA,2350,Michael,E,Douglas,Michael E Douglas,Special.Editor,SPECIAL, Arizona State University,,Tempe,AZ,USA,USA
+EVOL,1996,50,NA,682,Daphne,J,Fairbairn,Daphne J Fairbairn,AE,SE, Concordia University,,Montreal,QC,Canada,CAN
+EVOL,1996,50,NA,2362,Martin,E,Feder,Martin E Feder,Special.Editor,SPECIAL, The University of Chicago,,Chicago,IL,USA,USA
+EVOL,1996,50,NA,98,Alan,,Hastings,Alan Hastings,AE,SE,University of California- Davis,,Davis,CA,USA,USA
+EVOL,1996,50,NA,3564,Thomas,J,Hilbish,Thomas J Hilbish,AE,SE, University of South Carolina,,Columbia,SC,USA,USA
+EVOL,1996,50,NA,729,Daniel,J,Howard,Daniel J Howard,AE,SE, New Mexico State University,,Las Cruces,NM,USA,USA
+EVOL,1996,50,NA,2657,Nancy,,Knowlton,Nancy Knowlton,AE,SE,Smithsonian Tropical Research Institute,,Panama City,Panama,USA,USA
+EVOL,1996,50,NA,2443,Marcy,,Lawton,Marcy Lawton,Special.Editor,SPECIAL,University of Alabama- Huntsville,,Huntsville,AL,USA,USA
+EVOL,1996,50,NA,2193,Larry,J,Leamy,Larry J Leamy,AE,SE, University of North Carolina,,Raleigh,NC,USA,USA
+EVOL,1996,50,NA,3597,Therese,A,Markow,Therese A Markow,Editor,EIC,Arizona State University,,Tempe,AZ,USA,USA
+EVOL,1996,50,NA,2472,Mary,C,Mckitrick,Mary C Mckitrick,AE,SE, Harvard Medical School,,Cambridge,MA,USA,USA
+EVOL,1996,50,NA,2204,Lisa,M,Meffert,Lisa M Meffert,AE,SE, University of Houston,,Houston,TX,USA,USA
+EVOL,1996,50,NA,3605,Thomas,,Mitchell-Olds,Thomas Mitchell-Olds,AE,SE,University of Montana,,Missoula,MT,USA,USA
+EVOL,1996,50,NA,531,Charles,,Mitter,Charles Mitter,AE,SE,University of Maryland,,College Park,MD,USA,USA
+EVOL,1996,50,NA,163,A,Richard,Palmer,A Richard Palmer,AE,SE, University of Alberta,,Edmonton,AB,Canada,CAN
+EVOL,1996,50,NA,3428,Stephen,R,Palumbi,Stephen R Palumbi,AE,SE, Kewalo Marine Lab,,Honolulu,HI,USA,USA
+EVOL,1996,50,NA,823,Daniel,,Pinero,Daniel Pinero,AE,SE,Universidad Nacional Autonoma de MÇxico,,Mexico City,Federal District,MEXICO,MEX
+EVOL,1996,50,NA,2525,Mary,V,Price,Mary V Price,AE,SE,University of California- Riverside,,Riverside,CA,USA,USA
+EVOL,1996,50,NA,3786,William,R,Rice,William R Rice,AE,SE,University of California- Santa Cruz,,Santa Cruz,CA,USA,USA
+EVOL,1996,50,NA,3697,V,Louise,Roth,V Louise Roth,AE,SE, Duke University,,Durham,NC,USA,USA
+EVOL,1996,50,NA,2547,Michael,J,Ryan,Michael J Ryan,AE,SE, University of Texas,,Austin,TX,USA,USA
+EVOL,1996,50,NA,188,Ann,K,Sakai,Ann K Sakai,AE,SE,University of California- Irvine,,Irvine,CA,USA,USA
+EVOL,1996,50,NA,3218,Ruth,Green,Shaw,Ruth Green Shaw,AE,SE,University of Edinburgh,,Edinburgh,Scotland,United Kingdom,GBR
+EVOL,1996,50,NA,1875,Jack,W,Sites,Jack W Sites,AE,SE, Brigham Young University,,Provo,UT,USA,USA
+EVOL,1996,50,NA,202,Allison,,Snow,Allison Snow,AE,SE,Ohio State University,,Columbus,OH,USA,USA
+EVOL,1996,50,NA,3701,Victoria,L,Sork,Victoria L Sork,AE,SE, University of Missouri-St. Louis,,St. Louis,MO,USA,USA
+EVOL,1996,50,NA,3494,Sara,,Via,Sara Via,AE,SE,Cornell University,,Ithaca,NY,USA,USA
+EVOL,1996,50,NA,1269,Gunter,P,Wagner,Gunter P Wagner,AE,SE, Yale University,,New Haven,CT,USA,USA
+EVOL,1996,50,NA,901,Donald,M,Waller,Donald M Waller,AE,SE, University of Wisconsin,,Madison,WI,USA,USA
+EVOL,1996,50,NA,1935,J,Bruce,Walsh,J Bruce Walsh,AE,SE, University of Arizona,,Tuscon,AZ,USA,USA
+EVOL,1996,50,NA,3261,Robert,M,Zink,Robert M Zink,AE,SE, University of Minnesota,,St. Paul,MN,USA,USA
+EVOL,1997,51,NA,1517,James,P,Collins,James P Collins,AE,SE, Arizona State University,,Tempe,AZ,USA,USA
+EVOL,1997,51,NA,1524,Jerry,A,Coyne,Jerry A Coyne,Special.Editor,SPECIAL, The University of Chicago,,Chicago,IL,USA,USA
+EVOL,1997,51,NA,3039,Rob,,Desalle,Rob Desalle,AE,SE,American Museum of Natural History,,New York,NY,USA,USA
+EVOL,1997,51,NA,2350,Michael,E,Douglas,Michael E Douglas,Special.Editor,SPECIAL, Arizona State University,,Tempe,AZ,USA,USA
+EVOL,1997,51,NA,2362,Martin,E,Feder,Martin E Feder,Special.Editor,SPECIAL, The University of Chicago,,Chicago,IL,USA,USA
+EVOL,1997,51,NA,2394,Michael,F,Hammer,Michael F Hammer,Special.Editor,SPECIAL, University of Arizona,,Tuscon,AZ,USA,USA
+EVOL,1997,51,NA,98,Alan,,Hastings,Alan Hastings,AE,SE,University of California- Davis,,Davis,CA,USA,USA
+EVOL,1997,51,NA,2657,Nancy,,Knowlton,Nancy Knowlton,AE,SE,Smithsonian Tropical Research Institute,,Panama City,Panama,USA,USA
+EVOL,1997,51,NA,2443,Marcy,,Lawton,Marcy Lawton,Special.Editor,SPECIAL,University of Alabama- Huntsville,,Huntsville,AL,USA,USA
+EVOL,1997,51,NA,2193,Larry,J,Leamy,Larry J Leamy,AE,SE, University of North Carolina,,Raleigh,NC,USA,USA
+EVOL,1997,51,NA,510,Curtis,M,Lively,Curtis M Lively,AE,SE, Indiana University,,Bloomington,IN,USA,USA
+EVOL,1997,51,NA,1736,James,,Mallet,James Mallet,AE,SE,University College London,,London,Greater London,United Kingdom,GBR
+EVOL,1997,51,NA,3597,Therese,A,Markow,Therese A Markow,Editor,EIC,Arizona State University,,Tempe,AZ,USA,USA
+EVOL,1997,51,NA,997,Emilia,P,Martins,Emilia P Martins,AE,SE,University of Oregon,,Eugene,OR,USA,USA
+EVOL,1997,51,NA,2472,Mary,C,Mckitrick,Mary C Mckitrick,AE,SE,Smith College,,Northampton,MA,USA,USA
+EVOL,1997,51,NA,2204,Lisa,M,Meffert,Lisa M Meffert,AE,SE,University of Houston,,Houston,TX,USA,USA
+EVOL,1997,51,NA,3605,Thomas,,Mitchell-Olds,Thomas Mitchell-Olds,AE,SE,University of Montana,,Missoula,MT,USA,USA
+EVOL,1997,51,NA,1784,Joseph,E,Neigel,Joseph E Neigel,AE,SE, The University of Southwestern Louisiana,,Lafayette,LA,USA,USA
+EVOL,1997,51,NA,2215,Leonard,P,Nunney,Leonard P Nunney,AE,SE,University of California- Riverside,,Riverside,CA,USA,USA
+EVOL,1997,51,NA,163,A,Richard,Palmer,A Richard Palmer,AE,SE, University of Alberta,,Edmonton,AB,Canada,CAN
+EVOL,1997,51,NA,3428,Stephen,R,Palumbi,Stephen R Palumbi,AE,SE, Harvard University,,Cambridge,MA,USA,USA
+EVOL,1997,51,NA,823,Daniel,,Pinero,Daniel Pinero,AE,SE,Universidad Nacional Autonoma de MÇxico,,Mexico City,Federal District,Mexico,MEX
+EVOL,1997,51,NA,188,Ann,K,Sakai,Ann K Sakai,AE,SE,University of California- Irvine,,Irvine,CA,USA,USA
+EVOL,1997,51,NA,3218,Ruth,Green,Shaw,Ruth Green Shaw,AE,SE,University of Minnesota,,St. Paul,MN,USA,USA
+EVOL,1997,51,NA,1875,Jack,W,Sites,Jack W Sites,AE,SE, Brigham Young University,,Provo,UT,USA,USA
+EVOL,1997,51,NA,202,Allison,,Snow,Allison Snow,AE,SE,Ohio State University,,Columbus,OH,USA,USA
+EVOL,1997,51,NA,3701,Victoria,L,Sork,Victoria L Sork,AE,SE, University of Missouri-St. Louis,,St. Louis,MO,USA,USA
+EVOL,1997,51,NA,2245,Lori,,Stevens,Lori Stevens,AE,SE,University of Vermont,,Burlington,VT,USA,USA
+EVOL,1997,51,NA,365,Brian,K,Sullivan,Brian K Sullivan,AE,SE, Arizona State University West,,Phoenix,AZ,USA,USA
+EVOL,1997,51,NA,1935,J,Bruce,Walsh,J Bruce Walsh,AE,SE, University of Arizona,,Tuscon,AZ,USA,USA
+EVOL,1997,51,NA,1948,John,,Werren,John Werren,AE,SE,University of Rochester,,Rochester,NY,USA,USA
+EVOL,1997,51,NA,1044,Eleftherios,,Zouros,Eleftherios Zouros,AE,SE,Dalhousie University,,Halifax,NS,Canada,CAN
+EVOL,1998,52,NA,401,Carol,L,Boggs,Carol L Boggs,AE,SE, Stanford University,,Stanford,CA,USA,USA
+EVOL,1998,52,NA,248,Brian,W,Bowen,Brian W Bowen,AE,SE, University of Florida,,Gainesville,FL,USA,USA
+EVOL,1998,52,NA,940,Edmund,D,Brodie,Edmund D Brodie,AE,SE, Indiana University,,Bloomington,IN,USA,USA
+EVOL,1998,52,NA,1517,James,P,Collins,James P Collins,AE,SE, Arizona State University,,Tempe,AZ,USA,USA
+EVOL,1998,52,NA,1524,Jerry,A,Coyne,Jerry A Coyne,Special.Editor,SPECIAL, The University of Chicago,,Chicago,IL,USA,USA
+EVOL,1998,52,NA,2350,Michael,E,Douglas,Michael E Douglas,Special.Editor,SPECIAL, Arizona State University,,Tempe,AZ,USA,USA
+EVOL,1998,52,NA,2362,Martin,E,Feder,Martin E Feder,Special.Editor,SPECIAL, The University of Chicago,,Chicago,IL,USA,USA
+EVOL,1998,52,NA,2814,Patricia,Adair,Gowaty,Patricia Adair Gowaty,AE,SE, University of Georgia,,Athens,GA,USA,USA
+EVOL,1998,52,NA,2394,Michael,F,Hammer,Michael F Hammer,Special.Editor,SPECIAL, University of Arizona,,Tuscon,AZ,USA,USA
+EVOL,1998,52,NA,2016,Kent,E,Holsinger,Kent E Holsinger,AE,SE, University of Connecticut,,Storrs,CT,USA,USA
+EVOL,1998,52,NA,987,Ellen,D,Ketterson,Ellen D Ketterson,AE,SE, Indiana University,,Bloomington,IN,USA,USA
+EVOL,1998,52,NA,2193,Larry,J,Leamy,Larry J Leamy,AE,SE, University of North Carolina,,Raleigh,NC,USA,USA
+EVOL,1998,52,NA,510,Curtis,M,Lively,Curtis M Lively,AE,SE, Indiana University,,Bloomington,IN,USA,USA
+EVOL,1998,52,NA,1725,Jonathan,B,Losos,Jonathan B Losos,AE,SE, Washington University,,St. Louis,MO,USA,USA
+EVOL,1998,52,NA,1736,James,,Mallet,James Mallet,AE,SE,University College London,,London,Greater London,United Kingdom,GBR
+EVOL,1998,52,NA,3597,Therese,A,Markow,Therese A Markow,Editor,EIC,Arizona State University,,Tempe,AZ,USA,USA
+EVOL,1998,52,NA,997,Emilia,P,Martins,Emilia P Martins,AE,SE, University of Oregon,,Eugene,OR,USA,USA
+EVOL,1998,52,NA,2472,Mary,C,Mckitrick,Mary C Mckitrick,AE,SE, Smith College,,Northampton,MA,USA,USA
+EVOL,1998,52,NA,1784,Joseph,E,Neigel,Joseph E Neigel,AE,SE, The University of Southwestern Louisiana,,Lafayette,LA,USA,USA
+EVOL,1998,52,NA,2215,Leonard,P,Nunney,Leonard P Nunney,AE,SE,University of California- Riverside,,Riverside,CA,USA,USA
+EVOL,1998,52,NA,1342,H,Allen,Orr,H Allen Orr,AE,SE, University of Rochester,,Rochester,NY,USA,USA
+EVOL,1998,52,NA,3428,Stephen,R,Palumbi,Stephen R Palumbi,AE,SE, Harvard University,,Cambridge,MA,USA,USA
+EVOL,1998,52,NA,823,Daniel,,Pinero,Daniel Pinero,AE,SE,Universidad Nacional Autonoma de MÇxico,,Mexico City,Federal District,Mexico,MEX
+EVOL,1998,52,NA,847,Derek,A,Roff,Derek A Roff,AE,SE, McGill University,,Montreal,QC,Canada,CAN
+EVOL,1998,52,NA,188,Ann,K,Sakai,Ann K Sakai,AE,SE,University of California- Irvine,,Irvine,CA,USA,USA
+EVOL,1998,52,NA,2739,Outi,A,Savolainen,Outi A Savolainen,AE,SE, University of Oulu,,Oulu,Northern Ostrobothnia,Finland,FIN
+EVOL,1998,52,NA,3806,W,Thomas,Starmer,W Thomas Starmer,AE,SE, Syracuse University,,Syracuse,NY,USA,USA
+EVOL,1998,52,NA,2245,Lori,,Stevens,Lori Stevens,AE,SE,University of Vermont,,Burlington,VT,USA,USA
+EVOL,1998,52,NA,365,Brian,K,Sullivan,Brian K Sullivan,AE,SE, Arizona State University West,,Phoenix,AZ,USA,USA
+EVOL,1998,52,NA,914,Diana,E,Wheeler,Diana E Wheeler,AE,SE, University of Arizona,,Tuscon,AZ,USA,USA
+EVOL,1998,52,NA,2620,Miriam,L,Zelditch,Miriam L Zelditch,AE,SE, University of Michigan,,Ann Arbor,MI,USA,USA
+EVOL,1998,52,NA,1044,Eleftherios,,Zouros,Eleftherios Zouros,AE,SE,Dalhousie University,,Halifax,NS,Canada,CAN
+EVOL,1999,53,NA,2127,Louis,,Bernatchez,Louis Bernatchez,AE,SE,Laval University,,Quebec City,QC,Canada,CAN
+EVOL,1999,53,NA,401,Carol,L,Boggs,Carol L Boggs,AE,SE, Stanford University,,Stanford,CA,USA,USA
+EVOL,1999,53,NA,248,Brian,W,Bowen,Brian W Bowen,AE,SE, University of Florida,,Gainesville,FL,USA,USA
+EVOL,1999,53,NA,940,Edmund,D,Brodie,Edmund D Brodie,AE,SE, Indiana University,,Bloomington,IN,USA,USA
+EVOL,1999,53,NA,3006,Ronald,S,Burton,Ronald S Burton,AE,SE, University of California-San Diego,,La Jolla,CA,USA,USA
+EVOL,1999,53,NA,30,Armando,,Caballero,Armando Caballero,AE,SE,Universidad de Vigo,,Vigo,Galicia,Spain,ESP
+EVOL,1999,53,NA,1518,Jeffrey,,Conner,Jeffrey Conner,AE,SE,Michigan State University,,Hickory Corners,MI,USA,USA
+EVOL,1999,53,NA,1524,Jerry,A,Coyne,Jerry A Coyne,Special.Editor,SPECIAL, The University of Chicago,,Chicago,IL,USA,USA
+EVOL,1999,53,NA,2350,Michael,E,Douglas,Michael E Douglas,Special.Editor,SPECIAL, Arizona State University,,Tempe,AZ,USA,USA
+EVOL,1999,53,NA,2353,Michele,R,Dudash,Michele R Dudash,AE,SE, University of Maryland,,College Park,MD,USA,USA
+EVOL,1999,53,NA,3937,Scott,V,Edwards,Scott V Edwards,AE,SE, University of Washington,,Seattle,WA,USA,USA
+EVOL,1999,53,NA,2362,Martin,E,Feder,Martin E Feder,Special.Editor,SPECIAL, The University of Chicago,,Chicago,IL,USA,USA
+EVOL,1999,53,NA,2814,Patricia,Adair,Gowaty,Patricia Adair Gowaty,AE,SE, University of Georgia,,Athens,GA,USA,USA
+EVOL,1999,53,NA,2394,Michael,F,Hammer,Michael F Hammer,Special.Editor,SPECIAL, University of Arizona,,Tuscon,AZ,USA,USA
+EVOL,1999,53,NA,2016,Kent,E,Holsinger,Kent E Holsinger,AE,SE, University of Connecticut,,Storrs,CT,USA,USA
+EVOL,1999,53,NA,987,Ellen,D,Ketterson,Ellen D Ketterson,AE,SE, Indiana University,,Bloomington,IN,USA,USA
+EVOL,1999,53,NA,510,Curtis,M,Lively,Curtis M Lively,AE,SE, Indiana University,,Bloomington,IN,USA,USA
+EVOL,1999,53,NA,1725,Jonathan,B,Losos,Jonathan B Losos,AE,SE, Washington University,,St. Louis,MO,USA,USA
+EVOL,1999,53,NA,1736,James,,Mallet,James Mallet,AE,SE,University College London,,London,Greater London,United Kingdom,GBR
+EVOL,1999,53,NA,3597,Therese,A,Markow,Therese A Markow,Editor,EIC, University of Arizona,,Tuscon,AZ,USA,USA
+EVOL,1999,53,NA,997,Emilia,P,Martins,Emilia P Martins,AE,SE, University of Oregon,,Eugene,OR,USA,USA
+EVOL,1999,53,NA,3609,Timothy,A,Mousseau,Timothy A Mousseau,AE,SE, University of South Carolina,,Columbia,SC,USA,USA
+EVOL,1999,53,NA,1784,Joseph,E,Neigel,Joseph E Neigel,AE,SE, The University of Southwestern Louisiana,,Lafayette,LA,USA,USA
+EVOL,1999,53,NA,2215,Leonard,P,Nunney,Leonard P Nunney,AE,SE,University of California- Riverside,,Riverside,CA,USA,USA
+EVOL,1999,53,NA,1342,H,Allen,Orr,H Allen Orr,AE,SE, University of Rochester,,Rochester,NY,USA,USA
+EVOL,1999,53,NA,2537,Margaret,A,Riley,Margaret A Riley,AE,SE, Yale University,,New Haven,CT,USA,USA
+EVOL,1999,53,NA,847,Derek,A,Roff,Derek A Roff,AE,SE, McGill University,,Montreal,QC,Canada,CAN
+EVOL,1999,53,NA,2078,Kenneth,Green,Ross,Kenneth Green Ross,AE,SE,University of Georgia,,Athens,GA,USA,USA
+EVOL,1999,53,NA,2739,Outi,A,Savolainen,Outi A Savolainen,AE,SE, University of Oulu,,Oulu,Northern Ostrobothnia,Finland,FIN
+EVOL,1999,53,NA,3806,William,T,Starmer,William T Starmer,AE,SE, Syracuse University,,Syracuse,NY,USA,USA
+EVOL,1999,53,NA,2245,Lori,,Stevens,Lori Stevens,AE,SE,University of Vermont,,Burlington,VT,USA,USA
+EVOL,1999,53,NA,365,Brian,K,Sullivan,Brian K Sullivan,AE,SE, Arizona State University West,,Phoenix,AZ,USA,USA
+EVOL,1999,53,NA,914,Diana,E,Wheeler,Diana E Wheeler,AE,SE, University of Arizona,,Tuscon,AZ,USA,USA
+EVOL,1999,53,NA,2620,Miriam,L,Zelditch,Miriam L Zelditch,AE,SE, University of Michigan,,Ann Arbor,MI,USA,USA
+EVOL,1999,53,NA,1044,Eleftherios,,Zouros,Eleftherios Zouros,AE,SE,Institute of Marine Biology of Crete,,Iraklio,Crete,Greece,GRC
+EVOL,2000,54,NA,2127,Louis,,Bernatchez,Louis Bernatchez,AE,SE,Laval University,,Quebec City,QC,Canada,CAN
+EVOL,2000,54,NA,401,Carol,L,Boggs,Carol L Boggs,AE,SE, Stanford University,,Stanford,CA,USA,USA
+EVOL,2000,54,NA,248,Brian,W,Bowen,Brian W Bowen,AE,SE, University of Florida,,Gainesville,FL,USA,USA
+EVOL,2000,54,NA,3006,Ronald,S,Burton,Ronald S Burton,AE,SE, University of California-San Diego,,La Jolla,CA,USA,USA
+EVOL,2000,54,NA,30,Armando,,Caballero,Armando Caballero,AE,SE,Universidad de Vigo,,Vigo,Galicia,Spain,ESP
+EVOL,2000,54,NA,1509,James,M,Cheverud,James M Cheverud,AE,SE, Washington University School of Medicine,,St. Louis,MO,USA,USA
+EVOL,2000,54,NA,1518,Jeffrey,,Conner,Jeffrey Conner,AE,SE,Michigan State University,,Hickory Corners,MI,USA,USA
+EVOL,2000,54,NA,1524,Jerry,A,Coyne,Jerry A Coyne,Special.Editor,SPECIAL, The University of Chicago,,Chicago,IL,USA,USA
+EVOL,2000,54,NA,257,Bernard,J,Crespi,Bernard J Crespi,AE,SE, Simon Fraser University,,Burnaby,BC,Canada,CAN
+EVOL,2000,54,NA,2350,Michael,E,Douglas,Michael E Douglas,Special.Editor,SPECIAL, Arizona State University,,Tempe,AZ,USA,USA
+EVOL,2000,54,NA,2353,Michele,R,Dudash,Michele R Dudash,AE,SE, University of Maryland,,College Park,MD,USA,USA
+EVOL,2000,54,NA,440,Christopher,Green,Eckert,Christopher Green Eckert,AE,SE,Queen's University,,Kingston,ON,Canada,CAN
+EVOL,2000,54,NA,3937,Scott,V,Edwards,Scott V Edwards,AE,SE, University of Washington,,Seattle,WA,USA,USA
+EVOL,2000,54,NA,697,Douglas,J,Futuyma,Douglas J Futuyma,Special.Editor,SPECIAL, State University of New York at Stony Brook,,Stony Brook,NY,USA,USA
+EVOL,2000,54,NA,3552,Theodore,,Garland,Theodore Garland,AE,SE,University of Wisconsin,,Madison,WI,USA,USA
+EVOL,2000,54,NA,700,Dana,H,Geary,Dana H Geary,AE,SE, University of Wisconsin,,Madison,WI,USA,USA
+EVOL,2000,54,NA,1301,H,Lisle,Gibbs,H Lisle Gibbs,AE,SE, McMaster University,,Hamilton,ON,Canada,CAN
+EVOL,2000,54,NA,2394,Michael,F,Hammer,Michael F Hammer,Special.Editor,SPECIAL, University of Arizona,,Tuscon,AZ,USA,USA
+EVOL,2000,54,NA,2839,Philippe,,Jarne,Philippe Jarne,AE,SE,Centre d'Ecologie Fonctionnelle et Evolutive- CNRS,,Montpellier,Occitanie,France,FRA
+EVOL,2000,54,NA,3377,Stephen,A,Karl,Stephen A Karl,AE,SE, University of South Florida,,Tampa,FL,USA,USA
+EVOL,2000,54,NA,3576,Tadeusz,J,Kawecki,Tadeusz J Kawecki,AE,SE, University of Basel,,Basel,Basel-Stadt,Switzerland,CHE
+EVOL,2000,54,NA,1668,Joel,Green,Kingsolver,Joel Green Kingsolver,Special.Editor,SPECIAL,University of Washington,,Seattle,WA,USA,USA
+EVOL,2000,54,NA,511,Carlos,,Lopez-Fanjul,Carlos Lopez-Fanjul,AE,SE,Universidad Complutense,,Madrid,Community of Madrid,Spain,ESP
+EVOL,2000,54,NA,1725,Jonathan,B,Losos,Jonathan B Losos,AE,SE, Washington University,,St. Louis,MO,USA,USA
+EVOL,2000,54,NA,2483,Martin,T,Morgan,Martin T Morgan,AE,SE, Washington State University,,Corvallis,OR,USA,USA
+EVOL,2000,54,NA,3609,Timothy,A,Mousseau,Timothy A Mousseau,AE,SE, University of South Carolina,,Columbia,SC,USA,USA
+EVOL,2000,54,NA,1342,H,Allen,Orr,H Allen Orr,AE,SE, University of Rochester,,Rochester,NY,USA,USA
+EVOL,2000,54,NA,2537,Margaret,A,Riley,Margaret A Riley,AE,SE, Yale University,,New Haven,CT,USA,USA
+EVOL,2000,54,NA,847,Derek,A,Roff,Derek A Roff,AE,SE, McGill University,,Montreal,QC,Canada,CAN
+EVOL,2000,54,NA,2078,Kenneth,Green,Ross,Kenneth Green Ross,AE,SE,University of Georgia,,Athens,GA,USA,USA
+EVOL,2000,54,NA,2739,Outi,A,Savolainen,Outi A Savolainen,AE,SE, University of Oulu,,Oulu,Northern Ostrobothnia,Finland,FIN
+EVOL,2000,54,NA,3806,William,T,Starmer,William T Starmer,AE,SE, Syracuse University,,Syracuse,NY,USA,USA
+EVOL,2000,54,NA,3482,Sharon,Y,Strauss,Sharon Y Strauss,AE,SE,University of California- Davis,,Davis,CA,USA,USA
+EVOL,2000,54,NA,3489,Stephen,J,Tonsor,Stephen J Tonsor,AE,SE,University of Pittsburgh,,Pittsburgh,PA,USA,USA
+EVOL,2000,54,NA,901,Donald,M,Waller,Donald M Waller,Editor,EIC,University of Wisconsin,,Madison,WI,USA,USA
+EVOL,2000,54,NA,914,Diana,E,Wheeler,Diana E Wheeler,AE,SE, University of Arizona,,Tuscon,AZ,USA,USA
+EVOL,2000,54,NA,2607,Michael,C,Whitlock,Michael C Whitlock,AE,SE, University of British Columbia,,Vancouver,BC,Canada,CAN
+EVOL,2000,54,NA,2620,Miriam,L,Zelditch,Miriam L Zelditch,AE,SE, University of Michigan,,Ann Arbor,MI,USA,USA
+EVOL,2001,55,NA,2277,Mary,V,Ashley,Mary V Ashley,AE,SE, University of Illinois at Chicago,,Chicago,IL,USA,USA
+EVOL,2001,55,NA,618,David,A,Baum,David A Baum,AE,SE, Harvard University Herbaria,,Cambridge,MA,USA,USA
+EVOL,2001,55,NA,2127,Louis,,Bernatchez,Louis Bernatchez,AE,SE,Laval University,,Quebec City,QC,Canada,CAN
+EVOL,2001,55,NA,3006,Ronald,S,Burton,Ronald S Burton,AE,SE, University of California-San Diego,,La Jolla,CA,USA,USA
+EVOL,2001,55,NA,30,Armando,,Caballero,Armando Caballero,AE,SE,Universidad de Vigo,,Vigo,Galicia,Spain,ESP
+EVOL,2001,55,NA,1509,James,M,Cheverud,James M Cheverud,AE,SE, Washington University School of Medicine,,St. Louis,MO,USA,USA
+EVOL,2001,55,NA,1518,Jeffrey,,Conner,Jeffrey Conner,AE,SE,Michigan State University,,Hickory Corners,MI,USA,USA
+EVOL,2001,55,NA,257,Bernard,J,Crespi,Bernard J Crespi,AE,SE, Simon Fraser University,,Burnaby,BC,Canada,CAN
+EVOL,2001,55,NA,2350,Michael,E,Douglas,Michael E Douglas,Special.Editor,SPECIAL, Arizona State University,,Tempe,AZ,USA,USA
+EVOL,2001,55,NA,2353,Michele,R,Dudash,Michele R Dudash,AE,SE, University of Maryland,,College Park,MD,USA,USA
+EVOL,2001,55,NA,2798,Peter,O,Dunn,Peter O Dunn,AE,SE, University of Wisconsin-Milwaukee,,Milwaukee,WI,USA,USA
+EVOL,2001,55,NA,440,Christopher,Green,Eckert,Christopher Green Eckert,AE,SE,Queen's University,,Kingston,ON,Canada,CAN
+EVOL,2001,55,NA,3937,Scott,V,Edwards,Scott V Edwards,AE,SE, University of Washington,,Seattle,WA,USA,USA
+EVOL,2001,55,NA,2370,Michael,,Foote,Michael Foote,AE,SE,University of Chicago,,Chicago,IL,USA,USA
+EVOL,2001,55,NA,697,Douglas,J,Futuyma,Douglas J Futuyma,Special.Editor,SPECIAL,State University of New York at Stony Brook,,Stony Brook,NY,USA,USA
+EVOL,2001,55,NA,3552,Theodore,,Garland,Theodore Garland,AE,SE,University of Wisconsin,,Madison,WI,USA,USA
+EVOL,2001,55,NA,700,Dana,H,Geary,Dana H Geary,AE,SE,University of Wisconsin,,Madison,WI,USA,USA
+EVOL,2001,55,NA,1301,H,Lisle,Gibbs,H Lisle Gibbs,AE,SE, McMaster University,,Hamilton,ON,Canada,CAN
+EVOL,2001,55,NA,2394,Michael,F,Hammer,Michael F Hammer,Special.Editor,SPECIAL, University of Arizona,,Tuscon,AZ,USA,USA
+EVOL,2001,55,NA,1644,John,Peter,Huelsenbeck,John Peter Huelsenbeck,AE,SE, University of Rochester,,Rochester,NY,USA,USA
+EVOL,2001,55,NA,2839,Philippe,,Jarne,Philippe Jarne,AE,SE,Centre d'Ecologie Fonctionnelle et Evolutive- CNRS,,Montpellier,Occitanie,France,FRA
+EVOL,2001,55,NA,3377,Stephen,A,Karl,Stephen A Karl,AE,SE, University of South Florida,,Tampa,FL,USA,USA
+EVOL,2001,55,NA,3576,Tadeusz,J,Kawecki,Tadeusz J Kawecki,AE,SE, University of Basel,,Basel,Basel-Stadt,Switzerland,CHE
+EVOL,2001,55,NA,511,Carlos,,Lopez-Fanjul,Carlos Lopez-Fanjul,AE,SE,Universidad Complutense,,Madrid,Community of Madrid,Spain,ESP
+EVOL,2001,55,NA,1759,Juha,Kari-Kristian,Merila,Juha Kari-Kristian Merila,AE,SE, Uppsala University,,Uppsala,Uppsala,Sweden,SWE
+EVOL,2001,55,NA,1772,Jeffry,B,Mitton,Jeffry B Mitton,Special.Editor,SPECIAL,University of Colorado- Boulder,,Boulder,CO,USA,USA
+EVOL,2001,55,NA,2483,Martin,T,Morgan,Martin T Morgan,AE,SE, Washington State University,,Corvallis,WA,USA,USA
+EVOL,2001,55,NA,3609,Timothy,A,Mousseau,Timothy A Mousseau,AE,SE, University of South Carolina,,Columbia,SC,USA,USA
+EVOL,2001,55,NA,2493,Mohamed,AF,Noor,Mohamed AF Noor,AE,SE, Louisiana State University,,Baton Rouge,LA,USA,USA
+EVOL,2001,55,NA,1341,Howard,,Ochman,Howard Ochman,AE,SE,University of Arizona,,Tuscon,AZ,USA,USA
+EVOL,2001,55,NA,3441,Scott,,Pitnick,Scott Pitnick,AE,SE,Syracuse University,,Syracuse,NY,USA,USA
+EVOL,2001,55,NA,2537,Margaret,A,Riley,Margaret A Riley,AE,SE, Yale University,,New Haven,CT,USA,USA
+EVOL,2001,55,NA,2078,Kenneth,Green,Ross,Kenneth Green Ross,AE,SE,University of Georgia,,Athens,GA,USA,USA
+EVOL,2001,55,NA,2089,Kerry,L,Shaw,Kerry L Shaw,AE,SE, University of Maryland,,College Park,MD,USA,USA
+EVOL,2001,55,NA,3945,Thomas,B,Smith,Thomas B Smith,AE,SE, San Francisco State University,,San Francisco,CA,USA,USA
+EVOL,2001,55,NA,3482,Sharon,Y,Strauss,Sharon Y Strauss,AE,SE,University of California- Davis,,Davis,CA,USA,USA
+EVOL,2001,55,NA,3489,Stephen,J,Tonsor,Stephen J Tonsor,AE,SE, University of Pittsburgh,,Pittsburgh,PA,USA,USA
+EVOL,2001,55,NA,901,Donald,M,Waller,Donald M Waller,Editor,EIC,University of Wisconsin,,Madison,WI,USA,USA
+EVOL,2001,55,NA,1271,Graham,Peter,Wallis,Graham Peter Wallis,AE,SE, University of Otago,,Dunedin,Otago,NewZealand,NZL
+EVOL,2001,55,NA,2607,Michael,C,Whitlock,Michael C Whitlock,AE,SE, University of British Columbia,,Vancouver,BC,Canada,CAN
+EVOL,2001,55,NA,1954,John,J,Wiens,John J Wiens,AE,SE, Carnegie Museum of Natural History,,Pittsburgh,PA,USA,USA
+EVOL,2002,56,NA,2277,Mary,V,Ashley,Mary V Ashley,AE,SE, University of Illinois at Chicago,,Chicago,IL,USA,USA
+EVOL,2002,56,NA,618,David,A,Baum,David A Baum,AE,SE, Harvard University Herbaria,,Cambridge,MA,USA,USA
+EVOL,2002,56,NA,1056,Francois,,Bonhomme,Francois Bonhomme,AE,SE,UniversitÇ de Montpellier II,,Montpellier,Occitanie,France,FRA
+EVOL,2002,56,NA,1509,James,M,Cheverud,James M Cheverud,AE,SE, Washington University School of Medicine,,St. Louis,MO,USA,USA
+EVOL,2002,56,NA,257,Bernard,J,Crespi,Bernard J Crespi,AE,SE, Simon Fraser University,,Burnaby,BC,Canada,CAN
+EVOL,2002,56,NA,2798,Peter,O,Dunn,Peter O Dunn,AE,SE, University of Wisconsin-Milwaukee,,Milwaukee,WI,USA,USA
+EVOL,2002,56,NA,440,Christopher,Green,Eckert,Christopher Green Eckert,AE,SE,Queen's University,,Kingston,ON,Canada,CAN
+EVOL,2002,56,NA,445,Charles,B,Fenster,Charles B Fenster,AE,SE, University of Maryland,,College Park,MD,USA,USA
+EVOL,2002,56,NA,2370,Michael,,Foote,Michael Foote,AE,SE,University of Chicago,,Chicago,IL,USA,USA
+EVOL,2002,56,NA,1584,James,Duncan,Fry,James Duncan Fry,AE,SE, University of Rochester,,Rochester,NY,USA,USA
+EVOL,2002,56,NA,697,Douglas,J,Futuyma,Douglas J Futuyma,Special.Editor,SPECIAL,State University of New York at Stony Brook,,Stony Brook,NY,USA,USA
+EVOL,2002,56,NA,3552,Theodore,,Garland,Theodore Garland,AE,SE,University of California- Riverside,,Riverside,CA,USA,USA
+EVOL,2002,56,NA,700,Dana,H,Geary,Dana H Geary,AE,SE, University of Wisconsin,,Madison,WI,USA,USA
+EVOL,2002,56,NA,1301,H,Lisle,Gibbs,H Lisle Gibbs,AE,SE, McMaster University,,Hamilton,ON,Canada,CAN
+EVOL,2002,56,NA,728,David,,Houle,David Houle,AE,SE,Florida State University,,Tallahassee,FL,USA,USA
+EVOL,2002,56,NA,1644,John,Peter,Huelsenbeck,John Peter Huelsenbeck,AE,SE, University of Rochester,,Rochester,NY,USA,USA
+EVOL,2002,56,NA,2839,Philippe,,Jarne,Philippe Jarne,AE,SE,Centre d'Ecologie Fonctionnelle et Evolutive- CNRS,,Montpellier,Occitanie,France,FRA
+EVOL,2002,56,NA,3377,Stephen,A,Karl,Stephen A Karl,AE,SE, University of South Florida,,Tampa,FL,USA,USA
+EVOL,2002,56,NA,3576,Tadeusz,J,Kawecki,Tadeusz J Kawecki,AE,SE, University of Basel,,Basel,Basel-Stadt,Switzerland,CHE
+EVOL,2002,56,NA,511,Carlos,,Lopez-Fanjul,Carlos Lopez-Fanjul,AE,SE,Universidad Complutense,,Madrid,Community of Madrid,Spain,ESP
+EVOL,2002,56,NA,1736,James,,Mallet,James Mallet,Special.Editor,SPECIAL,University College London,,London,Greater London,USA,USA
+EVOL,2002,56,NA,1227,Georgiana,,May,Georgiana May,AE,SE,University of Minnesota,,St. Paul,MN,USA,USA
+EVOL,2002,56,NA,1759,Juha,Kari-Kristian,Merila,Juha Kari-Kristian Merila,AE,SE, Uppsala University,,Uppsala,Uppsala,Sweden,SWE
+EVOL,2002,56,NA,1772,Jeffry,B,Mitton,Jeffry B Mitton,Special.Editor,SPECIAL,University of Colorado- Boulder,,Boulder,CO,USA,USA
+EVOL,2002,56,NA,2483,Martin,T,Morgan,Martin T Morgan,AE,SE, Washington State University,,Pullman,WA,USA,USA
+EVOL,2002,56,NA,1780,John,D,Nason,John D Nason,AE,SE, Iowa State University,,Ames,IA,USA,USA
+EVOL,2002,56,NA,2493,Mohamed,AF,Noor,Mohamed AF Noor,AE,SE, Louisiana State University,,Baton Rouge,LA,USA,USA
+EVOL,2002,56,NA,1341,Howard,,Ochman,Howard Ochman,AE,SE,University of Arizona,,Tuscon,AZ,USA,USA
+EVOL,2002,56,NA,1239,Guillermo,,Orti,Guillermo Orti,AE,SE,University of Nebraska,,Lincoln,NE,USA,USA
+EVOL,2002,56,NA,3441,Scott,,Pitnick,Scott Pitnick,AE,SE,Syracuse University,,Syracuse,NY,USA,USA
+EVOL,2002,56,NA,3194,Robert,,Poulin,Robert Poulin,AE,SE,University of Otago,,Dunedin,Otago,NewZealand,NZL
+EVOL,2002,56,NA,2089,Kerry,L,Shaw,Kerry L Shaw,AE,SE, University of Maryland,,College Park,MD,USA,USA
+EVOL,2002,56,NA,359,Barry,,Sinervo,Barry Sinervo,AE,SE,University of California- Santa Cruz,,Santa Cruz,CA,USA,USA
+EVOL,2002,56,NA,3945,Thomas,B,Smith,Thomas B Smith,AE,SE, San Francisco State University,,San Francisco,CA,USA,USA
+EVOL,2002,56,NA,3482,Sharon,Y,Strauss,Sharon Y Strauss,AE,SE, University of California- Davis,,Davis,CA,USA,USA
+EVOL,2002,56,NA,3489,Stephen,J,Tonsor,Stephen J Tonsor,AE,SE, University of Pittsburgh,,Pittsburgh,PA,USA,USA
+EVOL,2002,56,NA,2948,Peter,,Wainwright,Peter Wainwright,AE,SE,University of California- Davis,,Davis,CA,USA,USA
+EVOL,2002,56,NA,901,Donald,M,Waller,Donald M Waller,Editor,EIC,University of Wisconsin,,Madison,WI,USA,USA
+EVOL,2002,56,NA,1271,Graham,Peter,Wallis,Graham Peter Wallis,AE,SE, University of Otago,,Dunedin,Otago,NewZealand,NZL
+EVOL,2002,56,NA,2607,Michael,C,Whitlock,Michael C Whitlock,AE,SE, University of British Columbia,,Vancouver,BC,Canada,CAN
+EVOL,2002,56,NA,1954,John,J,Wiens,John J Wiens,AE,SE, Carnegie Museum of Natural History,,Pittsburgh,PA,USA,USA
+EVOL,2002,56,NA,594,Charles,Frederick,Williams,Charles Frederick Williams,AE,SE, Idaho State University,,Pocatello,ID,USA,USA
+EVOL,2002,56,NA,1958,John,,Willis,John Willis,AE,SE,Duke University,,Durham,NC,USA,USA
+EVOL,2002,56,NA,235,Anne,D,Yoder,Anne D Yoder,AE,SE, Yale University,,New Haven,CT,USA,USA
+EVOL,2002,56,NA,2623,Marlene,,Zuk,Marlene Zuk,AE,SE,University of California- Riverside,,Riverside,CA,USA,USA
+EVOL,2003,57,NA,2277,Mary,V,Ashley,Mary V Ashley,AE,SE, University of Illinois at Chicago,,Chicago,IL,USA,USA
+EVOL,2003,57,NA,618,David,A,Baum,David A Baum,AE,SE, Harvard University Herbaria,,Cambridge,MA,USA,USA
+EVOL,2003,57,NA,395,Craig,W,Benkman,Craig W Benkman,AE,SE, New Mexico State University,,Las Cruces,NM,USA,USA
+EVOL,2003,57,NA,2301,Mats,,Bjorklund,Mats Bjorklund,AE,SE,Uppsala University,,Uppsala,Uppsala,Sweden,SWE
+EVOL,2003,57,NA,1056,Francois,,Bonhomme,Francois Bonhomme,AE,SE,UniversitÇ de Montpellier II,,Montpellier,Occitanie,France,FRA
+EVOL,2003,57,NA,428,Cliff,,Cunningham,Cliff Cunningham,AE,SE,Duke University,,Durham,NC,USA,USA
+EVOL,2003,57,NA,2798,Peter,O,Dunn,Peter O Dunn,AE,SE, University of Wisconsin-Milwaukee,,Milwaukee,WI,USA,USA
+EVOL,2003,57,NA,3320,Santiago,F,Elena,Santiago F Elena,AE,SE, CSIC-UPV,,Valencia,Valencian Community,Spain,ESP
+EVOL,2003,57,NA,445,Charles,B,Fenster,Charles B Fenster,AE,SE, University of Maryland,,College Park,MD,USA,USA
+EVOL,2003,57,NA,2370,Michael,,Foote,Michael Foote,AE,SE,University of Chicago,,Chicago,IL,USA,USA
+EVOL,2003,57,NA,1584,James,Duncan,Fry,James Duncan Fry,AE,SE, University of Rochester,,Rochester,NY,USA,USA
+EVOL,2003,57,NA,2151,Laura,F,Galloway,Laura F Galloway,AE,SE, University of Virginia,,Charlottesville,VA,USA,USA
+EVOL,2003,57,NA,3336,Sergey,,Gavrilets,Sergey Gavrilets,AE,SE,University of Tennessee,,Knoxville,TN,USA,USA
+EVOL,2003,57,NA,2385,Monica,A,Geber,Monica A Geber,AE,SE, Cornell University,,Ithaca,NY,USA,USA
+EVOL,2003,57,NA,3084,Richard,Green,Harrison,Richard Green Harrison,Editor,EIC,Cornell University,,Ithaca,NY,USA,USA
+EVOL,2003,57,NA,1637,Jody,,Hey,Jody Hey,AE,SE,Rutgers University,,New Brunswick,NJ,USA,USA
+EVOL,2003,57,NA,728,David,,Houle,David Houle,AE,SE,Florida State University,,Tallahassee,FL,USA,USA
+EVOL,2003,57,NA,293,Brian,C,Husband,Brian C Husband,AE,SE, University of Guelph,,Guelph,ON,Canada,CAN
+EVOL,2003,57,NA,3374,Susan,,Kalisz,Susan Kalisz,AE,SE,University of Pittsburgh,,Pittsburgh,PA,USA,USA
+EVOL,2003,57,NA,2184,Laura,A,Katz,Laura A Katz,AE,SE, Smith College,,Northampton,MA,USA,USA
+EVOL,2003,57,NA,2186,Laurent,,Keller,Laurent Keller,AE,SE,UniversitÇ de Lausanne,,Lausanne,Vaud,Switzerland,CHE
+EVOL,2003,57,NA,1736,James,,Mallet,James Mallet,Special.Editor,SPECIAL,University College London,,London,Greater London,United Kingdom,GBR
+EVOL,2003,57,NA,1227,Georgiana,,May,Georgiana May,AE,SE,University of Minnesota,,St. Paul,MN,USA,USA
+EVOL,2003,57,NA,1759,Juha,Kari-Kristian,Merila,Juha Kari-Kristian Merila,AE,SE, Uppsala University,,Uppsala,Uppsala,Sweden,SWE
+EVOL,2003,57,NA,1772,Jeffry,B,Mitton,Jeffry B Mitton,Special.Editor,SPECIAL,University of Colorado- Boulder,,Boulder,CO,USA,USA
+EVOL,2003,57,NA,2486,Michael,W,Nachman,Michael W Nachman,AE,SE, University of Arizona,,Tuscon,AZ,USA,USA
+EVOL,2003,57,NA,1780,John,D,Nason,John D Nason,AE,SE, Iowa State University,,Iowa City,IA,USA,USA
+EVOL,2003,57,NA,2493,Mohamed,AF,Noor,Mohamed AF Noor,AE,SE, Louisiana State University,,Baton Rouge,LA,USA,USA
+EVOL,2003,57,NA,1239,Guillermo,,Orti,Guillermo Orti,AE,SE,University of Nebraska,,Lincoln,NE,USA,USA
+EVOL,2003,57,NA,2731,Olle,,Pellmyr,Olle Pellmyr,AE,SE,University of Idaho,,Moscow,ID,USA,USA
+EVOL,2003,57,NA,2894,Patrick,,Phillips,Patrick Phillips,AE,SE,University of Oregon,,Eugene,OR,USA,USA
+EVOL,2003,57,NA,3441,Scott,,Pitnick,Scott Pitnick,AE,SE,Syracuse University,,Syracuse,NY,USA,USA
+EVOL,2003,57,NA,169,Adam,H,Porter,Adam H Porter,AE,SE,University of Massachusetts- Amherst,,Amherst,MA,USA,USA
+EVOL,2003,57,NA,3194,Robert,,Poulin,Robert Poulin,AE,SE,University of Otago,,Dunedin,Otago,NewZealand,NZL
+EVOL,2003,57,NA,2089,Kerry,L,Shaw,Kerry L Shaw,AE,SE,University of Maryland,,College Park,MD,USA,USA
+EVOL,2003,57,NA,359,Barry,,Sinervo,Barry Sinervo,AE,SE,University of California- Santa Cruz,,Santa Cruz,CA,USA,USA
+EVOL,2003,57,NA,3945,Thomas,B,Smith,Thomas B Smith,AE,SE, San Francisco State University,,San Francisco,CA,USA,USA
+EVOL,2003,57,NA,3647,Tom,,Tregenza,Tom Tregenza,AE,SE,University of Leeds,,Leeds,West Yorkshire,United Kingdom,GBR
+EVOL,2003,57,NA,2948,Peter,,Wainwright,Peter Wainwright,AE,SE,University of California- Davis,,Davis,CA,USA,USA
+EVOL,2003,57,NA,1271,Graham,Peter,Wallis,Graham Peter Wallis,AE,SE, University of Otago,,Dunedin,Otago,NewZealand,NZL
+EVOL,2003,57,NA,1954,John,J,Wiens,John J Wiens,AE,SE,State University of New York at Stony Brook,,Stony Brook,NY,USA,USA
+EVOL,2003,57,NA,594,Charles,Frederick,Williams,Charles Frederick Williams,AE,SE, Idaho State University,,Pocatello,ID,USA,USA
+EVOL,2003,57,NA,1958,John,,Willis,John Willis,AE,SE,Duke University,,Durham,NC,USA,USA
+EVOL,2003,57,NA,235,Anne,D,Yoder,Anne D Yoder,AE,SE, Yale University,,New Haven,CT,USA,USA
+EVOL,2004,58,NA,395,Craig,W,Benkman,Craig W Benkman,AE,SE, New Mexico State University,,Las Cruces,NM,USA,USA
+EVOL,2004,58,NA,2301,Mats,,Bjorklund,Mats Bjorklund,AE,SE,Uppsala University,,Uppsala,Uppsala,Sweden,SWE
+EVOL,2004,58,NA,1056,Francois,,Bonhomme,Francois Bonhomme,AE,SE,UniversitÇ de Montpellier II,,Montpellier,Occitanie,France,FRA
+EVOL,2004,58,NA,938,Elizabeth,,Brainerd,Elizabeth Brainerd,AE,SE,University of Massachusetts- Amherst,,Amherst,MA,USA,USA
+EVOL,2004,58,NA,428,Cliff,,Cunningham,Cliff Cunningham,AE,SE,Duke University,,Durham,NC,USA,USA
+EVOL,2004,58,NA,3533,Troy,,Day,Troy Day,AE,SE,Queen's University,,Kingston,ON,Canada,CAN
+EVOL,2004,58,NA,3320,Santiago,F,Elena,Santiago F Elena,AE,SE, CSIC-UPV,,Valencia,Valencian Community,Spain,ESP
+EVOL,2004,58,NA,445,Charles,B,Fenster,Charles B Fenster,AE,SE, University of Maryland,,College Park,MD,USA,USA
+EVOL,2004,58,NA,1584,James,Duncan,Fry,James Duncan Fry,AE,SE, University of Rochester,,Rochester,NY,USA,USA
+EVOL,2004,58,NA,697,Douglas,J,Futuyma,Douglas J Futuyma,Book.Review.Editor,SPECIAL, University of Michigan,,Ann Arbor,MI,USA,USA
+EVOL,2004,58,NA,2151,Laura,F,Galloway,Laura F Galloway,AE,SE, University of Virginia,,Charlottesville,VA,USA,USA
+EVOL,2004,58,NA,3336,Sergey,,Gavrilets,Sergey Gavrilets,AE,SE,University of Tennessee,,Knoxville,TN,USA,USA
+EVOL,2004,58,NA,2385,Monica,A,Geber,Monica A Geber,AE,SE, Cornell University,,Ithaca,NY,USA,USA
+EVOL,2004,58,NA,3071,Richard,Stephen,Gomulkiewicz,Richard Stephen Gomulkiewicz,AE,SE, Washington State University,,Pullman,WA,USA,USA
+EVOL,2004,58,NA,463,Charles,J,Goodnight,Charles J Goodnight,AE,SE, University of Vermont,,Burlington,VT,USA,USA
+EVOL,2004,58,NA,3084,Richard,Green,Harrison,Richard Green Harrison,Editor,EIC,Cornell University,,Ithaca,NY,USA,USA
+EVOL,2004,58,NA,1637,Jody,,Hey,Jody Hey,AE,SE,Rutgers University,,New Brunswick,NJ,USA,USA
+EVOL,2004,58,NA,728,David,,Houle,David Houle,AE,SE,Florida State University,,Tallahassee,FL,USA,USA
+EVOL,2004,58,NA,293,Brian,C,Husband,Brian C Husband,AE,SE, University of Guelph,,Guelph,ON,Canada,CAN
+EVOL,2004,58,NA,487,Christine,Marie,Janis,Christine Marie Janis,AE,SE, Brown University,,Providence,RI,USA,USA
+EVOL,2004,58,NA,3374,Susan,,Kalisz,Susan Kalisz,AE,SE,University of Pittsburgh,,Pittsburgh,PA,USA,USA
+EVOL,2004,58,NA,2184,Laura,A,Katz,Laura A Katz,AE,SE, Smith College,,Northampton,MA,USA,USA
+EVOL,2004,58,NA,2186,Laurent,,Keller,Laurent Keller,AE,SE,UniversitÇ de Lausanne,,Lausanne,Vaud,Switzerland,CHE
+EVOL,2004,58,NA,1227,Georgiana,,May,Georgiana May,AE,SE,University of Minnesota,,St. Paul,MN,USA,USA
+EVOL,2004,58,NA,786,Damhnait,,Mchugh,Damhnait Mchugh,AE,SE,Colgate University,,Hamilton,NY,USA,USA
+EVOL,2004,58,NA,3668,Ulrich,Gerhard,Mueller,Ulrich Gerhard Mueller,AE,SE, University of Texas,,Austin,TX,USA,USA
+EVOL,2004,58,NA,2486,Michael,W,Nachman,Michael W Nachman,AE,SE, University of Arizona,,Tuscon,AZ,USA,USA
+EVOL,2004,58,NA,1780,John,D,Nason,John D Nason,AE,SE, Iowa State University,,Ames,IA,USA,USA
+EVOL,2004,58,NA,2493,Mohamed,AF,Noor,Mohamed AF Noor,AE,SE, Louisiana State University,,Baton Rouge,LA,USA,USA
+EVOL,2004,58,NA,1239,Guillermo,,Orti,Guillermo Orti,AE,SE,University of Nebraska,,Lincoln,NE,USA,USA
+EVOL,2004,58,NA,2731,Olle,,Pellmyr,Olle Pellmyr,AE,SE,University of Idaho,,Moscow,ID,USA,USA
+EVOL,2004,58,NA,2511,Merrill,A,Peterson,Merrill A Peterson,AE,SE, Western Washington University,,Bellingham,WA,USA,USA
+EVOL,2004,58,NA,2894,Patrick,,Phillips,Patrick Phillips,AE,SE,University of Oregon,,Eugene,OR,USA,USA
+EVOL,2004,58,NA,169,Adam,H,Porter,Adam H Porter,AE,SE,University of Massachusetts- Amherst,,Amherst,MA,USA,USA
+EVOL,2004,58,NA,3194,Robert,,Poulin,Robert Poulin,AE,SE,University of Otago,,Dunedin,Otago,NewZealand,NZL
+EVOL,2004,58,NA,2234,Locke,,Rowe,Locke Rowe,AE,SE,University of Toronto,,Toronto,ON,Canada,CAN
+EVOL,2004,58,NA,2084,Kurt,,Schwenk,Kurt Schwenk,AE,SE,University of Connecticut,,Storrs,CT,USA,USA
+EVOL,2004,58,NA,2089,Kerry,L,Shaw,Kerry L Shaw,AE,SE,University of Maryland,,College Park,MD,USA,USA
+EVOL,2004,58,NA,2921,Pamela,,Soltis,Pamela Soltis,AE,SE,University of Florida,,Gainesville,FL,USA,USA
+EVOL,2004,58,NA,2568,Michael,D,Sorenson,Michael D Sorenson,AE,SE,Boston University,,Boston,MA,USA,USA
+EVOL,2004,58,NA,3647,Tom,,Tregenza,Tom Tregenza,AE,SE,University of Leeds,,Leeds,West Yorkshire,United Kingdom,GBR
+EVOL,2004,58,NA,2948,Peter,,Wainwright,Peter Wainwright,AE,SE,University of California- Davis,,Davis,CA,USA,USA
+EVOL,2004,58,NA,3924,Michael,Stilson,Webster,Michael Stilson Webster,AE,SE, Washington State University,,Pullman,WA,USA,USA
+EVOL,2004,58,NA,594,Charles,Frederick,Williams,Charles Frederick Williams,AE,SE, Idaho State University,,Moscow,ID,USA,USA
+EVOL,2004,58,NA,1958,John,,Willis,John Willis,AE,SE,Duke University,,Durham,NC,USA,USA
+EVOL,2004,58,NA,235,Anne,D,Yoder,Anne D Yoder,AE,SE, Yale University,,New Haven,CT,USA,USA
+EVOL,2005,59,NA,395,Craig,W,Benkman,Craig W Benkman,AE,SE, New Mexico State University,,Las Cruces,NM,USA,USA
+EVOL,2005,59,NA,2301,Mats,,Bjorklund,Mats Bjorklund,AE,SE,Uppsala University,,Uppsala,Uppsala,Sweden,SWE
+EVOL,2005,59,NA,1056,Francois,,Bonhomme,Francois Bonhomme,AE,SE,UniversitÇ de Montpellier II,,Montpellier,Occitanie,France,FRA
+EVOL,2005,59,NA,938,Elizabeth,,Brainerd,Elizabeth Brainerd,AE,SE,University of Massachusetts- Amherst,,Amherst,MA,USA,USA
+EVOL,2005,59,NA,428,Cliff,,Cunningham,Cliff Cunningham,AE,SE,Duke University,,Durham,NC,USA,USA
+EVOL,2005,59,NA,3533,Troy,,Day,Troy Day,AE,SE,Queen's University,,Kingston,ON,Canada,CAN
+EVOL,2005,59,NA,3320,Santiago,F,Elena,Santiago F Elena,AE,SE, CSIC-UPV,,Valencia,Valencian Community,Spain,ESP
+EVOL,2005,59,NA,445,Charles,B,Fenster,Charles B Fenster,AE,SE, University of Maryland,,College Park,MD,USA,USA
+EVOL,2005,59,NA,689,Diarmaid,O,Foighil,Diarmaid O Foighil,AE,SE, University of Michigan,,Ann Arbor,MI,USA,USA
+EVOL,2005,59,NA,1584,James,Duncan,Fry,James Duncan Fry,AE,SE, University of Rochester,,Rochester,NY,USA,USA
+EVOL,2005,59,NA,697,Douglas,J,Futuyma,Douglas J Futuyma,Book.Review.Editor,SPECIAL, University of Michigan,,Ann Arbor,MI,USA,USA
+EVOL,2005,59,NA,2151,Laura,F,Galloway,Laura F Galloway,AE,SE, University of Virginia,,Charlottesville,VA,USA,USA
+EVOL,2005,59,NA,3336,Sergey,,Gavrilets,Sergey Gavrilets,AE,SE,University of Tennessee,,Knoxville,TN,USA,USA
+EVOL,2005,59,NA,2385,Monica,A,Geber,Monica A Geber,AE,SE, Cornell University,,Ithaca,NY,USA,USA
+EVOL,2005,59,NA,3071,Richard,Stephen,Gomulkiewicz,Richard Stephen Gomulkiewicz,AE,SE, Washington State University,,Pullman,WA,USA,USA
+EVOL,2005,59,NA,463,Charles,J,Goodnight,Charles J Goodnight,AE,SE, University of Vermont,,Burlington,VT,USA,USA
+EVOL,2005,59,NA,3084,Richard,Green,Harrison,Richard Green Harrison,Editor,EIC,Cornell University,,Ithaca,NY,USA,USA
+EVOL,2005,59,NA,1637,Jody,,Hey,Jody Hey,AE,SE,Rutgers University,,New Brunswick,NJ,USA,USA
+EVOL,2005,59,NA,728,David,,Houle,David Houle,AE,SE,Florida State University,,Tallahassee,FL,USA,USA
+EVOL,2005,59,NA,293,Brian,C,Husband,Brian C Husband,AE,SE, University of Guelph,,Guelph,ON,Canada,CAN
+EVOL,2005,59,NA,487,Christine,Marie,Janis,Christine Marie Janis,AE,SE, Brown University,,Providence,RI,USA,USA
+EVOL,2005,59,NA,3374,Susan,,Kalisz,Susan Kalisz,AE,SE,University of Pittsburgh,,Pittsburgh,PA,USA,USA
+EVOL,2005,59,NA,2184,Laura,A,Katz,Laura A Katz,AE,SE, Smith College,,Northampton,MA,USA,USA
+EVOL,2005,59,NA,2186,Laurent,,Keller,Laurent Keller,AE,SE,UniversitÇ de Lausanne,,Lausanne,Vaud,Switzerland,CHE
+EVOL,2005,59,NA,1227,Georgiana,,May,Georgiana May,AE,SE,University of Minnesota,,St. Paul,MN,USA,USA
+EVOL,2005,59,NA,786,Damhnait,,Mchugh,Damhnait Mchugh,AE,SE,Colgate University,,Hamilton,NY,USA,USA
+EVOL,2005,59,NA,3668,Ulrich,Gerhard,Mueller,Ulrich Gerhard Mueller,AE,SE, University of Texas,,Austin,TX,USA,USA
+EVOL,2005,59,NA,2486,Michael,W,Nachman,Michael W Nachman,AE,SE, University of Arizona,,Tuscon,AZ,USA,USA
+EVOL,2005,59,NA,1780,John,D,Nason,John D Nason,AE,SE, Iowa State University,,Ames,IA,USA,USA
+EVOL,2005,59,NA,2493,Mohamed,AF,Noor,Mohamed AF Noor,AE,SE, Louisiana State University,,Baton Rouge,LA,USA,USA
+EVOL,2005,59,NA,1239,Guillermo,,Orti,Guillermo Orti,AE,SE,University of Nebraska,,Lincoln,NE,USA,USA
+EVOL,2005,59,NA,2731,Olle,,Pellmyr,Olle Pellmyr,AE,SE,University of Idaho,,Moscow,ID,USA,USA
+EVOL,2005,59,NA,2511,Merrill,A,Peterson,Merrill A Peterson,AE,SE, Western Washington University,,Bellingham,WA,USA,USA
+EVOL,2005,59,NA,2894,Patrick,,Phillips,Patrick Phillips,AE,SE,University of Oregon,,Eugene,OR,USA,USA
+EVOL,2005,59,NA,169,Adam,H,Porter,Adam H Porter,AE,SE,University of Massachusetts- Amherst,,Amherst,MA,USA,USA
+EVOL,2005,59,NA,3194,Robert,,Poulin,Robert Poulin,AE,SE,University of Otago,,Dunedin,Otago,NewZealand,NZL
+EVOL,2005,59,NA,2234,Locke,,Rowe,Locke Rowe,AE,SE,University of Toronto,,Toronto,ON,Canada,CAN
+EVOL,2005,59,NA,2084,Kurt,,Schwenk,Kurt Schwenk,AE,SE,University of Connecticut,,Storrs,CT,USA,USA
+EVOL,2005,59,NA,2089,Kerry,L,Shaw,Kerry L Shaw,AE,SE, University of Maryland,,College Park,MD,USA,USA
+EVOL,2005,59,NA,2921,Pamela,,Soltis,Pamela Soltis,AE,SE,University of Florida,,Gainesville,FL,USA,USA
+EVOL,2005,59,NA,2568,Michael,D,Sorenson,Michael D Sorenson,AE,SE, Boston University,,Boston,MA,USA,USA
+EVOL,2005,59,NA,3647,Tom,,Tregenza,Tom Tregenza,AE,SE,University of Leeds,,Leeds,West Yorkshire,United Kingdom,GBR
+EVOL,2005,59,NA,2948,Peter,,Wainwright,Peter Wainwright,AE,SE,University of California- Davis,,Davis,CA,USA,USA
+EVOL,2005,59,NA,3924,Michael,Stilson,Webster,Michael Stilson Webster,AE,SE, Washington State University,,Pullman,WA,USA,USA
+EVOL,2005,59,NA,594,Charles,Frederick,Williams,Charles Frederick Williams,AE,SE, Idaho State University,,Moscow,ID,USA,USA
+EVOL,2005,59,NA,1958,John,,Willis,John Willis,AE,SE,Duke University,,Durham,NC,USA,USA
+EVOL,2005,59,NA,235,Anne,D,Yoder,Anne D Yoder,AE,SE, Yale University,,New Haven,CT,USA,USA
+EVOL,2006,60,NA,1434,Jon,,Agren,Jon Agren,AE,SE,Uppsala University,,Uppsala,Uppsala,Sweden,SWE
+EVOL,2006,60,NA,615,David,J,Ayre,David J Ayre,AE,SE,University of Wollongong,,Wollongong,NSW,Australia,AUS
+EVOL,2006,60,NA,938,Elizabeth,,Brainerd,Elizabeth Brainerd,AE,SE,University of Massachusetts- Amherst,,Amherst,MA,USA,USA
+EVOL,2006,60,NA,947,Elena,,Conti,Elena Conti,AE,SE,University of Zurich,,ZÅrich,ZÅrich,Switzerland,CHE
+EVOL,2006,60,NA,1994,Keith,A,Crandall,Keith A Crandall,AE,SE, Brigham Young University,,Provo,UT,USA,USA
+EVOL,2006,60,NA,3533,Troy,,Day,Troy Day,AE,SE,Queen's University,,Kingston,ON,Canada,CAN
+EVOL,2006,60,NA,689,Diarmaid,O,Foighil,Diarmaid O Foighil,AE,SE, University of Michigan,,Ann Arbor,MI,USA,USA
+EVOL,2006,60,NA,696,Daniel,J,Funk,Daniel J Funk,AE,SE, Vanderbilt University,,Nashville,TN,USA,USA
+EVOL,2006,60,NA,697,Douglas,J,Futuyma,Douglas J Futuyma,Book.Review.Editor,SPECIAL,State University of New York at Stony Brook,,Stony Brook,NY,USA,USA
+EVOL,2006,60,NA,3071,Richard,Stephen,Gomulkiewicz,Richard Stephen Gomulkiewicz,AE,SE, Washington State University,,Pullman,WA,USA,USA
+EVOL,2006,60,NA,463,Charles,J,Goodnight,Charles J Goodnight,AE,SE, University of Vermont,,Burlington,VT,USA,USA
+EVOL,2006,60,NA,3561,Thomas,F,Hansen,Thomas F Hansen,AE,SE, Florida State University,,Tallahassee,FL,USA,USA
+EVOL,2006,60,NA,3084,Richard,Green,Harrison,Richard Green Harrison,Editor,EIC,Cornell University,,Ithaca,NY,USA,USA
+EVOL,2006,60,NA,1313,Hope,,Hollocher,Hope Hollocher,AE,SE,University of Notre Dame,,South Bend,IN,USA,USA
+EVOL,2006,60,NA,2017,Kimberly,A,Hughes,Kimberly A Hughes,AE,SE,University of Illinois at Urbana-Champaign,,Champaign,IL,USA,USA
+EVOL,2006,60,NA,487,Christine,Marie,Janis,Christine Marie Janis,AE,SE, Brown University,,Providence,RI,USA,USA
+EVOL,2006,60,NA,1674,Jacob,C,Koella,Jacob C Koella,AE,SE, Universite Pierre and Marie Curie,,Paris,Ile-de-France,France,FRA
+EVOL,2006,60,NA,1675,Joshua,R,Kohn,Joshua R Kohn,AE,SE, University of California-San Diego,,La Jolla,CA,USA,USA
+EVOL,2006,60,NA,3146,Rodney,,Mauricio,Rodney Mauricio,AE,SE,University of Georgia,,Athens,GA,USA,USA
+EVOL,2006,60,NA,3770,W,Owen,Mcmillan,W Owen Mcmillan,AE,SE, University of Puerto Rico,,San Juan,Puerto Rico,PuertoRico,PRI
+EVOL,2006,60,NA,157,Arne,,Mooers,Arne Mooers,AE,SE,Simon Fraser University,,Burnaby,BC,Canada,CAN
+EVOL,2006,60,NA,3668,Ulrich,Gerhard,Mueller,Ulrich Gerhard Mueller,AE,SE, University of Texas,,Austin,TX,USA,USA
+EVOL,2006,60,NA,2493,Mohamed,AF,Noor,Mohamed AF Noor,AE,SE, Louisiana State University,,Baton Rouge,LA,USA,USA
+EVOL,2006,60,NA,336,Beate,D,Nujrnberger,Beate D Nujrnberger,AE,SE, Ludwig-Maximilians-UniversitÑt MÅnchen,,Munich,Bavaria,Germany,DEU
+EVOL,2006,60,NA,3425,Sarah,Perin,Otto,Sarah Perin Otto,AE,SE, University of British Columbia,,Vancouver,BC,Canada,CAN
+EVOL,2006,60,NA,2511,Merrill,A,Peterson,Merrill A Peterson,AE,SE, Western Washington University,,Bellingham,WA,USA,USA
+EVOL,2006,60,NA,829,Daniel,El,Promislow,Daniel El Promislow,AE,SE, University of Georgia,,Athens,GA,USA,USA
+EVOL,2006,60,NA,2234,Locke,,Rowe,Locke Rowe,AE,SE,University of Toronto,,Toronto,ON,Canada,CAN
+EVOL,2006,60,NA,864,Daniel,J,Schoen,Daniel J Schoen,AE,SE, McGill University,,Montreal,QC,Canada,CAN
+EVOL,2006,60,NA,2084,Kurt,,Schwenk,Kurt Schwenk,AE,SE,University of Connecticut,,Storrs,CT,USA,USA
+EVOL,2006,60,NA,2559,Maria,R,Servedio,Maria R Servedio,AE,SE, University of North Carolina-Chapel Hill,,Chapel Hill,NC,USA,USA
+EVOL,2006,60,NA,3223,Rhonda,R,Snook,Rhonda R Snook,AE,SE, University of Sheffield,,Sheffield,South Yorkshire,United Kingdom,GBR
+EVOL,2006,60,NA,2568,Michael,D,Sorenson,Michael D Sorenson,AE,SE, Boston University,,Boston,MA,USA,USA
+EVOL,2006,60,NA,2931,Paul,,Sunnucks,Paul Sunnucks,AE,SE,Monash University,,Victoria,VIC,Australia,AUS
+EVOL,2006,60,NA,3924,Michael,Stilson,Webster,Michael Stilson Webster,AE,SE, Washington State University,,Pullman,WA,USA,USA
+EVOL,2007,61,NA,2749,Patrick,,Abbot,Patrick Abbot,AE,SE,Vanderbilt University,,Nashville,TN,USA,USA
+EVOL,2007,61,NA,1434,Jon,,Agren,Jon Agren,AE,SE,Uppsala University,,Uppsala,Uppsala,Sweden,SWE
+EVOL,2007,61,NA,1147,Goran,,Arnqvist,Goran Arnqvist,AE,SE,Uppsala University,,Uppsala,Uppsala,Sweden,SWE
+EVOL,2007,61,NA,615,David,J,Ayre,David J Ayre,AE,SE, University of Wollongong,,Wollongong,VIC,Australia,AUS
+EVOL,2007,61,NA,2284,Minus,Van,Baalen,Minus Van Baalen,AE,SE, Ecole Normale SupÇrieure,,Paris,Ile-de-France,France,FRA
+EVOL,2007,61,NA,10,Alexander,,Badyaev,Alexander Badyaev,AE,SE,University of Arizona,,Tuscon,AZ,USA,USA
+EVOL,2007,61,NA,1462,Joy,,Bergelson,Joy Bergelson,Editor,AE,University of Chicago,,Chicago,IL,USA,USA
+EVOL,2007,61,NA,3884,Jonathan,M,Brown,Jonathan M Brown,AE,SE,Grinnell College,,Grinnell,IA,USA,USA
+EVOL,2007,61,NA,947,Elena,,Conti,Elena Conti,AE,SE,University of Zurich,,ZÅrich,ZÅrich,Switzerland,CHE
+EVOL,2007,61,NA,1994,Keith,A,Crandall,Keith A Crandall,AE,SE, Brigham Young University,,Provo,UT,USA,USA
+EVOL,2007,61,NA,1569,Jeffrey,,Feder,Jeffrey Feder,AE,SE,University of Notre Dame,,South Bend,IN,USA,USA
+EVOL,2007,61,NA,696,Daniel,J,Funk,Daniel J Funk,AE,SE, Vanderbilt University,,Nashville,TN,USA,USA
+EVOL,2007,61,NA,1069,Frietson,,Galis,Frietson Galis,AE,SE,Leiden University,,Leiden,South Holland,Netherlands,NLD
+EVOL,2007,61,NA,3561,Thomas,F,Hansen,Thomas F Hansen,AE,SE, Florida State University,,Tallahassee,FL,USA,USA
+EVOL,2007,61,NA,1312,Hopi,,Hoekstra,Hopi Hoekstra,AE,SE,Harvard University,,Cambridge,MA,USA,USA
+EVOL,2007,61,NA,1313,Hope,,Hollocher,Hope Hollocher,AE,SE,University of Notre Dame,,South Bend,IN,USA,USA
+EVOL,2007,61,NA,2017,Kimberly,A,Hughes,Kimberly A Hughes,AE,SE,University of Illinois at Urbana-Champaign,,Champaign,IL,USA,USA
+EVOL,2007,61,NA,2187,Lacey,,Knowles,Lacey Knowles,AE,SE,University of Michigan,,Ann Arbor,MI,USA,USA
+EVOL,2007,61,NA,1674,Jacob,C,Koella,Jacob C Koella,AE,SE, Universite Pierre and Marie Curie,,Paris,Ile-de-France,France,FRA
+EVOL,2007,61,NA,1675,Joshua,R,Kohn,Joshua R Kohn,AE,SE, University of California-San Diego,,La Jolla,CA,USA,USA
+EVOL,2007,61,NA,1321,Hanna,,Kokko,Hanna Kokko,AE,SE,University of Helsinki,,Helsinki,Uusimaa,Finland,FIN
+EVOL,2007,61,NA,1739,Johanna,,Mappes,Johanna Mappes,AE,SE,University of Jyvaskyla,,Jyvaskyla,Central Finland,Finland,FIN
+EVOL,2007,61,NA,3146,Rodney,,Mauricio,Rodney Mauricio,AE,SE,University of Georgia,,Athens,GA,USA,USA
+EVOL,2007,61,NA,3770,W,Owen,Mcmillan,W Owen Mcmillan,AE,SE, University of Puerto Rico,,San Juan,Puerto Rico,PuertoRico,PRI
+EVOL,2007,61,NA,3603,Thomas,R,Meagher,Thomas R Meagher,Special.Editor,SPECIAL, University of St. Andrews,,St. Andrews,Fife,United Kingdom,GBR
+EVOL,2007,61,NA,157,Arne,,Mooers,Arne Mooers,AE,SE,Simon Fraser University,,Burnaby,BC,Canada,CAN
+EVOL,2007,61,NA,2493,Mohamed,AF,Noor,Mohamed AF Noor,Editor,AE,Duke University,,Durham,NC,USA,USA
+EVOL,2007,61,NA,336,Beate,D,Nujrnberger,Beate D Nujrnberger,AE,SE, Ludwig-Maximilians-UniversitÑt MÅnchen,,Munich,Bavaria,Germany,DEU
+EVOL,2007,61,NA,3425,Sarah,Perin,Otto,Sarah Perin Otto,AE,SE, University of British Columbia,,Vancouver,BC,Canada,CAN
+EVOL,2007,61,NA,820,David,W,Pfennig,David W Pfennig,AE,SE, University of North Carolina,,Raleigh,NC,USA,USA
+EVOL,2007,61,NA,828,Daven,,Presgraves,Daven Presgraves,AE,SE,University of Rochester,,Rochester,NY,USA,USA
+EVOL,2007,61,NA,829,Daniel,El,Promislow,Daniel El Promislow,AE,SE, University of Georgia,,Athens,GA,USA,USA
+EVOL,2007,61,NA,2532,Mark,D,Rausher,Mark D Rausher,EIC,EIC,Duke University,,Durham,NC,USA,USA
+EVOL,2007,61,NA,180,Andrew,F,Read,Andrew F Read,AE,SE, University of Edinburgh,,Edinburgh,Edinburgh,United Kingdom,GBR
+EVOL,2007,61,NA,864,Daniel,J,Schoen,Daniel J Schoen,AE,SE, McGill University,,Montreal,QC,Canada,CAN
+EVOL,2007,61,NA,2559,Maria,R,Servedio,Maria R Servedio,AE,SE, University of North Carolina-Chapel Hill,,Chapel Hill,NC,USA,USA
+EVOL,2007,61,NA,1867,Jacqui,A,Shykoff,Jacqui A Shykoff,AE,SE, UniversitÇ Paris-Sud,,Orsay,Ile-de-France,France,FRA
+EVOL,2007,61,NA,3223,Rhonda,R,Snook,Rhonda R Snook,AE,SE, University of Sheffield,,Sheffield,South Yorkshire,United Kingdom,GBR
+EVOL,2007,61,NA,3481,Scott,J,Steppan,Scott J Steppan,AE,SE, Florida State University,,Tallahassee,FL,USA,USA
+EVOL,2007,61,NA,2931,Paul,,Sunnucks,Paul Sunnucks,AE,SE,Monash University,,Victoria,VIC,Australia,AUS
+EVOL,2007,61,NA,366,Billie,,Swalla,Billie Swalla,AE,SE,University of Washington,,Seattle,WA,USA,USA
+EVOL,2007,61,NA,2578,Michael,,Travisano,Michael Travisano,AE,SE,University of Houston,,Houston,TX,USA,USA
+EVOL,2007,61,NA,1916,John,,TRUE,John True,AE,SE,State University of New York at Stony Brook,,Stony Brook,NY,USA,USA
+EVOL,2007,61,NA,2704,Nina,,Wedell,Nina Wedell,AE,SE,University of Exeter in Cornwall,,Penryn,Cornwall,United Kingdom,GBR
+EVOL,2007,61,NA,1962,Jason,,Wolf,Jason Wolf,AE,SE,University of Manchester,,Manchester,Greater Manchester,United Kingdom,GBR
+EVOL,2008,62,NA,2749,Patrick,,Abbot,Patrick Abbot,AE,SE,Vanderbilt University,,Nashville,TN,USA,USA
+EVOL,2008,62,NA,1434,Jon,,Agren,Jon Agren,AE,SE,Uppsala University,,Uppsala,Uppsala,Sweden,SWE
+EVOL,2008,62,NA,1147,Goran,,Arnqvist,Goran Arnqvist,AE,SE,Evolutionary Biology Centre,,Uppsala,Uppsala,Sweden,SWE
+EVOL,2008,62,NA,2284,Minus,Van,Baalen,Minus Van Baalen,AE,SE, Ecole Normale Superieure,,Paris,Ile-de-France,France,FRA
+EVOL,2008,62,NA,10,Alexander,,Badyaev,Alexander Badyaev,AE,SE,University of Arizona,,Tuscon,AZ,USA,USA
+EVOL,2008,62,NA,1462,Joy,,Bergelson,Joy Bergelson,Editor,AE,University of Chicago,,Chicago,IL,USA,USA
+EVOL,2008,62,NA,3884,Jonathan,M,Brown,Jonathan M Brown,AE,SE, Grinnell College,,Grinnell,IA,USA,USA
+EVOL,2008,62,NA,2315,Martin,,Burd,Martin Burd,AE,SE,Monash University,,Victoria,VIC,Australia,AUS
+EVOL,2008,62,NA,1569,Jeffrey,,Feder,Jeffrey Feder,AE,SE,University of Notre Dame,,South Bend,IN,USA,USA
+EVOL,2008,62,NA,1069,Frietson,,Galis,Frietson Galis,AE,SE,Leiden University,,Leiden,South Holland,Netherlands,NLD
+EVOL,2008,62,NA,463,Charles,J,Goodnight,Charles J Goodnight,AE,SE, University of Vermont,,Burlington,VT,USA,USA
+EVOL,2008,62,NA,2409,Michael,E,Hellberg,Michael E Hellberg,AE,SE, Louisiana State University,,Baton Rouge,LA,USA,USA
+EVOL,2008,62,NA,1312,Hopi,,Hoekstra,Hopi Hoekstra,AE,SE,Harvard University,,Cambridge,MA,USA,USA
+EVOL,2008,62,NA,1644,John,Peter,Huelsenbeck,John Peter Huelsenbeck,AE,SE,University of California- Berkeley,,Berkeley,CA,USA,USA
+EVOL,2008,62,NA,1206,Gene,,Hunt,Gene Hunt,AE,SE,National Museum of Natural History,,Washington,DC,USA,USA
+EVOL,2008,62,NA,3574,Thomas,E,Juenger,Thomas E Juenger,AE,SE, University of Texas at Austin,,Austin,TX,USA,USA
+EVOL,2008,62,NA,2187,Lacey,,Knowles,Lacey Knowles,AE,SE,University of Michigan,,Ann Arbor,MI,USA,USA
+EVOL,2008,62,NA,1675,Joshua,R,Kohn,Joshua R Kohn,AE,SE, University of California-San Diego,,La Jolla,CA,USA,USA
+EVOL,2008,62,NA,1321,Hanna,,Kokko,Hanna Kokko,AE,SE,University of Helsinki,,Helsinki,Uusimaa,Finland,FIN
+EVOL,2008,62,NA,3401,Susana,Aurora,Magallon-Puebla,Susana Aurora Magallon-Puebla,AE,SE, Universidad Nacional Aut¢noma de MÇxico,,Mexico City,Federal District,Mexico,MEX
+EVOL,2008,62,NA,1739,Johanna,,Mappes,Johanna Mappes,AE,SE,University of Jyvaskyla,,Jyvaskyla,Central Finland,Finland,FIN
+EVOL,2008,62,NA,3770,W,Owen,Mcmillan,W Owen Mcmillan,AE,SE, University of Puerto Rico,,San Juan,Puerto Rico,PuertoRico,PRI
+EVOL,2008,62,NA,3603,Thomas,R,Meagher,Thomas R Meagher,Special.Editor,SPECIAL, University of St. Andrews,,St. Andrews,Fife,United Kingdom,GBR
+EVOL,2008,62,NA,2205,Lauren,Ancel,Meyers,Lauren Ancel Meyers,AE,SE, University of Texas at Austin,,Austin,TX,USA,USA
+EVOL,2008,62,NA,157,Arne,,Mooers,Arne Mooers,AE,SE,Simon Fraser University,,Burnaby,BC,Canada,CAN
+EVOL,2008,62,NA,537,Christopher,C,Nice,Christopher C Nice,AE,SE, Texas State University,,San Marcos,TX,USA,USA
+EVOL,2008,62,NA,2493,Mohamed,AF,Noor,Mohamed AF Noor,Editor,AE,Duke University,,Durham,NC,USA,USA
+EVOL,2008,62,NA,3425,Sarah,Perin,Otto,Sarah Perin Otto,AE,SE, University of British Columbia,,Vancouver,BC,Canada,CAN
+EVOL,2008,62,NA,820,David,W,Pfennig,David W Pfennig,AE,SE, University of North Carolina,,Raleigh,NC,USA,USA
+EVOL,2008,62,NA,825,David,,Posada,David Posada,AE,SE,University of Vigo,,Vigo,Galicia,Spain,ESP
+EVOL,2008,62,NA,828,Daven,,Presgraves,Daven Presgraves,AE,SE,University of Rochester,,Rochester,NY,USA,USA
+EVOL,2008,62,NA,2532,Mark,D,Rausher,Mark D Rausher,EIC,EIC,Duke University,,Durham,NC,USA,USA
+EVOL,2008,62,NA,864,Daniel,J,Schoen,Daniel J Schoen,AE,SE, McGill University,,Montreal,QC,Canada,CAN
+EVOL,2008,62,NA,2559,Maria,R,Servedio,Maria R Servedio,AE,SE, University of North Carolina-Chapel Hill,,Chapel Hill,NC,USA,USA
+EVOL,2008,62,NA,1867,Jacqui,A,Shykoff,Jacqui A Shykoff,AE,SE, UniversitÇ Paris-Sud,,Orsay,Ile-de-France,France,FRA
+EVOL,2008,62,NA,3223,Rhonda,R,Snook,Rhonda R Snook,AE,SE, University of Sheffield,,Sheffield,South Yorkshire,United Kingdom,GBR
+EVOL,2008,62,NA,3481,Scott,J,Steppan,Scott J Steppan,AE,SE, Florida State University,,Tallahassee,FL,USA,USA
+EVOL,2008,62,NA,366,Billie,,Swalla,Billie Swalla,AE,SE,University of Washington,,Seattle,WA,USA,USA
+EVOL,2008,62,NA,3909,John,N,Thompson,John N Thompson,Special.Editor,SPECIAL,University of California- Santa Cruz,,Santa Cruz,CA,USA,USA
+EVOL,2008,62,NA,2939,Peter,,Tiffin,Peter Tiffin,AE,SE,University of Minnesota,,St. Paul,MN,USA,USA
+EVOL,2008,62,NA,2578,Michael,,Travisano,Michael Travisano,AE,SE,University of Houston,,Houston,TX,USA,USA
+EVOL,2008,62,NA,1916,John,,TRUE,John True,AE,SE,State University of New York at Stony Brook,,Stony Brook,NY,USA,USA
+EVOL,2008,62,NA,2601,Marta,L,Wayne,Marta L Wayne,AE,SE, University of Florida,,Gainesville,FL,USA,USA
+EVOL,2008,62,NA,3924,Michael,Stilson,Webster,Michael Stilson Webster,AE,SE, Washington State University,,Pullman,WA,USA,USA
+EVOL,2008,62,NA,2704,Nina,,Wedell,Nina Wedell,AE,SE,University of Exeter in Cornwall,,Penryn,Cornwall,United Kingdom,GBR
+EVOL,2008,62,NA,1962,Jason,,Wolf,Jason Wolf,AE,SE,University of Manchester,,Manchester,Greater Manchester,United Kingdom,GBR
+EVOL,2009,63,NA,2749,Patrick,,Abbot,Patrick Abbot,AE,SE,Vanderbilt University,,Nashville,TN,USA,USA
+EVOL,2009,63,NA,1147,Goran,,Arnqvist,Goran Arnqvist,AE,SE,Evolutionary Biology Centre,,Uppsala,Uppsala,Sweden,SWE
+EVOL,2009,63,NA,2284,Minus,Van,Baalen,Minus Van Baalen,AE,SE, Ecole Normale Superieure,,Paris,Ile-de-France,France,FRA
+EVOL,2009,63,NA,10,Alexander,,Badyaev,Alexander Badyaev,AE,SE,University of Arizona,,Tuscon,AZ,USA,USA
+EVOL,2009,63,NA,1462,Joy,,Bergelson,Joy Bergelson,Editor,AE,University of Chicago,,Chicago,IL,USA,USA
+EVOL,2009,63,NA,412,Christina,,Burch,Christina Burch,AE,SE,University of North Carolina,,Chapel Hill,NC,USA,USA
+EVOL,2009,63,NA,2315,Martin,,Burd,Martin Burd,AE,SE,Monash University,,Victoria,VIC,Australia,AUS
+EVOL,2009,63,NA,3666,Ulrika,,Candolin,Ulrika Candolin,AE,SE,University of Helsinki,,Helsinki,Uusimaa,Finland,FIN
+EVOL,2009,63,NA,2348,Michael,,Doebeli,Michael Doebeli,AE,SE,University of British Columbia,,Vancouver,BC,Canada,CAN
+EVOL,2009,63,NA,3044,Robert,,Dudley,Robert Dudley,AE,SE,University of California- Berkeley,,Berkeley,CA,USA,USA
+EVOL,2009,63,NA,1569,Jeffrey,,Feder,Jeffrey Feder,AE,SE,University of Notre Dame,,South Bend,IN,USA,USA
+EVOL,2009,63,NA,1069,Frietson,,Galis,Frietson Galis,AE,SE,Leiden University,,Leiden,South Holland,Netherlands,NLD
+EVOL,2009,63,NA,3335,Sylvain,,Gandon,Sylvain Gandon,AE,SE,Centre d'Ecologie Fonctionnelle et Evolutive- CNRS,,Montpellier,Occitanie,Finland,FIN
+EVOL,2009,63,NA,463,Charles,J,Goodnight,Charles J Goodnight,AE,SE, University of Vermont,,Burlington,VT,USA,USA
+EVOL,2009,63,NA,2409,Michael,E,Hellberg,Michael E Hellberg,AE,SE, Louisiana State University,,Baton Rouge,LA,USA,USA
+EVOL,2009,63,NA,1635,Joachim,,Hermisson,Joachim Hermisson,AE,SE,Max F. Perutz Laboratories,,Vienna,Vienna,Austria,AUT
+EVOL,2009,63,NA,1312,Hopi,,Hoekstra,Hopi Hoekstra,AE,SE,Harvard University,,Cambridge,MA,USA,USA
+EVOL,2009,63,NA,1644,John,Peter,Huelsenbeck,John Peter Huelsenbeck,AE,SE,University of California- Berkeley,,Berkeley,CA,USA,USA
+EVOL,2009,63,NA,1206,Gene,,Hunt,Gene Hunt,AE,SE,National Museum of Natural History,,Washington,DC,USA,USA
+EVOL,2009,63,NA,1317,Hideki,,Innan,Hideki Innan,AE,SE,Graduate University for Advanced Studies,,Hayama,Kanto,Japan,JPN
+EVOL,2009,63,NA,490,Chris,,Jiggins,Chris Jiggins,AE,SE,University of Cambridge,,Cambridge,Cambridgeshire,United Kingdom,GBR
+EVOL,2009,63,NA,3574,Thomas,E,Juenger,Thomas E Juenger,AE,SE, University of Texas at Austin,,Austin,TX,USA,USA
+EVOL,2009,63,NA,1664,John,,Kelly,John Kelly,AE,SE,University of Kansas,,Lawrence,KS,USA,USA
+EVOL,2009,63,NA,2187,Lacey,,Knowles,Lacey Knowles,AE,SE,University of Michgan,,Ann Arbor,MI,USA,USA
+EVOL,2009,63,NA,1321,Hanna,,Kokko,Hanna Kokko,AE,SE,University of Helsinki,,Helsinki,Uusimaa,Finland,FIN
+EVOL,2009,63,NA,990,Elena,,Kramer,Elena Kramer,AE,SE,Harvard University,,Cambridge,MA,USA,USA
+EVOL,2009,63,NA,2189,Loeske,,Kruuk,Loeske Kruuk,AE,SE,University of Edinburgh,,Edinburgh,Edinburgh,United Kingdom,GBR
+EVOL,2009,63,NA,3401,Susana,Aurora,Magallon-Puebla,Susana Aurora Magallon-Puebla,AE,SE,Universidad Nacional Aut¢noma de MÇxico,,Mexico City,Federal District,Mexico,MEX
+EVOL,2009,63,NA,1225,Gabriel,,Marroig,Gabriel Marroig,AE,SE,Universidade de S?o Paulo,,S?o Paulo,S?o Paulo,Brazil,BRA
+EVOL,2009,63,NA,3603,Thomas,R,Meagher,Thomas R Meagher,Special.Editor,SPECIAL, University of St. Andrews,,St. Andrews,Fife,United Kingdom,GBR
+EVOL,2009,63,NA,2205,Lauren,Ancel,Meyers,Lauren Ancel Meyers,AE,SE, University of Texas at Austin,,Austin,TX,USA,USA
+EVOL,2009,63,NA,537,Christopher,C,Nice,Christopher C Nice,AE,SE, Texas State University,,San Marcos,TX,USA,USA
+EVOL,2009,63,NA,2493,Mohamed,AF,Noor,Mohamed AF Noor,Editor,AE,Duke University,,Durham,NC,USA,USA
+EVOL,2009,63,NA,3416,Scott,L,Nuismer,Scott L Nuismer,AE,SE,University of Idaho,,Moscow,ID,USA,USA
+EVOL,2009,63,NA,1798,John,,Pannell,John Pannell,AE,SE,University of Oxford,,Oxford,Oxfordshire,United Kingdom,GBR
+EVOL,2009,63,NA,550,Catherine,,Peichel,Catherine Peichel,AE,SE,University of Washington,,Seattle,WA,USA,USA
+EVOL,2009,63,NA,825,David,,Posada,David Posada,AE,SE,University of Vigo,,Vigo,Galicia,Spain,ESP
+EVOL,2009,63,NA,828,Daven,,Presgraves,Daven Presgraves,AE,SE,University of Rochester,,Rochester,NY,USA,USA
+EVOL,2009,63,NA,2532,Mark,D,Rausher,Mark D Rausher,EIC,EIC,Duke University,,Durham,NC,USA,USA
+EVOL,2009,63,NA,180,Andrew,,Read,Andrew Read,AE,SE,Pennsylvania State University,,University Park,PA,USA,USA
+EVOL,2009,63,NA,2926,Paula,,Stockley,Paula Stockley,AE,SE,University of Liverpool,,Liverpool,Merseyside,United Kingdom,GBR
+EVOL,2009,63,NA,366,Billie,,Swalla,Billie Swalla,AE,SE,University of Washington,,Seattle,WA,USA,USA
+EVOL,2009,63,NA,3909,John,N,Thompson,John N Thompson,Special.Editor,SPECIAL,University of California- Santa Cruz,,Santa Cruz,CA,USA,USA
+EVOL,2009,63,NA,2939,Peter,,Tiffin,Peter Tiffin,AE,SE,University of Minnesota,,St. Paul,MN,USA,USA
+EVOL,2009,63,NA,1916,John,,TRUE,John True,AE,SE,State University of New York at Stony Brook,,Stony Brook,NY,USA,USA
+EVOL,2009,63,NA,2942,Paul,,Turner,Paul Turner,AE,SE,Yale University,,New Haven,CT,USA,USA
+EVOL,2009,63,NA,1920,Jana,,Vamosi,Jana Vamosi,AE,SE,University of Calgary,,Calgary,AB,Canada,CAN
+EVOL,2009,63,NA,2601,Marta,L,Wayne,Marta L Wayne,AE,SE,University of Florida,,Gainesville,FL,USA,USA
+EVOL,2009,63,NA,3924,Michael,Stilson,Webster,Michael Stilson Webster,AE,SE,Washington State University,,Pullman,WA,USA,USA
+EVOL,2009,63,NA,2958,Patricia,,Wittkopp,Patricia Wittkopp,AE,SE,University of Michigan,,Ann Arbor,MI,USA,USA
+EVOL,2009,63,NA,1962,Jason,,Wolf,Jason Wolf,AE,SE,University of Manchester,,Manchester,Greater Manchester,United Kingdom,GBR
+EVOL,2010,64,NA,2268,Mike,,Alfaro,Mike Alfaro,AE,SE,University of California- Los Angeles,,Los Angeles,CA,USA,USA
+EVOL,2010,64,NA,2626,Nick,,Barton,Nick Barton,Editor,AE,Institute of Science and Technology,,Klosterneuburg,Lower Austria,United Kingdom,GBR
+EVOL,2010,64,NA,2302,Mark,,Blows,Mark Blows,AE,SE,University of Queensland,,Brisbane,QLD,Australia,AUS
+EVOL,2010,64,NA,412,Christina,,Burch,Christina Burch,AE,SE,University of North Carolina,,Chapel Hill,NC,USA,USA
+EVOL,2010,64,NA,2315,Martin,,Burd,Martin Burd,AE,SE,Monash University,,Victoria,VIC,Australia,AUS
+EVOL,2010,64,NA,3004,Reinhard,,Burger,Reinhard Burger,AE,SE,University of Vienna,,Vienna,Vienna,Austria,AUT
+EVOL,2010,64,NA,3666,Ulrika,,Candolin,Ulrika Candolin,AE,SE,University of Helsinki,,Helsinki,Uusimaa,Finland,FIN
+EVOL,2010,64,NA,3528,Tim,,Craig,Tim Craig,AE,SE,University of Minnesota- Duluth,,Duluth,MN,USA,USA
+EVOL,2010,64,NA,47,Asher,,Cutter,Asher Cutter,AE,SE,University of Toronto,,Toronto,ON,Canada,CAN
+EVOL,2010,64,NA,2139,Lynda,,Delph,Lynda Delph,Editor,AE,Indiana University,,Bloomington,IN,USA,USA
+EVOL,2010,64,NA,2348,Michael,,Doebeli,Michael Doebeli,AE,SE,University of British Columbia,,Vancouver,BC,Canada,CAN
+EVOL,2010,64,NA,1998,Kathleen,,Donohue,Kathleen Donohue,AE,SE,Duke University,,Durham,NC,USA,USA
+EVOL,2010,64,NA,3044,Robert,,Dudley,Robert Dudley,AE,SE,University of California- Berkeley,,Berkeley,CA,USA,USA
+EVOL,2010,64,NA,1999,Kelly,,Dyer,Kelly Dyer,AE,SE,University of Georgia,,Athens,GA,USA,USA
+EVOL,2010,64,NA,444,Colleen,,Farmer,Colleen Farmer,AE,SE,University of Utah,,Salt Lake City,UT,USA,USA
+EVOL,2010,64,NA,272,Ben,,Fitzpatrick,Ben Fitzpatrick,AE,SE,University of Tennessee,,Knoxville,TN,USA,USA
+EVOL,2010,64,NA,3335,Sylvain,,Gandon,Sylvain Gandon,AE,SE,Centre d'Ecologie Fonctionnelle et Evolutive- CNRS,,Montpellier,Occitanie,Finland,FIN
+EVOL,2010,64,NA,463,Charles,J,Goodnight,Charles J Goodnight,AE,SE, University of Vermont,,Burlington,VT,USA,USA
+EVOL,2010,64,NA,2396,Matt,,Hare,Matt Hare,AE,SE,Cornell University,,Ithaca,NY,USA,USA
+EVOL,2010,64,NA,2409,Michael,E,Hellberg,Michael E Hellberg,AE,SE, Louisiana State University,,Baton Rouge,LA,USA,USA
+EVOL,2010,64,NA,1635,Joachim,,Hermisson,Joachim Hermisson,AE,SE,Max F. Perutz Laboratories,,Vienna,Vienna,Austria,AUT
+EVOL,2010,64,NA,1644,John,Peter,Huelsenbeck,John Peter Huelsenbeck,AE,SE,University of California- Berkeley,,Berkeley,CA,USA,USA
+EVOL,2010,64,NA,1206,Gene,,Hunt,Gene Hunt,AE,SE,National Museum of Natural History,,Washington,DC,USA,USA
+EVOL,2010,64,NA,1317,Hideki,,Innan,Hideki Innan,AE,SE,Graduate University for Advanced Studies,,Hayama,Kanagawa,Japan,JPN
+EVOL,2010,64,NA,490,Chris,,Jiggins,Chris Jiggins,AE,SE,University of Cambridge,,Cambridge,Cambridgeshire,United Kingdom,GBR
+EVOL,2010,64,NA,3574,Thomas,E,Juenger,Thomas E Juenger,AE,SE, University of Texas at Austin,,Austin,TX,USA,USA
+EVOL,2010,64,NA,1664,John,,Kelly,John Kelly,AE,SE,University of Kansas,,Lawrence,KS,USA,USA
+EVOL,2010,64,NA,126,Artyom,,Kopp,Artyom Kopp,AE,SE,University of California- Davis,,Davis,CA,USA,USA
+EVOL,2010,64,NA,990,Elena,,Kramer,Elena Kramer,AE,SE,Harvard University,,Cambridge,MA,USA,USA
+EVOL,2010,64,NA,2189,Loeske,,Kruuk,Loeske Kruuk,AE,SE,University of Edinburgh,,Edinburgh,Edinburgh,United Kingdom,GBR
+EVOL,2010,64,NA,2190,Laura,,Kubatko,Laura Kubatko,AE,SE,Ohio State University,,Columbus,OH,USA,USA
+EVOL,2010,64,NA,3401,Susana,Aurora,Magallon-Puebla,Susana Aurora Magallon-Puebla,AE,SE,Universidad Nacional Aut¢noma de MÇxico,,Mexico City,Federal District,Mexico,MEX
+EVOL,2010,64,NA,1225,Gabriel,,Marroig,Gabriel Marroig,AE,SE,Universidade de S?o Paulo,,S?o Paulo,S?o Paulo,Brazil,BRA
+EVOL,2010,64,NA,3603,Thomas,R,Meagher,Thomas R Meagher,Special.Editor,SPECIAL, University of St. Andrews,,St. Andrews,Fife,United Kingdom,GBR
+EVOL,2010,64,NA,2205,Lauren,Ancel,Meyers,Lauren Ancel Meyers,AE,SE, University of Texas at Austin,,Austin,TX,USA,USA
+EVOL,2010,64,NA,156,Antonia,,Monteiro,Antonia Monteiro,AE,SE,Yale University,,New Haven,CT,USA,USA
+EVOL,2010,64,NA,2211,Leonie,,Moyle,Leonie Moyle,AE,SE,Indiana University,,Bloomington,IN,USA,USA
+EVOL,2010,64,NA,537,Christopher,C,Nice,Christopher C Nice,AE,SE, Texas State University,,San Marcos,TX,USA,USA
+EVOL,2010,64,NA,3416,Scott,L,Nuismer,Scott L Nuismer,AE,SE,University of Idaho,,Moscow,ID,USA,USA
+EVOL,2010,64,NA,1798,John,,Pannell,John Pannell,AE,SE,University of Oxford,,Oxford,Oxfordshire,United Kingdom,GBR
+EVOL,2010,64,NA,550,Catherine,,Peichel,Catherine Peichel,AE,SE,University of Washington,,Seattle,WA,USA,USA
+EVOL,2010,64,NA,2068,Ken,,Petren,Ken Petren,AE,SE,University of Cincinnati,,Cincinnati,OH,USA,USA
+EVOL,2010,64,NA,825,David,,Posada,David Posada,AE,SE,University of Vigo,,Vigo,Galicia,Spain,ESP
+EVOL,2010,64,NA,2532,Mark,D,Rausher,Mark D Rausher,EIC,EIC,Duke University,,Durham,NC,USA,USA
+EVOL,2010,64,NA,180,Andrew,,Read,Andrew Read,AE,SE,Pennsylvania State University,,University Park,PA,USA,USA
+EVOL,2010,64,NA,353,Ben,C,Sheldon,Ben C Sheldon,AE,SE, Oxford University,,Oxford,Oxfordshire,United Kingdom,GBR
+EVOL,2010,64,NA,2926,Paula,,Stockley,Paula Stockley,AE,SE,University of Liverpool,,Liverpool,Merseyside,United Kingdom,GBR
+EVOL,2010,64,NA,1895,Joan,E,Strassmann,Joan E Strassmann,AE,SE, Rice University,,Houston,TX,USA,USA
+EVOL,2010,64,NA,1031,Erik,,Svensson,Erik Svensson,AE,SE,University of Lund,,Lund,Scania,Sweden,SWE
+EVOL,2010,64,NA,3909,John,N,Thompson,John N Thompson,Special.Editor,SPECIAL,University of California- Santa Cruz,,Santa Cruz,CA,USA,USA
+EVOL,2010,64,NA,2939,Peter,,Tiffin,Peter Tiffin,AE,SE,University of Minnesota,,St. Paul,MN,USA,USA
+EVOL,2010,64,NA,2942,Paul,,Turner,Paul Turner,AE,SE,Yale University,,New Haven,CT,USA,USA
+EVOL,2010,64,NA,1920,Jana,,Vamosi,Jana Vamosi,AE,SE,University of Calgary,,Calgary,AB,Canada,CAN
+EVOL,2010,64,NA,2601,Marta,L,Wayne,Marta L Wayne,AE,SE, University of Florida,,Gainesville,FL,USA,USA
+EVOL,2010,64,NA,3924,Michael,Stilson,Webster,Michael Stilson Webster,AE,SE, Washington State University,,Pullman,WA,USA,USA
+EVOL,2010,64,NA,1947,Jennifer,,Wernegreen,Jennifer Wernegreen,AE,SE,Marine Biological Laboratory,,Woods Hole,MA,USA,USA
+EVOL,2010,64,NA,3500,Stuart,,West,Stuart West,AE,SE,Oxford University,,Oxford,Oxfordshire,United Kingdom,GBR
+EVOL,2010,64,NA,2958,Patricia,,Wittkopp,Patricia Wittkopp,AE,SE,University of Michigan,,Ann Arbor,MI,USA,USA
+EVOL,2011,65,NA,3847,Aneil,,Agrawal,Aneil Agrawal,AE,SE,University of Toronto,,Toronto,ON,Canada,CAN
+EVOL,2011,65,NA,2268,Mike,,Alfaro,Mike Alfaro,AE,SE,University of California- Los Angeles,,Los Angeles,CA,USA,USA
+EVOL,2011,65,NA,2626,Nick,,Barton,Nick Barton,Editor,AE,Institute of Science and Technology,,Klosterneuburg,Lower Austria,United Kingdom,GBR
+EVOL,2011,65,NA,2302,Mark,,Blows,Mark Blows,AE,SE,University of Queensland,,Brisbane,QLD,Australia,AUS
+EVOL,2011,65,NA,2989,Russell,,Bonduriansky,Russell Bonduriansky,AE,SE,University of New South Wales,,Sydney,NSW,Australia,AUS
+EVOL,2011,65,NA,411,C,Alex,Buerkle,C Alex Buerkle,AE,SE,University of Wyoming,,Laramie,WY,USA,USA
+EVOL,2011,65,NA,412,Christina,,Burch,Christina Burch,AE,SE,University of North Carolina,,Chapel Hill,NC,USA,USA
+EVOL,2011,65,NA,3004,Reinhard,,Burger,Reinhard Burger,AE,SE,University of Vienna,,Vienna,Vienna,Austria,AUT
+EVOL,2011,65,NA,3666,Ulrika,,Candolin,Ulrika Candolin,AE,SE,University of Helsinki,,Helsinki,Uusimaa,Finland,FIN
+EVOL,2011,65,NA,643,David,,Carrier,David Carrier,AE,SE,University of Utah,,Salt Lake City,UT,USA,USA
+EVOL,2011,65,NA,44,Alejandro,,Cordoba-Aguilar,Alejandro Cordoba-Aguilar,AE,SE,Universidad Nacional Autonoma de MÇxico,,Mexico City,Federal District,Mexico,MEX
+EVOL,2011,65,NA,3528,Tim,,Craig,Tim Craig,AE,SE,University of Minnesota- Duluth,,Duluth,MN,USA,USA
+EVOL,2011,65,NA,47,Asher,,Cutter,Asher Cutter,AE,SE,University of Toronto,,Toronto,ON,Canada,CAN
+EVOL,2011,65,NA,2139,Lynda,,Delph,Lynda Delph,Editor,AE,Indiana University,,Bloomington,IN,USA,USA
+EVOL,2011,65,NA,2348,Michael,,Doebeli,Michael Doebeli,AE,SE,University of British Columbia,,Vancouver,BC,Canada,CAN
+EVOL,2011,65,NA,1998,Kathleen,,Donohue,Kathleen Donohue,AE,SE,Duke University,,Durham,NC,USA,USA
+EVOL,2011,65,NA,3044,Robert,,Dudley,Robert Dudley,AE,SE,University of California- Berkeley,,Berkeley,CA,USA,USA
+EVOL,2011,65,NA,1999,Kelly,,Dyer,Kelly Dyer,AE,SE,University of Georgia,,Athens,GA,USA,USA
+EVOL,2011,65,NA,682,Daphne,,Fairbairn,Daphne Fairbairn,EIC,EIC,University of California- Riverside,,Riverside,CA,USA,USA
+EVOL,2011,65,NA,444,Colleen,,Farmer,Colleen Farmer,AE,SE,University of Utah,,Salt Lake City,UT,USA,USA
+EVOL,2011,65,NA,272,Ben,,Fitzpatrick,Ben Fitzpatrick,AE,SE,University of Tennessee,,Knoxville,TN,USA,USA
+EVOL,2011,65,NA,3065,Rebecca,C,Fuller,Rebecca C Fuller,AE,SE, University of Illinois,,Champaign,IL,USA,USA
+EVOL,2011,65,NA,3335,Sylvain,,Gandon,Sylvain Gandon,AE,SE,Centre d'Ecologie Fonctionnelle et Evolutive- CNRS,,Montpellier,Occitanie,France,FRA
+EVOL,2011,65,NA,2396,Matt,,Hare,Matt Hare,AE,SE,Cornell University,,Ithaca,NY,USA,USA
+EVOL,2011,65,NA,2400,Mike,,Hart,Mike Hart,AE,SE,Simon Fraser University,,Burnaby,BC,Canada,CAN
+EVOL,2011,65,NA,1635,Joachim,,Hermisson,Joachim Hermisson,AE,SE,Max F. Perutz Laboratories,,Vienna,Vienna,Austria,AUT
+EVOL,2011,65,NA,1317,Hideki,,Innan,Hideki Innan,AE,SE,Graduate University for Advanced Studies,,Hayama,Kanagawa,Japan,JPN
+EVOL,2011,65,NA,490,Chris,,Jiggins,Chris Jiggins,AE,SE,University of Cambridge,,Cambridge,Cambridgeshire,United Kingdom,GBR
+EVOL,2011,65,NA,2422,Mark,O,Johnston,Mark O Johnston,AE,SE,Dalhousie University,,Halifax,Nova Scotia,Canada,CAN
+EVOL,2011,65,NA,3374,Susan,,Kalisz,Susan Kalisz,AE,SE,University of Pittsburgh,,Pittsburgh,PA,USA,USA
+EVOL,2011,65,NA,1664,John,,Kelly,John Kelly,AE,SE,University of Kansas,,Lawrence,KS,USA,USA
+EVOL,2011,65,NA,498,Chris,,Klingenberg,Chris Klingenberg,AE,SE,University of Manchester,,Manchester,Greater Manchester,United Kingdom,GBR
+EVOL,2011,65,NA,126,Artyom,,Kopp,Artyom Kopp,AE,SE,University of California-Davis,,Davis,CA,USA,USA
+EVOL,2011,65,NA,990,Elena,,Kramer,Elena Kramer,AE,SE,Harvard University,,Cambridge,MA,USA,USA
+EVOL,2011,65,NA,2189,Loeske,,Kruuk,Loeske Kruuk,AE,SE,University of Edinburgh,,Edinburgh,Edinburgh,United Kingdom,GBR
+EVOL,2011,65,NA,2190,Laura,,Kubatko,Laura Kubatko,AE,SE,Ohio State University,,Columbus,OH,USA,USA
+EVOL,2011,65,NA,505,Carol,Eunmi,Lee,Carol Eunmi Lee,AE,SE, University of Wisconsin,,Madison,WI,USA,USA
+EVOL,2011,65,NA,2859,Patrik,,Lindenfors,Patrik Lindenfors,AE,SE,Stockholm University,,Stockholm,Sodermanland,Sweden,SWE
+EVOL,2011,65,NA,312,Bruce,,Lyon,Bruce Lyon,AE,SE,University of California- Santa Cruz,,Santa Cruz,CA,USA,USA
+EVOL,2011,65,NA,1737,Judith,,Mank,Judith Mank,AE,SE,University of Oxford,,Oxford,Oxfordshire,United Kingdom,GBR
+EVOL,2011,65,NA,1225,Gabriel,,Marroig,Gabriel Marroig,AE,SE,Universidade de S?o Paulo,,S?o Paulo,S?o Paulo,Brazil,BRA
+EVOL,2011,65,NA,1228,Gregory,,Mayer,Gregory Mayer,AE,SE,University of Wisconsin- Parkside,,Kenosha,WI,USA,USA
+EVOL,2011,65,NA,3603,Thomas,R,Meagher,Thomas R Meagher,Special.Editor,SPECIAL, University of St. Andrews,,St. Andrews,Fife,United Kingdom,GBR
+EVOL,2011,65,NA,156,Antonia,,Monteiro,Antonia Monteiro,AE,SE,Yale University,,New Haven,CT,USA,USA
+EVOL,2011,65,NA,3608,Ted,,Morrow,Ted Morrow,AE,SE,Uppsala University,,Uppsala,Uppsala,Sweden,SWE
+EVOL,2011,65,NA,2211,Leonie,,Moyle,Leonie Moyle,AE,SE,Indiana University,,Bloomington,IN,USA,USA
+EVOL,2011,65,NA,3416,Scott,L,Nuismer,Scott L Nuismer,AE,SE,University of Idaho,,Moscow,ID,USA,USA
+EVOL,2011,65,NA,1798,John,,Pannell,John Pannell,AE,SE,University of Oxford,,Oxford,Oxfordshire,United Kingdom,GBR
+EVOL,2011,65,NA,550,Catherine,,Peichel,Catherine Peichel,AE,SE,University of Washington,,Seattle,WA,USA,USA
+EVOL,2011,65,NA,2678,Nicolas,,Perrin,Nicolas Perrin,AE,SE,University of Lausanne,,Lausanne,Vaud,Switzerland,CHE
+EVOL,2011,65,NA,2068,Ken,,Petren,Ken Petren,AE,SE,University of Cincinnati,,Cincinnati,OH,USA,USA
+EVOL,2011,65,NA,180,Andrew,,Read,Andrew Read,AE,SE,Pennsylvania State University,,University Park,PA,USA,USA
+EVOL,2011,65,NA,2536,Max,,Reuter,Max Reuter,AE,SE,University College London,,London,Greater London,United Kingdom,GBR
+EVOL,2011,65,NA,353,Ben,C,Sheldon,Ben C Sheldon,AE,SE, Oxford University,,Oxford,Oxfordshire,United Kingdom,GBR
+EVOL,2011,65,NA,2926,Paula,,Stockley,Paula Stockley,AE,SE,University of Liverpool,,Liverpool,Merseyside,United Kingdom,GBR
+EVOL,2011,65,NA,1895,Joan,E,Strassmann,Joan E Strassmann,AE,SE, Rice University,,Houston,TX,USA,USA
+EVOL,2011,65,NA,1031,Erik,,Svensson,Erik Svensson,AE,SE,University of Lund,,Lund,Scania,Sweden,SWE
+EVOL,2011,65,NA,3909,John,N,Thompson,John N Thompson,Special.Editor,SPECIAL,University of California- Santa Cruz,,Santa Cruz,CA,USA,USA
+EVOL,2011,65,NA,2942,Paul,,Turner,Paul Turner,AE,SE,Yale University,,New Haven,CT,USA,USA
+EVOL,2011,65,NA,1920,Jana,,Vamosi,Jana Vamosi,AE,SE,University of Calgary,,Calgary,AB,Canada,CAN
+EVOL,2011,65,NA,1939,John,,Wares,John Wares,AE,SE,University of Georgia,,Athens,GA,USA,USA
+EVOL,2011,65,NA,1947,Jennifer,,Wernegreen,Jennifer Wernegreen,AE,SE,Marine Biological Laboratory,,Woods Hole,MA,USA,USA
+EVOL,2011,65,NA,3500,Stuart,,West,Stuart West,AE,SE,Oxford University,,Oxford,Oxfordshire,United Kingdom,GBR
+EVOL,2011,65,NA,2958,Patricia,,Wittkopp,Patricia Wittkopp,AE,SE,University of Michigan,,Ann Arbor,MI,USA,USA
+EVOL,2012,66,NA,926,Ehab,,Abouheif,Ehab Abouheif,AE,SE,McGill University,,Montreal,QC,Canada,CAN
+EVOL,2012,66,NA,3847,Aneil,,Agrawal,Aneil Agrawal,AE,SE,University of Toronto,,Toronto,ON,Canada,CAN
+EVOL,2012,66,NA,2268,Michael,,Alfaro,Michael Alfaro,AE,SE,University of California- Los Angeles,,Los Angeles,CA,USA,USA
+EVOL,2012,66,NA,2302,Mark,,Blows,Mark Blows,AE,SE,University of Queensland,,Brisbane,QLD,Australia,AUS
+EVOL,2012,66,NA,1982,Kirsten,,Bomblies,Kirsten Bomblies,AE,SE,Harvard University,,Cambridge,MA,USA,USA
+EVOL,2012,66,NA,2989,Russell,,Bonduriansky,Russell Bonduriansky,AE,SE,University of New South Wales,,Sydney,NSW,Australia,AUS
+EVOL,2012,66,NA,411,C,Alex,Buerkle,C Alex Buerkle,AE,SE,University of Wyoming,,Laramie,WY,USA,USA
+EVOL,2012,66,NA,3004,Reinhard,,Burger,Reinhard Burger,AE,SE,University of Vienna,,Vienna,Vienna,Austria,AUT
+EVOL,2012,66,NA,643,David,,Carrier,David Carrier,AE,SE,University of Utah,,Salt Lake City,UT,USA,USA
+EVOL,2012,66,NA,36,Anne,,Charmantier,Anne Charmantier,AE,SE,Centre d'Ecologie Fonctionnelle et Evolutive- CNRS,,Montpellier,Occitanie,France,FRA
+EVOL,2012,66,NA,3021,Reginald,,Cocroft,Reginald Cocroft,AE,SE,University of Missouri,,Columbia,MO,USA,USA
+EVOL,2012,66,NA,44,Alejandro,,Cordoba-Aguilar,Alejandro Cordoba-Aguilar,AE,SE,Universidad Nacional Autonoma de MÇxico,,Mexico City,Federal District,Mexico,MEX
+EVOL,2012,66,NA,3528,Tim,,Craig,Tim Craig,AE,SE,University of Minnesota- Duluth,,Duluth,MN,USA,USA
+EVOL,2012,66,NA,47,Asher,,Cutter,Asher Cutter,AE,SE,University of Toronto,,Toronto,ON,Canada,CAN
+EVOL,2012,66,NA,2139,Lynda,,Delph,Lynda Delph,Editor,AE,Indiana University,,Bloomington,IN,USA,USA
+EVOL,2012,66,NA,1998,Kathleen,,Donohue,Kathleen Donohue,AE,SE,Duke University,,Durham,NC,USA,USA
+EVOL,2012,66,NA,1550,Jeff,,Dudycha,Jeff Dudycha,AE,SE,University of South Carolina,,Columbia,SC,USA,USA
+EVOL,2012,66,NA,1999,Kelly,,Dyer,Kelly Dyer,AE,SE,University of Georgia,,Athens,GA,United Kingdom,GBR
+EVOL,2012,66,NA,682,Daphne,,Fairbairn,Daphne Fairbairn,EIC,EIC,University of California- Riverside,,Riverside,CA,USA,USA
+EVOL,2012,66,NA,444,Colleen,,Farmer,Colleen Farmer,AE,SE,University of Utah,,Salt Lake City,UT,USA,USA
+EVOL,2012,66,NA,272,Ben,,Fitzpatrick,Ben Fitzpatrick,AE,SE,University of Tennessee,,Knoxville,TN,USA,USA
+EVOL,2012,66,NA,1575,Jim,,Fordyce,Jim Fordyce,AE,SE,University of Tennessee,,Knoxville,TN,USA,USA
+EVOL,2012,66,NA,3065,Rebecca,,Fuller,Rebecca Fuller,AE,SE,University of Illinois at Urbana-Champaign,,Champaign,IL,USA,USA
+EVOL,2012,66,NA,1397,Isabel,,Gordo,Isabel Gordo,AE,SE,Gulbenkian Institute,,Oeiras,Lisbon,Portugal,PRT
+EVOL,2012,66,NA,2396,Matt,,Hare,Matt Hare,AE,SE,Cornell University,,Ithaca,NY,USA,USA
+EVOL,2012,66,NA,2166,Luke,,Harmon,Luke Harmon,AE,SE,University of Idaho,,Moscow,ID,USA,USA
+EVOL,2012,66,NA,2400,Mike,,Hart,Mike Hart,AE,SE,Simon Fraser University,,Burnaby,BC,Canada,CAN
+EVOL,2012,66,NA,101,Andrew,,Hendry,Andrew Hendry,AE,SE,McGill University,,Montreal,QC,Canada,CAN
+EVOL,2012,66,NA,2422,Mark,O,Johnston,Mark O Johnston,AE,SE,Dalhousie University,,Halifax,NS,Canada,CAN
+EVOL,2012,66,NA,3374,Susan,,Kalisz,Susan Kalisz,AE,SE,University of Pittsburgh,,Pittsburgh,PA,USA,USA
+EVOL,2012,66,NA,498,Chris,,Klingenberg,Chris Klingenberg,AE,SE,University of Manchester,,Manchester,Greater Manchester,United Kingdom,GBR
+EVOL,2012,66,NA,126,Artyom,,Kopp,Artyom Kopp,AE,SE,University of California- Davis,,Davis,CA,USA,USA
+EVOL,2012,66,NA,2190,Laura,,Kubatko,Laura Kubatko,AE,SE,Ohio State University,,Columbus,OH,USA,USA
+EVOL,2012,66,NA,3860,Carol,,Lee,Carol Lee,AE,SE,University of Wisconsin,,Madison,WI,USA,USA
+EVOL,2012,66,NA,3589,Thomas,,Lenormand,Thomas Lenormand,Editor,AE,Centre d'Ecologie Fonctionnelle et Evolutive- CNRS,,Montpellier,Occitanie,France,FRA
+EVOL,2012,66,NA,2859,Patrik,,Lindenfors,Patrik Lindenfors,AE,SE,Stockholm University,,Stockholm,Sodermanland,Sweden,SWE
+EVOL,2012,66,NA,312,Bruce,,Lyon,Bruce Lyon,AE,SE,University of California- Santa Cruz,,Santa Cruz,CA,USA,USA
+EVOL,2012,66,NA,1737,Judith,,Mank,Judith Mank,AE,SE,University of Oxford,,Oxford,Oxfordshire,United Kingdom,GBR
+EVOL,2012,66,NA,1228,Greg,,Mayer,Greg Mayer,AE,SE,University of Wisconsin- Parkside,,Kenosha,WI,USA,USA
+EVOL,2012,66,NA,3603,Thomas,R,Meagher,Thomas R Meagher,Special.Editor,SPECIAL,University of St. Andrews,,St. Andrews,Fife,United Kingdom,GBR
+EVOL,2012,66,NA,156,Antonia,,Monteiro,Antonia Monteiro,AE,SE,Yale University,,New Haven,CT,USA,USA
+EVOL,2012,66,NA,3608,Ted,,Morrow,Ted Morrow,AE,SE,Uppsala University,,Uppsala,Uppsala,Sweden,SWE
+EVOL,2012,66,NA,2211,Leonie,,Moyle,Leonie Moyle,AE,SE,Indiana University,,Bloomington,IN,USA,USA
+EVOL,2012,66,NA,3612,Thomas,,Near,Thomas Near,AE,SE,Yale University,,New Haven,CT,USA,USA
+EVOL,2012,66,NA,2678,Nicolas,,Perrin,Nicolas Perrin,AE,SE,University of Lausanne,,Lausanne,Vaud,Switzerland,CHE
+EVOL,2012,66,NA,2068,Kenneth,,Petren,Kenneth Petren,AE,SE,University of Cincinnati,,Cincinnati,OH,USA,USA
+EVOL,2012,66,NA,2895,P,David,Polly,P David Polly,AE,SE,Indiana University,,Bloomington,IN,USA,USA
+EVOL,2012,66,NA,3448,Susanna,,Remold,Susanna Remold,AE,SE,University of Louisville,,Louisville,KY,USA,USA
+EVOL,2012,66,NA,2536,Max,,Reuter,Max Reuter,AE,SE,University College London,,London,Greater London,United Kingdom,GBR
+EVOL,2012,66,NA,2735,Ophelie,,Ronce,Ophelie Ronce,AE,SE,UniversitÇ Montpellier II,,Montpellier,Occitanie,France,FRA
+EVOL,2012,66,NA,2541,Michael,,Rosenberg,Michael Rosenberg,AE,SE,Arizona State University,,Tempe,AZ,USA,USA
+EVOL,2012,66,NA,3699,Vincent,,Savolainen,Vincent Savolainen,AE,SE,Imperial College London,,London,Greater London,United Kingdom,GBR
+EVOL,2012,66,NA,2689,Nathalie,,Seddon,Nathalie Seddon,AE,SE,University of Oxford,,Oxford,Oxfordshire,United Kingdom,GBR
+EVOL,2012,66,NA,568,Carla,,Sgro,Carla Sgro,AE,SE,Monash University,,Victoria,VIC,Australia,AUS
+EVOL,2012,66,NA,353,Ben,,Sheldon,Ben Sheldon,AE,SE,Oxford University,,Oxford,Oxfordshire,United Kingdom,GBR
+EVOL,2012,66,NA,197,Alex,,Shingleton,Alex Shingleton,AE,SE,Michigan State University,,East Lansing,MI,USA,USA
+EVOL,2012,66,NA,1895,Joan,E,Strassmann,Joan E Strassmann,AE,SE,Rice University,,Houston,TX,USA,USA
+EVOL,2012,66,NA,3645,Todd,,Streelman,Todd Streelman,AE,SE,Georgia Institute of Technology,,Atlanta,GA,USA,USA
+EVOL,2012,66,NA,2247,Liselotte,,Sundstrom,Liselotte Sundstrom,AE,SE,University of Helsinki,,Helsinki,Uusimaa,Finland,FIN
+EVOL,2012,66,NA,1031,Erik,,Svensson,Erik Svensson,AE,SE,University of Lund,,Lund,Scania,Sweden,SWE
+EVOL,2012,66,NA,2595,Michael,,Wade,Michael Wade,Special.Editor,SPECIAL,Indiana University,,Bloomington,IN,USA,USA
+EVOL,2012,66,NA,1939,John,,Wares,John Wares,AE,SE,University of Georgia,,Athens,GA,USA,USA
+EVOL,2012,66,NA,1947,Jennifer,,Wernegreen,Jennifer Wernegreen,AE,SE,Marine Biological Laboratory,,Woods Hole,MA,USA,USA
+EVOL,2012,66,NA,3500,Stuart,,West,Stuart West,AE,SE,Oxford University,,Oxford,Oxfordshire,United Kingdom,GBR
+EVOL,2012,66,NA,1956,Jon,,Wilkins,Jon Wilkins,AE,SE,Santa Fe Institute,,Santa Fe,NM,USA,USA
+EVOL,2013,67,NA,926,Ehab,,Abouheif,Ehab Abouheif,AE,SE,McGill University,,Montreal,QC,Canada,CAN
+EVOL,2013,67,NA,606,Dean,,Adams,Dean Adams,AE,SE,Iowa State University,,Ames,IA,USA,USA
+EVOL,2013,67,NA,3847,Aneil,,Agrawal,Aneil Agrawal,AE,SE,University of Toronto,,Toronto,ON,Canada,CAN
+EVOL,2013,67,NA,2755,Peter,,Andolfatto,Peter Andolfatto,AE,SE,Princeton University,,Princeton,NJ,USA,USA
+EVOL,2013,67,NA,3712,Wolf,,Blanckenhorn,Wolf Blanckenhorn,AE,SE,UniversitÑt ZÅrich-Irchel,,ZÅrich,ZÅrich,Switzerland,CHE
+EVOL,2013,67,NA,1982,Kirsten,,Bomblies,Kirsten Bomblies,AE,SE,Harvard University,,Cambridge,MA,USA,USA
+EVOL,2013,67,NA,2989,Russell,,Bonduriansky,Russell Bonduriansky,AE,SE,University of New South Wales,,Sydney,NSW,Australia,AUS
+EVOL,2013,67,NA,2998,Robb,,Brumfield,Robb Brumfield,AE,SE,Louisiana State University,,Baton Rouge,LA,USA,USA
+EVOL,2013,67,NA,411,C,Alex,Buerkle,C Alex Buerkle,AE,SE, University of Wyoming,,Laramie,WY,USA,USA
+EVOL,2013,67,NA,1060,Frank,,Burbrink,Frank Burbrink,AE,SE,College of Staten Island- CUNY,,New York,NY,USA,USA
+EVOL,2013,67,NA,643,David,,Carrier,David Carrier,AE,SE,University of Utah,,Salt Lake City,UT,USA,USA
+EVOL,2013,67,NA,36,Anne,,Charmantier,Anne Charmantier,AE,SE,Centre d'Ecologie Fonctionnelle et Evolutive- CNRS,,Montpellier,Occitanie,France,FRA
+EVOL,2013,67,NA,39,Adam,,Chippindale,Adam Chippindale,AE,SE,Queen's University,,Kingston,ON,USA,USA
+EVOL,2013,67,NA,3021,Reginald,,Cocroft,Reginald Cocroft,AE,SE,University of Missouri,,Columbia,MO,USA,USA
+EVOL,2013,67,NA,1518,Jeffrey,,Conner,Jeffrey Conner,Editor,AE,Michigan State University,,Hickory Corners,MI,USA,USA
+EVOL,2013,67,NA,44,Alejandro,,Cordoba-Aguilar,Alejandro Cordoba-Aguilar,AE,SE,Universidad Nacional Autonoma de MÇxico,,Mexico City,Federal District,Mexico,MEX
+EVOL,2013,67,NA,2339,Melania,,Cristescu,Melania Cristescu,AE,SE,McGill University,,Montreal,QC,Canada,CAN
+EVOL,2013,67,NA,1543,J,Arjan Gm,Devisser,J Arjan Gm Devisser,AE,SE,Wageningen University and Research,,Wageningen,Gelderland,Netherlands,NLD
+EVOL,2013,67,NA,1550,Jeff,,Dudycha,Jeff Dudycha,AE,SE,University of South Carolina,,Columbia,SC,USA,USA
+EVOL,2013,67,NA,1565,Julie,,Etterson,Julie Etterson,AE,SE,University of Minnesota- Duluth,,Duluth,MN,USA,USA
+EVOL,2013,67,NA,682,Daphne,,Fairbairn,Daphne Fairbairn,EIC,EIC,University of California- Davis,,Davis,CA,USA,USA
+EVOL,2013,67,NA,2146,Lila,,Fishman,Lila Fishman,AE,SE,University of Montana,,Missoula,MT,USA,USA
+EVOL,2013,67,NA,1575,Jim,,Fordyce,Jim Fordyce,AE,SE,University of Tennessee,,Knoxville,TN,USA,USA
+EVOL,2013,67,NA,2372,Matt,,Forister,Matt Forister,AE,SE,University of Nevada,,Reno,NV,USA,USA
+EVOL,2013,67,NA,3065,Rebecca,,Fuller,Rebecca Fuller,AE,SE,University of Illinois at Urbana-Champaign,,Champaign,IL,USA,USA
+EVOL,2013,67,NA,3338,Sylvain,,Glemin,Sylvain Glemin,AE,SE,UniversitÇ Montpellier II,,Montpellier,Occitanie,France,FRA
+EVOL,2013,67,NA,1601,Jeff,,Good,Jeff Good,AE,SE,University of Montana,,Missoula,MT,USA,USA
+EVOL,2013,67,NA,1397,Isabel,,Gordo,Isabel Gordo,AE,SE,Gulbenkian Institute,,Oeiras,Lisbon,Portugal,PRT
+EVOL,2013,67,NA,2166,Luke,,Harmon,Luke Harmon,AE,SE,University of Idaho,,Moscow,ID,USA,USA
+EVOL,2013,67,NA,2400,Mike,,Hart,Mike Hart,AE,SE,Simon Fraser University,,Burnaby,BC,Canada,CAN
+EVOL,2013,67,NA,101,Andrew,,Hendry,Andrew Hendry,AE,SE,McGill University,,Montreal,QC,Canada,CAN
+EVOL,2013,67,NA,1647,John,,Hunt,John Hunt,AE,SE,University of Exeter in Cornwall,,Penryn,Cornwall,United Kingdom,GBR
+EVOL,2013,67,NA,2180,Linley,,Jesson,Linley Jesson,AE,SE,University of New Brunswick,,Fredricton,NB,Canada,CAN
+EVOL,2013,67,NA,2422,Mark,O,Johnston,Mark O Johnston,AE,SE,Dalhousie University,,Halifax,NS,Canada,CAN
+EVOL,2013,67,NA,3374,Susan,,Kalisz,Susan Kalisz,AE,SE,University of Pittsburgh,,Pittsburgh,PA,USA,USA
+EVOL,2013,67,NA,498,Chris,,Klingenberg,Chris Klingenberg,AE,SE,University of Manchester,,Manchester,Greater Manchester,United Kingdom,GBR
+EVOL,2013,67,NA,3860,Carol,,Lee,Carol Lee,AE,SE,University of Wisconsin,,Madison,WI,USA,USA
+EVOL,2013,67,NA,3589,Thomas,,Lenormand,Thomas Lenormand,Editor,AE,Centre d'Ecologie Fonctionnelle et Evolutive- CNRS,,Montpellier,Occitanie,France,FRA
+EVOL,2013,67,NA,2859,Patrik,,Lindenfors,Patrik Lindenfors,AE,SE,Stockholm University,,Stockholm,Sodermanland,Sweden,SWE
+EVOL,2013,67,NA,312,Bruce,,Lyon,Bruce Lyon,AE,SE,University of California- Santa Cruz,,Santa Cruz,CA,USA,USA
+EVOL,2013,67,NA,143,Alexei,,Maklakov,Alexei Maklakov,AE,SE,Uppsala University,,Uppsala,Uppsala,Sweden,SWE
+EVOL,2013,67,NA,1737,Judith,,Mank,Judith Mank,AE,SE,University of Oxford,,Oxford,Oxfordshire,United Kingdom,GBR
+EVOL,2013,67,NA,1228,Greg,,Mayer,Greg Mayer,AE,SE,University of Wisconsin- Parkside,,Kenosha,WI,USA,USA
+EVOL,2013,67,NA,3603,Thomas,R,Meagher,Thomas R Meagher,Special.Editor,SPECIAL,University of St. Andrews,,St. Andrews,Fife,United Kingdom,GBR
+EVOL,2013,67,NA,3608,Ted,,Morrow,Ted Morrow,AE,SE,Uppsala University,,Uppsala,Uppsala,Sweden,SWE
+EVOL,2013,67,NA,161,Arcadi,,Navarro,Arcadi Navarro,AE,SE,Universitat Pompeu Fabra,,Barcelona,Catalonia,Spain,ESP
+EVOL,2013,67,NA,3612,Thomas,,Near,Thomas Near,AE,SE,Yale University,,New Haven,CT,USA,USA
+EVOL,2013,67,NA,2678,Nicolas,,Perrin,Nicolas Perrin,AE,SE,University of Lausanne,,Lausanne,Vaud,Switzerland,CHE
+EVOL,2013,67,NA,2895,P,David,Polly,P David Polly,AE,SE,Indiana University,,Bloomington,IN,USA,USA
+EVOL,2013,67,NA,3448,Susanna,,Remold,Susanna Remold,AE,SE,University of Louisville,,Louisville,KY,USA,USA
+EVOL,2013,67,NA,2536,Max,,Reuter,Max Reuter,AE,SE,University College London,,London,Greater London,United Kingdom,GBR
+EVOL,2013,67,NA,2735,Ophelie,,Ronce,Ophelie Ronce,AE,SE,UniversitÇ Montpellier II,,Montpellier,Occitanie,France,FRA
+EVOL,2013,67,NA,2541,Michael,,Rosenberg,Michael Rosenberg,AE,SE,Arizona State University,,Tempe,AZ,USA,USA
+EVOL,2013,67,NA,1020,Erica,Bree,Rosenblum,Erica Bree Rosenblum,AE,SE,University of California- Berkeley,,Berkeley,CA,USA,USA
+EVOL,2013,67,NA,3793,Walter,,Salzburger,Walter Salzburger,AE,SE,University of Basel,,Basel,Basel-Stadt,Switzerland,CHE
+EVOL,2013,67,NA,3699,Vincent,,Savolainen,Vincent Savolainen,AE,SE,Imperial College London,,London,Greater London,United Kingdom,GBR
+EVOL,2013,67,NA,2689,Nathalie,,Seddon,Nathalie Seddon,AE,SE,University of Oxford,,Oxford,Oxfordshire,United Kingdom,GBR
+EVOL,2013,67,NA,568,Carla,,Sgro,Carla Sgro,AE,SE,Monash University,,Victoria,VIC,Australia,AUS
+EVOL,2013,67,NA,197,Alex,,Shingleton,Alex Shingleton,AE,SE,Michigan State University,,East Lansing,MI,USA,USA
+EVOL,2013,67,NA,3645,Todd,,Streelman,Todd Streelman,AE,SE,Georgia Institute of Technology,,Atlanta,GA,USA,USA
+EVOL,2013,67,NA,2247,Liselotte,,Sundstrom,Liselotte Sundstrom,AE,SE,University of Helsinki,,Helsinki,Uusimaa,Finland,FIN
+EVOL,2013,67,NA,2595,Michael,,Wade,Michael Wade,Special.Editor,SPECIAL,Indiana University,,Bloomington,IN,USA,USA
+EVOL,2013,67,NA,1939,John,,Wares,John Wares,AE,SE,University of Georgia,,Athens,GA,USA,USA
+EVOL,2013,67,NA,2603,Mark,,Webster,Mark Webster,AE,SE,University of Chicago,,Chicago,IL,USA,USA
+EVOL,2013,67,NA,591,Chris,,Wheat,Chris Wheat,AE,SE,Stockholm University,,Stockholm,Sodermanland,Sweden,SWE
+EVOL,2013,67,NA,1956,Jon,,Wilkins,Jon Wilkins,AE,SE,Santa Fe Institute,,Santa Fe,NM,USA,USA
+EVOL,2014,68,NA,926,Ehab,,Abouheif,Ehab Abouheif,AE,SE,McGill University,,Montreal,QC,Canada,CAN
+EVOL,2014,68,NA,606,Dean,,Adams,Dean Adams,AE,SE,Iowa State University,,Ames,IA,USA,USA
+EVOL,2014,68,NA,2755,Peter,,Andolfatto,Peter Andolfatto,AE,SE,Princeton University,,Princeton,NJ,USA,USA
+EVOL,2014,68,NA,2123,Laine,,Anna-Liisa,Laine Anna-Liisa,AE,SE,University of Helsinki,,Helsinki,Uusimaa,Finland,FIN
+EVOL,2014,68,NA,609,Dean,,Antony,Dean Antony,AE,SE,University of Minnesota,,St. Paul,MN,USA,USA
+EVOL,2014,68,NA,3712,Wolf,,Blanckenhorn,Wolf Blanckenhorn,AE,SE,UniversitÑt ZÅrich-Irchel,,ZÅrich,ZÅrich,Switzerland,CHE
+EVOL,2014,68,NA,1982,Kirsten,,Bomblies,Kirsten Bomblies,AE,SE,Harvard University,,Cambridge,MA,USA,USA
+EVOL,2014,68,NA,2998,Robb,,Brumfield,Robb Brumfield,AE,SE,Louisiana State University,,Baton Rouge,LA,USA,USA
+EVOL,2014,68,NA,1060,Frank,,Burbrink,Frank Burbrink,AE,SE,College of Staten Island- CUNY,,New York,NY,USA,USA
+EVOL,2014,68,NA,36,Anne,,Charmantier,Anne Charmantier,AE,SE,Centre d'Ecologie Fonctionnelle et Evolutive- CNRS,,Montpellier,Occitanie,France,FRA
+EVOL,2014,68,NA,39,Adam,,Chippindale,Adam Chippindale,AE,SE,Queen's University,,Kingston,ON,Canada,CAN
+EVOL,2014,68,NA,3021,Reginald,,Cocroft,Reginald Cocroft,AE,SE,University of Missouri,,Columbia,MO,USA,USA
+EVOL,2014,68,NA,1518,Jeffrey,,Conner,Jeffrey Conner,Editor,AE,Michigan State University,,Hickory Corners,MI,USA,USA
+EVOL,2014,68,NA,2339,Melania,,Cristescu,Melania Cristescu,AE,SE,McGill University,,Montreal,QC,Canada,CAN
+EVOL,2014,68,NA,3033,Rozen,,Daniel,Rozen Daniel,AE,SE,University of Leiden,,Leiden,South Holland,Netherlands,NLD
+EVOL,2014,68,NA,2341,Moeller,,David,Moeller David,AE,SE,University of Minnesota,,St. Paul,MN,USA,USA
+EVOL,2014,68,NA,2139,Lynda,,Delph,Lynda Delph,Special.Editor,SPECIAL,Indiana University,,Bloomington,IN,USA,USA
+EVOL,2014,68,NA,3037,Roze,,Denis,Roze Denis,AE,SE,Roscoff Marine Station- UPMC,,Roscoff,Brittany,France,FRA
+EVOL,2014,68,NA,1543,J,Arjan Gm,Devisser,J Arjan Gm Devisser,AE,SE,Wageningen University and Research,,Wageningen,Gelderland,Netherlands,NLD
+EVOL,2014,68,NA,1550,Jeff,,Dudycha,Jeff Dudycha,AE,SE,University of South Carolina,,Columbia,SC,USA,USA
+EVOL,2014,68,NA,2355,Marshall,,Dustin,Marshall Dustin,AE,SE,Monash University,,Victoria,VIC,Australia,AUS
+EVOL,2014,68,NA,1565,Julie,,Etterson,Julie Etterson,AE,SE,University of Minnesota- Duluth,,Duluth,MN,USA,USA
+EVOL,2014,68,NA,2000,Kisdi,,Eva,Kisdi Eva,AE,SE,University of Helsinki,,Helsinki,Uusimaa,Finland,FIN
+EVOL,2014,68,NA,2146,Lila,,Fishman,Lila Fishman,AE,SE,University of Montana,,Missoula,MT,USA,USA
+EVOL,2014,68,NA,1575,Jim,,Fordyce,Jim Fordyce,AE,SE,University of Tennessee,,Knoxville,TN,USA,USA
+EVOL,2014,68,NA,2372,Matt,,Forister,Matt Forister,AE,SE,University of Nevada,,Reno,NV,USA,USA
+EVOL,2014,68,NA,3338,Sylvain,,Glemin,Sylvain Glemin,AE,SE,UniversitÇ Montpellier II,,Montpellier,Occitanie,France,FRA
+EVOL,2014,68,NA,1601,Jeff,,Good,Jeff Good,AE,SE,University of Montana,,Missoula,MT,USA,USA
+EVOL,2014,68,NA,1397,Isabel,,Gordo,Isabel Gordo,AE,SE,Gulbenkian Institute,,Oeiras,Lisbon,Portugal,PRT
+EVOL,2014,68,NA,2166,Luke,,Harmon,Luke Harmon,AE,SE,University of Idaho,,Moscow,ID,USA,USA
+EVOL,2014,68,NA,101,Andrew,,Hendry,Andrew Hendry,AE,SE,McGill University,,Montreal,QC,Canada,CAN
+EVOL,2014,68,NA,1647,John,,Hunt,John Hunt,AE,SE,University of Exeter in Cornwall,,Penryn,Cornwall,United Kingdom,GBR
+EVOL,2014,68,NA,730,Dworkin,,Ian,Dworkin Ian,AE,SE,Michigan State University,,East Lansing,MI,USA,USA
+EVOL,2014,68,NA,3368,Storz,,Jay,Storz Jay,AE,SE,University of Nebraska,,Lincoln,NE,USA,USA
+EVOL,2014,68,NA,2180,Linley,,Jesson,Linley Jesson,AE,SE,University of New Brunswick,,Fredricton,NB,Canada,CAN
+EVOL,2014,68,NA,3375,Sears,,Karen,Sears Karen,AE,SE,University of Illinois at Urbana-Champaign,,Champaign,IL,USA,USA
+EVOL,2014,68,NA,3589,Thomas,,Lenormand,Thomas Lenormand,Editor,AE,Centre d'Ecologie Fonctionnelle et Evolutive- CNRS,,Montpellier,Occitanie,France,FRA
+EVOL,2014,68,NA,143,Alexei,,Maklakov,Alexei Maklakov,AE,SE,Uppsala University,,Uppsala,Uppsala,Sweden,SWE
+EVOL,2014,68,NA,1338,Hahn,,Matthew,Hahn Matthew,AE,SE,Indiana University,,Bloomington,IN,USA,USA
+EVOL,2014,68,NA,2666,Neiman,,Maurine,Neiman Maurine,AE,SE,University of Iowa,,Iowa City,IA,USA,USA
+EVOL,2014,68,NA,3603,Thomas,R,Meagher,Thomas R Meagher,Special.Editor,SPECIAL,University of St. Andrews,,St. Andrews,Fife,Canada,CAN
+EVOL,2014,68,NA,152,Alfaro,,Michael,Alfaro Michael,AE,SE,University of California- Los Angeles,,Los Angeles,CA,USA,USA
+EVOL,2014,68,NA,161,Arcadi,,Navarro,Arcadi Navarro,AE,SE,Universitat Pompeu Fabra,,Barcelona,Catalonia,Spain,ESP
+EVOL,2014,68,NA,3612,Thomas,,Near,Thomas Near,AE,SE,Yale University,,New Haven,CT,USA,USA
+EVOL,2014,68,NA,3691,Valenzuela,,Nicole,Valenzuela Nicole,AE,SE,Iowa State University,,Ames,IA,USA,USA
+EVOL,2014,68,NA,2895,P,David,Polly,P David Polly,AE,SE,Indiana University,,Bloomington,IN,USA,USA
+EVOL,2014,68,NA,3199,Rodriguez,,Rafael,Rodriguez Rafael,AE,SE,University of Wisconsin- Milwaukee,,Milwaukee,WI,USA,USA
+EVOL,2014,68,NA,3448,Susanna,,Remold,Susanna Remold,AE,SE,University of Louisville,,Louisville,KY,USA,USA
+EVOL,2014,68,NA,1252,Gomulkiewicz,,Richard,Gomulkiewicz Richard,AE,SE,Washington State University,,Pullman,WA,USA,USA
+EVOL,2014,68,NA,2735,Ophelie,,Ronce,Ophelie Ronce,AE,SE,UniversitÇ Montpellier II,,Montpellier,Occitanie,France,FRA
+EVOL,2014,68,NA,2541,Michael,,Rosenberg,Michael Rosenberg,AE,SE,Arizona State University,,Tempe,AZ,USA,USA
+EVOL,2014,68,NA,1020,Erica,Bree,Rosenblum,Erica Bree Rosenblum,AE,SE,University of California- Berkeley,,Berkeley,CA,USA,USA
+EVOL,2014,68,NA,3793,Walter,,Salzburger,Walter Salzburger,AE,SE,University of Basel,,Basel,Basel-Stadt,Switzerland,CHE
+EVOL,2014,68,NA,3699,Vincent,,Savolainen,Vincent Savolainen,AE,SE,Imperial College London,,London,Greater London,United Kingdom,GBR
+EVOL,2014,68,NA,2689,Nathalie,,Seddon,Nathalie Seddon,AE,SE,University of Oxford,,Oxford,Oxfordshire,United Kingdom,GBR
+EVOL,2014,68,NA,568,Carla,,Sgro,Carla Sgro,AE,SE,Monash University,,Victoria,VIC,Australia,AUS
+EVOL,2014,68,NA,3218,Ruth,Green,Shaw,Ruth Green Shaw,EIC,EIC,University of Minnesota,,St. Paul,MN,USA,USA
+EVOL,2014,68,NA,197,Alex,,Shingleton,Alex Shingleton,AE,SE,Michigan State University,,East Lansing,MI,USA,USA
+EVOL,2014,68,NA,3645,Todd,,Streelman,Todd Streelman,AE,SE,Georgia Institute of Technology,,Atlanta,GA,USA,USA
+EVOL,2014,68,NA,2572,Matthew,,Streisfeld,Matthew Streisfeld,AE,SE,University of Oregon,,Eugene,OR,USA,USA
+EVOL,2014,68,NA,2247,Liselotte,,Sundstrom,Liselotte Sundstrom,AE,SE,University of Helsinki,,Helsinki,Uusimaa,Finland,FIN
+EVOL,2014,68,NA,2103,Kawecki,,Tadeusz,Kawecki Tadeusz,AE,SE,University of Lausanne,,Lausanne,Vaud,Switzerland,CHE
+EVOL,2014,68,NA,2595,Michael,,Wade,Michael Wade,Special.Editor,SPECIAL,Indiana University,,Bloomington,IN,USA,USA
+EVOL,2014,68,NA,2603,Mark,,Webster,Mark Webster,AE,SE,University of Chicago,,Chicago,IL,USA,USA
+EVOL,2014,68,NA,591,Chris,,Wheat,Chris Wheat,AE,SE,Stockholm University,,Stockholm,Sodermanland,Sweden,SWE
+EVOL,2014,68,NA,1956,Jon,,Wilkins,Jon Wilkins,AE,SE,Santa Fe Institute,,Santa Fe,NM,USA,USA
+EVOL,2015,69,NA,606,Dean,,Adams,Dean Adams,AE,SE,,,,,USA,USA
+EVOL,2015,69,NA,2268,Michael,,Alfaro,Michael Alfaro,AE,SE,,,,,USA,USA
+EVOL,2015,69,NA,2755,Peter,,Andolfatto,Peter Andolfatto,AE,SE,,,,,USA,USA
+EVOL,2015,69,NA,7,Amy,,Angert,Amy Angert,AE,SE,,,,,Canada,CAN
+EVOL,2015,69,NA,2974,Riccardo,,Azevedo,Riccardo Azevedo,AE,SE,,,,,USA,USA
+EVOL,2015,69,NA,3712,Wolf,,Blanckenhorn,Wolf Blanckenhorn,AE,SE,,,,,Switzerland,CHE
+EVOL,2015,69,NA,1475,Janette,Wenrick,Boughman,Janette Wenrick Boughman,AE,SE, Michigan State University,,,,USA,USA
+EVOL,2015,69,NA,2312,Mark,Jf,Brown,Mark Jf Brown,AE,SE, Royal Holloway,,,,United Kingdom,GBR
+EVOL,2015,69,NA,2998,Robb,,Brumfield,Robb Brumfield,AE,SE,,,,,USA,USA
+EVOL,2015,69,NA,1060,Frank,,Burbrink,Frank Burbrink,AE,SE,,,,,USA,USA
+EVOL,2015,69,NA,33,Andrea,,Case,Andrea Case,AE,SE,,,,,USA,USA
+EVOL,2015,69,NA,39,Adam,,Chippindale,Adam Chippindale,AE,SE,,,,,Canada,CAN
+EVOL,2015,69,NA,1518,Jeffrey,,Conner,Jeffrey Conner,Editor,AE,,,,,USA,USA
+EVOL,2015,69,NA,2339,Melania,,Cristescu,Melania Cristescu,AE,SE,,,,,Canada,CAN
+EVOL,2015,69,NA,52,Antony,,Dean,Antony Dean,AE,SE,,,,,USA,USA
+EVOL,2015,69,NA,2139,Lynda,,Delph,Lynda Delph,Special.Editor,SPECIAL,,,,,USA,USA
+EVOL,2015,69,NA,1543,J,Arjan Gm,Devisser,J Arjan Gm Devisser,AE,SE, Wageningen University,,,,Netherlands,NLD
+EVOL,2015,69,NA,1396,Ian,,Dworkin,Ian Dworkin,AE,SE,,,,,USA,USA
+EVOL,2015,69,NA,3318,Suzanne,,Edmands,Suzanne Edmands,AE,SE,,,,,USA,USA
+EVOL,2015,69,NA,1562,Jan,,Engelstadter,Jan Engelstadter,AE,SE,,,,,Australia,AUS
+EVOL,2015,69,NA,1565,Julie,,Etterson,Julie Etterson,AE,SE,,,,,USA,USA
+EVOL,2015,69,NA,67,Alistair,,Evans,Alistair Evans,AE,SE,,,,,Australia,AUS
+EVOL,2015,69,NA,682,Daphne,,Fairbairn,Daphne Fairbairn,EIC,EIC,,,,,USA,USA
+EVOL,2015,69,NA,2146,Lila,,Fishman,Lila Fishman,AE,SE,,,,,USA,USA
+EVOL,2015,69,NA,2372,Matt,,Forister,Matt Forister,AE,SE,,,,,USA,USA
+EVOL,2015,69,NA,2379,Matt,,Friedman,Matt Friedman,AE,SE,,,,,United Kingdom,GBR
+EVOL,2015,69,NA,3338,Sylvain,,Glemin,Sylvain Glemin,AE,SE,,,,,France,FRA
+EVOL,2015,69,NA,3071,Richard,,Gomulkiewicz,Richard Gomulkiewicz,AE,SE,,,,,USA,USA
+EVOL,2015,69,NA,1601,Jeff,,Good,Jeff Good,AE,SE,,,,,USA,USA
+EVOL,2015,69,NA,1615,Jarrod,,Hadfield,Jarrod Hadfield,AE,SE,,,,,USA,USA
+EVOL,2015,69,NA,2393,Matthew,,Hahn,Matthew Hahn,AE,SE,,,,,USA,USA
+EVOL,2015,69,NA,3868,David,,Hall,David Hall,AE,SE,,,,,USA,USA
+EVOL,2015,69,NA,1647,John,,Hunt,John Hunt,AE,SE,,,,,United Kingdom,GBR
+EVOL,2015,69,NA,2180,Linley,,Jesson,Linley Jesson,AE,SE,,,,,Canada,CAN
+EVOL,2015,69,NA,3576,Tadeusz,,Kawecki,Tadeusz Kawecki,AE,SE,,,,,Switzerland,CHE
+EVOL,2015,69,NA,988,Eva,,Kisdi,Eva Kisdi,AE,SE,,,,,Finland,FIN
+EVOL,2015,69,NA,131,Anna-Liisa,,Laine,Anna-Liisa Laine,AE,SE,,,,,Finland,FIN
+EVOL,2015,69,NA,143,Alexei,,Maklakov,Alexei Maklakov,AE,SE,,,,,Sweden,SWE
+EVOL,2015,69,NA,3870,Dustin,,Marshall,Dustin Marshall,AE,SE,,,,,Australia,AUS
+EVOL,2015,69,NA,1745,Joanna,,Masel,Joanna Masel,AE,SE,,,,,USA,USA
+EVOL,2015,69,NA,147,Andrew,Green,Mcadam,Andrew Green Mcadam,AE,SE,,,,,Canada,CAN
+EVOL,2015,69,NA,3603,Thomas,R,Meagher,Thomas R Meagher,Special.Editor,SPECIAL, University of St. Andrews,,,,United Kingdom,GBR
+EVOL,2015,69,NA,792,David,A,Moeller,David A Moeller,AE,SE, University of Minnesota,,,,USA,USA
+EVOL,2015,69,NA,161,Arcadi,,Navarro,Arcadi Navarro,AE,SE,,,,,Spain,ESP
+EVOL,2015,69,NA,2488,Maurine,,Neiman,Maurine Neiman,AE,SE,,,,,USA,USA
+EVOL,2015,69,NA,3202,Rosemary,,Redfield,Rosemary Redfield,AE,SE,,,,,Canada,CAN
+EVOL,2015,69,NA,2228,Liam,J,Revell,Liam J Revell,AE,SE, University of Massachusetts Boston,,,,USA,USA
+EVOL,2015,69,NA,845,Dan,,Robosky,Dan Robosky,AE,SE,,,,,USA,USA
+EVOL,2015,69,NA,3206,Rafael,Lucas,Rodriguez,Rafael Lucas Rodriguez,AE,SE, Univ. of Wisconsin-Milwaukee,,,,USA,USA
+EVOL,2015,69,NA,847,Derek,,Roff,Derek Roff,AE,SE,,,,,USA,USA
+EVOL,2015,69,NA,1020,Erica,Bree,Rosenblum,Erica Bree Rosenblum,AE,SE, University of California,,,,USA,USA
+EVOL,2015,69,NA,850,Denis,,Roze,Denis Roze,AE,SE,,,,,France,FRA
+EVOL,2015,69,NA,851,Daniel,,Rozen,Daniel Rozen,AE,SE,,,,,Netherlands,NLD
+EVOL,2015,69,NA,3793,Walter,,Salzburger,Walter Salzburger,AE,SE,,,,,Switzerland,CHE
+EVOL,2015,69,NA,2086,Karen,E,Sears,Karen E Sears,AE,SE, University of Illinois,,,,USA,USA
+EVOL,2015,69,NA,2559,Maria,,Servedio,Maria Servedio,Editor,AE,,,,,USA,USA
+EVOL,2015,69,NA,3218,Ruth,Green,Shaw,Ruth Green Shaw,EIC,EIC,,,,,USA,USA
+EVOL,2015,69,NA,1894,Jay,F,Storz,Jay F Storz,AE,SE, University of Nebraska,,,,USA,USA
+EVOL,2015,69,NA,2572,Matthew,A,Streisfeld,Matthew A Streisfeld,AE,SE, University of Oregon,,,,USA,USA
+EVOL,2015,69,NA,210,Andrea,,Sweigart,Andrea Sweigart,AE,SE,,,,,USA,USA
+EVOL,2015,69,NA,1908,Joe,,Tobias,Joe Tobias,AE,SE,,,,,United Kingdom,GBR
+EVOL,2015,69,NA,2701,Nicole,,Valenzuela,Nicole Valenzuela,AE,SE,,,,,USA,USA
+EVOL,2015,69,NA,2603,Mark,,Webster,Mark Webster,AE,SE,,,,,USA,USA
+EVOL,2015,69,NA,591,Christopher,,Wheat,Christopher Wheat,AE,SE,,,,,Sweden,SWE

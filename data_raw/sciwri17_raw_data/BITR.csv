@@ -1,0 +1,775 @@
+JOURNAL,YEAR,VOLUME,ISSUE,editor_id,FIRST_NAME,MIDDLE_NAME,LAST_NAME,NAME,TITLE.x,CATEGORY,INST,UNIT,CITY,STATE,COUNTRY,geo.code
+BITR,2002,34,1,2203,Lucinda,,McDade,Lucinda McDade,SE,SE,Acad Natural Science Philadelphia,,,,USA,USA
+BITR,2003,35,1,2203,Lucinda,,McDade,Lucinda McDade,SE,SE,Acad Natural Science Philadelphia,,,,USA,USA
+BITR,2004,36,1,2203,Lucinda,,McDade,Lucinda McDade,SE,SE,Acad Natural Science Philadelphia,,,,USA,USA
+BITR,2005,37,1,2203,Lucinda,,McDade,Lucinda McDade,SE,SE,Acad Natural Science Philadelphia,,,,USA,USA
+BITR,2012,44,1,2367,Masresha,,Fetene,Masresha Fetene,SE,SE,Addis Ababa University,,,,Ethiopia,ETH
+BITR,2013,45,1,2367,Masresha,,Fetene,Masresha Fetene,SE,SE,Addis Ababa University,,,,Ethiopia,ETH
+BITR,2014,46,1,2367,Masresha,,Fetene,Masresha Fetene,EB,SE,Addis Ababa University,,,,Ethiopia,ETH
+BITR,1998,30,1,2690,Nancy,,Simmons,Nancy Simmons,SE,SE,American Museum of Natural History,,,,USA,USA
+BITR,1999,31,1,2690,Nancy,,Simmons,Nancy Simmons,SE,SE,American Museum of Natural History,,,,USA,USA
+BITR,2008,40,1,300,Beth,,Kaplin,Beth Kaplin,SE,SE,Antioch New England Graduate School and National University of Rwanda,,,,Rwanda,RWA
+BITR,2009,41,1,300,Beth,,Kaplin,Beth Kaplin,SE,SE,Antioch New England Graduate School and National University of Rwanda,,,,Rwanda,RWA
+BITR,2010,42,1,300,Beth,,Kaplin,Beth Kaplin,SE,SE,Antioch New England Graduate School and National University of Rwanda,,,,Rwanda,RWA
+BITR,2011,43,1,300,Beth,,Kaplin,Beth Kaplin,SE,SE,Antioch New England Graduate School and National University of Rwanda,,,,Rwanda,RWA
+BITR,2012,44,1,300,Beth,,Kaplin,Beth Kaplin,SE,SE,Antioch New England Graduate School and National University of Rwanda,,,,Rwanda,RWA
+BITR,2013,45,1,300,Beth,,Kaplin,Beth Kaplin,SE,SE,Antioch New England Graduate School and National University of Rwanda,,,,Rwanda,RWA
+BITR,2014,46,1,300,Beth,,Kaplin,Beth Kaplin,AE,AE,Antioch New England Graduate School and National University of Rwanda,,,,USA,USA
+BITR,2009,41,1,1685,Jagdish,,Krishnaswamy,Jagdish Krishnaswamy,SE,SE,Ashoka Trust for Research in Ecology and the Environment Bangalore,,,,India,IND
+BITR,2010,42,1,1685,Jagdish,,Krishnaswamy,Jagdish Krishnaswamy,SE,SE,Ashoka Trust for Research in Ecology and the Environment Bangalore,,,,India,IND
+BITR,2011,43,1,1685,Jagdish,,Krishnaswamy,Jagdish Krishnaswamy,SE,SE,Ashoka Trust for Research in Ecology and the Environment Bangalore,,,,India,IND
+BITR,1998,30,1,471,Craig,,Guyer,Craig Guyer,SE,SE,Auburn University,,,,USA,USA
+BITR,1999,31,1,471,Craig,,Guyer,Craig Guyer,SE,SE,Auburn University,,,,USA,USA
+BITR,2000,32,1,471,Craig,,Guyer,Craig Guyer,SE,SE,Auburn University,,,,USA,USA
+BITR,1997,29,1,3800,Whendee,,Silver,Whendee Silver,SE,SE,Boston University,,,,USA,USA
+BITR,1998,30,1,3800,Whendee,,Silver,Whendee Silver,SE,SE,Boston University,,,,USA,USA
+BITR,1997,29,1,2706,Nathaniel,,Wheelwright,Nathaniel Wheelwright,SE,SE,Bowdoin College,,,,USA,USA
+BITR,1998,30,1,2706,Nathaniel,,Wheelwright,Nathaniel Wheelwright,SE,SE,Bowdoin College,,,,USA,USA
+BITR,2011,43,1,170,Axel,,Poulsen,Axel Poulsen,SE,SE,Boyal Botanic Gatdens Edinburgh,,,,UK,GBR
+BITR,2012,44,1,170,Axel,,Poulsen,Axel Poulsen,SE,SE,Boyal Botanic Gatdens Edinburgh,,,,UK,GBR
+BITR,1998,30,1,2616,Marina,,Wong,Marina Wong,SE,SE,Brunei Museum,,,,Brunei,BRN
+BITR,1999,31,1,2616,Marina,,Wong,Marina Wong,SE,SE,Brunei Museum,,,,Brunei,BRN
+BITR,2012,44,1,1050,Fred,,Babweteera,Fred Babweteera,SE,SE,Budongo Conservation Field Station,,,,Uganda,UGA
+BITR,2013,45,1,1050,Fred,,Babweteera,Fred Babweteera,SE,SE,Budongo Conservation Field Station,,,,Uganda,UGA
+BITR,2014,46,1,1050,Fred,,Babweteera,Fred Babweteera,EB,SE,Budongo Conservation Field Station,,,,Uganda,UGA
+BITR,2012,44,1,3601,Terry,,McGlynn,Terry McGlynn,SE,SE,California State University-Dominguez Hills,,,,USA,USA
+BITR,2013,45,1,3601,Terry,,McGlynn,Terry McGlynn,SE,SE,California State University-Dominguez Hills,,,,USA,USA
+BITR,2014,46,1,3601,Terry,,McGlynn,Terry McGlynn,EB,SE,California State University-Dominguez Hills,,,,USA,USA
+BITR,1987,19,1,2906,Paul,W,Richards,Paul W Richards,SE,SE,"Retired, No Affiliation Listed",,Cambridge,,UK,GBR
+BITR,1988,20,1,2906,Paul,W,Richards,Paul W Richards,SE,SE,"Retired, No Affiliation Listed",,Cambridge,,UK,GBR
+BITR,1989,21,1,2906,Paul,W,Richards,Paul W Richards,SE,SE,"Retired, No Affiliation Listed",,Cambridge,,UK,GBR
+BITR,1990,22,1,2906,Paul,W,Richards,Paul W Richards,SE,SE,"Retired, No Affiliation Listed",,Cambridge,,UK,GBR
+BITR,1991,23,1,2906,Paul,W,Richards,Paul W Richards,SE,SE,"Retired, No Affiliation Listed",,Cambridge,,UK,GBR
+BITR,1992,24,1,2906,Paul,W,Richards,Paul W Richards,SE,SE,"Retired, No Affiliation Listed",,Cambridge,,UK,GBR
+BITR,1993,25,1,2906,Paul,W,Richards,Paul W Richards,SE,SE,"Retired, No Affiliation Listed",,Cambridge,,UK,GBR
+BITR,1994,26,1,2906,Paul,W,Richards,Paul W Richards,SE,SE,"Retired, No Affiliation Listed",,Cambridge,,UK,GBR
+BITR,1995,27,1,2906,Paul,W,Richards,Paul W Richards,SE,SE,"Retired, No Affiliation Listed",,Cambridge,,UK,GBR
+BITR,2008,40,1,271,Bryan,,Finegan,Bryan Finegan,SE,SE,CATIE Center for Tropical Agricultural Research and Education,,,,Costa Rica,CRI
+BITR,2009,41,1,271,Bryan,,Finegan,Bryan Finegan,SE,SE,CATIE Center for Tropical Agricultural Research and Education,,,,Costa Rica,CRI
+BITR,2010,42,1,271,Bryan,,Finegan,Bryan Finegan,SE,SE,CATIE Center for Tropical Agricultural Research and Education,,,,Costa Rica,CRI
+BITR,2011,43,1,271,Bryan,,Finegan,Bryan Finegan,SE,SE,CATIE Center for Tropical Agricultural Research and Education,,,,Costa Rica,CRI
+BITR,2012,44,1,271,Bryan,,Finegan,Bryan Finegan,SE,SE,CATIE Center for Tropical Agricultural Research and Education,,,,Costa Rica,CRI
+BITR,2013,45,1,271,Bryan,,Finegan,Bryan Finegan,SE,SE,CATIE Center for Tropical Agricultural Research and Education,,,,Costa Rica,CRI
+BITR,2014,46,1,271,Bryan,,Finegan,Bryan Finegan,AE,AE,CATIE Center for Tropical Agricultural Research and Education,,,,Costa Rica,CRI
+BITR,2014,46,1,271,Bryan,,Finegan,Bryan Finegan,EB,SE,CATIE Center for Tropical Agricultural Research and Education,,,,Costa Rica,CRI
+BITR,2009,41,1,692,Donald,,Franklin,Donald Franklin,SE,SE,Charles Darwin University Darwin,,,,Australia,AUS
+BITR,2010,42,1,692,Donald,,Franklin,Donald Franklin,SE,SE,Charles Darwin University Darwin,,,,Australia,AUS
+BITR,2011,43,1,692,Donald,,Franklin,Donald Franklin,SE,SE,Charles Darwin University Darwin,,,,Australia,AUS
+BITR,2012,44,1,692,Donald,,Franklin,Donald Franklin,SE,SE,Charles Darwin University Darwin,,,,Australia,AUS
+BITR,2013,45,1,692,Donald,,Franklin,Donald Franklin,SE,SE,Charles Darwin University Darwin,,,,Australia,AUS
+BITR,2014,46,1,692,Donald,,Franklin,Donald Franklin,EB,SE,Charles Darwin University Darwin,,,,Australia,AUS
+BITR,2005,37,1,2391,Manuel,,Guariguata,Manuel Guariguata,SE,SE,CIFOR,,,,Indonesia,IDN
+BITR,2006,38,1,2391,Manuel,,Guariguata,Manuel Guariguata,SE,SE,CIFOR,,,,Indonesia,IDN
+BITR,2007,39,1,2391,Manuel,,Guariguata,Manuel Guariguata,SE,SE,CIFOR,,,,Indonesia,IDN
+BITR,2012,44,1,3311,Saara,,Dewalt,Saara Dewalt,SE,SE,Clemson University,Biological Sciences,,,USA,USA
+BITR,2013,45,1,3311,Saara,,Dewalt,Saara Dewalt,SE,SE,Clemson University,Biological Sciences,,,USA,USA
+BITR,2014,46,1,3312,Saara,,DeWalt,Saara DeWalt,EB,SE,Clemson University,Biological Sciences,,,USA,USA
+BITR,1998,30,1,46,Alan,,Covich,Alan Covich,SE,SE,Colorado State University,,,,USA,USA
+BITR,1999,31,1,46,Alan,,Covich,Alan Covich,SE,SE,Colorado State University,,,,USA,USA
+BITR,2000,32,1,46,Alan,,Covich,Alan Covich,SE,SE,Colorado State University,,,,USA,USA
+BITR,2012,44,1,2582,Maria,,Uriarte,Maria Uriarte,SE,SE,Columbia Universily,,,,USA,USA
+BITR,2013,45,1,2582,Maria,,Uriarte,Maria Uriarte,SE,SE,Columbia Universily,,,,USA,USA
+BITR,2014,46,1,2582,Maria,,Uriarte,Maria Uriarte,EB,SE,Columbia Universily,,,,USA,USA
+BITR,2005,37,1,911,David,,Westcott,David Westcott,SE,SE,Commonwealth Scientific and Industrial Research Organisation (CSIRO),,,,Australia,AUS
+BITR,2006,38,1,911,David,,Westcott,David Westcott,SE,SE,Commonwealth Scientific and Industrial Research Organisation (CSIRO),,,,Australia,AUS
+BITR,2007,39,1,911,David,,Westcott,David Westcott,SE,SE,Commonwealth Scientific and Industrial Research Organisation (CSIRO),,,,Australia,AUS
+BITR,2008,40,1,911,David,,Westcott,David Westcott,SE,SE,Commonwealth Scientific and Industrial Research Organisation (CSIRO),,,,Australia,AUS
+BITR,2009,41,1,911,David,,Westcott,David Westcott,SE,SE,Commonwealth Scientific and Industrial Research Organisation (CSIRO),,,,Australia,AUS
+BITR,2010,42,1,911,David,,Westcott,David Westcott,SE,SE,Commonwealth Scientific and Industrial Research Organisation (CSIRO),,,,Australia,AUS
+BITR,2011,43,1,911,David,,Westcott,David Westcott,SE,SE,Commonwealth Scientific and Industrial Research Organisation (CSIRO),,,,Australia,AUS
+BITR,2012,44,1,1094,Frederieke,,Kroon,Frederieke Kroon,SE,SE,Commonwealth Scientific and Industrial Research Organisation (CSIRO),,,,Australia,AUS
+BITR,2012,44,1,911,David,,Westcott,David Westcott,SE,SE,Commonwealth Scientific and Industrial Research Organisation (CSIRO),,,,Australia,AUS
+BITR,1998,30,1,1576,John,ED,Fox,John ED Fox,SE,SE,Curtin University of Technology,,,,Australia,AUS
+BITR,1999,31,1,1576,John,ED,Fox,John ED Fox,SE,SE,Curtin University of Technology,,,,Australia,AUS
+BITR,2005,37,1,3692,Vojtech,,Novotny,Vojtech Novotny,SE,SE,Czech Academy of Sciences,,,,Czech Republic,CZE
+BITR,2006,38,1,3692,Vojtech,,Novotny,Vojtech Novotny,SE,SE,Czech Academy of Sciences,,,,Czech Republic,CZE
+BITR,2007,39,1,3692,Vojtech,,Novotny,Vojtech Novotny,SE,SE,Czech Academy of Sciences,,,,Czech Republic,CZE
+BITR,2008,40,1,3692,Vojtech,,Novotny,Vojtech Novotny,SE,SE,Czech Academy of Sciences,,,,Czech Republic,CZE
+BITR,2009,41,1,3692,Vojtech,,Novotny,Vojtech Novotny,SE,SE,Czech Academy of Sciences,,,,Czech Republic,CZE
+BITR,2010,42,1,3692,Vojtech,,Novotny,Vojtech Novotny,SE,SE,Czech Academy of Sciences,,,,Czech Republic,CZE
+BITR,2011,43,1,3692,Vojtech,,Novotny,Vojtech Novotny,SE,SE,Czech Academy of Sciences,,,,Czech Republic,CZE
+BITR,2014,46,1,3692,Vojtech,,Novotny,Vojtech Novotny,EB,SE,Czech Academy of Sciences,,,,Czech Republic,CZE
+BITR,2004,36,1,2107,Kevina,,Vulinec,Kevina Vulinec,SE,SE,Delaware State University,,,,USA,USA
+BITR,2005,37,1,2107,Kevina,,Vulinec,Kevina Vulinec,SE,SE,Delaware State University,,,,USA,USA
+BITR,2006,38,1,2107,Kevina,,Vulinec,Kevina Vulinec,SE,SE,Delaware State University,,,,USA,USA
+BITR,2007,39,1,2107,Kevina,,Vulinec,Kevina Vulinec,SE,SE,Delaware State University,,,,USA,USA
+BITR,2008,40,1,2107,Kevina,,Vulinec,Kevina Vulinec,SE,SE,Delaware State University,,,,USA,USA
+BITR,1969,1,1,1809,James,A,Peters,James A Peters,AE,AE,Division of Reptiles and Amphibians Smithsonian Institute Washington DC,,,,USA,USA
+BITR,1999,31,1,480,Carlos,M,Herrera,Carlos M Herrera,SE,SE,Estacion Biologica Donana,,,,Spain,ESP
+BITR,2000,32,1,480,Carlos,M,Herrera,Carlos M Herrera,SE,SE,Estacion Biologica Donana,,,,Spain,ESP
+BITR,2001,33,1,480,Carlos,M,Herrera,Carlos M Herrera,SE,SE,Estacion Biologica Donana,,,,Spain,ESP
+BITR,2005,37,1,1594,Jaboury,,Ghazoul,Jaboury Ghazoul,SE,SE,ETH Zurich,lnstitute of Terrestrial Ecosystems,,,Switzerland,CHE
+BITR,2006,38,1,1594,Jaboury,,Ghazoul,Jaboury Ghazoul,SE,SE,ETH Zurich,lnstitute of Terrestrial Ecosystems,,,Switzerland,CHE
+BITR,2007,39,1,1594,Jaboury,,Ghazoul,Jaboury Ghazoul,EIC,EIC,ETH Zurich,lnstitute of Terrestrial Ecosystems,,,Switzerland,CHE
+BITR,2008,40,1,1594,Jaboury,,Ghazoul,Jaboury Ghazoul,EIC,EIC,ETH Zurich,lnstitute of Terrestrial Ecosystems,,,Switzerland,CHE
+BITR,2009,41,1,1594,Jaboury,,Ghazoul,Jaboury Ghazoul,EIC,EIC,ETH Zurich,lnstitute of Terrestrial Ecosystems,,,Switzerland,CHE
+BITR,2010,42,1,1594,Jaboury,,Ghazoul,Jaboury Ghazoul,EIC,EIC,ETH Zurich,lnstitute of Terrestrial Ecosystems,,,Switzerland,CHE
+BITR,2010,42,1,2188,Lian,Pin,Koh,Lian Pin Koh,SE,SE,ETH Zurich,,,,Switzerland,CHE
+BITR,2011,43,1,1594,Jaboury,,Ghazoul,Jaboury Ghazoul,EIC,EIC,ETH Zurich,lnstitute of Terrestrial Ecosystems,,,Switzerland,CHE
+BITR,2011,43,1,2188,Lian,Pin,Koh,Lian Pin Koh,SE,SE,ETH Zurich,,,,Switzerland,CHE
+BITR,2012,44,1,1594,Jaboury,,Ghazoul,Jaboury Ghazoul,EIC,EIC,ETH Zurich,lnstitute of Terrestrial Ecosystems,,,Switzerland,CHE
+BITR,2012,44,1,494,Chris,,Kettle,Chris Kettle,SE,SE,ETH Zurich,Department ot Environmental Science,,,Switzerland,CHE
+BITR,2013,45,1,1594,Jaboury,,Ghazoul,Jaboury Ghazoul,EIC,EIC,ETH Zurich,lnstitute of Terrestrial Ecosystems,,,Switzerland,CHE
+BITR,2013,45,1,494,Chris,,Kettle,Chris Kettle,SE,SE,ETH Zurich,Department ot Environmental Science,,,Switzerland,CHE
+BITR,2013,45,1,494,Chris,,Kettle,Chris Kettle,SE,SE,ETH Zurich,Department ot Environmental Science,,,Switzerland,CHE
+BITR,2014,46,1,1594,Jaboury,,Ghazoul,Jaboury Ghazoul,RE,SE,ETH Zurich,,,,Switzerland,CHE
+BITR,2014,46,1,494,Chris,J,Kettle,Chris J Kettle,EB,SE,ETH Zurich,Department ot Environmental Science,,,Switzerland,CHE
+BITR,2013,45,1,2975,Robert,,Bagchi,Robert Bagchi,SE,SE,ETH Zurich ,Department ot Environmental Science,,,Switzerland,CHE
+BITR,2014,46,1,2975,Robert,,Bagchi,Robert Bagchi,EB,SE,ETH Zurich ,Department ot Environmental Science,,,Switzerland,CHE
+BITR,1996,28,1,1723,John,T,Longino,John T Longino,SE,SE,Evergreen State College Washington,,,,USA,USA
+BITR,1997,29,1,1723,John,T,Longino,John T Longino,SE,SE,Evergreen State College Washington,,,,USA,USA
+BITR,1998,30,1,1723,John,T,Longino,John T Longino,SE,SE,Evergreen State College Washington,,,,USA,USA
+BITR,1999,31,1,1723,John,T,Longino,John T Longino,SE,SE,Evergreen State College Washington,,,,USA,USA
+BITR,2001,33,1,1723,John,T,Longino,John T Longino,SE,SE,Evergreen State College Washington,,,,USA,USA
+BITR,2002,34,1,1723,John,T,Longino,John T Longino,SE,SE,Evergreen State College Washington,,,,USA,USA
+BITR,2003,35,1,1723,John,T,Longino,John T Longino,SE,SE,Evergreen State College Washington,,,,USA,USA
+BITR,2004,36,1,1723,John,T,Longino,John T Longino,SE,SE,Evergreen State College Washington,,,,USA,USA
+BITR,2005,37,1,1723,John,T,Longino,John T Longino,SE,SE,Evergreen State College Washington,,,,USA,USA
+BITR,2006,38,1,1723,John,T,Longino,John T Longino,SE,SE,Evergreen State College Washington,,,,USA,USA
+BITR,2013,45,1,2451,Matthew,,Linkie,Matthew Linkie,SE,SE,Fauna and Flora International,,,,Indonesia,IDN
+BITR,2014,46,1,2451,Matthew,,Linkie,Matthew Linkie,EB,SE,Fauna and Flora International,,,,Indonesia,IDN
+BITR,1998,30,1,3419,Steven,,Oberbauer,Steven Oberbauer,SE,SE,Florida International University,,,,USA,USA
+BITR,1999,31,1,3419,Steven,,Oberbauer,Steven Oberbauer,SE,SE,Florida International University,,,,USA,USA
+BITR,2001,33,1,3419,Steven,,Oberbauer,Steven Oberbauer,SE,SE,Florida International University,,,,USA,USA
+BITR,2002,34,1,3419,Steven,,Oberbauer,Steven Oberbauer,SE,SE,Florida International University,,,,USA,USA
+BITR,2003,35,1,3419,Steven,,Oberbauer,Steven Oberbauer,SE,SE,Florida International University,,,,USA,USA
+BITR,2004,36,1,3419,Steven,,Oberbauer,Steven Oberbauer,SE,SE,Florida International University,,,,USA,USA
+BITR,2008,40,1,3388,Soon,Leong,Lee,Soon Leong Lee,SE,SE,Forest Research lnstitute Malaysia (FRIM),,,,Malaysia,MYS
+BITR,2009,41,1,3388,Soon,Leong,Lee,Soon Leong Lee,SE,SE,Forest Research lnstitute Malaysia (FRIM),,,,Malaysia,MYS
+BITR,2010,42,1,3388,Soon,Leong,Lee,Soon Leong Lee,SE,SE,Forest Research lnstitute Malaysia (FRIM),,,,Malaysia,MYS
+BITR,2011,43,1,3388,Soon,Leong,Lee,Soon Leong Lee,SE,SE,Forest Research lnstitute Malaysia (FRIM),,,,Malaysia,MYS
+BITR,2001,33,1,2821,Pamela,,Hall,Pamela Hall,SE,SE,Florida State University,,,,USA,USA
+BITR,2002,34,1,2821,Pamela,,Hall,Pamela Hall,SE,SE,Florida State University,,,,USA,USA
+BITR,2003,35,1,2821,Pamela,,Hall,Pamela Hall,SE,SE,Florida State University,,,,USA,USA
+BITR,2004,36,1,2821,Pamela,,Hall,Pamela Hall,SE,SE,Florida State University,,,,USA,USA
+BITR,1973,5,1,2359,Michael,G,Emsley,Michael G Emsley,EIC,EIC,George Mason University,,,Virginia,USA,USA
+BITR,1973,5,1,1863,Jay,C,Shaffer,Jay C Shaffer,AE,AE,George Mason University,,,Virginia,USA,USA
+BITR,1974,6,1,2359,Michael,G,Emsley,Michael G Emsley,EIC,EIC,George Mason University,,,Virginia,USA,USA
+BITR,1974,6,1,1863,Jay,C,Shaffer,Jay C Shaffer,AE,AE,George Mason University,,,Virginia,USA,USA
+BITR,1975,7,1,2359,Michael,G,Emsley,Michael G Emsley,EIC,EIC,George Mason University,,,Virginia,USA,USA
+BITR,1975,7,1,1863,Jay,C,Shaffer,Jay C Shaffer,AE,AE,George Mason University,,,Virginia,USA,USA
+BITR,1976,8,1,2359,Michael,G,Emsley,Michael G Emsley,EIC,EIC,George Mason University,,,Virginia,USA,USA
+BITR,1976,8,1,443,Carl,H,Ernst,Carl H Ernst,AE,AE,George Mason University,,,Virginia,USA,USA
+BITR,1976,8,1,1863,Jay,C,Shaffer,Jay C Shaffer,AE,AE,George Mason University,,,Virginia,USA,USA
+BITR,1977,9,1,2359,Michael,G,Emsley,Michael G Emsley,EIC,EIC,George Mason University,,,Virginia,USA,USA
+BITR,1977,9,1,443,Carl,H,Ernst,Carl H Ernst,AE,AE,George Mason University,,,Virginia,USA,USA
+BITR,1977,9,1,1863,Jay,C,Shaffer,Jay C Shaffer,AE,AE,George Mason University,,,Virginia,USA,USA
+BITR,1978,10,1,2359,Michael,G,Emsley,Michael G Emsley,EIC,EIC,George Mason University,,,Virginia,USA,USA
+BITR,1978,10,1,443,Carl,H,Ernst,Carl H Ernst,AE,AE,George Mason University,,,Virginia,USA,USA
+BITR,1978,10,1,1863,Jay,C,Shaffer,Jay C Shaffer,AE,AE,George Mason University,,,Virginia,USA,USA
+BITR,1979,11,1,2359,Michael,G,Emsley,Michael G Emsley,EIC,EIC,George Mason University,,,Virginia,USA,USA
+BITR,1979,11,1,443,Carl,H,Ernst,Carl H Ernst,AE,AE,George Mason University,,,Virginia,USA,USA
+BITR,1980,12,1,2359,Michael,G,Emsley,Michael G Emsley,EIC,EIC,George Mason University,,,Virginia,USA,USA
+BITR,1980,12,1,443,Carl,H,Ernst,Carl H Ernst,AE,AE,George Mason University,,,Virginia,USA,USA
+BITR,1981,13,1,2359,Michael,G,Emsley,Michael G Emsley,EIC,EIC,George Mason University,,,Virginia,USA,USA
+BITR,1981,13,1,443,Carl,H,Ernst,Carl H Ernst,AE,AE,George Mason University,,,Virginia,USA,USA
+BITR,1982,14,1,2359,Michael,G,Emsley,Michael G Emsley,EIC,EIC,George Mason University,,,Virginia,USA,USA
+BITR,1982,14,1,443,Carl,H,Ernst,Carl H Ernst,AE,AE,George Mason University,,,Virginia,USA,USA
+BITR,1987,19,1,2359,Michael,G,Emsley,Michael G Emsley,SE,SE,George Mason University,,,Virginia,USA,USA
+BITR,1988,20,1,2359,Michael,G,Emsley,Michael G Emsley,SE,SE,George Mason University,,,Virginia,USA,USA
+BITR,1989,21,1,2359,Michael,G,Emsley,Michael G Emsley,SE,SE,George Mason University,,,Virginia,USA,USA
+BITR,1990,22,1,2359,Michael,G,Emsley,Michael G Emsley,SE,SE,George Mason University,,,Virginia,USA,USA
+BITR,1991,23,1,2359,Michael,G,Emsley,Michael G Emsley,SE,SE,George Mason University,,,Virginia,USA,USA
+BITR,1992,24,1,2359,Michael,G,Emsley,Michael G Emsley,SE,SE,George Mason University,,,Virginia,USA,USA
+BITR,1998,30,1,2412,Michele,,Holbrook,Michele Holbrook,SE,SE,Harvard University,,,,USA,USA
+BITR,1999,31,1,2412,Michele,,Holbrook,Michele Holbrook,SE,SE,Harvard University,,,,USA,USA
+BITR,2000,32,1,2412,Michele,,Holbrook,Michele Holbrook,SE,SE,Harvard University,,,,USA,USA
+BITR,2002,34,1,3455,Scott,K,Robinson,Scott K Robinson,SE,SE,Illinois Natural History Survey,,,,USA,USA
+BITR,2003,35,1,3455,Scott,K,Robinson,Scott K Robinson,SE,SE,Illinois Natural History Survey,,,,USA,USA
+BITR,2003,35,1,2991,Renee,M,Borges,Renee M Borges,SE,SE,Indian Inst Science Bangalore,,,,India,IND
+BITR,2003,35,1,3066,Raghavendra,,Gadagkar,Raghavendra Gadagkar,SE,SE,Indian Inst Science Bangalore,,,,India,IND
+BITR,2004,36,1,2991,Renee,M,Borges,Renee M Borges,SE,SE,Indian Inst Science Bangalore,,,,India,IND
+BITR,2005,37,1,2991,Renee,M,Borges,Renee M Borges,SE,SE,Indian Inst Science Bangalore,,,,India,IND
+BITR,2006,38,1,2991,Renee,M,Borges,Renee M Borges,SE,SE,Indian Inst Science Bangalore,,,,India,IND
+BITR,1998,30,1,3763,William,F,Laurance,William F Laurance,SE,SE,Instituto Nacional de Pesquisas da Amazonia,,,,Brazil,BRA
+BITR,1999,31,1,3763,William,F,Laurance,William F Laurance,SE,SE,Instituto Nacional de Pesquisas da Amazonia,,,,Brazil,BRA
+BITR,2000,32,1,3763,William,F,Laurance,William F Laurance,SE,SE,Instituto Nacional de Pesquisas da Amazonia,,,,Brazil,BRA
+BITR,1987,19,1,1077,Francis,,Halle,Francis Halle,SE,SE,Institut Botanique,,,,France,FRA
+BITR,1988,20,1,1077,Francis,,Halle,Francis Halle,SE,SE,Institut Botanique,,,,France,FRA
+BITR,1989,21,1,1077,Francis,,Halle,Francis Halle,SE,SE,Institut Botanique,,,,France,FRA
+BITR,1990,22,1,1077,Francis,,Halle,Francis Halle,SE,SE,Institut Botanique,,,,France,FRA
+BITR,1991,23,1,1077,Francis,,Halle,Francis Halle,SE,SE,Institut Botanique,,,,France,FRA
+BITR,1992,24,1,1077,Francis,,Halle,Francis Halle,SE,SE,Institut Botanique,,,,France,FRA
+BITR,1993,25,1,1077,Francis,,Halle,Francis Halle,SE,SE,Institut Botanique,,,,France,FRA
+BITR,1994,26,1,1077,Francis,,Halle,Francis Halle,SE,SE,Institut Botanique,,,,France,FRA
+BITR,1995,27,1,1077,Francis,,Halle,Francis Halle,SE,SE,Institut Botanique,,,,France,FRA
+BITR,2002,34,1,1967,Joseph,,Wunderle,Joseph Wunderle,SE,SE,Institute of Tropical Forestry,,,,Puerto Rico,PRI
+BITR,2003,35,1,1967,Joseph,,Wunderle,Joseph Wunderle,SE,SE,Institute of Tropical Forestry,,,,Puerto Rico,PRI
+BITR,2004,36,1,1967,Joseph,,Wunderle,Joseph Wunderle,SE,SE,Institute of Tropical Forestry,,,,Puerto Rico,PRI
+BITR,2005,37,1,1967,Joseph,,Wunderle,Joseph Wunderle,SE,SE,Institute of Tropical Forestry,,,,Puerto Rico,PRI
+BITR,2008,40,1,2510,Marielos,,Pena-Claros,Marielos Pena-Claros,SE,SE,Instituto Boliviano de Investigacion Forestal,,,,Bolivia,BOL
+BITR,2009,41,1,2510,Marielos,,Pena-Claros,Marielos Pena-Claros,SE,SE,Instituto Boliviano de Investigacion Forestal,,,,Bolivia,BOL
+BITR,2010,42,1,2510,Marielos,,Pena-Claros,Marielos Pena-Claros,AE,AE,Instituto Boliviano de Investigacion Forestal,,,,Bolivia,BOL
+BITR,2011,43,1,2510,Marielos,,Pena-Claros,Marielos Pena-Claros,AE,AE,Instituto Boliviano de Investigacion Forestal,,,,Bolivia,BOL
+BITR,2012,44,1,2510,Marielos,,Pena-Claros,Marielos Pena-Claros,AE,AE,Instituto Boliviano de Investigacion Forestal,,,,Bolivia,BOL
+BITR,2013,45,1,2510,Marielos,,Pena-Claros,Marielos Pena-Claros,AE,AE,Instituto Boliviano de Investigacion Forestal,,,,Bolivia,BOL
+BITR,2005,37,1,3768,William,,Magnusson,William Magnusson,SE,SE,Instituto Nacional de Pesquisas da Amazonia-INPA,,,,Brazil,BRA
+BITR,2006,38,1,3768,William,,Magnusson,William Magnusson,SE,SE,Instituto Nacional de Pesquisas da Amazonia-INPA,,,,Brazil,BRA
+BITR,2007,39,1,3768,William,,Magnusson,William Magnusson,SE,SE,Instituto Nacional de Pesquisas da Amazonia-INPA,,,,Brazil,BRA
+BITR,2008,40,1,3768,William,,Magnusson,William Magnusson,SE,SE,Instituto Nacional de Pesquisas da Amazonia-INPA,,,,Brazil,BRA
+BITR,1999,31,1,953,Elvira,,Cuevas,Elvira Cuevas,SE,SE,Instituto Venezolano Investigaciones Cientificas (IVIC),,,,Venezuela,VEN
+BITR,2000,32,1,953,Elvira,,Cuevas,Elvira Cuevas,SE,SE,Instituto Venezolano Investigaciones Cientificas (IVIC),,,,Venezuela,VEN
+BITR,2013,45,1,2745,Oscar,,Venter,Oscar Venter,SE,SE,James Cook University,,,,Australia,AUS
+BITR,2014,46,1,2745,Oscar,,Venter,Oscar Venter,EB,SE,James Cook University,,,,Australia,AUS
+BITR,2008,40,1,2132,Luz,,Boyero,Luz Boyero,SE,SE,James Cook University Townsville,,,,Australia,AUS
+BITR,2009,41,1,2132,Luz,,Boyero,Luz Boyero,SE,SE,James Cook University Townsville,,,,Australia,AUS
+BITR,2010,42,1,2132,Luz,,Boyero,Luz Boyero,SE,SE,James Cook University Townsville,,,,Australia,AUS
+BITR,2011,43,1,2132,Luz,,Boyero,Luz Boyero,SE,SE,James Cook University Townsville,,,,Australia,AUS
+BITR,2013,45,1,3263,Shin-ichiro,,Aiba,Shin-ichiro Aiba,SE,SE,Kagoshima University,,,,Japan,JPN
+BITR,2014,46,1,3263,Shin-ichiro,,Aiba,Shin-ichiro Aiba,EB,SE,Kagoshima University,,,,Japan,JPN
+BITR,1983,15,1,978,E,Raymond,Heithaus,E Raymond Heithaus,EIC,EIC,Kenyon College,,,Ohio,USA,USA
+BITR,1983,15,1,1901,Jay,S,Tashiro,Jay S Tashiro,AE,AE,Kenyon College,,,Ohio,USA,USA
+BITR,1984,16,1,978,E,Raymond,Heithaus,E Raymond Heithaus,EIC,EIC,Kenyon College,,,Ohio,USA,USA
+BITR,1984,16,1,1901,Jay,S,Tashiro,Jay S Tashiro,AE,AE,Kenyon College,,,Ohio,USA,USA
+BITR,1985,17,1,978,E,Raymond,Heithaus,E Raymond Heithaus,EIC,EIC,Kenyon College,,,Ohio,USA,USA
+BITR,1985,17,1,1901,Jay,S,Tashiro,Jay S Tashiro,AE,AE,Kenyon College,,,Ohio,USA,USA
+BITR,1986,18,1,978,E,Raymond,Heithaus,E Raymond Heithaus,EIC,EIC,Kenyon College,,,Ohio,USA,USA
+BITR,1986,18,1,1901,Jay,S,Tashiro,Jay S Tashiro,AE,AE,Kenyon College,,,Ohio,USA,USA
+BITR,1987,19,1,978,E,Raymond,Heithaus,E Raymond Heithaus,EIC,EIC,Kenyon College,,,Ohio,USA,USA
+BITR,1987,19,1,1901,Jay,S,Tashiro,Jay S Tashiro,AE,AE,Kenyon College,,,Ohio,USA,USA
+BITR,1988,20,1,978,E,Raymond,Heithaus,E Raymond Heithaus,EIC,EIC,Kenyon College,,,Ohio,USA,USA
+BITR,1989,21,1,978,E,Raymond,Heithaus,E Raymond Heithaus,EIC,EIC,Kenyon College,,,Ohio,USA,USA
+BITR,1991,23,1,978,E,Raymond,Heithaus,E Raymond Heithaus,EIC,EIC,Kenyon College,,,Ohio,USA,USA
+BITR,1992,24,1,978,E,Raymond,Heithaus,E Raymond Heithaus,EIC,EIC,Kenyon College,,,Ohio,USA,USA
+BITR,1993,25,1,978,E,Raymond,Heithaus,E Raymond Heithaus,EIC,EIC,Kenyon College,,,Ohio,USA,USA
+BITR,1994,26,1,978,E,Raymond,Heithaus,E Raymond Heithaus,EIC,EIC,Kenyon College,,,Ohio,USA,USA
+BITR,1995,27,1,978,E,Raymond,Heithaus,E Raymond Heithaus,EIC,EIC,Kenyon College,,,Ohio,USA,USA
+BITR,2005,37,1,3460,Shoko,,Sakai,Shoko Sakai,SE,SE,Kyoto University,,,,Japan,JPN
+BITR,2006,38,1,3460,Shoko,,Sakai,Shoko Sakai,SE,SE,Kyoto University,,,,Japan,JPN
+BITR,2007,39,1,3460,Shoko,,Sakai,Shoko Sakai,SE,SE,Kyoto University,,,,Japan,JPN
+BITR,2008,40,1,3460,Shoko,,Sakai,Shoko Sakai,SE,SE,Kyoto University,,,,Japan,JPN
+BITR,2009,41,1,3460,Shoko,,Sakai,Shoko Sakai,SE,SE,Kyoto University,,,,Japan,JPN
+BITR,2011,43,1,3460,Shoko,,Sakai,Shoko Sakai,SE,SE,Kyoto University,,,,Japan,JPN
+BITR,1998,30,1,650,David,,Clark,David Clark,SE,SE,La Selva Biological Station,,,,Costa Rica,CRI
+BITR,1999,31,1,650,David,,Clark,David Clark,SE,SE,La Selva Biological Station,,,,Costa Rica,CRI
+BITR,2000,32,1,650,David,,Clark,David Clark,SE,SE,La Selva Biological Station,,,,Costa Rica,CRI
+BITR,2013,45,1,123,Alexandra-Maria,,Klein,Alexandra-Maria Klein,SE,SE,Leuphana University of Lüneburg,,,,Germany,DEU
+BITR,2014,46,1,123,Alexandra-Maria,,Klein,Alexandra-Maria Klein,EB,SE,Leuphana University of Lüneburg,,,,Germany,DEU
+BITR,2007,39,1,2928,Philip,,Stouffer,Philip Stouffer,SE,SE,Louisiana State University,,,,USA,USA
+BITR,2008,40,1,2928,Philip,,Stouffer,Philip Stouffer,SE,SE,Louisiana State University,,,,USA,USA
+BITR,2005,37,1,185,Ann,,Russell,Ann Russell,SE,SE,lowa State University,,,,USA,USA
+BITR,2006,38,1,185,Ann,,Russell,Ann Russell,SE,SE,lowa State University,,,,USA,USA
+BITR,2007,39,1,185,Ann,,Russell,Ann Russell,SE,SE,lowa State University,,,,USA,USA
+BITR,2008,40,1,185,Ann,,Russell,Ann Russell,SE,SE,lowa State University,,,,USA,USA
+BITR,2009,41,1,185,Ann,,Russell,Ann Russell,SE,SE,lowa State University,,,,USA,USA
+BITR,2010,42,1,185,Ann,,Russell,Ann Russell,SE,SE,lowa State University,,,,USA,USA
+BITR,2011,43,1,185,Ann,,Russell,Ann Russell,SE,SE,lowa State University,,,,USA,USA
+BITR,2012,44,1,185,Ann,,Russell,Ann Russell,SE,SE,lowa State University,,,,USA,USA
+BITR,2013,45,1,185,Ann,,Russell,Ann Russell,SE,SE,lowa State University,,,,USA,USA
+BITR,2014,46,1,185,Ann,,Russell,Ann Russell,EB,SE,lowa State University,,,,USA,USA
+BITR,2008,40,1,1059,Francis,,Brearley,Francis Brearley,SE,SE,Manchester Metropolitan University,,,,UK,GBR
+BITR,2009,41,1,1059,Francis,,Brearley,Francis Brearley,SE,SE,Manchester Metropolitan University,,,,UK,GBR
+BITR,2010,42,1,1059,Francis,,Brearley,Francis Brearley,SE,SE,Manchester Metropolitan University,,,,UK,GBR
+BITR,2011,43,1,1059,Francis,,Brearley,Francis Brearley,SE,SE,Manchester Metropolitan University,,,,UK,GBR
+BITR,1998,30,1,2630,Nicolas,,Brokaw,Nicolas Brokaw,SE,SE,Manomet Observatory,,,,USA,USA
+BITR,1999,31,1,2630,Nicolas,,Brokaw,Nicolas Brokaw,SE,SE,Manomet Observatory,,,,USA,USA
+BITR,2004,36,1,421,Colin,,Chapman,Colin Chapman,SE,SE,McGill University,,,,Canada,CAN
+BITR,2005,37,1,421,Colin,,Chapman,Colin Chapman,SE,SE,McGill University,,,,Canada,CAN
+BITR,2002,34,1,858,Douglas,W,Schemske,Douglas W Schemske,SE,SE,Michigan State University,,,,USA,USA
+BITR,2003,35,1,858,Douglas,W,Schemske,Douglas W Schemske,SE,SE,Michigan State University,,,,USA,USA
+BITR,2004,36,1,858,Douglas,W,Schemske,Douglas W Schemske,SE,SE,Michigan State University,,,,USA,USA
+BITR,2001,33,1,2794,Philip,,DeVries,Philip DeVries,SE,SE,Milwaukee Public Museum,,,,USA,USA
+BITR,2002,34,1,2794,Philip,,DeVries,Philip DeVries,SE,SE,Milwaukee Public Museum,,,,USA,USA
+BITR,2003,35,1,2794,Philip,,DeVries,Philip DeVries,SE,SE,Milwaukee Public Museum,,,,USA,USA
+BITR,1999,31,1,806,Dennis,,O'Dowd,Dennis O'Dowd,SE,SE,Monash University,,,,Australia,AUS
+BITR,2001,33,1,806,Dennis,,O'Dowd,Dennis O'Dowd,SE,SE,Monash University,,,,Australia,AUS
+BITR,2012,44,1,603,Catherine,,Yule,Catherine Yule,SE,SE,Monash University,,,,Malaysia,MYS
+BITR,2013,45,1,603,Catherine,,Yule,Catherine Yule,SE,SE,Monash University,,,,Malaysia,MYS
+BITR,2014,46,1,603,Catherine,,Yule,Catherine Yule,EB,SE,Monash University,,,,Malaysia,MYS
+BITR,2006,38,1,2693,Navjot,S,Sodhi,Navjot S Sodhi,SE,SE,National University of Singapore,,,,Singapore,SGP
+BITR,2007,39,1,2693,Navjot,S,Sodhi,Navjot S Sodhi,SE,SE,National University of Singapore,,,,Singapore,SGP
+BITR,2008,40,1,2693,Navjot,S,Sodhi,Navjot S Sodhi,SE,SE,National University of Singapore,,,,Singapore,SGP
+BITR,2009,41,1,628,David,,Bickford,David Bickford,SE,SE,National University of Singapore,,,,Singapore,SGP
+BITR,2010,42,1,628,David,,Bickford,David Bickford,SE,SE,National University of Singapore,,,,Singapore,SGP
+BITR,2011,43,1,628,David,,Bickford,David Bickford,SE,SE,National University of Singapore,,,,Singapore,SGP
+BITR,2012,44,1,628,David,,Bickford,David Bickford,SE,SE,National University of Singapore,,,,Singapore,SGP
+BITR,2012,44,1,3655,Ted,,Webb,Ted Webb,SE,SE,National University of Singapore,,,,Singapore,SGP
+BITR,2013,45,1,628,David,,Bickford,David Bickford,SE,SE,National University of Singapore,,,,Singapore,SGP
+BITR,2013,45,1,3655,Ted,,Webb,Ted Webb,SE,SE,National University of Singapore,,,,Singapore,SGP
+BITR,2014,46,1,628,David,,Bickford,David Bickford,EB,SE,National University of Singapore,,,,Singapore,SGP
+BITR,2014,46,1,3655,Ted,,Webb,Ted Webb,EB,SE,National University of Singapore,,,,Singapore,SGP
+BITR,1978,10,1,1491,John,D,Bultman,John D Bultman,AE,AE,Naval Research Laboratory DC,,,,USA,USA
+BITR,1979,11,1,1491,John,D,Bultman,John D Bultman,AE,AE,Naval Research Laboratory DC,,,,USA,USA
+BITR,1980,12,1,1491,John,D,Bultman,John D Bultman,AE,AE,Naval Research Laboratory DC,,,,USA,USA
+BITR,1981,13,1,1491,John,D,Bultman,John D Bultman,AE,AE,Naval Research Laboratory DC,,,,USA,USA
+BITR,1982,14,1,1491,John,D,Bultman,John D Bultman,AE,AE,Naval Research Laboratory DC,,,,USA,USA
+BITR,1983,15,1,1491,John,D,Bultman,John D Bultman,AE,AE,Naval Research Laboratory DC,,,,USA,USA
+BITR,1984,16,1,1491,John,D,Bultman,John D Bultman,AE,AE,Naval Research Laboratory DC,,,,USA,USA
+BITR,1985,17,1,1491,John,D,Bultman,John D Bultman,AE,AE,Naval Research Laboratory DC,,,,USA,USA
+BITR,1986,18,1,1491,John,D,Bultman,John D Bultman,AE,AE,Naval Research Laboratory DC,,,,USA,USA
+BITR,1987,19,1,1491,John,D,Bultman,John D Bultman,AE,AE,Naval Research Laboratory DC,,,,USA,USA
+BITR,1988,20,1,1491,John,D,Bultman,John D Bultman,AE,AE,Naval Research Laboratory DC,,,,USA,USA
+BITR,1989,21,1,1491,John,D,Bultman,John D Bultman,AE,AE,Naval Research Laboratory DC,,,,USA,USA
+BITR,1990,22,1,1491,John,D,Bultman,John D Bultman,AE,AE,Naval Research Laboratory DC,,,,USA,USA
+BITR,1991,23,1,1491,John,D,Bultman,John D Bultman,AE,AE,Naval Research Laboratory DC,,,,USA,USA
+BITR,1992,24,1,1491,John,D,Bultman,John D Bultman,AE,AE,Naval Research Laboratory DC,,,,USA,USA
+BITR,1993,25,1,1491,John,D,Bultman,John D Bultman,AE,AE,Naval Research Laboratory DC,,,,USA,USA
+BITR,1994,26,1,1491,John,D,Bultman,John D Bultman,AE,AE,Naval Research Laboratory DC,,,,USA,USA
+BITR,1995,27,1,1491,John,D,Bultman,John D Bultman,AE,AE,Naval Research Laboratory DC,,,,USA,USA
+BITR,1987,19,1,1248,Ghillean,T,Prance,Ghillean T Prance,SE,SE,New York Botanical Garden,,,,UK,GBR
+BITR,1988,20,1,1248,Ghillean,T,Prance,Ghillean T Prance,SE,SE,New York Botanical Garden,,,,UK,GBR
+BITR,2006,38,1,57,Anthony,,DiFiore,Anthony DiFiore,SE,SE,New York University,,,,USA,USA
+BITR,2007,39,1,57,Anthony,,DiFiore,Anthony DiFiore,SE,SE,New York University,,,,USA,USA
+BITR,2008,40,1,57,Anthony,,DiFiore,Anthony DiFiore,SE,SE,New York University,,,,USA,USA
+BITR,2007,39,1,3748,William,,Hoffmann,William Hoffmann,SE,SE,North Carolina State University,,,,USA,USA
+BITR,2008,40,1,3748,William,,Hoffmann,William Hoffmann,SE,SE,North Carolina State University,,,,USA,USA
+BITR,1998,30,1,634,David,,Bowman,David Bowman,SE,SE,Northern Territory University,,,,Australia,AUS
+BITR,1999,31,1,634,David,,Bowman,David Bowman,SE,SE,Northern Territory University,,,,Australia,AUS
+BITR,2000,32,1,634,David,,Bowman,David Bowman,SE,SE,Northern Territory University,,,,Australia,AUS
+BITR,2001,33,1,3470,Samantha,,Setterfield,Samantha Setterfield,SE,SE,Northern Territory University,,,,Australia,AUS
+BITR,2002,34,1,3470,Samantha,,Setterfield,Samantha Setterfield,SE,SE,Northern Territory University,,,,Australia,AUS
+BITR,2003,35,1,3470,Samantha,,Setterfield,Samantha Setterfield,SE,SE,Northern Territory University,,,,Australia,AUS
+BITR,2004,36,1,3470,Samantha,,Setterfield,Samantha Setterfield,SE,SE,Northern Territory University,,,,Australia,AUS
+BITR,1993,25,1,5,Anthony,,Anderson,Anthony Anderson,SE,SE,,,,,Brazil,BRA
+BITR,1993,25,1,3711,Woodruff,,Benson,Woodruff Benson,SE,SE,,,,,Brazil,BRA
+BITR,1993,25,1,3290,Sandra,,Brown,Sandra Brown,SE,SE,,,,,USA,USA
+BITR,1993,25,1,43,Antoine,M,Cleef,Antoine M Cleef,SE,SE,,,,,Netherlands,NLD
+BITR,1993,25,1,2786,Paul,A,Colinvaux,Paul A Colinvaux,SE,SE,,,,,USA,USA
+BITR,1993,25,1,3022,Robert,K,Colwell,Robert K Colwell,SE,SE,,,,,USA,USA
+BITR,1993,25,1,2714,Ong,Jin,Eong,Ong Jin Eong,SE,SE,,,,,Malaysia,MYS
+BITR,1993,25,1,2374,Mercedes,S,Foster,Mercedes S Foster,SE,SE,,,,,USA,USA
+BITR,1993,25,1,1576,John,ED,Fox,John ED Fox,SE,SE,,,,,Australia,AUS
+BITR,1993,25,1,2380,Madhav,,Gadgil,Madhav Gadgil,SE,SE,,,,,India,IND
+BITR,1993,25,1,1307,Harold,,Heatwole,Harold Heatwole,SE,SE,,,,,USA,USA
+BITR,1993,25,1,3765,William,M,Lewis,William M Lewis,SE,SE,,,,,USA,USA
+BITR,1993,25,1,3593,Thomas,,Lovejoy,Thomas Lovejoy,SE,SE,,,,,USA,USA
+BITR,1993,25,1,1001,Ernesto,,Medina,Ernesto Medina,SE,SE,,,,,Venezuela,VEN
+BITR,1993,25,1,323,Betty,J,Meggers,Betty J Meggers,SE,SE,,,,,USA,USA
+BITR,1993,25,1,1248,Ghillean,T,Prance,Ghillean T Prance,SE,SE,,,,,UK,GBR
+BITR,1993,25,1,1120,Francis,E,Putz,Francis E Putz,SE,SE,,,,,USA,USA
+BITR,1993,25,1,1853,Jose,,Sarukhan,Jose Sarukhan,SE,SE,,,,,Mexico,MEX
+BITR,1993,25,1,1903,John,,Terborgh,John Terborgh,SE,SE,,,,,USA,USA
+BITR,1993,25,1,2946,Peter,M,Vitousek,Peter M Vitousek,SE,SE,,,,,USA,USA
+BITR,1993,25,1,2605,Mary,Jane,West-Eberhard,Mary Jane West-Eberhard,SE,SE,,,,,Panama,PAN
+BITR,1993,25,1,1042,Edward,O,Wilson,Edward O Wilson,SE,SE,,,,,USA,USA
+BITR,1994,26,1,5,Anthony,,Anderson,Anthony Anderson,SE,SE,,,,,Brazil,BRA
+BITR,1994,26,1,3711,Woodruff,,Benson,Woodruff Benson,SE,SE,,,,,Brazil,BRA
+BITR,1994,26,1,3290,Sandra,,Brown,Sandra Brown,SE,SE,,,,,USA,USA
+BITR,1994,26,1,2714,Ong,Jin,Eong,Ong Jin Eong,SE,SE,,,,,Malaysia,MYS
+BITR,1994,26,1,2374,Mercedes,S,Foster,Mercedes S Foster,SE,SE,,,,,USA,USA
+BITR,1994,26,1,1576,John,ED,Fox,John ED Fox,SE,SE,,,,,Australia,AUS
+BITR,1994,26,1,2380,Madhav,,Gadgil,Madhav Gadgil,SE,SE,,,,,India,IND
+BITR,1994,26,1,3593,Thomas,,Lovejoy,Thomas Lovejoy,SE,SE,,,,,USA,USA
+BITR,1994,26,1,1001,Ernesto,,Medina,Ernesto Medina,SE,SE,,,,,Venezuela,VEN
+BITR,1994,26,1,323,Betty,J,Meggers,Betty J Meggers,SE,SE,,,,,USA,USA
+BITR,1994,26,1,1248,Ghillean,T,Prance,Ghillean T Prance,SE,SE,,,,,UK,GBR
+BITR,1994,26,1,1120,Francis,E,Putz,Francis E Putz,SE,SE,,,,,USA,USA
+BITR,1994,26,1,1853,Jose,,Sarukhan,Jose Sarukhan,SE,SE,,,,,Mexico,MEX
+BITR,1994,26,1,1903,John,,Terborgh,John Terborgh,SE,SE,,,,,USA,USA
+BITR,1994,26,1,2946,Peter,M,Vitousek,Peter M Vitousek,SE,SE,,,,,USA,USA
+BITR,1994,26,1,2605,Mary,Jane,West-Eberhard,Mary Jane West-Eberhard,SE,SE,,,,,Panama,PAN
+BITR,1994,26,1,1042,Edward,O,Wilson,Edward O Wilson,SE,SE,,,,,USA,USA
+BITR,1995,27,1,5,Anthony,,Anderson,Anthony Anderson,SE,SE,,,,,Brazil,BRA
+BITR,1995,27,1,3711,Woodruff,,Benson,Woodruff Benson,SE,SE,,,,,Brazil,BRA
+BITR,1995,27,1,3290,Sandra,,Brown,Sandra Brown,SE,SE,,,,,USA,USA
+BITR,1995,27,1,43,Antoine,M,Cleef,Antoine M Cleef,SE,SE,,,,,Netherlands,NLD
+BITR,1995,27,1,3022,Robert,K,Colwell,Robert K Colwell,SE,SE,,,,,USA,USA
+BITR,1995,27,1,2714,Ong,Jin,Eong,Ong Jin Eong,SE,SE,,,,,Malaysia,MYS
+BITR,1995,27,1,2374,Mercedes,S,Foster,Mercedes S Foster,SE,SE,,,,,USA,USA
+BITR,1995,27,1,1576,John,ED,Fox,John ED Fox,SE,SE,,,,,Australia,AUS
+BITR,1995,27,1,2380,Madhav,,Gadgil,Madhav Gadgil,SE,SE,,,,,India,IND
+BITR,1995,27,1,1307,Harold,,Heatwole,Harold Heatwole,SE,SE,,,,,USA,USA
+BITR,1995,27,1,3765,William,M,Lewis,William M Lewis,SE,SE,,,,,USA,USA
+BITR,1995,27,1,3593,Thomas,,Lovejoy,Thomas Lovejoy,SE,SE,,,,,USA,USA
+BITR,1995,27,1,1001,Ernesto,,Medina,Ernesto Medina,SE,SE,,,,,Venezuela,VEN
+BITR,1995,27,1,323,Betty,J,Meggers,Betty J Meggers,SE,SE,,,,,USA,USA
+BITR,1995,27,1,1120,Francis,E,Putz,Francis E Putz,SE,SE,,,,,USA,USA
+BITR,1995,27,1,1853,Jose,,Sarukhan,Jose Sarukhan,SE,SE,,,,,Mexico,MEX
+BITR,1995,27,1,1903,John,,Terborgh,John Terborgh,SE,SE,,,,,USA,USA
+BITR,1995,27,1,2946,Peter,M,Vitousek,Peter M Vitousek,SE,SE,,,,,USA,USA
+BITR,1995,27,1,2605,Mary,Jane,West-Eberhard,Mary Jane West-Eberhard,SE,SE,,,,,Panama,PAN
+BITR,1995,27,1,1042,Edward,O,Wilson,Edward O Wilson,SE,SE,,,,,USA,USA
+BITR,1996,28,1,930,Elena,,Alvarez-Buylla,Elena Alvarez-Buylla,SE,SE,,,,,Mexico,MEX
+BITR,1996,28,1,5,Anthony,,Anderson,Anthony Anderson,SE,SE,,,,,Brazil,BRA
+BITR,1996,28,1,3711,Woodruff,,Benson,Woodruff Benson,SE,SE,,,,,Brazil,BRA
+BITR,1996,28,1,2767,Paul,,Berry,Paul Berry,SE,SE,,,,,USA,USA
+BITR,1996,28,1,3290,Sandra,,Brown,Sandra Brown,SE,SE,,,,,USA,USA
+BITR,1996,28,1,43,Antoine,M,Cleef,Antoine M Cleef,SE,SE,,,,,Netherlands,NLD
+BITR,1996,28,1,3022,Robert,K,Colwell,Robert K Colwell,SE,SE,,,,,USA,USA
+BITR,1996,28,1,2714,Ong,Jin,Eong,Ong Jin Eong,SE,SE,,,,,Malaysia,MYS
+BITR,1996,28,1,2374,Mercedes,S,Foster,Mercedes S Foster,SE,SE,,,,,USA,USA
+BITR,1996,28,1,1576,John,ED,Fox,John ED Fox,SE,SE,,,,,Australia,AUS
+BITR,1996,28,1,2380,Madhav,,Gadgil,Madhav Gadgil,SE,SE,,,,,India,IND
+BITR,1996,28,1,1307,Harold,,Heatwole,Harold Heatwole,SE,SE,,,,,USA,USA
+BITR,1996,28,1,978,E,Raymond,Heithaus,E Raymond Heithaus,EIC,EIC,,,,,USA,USA
+BITR,1996,28,1,3586,Thomas,,Kunz,Thomas Kunz,SE,SE,,,,,USA,USA
+BITR,1996,28,1,3593,Thomas,,Lovejoy,Thomas Lovejoy,SE,SE,,,,,USA,USA
+BITR,1996,28,1,1001,Ernesto,,Medina,Ernesto Medina,SE,SE,,,,,Venezuela,VEN
+BITR,1996,28,1,323,Betty,J,Meggers,Betty J Meggers,SE,SE,,,,,USA,USA
+BITR,1996,28,1,1412,Ingrid,,Olmsted,Ingrid Olmsted,SE,SE,,,,,Mexico,MEX
+BITR,1996,28,1,558,Catherine,,Pringle,Catherine Pringle,SE,SE,,,,,USA,USA
+BITR,1996,28,1,1120,Francis,E,Putz,Francis E Putz,SE,SE,,,,,USA,USA
+BITR,1996,28,1,1853,Jose,,Sarukhan,Jose Sarukhan,SE,SE,,,,,Mexico,MEX
+BITR,1996,28,1,1127,Fred,,Scatena,Fred Scatena,SE,SE,,,,,USA,USA
+BITR,1996,28,1,1903,John,,Terborgh,John Terborgh,SE,SE,,,,,USA,USA
+BITR,1996,28,1,2946,Peter,M,Vitousek,Peter M Vitousek,SE,SE,,,,,USA,USA
+BITR,1996,28,1,2605,Mary,Jane,West-Eberhard,Mary Jane West-Eberhard,SE,SE,,,,,Panama,PAN
+BITR,1996,28,1,1042,Edward,O,Wilson,Edward O Wilson,SE,SE,,,,,USA,USA
+BITR,1997,29,1,930,Elena,,Alvarez-Buylla,Elena Alvarez-Buylla,SE,SE,,,,,Mexico,MEX
+BITR,1997,29,1,5,Anthony,,Anderson,Anthony Anderson,SE,SE,,,,,Brazil,BRA
+BITR,1997,29,1,2767,Paul,,Berry,Paul Berry,SE,SE,,,,,USA,USA
+BITR,1997,29,1,1505,Jaime,,Cavelier,Jaime Cavelier,SE,SE,,,,,Colombia,COL
+BITR,1997,29,1,43,Antoine,M,Cleef,Antoine M Cleef,SE,SE,,,,,Netherlands,NLD
+BITR,1997,29,1,2714,Ong,Jin,Eong,Ong Jin Eong,SE,SE,,,,,Malaysia,MYS
+BITR,1997,29,1,1576,John,ED,Fox,John ED Fox,SE,SE,,,,,Australia,AUS
+BITR,1997,29,1,2380,Madhav,,Gadgil,Madhav Gadgil,SE,SE,,,,,India,IND
+BITR,1997,29,1,1307,Harold,,Heatwole,Harold Heatwole,SE,SE,,,,,USA,USA
+BITR,1997,29,1,3586,Thomas,,Kunz,Thomas Kunz,SE,SE,,,,,USA,USA
+BITR,1997,29,1,3593,Thomas,,Lovejoy,Thomas Lovejoy,SE,SE,,,,,USA,USA
+BITR,1997,29,1,323,Betty,J,Meggers,Betty J Meggers,SE,SE,,,,,USA,USA
+BITR,1997,29,1,1412,Ingrid,,Olmsted,Ingrid Olmsted,SE,SE,,,,,Mexico,MEX
+BITR,1997,29,1,558,Catherine,,Pringle,Catherine Pringle,SE,SE,,,,,USA,USA
+BITR,1997,29,1,1819,John,,Proctor,John Proctor,SE,SE,,,,,UK,GBR
+BITR,1997,29,1,1120,Francis,E,Putz,Francis E Putz,SE,SE,,,,,USA,USA
+BITR,1997,29,1,1127,Fred,,Scatena,Fred Scatena,SE,SE,,,,,USA,USA
+BITR,1993,25,1,2285,Mosadoluwa,Adetola,Badejo,Mosadoluwa Adetola Badejo,SE,SE,Obafemi Awolowo University,,,,Nigeria,NGA
+BITR,1994,26,1,2285,Mosadoluwa,Adetola,Badejo,Mosadoluwa Adetola Badejo,SE,SE,Obafemi Awolowo University,,,,Nigeria,NGA
+BITR,1995,27,1,2285,Mosadoluwa,Adetola,Badejo,Mosadoluwa Adetola Badejo,SE,SE,Obafemi Awolowo University,,,,Nigeria,NGA
+BITR,1996,28,1,2285,Mosadoluwa,Adetola,Badejo,Mosadoluwa Adetola Badejo,SE,SE,Obafemi Awolowo University,,,,Nigeria,NGA
+BITR,1997,29,1,2285,Mosadoluwa,Adetola,Badejo,Mosadoluwa Adetola Badejo,SE,SE,Obafemi Awolowo University,,,,Nigeria,NGA
+BITR,2001,33,1,2252,Laurie,,Vitt,Laurie Vitt,SE,SE,Oklahoma Mus Nat His,,,,USA,USA
+BITR,2002,34,1,2252,Laurie,,Vitt,Laurie Vitt,SE,SE,Oklahoma Mus Nat His,,,,USA,USA
+BITR,2003,35,1,2252,Laurie,,Vitt,Laurie Vitt,SE,SE,Oklahoma Mus Nat His,,,,USA,USA
+BITR,2004,36,1,2252,Laurie,,Vitt,Laurie Vitt,SE,SE,Oklahoma Mus Nat His,,,,USA,USA
+BITR,2013,45,1,2110,Kim,,Williams-Guillen,Kim Williams-Guillen,SE,SE,Paso Pacifico,,Ventura,CA,USA,USA
+BITR,2014,46,1,2110,Kim,,Williams-Guillen,Kim Williams-Guillen,EB,SE,Paso Pacifico,,Ventura,CA,USA,USA
+BITR,2009,41,1,3424,Sarah,,Otterstrom,Sarah Otterstrom,SE,SE,Paso Pacifico ,,Ticuantepe,,Nicaragua,NIC
+BITR,2010,42,1,3424,Sarah,,Otterstrom,Sarah Otterstrom,SE,SE,Paso Pacifico ,,Ticuantepe,,Nicaragua,NIC
+BITR,2011,43,1,3424,Sarah,,Otterstrom,Sarah Otterstrom,SE,SE,Paso Pacifico ,,Ticuantepe,,Nicaragua,NIC
+BITR,2012,44,1,3424,Sarah,,Otterstrom,Sarah Otterstrom,SE,SE,Paso Pacifico ,,Ticuantepe,,Nicaragua,NIC
+BITR,2013,45,1,3424,Sarah,,Otterstrom,Sarah Otterstrom,SE,SE,Paso Pacifico ,,Ventura,,USA,USA
+BITR,2014,46,1,3424,Sarah,,Otterstrom,Sarah Otterstrom,EB,SE,Paso Pacifico ,,Ventura,,USA,USA
+BITR,2010,42,1,3519,Tomas,,Carlo,Tomas Carlo,SE,SE,Pennsylvania State University,,,,USA,USA
+BITR,2011,43,1,3519,Tomas,,Carlo,Tomas Carlo,SE,SE,Pennsylvania State University,,,,USA,USA
+BITR,2013,45,1,1002,Erik,,Meijaard,Erik Meijaard,SE,SE,People and Nature Consulting International,,Jakarta,,Indonesia,IDN
+BITR,2014,46,1,1002,Erik,,Meijaard,Erik Meijaard,EB,SE,People and Nature Consulting International,,Jakarta,,Indonesia,IDN
+BITR,2009,41,1,2644,Nina,,Farwig,Nina Farwig,SE,SE,PhiIipps-University Marburg,,,,Germany,DEU
+BITR,2010,42,1,2644,Nina,,Farwig,Nina Farwig,SE,SE,PhiIipps-University Marburg,,,,Germany,DEU
+BITR,2011,43,1,2644,Nina,,Farwig,Nina Farwig,SE,SE,PhiIipps-University Marburg,,,,Germany,DEU
+BITR,2012,44,1,2644,Nina,,Farwig,Nina Farwig,SE,SE,PhiIipps-University Marburg,,,,Germany,DEU
+BITR,2013,45,1,2644,Nina,,Farwig,Nina Farwig,SE,SE,PhiIipps-University Marburg,,,,Germany,DEU
+BITR,2014,46,1,2644,Nina,,Farwig,Nina Farwig,EB,SE,PhiIipps-University Marburg,,,,Germany,DEU
+BITR,2005,37,1,2792,Priya,,Davidar,Priya Davidar,SE,SE,Pondicherry University,,,,India,IND
+BITR,2006,38,1,2792,Priya,,Davidar,Priya Davidar,SE,SE,Pondicherry University,,,,India,IND
+BITR,2007,39,1,2792,Priya,,Davidar,Priya Davidar,SE,SE,Pondicherry University,,,,India,IND
+BITR,2008,40,1,2792,Priya,,Davidar,Priya Davidar,SE,SE,Pondicherry University,,,,India,IND
+BITR,1989,21,1,1248,Ghillean,T,Prance,Ghillean T Prance,SE,SE,Royal Botanic Gardens Kew,,,,UK,GBR
+BITR,1990,22,1,978,E,Raymond,Heithaus,E Raymond Heithaus,EIC,EIC,Royal Botanic Gardens Kew,,,,USA,USA
+BITR,1990,22,1,1248,Ghillean,T,Prance,Ghillean T Prance,SE,SE,Royal Botanic Gardens Kew,,,,UK,GBR
+BITR,1991,23,1,1248,Ghillean,T,Prance,Ghillean T Prance,SE,SE,Royal Botanic Gardens Kew,,,,UK,GBR
+BITR,1992,24,1,1248,Ghillean,T,Prance,Ghillean T Prance,SE,SE,Royal Botanic Gardens Kew,,,,UK,GBR
+BITR,2001,33,1,3506,S,Joseph,Wright,S Joseph Wright,SE,SE,STRI,,,,USA,USA
+BITR,2002,34,1,3506,S,Joseph,Wright,S Joseph Wright,SE,SE,STRI,,,,USA,USA
+BITR,2003,35,1,3506,S,Joseph,Wright,S Joseph Wright,SE,SE,STRI,,,,USA,USA
+BITR,2004,36,1,3506,S,Joseph,Wright,S Joseph Wright,SE,SE,STRI,,,,USA,USA
+BITR,2010,42,1,567,Cagan,,Sekercioglu,Cagan Sekercioglu,SE,SE,Stanford University,,,,USA,USA
+BITR,2011,43,1,567,Cagan,,Sekercioglu,Cagan Sekercioglu,SE,SE,Stanford University,,,,USA,USA
+BITR,2012,44,1,567,Cagan,,Sekercioglu,Cagan Sekercioglu,SE,SE,Stanford University,,,,USA,USA
+BITR,2006,38,1,1577,Jose,,Fragoso,Jose Fragoso,SE,SE,State University of New York Syracuse,,,,USA,USA
+BITR,2007,39,1,1577,Jose,,Fragoso,Jose Fragoso,SE,SE,State University of New York Syracuse,,,,USA,USA
+BITR,2008,40,1,1577,Jose,,Fragoso,Jose Fragoso,SE,SE,State University of New York Syracuse,,,,USA,USA
+BITR,2002,34,1,3541,Thomas,,Elmqvist,Thomas Elmqvist,SE,SE,Stockholm University,,,,Sweden,SWE
+BITR,2003,35,1,3541,Thomas,,Elmqvist,Thomas Elmqvist,SE,SE,Stockholm University,,,,Sweden,SWE
+BITR,2004,36,1,3541,Thomas,,Elmqvist,Thomas Elmqvist,SE,SE,Stockholm University,,,,Sweden,SWE
+BITR,2005,37,1,3541,Thomas,,Elmqvist,Thomas Elmqvist,SE,SE,Stockholm University,,,,Sweden,SWE
+BITR,2006,38,1,3541,Thomas,,Elmqvist,Thomas Elmqvist,SE,SE,Stockholm University,,,,Sweden,SWE
+BITR,1998,30,1,3,Annette,,Aiello,Annette Aiello,SE,SE,STRI,,,,Panama,PAN
+BITR,1999,31,1,3,Annette,,Aiello,Annette Aiello,SE,SE,STRI,,,,Panama,PAN
+BITR,2000,32,1,3,Annette,,Aiello,Annette Aiello,SE,SE,STRI,,,,Panama,PAN
+BITR,1996,28,1,849,David,,Roubik,David Roubik,SE,SE,STRI,,,,USA,USA
+BITR,1997,29,1,849,David,,Roubik,David Roubik,SE,SE,STRI,,,,USA,USA
+BITR,1998,30,1,849,David,,Roubik,David Roubik,SE,SE,STRI,,,,USA,USA
+BITR,1999,31,1,849,David,,Roubik,David Roubik,SE,SE,STRI,,,,USA,USA
+BITR,2001,33,1,849,David,,Roubik,David Roubik,SE,SE,STRI,,,,USA,USA
+BITR,2013,45,1,2628,Nico,,Bluthgen,Nico Bluthgen,SE,SE,Technische Universität Darmstadt,,,,Germany,DEU
+BITR,2014,46,1,2628,Nico,,Bluthgen,Nico Bluthgen,EB,SE,Technische Universität Darmstadt,,,,Germany,DEU
+BITR,2009,41,1,1002,Erik,,Meijaard,Erik Meijaard,SE,SE,The Nature Conservancy,,,East Kalimantan,Indonesia,IDN
+BITR,2010,42,1,1002,Erik,,Meijaard,Erik Meijaard,SE,SE,The Nature Conservancy,,,East Kalimantan,Indonesia,IDN
+BITR,2011,43,1,1002,Erik,,Meijaard,Erik Meijaard,SE,SE,The Nature Conservancy,,,East Kalimantan,Indonesia,IDN
+BITR,2012,44,1,1002,Erik,,Meijaard,Erik Meijaard,SE,SE,The Nature Conservancy,,,East Kalimantan,Indonesia,IDN
+BITR,2012,44,1,3396,Stefan,,Lotters,Stefan Lotters,SE,SE,Trier University,,,,Germany,DEU
+BITR,2013,45,1,3396,Stefan,,Lotters,Stefan Lotters,SE,SE,Trier University,,,,Germany,DEU
+BITR,2014,46,1,3396,Stefan,,Lotters,Stefan Lotters,EB,SE,Trier University,,,,Germany,DEU
+BITR,2006,38,1,2143,Lee,,Dyer,Lee Dyer,SE,SE,Tulane University,,,,USA,USA
+BITR,2007,39,1,2143,Lee,,Dyer,Lee Dyer,SE,SE,Tulane University,,,,USA,USA
+BITR,2008,40,1,2143,Lee,,Dyer,Lee Dyer,SE,SE,Tulane University,,,,USA,USA
+BITR,2011,43,1,2143,Lee,,Dyer,Lee Dyer,SE,SE,Tulane University,,,,USA,USA
+BITR,2012,44,1,391,Christopher,,Baraloto,Christopher Baraloto,SE,SE,UMR EcoFoG,,,,French Guiana,GUF
+BITR,2014,46,1,391,Christopher,,Baraloto,Christopher Baraloto,EB,SE,UMR EcoFoG,,,,French Guiana,GUF
+BITR,2006,38,1,2383,Mauro,,Galetti,Mauro Galetti,SE,SE,Universidade Estadual Paulista (UNESP),,,,Brazil,BRA
+BITR,2007,39,1,2383,Mauro,,Galetti,Mauro Galetti,SE,SE,Universidade Estadual Paulista (UNESP),,,,Brazil,BRA
+BITR,2008,40,1,2383,Mauro,,Galetti,Mauro Galetti,SE,SE,Universidade Estadual Paulista (UNESP),,,,Brazil,BRA
+BITR,2009,41,1,2383,Mauro,,Galetti,Mauro Galetti,SE,SE,Universidade Estadual Paulista (UNESP),,,,Brazil,BRA
+BITR,2006,38,1,3590,Thomas,,Lewinsohn,Thomas Lewinsohn,SE,SE,Universidade Estadual de Campinas (UNICAMP),,,,Brazil,BRA
+BITR,2007,39,1,3590,Thomas,,Lewinsohn,Thomas Lewinsohn,SE,SE,Universidade Estadual de Campinas (UNICAMP),,,,Brazil,BRA
+BITR,2008,40,1,3590,Thomas,,Lewinsohn,Thomas Lewinsohn,SE,SE,Universidade Estadual de Campinas (UNICAMP),,,,Brazil,BRA
+BITR,2009,41,1,3590,Thomas,,Lewinsohn,Thomas Lewinsohn,SE,SE,Universidade Estadual de Campinas (UNICAMP),,,,Brazil,BRA
+BITR,2010,42,1,3590,Thomas,,Lewinsohn,Thomas Lewinsohn,SE,SE,Universidade Estadual de Campinas (UNICAMP),,,,Brazil,BRA
+BITR,2011,43,1,3590,Thomas,,Lewinsohn,Thomas Lewinsohn,SE,SE,Universidade Estadual de Campinas (UNICAMP),,,,Brazil,BRA
+BITR,2012,44,1,3590,Thomas,,Lewinsohn,Thomas Lewinsohn,SE,SE,Universidade Estadual de Campinas (UNICAMP),,,,Brazil,BRA
+BITR,2013,45,1,3590,Thomas,,Lewinsohn,Thomas Lewinsohn,SE,SE,Universidade Estadual de Campinas (UNICAMP),,,,Brazil,BRA
+BITR,2001,33,1,2734,Oscar,,Rocha,Oscar Rocha,SE,SE,Universidad de Costa Rica,,,,Costa Rica,CRI
+BITR,2002,34,1,2734,Oscar,,Rocha,Oscar Rocha,SE,SE,Universidad de Costa Rica,,,,Costa Rica,CRI
+BITR,2003,35,1,2734,Oscar,,Rocha,Oscar Rocha,SE,SE,Universidad de Costa Rica,,,,Costa Rica,CRI
+BITR,2008,40,1,2121,Luis,F,Aguirre,Luis F Aguirre,SE,SE,Universidad Mayor de San Simon Cochabamba,,,,Bolivia,BOL
+BITR,2009,41,1,2121,Luis,F,Aguirre,Luis F Aguirre,SE,SE,Universidad Mayor de San Simon Cochabamba,,,,Bolivia,BOL
+BITR,2010,42,1,2121,Luis,F,Aguirre,Luis F Aguirre,SE,SE,Universidad Mayor de San Simon Cochabamba,,,,Bolivia,BOL
+BITR,2011,43,1,2121,Luis,F,Aguirre,Luis F Aguirre,SE,SE,Universidad Mayor de San Simon Cochabamba,,,,Bolivia,BOL
+BITR,1999,31,1,3041,Rodolfo,,Dirzo,Rodolfo Dirzo,SE,SE,Universidad Nacaional Autonoma de Mexico,,,,Mexico,MEX
+BITR,2000,32,1,3041,Rodolfo,,Dirzo,Rodolfo Dirzo,SE,SE,Universidad Nacaional Autonoma de Mexico,,,,Mexico,MEX
+BITR,2001,33,1,3041,Rodolfo,,Dirzo,Rodolfo Dirzo,SE,SE,Universidad Nacaional Autonoma de Mexico,,,,Mexico,MEX
+BITR,2004,36,1,2529,Mauricio,,Quesada,Mauricio Quesada,SE,SE,Universidad Nacaional Autonoma de Mexico,,,,Mexico,MEX
+BITR,2005,37,1,2529,Mauricio,,Quesada,Mauricio Quesada,SE,SE,Universidad Nacaional Autonoma de Mexico,,,,Mexico,MEX
+BITR,2006,38,1,816,Diego,,Perez-Salicrup,Diego Perez-Salicrup,SE,SE,Universidad Nacaional Autonoma de Mexico,,,,Mexico,MEX
+BITR,2006,38,1,2529,Mauricio,,Quesada,Mauricio Quesada,SE,SE,Universidad Nacaional Autonoma de Mexico,,,,Mexico,MEX
+BITR,2006,38,1,2098,Kathy,,Stoner,Kathy Stoner,SE,SE,Universidad Nacaional Autonoma de Mexico,,,,Mexico,MEX
+BITR,2007,39,1,816,Diego,,Perez-Salicrup,Diego Perez-Salicrup,SE,SE,Universidad Nacaional Autonoma de Mexico,,,,Mexico,MEX
+BITR,2007,39,1,2529,Mauricio,,Quesada,Mauricio Quesada,SE,SE,Universidad Nacaional Autonoma de Mexico,,,,Mexico,MEX
+BITR,2007,39,1,2098,Kathy,,Stoner,Kathy Stoner,SE,SE,Universidad Nacaional Autonoma de Mexico,,,,Mexico,MEX
+BITR,2008,40,1,816,Diego,,Perez-Salicrup,Diego Perez-Salicrup,SE,SE,Universidad Nacaional Autonoma de Mexico,,,,Mexico,MEX
+BITR,2008,40,1,2529,Mauricio,,Quesada,Mauricio Quesada,SE,SE,Universidad Nacaional Autonoma de Mexico,,,,Mexico,MEX
+BITR,2008,40,1,2098,Kathy,,Stoner,Kathy Stoner,SE,SE,Universidad Nacaional Autonoma de Mexico,,,,Mexico,MEX
+BITR,2009,41,1,1182,Graciela,,Garcia-Guzman,Graciela Garcia-Guzman,SE,SE,Universidad Nacaional Autonoma de Mexico,,,,Mexico,MEX
+BITR,2009,41,1,2529,Mauricio,,Quesada,Mauricio Quesada,SE,SE,Universidad Nacaional Autonoma de Mexico,,,,Mexico,MEX
+BITR,2009,41,1,2098,Kathy,,Stoner,Kathy Stoner,SE,SE,Universidad Nacaional Autonoma de Mexico,,,,Mexico,MEX
+BITR,2010,42,1,1182,Graciela,,Garcia-Guzman,Graciela Garcia-Guzman,SE,SE,Universidad Nacaional Autonoma de Mexico,,,,Mexico,MEX
+BITR,2010,42,1,2529,Mauricio,,Quesada,Mauricio Quesada,SE,SE,Universidad Nacaional Autonoma de Mexico,,,,Mexico,MEX
+BITR,2010,42,1,2098,Kathy,,Stoner,Kathy Stoner,SE,SE,Universidad Nacaional Autonoma de Mexico,,,,Mexico,MEX
+BITR,2011,43,1,1182,Graciela,,Garcia-Guzman,Graciela Garcia-Guzman,SE,SE,Universidad Nacaional Autonoma de Mexico,,,,Mexico,MEX
+BITR,2011,43,1,2529,Mauricio,,Quesada,Mauricio Quesada,SE,SE,Universidad Nacaional Autonoma de Mexico,,,,Mexico,MEX
+BITR,2011,43,1,2098,Kathy,,Stoner,Kathy Stoner,SE,SE,Universidad Nacaional Autonoma de Mexico,,,,Mexico,MEX
+BITR,2012,44,1,1539,Jorge,Meave,DelCastillo,Jorge Meave DelCastillo,SE,SE,Universidad Nacaional Autonoma de Mexico,,,,Mexico,MEX
+BITR,2012,44,1,1182,Graciela,,Garcia-Guzman,Graciela Garcia-Guzman,SE,SE,Universidad Nacaional Autonoma de Mexico,,,,Mexico,MEX
+BITR,2012,44,1,2529,Mauricio,,Quesada,Mauricio Quesada,SE,SE,Universidad Nacaional Autonoma de Mexico,,,,Mexico,MEX
+BITR,2013,45,1,1980,Karina,,Boege,Karina Boege,SE,SE,Universidad Nacaional Autonoma de Mexico,,,,Mexico,MEX
+BITR,2013,45,1,1539,Jorge,Meave,DelCastillo,Jorge Meave DelCastillo,SE,SE,Universidad Nacaional Autonoma de Mexico,,,,Mexico,MEX
+BITR,2013,45,1,1182,Graciela,,Garcia-Guzman,Graciela Garcia-Guzman,SE,SE,Universidad Nacaional Autonoma de Mexico,,,,Mexico,MEX
+BITR,2014,46,1,1980,Karina,,Boege,Karina Boege,EB,SE,Universidad Nacaional Autonoma de Mexico,,,,Mexico,MEX
+BITR,2014,46,1,1539,Jorge,Meave,DelCastillo,Jorge Meave DelCastillo,EB,SE,Universidad Nacaional Autonoma de Mexico,,,,Mexico,MEX
+BITR,2014,46,1,1182,Graciela,,Garcia-Guzman,Graciela Garcia-Guzman,EB,SE,Universidad Nacaional Autonoma de Mexico,,,,Mexico,MEX
+BITR,2001,33,1,80,Augusto,C,Franco,Augusto C Franco,SE,SE,Universidade de Brasilia,,,,Brazil,BRA
+BITR,2002,34,1,80,Augusto,C,Franco,Augusto C Franco,SE,SE,Universidade de Brasilia,,,,Brazil,BRA
+BITR,2003,35,1,53,Ary,T,DeOliveira-Filho,Ary T DeOliveira-Filho,SE,SE,Universidade de Brasilia,,,,Brazil,BRA
+BITR,2004,36,1,53,Ary,T,DeOliveira-Filho,Ary T DeOliveira-Filho,SE,SE,Universidade de Brasilia,,,,Brazil,BRA
+BITR,2005,37,1,80,Augusto,C,Franco,Augusto C Franco,SE,SE,Universidade de Brasilia,,,,Brazil,BRA
+BITR,2002,34,1,53,Ary,T,DeOliveira-Filho,Ary T DeOliveira-Filho,SE,SE,Universidade Federal de Lavras,,,,Brazil,BRA
+BITR,2003,35,1,80,Augusto,C,Franco,Augusto C Franco,SE,SE,Universidade Federal de Lavras,,,,Brazil,BRA
+BITR,2004,36,1,80,Augusto,C,Franco,Augusto C Franco,SE,SE,Universidade Federal de Lavras,,,,Brazil,BRA
+BITR,2013,45,1,1372,Heraldo,,Vasconcelos,Heraldo Vasconcelos,SE,SE,Universidade Federal De Uberlandia,,,,Brazil,BRA
+BITR,2014,46,1,1372,Heraldo,,Vasconcelos,Heraldo Vasconcelos,EB,SE,Universidade Federal De Uberlandia,,,,Brazil,BRA
+BITR,1997,29,1,2884,Paulo,,Oliveira,Paulo Oliveira,SE,SE,Universidade Estadual de Campinas (UNICAMP),,,,Brazil,BRA
+BITR,1998,30,1,2884,Paulo,,Oliveira,Paulo Oliveira,SE,SE,Universidade Estadual de Campinas (UNICAMP),,,,Brazil,BRA
+BITR,2002,34,1,2884,Paulo,,Oliveira,Paulo Oliveira,SE,SE,Universidade Estadual de Campinas (UNICAMP),,,,Brazil,BRA
+BITR,2003,35,1,2884,Paulo,,Oliveira,Paulo Oliveira,SE,SE,Universidade Estadual de Campinas (UNICAMP),,,,Brazil,BRA
+BITR,2004,36,1,2884,Paulo,,Oliveira,Paulo Oliveira,SE,SE,Universidade Estadual de Campinas (UNICAMP),,,,Brazil,BRA
+BITR,2008,40,1,2516,Michelle,,Pinard,Michelle Pinard,SE,SE,University of Aberdeen,,,,UK,GBR
+BITR,2009,41,1,2516,Michelle,,Pinard,Michelle Pinard,SE,SE,University of Aberdeen,,,,UK,GBR
+BITR,2010,42,1,2516,Michelle,,Pinard,Michelle Pinard,SE,SE,University of Aberdeen,,,,UK,GBR
+BITR,2011,43,1,2516,Michelle,,Pinard,Michelle Pinard,SE,SE,University of Aberdeen,,,,UK,GBR
+BITR,2012,44,1,2516,Michelle,,Pinard,Michelle Pinard,SE,SE,University of Aberdeen,,,,UK,GBR
+BITR,2013,45,1,2516,Michelle,,Pinard,Michelle Pinard,SE,SE,University of Aberdeen,,,,UK,GBR
+BITR,2014,46,1,2516,Michelle,,Pinard,Michelle Pinard,EB,SE,University of Aberdeen,,,,UK,GBR
+BITR,2009,41,1,403,Corey,,Bradshaw,Corey Bradshaw,SE,SE,University of Adelaide,,,,Australia,AUS
+BITR,2003,35,1,3216,R,Uma,Shaanker,R Uma Shaanker,SE,SE,University of Agricultural Science Bangalore,,,,India,IND
+BITR,2004,36,1,3216,R,Uma,Shaanker,R Uma Shaanker,SE,SE,University of Agricultural Science Bangalore,,,,India,IND
+BITR,2005,37,1,3216,R,Uma,Shaanker,R Uma Shaanker,SE,SE,University of Agricultural Science Bangalore,,,,India,IND
+BITR,2002,34,1,3130,Robert,,Lawton,Robert Lawton,SE,SE,University of Alabama Huntsville,,,,USA,USA
+BITR,2003,35,1,3130,Robert,,Lawton,Robert Lawton,SE,SE,University of Alabama Huntsville,,,,USA,USA
+BITR,2004,36,1,3130,Robert,,Lawton,Robert Lawton,SE,SE,University of Alabama Huntsville,,,,USA,USA
+BITR,2005,37,1,3130,Robert,,Lawton,Robert Lawton,SE,SE,University of Alabama Huntsville,,,,USA,USA
+BITR,2005,37,1,189,Arturo,,Sanchez-Azofeifa,Arturo Sanchez-Azofeifa,SE,SE,University of Alberta,,,,Canada,CAN
+BITR,2006,38,1,189,Arturo,,Sanchez-Azofeifa,Arturo Sanchez-Azofeifa,SE,SE,University of Alberta,,,,Canada,CAN
+BITR,2007,39,1,189,Arturo,,Sanchez-Azofeifa,Arturo Sanchez-Azofeifa,SE,SE,University of Alberta,,,,Canada,CAN
+BITR,2012,44,1,931,Elizabeth,,Arnold,Elizabeth Arnold,SE,SE,University of Arizona,,,,USA,USA
+BITR,2013,45,1,931,Elizabeth,,Arnold,Elizabeth Arnold,SE,SE,University of Arizona,,,,USA,USA
+BITR,2014,46,1,931,Elizabeth,,Arnold,Elizabeth Arnold,EB,SE,University of Arizona,,,,USA,USA
+BITR,2012,44,1,2240,Luitgard,,Schwendenmann,Luitgard Schwendenmann,SE,SE,University of Auckland,,,,New Zealand,NZL
+BITR,2013,45,1,2240,Luitgard,,Schwendenmann,Luitgard Schwendenmann,SE,SE,University of Auckland,,,,New Zealand,NZL
+BITR,2014,46,1,2240,Luitgard,,Schwendenmann,Luitgard Schwendenmann,EB,SE,University of Auckland,,,,New Zealand,NZL
+BITR,2007,39,1,2911,Philip,,Rundel,Philip Rundel,SE,SE,University of California Los Angeles,,,,USA,USA
+BITR,2008,40,1,3556,Thomas,,Gillespie,Thomas Gillespie,SE,SE,University of California Los Angeles,,,,USA,USA
+BITR,2008,40,1,2911,Philip,,Rundel,Philip Rundel,SE,SE,University of California Los Angeles,,,,USA,USA
+BITR,2009,41,1,3556,Thomas,,Gillespie,Thomas Gillespie,SE,SE,University of California Los Angeles,,,,USA,USA
+BITR,2010,42,1,3556,Thomas,,Gillespie,Thomas Gillespie,SE,SE,University of California Los Angeles,,,,USA,USA
+BITR,2010,42,1,2911,Philip,,Rundel,Philip Rundel,SE,SE,University of California Los Angeles,,,,USA,USA
+BITR,2011,43,1,3556,Thomas,,Gillespie,Thomas Gillespie,SE,SE,University of California Los Angeles,,,,USA,USA
+BITR,2011,43,1,2911,Philip,,Rundel,Philip Rundel,SE,SE,University of California Los Angeles,,,,USA,USA
+BITR,2013,45,1,3436,Stacy,,Philpott,Stacy Philpott,SE,SE,University of California Santa Cruz,,,,USA,USA
+BITR,2014,46,1,3436,Stacy,,Philpott,Stacy Philpott,EB,SE,University of California Santa Cruz,,,,USA,USA
+BITR,2006,38,1,2911,Philip,,Rundel,Philip Rundel,SE,SE,University of California Los Angeles,,,,USA,USA
+BITR,2012,44,1,3551,Toby,,Gardner,Toby Gardner,SE,SE,University of Cambridge,,,,UK,GBR
+BITR,2013,45,1,3551,Toby,,Gardner,Toby Gardner,SE,SE,University of Cambridge,,,,UK,GBR
+BITR,2014,46,1,3551,Toby,,Gardner,Toby Gardner,EB,SE,University of Cambridge,,,,UK,GBR
+BITR,2004,36,1,3016,Robin,,Chazdon,Robin Chazdon,EIC,EIC,University of Connetticut,,Storrs,,USA,USA
+BITR,2005,37,1,3016,Robin,,Chazdon,Robin Chazdon,EIC,EIC,University of Connetticut,,Storrs,,USA,USA
+BITR,2006,38,1,3016,Robin,,Chazdon,Robin Chazdon,EIC,EIC,University of Connetticut,,Storrs,,USA,USA
+BITR,2007,39,1,3016,Robin,,Chazdon,Robin Chazdon,SE,SE,University of Connetticut,,Storrs,,USA,USA
+BITR,2008,40,1,3016,Robin,,Chazdon,Robin Chazdon,SE,SE,University of Connetticut,,Storrs,,USA,USA
+BITR,2009,41,1,3016,Robin,,Chazdon,Robin Chazdon,SE,SE,University of Connetticut,,Storrs,,USA,USA
+BITR,2010,42,1,3016,Robin,,Chazdon,Robin Chazdon,SE,SE,University of Connetticut,,Storrs,,USA,USA
+BITR,2011,43,1,3016,Robin,,Chazdon,Robin Chazdon,SE,SE,University of Connetticut,,Storrs,,USA,USA
+BITR,2005,37,1,551,Carlos,,Peres,Carlos Peres,SE,SE,University of East Anglia,,,,England,GBR
+BITR,2006,38,1,551,Carlos,,Peres,Carlos Peres,SE,SE,University of East Anglia,,,,UK,GBR
+BITR,2007,39,1,551,Carlos,,Peres,Carlos Peres,SE,SE,University of East Anglia,,,,UK,GBR
+BITR,1999,31,1,760,Douglas,,Levey,Douglas Levey,SE,SE,University of Florida,,Gainesville,Florida,USA,USA
+BITR,2000,32,1,760,Douglas,,Levey,Douglas Levey,SE,SE,University of Florida,,Gainesville,Florida,USA,USA
+BITR,2001,33,1,421,Colin,,Chapman,Colin Chapman,SE,SE,University of Florida,,Gainesville,Florida,USA,USA
+BITR,2001,33,1,760,Douglas,,Levey,Douglas Levey,SE,SE,University of Florida,,Gainesville,Florida,USA,USA
+BITR,2002,34,1,421,Colin,,Chapman,Colin Chapman,SE,SE,University of Florida,,Gainesville,Florida,USA,USA
+BITR,2002,34,1,925,Daniel,,Zarin,Daniel Zarin,SE,SE,University of Florida,,Gainesville,Florida,USA,USA
+BITR,2003,35,1,421,Colin,,Chapman,Colin Chapman,SE,SE,University of Florida,,Gainesville,Florida,USA,USA
+BITR,2003,35,1,925,Daniel,,Zarin,Daniel Zarin,SE,SE,University of Florida,,Gainesville,Florida,USA,USA
+BITR,2004,36,1,925,Daniel,,Zarin,Daniel Zarin,SE,SE,University of Florida,,Gainesville,Florida,USA,USA
+BITR,2006,38,1,1469,John,,Blake,John Blake,SE,SE,University of Florida,,Gainesville,Florida,USA,USA
+BITR,2007,39,1,941,Emilio,M,Bruna,Emilio M Bruna,SE,SE,University of Florida,,Gainesville,Florida,USA,USA
+BITR,2008,40,1,941,Emilio,M,Bruna,Emilio M Bruna,SE,SE,University of Florida,,Gainesville,Florida,USA,USA
+BITR,2009,41,1,941,Emilio,M,Bruna,Emilio M Bruna,SE,SE,University of Florida,,Gainesville,Florida,USA,USA
+BITR,2010,42,1,941,Emilio,M,Bruna,Emilio M Bruna,AE,AE,University of Florida,,Gainesville,Florida,USA,USA
+BITR,2011,43,1,941,Emilio,M,Bruna,Emilio M Bruna,AE,AE,University of Florida,,Gainesville,Florida,USA,USA
+BITR,2012,44,1,1469,John,,Blake,John Blake,SE,SE,University of Florida,,Gainesville,Florida,USA,USA
+BITR,2012,44,1,941,Emilio,M,Bruna,Emilio M Bruna,AE,AE,University of Florida,,Gainesville,Florida,USA,USA
+BITR,2013,45,1,1469,John,,Blake,John Blake,SE,SE,University of Florida,,Gainesville,Florida,USA,USA
+BITR,2013,45,1,941,Emilio,M,Bruna,Emilio M Bruna,AE,AE,University of Florida,,Gainesville,Florida,USA,USA
+BITR,2014,46,1,1469,John,,Blake,John Blake,EB,SE,University of Florida,,Gainesville,Florida,USA,USA
+BITR,2014,46,1,941,Emilio,M,Bruna,Emilio M Bruna,EIC,EIC,University of Florida,,Gainesville,Florida,USA,USA
+BITR,1998,30,1,1620,James,L,Hamrick,James L Hamrick,SE,SE,University of Georgia,,,,USA,USA
+BITR,1999,31,1,1620,James,L,Hamrick,James L Hamrick,SE,SE,University of Georgia,,,,USA,USA
+BITR,2000,32,1,1620,James,L,Hamrick,James L Hamrick,SE,SE,University of Georgia,,,,USA,USA
+BITR,2010,42,1,123,Alexandra-Maria,,Klein,Alexandra-Maria Klein,SE,SE,University of Gottingen,,,,Germany,DEU
+BITR,2011,43,1,123,Alexandra-Maria,,Klein,Alexandra-Maria Klein,SE,SE,University of Gottingen,,,,Germany,DEU
+BITR,2012,44,1,123,Alexandra-Maria,,Klein,Alexandra-Maria Klein,SE,SE,University of Gottingen,,,,Germany,DEU
+BITR,2013,45,1,672,Donald,,Drake,Donald Drake,SE,SE,University of Hawaii,,,,USA,USA
+BITR,2014,46,1,672,Donald,,Drake,Donald Drake,EB,SE,University of Hawaii,,,,USA,USA
+BITR,2001,33,1,674,David,,Dudgeon,David Dudgeon,SE,SE,University of Hong Kong,Freshwater biology ,,,China,CHN
+BITR,2002,34,1,674,David,,Dudgeon,David Dudgeon,SE,SE,University of Hong Kong,Freshwater biology ,,,China,CHN
+BITR,2002,34,1,2020,Kevin,,Hyde,Kevin Hyde,SE,SE,University of Hong Kong,,,,China,CHN
+BITR,2003,35,1,674,David,,Dudgeon,David Dudgeon,SE,SE,University of Hong Kong,Freshwater biology ,,,China,CHN
+BITR,2003,35,1,2020,Kevin,,Hyde,Kevin Hyde,SE,SE,University of Hong Kong,,,,China,CHN
+BITR,2004,36,1,674,David,,Dudgeon,David Dudgeon,SE,SE,University of Hong Kong,Freshwater biology ,,,China,CHN
+BITR,2004,36,1,2020,Kevin,,Hyde,Kevin Hyde,SE,SE,University of Hong Kong,,,,China,CHN
+BITR,2005,37,1,674,David,,Dudgeon,David Dudgeon,SE,SE,University of Hong Kong,Freshwater biology ,,,China,CHN
+BITR,2005,37,1,2020,Kevin,,Hyde,Kevin Hyde,SE,SE,University of Hong Kong,,,,China,CHN
+BITR,2006,38,1,674,David,,Dudgeon,David Dudgeon,SE,SE,University of Hong Kong,Freshwater biology ,,,China,CHN
+BITR,2006,38,1,2020,Kevin,,Hyde,Kevin Hyde,SE,SE,University of Hong Kong,,,,China,CHN
+BITR,2007,39,1,674,David,,Dudgeon,David Dudgeon,SE,SE,University of Hong Kong,Freshwater biology ,,,China,CHN
+BITR,2007,39,1,2020,Kevin,,Hyde,Kevin Hyde,SE,SE,University of Hong Kong,,,,China,CHN
+BITR,2008,40,1,674,David,,Dudgeon,David Dudgeon,SE,SE,University of Hong Kong,Freshwater biology ,,,China,CHN
+BITR,2008,40,1,2020,Kevin,,Hyde,Kevin Hyde,SE,SE,University of Hong Kong,,,,China,CHN
+BITR,1987,19,1,306,B,Adebayo,Lasebikan,B Adebayo Lasebikan,SE,SE,University of Ife,,,,Nigeria,NGA
+BITR,1988,20,1,306,B,Adebayo,Lasebikan,B Adebayo Lasebikan,SE,SE,University of Ife,,,,Nigeria,NGA
+BITR,1989,21,1,306,B,Adebayo,Lasebikan,B Adebayo Lasebikan,SE,SE,University of Ife,,,,Nigeria,NGA
+BITR,1990,22,1,306,B,Adebayo,Lasebikan,B Adebayo Lasebikan,SE,SE,University of Ife,,,,Nigeria,NGA
+BITR,1991,23,1,306,B,Adebayo,Lasebikan,B Adebayo Lasebikan,SE,SE,University of Ife,,,,Nigeria,NGA
+BITR,1992,24,1,306,B,Adebayo,Lasebikan,B Adebayo Lasebikan,SE,SE,University of Ife,,,,Nigeria,NGA
+BITR,2007,39,1,3253,Rainer,,Wirth,Rainer Wirth,SE,SE,University of Kaiserslautern,,,,Germany,DEU
+BITR,2008,40,1,3253,Rainer,,Wirth,Rainer Wirth,SE,SE,University of Kaiserslautern,,,,Germany,DEU
+BITR,2009,41,1,3253,Rainer,,Wirth,Rainer Wirth,SE,SE,University of Kaiserslautern,,,,Germany,DEU
+BITR,2010,42,1,3253,Rainer,,Wirth,Rainer Wirth,SE,SE,University of Kaiserslautern,,,,Germany,DEU
+BITR,2011,43,1,3253,Rainer,,Wirth,Rainer Wirth,SE,SE,University of Kaiserslautern,,,,Germany,DEU
+BITR,2009,41,1,4,Adolfo,,Amezquita,Adolfo Amezquita,SE,SE,University of Los Andes Bogota,,,,Colombia,COL
+BITR,2010,42,1,4,Adolfo,,Amezquita,Adolfo Amezquita,SE,SE,University of Los Andes Bogota,,,,Colombia,COL
+BITR,2011,43,1,4,Adolfo,,Amezquita,Adolfo Amezquita,SE,SE,University of Los Andes Bogota,,,,Colombia,COL
+BITR,1969,1,1,3809,William,Louid,Stern,William Louid Stern,EIC,EIC,University of Maryland,,,,USA,USA
+BITR,1970,2,1,3809,William,Louid,Stern,William Louid Stern,EIC,EIC,University of Maryland,,,,USA,USA
+BITR,1971,3,1,3809,William,Louid,Stern,William Louid Stern,EIC,EIC,University of Maryland,,,,USA,USA
+BITR,1972,4,1,3809,William,Louid,Stern,William Louid Stern,EIC,EIC,University of Maryland,,,,USA,USA
+BITR,1997,29,1,3546,Theodore,,Fleming,Theodore Fleming,SE,SE,University of Miami,,,,USA,USA
+BITR,1998,30,1,3546,Theodore,,Fleming,Theodore Fleming,SE,SE,University of Miami,,,,USA,USA
+BITR,2012,44,1,434,Christopher,,Dick,Christopher Dick,SE,SE,University of Michigan,,,,USA,USA
+BITR,2013,45,1,434,Christopher,,Dick,Christopher Dick,SE,SE,University of Michigan,,,,USA,USA
+BITR,2014,46,1,434,Christopher,,Dick,Christopher Dick,EB,SE,University of Michigan,,,,USA,USA
+BITR,2013,45,1,1817,Jennifer,,Powers,Jennifer Powers,SE,SE,University of Minnesota,,,,USA,USA
+BITR,2014,46,1,1817,Jennifer,,Powers,Jennifer Powers,EB,SE,University of Minnesota,,,,USA,USA
+BITR,1997,29,1,3142,Robert,J,Marquis,Robert J Marquis,EIC,EIC,University of Missouri St Louis,,,,USA,USA
+BITR,1998,30,1,3142,Robert,J,Marquis,Robert J Marquis,EIC,EIC,University of Missouri St Louis,,,,USA,USA
+BITR,1999,31,1,3142,Robert,J,Marquis,Robert J Marquis,EIC,EIC,University of Missouri St Louis,,,,USA,USA
+BITR,2000,32,1,3142,Robert,J,Marquis,Robert J Marquis,EIC,EIC,University of Missouri St Louis,,,,USA,USA
+BITR,2001,33,1,3142,Robert,J,Marquis,Robert J Marquis,EIC,EIC,University of Missouri St Louis,,,,USA,USA
+BITR,2002,34,1,3142,Robert,J,Marquis,Robert J Marquis,EIC,EIC,University of Missouri St Louis,,,,USA,USA
+BITR,2003,35,1,3142,Robert,J,Marquis,Robert J Marquis,EIC,EIC,University of Missouri St Louis,,,,USA,USA
+BITR,2003,35,1,2442,Michael,,Lawes,Michael Lawes,SE,SE,University of Natal,,,,South Africa,ZAF
+BITR,2004,36,1,2442,Michael,,Lawes,Michael Lawes,SE,SE,University of Natal,,,,South Africa,ZAF
+BITR,2005,37,1,2442,Michael,,Lawes,Michael Lawes,SE,SE,University of Natal,,,,South Africa,ZAF
+BITR,2006,38,1,2442,Michael,,Lawes,Michael Lawes,SE,SE,University of Natal,,,,South Africa,ZAF
+BITR,2007,39,1,2442,Michael,,Lawes,Michael Lawes,SE,SE,University of Natal,,,,South Africa,ZAF
+BITR,2008,40,1,2442,Michael,,Lawes,Michael Lawes,SE,SE,University of Natal,,,,South Africa,ZAF
+BITR,2009,41,1,2442,Michael,,Lawes,Michael Lawes,SE,SE,University of Natal,,,,South Africa,ZAF
+BITR,2004,36,1,2794,Philip,,DeVries,Philip DeVries,SE,SE,University of New Orleans,,,,USA,USA
+BITR,2005,37,1,2794,Philip,,DeVries,Philip DeVries,SE,SE,University of New Orleans,,,,USA,USA
+BITR,2006,38,1,2794,Philip,,DeVries,Philip DeVries,SE,SE,University of New Orleans,,,,USA,USA
+BITR,2007,39,1,3164,Rebecca,,Morris,Rebecca Morris,SE,SE,University of Oxford,,,,UK,GBR
+BITR,2008,40,1,3164,Rebecca,,Morris,Rebecca Morris,SE,SE,University of Oxford,,,,UK,GBR
+BITR,2009,41,1,3281,Shonil,,Bhagwat,Shonil Bhagwat,SE,SE,University of Oxford,,,,UK,GBR
+BITR,2009,41,1,3164,Rebecca,,Morris,Rebecca Morris,SE,SE,University of Oxford,,,,UK,GBR
+BITR,2010,42,1,3281,Shonil,,Bhagwat,Shonil Bhagwat,SE,SE,University of Oxford,,,,UK,GBR
+BITR,2010,42,1,3164,Rebecca,,Morris,Rebecca Morris,SE,SE,University of Oxford,,,,UK,GBR
+BITR,2011,43,1,2975,Robert,,Bagchi,Robert Bagchi,SE,SE,University of Oxford,,,,UK,GBR
+BITR,2011,43,1,3281,Shonil,,Bhagwat,Shonil Bhagwat,SE,SE,University of Oxford,,,,UK,GBR
+BITR,2011,43,1,3164,Rebecca,,Morris,Rebecca Morris,SE,SE,University of Oxford,,,,UK,GBR
+BITR,2012,44,1,2975,Robert,,Bagchi,Robert Bagchi,SE,SE,University of Oxford,,,,UK,GBR
+BITR,2012,44,1,3281,Shonil,,Bhagwat,Shonil Bhagwat,SE,SE,University of Oxford,,,,UK,GBR
+BITR,2012,44,1,3164,Rebecca,,Morris,Rebecca Morris,SE,SE,University of Oxford,,,,UK,GBR
+BITR,2012,44,1,1413,Ingrid,,Parmentier,Ingrid Parmentier,SE,SE,University of Oxford,,,,Belgium,BEL
+BITR,2012,44,1,2067,Kate,,Parr,Kate Parr,SE,SE,University of Oxford,,,,UK,GBR
+BITR,2013,45,1,3281,Shonil,,Bhagwat,Shonil Bhagwat,SE,SE,University of Oxford,,,,UK,GBR
+BITR,2013,45,1,3164,Rebecca,,Morris,Rebecca Morris,SE,SE,University of Oxford,,,,UK,GBR
+BITR,2013,45,1,2067,Kate,,Parr,Kate Parr,SE,SE,University of Oxford,,,,UK,GBR
+BITR,2014,46,1,3281,Shonil,,Bhagwat,Shonil Bhagwat,EB,SE,University of Oxford,,,,UK,GBR
+BITR,2014,46,1,3164,Rebecca,,Morris,Rebecca Morris,EB,SE,University of Oxford,,,,UK,GBR
+BITR,2014,46,1,2067,Kate,,Parr,Kate Parr,EB,SE,University of Oxford,,,,UK,GBR
+BITR,1999,31,1,1431,James,,Ackerman,James Ackerman,SE,SE,University of Puerto Rico,,,,USA,USA
+BITR,2000,32,1,1431,James,,Ackerman,James Ackerman,SE,SE,University of Puerto Rico,,,,USA,USA
+BITR,2001,33,1,1431,James,,Ackerman,James Ackerman,SE,SE,University of Puerto Rico,,,,USA,USA
+BITR,2002,34,1,1431,James,,Ackerman,James Ackerman,SE,SE,University of Puerto Rico,,,,USA,USA
+BITR,2003,35,1,1431,James,,Ackerman,James Ackerman,SE,SE,University of Puerto Rico,,,,USA,USA
+BITR,2004,36,1,1431,James,,Ackerman,James Ackerman,SE,SE,University of Puerto Rico,,,,USA,USA
+BITR,2002,34,1,754,David,,Lamb,David Lamb,SE,SE,University of Queensland,,,,Australia,AUS
+BITR,2003,35,1,754,David,,Lamb,David Lamb,SE,SE,University of Queensland,,,,Australia,AUS
+BITR,1998,30,1,1819,John,,Proctor,John Proctor,SE,SE,University of Stirling,,,,Scotland,GBR
+BITR,2013,45,1,2717,Orou,,Gaoue,Orou Gaoue,SE,SE,University of Tennessee,,,,USA,USA
+BITR,2014,46,1,2717,Orou,,Gaoue,Orou Gaoue,EB,SE,University of Tennessee,,,,USA,USA
+BITR,2004,36,1,1370,Hanna,,Tuomisto,Hanna Tuomisto,SE,SE,University of Turku,,,,Finland,FIN
+BITR,2005,37,1,1370,Hanna,,Tuomisto,Hanna Tuomisto,SE,SE,University of Turku,,,,Finland,FIN
+BITR,2006,38,1,1370,Hanna,,Tuomisto,Hanna Tuomisto,SE,SE,University of Turku,,,,Finland,FIN
+BITR,2007,39,1,1370,Hanna,,Tuomisto,Hanna Tuomisto,SE,SE,University of Turku,,,,Finland,FIN
+BITR,2004,36,1,985,Elisabeth,KV,Kalko,Elisabeth KV Kalko,SE,SE,University of Ulm,,,,Germany,DEU
+BITR,2005,37,1,985,Elisabeth,KV,Kalko,Elisabeth KV Kalko,SE,SE,University of Ulm,,,,Germany,DEU
+BITR,2006,38,1,985,Elisabeth,KV,Kalko,Elisabeth KV Kalko,SE,SE,University of Ulm,,,,Germany,DEU
+BITR,1997,29,1,662,Diane,,Davidson,Diane Davidson,SE,SE,University of Utah,,,,USA,USA
+BITR,1998,30,1,662,Diane,,Davidson,Diane Davidson,SE,SE,University of Utah,,,,USA,USA
+BITR,2005,37,1,684,Donald,H,Feener,Donald H Feener,SE,SE,University of Utah,,,,USA,USA
+BITR,2006,38,1,684,Donald,H,Feener,Donald H Feener,SE,SE,University of Utah,,,,USA,USA
+BITR,2007,39,1,684,Donald,H,Feener,Donald H Feener,SE,SE,University of Utah,,,,USA,USA
+BITR,2008,40,1,684,Donald,H,Feener,Donald H Feener,SE,SE,University of Utah,,,,USA,USA
+BITR,2012,44,1,2110,Kim,,Williams-Guillen,Kim Williams-Guillen,SE,SE,University of Washington,,,,USA,USA
+BITR,2009,41,1,3464,Stefan,,Schnitzer,Stefan Schnitzer,SE,SE,University of Wisconsin Milwaukee,,,,USA,USA
+BITR,2010,42,1,3464,Stefan,,Schnitzer,Stefan Schnitzer,SE,SE,University of Wisconsin Milwaukee,,,,USA,USA
+BITR,2011,43,1,3464,Stefan,,Schnitzer,Stefan Schnitzer,SE,SE,University of Wisconsin Milwaukee,,,,USA,USA
+BITR,2009,41,1,2628,Nico,,Bluthgen,Nico Bluthgen,SE,SE,University of Wurzburg,,,,Germany,DEU
+BITR,2010,42,1,2628,Nico,,Bluthgen,Nico Bluthgen,SE,SE,University of Wurzburg,,,,Germany,DEU
+BITR,2011,43,1,2628,Nico,,Bluthgen,Nico Bluthgen,SE,SE,University of Wurzburg,,,,Germany,DEU
+BITR,2012,44,1,2628,Nico,,Bluthgen,Nico Bluthgen,SE,SE,University of Wurzburg,,,,Germany,DEU
+BITR,1999,31,1,2794,Philip,,DeVries,Philip DeVries,SE,SE,University Oregon,,,,USA,USA
+BITR,2000,32,1,2794,Philip,,DeVries,Philip DeVries,SE,SE,University Oregon,,,,USA,USA
+BITR,1999,31,1,1566,John,J,Ewel,John J Ewel,SE,SE,"US Forest Service, USDA",,,,USA,USA
+BITR,2000,32,1,1566,John,J,Ewel,John J Ewel,SE,SE,"US Forest Service, USDA",,,,USA,USA
+BITR,2001,33,1,1566,John,J,Ewel,John J Ewel,SE,SE,"US Forest Service, USDA",,,,USA,USA
+BITR,1999,31,1,766,D,Jean,Lodge,D Jean Lodge,SE,SE,"US Forest Service, USDA",,,,USA,USA
+BITR,2000,32,1,766,D,Jean,Lodge,D Jean Lodge,SE,SE,"US Forest Service, USDA",,,,USA,USA
+BITR,2001,33,1,766,D,Jean,Lodge,D Jean Lodge,SE,SE,"US Forest Service, USDA",,,,USA,USA
+BITR,2012,44,1,2431,Marcella,,Kelly,Marcella Kelly,SE,SE,Virginia Tech,,,,USA,USA
+BITR,2012,44,1,2960,Pieter,A,Zuidema,Pieter A Zuidema,SE,SE,Wageningen University,,,,Netherlands,NLD
+BITR,2013,45,1,2960,Pieter,A,Zuidema,Pieter A Zuidema,SE,SE,Wageningen University,,,,Netherlands,NLD
+BITR,2014,46,1,2960,Pieter,A,Zuidema,Pieter A Zuidema,EB,SE,Wageningen University,,,,Netherlands,NLD
+BITR,2014,46,1,2510,Marielos,,Pena-Claros,Marielos Pena-Claros,AE,AE,Wageningen University and Instituto Boliviano de Investigacion Forestal,,,,Netherlands,NLD
+BITR,2006,38,1,2963,Qing-Jun,,Li,Qing-Jun Li,SE,SE,Xishuangbanna Tropical Botanical Garden,,,,China,CHN
+BITR,2007,39,1,2963,Qing-Jun,,Li,Qing-Jun Li,SE,SE,Xishuangbanna Tropical Botanical Garden,,,,China,CHN
+BITR,2008,40,1,2963,Qing-Jun,,Li,Qing-Jun Li,SE,SE,Xishuangbanna Tropical Botanical Garden,,,,China,CHN
+BITR,2009,41,1,2963,Qing-Jun,,Li,Qing-Jun Li,SE,SE,Xishuangbanna Tropical Botanical Garden,,,,China,CHN
+BITR,2010,42,1,2963,Qing-Jun,,Li,Qing-Jun Li,SE,SE,Xishuangbanna Tropical Botanical Garden,,,,China,CHN
+BITR,2011,43,1,2963,Qing-Jun,,Li,Qing-Jun Li,SE,SE,Xishuangbanna Tropical Botanical Garden,,,,China,CHN
+BITR,2013,45,1,1132,Ferry,,Slik,Ferry Slik,SE,SE,"Xishuangbanna Tropical Botanical Garden,CAS",,,,China,CHN
+BITR,2014,46,1,1132,Ferry,,Slik,Ferry Slik,EB,SE,"Xishuangbanna Tropical Botanical Garden,CAS",,,,China,CHN
+BITR,2004,36,1,2278,Mark,,Ashton,Mark Ashton,SE,SE,Yale University,,,,USA,USA
+BITR,2005,37,1,2278,Mark,,Ashton,Mark Ashton,SE,SE,Yale University,,,,USA,USA
+BITR,2006,38,1,2278,Mark,,Ashton,Mark Ashton,SE,SE,Yale University,,,,USA,USA

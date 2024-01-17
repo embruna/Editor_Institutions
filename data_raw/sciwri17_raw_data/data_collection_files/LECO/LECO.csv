@@ -1,0 +1,916 @@
+JOURNAL,YEAR,VOLUME,ISSUE,editor_id,FIRST_NAME,MIDDLE_NAME,LAST_NAME,NAME,TITLE.x,CATEGORY,INST,UNIT,CITY,STATE,COUNTRY,geo.code
+LECO,1987,1,1,3060,R,TT,Forman,R TT Forman,Editorial.Board,SE,,,,,USA,USA
+LECO,1987,1,1,2387,M,,Godron,M Godron,Editorial.Board,SE,,,,,France,FRA
+LECO,1987,1,1,1072,Frank,B,Golley,Frank B Golley,EIC,EIC,,,,,USA,USA
+LECO,1987,1,1,1192,G,,Haase,G Haase,Editorial.Board,SE,,,,,Germany,DEU
+LECO,1987,1,1,3744,W,,Haber,W Haber,Editorial.Board,SE,,,,,Germany,DEU
+LECO,1987,1,1,3392,S,A,Levin,S A Levin,Editorial.Board,SE,,,,,USA,USA
+LECO,1987,1,1,1230,G,,Merriam,G Merriam,Editorial.Board,SE,,,,,Canada,CAN
+LECO,1987,1,1,3846,Z,,Naveh,Z Naveh,Editorial.Board,SE,,,,,Israel,ISR
+LECO,1987,1,1,2495,M,,Numata,M Numata,Editorial.Board,SE,,,,,Japan,JPN
+LECO,1987,1,1,177,A,F,Ramos,A F Ramos,Editorial.Board,SE,,,,,Spain,ESP
+LECO,1987,1,1,2907,P,Green,Risser,P Green Risser,Editorial.Board,SE,,,,,USA,USA
+LECO,1987,1,1,2546,M,,Ruzicka,M Ruzicka,Editorial.Board,SE,,,,,Slovakia,SVK
+LECO,1987,1,1,2083,K,F,Schreiber,K F Schreiber,Editorial.Board,SE,,,,,Germany,DEU
+LECO,1987,1,1,1361,H,H,Shugart,H H Shugart,Editorial.Board,SE,,,,,USA,USA
+LECO,1987,1,1,571,C,,Steinitz,C Steinitz,Editorial.Board,SE,,,,,USA,USA
+LECO,1987,1,1,3233,R,,Tosswall,R Tosswall,Editorial.Board,SE,,,,,Sweden,SWE
+LECO,1987,1,1,1033,E,,van der Maarel,E van der Maarel,Editorial.Board,SE,,,,,Sweden,SWE
+LECO,1987,1,1,1428,I,S,Zonneveld,I S Zonneveld,Editorial.Board,SE,,,,,Netherlands,NLD
+LECO,1987,1,1,1045,E,H,Zube,E H Zube,Editorial.Board,SE,,,,,USA,USA
+LECO,1988,1,3,3060,R,TT,Forman,R TT Forman,SE,SE,,,,,USA,USA
+LECO,1988,1,3,2387,M,,Godron,M Godron,SE,SE,,,,,France,FRA
+LECO,1988,1,3,1072,Frank,,Golley,Frank Golley,EIC,EIC,,,,,USA,USA
+LECO,1988,1,3,1192,G,,Haase,G Haase,SE,SE,,,,,Germany,DEU
+LECO,1988,1,3,3744,W,,Haber,W Haber,SE,SE,,,,,Germany,DEU
+LECO,1988,1,3,3392,S,,Levin,S Levin,SE,SE,,,,,USA,USA
+LECO,1988,1,3,1230,G,,Merriam,G Merriam,SE,SE,,,,,Canada,CAN
+LECO,1988,1,3,3846,Z,,Naveh,Z Naveh,SE,SE,,,,,Israel,ISR
+LECO,1988,1,3,2495,M,,Numata,M Numata,SE,SE,,,,,Japan,JPN
+LECO,1988,1,3,177,A,F,Ramos,A F Ramos,SE,SE,,,,,Spain,ESP
+LECO,1988,1,3,2907,P,Green,Risser,P Green Risser,SE,SE,,,,,USA,USA
+LECO,1988,1,3,3633,T,,Rosswall,T Rosswall,SE,SE,,,,,Sweden,SWE
+LECO,1988,1,3,2546,M,,Ruzicka,M Ruzicka,SE,SE,,,,,Russia,RUS
+LECO,1988,1,3,2083,K,F,Schreiber,K F Schreiber,SE,SE,,,,,Germany,DEU
+LECO,1988,1,3,1361,H,H,Shugart,H H Shugart,SE,SE,,,,,USA,USA
+LECO,1988,1,3,571,C,,Steinitz,C Steinitz,SE,SE,,,,,USA,USA
+LECO,1988,1,3,1034,E,,VanDer,E VanDer,SE,SE,,,,,Sweden,SWE
+LECO,1988,1,3,1428,I,S,Zonneveld,I S Zonneveld,SE,SE,,,,,Netherlands,NLD
+LECO,1988,1,3,1045,E,H,Zube,E H Zube,SE,SE,,,,,USA,USA
+LECO,1989,2,3,3060,R,TT,Forman,R TT Forman,SE,SE,,,,,USA,USA
+LECO,1989,2,3,2387,M,,Godron,M Godron,SE,SE,,,,,France,FRA
+LECO,1989,2,3,1072,Frank,,Golley,Frank Golley,EIC,EIC,,,,,USA,USA
+LECO,1989,2,3,1192,G,,Haase,G Haase,SE,SE,,,,,Germany,DEU
+LECO,1989,2,3,3744,W,,Haber,W Haber,SE,SE,,,,,Germany,DEU
+LECO,1989,2,3,3392,S,,Levin,S Levin,SE,SE,,,,,USA,USA
+LECO,1989,2,3,1230,G,,Merriam,G Merriam,SE,SE,,,,,Canada,CAN
+LECO,1989,2,3,3846,Z,,Naveh,Z Naveh,SE,SE,,,,,Israel,ISR
+LECO,1989,2,3,2495,M,,Numata,M Numata,SE,SE,,,,,Japan,JPN
+LECO,1989,2,3,177,A,F,Ramos,A F Ramos,SE,SE,,,,,Spain,ESP
+LECO,1989,2,3,2907,P,Green,Risser,P Green Risser,SE,SE,,,,,USA,USA
+LECO,1989,2,3,3633,T,,Rosswall,T Rosswall,SE,SE,,,,,Sweden,SWE
+LECO,1989,2,3,2546,M,,Ruzicka,M Ruzicka,SE,SE,,,,,Russia,RUS
+LECO,1989,2,3,2083,K,F,Schreiber,K F Schreiber,SE,SE,,,,,Germany,DEU
+LECO,1989,2,3,1361,H,H,Shugart,H H Shugart,SE,SE,,,,,USA,USA
+LECO,1989,2,3,571,C,,Steinitz,C Steinitz,SE,SE,,,,,USA,USA
+LECO,1989,2,3,1034,E,,VanDer,E VanDer,SE,SE,,,,,Sweden,SWE
+LECO,1989,2,3,1428,I,S,Zonneveld,I S Zonneveld,SE,SE,,,,,Netherlands,NLD
+LECO,1989,2,3,1045,E,H,Zube,E H Zube,SE,SE,,,,,USA,USA
+LECO,1990,5,1,3060,R,TT,Forman,R TT Forman,SE,SE,,,,,USA,USA
+LECO,1990,5,1,2387,M,,Godron,M Godron,SE,SE,,,,,France,FRA
+LECO,1990,5,1,1072,Frank,,Golley,Frank Golley,EIC,EIC,,,,,USA,USA
+LECO,1990,5,1,1192,G,,Haase,G Haase,SE,SE,,,,,Germany,DEU
+LECO,1990,5,1,3744,W,,Haber,W Haber,SE,SE,,,,,Germany,DEU
+LECO,1990,5,1,3392,S,,Levin,S Levin,SE,SE,,,,,USA,USA
+LECO,1990,5,1,1230,G,,Merriam,G Merriam,SE,SE,,,,,Canada,CAN
+LECO,1990,5,1,3846,Z,,Naveh,Z Naveh,SE,SE,,,,,Israel,ISR
+LECO,1990,5,1,2495,M,,Numata,M Numata,SE,SE,,,,,Japan,JPN
+LECO,1990,5,1,177,A,F,Ramos,A F Ramos,SE,SE,,,,,Spain,ESP
+LECO,1990,5,1,2907,P,Green,Risser,P Green Risser,SE,SE,,,,,USA,USA
+LECO,1990,5,1,3633,T,,Rosswall,T Rosswall,SE,SE,,,,,Sweden,SWE
+LECO,1990,5,1,2546,M,,Ruzicka,M Ruzicka,SE,SE,,,,,Russia,RUS
+LECO,1990,5,1,2083,K,F,Schreiber,K F Schreiber,SE,SE,,,,,Germany,DEU
+LECO,1990,5,1,1361,H,H,Shugart,H H Shugart,SE,SE,,,,,USA,USA
+LECO,1990,5,1,571,C,,Steinitz,C Steinitz,SE,SE,,,,,USA,USA
+LECO,1990,5,1,1034,E,,VanDer,E VanDer,SE,SE,,,,,Sweden,SWE
+LECO,1990,5,1,1428,I,S,Zonneveld,I S Zonneveld,SE,SE,,,,,Netherlands,NLD
+LECO,1990,5,1,1045,E,H,Zube,E H Zube,SE,SE,,,,,USA,USA
+LECO,1991,6,1,3060,R,TT,Forman,R TT Forman,SE,SE,,,,,USA,USA
+LECO,1991,6,1,2387,M,,Godron,M Godron,SE,SE,,,,,France,FRA
+LECO,1991,6,1,1072,Frank,,Golley,Frank Golley,EIC,EIC,,,,,USA,USA
+LECO,1991,6,1,1192,G,,Haase,G Haase,SE,SE,,,,,Germany,DEU
+LECO,1991,6,1,3744,W,,Haber,W Haber,SE,SE,,,,,Germany,DEU
+LECO,1991,6,1,3392,S,,Levin,S Levin,SE,SE,,,,,USA,USA
+LECO,1991,6,1,1230,G,,Merriam,G Merriam,SE,SE,,,,,Canada,CAN
+LECO,1991,6,1,3846,Z,,Naveh,Z Naveh,SE,SE,,,,,Israel,ISR
+LECO,1991,6,1,2495,M,,Numata,M Numata,SE,SE,,,,,Japan,JPN
+LECO,1991,6,1,177,A,F,Ramos,A F Ramos,SE,SE,,,,,Spain,ESP
+LECO,1991,6,1,2907,P,Green,Risser,P Green Risser,SE,SE,,,,,USA,USA
+LECO,1991,6,1,3633,T,,Rosswall,T Rosswall,SE,SE,,,,,Sweden,SWE
+LECO,1991,6,1,2546,M,,Ruzicka,M Ruzicka,SE,SE,,,,,Russia,RUS
+LECO,1991,6,1,2083,K,F,Schreiber,K F Schreiber,SE,SE,,,,,Germany,DEU
+LECO,1991,6,1,1361,H,H,Shugart,H H Shugart,SE,SE,,,,,USA,USA
+LECO,1991,6,1,571,C,,Steinitz,C Steinitz,SE,SE,,,,,USA,USA
+LECO,1991,6,1,1034,E,,VanDer,E VanDer,SE,SE,,,,,Sweden,SWE
+LECO,1991,6,1,1428,I,S,Zonneveld,I S Zonneveld,SE,SE,,,,,Netherlands,NLD
+LECO,1991,6,1,1045,E,H,Zube,E H Zube,SE,SE,,,,,USA,USA
+LECO,1992,7,1,3060,R,TT,Forman,R TT Forman,SE,SE,,,,,USA,USA
+LECO,1992,7,1,2387,M,,Godron,M Godron,SE,SE,,,,,France,FRA
+LECO,1992,7,1,1072,Frank,,Golley,Frank Golley,EIC,EIC,,,,,USA,USA
+LECO,1992,7,1,1192,G,,Haase,G Haase,SE,SE,,,,,Germany,DEU
+LECO,1992,7,1,3744,W,,Haber,W Haber,SE,SE,,,,,Germany,DEU
+LECO,1992,7,1,3392,S,,Levin,S Levin,SE,SE,,,,,USA,USA
+LECO,1992,7,1,1230,G,,Merriam,G Merriam,SE,SE,,,,,Canada,CAN
+LECO,1992,7,1,3846,Z,,Naveh,Z Naveh,SE,SE,,,,,Israel,ISR
+LECO,1992,7,1,2495,M,,Numata,M Numata,SE,SE,,,,,Japan,JPN
+LECO,1992,7,1,177,A,F,Ramos,A F Ramos,SE,SE,,,,,Spain,ESP
+LECO,1992,7,1,2907,P,Green,Risser,P Green Risser,SE,SE,,,,,USA,USA
+LECO,1992,7,1,3633,T,,Rosswall,T Rosswall,SE,SE,,,,,Sweden,SWE
+LECO,1992,7,1,2546,M,,Ruzicka,M Ruzicka,SE,SE,,,,,Russia,RUS
+LECO,1992,7,1,2083,K,F,Schreiber,K F Schreiber,SE,SE,,,,,Germany,DEU
+LECO,1992,7,1,1361,H,H,Shugart,H H Shugart,SE,SE,,,,,USA,USA
+LECO,1992,7,1,571,C,,Steinitz,C Steinitz,SE,SE,,,,,USA,USA
+LECO,1992,7,1,1034,E,,VanDer,E VanDer,SE,SE,,,,,Sweden,SWE
+LECO,1992,7,1,1428,I,S,Zonneveld,I S Zonneveld,SE,SE,,,,,Netherlands,NLD
+LECO,1992,7,1,1045,E,H,Zube,E H Zube,SE,SE,,,,,USA,USA
+LECO,1993,8,1,1480,J,,Brandt,J Brandt,SE,SE,,,,,Denmark,DNK
+LECO,1993,8,1,1295,H,,Decamps,H Decamps,SE,SE,,,,,France,FRA
+LECO,1993,8,1,3060,R,TT,Forman,R TT Forman,SE,SE,,,,,USA,USA
+LECO,1993,8,1,968,E,,Fuentes,E Fuentes,SE,SE,,,,,Chile,CHL
+LECO,1993,8,1,1072,Frank,,Golley,Frank Golley,EIC,EIC,,,,,USA,USA
+LECO,1993,8,1,1192,G,,Haase,G Haase,SE,SE,,,,,Germany,DEU
+LECO,1993,8,1,3744,W,,Haber,W Haber,SE,SE,,,,,Germany,DEU
+LECO,1993,8,1,1090,F,,Kienast,F Kienast,SE,SE,,,,,Switzerland,CHE
+LECO,1993,8,1,1230,G,,Merriam,G Merriam,SE,SE,,,,,Canada,CAN
+LECO,1993,8,1,2674,N,,Nakagoshi,N Nakagoshi,SE,SE,,,,,Japan,JPN
+LECO,1993,8,1,1781,J,,Nassauer,J Nassauer,SE,SE,,,,,USA,USA
+LECO,1993,8,1,3846,Z,,Naveh,Z Naveh,SE,SE,,,,,Israel,ISR
+LECO,1993,8,1,2885,P,,Opdam,P Opdam,SE,SE,,,,,Netherlands,NLD
+LECO,1993,8,1,177,A,F,Ramos,A F Ramos,SE,SE,,,,,Spain,ESP
+LECO,1993,8,1,2546,M,,Ruzicka,M Ruzicka,SE,SE,,,,,Slovakia,SVK
+LECO,1993,8,1,1361,H,H,Shugart,H H Shugart,SE,SE,,,,,USA,USA
+LECO,1993,8,1,2580,M,,Turner,M Turner,SE,SE,,,,,USA,USA
+LECO,1993,8,1,1034,E,,VanDer,E VanDer,SE,SE,,,,,Sweden,SWE
+LECO,1993,8,1,3912,J,A,Wiens,J A Wiens,SE,SE,,,,,USA,USA
+LECO,1994,9,1,1480,J,,Brandt,J Brandt,SE,SE,,,,,Denmark,DNK
+LECO,1994,9,1,1295,H,,Decamps,H Decamps,SE,SE,,,,,France,FRA
+LECO,1994,9,1,3060,R,TT,Forman,R TT Forman,SE,SE,,,,,USA,USA
+LECO,1994,9,1,968,E,,Fuentes,E Fuentes,SE,SE,,,,,Chile,CHL
+LECO,1994,9,1,1072,Frank,,Golley,Frank Golley,EIC,EIC,,,,,USA,USA
+LECO,1994,9,1,1192,G,,Haase,G Haase,SE,SE,,,,,Germany,DEU
+LECO,1994,9,1,3744,W,,Haber,W Haber,SE,SE,,,,,Germany,DEU
+LECO,1994,9,1,1090,F,,Kienast,F Kienast,SE,SE,,,,,Switzerland,CHE
+LECO,1994,9,1,1230,G,,Merriam,G Merriam,SE,SE,,,,,Canada,CAN
+LECO,1994,9,1,2674,N,,Nakagoshi,N Nakagoshi,SE,SE,,,,,Japan,JPN
+LECO,1994,9,1,1781,J,,Nassauer,J Nassauer,SE,SE,,,,,USA,USA
+LECO,1994,9,1,3846,Z,,Naveh,Z Naveh,SE,SE,,,,,Israel,ISR
+LECO,1994,9,1,2885,P,,Opdam,P Opdam,SE,SE,,,,,Netherlands,NLD
+LECO,1994,9,1,177,A,F,Ramos,A F Ramos,SE,SE,,,,,Spain,ESP
+LECO,1994,9,1,2546,M,,Ruzicka,M Ruzicka,SE,SE,,,,,Slovakia,SVK
+LECO,1994,9,1,1361,H,H,Shugart,H H Shugart,SE,SE,,,,,USA,USA
+LECO,1994,9,1,2580,M,,Turner,M Turner,SE,SE,,,,,USA,USA
+LECO,1994,9,1,1034,E,,VanDer,E VanDer,SE,SE,,,,,Sweden,SWE
+LECO,1994,9,1,3912,J,A,Wiens,J A Wiens,SE,SE,,,,,USA,USA
+LECO,1995,10,1,1480,J,,Brandt,J Brandt,SE,SE,,,,,Denmark,DNK
+LECO,1995,10,1,1295,H,,Decamps,H Decamps,SE,SE,,,,,France,FRA
+LECO,1995,10,1,3060,R,TT,Forman,R TT Forman,SE,SE,,,,,USA,USA
+LECO,1995,10,1,968,E,,Fuentes,E Fuentes,SE,SE,,,,,Chile,CHL
+LECO,1995,10,1,1072,Frank,,Golley,Frank Golley,EIC,EIC,,,,,USA,USA
+LECO,1995,10,1,1192,G,,Haase,G Haase,SE,SE,,,,,Germany,DEU
+LECO,1995,10,1,3744,W,,Haber,W Haber,SE,SE,,,,,Germany,DEU
+LECO,1995,10,1,1090,F,,Kienast,F Kienast,SE,SE,,,,,Switzerland,CHE
+LECO,1995,10,1,1230,G,,Merriam,G Merriam,SE,SE,,,,,Canada,CAN
+LECO,1995,10,1,2674,N,,Nakagoshi,N Nakagoshi,SE,SE,,,,,Japan,JPN
+LECO,1995,10,1,1781,J,,Nassauer,J Nassauer,SE,SE,,,,,USA,USA
+LECO,1995,10,1,3846,Z,,Naveh,Z Naveh,SE,SE,,,,,Israel,ISR
+LECO,1995,10,1,2885,P,,Opdam,P Opdam,SE,SE,,,,,Netherlands,NLD
+LECO,1995,10,1,177,A,F,Ramos,A F Ramos,SE,SE,,,,,Spain,ESP
+LECO,1995,10,1,2546,M,,Ruzicka,M Ruzicka,SE,SE,,,,,Slovakia,SVK
+LECO,1995,10,1,1361,H,H,Shugart,H H Shugart,SE,SE,,,,,USA,USA
+LECO,1995,10,1,2580,M,,Turner,M Turner,SE,SE,,,,,USA,USA
+LECO,1995,10,1,1034,E,,VanDer,E VanDer,SE,SE,,,,,Sweden,SWE
+LECO,1995,10,1,3912,J,A,Wiens,J A Wiens,SE,SE,,,,,USA,USA
+LECO,1996,11,1,1480,J,,Brandt,J Brandt,SE,SE,,,,,Denmark,DNK
+LECO,1996,11,1,1295,H,,Decamps,H Decamps,SE,SE,,,,,France,FRA
+LECO,1996,11,1,3060,R,TT,Forman,R TT Forman,SE,SE,,,,,USA,USA
+LECO,1996,11,1,968,E,,Fuentes,E Fuentes,SE,SE,,,,,Chile,CHL
+LECO,1996,11,1,1072,Frank,,Golley,Frank Golley,EIC,EIC,,,,,USA,USA
+LECO,1996,11,1,1192,G,,Haase,G Haase,SE,SE,,,,,Germany,DEU
+LECO,1996,11,1,3744,W,,Haber,W Haber,SE,SE,,,,,Germany,DEU
+LECO,1996,11,1,1090,F,,Kienast,F Kienast,SE,SE,,,,,Switzerland,CHE
+LECO,1996,11,1,1230,G,,Merriam,G Merriam,SE,SE,,,,,Canada,CAN
+LECO,1996,11,1,2674,N,,Nakagoshi,N Nakagoshi,SE,SE,,,,,Japan,JPN
+LECO,1996,11,1,1781,J,,Nassauer,J Nassauer,SE,SE,,,,,USA,USA
+LECO,1996,11,1,3846,Z,,Naveh,Z Naveh,SE,SE,,,,,Israel,ISR
+LECO,1996,11,1,2885,P,,Opdam,P Opdam,SE,SE,,,,,Netherlands,NLD
+LECO,1996,11,1,177,A,F,Ramos,A F Ramos,SE,SE,,,,,Spain,ESP
+LECO,1996,11,1,2546,M,,Ruzicka,M Ruzicka,SE,SE,,,,,Slovakia,SVK
+LECO,1996,11,1,1361,H,H,Shugart,H H Shugart,SE,SE,,,,,USA,USA
+LECO,1996,11,1,2580,M,,Turner,M Turner,SE,SE,,,,,USA,USA
+LECO,1996,11,1,1034,E,,VanDer,E VanDer,SE,SE,,,,,Sweden,SWE
+LECO,1996,11,1,3912,J,A,Wiens,J A Wiens,SE,SE,,,,,USA,USA
+LECO,1997,12,1,1480,J,,Brandt,J Brandt,SE,SE,,,,,Denmark,DNK
+LECO,1997,12,1,1295,H,,Decamps,H Decamps,SE,SE,,,,,France,FRA
+LECO,1997,12,1,3060,R,TT,Forman,R TT Forman,SE,SE,,,,,USA,USA
+LECO,1997,12,1,968,E,,Fuentes,E Fuentes,SE,SE,,,,,Chile,CHL
+LECO,1997,12,1,3067,R,H,Gardner,R H Gardner,EIC,EIC,,,,,USA,USA
+LECO,1997,12,1,1072,Frank,,Golley,Frank Golley,SE,SE,,,,,USA,USA
+LECO,1997,12,1,3744,W,,Haber,W Haber,SE,SE,,,,,Germany,DEU
+LECO,1997,12,1,492,C,W,Johnson,C W Johnson,SE,SE,,,,,USA,USA
+LECO,1997,12,1,1090,F,,Kienast,F Kienast,SE,SE,,,,,Switzerland,CHE
+LECO,1997,12,1,1230,G,,Merriam,G Merriam,SE,SE,,,,,Canada,CAN
+LECO,1997,12,1,2674,N,,Nakagoshi,N Nakagoshi,SE,SE,,,,,Japan,JPN
+LECO,1997,12,1,1781,J,,Nassauer,J Nassauer,SE,SE,,,,,USA,USA
+LECO,1997,12,1,3846,Z,,Naveh,Z Naveh,SE,SE,,,,,Israel,ISR
+LECO,1997,12,1,2885,P,,Opdam,P Opdam,SE,SE,,,,,Netherlands,NLD
+LECO,1997,12,1,177,A,F,Ramos,A F Ramos,SE,SE,,,,,Spain,ESP
+LECO,1997,12,1,2546,M,,Ruzicka,M Ruzicka,SE,SE,,,,,Slovakia,SVK
+LECO,1997,12,1,2580,M,,Turner,M Turner,SE,SE,,,,,USA,USA
+LECO,1997,12,1,1034,E,,VanDer,E VanDer,SE,SE,,,,,Sweden,SWE
+LECO,1997,12,1,3912,J,A,Wiens,J A Wiens,SE,SE,,,,,USA,USA
+LECO,1998,13,1,1480,J,,Brandt,J Brandt,SE,SE,,,,,Denmark,DNK
+LECO,1998,13,1,1295,H,,Decamps,H Decamps,SE,SE,,,,,France,FRA
+LECO,1998,13,1,3060,R,TT,Forman,R TT Forman,SE,SE,,,,,USA,USA
+LECO,1998,13,1,968,E,,Fuentes,E Fuentes,SE,SE,,,,,Chile,CHL
+LECO,1998,13,1,3067,R,H,Gardner,R H Gardner,EIC,EIC,,,,,USA,USA
+LECO,1998,13,1,1072,Frank,,Golley,Frank Golley,SE,SE,,,,,USA,USA
+LECO,1998,13,1,3744,W,,Haber,W Haber,SE,SE,,,,,Germany,DEU
+LECO,1998,13,1,492,C,W,Johnson,C W Johnson,SE,SE,,,,,USA,USA
+LECO,1998,13,1,1090,F,,Kienast,F Kienast,SE,SE,,,,,Switzerland,CHE
+LECO,1998,13,1,1230,G,,Merriam,G Merriam,SE,SE,,,,,Canada,CAN
+LECO,1998,13,1,2674,N,,Nakagoshi,N Nakagoshi,SE,SE,,,,,Japan,JPN
+LECO,1998,13,1,1781,J,,Nassauer,J Nassauer,SE,SE,,,,,USA,USA
+LECO,1998,13,1,3846,Z,,Naveh,Z Naveh,SE,SE,,,,,Israel,ISR
+LECO,1998,13,1,2885,P,,Opdam,P Opdam,SE,SE,,,,,Netherlands,NLD
+LECO,1998,13,1,177,A,F,Ramos,A F Ramos,SE,SE,Ciudad Universitaria,,,,Spain,ESP
+LECO,1998,13,1,2546,M,,Ruzicka,M Ruzicka,SE,SE,,,,,Slovakia,SVK
+LECO,1998,13,1,2580,M,,Turner,M Turner,SE,SE,,,,,USA,USA
+LECO,1998,13,1,1034,E,,VanDer,E VanDer,SE,SE,,,,,Sweden,SWE
+LECO,1998,13,1,3912,J,A,Wiens,J A Wiens,SE,SE,,,,,USA,USA
+LECO,1999,14,1,1429,Juan,,Abad,Juan Abad,SE,SE,,,,,Spain,ESP
+LECO,1999,14,1,2274,Marc,,Antrop,Marc Antrop,AE,AE,,,,,Belgium,BEL
+LECO,1999,14,1,1482,J,,Breuste,J Breuste,SE,SE,,,,,Germany,DEU
+LECO,1999,14,1,637,Daniel,,Brown,Daniel Brown,SE,SE,,,,,USA,USA
+LECO,1999,14,1,3002,Robert,,Bunce,Robert Bunce,SE,SE,,,,,UK,GBR
+LECO,1999,14,1,640,David,,Butler,David Butler,SE,SE,,,,,USA,USA
+LECO,1999,14,1,3678,Virginia,,Dale,Virginia Dale,SE,SE,,,,,USA,USA
+LECO,1999,14,1,2144,L,,Fahrig,L Fahrig,SE,SE,,,,,Canada,CAN
+LECO,1999,14,1,2373,M,,Fortin,M Fortin,SE,SE,,,,,Canada,CAN
+LECO,1999,14,1,3067,R,H,Gardner,R H Gardner,EIC,EIC,,,,,USA,USA
+LECO,1999,14,1,2162,L,,Hannson,L Hannson,SE,SE,,,,,Sweden,SWE
+LECO,1999,14,1,3091,R,,Hobbs,R Hobbs,SE,SE,,,,,Australia,AUS
+LECO,1999,14,1,2178,Louis,,Iverson,Louis Iverson,SE,SE,,,,,USA,USA
+LECO,1999,14,1,492,C,W,Johnson,C W Johnson,SE,SE,,,,,USA,USA
+LECO,1999,14,1,1090,F,,Kienast,F Kienast,SE,SE,,,,,Switzerland,CHE
+LECO,1999,14,1,1091,Frans,,Klijn,Frans Klijn,SE,SE,,,,,Netherlands,NLD
+LECO,1999,14,1,3385,Sandra,,Lavorel,Sandra Lavorel,SE,SE,,,,,France,FRA
+LECO,1999,14,1,765,D,,Lindenmayer,D Lindenmayer,SE,SE,,,,,Australia,AUS
+LECO,1999,14,1,1223,George,,Malanson,George Malanson,SE,SE,,,,,USA,USA
+LECO,1999,14,1,2206,Ladislav,,Miklos,Ladislav Miklos,SE,SE,,,,,Slovakia,SVK
+LECO,1999,14,1,326,Bruce,,Milne,Bruce Milne,SE,SE,,,,,USA,USA
+LECO,1999,14,1,3169,Robert,,Naiman,Robert Naiman,SE,SE,,,,,USA,USA
+LECO,1999,14,1,3791,W,,Romme,W Romme,SE,SE,,,,,USA,USA
+LECO,1999,14,1,2236,Lech,,Ryszkowski,Lech Ryszkowski,SE,SE,,,,,Poland,POL
+LECO,1999,14,1,2113,Kimberly,A,With,Kimberly A With,SE,SE,,,,,USA,USA
+LECO,2000,15,1,1429,Juan,,Abad,Juan Abad,SE,SE,,,,,Spain,ESP
+LECO,2000,15,1,2274,Marc,,Antrop,Marc Antrop,AE,AE,,,,,Belgium,BEL
+LECO,2000,15,1,1482,J,,Breuste,J Breuste,SE,SE,,,,,Germany,DEU
+LECO,2000,15,1,637,Daniel,,Brown,Daniel Brown,SE,SE,,,,,USA,USA
+LECO,2000,15,1,3002,Robert,,Bunce,Robert Bunce,SE,SE,,,,,UK,GBR
+LECO,2000,15,1,640,David,,Butler,David Butler,SE,SE,,,,,USA,USA
+LECO,2000,15,1,3678,Virginia,,Dale,Virginia Dale,SE,SE,,,,,USA,USA
+LECO,2000,15,1,2144,L,,Fahrig,L Fahrig,SE,SE,,,,,Canada,CAN
+LECO,2000,15,1,2373,M,,Fortin,M Fortin,SE,SE,,,,,Canada,CAN
+LECO,2000,15,1,2162,L,,Hannson,L Hannson,SE,SE,,,,,Sweden,SWE
+LECO,2000,15,1,3091,R,,Hobbs,R Hobbs,SE,SE,,,,,Australia,AUS
+LECO,2000,15,1,2178,Louis,,Iverson,Louis Iverson,SE,SE,,,,,USA,USA
+LECO,2000,15,1,492,C,W,Johnson,C W Johnson,SE,SE,,,,,USA,USA
+LECO,2000,15,1,1090,F,,Kienast,F Kienast,SE,SE,,,,,Switzerland,CHE
+LECO,2000,15,1,1091,Frans,,Klijn,Frans Klijn,SE,SE,,,,,Netherlands,NLD
+LECO,2000,15,1,3385,Sandra,,Lavorel,Sandra Lavorel,SE,SE,,,,,France,FRA
+LECO,2000,15,1,765,D,,Lindenmayer,D Lindenmayer,SE,SE,,,,,Australia,AUS
+LECO,2000,15,1,1223,George,,Malanson,George Malanson,SE,SE,,,,,USA,USA
+LECO,2000,15,1,2206,Ladislav,,Miklos,Ladislav Miklos,SE,SE,,,,,Slovakia,SVK
+LECO,2000,15,1,326,Bruce,,Milne,Bruce Milne,SE,SE,,,,,USA,USA
+LECO,2000,15,1,790,David,,Mladenoff,David Mladenoff,EIC,EIC,,,,,USA,USA
+LECO,2000,15,1,3169,Robert,,Naiman,Robert Naiman,SE,SE,,,,,USA,USA
+LECO,2000,15,1,3791,W,,Romme,W Romme,SE,SE,,,,,USA,USA
+LECO,2000,15,1,2236,Lech,,Ryszkowski,Lech Ryszkowski,SE,SE,,,,,Poland,POL
+LECO,2000,15,1,2113,Kimberly,A,With,Kimberly A With,SE,SE,,,,,USA,USA
+LECO,2001,16,1,1429,Juan,,Abad,Juan Abad,SE,SE,,,,,Spain,ESP
+LECO,2001,16,1,2274,Marc,,Antrop,Marc Antrop,AE,AE,,,,,Belgium,BEL
+LECO,2001,16,1,1480,J,,Brandt,J Brandt,SE,SE,,,,,Denmark,DNK
+LECO,2001,16,1,1482,J,,Breuste,J Breuste,SE,SE,,,,,Germany,DEU
+LECO,2001,16,1,637,Daniel,,Brown,Daniel Brown,SE,SE,,,,,USA,USA
+LECO,2001,16,1,3002,Robert,,Bunce,Robert Bunce,SE,SE,,,,,UK,GBR
+LECO,2001,16,1,640,David,,Butler,David Butler,SE,SE,,,,,USA,USA
+LECO,2001,16,1,3678,Virginia,,Dale,Virginia Dale,SE,SE,,,,,USA,USA
+LECO,2001,16,1,1295,H,,Decamps,H Decamps,SE,SE,,,,,France,FRA
+LECO,2001,16,1,2144,L,,Fahrig,L Fahrig,SE,SE,,,,,Canada,CAN
+LECO,2001,16,1,3060,R,TT,Forman,R TT Forman,SE,SE,,,,,USA,USA
+LECO,2001,16,1,2373,M,,Fortin,M Fortin,SE,SE,,,,,Canada,CAN
+LECO,2001,16,1,3889,Janet,,Franklin,Janet Franklin,SE,SE,,,,,USA,USA
+LECO,2001,16,1,3067,R,H,Gardner,R H Gardner,SE,SE,,,,,USA,USA
+LECO,2001,16,1,1072,Frank,,Golley,Frank Golley,SE,SE,,,,,USA,USA
+LECO,2001,16,1,2162,L,,Hannson,L Hannson,SE,SE,,,,,Sweden,SWE
+LECO,2001,16,1,3091,R,,Hobbs,R Hobbs,SE,SE,,,,,Australia,AUS
+LECO,2001,16,1,2178,Louis,,Iverson,Louis Iverson,SE,SE,,,,,USA,USA
+LECO,2001,16,1,492,C,W,Johnson,C W Johnson,SE,SE,,,,,USA,USA
+LECO,2001,16,1,1090,F,,Kienast,F Kienast,SE,SE,,,,,Switzerland,CHE
+LECO,2001,16,1,1091,Frans,,Klijn,Frans Klijn,SE,SE,,,,,Netherlands,NLD
+LECO,2001,16,1,3385,Sandra,,Lavorel,Sandra Lavorel,SE,SE,,,,,France,FRA
+LECO,2001,16,1,1223,George,,Malanson,George Malanson,SE,SE,,,,,USA,USA
+LECO,2001,16,1,2206,Ladislav,,Miklos,Ladislav Miklos,SE,SE,,,,,Slovakia,SVK
+LECO,2001,16,1,790,David,,Mladenoff,David Mladenoff,EIC,EIC,,,,,USA,USA
+LECO,2001,16,1,3169,Robert,,Naiman,Robert Naiman,SE,SE,,,,,USA,USA
+LECO,2001,16,1,2674,N,,Nakagoshi,N Nakagoshi,SE,SE,,,,,Japan,JPN
+LECO,2001,16,1,3846,Z,,Naveh,Z Naveh,SE,SE,,,,,Israel,ISR
+LECO,2001,16,1,2885,P,,Opdam,P Opdam,SE,SE,,,,,Netherlands,NLD
+LECO,2001,16,1,3791,W,,Romme,W Romme,SE,SE,,,,,USA,USA
+LECO,2001,16,1,2236,Lech,,Ryszkowski,Lech Ryszkowski,SE,SE,,,,,Poland,POL
+LECO,2001,16,1,2580,M,,Turner,M Turner,SE,SE,,,,,USA,USA
+LECO,2001,16,1,3912,J,A,Wiens,J A Wiens,SE,SE,,,,,USA,USA
+LECO,2001,16,1,2113,Kimberly,A,With,Kimberly A With,SE,SE,,,,,USA,USA
+LECO,2001,16,1,1966,Jianguo,,Wu,Jianguo Wu,SE,SE,,,,,USA,USA
+LECO,2002,17,1,1429,Juan,,Abad,Juan Abad,SE,SE,,,,,Spain,ESP
+LECO,2002,17,1,2274,Marc,,Antrop,Marc Antrop,AE,AE,,,,,Belgium,BEL
+LECO,2002,17,1,1480,J,,Brandt,J Brandt,SE,SE,,,,,Denmark,DNK
+LECO,2002,17,1,1482,J,,Breuste,J Breuste,SE,SE,,,,,Germany,DEU
+LECO,2002,17,1,637,Daniel,,Brown,Daniel Brown,SE,SE,,,,,USA,USA
+LECO,2002,17,1,3002,Robert,,Bunce,Robert Bunce,SE,SE,,,,,UK,GBR
+LECO,2002,17,1,640,David,,Butler,David Butler,SE,SE,,,,,USA,USA
+LECO,2002,17,1,3678,Virginia,,Dale,Virginia Dale,SE,SE,,,,,USA,USA
+LECO,2002,17,1,1295,H,,Decamps,H Decamps,SE,SE,,,,,France,FRA
+LECO,2002,17,1,2144,L,,Fahrig,L Fahrig,SE,SE,,,,,Canada,CAN
+LECO,2002,17,1,3889,Janet,,Franklin,Janet Franklin,SE,SE,,,,,USA,USA
+LECO,2002,17,1,3091,R,,Hobbs,R Hobbs,SE,SE,,,,,Australia,AUS
+LECO,2002,17,1,1090,F,,Kienast,F Kienast,SE,SE,,,,,Switzerland,CHE
+LECO,2002,17,1,1091,Frans,,Klijn,Frans Klijn,SE,SE,,,,,Netherlands,NLD
+LECO,2002,17,1,3385,Sandra,,Lavorel,Sandra Lavorel,SE,SE,,,,,France,FRA
+LECO,2002,17,1,1223,George,,Malanson,George Malanson,SE,SE,,,,,USA,USA
+LECO,2002,17,1,2206,Ladislav,,Miklos,Ladislav Miklos,SE,SE,,,,,Slovakia,SVK
+LECO,2002,17,1,790,David,,Mladenoff,David Mladenoff,EIC,EIC,,,,,USA,USA
+LECO,2002,17,1,3169,Robert,,Naiman,Robert Naiman,SE,SE,,,,,USA,USA
+LECO,2002,17,1,2674,N,,Nakagoshi,N Nakagoshi,SE,SE,,,,,Japan,JPN
+LECO,2002,17,1,1781,J,,Nassauer,J Nassauer,SE,SE,,,,,USA,USA
+LECO,2002,17,1,3846,Z,,Naveh,Z Naveh,SE,SE,,,,,Israel,ISR
+LECO,2002,17,1,2885,P,,Opdam,P Opdam,SE,SE,,,,,Netherlands,NLD
+LECO,2002,17,1,3791,W,,Romme,W Romme,SE,SE,,,,,USA,USA
+LECO,2002,17,1,2236,Lech,,Ryszkowski,Lech Ryszkowski,SE,SE,,,,,Poland,POL
+LECO,2002,17,1,2580,M,,Turner,M Turner,SE,SE,,,,,USA,USA
+LECO,2002,17,1,3912,J,A,Wiens,J A Wiens,SE,SE,,,,,USA,USA
+LECO,2002,17,1,2113,Kimberly,A,With,Kimberly A With,SE,SE,,,,,USA,USA
+LECO,2002,17,1,1966,Jianguo,,Wu,Jianguo Wu,SE,SE,,,,,USA,USA
+LECO,2003,18,1,1429,Juan,,Abad,Juan Abad,SE,SE,,,,,Spain,ESP
+LECO,2003,18,1,2274,Marc,,Antrop,Marc Antrop,AE,AE,,,,,Belgium,BEL
+LECO,2003,18,1,1480,J,,Brandt,J Brandt,SE,SE,,,,,Denmark,DNK
+LECO,2003,18,1,1482,J,,Breuste,J Breuste,SE,SE,,,,,Germany,DEU
+LECO,2003,18,1,637,Daniel,,Brown,Daniel Brown,SE,SE,,,,,USA,USA
+LECO,2003,18,1,640,David,,Butler,David Butler,SE,SE,,,,,USA,USA
+LECO,2003,18,1,1295,H,,Decamps,H Decamps,SE,SE,,,,,France,FRA
+LECO,2003,18,1,3889,Janet,,Franklin,Janet Franklin,SE,SE,,,,,USA,USA
+LECO,2003,18,1,2961,Qiong,,Gao,Qiong Gao,SE,SE,,,,,China,CHN
+LECO,2003,18,1,2181,Lucinda,B,Johnson,Lucinda B Johnson,SE,SE,,,,,USA,USA
+LECO,2003,18,1,1090,F,,Kienast,F Kienast,SE,SE,,,,,Switzerland,CHE
+LECO,2003,18,1,1091,Frans,,Klijn,Frans Klijn,SE,SE,,,,,Netherlands,NLD
+LECO,2003,18,1,1223,George,,Malanson,George Malanson,SE,SE,,,,,USA,USA
+LECO,2003,18,1,1763,Jean-Paul,,Metzger,Jean-Paul Metzger,SE,SE,,,,,Brazil,BRA
+LECO,2003,18,1,790,David,,Mladenoff,David Mladenoff,EIC,EIC,,,,,USA,USA
+LECO,2003,18,1,1781,J,,Nassauer,J Nassauer,SE,SE,,,,,USA,USA
+LECO,2003,18,1,1787,Jari,,Niemela,Jari Niemela,SE,SE,,,,,Finland,FIN
+LECO,2003,18,1,2885,P,,Opdam,P Opdam,SE,SE,,,,,Netherlands,NLD
+LECO,2003,18,1,3791,W,,Romme,W Romme,SE,SE,,,,,USA,USA
+LECO,2003,18,1,2236,Lech,,Ryszkowski,Lech Ryszkowski,SE,SE,,,,,Poland,POL
+LECO,2003,18,1,2580,M,,Turner,M Turner,SE,SE,,,,,USA,USA
+LECO,2003,18,1,896,Dean,,Urban,Dean Urban,SE,SE,,,,,USA,USA
+LECO,2003,18,1,1952,James,,Wickham,James Wickham,SE,SE,,,,,USA,USA
+LECO,2003,18,1,3912,J,A,Wiens,J A Wiens,SE,SE,,,,,USA,USA
+LECO,2003,18,1,2113,Kimberly,A,With,Kimberly A With,SE,SE,,,,,USA,USA
+LECO,2003,18,1,1966,Jianguo,,Wu,Jianguo Wu,SE,SE,,,,,USA,USA
+LECO,2004,19,1,1972,Kimberly,,A,Kimberly A,SE,SE,,,,,USA,USA
+LECO,2004,19,1,1429,Juan,,Abad,Juan Abad,SE,SE,,,,,Spain,ESP
+LECO,2004,19,1,2274,Marc,,Antrop,Marc Antrop,AE,AE,,,,,Belgium,BEL
+LECO,2004,19,1,1480,Jesper,,Brandt,Jesper Brandt,SE,SE,,,,,Denmark,DNK
+LECO,2004,19,1,637,Daniel,,Brown,Daniel Brown,SE,SE,,,,,USA,USA
+LECO,2004,19,1,448,Curtis,,Flather,Curtis Flather,SE,SE,,,,,USA,USA
+LECO,2004,19,1,3889,Janet,,Franklin,Janet Franklin,SE,SE,,,,,USA,USA
+LECO,2004,19,1,2961,Qiong,,Gao,Qiong Gao,SE,SE,,,,,China,CHN
+LECO,2004,19,1,2181,Lucinda,,Johnson,Lucinda Johnson,SE,SE,,,,,USA,USA
+LECO,2004,19,1,1089,Felix,,Keinsat,Felix Keinsat,SE,SE,,,,,Switzerland,CHE
+LECO,2004,19,1,1091,Frans,,Klijn,Frans Klijn,SE,SE,,,,,Netherlands,NLD
+LECO,2004,19,1,1223,George,,Malanson,George Malanson,SE,SE,,,,,USA,USA
+LECO,2004,19,1,1763,Jean-Paul,,Metzger,Jean-Paul Metzger,SE,SE,,,,,Brazil,BRA
+LECO,2004,19,1,790,David,,Mladenoff,David Mladenoff,EIC,EIC,,,,,USA,USA
+LECO,2004,19,1,1781,Joan,,Nassauer,Joan Nassauer,SE,SE,,,,,USA,USA
+LECO,2004,19,1,1787,Jari,,Niemela,Jari Niemela,SE,SE,,,,,Finland,FIN
+LECO,2004,19,1,2885,Paul,,Opdam,Paul Opdam,SE,SE,,,,,Netherlands,NLD
+LECO,2004,19,1,3791,William,,Romme,William Romme,SE,SE,,,,,USA,USA
+LECO,2004,19,1,2236,Lech,,Ryszkowski,Lech Ryszkowski,SE,SE,,,,,Poland,POL
+LECO,2004,19,1,2580,Monica,,Turner,Monica Turner,SE,SE,,,,,USA,USA
+LECO,2004,19,1,896,Dean,,Urban,Dean Urban,SE,SE,,,,,USA,USA
+LECO,2004,19,1,1952,James,,Wickham,James Wickham,SE,SE,,,,,USA,USA
+LECO,2004,19,1,1954,John,,Wiens,John Wiens,SE,SE,,,,,USA,USA
+LECO,2004,19,1,1966,Jianguo,,Wu,Jianguo Wu,SE,SE,,,,,USA,USA
+LECO,2005,20,1,1429,Juan,,Abad,Juan Abad,SE,SE,,,,,Spain,ESP
+LECO,2005,20,1,2274,Marc,,Antrop,Marc Antrop,AE,AE,,,,,Belgium,BEL
+LECO,2005,20,1,1456,J,,Baudry,J Baudry,SE,SE,,,,,France,FRA
+LECO,2005,20,1,3828,Y,,Bergeron,Y Bergeron,SE,SE,,,,,Canada,CAN
+LECO,2005,20,1,2306,M,A,Bowers,M A Bowers,SE,SE,,,,,USA,USA
+LECO,2005,20,1,1480,J,,Brandt,J Brandt,SE,SE,,,,,Denmark,DNK
+LECO,2005,20,1,637,D,,Brown,D Brown,SE,SE,,,,,USA,USA
+LECO,2005,20,1,448,C,H,Flather,C H Flather,SE,SE,,,,,USA,USA
+LECO,2005,20,1,3890,J,,Franklin,J Franklin,SE,SE,,,,,USA,USA
+LECO,2005,20,1,2961,Qiong,,Gao,Qiong Gao,SE,SE,,,,,China,CHN
+LECO,2005,20,1,1191,G,,Guntenspergen,G Guntenspergen,SE,SE,,,,,USA,USA
+LECO,2005,20,1,975,E,,Gustafson,E Gustafson,SE,SE,,,,,USA,USA
+LECO,2005,20,1,2012,K,,Gutzwiller,K Gutzwiller,SE,SE,,,,,USA,USA
+LECO,2005,20,1,2181,Lucinda,B,Johnson,Lucinda B Johnson,SE,SE,,,,,USA,USA
+LECO,2005,20,1,3114,R,,Jongman,R Jongman,SE,SE,,,,,Netherlands,NLD
+LECO,2005,20,1,1090,F,,Kienast,F Kienast,SE,SE,,,,,Switzerland,CHE
+LECO,2005,20,1,3585,T,,Kratz,T Kratz,SE,SE,,,,,USA,USA
+LECO,2005,20,1,1718,J,,Liu,J Liu,SE,SE,,,,,USA,USA
+LECO,2005,20,1,1223,G,P,Malanson,G P Malanson,SE,SE,,,,,USA,USA
+LECO,2005,20,1,2728,O,,Mander,O Mander,SE,SE,,,,,Estonia,EST
+LECO,2005,20,1,1763,Jean-Paul,,Metzger,Jean-Paul Metzger,SE,SE,,,,,Brazil,BRA
+LECO,2005,20,1,790,David,,Mladenoff,David Mladenoff,SE,SE,,,,,USA,USA
+LECO,2005,20,1,1781,J,,Nassauer,J Nassauer,SE,SE,,,,,USA,USA
+LECO,2005,20,1,3902,J,,Niemela,J Niemela,SE,SE,,,,,Finland,FIN
+LECO,2005,20,1,2885,P,,Opdam,P Opdam,SE,SE,,,,,Netherlands,NLD
+LECO,2005,20,1,3791,W,,Romme,W Romme,SE,SE,,,,,USA,USA
+LECO,2005,20,1,2236,Lech,,Ryszkowski,Lech Ryszkowski,SE,SE,,,,,Poland,POL
+LECO,2005,20,1,1130,F,KA,Schmiegelow,F KA Schmiegelow,SE,SE,Univ. of Alberta,,,,Canada,CAN
+LECO,2005,20,1,3642,T,,Spies,T Spies,SE,SE,,,,,USA,USA
+LECO,2005,20,1,896,D,L,Urban,D L Urban,SE,SE,,,,,USA,USA
+LECO,2005,20,1,3878,H,,Wagner,H Wagner,SE,SE,,,,,Switzerland,CHE
+LECO,2005,20,1,2253,L,,Walker,L Walker,SE,SE,,,,,USA,USA
+LECO,2005,20,1,1952,J,D,Wickham,J D Wickham,SE,SE,,,,,USA,USA
+LECO,2005,20,1,3912,J,A,Wiens,J A Wiens,SE,SE,,,,,USA,USA
+LECO,2005,20,1,2113,Kimberly,A,With,Kimberly A With,SE,SE,,,,,USA,USA
+LECO,2005,20,1,1966,Jianguo,,Wu,Jianguo Wu,EIC,EIC,,,,,USA,USA
+LECO,2006,21,1,1429,Juan,,Abad,Juan Abad,SE,SE,,,,,Spain,ESP
+LECO,2006,21,1,2274,Marc,,Antrop,Marc Antrop,AE,AE,,,,,Belgium,BEL
+LECO,2006,21,1,1456,J,,Baudry,J Baudry,SE,SE,,,,,France,FRA
+LECO,2006,21,1,3828,Y,,Bergeron,Y Bergeron,SE,SE,,,,,Canada,CAN
+LECO,2006,21,1,2306,M,A,Bowers,M A Bowers,SE,SE,,,,,USA,USA
+LECO,2006,21,1,1480,J,,Brandt,J Brandt,SE,SE,,,,,Denmark,DNK
+LECO,2006,21,1,637,D,,Brown,D Brown,SE,SE,,,,,USA,USA
+LECO,2006,21,1,448,C,H,Flather,C H Flather,SE,SE,,,,,USA,USA
+LECO,2006,21,1,3890,J,,Franklin,J Franklin,SE,SE,,,,,USA,USA
+LECO,2006,21,1,2961,Qiong,,Gao,Qiong Gao,SE,SE,,,,,China,CHN
+LECO,2006,21,1,1191,G,,Guntenspergen,G Guntenspergen,SE,SE,,,,,USA,USA
+LECO,2006,21,1,975,E,,Gustafson,E Gustafson,SE,SE,,,,,USA,USA
+LECO,2006,21,1,2012,K,,Gutzwiller,K Gutzwiller,SE,SE,,,,,USA,USA
+LECO,2006,21,1,2181,Lucinda,B,Johnson,Lucinda B Johnson,SE,SE,,,,,USA,USA
+LECO,2006,21,1,3114,R,,Jongman,R Jongman,SE,SE,,,,,Netherlands,NLD
+LECO,2006,21,1,1090,F,,Kienast,F Kienast,SE,SE,,,,,Switzerland,CHE
+LECO,2006,21,1,3585,T,,Kratz,T Kratz,SE,SE,,,,,USA,USA
+LECO,2006,21,1,1718,J,,Liu,J Liu,SE,SE,,,,,USA,USA
+LECO,2006,21,1,1223,G,P,Malanson,G P Malanson,SE,SE,,,,,USA,USA
+LECO,2006,21,1,2728,O,,Mander,O Mander,SE,SE,,,,,Estonia,EST
+LECO,2006,21,1,1763,Jean-Paul,,Metzger,Jean-Paul Metzger,SE,SE,,,,,Brazil,BRA
+LECO,2006,21,1,790,David,,Mladenoff,David Mladenoff,SE,SE,,,,,USA,USA
+LECO,2006,21,1,1781,J,,Nassauer,J Nassauer,SE,SE,,,,,USA,USA
+LECO,2006,21,1,3902,J,,Niemela,J Niemela,SE,SE,,,,,Finland,FIN
+LECO,2006,21,1,2885,P,,Opdam,P Opdam,SE,SE,,,,,Netherlands,NLD
+LECO,2006,21,1,3791,W,,Romme,W Romme,SE,SE,,,,,USA,USA
+LECO,2006,21,1,2236,Lech,,Ryszkowski,Lech Ryszkowski,SE,SE,,,,,Poland,POL
+LECO,2006,21,1,1130,F,KA,Schmiegelow,F KA Schmiegelow,SE,SE,Univ. of Alberta,,,,Canada,CAN
+LECO,2006,21,1,3642,T,,Spies,T Spies,SE,SE,,,,,USA,USA
+LECO,2006,21,1,896,D,L,Urban,D L Urban,SE,SE,,,,,USA,USA
+LECO,2006,21,1,3878,H,,Wagner,H Wagner,SE,SE,,,,,Switzerland,CHE
+LECO,2006,21,1,2253,L,,Walker,L Walker,SE,SE,,,,,USA,USA
+LECO,2006,21,1,1952,J,D,Wickham,J D Wickham,SE,SE,,,,,USA,USA
+LECO,2006,21,1,3912,J,A,Wiens,J A Wiens,SE,SE,,,,,USA,USA
+LECO,2006,21,1,2113,Kimberly,A,With,Kimberly A With,SE,SE,,,,,USA,USA
+LECO,2006,21,1,1966,Jianguo,,Wu,Jianguo Wu,EIC,EIC,,,,,USA,USA
+LECO,2007,22,1,1435,J,,Ahem,J Ahem,SE,SE,,,,,USA,USA
+LECO,2007,22,1,607,D,P,Anderson,D P Anderson,SE,SE,,,,,USA,USA
+LECO,2007,22,1,2274,Marc,,Antrop,Marc Antrop,AE,AE,,,,,Belgium,BEL
+LECO,2007,22,1,1456,J,,Baudry,J Baudry,SE,SE,,,,,France,FRA
+LECO,2007,22,1,2306,M,A,Bowers,M A Bowers,SE,SE,,,,,USA,USA
+LECO,2007,22,1,1480,J,,Brandt,J Brandt,SE,SE,,,,,Denmark,DNK
+LECO,2007,22,1,1484,J,,Briggs,J Briggs,SE,SE,,,,,USA,USA
+LECO,2007,22,1,3529,T,,Crist,T Crist,SE,SE,,,,,USA,USA
+LECO,2007,22,1,68,A,,Farina,A Farina,SE,SE,,,,,Italy,ITA
+LECO,2007,22,1,448,C,H,Flather,C H Flather,SE,SE,,,,,USA,USA
+LECO,2007,22,1,1179,G,,Foody,G Foody,SE,SE,,,,,UK,GBR
+LECO,2007,22,1,275,B,,Fu,B Fu,SE,SE,,,,,China,CHN
+LECO,2007,22,1,2153,L,,Gillson,L Gillson,SE,SE,,,,,UK,GBR
+LECO,2007,22,1,281,B,,Goodwin,B Goodwin,SE,SE,,,,,USA,USA
+LECO,2007,22,1,1191,G,,Guntenspergen,G Guntenspergen,SE,SE,,,,,USA,USA
+LECO,2007,22,1,975,E,,Gustafson,E Gustafson,SE,SE,,,,,USA,USA
+LECO,2007,22,1,2012,K,,Gutzwiller,K Gutzwiller,SE,SE,,,,,USA,USA
+LECO,2007,22,1,3351,S,,Harrison,S Harrison,SE,SE,,,,,USA,USA
+LECO,2007,22,1,3093,R,,Holderegger,R Holderegger,SE,SE,,,,,Switzerland,CHE
+LECO,2007,22,1,738,D,E,Jelinski,D E Jelinski,SE,SE,Queen's University,,,,Canada,CAN
+LECO,2007,22,1,2181,Lucinda,B,Johnson,Lucinda B Johnson,SE,SE,,,,,USA,USA
+LECO,2007,22,1,3114,R,,Jongman,R Jongman,SE,SE,,,,,Netherlands,NLD
+LECO,2007,22,1,1090,F,,Kienast,F Kienast,SE,SE,,,,,Switzerland,CHE
+LECO,2007,22,1,3585,T,,Kratz,T Kratz,SE,SE,,,,,USA,USA
+LECO,2007,22,1,1327,H,,Li,H Li,SE,SE,,,,,USA,USA
+LECO,2007,22,1,1728,J,,Ludwig,J Ludwig,SE,SE,,,,,Australia,AUS
+LECO,2007,22,1,2728,O,,Mander,O Mander,SE,SE,,,,,Estonia,EST
+LECO,2007,22,1,1763,Jean-Paul,,Metzger,Jean-Paul Metzger,SE,SE,,,,,Brazil,BRA
+LECO,2007,22,1,2053,K,,Moloney,K Moloney,SE,SE,,,,,USA,USA
+LECO,2007,22,1,3902,J,,Niemela,J Niemela,SE,SE,,,,,Finland,FIN
+LECO,2007,22,1,2075,K,,Riitters,K Riitters,SE,SE,,,,,USA,USA
+LECO,2007,22,1,3791,W,,Romme,W Romme,SE,SE,,,,,USA,USA
+LECO,2007,22,1,2688,N,,Schumaker,N Schumaker,SE,SE,,,,,USA,USA
+LECO,2007,22,1,3642,T,,Spies,T Spies,SE,SE,,,,,USA,USA
+LECO,2007,22,1,896,D,L,Urban,D L Urban,SE,SE,,,,,USA,USA
+LECO,2007,22,1,223,A,,Veldkamp,A Veldkamp,SE,SE,,,,,Netherlands,NLD
+LECO,2007,22,1,3878,H,,Wagner,H Wagner,SE,SE,,,,,Switzerland,CHE
+LECO,2007,22,1,1952,J,D,Wickham,J D Wickham,SE,SE,,,,,USA,USA
+LECO,2007,22,1,3659,T,,Wiegand,T Wiegand,SE,SE,,,,,Germany,DEU
+LECO,2007,22,1,1966,Jianguo,,Wu,Jianguo Wu,EIC,EIC,,,,,USA,USA
+LECO,2008,23,1,1435,J,,Ahem,J Ahem,SE,SE,,,,,USA,USA
+LECO,2008,23,1,607,D,P,Anderson,D P Anderson,SE,SE,,,,,USA,USA
+LECO,2008,23,1,2274,Marc,,Antrop,Marc Antrop,AE,AE,,,,,Belgium,BEL
+LECO,2008,23,1,1456,J,,Baudry,J Baudry,SE,SE,,,,,France,FRA
+LECO,2008,23,1,1480,J,,Brandt,J Brandt,SE,SE,,,,,Denmark,DNK
+LECO,2008,23,1,1484,J,,Briggs,J Briggs,SE,SE,,,,,USA,USA
+LECO,2008,23,1,3529,T,,Crist,T Crist,SE,SE,,,,,USA,USA
+LECO,2008,23,1,68,A,,Farina,A Farina,SE,SE,,,,,Italy,ITA
+LECO,2008,23,1,1179,G,,Foody,G Foody,SE,SE,,,,,UK,GBR
+LECO,2008,23,1,275,B,,Fu,B Fu,SE,SE,,,,,China,CHN
+LECO,2008,23,1,2153,L,,Gillson,L Gillson,SE,SE,,,,,UK,GBR
+LECO,2008,23,1,281,B,,Goodwin,B Goodwin,SE,SE,,,,,USA,USA
+LECO,2008,23,1,1191,G,,Guntenspergen,G Guntenspergen,SE,SE,,,,,USA,USA
+LECO,2008,23,1,975,E,,Gustafson,E Gustafson,SE,SE,,,,,USA,USA
+LECO,2008,23,1,2012,K,,Gutzwiller,K Gutzwiller,SE,SE,,,,,USA,USA
+LECO,2008,23,1,1201,G,M,Henebry,G M Henebry,SE,SE,,,,,USA,USA
+LECO,2008,23,1,3093,R,,Holderegger,R Holderegger,SE,SE,,,,,Switzerland,CHE
+LECO,2008,23,1,1653,J,,Jaeger,J Jaeger,SE,SE,,,,,Canada,CAN
+LECO,2008,23,1,738,D,E,Jelinski,D E Jelinski,SE,SE,Queen's University,,,,Canada,CAN
+LECO,2008,23,1,1211,G,Darrel,Jenerette,G Darrel Jenerette,SE,SE,,,,,USA,USA
+LECO,2008,23,1,2181,Lucinda,B,Johnson,Lucinda B Johnson,SE,SE,,,,,USA,USA
+LECO,2008,23,1,3114,R,,Jongman,R Jongman,SE,SE,,,,,Netherlands,NLD
+LECO,2008,23,1,1090,F,,Kienast,F Kienast,SE,SE,,,,,Switzerland,CHE
+LECO,2008,23,1,1327,H,,Li,H Li,SE,SE,,,,,USA,USA
+LECO,2008,23,1,1728,J,,Ludwig,J Ludwig,SE,SE,,,,,Australia,AUS
+LECO,2008,23,1,1744,J,M,Marzluff,J M Marzluff,SE,SE,,,,,USA,USA
+LECO,2008,23,1,2669,N,E,Mclyntre,N E Mclyntre,SE,SE,,,,,USA,USA
+LECO,2008,23,1,1763,Jean-Paul,,Metzger,Jean-Paul Metzger,SE,SE,,,,,Brazil,BRA
+LECO,2008,23,1,2053,K,,Moloney,K Moloney,SE,SE,,,,,USA,USA
+LECO,2008,23,1,2212,L,,Musacchio,L Musacchio,SE,SE,,,,,USA,USA
+LECO,2008,23,1,3902,J,,Niemela,J Niemela,SE,SE,,,,,Finland,FIN
+LECO,2008,23,1,3193,R,Green,Pontius,R Green Pontius,SE,SE,,,,,USA,USA
+LECO,2008,23,1,2075,K,,Riitters,K Riitters,SE,SE,,,,,USA,USA
+LECO,2008,23,1,2688,N,,Schumaker,N Schumaker,SE,SE,,,,,USA,USA
+LECO,2008,23,1,3642,T,,Spies,T Spies,SE,SE,,,,,USA,USA
+LECO,2008,23,1,223,A,,Veldkamp,A Veldkamp,SE,SE,,,,,Netherlands,NLD
+LECO,2008,23,1,3878,H,,Wagner,H Wagner,SE,SE,,,,,Switzerland,CHE
+LECO,2008,23,1,1952,J,D,Wickham,J D Wickham,SE,SE,,,,,USA,USA
+LECO,2008,23,1,3659,T,,Wiegand,T Wiegand,SE,SE,,,,,Germany,DEU
+LECO,2008,23,1,1966,Jianguo,,Wu,Jianguo Wu,EIC,EIC,,,,,USA,USA
+LECO,2009,24,1,1435,J,,Ahem,J Ahem,SE,SE,,,,,USA,USA
+LECO,2009,24,1,607,D,P,Anderson,D P Anderson,SE,SE,,,,,USA,USA
+LECO,2009,24,1,2274,Marc,,Antrop,Marc Antrop,AE,AE,,,,,Belgium,BEL
+LECO,2009,24,1,1456,J,,Baudry,J Baudry,SE,SE,,,,,France,FRA
+LECO,2009,24,1,1467,J,A,Bissonette,J A Bissonette,SE,SE,,,,,USA,USA
+LECO,2009,24,1,1480,J,,Brandt,J Brandt,SE,SE,,,,,Denmark,DNK
+LECO,2009,24,1,1484,J,,Briggs,J Briggs,SE,SE,,,,,USA,USA
+LECO,2009,24,1,3529,T,,Crist,T Crist,SE,SE,,,,,USA,USA
+LECO,2009,24,1,68,A,,Farina,A Farina,SE,SE,,,,,Italy,ITA
+LECO,2009,24,1,1179,G,,Foody,G Foody,SE,SE,,,,,UK,GBR
+LECO,2009,24,1,275,B,,Fu,B Fu,SE,SE,,,,,China,CHN
+LECO,2009,24,1,2153,L,,Gillson,L Gillson,SE,SE,,,,,UK,GBR
+LECO,2009,24,1,281,B,,Goodwin,B Goodwin,SE,SE,,,,,USA,USA
+LECO,2009,24,1,1191,G,,Guntenspergen,G Guntenspergen,SE,SE,,,,,USA,USA
+LECO,2009,24,1,975,E,,Gustafson,E Gustafson,SE,SE,,,,,USA,USA
+LECO,2009,24,1,2012,K,,Gutzwiller,K Gutzwiller,SE,SE,,,,,USA,USA
+LECO,2009,24,1,1201,G,M,Henebry,G M Henebry,SE,SE,,,,,USA,USA
+LECO,2009,24,1,3093,R,,Holderegger,R Holderegger,SE,SE,,,,,Switzerland,CHE
+LECO,2009,24,1,1653,J,,Jaeger,J Jaeger,SE,SE,,,,,Canada,CAN
+LECO,2009,24,1,738,D,E,Jelinski,D E Jelinski,SE,SE,Queen's University,,,,Canada,CAN
+LECO,2009,24,1,1211,G,Darrel,Jenerette,G Darrel Jenerette,SE,SE,,,,,USA,USA
+LECO,2009,24,1,2181,Lucinda,B,Johnson,Lucinda B Johnson,SE,SE,,,,,USA,USA
+LECO,2009,24,1,3114,R,,Jongman,R Jongman,SE,SE,,,,,Netherlands,NLD
+LECO,2009,24,1,1090,F,,Kienast,F Kienast,SE,SE,,,,,Switzerland,CHE
+LECO,2009,24,1,1327,H,,Li,H Li,SE,SE,,,,,USA,USA
+LECO,2009,24,1,1728,J,,Ludwig,J Ludwig,SE,SE,,,,,Australia,AUS
+LECO,2009,24,1,1744,J,M,Marzluff,J M Marzluff,SE,SE,,,,,USA,USA
+LECO,2009,24,1,2669,N,E,Mclyntre,N E Mclyntre,SE,SE,,,,,USA,USA
+LECO,2009,24,1,1763,Jean-Paul,,Metzger,Jean-Paul Metzger,SE,SE,,,,,Brazil,BRA
+LECO,2009,24,1,2053,K,,Moloney,K Moloney,SE,SE,,,,,USA,USA
+LECO,2009,24,1,2212,L,,Musacchio,L Musacchio,SE,SE,,,,,USA,USA
+LECO,2009,24,1,3902,J,,Niemela,J Niemela,SE,SE,,,,,Finland,FIN
+LECO,2009,24,1,3193,R,Green,Pontius,R Green Pontius,SE,SE,,,,,USA,USA
+LECO,2009,24,1,2520,M,,Potschin,M Potschin,SE,SE,,,,,UK,GBR
+LECO,2009,24,1,2075,K,,Riitters,K Riitters,SE,SE,,,,,USA,USA
+LECO,2009,24,1,2688,N,,Schumaker,N Schumaker,SE,SE,,,,,USA,USA
+LECO,2009,24,1,3642,T,,Spies,T Spies,SE,SE,,,,,USA,USA
+LECO,2009,24,1,223,A,,Veldkamp,A Veldkamp,SE,SE,,,,,Netherlands,NLD
+LECO,2009,24,1,3878,H,,Wagner,H Wagner,SE,SE,,,,,Switzerland,CHE
+LECO,2009,24,1,1952,J,D,Wickham,J D Wickham,SE,SE,,,,,USA,USA
+LECO,2009,24,1,3659,T,,Wiegand,T Wiegand,SE,SE,,,,,Germany,DEU
+LECO,2009,24,1,1966,Jianguo,,Wu,Jianguo Wu,EIC,EIC,,,,,USA,USA
+LECO,2010,25,1,607,D,P,Anderson,D P Anderson,SE,SE,"Landcare Research , Lincoln",,,,New Zealand,NZL
+LECO,2010,25,1,1456,J,,Baudry,J Baudry,SE,SE,,,,,France,FRA
+LECO,2010,25,1,2292,M,,Belisle,M Belisle,SE,SE,,,,,Canada,CAN
+LECO,2010,25,1,1467,J,A,Bissonette,J A Bissonette,SE,SE,,,,,USA,USA
+LECO,2010,25,1,1473,J,,Bolliger,J Bolliger,SE,SE,,,,,Switzerland,CHE
+LECO,2010,25,1,1165,G,,Cumming,G Cumming,SE,SE,,,,,South Africa,ZAF
+LECO,2010,25,1,3329,S,Green,Fisher,S Green Fisher,SE,SE,,,,,USA,USA
+LECO,2010,25,1,1179,G,,Foody,G Foody,SE,SE,,,,,UK,GBR
+LECO,2010,25,1,275,B,,Fu,B Fu,SE,SE,,,,,China,CHN
+LECO,2010,25,1,2153,L,,Gillson,L Gillson,SE,SE,,,,,South Africa,ZAF
+LECO,2010,25,1,281,B,,Goodwin,B Goodwin,SE,SE,,,,,USA,USA
+LECO,2010,25,1,1191,G,,Guntenspergen,G Guntenspergen,SE,SE,,,,,USA,USA
+LECO,2010,25,1,975,E,,Gustafson,E Gustafson,SE,SE,,,,,USA,USA
+LECO,2010,25,1,2012,K,,Gutzwiller,K Gutzwiller,SE,SE,,,,,USA,USA
+LECO,2010,25,1,1201,G,M,Henebry,G M Henebry,SE,SE,,,,,USA,USA
+LECO,2010,25,1,3093,R,,Holderegger,R Holderegger,SE,SE,,,,,Switzerland,CHE
+LECO,2010,25,1,1653,J,,Jaeger,J Jaeger,SE,SE,,,,,Canada,CAN
+LECO,2010,25,1,1211,G,Darrel,Jenerette,G Darrel Jenerette,SE,SE,,,,,USA,USA
+LECO,2010,25,1,2181,Lucinda,B,Johnson,Lucinda B Johnson,SE,SE,,,,,USA,USA
+LECO,2010,25,1,3577,T,,Keitt,T Keitt,SE,SE,,,,,USA,USA
+LECO,2010,25,1,1090,F,,Kienast,F Kienast,SE,SE,,,,,Switzerland,CHE
+LECO,2010,25,1,1701,J,,Lawler,J Lawler,SE,SE,,,,,USA,USA
+LECO,2010,25,1,1327,H,,Li,H Li,SE,SE,,,,,USA,USA
+LECO,2010,25,1,1744,J,M,Marzluff,J M Marzluff,SE,SE,,,,,USA,USA
+LECO,2010,25,1,522,C,,McAlpine,C McAlpine,SE,SE,,,,,Australia,AUS
+LECO,2010,25,1,2669,N,E,Mclyntre,N E Mclyntre,SE,SE,,,,,USA,USA
+LECO,2010,25,1,1763,Jean-Paul,,Metzger,Jean-Paul Metzger,SE,SE,,,,,Brazil,BRA
+LECO,2010,25,1,2053,K,,Moloney,K Moloney,SE,SE,,,,,USA,USA
+LECO,2010,25,1,2212,L,,Musacchio,L Musacchio,SE,SE,,,,,USA,USA
+LECO,2010,25,1,3902,J,,Niemela,J Niemela,SE,SE,,,,,Finland,FIN
+LECO,2010,25,1,2885,P,,Opdam,P Opdam,AE,AE,,,,,Netherlands,NLD
+LECO,2010,25,1,3193,R,Green,Pontius,R Green Pontius,SE,SE,,,,,USA,USA
+LECO,2010,25,1,1247,G,,Poole,G Poole,SE,SE,,,,,USA,USA
+LECO,2010,25,1,2075,K,,Riitters,K Riitters,SE,SE,,,,,USA,USA
+LECO,2010,25,1,3215,R,,Schooley,R Schooley,SE,SE,,,,,USA,USA
+LECO,2010,25,1,2688,N,,Schumaker,N Schumaker,SE,SE,,,,,USA,USA
+LECO,2010,25,1,2741,O,,Schweiger,O Schweiger,SE,SE,,,,,Germany,DEU
+LECO,2010,25,1,3642,T,,Spies,T Spies,SE,SE,,,,,USA,USA
+LECO,2010,25,1,1896,J,C,Stromberg,J C Stromberg,SE,SE,,,,,USA,USA
+LECO,2010,25,1,223,A,,Veldkamp,A Veldkamp,SE,SE,,,,,Netherlands,NLD
+LECO,2010,25,1,588,C,,Vos,C Vos,SE,SE,,,,,Netherlands,NLD
+LECO,2010,25,1,3878,H,,Wagner,H Wagner,SE,SE,,,,,Canada,CAN
+LECO,2010,25,1,1952,J,D,Wickham,J D Wickham,SE,SE,,,,,USA,USA
+LECO,2010,25,1,3659,T,,Wiegand,T Wiegand,SE,SE,,,,,Germany,DEU
+LECO,2010,25,1,1966,Jianguo,,Wu,Jianguo Wu,EIC,EIC,,,,,USA,USA
+LECO,2011,26,1,1283,H,D,Allen,H D Allen,Editorial.Board,SE,,,,,UK,GBR
+LECO,2011,26,1,607,D,P,Anderson,D P Anderson,SE,SE,,,,,New Zealand,NZL
+LECO,2011,26,1,2292,M,,Belisle,M Belisle,SE,SE,,,,,Canada,CAN
+LECO,2011,26,1,623,D,,Bender,D Bender,Editorial.Board,SE,,,,,Canada,CAN
+LECO,2011,26,1,1467,J,A,Bissonette,J A Bissonette,SE,SE,,,,,USA,USA
+LECO,2011,26,1,1473,J,,Bolliger,J Bolliger,SE,SE,,,,,Switzerland,CHE
+LECO,2011,26,1,3886,J,,Chen,J Chen,Editorial.Board,SE,,,,,USA,USA
+LECO,2011,26,1,1165,G,,Cumming,G Cumming,SE,SE,,,,,South Africa,ZAF
+LECO,2011,26,1,3310,S,A,Cushman,S A Cushman,Editorial.Board,SE,,,,,USA,USA
+LECO,2011,26,1,671,D,,Donner,D Donner,Editorial.Board,SE,,,,,USA,USA
+LECO,2011,26,1,1179,G,,Foody,G Foody,SE,SE,,,,,UK,GBR
+LECO,2011,26,1,275,B,,Fu,B Fu,SE,SE,,,,,China,CHN
+LECO,2011,26,1,3337,S,E,Gergel,S E Gergel,Editorial.Board,SE,,,,,Canada,CAN
+LECO,2011,26,1,281,B,,Goodwin,B Goodwin,SE,SE,,,,,USA,USA
+LECO,2011,26,1,1191,G,,Guntenspergen,G Guntenspergen,SE,SE,,,,,USA,USA
+LECO,2011,26,1,975,E,,Gustafson,E Gustafson,SE,SE,,,,,USA,USA
+LECO,2011,26,1,2012,K,,Gutzwiller,K Gutzwiller,SE,SE,,,,,USA,USA
+LECO,2011,26,1,1306,H,,He,H He,Editorial.Board,SE,,,,,USA,USA
+LECO,2011,26,1,1201,G,M,Henebry,G M Henebry,SE,SE,,,,,USA,USA
+LECO,2011,26,1,3093,R,,Holderegger,R Holderegger,SE,SE,,,,,Switzerland,CHE
+LECO,2011,26,1,1640,J,D,Holland,J D Holland,Editorial.Board,SE,,,,,USA,USA
+LECO,2011,26,1,3363,S-L,,Huang,S-L Huang,Editorial.Board,SE,,,,,Taiwan,TWN
+LECO,2011,26,1,2178,Louis,R,Iverson,Louis R Iverson,Book.Review.Editor,SPECIAL,,,,,USA,USA
+LECO,2011,26,1,1653,J,,Jaeger,J Jaeger,SE,SE,,,,,Canada,CAN
+LECO,2011,26,1,1211,G,Darrel,Jenerette,G Darrel Jenerette,SE,SE,,,,,USA,USA
+LECO,2011,26,1,2181,Lucinda,B,Johnson,Lucinda B Johnson,SE,SE,,,,,USA,USA
+LECO,2011,26,1,3577,T,,Keitt,T Keitt,SE,SE,,,,,USA,USA
+LECO,2011,26,1,1687,J,A,Kupfer,J A Kupfer,Editorial.Board,SE,,,,,USA,USA
+LECO,2011,26,1,1701,J,,Lawler,J Lawler,SE,SE,,,,,USA,USA
+LECO,2011,26,1,1744,J,M,Marzluff,J M Marzluff,SE,SE,,,,,USA,USA
+LECO,2011,26,1,522,C,,McAlpine,C McAlpine,SE,SE,,,,,Australia,AUS
+LECO,2011,26,1,1763,Jean-Paul,,Metzger,Jean-Paul Metzger,SE,SE,,,,,Brazil,BRA
+LECO,2011,26,1,2053,K,,Moloney,K Moloney,SE,SE,,,,,USA,USA
+LECO,2011,26,1,2212,L,,Musacchio,L Musacchio,SE,SE,,,,,USA,USA
+LECO,2011,26,1,2885,P,,Opdam,P Opdam,AE,AE,,,,,Netherlands,NLD
+LECO,2011,26,1,1795,J,M,Overton,J M Overton,Editorial.Board,SE,,,,,New Zealand,NZL
+LECO,2011,26,1,3193,R,Green,Pontius,R Green Pontius,SE,SE,,,,,USA,USA
+LECO,2011,26,1,1249,G,,Pungetti,G Pungetti,Editorial.Board,SE,,,,,UK,GBR
+LECO,2011,26,1,2075,K,,Riitters,K Riitters,SE,SE,,,,,USA,USA
+LECO,2011,26,1,3215,R,,Schooley,R Schooley,SE,SE,,,,,USA,USA
+LECO,2011,26,1,2238,L,A,Schulte,L A Schulte,Editorial.Board,SE,,,,,USA,USA
+LECO,2011,26,1,2688,N,,Schumaker,N Schumaker,SE,SE,,,,,USA,USA
+LECO,2011,26,1,2741,O,,Schweiger,O Schweiger,SE,SE,,,,,Germany,DEU
+LECO,2011,26,1,889,D,M,Theobald,D M Theobald,Editorial.Board,SE,,,,,USA,USA
+LECO,2011,26,1,2943,P,H,Verburg,P H Verburg,Editorial.Board,SE,,,,,The Netherlands,NLD
+LECO,2011,26,1,588,C,,Vos,C Vos,SE,SE,,,,,Netherlands,NLD
+LECO,2011,26,1,1952,J,D,Wickham,J D Wickham,SE,SE,,,,,USA,USA
+LECO,2011,26,1,3659,T,,Wiegand,T Wiegand,SE,SE,,,,,Germany,DEU
+LECO,2011,26,1,1966,Jianguo,,Wu,Jianguo Wu,EIC,EIC,,,,,USA,USA
+LECO,2012,27,1,1283,H,D,Allen,H D Allen,Editorial.Board,SE,,,,,UK,GBR
+LECO,2012,27,1,2292,M,,Belisle,M Belisle,Editorial.Board,SE,,,,,Canada,CAN
+LECO,2012,27,1,623,D,,Bender,D Bender,Editorial.Board,SE,,,,,Canada,CAN
+LECO,2012,27,1,1473,J,,Bolliger,J Bolliger,Editorial.Board,SE,,,,,Switzerland,CHE
+LECO,2012,27,1,3886,J,,Chen,J Chen,Editorial.Board,SE,,,,,USA,USA
+LECO,2012,27,1,1165,G,,Cumming,G Cumming,Editorial.Board,SE,,,,,South Africa,ZAF
+LECO,2012,27,1,3310,S,A,Cushman,S A Cushman,Editorial.Board,SE,,,,,USA,USA
+LECO,2012,27,1,671,D,,Donner,D Donner,Editorial.Board,SE,,,,,USA,USA
+LECO,2012,27,1,1179,G,,Foody,G Foody,Editorial.Board,SE,,,,,UK,GBR
+LECO,2012,27,1,275,B,,Fu,B Fu,Editorial.Board,SE,,,,,P.R. China,CHN
+LECO,2012,27,1,3337,S,E,Gergel,S E Gergel,Editorial.Board,SE,,,,,Canada,CAN
+LECO,2012,27,1,281,B,,Goodwin,B Goodwin,Editorial.Board,SE,,,,,USA,USA
+LECO,2012,27,1,1191,G,,Guntenspergen,G Guntenspergen,Editorial.Board,SE,,,,,USA,USA
+LECO,2012,27,1,975,E,,Gustafson,E Gustafson,Editorial.Board,SE,,,,,USA,USA
+LECO,2012,27,1,2012,K,J,Gutzwiller,K J Gutzwiller,Editorial.Board,SE,,,,,USA,USA
+LECO,2012,27,1,1306,H,,He,H He,Editorial.Board,SE,,,,,USA,USA
+LECO,2012,27,1,1201,G,M,Henebry,G M Henebry,Editorial.Board,SE,,,,,USA,USA
+LECO,2012,27,1,3093,R,,Holderegger,R Holderegger,Editorial.Board,SE,,,,,Switzerland,CHE
+LECO,2012,27,1,1640,J,D,Holland,J D Holland,Editorial.Board,SE,,,,,USA,USA
+LECO,2012,27,1,3363,S-L,,Huang,S-L Huang,Editorial.Board,SE,,,,,Taiwan,TWN
+LECO,2012,27,1,2178,Louis,R,Iverson,Louis R Iverson,Book.Review.Editor,SPECIAL,,,,,USA,USA
+LECO,2012,27,1,1653,J,AG,Jaeger,J AG Jaeger,Editorial.Board,SE,,,,,Canada,CAN
+LECO,2012,27,1,1211,G,D,Jenerette,G D Jenerette,Editorial.Board,SE,,,,,USA,USA
+LECO,2012,27,1,2181,L,B,Johnson,L B Johnson,Editorial.Board,SE,,,,,USA,USA
+LECO,2012,27,1,3577,T,H,Keitt,T H Keitt,Editorial.Board,SE,,,,,USA,USA
+LECO,2012,27,1,1687,J,A,Kupfer,J A Kupfer,Editorial.Board,SE,,,,,USA,USA
+LECO,2012,27,1,1701,J,,Lawler,J Lawler,Editorial.Board,SE,,,,,USA,USA
+LECO,2012,27,1,1744,J,M,Marzluff,J M Marzluff,Editorial.Board,SE,,,,,USA,USA
+LECO,2012,27,1,522,C,,McAlpine,C McAlpine,Editorial.Board,SE,,,,,Australia,AUS
+LECO,2012,27,1,1763,J-P,,Metzger,J-P Metzger,Editorial.Board,SE,,,,,Brazil,BRA
+LECO,2012,27,1,2053,K,,Moloney,K Moloney,Editorial.Board,SE,,,,,USA,USA
+LECO,2012,27,1,2212,L,,Musacchio,L Musacchio,Editorial.Board,SE,,,,,USA,USA
+LECO,2012,27,1,2885,Paul,,Opdam,Paul Opdam,Associate-Editor-in-Chief,AE,,,,,The Netherlands,NLD
+LECO,2012,27,1,1795,J,M,Overton,J M Overton,Editorial.Board,SE,,,,,New Zealand,NZL
+LECO,2012,27,1,3193,R,Green,Pontius,R Green Pontius,Editorial.Board,SE,,,,,USA,USA
+LECO,2012,27,1,1249,G,,Pungetti,G Pungetti,Editorial.Board,SE,,,,,UK,GBR
+LECO,2012,27,1,2075,K,,Riitters,K Riitters,Editorial.Board,SE,,,,,USA,USA
+LECO,2012,27,1,3461,S,,Saura,S Saura,Editorial.Board,SE,,,,,Spain,ESP
+LECO,2012,27,1,3215,R,,Schooley,R Schooley,Editorial.Board,SE,,,,,USA,USA
+LECO,2012,27,1,2238,L,A,Schulte,L A Schulte,Editorial.Board,SE,,,,,USA,USA
+LECO,2012,27,1,2688,N,,Schumaker,N Schumaker,Editorial.Board,SE,,,,,USA,USA
+LECO,2012,27,1,2741,O,,Schweiger,O Schweiger,Editorial.Board,SE,,,,,Germany,DEU
+LECO,2012,27,1,3797,W,,Shen,W Shen,Editorial.Board,SE,,,,,China,CHN
+LECO,2012,27,1,889,D,M,Theobald,D M Theobald,Editorial.Board,SE,,,,,USA,USA
+LECO,2012,27,1,371,B,L,Turner,B L Turner,Editorial.Board,SE,,,,,USA,USA
+LECO,2012,27,1,2580,M,Green,Turner,M Green Turner,Editorial.Board,SE,,,,,USA,USA
+LECO,2012,27,1,2943,P,H,Verburg,P H Verburg,Editorial.Board,SE,,,,,The Netherlands,NLD
+LECO,2012,27,1,588,C,,Vos,C Vos,Editorial.Board,SE,,,,,The Netherlands,NLD
+LECO,2012,27,1,1952,J,D,Wickham,J D Wickham,Editorial.Board,SE,,,,,USA,USA
+LECO,2012,27,1,3659,T,,Wiegand,T Wiegand,Editorial.Board,SE,,,,,Germany,DEU
+LECO,2012,27,1,3912,J,A,Wiens,J A Wiens,Editorial.Board,SE,,,,,USA,USA
+LECO,2012,27,1,1966,Jianguo,,Wu,Jianguo Wu,EIC,EIC,,,,,USA,USA
+LECO,2012,27,1,1281,G,,Zurlini,G Zurlini,Editorial.Board,SE,,,,,Italy,ITA
+LECO,2013,27,1,1283,H,D,Allen,H D Allen,Editorial.Board,SE,,,,,UK,GBR
+LECO,2013,27,1,2292,M,,Belisle,M Belisle,Editorial.Board,SE,,,,,Canada,CAN
+LECO,2013,27,1,623,D,,Bender,D Bender,Editorial.Board,SE,,,,,Canada,CAN
+LECO,2013,27,1,1473,J,,Bolliger,J Bolliger,Editorial.Board,SE,,,,,Switzerland,CHE
+LECO,2013,27,1,3886,J,,Chen,J Chen,Editorial.Board,SE,,,,,USA,USA
+LECO,2013,27,1,1165,G,,Cumming,G Cumming,Editorial.Board,SE,,,,,South Africa,ZAF
+LECO,2013,27,1,3310,S,A,Cushman,S A Cushman,Reviews.Editor,SPECIAL,,,,,USA,USA
+LECO,2013,27,1,671,D,,Donner,D Donner,Editorial.Board,SE,,,,,USA,USA
+LECO,2013,27,1,439,C,,Echeverria,C Echeverria,Editorial.Board,SE,,,,,Chile,CHL
+LECO,2013,27,1,1179,G,,Foody,G Foody,Editorial.Board,SE,,,,,UK,GBR
+LECO,2013,27,1,275,B,,Fu,B Fu,Editorial.Board,SE,,,,,P.R. China,CHN
+LECO,2013,27,1,3337,S,E,Gergel,S E Gergel,Editorial.Board,SE,,,,,Canada,CAN
+LECO,2013,27,1,281,B,,Goodwin,B Goodwin,Editorial.Board,SE,,,,,USA,USA
+LECO,2013,27,1,1191,G,,Guntenspergen,G Guntenspergen,Editorial.Board,SE,,,,,USA,USA
+LECO,2013,27,1,975,E,,Gustafson,E Gustafson,Editorial.Board,SE,,,,,USA,USA
+LECO,2013,27,1,2012,K,J,Gutzwiller,K J Gutzwiller,Editorial.Board,SE,,,,,USA,USA
+LECO,2013,27,1,1306,H,,He,H He,Editorial.Board,SE,,,,,USA,USA
+LECO,2013,27,1,1201,G,M,Henebry,G M Henebry,Editorial.Board,SE,,,,,USA,USA
+LECO,2013,27,1,1633,J,,Hepinstall-Cymerman,J Hepinstall-Cymerman,Editorial.Board,SE,,,,,USA,USA
+LECO,2013,27,1,1640,J,D,Holland,J D Holland,Editorial.Board,SE,,,,,USA,USA
+LECO,2013,27,1,3363,S-L,,Huang,S-L Huang,Editorial.Board,SE,,,,,Taiwan,TWN
+LECO,2013,27,1,2178,Louis,R,Iverson,Louis R Iverson,Book.Review.Editor,SPECIAL,,,,,USA,USA
+LECO,2013,27,1,1211,G,D,Jenerette,G D Jenerette,Editorial.Board,SE,,,,,USA,USA
+LECO,2013,27,1,2181,L,B,Johnson,L B Johnson,Editorial.Board,SE,,,,,USA,USA
+LECO,2013,27,1,3577,T,H,Keitt,T H Keitt,Editorial.Board,SE,,,,,USA,USA
+LECO,2013,27,1,1682,J,,Krauss,J Krauss,Editorial.Board,SE,,,,,Germany,DEU
+LECO,2013,27,1,1687,J,A,Kupfer,J A Kupfer,Editorial.Board,SE,,,,,USA,USA
+LECO,2013,27,1,3398,S,S,Luque,S S Luque,Editorial.Board,SE,,,,,France,FRA
+LECO,2013,27,1,522,C,,McAlpine,C McAlpine,Editorial.Board,SE,,,,,Australia,AUS
+LECO,2013,27,1,1763,J-P,,Metzger,J-P Metzger,Editorial.Board,SE,,,,,Brazil,BRA
+LECO,2013,27,1,3900,J,R,Miller,J R Miller,Editorial.Board,SE,,,,,USA,USA
+LECO,2013,27,1,1005,E,S,Minor,E S Minor,Editorial.Board,SE,,,,,USA,USA
+LECO,2013,27,1,2053,K,,Moloney,K Moloney,Editorial.Board,SE,,,,,USA,USA
+LECO,2013,27,1,2212,L,,Musacchio,L Musacchio,Editorial.Board,SE,,,,,USA,USA
+LECO,2013,27,1,2885,Paul,,Opdam,Paul Opdam,Associate-Editor-in-Chief,AE,,,,,The Netherlands,NLD
+LECO,2013,27,1,1795,J,M,Overton,J M Overton,Editorial.Board,SE,,,,,New Zealand,NZL
+LECO,2013,27,1,340,B,,Pijanowski,B Pijanowski,Editorial.Board,SE,,,,,USA,USA
+LECO,2013,27,1,3193,R,Green,Pontius,R Green Pontius,Editorial.Board,SE,,,,,USA,USA
+LECO,2013,27,1,2075,K,,Riitters,K Riitters,Editorial.Board,SE,,,,,USA,USA
+LECO,2013,27,1,3461,S,,Saura,S Saura,Editorial.Board,SE,,,,,Spain,ESP
+LECO,2013,27,1,3214,R,M,Scheller,R M Scheller,Editorial.Board,SE,,,,,USA,USA
+LECO,2013,27,1,3215,R,,Schooley,R Schooley,Editorial.Board,SE,,,,,USA,USA
+LECO,2013,27,1,2238,L,A,Schulte,L A Schulte,Editorial.Board,SE,,,,,USA,USA
+LECO,2013,27,1,2688,N,,Schumaker,N Schumaker,Editorial.Board,SE,,,,,USA,USA
+LECO,2013,27,1,2741,O,,Schweiger,O Schweiger,Editorial.Board,SE,,,,,Germany,DEU
+LECO,2013,27,1,3797,W,,Shen,W Shen,Editorial.Board,SE,,,,,China,CHN
+LECO,2013,27,1,3480,S,,Stephens,S Stephens,Editorial.Board,SE,,,,,USA,USA
+LECO,2013,27,1,889,D,M,Theobald,D M Theobald,Editorial.Board,SE,,,,,USA,USA
+LECO,2013,27,1,371,B,L,Turner,B L Turner,Editorial.Board,SE,,,,,USA,USA
+LECO,2013,27,1,2580,M,Green,Turner,M Green Turner,Editorial.Board,SE,,,,,USA,USA
+LECO,2013,27,1,222,A,JA,vanTeeffelen,A JA vanTeeffelen,Editorial.Board,SE,,,,,The Netherlands,NLD
+LECO,2013,27,1,2943,P,H,Verburg,P H Verburg,Editorial.Board,SE,,,,,The Netherlands,NLD
+LECO,2013,27,1,588,C,,Vos,C Vos,Editorial.Board,SE,,,,,The Netherlands,NLD
+LECO,2013,27,1,1952,J,D,Wickham,J D Wickham,Editorial.Board,SE,,,,,USA,USA
+LECO,2013,27,1,3659,T,,Wiegand,T Wiegand,Editorial.Board,SE,,,,,Germany,DEU
+LECO,2013,27,1,3912,J,A,Wiens,J A Wiens,Editorial.Board,SE,,,,,USA,USA
+LECO,2013,27,1,1966,Jianguo,,Wu,Jianguo Wu,EIC,EIC,,,,,USA,USA
+LECO,2013,27,1,1281,G,,Zurlini,G Zurlini,Editorial.Board,SE,,,,,Italy,ITA
+LECO,2014,29,1,1283,H,D,Allen,H D Allen,Editorial.Board,SE,,,,,UK,GBR
+LECO,2014,29,1,2292,M,,Belisle,M Belisle,Editorial.Board,SE,,,,,Canada,CAN
+LECO,2014,29,1,623,D,,Bender,D Bender,Editorial.Board,SE,,,,,Canada,CAN
+LECO,2014,29,1,1473,J,,Bolliger,J Bolliger,Editorial.Board,SE,,,,,Switzerland,CHE
+LECO,2014,29,1,3886,J,,Chen,J Chen,Editorial.Board,SE,,,,,USA,USA
+LECO,2014,29,1,3300,S,S,Cilliers,S S Cilliers,Editorial.Board,SE,,,,,South Africa,ZAF
+LECO,2014,29,1,1165,G,,Cumming,G Cumming,Editorial.Board,SE,,,,,South Africa,ZAF
+LECO,2014,29,1,3310,S,A,Cushman,S A Cushman,Reviews.Editor,SPECIAL,,,,,USA,USA
+LECO,2014,29,1,671,D,,Donner,D Donner,Editorial.Board,SE,,,,,USA,USA
+LECO,2014,29,1,439,C,,Echeverria,C Echeverria,Editorial.Board,SE,,,,,Chile,CHL
+LECO,2014,29,1,1179,G,,Foody,G Foody,Editorial.Board,SE,,,,,UK,GBR
+LECO,2014,29,1,275,B,,Fu,B Fu,Editorial.Board,SE,,,,,P.R. China,CHN
+LECO,2014,29,1,3337,S,E,Gergel,S E Gergel,Editorial.Board,SE,,,,,Canada,CAN
+LECO,2014,29,1,281,B,,Goodwin,B Goodwin,Editorial.Board,SE,,,,,USA,USA
+LECO,2014,29,1,1191,G,,Guntenspergen,G Guntenspergen,Editorial.Board,SE,,,,,USA,USA
+LECO,2014,29,1,975,E,,Gustafson,E Gustafson,Editorial.Board,SE,,,,,USA,USA
+LECO,2014,29,1,2012,K,J,Gutzwiller,K J Gutzwiller,Editorial.Board,SE,,,,,USA,USA
+LECO,2014,29,1,1306,H,,He,H He,Editorial.Board,SE,,,,,USA,USA
+LECO,2014,29,1,1201,G,M,Henebry,G M Henebry,Editorial.Board,SE,,,,,USA,USA
+LECO,2014,29,1,1633,J,,Hepinstall-Cymerman,J Hepinstall-Cymerman,Editorial.Board,SE,,,,,USA,USA
+LECO,2014,29,1,1640,J,D,Holland,J D Holland,Editorial.Board,SE,,,,,USA,USA
+LECO,2014,29,1,3363,S-L,,Huang,S-L Huang,Editorial.Board,SE,,,,,Taiwan,TWN
+LECO,2014,29,1,1211,G,D,Jenerette,G D Jenerette,Editorial.Board,SE,,,,,USA,USA
+LECO,2014,29,1,2181,L,B,Johnson,L B Johnson,Editorial.Board,SE,,,,,USA,USA
+LECO,2014,29,1,745,Daniel,M,Kashian,Daniel M Kashian,Book.Review.Editor,SPECIAL,,,,,USA,USA
+LECO,2014,29,1,745,D,M,Kashian,D M Kashian,Editorial.Board,SE,,,,,USA,USA
+LECO,2014,29,1,3577,T,H,Keitt,T H Keitt,Editorial.Board,SE,,,,,USA,USA
+LECO,2014,29,1,1682,J,,Krauss,J Krauss,Editorial.Board,SE,,,,,Germany,DEU
+LECO,2014,29,1,1687,J,A,Kupfer,J A Kupfer,Editorial.Board,SE,,,,,USA,USA
+LECO,2014,29,1,3398,S,S,Luque,S S Luque,Editorial.Board,SE,,,,,France,FRA
+LECO,2014,29,1,522,C,,McAlpine,C McAlpine,Editorial.Board,SE,,,,,Australia,AUS
+LECO,2014,29,1,2668,N,E,McIntyre,N E McIntyre,Editorial.Board,SE,,,,,USA,USA
+LECO,2014,29,1,1763,J-P,,Metzger,J-P Metzger,Editorial.Board,SE,,,,,Brazil,BRA
+LECO,2014,29,1,3900,J,R,Miller,J R Miller,Editorial.Board,SE,,,,,USA,USA
+LECO,2014,29,1,1005,E,S,Minor,E S Minor,Editorial.Board,SE,,,,,USA,USA
+LECO,2014,29,1,2053,K,,Moloney,K Moloney,Editorial.Board,SE,,,,,USA,USA
+LECO,2014,29,1,2212,L,,Musacchio,L Musacchio,Editorial.Board,SE,,,,,USA,USA
+LECO,2014,29,1,2885,Paul,,Opdam,Paul Opdam,Associate-Editor-in-Chief,AE,,,,,The Netherlands,NLD
+LECO,2014,29,1,1795,J,M,Overton,J M Overton,Editorial.Board,SE,,,,,New Zealand,NZL
+LECO,2014,29,1,340,B,,Pijanowski,B Pijanowski,Editorial.Board,SE,,,,,USA,USA
+LECO,2014,29,1,3193,R,Green,Pontius,R Green Pontius,Editorial.Board,SE,,,,,USA,USA
+LECO,2014,29,1,2075,K,,Riitters,K Riitters,Editorial.Board,SE,,,,,USA,USA
+LECO,2014,29,1,3461,S,,Saura,S Saura,Editorial.Board,SE,,,,,Spain,ESP
+LECO,2014,29,1,3214,R,M,Scheller,R M Scheller,Editorial.Board,SE,,,,,USA,USA
+LECO,2014,29,1,3215,R,,Schooley,R Schooley,Editorial.Board,SE,,,,,USA,USA
+LECO,2014,29,1,2238,L,A,Schulte,L A Schulte,Editorial.Board,SE,,,,,USA,USA
+LECO,2014,29,1,2741,O,,Schweiger,O Schweiger,Editorial.Board,SE,,,,,Germany,DEU
+LECO,2014,29,1,3797,W,,Shen,W Shen,Editorial.Board,SE,,,,,China,CHN
+LECO,2014,29,1,3480,S,,Stephens,S Stephens,Editorial.Board,SE,,,,,USA,USA
+LECO,2014,29,1,889,D,M,Theobald,D M Theobald,Editorial.Board,SE,,,,,USA,USA
+LECO,2014,29,1,222,A,JA,vanTeeffelen,A JA vanTeeffelen,Editorial.Board,SE,,,,,The Netherlands,NLD
+LECO,2014,29,1,2943,P,H,Verburg,P H Verburg,Editorial.Board,SE,,,,,The Netherlands,NLD
+LECO,2014,29,1,588,C,,Vos,C Vos,Editorial.Board,SE,,,,,The Netherlands,NLD
+LECO,2014,29,1,1952,J,D,Wickham,J D Wickham,Editorial.Board,SE,,,,,USA,USA
+LECO,2014,29,1,3659,T,,Wiegand,T Wiegand,Editorial.Board,SE,,,,,Germany,DEU
+LECO,2014,29,1,596,C,,Wilsey,C Wilsey,Editorial.Board,SE,,,,,USA,USA
+LECO,2014,29,1,1966,Jianguo,,Wu,Jianguo Wu,EIC,EIC,,,,,USA,USA
+LECO,2014,29,1,1281,G,,Zurlini,G Zurlini,Editorial.Board,SE,,,,,Italy,ITA
+LECO,2015,30,1,381,C,,Albert,C Albert,SE,SE,,,,,Germany,DEU
+LECO,2015,30,1,1283,H,D,Allen,H D Allen,SE,SE,University of Cambridge,,,,UK,GBR
+LECO,2015,30,1,2292,M,,Belisle,M Belisle,SE,SE,,,,,Canada,CAN
+LECO,2015,30,1,623,D,,Bender,D Bender,SE,SE,,,,,Canada,CAN
+LECO,2015,30,1,2299,M,,Betts,M Betts,SE,SE,,,,,USA,USA
+LECO,2015,30,1,1473,J,,Bolliger,J Bolliger,SE,SE,,,,,Switzerland,CHE
+LECO,2015,30,1,2316,M,,Burgi,M Burgi,SE,SE,,,,,Switzerland,CHE
+LECO,2015,30,1,3886,J,,Chen,J Chen,SE,SE,,,,,USA,USA
+LECO,2015,30,1,1990,K,S,Cheruvelil,K S Cheruvelil,SE,SE,,,,,USA,USA
+LECO,2015,30,1,3300,S,S,Cilliers,S S Cilliers,SE,SE,,,,,South Africa,ZAF
+LECO,2015,30,1,1520,J,K,Constanza,J K Constanza,SE,SE,,,,,USA,USA
+LECO,2015,30,1,1165,G,,Cumming,G Cumming,SE,SE,,,,,South Africa,ZAF
+LECO,2015,30,1,1533,J,,Cymerman,J Cymerman,SE,SE,,,,,USA,USA
+LECO,2015,30,1,671,D,,Donner,D Donner,SE,SE,,,,,USA,USA
+LECO,2015,30,1,439,C,,Echeverria,C Echeverria,SE,SE,,,,,Chile,CHL
+LECO,2015,30,1,1179,G,,Foody,G Foody,SE,SE,,,,,UK,GBR
+LECO,2015,30,1,275,B,,Fu,B Fu,SE,SE,,,,,China,CHN
+LECO,2015,30,1,3337,S,E,Gergel,S E Gergel,SE,SE,"University of British Columbia, Vancouver",,,,Canada,CAN
+LECO,2015,30,1,281,B,,Goodwin,B Goodwin,SE,SE,,,,,USA,USA
+LECO,2015,30,1,1191,G,,Guntenspergen,G Guntenspergen,SE,SE,,,,,USA,USA
+LECO,2015,30,1,975,E,,Gustafson,E Gustafson,SE,SE,,,,,USA,USA
+LECO,2015,30,1,2012,K,,Gutzwiller,K Gutzwiller,SE,SE,,,,,USA,USA
+LECO,2015,30,1,93,A,K,Hahs,A K Hahs,SE,SE,Australian research center for urban ecology,,,,Australia,AUS
+LECO,2015,30,1,1306,H,,He,H He,SE,SE,,,,,USA,USA
+LECO,2015,30,1,1201,G,M,Henebry,G M Henebry,SE,SE,,,,,USA,USA
+LECO,2015,30,1,1080,F,,Herzog,F Herzog,SE,SE,,,,,Switzerland,CHE
+LECO,2015,30,1,1640,J,D,Holland,J D Holland,SE,SE,,,,,USA,USA
+LECO,2015,30,1,3363,S-L,,Huang,S-L Huang,SE,SE,,,,,Taiwan,TWN
+LECO,2015,30,1,1211,G,Darrel,Jenerette,G Darrel Jenerette,SE,SE,,,,,USA,USA
+LECO,2015,30,1,2181,Lucinda,B,Johnson,Lucinda B Johnson,SE,SE,,,,,USA,USA
+LECO,2015,30,1,745,D,M,Kashian,D M Kashian,SE,SE,,,,,USA,USA
+LECO,2015,30,1,3577,T,H,Keitt,T H Keitt,SE,SE,,,,,USA,USA
+LECO,2015,30,1,3584,T,,Korella,T Korella,SE,SE,,,,,Portugal,PRT
+LECO,2015,30,1,1682,J,,Krauss,J Krauss,SE,SE,,,,,Germany,DEU
+LECO,2015,30,1,3126,R,,Lafortezza,R Lafortezza,SE,SE,,,,,Italy,ITA
+LECO,2015,30,1,3592,T,R,Lookinbill,T R Lookinbill,SE,SE,,,,,USA,USA
+LECO,2015,30,1,3398,S,S,Luque,S S Luque,SE,SE,National res. Inst.Of science and tech. for env.And agriculture,,,,France,FRA
+LECO,2015,30,1,522,C,,McAlpine,C McAlpine,SE,SE,,,,,Australia,AUS
+LECO,2015,30,1,2669,N,E,Mclyntre,N E Mclyntre,SE,SE,,,,,USA,USA
+LECO,2015,30,1,1763,Jean-Paul,,Metzger,Jean-Paul Metzger,SE,SE,,,,,Brazil,BRA
+LECO,2015,30,1,3900,J,R,Miller,J R Miller,SE,SE,,,,,USA,USA
+LECO,2015,30,1,1005,E,S,Minor,E S Minor,SE,SE,,,,,USA,USA
+LECO,2015,30,1,2053,K,,Moloney,K Moloney,SE,SE,,,,,USA,USA
+LECO,2015,30,1,2212,L,,Musacchio,L Musacchio,SE,SE,,,,,USA,USA
+LECO,2015,30,1,2885,P,,Opdam,P Opdam,AE,AE,,,,,Netherlands,NLD
+LECO,2015,30,1,1795,J,M,Overton,J M Overton,SE,SE,"Landcare Research , Lincoln",,,,New Zealand,NZL
+LECO,2015,30,1,340,B,,Pijanowski,B Pijanowski,SE,SE,,,,,USA,USA
+LECO,2015,30,1,3193,R,Green,Pontius,R Green Pontius,SE,SE,,,,,USA,USA
+LECO,2015,30,1,2075,K,,Riitters,K Riitters,SE,SE,,,,,USA,USA
+LECO,2015,30,1,3461,S,,Saura,S Saura,SE,SE,,,,,Spain,ESP
+LECO,2015,30,1,3214,R,M,Scheller,R M Scheller,SE,SE,,,,,USA,USA
+LECO,2015,30,1,3215,R,,Schooley,R Schooley,SE,SE,,,,,USA,USA
+LECO,2015,30,1,2741,O,,Schweiger,O Schweiger,SE,SE,,,,,Germany,DEU
+LECO,2015,30,1,3797,W,,Shen,W Shen,SE,SE,,,,,China,CHN
+LECO,2015,30,1,213,A,JA,Teefelen,A JA Teefelen,SE,SE,VU University Amsterdam,,,,Netherlands,NLD
+LECO,2015,30,1,889,D,M,Theobald,D M Theobald,SE,SE,,,,,USA,USA
+LECO,2015,30,1,1906,J,R,Thompson,J R Thompson,SE,SE,,,,,USA,USA
+LECO,2015,30,1,2943,P,H,Verburg,P H Verburg,SE,SE,VU University Amsterdam,,,,Netherlands,NLD
+LECO,2015,30,1,588,C,,Vos,C Vos,SE,SE,,,,,Netherlands,NLD
+LECO,2015,30,1,1952,J,D,Wickham,J D Wickham,SE,SE,,,,,USA,USA
+LECO,2015,30,1,3659,T,,Wiegand,T Wiegand,SE,SE,,,,,Germany,DEU
+LECO,2015,30,1,596,C,,Wilsey,C Wilsey,SE,SE,,,,,USA,USA
+LECO,2015,30,1,1966,Jianguo,,Wu,Jianguo Wu,EIC,EIC,,,,,USA,USA
+LECO,2015,30,1,602,C,,Young,C Young,SE,SE,,,,,UK,GBR
+LECO,2015,30,1,3824,W,,Zhou,W Zhou,SE,SE,,,,,China,CHN
+LECO,2015,30,1,1281,G,,Zurlini,G Zurlini,SE,SE,,,,,Italy,ITA

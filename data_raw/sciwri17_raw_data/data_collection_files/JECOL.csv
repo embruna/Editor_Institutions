@@ -1,0 +1,948 @@
+JOURNAL,YEAR,VOLUME,ISSUE,editor_id,FIRST_NAME,MIDDLE_NAME,LAST_NAME,NAME,TITLE.x,CATEGORY,INST,UNIT,CITY,STATE,COUNTRY,geo.code
+JECOL,1985,73,1,1564,John,R,Etherington,John R Etherington,SE,SE,,,,,UK,GBR
+JECOL,1985,73,1,3892,J,,Grace,J Grace,SE,SE,,,,,UK,GBR
+JECOL,1985,73,1,1608,J,Philip,Grime,J Philip Grime,SE,SE,,,,,UK,GBR
+JECOL,1985,73,1,289,B,,Hopkins,B Hopkins,EIC,EIC,,,,,UK,GBR
+JECOL,1985,73,1,292,B,,Huntley,B Huntley,SE,SE,,,,,UK,GBR
+JECOL,1985,73,1,2419,Michael,J,Hutchings,Michael J Hutchings,SE,SE,,,,,UK,GBR
+JECOL,1985,73,1,1704,John,A,Lee,John A Lee,AE,AE,,,,,UK,GBR
+JECOL,1985,73,1,330,Brian,,Moss,Brian Moss,AE,AE,,,,,UK,GBR
+JECOL,1985,73,1,2583,Michael,B,Usher,Michael B Usher,SE,SE,,,,,UK,GBR
+JECOL,1985,73,1,3874,D,A,Williams,D A Williams,SE,SE,,,,,UK,GBR
+JECOL,1986,74,1,1564,John,R,Etherington,John R Etherington,SE,SE,,,,,UK,GBR
+JECOL,1986,74,1,1608,J,P,Grime,J P Grime,SE,SE,,,,,UK,GBR
+JECOL,1986,74,1,292,B,,Huntley,B Huntley,SE,SE,,,,,UK,GBR
+JECOL,1986,74,1,2419,Michael,J,Hutchings,Michael J Hutchings,SE,SE,,,,,UK,GBR
+JECOL,1986,74,1,1704,John,,Lee,John Lee,AE,AE,,,,,UK,GBR
+JECOL,1986,74,1,3395,Stephen,P,Long,Stephen P Long,SE,SE,,,,,USA,USA
+JECOL,1986,74,1,330,Brian,,Moss,Brian Moss,EIC,EIC,,,,,UK,GBR
+JECOL,1986,74,1,2583,Michael,B,Usher,Michael B Usher,SE,SE,,,,,UK,GBR
+JECOL,1986,74,1,3911,James,,White,James White,AE,AE,,,,,Ireland,IRL
+JECOL,1986,74,1,3874,D,A,Williams,D A Williams,SE,SE,,,,,UK,GBR
+JECOL,1987,75,1,1519,John,,Connolly,John Connolly,SE,SE,,,,,Ireland,IRL
+JECOL,1987,75,1,2338,M,J,Crawley,M J Crawley,SE,SE,,,,,UK,GBR
+JECOL,1987,75,1,1564,John,R,Etherington,John R Etherington,SE,SE,,,,,UK,GBR
+JECOL,1987,75,1,291,B,,Huntely,B Huntely,SE,SE,,,,,UK,GBR
+JECOL,1987,75,1,2419,Michael,J,Hutchings,Michael J Hutchings,SE,SE,,,,,UK,GBR
+JECOL,1987,75,1,130,Alan,J,Lack,Alan J Lack,SE,SE,,,,,UK,GBR
+JECOL,1987,75,1,1704,John,,Lee,John Lee,AE,AE,,,,,UK,GBR
+JECOL,1987,75,1,3395,Stephen,P,Long,Stephen P Long,SE,SE,,,,,USA,USA
+JECOL,1987,75,1,330,Brian,,Moss,Brian Moss,EIC,EIC,,,,,UK,GBR
+JECOL,1987,75,1,3911,James,,White,James White,AE,AE,,,,,Ireland,IRL
+JECOL,1987,75,1,3874,D,A,Williams,D A Williams,SE,SE,,,,,UK,GBR
+JECOL,1988,76,1,2281,Mike,P,Austin,Mike P Austin,SE,SE,,,,,Australia,AUS
+JECOL,1988,76,1,1519,John,,Connolly,John Connolly,SE,SE,,,,,Ireland,IRL
+JECOL,1988,76,1,2338,M,J,Crawley,M J Crawley,SE,SE,,,,,UK,GBR
+JECOL,1988,76,1,1564,John,R,Etherington,John R Etherington,AE,AE,,,,,UK,GBR
+JECOL,1988,76,1,292,B,,Huntley,B Huntley,SE,SE,,,,,UK,GBR
+JECOL,1988,76,1,2419,Michael,J,Hutchings,Michael J Hutchings,SE,SE,,,,,UK,GBR
+JECOL,1988,76,1,3108,Robert,L,Jefferies,Robert L Jefferies,SE,SE,,,,,Canada,CAN
+JECOL,1988,76,1,130,Alan,J,Lack,Alan J Lack,SE,SE,,,,,UK,GBR
+JECOL,1988,76,1,1704,John,,Lee,John Lee,EIC,EIC,,,,,UK,GBR
+JECOL,1988,76,1,3395,Stephen,P,Long,Stephen P Long,SE,SE,,,,,USA,USA
+JECOL,1988,76,1,1872,Jonathan,,Silvertown,Jonathan Silvertown,SE,SE,,,,,UK,GBR
+JECOL,1988,76,1,3911,James,,White,James White,AE,AE,,,,,Ireland,IRL
+JECOL,1988,76,1,3874,D,A,Williams,D A Williams,SE,SE,,,,,UK,GBR
+JECOL,1989,77,1,2281,Mike,P,Austin,Mike P Austin,SE,SE,,,,,Australia,AUS
+JECOL,1989,77,1,1519,John,,Connolly,John Connolly,SE,SE,,,,,Ireland,IRL
+JECOL,1989,77,1,2338,M,J,Crawley,M J Crawley,SE,SE,,,,,UK,GBR
+JECOL,1989,77,1,1564,John,R,Etherington,John R Etherington,AE,AE,,,,,UK,GBR
+JECOL,1989,77,1,2419,Michael,J,Hutchings,Michael J Hutchings,SE,SE,,,,,UK,GBR
+JECOL,1989,77,1,3108,Robert,L,Jefferies,Robert L Jefferies,SE,SE,,,,,Canada,CAN
+JECOL,1989,77,1,130,Alan,J,Lack,Alan J Lack,SE,SE,,,,,UK,GBR
+JECOL,1989,77,1,1704,John,,Lee,John Lee,EIC,EIC,,,,,UK,GBR
+JECOL,1989,77,1,3395,Stephen,P,Long,Stephen P Long,SE,SE,,,,,USA,USA
+JECOL,1989,77,1,1872,Jonathan,,Silvertown,Jonathan Silvertown,SE,SE,,,,,UK,GBR
+JECOL,1989,77,1,1036,Eddy,,VanDerMeijden,Eddy VanDerMeijden,SE,SE,,,,,Netherlands,NLD
+JECOL,1989,77,1,3911,James,,White,James White,AE,AE,,,,,Ireland,IRL
+JECOL,1989,77,1,3874,D,A,Williams,D A Williams,SE,SE,,,,,UK,GBR
+JECOL,1990,78,1,2281,Mike,P,Austin,Mike P Austin,SE,SE,,,,,Australia,AUS
+JECOL,1990,78,1,1519,John,,Connolly,John Connolly,SE,SE,,,,,Ireland,IRL
+JECOL,1990,78,1,2338,M,J,Crawley,M J Crawley,SE,SE,,,,,UK,GBR
+JECOL,1990,78,1,2342,M,S,Davies,M S Davies,SE,SE,,,,,UK,GBR
+JECOL,1990,78,1,1564,John,R,Etherington,John R Etherington,AE,AE,,,,,UK,GBR
+JECOL,1990,78,1,3108,Robert,L,Jefferies,Robert L Jefferies,SE,SE,,,,,Canada,CAN
+JECOL,1990,78,1,130,Alan,J,Lack,Alan J Lack,SE,SE,,,,,UK,GBR
+JECOL,1990,78,1,1704,John,,Lee,John Lee,EIC,EIC,,,,,UK,GBR
+JECOL,1990,78,1,3395,Stephen,P,Long,Stephen P Long,SE,SE,,,,,USA,USA
+JECOL,1990,78,1,1872,Jonathan,,Silvertown,Jonathan Silvertown,SE,SE,,,,,UK,GBR
+JECOL,1990,78,1,1036,Eddy,,VanDerMeijden,Eddy VanDerMeijden,SE,SE,,,,,Netherlands,NLD
+JECOL,1990,78,1,3911,James,,White,James White,AE,AE,,,,,Ireland,IRL
+JECOL,1990,78,1,3874,D,A,Williams,D A Williams,SE,SE,,,,,UK,GBR
+JECOL,1990,78,1,1144,F,Ian,Woodward,F Ian Woodward,SE,SE,,,,,UK,GBR
+JECOL,1991,79,1,2281,Mike,P,Austin,Mike P Austin,SE,SE,,,,,Australia,AUS
+JECOL,1991,79,1,2979,Richard,W,Battarbee,Richard W Battarbee,SE,SE,,,,,UK,GBR
+JECOL,1991,79,1,644,David,R,Causton,David R Causton,SE,SE,,,,,UK,GBR
+JECOL,1991,79,1,1519,John,,Connolly,John Connolly,SE,SE,,,,,Ireland,IRL
+JECOL,1991,79,1,2338,M,J,Crawley,M J Crawley,SE,SE,,,,,UK,GBR
+JECOL,1991,79,1,2342,M,S,Davies,M S Davies,SE,SE,,,,,UK,GBR
+JECOL,1991,79,1,690,David,R,Foster,David R Foster,SE,SE,,,,,USA,USA
+JECOL,1991,79,1,89,Alan,J,Gray,Alan J Gray,SE,SE,,,,,UK,GBR
+JECOL,1991,79,1,2419,Michael,J,Hutchings,Michael J Hutchings,SE,SE,,,,,UK,GBR
+JECOL,1991,79,1,1210,George,L,Jacobson,George L Jacobson,SE,SE,,,,,USA,USA
+JECOL,1991,79,1,3108,Robert,L,Jefferies,Robert L Jefferies,SE,SE,,,,,Canada,CAN
+JECOL,1991,79,1,3851,Andrew,J,Lack,Andrew J Lack,SE,SE,,,,,UK,GBR
+JECOL,1991,79,1,2869,Peter,D,Moore,Peter D Moore,AE,AE,,,,,UK,GBR
+JECOL,1991,79,1,1872,Jonathan,,Silvertown,Jonathan Silvertown,SE,SE,,,,,UK,GBR
+JECOL,1991,79,1,1036,Eddy,,VanDerMeijden,Eddy VanDerMeijden,SE,SE,,,,,Netherlands,NLD
+JECOL,1991,79,1,3911,James,,White,James White,EIC,EIC,,,,,Ireland,IRL
+JECOL,1991,79,1,230,Arthur,J,Willis,Arthur J Willis,SE,SE,,,,,UK,GBR
+JECOL,1991,79,1,1144,F,Ian,Woodward,F Ian Woodward,SE,SE,,,,,UK,GBR
+JECOL,1992,80,1,2281,Mike,P,Austin,Mike P Austin,SE,SE,,,,,Australia,AUS
+JECOL,1992,80,1,2979,Richard,W,Battarbee,Richard W Battarbee,SE,SE,,,,,UK,GBR
+JECOL,1992,80,1,644,David,R,Causton,David R Causton,SE,SE,,,,,UK,GBR
+JECOL,1992,80,1,1519,John,,Connolly,John Connolly,SE,SE,,,,,Ireland,IRL
+JECOL,1992,80,1,2338,M,J,Crawley,M J Crawley,SE,SE,,,,,UK,GBR
+JECOL,1992,80,1,2342,M,S,Davies,M S Davies,SE,SE,,,,,UK,GBR
+JECOL,1992,80,1,74,Alastair,H,Fitter,Alastair H Fitter,SE,SE,,,,,UK,GBR
+JECOL,1992,80,1,690,David,R,Foster,David R Foster,SE,SE,,,,,USA,USA
+JECOL,1992,80,1,703,David,J,Gibson,David J Gibson,SE,SE,,,,,USA,USA
+JECOL,1992,80,1,89,Alan,J,Gray,Alan J Gray,SE,SE,,,,,UK,GBR
+JECOL,1992,80,1,2419,Michael,J,Hutchings,Michael J Hutchings,SE,SE,,,,,UK,GBR
+JECOL,1992,80,1,1210,George,L,Jacobson,George L Jacobson,SE,SE,,,,,USA,USA
+JECOL,1992,80,1,3108,Robert,L,Jefferies,Robert L Jefferies,SE,SE,,,,,Canada,CAN
+JECOL,1992,80,1,3851,Andrew,J,Lack,Andrew J Lack,SE,SE,,,,,UK,GBR
+JECOL,1992,80,1,1704,John,A,Lee,John A Lee,SE,SE,,,,,UK,GBR
+JECOL,1992,80,1,1872,Jonathan,,Silvertown,Jonathan Silvertown,SE,SE,,,,,UK,GBR
+JECOL,1992,80,1,3234,Roy,,Turkington,Roy Turkington,SE,SE,,,,,Canada,CAN
+JECOL,1992,80,1,1036,Eddy,,VanDerMeijden,Eddy VanDerMeijden,SE,SE,,,,,Netherlands,NLD
+JECOL,1992,80,1,1924,Jan,,VanGroenendael,Jan VanGroenendael,SE,SE,,,,,Netherlands,NLD
+JECOL,1992,80,1,3911,James,,White,James White,EIC,EIC,,,,,Ireland,IRL
+JECOL,1992,80,1,1144,F,Ian,Woodward,F Ian Woodward,SE,SE,,,,,UK,GBR
+JECOL,1993,81,1,2281,Mike,P,Austin,Mike P Austin,SE,SE,,,,,Australia,AUS
+JECOL,1993,81,1,2979,Richard,W,Battarbee,Richard W Battarbee,SE,SE,,,,,UK,GBR
+JECOL,1993,81,1,644,David,R,Causton,David R Causton,SE,SE,,,,,UK,GBR
+JECOL,1993,81,1,1519,John,,Connolly,John Connolly,SE,SE,,,,,Ireland,IRL
+JECOL,1993,81,1,2338,M,J,Crawley,M J Crawley,SE,SE,,,,,UK,GBR
+JECOL,1993,81,1,2342,M,S,Davies,M S Davies,SE,SE,,,,,UK,GBR
+JECOL,1993,81,1,74,Alastair,H,Fitter,Alastair H Fitter,AE,AE,,,,,UK,GBR
+JECOL,1993,81,1,690,David,R,Foster,David R Foster,SE,SE,,,,,USA,USA
+JECOL,1993,81,1,703,David,J,Gibson,David J Gibson,SE,SE,,,,,USA,USA
+JECOL,1993,81,1,89,Alan,J,Gray,Alan J Gray,SE,SE,,,,,UK,GBR
+JECOL,1993,81,1,2419,Michael,J,Hutchings,Michael J Hutchings,SE,SE,,,,,UK,GBR
+JECOL,1993,81,1,3108,Robert,L,Jefferies,Robert L Jefferies,SE,SE,,,,,Canada,CAN
+JECOL,1993,81,1,3851,Andrew,J,Lack,Andrew J Lack,SE,SE,,,,,UK,GBR
+JECOL,1993,81,1,1704,John,A,Lee,John A Lee,SE,SE,,,,,UK,GBR
+JECOL,1993,81,1,1872,Jonathan,,Silvertown,Jonathan Silvertown,EIC,EIC,,,,,UK,GBR
+JECOL,1993,81,1,3234,Roy,,Turkington,Roy Turkington,SE,SE,,,,,Canada,CAN
+JECOL,1993,81,1,1036,Eddy,,VanDerMeijden,Eddy VanDerMeijden,SE,SE,,,,,Netherlands,NLD
+JECOL,1993,81,1,1924,Jan,,VanGroenendael,Jan VanGroenendael,AE,AE,,,,,Netherlands,NLD
+JECOL,1993,81,1,230,Arthur,J,Willis,Arthur J Willis,SE,SE,,,,,UK,GBR
+JECOL,1993,81,1,1144,F,Ian,Woodward,F Ian Woodward,SE,SE,,,,,UK,GBR
+JECOL,1994,82,1,2338,M,J,Crawley,M J Crawley,SE,SE,,,,,UK,GBR
+JECOL,1994,82,1,74,Alastair,H,Fitter,Alastair H Fitter,AE,AE,,,,,UK,GBR
+JECOL,1994,82,1,690,David,R,Foster,David R Foster,SE,SE,,,,,USA,USA
+JECOL,1994,82,1,703,David,J,Gibson,David J Gibson,SE,SE,,,,,USA,USA
+JECOL,1994,82,1,89,Alan,J,Gray,Alan J Gray,SE,SE,,,,,UK,GBR
+JECOL,1994,82,1,2419,Michael,J,Hutchings,Michael J Hutchings,SE,SE,,,,,UK,GBR
+JECOL,1994,82,1,3108,Robert,L,Jefferies,Robert L Jefferies,SE,SE,,,,,Canada,CAN
+JECOL,1994,82,1,3851,Andrew,J,Lack,Andrew J Lack,SE,SE,,,,,UK,GBR
+JECOL,1994,82,1,1704,John,A,Lee,John A Lee,SE,SE,,,,,UK,GBR
+JECOL,1994,82,1,2869,Peter,D,Moore,Peter D Moore,SE,SE,,,,,UK,GBR
+JECOL,1994,82,1,351,Bernhard,,Schmid,Bernhard Schmid,SE,SE,,,,,Switzerland,CHE
+JECOL,1994,82,1,1872,Jonathan,,Silvertown,Jonathan Silvertown,EIC,EIC,,,,,UK,GBR
+JECOL,1994,82,1,3234,Roy,,Turkington,Roy Turkington,SE,SE,,,,,Canada,CAN
+JECOL,1994,82,1,1924,Jan,,VanGroenendael,Jan VanGroenendael,AE,AE,,,,,Netherlands,NLD
+JECOL,1994,82,1,2611,Mark,,Williamson,Mark Williamson,SE,SE,,,,,UK,GBR
+JECOL,1994,82,1,230,Arthur,J,Willis,Arthur J Willis,SE,SE,,,,,UK,GBR
+JECOL,1994,82,1,1144,F,Ian,Woodward,F Ian Woodward,SE,SE,,,,,UK,GBR
+JECOL,1995,83,1,2364,Michael,,Fenner,Michael Fenner,SE,SE,,,,,UK,GBR
+JECOL,1995,83,1,74,Alastair,H,Fitter,Alastair H Fitter,AE,AE,,,,,UK,GBR
+JECOL,1995,83,1,703,David,J,Gibson,David J Gibson,SE,SE,,,,,USA,USA
+JECOL,1995,83,1,89,Alan,J,Gray,Alan J Gray,SE,SE,,,,,UK,GBR
+JECOL,1995,83,1,2175,Laura,,Huenneke,Laura Huenneke,SE,SE,,,,,USA,USA
+JECOL,1995,83,1,2419,Michael,J,Hutchings,Michael J Hutchings,SE,SE,,,,,UK,GBR
+JECOL,1995,83,1,3108,Robert,L,Jefferies,Robert L Jefferies,SE,SE,,,,,Canada,CAN
+JECOL,1995,83,1,3374,Susan,,Kalisz,Susan Kalisz,SE,SE,,,,,USA,USA
+JECOL,1995,83,1,3851,Andrew,J,Lack,Andrew J Lack,SE,SE,,,,,UK,GBR
+JECOL,1995,83,1,1704,John,A,Lee,John A Lee,SE,SE,,,,,UK,GBR
+JECOL,1995,83,1,2869,Peter,D,Moore,Peter D Moore,SE,SE,,,,,UK,GBR
+JECOL,1995,83,1,2070,Kurt,S,Pregitzer,Kurt S Pregitzer,SE,SE,,,,,USA,USA
+JECOL,1995,83,1,1349,Honor,C,Prentice,Honor C Prentice,SE,SE,,,,,Sweden,SWE
+JECOL,1995,83,1,351,Bernhard,,Schmid,Bernhard Schmid,SE,SE,,,,,Switzerland,CHE
+JECOL,1995,83,1,1872,Jonathan,,Silvertown,Jonathan Silvertown,EIC,EIC,,,,,UK,GBR
+JECOL,1995,83,1,3234,Roy,,Turkington,Roy Turkington,SE,SE,,,,,Canada,CAN
+JECOL,1995,83,1,1924,Jan,,VanGroenendael,Jan VanGroenendael,AE,AE,,,,,Netherlands,NLD
+JECOL,1995,83,1,2611,Mark,,Williamson,Mark Williamson,SE,SE,,,,,UK,GBR
+JECOL,1995,83,1,230,Arthur,J,Willis,Arthur J Willis,SE,SE,,,,,UK,GBR
+JECOL,1995,83,1,1144,F,Ian,Woodward,F Ian Woodward,SE,SE,,,,,UK,GBR
+JECOL,1996,84,1,50,Anthony,J,Davy,Anthony J Davy,SE,SE,,,,,UK,GBR
+JECOL,1996,84,1,2364,Michael,,Fenner,Michael Fenner,SE,SE,,,,,UK,GBR
+JECOL,1996,84,1,74,Alastair,H,Fitter,Alastair H Fitter,AE,AE,,,,,UK,GBR
+JECOL,1996,84,1,703,David,J,Gibson,David J Gibson,SE,SE,,,,,USA,USA
+JECOL,1996,84,1,89,Alan,J,Gray,Alan J Gray,SE,SE,,,,,UK,GBR
+JECOL,1996,84,1,2175,Laura,,Huenneke,Laura Huenneke,SE,SE,,,,,USA,USA
+JECOL,1996,84,1,2419,Michael,J,Hutchings,Michael J Hutchings,SE,SE,,,,,UK,GBR
+JECOL,1996,84,1,3108,Robert,L,Jefferies,Robert L Jefferies,SE,SE,,,,,Canada,CAN
+JECOL,1996,84,1,3374,Susan,,Kalisz,Susan Kalisz,SE,SE,,,,,USA,USA
+JECOL,1996,84,1,3851,Andrew,J,Lack,Andrew J Lack,SE,SE,,,,,UK,GBR
+JECOL,1996,84,1,1704,John,A,Lee,John A Lee,SE,SE,,,,,UK,GBR
+JECOL,1996,84,1,2869,Peter,D,Moore,Peter D Moore,SE,SE,,,,,UK,GBR
+JECOL,1996,84,1,2070,Kurt,S,Pregitzer,Kurt S Pregitzer,SE,SE,,,,,USA,USA
+JECOL,1996,84,1,1349,Honor,C,Prentice,Honor C Prentice,SE,SE,,,,,Sweden,SWE
+JECOL,1996,84,1,2524,Malcolm,C,Press,Malcolm C Press,SE,SE,,,,,UK,GBR
+JECOL,1996,84,1,351,Bernhard,,Schmid,Bernhard Schmid,SE,SE,,,,,Switzerland,CHE
+JECOL,1996,84,1,1872,Jonathan,,Silvertown,Jonathan Silvertown,EIC,EIC,,,,,UK,GBR
+JECOL,1996,84,1,2104,Ken,,Thompson,Ken Thompson,SE,SE,,,,,UK,GBR
+JECOL,1996,84,1,3234,Roy,,Turkington,Roy Turkington,SE,SE,,,,,Canada,CAN
+JECOL,1996,84,1,1924,Jan,,VanGroenendael,Jan VanGroenendael,AE,AE,,,,,Netherlands,NLD
+JECOL,1996,84,1,2611,Mark,,Williamson,Mark Williamson,SE,SE,,,,,UK,GBR
+JECOL,1996,84,1,230,Arthur,J,Willis,Arthur J Willis,SE,SE,,,,,UK,GBR
+JECOL,1996,84,1,1144,F,Ian,Woodward,F Ian Woodward,SE,SE,,,,,UK,GBR
+JECOL,1997,85,1,50,Anthony,J,Davy,Anthony J Davy,AE,AE,,,,,UK,GBR
+JECOL,1997,85,1,2364,Michael,,Fenner,Michael Fenner,SE,SE,,,,,UK,GBR
+JECOL,1997,85,1,74,Alastair,H,Fitter,Alastair H Fitter,SE,SE,,,,,UK,GBR
+JECOL,1997,85,1,703,David,J,Gibson,David J Gibson,SE,SE,,,,,USA,USA
+JECOL,1997,85,1,89,Alan,J,Gray,Alan J Gray,SE,SE,,,,,UK,GBR
+JECOL,1997,85,1,3562,Toshihiko,,Hara,Toshihiko Hara,SE,SE,,,,,Japan,JPN
+JECOL,1997,85,1,2175,Laura,,Huenneke,Laura Huenneke,SE,SE,,,,,USA,USA
+JECOL,1997,85,1,2419,Michael,J,Hutchings,Michael J Hutchings,SE,SE,,,,,UK,GBR
+JECOL,1997,85,1,3108,Robert,L,Jefferies,Robert L Jefferies,SE,SE,,,,,Canada,CAN
+JECOL,1997,85,1,3374,Susan,,Kalisz,Susan Kalisz,SE,SE,,,,,USA,USA
+JECOL,1997,85,1,2849,Peter,,Klinkhamer,Peter Klinkhamer,SE,SE,,,,,Netherlands,NLD
+JECOL,1997,85,1,3851,Andrew,J,Lack,Andrew J Lack,SE,SE,,,,,UK,GBR
+JECOL,1997,85,1,3385,Sandra,,Lavorel,Sandra Lavorel,SE,SE,,,,,France,FRA
+JECOL,1997,85,1,1704,John,A,Lee,John A Lee,SE,SE,,,,,UK,GBR
+JECOL,1997,85,1,2869,Peter,D,Moore,Peter D Moore,SE,SE,,,,,UK,GBR
+JECOL,1997,85,1,2070,Kurt,S,Pregitzer,Kurt S Pregitzer,SE,SE,,,,,USA,USA
+JECOL,1997,85,1,1349,Honor,C,Prentice,Honor C Prentice,SE,SE,,,,,Sweden,SWE
+JECOL,1997,85,1,2524,Malcolm,C,Press,Malcolm C Press,SE,SE,,,,,UK,GBR
+JECOL,1997,85,1,351,Bernhard,,Schmid,Bernhard Schmid,SE,SE,,,,,Switzerland,CHE
+JECOL,1997,85,1,1872,Jonathan,,Silvertown,Jonathan Silvertown,EIC,EIC,,,,,UK,GBR
+JECOL,1997,85,1,2104,Ken,,Thompson,Ken Thompson,SE,SE,,,,,UK,GBR
+JECOL,1997,85,1,3234,Roy,,Turkington,Roy Turkington,SE,SE,,,,,Canada,CAN
+JECOL,1997,85,1,1924,Jan,,VanGroenendael,Jan VanGroenendael,AE,AE,,,,,Netherlands,NLD
+JECOL,1997,85,1,1945,Jacob,,Weiner,Jacob Weiner,SE,SE,,,,,Denmark,DNK
+JECOL,1997,85,1,2611,Mark,,Williamson,Mark Williamson,SE,SE,,,,,UK,GBR
+JECOL,1997,85,1,230,Arthur,J,Willis,Arthur J Willis,SE,SE,,,,,UK,GBR
+JECOL,1997,85,1,1144,F,Ian,Woodward,F Ian Woodward,SE,SE,,,,,UK,GBR
+JECOL,1998,86,1,3276,Spencer,CH,Barrett,Spencer CH Barrett,SE,SE,,,,,Canada,CAN
+JECOL,1998,86,1,50,Anthony,J,Davy,Anthony J Davy,AE,AE,,,,,UK,GBR
+JECOL,1998,86,1,2364,Michael,,Fenner,Michael Fenner,SE,SE,,,,,UK,GBR
+JECOL,1998,86,1,74,Alastair,H,Fitter,Alastair H Fitter,SE,SE,,,,,UK,GBR
+JECOL,1998,86,1,703,David,J,Gibson,David J Gibson,SE,SE,,,,,USA,USA
+JECOL,1998,86,1,89,Alan,J,Gray,Alan J Gray,SE,SE,,,,,UK,GBR
+JECOL,1998,86,1,3562,Toshihiko,,Hara,Toshihiko Hara,SE,SE,,,,,Japan,JPN
+JECOL,1998,86,1,2175,Laura,,Huenneke,Laura Huenneke,SE,SE,,,,,USA,USA
+JECOL,1998,86,1,2419,Michael,J,Hutchings,Michael J Hutchings,SE,SE,,,,,UK,GBR
+JECOL,1998,86,1,3108,Robert,L,Jefferies,Robert L Jefferies,SE,SE,,,,,Canada,CAN
+JECOL,1998,86,1,3374,Susan,,Kalisz,Susan Kalisz,SE,SE,,,,,USA,USA
+JECOL,1998,86,1,2849,Peter,,Klinkhamer,Peter Klinkhamer,SE,SE,,,,,Netherlands,NLD
+JECOL,1998,86,1,3851,Andrew,J,Lack,Andrew J Lack,SE,SE,,,,,UK,GBR
+JECOL,1998,86,1,3385,Sandra,,Lavorel,Sandra Lavorel,SE,SE,,,,,France,FRA
+JECOL,1998,86,1,1704,John,A,Lee,John A Lee,SE,SE,,,,,UK,GBR
+JECOL,1998,86,1,2869,Peter,D,Moore,Peter D Moore,SE,SE,,,,,UK,GBR
+JECOL,1998,86,1,2070,Kurt,S,Pregitzer,Kurt S Pregitzer,SE,SE,,,,,USA,USA
+JECOL,1998,86,1,1349,Honor,C,Prentice,Honor C Prentice,SE,SE,,,,,Sweden,SWE
+JECOL,1998,86,1,2524,Malcolm,C,Press,Malcolm C Press,SE,SE,,,,,UK,GBR
+JECOL,1998,86,1,1416,Ian,,Sanders,Ian Sanders,SE,SE,,,,,Switzerland,CHE
+JECOL,1998,86,1,351,Bernhard,,Schmid,Bernhard Schmid,SE,SE,,,,,Switzerland,CHE
+JECOL,1998,86,1,1872,Jonathan,,Silvertown,Jonathan Silvertown,EIC,EIC,,,,,UK,GBR
+JECOL,1998,86,1,2104,Ken,,Thompson,Ken Thompson,SE,SE,,,,,UK,GBR
+JECOL,1998,86,1,3234,Roy,,Turkington,Roy Turkington,SE,SE,,,,,Canada,CAN
+JECOL,1998,86,1,1924,Jan,,VanGroenendael,Jan VanGroenendael,AE,AE,,,,,Netherlands,NLD
+JECOL,1998,86,1,1945,Jacob,,Weiner,Jacob Weiner,SE,SE,,,,,Denmark,DNK
+JECOL,1998,86,1,2611,Mark,,Williamson,Mark Williamson,SE,SE,,,,,UK,GBR
+JECOL,1998,86,1,230,Arthur,J,Willis,Arthur J Willis,SE,SE,,,,,UK,GBR
+JECOL,1998,86,1,1144,F,Ian,Woodward,F Ian Woodward,SE,SE,,,,,UK,GBR
+JECOL,1998,86,1,3506,S,Joseph,Wright,S Joseph Wright,SE,SE,,,,,Panama,PAN
+JECOL,1999,87,1,3276,Spencer,CH,Barrett,Spencer CH Barrett,SE,SE,,,,,Canada,CAN
+JECOL,1999,87,1,50,Anthony,J,Davy,Anthony J Davy,EIC,EIC,,,,,UK,GBR
+JECOL,1999,87,1,2364,Michael,,Fenner,Michael Fenner,SE,SE,,,,,UK,GBR
+JECOL,1999,87,1,703,David,J,Gibson,David J Gibson,AE,AE,,,,,USA,USA
+JECOL,1999,87,1,703,David,J,Gibson,David J Gibson,SE,SE,,,,,USA,USA
+JECOL,1999,87,1,89,Alan,J,Gray,Alan J Gray,SE,SE,,,,,UK,GBR
+JECOL,1999,87,1,3562,Toshihiko,,Hara,Toshihiko Hara,SE,SE,,,,,Japan,JPN
+JECOL,1999,87,1,2419,Michael,J,Hutchings,Michael J Hutchings,AE,AE,,,,,UK,GBR
+JECOL,1999,87,1,2419,Michael,J,Hutchings,Michael J Hutchings,SE,SE,,,,,UK,GBR
+JECOL,1999,87,1,3108,Robert,L,Jefferies,Robert L Jefferies,SE,SE,,,,,Canada,CAN
+JECOL,1999,87,1,3374,Susan,,Kalisz,Susan Kalisz,SE,SE,,,,,USA,USA
+JECOL,1999,87,1,2849,Peter,,Klinkhamer,Peter Klinkhamer,SE,SE,,,,,Netherlands,NLD
+JECOL,1999,87,1,3385,Sandra,,Lavorel,Sandra Lavorel,SE,SE,,,,,France,FRA
+JECOL,1999,87,1,1704,John,A,Lee,John A Lee,SE,SE,,,,,UK,GBR
+JECOL,1999,87,1,2869,Peter,D,Moore,Peter D Moore,SE,SE,,,,,UK,GBR
+JECOL,1999,87,1,1349,Honor,C,Prentice,Honor C Prentice,SE,SE,,,,,Sweden,SWE
+JECOL,1999,87,1,2524,Malcolm,C,Press,Malcolm C Press,SE,SE,,,,,UK,GBR
+JECOL,1999,87,1,1416,Ian,,Sanders,Ian Sanders,SE,SE,,,,,Switzerland,CHE
+JECOL,1999,87,1,351,Bernhard,,Schmid,Bernhard Schmid,SE,SE,,,,,Switzerland,CHE
+JECOL,1999,87,1,2104,Ken,,Thompson,Ken Thompson,SE,SE,,,,,UK,GBR
+JECOL,1999,87,1,3234,Roy,,Turkington,Roy Turkington,SE,SE,,,,,Canada,CAN
+JECOL,1999,87,1,1945,Jacob,,Weiner,Jacob Weiner,SE,SE,,,,,Denmark,DNK
+JECOL,1999,87,1,2611,Mark,,Williamson,Mark Williamson,SE,SE,,,,,UK,GBR
+JECOL,1999,87,1,230,Arthur,J,Willis,Arthur J Willis,SE,SE,,,,,UK,GBR
+JECOL,1999,87,1,1144,F,Ian,Woodward,F Ian Woodward,SE,SE,,,,,UK,GBR
+JECOL,1999,87,1,3506,S,Joseph,Wright,S Joseph Wright,SE,SE,,,,,Panama,PAN
+JECOL,2000,88,1,2751,Paul,,Adam,Paul Adam,SE,SE,,,,,Australia,AUS
+JECOL,2000,88,1,2753,Peter,,Alpert,Peter Alpert,SE,SE,,,,,USA,USA
+JECOL,2000,88,1,3276,Spencer,CH,Barrett,Spencer CH Barrett,SE,SE,,,,,Canada,CAN
+JECOL,2000,88,1,50,Anthony,J,Davy,Anthony J Davy,EIC,EIC,,,,,UK,GBR
+JECOL,2000,88,1,2364,Michael,,Fenner,Michael Fenner,SE,SE,,,,,UK,GBR
+JECOL,2000,88,1,703,David,J,Gibson,David J Gibson,AE,AE,,,,,USA,USA
+JECOL,2000,88,1,89,Alan,J,Gray,Alan J Gray,SE,SE,,,,,UK,GBR
+JECOL,2000,88,1,3562,Toshihiko,,Hara,Toshihiko Hara,SE,SE,,,,,Japan,JPN
+JECOL,2000,88,1,2419,Michael,J,Hutchings,Michael J Hutchings,AE,AE,,,,,UK,GBR
+JECOL,2000,88,1,3108,Robert,L,Jefferies,Robert L Jefferies,SE,SE,,,,,Canada,CAN
+JECOL,2000,88,1,3374,Susan,,Kalisz,Susan Kalisz,SE,SE,,,,,USA,USA
+JECOL,2000,88,1,2849,Peter,,Klinkhamer,Peter Klinkhamer,SE,SE,,,,,Netherlands,NLD
+JECOL,2000,88,1,3762,William,K,Lauenroth,William K Lauenroth,SE,SE,,,,,USA,USA
+JECOL,2000,88,1,3385,Sandra,,Lavorel,Sandra Lavorel,SE,SE,,,,,France,FRA
+JECOL,2000,88,1,1704,John,A,Lee,John A Lee,SE,SE,,,,,UK,GBR
+JECOL,2000,88,1,2869,Peter,D,Moore,Peter D Moore,SE,SE,,,,,UK,GBR
+JECOL,2000,88,1,553,Chris,J,Peterson,Chris J Peterson,SE,SE,,,,,USA,USA
+JECOL,2000,88,1,1349,Honor,C,Prentice,Honor C Prentice,SE,SE,,,,,Sweden,SWE
+JECOL,2000,88,1,2524,Malcolm,C,Press,Malcolm C Press,SE,SE,,,,,UK,GBR
+JECOL,2000,88,1,1416,Ian,,Sanders,Ian Sanders,SE,SE,,,,,Switzerland,CHE
+JECOL,2000,88,1,351,Bernhard,,Schmid,Bernhard Schmid,SE,SE,,,,,Switzerland,CHE
+JECOL,2000,88,1,2104,Ken,,Thompson,Ken Thompson,SE,SE,,,,,UK,GBR
+JECOL,2000,88,1,3234,Roy,,Turkington,Roy Turkington,SE,SE,,,,,Canada,CAN
+JECOL,2000,88,1,1945,Jacob,,Weiner,Jacob Weiner,SE,SE,,,,,Denmark,DNK
+JECOL,2000,88,1,2611,Mark,,Williamson,Mark Williamson,SE,SE,,,,,UK,GBR
+JECOL,2000,88,1,230,Arthur,J,Willis,Arthur J Willis,SE,SE,,,,,UK,GBR
+JECOL,2000,88,1,1144,F,Ian,Woodward,F Ian Woodward,SE,SE,,,,,UK,GBR
+JECOL,2000,88,1,3506,S,Joseph,Wright,S Joseph Wright,SE,SE,,,,,Panama,PAN
+JECOL,2001,89,1,2751,Paul,,Adam,Paul Adam,SE,SE,,,,,Australia,AUS
+JECOL,2001,89,1,2753,Peter,,Alpert,Peter Alpert,SE,SE,,,,,USA,USA
+JECOL,2001,89,1,3276,Spencer,CH,Barrett,Spencer CH Barrett,SE,SE,,,,,Canada,CAN
+JECOL,2001,89,1,50,Anthony,J,Davy,Anthony J Davy,EIC,EIC,,,,,UK,GBR
+JECOL,2001,89,1,2364,Michael,,Fenner,Michael Fenner,SE,SE,,,,,UK,GBR
+JECOL,2001,89,1,703,David,J,Gibson,David J Gibson,AE,AE,,,,,USA,USA
+JECOL,2001,89,1,89,Alan,J,Gray,Alan J Gray,SE,SE,,,,,UK,GBR
+JECOL,2001,89,1,3562,Toshihiko,,Hara,Toshihiko Hara,SE,SE,,,,,Japan,JPN
+JECOL,2001,89,1,2419,Michael,J,Hutchings,Michael J Hutchings,AE,AE,,,,,UK,GBR
+JECOL,2001,89,1,3108,Robert,L,Jefferies,Robert L Jefferies,SE,SE,,,,,Canada,CAN
+JECOL,2001,89,1,2849,Peter,,Klinkhamer,Peter Klinkhamer,SE,SE,,,,,Netherlands,NLD
+JECOL,2001,89,1,3762,William,K,Lauenroth,William K Lauenroth,SE,SE,,,,,USA,USA
+JECOL,2001,89,1,3385,Sandra,,Lavorel,Sandra Lavorel,SE,SE,,,,,France,FRA
+JECOL,2001,89,1,1704,John,A,Lee,John A Lee,SE,SE,,,,,UK,GBR
+JECOL,2001,89,1,2869,Peter,D,Moore,Peter D Moore,SE,SE,,,,,UK,GBR
+JECOL,2001,89,1,553,Chris,J,Peterson,Chris J Peterson,SE,SE,,,,,USA,USA
+JECOL,2001,89,1,1349,Honor,C,Prentice,Honor C Prentice,SE,SE,,,,,Sweden,SWE
+JECOL,2001,89,1,2524,Malcolm,C,Press,Malcolm C Press,SE,SE,,,,,UK,GBR
+JECOL,2001,89,1,1416,Ian,,Sanders,Ian Sanders,SE,SE,,,,,Switzerland,CHE
+JECOL,2001,89,1,351,Bernhard,,Schmid,Bernhard Schmid,SE,SE,,,,,Switzerland,CHE
+JECOL,2001,89,1,2104,Ken,,Thompson,Ken Thompson,SE,SE,,,,,UK,GBR
+JECOL,2001,89,1,3234,Roy,,Turkington,Roy Turkington,SE,SE,,,,,Canada,CAN
+JECOL,2001,89,1,1945,Jacob,,Weiner,Jacob Weiner,SE,SE,,,,,Denmark,DNK
+JECOL,2001,89,1,2611,Mark,,Williamson,Mark Williamson,SE,SE,,,,,UK,GBR
+JECOL,2001,89,1,230,Arthur,J,Willis,Arthur J Willis,SE,SE,,,,,UK,GBR
+JECOL,2001,89,1,1144,F,Ian,Woodward,F Ian Woodward,SE,SE,,,,,UK,GBR
+JECOL,2001,89,1,3506,S,Joseph,Wright,S Joseph Wright,SE,SE,,,,,Panama,PAN
+JECOL,2002,90,1,2751,Paul,,Adam,Paul Adam,SE,SE,,,,,Australia,AUS
+JECOL,2002,90,1,2753,Peter,,Alpert,Peter Alpert,SE,SE,,,,,USA,USA
+JECOL,2002,90,1,3276,Spencer,CH,Barrett,Spencer CH Barrett,SE,SE,,,,,Canada,CAN
+JECOL,2002,90,1,639,David,,Burslem,David Burslem,SE,SE,,,,,UK,GBR
+JECOL,2002,90,1,50,Anthony,J,Davy,Anthony J Davy,EIC,EIC,,,,,UK,GBR
+JECOL,2002,90,1,1296,Hans,,DeKroon,Hans DeKroon,SE,SE,,,,,Netherlands,NLD
+JECOL,2002,90,1,703,David,J,Gibson,David J Gibson,AE,AE,,,,,USA,USA
+JECOL,2002,90,1,89,Alan,J,Gray,Alan J Gray,SE,SE,,,,,UK,GBR
+JECOL,2002,90,1,3562,Toshihiko,,Hara,Toshihiko Hara,SE,SE,,,,,Japan,JPN
+JECOL,2002,90,1,3353,Sue,E,Hartley,Sue E Hartley,SE,SE,,,,,UK,GBR
+JECOL,2002,90,1,2419,Michael,J,Hutchings,Michael J Hutchings,AE,AE,,,,,UK,GBR
+JECOL,2002,90,1,3108,Robert,L,Jefferies,Robert L Jefferies,SE,SE,,,,,Canada,CAN
+JECOL,2002,90,1,2849,Peter,,Klinkhamer,Peter Klinkhamer,SE,SE,,,,,Netherlands,NLD
+JECOL,2002,90,1,3762,William,K,Lauenroth,William K Lauenroth,SE,SE,,,,,USA,USA
+JECOL,2002,90,1,3385,Sandra,,Lavorel,Sandra Lavorel,SE,SE,,,,,France,FRA
+JECOL,2002,90,1,1704,John,A,Lee,John A Lee,SE,SE,,,,,UK,GBR
+JECOL,2002,90,1,2869,Peter,D,Moore,Peter D Moore,SE,SE,,,,,UK,GBR
+JECOL,2002,90,1,553,Chris,J,Peterson,Chris J Peterson,SE,SE,,,,,USA,USA
+JECOL,2002,90,1,1349,Honor,C,Prentice,Honor C Prentice,SE,SE,,,,,Sweden,SWE
+JECOL,2002,90,1,2524,Malcolm,C,Press,Malcolm C Press,SE,SE,,,,,UK,GBR
+JECOL,2002,90,1,1416,Ian,,Sanders,Ian Sanders,SE,SE,,,,,Switzerland,CHE
+JECOL,2002,90,1,351,Bernhard,,Schmid,Bernhard Schmid,SE,SE,,,,,Switzerland,CHE
+JECOL,2002,90,1,2104,Ken,,Thompson,Ken Thompson,SE,SE,,,,,UK,GBR
+JECOL,2002,90,1,3234,Roy,,Turkington,Roy Turkington,SE,SE,,,,,Canada,CAN
+JECOL,2002,90,1,1945,Jacob,,Weiner,Jacob Weiner,SE,SE,,,,,Denmark,DNK
+JECOL,2002,90,1,2611,Mark,,Williamson,Mark Williamson,SE,SE,,,,,UK,GBR
+JECOL,2002,90,1,230,Arthur,J,Willis,Arthur J Willis,SE,SE,,,,,UK,GBR
+JECOL,2002,90,1,1144,F,Ian,Woodward,F Ian Woodward,SE,SE,,,,,UK,GBR
+JECOL,2002,90,1,3506,S,Joseph,Wright,S Joseph Wright,SE,SE,,,,,Panama,PAN
+JECOL,2003,91,1,2751,Paul,,Adam,Paul Adam,SE,SE,,,,,Australia,AUS
+JECOL,2003,91,1,2753,Peter,,Alpert,Peter Alpert,SE,SE,,,,,USA,USA
+JECOL,2003,91,1,3276,Spencer,CH,Barrett,Spencer CH Barrett,SE,SE,,,,,Canada,CAN
+JECOL,2003,91,1,639,David,,Burslem,David Burslem,SE,SE,,,,,UK,GBR
+JECOL,2003,91,1,50,Anthony,J,Davy,Anthony J Davy,EIC,EIC,,,,,UK,GBR
+JECOL,2003,91,1,1296,Hans,,DeKroon,Hans DeKroon,SE,SE,,,,,Netherlands,NLD
+JECOL,2003,91,1,703,David,J,Gibson,David J Gibson,AE,AE,,,,,USA,USA
+JECOL,2003,91,1,89,Alan,J,Gray,Alan J Gray,SE,SE,,,,,UK,GBR
+JECOL,2003,91,1,3562,Toshihiko,,Hara,Toshihiko Hara,SE,SE,,,,,Japan,JPN
+JECOL,2003,91,1,3353,Sue,E,Hartley,Sue E Hartley,SE,SE,,,,,UK,GBR
+JECOL,2003,91,1,2419,Michael,J,Hutchings,Michael J Hutchings,AE,AE,,,,,UK,GBR
+JECOL,2003,91,1,3108,Robert,L,Jefferies,Robert L Jefferies,SE,SE,,,,,Canada,CAN
+JECOL,2003,91,1,2849,Peter,,Klinkhamer,Peter Klinkhamer,SE,SE,,,,,Netherlands,NLD
+JECOL,2003,91,1,3762,William,K,Lauenroth,William K Lauenroth,SE,SE,,,,,USA,USA
+JECOL,2003,91,1,3385,Sandra,,Lavorel,Sandra Lavorel,SE,SE,,,,,France,FRA
+JECOL,2003,91,1,1704,John,A,Lee,John A Lee,SE,SE,,,,,UK,GBR
+JECOL,2003,91,1,2869,Peter,D,Moore,Peter D Moore,SE,SE,,,,,UK,GBR
+JECOL,2003,91,1,1794,Joop,,Ouborg,Joop Ouborg,SE,SE,,,,,Netherlands,NLD
+JECOL,2003,91,1,553,Chris,J,Peterson,Chris J Peterson,SE,SE,,,,,USA,USA
+JECOL,2003,91,1,1349,Honor,C,Prentice,Honor C Prentice,SE,SE,,,,,Sweden,SWE
+JECOL,2003,91,1,2524,Malcolm,C,Press,Malcolm C Press,SE,SE,,,,,UK,GBR
+JECOL,2003,91,1,2526,Michael,CF,Proctor,Michael CF Proctor,SE,SE,,,,,UK,GBR
+JECOL,2003,91,1,1416,Ian,,Sanders,Ian Sanders,SE,SE,,,,,Switzerland,CHE
+JECOL,2003,91,1,351,Bernhard,,Schmid,Bernhard Schmid,SE,SE,,,,,Switzerland,CHE
+JECOL,2003,91,1,880,David,,Streeter,David Streeter,SE,SE,,,,,UK,GBR
+JECOL,2003,91,1,2104,Ken,,Thompson,Ken Thompson,SE,SE,,,,,UK,GBR
+JECOL,2003,91,1,3234,Roy,,Turkington,Roy Turkington,SE,SE,,,,,Canada,CAN
+JECOL,2003,91,1,1945,Jacob,,Weiner,Jacob Weiner,SE,SE,,,,,Denmark,DNK
+JECOL,2003,91,1,2611,Mark,,Williamson,Mark Williamson,SE,SE,,,,,UK,GBR
+JECOL,2003,91,1,230,Arthur,J,Willis,Arthur J Willis,SE,SE,,,,,UK,GBR
+JECOL,2003,91,1,1144,F,Ian,Woodward,F Ian Woodward,SE,SE,,,,,UK,GBR
+JECOL,2003,91,1,3506,S,Joseph,Wright,S Joseph Wright,SE,SE,,,,,Panama,PAN
+JECOL,2004,92,1,2751,Paul,,Adam,Paul Adam,SE,SE,,,,,Australia,AUS
+JECOL,2004,92,1,2753,Peter,,Alpert,Peter Alpert,SE,SE,,,,,USA,USA
+JECOL,2004,92,1,2977,Richard,D,Bardgett,Richard D Bardgett,SE,SE,,,,,UK,GBR
+JECOL,2004,92,1,3276,Spencer,CH,Barrett,Spencer CH Barrett,SE,SE,,,,,Canada,CAN
+JECOL,2004,92,1,639,David,,Burslem,David Burslem,SE,SE,,,,,UK,GBR
+JECOL,2004,92,1,3009,Ragan,M,Callaway,Ragan M Callaway,SE,SE,,,,,USA,USA
+JECOL,2004,92,1,50,Anthony,J,Davy,Anthony J Davy,EIC,EIC,,,,,UK,GBR
+JECOL,2004,92,1,1296,Hans,,DeKroon,Hans DeKroon,SE,SE,,,,,Netherlands,NLD
+JECOL,2004,92,1,703,David,J,Gibson,David J Gibson,AE,AE,,,,,USA,USA
+JECOL,2004,92,1,1070,Frank,S,Gilliam,Frank S Gilliam,SE,SE,,,,,USA,USA
+JECOL,2004,92,1,3353,Sue,E,Hartley,Sue E Hartley,SE,SE,,,,,UK,GBR
+JECOL,2004,92,1,2419,Michael,J,Hutchings,Michael J Hutchings,AE,AE,,,,,UK,GBR
+JECOL,2004,92,1,3108,Robert,L,Jefferies,Robert L Jefferies,SE,SE,,,,,Canada,CAN
+JECOL,2004,92,1,2849,Peter,,Klinkhamer,Peter Klinkhamer,SE,SE,,,,,Netherlands,NLD
+JECOL,2004,92,1,3762,William,K,Lauenroth,William K Lauenroth,SE,SE,,,,,USA,USA
+JECOL,2004,92,1,1704,John,A,Lee,John A Lee,SE,SE,,,,,UK,GBR
+JECOL,2004,92,1,2869,Peter,D,Moore,Peter D Moore,SE,SE,,,,,UK,GBR
+JECOL,2004,92,1,1794,Joop,,Ouborg,Joop Ouborg,SE,SE,,,,,Netherlands,NLD
+JECOL,2004,92,1,1349,Honor,C,Prentice,Honor C Prentice,SE,SE,,,,,Sweden,SWE
+JECOL,2004,92,1,2524,Malcolm,C,Press,Malcolm C Press,SE,SE,,,,,UK,GBR
+JECOL,2004,92,1,2526,Michael,CF,Proctor,Michael CF Proctor,SE,SE,,,,,UK,GBR
+JECOL,2004,92,1,1416,Ian,,Sanders,Ian Sanders,SE,SE,,,,,Switzerland,CHE
+JECOL,2004,92,1,880,David,,Streeter,David Streeter,SE,SE,,,,,UK,GBR
+JECOL,2004,92,1,2104,Ken,,Thompson,Ken Thompson,SE,SE,,,,,UK,GBR
+JECOL,2004,92,1,3234,Roy,,Turkington,Roy Turkington,SE,SE,,,,,Canada,CAN
+JECOL,2004,92,1,1945,Jacob,,Weiner,Jacob Weiner,SE,SE,,,,,Denmark,DNK
+JECOL,2004,92,1,2611,Mark,,Williamson,Mark Williamson,SE,SE,,,,,UK,GBR
+JECOL,2004,92,1,230,Arthur,J,Willis,Arthur J Willis,SE,SE,,,,,UK,GBR
+JECOL,2004,92,1,3506,S,Joseph,Wright,S Joseph Wright,SE,SE,,,,,Panama,PAN
+JECOL,2005,93,1,2751,Paul,,Adam,Paul Adam,SE,SE,,,,,Australia,AUS
+JECOL,2005,93,1,2967,Rien,,Aerts,Rien Aerts,SE,SE,,,,,Netherlands,NLD
+JECOL,2005,93,1,2753,Peter,,Alpert,Peter Alpert,SE,SE,,,,,USA,USA
+JECOL,2005,93,1,2977,Richard,D,Bardgett,Richard D Bardgett,SE,SE,,,,,UK,GBR
+JECOL,2005,93,1,3276,Spencer,CH,Barrett,Spencer CH Barrett,SE,SE,,,,,Canada,CAN
+JECOL,2005,93,1,1493,Jeremy,,Burdon,Jeremy Burdon,SE,SE,,,,,Australia,AUS
+JECOL,2005,93,1,639,David,,Burslem,David Burslem,SE,SE,,,,,UK,GBR
+JECOL,2005,93,1,1496,James,,Cahill,James Cahill,SE,SE,,,,,Canada,CAN
+JECOL,2005,93,1,3009,Ragan,M,Callaway,Ragan M Callaway,SE,SE,,,,,USA,USA
+JECOL,2005,93,1,3302,Scott,,Collins,Scott Collins,SE,SE,,,,,USA,USA
+JECOL,2005,93,1,1296,Hans,,DeKroon,Hans DeKroon,SE,SE,,,,,Netherlands,NLD
+JECOL,2005,93,1,703,David,J,Gibson,David J Gibson,AE,AE,,,,,USA,USA
+JECOL,2005,93,1,1070,Frank,S,Gilliam,Frank S Gilliam,SE,SE,,,,,USA,USA
+JECOL,2005,93,1,2013,Kyle,,Harms,Kyle Harms,SE,SE,,,,,USA,USA
+JECOL,2005,93,1,3353,Sue,E,Hartley,Sue E Hartley,SE,SE,,,,,UK,GBR
+JECOL,2005,93,1,2408,Martin,,Heil,Martin Heil,SE,SE,,,,,Germany,DEU
+JECOL,2005,93,1,2419,Michael,J,Hutchings,Michael J Hutchings,EIC,EIC,,,,,UK,GBR
+JECOL,2005,93,1,3108,Robert,L,Jefferies,Robert L Jefferies,SE,SE,,,,,Canada,CAN
+JECOL,2005,93,1,2841,Peter,,Jolliffe,Peter Jolliffe,SE,SE,,,,,Canada,CAN
+JECOL,2005,93,1,3113,Robert,J,Jones,Robert J Jones,SE,SE,,,,,USA,USA
+JECOL,2005,93,1,2849,Peter,,Klinkhamer,Peter Klinkhamer,SE,SE,,,,,Netherlands,NLD
+JECOL,2005,93,1,1704,John,A,Lee,John A Lee,SE,SE,,,,,UK,GBR
+JECOL,2005,93,1,155,Angela,,Moles,Angela Moles,SE,SE,,,,,Australia,AUS
+JECOL,2005,93,1,2869,Peter,D,Moore,Peter D Moore,SE,SE,,,,,UK,GBR
+JECOL,2005,93,1,539,Christer,,Nilsson,Christer Nilsson,SE,SE,,,,,Sweden,SWE
+JECOL,2005,93,1,542,Colin,,Osborne,Colin Osborne,SE,SE,,,,,UK,GBR
+JECOL,2005,93,1,1794,Joop,,Ouborg,Joop Ouborg,SE,SE,,,,,Netherlands,NLD
+JECOL,2005,93,1,1349,Honor,C,Prentice,Honor C Prentice,SE,SE,,,,,Sweden,SWE
+JECOL,2005,93,1,2524,Malcolm,C,Press,Malcolm C Press,AE,AE,,,,,UK,GBR
+JECOL,2005,93,1,2526,Michael,CF,Proctor,Michael CF Proctor,SE,SE,,,,,UK,GBR
+JECOL,2005,93,1,880,David,,Streeter,David Streeter,SE,SE,,,,,UK,GBR
+JECOL,2005,93,1,1370,Hanna,,Tuomisto,Hanna Tuomisto,SE,SE,,,,,Finland,FIN
+JECOL,2005,93,1,3234,Roy,,Turkington,Roy Turkington,SE,SE,,,,,Canada,CAN
+JECOL,2005,93,1,2586,Marcel,,VanDerHeijden,Marcel VanDerHeijden,SE,SE,,,,,Netherlands,NLD
+JECOL,2005,93,1,1945,Jacob,,Weiner,Jacob Weiner,SE,SE,,,,,Denmark,DNK
+JECOL,2005,93,1,230,Arthur,J,Willis,Arthur J Willis,SE,SE,,,,,UK,GBR
+JECOL,2005,93,1,3504,Scott,D,Wilson,Scott D Wilson,SE,SE,,,,,Canada,CAN
+JECOL,2005,93,1,1279,Gerhard,,Zotz,Gerhard Zotz,SE,SE,,,,,Switzerland,CHE
+JECOL,2006,94,1,2967,Rien,,Aerts,Rien Aerts,SE,SE,,,,,Netherlands,NLD
+JECOL,2006,94,1,2753,Peter,,Alpert,Peter Alpert,SE,SE,,,,,USA,USA
+JECOL,2006,94,1,2977,Richard,D,Bardgett,Richard D Bardgett,SE,SE,,,,,UK,GBR
+JECOL,2006,94,1,3276,Spencer,CH,Barrett,Spencer CH Barrett,SE,SE,,,,,Canada,CAN
+JECOL,2006,94,1,2765,Peter,J,Bellingham,Peter J Bellingham,SE,SE,,,,,New Zealand,NZL
+JECOL,2006,94,1,2997,Rob,,Brooker,Rob Brooker,SE,SE,,,,,UK,GBR
+JECOL,2006,94,1,1493,Jeremy,,Burdon,Jeremy Burdon,SE,SE,,,,,Australia,AUS
+JECOL,2006,94,1,639,David,,Burslem,David Burslem,SE,SE,,,,,UK,GBR
+JECOL,2006,94,1,1496,James,,Cahill,James Cahill,SE,SE,,,,,Canada,CAN
+JECOL,2006,94,1,3009,Ragan,M,Callaway,Ragan M Callaway,SE,SE,,,,,USA,USA
+JECOL,2006,94,1,3302,Scott,,Collins,Scott Collins,SE,SE,,,,,USA,USA
+JECOL,2006,94,1,1293,Hans,,Cornelissen,Hans Cornelissen,SE,SE,,,,,Netherlands,NLD
+JECOL,2006,94,1,50,Anthony,J,Davy,Anthony J Davy,SE,SE,,,,,UK,GBR
+JECOL,2006,94,1,1296,Hans,,DeKroon,Hans DeKroon,SE,SE,,,,,Netherlands,NLD
+JECOL,2006,94,1,703,David,J,Gibson,David J Gibson,AE,AE,,,,,USA,USA
+JECOL,2006,94,1,1070,Frank,S,Gilliam,Frank S Gilliam,SE,SE,,,,,USA,USA
+JECOL,2006,94,1,2013,Kyle,,Harms,Kyle Harms,SE,SE,,,,,USA,USA
+JECOL,2006,94,1,3353,Sue,E,Hartley,Sue E Hartley,SE,SE,,,,,UK,GBR
+JECOL,2006,94,1,2408,Martin,,Heil,Martin Heil,SE,SE,,,,,Germany,DEU
+JECOL,2006,94,1,2419,Michael,J,Hutchings,Michael J Hutchings,EIC,EIC,,,,,UK,GBR
+JECOL,2006,94,1,3108,Robert,L,Jefferies,Robert L Jefferies,SE,SE,,,,,Canada,CAN
+JECOL,2006,94,1,3113,Robert,J,Jones,Robert J Jones,SE,SE,,,,,USA,USA
+JECOL,2006,94,1,2849,Peter,,Klinkhamer,Peter Klinkhamer,SE,SE,,,,,Netherlands,NLD
+JECOL,2006,94,1,1704,John,A,Lee,John A Lee,SE,SE,,,,,UK,GBR
+JECOL,2006,94,1,155,Angela,,Moles,Angela Moles,SE,SE,,,,,Australia,AUS
+JECOL,2006,94,1,2869,Peter,D,Moore,Peter D Moore,SE,SE,,,,,UK,GBR
+JECOL,2006,94,1,3171,Ran,,Nathan,Ran Nathan,SE,SE,,,,,Israel,ISR
+JECOL,2006,94,1,1785,Jonathan,A,Newman,Jonathan A Newman,SE,SE,,,,,Canada,CAN
+JECOL,2006,94,1,539,Christer,,Nilsson,Christer Nilsson,SE,SE,,,,,Sweden,SWE
+JECOL,2006,94,1,542,Colin,,Osborne,Colin Osborne,SE,SE,,,,,UK,GBR
+JECOL,2006,94,1,1794,Joop,,Ouborg,Joop Ouborg,SE,SE,,,,,Netherlands,NLD
+JECOL,2006,94,1,1349,Honor,C,Prentice,Honor C Prentice,SE,SE,,,,,Sweden,SWE
+JECOL,2006,94,1,2524,Malcolm,C,Press,Malcolm C Press,AE,AE,,,,,UK,GBR
+JECOL,2006,94,1,2526,Michael,CF,Proctor,Michael CF Proctor,SE,SE,,,,,UK,GBR
+JECOL,2006,94,1,3466,Susan,,Schwinning,Susan Schwinning,SE,SE,,,,,USA,USA
+JECOL,2006,94,1,880,David,,Streeter,David Streeter,SE,SE,,,,,UK,GBR
+JECOL,2006,94,1,1370,Hanna,,Tuomisto,Hanna Tuomisto,SE,SE,,,,,Finland,FIN
+JECOL,2006,94,1,3234,Roy,,Turkington,Roy Turkington,SE,SE,,,,,Canada,CAN
+JECOL,2006,94,1,2579,Matthew,,Turnbull,Matthew Turnbull,SE,SE,,,,,New Zealand,NZL
+JECOL,2006,94,1,2586,Marcel,,VanDerHeijden,Marcel VanDerHeijden,SE,SE,,,,,Netherlands,NLD
+JECOL,2006,94,1,1945,Jacob,,Weiner,Jacob Weiner,SE,SE,,,,,Denmark,DNK
+JECOL,2006,94,1,230,Arthur,J,Willis,Arthur J Willis,SE,SE,,,,,UK,GBR
+JECOL,2006,94,1,3504,Scott,D,Wilson,Scott D Wilson,SE,SE,,,,,Canada,CAN
+JECOL,2006,94,1,1279,Gerhard,,Zotz,Gerhard Zotz,SE,SE,,,,,Switzerland,CHE
+JECOL,2006,94,1,2960,Pieter,A,Zuidema,Pieter A Zuidema,SE,SE,,,,,Netherlands,NLD
+JECOL,2007,95,1,2967,Rien,,Aerts,Rien Aerts,SE,SE,,,,,Netherlands,NLD
+JECOL,2007,95,1,1434,Jon,,Agren,Jon Agren,SE,SE,,,,,Sweden,SWE
+JECOL,2007,95,1,2753,Peter,,Alpert,Peter Alpert,SE,SE,,,,,USA,USA
+JECOL,2007,95,1,2977,Richard,D,Bardgett,Richard D Bardgett,AE,AE,,,,,UK,GBR
+JECOL,2007,95,1,2765,Peter,J,Bellingham,Peter J Bellingham,SE,SE,,,,,New Zealand,NZL
+JECOL,2007,95,1,2997,Rob,,Brooker,Rob Brooker,SE,SE,,,,,UK,GBR
+JECOL,2007,95,1,1493,Jeremy,,Burdon,Jeremy Burdon,SE,SE,,,,,Australia,AUS
+JECOL,2007,95,1,639,David,,Burslem,David Burslem,SE,SE,,,,,UK,GBR
+JECOL,2007,95,1,1496,James,,Cahill,James Cahill,SE,SE,,,,,Canada,CAN
+JECOL,2007,95,1,3009,Ragan,M,Callaway,Ragan M Callaway,SE,SE,,,,,USA,USA
+JECOL,2007,95,1,3302,Scott,,Collins,Scott Collins,SE,SE,,,,,USA,USA
+JECOL,2007,95,1,1293,Hans,,Cornelissen,Hans Cornelissen,SE,SE,,,,,Netherlands,NLD
+JECOL,2007,95,1,50,Anthony,J,Davy,Anthony J Davy,SE,SE,,,,,UK,GBR
+JECOL,2007,95,1,1296,Hans,,DeKroon,Hans DeKroon,SE,SE,,,,,Netherlands,NLD
+JECOL,2007,95,1,273,Bryan,,Foster,Bryan Foster,SE,SE,,,,,USA,USA
+JECOL,2007,95,1,703,David,J,Gibson,David J Gibson,AE,AE,,,,,USA,USA
+JECOL,2007,95,1,1070,Frank,S,Gilliam,Frank S Gilliam,SE,SE,,,,,USA,USA
+JECOL,2007,95,1,2013,Kyle,,Harms,Kyle Harms,SE,SE,,,,,USA,USA
+JECOL,2007,95,1,2408,Martin,,Heil,Martin Heil,SE,SE,,,,,Germany,DEU
+JECOL,2007,95,1,2419,Michael,J,Hutchings,Michael J Hutchings,EIC,EIC,,,,,UK,GBR
+JECOL,2007,95,1,3108,Robert,L,Jefferies,Robert L Jefferies,SE,SE,,,,,Canada,CAN
+JECOL,2007,95,1,3113,Robert,J,Jones,Robert J Jones,SE,SE,,,,,USA,USA
+JECOL,2007,95,1,2849,Peter,,Klinkhamer,Peter Klinkhamer,SE,SE,,,,,Netherlands,NLD
+JECOL,2007,95,1,1704,John,A,Lee,John A Lee,SE,SE,,,,,UK,GBR
+JECOL,2007,95,1,1101,Fernando,,Maestre,Fernando Maestre,SE,SE,,,,,Spain,ESP
+JECOL,2007,95,1,155,Angela,,Moles,Angela Moles,SE,SE,,,,,Australia,AUS
+JECOL,2007,95,1,2869,Peter,D,Moore,Peter D Moore,SE,SE,,,,,UK,GBR
+JECOL,2007,95,1,3171,Ran,,Nathan,Ran Nathan,SE,SE,,,,,Israel,ISR
+JECOL,2007,95,1,1785,Jonathan,A,Newman,Jonathan A Newman,SE,SE,,,,,Canada,CAN
+JECOL,2007,95,1,539,Christer,,Nilsson,Christer Nilsson,SE,SE,,,,,Sweden,SWE
+JECOL,2007,95,1,1794,Joop,,Ouborg,Joop Ouborg,SE,SE,,,,,Netherlands,NLD
+JECOL,2007,95,1,1798,John,,Pannell,John Pannell,SE,SE,,,,,UK,GBR
+JECOL,2007,95,1,1349,Honor,C,Prentice,Honor C Prentice,SE,SE,,,,,Sweden,SWE
+JECOL,2007,95,1,2526,Michael,CF,Proctor,Michael CF Proctor,SE,SE,,,,,UK,GBR
+JECOL,2007,95,1,3466,Susan,,Schwinning,Susan Schwinning,SE,SE,,,,,USA,USA
+JECOL,2007,95,1,880,David,,Streeter,David Streeter,SE,SE,,,,,UK,GBR
+JECOL,2007,95,1,1370,Hanna,,Tuomisto,Hanna Tuomisto,SE,SE,,,,,Finland,FIN
+JECOL,2007,95,1,3234,Roy,,Turkington,Roy Turkington,SE,SE,,,,,Canada,CAN
+JECOL,2007,95,1,2579,Matthew,,Turnbull,Matthew Turnbull,SE,SE,,,,,New Zealand,NZL
+JECOL,2007,95,1,2586,Marcel,,VanDerHeijden,Marcel VanDerHeijden,SE,SE,,,,,Netherlands,NLD
+JECOL,2007,95,1,3504,Scott,D,Wilson,Scott D Wilson,SE,SE,,,,,Canada,CAN
+JECOL,2007,95,1,1279,Gerhard,,Zotz,Gerhard Zotz,SE,SE,,,,,Switzerland,CHE
+JECOL,2007,95,1,2960,Pieter,A,Zuidema,Pieter A Zuidema,SE,SE,,,,,Netherlands,NLD
+JECOL,2008,96,1,2967,Rien,,Aerts,Rien Aerts,SE,SE,,,,,Netherlands,NLD
+JECOL,2008,96,1,1434,Jon,,Agren,Jon Agren,SE,SE,,,,,Sweden,SWE
+JECOL,2008,96,1,2753,Peter,,Alpert,Peter Alpert,SE,SE,,,,,USA,USA
+JECOL,2008,96,1,2977,Richard,D,Bardgett,Richard D Bardgett,AE,AE,,,,,UK,GBR
+JECOL,2008,96,1,2765,Peter,J,Bellingham,Peter J Bellingham,SE,SE,,,,,New Zealand,NZL
+JECOL,2008,96,1,2994,Richard,,Bradshaw,Richard Bradshaw,SE,SE,,,,,UK,GBR
+JECOL,2008,96,1,2997,Rob,,Brooker,Rob Brooker,SE,SE,,,,,UK,GBR
+JECOL,2008,96,1,1493,Jeremy,,Burdon,Jeremy Burdon,SE,SE,,,,,Australia,AUS
+JECOL,2008,96,1,1496,James,,Cahill,James Cahill,SE,SE,,,,,Canada,CAN
+JECOL,2008,96,1,3009,Ragan,M,Callaway,Ragan M Callaway,SE,SE,,,,,USA,USA
+JECOL,2008,96,1,416,Charles,D,Canham,Charles D Canham,SE,SE,,,,,USA,USA
+JECOL,2008,96,1,3302,Scott,,Collins,Scott Collins,SE,SE,,,,,USA,USA
+JECOL,2008,96,1,1293,Hans,,Cornelissen,Hans Cornelissen,SE,SE,,,,,Netherlands,NLD
+JECOL,2008,96,1,50,Anthony,J,Davy,Anthony J Davy,SE,SE,,,,,UK,GBR
+JECOL,2008,96,1,1296,Hans,,DeKroon,Hans DeKroon,SE,SE,,,,,Netherlands,NLD
+JECOL,2008,96,1,267,Bettina,,Engelbrecht,Bettina Engelbrecht,SE,SE,,,,,Germany,DEU
+JECOL,2008,96,1,273,Bryan,,Foster,Bryan Foster,SE,SE,,,,,USA,USA
+JECOL,2008,96,1,1582,Jason,,Fridley,Jason Fridley,SE,SE,,,,,USA,USA
+JECOL,2008,96,1,703,David,J,Gibson,David J Gibson,AE,AE,,,,,USA,USA
+JECOL,2008,96,1,1070,Frank,S,Gilliam,Frank S Gilliam,SE,SE,,,,,USA,USA
+JECOL,2008,96,1,2013,Kyle,,Harms,Kyle Harms,SE,SE,,,,,USA,USA
+JECOL,2008,96,1,2408,Martin,,Heil,Martin Heil,SE,SE,,,,,Germany,DEU
+JECOL,2008,96,1,2419,Michael,J,Hutchings,Michael J Hutchings,EIC,EIC,,,,,UK,GBR
+JECOL,2008,96,1,1318,Hans,,Jacquemyn,Hans Jacquemyn,SE,SE,,,,,Belgium,BEL
+JECOL,2008,96,1,3108,Robert,L,Jefferies,Robert L Jefferies,SE,SE,,,,,Canada,CAN
+JECOL,2008,96,1,3113,Robert,J,Jones,Robert J Jones,SE,SE,,,,,USA,USA
+JECOL,2008,96,1,2849,Peter,,Klinkhamer,Peter Klinkhamer,SE,SE,,,,,Netherlands,NLD
+JECOL,2008,96,1,1704,John,A,Lee,John A Lee,SE,SE,,,,,UK,GBR
+JECOL,2008,96,1,513,Christopher,,Lorite,Christopher Lorite,SE,SE,,,,,Canada,CAN
+JECOL,2008,96,1,1101,Fernando,,Maestre,Fernando Maestre,SE,SE,,,,,Spain,ESP
+JECOL,2008,96,1,1106,Fergus,,Massey,Fergus Massey,SE,SE,,,,,UK,GBR
+JECOL,2008,96,1,155,Angela,,Moles,Angela Moles,SE,SE,,,,,Australia,AUS
+JECOL,2008,96,1,3171,Ran,,Nathan,Ran Nathan,SE,SE,,,,,Israel,ISR
+JECOL,2008,96,1,1785,Jonathan,A,Newman,Jonathan A Newman,SE,SE,,,,,Canada,CAN
+JECOL,2008,96,1,539,Christer,,Nilsson,Christer Nilsson,SE,SE,,,,,Sweden,SWE
+JECOL,2008,96,1,1794,Joop,,Ouborg,Joop Ouborg,SE,SE,,,,,Netherlands,NLD
+JECOL,2008,96,1,1798,John,,Pannell,John Pannell,SE,SE,,,,,UK,GBR
+JECOL,2008,96,1,1349,Honor,C,Prentice,Honor C Prentice,SE,SE,,,,,Sweden,SWE
+JECOL,2008,96,1,557,Chris,,Preston,Chris Preston,SE,SE,,,,,UK,GBR
+JECOL,2008,96,1,2526,Michael,CF,Proctor,Michael CF Proctor,SE,SE,,,,,UK,GBR
+JECOL,2008,96,1,3466,Susan,,Schwinning,Susan Schwinning,SE,SE,,,,,USA,USA
+JECOL,2008,96,1,880,David,,Streeter,David Streeter,SE,SE,,,,,UK,GBR
+JECOL,2008,96,1,1370,Hanna,,Tuomisto,Hanna Tuomisto,SE,SE,,,,,Finland,FIN
+JECOL,2008,96,1,3234,Roy,,Turkington,Roy Turkington,SE,SE,,,,,Canada,CAN
+JECOL,2008,96,1,2579,Matthew,,Turnbull,Matthew Turnbull,SE,SE,,,,,New Zealand,NZL
+JECOL,2008,96,1,2583,Michael,B,Usher,Michael B Usher,SE,SE,,,,,UK,GBR
+JECOL,2008,96,1,2586,Marcel,,VanDerHeijden,Marcel VanDerHeijden,SE,SE,,,,,Netherlands,NLD
+JECOL,2008,96,1,3504,Scott,D,Wilson,Scott D Wilson,SE,SE,,,,,Canada,CAN
+JECOL,2008,96,1,1279,Gerhard,,Zotz,Gerhard Zotz,SE,SE,,,,,Switzerland,CHE
+JECOL,2008,96,1,2960,Pieter,A,Zuidema,Pieter A Zuidema,SE,SE,,,,,Netherlands,NLD
+JECOL,2009,97,1,2967,Rien,,Aerts,Rien Aerts,SE,SE,,,,,Netherlands,NLD
+JECOL,2009,97,1,1434,Jon,,Agren,Jon Agren,SE,SE,,,,,Sweden,SWE
+JECOL,2009,97,1,2753,Peter,,Alpert,Peter Alpert,SE,SE,,,,,USA,USA
+JECOL,2009,97,1,2977,Richard,D,Bardgett,Richard D Bardgett,SE,SE,,,,,UK,GBR
+JECOL,2009,97,1,2765,Peter,J,Bellingham,Peter J Bellingham,SE,SE,,,,,New Zealand,NZL
+JECOL,2009,97,1,3285,Stephen,P,Bonser,Stephen P Bonser,AE,AE,,,,,USA,USA
+JECOL,2009,97,1,2994,Richard,,Bradshaw,Richard Bradshaw,AE,AE,,,,,UK,GBR
+JECOL,2009,97,1,2994,Richard,,Bradshaw,Richard Bradshaw,SE,SE,,,,,UK,GBR
+JECOL,2009,97,1,2997,Rob,,Brooker,Rob Brooker,SE,SE,,,,,UK,GBR
+JECOL,2009,97,1,1493,Jeremy,,Burdon,Jeremy Burdon,SE,SE,,,,,Australia,AUS
+JECOL,2009,97,1,1496,James,,Cahill,James Cahill,SE,SE,,,,,Canada,CAN
+JECOL,2009,97,1,3009,Ragan,M,Callaway,Ragan M Callaway,SE,SE,,,,,USA,USA
+JECOL,2009,97,1,416,Charles,D,Canham,Charles D Canham,SE,SE,,,,,USA,USA
+JECOL,2009,97,1,1293,Hans,,Cornelissen,Hans Cornelissen,SE,SE,,,,,Netherlands,NLD
+JECOL,2009,97,1,50,Anthony,J,Davy,Anthony J Davy,SE,SE,,,,,UK,GBR
+JECOL,2009,97,1,1296,Hans,,DeKroon,Hans DeKroon,SE,SE,,,,,Netherlands,NLD
+JECOL,2009,97,1,267,Bettina,,Engelbrecht,Bettina Engelbrecht,SE,SE,,,,,Germany,DEU
+JECOL,2009,97,1,273,Bryan,,Foster,Bryan Foster,SE,SE,,,,,USA,USA
+JECOL,2009,97,1,1582,Jason,,Fridley,Jason Fridley,SE,SE,,,,,USA,USA
+JECOL,2009,97,1,703,David,J,Gibson,David J Gibson,SE,SE,,,,,USA,USA
+JECOL,2009,97,1,1070,Frank,S,Gilliam,Frank S Gilliam,SE,SE,,,,,USA,USA
+JECOL,2009,97,1,2013,Kyle,,Harms,Kyle Harms,SE,SE,,,,,USA,USA
+JECOL,2009,97,1,2408,Martin,,Heil,Martin Heil,SE,SE,,,,,Germany,DEU
+JECOL,2009,97,1,2419,Michael,J,Hutchings,Michael J Hutchings,EIC,EIC,,,,,UK,GBR
+JECOL,2009,97,1,1318,Hans,,Jacquemyn,Hans Jacquemyn,SE,SE,,,,,Belgium,BEL
+JECOL,2009,97,1,3108,Robert,L,Jefferies,Robert L Jefferies,SE,SE,,,,,Canada,CAN
+JECOL,2009,97,1,3113,Robert,J,Jones,Robert J Jones,SE,SE,,,,,USA,USA
+JECOL,2009,97,1,2849,Peter,,Klinkhamer,Peter Klinkhamer,SE,SE,,,,,Netherlands,NLD
+JECOL,2009,97,1,1704,John,A,Lee,John A Lee,SE,SE,,,,,UK,GBR
+JECOL,2009,97,1,513,Christopher,,Lorite,Christopher Lorite,SE,SE,,,,,Canada,CAN
+JECOL,2009,97,1,1101,Fernando,,Maestre,Fernando Maestre,SE,SE,,,,,Spain,ESP
+JECOL,2009,97,1,1106,Fergus,,Massey,Fergus Massey,SE,SE,,,,,UK,GBR
+JECOL,2009,97,1,155,Angela,,Moles,Angela Moles,SE,SE,,,,,Australia,AUS
+JECOL,2009,97,1,3171,Ran,,Nathan,Ran Nathan,SE,SE,,,,,Israel,ISR
+JECOL,2009,97,1,1785,Jonathan,A,Newman,Jonathan A Newman,SE,SE,,,,,Canada,CAN
+JECOL,2009,97,1,539,Christer,,Nilsson,Christer Nilsson,SE,SE,,,,,Sweden,SWE
+JECOL,2009,97,1,1794,Joop,,Ouborg,Joop Ouborg,SE,SE,,,,,Netherlands,NLD
+JECOL,2009,97,1,1798,John,,Pannell,John Pannell,SE,SE,,,,,UK,GBR
+JECOL,2009,97,1,1349,Honor,C,Prentice,Honor C Prentice,SE,SE,,,,,Sweden,SWE
+JECOL,2009,97,1,557,Chris,,Preston,Chris Preston,SE,SE,,,,,UK,GBR
+JECOL,2009,97,1,2526,Michael,CF,Proctor,Michael CF Proctor,SE,SE,,,,,UK,GBR
+JECOL,2009,97,1,3466,Susan,,Schwinning,Susan Schwinning,SE,SE,,,,,USA,USA
+JECOL,2009,97,1,880,David,,Streeter,David Streeter,SE,SE,,,,,UK,GBR
+JECOL,2009,97,1,1370,Hanna,,Tuomisto,Hanna Tuomisto,SE,SE,,,,,Finland,FIN
+JECOL,2009,97,1,3234,Roy,,Turkington,Roy Turkington,SE,SE,,,,,Canada,CAN
+JECOL,2009,97,1,2579,Matthew,,Turnbull,Matthew Turnbull,SE,SE,,,,,New Zealand,NZL
+JECOL,2009,97,1,2583,Michael,B,Usher,Michael B Usher,SE,SE,,,,,UK,GBR
+JECOL,2009,97,1,2586,Marcel,,VanDerHeijden,Marcel VanDerHeijden,SE,SE,,,,,Netherlands,NLD
+JECOL,2009,97,1,3237,Rene,,VanDerWal,Rene VanDerWal,AE,AE,,,,,UK,GBR
+JECOL,2009,97,1,3504,Scott,D,Wilson,Scott D Wilson,SE,SE,,,,,Canada,CAN
+JECOL,2009,97,1,1279,Gerhard,,Zotz,Gerhard Zotz,SE,SE,,,,,Switzerland,CHE
+JECOL,2009,97,1,2960,Pieter,A,Zuidema,Pieter A Zuidema,SE,SE,,,,,Netherlands,NLD
+JECOL,2010,98,1,2967,Rien,,Aerts,Rien Aerts,SE,SE,,,,,Netherlands,NLD
+JECOL,2010,98,1,2267,Marcelo,,Aizen,Marcelo Aizen,SE,SE,,,,,Argentina,ARG
+JECOL,2010,98,1,2753,Peter,,Alpert,Peter Alpert,SE,SE,,,,,USA,USA
+JECOL,2010,98,1,2977,Richard,D,Bardgett,Richard D Bardgett,SE,SE,,,,,UK,GBR
+JECOL,2010,98,1,2765,Peter,J,Bellingham,Peter J Bellingham,SE,SE,,,,,New Zealand,NZL
+JECOL,2010,98,1,3285,Stephen,P,Bonser,Stephen P Bonser,AE,AE,,,,,USA,USA
+JECOL,2010,98,1,2994,Richard,,Bradshaw,Richard Bradshaw,SE,SE,,,,,UK,GBR
+JECOL,2010,98,1,2994,Richard,,Bradshaw,Richard Bradshaw,AE,AE,,,,,UK,GBR
+JECOL,2010,98,1,1485,Judith,L,Bronstein,Judith L Bronstein,SE,SE,,,,,USA,USA
+JECOL,2010,98,1,2997,Rob,,Brooker,Rob Brooker,SE,SE,,,,,UK,GBR
+JECOL,2010,98,1,1496,James,,Cahill,James Cahill,SE,SE,,,,,Canada,CAN
+JECOL,2010,98,1,3009,Ragan,M,Callaway,Ragan M Callaway,SE,SE,,,,,USA,USA
+JECOL,2010,98,1,416,Charles,D,Canham,Charles D Canham,SE,SE,,,,,USA,USA
+JECOL,2010,98,1,1293,Hans,,Cornelissen,Hans Cornelissen,SE,SE,,,,,Netherlands,NLD
+JECOL,2010,98,1,955,Ellen,,Damschen,Ellen Damschen,SE,SE,,,,,USA,USA
+JECOL,2010,98,1,50,Anthony,J,Davy,Anthony J Davy,SE,SE,,,,,UK,GBR
+JECOL,2010,98,1,1296,Hans,,DeKroon,Hans DeKroon,SE,SE,,,,,Netherlands,NLD
+JECOL,2010,98,1,1582,Jason,,Fridley,Jason Fridley,SE,SE,,,,,USA,USA
+JECOL,2010,98,1,703,David,J,Gibson,David J Gibson,SE,SE,,,,,USA,USA
+JECOL,2010,98,1,1070,Frank,S,Gilliam,Frank S Gilliam,SE,SE,,,,,USA,USA
+JECOL,2010,98,1,2157,Lorena,,Gomez-Aparicio,Lorena Gomez-Aparicio,SE,SE,,,,,Spain,ESP
+JECOL,2010,98,1,2013,Kyle,,Harms,Kyle Harms,SE,SE,,,,,USA,USA
+JECOL,2010,98,1,2408,Martin,,Heil,Martin Heil,SE,SE,,,,,Germany,DEU
+JECOL,2010,98,1,2419,Michael,J,Hutchings,Michael J Hutchings,EIC,EIC,,,,,UK,GBR
+JECOL,2010,98,1,1318,Hans,,Jacquemyn,Hans Jacquemyn,SE,SE,,,,,Belgium,BEL
+JECOL,2010,98,1,3113,Robert,J,Jones,Robert J Jones,SE,SE,,,,,USA,USA
+JECOL,2010,98,1,2849,Peter,,Klinkhamer,Peter Klinkhamer,SE,SE,,,,,Netherlands,NLD
+JECOL,2010,98,1,1704,John,A,Lee,John A Lee,SE,SE,,,,,UK,GBR
+JECOL,2010,98,1,513,Christopher,,Lorite,Christopher Lorite,SE,SE,,,,,Canada,CAN
+JECOL,2010,98,1,1101,Fernando,,Maestre,Fernando Maestre,SE,SE,,,,,Spain,ESP
+JECOL,2010,98,1,1106,Fergus,,Massey,Fergus Massey,SE,SE,,,,,UK,GBR
+JECOL,2010,98,1,155,Angela,,Moles,Angela Moles,SE,SE,,,,,Australia,AUS
+JECOL,2010,98,1,1785,Jonathan,A,Newman,Jonathan A Newman,SE,SE,,,,,Canada,CAN
+JECOL,2010,98,1,539,Christer,,Nilsson,Christer Nilsson,SE,SE,,,,,Sweden,SWE
+JECOL,2010,98,1,1794,Joop,,Ouborg,Joop Ouborg,SE,SE,,,,,Netherlands,NLD
+JECOL,2010,98,1,1349,Honor,C,Prentice,Honor C Prentice,SE,SE,,,,,Sweden,SWE
+JECOL,2010,98,1,557,Chris,,Preston,Chris Preston,SE,SE,,,,,UK,GBR
+JECOL,2010,98,1,2526,Michael,CF,Proctor,Michael CF Proctor,SE,SE,,,,,UK,GBR
+JECOL,2010,98,1,2534,Mark,,Rees,Mark Rees,AE,AE,,,,,UK,GBR
+JECOL,2010,98,1,3466,Susan,,Schwinning,Susan Schwinning,SE,SE,,,,,USA,USA
+JECOL,2010,98,1,2558,Marina,,Semchenko,Marina Semchenko,SE,SE,,,,,Estonia,EST
+JECOL,2010,98,1,3474,Sedonia,,Sipes,Sedonia Sipes,SE,SE,,,,,USA,USA
+JECOL,2010,98,1,880,David,,Streeter,David Streeter,SE,SE,,,,,UK,GBR
+JECOL,2010,98,1,2938,Peter,,Thrall,Peter Thrall,SE,SE,,,,,Australia,AUS
+JECOL,2010,98,1,1370,Hanna,,Tuomisto,Hanna Tuomisto,SE,SE,,,,,Finland,FIN
+JECOL,2010,98,1,3234,Roy,,Turkington,Roy Turkington,SE,SE,,,,,Canada,CAN
+JECOL,2010,98,1,2579,Matthew,,Turnbull,Matthew Turnbull,SE,SE,,,,,New Zealand,NZL
+JECOL,2010,98,1,2583,Michael,B,Usher,Michael B Usher,SE,SE,,,,,UK,GBR
+JECOL,2010,98,1,2586,Marcel,,VanDerHeijden,Marcel VanDerHeijden,SE,SE,,,,,Netherlands,NLD
+JECOL,2010,98,1,3237,Rene,,VanDerWal,Rene VanDerWal,AE,AE,,,,,UK,GBR
+JECOL,2010,98,1,3504,Scott,D,Wilson,Scott D Wilson,SE,SE,,,,,Canada,CAN
+JECOL,2010,98,1,1279,Gerhard,,Zotz,Gerhard Zotz,SE,SE,,,,,Switzerland,CHE
+JECOL,2010,98,1,2960,Pieter,A,Zuidema,Pieter A Zuidema,SE,SE,,,,,Netherlands,NLD
+JECOL,2011,99,1,2967,Rien,,Aerts,Rien Aerts,SE,SE,,,,,Netherlands,NLD
+JECOL,2011,99,1,2267,Marcelo,,Aizen,Marcelo Aizen,SE,SE,,,,,Argentina,ARG
+JECOL,2011,99,1,2753,Peter,,Alpert,Peter Alpert,SE,SE,,,,,USA,USA
+JECOL,2011,99,1,9,Amy,T,Austin,Amy T Austin,SE,SE,,,,,Argentina,ARG
+JECOL,2011,99,1,2977,Richard,D,Bardgett,Richard D Bardgett,SE,SE,,,,,UK,GBR
+JECOL,2011,99,1,2765,Peter,J,Bellingham,Peter J Bellingham,SE,SE,,,,,New Zealand,NZL
+JECOL,2011,99,1,3285,Stephen,P,Bonser,Stephen P Bonser,AE,AE,,,,,USA,USA
+JECOL,2011,99,1,2994,Richard,,Bradshaw,Richard Bradshaw,AE,AE,,,,,UK,GBR
+JECOL,2011,99,1,2994,Richard,,Bradshaw,Richard Bradshaw,SE,SE,,,,,UK,GBR
+JECOL,2011,99,1,1485,Judith,L,Bronstein,Judith L Bronstein,SE,SE,,,,,USA,USA
+JECOL,2011,99,1,2997,Rob,,Brooker,Rob Brooker,SE,SE,,,,,UK,GBR
+JECOL,2011,99,1,1496,James,,Cahill,James Cahill,SE,SE,,,,,Canada,CAN
+JECOL,2011,99,1,3009,Ragan,M,Callaway,Ragan M Callaway,SE,SE,,,,,USA,USA
+JECOL,2011,99,1,416,Charles,D,Canham,Charles D Canham,SE,SE,,,,,USA,USA
+JECOL,2011,99,1,655,David,,Coomes,David Coomes,SE,SE,,,,,UK,GBR
+JECOL,2011,99,1,1293,Hans,,Cornelissen,Hans Cornelissen,SE,SE,,,,,Netherlands,NLD
+JECOL,2011,99,1,955,Ellen,,Damschen,Ellen Damschen,SE,SE,,,,,USA,USA
+JECOL,2011,99,1,50,Anthony,J,Davy,Anthony J Davy,SE,SE,,,,,UK,GBR
+JECOL,2011,99,1,1296,Hans,,DeKroon,Hans DeKroon,SE,SE,,,,,Netherlands,NLD
+JECOL,2011,99,1,3850,Andy,,Dyer,Andy Dyer,SE,SE,,,,,USA,USA
+JECOL,2011,99,1,1582,Jason,,Fridley,Jason Fridley,SE,SE,,,,,USA,USA
+JECOL,2011,99,1,2150,Luis,Santamaria,Galdon,Luis Santamaria Galdon,SE,SE,,,,,USA,USA
+JECOL,2011,99,1,703,David,J,Gibson,David J Gibson,SE,SE,,,,,USA,USA
+JECOL,2011,99,1,1070,Frank,S,Gilliam,Frank S Gilliam,SE,SE,,,,,USA,USA
+JECOL,2011,99,1,2157,Lorena,,Gomez-Aparicio,Lorena Gomez-Aparicio,SE,SE,,,,,Spain,ESP
+JECOL,2011,99,1,714,Dali,,Guo,Dali Guo,SE,SE,,,,,China,CHN
+JECOL,2011,99,1,2013,Kyle,,Harms,Kyle Harms,SE,SE,,,,,USA,USA
+JECOL,2011,99,1,2408,Martin,,Heil,Martin Heil,SE,SE,,,,,Germany,DEU
+JECOL,2011,99,1,2419,Michael,J,Hutchings,Michael J Hutchings,EIC,EIC,,,,,UK,GBR
+JECOL,2011,99,1,1318,Hans,,Jacquemyn,Hans Jacquemyn,SE,SE,,,,,Belgium,BEL
+JECOL,2011,99,1,3113,Robert,J,Jones,Robert J Jones,SE,SE,,,,,USA,USA
+JECOL,2011,99,1,3580,Thomas,,Kitzberger,Thomas Kitzberger,SE,SE,,,,,Argentina,ARG
+JECOL,2011,99,1,2849,Peter,,Klinkhamer,Peter Klinkhamer,SE,SE,,,,,Netherlands,NLD
+JECOL,2011,99,1,1704,John,A,Lee,John A Lee,SE,SE,,,,,UK,GBR
+JECOL,2011,99,1,2446,Michelle,,Leishman,Michelle Leishman,SE,SE,,,,,Australia,AUS
+JECOL,2011,99,1,513,Christopher,,Lorite,Christopher Lorite,SE,SE,,,,,Canada,CAN
+JECOL,2011,99,1,1101,Fernando,,Maestre,Fernando Maestre,SE,SE,,,,,Spain,ESP
+JECOL,2011,99,1,155,Angela,,Moles,Angela Moles,SE,SE,,,,,Australia,AUS
+JECOL,2011,99,1,1785,Jonathan,A,Newman,Jonathan A Newman,SE,SE,,,,,Canada,CAN
+JECOL,2011,99,1,539,Christer,,Nilsson,Christer Nilsson,SE,SE,,,,,Sweden,SWE
+JECOL,2011,99,1,1349,Honor,C,Prentice,Honor C Prentice,SE,SE,,,,,Sweden,SWE
+JECOL,2011,99,1,557,Chris,,Preston,Chris Preston,SE,SE,,,,,UK,GBR
+JECOL,2011,99,1,2526,Michael,CF,Proctor,Michael CF Proctor,SE,SE,,,,,UK,GBR
+JECOL,2011,99,1,2534,Mark,,Rees,Mark Rees,AE,AE,,,,,UK,GBR
+JECOL,2011,99,1,3210,Roberto,,Salguero-Gomez,Roberto Salguero-Gomez,SE,SE,,,,,Australia,AUS
+JECOL,2011,99,1,3466,Susan,,Schwinning,Susan Schwinning,SE,SE,,,,,USA,USA
+JECOL,2011,99,1,2558,Marina,,Semchenko,Marina Semchenko,SE,SE,,,,,Estonia,EST
+JECOL,2011,99,1,357,Brian,,Silliman,Brian Silliman,SE,SE,,,,,USA,USA
+JECOL,2011,99,1,3474,Sedonia,,Sipes,Sedonia Sipes,SE,SE,,,,,USA,USA
+JECOL,2011,99,1,880,David,,Streeter,David Streeter,SE,SE,,,,,UK,GBR
+JECOL,2011,99,1,2938,Peter,,Thrall,Peter Thrall,SE,SE,,,,,Australia,AUS
+JECOL,2011,99,1,1370,Hanna,,Tuomisto,Hanna Tuomisto,SE,SE,,,,,Finland,FIN
+JECOL,2011,99,1,3234,Roy,,Turkington,Roy Turkington,SE,SE,,,,,Canada,CAN
+JECOL,2011,99,1,2579,Matthew,,Turnbull,Matthew Turnbull,SE,SE,,,,,New Zealand,NZL
+JECOL,2011,99,1,2583,Michael,B,Usher,Michael B Usher,SE,SE,,,,,UK,GBR
+JECOL,2011,99,1,2586,Marcel,,VanDerHeijden,Marcel VanDerHeijden,SE,SE,,,,,Netherlands,NLD
+JECOL,2011,99,1,3504,Scott,D,Wilson,Scott D Wilson,SE,SE,,,,,Canada,CAN
+JECOL,2011,99,1,1279,Gerhard,,Zotz,Gerhard Zotz,SE,SE,,,,,Switzerland,CHE
+JECOL,2011,99,1,2960,Pieter,A,Zuidema,Pieter A Zuidema,SE,SE,,,,,Netherlands,NLD
+JECOL,2012,100,1,2967,Rien,,Aerts,Rien Aerts,SE,SE,,,,,Netherlands,NLD
+JECOL,2012,100,1,2267,Marcelo,,Aizen,Marcelo Aizen,SE,SE,,,,,Argentina,ARG
+JECOL,2012,100,1,2753,Peter,,Alpert,Peter Alpert,SE,SE,,,,,USA,USA
+JECOL,2012,100,1,9,Amy,T,Austin,Amy T Austin,SE,SE,,,,,Argentina,ARG
+JECOL,2012,100,1,2977,Richard,D,Bardgett,Richard D Bardgett,SE,SE,,,,,UK,GBR
+JECOL,2012,100,1,2765,Peter,J,Bellingham,Peter J Bellingham,SE,SE,,,,,New Zealand,NZL
+JECOL,2012,100,1,3285,Stephen,P,Bonser,Stephen P Bonser,AE,AE,,,,,USA,USA
+JECOL,2012,100,1,2994,Richard,,Bradshaw,Richard Bradshaw,SE,SE,,,,,UK,GBR
+JECOL,2012,100,1,1485,Judith,L,Bronstein,Judith L Bronstein,SE,SE,,,,,USA,USA
+JECOL,2012,100,1,2997,Rob,,Brooker,Rob Brooker,SE,SE,,,,,UK,GBR
+JECOL,2012,100,1,1496,James,,Cahill,James Cahill,SE,SE,,,,,Canada,CAN
+JECOL,2012,100,1,3009,Ragan,M,Callaway,Ragan M Callaway,SE,SE,,,,,USA,USA
+JECOL,2012,100,1,416,Charles,D,Canham,Charles D Canham,SE,SE,,,,,USA,USA
+JECOL,2012,100,1,3297,Scott,,Chamberlain,Scott Chamberlain,SE,SE,,,,,Canada,CAN
+JECOL,2012,100,1,655,David,,Coomes,David Coomes,SE,SE,,,,,UK,GBR
+JECOL,2012,100,1,1293,Hans,,Cornelissen,Hans Cornelissen,SE,SE,,,,,Netherlands,NLD
+JECOL,2012,100,1,3726,Will,K,Cornwell,Will K Cornwell,SE,SE,,,,,Australia,AUS
+JECOL,2012,100,1,50,Anthony,J,Davy,Anthony J Davy,SE,SE,,,,,UK,GBR
+JECOL,2012,100,1,1296,Hans,,DeKroon,Hans DeKroon,SE,SE,,,,,Netherlands,NLD
+JECOL,2012,100,1,3850,Andy,,Dyer,Andy Dyer,SE,SE,,,,,USA,USA
+JECOL,2012,100,1,1582,Jason,,Fridley,Jason Fridley,SE,SE,,,,,USA,USA
+JECOL,2012,100,1,2150,Luis,Santamaria,Galdon,Luis Santamaria Galdon,SE,SE,,,,,USA,USA
+JECOL,2012,100,1,703,David,J,Gibson,David J Gibson,SE,SE,,,,,USA,USA
+JECOL,2012,100,1,1070,Frank,S,Gilliam,Frank S Gilliam,SE,SE,,,,,USA,USA
+JECOL,2012,100,1,2157,Lorena,,Gomez-Aparicio,Lorena Gomez-Aparicio,SE,SE,,,,,Spain,ESP
+JECOL,2012,100,1,714,Dali,,Guo,Dali Guo,SE,SE,,,,,China,CHN
+JECOL,2012,100,1,2013,Kyle,,Harms,Kyle Harms,SE,SE,,,,,USA,USA
+JECOL,2012,100,1,2408,Martin,,Heil,Martin Heil,SE,SE,,,,,Germany,DEU
+JECOL,2012,100,1,2419,Michael,J,Hutchings,Michael J Hutchings,EIC,EIC,,,,,UK,GBR
+JECOL,2012,100,1,1318,Hans,,Jacquemyn,Hans Jacquemyn,SE,SE,,,,,Belgium,BEL
+JECOL,2012,100,1,3113,Robert,J,Jones,Robert J Jones,SE,SE,,,,,USA,USA
+JECOL,2012,100,1,984,Eelke,,Jongejans,Eelke Jongejans,SE,SE,,,,,Netherlands,NLD
+JECOL,2012,100,1,3580,Thomas,,Kitzberger,Thomas Kitzberger,SE,SE,,,,,Argentina,ARG
+JECOL,2012,100,1,2849,Peter,,Klinkhamer,Peter Klinkhamer,SE,SE,,,,,Netherlands,NLD
+JECOL,2012,100,1,1704,John,A,Lee,John A Lee,SE,SE,,,,,UK,GBR
+JECOL,2012,100,1,2446,Michelle,,Leishman,Michelle Leishman,SE,SE,,,,,Australia,AUS
+JECOL,2012,100,1,2470,Matthew,,McGlone,Matthew McGlone,SE,SE,,,,,New Zealand,NZL
+JECOL,2012,100,1,155,Angela,,Moles,Angela Moles,SE,SE,,,,,Australia,AUS
+JECOL,2012,100,1,1785,Jonathan,A,Newman,Jonathan A Newman,SE,SE,,,,,Canada,CAN
+JECOL,2012,100,1,539,Christer,,Nilsson,Christer Nilsson,SE,SE,,,,,Sweden,SWE
+JECOL,2012,100,1,1349,Honor,C,Prentice,Honor C Prentice,SE,SE,,,,,Sweden,SWE
+JECOL,2012,100,1,557,Chris,,Preston,Chris Preston,SE,SE,,,,,UK,GBR
+JECOL,2012,100,1,2526,Michael,CF,Proctor,Michael CF Proctor,SE,SE,,,,,UK,GBR
+JECOL,2012,100,1,2534,Mark,,Rees,Mark Rees,AE,AE,,,,,UK,GBR
+JECOL,2012,100,1,3210,Roberto,,Salguero-Gomez,Roberto Salguero-Gomez,SE,SE,,,,,Australia,AUS
+JECOL,2012,100,1,3466,Susan,,Schwinning,Susan Schwinning,SE,SE,,,,,USA,USA
+JECOL,2012,100,1,2558,Marina,,Semchenko,Marina Semchenko,SE,SE,,,,,Estonia,EST
+JECOL,2012,100,1,357,Brian,,Silliman,Brian Silliman,SE,SE,,,,,USA,USA
+JECOL,2012,100,1,3474,Sedonia,,Sipes,Sedonia Sipes,SE,SE,,,,,USA,USA
+JECOL,2012,100,1,880,David,,Streeter,David Streeter,SE,SE,,,,,UK,GBR
+JECOL,2012,100,1,2938,Peter,,Thrall,Peter Thrall,SE,SE,,,,,Australia,AUS
+JECOL,2012,100,1,1370,Hanna,,Tuomisto,Hanna Tuomisto,SE,SE,,,,,Finland,FIN
+JECOL,2012,100,1,2579,Matthew,,Turnbull,Matthew Turnbull,SE,SE,,,,,New Zealand,NZL
+JECOL,2012,100,1,2583,Michael,B,Usher,Michael B Usher,SE,SE,,,,,UK,GBR
+JECOL,2012,100,1,2586,Marcel,,VanDerHeijden,Marcel VanDerHeijden,SE,SE,,,,,Netherlands,NLD
+JECOL,2012,100,1,2945,Peter,,Vesk,Peter Vesk,SE,SE,,,,,Australia,AUS
+JECOL,2012,100,1,2109,Ken,,Whitney,Ken Whitney,SE,SE,,,,,USA,USA
+JECOL,2012,100,1,3504,Scott,D,Wilson,Scott D Wilson,SE,SE,,,,,Canada,CAN
+JECOL,2012,100,1,2707,Nina,,Wurzburger,Nina Wurzburger,SE,SE,,,,,USA,USA
+JECOL,2012,100,1,1279,Gerhard,,Zotz,Gerhard Zotz,SE,SE,,,,,Switzerland,CHE
+JECOL,2012,100,1,2960,Pieter,A,Zuidema,Pieter A Zuidema,SE,SE,,,,,Netherlands,NLD
+JECOL,2013,101,1,2967,Rien,,Aerts,Rien Aerts,SE,SE,,,,,Netherlands,NLD
+JECOL,2013,101,1,2267,Marcelo,,Aizen,Marcelo Aizen,SE,SE,,,,,Argentina,ARG
+JECOL,2013,101,1,2753,Peter,,Alpert,Peter Alpert,SE,SE,,,,,USA,USA
+JECOL,2013,101,1,9,Amy,T,Austin,Amy T Austin,SE,SE,,,,,Argentina,ARG
+JECOL,2013,101,1,2977,Richard,D,Bardgett,Richard D Bardgett,SE,SE,,,,,UK,GBR
+JECOL,2013,101,1,2765,Peter,J,Bellingham,Peter J Bellingham,SE,SE,,,,,New Zealand,NZL
+JECOL,2013,101,1,3285,Stephen,P,Bonser,Stephen P Bonser,AE,AE,,,,,USA,USA
+JECOL,2013,101,1,2994,Richard,,Bradshaw,Richard Bradshaw,SE,SE,,,,,UK,GBR
+JECOL,2013,101,1,2997,Rob,,Brooker,Rob Brooker,SE,SE,,,,,UK,GBR
+JECOL,2013,101,1,1496,James,,Cahill,James Cahill,SE,SE,,,,,Canada,CAN
+JECOL,2013,101,1,3009,Ragan,M,Callaway,Ragan M Callaway,SE,SE,,,,,USA,USA
+JECOL,2013,101,1,416,Charles,D,Canham,Charles D Canham,SE,SE,,,,,USA,USA
+JECOL,2013,101,1,3297,Scott,,Chamberlain,Scott Chamberlain,SE,SE,,,,,Canada,CAN
+JECOL,2013,101,1,655,David,,Coomes,David Coomes,SE,SE,,,,,UK,GBR
+JECOL,2013,101,1,1293,Hans,,Cornelissen,Hans Cornelissen,SE,SE,,,,,Netherlands,NLD
+JECOL,2013,101,1,3726,Will,K,Cornwell,Will K Cornwell,SE,SE,,,,,Australia,AUS
+JECOL,2013,101,1,50,Anthony,J,Davy,Anthony J Davy,SE,SE,,,,,UK,GBR
+JECOL,2013,101,1,1167,Gerlinde,,DeDeyn,Gerlinde DeDeyn,SE,SE,,,,,Netherlands,NLD
+JECOL,2013,101,1,1296,Hans,,DeKroon,Hans DeKroon,SE,SE,,,,,Netherlands,NLD
+JECOL,2013,101,1,3850,Andy,,Dyer,Andy Dyer,SE,SE,,,,,USA,USA
+JECOL,2013,101,1,1582,Jason,,Fridley,Jason Fridley,SE,SE,,,,,USA,USA
+JECOL,2013,101,1,2150,Luis,Santamaria,Galdon,Luis Santamaria Galdon,SE,SE,,,,,USA,USA
+JECOL,2013,101,1,703,David,J,Gibson,David J Gibson,EIC,EIC,,,,,USA,USA
+JECOL,2013,101,1,1070,Frank,S,Gilliam,Frank S Gilliam,SE,SE,,,,,USA,USA
+JECOL,2013,101,1,2157,Lorena,,Gomez-Aparicio,Lorena Gomez-Aparicio,SE,SE,,,,,Spain,ESP
+JECOL,2013,101,1,714,Dali,,Guo,Dali Guo,SE,SE,,,,,China,CHN
+JECOL,2013,101,1,2408,Martin,,Heil,Martin Heil,SE,SE,,,,,Germany,DEU
+JECOL,2013,101,1,1318,Hans,,Jacquemyn,Hans Jacquemyn,SE,SE,,,,,Belgium,BEL
+JECOL,2013,101,1,3113,Robert,J,Jones,Robert J Jones,SE,SE,,,,,USA,USA
+JECOL,2013,101,1,984,Eelke,,Jongejans,Eelke Jongejans,SE,SE,,,,,Netherlands,NLD
+JECOL,2013,101,1,3580,Thomas,,Kitzberger,Thomas Kitzberger,SE,SE,,,,,Argentina,ARG
+JECOL,2013,101,1,2849,Peter,,Klinkhamer,Peter Klinkhamer,SE,SE,,,,,Netherlands,NLD
+JECOL,2013,101,1,1704,John,A,Lee,John A Lee,SE,SE,,,,,UK,GBR
+JECOL,2013,101,1,2446,Michelle,,Leishman,Michelle Leishman,SE,SE,,,,,Australia,AUS
+JECOL,2013,101,1,3140,Richard,N,Mack,Richard N Mack,SE,SE,,,,,USA,USA
+JECOL,2013,101,1,1226,Glenn,R,Matlack,Glenn R Matlack,SE,SE,,,,,USA,USA
+JECOL,2013,101,1,2470,Matthew,,McGlone,Matthew McGlone,SE,SE,,,,,New Zealand,NZL
+JECOL,2013,101,1,1785,Jonathan,A,Newman,Jonathan A Newman,SE,SE,,,,,Canada,CAN
+JECOL,2013,101,1,539,Christer,,Nilsson,Christer Nilsson,SE,SE,,,,,Sweden,SWE
+JECOL,2013,101,1,1349,Honor,C,Prentice,Honor C Prentice,SE,SE,,,,,Sweden,SWE
+JECOL,2013,101,1,557,Chris,,Preston,Chris Preston,SE,SE,,,,,UK,GBR
+JECOL,2013,101,1,2526,Michael,CF,Proctor,Michael CF Proctor,SE,SE,,,,,UK,GBR
+JECOL,2013,101,1,2534,Mark,,Rees,Mark Rees,AE,AE,,,,,UK,GBR
+JECOL,2013,101,1,3210,Roberto,,Salguero-Gomez,Roberto Salguero-Gomez,SE,SE,,,,,Australia,AUS
+JECOL,2013,101,1,3466,Susan,,Schwinning,Susan Schwinning,SE,SE,,,,,USA,USA
+JECOL,2013,101,1,2558,Marina,,Semchenko,Marina Semchenko,SE,SE,,,,,Estonia,EST
+JECOL,2013,101,1,3219,Richard,P,Shefferson,Richard P Shefferson,SE,SE,,,,,USA,USA
+JECOL,2013,101,1,357,Brian,,Silliman,Brian Silliman,SE,SE,,,,,USA,USA
+JECOL,2013,101,1,880,David,,Streeter,David Streeter,SE,SE,,,,,UK,GBR
+JECOL,2013,101,1,2938,Peter,,Thrall,Peter Thrall,SE,SE,,,,,Australia,AUS
+JECOL,2013,101,1,1370,Hanna,,Tuomisto,Hanna Tuomisto,SE,SE,,,,,Finland,FIN
+JECOL,2013,101,1,2579,Matthew,,Turnbull,Matthew Turnbull,SE,SE,,,,,New Zealand,NZL
+JECOL,2013,101,1,2583,Michael,B,Usher,Michael B Usher,SE,SE,,,,,UK,GBR
+JECOL,2013,101,1,2586,Marcel,,VanDerHeijden,Marcel VanDerHeijden,SE,SE,,,,,Netherlands,NLD
+JECOL,2013,101,1,2945,Peter,,Vesk,Peter Vesk,SE,SE,,,,,Australia,AUS
+JECOL,2013,101,1,2109,Ken,,Whitney,Ken Whitney,SE,SE,,,,,USA,USA
+JECOL,2013,101,1,3504,Scott,D,Wilson,Scott D Wilson,SE,SE,,,,,Canada,CAN
+JECOL,2013,101,1,2707,Nina,,Wurzburger,Nina Wurzburger,SE,SE,,,,,USA,USA
+JECOL,2013,101,1,1279,Gerhard,,Zotz,Gerhard Zotz,SE,SE,,,,,Switzerland,CHE
+JECOL,2013,101,1,2960,Pieter,A,Zuidema,Pieter A Zuidema,SE,SE,,,,,Netherlands,NLD
+JECOL,2014,102,1,2967,Rien,,Aerts,Rien Aerts,SE,SE,,,,,Netherlands,NLD
+JECOL,2014,102,1,2753,Peter,,Alpert,Peter Alpert,SE,SE,,,,,USA,USA
+JECOL,2014,102,1,9,Amy,T,Austin,Amy T Austin,AE,AE,,,,,Argentina,ARG
+JECOL,2014,102,1,2977,Richard,D,Bardgett,Richard D Bardgett,AE,AE,,,,,UK,GBR
+JECOL,2014,102,1,1390,Ignasi,,Bartomeus,Ignasi Bartomeus,SE,SE,,,,,Sweden,SWE
+JECOL,2014,102,1,2765,Peter,J,Bellingham,Peter J Bellingham,SE,SE,,,,,New Zealand,NZL
+JECOL,2014,102,1,3285,Stephen,P,Bonser,Stephen P Bonser,SE,SE,,,,,Australia,AUS
+JECOL,2014,102,1,407,Caroline,,Brophy,Caroline Brophy,SE,SE,,,,,Ireland,IRL
+JECOL,2014,102,1,3829,Yvonne,,Buckley,Yvonne Buckley,SE,SE,,,,,Australia,AUS
+JECOL,2014,102,1,1496,James,,Cahill,James Cahill,SE,SE,,,,,Canada,CAN
+JECOL,2014,102,1,3009,Ragan,M,Callaway,Ragan M Callaway,SE,SE,,,,,USA,USA
+JECOL,2014,102,1,416,Charles,D,Canham,Charles D Canham,SE,SE,,,,,USA,USA
+JECOL,2014,102,1,3723,Walter,P,Carson,Walter P Carson,SE,SE,,,,,USA,USA
+JECOL,2014,102,1,3297,Scott,,Chamberlain,Scott Chamberlain,SE,SE,,,,,Canada,CAN
+JECOL,2014,102,1,655,David,,Coomes,David Coomes,SE,SE,,,,,UK,GBR
+JECOL,2014,102,1,1293,Hans,JHC,Cornelissen,Hans JHC Cornelissen,SE,SE,,,,,Netherlands,NLD
+JECOL,2014,102,1,3726,Will,K,Cornwell,Will K Cornwell,SE,SE,,,,,Netherlands,NLD
+JECOL,2014,102,1,50,Anthony,J,Davy,Anthony J Davy,SE,SE,,,,,UK,GBR
+JECOL,2014,102,1,1167,Gerlinde,Barbra,DeDeyn,Gerlinde Barbra DeDeyn,SE,SE,,,,,Netherlands,NLD
+JECOL,2014,102,1,1296,Hans,,DeKroon,Hans DeKroon,SE,SE,,,,,Netherlands,NLD
+JECOL,2014,102,1,1065,Franciska,,DeVires,Franciska DeVires,SE,SE,,,,,UK,GBR
+JECOL,2014,102,1,3849,Andrew,R,Dyer,Andrew R Dyer,SE,SE,,,,,USA,USA
+JECOL,2014,102,1,688,Dan,,Flynn,Dan Flynn,SE,SE,,,,,Switzerland,CHE
+JECOL,2014,102,1,1582,Jason,,Fridley,Jason Fridley,SE,SE,,,,,USA,USA
+JECOL,2014,102,1,703,David,J,Gibson,David J Gibson,EIC,EIC,,,,,USA,USA
+JECOL,2014,102,1,1070,Frank,S,Gilliam,Frank S Gilliam,SE,SE,,,,,USA,USA
+JECOL,2014,102,1,2157,Lorena,,Gomez-Aparicio,Lorena Gomez-Aparicio,SE,SE,,,,,Spain,ESP
+JECOL,2014,102,1,714,Dali,,Guo,Dali Guo,SE,SE,,,,,China,CHN
+JECOL,2014,102,1,2406,Matt,,Heard,Matt Heard,SE,SE,,,,,UK,GBR
+JECOL,2014,102,1,2408,Martin,,Heil,Martin Heil,SE,SE,,,,,Mexico,MEX
+JECOL,2014,102,1,1318,Hans,,Jacquemyn,Hans Jacquemyn,SE,SE,,,,,Belgium,BEL
+JECOL,2014,102,1,3113,Robert,J,Jones,Robert J Jones,SE,SE,,,,,USA,USA
+JECOL,2014,102,1,984,Eelke,,Jongejans,Eelke Jongejans,SE,SE,,,,,Netherlands,NLD
+JECOL,2014,102,1,1699,Jennifer,,Lau,Jennifer Lau,SE,SE,,,,,USA,USA
+JECOL,2014,102,1,3385,Sandra,,Lavorel,Sandra Lavorel,SE,SE,,,,,France,FRA
+JECOL,2014,102,1,1704,John,,Lee,John Lee,SE,SE,,,,,UK,GBR
+JECOL,2014,102,1,2446,Michelle,,Leishman,Michelle Leishman,SE,SE,,,,,Australia,AUS
+JECOL,2014,102,1,141,Andrew,,MacDougall,Andrew MacDougall,SE,SE,,,,,Canada,CAN
+JECOL,2014,102,1,3140,Richard,N,Mack,Richard N Mack,SE,SE,,,,,USA,USA
+JECOL,2014,102,1,1226,Glenn,R,Matlack,Glenn R Matlack,SE,SE,,,,,USA,USA
+JECOL,2014,102,1,2470,Matthew,,McGlone,Matthew McGlone,SE,SE,,,,,New Zealand,NZL
+JECOL,2014,102,1,1785,Jonathan,A,Newman,Jonathan A Newman,SE,SE,,,,,Canada,CAN
+JECOL,2014,102,1,539,Christer,,Nilsson,Christer Nilsson,SE,SE,,,,,Sweden,SWE
+JECOL,2014,102,1,3192,Ryan,,Phillips,Ryan Phillips,SE,SE,,,,,Australia,AUS
+JECOL,2014,102,1,1118,Frida,,Piper,Frida Piper,SE,SE,,,,,Chile,CHL
+JECOL,2014,102,1,1349,Honor,C,Prentice,Honor C Prentice,SE,SE,,,,,Sweden,SWE
+JECOL,2014,102,1,557,Chris,,Preston,Chris Preston,SE,SE,,,,,UK,GBR
+JECOL,2014,102,1,2526,Michael,CF,Proctor,Michael CF Proctor,SE,SE,,,,,UK,GBR
+JECOL,2014,102,1,2680,Nicole,,Rafferty,Nicole Rafferty,SE,SE,,,,,USA,USA
+JECOL,2014,102,1,2534,Mark,,Rees,Mark Rees,AE,AE,,,,,UK,GBR
+JECOL,2014,102,1,3210,Roberto,,Salguero-Gomez,Roberto Salguero-Gomez,SE,SE,,,,,Australia,AUS
+JECOL,2014,102,1,3466,Susan,,Schwinning,Susan Schwinning,SE,SE,,,,,USA,USA
+JECOL,2014,102,1,2558,Marina,,Semchenko,Marina Semchenko,SE,SE,,,,,Estonia,EST
+JECOL,2014,102,1,3219,Richard,P,Shefferson,Richard P Shefferson,SE,SE,,,,,USA,USA
+JECOL,2014,102,1,357,Brian,,Silliman,Brian Silliman,SE,SE,,,,,USA,USA
+JECOL,2014,102,1,3922,Melinda,,Smith,Melinda Smith,SE,SE,,,,,USA,USA
+JECOL,2014,102,1,880,David,,Streeter,David Streeter,SE,SE,,,,,UK,GBR
+JECOL,2014,102,1,2696,Nathan,,Swenson,Nathan Swenson,SE,SE,,,,,USA,USA
+JECOL,2014,102,1,2579,Matthew,,Turnbull,Matthew Turnbull,SE,SE,,,,,New Zealand,NZL
+JECOL,2014,102,1,2583,Michael,B,Usher,Michael B Usher,SE,SE,,,,,UK,GBR
+JECOL,2014,102,1,2586,Marcel,,VanDerHeijden,Marcel VanDerHeijden,SE,SE,,,,,Switzerland,CHE
+JECOL,2014,102,1,2945,Peter,,Vesk,Peter Vesk,SE,SE,,,,,Australia,AUS
+JECOL,2014,102,1,904,David,A,Wardle,David A Wardle,SE,SE,,,,,Sweden,SWE
+JECOL,2014,102,1,2109,Kenneth,D,Whitney,Kenneth D Whitney,SE,SE,,,,,USA,USA
+JECOL,2014,102,1,3504,Scott,D,Wilson,Scott D Wilson,SE,SE,,,,,Canada,CAN
+JECOL,2014,102,1,2707,Nina,,Wurzburger,Nina Wurzburger,SE,SE,,,,,USA,USA
+JECOL,2014,102,1,1279,Gerhard,,Zotz,Gerhard Zotz,SE,SE,,,,,Germany,DEU
+JECOL,2014,102,1,2960,Pieter,A,Zuidema,Pieter A Zuidema,SE,SE,,,,,Netherlands,NLD

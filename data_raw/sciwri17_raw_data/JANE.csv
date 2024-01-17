@@ -1,0 +1,897 @@
+JOURNAL,YEAR,VOLUME,ISSUE,editor_id,FIRST_NAME,MIDDLE_NAME,LAST_NAME,NAME,TITLE.x,CATEGORY,INST,UNIT,CITY,STATE,COUNTRY,geo.code
+JANE,1985,54,1,1558,J,Malcolm,Elliott,J Malcolm Elliott,EIC,EIC,,,,,UK,GBR
+JANE,1985,54,1,2401,M,P,Hassell,M P Hassell,SE,SE,,,,,UK,GBR
+JANE,1985,54,1,3118,R,A,Kempton,R A Kempton,SE,SE,,,,,UK,GBR
+JANE,1985,54,1,500,C,J,Krebs,C J Krebs,SE,SE,University of British Columbia,,,,Canada,CAN
+JANE,1985,54,1,1683,J,R,Krebs,J R Krebs,SE,SE,Princeton University,,,,USA,USA
+JANE,1985,54,1,1702,J,H,Lawton,J H Lawton,SE,SE,"Dept. of Biology, University of New York",,,,USA,USA
+JANE,1985,54,1,2194,L,P,Lefkovitch,L P Lefkovitch,SE,SE,Beaverlodge res farm,,,,Canada,CAN
+JANE,1985,54,1,3141,R,HK,Mann,R HK Mann,SE,SE,University Lodz,,,,Poland,POL
+JANE,1985,54,1,149,A,D,McIntyre,A D McIntyre,SE,SE,,,,,UK,GBR
+JANE,1985,54,1,2249,L,R,Taylor,L R Taylor,EIC,EIC,,,,,UK,GBR
+JANE,1985,54,1,1951,J,B,Whittaker,J B Whittaker,SE,SE,,,,,UK,GBR
+JANE,1986,55,1,1558,J,Malcolm,Elliott,J Malcolm Elliott,EIC,EIC,,,,,UK,GBR
+JANE,1986,55,1,2401,M,P,Hassell,M P Hassell,SE,SE,,,,,UK,GBR
+JANE,1986,55,1,3118,R,A,Kempton,R A Kempton,SE,SE,,,,,UK,GBR
+JANE,1986,55,1,500,C,J,Krebs,C J Krebs,SE,SE,University of British Columbia,,,,Canada,CAN
+JANE,1986,55,1,1683,J,R,Krebs,J R Krebs,SE,SE,Princeton University,,,,USA,USA
+JANE,1986,55,1,1702,J,H,Lawton,J H Lawton,SE,SE,"Dept. of Biology, University of New York",,,,USA,USA
+JANE,1986,55,1,2194,L,P,Lefkovitch,L P Lefkovitch,SE,SE,Beaverlodge res farm,,,,Canada,CAN
+JANE,1986,55,1,3141,R,HK,Mann,R HK Mann,SE,SE,University Lodz,,,,Poland,POL
+JANE,1986,55,1,149,A,D,McIntyre,A D McIntyre,SE,SE,,,,,UK,GBR
+JANE,1986,55,1,2249,L,R,Taylor,L R Taylor,EIC,EIC,,,,,UK,GBR
+JANE,1986,55,1,1951,J,B,Whittaker,J B Whittaker,SE,SE,,,,,UK,GBR
+JANE,1987,56,1,3525,Tim,H,Clutton-Brock,Tim H Clutton-Brock,SE,SE,,,,,UK,GBR
+JANE,1987,56,1,3025,Richard,M,Cormack,Richard M Cormack,SE,SE,,,,,UK,GBR
+JANE,1987,56,1,2638,N,B,Davies,N B Davies,SE,SE,,,,,UK,GBR
+JANE,1987,56,1,1170,G,M,Dunnet,G M Dunnet,SE,SE,,,,,UK,GBR
+JANE,1987,56,1,1558,J,Malcolm,Elliott,J Malcolm Elliott,EIC,EIC,,,,,UK,GBR
+JANE,1987,56,1,2401,M,P,Hassell,M P Hassell,SE,SE,,,,,UK,GBR
+JANE,1987,56,1,500,C,J,Krebs,C J Krebs,SE,SE,University of British Columbia,,,,Canada,CAN
+JANE,1987,56,1,1683,J,R,Krebs,J R Krebs,SE,SE,Princeton University,,,,USA,USA
+JANE,1987,56,1,3141,R,HK,Mann,R HK Mann,SE,SE,University Lodz,,,,Poland,POL
+JANE,1987,56,1,149,A,D,McIntyre,A D McIntyre,SE,SE,,,,,UK,GBR
+JANE,1987,56,1,1808,J,N,Perry,J N Perry,SE,SE,,,,,UK,GBR
+JANE,1987,56,1,2249,L,R,Taylor,L R Taylor,EIC,EIC,,,,,UK,GBR
+JANE,1988,57,1,3525,Tim,H,Clutton-Brock,Tim H Clutton-Brock,SE,SE,,,,,UK,GBR
+JANE,1988,57,1,3025,Richard,M,Cormack,Richard M Cormack,SE,SE,,,,,UK,GBR
+JANE,1988,57,1,2638,N,B,Davies,N B Davies,SE,SE,,,,,UK,GBR
+JANE,1988,57,1,1170,G,M,Dunnet,G M Dunnet,SE,SE,,,,,UK,GBR
+JANE,1988,57,1,1558,J,Malcolm,Elliott,J Malcolm Elliott,EIC,EIC,,,,,UK,GBR
+JANE,1988,57,1,2401,M,P,Hassell,M P Hassell,SE,SE,,,,,UK,GBR
+JANE,1988,57,1,500,C,J,Krebs,C J Krebs,SE,SE,University of British Columbia,,,,Canada,CAN
+JANE,1988,57,1,1683,J,R,Krebs,J R Krebs,SE,SE,Princeton University,,,,USA,USA
+JANE,1988,57,1,3141,R,HK,Mann,R HK Mann,SE,SE,University Lodz,,,,Poland,POL
+JANE,1988,57,1,149,A,D,McIntyre,A D McIntyre,SE,SE,,,,,UK,GBR
+JANE,1988,57,1,1808,J,N,Perry,J N Perry,SE,SE,,,,,UK,GBR
+JANE,1988,57,1,848,D,J,Rogers,D J Rogers,SE,SE,,,,,UK,GBR
+JANE,1988,57,1,2249,L,R,Taylor,L R Taylor,EIC,EIC,,,,,UK,GBR
+JANE,1988,57,1,1951,J,B,Whittaker,J B Whittaker,SE,SE,,,,,UK,GBR
+JANE,1989,58,1,3525,Tim,H,Clutton-Brock,Tim H Clutton-Brock,SE,SE,,,,,UK,GBR
+JANE,1989,58,1,3025,Richard,M,Cormack,Richard M Cormack,SE,SE,,,,,UK,GBR
+JANE,1989,58,1,2638,N,B,Davies,N B Davies,SE,SE,,,,,UK,GBR
+JANE,1989,58,1,1170,G,M,Dunnet,G M Dunnet,SE,SE,,,,,UK,GBR
+JANE,1989,58,1,1558,J,Malcolm,Elliott,J Malcolm Elliott,EIC,EIC,,,,,UK,GBR
+JANE,1989,58,1,2401,M,P,Hassell,M P Hassell,SE,SE,,,,,UK,GBR
+JANE,1989,58,1,500,C,J,Krebs,C J Krebs,SE,SE,University of British Columbia,,,,Canada,CAN
+JANE,1989,58,1,1683,J,R,Krebs,J R Krebs,SE,SE,Princeton University,,,,USA,USA
+JANE,1989,58,1,149,A,D,McIntyre,A D McIntyre,SE,SE,,,,,UK,GBR
+JANE,1989,58,1,1808,J,N,Perry,J N Perry,SE,SE,,,,,UK,GBR
+JANE,1989,58,1,848,D,J,Rogers,D J Rogers,SE,SE,,,,,UK,GBR
+JANE,1989,58,1,2249,L,R,Taylor,L R Taylor,EIC,EIC,,,,,UK,GBR
+JANE,1989,58,1,1907,J,E,Thorpe,J E Thorpe,SE,SE,,,,,UK,GBR
+JANE,1989,58,1,1951,J,B,Whittaker,J B Whittaker,SE,SE,,,,,UK,GBR
+JANE,1990,59,1,3525,Tim,H,Clutton-Brock,Tim H Clutton-Brock,SE,SE,,,,,UK,GBR
+JANE,1990,59,1,3025,Richard,M,Cormack,Richard M Cormack,SE,SE,,,,,UK,GBR
+JANE,1990,59,1,2638,N,B,Davies,N B Davies,SE,SE,,,,,UK,GBR
+JANE,1990,59,1,1170,G,M,Dunnet,G M Dunnet,SE,SE,,,,,UK,GBR
+JANE,1990,59,1,1558,J,Malcolm,Elliott,J Malcolm Elliott,EIC,EIC,,,,,UK,GBR
+JANE,1990,59,1,2401,M,P,Hassell,M P Hassell,SE,SE,,,,,UK,GBR
+JANE,1990,59,1,500,C,J,Krebs,C J Krebs,SE,SE,University of British Columbia,,,,Canada,CAN
+JANE,1990,59,1,1683,J,R,Krebs,J R Krebs,SE,SE,Princeton University,,,,USA,USA
+JANE,1990,59,1,507,C,M,Lessells,C M Lessells,SE,SE,,,,,UK,GBR
+JANE,1990,59,1,149,A,D,McIntyre,A D McIntyre,SE,SE,,,,,UK,GBR
+JANE,1990,59,1,1808,J,N,Perry,J N Perry,SE,SE,,,,,UK,GBR
+JANE,1990,59,1,848,D,J,Rogers,D J Rogers,SE,SE,,,,,UK,GBR
+JANE,1990,59,1,2249,L,R,Taylor,L R Taylor,EIC,EIC,,,,,UK,GBR
+JANE,1990,59,1,1907,J,E,Thorpe,J E Thorpe,SE,SE,,,,,UK,GBR
+JANE,1990,59,1,1951,J,B,Whittaker,J B Whittaker,SE,SE,,,,,UK,GBR
+JANE,1991,60,1,2291,Mike,E,Begon,Mike E Begon,SE,SE,,,,,UK,GBR
+JANE,1991,60,1,3525,Tim,H,Clutton-Brock,Tim H Clutton-Brock,SE,SE,,,,,UK,GBR
+JANE,1991,60,1,3025,Richard,M,Cormack,Richard M Cormack,SE,SE,,,,,UK,GBR
+JANE,1991,60,1,1558,J,Malcolm,Elliott,J Malcolm Elliott,EIC,EIC,,,,,UK,GBR
+JANE,1991,60,1,2813,Paul,S,Giller,Paul S Giller,SE,SE,Cork,,,,Ireland,IRL
+JANE,1991,60,1,1302,H,CharlesJ,Godfray,H CharlesJ Godfray,SE,SE,,,,,UK,GBR
+JANE,1991,60,1,2835,Pete,J,Hudson,Pete J Hudson,SE,SE,,,,,UK,GBR
+JANE,1991,60,1,3931,Roger,N,Hughes,Roger N Hughes,SE,SE,,,,,UK,GBR
+JANE,1991,60,1,1702,John,H,Lawton,John H Lawton,SE,SE,"Dept. of Biology, University of New York",,,,USA,USA
+JANE,1991,60,1,507,C,M,Lessells,C M Lessells,SE,SE,,,,,UK,GBR
+JANE,1991,60,1,3147,Robert,M,May,Robert M May,SE,SE,,,,,UK,GBR
+JANE,1991,60,1,1409,Ian,,Newton,Ian Newton,SE,SE,,,,,UK,GBR
+JANE,1991,60,1,3439,Stuart,L,Pimm,Stuart L Pimm,SE,SE,Knoxville,,,,USA,USA
+JANE,1991,60,1,848,D,J,Rogers,D J Rogers,SE,SE,,,,,UK,GBR
+JANE,1991,60,1,356,Bryan,,Shorrocks,Bryan Shorrocks,EIC,EIC,,,,,UK,GBR
+JANE,1991,60,1,1907,J,E,Thorpe,J E Thorpe,SE,SE,,,,,UK,GBR
+JANE,1992,61,1,3264,Steve,,Albon,Steve Albon,EIC,EIC,,,,,UK,GBR
+JANE,1992,61,1,2291,Mike,E,Begon,Mike E Begon,SE,SE,,,,,UK,GBR
+JANE,1992,61,1,3525,Tim,H,Clutton-Brock,Tim H Clutton-Brock,SE,SE,,,,,UK,GBR
+JANE,1992,61,1,3025,Richard,M,Cormack,Richard M Cormack,SE,SE,,,,,UK,GBR
+JANE,1992,61,1,1558,J,Malcolm,Elliott,J Malcolm Elliott,EIC,EIC,,,,,UK,GBR
+JANE,1992,61,1,2813,Paul,S,Giller,Paul S Giller,SE,SE,Cork,,,,Ireland,IRL
+JANE,1992,61,1,1302,H,CharlesJ,Godfray,H CharlesJ Godfray,SE,SE,,,,,UK,GBR
+JANE,1992,61,1,2835,Pete,J,Hudson,Pete J Hudson,SE,SE,,,,,UK,GBR
+JANE,1992,61,1,3931,Roger,N,Hughes,Roger N Hughes,SE,SE,,,,,UK,GBR
+JANE,1992,61,1,120,Anne,,Keymer,Anne Keymer,SE,SE,,,,,UK,GBR
+JANE,1992,61,1,1702,John,H,Lawton,John H Lawton,SE,SE,"Dept. of Biology, University of New York",,,,USA,USA
+JANE,1992,61,1,2040,Kate,,Lessells,Kate Lessells,SE,SE,,,,,UK,GBR
+JANE,1992,61,1,3147,Robert,M,May,Robert M May,SE,SE,,,,,UK,GBR
+JANE,1992,61,1,1409,Ian,,Newton,Ian Newton,SE,SE,,,,,UK,GBR
+JANE,1992,61,1,1807,Josephine,,Pemberton,Josephine Pemberton,SE,SE,,,,,UK,GBR
+JANE,1992,61,1,3439,Stuart,L,Pimm,Stuart L Pimm,SE,SE,Knoxville,,,,USA,USA
+JANE,1992,61,1,848,D,J,Rogers,D J Rogers,SE,SE,,,,,UK,GBR
+JANE,1992,61,1,356,Bryan,,Shorrocks,Bryan Shorrocks,EIC,EIC,,,,,UK,GBR
+JANE,1992,61,1,1907,J,E,Thorpe,J E Thorpe,SE,SE,,,,,UK,GBR
+JANE,1993,62,1,3264,Steve,,Albon,Steve Albon,EIC,EIC,,,,,UK,GBR
+JANE,1993,62,1,2291,Mike,E,Begon,Mike E Begon,SE,SE,,,,,UK,GBR
+JANE,1993,62,1,3287,Stan,,Boutin,Stan Boutin,SE,SE,,,,,Canada,CAN
+JANE,1993,62,1,1160,Graeme,,Caughley,Graeme Caughley,SE,SE,,,,,Australia,AUS
+JANE,1993,62,1,3025,Richard,M,Cormack,Richard M Cormack,SE,SE,,,,,UK,GBR
+JANE,1993,62,1,2813,Paul,S,Giller,Paul S Giller,SE,SE,Cork,,,,Ireland,IRL
+JANE,1993,62,1,1302,H,CharlesJ,Godfray,H CharlesJ Godfray,SE,SE,,,,,UK,GBR
+JANE,1993,62,1,2835,Pete,J,Hudson,Pete J Hudson,SE,SE,,,,,UK,GBR
+JANE,1993,62,1,3931,Roger,N,Hughes,Roger N Hughes,SE,SE,,,,,UK,GBR
+JANE,1993,62,1,120,Anne,,Keymer,Anne Keymer,SE,SE,,,,,UK,GBR
+JANE,1993,62,1,1702,John,H,Lawton,John H Lawton,SE,SE,"Dept. of Biology, University of New York",,,,USA,USA
+JANE,1993,62,1,2040,Kate,,Lessells,Kate Lessells,SE,SE,,,,,UK,GBR
+JANE,1993,62,1,3147,Robert,M,May,Robert M May,SE,SE,,,,,UK,GBR
+JANE,1993,62,1,1409,Ian,,Newton,Ian Newton,SE,SE,,,,,UK,GBR
+JANE,1993,62,1,1807,Josephine,,Pemberton,Josephine Pemberton,SE,SE,,,,,UK,GBR
+JANE,1993,62,1,3439,Stuart,L,Pimm,Stuart L Pimm,SE,SE,Knoxville,,,,USA,USA
+JANE,1993,62,1,848,D,J,Rogers,D J Rogers,SE,SE,,,,,UK,GBR
+JANE,1993,62,1,356,Bryan,,Shorrocks,Bryan Shorrocks,EIC,EIC,,,,,UK,GBR
+JANE,1993,62,1,1907,J,E,Thorpe,J E Thorpe,SE,SE,,,,,UK,GBR
+JANE,1994,63,1,3264,Steve,,Albon,Steve Albon,EIC,EIC,,,,,UK,GBR
+JANE,1994,63,1,3287,Stan,,Boutin,Stan Boutin,SE,SE,,,,,Canada,CAN
+JANE,1994,63,1,1160,Graeme,,Caughley,Graeme Caughley,SE,SE,,,,,Australia,AUS
+JANE,1994,63,1,3025,Richard,M,Cormack,Richard M Cormack,SE,SE,,,,,UK,GBR
+JANE,1994,63,1,2813,Paul,S,Giller,Paul S Giller,SE,SE,Cork,,,,Ireland,IRL
+JANE,1994,63,1,1302,H,CharlesJ,Godfray,H CharlesJ Godfray,SE,SE,,,,,UK,GBR
+JANE,1994,63,1,284,Bryan,T,Grenfell,Bryan T Grenfell,SE,SE,,,,,UK,GBR
+JANE,1994,63,1,2835,Pete,J,Hudson,Pete J Hudson,SE,SE,,,,,UK,GBR
+JANE,1994,63,1,3931,Roger,N,Hughes,Roger N Hughes,SE,SE,,,,,UK,GBR
+JANE,1994,63,1,110,Andrew,,Illius,Andrew Illius,SE,SE,,,,,UK,GBR
+JANE,1994,63,1,1702,John,H,Lawton,John H Lawton,SE,SE,"Dept. of Biology, University of New York",,,,USA,USA
+JANE,1994,63,1,2040,Kate,,Lessells,Kate Lessells,SE,SE,,,,,Netherlands,NLD
+JANE,1994,63,1,3147,Robert,M,May,Robert M May,SE,SE,,,,,UK,GBR
+JANE,1994,63,1,1409,Ian,,Newton,Ian Newton,SE,SE,,,,,UK,GBR
+JANE,1994,63,1,1807,Josephine,,Pemberton,Josephine Pemberton,SE,SE,,,,,UK,GBR
+JANE,1994,63,1,3439,Stuart,L,Pimm,Stuart L Pimm,SE,SE,Knoxville,,,,USA,USA
+JANE,1994,63,1,848,David,J,Rogers,David J Rogers,SE,SE,,,,,UK,GBR
+JANE,1994,63,1,356,Bryan,,Shorrocks,Bryan Shorrocks,EIC,EIC,,,,,UK,GBR
+JANE,1994,63,1,1907,John,E,Thorpe,John E Thorpe,SE,SE,,,,,UK,GBR
+JANE,1995,64,1,3264,Steve,,Albon,Steve Albon,EIC,EIC,,,,,UK,GBR
+JANE,1995,64,1,3287,Stan,,Boutin,Stan Boutin,SE,SE,,,,,Canada,CAN
+JANE,1995,64,1,3025,Richard,M,Cormack,Richard M Cormack,SE,SE,,,,,UK,GBR
+JANE,1995,64,1,2813,Paul,S,Giller,Paul S Giller,SE,SE,Cork,,,,Ireland,IRL
+JANE,1995,64,1,1302,H,CharlesJ,Godfray,H CharlesJ Godfray,SE,SE,,,,,UK,GBR
+JANE,1995,64,1,284,Bryan,T,Grenfell,Bryan T Grenfell,SE,SE,,,,,UK,GBR
+JANE,1995,64,1,2835,Pete,J,Hudson,Pete J Hudson,SE,SE,,,,,UK,GBR
+JANE,1995,64,1,3931,Roger,N,Hughes,Roger N Hughes,SE,SE,,,,,UK,GBR
+JANE,1995,64,1,110,Andrew,,Illius,Andrew Illius,SE,SE,,,,,UK,GBR
+JANE,1995,64,1,1702,John,H,Lawton,John H Lawton,SE,SE,"Dept. of Biology, University of New York",,,,USA,USA
+JANE,1995,64,1,2040,Kate,,Lessells,Kate Lessells,SE,SE,,,,,Netherlands,NLD
+JANE,1995,64,1,3147,Robert,M,May,Robert M May,SE,SE,,,,,UK,GBR
+JANE,1995,64,1,1409,Ian,,Newton,Ian Newton,SE,SE,,,,,UK,GBR
+JANE,1995,64,1,1807,Josephine,,Pemberton,Josephine Pemberton,SE,SE,,,,,UK,GBR
+JANE,1995,64,1,3439,Stuart,L,Pimm,Stuart L Pimm,SE,SE,Knoxville,,,,USA,USA
+JANE,1995,64,1,848,David,J,Rogers,David J Rogers,SE,SE,,,,,UK,GBR
+JANE,1995,64,1,356,Bryan,,Shorrocks,Bryan Shorrocks,EIC,EIC,,,,,UK,GBR
+JANE,1995,64,1,1907,John,E,Thorpe,John E Thorpe,SE,SE,,,,,UK,GBR
+JANE,1996,65,1,3264,Steve,,Albon,Steve Albon,EIC,EIC,,,,,UK,GBR
+JANE,1996,65,1,3287,Stan,,Boutin,Stan Boutin,SE,SE,,,,,Canada,CAN
+JANE,1996,65,1,3025,Richard,M,Cormack,Richard M Cormack,SE,SE,,,,,UK,GBR
+JANE,1996,65,1,2813,Paul,S,Giller,Paul S Giller,SE,SE,Cork,,,,Ireland,IRL
+JANE,1996,65,1,1302,H,CharlesJ,Godfray,H CharlesJ Godfray,SE,SE,,,,,UK,GBR
+JANE,1996,65,1,284,Bryan,T,Grenfell,Bryan T Grenfell,SE,SE,,,,,UK,GBR
+JANE,1996,65,1,2835,Pete,J,Hudson,Pete J Hudson,SE,SE,,,,,UK,GBR
+JANE,1996,65,1,3931,Roger,N,Hughes,Roger N Hughes,SE,SE,,,,,UK,GBR
+JANE,1996,65,1,110,Andrew,,Illius,Andrew Illius,SE,SE,,,,,UK,GBR
+JANE,1996,65,1,2838,Peter,,Jarman,Peter Jarman,SE,SE,,,,,Australia,AUS
+JANE,1996,65,1,1702,John,H,Lawton,John H Lawton,SE,SE,"Dept. of Biology, University of New York",,,,USA,USA
+JANE,1996,65,1,2040,Kate,,Lessells,Kate Lessells,SE,SE,,,,,Netherlands,NLD
+JANE,1996,65,1,3147,Robert,M,May,Robert M May,SE,SE,,,,,UK,GBR
+JANE,1996,65,1,1409,Ian,,Newton,Ian Newton,SE,SE,,,,,UK,GBR
+JANE,1996,65,1,1807,Josephine,,Pemberton,Josephine Pemberton,SE,SE,,,,,UK,GBR
+JANE,1996,65,1,3439,Stuart,L,Pimm,Stuart L Pimm,SE,SE,Knoxville,,,,USA,USA
+JANE,1996,65,1,848,David,J,Rogers,David J Rogers,SE,SE,,,,,UK,GBR
+JANE,1996,65,1,356,Bryan,,Shorrocks,Bryan Shorrocks,EIC,EIC,,,,,UK,GBR
+JANE,1996,65,1,1907,John,E,Thorpe,John E Thorpe,SE,SE,,,,,UK,GBR
+JANE,1997,66,1,3264,Steve,,Albon,Steve Albon,EIC,EIC,,,,,UK,GBR
+JANE,1997,66,1,3287,Stan,,Boutin,Stan Boutin,AE,SE,,,,,Canada,CAN
+JANE,1997,66,1,1513,Jean,,Clobert,Jean Clobert,AE,SE,,,,,France,FRA
+JANE,1997,66,1,3025,Richard,M,Cormack,Richard M Cormack,AE,SE,,,,,UK,GBR
+JANE,1997,66,1,1302,H,CharlesJ,Godfray,H CharlesJ Godfray,AE,SE,,,,,UK,GBR
+JANE,1997,66,1,284,Bryan,T,Grenfell,Bryan T Grenfell,AE,SE,,,,,UK,GBR
+JANE,1997,66,1,2835,Pete,J,Hudson,Pete J Hudson,AE,SE,,,,,UK,GBR
+JANE,1997,66,1,110,Andrew,,Illius,Andrew Illius,AE,SE,,,,,UK,GBR
+JANE,1997,66,1,3103,Rolf,,Ims,Rolf Ims,AE,SE,,,,,Norway,NOR
+JANE,1997,66,1,1654,John,,Jaenike,John Jaenike,AE,SE,,,,,USA,USA
+JANE,1997,66,1,2838,Peter,,Jarman,Peter Jarman,AE,SE,,,,,Australia,AUS
+JANE,1997,66,1,1702,John,H,Lawton,John H Lawton,AE,SE,"Dept. of Biology, University of New York",,,,USA,USA
+JANE,1997,66,1,2040,Kate,,Lessells,Kate Lessells,AE,SE,,,,,Netherlands,NLD
+JANE,1997,66,1,3413,Sean,,Nee,Sean Nee,AE,SE,,,,,UK,GBR
+JANE,1997,66,1,1409,Ian,,Newton,Ian Newton,AE,SE,,,,,UK,GBR
+JANE,1997,66,1,1807,Josephine,,Pemberton,Josephine Pemberton,AE,SE,,,,,UK,GBR
+JANE,1997,66,1,3439,Stuart,L,Pimm,Stuart L Pimm,AE,SE,Knoxville,,,,USA,USA
+JANE,1997,66,1,831,Dave,,Raffaelli,Dave Raffaelli,AE,SE,,,,,UK,GBR
+JANE,1997,66,1,356,Bryan,,Shorrocks,Bryan Shorrocks,EIC,EIC,,,,,UK,GBR
+JANE,1997,66,1,577,Chris,,Thomas,Chris Thomas,AE,SE,,,,,UK,GBR
+JANE,1997,66,1,1907,John,E,Thorpe,John E Thorpe,AE,SE,,,,,UK,GBR
+JANE,1998,67,1,3264,Steve,,Albon,Steve Albon,EIC,EIC,,,,,UK,GBR
+JANE,1998,67,1,3287,Stan,,Boutin,Stan Boutin,AE,SE,,,,,Canada,CAN
+JANE,1998,67,1,1513,Jean,,Clobert,Jean Clobert,AE,SE,,,,,France,FRA
+JANE,1998,67,1,3025,Richard,M,Cormack,Richard M Cormack,AE,SE,,,,,UK,GBR
+JANE,1998,67,1,1302,H,CharlesJ,Godfray,H CharlesJ Godfray,AE,SE,,,,,UK,GBR
+JANE,1998,67,1,284,Bryan,T,Grenfell,Bryan T Grenfell,AE,SE,,,,,UK,GBR
+JANE,1998,67,1,2835,Pete,J,Hudson,Pete J Hudson,AE,SE,,,,,UK,GBR
+JANE,1998,67,1,110,Andrew,,Illius,Andrew Illius,AE,SE,,,,,UK,GBR
+JANE,1998,67,1,3103,Rolf,,Ims,Rolf Ims,AE,SE,,,,,Norway,NOR
+JANE,1998,67,1,1654,John,,Jaenike,John Jaenike,AE,SE,,,,,USA,USA
+JANE,1998,67,1,2838,Peter,,Jarman,Peter Jarman,AE,SE,,,,,Australia,AUS
+JANE,1998,67,1,299,Bror,,Jonsson,Bror Jonsson,AE,SE,,,,,Norway,NOR
+JANE,1998,67,1,1702,John,H,Lawton,John H Lawton,AE,SE,"Dept. of Biology, University of New York",,,,USA,USA
+JANE,1998,67,1,2040,Kate,,Lessells,Kate Lessells,AE,SE,,,,,Netherlands,NLD
+JANE,1998,67,1,3413,Sean,,Nee,Sean Nee,AE,SE,,,,,UK,GBR
+JANE,1998,67,1,1409,Ian,,Newton,Ian Newton,AE,SE,,,,,UK,GBR
+JANE,1998,67,1,1807,Josephine,,Pemberton,Josephine Pemberton,AE,SE,,,,,UK,GBR
+JANE,1998,67,1,831,Dave,,Raffaelli,Dave Raffaelli,AE,SE,,,,,UK,GBR
+JANE,1998,67,1,356,Bryan,,Shorrocks,Bryan Shorrocks,EIC,EIC,,,,,UK,GBR
+JANE,1998,67,1,577,Chris,,Thomas,Chris Thomas,AE,SE,,,,,UK,GBR
+JANE,1998,67,1,2949,Philip,,Warren,Philip Warren,AE,SE,,,,,UK,GBR
+JANE,1999,68,1,3264,Steve,,Albon,Steve Albon,EIC,EIC,,,,,UK,GBR
+JANE,1999,68,1,3287,Stan,,Boutin,Stan Boutin,AE,SE,,,,,Canada,CAN
+JANE,1999,68,1,1513,Jean,,Clobert,Jean Clobert,AE,SE,,,,,France,FRA
+JANE,1999,68,1,3025,Richard,M,Cormack,Richard M Cormack,AE,SE,,,,,UK,GBR
+JANE,1999,68,1,2813,Paul,S,Giller,Paul S Giller,AE,SE,Cork,,,,Ireland,IRL
+JANE,1999,68,1,1302,H,CharlesJ,Godfray,H CharlesJ Godfray,AE,SE,,,,,UK,GBR
+JANE,1999,68,1,284,Bryan,T,Grenfell,Bryan T Grenfell,AE,SE,,,,,UK,GBR
+JANE,1999,68,1,287,Bill,,Gurney,Bill Gurney,AE,SE,,,,,UK,GBR
+JANE,1999,68,1,3939,Steve,,Hall,Steve Hall,AE,SE,,,,,Australia,AUS
+JANE,1999,68,1,2835,Pete,J,Hudson,Pete J Hudson,AE,SE,,,,,UK,GBR
+JANE,1999,68,1,110,Andrew,,Illius,Andrew Illius,AE,SE,,,,,UK,GBR
+JANE,1999,68,1,3103,Rolf,,Ims,Rolf Ims,AE,SE,,,,,Norway,NOR
+JANE,1999,68,1,1654,John,,Jaenike,John Jaenike,AE,SE,,,,,USA,USA
+JANE,1999,68,1,2838,Peter,,Jarman,Peter Jarman,AE,SE,,,,,Australia,AUS
+JANE,1999,68,1,299,Bror,,Jonsson,Bror Jonsson,AE,SE,,,,,Norway,NOR
+JANE,1999,68,1,1702,John,H,Lawton,John H Lawton,AE,SE,"Dept. of Biology, University of New York",,,,USA,USA
+JANE,1999,68,1,2040,Kate,,Lessells,Kate Lessells,AE,SE,,,,,Netherlands,NLD
+JANE,1999,68,1,3413,Sean,,Nee,Sean Nee,AE,SE,,,,,UK,GBR
+JANE,1999,68,1,1409,Ian,,Newton,Ian Newton,AE,SE,,,,,UK,GBR
+JANE,1999,68,1,1807,Josephine,,Pemberton,Josephine Pemberton,AE,SE,,,,,UK,GBR
+JANE,1999,68,1,356,Bryan,,Shorrocks,Bryan Shorrocks,EIC,EIC,,,,,UK,GBR
+JANE,1999,68,1,577,Chris,,Thomas,Chris Thomas,AE,SE,,,,,UK,GBR
+JANE,1999,68,1,2949,Philip,,Warren,Philip Warren,AE,SE,,,,,UK,GBR
+JANE,2000,69,1,3264,Steve,,Albon,Steve Albon,EIC,EIC,,,,,UK,GBR
+JANE,2000,69,1,3287,Stan,,Boutin,Stan Boutin,AE,SE,,,,,Canada,CAN
+JANE,2000,69,1,1513,Jean,,Clobert,Jean Clobert,AE,SE,,,,,France,FRA
+JANE,2000,69,1,3025,Richard,M,Cormack,Richard M Cormack,AE,SE,,,,,UK,GBR
+JANE,2000,69,1,2813,Paul,S,Giller,Paul S Giller,AE,SE,Cork,,,,Ireland,IRL
+JANE,2000,69,1,1302,H,CharlesJ,Godfray,H CharlesJ Godfray,AE,SE,,,,,UK,GBR
+JANE,2000,69,1,284,Bryan,T,Grenfell,Bryan T Grenfell,AE,SE,,,,,UK,GBR
+JANE,2000,69,1,287,Bill,,Gurney,Bill Gurney,AE,SE,,,,,UK,GBR
+JANE,2000,69,1,3939,Steve,,Hall,Steve Hall,AE,SE,,,,,Australia,AUS
+JANE,2000,69,1,2835,Pete,J,Hudson,Pete J Hudson,AE,SE,,,,,UK,GBR
+JANE,2000,69,1,110,Andrew,,Illius,Andrew Illius,AE,SE,,,,,UK,GBR
+JANE,2000,69,1,3103,Rolf,,Ims,Rolf Ims,AE,SE,,,,,Norway,NOR
+JANE,2000,69,1,1654,John,,Jaenike,John Jaenike,AE,SE,,,,,USA,USA
+JANE,2000,69,1,2838,Peter,,Jarman,Peter Jarman,AE,SE,,,,,Australia,AUS
+JANE,2000,69,1,299,Bror,,Jonsson,Bror Jonsson,AE,SE,,,,,Norway,NOR
+JANE,2000,69,1,1702,John,H,Lawton,John H Lawton,AE,SE,"Dept. of Biology, University of New York",,,,USA,USA
+JANE,2000,69,1,2040,Kate,,Lessells,Kate Lessells,AE,SE,,,,,Netherlands,NLD
+JANE,2000,69,1,3413,Sean,,Nee,Sean Nee,AE,SE,,,,,UK,GBR
+JANE,2000,69,1,1409,Ian,,Newton,Ian Newton,AE,SE,,,,,UK,GBR
+JANE,2000,69,1,1807,Josephine,,Pemberton,Josephine Pemberton,AE,SE,,,,,UK,GBR
+JANE,2000,69,1,831,Dave,,Raffaelli,Dave Raffaelli,EIC,EIC,,,,,UK,GBR
+JANE,2000,69,1,3933,Robert,,Smith,Robert Smith,EIC,EIC,,,,,UK,GBR
+JANE,2000,69,1,577,Chris,,Thomas,Chris Thomas,AE,SE,,,,,UK,GBR
+JANE,2000,69,1,2949,Philip,,Warren,Philip Warren,AE,SE,,,,,UK,GBR
+JANE,2001,70,1,3287,Stan,,Boutin,Stan Boutin,AE,SE,,,,,Canada,CAN
+JANE,2001,70,1,3517,Terry,,Burke,Terry Burke,AE,SE,,,,,UK,GBR
+JANE,2001,70,1,1513,Jean,,Clobert,Jean Clobert,AE,SE,,,,,France,FRA
+JANE,2001,70,1,3025,Richard,M,Cormack,Richard M Cormack,AE,SE,,,,,UK,GBR
+JANE,2001,70,1,83,Andre,,Gilburn,Andre Gilburn,AE,SE,,,,,UK,GBR
+JANE,2001,70,1,2813,Paul,S,Giller,Paul S Giller,AE,SE,Cork,,,,Ireland,IRL
+JANE,2001,70,1,1302,H,CharlesJ,Godfray,H CharlesJ Godfray,AE,SE,,,,,UK,GBR
+JANE,2001,70,1,284,Bryan,T,Grenfell,Bryan T Grenfell,AE,SE,,,,,UK,GBR
+JANE,2001,70,1,287,Bill,,Gurney,Bill Gurney,AE,SE,,,,,UK,GBR
+JANE,2001,70,1,3939,Steve,,Hall,Steve Hall,AE,SE,,,,,Australia,AUS
+JANE,2001,70,1,2835,Pete,J,Hudson,Pete J Hudson,AE,SE,,,,,UK,GBR
+JANE,2001,70,1,110,Andrew,,Illius,Andrew Illius,AE,SE,,,,,UK,GBR
+JANE,2001,70,1,3103,Rolf,,Ims,Rolf Ims,AE,SE,,,,,Norway,NOR
+JANE,2001,70,1,1654,John,,Jaenike,John Jaenike,AE,SE,,,,,USA,USA
+JANE,2001,70,1,2838,Peter,,Jarman,Peter Jarman,AE,SE,,,,,Australia,AUS
+JANE,2001,70,1,299,Bror,,Jonsson,Bror Jonsson,AE,SE,,,,,Norway,NOR
+JANE,2001,70,1,1702,John,H,Lawton,John H Lawton,AE,SE,"Dept. of Biology, University of New York",,,,USA,USA
+JANE,2001,70,1,2040,Kate,,Lessells,Kate Lessells,AE,SE,,,,,Netherlands,NLD
+JANE,2001,70,1,3413,Sean,,Nee,Sean Nee,AE,SE,,,,,UK,GBR
+JANE,2001,70,1,2063,Ken,,Norris,Ken Norris,EIC,EIC,,,,,UK,GBR
+JANE,2001,70,1,831,Dave,,Raffaelli,Dave Raffaelli,EIC,EIC,,,,,UK,GBR
+JANE,2001,70,1,3933,Robert,,Smith,Robert Smith,EIC,EIC,,,,,UK,GBR
+JANE,2001,70,1,577,Chris,,Thomas,Chris Thomas,AE,SE,,,,,UK,GBR
+JANE,2001,70,1,2949,Philip,,Warren,Philip Warren,AE,SE,,,,,UK,GBR
+JANE,2002,71,1,3287,Stan,,Boutin,Stan Boutin,AE,SE,,,,,Canada,CAN
+JANE,2002,71,1,3517,Terry,,Burke,Terry Burke,AE,SE,,,,,UK,GBR
+JANE,2002,71,1,1513,Jean,,Clobert,Jean Clobert,AE,SE,,,,,France,FRA
+JANE,2002,71,1,3025,Richard,M,Cormack,Richard M Cormack,AE,SE,,,,,UK,GBR
+JANE,2002,71,1,3321,Steve,,Ellner,Steve Ellner,AE,SE,,,,,USA,USA
+JANE,2002,71,1,83,Andre,,Gilburn,Andre Gilburn,AE,SE,,,,,UK,GBR
+JANE,2002,71,1,2813,Paul,S,Giller,Paul S Giller,AE,SE,Cork,,,,Ireland,IRL
+JANE,2002,71,1,1302,H,CharlesJ,Godfray,H CharlesJ Godfray,AE,SE,,,,,UK,GBR
+JANE,2002,71,1,284,Bryan,T,Grenfell,Bryan T Grenfell,AE,SE,,,,,UK,GBR
+JANE,2002,71,1,287,Bill,,Gurney,Bill Gurney,AE,SE,,,,,UK,GBR
+JANE,2002,71,1,3939,Steve,,Hall,Steve Hall,AE,SE,,,,,Australia,AUS
+JANE,2002,71,1,2835,Pete,J,Hudson,Pete J Hudson,AE,SE,,,,,UK,GBR
+JANE,2002,71,1,110,Andrew,,Illius,Andrew Illius,AE,SE,,,,,UK,GBR
+JANE,2002,71,1,3103,Rolf,,Ims,Rolf Ims,AE,SE,,,,,Norway,NOR
+JANE,2002,71,1,1654,John,,Jaenike,John Jaenike,AE,SE,,,,,USA,USA
+JANE,2002,71,1,2838,Peter,,Jarman,Peter Jarman,AE,SE,,,,,Australia,AUS
+JANE,2002,71,1,299,Bror,,Jonsson,Bror Jonsson,AE,SE,,,,,Norway,NOR
+JANE,2002,71,1,1702,John,H,Lawton,John H Lawton,AE,SE,"Dept. of Biology, University of New York",,,,USA,USA
+JANE,2002,71,1,2040,Kate,,Lessells,Kate Lessells,AE,SE,,,,,Netherlands,NLD
+JANE,2002,71,1,3413,Sean,,Nee,Sean Nee,AE,SE,,,,,UK,GBR
+JANE,2002,71,1,2063,Ken,,Norris,Ken Norris,EIC,EIC,,,,,UK,GBR
+JANE,2002,71,1,831,Dave,,Raffaelli,Dave Raffaelli,EIC,EIC,,,,,UK,GBR
+JANE,2002,71,1,3933,Robert,,Smith,Robert Smith,EIC,EIC,,,,,UK,GBR
+JANE,2002,71,1,577,Chris,,Thomas,Chris Thomas,AE,SE,,,,,UK,GBR
+JANE,2002,71,1,2949,Philip,,Warren,Philip Warren,AE,SE,,,,,UK,GBR
+JANE,2003,72,1,3287,Stan,,Boutin,Stan Boutin,AE,SE,,,,,Canada,CAN
+JANE,2003,72,1,3517,Terry,,Burke,Terry Burke,AE,SE,,,,,UK,GBR
+JANE,2003,72,1,1513,Jean,,Clobert,Jean Clobert,AE,SE,,,,,France,FRA
+JANE,2003,72,1,3025,Richard,M,Cormack,Richard M Cormack,AE,SE,,,,,UK,GBR
+JANE,2003,72,1,3321,Steve,,Ellner,Steve Ellner,AE,SE,,,,,USA,USA
+JANE,2003,72,1,83,Andre,,Gilburn,Andre Gilburn,AE,SE,,,,,UK,GBR
+JANE,2003,72,1,2813,Paul,S,Giller,Paul S Giller,AE,SE,Cork,,,,Ireland,IRL
+JANE,2003,72,1,1302,H,CharlesJ,Godfray,H CharlesJ Godfray,AE,SE,,,,,UK,GBR
+JANE,2003,72,1,284,Bryan,T,Grenfell,Bryan T Grenfell,AE,SE,,,,,UK,GBR
+JANE,2003,72,1,287,Bill,,Gurney,Bill Gurney,AE,SE,,,,,UK,GBR
+JANE,2003,72,1,3939,Steve,,Hall,Steve Hall,AE,SE,,,,,Australia,AUS
+JANE,2003,72,1,2835,Pete,J,Hudson,Pete J Hudson,AE,SE,,,,,UK,GBR
+JANE,2003,72,1,110,Andrew,,Illius,Andrew Illius,AE,SE,,,,,UK,GBR
+JANE,2003,72,1,3103,Rolf,,Ims,Rolf Ims,AE,SE,,,,,Norway,NOR
+JANE,2003,72,1,1654,John,,Jaenike,John Jaenike,AE,SE,,,,,USA,USA
+JANE,2003,72,1,2838,Peter,,Jarman,Peter Jarman,AE,SE,,,,,Australia,AUS
+JANE,2003,72,1,299,Bror,,Jonsson,Bror Jonsson,AE,SE,,,,,Norway,NOR
+JANE,2003,72,1,1702,John,H,Lawton,John H Lawton,AE,SE,"Dept. of Biology, University of New York",,,,USA,USA
+JANE,2003,72,1,2040,Kate,,Lessells,Kate Lessells,AE,SE,,,,,Netherlands,NLD
+JANE,2003,72,1,3413,Sean,,Nee,Sean Nee,AE,SE,,,,,UK,GBR
+JANE,2003,72,1,2063,Ken,,Norris,Ken Norris,EIC,EIC,,,,,UK,GBR
+JANE,2003,72,1,831,Dave,,Raffaelli,Dave Raffaelli,EIC,EIC,,,,,UK,GBR
+JANE,2003,72,1,3933,Robert,,Smith,Robert Smith,EIC,EIC,,,,,UK,GBR
+JANE,2003,72,1,577,Chris,,Thomas,Chris Thomas,AE,SE,,,,,UK,GBR
+JANE,2003,72,1,2949,Philip,,Warren,Philip Warren,AE,SE,,,,,UK,GBR
+JANE,2004,73,1,3287,Stan,,Boutin,Stan Boutin,AE,SE,,,,,Canada,CAN
+JANE,2004,73,1,3517,Terry,,Burke,Terry Burke,AE,SE,,,,,UK,GBR
+JANE,2004,73,1,1513,Jean,,Clobert,Jean Clobert,AE,SE,,,,,France,FRA
+JANE,2004,73,1,3025,Richard,M,Cormack,Richard M Cormack,AE,SE,,,,,UK,GBR
+JANE,2004,73,1,3321,Steve,,Ellner,Steve Ellner,AE,SE,,,,,USA,USA
+JANE,2004,73,1,83,Andre,,Gilburn,Andre Gilburn,AE,SE,,,,,UK,GBR
+JANE,2004,73,1,2813,Paul,S,Giller,Paul S Giller,AE,SE,Cork,,,,Ireland,IRL
+JANE,2004,73,1,1302,H,CharlesJ,Godfray,H CharlesJ Godfray,AE,SE,,,,,UK,GBR
+JANE,2004,73,1,284,Bryan,T,Grenfell,Bryan T Grenfell,AE,SE,,,,,UK,GBR
+JANE,2004,73,1,287,Bill,,Gurney,Bill Gurney,AE,SE,,,,,UK,GBR
+JANE,2004,73,1,3939,Steve,,Hall,Steve Hall,AE,SE,,,,,Australia,AUS
+JANE,2004,73,1,2835,Pete,J,Hudson,Pete J Hudson,AE,SE,,,,,UK,GBR
+JANE,2004,73,1,110,Andrew,,Illius,Andrew Illius,AE,SE,,,,,UK,GBR
+JANE,2004,73,1,3103,Rolf,,Ims,Rolf Ims,AE,SE,,,,,Norway,NOR
+JANE,2004,73,1,1654,John,,Jaenike,John Jaenike,AE,SE,,,,,USA,USA
+JANE,2004,73,1,2838,Peter,,Jarman,Peter Jarman,AE,SE,,,,,Australia,AUS
+JANE,2004,73,1,299,Bror,,Jonsson,Bror Jonsson,AE,SE,,,,,Norway,NOR
+JANE,2004,73,1,1702,John,H,Lawton,John H Lawton,AE,SE,"Dept. of Biology, University of New York",,,,USA,USA
+JANE,2004,73,1,2040,Kate,,Lessells,Kate Lessells,AE,SE,,,,,Netherlands,NLD
+JANE,2004,73,1,3413,Sean,,Nee,Sean Nee,AE,SE,,,,,UK,GBR
+JANE,2004,73,1,2063,Ken,,Norris,Ken Norris,EIC,EIC,,,,,UK,GBR
+JANE,2004,73,1,831,Dave,,Raffaelli,Dave Raffaelli,EIC,EIC,,,,,UK,GBR
+JANE,2004,73,1,3933,Robert,,Smith,Robert Smith,EIC,EIC,,,,,UK,GBR
+JANE,2004,73,1,577,Chris,,Thomas,Chris Thomas,AE,SE,,,,,UK,GBR
+JANE,2004,73,1,2949,Philip,,Warren,Philip Warren,AE,SE,,,,,UK,GBR
+JANE,2005,74,1,3264,Steve,,Albon,Steve Albon,AE,SE,,,,,UK,GBR
+JANE,2005,74,1,3287,Stan,,Boutin,Stan Boutin,AE,SE,,,,,Canada,CAN
+JANE,2005,74,1,1513,Jean,,Clobert,Jean Clobert,AE,SE,,,,,France,FRA
+JANE,2005,74,1,3321,Steve,,Ellner,Steve Ellner,AE,SE,,,,,USA,USA
+JANE,2005,74,1,83,Andre,,Gilburn,Andre Gilburn,AE,SE,,,,,UK,GBR
+JANE,2005,74,1,2813,Paul,S,Giller,Paul S Giller,AE,SE,Cork,,,,Ireland,IRL
+JANE,2005,74,1,1302,H,CharlesJ,Godfray,H CharlesJ Godfray,AE,SE,,,,,UK,GBR
+JANE,2005,74,1,284,Bryan,T,Grenfell,Bryan T Grenfell,AE,SE,,,,,UK,GBR
+JANE,2005,74,1,287,Bill,,Gurney,Bill Gurney,AE,SE,,,,,UK,GBR
+JANE,2005,74,1,3939,Steve,,Hall,Steve Hall,AE,SE,,,,,Malaysia,MYS
+JANE,2005,74,1,2835,Pete,J,Hudson,Pete J Hudson,AE,SE,Philadelphia,,,,USA,USA
+JANE,2005,74,1,110,Andrew,,Illius,Andrew Illius,AE,SE,,,,,UK,GBR
+JANE,2005,74,1,3103,Rolf,,Ims,Rolf Ims,AE,SE,,,,,Norway,NOR
+JANE,2005,74,1,1654,John,,Jaenike,John Jaenike,AE,SE,,,,,USA,USA
+JANE,2005,74,1,2838,Peter,,Jarman,Peter Jarman,AE,SE,,,,,Australia,AUS
+JANE,2005,74,1,299,Bror,,Jonsson,Bror Jonsson,AE,SE,,,,,Norway,NOR
+JANE,2005,74,1,3387,Simon,,Leather,Simon Leather,AE,SE,,,,,UK,GBR
+JANE,2005,74,1,2040,Kate,,Lessells,Kate Lessells,AE,SE,,,,,Netherlands,NLD
+JANE,2005,74,1,316,Bryan,,Manly,Bryan Manly,AE,SE,,,,,USA,USA
+JANE,2005,74,1,2047,Kevin,,McCann,Kevin McCann,EIC,EIC,,,,,Canada,CAN
+JANE,2005,74,1,160,Atle,,Mysterud,Atle Mysterud,AE,SE,,,,,Norway,NOR
+JANE,2005,74,1,3413,Sean,,Nee,Sean Nee,AE,SE,,,,,UK,GBR
+JANE,2005,74,1,2063,Ken,,Norris,Ken Norris,EIC,EIC,,,,,UK,GBR
+JANE,2005,74,1,831,Dave,,Raffaelli,Dave Raffaelli,EIC,EIC,,,,,UK,GBR
+JANE,2005,74,1,3933,Robert,,Smith,Robert Smith,EIC,EIC,,,,,UK,GBR
+JANE,2005,74,1,577,Chris,,Thomas,Chris Thomas,AE,SE,,,,,UK,GBR
+JANE,2005,74,1,2949,Philip,,Warren,Philip Warren,SE,SE,,,,,UK,GBR
+JANE,2006,75,1,3264,Steve,,Albon,Steve Albon,AE,SE,,,,,UK,GBR
+JANE,2006,75,1,3278,Stuart,,Bearhop,Stuart Bearhop,AE,SE,,,,,Ireland,IRL
+JANE,2006,75,1,3514,Tim,,Benton,Tim Benton,AE,SE,,,,,UK,GBR
+JANE,2006,75,1,2713,Ottar,,Bjornstad,Ottar Bjornstad,AE,SE,,,,,USA,USA
+JANE,2006,75,1,3287,Stan,,Boutin,Stan Boutin,AE,SE,,,,,Canada,CAN
+JANE,2006,75,1,403,Corey,,Bradshaw,Corey Bradshaw,AE,SE,,,,,Australia,AUS
+JANE,2006,75,1,1513,Jean,,Clobert,Jean Clobert,AE,SE,,,,,France,FRA
+JANE,2006,75,1,2358,Mark,,Emmerson,Mark Emmerson,AE,SE,,,,,Ireland,IRL
+JANE,2006,75,1,83,Andre,,Gilburn,Andre Gilburn,AE,SE,,,,,UK,GBR
+JANE,2006,75,1,1302,H,CharlesJ,Godfray,H CharlesJ Godfray,AE,SE,,,,,UK,GBR
+JANE,2006,75,1,88,Andy,,Gonzalez,Andy Gonzalez,AE,SE,,,,,Canada,CAN
+JANE,2006,75,1,287,Bill,,Gurney,Bill Gurney,AE,SE,,,,,UK,GBR
+JANE,2006,75,1,3939,Steve,,Hall,Steve Hall,AE,SE,,,,,Malaysia,MYS
+JANE,2006,75,1,1196,Graeme,,Hays,Graeme Hays,EIC,EIC,,,,,UK,GBR
+JANE,2006,75,1,2835,Pete,J,Hudson,Pete J Hudson,AE,SE,Pennsylvania,,,,USA,USA
+JANE,2006,75,1,2416,Murray,,Humphries,Murray Humphries,AE,SE,,,,,Canada,CAN
+JANE,2006,75,1,3103,Rolf,,Ims,Rolf Ims,AE,SE,,,,,Norway,NOR
+JANE,2006,75,1,299,Bror,,Jonsson,Bror Jonsson,AE,SE,,,,,Norway,NOR
+JANE,2006,75,1,3387,Simon,,Leather,Simon Leather,AE,SE,,,,,UK,GBR
+JANE,2006,75,1,2040,Kate,,Lessells,Kate Lessells,AE,SE,,,,,Netherlands,NLD
+JANE,2006,75,1,316,Bryan,,Manly,Bryan Manly,AE,SE,,,,,USA,USA
+JANE,2006,75,1,2047,Kevin,,McCann,Kevin McCann,EIC,EIC,,,,,Canada,CAN
+JANE,2006,75,1,160,Atle,,Mysterud,Atle Mysterud,AE,SE,,,,,Norway,NOR
+JANE,2006,75,1,2063,Ken,,Norris,Ken Norris,EIC,EIC,,,,,UK,GBR
+JANE,2006,75,1,2221,Lennart,,Persson,Lennart Persson,AE,SE,,,,,Sweden,SWE
+JANE,2006,75,1,3438,Stuart,,Piertney,Stuart Piertney,AE,SE,,,,,UK,GBR
+JANE,2006,75,1,3194,Robert,,Poulin,Robert Poulin,AE,SE,,,,,New Zealand,NZL
+JANE,2006,75,1,831,Dave,,Raffaelli,Dave Raffaelli,EIC,EIC,,,,,UK,GBR
+JANE,2006,75,1,1824,Joseph,,Rasmussen,Joseph Rasmussen,AE,SE,,,,,Canada,CAN
+JANE,2006,75,1,1256,Graeme,,Ruxton,Graeme Ruxton,AE,SE,,,,,UK,GBR
+JANE,2006,75,1,353,Ben,,Sheldon,Ben Sheldon,AE,SE,,,,,UK,GBR
+JANE,2006,75,1,868,David,,Sims,David Sims,AE,SE,,,,,UK,GBR
+JANE,2006,75,1,3933,Robert,,Smith,Robert Smith,EIC,EIC,,,,,UK,GBR
+JANE,2006,75,1,1376,Henri,,Weimerskirch,Henri Weimerskirch,AE,SE,,,,,France,FRA
+JANE,2006,75,1,1276,Guy,,Woodward,Guy Woodward,AE,SE,,,,,UK,GBR
+JANE,2007,76,1,3264,Steve,,Albon,Steve Albon,AE,SE,,,,,UK,GBR
+JANE,2007,76,1,3278,Stuart,,Bearhop,Stuart Bearhop,AE,SE,,,,,Ireland,IRL
+JANE,2007,76,1,2766,Peter,,Bennett,Peter Bennett,AE,SE,,,,,UK,GBR
+JANE,2007,76,1,3514,Tim,,Benton,Tim Benton,AE,SE,,,,,UK,GBR
+JANE,2007,76,1,2713,Ottar,,Bjornstad,Ottar Bjornstad,AE,SE,,,,,USA,USA
+JANE,2007,76,1,402,Christiaan,,Both,Christiaan Both,AE,SE,,,,,Netherlands,NLD
+JANE,2007,76,1,3287,Stan,,Boutin,Stan Boutin,AE,SE,,,,,Canada,CAN
+JANE,2007,76,1,403,Corey,,Bradshaw,Corey Bradshaw,AE,SE,,,,,Australia,AUS
+JANE,2007,76,1,1513,Jean,,Clobert,Jean Clobert,AE,SE,,,,,France,FRA
+JANE,2007,76,1,2358,Mark,,Emmerson,Mark Emmerson,AE,SE,,,,,Ireland,IRL
+JANE,2007,76,1,83,Andre,,Gilburn,Andre Gilburn,AE,SE,,,,,UK,GBR
+JANE,2007,76,1,1302,H,CharlesJ,Godfray,H CharlesJ Godfray,AE,SE,,,,,UK,GBR
+JANE,2007,76,1,88,Andy,,Gonzalez,Andy Gonzalez,AE,SE,,,,,Canada,CAN
+JANE,2007,76,1,287,Bill,,Gurney,Bill Gurney,AE,SE,,,,,UK,GBR
+JANE,2007,76,1,3939,Steve,,Hall,Steve Hall,AE,SE,,,,,Malaysia,MYS
+JANE,2007,76,1,1196,Graeme,,Hays,Graeme Hays,EIC,EIC,,,,,UK,GBR
+JANE,2007,76,1,2416,Murray,,Humphries,Murray Humphries,AE,SE,,,,,Canada,CAN
+JANE,2007,76,1,3103,Rolf,,Ims,Rolf Ims,AE,SE,,,,,Norway,NOR
+JANE,2007,76,1,299,Bror,,Jonsson,Bror Jonsson,AE,SE,,,,,Norway,NOR
+JANE,2007,76,1,3387,Simon,,Leather,Simon Leather,AE,SE,,,,,UK,GBR
+JANE,2007,76,1,2040,Kate,,Lessells,Kate Lessells,AE,SE,,,,,Netherlands,NLD
+JANE,2007,76,1,316,Bryan,,Manly,Bryan Manly,AE,SE,,,,,USA,USA
+JANE,2007,76,1,2047,Kevin,,McCann,Kevin McCann,EIC,EIC,,,,,Canada,CAN
+JANE,2007,76,1,160,Atle,,Mysterud,Atle Mysterud,AE,SE,,,,,Norway,NOR
+JANE,2007,76,1,1785,Jonathan,,Newman,Jonathan Newman,AE,SE,,,,,Canada,CAN
+JANE,2007,76,1,2063,Ken,,Norris,Ken Norris,EIC,EIC,,,,,UK,GBR
+JANE,2007,76,1,2221,Lennart,,Persson,Lennart Persson,AE,SE,,,,,Sweden,SWE
+JANE,2007,76,1,3438,Stuart,,Piertney,Stuart Piertney,AE,SE,,,,,UK,GBR
+JANE,2007,76,1,3194,Robert,,Poulin,Robert Poulin,AE,SE,,,,,New Zealand,NZL
+JANE,2007,76,1,1824,Joseph,,Rasmussen,Joseph Rasmussen,AE,SE,,,,,Canada,CAN
+JANE,2007,76,1,1830,Jane,,Reid,Jane Reid,AE,SE,,,,,UK,GBR
+JANE,2007,76,1,181,Anthony,,Richardson,Anthony Richardson,AE,SE,,,,,Australia,AUS
+JANE,2007,76,1,184,Alex,,Roulin,Alex Roulin,AE,SE,,,,,Switzerland,CHE
+JANE,2007,76,1,1256,Graeme,,Ruxton,Graeme Ruxton,AE,SE,,,,,UK,GBR
+JANE,2007,76,1,349,Brett,,Sandercock,Brett Sandercock,AE,SE,,,,,USA,USA
+JANE,2007,76,1,353,Ben,,Sheldon,Ben Sheldon,AE,SE,,,,,UK,GBR
+JANE,2007,76,1,868,David,,Sims,David Sims,AE,SE,,,,,UK,GBR
+JANE,2007,76,1,2949,Philip,,Warren,Philip Warren,AE,SE,,,,,UK,GBR
+JANE,2007,76,1,1376,Henri,,Weimerskirch,Henri Weimerskirch,AE,SE,,,,,France,FRA
+JANE,2007,76,1,3929,Piran,,White,Piran White,AE,SE,,,,,UK,GBR
+JANE,2007,76,1,2111,Ken,,Wilson,Ken Wilson,AE,SE,,,,,UK,GBR
+JANE,2007,76,1,1276,Guy,,Woodward,Guy Woodward,AE,SE,,,,,UK,GBR
+JANE,2007,76,1,1965,Jon,,Wright,Jon Wright,AE,SE,,,,,Norway,NOR
+JANE,2008,77,1,3264,Steve,,Albon,Steve Albon,AE,SE,,,,,UK,GBR
+JANE,2008,77,1,3278,Stuart,,Bearhop,Stuart Bearhop,AE,SE,,,,,UK,GBR
+JANE,2008,77,1,2766,Peter,,Bennett,Peter Bennett,AE,SE,,,,,UK,GBR
+JANE,2008,77,1,3514,Tim,,Benton,Tim Benton,AE,SE,,,,,UK,GBR
+JANE,2008,77,1,2713,Ottar,,Bjornstad,Ottar Bjornstad,AE,SE,,,,,USA,USA
+JANE,2008,77,1,2305,Mike,,Boots,Mike Boots,EIC,EIC,,,,,UK,GBR
+JANE,2008,77,1,402,Christiaan,,Both,Christiaan Both,AE,SE,,,,,Netherlands,NLD
+JANE,2008,77,1,3287,Stan,,Boutin,Stan Boutin,AE,SE,,,,,Canada,CAN
+JANE,2008,77,1,403,Corey,,Bradshaw,Corey Bradshaw,IFE,SPECIAL,,,,,Australia,AUS
+JANE,2008,77,1,3292,Simon,,Butler,Simon Butler,AE,SE,,,,,UK,GBR
+JANE,2008,77,1,1513,Jean,,Clobert,Jean Clobert,AE,SE,,,,,France,FRA
+JANE,2008,77,1,1992,Karl,,Cottenie,Karl Cottenie,AE,SE,,,,,Canada,CAN
+JANE,2008,77,1,83,Andre,,Gilburn,Andre Gilburn,AE,SE,,,,,UK,GBR
+JANE,2008,77,1,1302,H,CharlesJ,Godfray,H CharlesJ Godfray,AE,SE,,,,,UK,GBR
+JANE,2008,77,1,88,Andy,,Gonzalez,Andy Gonzalez,AE,SE,,,,,Canada,CAN
+JANE,2008,77,1,287,Bill,,Gurney,Bill Gurney,AE,SE,,,,,UK,GBR
+JANE,2008,77,1,3939,Steve,,Hall,Steve Hall,AE,SE,,,,,Malaysia,MYS
+JANE,2008,77,1,1196,Graeme,,Hays,Graeme Hays,EIC,EIC,,,,,UK,GBR
+JANE,2008,77,1,2416,Murray,,Humphries,Murray Humphries,AE,SE,,,,,Canada,CAN
+JANE,2008,77,1,3103,Rolf,,Ims,Rolf Ims,AE,SE,,,,,Norway,NOR
+JANE,2008,77,1,299,Bror,,Jonsson,Bror Jonsson,AE,SE,,,,,Norway,NOR
+JANE,2008,77,1,3120,Rob,,Knell,Rob Knell,AE,SE,,,,,UK,GBR
+JANE,2008,77,1,3387,Simon,,Leather,Simon Leather,AE,SE,,,,,UK,GBR
+JANE,2008,77,1,2040,Kate,,Lessells,Kate Lessells,AE,SE,,,,,Netherlands,NLD
+JANE,2008,77,1,316,Bryan,,Manly,Bryan Manly,AE,SE,,,,,USA,USA
+JANE,2008,77,1,2047,Kevin,,McCann,Kevin McCann,EIC,EIC,,,,,Canada,CAN
+JANE,2008,77,1,3148,Robin,,McCleery,Robin McCleery,AE,SE,,,,,UK,GBR
+JANE,2008,77,1,160,Atle,,Mysterud,Atle Mysterud,AE,SE,,,,,Norway,NOR
+JANE,2008,77,1,1785,Jonathan,,Newman,Jonathan Newman,AE,SE,,,,,Canada,CAN
+JANE,2008,77,1,3615,Takayoshi,,Nishida,Takayoshi Nishida,AE,SE,,,,,Japan,JPN
+JANE,2008,77,1,2063,Ken,,Norris,Ken Norris,EIC,EIC,,,,,UK,GBR
+JANE,2008,77,1,2221,Lennart,,Persson,Lennart Persson,AE,SE,,,,,Sweden,SWE
+JANE,2008,77,1,3438,Stuart,,Piertney,Stuart Piertney,AE,SE,,,,,UK,GBR
+JANE,2008,77,1,3194,Robert,,Poulin,Robert Poulin,AE,SE,,,,,New Zealand,NZL
+JANE,2008,77,1,1824,Joseph,,Rasmussen,Joseph Rasmussen,AE,SE,,,,,Canada,CAN
+JANE,2008,77,1,1830,Jane,,Reid,Jane Reid,AE,SE,,,,,UK,GBR
+JANE,2008,77,1,184,Alex,,Roulin,Alex Roulin,AE,SE,,,,,Switzerland,CHE
+JANE,2008,77,1,1256,Graeme,,Ruxton,Graeme Ruxton,AE,SE,,,,,UK,GBR
+JANE,2008,77,1,349,Brett,,Sandercock,Brett Sandercock,AE,SE,,,,,USA,USA
+JANE,2008,77,1,353,Ben,,Sheldon,Ben Sheldon,AE,SE,,,,,UK,GBR
+JANE,2008,77,1,868,David,,Sims,David Sims,AE,SE,,,,,UK,GBR
+JANE,2008,77,1,893,Dan,,Tomkins,Dan Tomkins,AE,SE,,,,,New Zealand,NZL
+JANE,2008,77,1,3493,Simon,,Verhulst,Simon Verhulst,AE,SE,,,,,Netherlands,NLD
+JANE,2008,77,1,2949,Philip,,Warren,Philip Warren,AE,SE,,,,,UK,GBR
+JANE,2008,77,1,1376,Henri,,Weimerskirch,Henri Weimerskirch,AE,SE,,,,,France,FRA
+JANE,2008,77,1,3929,Piran,,White,Piran White,AE,SE,,,,,UK,GBR
+JANE,2008,77,1,2111,Ken,,Wilson,Ken Wilson,AE,SE,,,,,UK,GBR
+JANE,2008,77,1,1276,Guy,,Woodward,Guy Woodward,AE,SE,,,,,UK,GBR
+JANE,2008,77,1,1965,Jon,,Wright,Jon Wright,AE,SE,,,,,Norway,NOR
+JANE,2009,78,1,3278,Stuart,,Bearhop,Stuart Bearhop,AE,SE,,,,,UK,GBR
+JANE,2009,78,1,14,Andrew,,Beckerman,Andrew Beckerman,AE,SE,,,,,UK,GBR
+JANE,2009,78,1,2766,Peter,,Bennett,Peter Bennett,AE,SE,,,,,UK,GBR
+JANE,2009,78,1,3514,Tim,,Benton,Tim Benton,AE,SE,,,,,UK,GBR
+JANE,2009,78,1,2305,Mike,,Boots,Mike Boots,EIC,EIC,,,,,UK,GBR
+JANE,2009,78,1,402,Christiaan,,Both,Christiaan Both,AE,SE,,,,,Netherlands,NLD
+JANE,2009,78,1,3287,Stan,,Boutin,Stan Boutin,AE,SE,,,,,Canada,CAN
+JANE,2009,78,1,403,Corey,,Bradshaw,Corey Bradshaw,IFE,SPECIAL,,,,,Australia,AUS
+JANE,2009,78,1,403,Corey,,Bradshaw,Corey Bradshaw,AE,SE,,,,,Australia,AUS
+JANE,2009,78,1,3292,Simon,,Butler,Simon Butler,AE,SE,,,,,UK,GBR
+JANE,2009,78,1,1513,Jean,,Clobert,Jean Clobert,AE,SE,,,,,France,FRA
+JANE,2009,78,1,1992,Karl,,Cottenie,Karl Cottenie,AE,SE,,,,,Canada,CAN
+JANE,2009,78,1,3527,Tim,,Coulson,Tim Coulson,EIC,EIC,,,,,UK,GBR
+JANE,2009,78,1,2386,Martin,,Genner,Martin Genner,AE,SE,,,,,UK,GBR
+JANE,2009,78,1,83,Andre,,Gilburn,Andre Gilburn,AE,SE,,,,,UK,GBR
+JANE,2009,78,1,287,Bill,,Gurney,Bill Gurney,AE,SE,,,,,UK,GBR
+JANE,2009,78,1,3939,Steve,,Hall,Steve Hall,AE,SE,,,,,Malaysia,MYS
+JANE,2009,78,1,1196,Graeme,,Hays,Graeme Hays,EIC,EIC,,,,,UK,GBR
+JANE,2009,78,1,2416,Murray,,Humphries,Murray Humphries,AE,SE,,,,,Canada,CAN
+JANE,2009,78,1,3103,Rolf,,Ims,Rolf Ims,AE,SE,,,,,Norway,NOR
+JANE,2009,78,1,3571,Tom,,Ings,Tom Ings,AE,SE,,,,,UK,GBR
+JANE,2009,78,1,299,Bror,,Jonsson,Bror Jonsson,AE,SE,,,,,Norway,NOR
+JANE,2009,78,1,3120,Rob,,Knell,Rob Knell,AE,SE,,,,,UK,GBR
+JANE,2009,78,1,3387,Simon,,Leather,Simon Leather,AE,SE,,,,,UK,GBR
+JANE,2009,78,1,2040,Kate,,Lessells,Kate Lessells,AE,SE,,,,,Netherlands,NLD
+JANE,2009,78,1,316,Bryan,,Manly,Bryan Manly,AE,SE,,,,,USA,USA
+JANE,2009,78,1,2047,Kevin,,McCann,Kevin McCann,AE,SE,,,,,Canada,CAN
+JANE,2009,78,1,3406,Shai,,Meiri,Shai Meiri,AE,SE,,,,,UK,GBR
+JANE,2009,78,1,160,Atle,,Mysterud,Atle Mysterud,AE,SE,,,,,Norway,NOR
+JANE,2009,78,1,1785,Jonathan,,Newman,Jonathan Newman,AE,SE,,,,,Canada,CAN
+JANE,2009,78,1,2063,Ken,,Norris,Ken Norris,EIC,EIC,,,,,UK,GBR
+JANE,2009,78,1,3175,Ryan,,Norris,Ryan Norris,AE,SE,,,,,Canada,CAN
+JANE,2009,78,1,540,Charlie,,Nunn,Charlie Nunn,AE,SE,,,,,USA,USA
+JANE,2009,78,1,804,Dan,,Nussey,Dan Nussey,AE,SE,,,,,UK,GBR
+JANE,2009,78,1,2221,Lennart,,Persson,Lennart Persson,AE,SE,,,,,Sweden,SWE
+JANE,2009,78,1,3438,Stuart,,Piertney,Stuart Piertney,AE,SE,,,,,UK,GBR
+JANE,2009,78,1,3194,Robert,,Poulin,Robert Poulin,AE,SE,,,,,New Zealand,NZL
+JANE,2009,78,1,1821,John,,Quinn,John Quinn,AE,SE,,,,,UK,GBR
+JANE,2009,78,1,1824,Joseph,,Rasmussen,Joseph Rasmussen,AE,SE,,,,,Canada,CAN
+JANE,2009,78,1,1830,Jane,,Reid,Jane Reid,AE,SE,,,,,UK,GBR
+JANE,2009,78,1,184,Alex,,Roulin,Alex Roulin,AE,SE,,,,,Switzerland,CHE
+JANE,2009,78,1,3698,Volker,,Rudolf,Volker Rudolf,AE,SE,,,,,USA,USA
+JANE,2009,78,1,3852,Andy,,Russell,Andy Russell,AE,SE,,,,,UK,GBR
+JANE,2009,78,1,349,Brett,,Sandercock,Brett Sandercock,AE,SE,,,,,USA,USA
+JANE,2009,78,1,2689,Nathalie,,Seddon,Nathalie Seddon,AE,SE,,,,,UK,GBR
+JANE,2009,78,1,577,Chris,,Thomas,Chris Thomas,AE,SE,,,,,UK,GBR
+JANE,2009,78,1,893,Dan,,Tomkins,Dan Tomkins,AE,SE,,,,,New Zealand,NZL
+JANE,2009,78,1,1138,Frank,Van,Veen,Frank Van Veen,AE,SE,,,,,UK,GBR
+JANE,2009,78,1,3493,Simon,,Verhulst,Simon Verhulst,AE,SE,,,,,Netherlands,NLD
+JANE,2009,78,1,2949,Philip,,Warren,Philip Warren,AE,SE,,,,,UK,GBR
+JANE,2009,78,1,1376,Henri,,Weimerskirch,Henri Weimerskirch,AE,SE,,,,,France,FRA
+JANE,2009,78,1,229,Andrew,,White,Andrew White,AE,SE,,,,,UK,GBR
+JANE,2009,78,1,3929,Piran,,White,Piran White,AE,SE,,,,,UK,GBR
+JANE,2009,78,1,2111,Ken,,Wilson,Ken Wilson,AE,SE,,,,,UK,GBR
+JANE,2009,78,1,379,Ben,,Woodcock,Ben Woodcock,AE,SE,,,,,UK,GBR
+JANE,2009,78,1,1276,Guy,,Woodward,Guy Woodward,AE,SE,,,,,UK,GBR
+JANE,2009,78,1,1965,Jon,,Wright,Jon Wright,AE,SE,,,,,Norway,NOR
+JANE,2010,79,1,3278,Stuart,,Bearhop,Stuart Bearhop,AE,SE,,,,,UK,GBR
+JANE,2010,79,1,14,Andrew,,Beckerman,Andrew Beckerman,AE,SE,,,,,UK,GBR
+JANE,2010,79,1,2766,Peter,,Bennett,Peter Bennett,AE,SE,,,,,UK,GBR
+JANE,2010,79,1,3514,Tim,,Benton,Tim Benton,AE,SE,,,,,UK,GBR
+JANE,2010,79,1,2305,Mike,,Boots,Mike Boots,EIC,EIC,,,,,UK,GBR
+JANE,2010,79,1,402,Christiaan,,Both,Christiaan Both,AE,SE,,,,,Netherlands,NLD
+JANE,2010,79,1,3287,Stan,,Boutin,Stan Boutin,AE,SE,,,,,Canada,CAN
+JANE,2010,79,1,403,Corey,,Bradshaw,Corey Bradshaw,AE,SE,,,,,Australia,AUS
+JANE,2010,79,1,3292,Simon,,Butler,Simon Butler,AE,SE,,,,,UK,GBR
+JANE,2010,79,1,1513,Jean,,Clobert,Jean Clobert,AE,SE,,,,,France,FRA
+JANE,2010,79,1,1992,Karl,,Cottenie,Karl Cottenie,AE,SE,,,,,Canada,CAN
+JANE,2010,79,1,3527,Tim,,Coulson,Tim Coulson,EIC,EIC,,,,,UK,GBR
+JANE,2010,79,1,1585,John,,Fryxell,John Fryxell,AE,SE,,,,,Canada,CAN
+JANE,2010,79,1,2386,Martin,,Genner,Martin Genner,AE,SE,,,,,UK,GBR
+JANE,2010,79,1,83,Andre,,Gilburn,Andre Gilburn,AE,SE,,,,,UK,GBR
+JANE,2010,79,1,287,Bill,,Gurney,Bill Gurney,AE,SE,,,,,UK,GBR
+JANE,2010,79,1,1399,Ian,,Hardy,Ian Hardy,AE,SE,,,,,UK,GBR
+JANE,2010,79,1,1196,Graeme,,Hays,Graeme Hays,EIC,EIC,,,,,UK,GBR
+JANE,2010,79,1,2416,Murray,,Humphries,Murray Humphries,AE,SE,,,,,Canada,CAN
+JANE,2010,79,1,3103,Rolf,,Ims,Rolf Ims,AE,SE,,,,,Norway,NOR
+JANE,2010,79,1,3571,Tom,,Ings,Tom Ings,AE,SE,,,,,UK,GBR
+JANE,2010,79,1,1088,Frank,,Johansson,Frank Johansson,AE,SE,,,,,Sweden,SWE
+JANE,2010,79,1,299,Bror,,Jonsson,Bror Jonsson,AE,SE,,,,,Norway,NOR
+JANE,2010,79,1,3120,Rob,,Knell,Rob Knell,AE,SE,,,,,UK,GBR
+JANE,2010,79,1,3387,Simon,,Leather,Simon Leather,AE,SE,,,,,UK,GBR
+JANE,2010,79,1,2040,Kate,,Lessells,Kate Lessells,AE,SE,,,,,Netherlands,NLD
+JANE,2010,79,1,316,Bryan,,Manly,Bryan Manly,AE,SE,,,,,USA,USA
+JANE,2010,79,1,2047,Kevin,,McCann,Kevin McCann,AE,SE,,,,,Canada,CAN
+JANE,2010,79,1,3406,Shai,,Meiri,Shai Meiri,AE,SE,,,,,UK,GBR
+JANE,2010,79,1,160,Atle,,Mysterud,Atle Mysterud,AE,SE,,,,,Norway,NOR
+JANE,2010,79,1,1785,Jonathan,,Newman,Jonathan Newman,AE,SE,,,,,Canada,CAN
+JANE,2010,79,1,3175,Ryan,,Norris,Ryan Norris,AE,SE,,,,,Canada,CAN
+JANE,2010,79,1,804,Dan,,Nussey,Dan Nussey,AE,SE,,,,,UK,GBR
+JANE,2010,79,1,1116,Fanie,,Pelletier,Fanie Pelletier,AE,SE,,,,,Canada,CAN
+JANE,2010,79,1,2221,Lennart,,Persson,Lennart Persson,AE,SE,,,,,Sweden,SWE
+JANE,2010,79,1,3438,Stuart,,Piertney,Stuart Piertney,AE,SE,,,,,UK,GBR
+JANE,2010,79,1,1821,John,,Quinn,John Quinn,AE,SE,,,,,UK,GBR
+JANE,2010,79,1,1824,Joseph,,Rasmussen,Joseph Rasmussen,AE,SE,,,,,Canada,CAN
+JANE,2010,79,1,1830,Jane,,Reid,Jane Reid,AE,SE,,,,,UK,GBR
+JANE,2010,79,1,184,Alex,,Roulin,Alex Roulin,AE,SE,,,,,Switzerland,CHE
+JANE,2010,79,1,3698,Volker,,Rudolf,Volker Rudolf,AE,SE,,,,,USA,USA
+JANE,2010,79,1,3852,Andy,,Russell,Andy Russell,AE,SE,,,,,UK,GBR
+JANE,2010,79,1,349,Brett,,Sandercock,Brett Sandercock,AE,SE,,,,,USA,USA
+JANE,2010,79,1,2689,Nathalie,,Seddon,Nathalie Seddon,AE,SE,,,,,UK,GBR
+JANE,2010,79,1,577,Chris,,Thomas,Chris Thomas,AE,SE,,,,,UK,GBR
+JANE,2010,79,1,893,Dan,,Tomkins,Dan Tomkins,AE,SE,,,,,New Zealand,NZL
+JANE,2010,79,1,1138,Frank,Van,Veen,Frank Van Veen,AE,SE,,,,,UK,GBR
+JANE,2010,79,1,3493,Simon,,Verhulst,Simon Verhulst,AE,SE,,,,,Netherlands,NLD
+JANE,2010,79,1,2949,Philip,,Warren,Philip Warren,AE,SE,,,,,UK,GBR
+JANE,2010,79,1,3946,Tom,,Webb,Tom Webb,AE,SE,,,,,UK,GBR
+JANE,2010,79,1,1376,Henri,,Weimerskirch,Henri Weimerskirch,AE,SE,,,,,France,FRA
+JANE,2010,79,1,229,Andrew,,White,Andrew White,AE,SE,,,,,UK,GBR
+JANE,2010,79,1,2111,Ken,,Wilson,Ken Wilson,EIC,EIC,,,,,UK,GBR
+JANE,2010,79,1,379,Ben,,Woodcock,Ben Woodcock,AE,SE,,,,,UK,GBR
+JANE,2010,79,1,1276,Guy,,Woodward,Guy Woodward,AE,SE,,,,,UK,GBR
+JANE,2010,79,1,1965,Jon,,Wright,Jon Wright,AE,SE,,,,,Norway,NOR
+JANE,2010,79,1,2617,Michael,,Wunder,Michael Wunder,AE,SE,,,,,USA,USA
+JANE,2011,80,1,611,Dan,,Ardia,Dan Ardia,AE,SE,,,,,USA,USA
+JANE,2011,80,1,3278,Stuart,,Bearhop,Stuart Bearhop,AE,SE,,,,,UK,GBR
+JANE,2011,80,1,14,Andrew,,Beckerman,Andrew Beckerman,AE,SE,,,,,UK,GBR
+JANE,2011,80,1,2766,Peter,,Bennett,Peter Bennett,AE,SE,,,,,UK,GBR
+JANE,2011,80,1,3514,Tim,,Benton,Tim Benton,AE,SE,,,,,UK,GBR
+JANE,2011,80,1,2305,Mike,,Boots,Mike Boots,EIC,EIC,,,,,UK,GBR
+JANE,2011,80,1,402,Christiaan,,Both,Christiaan Both,AE,SE,,,,,Netherlands,NLD
+JANE,2011,80,1,3287,Stan,,Boutin,Stan Boutin,AE,SE,,,,,Canada,CAN
+JANE,2011,80,1,403,Corey,,Bradshaw,Corey Bradshaw,AE,SE,,,,,Australia,AUS
+JANE,2011,80,1,3292,Simon,,Butler,Simon Butler,AE,SE,,,,,UK,GBR
+JANE,2011,80,1,1513,Jean,,Clobert,Jean Clobert,AE,SE,,,,,France,FRA
+JANE,2011,80,1,1992,Karl,,Cottenie,Karl Cottenie,AE,SE,,,,,Canada,CAN
+JANE,2011,80,1,3527,Tim,,Coulson,Tim Coulson,EIC,EIC,,,,,UK,GBR
+JANE,2011,80,1,2386,Martin,,Genner,Martin Genner,AE,SE,,,,,UK,GBR
+JANE,2011,80,1,83,Andre,,Gilburn,Andre Gilburn,AE,SE,,,,,UK,GBR
+JANE,2011,80,1,287,Bill,,Gurney,Bill Gurney,AE,SE,,,,,UK,GBR
+JANE,2011,80,1,2822,Peter,,Hamback,Peter Hamback,AE,SE,,,,,Sweden,SWE
+JANE,2011,80,1,1399,Ian,,Hardy,Ian Hardy,AE,SE,,,,,UK,GBR
+JANE,2011,80,1,1196,Graeme,,Hays,Graeme Hays,EIC,EIC,,,,,UK,GBR
+JANE,2011,80,1,2416,Murray,,Humphries,Murray Humphries,AE,SE,,,,,Canada,CAN
+JANE,2011,80,1,3103,Rolf,,Ims,Rolf Ims,AE,SE,,,,,Norway,NOR
+JANE,2011,80,1,3571,Tom,,Ings,Tom Ings,AE,SE,,,,,UK,GBR
+JANE,2011,80,1,1088,Frank,,Johansson,Frank Johansson,AE,SE,,,,,Sweden,SWE
+JANE,2011,80,1,3896,James,H,Jones,James H Jones,AE,SE,Stanford University,,,,USA,USA
+JANE,2011,80,1,299,Bror,,Jonsson,Bror Jonsson,AE,SE,,,,,Norway,NOR
+JANE,2011,80,1,3387,Simon,,Leather,Simon Leather,AE,SE,,,,,UK,GBR
+JANE,2011,80,1,2040,Kate,,Lessells,Kate Lessells,AE,SE,,,,,Netherlands,NLD
+JANE,2011,80,1,316,Bryan,,Manly,Bryan Manly,AE,SE,,,,,USA,USA
+JANE,2011,80,1,2047,Kevin,,McCann,Kevin McCann,AE,SE,,,,,Canada,CAN
+JANE,2011,80,1,3406,Shai,,Meiri,Shai Meiri,AE,SE,,,,,Israel,ISR
+JANE,2011,80,1,160,Atle,,Mysterud,Atle Mysterud,AE,SE,,,,,Norway,NOR
+JANE,2011,80,1,1785,Jonathan,,Newman,Jonathan Newman,AE,SE,,,,,Canada,CAN
+JANE,2011,80,1,3175,Ryan,,Norris,Ryan Norris,AE,SE,,,,,Canada,CAN
+JANE,2011,80,1,804,Dan,,Nussey,Dan Nussey,AE,SE,,,,,UK,GBR
+JANE,2011,80,1,1116,Fanie,,Pelletier,Fanie Pelletier,AE,SE,,,,,Canada,CAN
+JANE,2011,80,1,2221,Lennart,,Persson,Lennart Persson,AE,SE,,,,,Sweden,SWE
+JANE,2011,80,1,3438,Stuart,,Piertney,Stuart Piertney,AE,SE,,,,,UK,GBR
+JANE,2011,80,1,3442,Stewart,,Plaistow,Stewart Plaistow,AE,SE,,,,,UK,GBR
+JANE,2011,80,1,1821,John,,Quinn,John Quinn,AE,SE,,,,,UK,GBR
+JANE,2011,80,1,1824,Joseph,,Rasmussen,Joseph Rasmussen,AE,SE,,,,,Canada,CAN
+JANE,2011,80,1,1830,Jane,,Reid,Jane Reid,AE,SE,,,,,UK,GBR
+JANE,2011,80,1,184,Alex,,Roulin,Alex Roulin,AE,SE,,,,,Switzerland,CHE
+JANE,2011,80,1,3698,Volker,,Rudolf,Volker Rudolf,AE,SE,,,,,USA,USA
+JANE,2011,80,1,3852,Andy,,Russell,Andy Russell,AE,SE,,,,,UK,GBR
+JANE,2011,80,1,349,Brett,,Sandercock,Brett Sandercock,AE,SE,,,,,USA,USA
+JANE,2011,80,1,2689,Nathalie,,Seddon,Nathalie Seddon,AE,SE,,,,,UK,GBR
+JANE,2011,80,1,878,Dan,,Stouffer,Dan Stouffer,AE,SE,,,,,Spain,ESP
+JANE,2011,80,1,577,Chris,,Thomas,Chris Thomas,AE,SE,,,,,UK,GBR
+JANE,2011,80,1,893,Dan,,Tomkins,Dan Tomkins,AE,SE,,,,,New Zealand,NZL
+JANE,2011,80,1,1138,Frank,Van,Veen,Frank Van Veen,AE,SE,,,,,UK,GBR
+JANE,2011,80,1,3493,Simon,,Verhulst,Simon Verhulst,AE,SE,,,,,Netherlands,NLD
+JANE,2011,80,1,2949,Philip,,Warren,Philip Warren,AE,SE,,,,,UK,GBR
+JANE,2011,80,1,3946,Tom,,Webb,Tom Webb,AE,SE,,,,,UK,GBR
+JANE,2011,80,1,1376,Henri,,Weimerskirch,Henri Weimerskirch,AE,SE,,,,,France,FRA
+JANE,2011,80,1,229,Andrew,,White,Andrew White,AE,SE,,,,,UK,GBR
+JANE,2011,80,1,2111,Ken,,Wilson,Ken Wilson,EIC,EIC,,,,,UK,GBR
+JANE,2011,80,1,379,Ben,,Woodcock,Ben Woodcock,AE,SE,,,,,UK,GBR
+JANE,2011,80,1,1276,Guy,,Woodward,Guy Woodward,AE,SE,,,,,UK,GBR
+JANE,2011,80,1,1965,Jon,,Wright,Jon Wright,AE,SE,,,,,Norway,NOR
+JANE,2011,80,1,2617,Michael,,Wunder,Michael Wunder,AE,SE,,,,,USA,USA
+JANE,2012,81,1,611,Dan,,Ardia,Dan Ardia,AE,SE,,,,,USA,USA
+JANE,2012,81,1,3278,Stuart,,Bearhop,Stuart Bearhop,AE,SE,,,,,UK,GBR
+JANE,2012,81,1,14,Andrew,,Beckerman,Andrew Beckerman,AE,SE,,,,,UK,GBR
+JANE,2012,81,1,2766,Peter,,Bennett,Peter Bennett,AE,SE,,,,,UK,GBR
+JANE,2012,81,1,2305,Mike,,Boots,Mike Boots,EIC,EIC,,,,,UK,GBR
+JANE,2012,81,1,402,Christiaan,,Both,Christiaan Both,AE,SE,,,,,Netherlands,NLD
+JANE,2012,81,1,3287,Stan,,Boutin,Stan Boutin,AE,SE,,,,,Canada,CAN
+JANE,2012,81,1,403,Corey,,Bradshaw,Corey Bradshaw,AE,SE,,,,,Australia,AUS
+JANE,2012,81,1,3292,Simon,,Butler,Simon Butler,AE,SE,,,,,UK,GBR
+JANE,2012,81,1,1513,Jean,,Clobert,Jean Clobert,AE,SE,,,,,France,FRA
+JANE,2012,81,1,1992,Karl,,Cottenie,Karl Cottenie,AE,SE,,,,,Canada,CAN
+JANE,2012,81,1,3306,Sheena,,Cotter,Sheena Cotter,AE,SE,,,,,Ireland,IRL
+JANE,2012,81,1,3527,Tim,,Coulson,Tim Coulson,EIC,EIC,,,,,UK,GBR
+JANE,2012,81,1,1995,Kim,,Cuddington,Kim Cuddington,AE,SE,,,,,Canada,CAN
+JANE,2012,81,1,1585,John,,Fryxell,John Fryxell,AE,SE,,,,,Canada,CAN
+JANE,2012,81,1,2386,Martin,,Genner,Martin Genner,AE,SE,,,,,UK,GBR
+JANE,2012,81,1,83,Andre,,Gilburn,Andre Gilburn,AE,SE,,,,,UK,GBR
+JANE,2012,81,1,3938,Simon,,Griffith,Simon Griffith,AE,SE,,,,,Australia,AUS
+JANE,2012,81,1,287,Bill,,Gurney,Bill Gurney,AE,SE,,,,,UK,GBR
+JANE,2012,81,1,2822,Peter,,Hamback,Peter Hamback,AE,SE,,,,,Sweden,SWE
+JANE,2012,81,1,1399,Ian,,Hardy,Ian Hardy,AE,SE,,,,,UK,GBR
+JANE,2012,81,1,1196,Graeme,,Hays,Graeme Hays,EIC,EIC,,,,,UK,GBR
+JANE,2012,81,1,2416,Murray,,Humphries,Murray Humphries,AE,SE,,,,,Canada,CAN
+JANE,2012,81,1,3103,Rolf,,Ims,Rolf Ims,AE,SE,,,,,Norway,NOR
+JANE,2012,81,1,3571,Tom,,Ings,Tom Ings,AE,SE,,,,,UK,GBR
+JANE,2012,81,1,1088,Frank,,Johansson,Frank Johansson,AE,SE,,,,,Sweden,SWE
+JANE,2012,81,1,3896,James,H,Jones,James H Jones,AE,SE,Stanford University,,,,USA,USA
+JANE,2012,81,1,299,Bror,,Jonsson,Bror Jonsson,AE,SE,,,,,Norway,NOR
+JANE,2012,81,1,3387,Simon,,Leather,Simon Leather,AE,SE,,,,,UK,GBR
+JANE,2012,81,1,2040,Kate,,Lessells,Kate Lessells,AE,SE,,,,,Netherlands,NLD
+JANE,2012,81,1,316,Bryan,,Manly,Bryan Manly,AE,SE,,,,,USA,USA
+JANE,2012,81,1,2047,Kevin,,McCann,Kevin McCann,AE,SE,,,,,Canada,CAN
+JANE,2012,81,1,3406,Shai,,Meiri,Shai Meiri,AE,SE,,,,,Israel,ISR
+JANE,2012,81,1,1407,Ian,,Montgomery,Ian Montgomery,AE,SE,,,,,Ireland,IRL
+JANE,2012,81,1,160,Atle,,Mysterud,Atle Mysterud,AE,SE,,,,,Norway,NOR
+JANE,2012,81,1,1785,Jonathan,,Newman,Jonathan Newman,AE,SE,,,,,Canada,CAN
+JANE,2012,81,1,3175,Ryan,,Norris,Ryan Norris,AE,SE,,,,,Canada,CAN
+JANE,2012,81,1,1116,Fanie,,Pelletier,Fanie Pelletier,AE,SE,,,,,Canada,CAN
+JANE,2012,81,1,2221,Lennart,,Persson,Lennart Persson,AE,SE,,,,,Sweden,SWE
+JANE,2012,81,1,3438,Stuart,,Piertney,Stuart Piertney,AE,SE,,,,,UK,GBR
+JANE,2012,81,1,3442,Stewart,,Plaistow,Stewart Plaistow,AE,SE,,,,,UK,GBR
+JANE,2012,81,1,1821,John,,Quinn,John Quinn,AE,SE,,,,,UK,GBR
+JANE,2012,81,1,1824,Joseph,,Rasmussen,Joseph Rasmussen,AE,SE,,,,,Canada,CAN
+JANE,2012,81,1,1830,Jane,,Reid,Jane Reid,AE,SE,,,,,UK,GBR
+JANE,2012,81,1,184,Alex,,Roulin,Alex Roulin,AE,SE,,,,,Switzerland,CHE
+JANE,2012,81,1,3698,Volker,,Rudolf,Volker Rudolf,AE,SE,,,,,USA,USA
+JANE,2012,81,1,3852,Andy,,Russell,Andy Russell,AE,SE,,,,,UK,GBR
+JANE,2012,81,1,349,Brett,,Sandercock,Brett Sandercock,AE,SE,,,,,USA,USA
+JANE,2012,81,1,2689,Nathalie,,Seddon,Nathalie Seddon,AE,SE,,,,,UK,GBR
+JANE,2012,81,1,878,Dan,,Stouffer,Dan Stouffer,AE,SE,,,,,Spain,ESP
+JANE,2012,81,1,577,Chris,,Thomas,Chris Thomas,AE,SE,,,,,UK,GBR
+JANE,2012,81,1,893,Dan,,Tomkins,Dan Tomkins,AE,SE,,,,,New Zealand,NZL
+JANE,2012,81,1,1917,Jason,,Tylianakis,Jason Tylianakis,AE,SE,,,,,New Zealand,NZL
+JANE,2012,81,1,1138,Frank,Van,Veen,Frank Van Veen,AE,SE,,,,,UK,GBR
+JANE,2012,81,1,3493,Simon,,Verhulst,Simon Verhulst,AE,SE,,,,,Netherlands,NLD
+JANE,2012,81,1,2949,Philip,,Warren,Philip Warren,AE,SE,,,,,UK,GBR
+JANE,2012,81,1,3946,Tom,,Webb,Tom Webb,AE,SE,,,,,UK,GBR
+JANE,2012,81,1,1376,Henri,,Weimerskirch,Henri Weimerskirch,AE,SE,,,,,France,FRA
+JANE,2012,81,1,229,Andrew,,White,Andrew White,AE,SE,,,,,UK,GBR
+JANE,2012,81,1,2111,Ken,,Wilson,Ken Wilson,EIC,EIC,,,,,UK,GBR
+JANE,2012,81,1,379,Ben,,Woodcock,Ben Woodcock,AE,SE,,,,,UK,GBR
+JANE,2012,81,1,1276,Guy,,Woodward,Guy Woodward,AE,SE,,,,,UK,GBR
+JANE,2012,81,1,1965,Jon,,Wright,Jon Wright,AE,SE,,,,,Norway,NOR
+JANE,2012,81,1,2617,Michael,,Wunder,Michael Wunder,AE,SE,,,,,USA,USA
+JANE,2013,82,1,611,Dan,,Ardia,Dan Ardia,AE,SE,,,,,USA,USA
+JANE,2013,82,1,3278,Stuart,,Bearhop,Stuart Bearhop,AE,SE,,,,,UK,GBR
+JANE,2013,82,1,14,Andrew,,Beckerman,Andrew Beckerman,AE,SE,,,,,UK,GBR
+JANE,2013,82,1,2766,Peter,,Bennett,Peter Bennett,AE,SE,,,,,UK,GBR
+JANE,2013,82,1,2305,Mike,,Boots,Mike Boots,EIC,EIC,,,,,UK,GBR
+JANE,2013,82,1,402,Christiaan,,Both,Christiaan Both,AE,SE,,,,,Netherlands,NLD
+JANE,2013,82,1,3287,Stan,,Boutin,Stan Boutin,AE,SE,,,,,Canada,CAN
+JANE,2013,82,1,403,Corey,,Bradshaw,Corey Bradshaw,AE,SE,,,,,Australia,AUS
+JANE,2013,82,1,3292,Simon,,Butler,Simon Butler,AE,SE,,,,,UK,GBR
+JANE,2013,82,1,1513,Jean,,Clobert,Jean Clobert,AE,SE,,,,,France,FRA
+JANE,2013,82,1,1992,Karl,,Cottenie,Karl Cottenie,AE,SE,,,,,Canada,CAN
+JANE,2013,82,1,3306,Sheena,,Cotter,Sheena Cotter,AE,SE,,,,,Ireland,IRL
+JANE,2013,82,1,3527,Tim,,Coulson,Tim Coulson,EIC,EIC,,,,,UK,GBR
+JANE,2013,82,1,1995,Kim,,Cuddington,Kim Cuddington,AE,SE,,,,,Canada,CAN
+JANE,2013,82,1,1585,John,,Fryxell,John Fryxell,AE,SE,,,,,Canada,CAN
+JANE,2013,82,1,2386,Martin,,Genner,Martin Genner,AE,SE,,,,,UK,GBR
+JANE,2013,82,1,83,Andre,,Gilburn,Andre Gilburn,AE,SE,,,,,UK,GBR
+JANE,2013,82,1,3938,Simon,,Griffith,Simon Griffith,AE,SE,,,,,Australia,AUS
+JANE,2013,82,1,287,Bill,,Gurney,Bill Gurney,AE,SE,,,,,UK,GBR
+JANE,2013,82,1,2822,Peter,,Hamback,Peter Hamback,AE,SE,,,,,Sweden,SWE
+JANE,2013,82,1,1399,Ian,,Hardy,Ian Hardy,AE,SE,,,,,UK,GBR
+JANE,2013,82,1,1196,Graeme,,Hays,Graeme Hays,EIC,EIC,,,,,UK,GBR
+JANE,2013,82,1,2416,Murray,,Humphries,Murray Humphries,AE,SE,,,,,Canada,CAN
+JANE,2013,82,1,3103,Rolf,,Ims,Rolf Ims,AE,SE,,,,,Norway,NOR
+JANE,2013,82,1,3571,Tom,,Ings,Tom Ings,AE,SE,,,,,UK,GBR
+JANE,2013,82,1,1088,Frank,,Johansson,Frank Johansson,AE,SE,,,,,Sweden,SWE
+JANE,2013,82,1,3896,James,H,Jones,James H Jones,AE,SE,Stanford University,,,,USA,USA
+JANE,2013,82,1,299,Bror,,Jonsson,Bror Jonsson,AE,SE,,,,,Norway,NOR
+JANE,2013,82,1,3387,Simon,,Leather,Simon Leather,AE,SE,,,,,UK,GBR
+JANE,2013,82,1,2040,Kate,,Lessells,Kate Lessells,AE,SE,,,,,Netherlands,NLD
+JANE,2013,82,1,316,Bryan,,Manly,Bryan Manly,AE,SE,,,,,USA,USA
+JANE,2013,82,1,3406,Shai,,Meiri,Shai Meiri,AE,SE,,,,,Israel,ISR
+JANE,2013,82,1,1407,Ian,,Montgomery,Ian Montgomery,AE,SE,,,,,Ireland,IRL
+JANE,2013,82,1,160,Atle,,Mysterud,Atle Mysterud,AE,SE,,,,,Norway,NOR
+JANE,2013,82,1,1785,Jonathan,,Newman,Jonathan Newman,AE,SE,,,,,Canada,CAN
+JANE,2013,82,1,3175,Ryan,,Norris,Ryan Norris,AE,SE,,,,,Canada,CAN
+JANE,2013,82,1,1014,Eoin,,O'Gorman,Eoin O'Gorman,AE,SE,,,,,UK,GBR
+JANE,2013,82,1,1116,Fanie,,Pelletier,Fanie Pelletier,AE,SE,,,,,Canada,CAN
+JANE,2013,82,1,2221,Lennart,,Persson,Lennart Persson,AE,SE,,,,,Sweden,SWE
+JANE,2013,82,1,3438,Stuart,,Piertney,Stuart Piertney,AE,SE,,,,,UK,GBR
+JANE,2013,82,1,3442,Stewart,,Plaistow,Stewart Plaistow,AE,SE,,,,,UK,GBR
+JANE,2013,82,1,1821,John,,Quinn,John Quinn,AE,SE,,,,,UK,GBR
+JANE,2013,82,1,1824,Joseph,,Rasmussen,Joseph Rasmussen,AE,SE,,,,,Canada,CAN
+JANE,2013,82,1,184,Alex,,Roulin,Alex Roulin,AE,SE,,,,,Switzerland,CHE
+JANE,2013,82,1,3698,Volker,,Rudolf,Volker Rudolf,AE,SE,,,,,USA,USA
+JANE,2013,82,1,3852,Andy,,Russell,Andy Russell,AE,SE,,,,,UK,GBR
+JANE,2013,82,1,349,Brett,,Sandercock,Brett Sandercock,AE,SE,,,,,USA,USA
+JANE,2013,82,1,2689,Nathalie,,Seddon,Nathalie Seddon,AE,SE,,,,,UK,GBR
+JANE,2013,82,1,1419,Isabel,,Smallegange,Isabel Smallegange,AE,SE,,,,,UK,GBR
+JANE,2013,82,1,878,Dan,,Stouffer,Dan Stouffer,AE,SE,,,,,New Zealand,NZL
+JANE,2013,82,1,577,Chris,,Thomas,Chris Thomas,AE,SE,,,,,UK,GBR
+JANE,2013,82,1,893,Dan,,Tomkins,Dan Tomkins,AE,SE,,,,,New Zealand,NZL
+JANE,2013,82,1,1917,Jason,,Tylianakis,Jason Tylianakis,AE,SE,,,,,New Zealand,NZL
+JANE,2013,82,1,2587,Martin,,VanDerPol,Martin VanDerPol,AE,SE,,,,,Australia,AUS
+JANE,2013,82,1,1138,Frank,Van,Veen,Frank Van Veen,AE,SE,,,,,UK,GBR
+JANE,2013,82,1,3493,Simon,,Verhulst,Simon Verhulst,AE,SE,,,,,Netherlands,NLD
+JANE,2013,82,1,3946,Tom,,Webb,Tom Webb,AE,SE,,,,,UK,GBR
+JANE,2013,82,1,1376,Henri,,Weimerskirch,Henri Weimerskirch,AE,SE,,,,,France,FRA
+JANE,2013,82,1,229,Andrew,,White,Andrew White,AE,SE,,,,,UK,GBR
+JANE,2013,82,1,2111,Ken,,Wilson,Ken Wilson,EIC,EIC,,,,,UK,GBR
+JANE,2013,82,1,379,Ben,,Woodcock,Ben Woodcock,AE,SE,,,,,UK,GBR
+JANE,2013,82,1,1276,Guy,,Woodward,Guy Woodward,AE,SE,,,,,UK,GBR
+JANE,2013,82,1,1965,Jon,,Wright,Jon Wright,AE,SE,,,,,Norway,NOR
+JANE,2013,82,1,2617,Michael,,Wunder,Michael Wunder,AE,SE,,,,,USA,USA
+JANE,2014,83,1,3267,Sonia,,Altizer,Sonia Altizer,AE,SE,,,,,USA,USA
+JANE,2014,83,1,2754,Priyanga,,Amarasekare,Priyanga Amarasekare,AE,SE,,,,,USA,USA
+JANE,2014,83,1,611,Dan,,Ardia,Dan Ardia,AE,SE,,,,,USA,USA
+JANE,2014,83,1,3278,Stuart,,Bearhop,Stuart Bearhop,AE,SE,,,,,UK,GBR
+JANE,2014,83,1,3279,Spence,,Behmer,Spence Behmer,AE,SE,,,,,USA,USA
+JANE,2014,83,1,2305,Mike,,Boots,Mike Boots,EIC,EIC,,,,,UK,GBR
+JANE,2014,83,1,2129,Luca,,Borger,Luca Borger,AE,SE,,,,,France,FRA
+JANE,2014,83,1,402,Christiaan,,Both,Christiaan Both,AE,SE,,,,,Netherlands,NLD
+JANE,2014,83,1,3287,Stan,,Boutin,Stan Boutin,AE,SE,,,,,Canada,CAN
+JANE,2014,83,1,403,Corey,,Bradshaw,Corey Bradshaw,AE,SE,,,,,Australia,AUS
+JANE,2014,83,1,3292,Simon,,Butler,Simon Butler,AE,SE,,,,,UK,GBR
+JANE,2014,83,1,1513,Jean,,Clobert,Jean Clobert,AE,SE,,,,,France,FRA
+JANE,2014,83,1,1163,Guarino,,Colli,Guarino Colli,AE,SE,,,,,Brazil,BRA
+JANE,2014,83,1,1992,Karl,,Cottenie,Karl Cottenie,AE,SE,,,,,Canada,CAN
+JANE,2014,83,1,3306,Sheena,,Cotter,Sheena Cotter,AE,SE,,,,,Ireland,IRL
+JANE,2014,83,1,3527,Tim,,Coulson,Tim Coulson,EIC,EIC,,,,,UK,GBR
+JANE,2014,83,1,1995,Kim,,Cuddington,Kim Cuddington,AE,SE,,,,,Canada,CAN
+JANE,2014,83,1,441,Christophe,,Eizaguirre,Christophe Eizaguirre,AE,SE,,,,,UK,GBR
+JANE,2014,83,1,71,Andy,,Fenton,Andy Fenton,AE,SE,,,,,UK,GBR
+JANE,2014,83,1,1585,John,,Fryxell,John Fryxell,AE,SE,,,,,Canada,CAN
+JANE,2014,83,1,2386,Martin,,Genner,Martin Genner,AE,SE,,,,,UK,GBR
+JANE,2014,83,1,83,Andre,,Gilburn,Andre Gilburn,AE,SE,,,,,UK,GBR
+JANE,2014,83,1,3938,Simon,,Griffith,Simon Griffith,AE,SE,,,,,Australia,AUS
+JANE,2014,83,1,287,Bill,,Gurney,Bill Gurney,AE,SE,,,,,UK,GBR
+JANE,2014,83,1,2822,Peter,,Hamback,Peter Hamback,AE,SE,,,,,Sweden,SWE
+JANE,2014,83,1,1196,Graeme,,Hays,Graeme Hays,EIC,EIC,,,,,UK,GBR
+JANE,2014,83,1,109,Alice,,Hughes,Alice Hughes,AE,SE,,,,,China,CHN
+JANE,2014,83,1,2416,Murray,,Humphries,Murray Humphries,AE,SE,,,,,Canada,CAN
+JANE,2014,83,1,3103,Rolf,,Ims,Rolf Ims,AE,SE,,,,,Norway,NOR
+JANE,2014,83,1,3571,Tom,,Ings,Tom Ings,AE,SE,,,,,UK,GBR
+JANE,2014,83,1,1088,Frank,,Johansson,Frank Johansson,AE,SE,,,,,Sweden,SWE
+JANE,2014,83,1,3896,James,H,Jones,James H Jones,AE,SE,Stanford University,,,,USA,USA
+JANE,2014,83,1,299,Bror,,Jonsson,Bror Jonsson,AE,SE,,,,,Norway,NOR
+JANE,2014,83,1,3387,Simon,,Leather,Simon Leather,AE,SE,,,,,UK,GBR
+JANE,2014,83,1,3390,Subhash,,Lele,Subhash Lele,AE,SE,,,,,Canada,CAN
+JANE,2014,83,1,2040,Kate,,Lessells,Kate Lessells,AE,SE,,,,,Netherlands,NLD
+JANE,2014,83,1,3406,Shai,,Meiri,Shai Meiri,AE,SE,,,,,Israel,ISR
+JANE,2014,83,1,1407,Ian,,Montgomery,Ian Montgomery,AE,SE,,,,,Ireland,IRL
+JANE,2014,83,1,160,Atle,,Mysterud,Atle Mysterud,AE,SE,,,,,Norway,NOR
+JANE,2014,83,1,1785,Jonathan,,Newman,Jonathan Newman,AE,SE,,,,,Canada,CAN
+JANE,2014,83,1,3175,Ryan,,Norris,Ryan Norris,AE,SE,,,,,Canada,CAN
+JANE,2014,83,1,1014,Eoin,,O'Gorman,Eoin O'Gorman,AE,SE,,,,,UK,GBR
+JANE,2014,83,1,1116,Fanie,,Pelletier,Fanie Pelletier,AE,SE,,,,,Canada,CAN
+JANE,2014,83,1,3438,Stuart,,Piertney,Stuart Piertney,AE,SE,,,,,UK,GBR
+JANE,2014,83,1,3442,Stewart,,Plaistow,Stewart Plaistow,AE,SE,,,,,UK,GBR
+JANE,2014,83,1,1821,John,,Quinn,John Quinn,AE,SE,,,,,UK,GBR
+JANE,2014,83,1,1824,Joseph,,Rasmussen,Joseph Rasmussen,AE,SE,,,,,Canada,CAN
+JANE,2014,83,1,184,Alex,,Roulin,Alex Roulin,AE,SE,,,,,Switzerland,CHE
+JANE,2014,83,1,3698,Volker,,Rudolf,Volker Rudolf,AE,SE,,,,,USA,USA
+JANE,2014,83,1,3852,Andy,,Russell,Andy Russell,AE,SE,,,,,UK,GBR
+JANE,2014,83,1,349,Brett,,Sandercock,Brett Sandercock,AE,SE,,,,,USA,USA
+JANE,2014,83,1,2689,Nathalie,,Seddon,Nathalie Seddon,AE,SE,,,,,UK,GBR
+JANE,2014,83,1,1419,Isabel,,Smallegange,Isabel Smallegange,AE,SE,,,,,UK,GBR
+JANE,2014,83,1,878,Dan,,Stouffer,Dan Stouffer,AE,SE,,,,,New Zealand,NZL
+JANE,2014,83,1,1917,Jason,,Tylianakis,Jason Tylianakis,AE,SE,,,,,New Zealand,NZL
+JANE,2014,83,1,2587,Martin,,VanDerPol,Martin VanDerPol,AE,SE,,,,,Australia,AUS
+JANE,2014,83,1,1138,Frank,Van,Veen,Frank Van Veen,AE,SE,,,,,UK,GBR
+JANE,2014,83,1,3493,Simon,,Verhulst,Simon Verhulst,AE,SE,,,,,Netherlands,NLD
+JANE,2014,83,1,902,Dehua,,Wang,Dehua Wang,AE,SE,,,,,China,CHN
+JANE,2014,83,1,3946,Tom,,Webb,Tom Webb,AE,SE,,,,,UK,GBR
+JANE,2014,83,1,1376,Henri,,Weimerskirch,Henri Weimerskirch,AE,SE,,,,,France,FRA
+JANE,2014,83,1,229,Andrew,,White,Andrew White,AE,SE,,,,,UK,GBR
+JANE,2014,83,1,2111,Ken,,Wilson,Ken Wilson,EIC,EIC,,,,,UK,GBR
+JANE,2014,83,1,379,Ben,,Woodcock,Ben Woodcock,AE,SE,,,,,UK,GBR
+JANE,2014,83,1,2617,Michael,,Wunder,Michael Wunder,AE,SE,,,,,USA,USA

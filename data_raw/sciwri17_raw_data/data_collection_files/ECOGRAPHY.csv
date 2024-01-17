@@ -1,0 +1,323 @@
+JOURNAL,YEAR,VOLUME,ISSUE,editor_id,FIRST_NAME,MIDDLE_NAME,LAST_NAME,NAME,TITLE.x,CATEGORY,INST,UNIT,CITY,STATE,COUNTRY,geo.code
+ECOGRAPHY,1985,8,1,2992,Reidar,,Borgstrom,Reidar Borgstrom,AE,AE,,,,,Norway,NOR
+ECOGRAPHY,1985,8,1,2719,Odd,,Halvorsen,Odd Halvorsen,DEIC,AE,,,,,Norway,NOR
+ECOGRAPHY,1985,8,1,2695,Nils,Christian,Stenseth,Nils Christian Stenseth,AE,AE,,,,,Norway,NOR
+ECOGRAPHY,1985,8,1,2930,Per,,Sunding,Per Sunding,AE,AE,,,,,Norway,NOR
+ECOGRAPHY,1985,8,1,3239,Rolf,,Vik,Rolf Vik,EIC,EIC,,,,,Norway,NOR
+ECOGRAPHY,1986,9,1,2992,Reidar,,Borgstrom,Reidar Borgstrom,AE,AE,,,,,Norway,NOR
+ECOGRAPHY,1986,9,1,2719,Odd,,Halvorsen,Odd Halvorsen,DEIC,AE,,,,,Norway,NOR
+ECOGRAPHY,1986,9,1,2695,Nils,Christian,Stenseth,Nils Christian Stenseth,AE,AE,,,,,Norway,NOR
+ECOGRAPHY,1986,9,1,2930,Per,,Sunding,Per Sunding,AE,AE,,,,,Norway,NOR
+ECOGRAPHY,1986,9,1,3239,Rolf,,Vik,Rolf Vik,EIC,EIC,,,,,Norway,NOR
+ECOGRAPHY,1987,10,1,2992,Reidar,,Borgstrom,Reidar Borgstrom,AE,AE,,,,,Norway,NOR
+ECOGRAPHY,1987,10,1,2719,Odd,,Halvorsen,Odd Halvorsen,DEIC,AE,,,,,Norway,NOR
+ECOGRAPHY,1987,10,1,2695,Nils,Christian,Stenseth,Nils Christian Stenseth,AE,AE,,,,,Norway,NOR
+ECOGRAPHY,1987,10,1,2930,Per,,Sunding,Per Sunding,AE,AE,,,,,Norway,NOR
+ECOGRAPHY,1987,10,1,3239,Rolf,,Vik,Rolf Vik,EIC,EIC,,,,,Norway,NOR
+ECOGRAPHY,1988,11,1,2992,Reidar,,Borgstrom,Reidar Borgstrom,AE,AE,,,,,Norway,NOR
+ECOGRAPHY,1988,11,1,2719,Odd,,Halvorsen,Odd Halvorsen,DEIC,AE,,,,,Norway,NOR
+ECOGRAPHY,1988,11,1,2695,Nils,Christian,Stenseth,Nils Christian Stenseth,AE,AE,,,,,Norway,NOR
+ECOGRAPHY,1988,11,1,2930,Per,,Sunding,Per Sunding,AE,AE,,,,,Norway,NOR
+ECOGRAPHY,1988,11,1,3239,Rolf,,Vik,Rolf Vik,EIC,EIC,,,,,Norway,NOR
+ECOGRAPHY,1989,12,1,2992,Reidar,,Borgstrom,Reidar Borgstrom,AE,AE,,,,,Norway,NOR
+ECOGRAPHY,1989,12,1,2719,Odd,,Halvorsen,Odd Halvorsen,DEIC,AE,,,,,Norway,NOR
+ECOGRAPHY,1989,12,1,2695,Nils,Christian,Stenseth,Nils Christian Stenseth,AE,AE,,,,,Norway,NOR
+ECOGRAPHY,1989,12,1,2930,Per,,Sunding,Per Sunding,AE,AE,,,,,Norway,NOR
+ECOGRAPHY,1989,12,1,3239,Rolf,,Vik,Rolf Vik,EIC,EIC,,,,,Norway,NOR
+ECOGRAPHY,1990,13,1,2992,Reidar,,Borgstrom,Reidar Borgstrom,AE,AE,,,,,Norway,NOR
+ECOGRAPHY,1990,13,1,2719,Odd,,Halvorsen,Odd Halvorsen,DEIC,AE,,,,,Norway,NOR
+ECOGRAPHY,1990,13,1,2695,Nils,Christian,Stenseth,Nils Christian Stenseth,AE,AE,,,,,Norway,NOR
+ECOGRAPHY,1990,13,1,2930,Per,,Sunding,Per Sunding,AE,AE,,,,,Norway,NOR
+ECOGRAPHY,1990,13,1,3239,Rolf,,Vik,Rolf Vik,EIC,EIC,,,,,Norway,NOR
+ECOGRAPHY,1991,14,1,2992,Reidar,,Borgstrom,Reidar Borgstrom,AE,AE,,,,,Norway,NOR
+ECOGRAPHY,1991,14,1,2719,Odd,,Halvorsen,Odd Halvorsen,DEIC,AE,,,,,Norway,NOR
+ECOGRAPHY,1991,14,1,2695,Nils,Christian,Stenseth,Nils Christian Stenseth,AE,AE,,,,,Norway,NOR
+ECOGRAPHY,1991,14,1,2930,Per,,Sunding,Per Sunding,AE,AE,,,,,Norway,NOR
+ECOGRAPHY,1991,14,1,3239,Rolf,,Vik,Rolf Vik,EIC,EIC,,,,,Norway,NOR
+ECOGRAPHY,1992,15,1,2664,Nils,,Malmer,Nils Malmer,AEIC,EIC,,,,,Sweden,SWE
+ECOGRAPHY,1993,16,1,3371,Sven,,Jonasson,Sven Jonasson,EIC,EIC,,,,,Denmark,DNK
+ECOGRAPHY,1994,17,1,3371,Sven,,Jonasson,Sven Jonasson,EIC,EIC,,,,,Denmark,DNK
+ECOGRAPHY,1995,18,1,3371,Sven,,Jonasson,Sven Jonasson,EIC,EIC,,,,,Denmark,DNK
+ECOGRAPHY,1996,19,1,1398,Ilkka,,Hanski,Ilkka Hanski,E,AE,,,,,Finland,FIN
+ECOGRAPHY,1996,19,1,3688,Veijo,,Kaitala,Veijo Kaitala,E,AE,,,,,Finland,FIN
+ECOGRAPHY,1996,19,1,1787,Jari,,Niemela,Jari Niemela,E,AE,,,,,Finland,FIN
+ECOGRAPHY,1996,19,1,1019,Esa,,Ranta,Esa Ranta,EIC,EIC,,,,,Finland,FIN
+ECOGRAPHY,1997,20,1,1398,Ilkka,,Hanski,Ilkka Hanski,E,AE,,,,,Finland,FIN
+ECOGRAPHY,1997,20,1,3688,Veijo,,Kaitala,Veijo Kaitala,E,AE,,,,,Finland,FIN
+ECOGRAPHY,1997,20,1,1787,Jari,,Niemela,Jari Niemela,E,AE,,,,,Finland,FIN
+ECOGRAPHY,1997,20,1,1019,Esa,,Ranta,Esa Ranta,EIC,EIC,,,,,Finland,FIN
+ECOGRAPHY,1998,21,1,1398,Ilkka,,Hanski,Ilkka Hanski,E,AE,,,,,Finland,FIN
+ECOGRAPHY,1998,21,1,3688,Veijo,,Kaitala,Veijo Kaitala,E,AE,,,,,Finland,FIN
+ECOGRAPHY,1998,21,1,1787,Jari,,Niemela,Jari Niemela,E,AE,,,,,Finland,FIN
+ECOGRAPHY,1998,21,1,1019,Esa,,Ranta,Esa Ranta,EIC,EIC,,,,,Finland,FIN
+ECOGRAPHY,1999,22,1,1398,Ilkka,,Hanski,Ilkka Hanski,E,AE,,,,,Finland,FIN
+ECOGRAPHY,1999,22,1,3688,Veijo,,Kaitala,Veijo Kaitala,E,AE,,,,,Finland,FIN
+ECOGRAPHY,1999,22,1,1787,Jari,,Niemela,Jari Niemela,E,AE,,,,,Finland,FIN
+ECOGRAPHY,1999,22,1,1019,Esa,,Ranta,Esa Ranta,EIC,EIC,,,,,Finland,FIN
+ECOGRAPHY,2000,23,1,1019,Esa,,Ranta,Esa Ranta,EIC,EIC,,,,,Finland,FIN
+ECOGRAPHY,2000,23,1,2622,Martin,,Zobel,Martin Zobel,DEIC,AE,,,,,Estonia,EST
+ECOGRAPHY,2001,24,1,2482,Mikko,,Monkkonen,Mikko Monkkonen,DEIC,AE,,,,,Finland,FIN
+ECOGRAPHY,2001,24,1,2622,Martin,,Zobel,Martin Zobel,EIC,EIC,,,,,Estonia,EST
+ECOGRAPHY,2002,25,1,2482,Mikko,,Monkkonen,Mikko Monkkonen,DEIC,AE,,,,,Finland,FIN
+ECOGRAPHY,2002,25,1,1880,John,R,Spence,John R Spence,DEIC,AE,,,,,Canada,CAN
+ECOGRAPHY,2002,25,1,2622,Martin,,Zobel,Martin Zobel,EIC,EIC,,,,,Estonia,EST
+ECOGRAPHY,2003,26,1,2482,Mikko,,Monkkonen,Mikko Monkkonen,DEIC,AE,,,,,Finland,FIN
+ECOGRAPHY,2003,26,1,1880,John,R,Spence,John R Spence,DEIC,AE,,,,,Canada,CAN
+ECOGRAPHY,2003,26,1,2622,Martin,,Zobel,Martin Zobel,EIC,EIC,,,,,Estonia,EST
+ECOGRAPHY,2004,27,1,2482,Mikko,,Monkkonen,Mikko Monkkonen,DEIC,AE,,,,,Finland,FIN
+ECOGRAPHY,2004,27,1,1880,John,R,Spence,John R Spence,DEIC,AE,,,,,Canada,CAN
+ECOGRAPHY,2004,27,1,2622,Martin,,Zobel,Martin Zobel,EIC,EIC,,,,,Estonia,EST
+ECOGRAPHY,2005,28,1,1311,Helmut,,Hillebrand,Helmut Hillebrand,SE,SE,,,,,Germany,DEU
+ECOGRAPHY,2005,28,1,746,Douglas,,Kelt,Douglas Kelt,SE,SE,,,,,United States,USA
+ECOGRAPHY,2005,28,1,124,Anders,,Klemetsen,Anders Klemetsen,SE,SE,,,,,Norway,NOR
+ECOGRAPHY,2005,28,1,135,Andrew,,Liebhold,Andrew Liebhold,SE,SE,,,,,United States,USA
+ECOGRAPHY,2005,28,1,1119,Francisco,,Pugnaire,Francisco Pugnaire,SE,SE,,,,,Spain,ESP
+ECOGRAPHY,2005,28,1,559,Carsten,,Rahbek,Carsten Rahbek,EIC,EIC,,,,,Denmark,DNK
+ECOGRAPHY,2005,28,1,1880,John,R,Spence,John R Spence,SE,SE,,,,,Canada,CAN
+ECOGRAPHY,2006,29,1,2275,Miguel,B,Araujo,Miguel B Araujo,SE,SE,,,,,United Kingdom,GBR
+ECOGRAPHY,2006,29,1,3022,Robert,K,Colwell,Robert K Colwell,SE,SE,,,,,United Kingdom,GBR
+ECOGRAPHY,2006,29,1,1311,Helmut,,Hillebrand,Helmut Hillebrand,SE,SE,,,,,Germany,DEU
+ECOGRAPHY,2006,29,1,746,Douglas,,Kelt,Douglas Kelt,SE,SE,,,,,United States,USA
+ECOGRAPHY,2006,29,1,124,Anders,,Klemetsen,Anders Klemetsen,SE,SE,,,,,Norway,NOR
+ECOGRAPHY,2006,29,1,135,Andrew,,Liebhold,Andrew Liebhold,SE,SE,,,,,United States,USA
+ECOGRAPHY,2006,29,1,1119,Francisco,,Pugnaire,Francisco Pugnaire,SE,SE,,,,,Spain,ESP
+ECOGRAPHY,2006,29,1,559,Carsten,,Rahbek,Carsten Rahbek,EIC,EIC,,,,,Denmark,DNK
+ECOGRAPHY,2006,29,1,1880,John,R,Spence,John R Spence,SE,SE,,,,,Canada,CAN
+ECOGRAPHY,2006,29,1,1899,Jens-Christian,,Svenning,Jens-Christian Svenning,SE,SE,,,,,Denmark,DNK
+ECOGRAPHY,2007,30,1,2275,Miguel,B,Araujo,Miguel B Araujo,SE,SE,,,,,Spain,ESP
+ECOGRAPHY,2007,30,1,2286,Michel,,Baguette,Michel Baguette,SE,SE,,,,,France,FRA
+ECOGRAPHY,2007,30,1,1987,Kevin,C,Burns,Kevin C Burns,SE,SE,,,,,New Zealand,NZL
+ECOGRAPHY,2007,30,1,3022,Robert,K,Colwell,Robert K Colwell,SE,SE,,,,,United States,USA
+ECOGRAPHY,2007,30,1,1173,Goran,,Englund,Goran Englund,SE,SE,,,,,Sweden,SWE
+ECOGRAPHY,2007,30,1,1311,Helmut,,Hillebrand,Helmut Hillebrand,SE,SE,,,,,Germany,DEU
+ECOGRAPHY,2007,30,1,746,Douglas,,Kelt,Douglas Kelt,SE,SE,,,,,United States,USA
+ECOGRAPHY,2007,30,1,2724,Oskar,,Kindvall,Oskar Kindvall,SE,SE,,,,,Sweden,SWE
+ECOGRAPHY,2007,30,1,124,Anders,,Klemetsen,Anders Klemetsen,SE,SE,,,,,Norway,NOR
+ECOGRAPHY,2007,30,1,3760,Walter,D,Koenig,Walter D Koenig,SE,SE,,,,,United States,USA
+ECOGRAPHY,2007,30,1,135,Andrew,,Liebhold,Andrew Liebhold,SE,SE,,,,,United States,USA
+ECOGRAPHY,2007,30,1,1717,John,,Linnell,John Linnell,SE,SE,,,,,Norway,NOR
+ECOGRAPHY,2007,30,1,998,Erik,,Matthysen,Erik Matthysen,SE,SE,,,,,Belgium,BEL
+ECOGRAPHY,2007,30,1,2062,Kai,,Norrdahl,Kai Norrdahl,SE,SE,,,,,Finland,FIN
+ECOGRAPHY,2007,30,1,1119,Francisco,,Pugnaire,Francisco Pugnaire,SE,SE,,,,,Spain,ESP
+ECOGRAPHY,2007,30,1,559,Carsten,,Rahbek,Carsten Rahbek,EIC,EIC,,,,,Denmark,DNK
+ECOGRAPHY,2007,30,1,2687,Nathan,,Sanders,Nathan Sanders,SE,SE,,,,,United States,USA
+ECOGRAPHY,2007,30,1,1880,John,R,Spence,John R Spence,SE,SE,,,,,Canada,CAN
+ECOGRAPHY,2007,30,1,1899,Jens-Christian,,Svenning,Jens-Christian Svenning,SE,SE,,,,,Denmark,DNK
+ECOGRAPHY,2007,30,1,3659,Thorsten,,Wiegand,Thorsten Wiegand,SE,SE,,,,,Germany,DEU
+ECOGRAPHY,2008,31,1,2270,Marti,Jane,Anderson,Marti Jane Anderson,SE,SE,,,,,New Zealand,NZL
+ECOGRAPHY,2008,31,1,2275,Miguel,B,Araujo,Miguel B Araujo,DEIC,AE,,,,,Spain,ESP
+ECOGRAPHY,2008,31,1,2286,Michel,,Baguette,Michel Baguette,SE,SE,,,,,France,FRA
+ECOGRAPHY,2008,31,1,1987,Kevin,C,Burns,Kevin C Burns,SE,SE,,,,,New Zealand,NZL
+ECOGRAPHY,2008,31,1,3022,Robert,K,Colwell,Robert K Colwell,SE,SE,,,,,United States,USA
+ECOGRAPHY,2008,31,1,1557,Jane,,Elith,Jane Elith,SE,SE,,,,,Australia,AUS
+ECOGRAPHY,2008,31,1,1173,Goran,,Englund,Goran Englund,SE,SE,,,,,Sweden,SWE
+ECOGRAPHY,2008,31,1,709,David,M,Green,David M Green,SE,SE,,,,,Canada,CAN
+ECOGRAPHY,2008,31,1,1311,Helmut,,Hillebrand,Helmut Hillebrand,SE,SE,,,,,Germany,DEU
+ECOGRAPHY,2008,31,1,746,Douglas,,Kelt,Douglas Kelt,SE,SE,,,,,United States,USA
+ECOGRAPHY,2008,31,1,1665,Jeremy,,Kerr,Jeremy Kerr,SE,SE,,,,,Canada,CAN
+ECOGRAPHY,2008,31,1,2724,Oskar,,Kindvall,Oskar Kindvall,SE,SE,,,,,Sweden,SWE
+ECOGRAPHY,2008,31,1,124,Anders,,Klemetsen,Anders Klemetsen,SE,SE,,,,,Norway,NOR
+ECOGRAPHY,2008,31,1,3760,Walter,D,Koenig,Walter D Koenig,SE,SE,,,,,United States,USA
+ECOGRAPHY,2008,31,1,1717,John,,Linnell,John Linnell,SE,SE,,,,,Norway,NOR
+ECOGRAPHY,2008,31,1,998,Erik,,Matthysen,Erik Matthysen,SE,SE,,,,,Belgium,BEL
+ECOGRAPHY,2008,31,1,2062,Kai,,Norrdahl,Kai Norrdahl,SE,SE,,,,,Finland,FIN
+ECOGRAPHY,2008,31,1,2892,Pedro,,Peres-Neto,Pedro Peres-Neto,SE,SE,,,,,Canada,CAN
+ECOGRAPHY,2008,31,1,1119,Francisco,,Pugnaire,Francisco Pugnaire,SE,SE,,,,,Spain,ESP
+ECOGRAPHY,2008,31,1,559,Carsten,,Rahbek,Carsten Rahbek,EIC,EIC,,,,,Denmark,DNK
+ECOGRAPHY,2008,31,1,2687,Nathan,,Sanders,Nathan Sanders,SE,SE,,,,,United States,USA
+ECOGRAPHY,2008,31,1,1880,John,R,Spence,John R Spence,SE,SE,,,,,Canada,CAN
+ECOGRAPHY,2008,31,1,1899,Jens-Christian,,Svenning,Jens-Christian Svenning,SE,SE,,,,,Denmark,DNK
+ECOGRAPHY,2008,31,1,3659,Thorsten,,Wiegand,Thorsten Wiegand,SE,SE,,,,,Germany,DEU
+ECOGRAPHY,2008,31,1,1954,John,J,Wiens,John J Wiens,SE,SE,,,,,United States,USA
+ECOGRAPHY,2009,32,1,2270,Marti,Jane,Anderson,Marti Jane Anderson,SE,SE,,,,,New Zealand,NZL
+ECOGRAPHY,2009,32,1,2275,Miguel,B,Araujo,Miguel B Araujo,DEIC,AE,,,,,Spain,ESP
+ECOGRAPHY,2009,32,1,2286,Michel,,Baguette,Michel Baguette,SE,SE,,,,,France,FRA
+ECOGRAPHY,2009,32,1,1987,Kevin,C,Burns,Kevin C Burns,SE,SE,,,,,New Zealand,NZL
+ECOGRAPHY,2009,32,1,3022,Robert,K,Colwell,Robert K Colwell,SE,SE,,,,,United States,USA
+ECOGRAPHY,2009,32,1,1556,Johan,,Ehrlen,Johan Ehrlen,SE,SE,,,,,Sweden,SWE
+ECOGRAPHY,2009,32,1,1557,Jane,,Elith,Jane Elith,SE,SE,,,,,Australia,AUS
+ECOGRAPHY,2009,32,1,466,Catherine,H,Graham,Catherine H Graham,SE,SE,,,,,United States,USA
+ECOGRAPHY,2009,32,1,709,David,M,Green,David M Green,SE,SE,,,,,Canada,CAN
+ECOGRAPHY,2009,32,1,1311,Helmut,,Hillebrand,Helmut Hillebrand,SE,SE,,,,,Germany,DEU
+ECOGRAPHY,2009,32,1,746,Douglas,,Kelt,Douglas Kelt,SE,SE,,,,,United States,USA
+ECOGRAPHY,2009,32,1,1665,Jeremy,,Kerr,Jeremy Kerr,SE,SE,,,,,Canada,CAN
+ECOGRAPHY,2009,32,1,2724,Oskar,,Kindvall,Oskar Kindvall,SE,SE,,,,,Sweden,SWE
+ECOGRAPHY,2009,32,1,3760,Walter,D,Koenig,Walter D Koenig,SE,SE,,,,,United States,USA
+ECOGRAPHY,2009,32,1,1692,Jill,,Lancaster,Jill Lancaster,SE,SE,,,,,United Kingdom,GBR
+ECOGRAPHY,2009,32,1,1717,John,,Linnell,John Linnell,SE,SE,,,,,Norway,NOR
+ECOGRAPHY,2009,32,1,998,Erik,,Matthysen,Erik Matthysen,SE,SE,,,,,Belgium,BEL
+ECOGRAPHY,2009,32,1,2062,Kai,,Norrdahl,Kai Norrdahl,SE,SE,,,,,Finland,FIN
+ECOGRAPHY,2009,32,1,3616,Thierry,,Oberdorff,Thierry Oberdorff,SE,SE,,,,,France,FRA
+ECOGRAPHY,2009,32,1,2892,Pedro,,Peres-Neto,Pedro Peres-Neto,SE,SE,,,,,Canada,CAN
+ECOGRAPHY,2009,32,1,1119,Francisco,,Pugnaire,Francisco Pugnaire,SE,SE,,,,,Spain,ESP
+ECOGRAPHY,2009,32,1,559,Carsten,,Rahbek,Carsten Rahbek,EIC,EIC,,,,,Denmark,DNK
+ECOGRAPHY,2009,32,1,3627,Thiago,,Rangel,Thiago Rangel,SE,SE,,,,,United States,USA
+ECOGRAPHY,2009,32,1,2687,Nathan,,Sanders,Nathan Sanders,SE,SE,,,,,United States,USA
+ECOGRAPHY,2009,32,1,1880,John,R,Spence,John R Spence,SE,SE,,,,,Canada,CAN
+ECOGRAPHY,2009,32,1,1899,Jens-Christian,,Svenning,Jens-Christian Svenning,SE,SE,,,,,Denmark,DNK
+ECOGRAPHY,2009,32,1,3659,Thorsten,,Wiegand,Thorsten Wiegand,SE,SE,,,,,Germany,DEU
+ECOGRAPHY,2009,32,1,1954,John,J,Wiens,John J Wiens,SE,SE,,,,,United States,USA
+ECOGRAPHY,2010,33,1,2270,Marti,Jane,Anderson,Marti Jane Anderson,SE,SE,,,,,New Zealand,NZL
+ECOGRAPHY,2010,33,1,2275,Miguel,B,Araujo,Miguel B Araujo,DEIC,AE,,,,,Spain,ESP
+ECOGRAPHY,2010,33,1,2286,Michel,,Baguette,Michel Baguette,SE,SE,,,,,France,FRA
+ECOGRAPHY,2010,33,1,1987,Kevin,C,Burns,Kevin C Burns,SE,SE,,,,,New Zealand,NZL
+ECOGRAPHY,2010,33,1,3022,Robert,K,Colwell,Robert K Colwell,SE,SE,,,,,United States,USA
+ECOGRAPHY,2010,33,1,1556,Johan,,Ehrlen,Johan Ehrlen,SE,SE,,,,,Sweden,SWE
+ECOGRAPHY,2010,33,1,1557,Jane,,Elith,Jane Elith,SE,SE,,,,,Australia,AUS
+ECOGRAPHY,2010,33,1,966,Erica,,Fleishman,Erica Fleishman,SE,SE,,,,,United States,USA
+ECOGRAPHY,2010,33,1,3889,Janet,,Franklin,Janet Franklin,SE,SE,,,,,United States,USA
+ECOGRAPHY,2010,33,1,466,Catherine,H,Graham,Catherine H Graham,SE,SE,,,,,United States,USA
+ECOGRAPHY,2010,33,1,709,David,M,Green,David M Green,SE,SE,,,,,Canada,CAN
+ECOGRAPHY,2010,33,1,1311,Helmut,,Hillebrand,Helmut Hillebrand,SE,SE,,,,,Germany,DEU
+ECOGRAPHY,2010,33,1,1643,Joaquin,,Hortal,Joaquin Hortal,SE,SE,,,,,United Kingdom,GBR
+ECOGRAPHY,2010,33,1,746,Douglas,,Kelt,Douglas Kelt,SE,SE,,,,,United States,USA
+ECOGRAPHY,2010,33,1,1665,Jeremy,,Kerr,Jeremy Kerr,SE,SE,,,,,Canada,CAN
+ECOGRAPHY,2010,33,1,2724,Oskar,,Kindvall,Oskar Kindvall,SE,SE,,,,,Sweden,SWE
+ECOGRAPHY,2010,33,1,2035,Kenneth,H,Kozak,Kenneth H Kozak,SE,SE,,,,,United States,USA
+ECOGRAPHY,2010,33,1,1692,Jill,,Lancaster,Jill Lancaster,SE,SE,,,,,Australia,AUS
+ECOGRAPHY,2010,33,1,998,Erik,,Matthysen,Erik Matthysen,SE,SE,,,,,Belgium,BEL
+ECOGRAPHY,2010,33,1,2062,Kai,,Norrdahl,Kai Norrdahl,SE,SE,,,,,Finland,FIN
+ECOGRAPHY,2010,33,1,3616,Thierry,,Oberdorff,Thierry Oberdorff,SE,SE,,,,,France,FRA
+ECOGRAPHY,2010,33,1,2892,Pedro,,Peres-Neto,Pedro Peres-Neto,SE,SE,,,,,Canada,CAN
+ECOGRAPHY,2010,33,1,1119,Francisco,,Pugnaire,Francisco Pugnaire,SE,SE,,,,,Spain,ESP
+ECOGRAPHY,2010,33,1,559,Carsten,,Rahbek,Carsten Rahbek,EIC,EIC,,,,,Denmark,DNK
+ECOGRAPHY,2010,33,1,3627,Thiago,,Rangel,Thiago Rangel,SE,SE,,,,,United States,USA
+ECOGRAPHY,2010,33,1,1829,Jacques,,Regniere,Jacques Regniere,SE,SE,,,,,Canada,CAN
+ECOGRAPHY,2010,33,1,2687,Nathan,,Sanders,Nathan Sanders,SE,SE,,,,,United States,USA
+ECOGRAPHY,2010,33,1,1880,John,R,Spence,John R Spence,SE,SE,,,,,Canada,CAN
+ECOGRAPHY,2010,33,1,1899,Jens-Christian,,Svenning,Jens-Christian Svenning,SE,SE,,,,,Denmark,DNK
+ECOGRAPHY,2010,33,1,3659,Thorsten,,Wiegand,Thorsten Wiegand,SE,SE,,,,,Germany,DEU
+ECOGRAPHY,2010,33,1,1954,John,J,Wiens,John J Wiens,SE,SE,,,,,United States,USA
+ECOGRAPHY,2011,34,1,2270,Marti,Jane,Anderson,Marti Jane Anderson,SE,SE,,,,,New Zealand,NZL
+ECOGRAPHY,2011,34,1,2275,Miguel,B,Araujo,Miguel B Araujo,DEIC,AE,,,,,Spain,ESP
+ECOGRAPHY,2011,34,1,2286,Michel,,Baguette,Michel Baguette,SE,SE,,,,,France,FRA
+ECOGRAPHY,2011,34,1,1987,Kevin,C,Burns,Kevin C Burns,SE,SE,,,,,New Zealand,NZL
+ECOGRAPHY,2011,34,1,3022,Robert,K,Colwell,Robert K Colwell,SE,SE,,,,,United States,USA
+ECOGRAPHY,2011,34,1,1556,Johan,,Ehrlen,Johan Ehrlen,SE,SE,,,,,Sweden,SWE
+ECOGRAPHY,2011,34,1,1557,Jane,,Elith,Jane Elith,SE,SE,,,,,Australia,AUS
+ECOGRAPHY,2011,34,1,966,Erica,,Fleishman,Erica Fleishman,SE,SE,,,,,United States,USA
+ECOGRAPHY,2011,34,1,3889,Janet,,Franklin,Janet Franklin,SE,SE,,,,,United States,USA
+ECOGRAPHY,2011,34,1,466,Catherine,H,Graham,Catherine H Graham,SE,SE,,,,,United States,USA
+ECOGRAPHY,2011,34,1,709,David,M,Green,David M Green,SE,SE,,,,,Canada,CAN
+ECOGRAPHY,2011,34,1,1311,Helmut,,Hillebrand,Helmut Hillebrand,SE,SE,,,,,Germany,DEU
+ECOGRAPHY,2011,34,1,1643,Joaquin,,Hortal,Joaquin Hortal,SE,SE,,,,,United Kingdom,GBR
+ECOGRAPHY,2011,34,1,746,Douglas,,Kelt,Douglas Kelt,SE,SE,,,,,United States,USA
+ECOGRAPHY,2011,34,1,1665,Jeremy,,Kerr,Jeremy Kerr,SE,SE,,,,,Canada,CAN
+ECOGRAPHY,2011,34,1,2724,Oskar,,Kindvall,Oskar Kindvall,SE,SE,,,,,Sweden,SWE
+ECOGRAPHY,2011,34,1,2035,Kenneth,H,Kozak,Kenneth H Kozak,SE,SE,,,,,United States,USA
+ECOGRAPHY,2011,34,1,1692,Jill,,Lancaster,Jill Lancaster,SE,SE,,,,,Australia,AUS
+ECOGRAPHY,2011,34,1,998,Erik,,Matthysen,Erik Matthysen,SE,SE,,,,,Belgium,BEL
+ECOGRAPHY,2011,34,1,2062,Kai,,Norrdahl,Kai Norrdahl,SE,SE,,,,,Finland,FIN
+ECOGRAPHY,2011,34,1,3616,Thierry,,Oberdorff,Thierry Oberdorff,SE,SE,,,,,France,FRA
+ECOGRAPHY,2011,34,1,2892,Pedro,,Peres-Neto,Pedro Peres-Neto,SE,SE,,,,,Canada,CAN
+ECOGRAPHY,2011,34,1,1119,Francisco,,Pugnaire,Francisco Pugnaire,SE,SE,,,,,Spain,ESP
+ECOGRAPHY,2011,34,1,559,Carsten,,Rahbek,Carsten Rahbek,EIC,EIC,,,,,Denmark,DNK
+ECOGRAPHY,2011,34,1,3627,Thiago,,Rangel,Thiago Rangel,SE,SE,,,,,United States,USA
+ECOGRAPHY,2011,34,1,1829,Jacques,,Regniere,Jacques Regniere,SE,SE,,,,,Canada,CAN
+ECOGRAPHY,2011,34,1,2687,Nathan,,Sanders,Nathan Sanders,SE,SE,,,,,United States,USA
+ECOGRAPHY,2011,34,1,1880,John,R,Spence,John R Spence,SE,SE,,,,,Canada,CAN
+ECOGRAPHY,2011,34,1,1899,Jens-Christian,,Svenning,Jens-Christian Svenning,SE,SE,,,,,Denmark,DNK
+ECOGRAPHY,2011,34,1,3659,Thorsten,,Wiegand,Thorsten Wiegand,SE,SE,,,,,Germany,DEU
+ECOGRAPHY,2011,34,1,1954,John,J,Wiens,John J Wiens,SE,SE,,,,,United States,USA
+ECOGRAPHY,2012,35,1,2270,Marti,Jane,Anderson,Marti Jane Anderson,SE,SE,,,,,New Zealand,NZL
+ECOGRAPHY,2012,35,1,2275,Miguel,B,Araujo,Miguel B Araujo,DEIC,AE,,,,,Spain,ESP
+ECOGRAPHY,2012,35,1,2286,Michel,,Baguette,Michel Baguette,SE,SE,,,,,France,FRA
+ECOGRAPHY,2012,35,1,3022,Robert,K,Colwell,Robert K Colwell,SE,SE,,,,,United States,USA
+ECOGRAPHY,2012,35,1,1547,Jose,Alexandre,Diniz-Filho,Jose Alexandre Diniz-Filho,SE,SE,,,,,Brazil,BRA
+ECOGRAPHY,2012,35,1,3045,Rob,,Dunn,Rob Dunn,SE,SE,,,,,United States,USA
+ECOGRAPHY,2012,35,1,1556,Johan,,Ehrlen,Johan Ehrlen,SE,SE,,,,,Sweden,SWE
+ECOGRAPHY,2012,35,1,966,Erica,,Fleishman,Erica Fleishman,SE,SE,,,,,United States,USA
+ECOGRAPHY,2012,35,1,3889,Janet,,Franklin,Janet Franklin,SE,SE,,,,,United States,USA
+ECOGRAPHY,2012,35,1,1589,Jean-Michel,,Gaillard,Jean-Michel Gaillard,SE,SE,,,,,France,FRA
+ECOGRAPHY,2012,35,1,466,Catherine,H,Graham,Catherine H Graham,SE,SE,,,,,United States,USA
+ECOGRAPHY,2012,35,1,3076,Russell,,Greenberg,Russell Greenberg,SE,SE,,,,,United States,USA
+ECOGRAPHY,2012,35,1,1643,Joaquin,,Hortal,Joaquin Hortal,SE,SE,,,,,United Kingdom,GBR
+ECOGRAPHY,2012,35,1,746,Douglas,,Kelt,Douglas Kelt,SE,SE,,,,,United States,USA
+ECOGRAPHY,2012,35,1,1665,Jeremy,,Kerr,Jeremy Kerr,SE,SE,,,,,Canada,CAN
+ECOGRAPHY,2012,35,1,2035,Kenneth,H,Kozak,Kenneth H Kozak,SE,SE,,,,,United States,USA
+ECOGRAPHY,2012,35,1,1692,Jill,,Lancaster,Jill Lancaster,SE,SE,,,,,Australia,AUS
+ECOGRAPHY,2012,35,1,998,Erik,,Matthysen,Erik Matthysen,SE,SE,,,,,Belgium,BEL
+ECOGRAPHY,2012,35,1,802,David,,Nogues,David Nogues,SE,SE,,,,,Denmark,DNK
+ECOGRAPHY,2012,35,1,2062,Kai,,Norrdahl,Kai Norrdahl,SE,SE,,,,,Finland,FIN
+ECOGRAPHY,2012,35,1,3616,Thierry,,Oberdorff,Thierry Oberdorff,SE,SE,,,,,France,FRA
+ECOGRAPHY,2012,35,1,2892,Pedro,,Peres-Neto,Pedro Peres-Neto,SE,SE,,,,,Canada,CAN
+ECOGRAPHY,2012,35,1,1017,Eric,,Post,Eric Post,SE,SE,,,,,United States,USA
+ECOGRAPHY,2012,35,1,1119,Francisco,,Pugnaire,Francisco Pugnaire,SE,SE,,,,,Spain,ESP
+ECOGRAPHY,2012,35,1,559,Carsten,,Rahbek,Carsten Rahbek,EIC,EIC,,,,,Denmark,DNK
+ECOGRAPHY,2012,35,1,3627,Thiago,,Rangel,Thiago Rangel,SE,SE,,,,,United States,USA
+ECOGRAPHY,2012,35,1,1829,Jacques,,Regniere,Jacques Regniere,SE,SE,,,,,Canada,CAN
+ECOGRAPHY,2012,35,1,2687,Nathan,,Sanders,Nathan Sanders,DEIC,AE,,,,,United States,USA
+ECOGRAPHY,2012,35,1,1880,John,R,Spence,John R Spence,SE,SE,,,,,Canada,CAN
+ECOGRAPHY,2012,35,1,1899,Jens-Christian,,Svenning,Jens-Christian Svenning,DEIC,AE,,,,,Denmark,DNK
+ECOGRAPHY,2012,35,1,1370,Hanna,,Tuomisto,Hanna Tuomisto,SE,SE,,,,,Finland,FIN
+ECOGRAPHY,2012,35,1,3659,Thorsten,,Wiegand,Thorsten Wiegand,SE,SE,,,,,Germany,DEU
+ECOGRAPHY,2012,35,1,1954,John,J,Wiens,John J Wiens,SE,SE,,,,,United States,USA
+ECOGRAPHY,2012,35,1,2711,Niklaus,E,Zimmermann,Niklaus E Zimmermann,SE,SE,,,,,Switzerland,CHE
+ECOGRAPHY,2013,36,1,2270,Marti,Jane,Anderson,Marti Jane Anderson,SE,SE,,,,,New Zealand,NZL
+ECOGRAPHY,2013,36,1,2275,Miguel,B,Araujo,Miguel B Araujo,DEIC,AE,,,,,Spain,ESP
+ECOGRAPHY,2013,36,1,2286,Michel,,Baguette,Michel Baguette,SE,SE,,,,,France,FRA
+ECOGRAPHY,2013,36,1,3022,Robert,K,Colwell,Robert K Colwell,SE,SE,,,,,United States,USA
+ECOGRAPHY,2013,36,1,1547,Jose,Alexandre,Diniz-Filho,Jose Alexandre Diniz-Filho,SE,SE,,,,,Brazil,BRA
+ECOGRAPHY,2013,36,1,3045,Rob,,Dunn,Rob Dunn,SE,SE,,,,,United States,USA
+ECOGRAPHY,2013,36,1,1556,Johan,,Ehrlen,Johan Ehrlen,SE,SE,,,,,Sweden,SWE
+ECOGRAPHY,2013,36,1,966,Erica,,Fleishman,Erica Fleishman,SE,SE,,,,,United States,USA
+ECOGRAPHY,2013,36,1,3889,Janet,,Franklin,Janet Franklin,SE,SE,,,,,United States,USA
+ECOGRAPHY,2013,36,1,1589,Jean-Michel,,Gaillard,Jean-Michel Gaillard,SE,SE,,,,,France,FRA
+ECOGRAPHY,2013,36,1,466,Catherine,H,Graham,Catherine H Graham,SE,SE,,,,,United States,USA
+ECOGRAPHY,2013,36,1,3076,Russell,,Greenberg,Russell Greenberg,SE,SE,,,,,United States,USA
+ECOGRAPHY,2013,36,1,1643,Joaquin,,Hortal,Joaquin Hortal,SE,SE,,,,,United Kingdom,GBR
+ECOGRAPHY,2013,36,1,746,Douglas,,Kelt,Douglas Kelt,SE,SE,,,,,United States,USA
+ECOGRAPHY,2013,36,1,1665,Jeremy,,Kerr,Jeremy Kerr,SE,SE,,,,,Canada,CAN
+ECOGRAPHY,2013,36,1,2035,Kenneth,H,Kozak,Kenneth H Kozak,SE,SE,,,,,United States,USA
+ECOGRAPHY,2013,36,1,1692,Jill,,Lancaster,Jill Lancaster,SE,SE,,,,,Australia,AUS
+ECOGRAPHY,2013,36,1,998,Erik,,Matthysen,Erik Matthysen,SE,SE,,,,,Belgium,BEL
+ECOGRAPHY,2013,36,1,802,David,,Nogues,David Nogues,SE,SE,,,,,Denmark,DNK
+ECOGRAPHY,2013,36,1,2062,Kai,,Norrdahl,Kai Norrdahl,SE,SE,,,,,Finland,FIN
+ECOGRAPHY,2013,36,1,3616,Thierry,,Oberdorff,Thierry Oberdorff,SE,SE,,,,,France,FRA
+ECOGRAPHY,2013,36,1,2892,Pedro,,Peres-Neto,Pedro Peres-Neto,SE,SE,,,,,Canada,CAN
+ECOGRAPHY,2013,36,1,1017,Eric,,Post,Eric Post,SE,SE,,,,,United States,USA
+ECOGRAPHY,2013,36,1,1119,Francisco,,Pugnaire,Francisco Pugnaire,SE,SE,,,,,Spain,ESP
+ECOGRAPHY,2013,36,1,559,Carsten,,Rahbek,Carsten Rahbek,EIC,EIC,,,,,Denmark,DNK
+ECOGRAPHY,2013,36,1,3627,Thiago,,Rangel,Thiago Rangel,SE,SE,,,,,United States,USA
+ECOGRAPHY,2013,36,1,1829,Jacques,,Regniere,Jacques Regniere,SE,SE,,,,,Canada,CAN
+ECOGRAPHY,2013,36,1,2687,Nathan,,Sanders,Nathan Sanders,DEIC,AE,,,,,United States,USA
+ECOGRAPHY,2013,36,1,1880,John,R,Spence,John R Spence,SE,SE,,,,,Canada,CAN
+ECOGRAPHY,2013,36,1,1899,Jens-Christian,,Svenning,Jens-Christian Svenning,DEIC,AE,,,,,Denmark,DNK
+ECOGRAPHY,2013,36,1,1370,Hanna,,Tuomisto,Hanna Tuomisto,SE,SE,,,,,Finland,FIN
+ECOGRAPHY,2013,36,1,3659,Thorsten,,Wiegand,Thorsten Wiegand,SE,SE,,,,,Germany,DEU
+ECOGRAPHY,2013,36,1,1954,John,J,Wiens,John J Wiens,SE,SE,,,,,United States,USA
+ECOGRAPHY,2013,36,1,2711,Niklaus,E,Zimmermann,Niklaus E Zimmermann,SE,SE,,,,,Switzerland,CHE
+ECOGRAPHY,2014,37,1,2270,Marti,Jane,Anderson,Marti Jane Anderson,SE,SE,,,,,New Zealand,NZL
+ECOGRAPHY,2014,37,1,2275,Miguel,B,Araujo,Miguel B Araujo,DEIC,AE,,,,,Spain,ESP
+ECOGRAPHY,2014,37,1,2286,Michel,,Baguette,Michel Baguette,SE,SE,,,,,France,FRA
+ECOGRAPHY,2014,37,1,3022,Robert,K,Colwell,Robert K Colwell,SE,SE,,,,,United States,USA
+ECOGRAPHY,2014,37,1,1547,Jose,Alexandre,Diniz-Filho,Jose Alexandre Diniz-Filho,SE,SE,,,,,Brazil,BRA
+ECOGRAPHY,2014,37,1,438,Carsten,,Dormann,Carsten Dormann,SE,SE,,,,,Germany,DEU
+ECOGRAPHY,2014,37,1,3045,Rob,,Dunn,Rob Dunn,SE,SE,,,,,United States,USA
+ECOGRAPHY,2014,37,1,1556,Johan,,Ehrlen,Johan Ehrlen,SE,SE,,,,,Sweden,SWE
+ECOGRAPHY,2014,37,1,966,Erica,,Fleishman,Erica Fleishman,SE,SE,,,,,United States,USA
+ECOGRAPHY,2014,37,1,3889,Janet,,Franklin,Janet Franklin,SE,SE,,,,,United States,USA
+ECOGRAPHY,2014,37,1,1589,Jean-Michel,,Gaillard,Jean-Michel Gaillard,SE,SE,,,,,France,FRA
+ECOGRAPHY,2014,37,1,466,Catherine,H,Graham,Catherine H Graham,SE,SE,,,,,United States,USA
+ECOGRAPHY,2014,37,1,3076,Russell,,Greenberg,Russell Greenberg,SE,SE,,,,,United States,USA
+ECOGRAPHY,2014,37,1,1643,Joaquin,,Hortal,Joaquin Hortal,SE,SE,,,,,United Kingdom,GBR
+ECOGRAPHY,2014,37,1,746,Douglas,,Kelt,Douglas Kelt,SE,SE,,,,,United States,USA
+ECOGRAPHY,2014,37,1,1665,Jeremy,,Kerr,Jeremy Kerr,SE,SE,,,,,Canada,CAN
+ECOGRAPHY,2014,37,1,2035,Kenneth,H,Kozak,Kenneth H Kozak,SE,SE,,,,,United States,USA
+ECOGRAPHY,2014,37,1,1692,Jill,,Lancaster,Jill Lancaster,SE,SE,,,,,Australia,AUS
+ECOGRAPHY,2014,37,1,998,Erik,,Matthysen,Erik Matthysen,SE,SE,,,,,Belgium,BEL
+ECOGRAPHY,2014,37,1,802,David,,Nogues,David Nogues,SE,SE,,,,,Denmark,DNK
+ECOGRAPHY,2014,37,1,2062,Kai,,Norrdahl,Kai Norrdahl,SE,SE,,,,,Finland,FIN
+ECOGRAPHY,2014,37,1,3616,Thierry,,Oberdorff,Thierry Oberdorff,SE,SE,,,,,France,FRA
+ECOGRAPHY,2014,37,1,2892,Pedro,,Peres-Neto,Pedro Peres-Neto,SE,SE,,,,,Canada,CAN
+ECOGRAPHY,2014,37,1,1017,Eric,,Post,Eric Post,SE,SE,,,,,United States,USA
+ECOGRAPHY,2014,37,1,1119,Francisco,,Pugnaire,Francisco Pugnaire,SE,SE,,,,,Spain,ESP
+ECOGRAPHY,2014,37,1,559,Carsten,,Rahbek,Carsten Rahbek,EIC,EIC,,,,,Denmark,DNK
+ECOGRAPHY,2014,37,1,3627,Thiago,,Rangel,Thiago Rangel,SE,SE,,,,,United States,USA
+ECOGRAPHY,2014,37,1,2687,Nathan,,Sanders,Nathan Sanders,DEIC,AE,,,,,United States,USA
+ECOGRAPHY,2014,37,1,1880,John,R,Spence,John R Spence,SE,SE,,,,,Canada,CAN
+ECOGRAPHY,2014,37,1,1899,Jens-Christian,,Svenning,Jens-Christian Svenning,DEIC,AE,,,,,Denmark,DNK
+ECOGRAPHY,2014,37,1,1370,Hanna,,Tuomisto,Hanna Tuomisto,SE,SE,,,,,Finland,FIN
+ECOGRAPHY,2014,37,1,3659,Thorsten,,Wiegand,Thorsten Wiegand,SE,SE,,,,,Germany,DEU
+ECOGRAPHY,2014,37,1,1954,John,J,Wiens,John J Wiens,SE,SE,,,,,United States,USA
+ECOGRAPHY,2014,37,1,2711,Niklaus,E,Zimmermann,Niklaus E Zimmermann,SE,SE,,,,,Switzerland,CHE

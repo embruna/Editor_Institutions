@@ -1,0 +1,436 @@
+"","JOURNAL","YEAR","editor_id","FIRST_NAME","MIDDLE_NAME","LAST_NAME","INST","UNIT","CITY","STATE","COUNTRY","NOTES","X"
+"1","JECOL",2005,"2751","Paul",NA,"Adam","University of New South Wales",NA,NA,NA,"Australia",NA,NA
+"2","JECOL",2000,"2751","Paul",NA,"Adam",NA,NA,"Sydney",NA,"Australia",NA,NA
+"3","JECOL",2001,"2751","Paul",NA,"Adam",NA,NA,"Sydney",NA,"Australia",NA,NA
+"4","JECOL",2002,"2751","Paul",NA,"Adam",NA,NA,"Sydney",NA,"Australia",NA,NA
+"5","JECOL",2003,"2751","Paul",NA,"Adam",NA,NA,"Sydney",NA,"Australia",NA,NA
+"6","JECOL",2004,"2751","Paul",NA,"Adam",NA,NA,"Sydney",NA,"Australia",NA,NA
+"7","JECOL",2005,"2753","Peter",NA,"Alpert","University of Massachusetts Amherst","",NA,NA,"USA",NA,NA
+"8","JECOL",2000,"2753","Peter",NA,"Alpert",NA,NA,"Amherst",NA,"USA",NA,NA
+"9","JECOL",2001,"2753","Peter",NA,"Alpert",NA,NA,"Amherst",NA,"USA",NA,NA
+"10","JECOL",2002,"2753","Peter",NA,"Alpert",NA,NA,"Amherst",NA,"USA",NA,NA
+"11","JECOL",2003,"2753","Peter",NA,"Alpert",NA,NA,"Amherst",NA,"USA",NA,NA
+"12","JECOL",2004,"2753","Peter",NA,"Alpert",NA,NA,"Amherst",NA,"USA",NA,NA
+"13","PLANTECOL",1985,"2281","Mike","P","Austin","CSIRO","","Canberra",NA,"Australia",NA,NA
+"14","JECOL",1988,"2281","Mike","P","Austin",NA,NA,NA,NA,"Australia",NA,NA
+"15","JECOL",1989,"2281","Mike","P","Austin",NA,NA,NA,NA,"Australia",NA,NA
+"16","JECOL",1990,"2281","Mike","P","Austin",NA,NA,NA,NA,"Australia",NA,NA
+"17","JECOL",1991,"2281","Mike","P","Austin",NA,NA,NA,NA,"Australia",NA,NA
+"18","JECOL",1992,"2281","Mike","P","Austin",NA,NA,"Canberra",NA,"Australia",NA,NA
+"19","JECOL",1993,"2281","Mike","P","Austin",NA,NA,"Canberra",NA,"Australia",NA,NA
+"20","JECOL",2007,"2977","Richard","D","Bardgett","","","Lancaster",NA,"",NA,""
+"21","JECOL",2005,"2977","Richard","D","Bardgett","University of Lancaster",NA,NA,NA,"United Kingdom",NA,NA
+"22","JECOL",2014,"2977","Richard","D","Bardgett","University of Manchester",NA,NA,NA,"United Kingdom",NA,NA
+"23","JECOL",2004,"2977","Richard","D","Bardgett",NA,NA,"Lancaster",NA,"United Kingdom",NA,NA
+"24","JECOL",2005,"3276","Spencer","CH","Barrett","","",NA,NA,"",NA,""
+"25","JECOL",1998,"3276","Spencer","CH","Barrett",NA,NA,NA,NA,"Canada",NA,NA
+"26","JECOL",1999,"3276","Spencer","CH","Barrett",NA,NA,NA,NA,"Canada",NA,NA
+"27","JECOL",2000,"3276","Spencer","CH","Barrett",NA,NA,"Toronto",NA,"Canada",NA,NA
+"28","JECOL",2001,"3276","Spencer","CH","Barrett",NA,NA,"Toronto",NA,"Canada",NA,NA
+"29","JECOL",2002,"3276","Spencer","CH","Barrett",NA,NA,"Toronto",NA,"Canada",NA,NA
+"30","JECOL",2003,"3276","Spencer","CH","Barrett",NA,NA,"Toronto",NA,"Canada",NA,NA
+"31","JECOL",2004,"3276","Spencer","CH","Barrett",NA,NA,"Toronto",NA,"Canada",NA,NA
+"32","JECOL",1991,"2979","Richard","W","Battarbee",NA,NA,NA,NA,"United Kingdom",NA,NA
+"33","JECOL",1992,"2979","Richard","W","Battarbee",NA,NA,"London",NA,"United Kingdom",NA,NA
+"34","JECOL",1993,"2979","Richard","W","Battarbee",NA,NA,"London",NA,"United Kingdom",NA,NA
+"35","JECOL",2005,"639","David",NA,"Burslem","University of Aberdeen","",NA,NA,"United Kingdom",NA,NA
+"36","JECOL",2002,"639","David",NA,"Burslem",NA,NA,"Aberdeen",NA,"United Kingdom",NA,NA
+"37","JECOL",2003,"639","David",NA,"Burslem",NA,NA,"Aberdeen",NA,"United Kingdom",NA,NA
+"38","JECOL",2004,"639","David",NA,"Burslem",NA,NA,"Aberdeen",NA,"United Kingdom",NA,NA
+"39","JECOL",2005,"3009","Ragan","M","Callaway","University of Montana",NA,NA,NA,"USA",NA,NA
+"40","JECOL",2004,"3009","Ragan","M","Callaway",NA,NA,"Missoula",NA,"USA",NA,NA
+"41","JECOL",1991,"644","David","R","Causton",NA,NA,NA,NA,"United Kingdom",NA,NA
+"42","JECOL",1992,"644","David","R","Causton",NA,NA,"Aberystwyth",NA,"United Kingdom",NA,NA
+"43","JECOL",1993,"644","David","R","Causton",NA,NA,"Aberystwyth",NA,"United Kingdom",NA,NA
+"44","JECOL",1987,"1519","John",NA,"Connolly",NA,NA,NA,NA,"Ireland",NA,NA
+"45","JECOL",1988,"1519","John",NA,"Connolly",NA,NA,NA,NA,"Ireland",NA,NA
+"46","JECOL",1989,"1519","John",NA,"Connolly",NA,NA,NA,NA,"Ireland",NA,NA
+"47","JECOL",1990,"1519","John",NA,"Connolly",NA,NA,NA,NA,"Ireland",NA,NA
+"48","JECOL",1991,"1519","John",NA,"Connolly",NA,NA,NA,NA,"Ireland",NA,NA
+"49","JECOL",1992,"1519","John",NA,"Connolly",NA,NA,"Dublin",NA,"Ireland",NA,NA
+"50","JECOL",1993,"1519","John",NA,"Connolly",NA,NA,"Dublin",NA,"Ireland",NA,NA
+"51","JECOL",1987,"2338","M","J","Crawley",NA,NA,NA,NA,"United Kingdom",NA,NA
+"52","JECOL",1988,"2338","M","J","Crawley",NA,NA,NA,NA,"United Kingdom",NA,NA
+"53","JECOL",1989,"2338","M","J","Crawley",NA,NA,NA,NA,"United Kingdom",NA,NA
+"54","JECOL",1990,"2338","M","J","Crawley",NA,NA,NA,NA,"United Kingdom",NA,NA
+"55","JECOL",1991,"2338","M","J","Crawley",NA,NA,NA,NA,"United Kingdom",NA,NA
+"56","JECOL",1992,"2338","M","J","Crawley",NA,NA,"Ascot",NA,"United Kingdom",NA,NA
+"57","JECOL",1993,"2338","M","J","Crawley",NA,NA,"Ascot",NA,"United Kingdom",NA,NA
+"58","JECOL",1994,"2338","M","J","Crawley",NA,NA,"Ascot",NA,"United Kingdom",NA,NA
+"59","OECOL",1994,"2338","Michael","J","Crawley","","",NA,NA,"",NA,""
+"60","PLANTECOL",2001,"2338","Michael","J","Crawley","Imperial College London","","Ascot",NA,"United Kingdom",NA,NA
+"61","JECOL",1990,"2342","M","S","Davies",NA,NA,NA,NA,"United Kingdom",NA,NA
+"62","JECOL",1991,"2342","M","S","Davies",NA,NA,NA,NA,"United Kingdom",NA,NA
+"63","JECOL",1992,"2342","M","S","Davies",NA,NA,"Cardiff",NA,"United Kingdom",NA,NA
+"64","JECOL",1993,"2342","M","S","Davies",NA,NA,"Cardiff",NA,"United Kingdom",NA,NA
+"65","JECOL",2007,"50","Anthony","J","Davy","University of East Anglia",NA,NA,NA,"United Kingdom",NA,NA
+"66","JECOL",1996,"50","Anthony","J","Davy",NA,NA,"Norwich",NA,"United Kingdom",NA,NA
+"67","ECOLOGY",1996,"1296","Hans",NA,"DeKroon","","","Wageningen","Gelderland","",NA,""
+"68","JECOL",2005,"1296","Hans",NA,"DeKroon","Radboud University Nijmegen","",NA,NA,"Netherlands",NA,NA
+"69","JECOL",2002,"1296","Hans",NA,"DeKroon",NA,NA,"Nijmegen",NA,"Netherlands",NA,NA
+"70","JECOL",2003,"1296","Hans",NA,"DeKroon",NA,NA,"Nijmegen",NA,"Netherlands",NA,NA
+"71","JECOL",2004,"1296","Hans",NA,"DeKroon",NA,NA,"Nijmegen",NA,"Netherlands",NA,NA
+"72","JECOL",1985,"1564","John","R","Etherington",NA,NA,NA,NA,"United Kingdom",NA,NA
+"73","JECOL",1986,"1564","John","R","Etherington",NA,NA,NA,NA,"United Kingdom",NA,NA
+"74","JECOL",1987,"1564","John","R","Etherington",NA,NA,NA,NA,"United Kingdom",NA,NA
+"75","JECOL",1988,"1564","John","R","Etherington",NA,NA,NA,NA,"United Kingdom",NA,NA
+"76","JECOL",1989,"1564","John","R","Etherington",NA,NA,NA,NA,"United Kingdom",NA,NA
+"77","JECOL",1990,"1564","John","R","Etherington",NA,NA,NA,NA,"United Kingdom",NA,NA
+"78","JECOL",1995,"2364","Michael",NA,"Fenner",NA,NA,"Southampton",NA,"United Kingdom",NA,NA
+"79","JECOL",1996,"2364","Michael",NA,"Fenner",NA,NA,"Southampton",NA,"United Kingdom",NA,NA
+"80","JECOL",1997,"2364","Michael",NA,"Fenner",NA,NA,"Southampton",NA,"United Kingdom",NA,NA
+"81","JECOL",1998,"2364","Michael",NA,"Fenner",NA,NA,"Southampton",NA,"United Kingdom",NA,NA
+"82","JECOL",1999,"2364","Michael",NA,"Fenner",NA,NA,"Southampton",NA,"United Kingdom",NA,NA
+"83","JECOL",2000,"2364","Michael",NA,"Fenner",NA,NA,"Southampton",NA,"United Kingdom",NA,NA
+"84","JECOL",2001,"2364","Michael",NA,"Fenner",NA,NA,"Southampton",NA,"United Kingdom",NA,NA
+"85","JECOL",1996,"74","Alastair","H","Fitter","","",NA,NA,"",NA,""
+"86","JECOL",1992,"74","Alastair","H","Fitter",NA,NA,"York",NA,"United Kingdom",NA,NA
+"87","JECOL",1997,"74","Alastair","H","Fitter",NA,NA,"York",NA,"United Kingdom",NA,NA
+"88","JECOL",1998,"74","Alastair","H","Fitter",NA,NA,"York",NA,"United Kingdom",NA,NA
+"89","ECOLOGY",1993,"690","David","R","Foster","Harvard University","Harvard Forest","Petersham","MA","USA",NA,NA
+"90","JECOL",1991,"690","David","R","Foster",NA,NA,NA,NA,"USA",NA,NA
+"91","JECOL",1992,"690","David","R","Foster",NA,NA,"Petersham",NA,"USA",NA,NA
+"92","JECOL",1993,"690","David","R","Foster",NA,NA,"Petersham",NA,"USA",NA,NA
+"93","JECOL",1994,"690","David","R","Foster",NA,NA,"Petersham",NA,"USA",NA,NA
+"94","JECOL",2014,"703","David","J","Gibson","Southern Illinois University","Center for Ecology, Department of Plant Biology","Carbondale","IL 62901-6509","USA",NA,NA
+"95","JECOL",1992,"703","David","J","Gibson",NA,NA,"Pensacola",NA,"USA",NA,NA
+"96","JECOL",1993,"703","David","J","Gibson",NA,NA,"Carbondale",NA,"USA",NA,NA
+"97","JECOL",1994,"703","David","J","Gibson",NA,NA,"Carbondale",NA,"USA",NA,NA
+"98","JECOL",1995,"703","David","J","Gibson",NA,NA,"Carbondale",NA,"USA",NA,NA
+"99","JECOL",1996,"703","David","J","Gibson",NA,NA,"Carbondale",NA,"USA",NA,NA
+"100","JECOL",1997,"703","David","J","Gibson",NA,NA,"Carbondale",NA,"USA",NA,NA
+"101","JECOL",1998,"703","David","J","Gibson",NA,NA,"Carbondale",NA,"USA",NA,NA
+"102","JECOL",1999,"703","David","J","Gibson",NA,NA,"Carbondale",NA,"USA",NA,NA
+"103","JECOL",2014,"1070","Frank","S","Gilliam","Marshall University",NA,NA,NA,"USA",NA,NA
+"104","JECOL",2004,"1070","Frank","S","Gilliam",NA,NA,"Huntington",NA,"USA",NA,NA
+"105","JECOL",1985,"3892","James ","B.","Grace",NA,NA,"Baton Rouge","Louisiana","USA",NA,NA
+"106","JECOL",1991,"89","Alan","J","Gray",NA,NA,NA,NA,"United Kingdom",NA,NA
+"107","JECOL",1992,"89","Alan","J","Gray",NA,NA,"Wareham",NA,"United Kingdom",NA,NA
+"108","JECOL",1993,"89","Alan","J","Gray",NA,NA,"Wareham",NA,"United Kingdom",NA,NA
+"109","JECOL",1994,"89","Alan","J","Gray",NA,NA,"Wareham",NA,"United Kingdom",NA,NA
+"110","JECOL",1995,"89","Alan","J","Gray",NA,NA,"Wareham",NA,"United Kingdom",NA,NA
+"111","JECOL",1996,"89","Alan","J","Gray",NA,NA,"Wareham",NA,"United Kingdom",NA,NA
+"112","JECOL",1997,"89","Alan","J","Gray",NA,NA,"Wareham",NA,"United Kingdom",NA,NA
+"113","JECOL",1998,"89","Alan","J","Gray",NA,NA,"Wareham",NA,"United Kingdom",NA,NA
+"114","JECOL",1999,"89","Alan","J","Gray",NA,NA,"Wareham",NA,"United Kingdom",NA,NA
+"115","JECOL",2000,"89","Alan","J","Gray",NA,NA,"Wareham",NA,"United Kingdom",NA,NA
+"116","JECOL",2001,"89","Alan","J","Gray",NA,NA,"Wareham",NA,"United Kingdom",NA,NA
+"117","JECOL",2002,"89","Alan","J","Gray",NA,NA,"Wareham",NA,"United Kingdom",NA,NA
+"118","JECOL",2003,"89","Alan","J","Gray",NA,NA,"Wareham",NA,"United Kingdom",NA,NA
+"119","JECOL",1985,"1608","J","Philip","Grime",NA,NA,"Sheffield S10 2TN",NA,"United Kingdom",NA,NA
+"120","JECOL",1986,"1608","J","P","Grime",NA,NA,NA,NA,"United Kingdom",NA,NA
+"121","JECOL",1997,"3562","Toshihiko",NA,"Hara",NA,NA,"Hokkaido",NA,"Japan",NA,NA
+"122","JECOL",1998,"3562","Toshihiko",NA,"Hara",NA,NA,"Hokkaido",NA,"Japan",NA,NA
+"123","JECOL",1999,"3562","Toshihiko",NA,"Hara",NA,NA,"Hokkaido",NA,"Japan",NA,NA
+"124","JECOL",2000,"3562","Toshihiko",NA,"Hara",NA,NA,"Hokkaido",NA,"Japan",NA,NA
+"125","JECOL",2001,"3562","Toshihiko",NA,"Hara",NA,NA,"Hokkaido",NA,"Japan",NA,NA
+"126","JECOL",2002,"3562","Toshihiko",NA,"Hara",NA,NA,"Hokkaido",NA,"Japan",NA,NA
+"127","JECOL",2003,"3562","Toshihiko",NA,"Hara",NA,NA,"Hokkaido",NA,"Japan",NA,NA
+"128","JECOL",2005,"3353","Sue","E","Hartley","University of Sussex",NA,NA,NA,"United Kingdom",NA,NA
+"129","JECOL",2002,"3353","Sue","E","Hartley",NA,NA,"Brighton",NA,"United Kingdom",NA,NA
+"130","JECOL",2003,"3353","Sue","E","Hartley",NA,NA,"Brighton",NA,"United Kingdom",NA,NA
+"131","JECOL",2004,"3353","Sue","E","Hartley",NA,NA,"Brighton",NA,"United Kingdom",NA,NA
+"132","JECOL",1985,"289","B",NA,"Hopkins",NA,NA,NA,NA,"United Kingdom",NA,NA
+"133","CONBIO",1988,"2175","Laura",NA,"Huenneke","New Mexico State University",NA,"Las Cruces","New Mexico","USA",NA,NA
+"134","JECOL",1995,"2175","Laura",NA,"Huenneke",NA,NA,"New Mexico",NA,"USA",NA,NA
+"135","JECOL",1996,"2175","Laura",NA,"Huenneke",NA,NA,"New Mexico",NA,"USA",NA,NA
+"136","JECOL",1997,"2175","Laura",NA,"Huenneke",NA,NA,"New Mexico",NA,"USA",NA,NA
+"137","JECOL",1998,"2175","Laura",NA,"Huenneke",NA,NA,"New Mexico",NA,"USA",NA,NA
+"138","JECOL",1987,"291","B",NA,"Huntely",NA,NA,NA,NA,"United Kingdom",NA,NA
+"139","JECOL",1985,"292","B",NA,"Huntley",NA,NA,NA,NA,"United Kingdom",NA,NA
+"140","JECOL",1986,"292","B",NA,"Huntley",NA,NA,NA,NA,"United Kingdom",NA,NA
+"141","JECOL",1988,"292","B",NA,"Huntley",NA,NA,NA,NA,"United Kingdom",NA,NA
+"142","PLANTECOL",1993,"2419","Michael","J","Hutchings","University of Sussex","School of Biological Sciences","Sussex",NA,"United Kingdom",NA,NA
+"143","JECOL",1985,"2419","Michael","J","Hutchings",NA,NA,NA,NA,"United Kingdom",NA,NA
+"144","JECOL",1986,"2419","Michael","J","Hutchings",NA,NA,NA,NA,"United Kingdom",NA,NA
+"145","JECOL",1987,"2419","Michael","J","Hutchings",NA,NA,NA,NA,"United Kingdom",NA,NA
+"146","JECOL",1988,"2419","Michael","J","Hutchings",NA,NA,NA,NA,"United Kingdom",NA,NA
+"147","JECOL",1989,"2419","Michael","J","Hutchings",NA,NA,NA,NA,"United Kingdom",NA,NA
+"148","JECOL",1991,"2419","Michael","J","Hutchings",NA,NA,NA,NA,"United Kingdom",NA,NA
+"149","JECOL",1992,"2419","Michael","J","Hutchings",NA,NA,"Brighton",NA,"United Kingdom",NA,NA
+"150","JECOL",1993,"2419","Michael","J","Hutchings",NA,NA,"Brighton",NA,"United Kingdom",NA,NA
+"151","JECOL",1994,"2419","Michael","J","Hutchings",NA,NA,"Brighton",NA,"United Kingdom",NA,NA
+"152","JECOL",1995,"2419","Michael","J","Hutchings",NA,NA,"Brighton",NA,"United Kingdom",NA,NA
+"153","JECOL",1996,"2419","Michael","J","Hutchings",NA,NA,"Brighton",NA,"United Kingdom",NA,NA
+"154","JECOL",1997,"2419","Michael","J","Hutchings",NA,NA,"Brighton",NA,"United Kingdom",NA,NA
+"155","JECOL",1998,"2419","Michael","J","Hutchings",NA,NA,"Brighton",NA,"United Kingdom",NA,NA
+"156","JECOL",1999,"2419","Michael","J","Hutchings",NA,NA,"Brighton",NA,"United Kingdom",NA,NA
+"157","ECOLOGY",1989,"1210","George","L","Jacobson","University of Maine",NA,"Orono","ME","USA",NA,NA
+"158","JECOL",1991,"1210","George","L","Jacobson",NA,NA,NA,NA,"USA",NA,NA
+"159","JECOL",1992,"1210","George","L","Jacobson",NA,NA,"Orono",NA,"USA",NA,NA
+"160","PLANTECOL",1991,"3108","Robert","L","Jefferies","","","Toronto",NA,"",NA,""
+"161","JECOL",1988,"3108","Robert","L","Jefferies",NA,NA,NA,NA,"Canada",NA,NA
+"162","JECOL",1989,"3108","Robert","L","Jefferies",NA,NA,NA,NA,"Canada",NA,NA
+"163","JECOL",1990,"3108","Robert","L","Jefferies",NA,NA,NA,NA,"Canada",NA,NA
+"164","JECOL",1991,"3108","Robert","L","Jefferies",NA,NA,NA,NA,"Canada",NA,NA
+"165","JECOL",1992,"3108","Robert","L","Jefferies",NA,NA,"Toronto",NA,"Canada",NA,NA
+"166","JECOL",1993,"3108","Robert","L","Jefferies",NA,NA,"Toronto",NA,"Canada",NA,NA
+"167","JECOL",1994,"3108","Robert","L","Jefferies",NA,NA,"Toronto",NA,"Canada",NA,NA
+"168","JECOL",1995,"3108","Robert","L","Jefferies",NA,NA,"Toronto",NA,"Canada",NA,NA
+"169","JECOL",1996,"3108","Robert","L","Jefferies",NA,NA,"Toronto",NA,"Canada",NA,NA
+"170","JECOL",1997,"3108","Robert","L","Jefferies",NA,NA,NA,NA,"Canada",NA,NA
+"171","JECOL",1998,"3108","Robert","L","Jefferies",NA,NA,"Toronto",NA,"Canada",NA,NA
+"172","JECOL",1999,"3108","Robert","L","Jefferies",NA,NA,"Toronto",NA,"Canada",NA,NA
+"173","JECOL",2000,"3108","Robert","L","Jefferies",NA,NA,"Toronto",NA,"Canada",NA,NA
+"174","JECOL",2001,"3108","Robert","L","Jefferies",NA,NA,"Toronto",NA,"Canada",NA,NA
+"175","JECOL",2002,"3108","Robert","L","Jefferies",NA,NA,"Toronto",NA,"Canada",NA,NA
+"176","JECOL",2003,"3108","Robert","L","Jefferies",NA,NA,"Brighton",NA,"Canada",NA,NA
+"177","JECOL",2004,"3108","Robert","L","Jefferies",NA,NA,"Toronto",NA,"Canada",NA,NA
+"178","EVOL",2003,"3374","Susan",NA,"Kalisz","University of Pittsburgh",NA,"Pittsburgh","PA","USA",NA,NA
+"179","JECOL",1995,"3374","Susan",NA,"Kalisz",NA,NA,"Hickory Coners",NA,"USA",NA,NA
+"180","JECOL",1996,"3374","Susan",NA,"Kalisz",NA,NA,"Pittsburgh",NA,"USA",NA,NA
+"181","JECOL",1997,"3374","Susan",NA,"Kalisz",NA,NA,"Pittsburgh",NA,"USA",NA,NA
+"182","JECOL",1998,"3374","Susan",NA,"Kalisz",NA,NA,"Pittsburgh",NA,"USA",NA,NA
+"183","JECOL",1999,"3374","Susan",NA,"Kalisz",NA,NA,"Pittsburg",NA,"USA",NA,NA
+"184","JECOL",2000,"3374","Susan",NA,"Kalisz",NA,NA,"Pittsburg",NA,"USA",NA,NA
+"185","JECOL",2005,"2849","Peter",NA,"Klinkhamer","Leiden University",NA,NA,NA,"Netherlands",NA,NA
+"186","JECOL",1997,"2849","Peter",NA,"Klinkhamer",NA,NA,"Leiden",NA,"Netherlands",NA,NA
+"187","JECOL",1998,"2849","Peter",NA,"Klinkhamer",NA,NA,"Leiden",NA,"Netherlands",NA,NA
+"188","JECOL",1999,"2849","Peter",NA,"Klinkhamer",NA,NA,"Leiden",NA,"Netherlands",NA,NA
+"189","JECOL",2000,"2849","Peter",NA,"Klinkhamer",NA,NA,"Leiden",NA,"Netherlands",NA,NA
+"190","JECOL",2001,"2849","Peter",NA,"Klinkhamer",NA,NA,"Leiden",NA,"Netherlands",NA,NA
+"191","JECOL",2002,"2849","Peter",NA,"Klinkhamer",NA,NA,"Leiden",NA,"Netherlands",NA,NA
+"192","JECOL",2003,"2849","Peter",NA,"Klinkhamer",NA,NA,"Leiden",NA,"Netherlands",NA,NA
+"193","JECOL",2004,"2849","Peter",NA,"Klinkhamer",NA,NA,"Leiden",NA,"Netherlands",NA,NA
+"194","JECOL",1987,"130","Alan","J","Lack",NA,NA,NA,NA,"United Kingdom",NA,NA
+"195","JECOL",1988,"130","Alan","J","Lack",NA,NA,NA,NA,"United Kingdom",NA,NA
+"196","JECOL",1989,"130","Alan","J","Lack",NA,NA,NA,NA,"United Kingdom",NA,NA
+"197","JECOL",1990,"130","Alan","J","Lack",NA,NA,NA,NA,"United Kingdom",NA,NA
+"198","JECOL",1991,"3851","Andrew","J","Lack",NA,NA,NA,NA,"United Kingdom",NA,NA
+"199","JECOL",1992,"3851","Andrew","J","Lack",NA,NA,"Oxford",NA,"United Kingdom",NA,NA
+"200","JECOL",1993,"3851","Andrew","J","Lack",NA,NA,"Oxford",NA,"United Kingdom",NA,NA
+"201","JECOL",1994,"3851","Andrew","J","Lack",NA,NA,"Oxford",NA,"United Kingdom",NA,NA
+"202","JECOL",1995,"3851","Andrew","J","Lack",NA,NA,"Oxford",NA,"United Kingdom",NA,NA
+"203","JECOL",1996,"3851","Andrew","J","Lack",NA,NA,"Oxford",NA,"United Kingdom",NA,NA
+"204","JECOL",1997,"3851","Andrew","J","Lack",NA,NA,"Oxford",NA,"United Kingdom",NA,NA
+"205","JECOL",1998,"3851","Andrew","J","Lack",NA,NA,"Oxford",NA,"United Kingdom",NA,NA
+"206","PLANTECOL",1991,"3762","William","K","Lauenroth","Colorado State University","Range Science","Fort Collins","Colorado","USA",NA,NA
+"207","JECOL",2000,"3762","William","K","Lauenroth",NA,NA,"Fort Collins",NA,"USA",NA,NA
+"208","JECOL",2001,"3762","William","K","Lauenroth",NA,NA,"Fort Collins",NA,"USA",NA,NA
+"209","JECOL",2002,"3762","William","K","Lauenroth",NA,NA,"Fort Collins",NA,"USA",NA,NA
+"210","JECOL",2003,"3762","William","K","Lauenroth",NA,NA,"Fort Collins",NA,"USA",NA,NA
+"211","JECOL",2004,"3762","William","K","Lauenroth",NA,NA,"Fort Collins",NA,"USA",NA,NA
+"212","LECO",1999,"3385","Sandra",NA,"Lavorel","CNRS Centre dEcologie Fonctionnelle et Evolutive","",NA,NA,"France",NA,NA
+"213","JECOL",2014,"3385","Sandra",NA,"Lavorel","Universite Joseph Fourier",NA,NA,NA,"France",NA,NA
+"214","JECOL",1997,"3385","Sandra",NA,"Lavorel",NA,NA,"Montpellier",NA,"France",NA,NA
+"215","JECOL",1998,"3385","Sandra",NA,"Lavorel",NA,NA,"Montpellier",NA,"France",NA,NA
+"216","JECOL",1999,"3385","Sandra",NA,"Lavorel",NA,NA,"Montpellier",NA,"France",NA,NA
+"217","JECOL",2000,"3385","Sandra",NA,"Lavorel",NA,NA,"Montpellier",NA,"France",NA,NA
+"218","JECOL",2001,"3385","Sandra",NA,"Lavorel",NA,NA,"Montpellier",NA,"France",NA,NA
+"219","JECOL",2002,"3385","Sandra",NA,"Lavorel",NA,NA,"Montpellier",NA,"France",NA,NA
+"220","JECOL",2003,"3385","Sandra",NA,"Lavorel",NA,NA,"Montpellier",NA,"France",NA,NA
+"221","PLANTECOL",1996,"1704","John","A","Lee","","","Sheffield",NA,"",NA,""
+"222","JECOL",2009,"1704","John","A","Lee","University Sheffield",NA,NA,NA,"United Kingdom",NA,NA
+"223","JECOL",1985,"1704","John","A","Lee",NA,NA,NA,NA,"United Kingdom",NA,NA
+"224","JECOL",1986,"1704","John",NA,"Lee",NA,NA,NA,NA,"United Kingdom",NA,NA
+"225","JECOL",1987,"1704","John",NA,"Lee",NA,NA,NA,NA,"United Kingdom",NA,NA
+"226","JECOL",1988,"1704","John",NA,"Lee",NA,NA,NA,NA,"United Kingdom",NA,NA
+"227","JECOL",1989,"1704","John",NA,"Lee",NA,NA,NA,NA,"United Kingdom",NA,NA
+"228","JECOL",1990,"1704","John",NA,"Lee",NA,NA,NA,NA,"United Kingdom",NA,NA
+"229","JECOL",1992,"1704","John","A","Lee",NA,NA,"Manchester",NA,"United Kingdom",NA,NA
+"230","JECOL",1993,"1704","John","A","Lee",NA,NA,"Manchester",NA,"United Kingdom",NA,NA
+"231","JECOL",1994,"1704","John","A","Lee",NA,NA,"Manchester",NA,"United Kingdom",NA,NA
+"232","JECOL",1995,"1704","John","A","Lee",NA,NA,"Sheffield",NA,"United Kingdom",NA,NA
+"233","JECOL",1996,"1704","John","A","Lee",NA,NA,"Sheffield",NA,"United Kingdom",NA,NA
+"234","JECOL",1997,"1704","John","A","Lee",NA,NA,"Sheffield",NA,"United Kingdom",NA,NA
+"235","JECOL",1998,"1704","John","A","Lee",NA,NA,"Sheffield",NA,"United Kingdom",NA,NA
+"236","JECOL",1999,"1704","John","A","Lee",NA,NA,"Sheffield",NA,"United Kingdom",NA,NA
+"237","JECOL",2000,"1704","John","A","Lee",NA,NA,"Sheffield",NA,"United Kingdom",NA,NA
+"238","JECOL",2001,"1704","John","A","Lee",NA,NA,"Sheffield",NA,"United Kingdom",NA,NA
+"239","JECOL",2002,"1704","John","A","Lee",NA,NA,"Sheffield",NA,"United Kingdom",NA,NA
+"240","JECOL",2003,"1704","John","A","Lee",NA,NA,"Sheffield",NA,"United Kingdom",NA,NA
+"241","JECOL",2004,"1704","John","A","Lee",NA,NA,"Sheffield",NA,"United Kingdom",NA,NA
+"242","JECOL",1986,"3395","Stephen","P","Long",NA,NA,NA,NA,"USA",NA,NA
+"243","JECOL",1987,"3395","Stephen","P","Long",NA,NA,NA,NA,"USA",NA,NA
+"244","JECOL",1988,"3395","Stephen","P","Long",NA,NA,NA,NA,"USA",NA,NA
+"245","JECOL",1989,"3395","Stephen","P","Long",NA,NA,NA,NA,"USA",NA,NA
+"246","JECOL",1990,"3395","Stephen","P","Long",NA,NA,NA,NA,"USA",NA,NA
+"247","JECOL",2005,"2869","Peter","D","Moore","Kings College London","","London",NA,"United Kingdom",NA,NA
+"248","JECOL",1991,"2869","Peter","D","Moore",NA,NA,NA,NA,"United Kingdom",NA,NA
+"249","JECOL",1994,"2869","Peter","D","Moore",NA,NA,"London",NA,"United Kingdom",NA,NA
+"250","JECOL",1995,"2869","Peter","D","Moore",NA,NA,"London",NA,"United Kingdom",NA,NA
+"251","JECOL",1996,"2869","Peter","D","Moore",NA,NA,"London",NA,"United Kingdom",NA,NA
+"252","JECOL",1997,"2869","Peter","D","Moore",NA,NA,"London",NA,"United Kingdom",NA,NA
+"253","JECOL",1998,"2869","Peter","D","Moore",NA,NA,"London",NA,"United Kingdom",NA,NA
+"254","JECOL",1999,"2869","Peter","D","Moore",NA,NA,"London",NA,"United Kingdom",NA,NA
+"255","JECOL",2000,"2869","Peter","D","Moore",NA,NA,"London",NA,"United Kingdom",NA,NA
+"256","JECOL",2001,"2869","Peter","D","Moore",NA,NA,"London",NA,"United Kingdom",NA,NA
+"257","JECOL",2002,"2869","Peter","D","Moore",NA,NA,"London",NA,"United Kingdom",NA,NA
+"258","JECOL",2003,"2869","Peter","D","Moore",NA,NA,"London",NA,"United Kingdom",NA,NA
+"259","JECOL",2004,"2869","Peter","D","Moore",NA,NA,"London",NA,"United Kingdom",NA,NA
+"260","BIOCON",2004,"330","Brian",NA,"Moss","University of Liverpool",NA,"Liverpool",NA,"United Kingdom",NA,NA
+"261","JECOL",1985,"330","Brian",NA,"Moss",NA,NA,"Norwich","NR4 7TJ","United Kingdom",NA,NA
+"262","JECOL",1986,"330","Brian",NA,"Moss",NA,NA,NA,NA,"United Kingdom",NA,NA
+"263","JECOL",1987,"330","Brian",NA,"Moss",NA,NA,NA,NA,"United Kingdom",NA,NA
+"264","JECOL",2005,"1794","Joop",NA,"Ouborg","Radboud University Nijmegen","",NA,NA,"Netherlands",NA,NA
+"265","JECOL",2003,"1794","Joop",NA,"Ouborg",NA,NA,"Nijmegen",NA,"Netherlands",NA,NA
+"266","JECOL",2004,"1794","Joop",NA,"Ouborg",NA,NA,"Nijmegen",NA,"Netherlands",NA,NA
+"267","JECOL",2000,"553","Chris","J","Peterson",NA,NA,"Athens",NA,"USA",NA,NA
+"268","JECOL",2001,"553","Chris","J","Peterson",NA,NA,"Athens",NA,"USA",NA,NA
+"269","JECOL",2002,"553","Chris","J","Peterson",NA,NA,"Athens",NA,"USA",NA,NA
+"270","JECOL",2003,"553","Chris","J","Peterson",NA,NA,"Athens",NA,"USA",NA,NA
+"271","ECOLOGY",1999,"2070","Kurt","S","Pregitzer","Michigan Technological University",NA,"Houghton","MI","USA",NA,NA
+"272","JECOL",1995,"2070","Kurt","S","Pregitzer",NA,NA,"Houghton",NA,"USA",NA,NA
+"273","JECOL",1996,"2070","Kurt","S","Pregitzer",NA,NA,"Houghton",NA,"USA",NA,NA
+"274","JECOL",1997,"2070","Kurt","S","Pregitzer",NA,NA,"Houghton",NA,"USA",NA,NA
+"275","JECOL",1998,"2070","Kurt","S","Pregitzer",NA,NA,"Houghton",NA,"USA",NA,NA
+"276","JECOL",2005,"1349","Honor","C","Prentice","Lund University",NA,NA,NA,"Sweden",NA,NA
+"277","JECOL",1995,"1349","Honor","C","Prentice",NA,NA,"Lund",NA,"Sweden",NA,NA
+"278","JECOL",1996,"1349","Honor","C","Prentice",NA,NA,"Lund",NA,"Sweden",NA,NA
+"279","JECOL",1997,"1349","Honor","C","Prentice",NA,NA,"Lund",NA,"Sweden",NA,NA
+"280","JECOL",1998,"1349","Honor","C","Prentice",NA,NA,"Lund",NA,"Sweden",NA,NA
+"281","JECOL",1999,"1349","Honor","C","Prentice",NA,NA,"Lund",NA,"Sweden",NA,NA
+"282","JECOL",2000,"1349","Honor","C","Prentice",NA,NA,"Lund",NA,"Sweden",NA,NA
+"283","JECOL",2001,"1349","Honor","C","Prentice",NA,NA,"Lund",NA,"Sweden",NA,NA
+"284","JECOL",2002,"1349","Honor","C","Prentice",NA,NA,"Lund",NA,"Sweden",NA,NA
+"285","JECOL",2003,"1349","Honor","C","Prentice",NA,NA,"Lund",NA,"Sweden",NA,NA
+"286","JECOL",2004,"1349","Honor","C","Prentice",NA,NA,"Lund",NA,"Sweden",NA,NA
+"287","OECOL",2002,"2524","Malcolm","C","Press","","",NA,NA,"",NA,""
+"288","JECOL",1996,"2524","Malcolm","C","Press",NA,NA,"Sheffield",NA,"United Kingdom",NA,NA
+"289","JECOL",1997,"2524","Malcolm","C","Press",NA,NA,"Sheffield",NA,"United Kingdom",NA,NA
+"290","JECOL",1998,"2524","Malcolm","C","Press",NA,NA,"Sheffield",NA,"United Kingdom",NA,NA
+"291","JECOL",1999,"2524","Malcolm","C","Press",NA,NA,"Sheffield",NA,"United Kingdom",NA,NA
+"292","JECOL",2000,"2524","Malcolm","C","Press",NA,NA,"Sheffield",NA,"United Kingdom",NA,NA
+"293","JECOL",2001,"2524","Malcolm","C","Press",NA,NA,"Sheffield",NA,"United Kingdom",NA,NA
+"294","JECOL",2002,"2524","Malcolm","C","Press",NA,NA,"Sheffield",NA,"United Kingdom",NA,NA
+"295","JECOL",2003,"2524","Malcolm","C","Press",NA,NA,"Sheffield",NA,"United Kingdom",NA,NA
+"296","JECOL",2004,"2524","Malcolm","C","Press",NA,NA,"Sheffield",NA,"United Kingdom",NA,NA
+"297","JECOL",2005,"2526","Michael","CF","Proctor","University of Exeter",NA,NA,NA,"United Kingdom",NA,NA
+"298","JECOL",2003,"2526","Michael","CF","Proctor",NA,NA,"Exeter",NA,"United Kingdom",NA,NA
+"299","JECOL",2004,"2526","Michael","CF","Proctor",NA,NA,"Exeter",NA,"United Kingdom",NA,NA
+"300","JECOL",1998,"1416","Ian",NA,"Sanders",NA,NA,"Basel",NA,"Switzerland",NA,NA
+"301","JECOL",1999,"1416","Ian",NA,"Sanders",NA,NA,"Basel",NA,"Switzerland",NA,NA
+"302","JECOL",2000,"1416","Ian",NA,"Sanders",NA,NA,"Basel",NA,"Switzerland",NA,NA
+"303","JECOL",2001,"1416","Ian",NA,"Sanders",NA,NA,"Lausanne",NA,"Switzerland",NA,NA
+"304","JECOL",2002,"1416","Ian",NA,"Sanders",NA,NA,"Lausanne",NA,"Switzerland",NA,NA
+"305","JECOL",2003,"1416","Ian",NA,"Sanders",NA,NA,"Lausanne",NA,"Switzerland",NA,NA
+"306","JECOL",2004,"1416","Ian",NA,"Sanders",NA,NA,"Lausanne",NA,"Switzerland",NA,NA
+"307","JECOL",1994,"351","Bernhard",NA,"Schmid",NA,NA,"Zurich",NA,"Switzerland",NA,NA
+"308","JECOL",1995,"351","Bernhard",NA,"Schmid",NA,NA,"Zurich",NA,"Switzerland",NA,NA
+"309","JECOL",1996,"351","Bernhard",NA,"Schmid",NA,NA,"Zurich",NA,"Switzerland",NA,NA
+"310","JECOL",1997,"351","Bernhard",NA,"Schmid",NA,NA,"Zurich",NA,"Switzerland",NA,NA
+"311","JECOL",1998,"351","Bernhard",NA,"Schmid",NA,NA,"Zurich",NA,"Switzerland",NA,NA
+"312","JECOL",1999,"351","Bernhard",NA,"Schmid",NA,NA,"Zurich",NA,"Switzerland",NA,NA
+"313","JECOL",2000,"351","Bernhard",NA,"Schmid",NA,NA,"Zurich",NA,"Switzerland",NA,NA
+"314","JECOL",2001,"351","Bernhard",NA,"Schmid",NA,NA,"Zurich",NA,"Switzerland",NA,NA
+"315","JECOL",2002,"351","Bernhard",NA,"Schmid",NA,NA,"Zurich",NA,"Switzerland",NA,NA
+"316","JECOL",2003,"351","Bernhard",NA,"Schmid",NA,NA,"Zurich",NA,"Switzerland",NA,NA
+"317","JECOL",1995,"1872","Jonathan",NA,"Silvertown","Open University",NA,"Milton Keynes",NA,"United Kingdom",NA,NA
+"318","JECOL",1988,"1872","Jonathan",NA,"Silvertown",NA,NA,NA,NA,"United Kingdom",NA,NA
+"319","JECOL",1989,"1872","Jonathan",NA,"Silvertown",NA,NA,NA,NA,"United Kingdom",NA,NA
+"320","JECOL",1990,"1872","Jonathan",NA,"Silvertown",NA,NA,NA,NA,"United Kingdom",NA,NA
+"321","JECOL",1991,"1872","Jonathan",NA,"Silvertown",NA,NA,NA,NA,"United Kingdom",NA,NA
+"322","JECOL",1992,"1872","Jonathan",NA,"Silvertown",NA,NA,"Milton Keynes",NA,"United Kingdom",NA,NA
+"323","JECOL",2009,"880","David",NA,"Streeter","University of Exeter",NA,NA,NA,"United Kingdom",NA,NA
+"324","JECOL",2005,"880","David",NA,"Streeter","University of Sussex",NA,NA,NA,"United Kingdom",NA,NA
+"325","JECOL",2003,"880","David",NA,"Streeter",NA,NA,"Brighton",NA,"United Kingdom",NA,NA
+"326","JECOL",2004,"880","David",NA,"Streeter",NA,NA,"Brighton",NA,"United Kingdom",NA,NA
+"327","FUNECOL",2005,"2104","Ken",NA,"Thompson","University of Sheffield","Department of Animal and Plant Sciences",NA,NA,"England",NA,NA
+"328","JECOL",1996,"2104","Ken",NA,"Thompson",NA,NA,"Sheffield",NA,"United Kingdom",NA,NA
+"329","JECOL",1997,"2104","Ken",NA,"Thompson",NA,NA,"Sheffield",NA,"United Kingdom",NA,NA
+"330","JECOL",1998,"2104","Ken",NA,"Thompson",NA,NA,"Sheffield",NA,"United Kingdom",NA,NA
+"331","JECOL",1999,"2104","Ken",NA,"Thompson",NA,NA,"Sheffield",NA,"United Kingdom",NA,NA
+"332","JECOL",2000,"2104","Ken",NA,"Thompson",NA,NA,"Sheffield",NA,"United Kingdom",NA,NA
+"333","JECOL",2001,"2104","Ken",NA,"Thompson",NA,NA,"Sheffield",NA,"United Kingdom",NA,NA
+"334","JECOL",2002,"2104","Ken",NA,"Thompson",NA,NA,"Sheffield",NA,"United Kingdom",NA,NA
+"335","JECOL",2003,"2104","Ken",NA,"Thompson",NA,NA,"Sheffield",NA,"United Kingdom",NA,NA
+"336","JECOL",2004,"2104","Ken",NA,"Thompson",NA,NA,"Sheffield",NA,"United Kingdom",NA,NA
+"337","JECOL",2010,"2938","Peter",NA,"Thrall","","",NA,NA,"",NA,""
+"338","JECOL",2011,"2938","Peter",NA,"Thrall",NA,NA,NA,NA,"Australia",NA,NA
+"339","JECOL",2012,"2938","Peter",NA,"Thrall",NA,NA,NA,NA,"Australia",NA,NA
+"340","JECOL",2013,"2938","Peter",NA,"Thrall",NA,NA,NA,NA,"Australia",NA,NA
+"341","JECOL",2005,"3234","Roy",NA,"Turkington","University of British Columbia Vancouver","",NA,NA,"Canada",NA,NA
+"342","JECOL",1992,"3234","Roy",NA,"Turkington",NA,NA,"Vancouver",NA,"Canada",NA,NA
+"343","JECOL",1993,"3234","Roy",NA,"Turkington",NA,NA,"Vancouver",NA,"Canada",NA,NA
+"344","JECOL",1994,"3234","Roy",NA,"Turkington",NA,NA,"Vancouver",NA,"Canada",NA,NA
+"345","JECOL",1995,"3234","Roy",NA,"Turkington",NA,NA,"Vancouver",NA,"Canada",NA,NA
+"346","JECOL",1996,"3234","Roy",NA,"Turkington",NA,NA,"Vancouver",NA,"Canada",NA,NA
+"347","JECOL",1997,"3234","Roy",NA,"Turkington",NA,NA,"Vancouver",NA,"Canada",NA,NA
+"348","JECOL",1998,"3234","Roy",NA,"Turkington",NA,NA,"Vancouver",NA,"Canada",NA,NA
+"349","JECOL",1999,"3234","Roy",NA,"Turkington",NA,NA,"Vancouver",NA,"Canada",NA,NA
+"350","JECOL",2000,"3234","Roy",NA,"Turkington",NA,NA,"Vancouver",NA,"Canada",NA,NA
+"351","JECOL",2001,"3234","Roy",NA,"Turkington",NA,NA,"Vancouver",NA,"Canada",NA,NA
+"352","JECOL",2002,"3234","Roy",NA,"Turkington",NA,NA,"Vancouver",NA,"Canada",NA,NA
+"353","JECOL",2003,"3234","Roy",NA,"Turkington",NA,NA,"Vancouver",NA,"Canada",NA,NA
+"354","JECOL",2004,"3234","Roy",NA,"Turkington",NA,NA,"Vancouver",NA,"Canada",NA,NA
+"355","JECOL",2008,"2583","Michael","B","Usher","University of Stirling",NA,NA,NA,"United Kingdom",NA,NA
+"356","JECOL",2011,"2583","Michael","B","Usher","Unniversity of Stirling",NA,NA,NA,"United Kingdom",NA,NA
+"357","JECOL",1985,"2583","Michael","B","Usher",NA,NA,"York","York Y01 5DD","United Kingdom",NA,NA
+"358","JECOL",1986,"2583","Michael","B","Usher",NA,NA,NA,NA,"United Kingdom",NA,NA
+"359","JECOL",1989,"1036","Eddy",NA,"VanDerMeijden",NA,NA,NA,NA,"Netherlands",NA,NA
+"360","JECOL",1990,"1036","Eddy",NA,"VanDerMeijden",NA,NA,NA,NA,"Netherlands",NA,NA
+"361","JECOL",1991,"1036","Eddy",NA,"VanDerMeijden",NA,NA,NA,NA,"Netherlands",NA,NA
+"362","JECOL",1992,"1036","Eddy",NA,"VanDerMeijden",NA,NA,"Leiden",NA,"Netherlands",NA,NA
+"363","JECOL",1993,"1036","Eddy",NA,"VanDerMeijden",NA,NA,"Leiden",NA,"Netherlands",NA,NA
+"364","JECOL",1993,"1924","Jan",NA,"VanGroenendael","","","Wageningen",NA,"",NA,""
+"365","JECOL",1997,"1924","Jan",NA,"VanGroenendael","Catholic University",NA,"Nijmegen",NA,"Netherlands",NA,NA
+"366","JECOL",1992,"1924","Jan",NA,"VanGroenendael",NA,NA,"Wageningen",NA,"Netherlands",NA,NA
+"367","JECOL",2005,"1945","Jacob",NA,"Weiner","Royal Veterinary and Agricultural University","",NA,NA,"Denmark",NA,NA
+"368","JECOL",1997,"1945","Jacob",NA,"Weiner",NA,NA,"Copenhagen",NA,"Denmark",NA,NA
+"369","JECOL",1998,"1945","Jacob",NA,"Weiner",NA,NA,"Copenhagen",NA,"Denmark",NA,NA
+"370","JECOL",1999,"1945","Jacob",NA,"Weiner",NA,NA,"Copenhagen",NA,"Denmark",NA,NA
+"371","JECOL",2000,"1945","Jacob",NA,"Weiner",NA,NA,"Copenhagen",NA,"Denmark",NA,NA
+"372","JECOL",2001,"1945","Jacob",NA,"Weiner",NA,NA,"Copenhagen",NA,"Denmark",NA,NA
+"373","JECOL",2002,"1945","Jacob",NA,"Weiner",NA,NA,"Copenhagen",NA,"Denmark",NA,NA
+"374","JECOL",2003,"1945","Jacob",NA,"Weiner",NA,NA,"Copenhagen",NA,"Denmark",NA,NA
+"375","JECOL",2004,"1945","Jacob",NA,"Weiner",NA,NA,"Copenhagen",NA,"Denmark",NA,NA
+"376","JECOL",1992,"3911","James",NA,"White","University College Dublin","","Dublin",NA,"Ireland",NA,NA
+"377","JECOL",1986,"3911","James",NA,"White",NA,NA,NA,NA,"Ireland",NA,NA
+"378","JECOL",1987,"3911","James",NA,"White",NA,NA,NA,NA,"Ireland",NA,NA
+"379","JECOL",1988,"3911","James",NA,"White",NA,NA,NA,NA,"Ireland",NA,NA
+"380","JECOL",1989,"3911","James",NA,"White",NA,NA,NA,NA,"Ireland",NA,NA
+"381","JECOL",1990,"3911","James",NA,"White",NA,NA,NA,NA,"Ireland",NA,NA
+"382","JECOL",1991,"3911","James",NA,"White",NA,NA,NA,NA,"Ireland",NA,NA
+"383","JECOL",1985,"3874","D","A","Williams",NA,NA,"Edinburgh EH9 3JZ","Scotland","United Kingdom",NA,NA
+"384","JECOL",1986,"3874","D","A","Williams",NA,NA,NA,NA,"United Kingdom",NA,NA
+"385","JECOL",1987,"3874","D","A","Williams",NA,NA,NA,NA,"United Kingdom",NA,NA
+"386","JECOL",1988,"3874","D","A","Williams",NA,NA,NA,NA,"United Kingdom",NA,NA
+"387","JECOL",1989,"3874","D","A","Williams",NA,NA,NA,NA,"United Kingdom",NA,NA
+"388","JECOL",1990,"3874","D","A","Williams",NA,NA,NA,NA,"United Kingdom",NA,NA
+"389","JBIOG",1991,"2611","Mark","H","Williamson","University of York","Department Of Biology",NA,NA,"United Kingdom",NA,NA
+"390","JECOL",1994,"2611","Mark",NA,"Williamson",NA,NA,"York",NA,"United Kingdom",NA,NA
+"391","JECOL",1995,"2611","Mark",NA,"Williamson",NA,NA,"York",NA,"United Kingdom",NA,NA
+"392","JECOL",1996,"2611","Mark",NA,"Williamson",NA,NA,"York",NA,"United Kingdom",NA,NA
+"393","JECOL",1997,"2611","Mark",NA,"Williamson",NA,NA,"York",NA,"United Kingdom",NA,NA
+"394","JECOL",1998,"2611","Mark",NA,"Williamson",NA,NA,"York",NA,"United Kingdom",NA,NA
+"395","JECOL",1999,"2611","Mark",NA,"Williamson",NA,NA,"York",NA,"United Kingdom",NA,NA
+"396","JECOL",2000,"2611","Mark",NA,"Williamson",NA,NA,"York",NA,"United Kingdom",NA,NA
+"397","JECOL",2001,"2611","Mark",NA,"Williamson",NA,NA,"York",NA,"United Kingdom",NA,NA
+"398","JECOL",2002,"2611","Mark",NA,"Williamson",NA,NA,"York",NA,"United Kingdom",NA,NA
+"399","JECOL",2003,"2611","Mark",NA,"Williamson",NA,NA,"York",NA,"United Kingdom",NA,NA
+"400","JECOL",2004,"2611","Mark",NA,"Williamson",NA,NA,"York",NA,"United Kingdom",NA,NA
+"401","JECOL",2005,"230","Arthur","J","Willis","","",NA,NA,"",NA,""
+"402","JECOL",1991,"230","Arthur","J","Willis",NA,NA,NA,NA,"United Kingdom",NA,NA
+"403","JECOL",1993,"230","Arthur","J","Willis",NA,NA,NA,NA,"United Kingdom",NA,NA
+"404","JECOL",1994,"230","Arthur","J","Willis",NA,NA,NA,NA,"United Kingdom",NA,NA
+"405","JECOL",1995,"230","Arthur","J","Willis",NA,NA,NA,NA,"United Kingdom",NA,NA
+"406","JECOL",1996,"230","Arthur","J","Willis",NA,NA,NA,NA,"United Kingdom",NA,NA
+"407","JECOL",1997,"230","Arthur","J","Willis",NA,NA,NA,NA,"United Kingdom",NA,NA
+"408","JECOL",1998,"230","Arthur","J","Willis",NA,NA,NA,NA,"United Kingdom",NA,NA
+"409","JECOL",1999,"230","Arthur","J","Willis",NA,NA,NA,NA,"United Kingdom",NA,NA
+"410","JECOL",2000,"230","Arthur","J","Willis",NA,NA,NA,NA,"United Kingdom",NA,NA
+"411","JECOL",2001,"230","Arthur","J","Willis",NA,NA,NA,NA,"United Kingdom",NA,NA
+"412","JECOL",2002,"230","Arthur","J","Willis",NA,NA,NA,NA,"United Kingdom",NA,NA
+"413","JBIOG",1992,"1144","F","Ian","Woodward","","",NA,NA,"",NA,""
+"414","JECOL",1990,"1144","F","Ian","Woodward",NA,NA,NA,NA,"United Kingdom",NA,NA
+"415","JECOL",1991,"1144","F","Ian","Woodward",NA,NA,NA,NA,"United Kingdom",NA,NA
+"416","JECOL",1992,"1144","F","Ian","Woodward",NA,NA,"Sheffield",NA,"United Kingdom",NA,NA
+"417","JECOL",1993,"1144","F","Ian","Woodward",NA,NA,"Sheffield",NA,"United Kingdom",NA,NA
+"418","JECOL",1994,"1144","F","Ian","Woodward",NA,NA,"Sheffield",NA,"United Kingdom",NA,NA
+"419","JECOL",1995,"1144","F","Ian","Woodward",NA,NA,"Sheffield",NA,"United Kingdom",NA,NA
+"420","JECOL",1996,"1144","F","Ian","Woodward",NA,NA,"sheffield",NA,"United Kingdom",NA,NA
+"421","JECOL",1997,"1144","F","Ian","Woodward",NA,NA,"Sheffield",NA,"United Kingdom",NA,NA
+"422","JECOL",1998,"1144","F","Ian","Woodward",NA,NA,"Sheffield",NA,"United Kingdom",NA,NA
+"423","JECOL",1999,"1144","F","Ian","Woodward",NA,NA,"Sheffield",NA,"United Kingdom",NA,NA
+"424","JECOL",2000,"1144","F","Ian","Woodward",NA,NA,"Sheffield",NA,"United Kingdom",NA,NA
+"425","JECOL",2001,"1144","F","Ian","Woodward",NA,NA,"Sheffield",NA,"United Kingdom",NA,NA
+"426","JECOL",2002,"1144","F","Ian","Woodward",NA,NA,"Sheffield",NA,"United Kingdom",NA,NA
+"427","JECOL",2003,"1144","F","Ian","Woodward",NA,NA,"Sheffield",NA,"United Kingdom",NA,NA
+"428","BITR",2001,"3506","S","Joseph","Wright","Smithsonian Tropical Research Institute","",NA,NA,"USA",NA,NA
+"429","JECOL",1998,"3506","S","Joseph","Wright",NA,NA,"Balboa",NA,"Panama",NA,NA
+"430","JECOL",1999,"3506","S","Joseph","Wright",NA,NA,"Balboa",NA,"Panama",NA,NA
+"431","JECOL",2000,"3506","S","Joseph","Wright",NA,NA,"Balboa",NA,"Panama",NA,NA
+"432","JECOL",2001,"3506","S","Joseph","Wright",NA,NA,"Balboa",NA,"Panama",NA,NA
+"433","JECOL",2002,"3506","S","Joseph","Wright",NA,NA,"Balboa",NA,"Panama",NA,NA
+"434","JECOL",2003,"3506","S","Joseph","Wright",NA,NA,"Balboa",NA,"Panama",NA,NA
+"435","JECOL",2004,"3506","S","Joseph","Wright",NA,NA,"Balboa",NA,"Panama",NA,NA

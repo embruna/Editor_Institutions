@@ -1,0 +1,969 @@
+JOURNAL,YEAR,VOLUME,ISSUE,editor_id,FIRST_NAME,MIDDLE_NAME,LAST_NAME,NAME,TITLE.x,CATEGORY,INST,UNIT,CITY,STATE,COUNTRY,geo.code
+FUNECOL,1987,1,1,242,Brian,L,Bayne,Brian L Bayne,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1987,1,1,401,Carol,L,Boggs,Carol L Boggs,Editorial.Review.Board,SE,Colorado,,,,USA,USA
+FUNECOL,1987,1,1,2324,Martyn,M,Caldwell,Martyn M Caldwell,Editorial.Review.Board,SE,Utah,,,,USA,USA
+FUNECOL,1987,1,1,2780,Peter,,Calow,Peter Calow,Editor,EIC,,,,,UK,GBR
+FUNECOL,1987,1,1,1534,John,WH,Dacey,John WH Dacey,Editorial.Review.Board,SE,Woods Hole,,,,USA,USA
+FUNECOL,1987,1,1,1555,James,R,Ehleringer,James R Ehleringer,Editorial.Review.Board,SE,Utah,,,,USA,USA
+FUNECOL,1987,1,1,1176,Graham,D,Farquhar,Graham D Farquhar,Editorial.Review.Board,SE,Canberra,,,,Australia,AUS
+FUNECOL,1987,1,1,3544,Tom,,Fenchel,Tom Fenchel,Editorial.Review.Board,SE,,,,,Denmark,DNK
+FUNECOL,1987,1,1,3893,John,,Grace,John Grace,Editor,EIC,,,,,UK,GBR
+FUNECOL,1987,1,1,2818,Peter,J,Grubb,Peter J Grubb,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1987,1,1,2828,Peter,W,Hochachka,Peter W Hochachka,Editorial.Review.Board,SE,Vancouver,,,,Canada,CAN
+FUNECOL,1987,1,1,3378,Sunao,,Kawano,Sunao Kawano,Editorial.Review.Board,SE,,,,,Japan,JPN
+FUNECOL,1987,1,1,499,Christian,,Korner,Christian Korner,Editorial.Review.Board,SE,,,,,Austria,AUT
+FUNECOL,1987,1,1,322,Brian,K,McNab,Brian K McNab,Editorial.Review.Board,SE,Florida,,,,USA,USA
+FUNECOL,1987,1,1,1011,Edward,I,Newman,Edward I Newman,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1987,1,1,1815,john,W,Porter,john W Porter,Editorial.Review.Board,SE,Wisconsin,,,,USA,USA
+FUNECOL,1987,1,1,1825,John,,Raven,John Raven,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1987,1,1,3203,Robert,E,Ricklefs,Robert E Ricklefs,Editorial.Review.Board,SE,Pennsylvania,,,,USA,USA
+FUNECOL,1987,1,1,350,Barbara,A,Schaal,Barbara A Schaal,Editorial.Review.Board,SE,"Washington U, St Louis",,,,USA,USA
+FUNECOL,1987,1,1,3220,Richard,M,Sibly,Richard M Sibly,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1987,1,1,3815,Ward,B,Watt,Ward B Watt,Editorial.Review.Board,SE,Stanford,,,,USA,USA
+FUNECOL,1987,1,1,3254,Robin,J,Wootton,Robin J Wootton,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1988,2,1,242,Brian,L,Bayne,Brian L Bayne,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1988,2,1,401,Carol,L,Boggs,Carol L Boggs,Editorial.Review.Board,SE,Colorado,,,,USA,USA
+FUNECOL,1988,2,1,2324,Martyn,M,Caldwell,Martyn M Caldwell,Editorial.Review.Board,SE,Utah,,,,USA,USA
+FUNECOL,1988,2,1,2780,Peter,,Calow,Peter Calow,Editor,EIC,,,,,UK,GBR
+FUNECOL,1988,2,1,1534,John,WH,Dacey,John WH Dacey,Editorial.Review.Board,SE,Woods Hole,,,,USA,USA
+FUNECOL,1988,2,1,1555,James,R,Ehleringer,James R Ehleringer,Editorial.Review.Board,SE,Utah,,,,USA,USA
+FUNECOL,1988,2,1,1176,Graham,D,Farquhar,Graham D Farquhar,Editorial.Review.Board,SE,Canberra,,,,Australia,AUS
+FUNECOL,1988,2,1,3544,Tom,,Fenchel,Tom Fenchel,Editorial.Review.Board,SE,,,,,Denmark,DNK
+FUNECOL,1988,2,1,3893,John,,Grace,John Grace,Editor,EIC,,,,,UK,GBR
+FUNECOL,1988,2,1,2818,Peter,J,Grubb,Peter J Grubb,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1988,2,1,2828,Peter,W,Hochachka,Peter W Hochachka,Editorial.Review.Board,SE,Vancouver,,,,Canada,CAN
+FUNECOL,1988,2,1,3378,Sunao,,Kawano,Sunao Kawano,Editorial.Review.Board,SE,,,,,Japan,JPN
+FUNECOL,1988,2,1,499,Christian,,Korner,Christian Korner,Editorial.Review.Board,SE,,,,,Austria,AUT
+FUNECOL,1988,2,1,322,Brian,K,McNab,Brian K McNab,Editorial.Review.Board,SE,Florida,,,,USA,USA
+FUNECOL,1988,2,1,1011,Edward,I,Newman,Edward I Newman,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1988,2,1,1815,john,W,Porter,john W Porter,Editorial.Review.Board,SE,Wisconsin,,,,USA,USA
+FUNECOL,1988,2,1,1825,John,,Raven,John Raven,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1988,2,1,3203,Robert,E,Ricklefs,Robert E Ricklefs,Editorial.Review.Board,SE,Pennsylvania,,,,USA,USA
+FUNECOL,1988,2,1,350,Barbara,A,Schaal,Barbara A Schaal,Editorial.Review.Board,SE,"Washington U, St Louis",,,,USA,USA
+FUNECOL,1988,2,1,3220,Richard,M,Sibly,Richard M Sibly,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1988,2,1,3815,Ward,B,Watt,Ward B Watt,Editorial.Review.Board,SE,Stanford,,,,USA,USA
+FUNECOL,1988,2,1,3254,Robin,J,Wootton,Robin J Wootton,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1989,3,1,242,Brian,L,Bayne,Brian L Bayne,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1989,3,1,401,Carol,L,Boggs,Carol L Boggs,Editorial.Review.Board,SE,Colorado,,,,USA,USA
+FUNECOL,1989,3,1,2324,Martyn,M,Caldwell,Martyn M Caldwell,Editorial.Review.Board,SE,Utah,,,,USA,USA
+FUNECOL,1989,3,1,2780,Peter,,Calow,Peter Calow,Editor,EIC,,,,,UK,GBR
+FUNECOL,1989,3,1,1534,John,WH,Dacey,John WH Dacey,Editorial.Review.Board,SE,Woods Hole,,,,USA,USA
+FUNECOL,1989,3,1,1555,James,R,Ehleringer,James R Ehleringer,Editorial.Review.Board,SE,Utah,,,,USA,USA
+FUNECOL,1989,3,1,1176,Graham,D,Farquhar,Graham D Farquhar,Editorial.Review.Board,SE,Canberra,,,,Australia,AUS
+FUNECOL,1989,3,1,3544,Tom,,Fenchel,Tom Fenchel,Editorial.Review.Board,SE,,,,,Denmark,DNK
+FUNECOL,1989,3,1,3893,John,,Grace,John Grace,Editor,EIC,,,,,UK,GBR
+FUNECOL,1989,3,1,2818,Peter,J,Grubb,Peter J Grubb,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1989,3,1,2828,Peter,W,Hochachka,Peter W Hochachka,Editorial.Review.Board,SE,Vancouver,,,,Canada,CAN
+FUNECOL,1989,3,1,3378,Sunao,,Kawano,Sunao Kawano,Editorial.Review.Board,SE,,,,,Japan,JPN
+FUNECOL,1989,3,1,499,Christian,,Korner,Christian Korner,Editorial.Review.Board,SE,,,,,Austria,AUT
+FUNECOL,1989,3,1,322,Brian,K,McNab,Brian K McNab,Editorial.Review.Board,SE,Florida,,,,USA,USA
+FUNECOL,1989,3,1,1011,Edward,I,Newman,Edward I Newman,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1989,3,1,1815,john,W,Porter,john W Porter,Editorial.Review.Board,SE,Wisconsin,,,,USA,USA
+FUNECOL,1989,3,1,1825,John,,Raven,John Raven,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1989,3,1,3203,Robert,E,Ricklefs,Robert E Ricklefs,Editorial.Review.Board,SE,Pennsylvania,,,,USA,USA
+FUNECOL,1989,3,1,350,Barbara,A,Schaal,Barbara A Schaal,Editorial.Review.Board,SE,"Washington U, St Louis",,,,USA,USA
+FUNECOL,1989,3,1,3220,Richard,M,Sibly,Richard M Sibly,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1989,3,1,3815,Ward,B,Watt,Ward B Watt,Editorial.Review.Board,SE,Stanford,,,,USA,USA
+FUNECOL,1989,3,1,3254,Robin,J,Wootton,Robin J Wootton,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1990,4,1,242,Brian,L,Bayne,Brian L Bayne,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1990,4,1,401,Carol,L,Boggs,Carol L Boggs,Editorial.Review.Board,SE,Colorado,,,,USA,USA
+FUNECOL,1990,4,1,2324,Martyn,M,Caldwell,Martyn M Caldwell,Editorial.Review.Board,SE,Utah,,,,USA,USA
+FUNECOL,1990,4,1,2780,Peter,,Calow,Peter Calow,Editor,EIC,,,,,UK,GBR
+FUNECOL,1990,4,1,1534,John,WH,Dacey,John WH Dacey,Editorial.Review.Board,SE,Woods Hole,,,,USA,USA
+FUNECOL,1990,4,1,1555,James,R,Ehleringer,James R Ehleringer,Editorial.Review.Board,SE,Utah,,,,USA,USA
+FUNECOL,1990,4,1,1176,Graham,D,Farquhar,Graham D Farquhar,Editorial.Review.Board,SE,Canberra,,,,Australia,AUS
+FUNECOL,1990,4,1,3544,Tom,,Fenchel,Tom Fenchel,Editorial.Review.Board,SE,,,,,Denmark,DNK
+FUNECOL,1990,4,1,3893,John,,Grace,John Grace,Editor,EIC,,,,,UK,GBR
+FUNECOL,1990,4,1,2818,Peter,J,Grubb,Peter J Grubb,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1990,4,1,2828,Peter,W,Hochachka,Peter W Hochachka,Editorial.Review.Board,SE,Vancouver,,,,Canada,CAN
+FUNECOL,1990,4,1,3378,Sunao,,Kawano,Sunao Kawano,Editorial.Review.Board,SE,,,,,Japan,JPN
+FUNECOL,1990,4,1,499,Christian,,Korner,Christian Korner,Editorial.Review.Board,SE,,,,,Austria,AUT
+FUNECOL,1990,4,1,322,Brian,K,McNab,Brian K McNab,Editorial.Review.Board,SE,Florida,,,,USA,USA
+FUNECOL,1990,4,1,1011,Edward,I,Newman,Edward I Newman,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1990,4,1,1815,john,W,Porter,john W Porter,Editorial.Review.Board,SE,Wisconsin,,,,USA,USA
+FUNECOL,1990,4,1,1825,John,,Raven,John Raven,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1990,4,1,3203,Robert,E,Ricklefs,Robert E Ricklefs,Editorial.Review.Board,SE,Pennsylvania,,,,USA,USA
+FUNECOL,1990,4,1,350,Barbara,A,Schaal,Barbara A Schaal,Editorial.Review.Board,SE,"Washington U, St Louis",,,,USA,USA
+FUNECOL,1990,4,1,3220,Richard,M,Sibly,Richard M Sibly,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1990,4,1,3815,Ward,B,Watt,Ward B Watt,Editorial.Review.Board,SE,Stanford,,,,USA,USA
+FUNECOL,1990,4,1,3254,Robin,J,Wootton,Robin J Wootton,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1991,5,1,242,Brian,L,Bayne,Brian L Bayne,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1991,5,1,401,Carol,L,Boggs,Carol L Boggs,Editorial.Review.Board,SE,Colorado,,,,USA,USA
+FUNECOL,1991,5,1,2324,Martyn,M,Caldwell,Martyn M Caldwell,Editorial.Review.Board,SE,Utah,,,,USA,USA
+FUNECOL,1991,5,1,2780,Peter,,Calow,Peter Calow,Editor,EIC,,,,,UK,GBR
+FUNECOL,1991,5,1,1534,John,WH,Dacey,John WH Dacey,Editorial.Review.Board,SE,Woods Hole,,,,USA,USA
+FUNECOL,1991,5,1,1555,James,R,Ehleringer,James R Ehleringer,Editorial.Review.Board,SE,Utah,,,,USA,USA
+FUNECOL,1991,5,1,1176,Graham,D,Farquhar,Graham D Farquhar,Editorial.Review.Board,SE,Canberra,,,,Australia,AUS
+FUNECOL,1991,5,1,3544,Tom,,Fenchel,Tom Fenchel,Editorial.Review.Board,SE,,,,,Denmark,DNK
+FUNECOL,1991,5,1,3893,John,,Grace,John Grace,Editor,EIC,,,,,UK,GBR
+FUNECOL,1991,5,1,2818,Peter,J,Grubb,Peter J Grubb,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1991,5,1,2828,Peter,W,Hochachka,Peter W Hochachka,Editorial.Review.Board,SE,Vancouver,,,,Canada,CAN
+FUNECOL,1991,5,1,3378,Sunao,,Kawano,Sunao Kawano,Editorial.Review.Board,SE,,,,,Japan,JPN
+FUNECOL,1991,5,1,499,Christian,,Korner,Christian Korner,Editorial.Review.Board,SE,,,,,Austria,AUT
+FUNECOL,1991,5,1,322,Brian,K,McNab,Brian K McNab,Editorial.Review.Board,SE,Florida,,,,USA,USA
+FUNECOL,1991,5,1,1011,Edward,I,Newman,Edward I Newman,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1991,5,1,1815,john,W,Porter,john W Porter,Editorial.Review.Board,SE,Wisconsin,,,,USA,USA
+FUNECOL,1991,5,1,1825,John,,Raven,John Raven,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1991,5,1,3203,Robert,E,Ricklefs,Robert E Ricklefs,Editorial.Review.Board,SE,Pennsylvania,,,,USA,USA
+FUNECOL,1991,5,1,350,Barbara,A,Schaal,Barbara A Schaal,Editorial.Review.Board,SE,"Washington U, St Louis",,,,USA,USA
+FUNECOL,1991,5,1,3220,Richard,M,Sibly,Richard M Sibly,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1991,5,1,3815,Ward,B,Watt,Ward B Watt,Editorial.Review.Board,SE,Stanford,,,,USA,USA
+FUNECOL,1991,5,1,3254,Robin,J,Wootton,Robin J Wootton,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1992,6,1,242,Brian,L,Bayne,Brian L Bayne,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1992,6,1,401,Carol,L,Boggs,Carol L Boggs,Editorial.Review.Board,SE,Colorado,,,,USA,USA
+FUNECOL,1992,6,1,2324,Martyn,M,Caldwell,Martyn M Caldwell,Editorial.Review.Board,SE,Utah,,,,USA,USA
+FUNECOL,1992,6,1,2780,Peter,,Calow,Peter Calow,Editor,EIC,,,,,UK,GBR
+FUNECOL,1992,6,1,1534,John,WH,Dacey,John WH Dacey,Editorial.Review.Board,SE,Woods Hole,,,,USA,USA
+FUNECOL,1992,6,1,1555,James,R,Ehleringer,James R Ehleringer,Editorial.Review.Board,SE,Utah,,,,USA,USA
+FUNECOL,1992,6,1,1176,Graham,D,Farquhar,Graham D Farquhar,Editorial.Review.Board,SE,Canberra,,,,Australia,AUS
+FUNECOL,1992,6,1,3544,Tom,,Fenchel,Tom Fenchel,Editorial.Review.Board,SE,,,,,Denmark,DNK
+FUNECOL,1992,6,1,3893,John,,Grace,John Grace,Editor,EIC,,,,,UK,GBR
+FUNECOL,1992,6,1,2818,Peter,J,Grubb,Peter J Grubb,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1992,6,1,2828,Peter,W,Hochachka,Peter W Hochachka,Editorial.Review.Board,SE,Vancouver,,,,Canada,CAN
+FUNECOL,1992,6,1,3378,Sunao,,Kawano,Sunao Kawano,Editorial.Review.Board,SE,,,,,Japan,JPN
+FUNECOL,1992,6,1,499,Christian,,Korner,Christian Korner,Editorial.Review.Board,SE,,,,,Austria,AUT
+FUNECOL,1992,6,1,322,Brian,K,McNab,Brian K McNab,Editorial.Review.Board,SE,Florida,,,,USA,USA
+FUNECOL,1992,6,1,1011,Edward,I,Newman,Edward I Newman,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1992,6,1,1815,john,W,Porter,john W Porter,Editorial.Review.Board,SE,Wisconsin,,,,USA,USA
+FUNECOL,1992,6,1,1825,John,,Raven,John Raven,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1992,6,1,3203,Robert,E,Ricklefs,Robert E Ricklefs,Editorial.Review.Board,SE,Pennsylvania,,,,USA,USA
+FUNECOL,1992,6,1,350,Barbara,A,Schaal,Barbara A Schaal,Editorial.Review.Board,SE,"Washington U, St Louis",,,,USA,USA
+FUNECOL,1992,6,1,3220,Richard,M,Sibly,Richard M Sibly,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1992,6,1,3815,Ward,B,Watt,Ward B Watt,Editorial.Review.Board,SE,Stanford,,,,USA,USA
+FUNECOL,1992,6,1,3254,Robin,J,Wootton,Robin J Wootton,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1993,7,1,242,Brian,L,Bayne,Brian L Bayne,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1993,7,1,401,Carol,L,Boggs,Carol L Boggs,Editorial.Review.Board,SE,Colorado,,,,USA,USA
+FUNECOL,1993,7,1,2324,Martyn,M,Caldwell,Martyn M Caldwell,Editorial.Review.Board,SE,Utah,,,,USA,USA
+FUNECOL,1993,7,1,2780,Peter,,Calow,Peter Calow,Editor,EIC,,,,,UK,GBR
+FUNECOL,1993,7,1,1534,John,WH,Dacey,John WH Dacey,Editorial.Review.Board,SE,Woods Hole,,,,USA,USA
+FUNECOL,1993,7,1,1555,James,R,Ehleringer,James R Ehleringer,Editorial.Review.Board,SE,Utah,,,,USA,USA
+FUNECOL,1993,7,1,1176,Graham,D,Farquhar,Graham D Farquhar,Editorial.Review.Board,SE,Canberra,,,,Australia,AUS
+FUNECOL,1993,7,1,3544,Tom,,Fenchel,Tom Fenchel,Editorial.Review.Board,SE,,,,,Denmark,DNK
+FUNECOL,1993,7,1,3893,John,,Grace,John Grace,Editor,EIC,,,,,UK,GBR
+FUNECOL,1993,7,1,2818,Peter,J,Grubb,Peter J Grubb,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1993,7,1,2828,Peter,W,Hochachka,Peter W Hochachka,Editorial.Review.Board,SE,Vancouver,,,,Canada,CAN
+FUNECOL,1993,7,1,3378,Sunao,,Kawano,Sunao Kawano,Editorial.Review.Board,SE,,,,,Japan,JPN
+FUNECOL,1993,7,1,499,Christian,,Korner,Christian Korner,Editorial.Review.Board,SE,,,,,Austria,AUT
+FUNECOL,1993,7,1,322,Brian,K,McNab,Brian K McNab,Editorial.Review.Board,SE,Florida,,,,USA,USA
+FUNECOL,1993,7,1,1011,Edward,I,Newman,Edward I Newman,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1993,7,1,1815,john,W,Porter,john W Porter,Editorial.Review.Board,SE,Wisconsin,,,,USA,USA
+FUNECOL,1993,7,1,1825,John,,Raven,John Raven,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1993,7,1,3203,Robert,E,Ricklefs,Robert E Ricklefs,Editorial.Review.Board,SE,Pennsylvania,,,,USA,USA
+FUNECOL,1993,7,1,350,Barbara,A,Schaal,Barbara A Schaal,Editorial.Review.Board,SE,"Washington U, St Louis",,,,USA,USA
+FUNECOL,1993,7,1,3220,Richard,M,Sibly,Richard M Sibly,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1993,7,1,3815,Ward,B,Watt,Ward B Watt,Editorial.Review.Board,SE,Stanford,,,,USA,USA
+FUNECOL,1993,7,1,3254,Robin,J,Wootton,Robin J Wootton,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1994,8,1,242,Brian,L,Bayne,Brian L Bayne,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1994,8,1,401,Carol,L,Boggs,Carol L Boggs,Editorial.Review.Board,SE,Colorado,,,,USA,USA
+FUNECOL,1994,8,1,2324,Martyn,M,Caldwell,Martyn M Caldwell,Editorial.Review.Board,SE,Utah,,,,USA,USA
+FUNECOL,1994,8,1,2780,Peter,,Calow,Peter Calow,Editor,EIC,,,,,UK,GBR
+FUNECOL,1994,8,1,1534,John,WH,Dacey,John WH Dacey,Editorial.Review.Board,SE,Woods Hole,,,,USA,USA
+FUNECOL,1994,8,1,1555,James,R,Ehleringer,James R Ehleringer,Editorial.Review.Board,SE,Utah,,,,USA,USA
+FUNECOL,1994,8,1,1176,Graham,D,Farquhar,Graham D Farquhar,Editorial.Review.Board,SE,Canberra,,,,Australia,AUS
+FUNECOL,1994,8,1,3544,Tom,,Fenchel,Tom Fenchel,Editorial.Review.Board,SE,,,,,Denmark,DNK
+FUNECOL,1994,8,1,3893,John,,Grace,John Grace,Editor,EIC,,,,,UK,GBR
+FUNECOL,1994,8,1,2818,Peter,J,Grubb,Peter J Grubb,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1994,8,1,2828,Peter,W,Hochachka,Peter W Hochachka,Editorial.Review.Board,SE,Vancouver,,,,Canada,CAN
+FUNECOL,1994,8,1,3378,Sunao,,Kawano,Sunao Kawano,Editorial.Review.Board,SE,,,,,Japan,JPN
+FUNECOL,1994,8,1,499,Christian,,Korner,Christian Korner,Editorial.Review.Board,SE,,,,,Austria,AUT
+FUNECOL,1994,8,1,322,Brian,K,McNab,Brian K McNab,Editorial.Review.Board,SE,Florida,,,,USA,USA
+FUNECOL,1994,8,1,1011,Edward,I,Newman,Edward I Newman,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1994,8,1,1815,john,W,Porter,john W Porter,Editorial.Review.Board,SE,Wisconsin,,,,USA,USA
+FUNECOL,1994,8,1,1825,John,,Raven,John Raven,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1994,8,1,3203,Robert,E,Ricklefs,Robert E Ricklefs,Editorial.Review.Board,SE,Pennsylvania,,,,USA,USA
+FUNECOL,1994,8,1,350,Barbara,A,Schaal,Barbara A Schaal,Editorial.Review.Board,SE,"Washington U, St Louis",,,,USA,USA
+FUNECOL,1994,8,1,3220,Richard,M,Sibly,Richard M Sibly,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1994,8,1,3815,Ward,B,Watt,Ward B Watt,Editorial.Review.Board,SE,Stanford,,,,USA,USA
+FUNECOL,1994,8,1,3254,Robin,J,Wootton,Robin J Wootton,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1995,9,1,242,Brian,L,Bayne,Brian L Bayne,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1995,9,1,401,Carol,L,Boggs,Carol L Boggs,Editorial.Review.Board,SE,Colorado,,,,USA,USA
+FUNECOL,1995,9,1,2324,Martyn,M,Caldwell,Martyn M Caldwell,Editorial.Review.Board,SE,Utah,,,,USA,USA
+FUNECOL,1995,9,1,2780,Peter,,Calow,Peter Calow,Editor,EIC,,,,,UK,GBR
+FUNECOL,1995,9,1,1534,John,WH,Dacey,John WH Dacey,Editorial.Review.Board,SE,Woods Hole,,,,USA,USA
+FUNECOL,1995,9,1,1555,James,R,Ehleringer,James R Ehleringer,Editorial.Review.Board,SE,Utah,,,,USA,USA
+FUNECOL,1995,9,1,1176,Graham,D,Farquhar,Graham D Farquhar,Editorial.Review.Board,SE,Canberra,,,,Australia,AUS
+FUNECOL,1995,9,1,3544,Tom,,Fenchel,Tom Fenchel,Editorial.Review.Board,SE,,,,,Denmark,DNK
+FUNECOL,1995,9,1,3893,John,,Grace,John Grace,Editor,EIC,,,,,UK,GBR
+FUNECOL,1995,9,1,2818,Peter,J,Grubb,Peter J Grubb,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1995,9,1,2828,Peter,W,Hochachka,Peter W Hochachka,Editorial.Review.Board,SE,Vancouver,,,,Canada,CAN
+FUNECOL,1995,9,1,3378,Sunao,,Kawano,Sunao Kawano,Editorial.Review.Board,SE,,,,,Japan,JPN
+FUNECOL,1995,9,1,499,Christian,,Korner,Christian Korner,Editorial.Review.Board,SE,,,,,Austria,AUT
+FUNECOL,1995,9,1,322,Brian,K,McNab,Brian K McNab,Editorial.Review.Board,SE,Florida,,,,USA,USA
+FUNECOL,1995,9,1,1011,Edward,I,Newman,Edward I Newman,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1995,9,1,1815,john,W,Porter,john W Porter,Editorial.Review.Board,SE,Wisconsin,,,,USA,USA
+FUNECOL,1995,9,1,1825,John,,Raven,John Raven,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1995,9,1,3203,Robert,E,Ricklefs,Robert E Ricklefs,Editorial.Review.Board,SE,Pennsylvania,,,,USA,USA
+FUNECOL,1995,9,1,350,Barbara,A,Schaal,Barbara A Schaal,Editorial.Review.Board,SE,"Washington U, St Louis",,,,USA,USA
+FUNECOL,1995,9,1,3220,Richard,M,Sibly,Richard M Sibly,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1995,9,1,3815,Ward,B,Watt,Ward B Watt,Editorial.Review.Board,SE,Stanford,,,,USA,USA
+FUNECOL,1995,9,1,3254,Robin,J,Wootton,Robin J Wootton,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1996,10,1,242,Brian,L,Bayne,Brian L Bayne,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1996,10,1,401,Carol,L,Boggs,Carol L Boggs,Editorial.Review.Board,SE,Colorado,,,,USA,USA
+FUNECOL,1996,10,1,2324,Martyn,M,Caldwell,Martyn M Caldwell,Editorial.Review.Board,SE,Utah,,,,USA,USA
+FUNECOL,1996,10,1,2780,Peter,,Calow,Peter Calow,Editor,EIC,,,,,UK,GBR
+FUNECOL,1996,10,1,1534,John,WH,Dacey,John WH Dacey,Editorial.Review.Board,SE,Woods Hole,,,,USA,USA
+FUNECOL,1996,10,1,1555,James,R,Ehleringer,James R Ehleringer,Editorial.Review.Board,SE,Utah,,,,USA,USA
+FUNECOL,1996,10,1,1176,Graham,D,Farquhar,Graham D Farquhar,Editorial.Review.Board,SE,Canberra,,,,Australia,AUS
+FUNECOL,1996,10,1,3544,Tom,,Fenchel,Tom Fenchel,Editorial.Review.Board,SE,,,,,Denmark,DNK
+FUNECOL,1996,10,1,3893,John,,Grace,John Grace,Editor,EIC,,,,,UK,GBR
+FUNECOL,1996,10,1,2818,Peter,J,Grubb,Peter J Grubb,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1996,10,1,2828,Peter,W,Hochachka,Peter W Hochachka,Editorial.Review.Board,SE,Vancouver,,,,Canada,CAN
+FUNECOL,1996,10,1,3378,Sunao,,Kawano,Sunao Kawano,Editorial.Review.Board,SE,,,,,Japan,JPN
+FUNECOL,1996,10,1,499,Christian,,Korner,Christian Korner,Editorial.Review.Board,SE,,,,,Austria,AUT
+FUNECOL,1996,10,1,322,Brian,K,McNab,Brian K McNab,Editorial.Review.Board,SE,Florida,,,,USA,USA
+FUNECOL,1996,10,1,1011,Edward,I,Newman,Edward I Newman,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1996,10,1,1815,john,W,Porter,john W Porter,Editorial.Review.Board,SE,Wisconsin,,,,USA,USA
+FUNECOL,1996,10,1,1825,John,,Raven,John Raven,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1996,10,1,3203,Robert,E,Ricklefs,Robert E Ricklefs,Editorial.Review.Board,SE,Pennsylvania,,,,USA,USA
+FUNECOL,1996,10,1,350,Barbara,A,Schaal,Barbara A Schaal,Editorial.Review.Board,SE,"Washington U, St Louis",,,,USA,USA
+FUNECOL,1996,10,1,3220,Richard,M,Sibly,Richard M Sibly,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1996,10,1,3815,Ward,B,Watt,Ward B Watt,Editorial.Review.Board,SE,Stanford,,,,USA,USA
+FUNECOL,1996,10,1,3254,Robin,J,Wootton,Robin J Wootton,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1997,11,1,242,Brian,L,Bayne,Brian L Bayne,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1997,11,1,401,Carol,L,Boggs,Carol L Boggs,Editorial.Review.Board,SE,Colorado,,,,USA,USA
+FUNECOL,1997,11,1,2324,Martyn,M,Caldwell,Martyn M Caldwell,Editorial.Review.Board,SE,Utah,,,,USA,USA
+FUNECOL,1997,11,1,2780,Peter,,Calow,Peter Calow,Editor,EIC,,,,,UK,GBR
+FUNECOL,1997,11,1,1534,John,WH,Dacey,John WH Dacey,Editorial.Review.Board,SE,Woods Hole,,,,USA,USA
+FUNECOL,1997,11,1,1555,James,R,Ehleringer,James R Ehleringer,Editorial.Review.Board,SE,Utah,,,,USA,USA
+FUNECOL,1997,11,1,1176,Graham,D,Farquhar,Graham D Farquhar,Editorial.Review.Board,SE,Canberra,,,,Australia,AUS
+FUNECOL,1997,11,1,3544,Tom,,Fenchel,Tom Fenchel,Editorial.Review.Board,SE,,,,,Denmark,DNK
+FUNECOL,1997,11,1,3893,John,,Grace,John Grace,Editor,EIC,,,,,UK,GBR
+FUNECOL,1997,11,1,2818,Peter,J,Grubb,Peter J Grubb,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1997,11,1,2828,Peter,W,Hochachka,Peter W Hochachka,Editorial.Review.Board,SE,Vancouver,,,,Canada,CAN
+FUNECOL,1997,11,1,3378,Sunao,,Kawano,Sunao Kawano,Editorial.Review.Board,SE,,,,,Japan,JPN
+FUNECOL,1997,11,1,499,Christian,,Korner,Christian Korner,Editorial.Review.Board,SE,,,,,Austria,AUT
+FUNECOL,1997,11,1,322,Brian,K,McNab,Brian K McNab,Editorial.Review.Board,SE,Florida,,,,USA,USA
+FUNECOL,1997,11,1,1011,Edward,I,Newman,Edward I Newman,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1997,11,1,1815,john,W,Porter,john W Porter,Editorial.Review.Board,SE,Wisconsin,,,,USA,USA
+FUNECOL,1997,11,1,1825,John,,Raven,John Raven,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1997,11,1,3203,Robert,E,Ricklefs,Robert E Ricklefs,Editorial.Review.Board,SE,Pennsylvania,,,,USA,USA
+FUNECOL,1997,11,1,350,Barbara,A,Schaal,Barbara A Schaal,Editorial.Review.Board,SE,"Washington U, St Louis",,,,USA,USA
+FUNECOL,1997,11,1,3220,Richard,M,Sibly,Richard M Sibly,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1997,11,1,3815,Ward,B,Watt,Ward B Watt,Editorial.Review.Board,SE,Stanford,,,,USA,USA
+FUNECOL,1997,11,1,3254,Robin,J,Wootton,Robin J Wootton,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1998,12,1,242,Brian,L,Bayne,Brian L Bayne,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1998,12,1,401,Carol,L,Boggs,Carol L Boggs,Editorial.Review.Board,SE,Colorado,,,,USA,USA
+FUNECOL,1998,12,1,2324,Martyn,M,Caldwell,Martyn M Caldwell,Editorial.Review.Board,SE,Utah,,,,USA,USA
+FUNECOL,1998,12,1,2780,Peter,,Calow,Peter Calow,Editor,EIC,,,,,UK,GBR
+FUNECOL,1998,12,1,1534,John,WH,Dacey,John WH Dacey,Editorial.Review.Board,SE,Woods Hole,,,,USA,USA
+FUNECOL,1998,12,1,1555,James,R,Ehleringer,James R Ehleringer,Editorial.Review.Board,SE,Utah,,,,USA,USA
+FUNECOL,1998,12,1,1176,Graham,D,Farquhar,Graham D Farquhar,Editorial.Review.Board,SE,Canberra,,,,Australia,AUS
+FUNECOL,1998,12,1,3544,Tom,,Fenchel,Tom Fenchel,Editorial.Review.Board,SE,,,,,Denmark,DNK
+FUNECOL,1998,12,1,3893,John,,Grace,John Grace,Editor,EIC,,,,,UK,GBR
+FUNECOL,1998,12,1,2818,Peter,J,Grubb,Peter J Grubb,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1998,12,1,2828,Peter,W,Hochachka,Peter W Hochachka,Editorial.Review.Board,SE,Vancouver,,,,Canada,CAN
+FUNECOL,1998,12,1,3378,Sunao,,Kawano,Sunao Kawano,Editorial.Review.Board,SE,,,,,Japan,JPN
+FUNECOL,1998,12,1,499,Christian,,Korner,Christian Korner,Editorial.Review.Board,SE,,,,,Austria,AUT
+FUNECOL,1998,12,1,322,Brian,K,McNab,Brian K McNab,Editorial.Review.Board,SE,Florida,,,,USA,USA
+FUNECOL,1998,12,1,1011,Edward,I,Newman,Edward I Newman,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1998,12,1,1815,john,W,Porter,john W Porter,Editorial.Review.Board,SE,Wisconsin,,,,USA,USA
+FUNECOL,1998,12,1,1825,John,,Raven,John Raven,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1998,12,1,3203,Robert,E,Ricklefs,Robert E Ricklefs,Editorial.Review.Board,SE,Pennsylvania,,,,USA,USA
+FUNECOL,1998,12,1,350,Barbara,A,Schaal,Barbara A Schaal,Editorial.Review.Board,SE,"Washington U, St Louis",,,,USA,USA
+FUNECOL,1998,12,1,3220,Richard,M,Sibly,Richard M Sibly,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1998,12,1,3815,Ward,B,Watt,Ward B Watt,Editorial.Review.Board,SE,Stanford,,,,USA,USA
+FUNECOL,1998,12,1,3254,Robin,J,Wootton,Robin J Wootton,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1999,13,1,242,Brian,L,Bayne,Brian L Bayne,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1999,13,1,401,Carol,L,Boggs,Carol L Boggs,Editorial.Review.Board,SE,Colorado,,,,USA,USA
+FUNECOL,1999,13,1,2324,Martyn,M,Caldwell,Martyn M Caldwell,Editorial.Review.Board,SE,Utah,,,,USA,USA
+FUNECOL,1999,13,1,2780,Peter,,Calow,Peter Calow,Editor,EIC,,,,,UK,GBR
+FUNECOL,1999,13,1,1534,John,WH,Dacey,John WH Dacey,Editorial.Review.Board,SE,Woods Hole,,,,USA,USA
+FUNECOL,1999,13,1,1555,James,R,Ehleringer,James R Ehleringer,Editorial.Review.Board,SE,Utah,,,,USA,USA
+FUNECOL,1999,13,1,1176,Graham,D,Farquhar,Graham D Farquhar,Editorial.Review.Board,SE,Canberra,,,,Australia,AUS
+FUNECOL,1999,13,1,3544,Tom,,Fenchel,Tom Fenchel,Editorial.Review.Board,SE,,,,,Denmark,DNK
+FUNECOL,1999,13,1,2007,Kevin,,Gaston,Kevin Gaston,Editor,EIC,,,,,UK,GBR
+FUNECOL,1999,13,1,3893,John,,Grace,John Grace,Editor,EIC,,,,,UK,GBR
+FUNECOL,1999,13,1,2818,Peter,J,Grubb,Peter J Grubb,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1999,13,1,2828,Peter,W,Hochachka,Peter W Hochachka,Editorial.Review.Board,SE,Vancouver,,,,Canada,CAN
+FUNECOL,1999,13,1,3378,Sunao,,Kawano,Sunao Kawano,Editorial.Review.Board,SE,,,,,Japan,JPN
+FUNECOL,1999,13,1,499,Christian,,Korner,Christian Korner,Editorial.Review.Board,SE,,,,,Austria,AUT
+FUNECOL,1999,13,1,322,Brian,K,McNab,Brian K McNab,Editorial.Review.Board,SE,Florida,,,,USA,USA
+FUNECOL,1999,13,1,1011,Edward,I,Newman,Edward I Newman,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1999,13,1,1815,john,W,Porter,john W Porter,Editorial.Review.Board,SE,Wisconsin,,,,USA,USA
+FUNECOL,1999,13,1,1825,John,,Raven,John Raven,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1999,13,1,3203,Robert,E,Ricklefs,Robert E Ricklefs,Editorial.Review.Board,SE,Pennsylvania,,,,USA,USA
+FUNECOL,1999,13,1,350,Barbara,A,Schaal,Barbara A Schaal,Editorial.Review.Board,SE,"Washington U, St Louis",,,,USA,USA
+FUNECOL,1999,13,1,3220,Richard,M,Sibly,Richard M Sibly,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,1999,13,1,3815,Ward,B,Watt,Ward B Watt,Editorial.Review.Board,SE,Stanford,,,,USA,USA
+FUNECOL,1999,13,1,3254,Robin,J,Wootton,Robin J Wootton,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,2000,14,1,2324,Martyn,M,Caldwell,Martyn M Caldwell,Editorial.Review.Board,SE,Utah,,,,USA,USA
+FUNECOL,2000,14,1,3299,Steven,L,Chown,Steven L Chown,Editorial.Review.Board,SE,Pretoria,,,,South Africa,ZAF
+FUNECOL,2000,14,1,41,Andrew,,Clarke,Andrew Clarke,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,2000,14,1,1534,John,WH,Dacey,John WH Dacey,Editorial.Review.Board,SE,Woods Hole,,,,USA,USA
+FUNECOL,2000,14,1,1555,James,R,Ehleringer,James R Ehleringer,Editorial.Review.Board,SE,Utah,,,,USA,USA
+FUNECOL,2000,14,1,1176,Graham,D,Farquhar,Graham D Farquhar,Editorial.Review.Board,SE,Canberra,,,,Australia,AUS
+FUNECOL,2000,14,1,2007,Kevin,,Gaston,Kevin Gaston,Editor,EIC,,,,,UK,GBR
+FUNECOL,2000,14,1,2818,Peter,J,Grubb,Peter J Grubb,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,2000,14,1,3101,Raymond,B,Huey,Raymond B Huey,Editorial.Review.Board,SE,"Seattle, WA",,,,USA,USA
+FUNECOL,2000,14,1,3573,T,Hefin,Jones,T Hefin Jones,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,2000,14,1,3378,Sunao,,Kawano,Sunao Kawano,Editorial.Review.Board,SE,,,,,Japan,JPN
+FUNECOL,2000,14,1,499,Christian,,Korner,Christian Korner,Editorial.Review.Board,SE,,,,,Austria,AUT
+FUNECOL,2000,14,1,1680,Jan,,Kozlowski,Jan Kozlowski,Editorial.Review.Board,SE,,,,,Poland,POL
+FUNECOL,2000,14,1,1011,Edward,I,Newman,Edward I Newman,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,2000,14,1,1825,John,,Raven,John Raven,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,2000,14,1,844,David,,Robinson,David Robinson,Editor,EIC,,,,,UK,GBR
+FUNECOL,2000,14,1,350,Barbara,A,Schaal,Barbara A Schaal,Editorial.Review.Board,SE,"Washington U, St Louis",,,,USA,USA
+FUNECOL,2000,14,1,1881,John,I,Spicer,John I Spicer,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,2001,15,1,2712,Owen,K,Atkin,Owen K Atkin,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,2001,15,1,2290,Martin,Green,Barker,Martin Green Barker,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,2001,15,1,1462,Joy,,Bergelson,Joy Bergelson,Editorial.Review.Board,SE,,,,,USA,USA
+FUNECOL,2001,15,1,3299,Steven,L,Chown,Steven L Chown,Editorial.Review.Board,SE,Pretoria,,,,South Africa,ZAF
+FUNECOL,2001,15,1,41,Andrew,,Clarke,Andrew Clarke,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,2001,15,1,2007,Kevin,,Gaston,Kevin Gaston,Editor,EIC,,,,,UK,GBR
+FUNECOL,2001,15,1,3101,Raymond,B,Huey,Raymond B Huey,Editorial.Review.Board,SE,"Seattle, WA",,,,USA,USA
+FUNECOL,2001,15,1,3105,Robert,B,Jackson,Robert B Jackson,Editorial.Review.Board,SE,Duke,,,,USA,USA
+FUNECOL,2001,15,1,3859,Clive,Green,Jones,Clive Green Jones,Editorial.Review.Board,SE,,,,,USA,USA
+FUNECOL,2001,15,1,3573,T,Hefin,Jones,T Hefin Jones,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,2001,15,1,3378,Sunao,,Kawano,Sunao Kawano,Editorial.Review.Board,SE,,,,,Japan,JPN
+FUNECOL,2001,15,1,1680,Jan,,Kozlowski,Jan Kozlowski,Editorial.Review.Board,SE,,,,,Poland,POL
+FUNECOL,2001,15,1,1719,Jon,,Lloyd,Jon Lloyd,Editorial.Review.Board,SE,,,,,Germany,DEU
+FUNECOL,2001,15,1,2457,Mark,R,Macnair,Mark R Macnair,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,2001,15,1,1825,John,,Raven,John Raven,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,2001,15,1,844,David,,Robinson,David Robinson,Editor,EIC,,,,,UK,GBR
+FUNECOL,2001,15,1,1881,John,I,Spicer,John I Spicer,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,2002,16,1,2712,Owen,K,Atkin,Owen K Atkin,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,2002,16,1,2290,Martin,Green,Barker,Martin Green Barker,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,2002,16,1,1462,Joy,,Bergelson,Joy Bergelson,Editorial.Review.Board,SE,,,,,USA,USA
+FUNECOL,2002,16,1,625,David,,Berrigan,David Berrigan,Editorial.Review.Board,SE,,,,,USA,USA
+FUNECOL,2002,16,1,3299,Steven,L,Chown,Steven L Chown,Editor,EIC,Stellenbosch,,,,South Africa,ZAF
+FUNECOL,2002,16,1,41,Andrew,,Clarke,Andrew Clarke,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,2002,16,1,2007,Kevin,,Gaston,Kevin Gaston,Editor,EIC,,,,,UK,GBR
+FUNECOL,2002,16,1,3101,Raymond,B,Huey,Raymond B Huey,Editorial.Review.Board,SE,"Seattle, WA",,,,USA,USA
+FUNECOL,2002,16,1,3105,Robert,B,Jackson,Robert B Jackson,Editorial.Review.Board,SE,Duke,,,,USA,USA
+FUNECOL,2002,16,1,3859,Clive,Green,Jones,Clive Green Jones,Editorial.Review.Board,SE,,,,,USA,USA
+FUNECOL,2002,16,1,3573,T,Hefin,Jones,T Hefin Jones,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,2002,16,1,3756,William,H,Karasov,William H Karasov,Editorial.Review.Board,SE,Wisconsin,,,,USA,USA
+FUNECOL,2002,16,1,1680,Jan,,Kozlowski,Jan Kozlowski,Editorial.Review.Board,SE,,,,,Poland,POL
+FUNECOL,2002,16,1,1719,Jon,,Lloyd,Jon Lloyd,Editorial.Review.Board,SE,,,,,Germany,DEU
+FUNECOL,2002,16,1,2457,Mark,R,Macnair,Mark R Macnair,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,2002,16,1,1825,John,,Raven,John Raven,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,2002,16,1,844,David,,Robinson,David Robinson,Editor,EIC,,,,,UK,GBR
+FUNECOL,2002,16,1,1881,John,I,Spicer,John I Spicer,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,2003,17,1,2712,Owen,K,Atkin,Owen K Atkin,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,2003,17,1,2290,Martin,Green,Barker,Martin Green Barker,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,2003,17,1,1462,Joy,,Bergelson,Joy Bergelson,Editorial.Review.Board,SE,,,,,USA,USA
+FUNECOL,2003,17,1,625,David,,Berrigan,David Berrigan,Editorial.Review.Board,SE,,,,,USA,USA
+FUNECOL,2003,17,1,3299,Steven,L,Chown,Steven L Chown,Editor,EIC,Stellenbosch,,,,South Africa,ZAF
+FUNECOL,2003,17,1,41,Andrew,,Clarke,Andrew Clarke,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,2003,17,1,2007,Kevin,,Gaston,Kevin Gaston,Editor,EIC,,,,,UK,GBR
+FUNECOL,2003,17,1,3101,Raymond,B,Huey,Raymond B Huey,Editorial.Review.Board,SE,"Seattle, WA",,,,USA,USA
+FUNECOL,2003,17,1,3105,Robert,B,Jackson,Robert B Jackson,Editorial.Review.Board,SE,Duke,,,,USA,USA
+FUNECOL,2003,17,1,3859,Clive,Green,Jones,Clive Green Jones,Editorial.Review.Board,SE,,,,,USA,USA
+FUNECOL,2003,17,1,3573,T,Hefin,Jones,T Hefin Jones,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,2003,17,1,3756,William,H,Karasov,William H Karasov,Editorial.Review.Board,SE,Wisconsin,,,,USA,USA
+FUNECOL,2003,17,1,1680,Jan,,Kozlowski,Jan Kozlowski,Editorial.Review.Board,SE,,,,,Poland,POL
+FUNECOL,2003,17,1,1719,Jon,,Lloyd,Jon Lloyd,Editorial.Review.Board,SE,,,,,Germany,DEU
+FUNECOL,2003,17,1,2457,Mark,R,Macnair,Mark R Macnair,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,2003,17,1,1825,John,,Raven,John Raven,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,2003,17,1,844,David,,Robinson,David Robinson,Editor,EIC,,,,,UK,GBR
+FUNECOL,2003,17,1,1881,John,I,Spicer,John I Spicer,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,2004,18,1,2712,Owen,K,Atkin,Owen K Atkin,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,2004,18,1,2290,Martin,Green,Barker,Martin Green Barker,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,2004,18,1,1462,Joy,,Bergelson,Joy Bergelson,Editorial.Review.Board,SE,,,,,USA,USA
+FUNECOL,2004,18,1,625,David,,Berrigan,David Berrigan,Editorial.Review.Board,SE,,,,,USA,USA
+FUNECOL,2004,18,1,3299,Steven,L,Chown,Steven L Chown,Editor,EIC,Stellenbosch,,,,South Africa,ZAF
+FUNECOL,2004,18,1,41,Andrew,,Clarke,Andrew Clarke,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,2004,18,1,2007,Kevin,,Gaston,Kevin Gaston,Editor,EIC,,,,,UK,GBR
+FUNECOL,2004,18,1,712,David,,Griffiths,David Griffiths,Editorial.Review.Board,SE,,,,,Northern Ireland,NA
+FUNECOL,2004,18,1,3101,Raymond,B,Huey,Raymond B Huey,Editorial.Review.Board,SE,"Seattle, WA",,,,USA,USA
+FUNECOL,2004,18,1,3105,Robert,B,Jackson,Robert B Jackson,Editorial.Review.Board,SE,Duke,,,,USA,USA
+FUNECOL,2004,18,1,3940,Sue,,Jackson,Sue Jackson,Editorial.Review.Board,SE,,,,,South Africa,ZAF
+FUNECOL,2004,18,1,3859,Clive,Green,Jones,Clive Green Jones,Editorial.Review.Board,SE,,,,,USA,USA
+FUNECOL,2004,18,1,3573,T,Hefin,Jones,T Hefin Jones,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,2004,18,1,3756,William,H,Karasov,William H Karasov,Editorial.Review.Board,SE,Wisconsin,,,,USA,USA
+FUNECOL,2004,18,1,1680,Jan,,Kozlowski,Jan Kozlowski,Editorial.Review.Board,SE,,,,,Poland,POL
+FUNECOL,2004,18,1,1719,Jon,,Lloyd,Jon Lloyd,Editorial.Review.Board,SE,,,,,Germany,DEU
+FUNECOL,2004,18,1,2457,Mark,R,Macnair,Mark R Macnair,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,2004,18,1,2732,Owen,L,Petchey,Owen L Petchey,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,2004,18,1,1825,John,,Raven,John Raven,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,2004,18,1,844,David,,Robinson,David Robinson,Editor,EIC,,,,,UK,GBR
+FUNECOL,2004,18,1,1881,John,I,Spicer,John I Spicer,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,2005,19,1,2712,Owen,K,Atkin,Owen K Atkin,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,2005,19,1,2290,Martin,Green,Barker,Martin Green Barker,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,2005,19,1,1462,Joy,,Bergelson,Joy Bergelson,Editorial.Review.Board,SE,,,,,USA,USA
+FUNECOL,2005,19,1,625,David,,Berrigan,David Berrigan,Editorial.Review.Board,SE,,,,,USA,USA
+FUNECOL,2005,19,1,1058,Francisco,,Bozinovic,Francisco Bozinovic,Editorial.Review.Board,SE,,,,,Chile,CHL
+FUNECOL,2005,19,1,3299,Steven,L,Chown,Steven L Chown,Editor,EIC,Stellenbosch,,,,South Africa,ZAF
+FUNECOL,2005,19,1,41,Andrew,,Clarke,Andrew Clarke,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,2005,19,1,452,Charles,,Fox,Charles Fox,Editor,EIC,,,,,USA,USA
+FUNECOL,2005,19,1,2007,Kevin,,Gaston,Kevin Gaston,Editor,EIC,,,,,UK,GBR
+FUNECOL,2005,19,1,712,David,,Griffiths,David Griffiths,Editorial.Review.Board,SE,,,,,Northern Ireland,NA
+FUNECOL,2005,19,1,3101,Raymond,B,Huey,Raymond B Huey,Editorial.Review.Board,SE,"Seattle, WA",,,,USA,USA
+FUNECOL,2005,19,1,1648,Jeffrey,A,Hutchings,Jeffrey A Hutchings,Editorial.Review.Board,SE,Dalhousie University,,,,Canada,CAN
+FUNECOL,2005,19,1,3105,Robert,B,Jackson,Robert B Jackson,Editorial.Review.Board,SE,Duke,,,,USA,USA
+FUNECOL,2005,19,1,3940,Sue,,Jackson,Sue Jackson,Editorial.Review.Board,SE,,,,,South Africa,ZAF
+FUNECOL,2005,19,1,3859,Clive,Green,Jones,Clive Green Jones,Editorial.Review.Board,SE,,,,,USA,USA
+FUNECOL,2005,19,1,3573,T,Hefin,Jones,T Hefin Jones,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,2005,19,1,1680,Jan,,Kozlowski,Jan Kozlowski,Editorial.Review.Board,SE,,,,,Poland,POL
+FUNECOL,2005,19,1,1719,Jon,,Lloyd,Jon Lloyd,Editorial.Review.Board,SE,,,,,Germany,DEU
+FUNECOL,2005,19,1,2457,Mark,R,Macnair,Mark R Macnair,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,2005,19,1,2220,Lloyd,S,Peck,Lloyd S Peck,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,2005,19,1,2732,Owen,L,Petchey,Owen L Petchey,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,2005,19,1,1825,John,,Raven,John Raven,Editorial.Review.Board,SE,,,,,UK,GBR
+FUNECOL,2005,19,1,844,David,,Robinson,David Robinson,Editor,EIC,,,,,UK,GBR
+FUNECOL,2005,19,1,2104,Ken,,Thompson,Ken Thompson,Editor,EIC,,,,,UK,GBR
+FUNECOL,2006,20,1,2272,Michael,J,Angilletta,Michael J Angilletta,Associate.Editor,SE,Indiana,,,,USA,USA
+FUNECOL,2006,20,1,2712,Owen,K,Atkin,Owen K Atkin,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2006,20,1,10,Alexander,V,Badyaev,Alexander V Badyaev,Associate.Editor,SE,Arizona,,,,USA,USA
+FUNECOL,2006,20,1,395,Craig,W,Benkman,Craig W Benkman,Associate.Editor,SE,Wyoming,,,,USA,USA
+FUNECOL,2006,20,1,401,Carol,L,Boggs,Carol L Boggs,Associate.Editor,SE,Stanford,,,,USA,USA
+FUNECOL,2006,20,1,1153,Gary,R,Bortolotti,Gary R Bortolotti,Associate.Editor,SE,Saskatchewan,,,,Canada,CAN
+FUNECOL,2006,20,1,1058,Francisco,,Bozinovic,Francisco Bozinovic,Associate.Editor,SE,,,,,Chile,CHL
+FUNECOL,2006,20,1,2311,Maria,JI,Briones,Maria JI Briones,Associate.Editor,SE,,,,,Spain,ESP
+FUNECOL,2006,20,1,3299,Steven,L,Chown,Steven L Chown,Editor,EIC,Stellenbosch,,,,South Africa,ZAF
+FUNECOL,2006,20,1,41,Andrew,,Clarke,Andrew Clarke,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2006,20,1,656,Daniel,P,Costa,Daniel P Costa,Associate.Editor,SE,Santa Cruz,,,,USA,USA
+FUNECOL,2006,20,1,1528,James,,Cresswell,James Cresswell,Editor,EIC,,,,,UK,GBR
+FUNECOL,2006,20,1,1536,James,W,Dalling,James W Dalling,Associate.Editor,SE,Illinois,,,,USA,USA
+FUNECOL,2006,20,1,430,Christian,,Damgaard,Christian Damgaard,Associate.Editor,SE,,,,,Denmark,DNK
+FUNECOL,2006,20,1,51,Alistair,,Dawson,Alistair Dawson,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2006,20,1,452,Charles,,Fox,Charles Fox,Editor,EIC,,,,,USA,USA
+FUNECOL,2006,20,1,1623,J,Daniel,Hare,J Daniel Hare,Associate.Editor,SE,Riverside,,,,USA,USA
+FUNECOL,2006,20,1,2834,Peeter,,Horak,Peeter Horak,Associate.Editor,SE,,,,,Estonia,EST
+FUNECOL,2006,20,1,731,Duncan,J,Irschick,Duncan J Irschick,Associate.Editor,SE,Tulane,,,,USA,USA
+FUNECOL,2006,20,1,3940,Sue,,Jackson,Sue Jackson,Associate.Editor,SE,,,,,South Africa,ZAF
+FUNECOL,2006,20,1,3859,Clive,Green,Jones,Clive Green Jones,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2006,20,1,3573,T,Hefin,Jones,T Hefin Jones,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2006,20,1,1680,Jan,,Kozlowski,Jan Kozlowski,Associate.Editor,SE,,,,,Poland,POL
+FUNECOL,2006,20,1,1215,Gaku,,Kudo,Gaku Kudo,Associate.Editor,SE,,,,,Japan,JPN
+FUNECOL,2006,20,1,2865,Peter,,Mayhew,Peter Mayhew,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2006,20,1,2048,Kevin,J,McGraw,Kevin J McGraw,Associate.Editor,SE,Arizona,,,,USA,USA
+FUNECOL,2006,20,1,322,Brian,K,McNab,Brian K McNab,Associate.Editor,SE,Florida,,,,USA,USA
+FUNECOL,2006,20,1,1109,Frank,,Messina,Frank Messina,Editor,EIC,,,,,USA,USA
+FUNECOL,2006,20,1,2880,Peter,H,Niewiarowski,Peter H Niewiarowski,Associate.Editor,SE,Ohio,,,,USA,USA
+FUNECOL,2006,20,1,2732,Owen,L,Petchey,Owen L Petchey,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2006,20,1,1246,Gareth,K,Phoenix,Gareth K Phoenix,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2006,20,1,832,David,,Raubenheimer,David Raubenheimer,Associate.Editor,SE,,,,,New Zealand,NZL
+FUNECOL,2006,20,1,1353,Heather,L,Reynolds,Heather L Reynolds,Associate.Editor,SE,Indiana,,,,USA,USA
+FUNECOL,2006,20,1,839,David,N,Reznick,David N Reznick,Associate.Editor,SE,Riverside,,,,USA,USA
+FUNECOL,2006,20,1,3903,James,H,Richards,James H Richards,Associate.Editor,SE,Davis,,,,USA,USA
+FUNECOL,2006,20,1,2237,Lawren,,Sack,Lawren Sack,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2006,20,1,2564,Michael,T,Siva-Jothy,Michael T Siva-Jothy,Associate.Editor,SE,Sheffield,,,,USA,USA
+FUNECOL,2006,20,1,1878,Juan,Jose,Soler,Juan Jose Soler,Associate.Editor,SE,,,,,Spain,ESP
+FUNECOL,2006,20,1,2104,Ken,,Thompson,Ken Thompson,Editor,EIC,,,,,UK,GBR
+FUNECOL,2006,20,1,3236,Raoul,,VanDamme,Raoul VanDamme,Associate.Editor,SE,,,,,Belgium,BEL
+FUNECOL,2006,20,1,2586,Marcel,G A,VanDerHeijden,Marcel G A VanDerHeijden,Associate.Editor,SE,,,,,Netherlands,NLD
+FUNECOL,2006,20,1,1934,Jeffrey,A,Walker,Jeffrey A Walker,Associate.Editor,SE,Maine,,,,USA,USA
+FUNECOL,2006,20,1,916,David,,Whitehead,David Whitehead,Associate.Editor,SE,,,,,New Zealand,NZL
+FUNECOL,2006,20,1,3661,Tony,D,Williams,Tony D Williams,Associate.Editor,SE,Simon Fraser University,,,,Canada,CAN
+FUNECOL,2006,20,1,2111,Ken,,Wilson,Ken Wilson,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2006,20,1,3504,Scott,D,Wilson,Scott D Wilson,Associate.Editor,SE,Regina,,,,Canada,CAN
+FUNECOL,2007,21,2,2272,Michael,J,Angilletta,Michael J Angilletta,Associate.Editor,SE,Indiana,,,,USA,USA
+FUNECOL,2007,21,2,10,Alexander,V,Badyaev,Alexander V Badyaev,Associate.Editor,SE,Arizona,,,,USA,USA
+FUNECOL,2007,21,2,395,Craig,W,Benkman,Craig W Benkman,Associate.Editor,SE,Wyoming,,,,USA,USA
+FUNECOL,2007,21,2,401,Carol,L,Boggs,Carol L Boggs,Associate.Editor,SE,Stanford,,,,USA,USA
+FUNECOL,2007,21,2,1153,Gary,R,Bortolotti,Gary R Bortolotti,Associate.Editor,SE,Saskatchewan,,,,Canada,CAN
+FUNECOL,2007,21,2,1058,Francisco,,Bozinovic,Francisco Bozinovic,Associate.Editor,SE,,,,,Chile,CHL
+FUNECOL,2007,21,2,2311,Maria,JI,Briones,Maria JI Briones,Associate.Editor,SE,,,,,Spain,ESP
+FUNECOL,2007,21,2,3936,Scott,P,Carroll,Scott P Carroll,Associate.Editor,SE,California,,,,USA,USA
+FUNECOL,2007,21,2,3299,Steven,L,Chown,Steven L Chown,Associate.Editor,SE,Stellenbosch,,,,South Africa,ZAF
+FUNECOL,2007,21,2,41,Andrew,,Clarke,Andrew Clarke,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2007,21,2,656,Daniel,P,Costa,Daniel P Costa,Associate.Editor,SE,Santa Cruz,,,,USA,USA
+FUNECOL,2007,21,2,1528,James,,Cresswell,James Cresswell,Editor,EIC,,,,,UK,GBR
+FUNECOL,2007,21,2,1536,James,W,Dalling,James W Dalling,Associate.Editor,SE,Illinois,,,,USA,USA
+FUNECOL,2007,21,2,430,Christian,,Damgaard,Christian Damgaard,Associate.Editor,SE,,,,,Denmark,DNK
+FUNECOL,2007,21,2,51,Alistair,,Dawson,Alistair Dawson,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2007,21,2,452,Charles,,Fox,Charles Fox,Editor,EIC,,,,,USA,USA
+FUNECOL,2007,21,2,1623,J,Daniel,Hare,J Daniel Hare,Associate.Editor,SE,Riverside,,,,USA,USA
+FUNECOL,2007,21,2,2834,Peeter,,Horak,Peeter Horak,Associate.Editor,SE,,,,,Estonia,EST
+FUNECOL,2007,21,2,731,Duncan,J,Irschick,Duncan J Irschick,Associate.Editor,SE,Tulane,,,,USA,USA
+FUNECOL,2007,21,2,3940,Sue,,Jackson,Sue Jackson,Associate.Editor,SE,,,,,South Africa,ZAF
+FUNECOL,2007,21,2,3859,Clive,Green,Jones,Clive Green Jones,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2007,21,2,3573,T,Hefin,Jones,T Hefin Jones,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2007,21,2,1680,Jan,,Kozlowski,Jan Kozlowski,Associate.Editor,SE,,,,,Poland,POL
+FUNECOL,2007,21,2,1215,Gaku,,Kudo,Gaku Kudo,Associate.Editor,SE,,,,,Japan,JPN
+FUNECOL,2007,21,2,2865,Peter,,Mayhew,Peter Mayhew,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2007,21,2,2048,Kevin,J,McGraw,Kevin J McGraw,Associate.Editor,SE,Arizona,,,,USA,USA
+FUNECOL,2007,21,2,322,Brian,K,McNab,Brian K McNab,Associate.Editor,SE,Florida,,,,USA,USA
+FUNECOL,2007,21,2,1109,Frank,,Messina,Frank Messina,Editor,EIC,,,,,USA,USA
+FUNECOL,2007,21,2,2880,Peter,H,Niewiarowski,Peter H Niewiarowski,Associate.Editor,SE,Ohio,,,,USA,USA
+FUNECOL,2007,21,2,2732,Owen,L,Petchey,Owen L Petchey,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2007,21,2,1246,Gareth,K,Phoenix,Gareth K Phoenix,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2007,21,2,2224,Lourens,,Poorter,Lourens Poorter,Associate.Editor,SE,,,,,Netherlands,NLD
+FUNECOL,2007,21,2,832,David,,Raubenheimer,David Raubenheimer,Associate.Editor,SE,,,,,New Zealand,NZL
+FUNECOL,2007,21,2,1353,Heather,L,Reynolds,Heather L Reynolds,Associate.Editor,SE,Indiana,,,,USA,USA
+FUNECOL,2007,21,2,839,David,N,Reznick,David N Reznick,Associate.Editor,SE,Riverside,,,,USA,USA
+FUNECOL,2007,21,2,3903,James,H,Richards,James H Richards,Associate.Editor,SE,Davis,,,,USA,USA
+FUNECOL,2007,21,2,2237,Lawren,,Sack,Lawren Sack,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2007,21,2,2564,Michael,T,Siva-Jothy,Michael T Siva-Jothy,Associate.Editor,SE,Sheffield,,,,USA,USA
+FUNECOL,2007,21,2,2095,Keith,W,Sockman,Keith W Sockman,Associate.Editor,SE,North Carolina,,,,USA,USA
+FUNECOL,2007,21,2,1878,Juan,Jose,Soler,Juan Jose Soler,Associate.Editor,SE,,,,,Spain,ESP
+FUNECOL,2007,21,2,1879,John,,Speakman,John Speakman,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2007,21,2,2104,Ken,,Thompson,Ken Thompson,Editor,EIC,,,,,UK,GBR
+FUNECOL,2007,21,2,2577,Mark,,Tjoelker,Mark Tjoelker,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2007,21,2,3236,Raoul,,VanDamme,Raoul VanDamme,Associate.Editor,SE,,,,,Belgium,BEL
+FUNECOL,2007,21,2,2586,Marcel,G A,VanDerHeijden,Marcel G A VanDerHeijden,Associate.Editor,SE,,,,,Netherlands,NLD
+FUNECOL,2007,21,2,1934,Jeffrey,A,Walker,Jeffrey A Walker,Associate.Editor,SE,Maine,,,,USA,USA
+FUNECOL,2007,21,2,916,David,,Whitehead,David Whitehead,Associate.Editor,SE,,,,,New Zealand,NZL
+FUNECOL,2007,21,2,3661,Tony,D,Williams,Tony D Williams,Associate.Editor,SE,Simon Fraser University,,,,Canada,CAN
+FUNECOL,2007,21,2,2111,Ken,,Wilson,Ken Wilson,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2007,21,2,3504,Scott,D,Wilson,Scott D Wilson,Associate.Editor,SE,Regina,,,,Canada,CAN
+FUNECOL,2008,22,1,2272,Michael,J,Angilletta,Michael J Angilletta,Associate.Editor,SE,Indiana,,,,USA,USA
+FUNECOL,2008,22,1,1973,Kenneth,,Anthony,Kenneth Anthony,Associate.Editor,SE,,,,,Australia,AUS
+FUNECOL,2008,22,1,10,Alexander,V,Badyaev,Alexander V Badyaev,Associate.Editor,SE,Arizona,,,,USA,USA
+FUNECOL,2008,22,1,395,Craig,W,Benkman,Craig W Benkman,Associate.Editor,SE,Wyoming,,,,USA,USA
+FUNECOL,2008,22,1,1472,Jon,,Blount,Jon Blount,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2008,22,1,401,Carol,L,Boggs,Carol L Boggs,Associate.Editor,SE,Stanford,,,,USA,USA
+FUNECOL,2008,22,1,1153,Gary,R,Bortolotti,Gary R Bortolotti,Associate.Editor,SE,Saskatchewan,,,,Canada,CAN
+FUNECOL,2008,22,1,1058,Francisco,,Bozinovic,Francisco Bozinovic,Associate.Editor,SE,,,,,Chile,CHL
+FUNECOL,2008,22,1,2311,Maria,JI,Briones,Maria JI Briones,Associate.Editor,SE,,,,,Spain,ESP
+FUNECOL,2008,22,1,3936,Scott,P,Carroll,Scott P Carroll,Associate.Editor,SE,California,,,,USA,USA
+FUNECOL,2008,22,1,3299,Steven,L,Chown,Steven L Chown,Associate.Editor,SE,Stellenbosch,,,,South Africa,ZAF
+FUNECOL,2008,22,1,41,Andrew,,Clarke,Andrew Clarke,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2008,22,1,656,Daniel,P,Costa,Daniel P Costa,Associate.Editor,SE,Santa Cruz,,,,USA,USA
+FUNECOL,2008,22,1,1528,James,,Cresswell,James Cresswell,Editor,EIC,,,,,UK,GBR
+FUNECOL,2008,22,1,1536,James,W,Dalling,James W Dalling,Associate.Editor,SE,Illinois,,,,USA,USA
+FUNECOL,2008,22,1,430,Christian,,Damgaard,Christian Damgaard,Associate.Editor,SE,,,,,Denmark,DNK
+FUNECOL,2008,22,1,51,Alistair,,Dawson,Alistair Dawson,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2008,22,1,452,Charles,,Fox,Charles Fox,Editor,EIC,,,,,USA,USA
+FUNECOL,2008,22,1,1623,J,Daniel,Hare,J Daniel Hare,Associate.Editor,SE,Riverside,,,,USA,USA
+FUNECOL,2008,22,1,2834,Peeter,,Horak,Peeter Horak,Associate.Editor,SE,,,,,Estonia,EST
+FUNECOL,2008,22,1,731,Duncan,J,Irschick,Duncan J Irschick,Associate.Editor,SE,Tulane,,,,USA,USA
+FUNECOL,2008,22,1,3940,Sue,,Jackson,Sue Jackson,Associate.Editor,SE,,,,,South Africa,ZAF
+FUNECOL,2008,22,1,3859,Clive,Green,Jones,Clive Green Jones,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2008,22,1,3573,T,Hefin,Jones,T Hefin Jones,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2008,22,1,1215,Gaku,,Kudo,Gaku Kudo,Associate.Editor,SE,,,,,Japan,JPN
+FUNECOL,2008,22,1,2865,Peter,,Mayhew,Peter Mayhew,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2008,22,1,2048,Kevin,J,McGraw,Kevin J McGraw,Associate.Editor,SE,Arizona,,,,USA,USA
+FUNECOL,2008,22,1,322,Brian,K,McNab,Brian K McNab,Associate.Editor,SE,Florida,,,,USA,USA
+FUNECOL,2008,22,1,1109,Frank,,Messina,Frank Messina,Editor,EIC,,,,,USA,USA
+FUNECOL,2008,22,1,1775,Juan,,Moreno,Juan Moreno,Associate.Editor,SE,,,,,Spain,ESP
+FUNECOL,2008,22,1,2880,Peter,H,Niewiarowski,Peter H Niewiarowski,Associate.Editor,SE,Ohio,,,,USA,USA
+FUNECOL,2008,22,1,2732,Owen,L,Petchey,Owen L Petchey,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2008,22,1,1246,Gareth,K,Phoenix,Gareth K Phoenix,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2008,22,1,2224,Lourens,,Poorter,Lourens Poorter,Associate.Editor,SE,,,,,Netherlands,NLD
+FUNECOL,2008,22,1,832,David,,Raubenheimer,David Raubenheimer,Associate.Editor,SE,,,,,New Zealand,NZL
+FUNECOL,2008,22,1,1353,Heather,L,Reynolds,Heather L Reynolds,Associate.Editor,SE,Indiana,,,,USA,USA
+FUNECOL,2008,22,1,839,David,N,Reznick,David N Reznick,Associate.Editor,SE,Riverside,,,,USA,USA
+FUNECOL,2008,22,1,3903,James,H,Richards,James H Richards,Associate.Editor,SE,Davis,,,,USA,USA
+FUNECOL,2008,22,1,2237,Lawren,,Sack,Lawren Sack,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2008,22,1,2564,Michael,T,Siva-Jothy,Michael T Siva-Jothy,Associate.Editor,SE,Sheffield,,,,USA,USA
+FUNECOL,2008,22,1,2095,Keith,W,Sockman,Keith W Sockman,Associate.Editor,SE,North Carolina,,,,USA,USA
+FUNECOL,2008,22,1,1878,Juan,Jose,Soler,Juan Jose Soler,Associate.Editor,SE,,,,,Spain,ESP
+FUNECOL,2008,22,1,1879,John,,Speakman,John Speakman,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2008,22,1,2104,Ken,,Thompson,Ken Thompson,Editor,EIC,,,,,UK,GBR
+FUNECOL,2008,22,1,2577,Mark,,Tjoelker,Mark Tjoelker,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2008,22,1,2579,Matthew,,Turnbull,Matthew Turnbull,Associate.Editor,SE,,,,,New Zealand,NZL
+FUNECOL,2008,22,1,3236,Raoul,,VanDamme,Raoul VanDamme,Associate.Editor,SE,,,,,Belgium,BEL
+FUNECOL,2008,22,1,2586,Marcel,G A,VanDerHeijden,Marcel G A VanDerHeijden,Associate.Editor,SE,,,,,Netherlands,NLD
+FUNECOL,2008,22,1,1934,Jeffrey,A,Walker,Jeffrey A Walker,Associate.Editor,SE,Maine,,,,USA,USA
+FUNECOL,2008,22,1,916,David,,Whitehead,David Whitehead,Associate.Editor,SE,,,,,New Zealand,NZL
+FUNECOL,2008,22,1,3661,Tony,D,Williams,Tony D Williams,Associate.Editor,SE,Simon Fraser University,,,,Canada,CAN
+FUNECOL,2008,22,1,2111,Ken,,Wilson,Ken Wilson,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2008,22,1,3504,Scott,D,Wilson,Scott D Wilson,Associate.Editor,SE,Regina,,,,Canada,CAN
+FUNECOL,2009,23,1,2272,Michael,J,Angilletta,Michael J Angilletta,Associate.Editor,SE,Indiana,,,,USA,USA
+FUNECOL,2009,23,1,1973,Kenneth,,Anthony,Kenneth Anthony,Associate.Editor,SE,,,,,Australia,AUS
+FUNECOL,2009,23,1,1450,Jennifer,,Baltzer,Jennifer Baltzer,Associate.Editor,SE,,,,,Canada,CAN
+FUNECOL,2009,23,1,3712,Wolf,U,Blanckenhorn,Wolf U Blanckenhorn,Associate.Editor,SE,Zurich,,,,Switzerland,CHE
+FUNECOL,2009,23,1,1472,Jon,,Blount,Jon Blount,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2009,23,1,401,Carol,L,Boggs,Carol L Boggs,Guest.Editor,SPECIAL,Stanford,,,,USA,USA
+FUNECOL,2009,23,1,1153,Gary,R,Bortolotti,Gary R Bortolotti,Associate.Editor,SE,Saskatchewan,,,,Canada,CAN
+FUNECOL,2009,23,1,2311,Maria,JI,Briones,Maria JI Briones,Associate.Editor,SE,,,,,Spain,ESP
+FUNECOL,2009,23,1,3936,Scott,P,Carroll,Scott P Carroll,Associate.Editor,SE,California,,,,USA,USA
+FUNECOL,2009,23,1,3299,Steven,L,Chown,Steven L Chown,Associate.Editor,SE,Stellenbosch,,,,South Africa,ZAF
+FUNECOL,2009,23,1,41,Andrew,,Clarke,Andrew Clarke,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2009,23,1,656,Daniel,P,Costa,Daniel P Costa,Associate.Editor,SE,Santa Cruz,,,,USA,USA
+FUNECOL,2009,23,1,1528,James,,Cresswell,James Cresswell,Editor,EIC,,,,,UK,GBR
+FUNECOL,2009,23,1,1536,James,W,Dalling,James W Dalling,Associate.Editor,SE,Illinois,,,,USA,USA
+FUNECOL,2009,23,1,430,Christian,,Damgaard,Christian Damgaard,Associate.Editor,SE,,,,,Denmark,DNK
+FUNECOL,2009,23,1,51,Alistair,,Dawson,Alistair Dawson,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2009,23,1,452,Charles,,Fox,Charles Fox,Editor,EIC,,,,,USA,USA
+FUNECOL,2009,23,1,1623,J,Daniel,Hare,J Daniel Hare,Associate.Editor,SE,Riverside,,,,USA,USA
+FUNECOL,2009,23,1,2834,Peeter,,Horak,Peeter Horak,Associate.Editor,SE,,,,,Estonia,EST
+FUNECOL,2009,23,1,731,Duncan,J,Irschick,Duncan J Irschick,Associate.Editor,SE,Tulane,,,,USA,USA
+FUNECOL,2009,23,1,3940,Sue,,Jackson,Sue Jackson,Associate.Editor,SE,,,,,South Africa,ZAF
+FUNECOL,2009,23,1,3573,T,Hefin,Jones,T Hefin Jones,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2009,23,1,1672,John,,Klironomos,John Klironomos,Associate.Editor,SE,,,,,Canada,CAN
+FUNECOL,2009,23,1,2437,Marek,,Konarzewski,Marek Konarzewski,Associate.Editor,SE,,,,,Poland,POL
+FUNECOL,2009,23,1,1215,Gaku,,Kudo,Gaku Kudo,Associate.Editor,SE,,,,,Japan,JPN
+FUNECOL,2009,23,1,3393,Sara,M,Lewis,Sara M Lewis,Associate.Editor,SE,Tufts,,,,USA,USA
+FUNECOL,2009,23,1,2865,Peter,,Mayhew,Peter Mayhew,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2009,23,1,2048,Kevin,J,McGraw,Kevin J McGraw,Associate.Editor,SE,Arizona,,,,USA,USA
+FUNECOL,2009,23,1,1109,Frank,,Messina,Frank Messina,Editor,EIC,,,,,USA,USA
+FUNECOL,2009,23,1,1775,Juan,,Moreno,Juan Moreno,Associate.Editor,SE,,,,,Spain,ESP
+FUNECOL,2009,23,1,2880,Peter,H,Niewiarowski,Peter H Niewiarowski,Associate.Editor,SE,Ohio,,,,USA,USA
+FUNECOL,2009,23,1,1246,Gareth,K,Phoenix,Gareth K Phoenix,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2009,23,1,2224,Lourens,,Poorter,Lourens Poorter,Associate.Editor,SE,,,,,Netherlands,NLD
+FUNECOL,2009,23,1,832,David,,Raubenheimer,David Raubenheimer,Guest.Editor,SPECIAL,,,,,New Zealand,NZL
+FUNECOL,2009,23,1,832,David,,Raubenheimer,David Raubenheimer,Associate.Editor,SE,,,,,New Zealand,NZL
+FUNECOL,2009,23,1,1353,Heather,L,Reynolds,Heather L Reynolds,Associate.Editor,SE,Indiana,,,,USA,USA
+FUNECOL,2009,23,1,839,David,N,Reznick,David N Reznick,Associate.Editor,SE,Riverside,,,,USA,USA
+FUNECOL,2009,23,1,2237,Lawren,,Sack,Lawren Sack,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2009,23,1,2095,Keith,W,Sockman,Keith W Sockman,Associate.Editor,SE,North Carolina,,,,USA,USA
+FUNECOL,2009,23,1,1878,Juan,Jose,Soler,Juan Jose Soler,Associate.Editor,SE,,,,,Spain,ESP
+FUNECOL,2009,23,1,1879,John,,Speakman,John Speakman,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2009,23,1,2104,Ken,,Thompson,Ken Thompson,Editor,EIC,,,,,UK,GBR
+FUNECOL,2009,23,1,2577,Mark,,Tjoelker,Mark Tjoelker,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2009,23,1,2579,Matthew,,Turnbull,Matthew Turnbull,Associate.Editor,SE,,,,,New Zealand,NZL
+FUNECOL,2009,23,1,3236,Raoul,,VanDamme,Raoul VanDamme,Associate.Editor,SE,,,,,Belgium,BEL
+FUNECOL,2009,23,1,2948,Peter,C,Wainwright,Peter C Wainwright,Associate.Editor,SE,California,,,,USA,USA
+FUNECOL,2009,23,1,1934,Jeffrey,A,Walker,Jeffrey A Walker,Associate.Editor,SE,Maine,,,,USA,USA
+FUNECOL,2009,23,1,916,David,,Whitehead,David Whitehead,Associate.Editor,SE,,,,,New Zealand,NZL
+FUNECOL,2009,23,1,3661,Tony,D,Williams,Tony D Williams,Associate.Editor,SE,Simon Fraser University,,,,Canada,CAN
+FUNECOL,2009,23,1,2111,Ken,,Wilson,Ken Wilson,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2009,23,1,3504,Scott,D,Wilson,Scott D Wilson,Associate.Editor,SE,Regina,,,,Canada,CAN
+FUNECOL,2010,24,1,929,Edith,B,Allen,Edith B Allen,Associate.Editor,SE,Riverside,,,,USA,USA
+FUNECOL,2010,24,1,2272,Michael,J,Angilletta,Michael J Angilletta,Associate.Editor,SE,Indiana,,,,USA,USA
+FUNECOL,2010,24,1,2624,Niels,PR,Anten,Niels PR Anten,Associate.Editor,SE,Utrecht,,,,Netherlands,NLD
+FUNECOL,2010,24,1,1450,Jennifer,,Baltzer,Jennifer Baltzer,Associate.Editor,SE,,,,,Canada,CAN
+FUNECOL,2010,24,1,3712,Wolf,U,Blanckenhorn,Wolf U Blanckenhorn,Associate.Editor,SE,Zurich,,,,Switzerland,CHE
+FUNECOL,2010,24,1,1472,Jon,,Blount,Jon Blount,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2010,24,1,1153,Gary,R,Bortolotti,Gary R Bortolotti,Associate.Editor,SE,Saskatchewan,,,,Canada,CAN
+FUNECOL,2010,24,1,2311,Maria,JI,Briones,Maria JI Briones,Associate.Editor,SE,,,,,Spain,ESP
+FUNECOL,2010,24,1,3010,Ryan,,Calsbeek,Ryan Calsbeek,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2010,24,1,3936,Scott,P,Carroll,Scott P Carroll,Associate.Editor,SE,California,,,,USA,USA
+FUNECOL,2010,24,1,3299,Steven,L,Chown,Steven L Chown,Associate.Editor,SE,Stellenbosch,,,,South Africa,ZAF
+FUNECOL,2010,24,1,656,Daniel,P,Costa,Daniel P Costa,Associate.Editor,SE,Santa Cruz,,,,USA,USA
+FUNECOL,2010,24,1,1536,James,W,Dalling,James W Dalling,Associate.Editor,SE,Illinois,,,,USA,USA
+FUNECOL,2010,24,1,1166,Goggy,,Davidowitz,Goggy Davidowitz,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2010,24,1,51,Alistair,,Dawson,Alistair Dawson,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2010,24,1,452,Charles,,Fox,Charles Fox,Editor,EIC,,,,,USA,USA
+FUNECOL,2010,24,1,1623,J,Daniel,Hare,J Daniel Hare,Associate.Editor,SE,Riverside,,,,USA,USA
+FUNECOL,2010,24,1,2834,Peeter,,Horak,Peeter Horak,Associate.Editor,SE,,,,,Estonia,EST
+FUNECOL,2010,24,1,731,Duncan,J,Irschick,Duncan J Irschick,Associate.Editor,SE,Tulane,,,,USA,USA
+FUNECOL,2010,24,1,3940,Sue,,Jackson,Sue Jackson,Associate.Editor,SE,,,,,South Africa,ZAF
+FUNECOL,2010,24,1,3573,T,Hefin,Jones,T Hefin Jones,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2010,24,1,116,Adam,D,Kay,Adam D Kay,Associate.Editor,SE,Minnesota,,,,USA,USA
+FUNECOL,2010,24,1,2031,Kaoru,,Kitajima,Kaoru Kitajima,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2010,24,1,1672,John,,Klironomos,John Klironomos,Associate.Editor,SE,,,,,Canada,CAN
+FUNECOL,2010,24,1,2437,Marek,,Konarzewski,Marek Konarzewski,Associate.Editor,SE,,,,,Poland,POL
+FUNECOL,2010,24,1,2851,Pawel,,Koteja,Pawel Koteja,Associate.Editor,SE,,,,,Poland,POL
+FUNECOL,2010,24,1,1215,Gaku,,Kudo,Gaku Kudo,Associate.Editor,SE,,,,,Japan,JPN
+FUNECOL,2010,24,1,3393,Sara,M,Lewis,Sara M Lewis,Associate.Editor,SE,Tufts,,,,USA,USA
+FUNECOL,2010,24,1,2865,Peter,,Mayhew,Peter Mayhew,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2010,24,1,2048,Kevin,J,McGraw,Kevin J McGraw,Associate.Editor,SE,Arizona,,,,USA,USA
+FUNECOL,2010,24,1,1109,Frank,,Messina,Frank Messina,Editor,EIC,,,,,USA,USA
+FUNECOL,2010,24,1,1775,Juan,,Moreno,Juan Moreno,Associate.Editor,SE,,,,,Spain,ESP
+FUNECOL,2010,24,1,2880,Peter,H,Niewiarowski,Peter H Niewiarowski,Associate.Editor,SE,Ohio,,,,USA,USA
+FUNECOL,2010,24,1,1246,Gareth,K,Phoenix,Gareth K Phoenix,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2010,24,1,2224,Lourens,,Poorter,Lourens Poorter,Associate.Editor,SE,,,,,Netherlands,NLD
+FUNECOL,2010,24,1,832,David,,Raubenheimer,David Raubenheimer,Associate.Editor,SE,,,,,New Zealand,NZL
+FUNECOL,2010,24,1,839,David,N,Reznick,David N Reznick,Associate.Editor,SE,Riverside,,,,USA,USA
+FUNECOL,2010,24,1,2237,Lawren,,Sack,Lawren Sack,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2010,24,1,2095,Keith,W,Sockman,Keith W Sockman,Associate.Editor,SE,North Carolina,,,,USA,USA
+FUNECOL,2010,24,1,1878,Juan,Jose,Soler,Juan Jose Soler,Associate.Editor,SE,,,,,Spain,ESP
+FUNECOL,2010,24,1,2104,Ken,,Thompson,Ken Thompson,Editor,EIC,,,,,UK,GBR
+FUNECOL,2010,24,1,2577,Mark,,Tjoelker,Mark Tjoelker,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2010,24,1,2105,Kathleen,K,Treseder,Kathleen K Treseder,Associate.Editor,SE,California,,,,USA,USA
+FUNECOL,2010,24,1,2579,Matthew,,Turnbull,Matthew Turnbull,Associate.Editor,SE,,,,,New Zealand,NZL
+FUNECOL,2010,24,1,3236,Raoul,,VanDamme,Raoul VanDamme,Associate.Editor,SE,,,,,Belgium,BEL
+FUNECOL,2010,24,1,2948,Peter,C,Wainwright,Peter C Wainwright,Associate.Editor,SE,California,,,,USA,USA
+FUNECOL,2010,24,1,1934,Jeffrey,A,Walker,Jeffrey A Walker,Associate.Editor,SE,Maine,,,,USA,USA
+FUNECOL,2010,24,1,916,David,,Whitehead,David Whitehead,Associate.Editor,SE,,,,,New Zealand,NZL
+FUNECOL,2010,24,1,3661,Tony,D,Williams,Tony D Williams,Associate.Editor,SE,Simon Fraser University,,,,Canada,CAN
+FUNECOL,2010,24,1,3504,Scott,D,Wilson,Scott D Wilson,Associate.Editor,SE,Regina,,,,Canada,CAN
+FUNECOL,2011,25,1,929,Edith,B,Allen,Edith B Allen,Associate.Editor,SE,Riverside,,,,USA,USA
+FUNECOL,2011,25,1,2272,Michael,J,Angilletta,Michael J Angilletta,Associate.Editor,SE,Indiana,,,,USA,USA
+FUNECOL,2011,25,1,2624,Niels,PR,Anten,Niels PR Anten,Associate.Editor,SE,Utrecht,,,,Netherlands,NLD
+FUNECOL,2011,25,1,611,Daniel,,Ardia,Daniel Ardia,Guest.Editor,SPECIAL,,,,,USA,USA
+FUNECOL,2011,25,1,3512,Tia-Lynn,,Ashman,Tia-Lynn Ashman,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2011,25,1,1450,Jennifer,,Baltzer,Jennifer Baltzer,Associate.Editor,SE,,,,,Canada,CAN
+FUNECOL,2011,25,1,3712,Wolf,U,Blanckenhorn,Wolf U Blanckenhorn,Associate.Editor,SE,Zurich,,,,Switzerland,CHE
+FUNECOL,2011,25,1,1472,Jon,,Blount,Jon Blount,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2011,25,1,1153,Gary,R,Bortolotti,Gary R Bortolotti,Associate.Editor,SE,Saskatchewan,,,,Canada,CAN
+FUNECOL,2011,25,1,2311,Maria,JI,Briones,Maria JI Briones,Associate.Editor,SE,,,,,Spain,ESP
+FUNECOL,2011,25,1,26,Alison,K,Brody,Alison K Brody,Associate.Editor,SE,Vermont,,,,USA,USA
+FUNECOL,2011,25,1,3010,Ryan,,Calsbeek,Ryan Calsbeek,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2011,25,1,642,Diane,R,Campbell,Diane R Campbell,Associate.Editor,SE,California,,,,USA,USA
+FUNECOL,2011,25,1,3936,Scott,P,Carroll,Scott P Carroll,Associate.Editor,SE,California,,,,USA,USA
+FUNECOL,2011,25,1,656,Daniel,P,Costa,Daniel P Costa,Associate.Editor,SE,Santa Cruz,,,,USA,USA
+FUNECOL,2011,25,1,1536,James,W,Dalling,James W Dalling,Associate.Editor,SE,Illinois,,,,USA,USA
+FUNECOL,2011,25,1,1166,Goggy,,Davidowitz,Goggy Davidowitz,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2011,25,1,51,Alistair,,Dawson,Alistair Dawson,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2011,25,1,452,Charles,,Fox,Charles Fox,Editor,EIC,,,,,USA,USA
+FUNECOL,2011,25,1,1609,Jennifer,,Grindstaff,Jennifer Grindstaff,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2011,25,1,1623,J,Daniel,Hare,J Daniel Hare,Associate.Editor,SE,Riverside,,,,USA,USA
+FUNECOL,2011,25,1,717,Dana,M,Hawley,Dana M Hawley,Guest.Editor,SPECIAL,Virginia Tech,,,,USA,USA
+FUNECOL,2011,25,1,2834,Peeter,,Horak,Peeter Horak,Associate.Editor,SE,,,,,Estonia,EST
+FUNECOL,2011,25,1,731,Duncan,J,Irschick,Duncan J Irschick,Editor,EIC,Massachusetts,,,,USA,USA
+FUNECOL,2011,25,1,3940,Sue,,Jackson,Sue Jackson,Associate.Editor,SE,,,,,South Africa,ZAF
+FUNECOL,2011,25,1,3573,T,Hefin,Jones,T Hefin Jones,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2011,25,1,116,Adam,D,Kay,Adam D Kay,Associate.Editor,SE,Minnesota,,,,USA,USA
+FUNECOL,2011,25,1,2031,Kaoru,,Kitajima,Kaoru Kitajima,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2011,25,1,2437,Marek,,Konarzewski,Marek Konarzewski,Associate.Editor,SE,,,,,Poland,POL
+FUNECOL,2011,25,1,2851,Pawel,,Koteja,Pawel Koteja,Associate.Editor,SE,,,,,Poland,POL
+FUNECOL,2011,25,1,1215,Gaku,,Kudo,Gaku Kudo,Associate.Editor,SE,,,,,Japan,JPN
+FUNECOL,2011,25,1,3393,Sara,M,Lewis,Sara M Lewis,Associate.Editor,SE,Tufts,,,,USA,USA
+FUNECOL,2011,25,1,2202,Lynn,B,Martin,Lynn B Martin,Guest.Editor,SPECIAL,South Florida,,,,USA,USA
+FUNECOL,2011,25,1,2202,Lynn,B,Martin,Lynn B Martin,Guest.Editor,SPECIAL,South Florida,,,,USA,USA
+FUNECOL,2011,25,1,2202,Lynn,B,Martin,Lynn B Martin,Associate.Editor,SE,South Florida,,,,USA,USA
+FUNECOL,2011,25,1,2202,Lynn,B,Martin,Lynn B Martin,Associate.Editor,SE,South Florida,,,,USA,USA
+FUNECOL,2011,25,1,2865,Peter,,Mayhew,Peter Mayhew,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2011,25,1,523,Clare,,McArthur,Clare McArthur,Associate.Editor,SE,,,,,Australia,AUS
+FUNECOL,2011,25,1,2048,Kevin,J,McGraw,Kevin J McGraw,Associate.Editor,SE,Arizona,,,,USA,USA
+FUNECOL,2011,25,1,1109,Frank,,Messina,Frank Messina,Editor,EIC,,,,,USA,USA
+FUNECOL,2011,25,1,1775,Juan,,Moreno,Juan Moreno,Associate.Editor,SE,,,,,Spain,ESP
+FUNECOL,2011,25,1,2880,Peter,H,Niewiarowski,Peter H Niewiarowski,Associate.Editor,SE,Ohio,,,,USA,USA
+FUNECOL,2011,25,1,3430,Sheila,,Patek,Sheila Patek,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2011,25,1,2512,Michael,,Pfrender,Michael Pfrender,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2011,25,1,1246,Gareth,K,Phoenix,Gareth K Phoenix,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2011,25,1,2224,Lourens,,Poorter,Lourens Poorter,Associate.Editor,SE,,,,,Netherlands,NLD
+FUNECOL,2011,25,1,832,David,,Raubenheimer,David Raubenheimer,Associate.Editor,SE,,,,,New Zealand,NZL
+FUNECOL,2011,25,1,839,David,N,Reznick,David N Reznick,Associate.Editor,SE,Riverside,,,,USA,USA
+FUNECOL,2011,25,1,2237,Lawren,,Sack,Lawren Sack,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2011,25,1,2095,Keith,W,Sockman,Keith W Sockman,Associate.Editor,SE,North Carolina,,,,USA,USA
+FUNECOL,2011,25,1,2104,Ken,,Thompson,Ken Thompson,Editor,EIC,,,,,UK,GBR
+FUNECOL,2011,25,1,2577,Mark,,Tjoelker,Mark Tjoelker,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2011,25,1,2105,Kathleen,K,Treseder,Kathleen K Treseder,Associate.Editor,SE,California,,,,USA,USA
+FUNECOL,2011,25,1,2579,Matthew,,Turnbull,Matthew Turnbull,Associate.Editor,SE,,,,,New Zealand,NZL
+FUNECOL,2011,25,1,3236,Raoul,,VanDamme,Raoul VanDamme,Associate.Editor,SE,,,,,Belgium,BEL
+FUNECOL,2011,25,1,2948,Peter,C,Wainwright,Peter C Wainwright,Associate.Editor,SE,California,,,,USA,USA
+FUNECOL,2011,25,1,1934,Jeffrey,A,Walker,Jeffrey A Walker,Associate.Editor,SE,Maine,,,,USA,USA
+FUNECOL,2011,25,1,916,David,,Whitehead,David Whitehead,Associate.Editor,SE,,,,,New Zealand,NZL
+FUNECOL,2011,25,1,3661,Tony,D,Williams,Tony D Williams,Associate.Editor,SE,Simon Fraser University,,,,Canada,CAN
+FUNECOL,2011,25,1,3504,Scott,D,Wilson,Scott D Wilson,Associate.Editor,SE,Regina,,,,Canada,CAN
+FUNECOL,2012,26,1,929,Edith,B,Allen,Edith B Allen,Associate.Editor,SE,Riverside,,,,USA,USA
+FUNECOL,2012,26,1,2624,Niels,PR,Anten,Niels PR Anten,Associate.Editor,SE,Utrecht,,,,Netherlands,NLD
+FUNECOL,2012,26,1,3512,Tia-Lynn,,Ashman,Tia-Lynn Ashman,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2012,26,1,1450,Jennifer,,Baltzer,Jennifer Baltzer,Associate.Editor,SE,,,,,Canada,CAN
+FUNECOL,2012,26,1,3712,Wolf,U,Blanckenhorn,Wolf U Blanckenhorn,Associate.Editor,SE,Zurich,,,,Switzerland,CHE
+FUNECOL,2012,26,1,1472,Jon,,Blount,Jon Blount,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2012,26,1,2311,Maria,JI,Briones,Maria JI Briones,Associate.Editor,SE,,,,,Spain,ESP
+FUNECOL,2012,26,1,26,Alison,K,Brody,Alison K Brody,Associate.Editor,SE,Vermont,,,,USA,USA
+FUNECOL,2012,26,1,642,Diane,R,Campbell,Diane R Campbell,Associate.Editor,SE,California,,,,USA,USA
+FUNECOL,2012,26,1,3936,Scott,P,Carroll,Scott P Carroll,Associate.Editor,SE,California,,,,USA,USA
+FUNECOL,2012,26,1,656,Daniel,P,Costa,Daniel P Costa,Associate.Editor,SE,Santa Cruz,,,,USA,USA
+FUNECOL,2012,26,1,1536,James,W,Dalling,James W Dalling,Associate.Editor,SE,Illinois,,,,USA,USA
+FUNECOL,2012,26,1,1166,Goggy,,Davidowitz,Goggy Davidowitz,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2012,26,1,452,Charles,,Fox,Charles Fox,Editor,EIC,,,,,USA,USA
+FUNECOL,2012,26,1,453,Craig,,Franklin,Craig Franklin,Associate.Editor,SE,,,,,Australia,AUS
+FUNECOL,2012,26,1,1609,Jennifer,,Grindstaff,Jennifer Grindstaff,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2012,26,1,1623,J,Daniel,Hare,J Daniel Hare,Associate.Editor,SE,Riverside,,,,USA,USA
+FUNECOL,2012,26,1,1625,James,D,Harwood,James D Harwood,Associate.Editor,SE,Kentucky,,,,USA,USA
+FUNECOL,2012,26,1,717,Dana,M,Hawley,Dana M Hawley,Associate.Editor,SE,Virginia Tech,,,,USA,USA
+FUNECOL,2012,26,1,103,Anthony,,Herrel,Anthony Herrel,Associate.Editor,SE,,,,,France,FRA
+FUNECOL,2012,26,1,3563,Timothy,E,Higham,Timothy E Higham,Associate.Editor,SE,Riverside,,,,USA,USA
+FUNECOL,2012,26,1,2834,Peeter,,Horak,Peeter Horak,Associate.Editor,SE,,,,,Estonia,EST
+FUNECOL,2012,26,1,731,Duncan,J,Irschick,Duncan J Irschick,Editor,EIC,Massachusetts,,,,USA,USA
+FUNECOL,2012,26,1,3940,Sue,,Jackson,Sue Jackson,Associate.Editor,SE,,,,,South Africa,ZAF
+FUNECOL,2012,26,1,2421,Marc,T,Johnson,Marc T Johnson,Associate.Editor,SE,Toronto,,,,Canada,CAN
+FUNECOL,2012,26,1,3573,T,Hefin,Jones,T Hefin Jones,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2012,26,1,116,Adam,D,Kay,Adam D Kay,Associate.Editor,SE,Minnesota,,,,USA,USA
+FUNECOL,2012,26,1,2031,Kaoru,,Kitajima,Kaoru Kitajima,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2012,26,1,125,Alan,,Knapp,Alan Knapp,Editor,EIC,,,,,USA,USA
+FUNECOL,2012,26,1,2437,Marek,,Konarzewski,Marek Konarzewski,Associate.Editor,SE,,,,,Poland,POL
+FUNECOL,2012,26,1,1215,Gaku,,Kudo,Gaku Kudo,Associate.Editor,SE,,,,,Japan,JPN
+FUNECOL,2012,26,1,3393,Sara,M,Lewis,Sara M Lewis,Associate.Editor,SE,Tufts,,,,USA,USA
+FUNECOL,2012,26,1,2202,Lynn,B,Martin,Lynn B Martin,Associate.Editor,SE,South Florida,,,,USA,USA
+FUNECOL,2012,26,1,2865,Peter,,Mayhew,Peter Mayhew,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2012,26,1,523,Clare,,McArthur,Clare McArthur,Associate.Editor,SE,,,,,Australia,AUS
+FUNECOL,2012,26,1,2048,Kevin,J,McGraw,Kevin J McGraw,Associate.Editor,SE,Arizona,,,,USA,USA
+FUNECOL,2012,26,1,1775,Juan,,Moreno,Juan Moreno,Associate.Editor,SE,,,,,Spain,ESP
+FUNECOL,2012,26,1,2676,Nick,J,Ostle,Nick J Ostle,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2012,26,1,3430,Sheila,,Patek,Sheila Patek,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2012,26,1,2512,Michael,,Pfrender,Michael Pfrender,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2012,26,1,3621,Theunis,,Piersma,Theunis Piersma,Associate.Editor,SE,,,,,Netherlands,NLD
+FUNECOL,2012,26,1,2224,Lourens,,Poorter,Lourens Poorter,Associate.Editor,SE,,,,,Netherlands,NLD
+FUNECOL,2012,26,1,832,David,,Raubenheimer,David Raubenheimer,Associate.Editor,SE,,,,,New Zealand,NZL
+FUNECOL,2012,26,1,839,David,N,Reznick,David N Reznick,Associate.Editor,SE,Riverside,,,,USA,USA
+FUNECOL,2012,26,1,2237,Lawren,,Sack,Lawren Sack,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2012,26,1,2095,Keith,W,Sockman,Keith W Sockman,Associate.Editor,SE,North Carolina,,,,USA,USA
+FUNECOL,2012,26,1,572,Carly,J,Stevens,Carly J Stevens,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2012,26,1,2104,Ken,,Thompson,Ken Thompson,Editor,EIC,,,,,UK,GBR
+FUNECOL,2012,26,1,2577,Mark,,Tjoelker,Mark Tjoelker,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2012,26,1,2105,Kathleen,K,Treseder,Kathleen K Treseder,Associate.Editor,SE,California,,,,USA,USA
+FUNECOL,2012,26,1,2579,Matthew,,Turnbull,Matthew Turnbull,Associate.Editor,SE,,,,,New Zealand,NZL
+FUNECOL,2012,26,1,3236,Raoul,,VanDamme,Raoul VanDamme,Associate.Editor,SE,,,,,Belgium,BEL
+FUNECOL,2012,26,1,1942,Jennifer,,Watling,Jennifer Watling,Associate.Editor,SE,,,,,Australia,AUS
+FUNECOL,2012,26,1,916,David,,Whitehead,David Whitehead,Associate.Editor,SE,,,,,New Zealand,NZL
+FUNECOL,2012,26,1,3661,Tony,D,Williams,Tony D Williams,Associate.Editor,SE,Simon Fraser University,,,,Canada,CAN
+FUNECOL,2012,26,1,3252,Robbie,,Wilson,Robbie Wilson,Associate.Editor,SE,,,,,Australia,AUS
+FUNECOL,2012,26,1,3504,Scott,D,Wilson,Scott D Wilson,Associate.Editor,SE,Regina,,,,Canada,CAN
+FUNECOL,2012,26,1,233,Art,,Woods,Art Woods,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2013,27,1,929,Edith,B,Allen,Edith B Allen,Associate.Editor,SE,Riverside,,,,USA,USA
+FUNECOL,2013,27,1,2624,Niels,PR,Anten,Niels PR Anten,Associate.Editor,SE,Utrecht,,,,Netherlands,NLD
+FUNECOL,2013,27,1,2282,Manfred,,Ayasse,Manfred Ayasse,Associate.Editor,SE,,,,,Germany,DEU
+FUNECOL,2013,27,1,1450,Jennifer,,Baltzer,Jennifer Baltzer,Associate.Editor,SE,,,,,Canada,CAN
+FUNECOL,2013,27,1,3712,Wolf,U,Blanckenhorn,Wolf U Blanckenhorn,Associate.Editor,SE,Zurich,,,,Switzerland,CHE
+FUNECOL,2013,27,1,1472,Jon,,Blount,Jon Blount,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2013,27,1,2311,Maria,JI,Briones,Maria JI Briones,Associate.Editor,SE,,,,,Spain,ESP
+FUNECOL,2013,27,1,26,Alison,K,Brody,Alison K Brody,Associate.Editor,SE,Vermont,,,,USA,USA
+FUNECOL,2013,27,1,642,Diane,R,Campbell,Diane R Campbell,Associate.Editor,SE,California,,,,USA,USA
+FUNECOL,2013,27,1,3936,Scott,P,Carroll,Scott P Carroll,Associate.Editor,SE,California,,,,USA,USA
+FUNECOL,2013,27,1,656,Daniel,P,Costa,Daniel P Costa,Associate.Editor,SE,Santa Cruz,,,,USA,USA
+FUNECOL,2013,27,1,1536,James,W,Dalling,James W Dalling,Associate.Editor,SE,Illinois,,,,USA,USA
+FUNECOL,2013,27,1,1166,Goggy,,Davidowitz,Goggy Davidowitz,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2013,27,1,452,Charles,,Fox,Charles Fox,Editor,EIC,,,,,USA,USA
+FUNECOL,2013,27,1,453,Craig,,Franklin,Craig Franklin,Associate.Editor,SE,,,,,Australia,AUS
+FUNECOL,2013,27,1,710,David,,Gremillet,David Gremillet,Associate.Editor,SE,,,,,France,FRA
+FUNECOL,2013,27,1,1609,Jennifer,,Grindstaff,Jennifer Grindstaff,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2013,27,1,1623,J,Daniel,Hare,J Daniel Hare,Associate.Editor,SE,Riverside,,,,USA,USA
+FUNECOL,2013,27,1,1625,James,D,Harwood,James D Harwood,Associate.Editor,SE,Kentucky,,,,USA,USA
+FUNECOL,2013,27,1,717,Dana,M,Hawley,Dana M Hawley,Associate.Editor,SE,Virginia Tech,,,,USA,USA
+FUNECOL,2013,27,1,103,Anthony,,Herrel,Anthony Herrel,Associate.Editor,SE,,,,,France,FRA
+FUNECOL,2013,27,1,3563,Timothy,E,Higham,Timothy E Higham,Associate.Editor,SE,Riverside,,,,USA,USA
+FUNECOL,2013,27,1,2834,Peeter,,Horak,Peeter Horak,Associate.Editor,SE,,,,,Estonia,EST
+FUNECOL,2013,27,1,731,Duncan,J,Irschick,Duncan J Irschick,Editor,EIC,Massachusetts,,,,USA,USA
+FUNECOL,2013,27,1,2421,Marc,T,Johnson,Marc T Johnson,Associate.Editor,SE,Toronto,,,,Canada,CAN
+FUNECOL,2013,27,1,3573,T,Hefin,Jones,T Hefin Jones,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2013,27,1,116,Adam,D,Kay,Adam D Kay,Associate.Editor,SE,Minnesota,,,,USA,USA
+FUNECOL,2013,27,1,2031,Kaoru,,Kitajima,Kaoru Kitajima,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2013,27,1,125,Alan,,Knapp,Alan Knapp,Editor,EIC,,,,,USA,USA
+FUNECOL,2013,27,1,2437,Marek,,Konarzewski,Marek Konarzewski,Associate.Editor,SE,,,,,Poland,POL
+FUNECOL,2013,27,1,1215,Gaku,,Kudo,Gaku Kudo,Associate.Editor,SE,,,,,Japan,JPN
+FUNECOL,2013,27,1,2039,Kwang,Pum,Lee,Kwang Pum Lee,Associate.Editor,SE,Seoul,,,,Republic of Korea,KOR
+FUNECOL,2013,27,1,3393,Sara,M,Lewis,Sara M Lewis,Associate.Editor,SE,Tufts,,,,USA,USA
+FUNECOL,2013,27,1,3870,Dustin,,Marshall,Dustin Marshall,Associate.Editor,SE,,,,,Australia,AUS
+FUNECOL,2013,27,1,2202,Lynn,B,Martin,Lynn B Martin,Associate.Editor,SE,South Florida,,,,USA,USA
+FUNECOL,2013,27,1,2865,Peter,,Mayhew,Peter Mayhew,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2013,27,1,523,Clare,,McArthur,Clare McArthur,Associate.Editor,SE,,,,,Australia,AUS
+FUNECOL,2013,27,1,2048,Kevin,J,McGraw,Kevin J McGraw,Associate.Editor,SE,Arizona,,,,USA,USA
+FUNECOL,2013,27,1,2676,Nick,J,Ostle,Nick J Ostle,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2013,27,1,3430,Sheila,,Patek,Sheila Patek,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2013,27,1,2512,Michael,,Pfrender,Michael Pfrender,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2013,27,1,3621,Theunis,,Piersma,Theunis Piersma,Associate.Editor,SE,,,,,Netherlands,NLD
+FUNECOL,2013,27,1,2224,Lourens,,Poorter,Lourens Poorter,Associate.Editor,SE,,,,,Netherlands,NLD
+FUNECOL,2013,27,1,832,David,,Raubenheimer,David Raubenheimer,Associate.Editor,SE,,,,,New Zealand,NZL
+FUNECOL,2013,27,1,839,David,N,Reznick,David N Reznick,Associate.Editor,SE,Riverside,,,,USA,USA
+FUNECOL,2013,27,1,2237,Lawren,,Sack,Lawren Sack,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2013,27,1,1859,Jen,A,Schweitzer,Jen A Schweitzer,Associate.Editor,SE,Tennessee,,,,USA,USA
+FUNECOL,2013,27,1,2095,Keith,W,Sockman,Keith W Sockman,Associate.Editor,SE,North Carolina,,,,USA,USA
+FUNECOL,2013,27,1,572,Carly,J,Stevens,Carly J Stevens,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2013,27,1,2104,Ken,,Thompson,Ken Thompson,Editor,EIC,,,,,UK,GBR
+FUNECOL,2013,27,1,2577,Mark,,Tjoelker,Mark Tjoelker,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2013,27,1,2105,Kathleen,K,Treseder,Kathleen K Treseder,Associate.Editor,SE,California,,,,USA,USA
+FUNECOL,2013,27,1,369,Barbara,,Tschirren,Barbara Tschirren,Associate.Editor,SE,,,,,Switzerland,CHE
+FUNECOL,2013,27,1,2579,Matthew,,Turnbull,Matthew Turnbull,Associate.Editor,SE,,,,,New Zealand,NZL
+FUNECOL,2013,27,1,3236,Raoul,,VanDamme,Raoul VanDamme,Associate.Editor,SE,,,,,Belgium,BEL
+FUNECOL,2013,27,1,1942,Jennifer,,Watling,Jennifer Watling,Associate.Editor,SE,,,,,Australia,AUS
+FUNECOL,2013,27,1,916,David,,Whitehead,David Whitehead,Associate.Editor,SE,,,,,New Zealand,NZL
+FUNECOL,2013,27,1,3661,Tony,D,Williams,Tony D Williams,Associate.Editor,SE,Simon Fraser University,,,,Canada,CAN
+FUNECOL,2013,27,1,3252,Robbie,,Wilson,Robbie Wilson,Associate.Editor,SE,,,,,Australia,AUS
+FUNECOL,2013,27,1,3504,Scott,D,Wilson,Scott D Wilson,Associate.Editor,SE,Regina,,,,Canada,CAN
+FUNECOL,2013,27,1,233,Art,,Woods,Art Woods,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2014,28,1,929,Edith,B,Allen,Edith B Allen,Associate.Editor,SE,Riverside,,,,USA,USA
+FUNECOL,2014,28,1,2624,Niels,PR,Anten,Niels PR Anten,Associate.Editor,SE,Utrecht,,,,Netherlands,NLD
+FUNECOL,2014,28,1,2282,Manfred,,Ayasse,Manfred Ayasse,Associate.Editor,SE,,,,,Germany,DEU
+FUNECOL,2014,28,1,1450,Jennifer,,Baltzer,Jennifer Baltzer,Associate.Editor,SE,,,,,Canada,CAN
+FUNECOL,2014,28,1,3712,Wolf,U,Blanckenhorn,Wolf U Blanckenhorn,Associate.Editor,SE,Zurich,,,,Switzerland,CHE
+FUNECOL,2014,28,1,1472,Jon,,Blount,Jon Blount,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2014,28,1,2311,Maria,JI,Briones,Maria JI Briones,Associate.Editor,SE,,,,,Spain,ESP
+FUNECOL,2014,28,1,26,Alison,K,Brody,Alison K Brody,Associate.Editor,SE,Vermont,,,,USA,USA
+FUNECOL,2014,28,1,642,Diane,R,Campbell,Diane R Campbell,Associate.Editor,SE,California,,,,USA,USA
+FUNECOL,2014,28,1,3936,Scott,P,Carroll,Scott P Carroll,Associate.Editor,SE,California,,,,USA,USA
+FUNECOL,2014,28,1,656,Daniel,P,Costa,Daniel P Costa,Associate.Editor,SE,Santa Cruz,,,,USA,USA
+FUNECOL,2014,28,1,1166,Goggy,,Davidowitz,Goggy Davidowitz,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2014,28,1,2365,Maud,CO,Ferrari,Maud CO Ferrari,Associate.Editor,SE,Saskatchewan,,,,Canada,CAN
+FUNECOL,2014,28,1,2002,Katie,,Field,Katie Field,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2014,28,1,452,Charles,,Fox,Charles Fox,Editor,EIC,,,,,USA,USA
+FUNECOL,2014,28,1,453,Craig,,Franklin,Craig Franklin,Associate.Editor,SE,,,,,Australia,AUS
+FUNECOL,2014,28,1,710,David,,Gremillet,David Gremillet,Associate.Editor,SE,,,,,France,FRA
+FUNECOL,2014,28,1,1609,Jennifer,,Grindstaff,Jennifer Grindstaff,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2014,28,1,1623,J,Daniel,Hare,J Daniel Hare,Associate.Editor,SE,Riverside,,,,USA,USA
+FUNECOL,2014,28,1,1625,James,D,Harwood,James D Harwood,Associate.Editor,SE,Kentucky,,,,USA,USA
+FUNECOL,2014,28,1,717,Dana,M,Hawley,Dana M Hawley,Associate.Editor,SE,Virginia Tech,,,,USA,USA
+FUNECOL,2014,28,1,103,Anthony,,Herrel,Anthony Herrel,Associate.Editor,SE,,,,,France,FRA
+FUNECOL,2014,28,1,3563,Timothy,E,Higham,Timothy E Higham,Associate.Editor,SE,Riverside,,,,USA,USA
+FUNECOL,2014,28,1,3750,William,A,Hopkins,William A Hopkins,Associate.Editor,SE,Virginia Tech,,,,USA,USA
+FUNECOL,2014,28,1,2834,Peeter,,Horak,Peeter Horak,Associate.Editor,SE,,,,,Estonia,EST
+FUNECOL,2014,28,1,731,Duncan,J,Irschick,Duncan J Irschick,Editor,EIC,Massachusetts,,,,USA,USA
+FUNECOL,2014,28,1,2421,Marc,T,Johnson,Marc T Johnson,Associate.Editor,SE,Toronto,,,,Canada,CAN
+FUNECOL,2014,28,1,3573,T,Hefin,Jones,T Hefin Jones,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2014,28,1,116,Adam,D,Kay,Adam D Kay,Associate.Editor,SE,Minnesota,,,,USA,USA
+FUNECOL,2014,28,1,2031,Kaoru,,Kitajima,Kaoru Kitajima,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2014,28,1,125,Alan,,Knapp,Alan Knapp,Editor,EIC,,,,,USA,USA
+FUNECOL,2014,28,1,2437,Marek,,Konarzewski,Marek Konarzewski,Associate.Editor,SE,,,,,Poland,POL
+FUNECOL,2014,28,1,1677,Julia,,Koricheva,Julia Koricheva,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2014,28,1,1215,Gaku,,Kudo,Gaku Kudo,Associate.Editor,SE,,,,,Japan,JPN
+FUNECOL,2014,28,1,2039,Kwang,Pum,Lee,Kwang Pum Lee,Associate.Editor,SE,Seoul,,,,Republic of Korea,KOR
+FUNECOL,2014,28,1,3393,Sara,M,Lewis,Sara M Lewis,Associate.Editor,SE,Tufts,,,,USA,USA
+FUNECOL,2014,28,1,3870,Dustin,,Marshall,Dustin Marshall,Associate.Editor,SE,,,,,Australia,AUS
+FUNECOL,2014,28,1,2202,Lynn,B,Martin,Lynn B Martin,Associate.Editor,SE,South Florida,,,,USA,USA
+FUNECOL,2014,28,1,2865,Peter,,Mayhew,Peter Mayhew,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2014,28,1,523,Clare,,McArthur,Clare McArthur,Associate.Editor,SE,,,,,Australia,AUS
+FUNECOL,2014,28,1,2048,Kevin,J,McGraw,Kevin J McGraw,Associate.Editor,SE,Arizona,,,,USA,USA
+FUNECOL,2014,28,1,1408,Ignacio,,Moore,Ignacio Moore,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2014,28,1,3415,Shuli,,Niu,Shuli Niu,Associate.Editor,SE,,,,,China,CHN
+FUNECOL,2014,28,1,3430,Sheila,,Patek,Sheila Patek,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2014,28,1,2512,Michael,,Pfrender,Michael Pfrender,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2014,28,1,3621,Theunis,,Piersma,Theunis Piersma,Associate.Editor,SE,,,,,Netherlands,NLD
+FUNECOL,2014,28,1,2224,Lourens,,Poorter,Lourens Poorter,Associate.Editor,SE,,,,,Netherlands,NLD
+FUNECOL,2014,28,1,832,David,,Raubenheimer,David Raubenheimer,Associate.Editor,SE,,,,,New Zealand,NZL
+FUNECOL,2014,28,1,839,David,N,Reznick,David N Reznick,Associate.Editor,SE,Riverside,,,,USA,USA
+FUNECOL,2014,28,1,1859,Jen,A,Schweitzer,Jen A Schweitzer,Associate.Editor,SE,Tennessee,,,,USA,USA
+FUNECOL,2014,28,1,2095,Keith,W,Sockman,Keith W Sockman,Associate.Editor,SE,North Carolina,,,,USA,USA
+FUNECOL,2014,28,1,572,Carly,J,Stevens,Carly J Stevens,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2014,28,1,2104,Ken,,Thompson,Ken Thompson,Editor,EIC,,,,,UK,GBR
+FUNECOL,2014,28,1,2577,Mark,,Tjoelker,Mark Tjoelker,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2014,28,1,2105,Kathleen,K,Treseder,Kathleen K Treseder,Associate.Editor,SE,California,,,,USA,USA
+FUNECOL,2014,28,1,369,Barbara,,Tschirren,Barbara Tschirren,Associate.Editor,SE,,,,,Switzerland,CHE
+FUNECOL,2014,28,1,2579,Matthew,,Turnbull,Matthew Turnbull,Associate.Editor,SE,,,,,New Zealand,NZL
+FUNECOL,2014,28,1,3236,Raoul,,VanDamme,Raoul VanDamme,Associate.Editor,SE,,,,,Belgium,BEL
+FUNECOL,2014,28,1,1942,Jennifer,,Watling,Jennifer Watling,Associate.Editor,SE,,,,,Australia,AUS
+FUNECOL,2014,28,1,916,David,,Whitehead,David Whitehead,Associate.Editor,SE,,,,,New Zealand,NZL
+FUNECOL,2014,28,1,3661,Tony,D,Williams,Tony D Williams,Associate.Editor,SE,Simon Fraser University,,,,Canada,CAN
+FUNECOL,2014,28,1,3252,Robbie,,Wilson,Robbie Wilson,Associate.Editor,SE,,,,,Australia,AUS
+FUNECOL,2014,28,1,233,Art,,Woods,Art Woods,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2015,29,1,929,Edith,B,Allen,Edith B Allen,Associate.Editor,SE,Riverside,,,,USA,USA
+FUNECOL,2015,29,1,2624,Niels,PR,Anten,Niels PR Anten,Associate.Editor,SE,Utrecht,,,,Netherlands,NLD
+FUNECOL,2015,29,1,2282,Manfred,,Ayasse,Manfred Ayasse,Associate.Editor,SE,,,,,Germany,DEU
+FUNECOL,2015,29,1,1450,Jennifer,,Baltzer,Jennifer Baltzer,Associate.Editor,SE,,,,,Canada,CAN
+FUNECOL,2015,29,1,1458,James,,Bell,James Bell,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2015,29,1,3848,Alison,,Bennett,Alison Bennett,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2015,29,1,18,Arjen,,Biere,Arjen Biere,Associate.Editor,SE,,,,,Netherlands,NLD
+FUNECOL,2015,29,1,3712,Wolf,U,Blanckenhorn,Wolf U Blanckenhorn,Associate.Editor,SE,Zurich,,,,Switzerland,CHE
+FUNECOL,2015,29,1,1472,Jon,,Blount,Jon Blount,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2015,29,1,2311,Maria,JI,Briones,Maria JI Briones,Associate.Editor,SE,,,,,Spain,ESP
+FUNECOL,2015,29,1,26,Alison,K,Brody,Alison K Brody,Associate.Editor,SE,Vermont,,,,USA,USA
+FUNECOL,2015,29,1,642,Diane,R,Campbell,Diane R Campbell,Associate.Editor,SE,California,,,,USA,USA
+FUNECOL,2015,29,1,3936,Scott,P,Carroll,Scott P Carroll,Associate.Editor,SE,California,,,,USA,USA
+FUNECOL,2015,29,1,656,Daniel,P,Costa,Daniel P Costa,Associate.Editor,SE,Santa Cruz,,,,USA,USA
+FUNECOL,2015,29,1,1166,Goggy,,Davidowitz,Goggy Davidowitz,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2015,29,1,2365,Maud,CO,Ferrari,Maud CO Ferrari,Associate.Editor,SE,Saskatchewan,,,,Canada,CAN
+FUNECOL,2015,29,1,2002,Katie,,Field,Katie Field,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2015,29,1,452,Charles,,Fox,Charles Fox,Editor,EIC,,,,,USA,USA
+FUNECOL,2015,29,1,453,Craig,,Franklin,Craig Franklin,Associate.Editor,SE,,,,,Australia,AUS
+FUNECOL,2015,29,1,710,David,,Gremillet,David Gremillet,Associate.Editor,SE,,,,,France,FRA
+FUNECOL,2015,29,1,1609,Jennifer,,Grindstaff,Jennifer Grindstaff,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2015,29,1,1625,James,D,Harwood,James D Harwood,Associate.Editor,SE,Kentucky,,,,USA,USA
+FUNECOL,2015,29,1,717,Dana,M,Hawley,Dana M Hawley,Associate.Editor,SE,Virginia Tech,,,,USA,USA
+FUNECOL,2015,29,1,103,Anthony,,Herrel,Anthony Herrel,Associate.Editor,SE,,,,,France,FRA
+FUNECOL,2015,29,1,3563,Timothy,E,Higham,Timothy E Higham,Associate.Editor,SE,Riverside,,,,USA,USA
+FUNECOL,2015,29,1,3750,William,A,Hopkins,William A Hopkins,Associate.Editor,SE,Virginia Tech,,,,USA,USA
+FUNECOL,2015,29,1,2834,Peeter,,Horak,Peeter Horak,Associate.Editor,SE,,,,,Estonia,EST
+FUNECOL,2015,29,1,731,Duncan,J,Irschick,Duncan J Irschick,Editor,EIC,Massachusetts,,,,USA,USA
+FUNECOL,2015,29,1,3573,T,Hefin,Jones,T Hefin Jones,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2015,29,1,116,Adam,D,Kay,Adam D Kay,Associate.Editor,SE,Minnesota,,,,USA,USA
+FUNECOL,2015,29,1,2031,Kaoru,,Kitajima,Kaoru Kitajima,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2015,29,1,125,Alan,,Knapp,Alan Knapp,Editor,EIC,,,,,USA,USA
+FUNECOL,2015,29,1,2437,Marek,,Konarzewski,Marek Konarzewski,Associate.Editor,SE,,,,,Poland,POL
+FUNECOL,2015,29,1,1677,Julia,,Koricheva,Julia Koricheva,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2015,29,1,1215,Gaku,,Kudo,Gaku Kudo,Associate.Editor,SE,,,,,Japan,JPN
+FUNECOL,2015,29,1,2439,Markku,,Larjavaara,Markku Larjavaara,Associate.Editor,SE,,,,,Finland,FIN
+FUNECOL,2015,29,1,2039,Kwang,Pum,Lee,Kwang Pum Lee,Associate.Editor,SE,Seoul,,,,Republic of Korea,KOR
+FUNECOL,2015,29,1,3391,Shawn,,Leroux,Shawn Leroux,Associate.Editor,SE,,,,,Canada,CAN
+FUNECOL,2015,29,1,3393,Sara,M,Lewis,Sara M Lewis,Associate.Editor,SE,Tufts,,,,USA,USA
+FUNECOL,2015,29,1,771,David,,Lusseau,David Lusseau,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2015,29,1,1738,Jessamyn,S,Manson,Jessamyn S Manson,Associate.Editor,SE,Alberta,,,,Canada,CAN
+FUNECOL,2015,29,1,3870,Dustin,,Marshall,Dustin Marshall,Associate.Editor,SE,,,,,Australia,AUS
+FUNECOL,2015,29,1,2202,Lynn,B,Martin,Lynn B Martin,Associate.Editor,SE,South Florida,,,,USA,USA
+FUNECOL,2015,29,1,2865,Peter,,Mayhew,Peter Mayhew,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2015,29,1,523,Clare,,McArthur,Clare McArthur,Associate.Editor,SE,,,,,Australia,AUS
+FUNECOL,2015,29,1,2048,Kevin,J,McGraw,Kevin J McGraw,Associate.Editor,SE,Arizona,,,,USA,USA
+FUNECOL,2015,29,1,1408,Ignacio,,Moore,Ignacio Moore,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2015,29,1,3415,Shuli,,Niu,Shuli Niu,Associate.Editor,SE,,,,,China,CHN
+FUNECOL,2015,29,1,2675,Natalia,,Norden,Natalia Norden,Associate.Editor,SE,,,,,Colombia,COL
+FUNECOL,2015,29,1,3430,Sheila,,Patek,Sheila Patek,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2015,29,1,2512,Michael,,Pfrender,Michael Pfrender,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2015,29,1,3621,Theunis,,Piersma,Theunis Piersma,Associate.Editor,SE,,,,,Netherlands,NLD
+FUNECOL,2015,29,1,2224,Lourens,,Poorter,Lourens Poorter,Associate.Editor,SE,,,,,Netherlands,NLD
+FUNECOL,2015,29,1,3446,Segio,,Rasmann,Segio Rasmann,Associate.Editor,SE,,,,,Switzerland,CHE
+FUNECOL,2015,29,1,832,David,,Raubenheimer,David Raubenheimer,Associate.Editor,SE,,,,,New Zealand,NZL
+FUNECOL,2015,29,1,839,David,N,Reznick,David N Reznick,Associate.Editor,SE,Riverside,,,,USA,USA
+FUNECOL,2015,29,1,3458,Sabrina,E,Russo,Sabrina E Russo,Associate.Editor,SE,Nebraska,,,,USA,USA
+FUNECOL,2015,29,1,1023,Emma,J,Sayer,Emma J Sayer,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2015,29,1,1859,Jen,A,Schweitzer,Jen A Schweitzer,Associate.Editor,SE,Tennessee,,,,USA,USA
+FUNECOL,2015,29,1,2095,Keith,W,Sockman,Keith W Sockman,Associate.Editor,SE,North Carolina,,,,USA,USA
+FUNECOL,2015,29,1,572,Carly,J,Stevens,Carly J Stevens,Associate.Editor,SE,,,,,UK,GBR
+FUNECOL,2015,29,1,2104,Ken,,Thompson,Ken Thompson,Editor,EIC,,,,,UK,GBR
+FUNECOL,2015,29,1,2577,Mark,,Tjoelker,Mark Tjoelker,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2015,29,1,2105,Kathleen,K,Treseder,Kathleen K Treseder,Associate.Editor,SE,California,,,,USA,USA
+FUNECOL,2015,29,1,369,Barbara,,Tschirren,Barbara Tschirren,Associate.Editor,SE,,,,,Switzerland,CHE
+FUNECOL,2015,29,1,2579,Matthew,,Turnbull,Matthew Turnbull,Associate.Editor,SE,,,,,New Zealand,NZL
+FUNECOL,2015,29,1,3236,Raoul,,VanDamme,Raoul VanDamme,Associate.Editor,SE,,,,,Belgium,BEL
+FUNECOL,2015,29,1,1942,Jennifer,,Watling,Jennifer Watling,Associate.Editor,SE,,,,,Australia,AUS
+FUNECOL,2015,29,1,916,David,,Whitehead,David Whitehead,Associate.Editor,SE,,,,,New Zealand,NZL
+FUNECOL,2015,29,1,3863,Caroline,,Williams,Caroline Williams,Associate.Editor,SE,,,,,USA,USA
+FUNECOL,2015,29,1,3661,Tony,D,Williams,Tony D Williams,Associate.Editor,SE,Simon Fraser University,,,,Canada,CAN
+FUNECOL,2015,29,1,3252,Robbie,,Wilson,Robbie Wilson,Associate.Editor,SE,,,,,Australia,AUS
+FUNECOL,2015,29,1,233,Art,,Woods,Art Woods,Associate.Editor,SE,,,,,USA,USA
