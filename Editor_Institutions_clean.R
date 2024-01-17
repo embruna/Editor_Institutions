@@ -1179,19 +1179,7 @@ levels(editors$journal)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
 
 
 
