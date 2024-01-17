@@ -21,7 +21,7 @@ library(RecordLinkage)
 
 # load & clean data from dryad ---------------------------------------------
 
-cho_data <- read.csv("./Data/dryad/Dryad_Cho_V2.csv", dec = ".", header = TRUE, sep = ",", check.names = FALSE)
+cho_data <- read.csv("./data_raw/dryad/Dryad_Cho_V2.csv", dec = ".", header = TRUE, sep = ",", check.names = FALSE)
 colnames(cho_data)<-tolower(colnames(cho_data))
 
 # minor corrections to cho_data_V2 Caught by Bruna's 2017 SciWri Class
@@ -46,7 +46,7 @@ cho_data$source <- "cho_dryad"
 
 # load data from Espin et al. 2017 ----------------------------------------
 
-espin_data <- read.csv("./Data/dryad/Dryad.Espin.v1.csv", dec = ".", header = TRUE, sep = ",", check.names = FALSE)
+espin_data <- read.csv("./data_raw/dryad/Dryad.Espin.v1.csv", dec = ".", header = TRUE, sep = ",", check.names = FALSE)
 colnames(espin_data)<-tolower(colnames(espin_data))
 # Add a tag to ID the data source
 espin_data$source <- "espin_dryad"
@@ -63,7 +63,7 @@ rm(cho_data, espin_data)
 
 # load raw data collected by sciwri 17 ------------------------------------
 # path to folder that holds multiple .csv files
-folder <- "./Data/sciwri17_raw_data/"
+folder <- "./data_raw/sciwri17_raw_data/"
 # create list of all .csv files in folder
 file_list <- list.files(path = folder, pattern = "*.csv")
 # read in each .csv file in file_list and create a data frame
@@ -72,8 +72,7 @@ file_list <- list.files(path = folder, pattern = "*.csv")
 for (i in 1:length(file_list)) {
   assign(
     file_list[i],
-    read.csv(paste(folder, file_list[i], sep = ""),
-      na.strings = c("", "NA"), encoding = "ASCII"
+    read_csv(paste(folder, file_list[i], sep = "")
     )
   )
 }
@@ -82,7 +81,7 @@ rm(folder, file_list, i)
 
 # load & standardize AUK, CONDOR collected by Hurtado (MALAS GA) ----------
 
-folder <- "./Data/hurtado_data/" # path to folder that holds multiple .csv files
+folder <- "./data_raw/hurtado_data/" # path to folder that holds multiple .csv files
 # create list of all .csv files in folder
 file_list <- list.files(path = folder, pattern = "*.csv") 
 # read each .csv in file_list & create data frame with same name as .csv file
@@ -90,8 +89,9 @@ file_list <- list.files(path = folder, pattern = "*.csv")
 for (i in 1:length(file_list)) {
   assign(
     file_list[i],
-    read.csv(paste(folder, file_list[i], sep = ""),
-      na.strings = c("", "NA"), encoding = "ASCII"
+    read_csv(paste(folder, file_list[i], sep = "")
+      #        ,
+      # na.strings = c("", "NA"), encoding = "ASCII"
     )
   )
 }
@@ -461,7 +461,9 @@ alldata <- bind_rows(alldata, OECOLOGIA)
 rm(data_list, OECOLOGIA)
 
 # Landscape Eco Corrections by Patrick James ------------------------------
-# TODO: LECO NEEDS CORRECTION!! James indicates mistakes, but not what they are.
+
+#TODO: LECO NEEDS CORRECTION!! James indicates mistakes, but not what they are.
+
 source("functions_data_cleaning/PJ_LECO_corrections.R")
 data_list <- PJ_LECO_corrections(alldata)
 alldata <- as_tibble(data_list[[1]])
@@ -507,7 +509,7 @@ alldata_ORIG_FOR_TESTING <- alldata
 alldata$inst_CHECK <- NA
 
 colnames(alldata)
-
+ 
 
 # Clean Editors  ----------------------------------------------------------
 source("functions_data_cleaning/editor_cleaner.R")
@@ -533,6 +535,7 @@ str(alldata)
 # summary(alldata$VOLUME.x==alldata$VOLUME.y)
 # source("functions_data_cleaning/institution_cleaner.R")
 # alldata<-institution_cleaner(alldata)
+
 source("functions_data_cleaning/JamesCorrections.R")
 alldata <- JamesCorrections(alldata)
 
@@ -562,13 +565,13 @@ missing_edID <- alldata %>%
   filter(is.na(editor_id)) %>%
   select(last_name, first_name) %>%
   group_by(last_name, first_name) %>%
-  slice(n = 1)
+  slice(1)
 
 no_edID <- inner_join(alldata, missing_edID) %>%
   filter(is.na(editor_id)) %>%
   select(journal, year, editor_id, first_name, middle_name, last_name, title, inst) %>%
   group_by(first_name, middle_name, last_name) %>%
-  slice(n = 1) %>%
+  slice(1) %>%
   arrange(last_name, first_name, middle_name) %>%
   ungroup() %>%
   select(last_name, first_name)
@@ -766,7 +769,7 @@ summary(editors$journal)
 # DELETE DUPLICATE ROWS
 # TODO: SEE WHICH ONES ARE BIENBG DROPPED
 
-foo <- select(editors, journal, year, first_name, last_name)
+foo <- editors %>% select(journal, year, first_name, last_name)
 foo<-foo[duplicated(foo[, 1:4]), ]
 editors <- distinct(editors, journal, last_name, first_name, year, title, .keep_all = TRUE)
 ###############################
@@ -780,13 +783,13 @@ no_edID <- editors %>%
   filter(editor_id == "TBD" | editor_id == "missing" | is.na(editor_id)) %>%
   select(last_name, first_name, middle_name) %>%
   group_by(last_name, first_name, middle_name) %>%
-  slice(n = 1)
+  slice(1)
 no_edID
 
 no_edID <- inner_join(editors, no_edID) %>%
   select(journal, year, editor_id, first_name, middle_name, last_name, title, inst) %>%
   group_by(first_name, middle_name, last_name, editor_id) %>%
-  slice(n = 1) %>%
+  slice(1) %>%
   arrange(last_name, first_name, middle_name, editor_id)
 
 write_csv(no_edID, file = "./output_review/no_editor_ID.csv") # export it as a csv file
@@ -794,6 +797,7 @@ write_csv(no_edID, file = "./output_review/no_editor_ID.csv") # export it as a c
 
 write_csv(editors, "./data_clean/InstitutionData_clean.csv")
 
+summary(as.factor(editors$inst))
 
 
 
@@ -813,21 +817,21 @@ editors <- editors %>%
 
 summary(editors)
 
+# how many?
+n_eds<-editors %>%
+  count(editor_id) %>%  
+  summarize(n=n())
+n_eds
 
-# how many misisng INST?
+
+# how many misisng INST? # what journals are these in?
 inst_missing<-editors %>%
   filter(is.na(inst)) %>% 
-  group_by(journal) %>% 
-  summarize(n=n())
+  count(journal) %>% 
+  arrange(desc(n))
 sum(inst_missing$n)
 
-# what journals are these in?
-inst_missing<-editors %>%
-  filter(is.na(inst)) %>% 
-  group_by(journal) %>% 
-  summarize(n=n()) %>% 
-  arrange(desc(n))
-inst_missing
+
 # 
 # 
 # # editors<-editors_ORIG_FOR_TESTING
@@ -869,6 +873,11 @@ MultiCampus <- editors %>%
   select(journal, year, , editor_id, first_name, middle_name, last_name, inst, unit, city, country) %>% 
   arrange(editor_id,last_name)
 MultiCampus
+
+MultiCampus %>% group_by(inst) %>% summarize(n())
+
+MultiCampus %>% group_by(inst,city) %>% summarize(n())
+
 MultiCampus %>% group_by(journal) %>% summarize(n())
 
 write_csv(MultiCampus, "./output_review/MultiCampus.csv")
@@ -978,7 +987,7 @@ dup_edID3 <- editors %>%
   group_by(last_name, first_name) %>%
   mutate(n_names = n_distinct(editor_id)) %>%
   distinct(last_name, first_name, editor_id, .keep_all = TRUE) %>%
-  arrange(desc(last_name, first_name, editor_id)) %>%
+  arrange(last_name, first_name, editor_id) %>%
   filter(n_names > 1)
 dup_edID3
 # dup_edID3 <-dup_edID3 %>% group_by(first_name,last_name) %>%  arrange(editor_id) %>% slice(2)
@@ -1053,7 +1062,6 @@ missing_inst_names <- editors %>%
   filter(row_number() == 1 | row_number() == n()) %>%
   group_by(journal) %>% 
   summarize(n=n())
-  arrange(journal, last_name, first_name, year)
 # write_csv(missing_inst_names, file = "./output_review/missing_inst_editor_names.csv") # export it as a csv file
 ############################
 
@@ -1159,7 +1167,7 @@ foo$counter <- (seq(1:nrow(foo)) - 1)
 foo$cumsum <- (cumsum(foo$n) - 307)
 foo$prop <- (foo$cumsum / (sum(foo$n) - 307)) * 100
 ############################
-
+ 
 
 editors$journal<-droplevels(editors$journal)
 levels(editors$journal)

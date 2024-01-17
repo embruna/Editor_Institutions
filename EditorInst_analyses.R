@@ -41,6 +41,12 @@ analysis_data$last_name<-as.factor(analysis_data$last_name)
 analysis_data$title<-as.factor(analysis_data$title)
 analysis_data$category<-as.factor(analysis_data$category)
 
+
+# data overview -----------------------------------------------------------
+
+range(analysis_data$year)
+unique(analysis_data$journal)
+
 ##############################################################
 first_year=1985
 last_year=2014
@@ -176,11 +182,12 @@ Ed_by_country
 
 ##############################################################
 ##############################################################
+names(analysis_data)
+analysis_data<-analysis_data %>% rename("country"="COUNTRY")
+source("./functions_analysis/country_codes.R")
+analysis_data<-country_codes(analysis_data)
+
 analysis_data<-analysis_data %>% rename("COUNTRY"="country")
-source("./functions_analysis/Country.Codes.R")
-analysis_data<-Country.Codes(analysis_data)
-
-
 source("./functions_analysis/AddIncomeRegion.R")
 analysis_data<-AddIncomeRegion(analysis_data)
 
@@ -330,10 +337,10 @@ plotPOOLinstimpdiv<-ggplot(IsimpDivTable, aes(x=year, y=InvSimpson)) +
   ylab(bquote('D'[2]))+
   ggtitle('(C) Editor Institutional Diversity')+
   geom_point(color="black", shape=1)+
-  scale_y_continuous(limits = c(0, 80))+
+  scale_y_continuous(limits = c(0, 250))+
   scale_x_continuous(breaks=seq(first_year, last_year+1, 5))
 
-plotPOOLinstimpdiv<-plotPOOLEDsimpdiv+theme_classic()+
+plotPOOLinstimpdiv<-plotPOOLinstimpdiv+theme_classic()+
   theme(axis.title.x=element_text(colour="black", size = 14, vjust=0),            #sets x axis title size, style, distance from axis #add , face = "bold" if you want bold
         axis.text=element_text(colour="black", size = 10),
         plot.margin=unit(c(1,5,1,1),"lines"),
@@ -341,7 +348,7 @@ plotPOOLinstimpdiv<-plotPOOLEDsimpdiv+theme_classic()+
         legend.text = element_text(color="black", size=10),  
         legend.position = c(0.9,0.8),
         legend.background = element_rect(colour = 'black', size = 0.5, linetype='solid'))
-plotPOOLEDsimpdiv
+plotPOOLinstimpdiv
 
 
 
@@ -365,7 +372,7 @@ Editor.Inst<-analysis_data %>%  group_by(inst) %>%
 Editor.Inst
 
 
-cutoff = 20 # This is how many countries you want on the chart, all the rest will be in "OTHER"
+cutoff = 50 # This is how many countries you want on the chart, all the rest will be in "OTHER"
 editor.inst<-arrange(Editor.Inst, desc(Pcnt_Inst)) %>% select(inst,N_Inst,Pcnt_Inst)
 most.common.Institutions<-slice(Editor.Inst, 1:cutoff)
 least.common.Institutions<-slice(Editor.Inst, (cutoff+1):nrow(Editor.Inst)) 
