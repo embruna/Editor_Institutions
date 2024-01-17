@@ -1,0 +1,183 @@
+# This will load and the corrected files and make the required changes.
+JamesCorrections2 <- function(ORIGINAL_DATA) {
+  # ORIGINAL_DATA<-ALLDATA  
+  library(tidyverse)
+  
+  ORIGINAL_DATA$LAST_NAME[ORIGINAL_DATA$editor_id==1355 & ORIGINAL_DATA$FIRST_NAME=="Holmes"]<-"Rolston"
+  ORIGINAL_DATA<-ORIGINAL_DATA[!(is.na(ORIGINAL_DATA$editor_id) & ORIGINAL_DATA$FIRST_NAME=="Holmes"),]
+  ORIGINAL_DATA$STATE[ORIGINAL_DATA$YEAR!=1992 & ORIGINAL_DATA$FIRST_NAME=="David" & ORIGINAL_DATA$LAST_NAME=="Gibson" & ORIGINAL_DATA$CITY=="Carbondale"]<-"IL"
+  ORIGINAL_DATA$STATE[ORIGINAL_DATA$YEAR==1992 & ORIGINAL_DATA$CITY=="Pensacola" & ORIGINAL_DATA$LAST_NAME=="Gibson"]<-"FL"
+  ORIGINAL_DATA$STATE[ORIGINAL_DATA$LAST_NAME=="Moss"]<-NA
+  ORIGINAL_DATA$STATE[ORIGINAL_DATA$LAST_NAME=="Usher"]<-NA
+  ORIGINAL_DATA$STATE[ORIGINAL_DATA$LAST_NAME=="Milner-Gulland"]<-NA
+  ORIGINAL_DATA$INST[ORIGINAL_DATA$LAST_NAME=="Belovsky" & ORIGINAL_DATA$INST=="Notre Dame"]<-"University of Notre Dame"
+  ORIGINAL_DATA$CITY[ORIGINAL_DATA$LAST_NAME=="Belovsky" & ORIGINAL_DATA$INST=="Notre Dame"]<-"Notre Dame"
+  ORIGINAL_DATA$COUNTRY[ORIGINAL_DATA$LAST_NAME=="Belovsky" & ORIGINAL_DATA$INST=="university of notre dame"]<-"USA"
+  ORIGINAL_DATA$COUNTRY[ORIGINAL_DATA$LAST_NAME=="Belovsky" & ORIGINAL_DATA$INST=="University of Notre Dame"]<-"USA"
+  ORIGINAL_DATA$STATE[ORIGINAL_DATA$LAST_NAME=="Belovsky" & ORIGINAL_DATA$INST=="Notre Dame University"]<-"IN"
+  ORIGINAL_DATA$STATE[ORIGINAL_DATA$FIRST_NAME=="James" & ORIGINAL_DATA$LAST_NAME=="Carlton"]<-"CT"
+  ORIGINAL_DATA$STATE[ORIGINAL_DATA$FIRST_NAME=="Jon" & ORIGINAL_DATA$LAST_NAME=="Rodriguez"]<-NA
+  ORIGINAL_DATA$STATE[ORIGINAL_DATA$editor_id==455 & ORIGINAL_DATA$FIRST_NAME=="Christopher" & ORIGINAL_DATA$LAST_NAME=="Frissell"]<-"MT"
+  ORIGINAL_DATA$INST[ORIGINAL_DATA$editor_id==455 & ORIGINAL_DATA$FIRST_NAME=="Christopher" & ORIGINAL_DATA$LAST_NAME=="Frissell"]<-"University of Montana"
+  ORIGINAL_DATA$UNIT[ORIGINAL_DATA$editor_id==455 & ORIGINAL_DATA$FIRST_NAME=="Christopher" & ORIGINAL_DATA$LAST_NAME=="Frissell"]<-"Flathead Lake Biological Station"
+  ORIGINAL_DATA$CITY[ORIGINAL_DATA$editor_id==455 & ORIGINAL_DATA$FIRST_NAME=="Christopher" & ORIGINAL_DATA$LAST_NAME=="Frissell"]<-"Polson"
+  ORIGINAL_DATA$CITY[ORIGINAL_DATA$editor_id==1511 & ORIGINAL_DATA$LAST_NAME=="Cinner" & ORIGINAL_DATA$YEAR>2009 & ORIGINAL_DATA$YEAR<2015 ]<-"Townsville"
+  ORIGINAL_DATA$STATE[ORIGINAL_DATA$editor_id==1511 & ORIGINAL_DATA$LAST_NAME=="Cinner" & ORIGINAL_DATA$YEAR>2009 & ORIGINAL_DATA$YEAR<2015 ]<-"Queensland"
+  ORIGINAL_DATA$UNIT[ORIGINAL_DATA$editor_id==1511 & ORIGINAL_DATA$LAST_NAME=="Cinner"]<-"ARC Centre of Excellence for Coral Reef Studies"
+  ORIGINAL_DATA$INST[ORIGINAL_DATA$editor_id==1511 & ORIGINAL_DATA$LAST_NAME=="Cinner"]<-"James Cook University"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$editor_id==1511 & ORIGINAL_DATA$LAST_NAME=="Cinner" & ORIGINAL_DATA$YEAR==2013]<-"journal front matter has INST=Columbia Univ, but his CV makes no mention of this"
+  ORIGINAL_DATA$INST[ORIGINAL_DATA$editor_id==1248 & ORIGINAL_DATA$JOURNAL=="BITR" & ORIGINAL_DATA$YEAR==1987 ]<-"new york botanical garden"
+  ORIGINAL_DATA$INST[ORIGINAL_DATA$editor_id==1704 & ORIGINAL_DATA$JOURNAL=="JECOL" & ORIGINAL_DATA$YEAR==2009 ]<-"university of sheffield"
+  ORIGINAL_DATA$UNIT[ORIGINAL_DATA$editor_id==1229 & ORIGINAL_DATA$INST=="University of Montana"]<-"savannah river ecology laboratory"
+  ORIGINAL_DATA$INST[ORIGINAL_DATA$editor_id==1229 & ORIGINAL_DATA$INST=="University of Montana"]<-"university of georgia"
+  ORIGINAL_DATA$UNIT[ORIGINAL_DATA$INST=="ALTERRA Research Institute for the Green World" ]<-"alterra research institute for the green world"
+  ORIGINAL_DATA$UNIT[ORIGINAL_DATA$INST=="Gatty Marine Lab (University of Saint Andrews)" ]<-"Gatty Marine Lab"
+  ORIGINAL_DATA$UNIT[ORIGINAL_DATA$INST=="Netherlands Institute of Ecology; Wageningen University and Research Centre Netherlands Institute of Ecology" ]<-"Netherlands Institute of Ecology"
+  ORIGINAL_DATA$UNIT[ORIGINAL_DATA$INST=="Norwich" ]<-"Norwich Research Park Industrial Biotechnology and Bioenergy Alliance"
+  ORIGINAL_DATA$UNIT[ORIGINAL_DATA$INST=="Scripps Institute of Oceanography" ]<-"Scripps Institution of Oceanography"
+  ORIGINAL_DATA$UNIT[ORIGINAL_DATA$INST=="Scripps Institution  of Oceanography" ]<-"Scripps Institution of Oceanography"
+  ORIGINAL_DATA$UNIT[ORIGINAL_DATA$INST=="Scripps Institute of Oceanography" ]<-"Gatty Marine Lab"
+  ORIGINAL_DATA$UNIT[ORIGINAL_DATA$INST=="Savannah River Ecology Laboratory" ]<-"Savannah River Ecology Laboratory"
+  ORIGINAL_DATA$INST[ORIGINAL_DATA$INST=="Savannah River Ecology Laboratory" ]<-"University of Georgia"
+  ORIGINAL_DATA$UNIT[ORIGINAL_DATA$INST=="University of California Santa Cruz Extension"]<-"UCSC Extension"
+  ORIGINAL_DATA$INST[ORIGINAL_DATA$INST=="University of California" & ORIGINAL_DATA$INST=="University of California Davis" ]<-"University of California Davis"
+  ORIGINAL_DATA$INST[ORIGINAL_DATA$INST=="University of California" & ORIGINAL_DATA$INST=="University of California Berkeley" ]<-"University of California Berkeley"
+  ORIGINAL_DATA$INST[ORIGINAL_DATA$INST=="University of California" & ORIGINAL_DATA$INST=="University of California Riverside" ]<-"University of California Riverside"
+  ORIGINAL_DATA$INST[ORIGINAL_DATA$editor_id==1218 & ORIGINAL_DATA$JOURNAL=="CONBIO" & ORIGINAL_DATA$YEAR>1986 & ORIGINAL_DATA$YEAR<1992 ]<-"Royal Botanic Gardens Kew"
+  ORIGINAL_DATA$INST[ORIGINAL_DATA$LAST_NAME=="Streeter" & ORIGINAL_DATA$JOURNAL=="JECOL" & ORIGINAL_DATA$YEAR==2009 ]<-"University of Sussex"
+  ORIGINAL_DATA$INST[ORIGINAL_DATA$LAST_NAME=="Grover" & ORIGINAL_DATA$JOURNAL=="AMNAT"]<-"University of Texas Arlington"
+  ORIGINAL_DATA$INST[ORIGINAL_DATA$LAST_NAME=="Noss" & ORIGINAL_DATA$JOURNAL=="CONBIO" & ORIGINAL_DATA$YEAR==1998 ]<-"Conservation Biology Institute"
+  ORIGINAL_DATA$UNIT[ORIGINAL_DATA$LAST_NAME=="Dratch" & ORIGINAL_DATA$JOURNAL=="CONBIO" & ORIGINAL_DATA$INST=="National Fish and Wildlife Forensics Laboratory" ]<-"National Fish and Wildlife Forensics Laboratory"
+  ORIGINAL_DATA$INST[ORIGINAL_DATA$LAST_NAME=="Dratch" & ORIGINAL_DATA$JOURNAL=="CONBIO" & ORIGINAL_DATA$INST=="National Fish and Wildlife Forensics Laboratory" ]<-"US Fish and Wildlife Service"
+  ORIGINAL_DATA$INST[ORIGINAL_DATA$LAST_NAME=="Daszak" & ORIGINAL_DATA$JOURNAL=="CONBIO" & ORIGINAL_DATA$INST=="University of Nevada Reno" ]<-"Consortium for Conservation Medicine"
+  ORIGINAL_DATA$UNIT[ORIGINAL_DATA$LAST_NAME=="Meffe" & ORIGINAL_DATA$JOURNAL=="CONBIO" & ORIGINAL_DATA$INST=="University of Montana" ]<-"Savanna Riverl Ecological Laboratory"
+  ORIGINAL_DATA$UNIT[ORIGINAL_DATA$LAST_NAME=="Meffe" & ORIGINAL_DATA$JOURNAL=="CONBIO" & ORIGINAL_DATA$UNIT=="Savanna Riverl Ecological Laboratory" ]<-"University of Georgia"
+  ORIGINAL_DATA$UNIT[ORIGINAL_DATA$JOURNAL=="LECO" & ORIGINAL_DATA$INST=="Institute of Landscape Ecology of Slovak Academy of Sciences" ]<-"Institute of Landscape Ecology"
+  ORIGINAL_DATA$INST[ORIGINAL_DATA$JOURNAL=="LECO" & ORIGINAL_DATA$INST=="Institute of Landscape Ecology of Slovak Academy of Sciences" ]<-"Slovak Academy of Sciences"
+  ORIGINAL_DATA$STATE[ORIGINAL_DATA$CITY=="New Mexico" & ORIGINAL_DATA$CITY=="Las Cruces"]<-"NM"
+  ORIGINAL_DATA$CITY[ORIGINAL_DATA$CITY=="New Mexico" & ORIGINAL_DATA$CITY=="Las Cruces"]<-"Las Cruces"
+  ORIGINAL_DATA$CITY[is.na(ORIGINAL_DATA$CITY) & ORIGINAL_DATA$CITY=="Las Cruces"]<-"Las Cruces"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$CITY=="Basel" & ORIGINAL_DATA$CITY=="Lausanne"]<-"2x city"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$CITY=="Brighton" & ORIGINAL_DATA$CITY=="Toronto"]<-"2x city"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$CITY=="Zurich" & ORIGINAL_DATA$CITY=="Basel"]<-"2x city"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$CITY=="Canberra" & ORIGINAL_DATA$CITY=="Lyneham"]<-"2x city"
+    ORIGINAL_DATA$CITY[ORIGINAL_DATA$CITY=="Stanford" & ORIGINAL_DATA$CITY=="Pacific Grove"]<-"Pacific Grove"
+  ORIGINAL_DATA$CITY[ORIGINAL_DATA$CITY=="Manhattan" & ORIGINAL_DATA$CITY=="New York"]<-"New York"
+  ORIGINAL_DATA$CITY[ORIGINAL_DATA$CITY=="East Lansging" & ORIGINAL_DATA$CITY=="East Lansing"]<-"East Lansing"
+  ORIGINAL_DATA$CITY[ORIGINAL_DATA$CITY=="New Yor City" & ORIGINAL_DATA$CITY=="New York City"]<-"New York"
+  ORIGINAL_DATA$CITY[ORIGINAL_DATA$CITY=="Manhattan" & ORIGINAL_DATA$CITY=="New York"]<-"New York"
+  ORIGINAL_DATA$CITY[ORIGINAL_DATA$CITY=="Los Angeles" & ORIGINAL_DATA$CITY=="Malibu"]<-"Malibu"
+  ORIGINAL_DATA$CITY[ORIGINAL_DATA$CITY=="Manhattan" & ORIGINAL_DATA$CITY=="New York"]<-"New York"
+  ORIGINAL_DATA$CITY[ORIGINAL_DATA$CITY=="Manhattan" & ORIGINAL_DATA$CITY=="New York"]<-"New York"
+  ORIGINAL_DATA$CITY[ORIGINAL_DATA$CITY=="Sheffield S10 2TN"]<-"Sheffield S10 2TN"
+  ORIGINAL_DATA$UNIT[ORIGINAL_DATA$CITY=="\xcaDepartment of Animal Ecology and Tropical Biology (Zoology III)"]<-"Department of Animal Ecology and Tropical Biology (Zoology III)"
+  ORIGINAL_DATA$CITY[ORIGINAL_DATA$CITY=="\xcaDepartment of Animal Ecology and Tropical Biology (Zoology III)"]<-NA
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$CITY=="Aberdeen" & ORIGINAL_DATA$CITY=="Cragiebuckler"]<-"2x city"
+  ORIGINAL_DATA$CITY[ORIGINAL_DATA$CITY=="Invergowric" & ORIGINAL_DATA$CITY=="Invergowrie"]<-"Invergowrie"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$CITY=="Brisbane" & ORIGINAL_DATA$CITY=="St Lucia"]<-"2x city"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$CITY=="London" & ORIGINAL_DATA$CITY=="Ascot"]<-"2x city"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$CITY=="Williams" & ORIGINAL_DATA$CITY=="Mystic"]<-"2x city"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$CITY=="Melbourne" & ORIGINAL_DATA$CITY=="Parkville"]<-"2x city"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$CITY=="New Brunswick" & ORIGINAL_DATA$CITY=="Polson"]<-"2x city"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$CITY=="London" & ORIGINAL_DATA$CITY=="Notre Dame"]<-"Notre Dame"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$CITY=="Canberra" & ORIGINAL_DATA$CITY=="Lyneham"]<-"2x city"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$CITY=="Canberra" & ORIGINAL_DATA$CITY=="Lyneham"]<-"2x city"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$CITY=="Canberra" & ORIGINAL_DATA$CITY=="Lyneham"]<-"2x city"
+  ORIGINAL_DATA$UNIT[ORIGINAL_DATA$UNIT=="Savannah River Ecology Laboratory"]<-"Savannah River Ecology Laboratory"
+  ORIGINAL_DATA$COUNTRY[ORIGINAL_DATA$LAST_NAME=="Tjoelker" & ORIGINAL_DATA$JOURNAL=="NEWPHYT" & ORIGINAL_DATA$INST=="Texas A & M University"]<-"USA"
+  ORIGINAL_DATA$COUNTRY[ORIGINAL_DATA$LAST_NAME=="Atkin" & ORIGINAL_DATA$JOURNAL=="NEWPHYT" & ORIGINAL_DATA$INST=="University of York"]<-"United Kingdom"
+  ORIGINAL_DATA$COUNTRY[ORIGINAL_DATA$LAST_NAME=="Long" & ORIGINAL_DATA$JOURNAL=="JECOL" & ORIGINAL_DATA$INST=="University of Essex"]<-"United Kingdom"
+  ORIGINAL_DATA$COUNTRY[ORIGINAL_DATA$LAST_NAME=="Westing" & ORIGINAL_DATA$JOURNAL=="CONBIO" & ORIGINAL_DATA$INST=="Stockholm International Peace Research Institute"]<-"Sweden"
+  ORIGINAL_DATA$CITY[ORIGINAL_DATA$LAST_NAME=="Westing" & ORIGINAL_DATA$JOURNAL=="CONBIO" & ORIGINAL_DATA$INST=="Stockholm International Peace Research Institute"]<-"Stockholm"
+  ORIGINAL_DATA$STATE[ORIGINAL_DATA$LAST_NAME=="Westing" & ORIGINAL_DATA$JOURNAL=="CONBIO" & ORIGINAL_DATA$INST=="Stockholm International Peace Research Institute"]<-NA
+  ORIGINAL_DATA$COUNTRY[ORIGINAL_DATA$LAST_NAME=="Westing" & ORIGINAL_DATA$JOURNAL=="CONBIO" & ORIGINAL_DATA$INST=="Westing Associates"]<-"USA"
+  ORIGINAL_DATA$COUNTRY[ORIGINAL_DATA$LAST_NAME=="Belovsky" & ORIGINAL_DATA$JOURNAL=="CONBIO" & ORIGINAL_DATA$INST=="Utah State University"]<-"USA"
+  ORIGINAL_DATA$UNIT[ORIGINAL_DATA$LAST_NAME=="Bolker" & ORIGINAL_DATA$JOURNAL=="AMNAT" & ORIGINAL_DATA$INST=="McMaster University"]<-NA
+  ORIGINAL_DATA$COUNTRY[ORIGINAL_DATA$LAST_NAME=="Bolker" & ORIGINAL_DATA$JOURNAL=="AMNAT" & ORIGINAL_DATA$INST=="McMaster University"]<-"Canada"
+  ORIGINAL_DATA$UNIT[ORIGINAL_DATA$LAST_NAME=="Krivan" & ORIGINAL_DATA$JOURNAL=="AMNAT" ]<-"biology centre"
+  ORIGINAL_DATA$INST[ORIGINAL_DATA$LAST_NAME=="Krivan" & ORIGINAL_DATA$JOURNAL=="AMNAT" ]<-"academy of sciences of the czech republic"
+  ORIGINAL_DATA$CITY[ORIGINAL_DATA$LAST_NAME=="Krivan" & ORIGINAL_DATA$JOURNAL=="AMNAT" ]<-"Ceske Budejovice"
+  ORIGINAL_DATA$STATE[ORIGINAL_DATA$LAST_NAME=="Krivan" & ORIGINAL_DATA$JOURNAL=="AMNAT"]<-"South Bohemia"
+  ORIGINAL_DATA$COUNTRY[ORIGINAL_DATA$LAST_NAME=="Krivan" & ORIGINAL_DATA$JOURNAL=="AMNAT"]<-"Czech Republic"
+    ORIGINAL_DATA$NOTES[ORIGINAL_DATA$COUNTRY == "Wales"] <- "Wales"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$COUNTRY == "Scotland"] <- "Scotland"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$COUNTRY == "England"] <- "England"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$COUNTRY == "Wales"] <- "Wales"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$COUNTRY == "Scotland"] <- "Scotland"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$COUNTRY == "England"] <- "England"
+  ORIGINAL_DATA$COUNTRY[ORIGINAL_DATA$COUNTRY == "Wales"] <- "United Kingdom"
+  ORIGINAL_DATA$COUNTRY[ORIGINAL_DATA$COUNTRY == "Scotland"] <- "United Kingdom"
+  ORIGINAL_DATA$COUNTRY[ORIGINAL_DATA$COUNTRY == "England"] <- "United Kingdom"
+  
+  
+  ORIGINAL_DATA$COUNTRY<-NULL
+  ORIGINAL_DATA$country_check<-NULL
+  ORIGINAL_DATA<-ORIGINAL_DATA %>% rename("COUNTRY"="COUNTRY")
+  
+  # TODO NOTES DIFFERENCES BETWEEN ALL DATA AND CHECKED FILE
+  
+  
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$INST=="Lyme Regis"]<-"is this ghillean prance unattached?"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$INST=="NERI"]<-"no longer exists: https://tethys.pnnl.gov/institution/national-environmental-research-institute-neri"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$LAST_NAME=="Boggs"]<-"2x carol boggs has inst colorado but should be stanford"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$INST == "Biological Centre"] <- "DOUBLE CHECK INST"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$INST == "Biological Institute"] <- "DOUBLE CHECK INST"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$INST == "Bogota"] <- "DOUBLE CHECK INST"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$INST == "DiSTEBA University of Salento"] <- "DOUBLE CHECK INST -  / DiSTEBA Universita di Lecce"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$INST == "Haus Nr.9"] <- "DOUBLE CHECK INST"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$INST == "James Cook University Townsville"] <- "DOUBLE CHECK INST"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$INST == "Lancaster"] <- "DOUBLE CHECK INST"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$INST == "London"] <- "DOUBLE CHECK INST"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$INST == "Madrid"] <- "DOUBLE CHECK INST"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$INST == "Maine"] <- "DOUBLE CHECK INST"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$INST == "missing"] <- "DOUBLE CHECK INST"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$INST == "Royal Botanic Gardens Melbourne University of Melbourne"] <- "DOUBLE CHECK INST"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$INST == "Salzburg"] <- "DOUBLE CHECK INST"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$INST == "Swansea"] <- "DOUBLE CHECK INST"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$INST == "Sydney"] <- "DOUBLE CHECK INST"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$INST == "SEIDENSTZICKER& Kleiman = Smithsonian National Zoological Park, Labandeira: Smithsonian National Museum of Natural History"] <- "DOUBLE CHECK INST"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$INST == "Montpellier"] <- "DOUBLE CHECK INST"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$INST == "DOUBLE CHECK"] <- "DOUBLE CHECK INST"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$INST == "CNRS"] <- "DOUBLE CHECK WHAT CAMPUS/UNIT"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$INST == "CSIRO"] <- "DOUBLE CHECK WHAT CAMPUS/UNIT"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$INST == "Smithsonian Institution"] <- "DOUBLE CHECK WHAT CAMPUS/UNIT"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$INST == "University of Arkansas"] <- "DOUBLE CHECK WHAT CAMPUS/UNIT"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$INST == "University of British Columbia"] <- "DOUBLE CHECK WHAT CAMPUS/UNIT"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$INST == "University of California"] <- "DOUBLE CHECK WHAT CAMPUS/UNIT"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$INST == "University of Exeter"] <- "DOUBLE CHECK WHAT CAMPUS/UNIT"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$INST == "University of Georgia"] <- "DOUBLE CHECK WHAT CAMPUS/UNIT"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$INST == "University of Illinois"] <- "DOUBLE CHECK WHAT CAMPUS/UNIT"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$INST == "University of Massachusetts"] <- "DOUBLE CHECK WHAT CAMPUS/UNIT"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$INST == "University of Minnesota"] <- "DOUBLE CHECK WHAT CAMPUS/UNIT"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$INST == "University of South Carolina"] <- "DOUBLE CHECK WHAT CAMPUS/UNIT"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$INST == "University of Texas"] <- "DOUBLE CHECK WHAT CAMPUS/UNIT"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$INST == "University of Toronto"] <- "DOUBLE CHECK WHAT CAMPUS/UNIT"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$INST == "University of Wisconsin"] <- "DOUBLE CHECK WHAT CAMPUS/UNIT"
+  ORIGINAL_DATA$NOTES[ORIGINAL_DATA$INST == "US Geological Survey"] <- "DOUBLE CHECK WHAT CAMPUS/UNIT"
+  
+  # NO IDEA WHY THIS ISN'T WORKING INSIDE FUNCTION, SO DOING HERE
+  ORIGINAL_DATA$INST<-gsub("ArKansas","Arkansas", ORIGINAL_DATA$INST)
+  
+  
+  # TODO: some error checking of states: 
+  # canada instead of Canada
+  # British Columbia in USA
+  # Lower Austria     USA
+  # Galicia     USA
+  # England     USA
+  # Uppland     USA
+  # ONtario in USA
+  # Gelderland
+  
+  ORIGINAL_DATA$COUNTRY[ORIGINAL_DATA$STATE == "British Columbia" & ORIGINAL_DATA$COUNTRY == "USA"] <- "Canada"
+  ORIGINAL_DATA$COUNTRY[ORIGINAL_DATA$STATE == "Lower Austria" & ORIGINAL_DATA$COUNTRY == "USA"] <- "Canada"
+  ORIGINAL_DATA$COUNTRY[ORIGINAL_DATA$STATE == "Galicia" & ORIGINAL_DATA$COUNTRY == "USA"] <- "Spain"
+  ORIGINAL_DATA$COUNTRY[ORIGINAL_DATA$STATE == "England" & ORIGINAL_DATA$COUNTRY == "USA"] <- "United Kingdom"
+  ORIGINAL_DATA$COUNTRY[ORIGINAL_DATA$STATE == "Uppland" & ORIGINAL_DATA$COUNTRY == "USA"] <- "Sweden"
+  ORIGINAL_DATA$COUNTRY[ORIGINAL_DATA$STATE == "Ontario"] <- "Canada"
+  ORIGINAL_DATA$COUNTRY[ORIGINAL_DATA$STATE == "Gelderland"] <- "Netherlands"
+  levels(ORIGINAL_DATA$INST)
+  
+  
+  return(ORIGINAL_DATA)
+}

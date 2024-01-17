@@ -1,7 +1,20 @@
 #FUNCTION TO CLEAN AND PROCESS BITR
+
+# DATAFILE<-BITR_raw
+
 clean_BITR <- function(DATAFILE) {
   DATAFILE<-rename(DATAFILE,"TITLE"="TITLE.x")
   # This will add "missing" to the first row of a group if the first INST is NA
+  
+  
+  DATAFILE<-DATAFILE %>% 
+    mutate(INST=case_when(
+      INST == "Leuphana University of L\x9fneburg"~"Leuphana University of Luneburg",
+      INST == "Technische Universit\x8at Darmstadt"~"Technische Universitat Darmstadt",
+      
+      .default = as.character(INST)
+    )
+    )
   
   
   DATAFILE$INST<-as.character(DATAFILE$INST)

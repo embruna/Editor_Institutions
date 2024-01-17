@@ -1,4 +1,6 @@
 #FUNCTION TO CLEAN AND PROCESS EVOL
+
+# DATAFILE<-EVOL_raw
 clean_EVOL <- function(DATAFILE) {
   
   
@@ -8,11 +10,47 @@ clean_EVOL <- function(DATAFILE) {
   DATAFILE$CITY<-as.character(DATAFILE$CITY)
   
   
+  
+  DATAFILE<-DATAFILE %>% 
+    mutate(INST=case_when(
+      INST == " Universidad Nacional Autonoma de M\x82xico"~"Universidad Nacional Autonoma de Mexico",
+      INST == " Universidad Nacional Aut\xa2noma de M\x82xico"~"Universidad Nacional Autonoma de Mexico",
+      INST == "Universidad Nacional Aut\xa2noma de M\x82xico"~"Universidad Nacional Autonoma de Mexico",
+      INST == "Universidad Nacional Autonoma de M\x82xico"~"Universidad Nacional Autonoma de Mexico",
+      INST == "Universit\x82 de Montpellier II"~"Universite de Montpellier II",
+      INST == "Universit\x82 Montpellier II"~"Universite de Montpellier II",
+      INST == "Universit\x82 de Lausanne"~"Universite de Lausanne",
+      INST == "Ludwig-Maximilians-Universit\x84t M\x81nchen"~"Ludwig-Maximilians-Universitat Munchen",
+      INST == "Ecole Normale Sup\x82rieure"~"Ecole Normale Superieure",
+      INST == "Universit\x82 Paris-Sud"~"Universite Paris-Sud",
+      INST == "Universit\x84t Z\x81rich-Irchel"~"Universitat Zurich-Irchel",
+      .default = as.character(INST)
+    )
+    )
+  
+  DATAFILE<-DATAFILE %>% 
+    mutate(CITY=case_when(
+      CITY == "Z\x81rich"~"Zurich",
+      .default = as.character(CITY)
+    )
+    )
+  
+  
+  DATAFILE<-DATAFILE %>% 
+    mutate(STATE=case_when(
+      STATE == "Z\x81rich"~"Zurich",
+      .default = as.character(STATE)
+    )
+    )
+  
+  
+  
+  
   DATAFILE$COUNTRY<-as.character(DATAFILE$COUNTRY)
   DATAFILE$STATE<-as.character(DATAFILE$STATE)
   DATAFILE$COUNTRY[DATAFILE$LAST_NAME=="Knowlton" & DATAFILE$FIRST_NAME=="Nancy"]<-"Panama"
   DATAFILE$STATE[DATAFILE$LAST_NAME=="Knowlton" & DATAFILE$FIRST_NAME=="Nancy"]<-NA
-  DATAFILE<-DATAFILE %>% rename("TITLE"="TITLE.x")
+  # DATAFILE<-DATAFILE %>% rename("TITLE"="TITLE.x")
   head(DATAFILE,10)
   # This will add "missing" to the first row of a group if the first INST is NA
   

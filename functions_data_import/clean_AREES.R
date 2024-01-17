@@ -1,7 +1,17 @@
 #FUNCTION TO CLEAN AND PROCESS AREES
+# DATAFILE<-AREES_raw
 clean_AREES <- function(DATAFILE) {
   DATAFILE<-rename(DATAFILE,"TITLE"="TITLE.x")
   # This will add "missing" to the first row of a group if the first INST is NA
+  
+  
+  DATAFILE<-DATAFILE %>% 
+    mutate(UNIT=case_when(
+      UNIT== "Estaci\xf3n Biol\xf3gica de Do\xf1ana"~"Estacion Biologica de Donana",
+      .default = as.character(UNIT)
+    )
+    )
+  
   
   DATAFILE$INST<-as.character(DATAFILE$INST)
   DATAFILE$UNIT<-as.character(DATAFILE$UNIT)

@@ -3,7 +3,7 @@ PJ_PLANTECOL_corrections <- function(original_data) {
   library(tidyverse)
 
 
-  plantecol_inst <- read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_PLANTECOL.csv", col_names = TRUE)
+  plantecol_inst <- read_csv("./data_raw/Patrick_James_Data_Corrections/Complete/PJCorrections_PLANTECOL.csv", col_names = TRUE)
   
   plantecol_inst<-plantecol_inst %>%
     mutate(across(everything(), as.character))
@@ -28,8 +28,18 @@ PJ_PLANTECOL_corrections <- function(original_data) {
   original_data <- original_data %>% filter(journal != "PLANTECOL")
 
   # INSERT THE CORRECTIONS TO OECOL AND FILL
-  PLANTECOL <- PLANTECOL %>% na_if("missing")
-  plantecol_inst <- plantecol_inst %>% na_if("missing")
+
+  
+  PLANTECOL<-PLANTECOL %>%
+    mutate(across(where(is.character), ~na_if(., "missing")))
+  
+  plantecol_inst<-plantecol_inst %>%
+    mutate(across(where(is.character), ~na_if(., "missing")))
+  
+  
+  # 
+  #   PLANTECOL <- PLANTECOL %>% na_if("missing")
+  # plantecol_inst <- plantecol_inst %>% na_if("missing")
 
 
   PLANTECOL$inst <- as.character(PLANTECOL$inst)
@@ -38,7 +48,7 @@ PJ_PLANTECOL_corrections <- function(original_data) {
   PLANTECOL$editor_id <- as.character(PLANTECOL$editor_id)
   colnames(PLANTECOL)
   colnames(plantecol_inst)
-  PLANTECOL <- full_join(PLANTECOL, plantecol_inst, by = c("last_name", "first_name", "year"), all = T)
+  PLANTECOL <- full_join(PLANTECOL, plantecol_inst, by = c("last_name", "first_name", "year"))
 
   PLANTECOL <- PLANTECOL %>%
     group_by(last_name, first_name, country) %>%

@@ -2,7 +2,7 @@ PJ_JANE_corrections <- function(original_data) {
   # original_data<-alldata
   library(tidyverse)
 
-  jane_inst <- read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_JANE.csv", col_names = TRUE)
+  jane_inst <- read_csv("./data_raw/Patrick_James_Data_Corrections/Complete/PJCorrections_JANE.csv", col_names = TRUE)
   names(jane_inst)
   jane_inst<-jane_inst %>%
     mutate(across(everything(), as.character))
@@ -26,16 +26,23 @@ PJ_JANE_corrections <- function(original_data) {
   original_data <- original_data %>% filter(journal != "JANE")
 
   # INSERT THE CORRECTIONS TO JANE AND FILL
-  JANE <- JANE %>% na_if("missing")
-  jane_inst <- jane_inst %>% na_if("missing")
-
+  
+  
+  JANE<-JANE %>%
+    mutate(across(where(is.character), ~na_if(., "missing")))
+  
+  jane_inst<-jane_inst %>%
+    mutate(across(where(is.character), ~na_if(., "missing")))
+  
+  
+  
 
   JANE$inst <- as.character(JANE$inst)
 
   jane_inst$editor_id <- as.character(jane_inst$editor_id)
   JANE$editor_id <- as.character(JANE$editor_id)
   #
-  JANE <- full_join(JANE, jane_inst, by = c("last_name", "first_name", "year"), all = T)
+  JANE <- full_join(JANE, jane_inst, by = c("last_name", "first_name", "year"))
 
   JANE <- JANE %>%
     mutate(city.x = ifelse((is.na(city.x) | city.x == "missing"), city.y, city.x)) %>%

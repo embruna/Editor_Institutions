@@ -30,7 +30,7 @@ clean_LECO <- function(DATAFILE) {
     group_by(LAST_NAME,FIRST_NAME) %>% 
     fill(INST,.direction="down")
   
-  DATAFILE<-DATAFILE %>% select(-X,-X.1,-X.2,-X.3,-X.4)
+  # DATAFILE<-DATAFILE %>% select(-X,-X.1,-X.2,-X.3,-X.4)
   DATAFILE<-rename(DATAFILE,"TITLE"="TITLE.x")
   
   # This will add "missing" to the first row of a group if the first INST is NA

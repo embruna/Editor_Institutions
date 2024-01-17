@@ -1,6 +1,8 @@
 #FUNCTION TO CLEAN AND PROCESS PLANTECOL
 clean_PLANTECOL <- function(DATAFILE) {
   
+  # DATAFILE<-PLANTECOL_raw
+  
   # some editing
   DATAFILE$INST<-as.character(DATAFILE$INST)
   DATAFILE$INST[DATAFILE$LAST_NAME=="Veblen"]<-"University of Colorado-Boulder"
@@ -8,6 +10,15 @@ clean_PLANTECOL <- function(DATAFILE) {
   DATAFILE$INST[DATAFILE$LAST_NAME=="Peet"]<-"University of North Carolina-Chapel Hill"
   DATAFILE$INST[DATAFILE$LAST_NAME=="Damman"]<-"University of Connecticut"
   DATAFILE$INST[DATAFILE$LAST_NAME=="Pickett" & DATAFILE$FIRST_NAME=="Steward"]<-"New York Botanical Garden"
+  
+  DATAFILE<-DATAFILE %>% 
+    mutate(UNIT=case_when(
+      UNIT == "Institut f\x99r Biologie (II)"~"Institut for Biologie (II)",
+      .default = as.character(INST)
+    )
+    )
+  
+  
   
   DATAFILE$INST<-trimws(DATAFILE$INST)
   DATAFILE$UNIT<-trimws(DATAFILE$UNIT)

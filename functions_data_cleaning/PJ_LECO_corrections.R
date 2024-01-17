@@ -2,7 +2,7 @@ PJ_LECO_corrections <- function(original_data) {
   # original_data<-alldata
   library(tidyverse)
 
-  leco_inst <- read_csv("./Data/Patrick_James_Data_Corrections/Complete/newPJCorrections_SHORT_10_LECO.csv", col_names = TRUE)
+  leco_inst <- read_csv("./data_raw/Patrick_James_Data_Corrections/Complete/newPJCorrections_SHORT_10_LECO.csv", col_names = TRUE)
   
   leco_inst<-leco_inst %>%
     mutate(across(everything(), as.character))
@@ -28,15 +28,24 @@ PJ_LECO_corrections <- function(original_data) {
   original_data <- original_data %>% filter(journal != "LECO")
 
   # INSERT THE CORRECTIONS TO OECOL AND FILL
-  landscapeeco <- landscapeeco %>% na_if("missing")
-  leco_inst <- leco_inst %>% na_if("missing")
+  
+  
+  landscapeeco<-landscapeeco %>%
+    mutate(across(where(is.character), ~na_if(., "missing")))
+  
+  leco_inst<-leco_inst %>%
+    mutate(across(where(is.character), ~na_if(., "missing")))
+  # 
+  # landscapeeco <- landscapeeco %>% na_if("missing")
+  # leco_inst <- leco_inst %>% na_if("missing")
 
 
   landscapeeco$inst <- as.character(landscapeeco$inst)
   leco_inst$editor_id <- as.character(leco_inst$editor_id)
   landscapeeco$editor_id <- as.character(landscapeeco$editor_id)
   #
-  landscapeeco <- full_join(landscapeeco, leco_inst, by = c("last_name", "first_name", "year"), all = T)
+  # landscapeeco <- full_join(landscapeeco, leco_inst, by = c("last_name", "first_name", "year"), all = T)
+  landscapeeco <- full_join(landscapeeco, leco_inst, by = c("last_name", "first_name", "year"))
   colnames(landscapeeco)
 
   landscapeeco <- landscapeeco %>%

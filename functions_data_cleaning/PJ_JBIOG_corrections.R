@@ -3,7 +3,7 @@ pj_jbiog_corrections <- function(original_data) {
   library(tidyverse)
 
 
-  jbiog_inst <- read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_JBIOG.csv", col_names = TRUE)
+  jbiog_inst <- read_csv("./data_raw/Patrick_James_Data_Corrections/Complete/PJCorrections_JBIOG.csv", col_names = TRUE)
   
   jbiog_inst<-jbiog_inst %>%
     mutate(across(everything(), as.character))
@@ -28,9 +28,16 @@ pj_jbiog_corrections <- function(original_data) {
   original_data <- original_data %>% filter(journal != "JBIOG")
 
   # INSERT THE CORRECTIONS TO OECOL AND FILL
-  JBIOG <- JBIOG %>% na_if("missing")
-  jbiog_inst <- jbiog_inst %>% na_if("missing")
-
+  
+  JBIOG<-JBIOG %>%
+    mutate(across(where(is.character), ~na_if(., "missing")))
+  
+  jbiog_inst<-jbiog_inst %>%
+    mutate(across(where(is.character), ~na_if(., "missing")))
+  
+  
+  
+  
 
   JBIOG$inst <- as.character(JBIOG$inst)
 
@@ -38,7 +45,7 @@ pj_jbiog_corrections <- function(original_data) {
   JBIOG$editor_id <- as.character(JBIOG$editor_id)
   colnames(JBIOG)
   colnames(jbiog_inst)
-  JBIOG <- full_join(JBIOG, jbiog_inst, by = c("last_name", "first_name", "year"), all = T)
+  JBIOG <- full_join(JBIOG, jbiog_inst, by = c("last_name", "first_name", "year"))
   colnames(JBIOG)
   JBIOG <- JBIOG %>%
     mutate(city.x = ifelse((is.na(city.x) | city.x == "missing"), city.y, city.x)) %>%

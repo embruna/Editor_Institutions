@@ -1,8 +1,17 @@
 #FUNCTION TO CLEAN AND PROCESS ECOG
+
+# DATAFILE<-ECOG_raw
 clean_ECOG <- function(DATAFILE) {
   DATAFILE<-rename(DATAFILE,"TITLE"="TITLE.x")
   # This will add "missing" to the first row of a group if the first INST is NA
   
+  
+  DATAFILE<-DATAFILE %>% 
+    mutate(INST=case_when(
+      INST == "\xa0Universit\xe9 Claude Bernard Lyon 1"~"Universite Claude Bernard Lyon 1",
+      .default = as.character(INST)
+    )
+    )
   
   
   DATAFILE$INST<-as.character(DATAFILE$INST)

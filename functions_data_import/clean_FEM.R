@@ -16,6 +16,18 @@ clean_FEM <- function(DATAFILE) {
   
   DATAFILE<-DATAFILE %>% rename("TITLE"="TITLE.x")
   
+  DATAFILE<-DATAFILE %>% 
+    mutate(INST=case_when(
+      INST == "\xa0Forestry and Forest Products Research Institute"~"Forestry and Forest Products Research Institute",
+      INST == "University of G\xf6ttingen"~ "University of Gottingen",
+      INST == "Laboratoire Associe de Modelisation des Plantes\xa0(AMAP)"~ "Laboratoire Associe de Modelisation des Plantes (AMAP)",
+      .default = as.character(INST)
+    )
+    )
+  
+  
+
+  
   # This will add "missing" to the first row of a group if the first INST is NA
   
   DATAFILE$INST<-as.character(DATAFILE$INST)

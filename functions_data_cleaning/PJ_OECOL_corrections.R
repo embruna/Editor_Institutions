@@ -3,7 +3,7 @@ PJ_OECOL_corrections <- function(original_data) {
   # original_data<-alldata
   library(tidyverse)
 
-  oecol_inst <- read.csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_OECOL.csv", encoding = "ascii")
+  oecol_inst <- read.csv("./data_raw/Patrick_James_Data_Corrections/Complete/PJCorrections_OECOL.csv", encoding = "ascii")
   
   oecol_inst<-oecol_inst %>%
     mutate(across(everything(), as.character))
@@ -27,8 +27,17 @@ PJ_OECOL_corrections <- function(original_data) {
   original_data <- original_data %>% filter(journal != "OECOL")
 
   # INSERT THE CORRECTIONS TO OECOL AND FILL
-  oecologia <- oecologia %>% na_if("missing")
-  oecol_inst <- oecol_inst %>% na_if("missing")
+  
+  oecologia<-oecologia %>%
+    mutate(across(where(is.character), ~na_if(., "missing")))
+  
+  oecol_inst<-oecol_inst %>%
+    mutate(across(where(is.character), ~na_if(., "missing")))
+  
+  # oecologia <- oecologia %>% na_if("missing")
+  # oecol_inst <- oecol_inst %>% na_if("missing")
+  # 
+  
   # colnames(oecologia)
   # colnames(oecol_inst)
   # str(oecologia)
@@ -52,7 +61,8 @@ PJ_OECOL_corrections <- function(original_data) {
   oecol_inst$notes <- as.character(oecol_inst$notes)
   oecologia$notes <- as.character(oecologia$notes)
   
-  oecologia <- full_join(oecologia, oecol_inst, by = c("last_name", "first_name", "year"), all = T) %>%
+  # oecologia <- full_join(oecologia, oecol_inst, by = c("last_name", "first_name", "year"), all = T) %>%
+  oecologia <- full_join(oecologia, oecol_inst, by = c("last_name", "first_name", "year")) %>%
     group_by(last_name, first_name) %>%
     mutate(city.x = ifelse((is.na(city.x) | city.x == "missing"), city.y, city.x)) %>%
     select(-city.y) %>%

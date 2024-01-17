@@ -37,7 +37,7 @@ JamesCorrections <- function(original_data) {
   ##############################################################
 
   ##########
-  multi1 <- read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_1.csv", col_names = TRUE)
+  multi1 <- read_csv("./data_raw/Patrick_James_Data_Corrections/Complete/PJCorrections_1.csv", col_names = TRUE)
   multi1[multi1 == "missing"] <- NA
   multi1 <- multi1 %>%
     group_by(last_name, first_name) %>%
@@ -46,7 +46,7 @@ JamesCorrections <- function(original_data) {
   ##########
 
   ##########
-  multi2a <- read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_2a.csv", col_names = TRUE)
+  multi2a <- read_csv("./data_raw/Patrick_James_Data_Corrections/Complete/PJCorrections_2a.csv", col_names = TRUE)
   multi2a[multi2a == "missing"] <- NA
   multi2a <- multi2a %>%
     filter(journal == "CONBIO" | journal == "NEWPHYT") %>%
@@ -56,7 +56,7 @@ JamesCorrections <- function(original_data) {
   ##########
 
   ##########
-  multi2b <- read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_2b.csv", col_names = TRUE)
+  multi2b <- read_csv("./data_raw/Patrick_James_Data_Corrections/Complete/PJCorrections_2b.csv", col_names = TRUE)
   multi2b[multi2b == "missing"] <- NA
   multi2b <- multi2b %>%
     filter(journal == "CONBIO" | journal == "NEWPHYT") %>%
@@ -66,7 +66,7 @@ JamesCorrections <- function(original_data) {
   ##########
 
   ##########
-  BITR_inst <- read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_3_BITR.csv", col_names = TRUE)
+  BITR_inst <- read_csv("./data_raw/Patrick_James_Data_Corrections/Complete/PJCorrections_3_BITR.csv", col_names = TRUE)
   BITR_inst[BITR_inst == "missing"] <- NA
   BITR_inst <- BITR_inst %>%
     group_by(last_name, first_name) %>%
@@ -76,7 +76,7 @@ JamesCorrections <- function(original_data) {
   ##########
 
   ##########
-  AMNAT_inst <- read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_4_AMNAT.csv", col_names = TRUE, na = c("", "N/A", "NA"), trim_ws = TRUE)
+  AMNAT_inst <- read_csv("./data_raw/Patrick_James_Data_Corrections/Complete/PJCorrections_4_AMNAT.csv", col_names = TRUE, na = c("", "N/A", "NA"), trim_ws = TRUE)
   AMNAT_inst[AMNAT_inst == "missing"] <- NA
   AMNAT_inst <- AMNAT_inst %>%
     group_by(last_name, first_name) %>%
@@ -86,7 +86,7 @@ JamesCorrections <- function(original_data) {
   ##########
 
   ##########
-  JECOL_inst <- read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_6_JEcol.csv", col_names = TRUE)
+  JECOL_inst <- read_csv("./data_raw/Patrick_James_Data_Corrections/Complete/PJCorrections_6_JEcol.csv", col_names = TRUE)
   JECOL_inst[JECOL_inst == "missing"] <- NA
   JECOL_inst <- JECOL_inst %>%
     group_by(last_name, first_name) %>%
@@ -96,7 +96,7 @@ JamesCorrections <- function(original_data) {
   ##########
 
   ##########
-  JAPE_inst <- read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_7_JAPE.csv", col_names = TRUE)
+  JAPE_inst <- read_csv("./data_raw/Patrick_James_Data_Corrections/Complete/PJCorrections_7_JAPE.csv", col_names = TRUE)
   JAPE_inst[JAPE_inst == "missing"] <- NA
   JAPE_inst[JAPE_inst == "unknown"] <- NA
   JAPE_inst <- JAPE_inst %>%
@@ -321,10 +321,10 @@ JamesCorrections <- function(original_data) {
   # this identifies one mistake in thge original (original_data) that needs to be corrected
   both$unit.x[both$unit.x == "estaci<f3>n biol<f3>gica de do<f1>ana"] <- "estacion biologica donana"
   both$unit.y[both$unit.y == "estaci<f3>n biol<f3>gica de do<f1>ana"] <- "estacion biologica donana"
-  both$unit.x <- gsub("estaci\xf3n biol\xf3gica de do\xf1ana", "estacion biologica donana", both$unit.x)
-  both$unit.x <- gsub("biologie/chemie/\x80kologie", "biochemical ecology", both$unit.x)
-  both$unit.x <- gsub("f\x99r", "fur", both$unit.x)
-  both$unit.x <- gsub("ecolog\x90a", "ecologia", both$unit.x)
+  both$unit.x <- gsub("estaci\xf3n biol\xf3gica de do\xf1ana", "estacion biologica donana", both$unit.x,useBytes = TRUE)
+  both$unit.x <- gsub("biologie/chemie/\x80kologie", "biochemical ecology", both$unit.x,useBytes = TRUE)
+  both$unit.x <- gsub("f\x99r", "fur", both$unit.x,useBytes = TRUE)
+  both$unit.x <- gsub("ecolog\x90a", "ecologia", both$unit.x,useBytes = TRUE)
 
   # inst differences between all data and checked file
   both$inst.y <- as.character(both$inst.y)
@@ -343,7 +343,7 @@ JamesCorrections <- function(original_data) {
   inst_check <- filter(both, inst_check == "FALSE")
   inst_check_ok <- filter(both, inst_check == TRUE | is.na(inst_check))
   #
-  # write.csv(inst_check, file="./data/patrick_james_data_corrections/complete/inst_corrections_2x.csv", row.names = f) #export it as a csv file
+  # write_csv(inst_check, file="./data/patrick_james_data_corrections/complete/inst_corrections_2x.csv") #export it as a csv file
 
 
   both$inst.y[both$editor_id.x == 1248 & both$journal == "bitr" & both$year == 1987] <- "new york botanical garden"
@@ -393,13 +393,13 @@ JamesCorrections <- function(original_data) {
   both$inst.y <- NULL
   both$inst_check <- NULL
   both <- both %>% rename("inst" = "inst.x")
-
+  
   # city differences between all data and checked file
   summary(both$city.x == both$city.y) # 52 false
   both$city_check <- both$city.x == both$city.y
   city_check <- filter(both, city_check == "false")
   city_check_ok <- filter(both, city_check == TRUE | is.na(city_check))
-  write.csv(city_check, file = "./data/patrick_james_data_corrections/complete/city_corrections_2x.csv", row.names = FALSE) # export it as a csv file
+  write_csv(city_check, file = "./data_raw/patrick_james_data_corrections/complete/city_corrections_2x.csv") # export it as a csv file
   both$state[both$city.x == "new mexico" & both$city.y == "las cruces"] <- "nm"
   both$city.x[both$city.x == "new mexico" & both$city.y == "las cruces"] <- "las cruces"
   both$city.x[is.na(both$city.x) & both$city.y == "las cruces"] <- "las cruces"
@@ -435,7 +435,7 @@ JamesCorrections <- function(original_data) {
 
   summary(both$city.x == both$city.y)
   both$city_check <- both$city.x == both$city.y
-  # write.csv(city_check, file="./data/patrick_james_data_corrections/complete/city_corrections_2x.csv", row.names = f) #export it as a csv file
+  # write_csv(city_check, file="./data/patrick_james_data_corrections/complete/city_corrections_2x.csv") #export it as a csv file
 
   # this will replace all the "na" in city.x (origianlly no info) with the value from city.y (patrick's data collection), if there is one
   both <- both %>% mutate(city.x = replace(city.x, is.na(city.x), city.y[is.na(city.x)]))
@@ -481,7 +481,7 @@ JamesCorrections <- function(original_data) {
   both$country_check <- both$country.x == both$country.y
 
   country_check <- filter(both, country_check == "FALSE")
-  # write.csv(country_check, file="./data/patrick_james_data_corrections/complete/country_corrections_2x.csv", row.names = f) #export it as a csv file
+  # write_csv(country_check, file="./data/patrick_james_data_corrections/complete/country_corrections_2x.csv") #export it as a csv file
 
 
   both$first_name[both$last_name == "weiher" & both$journal == "plantecol"] <- "ewan"

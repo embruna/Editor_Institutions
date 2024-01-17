@@ -1,4 +1,5 @@
 #FUNCTION TO CLEAN AND PROCESS JTE
+# DATAFILE<-JTE_raw
 clean_JTE <- function(DATAFILE) {
   DATAFILE<-rename(DATAFILE,"TITLE"="TITLE.x")
   # This will add "missing" to the first row of a group if the first INST is NA
@@ -7,6 +8,14 @@ clean_JTE <- function(DATAFILE) {
   DATAFILE$UNIT<-as.character(DATAFILE$UNIT)
   DATAFILE$CITY<-as.character(DATAFILE$CITY)
   DATAFILE$STATE<-as.character(DATAFILE$STATE)
+  
+  
+  DATAFILE<-DATAFILE %>% 
+    mutate(CITY=case_when(
+      CITY == "\xcaDepartment of Animal Ecology and Tropical Biology (Zoology III)"~NA,
+      .default = as.character(CITY)
+    )
+    )
   
   DATAFILE$INST<-trimws(DATAFILE$INST)
   DATAFILE$UNIT<-trimws(DATAFILE$UNIT)

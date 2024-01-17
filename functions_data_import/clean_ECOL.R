@@ -1,4 +1,6 @@
 #FUNCTION TO CLEAN AND PROCESS ECOL
+
+# DATAFILE<-ECOL_raw
 clean_ECOL <- function(DATAFILE) {
   # DATAFILE<-rename(DATAFILE,"TITLE"="TITLE")
   
@@ -8,6 +10,17 @@ clean_ECOL <- function(DATAFILE) {
   DATAFILE$UNIT<-as.character(DATAFILE$UNIT)
   DATAFILE$CITY<-as.character(DATAFILE$CITY)
   DATAFILE$STATE<-as.character(DATAFILE$STATE)
+  
+  
+  
+  
+  DATAFILE<-DATAFILE %>% 
+    mutate(INST=case_when(
+      INST == "Universit\xe9 du Quebec"~"Universite du Quebec",
+      INST == "Universit\xe9 de Montr\xe9al"~"Universite de Montreal",
+      .default = as.character(INST)
+    )
+    )
   
   DATAFILE$INST<-trimws(DATAFILE$INST)
   DATAFILE$UNIT<-trimws(DATAFILE$UNIT)

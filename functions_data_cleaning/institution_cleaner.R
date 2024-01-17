@@ -2043,11 +2043,39 @@ institution_cleaner <- function(datafile) {
 
 
 
+# spelling corrections states
+  
+  
+  
 
-
-
-
-
+  
+    
+  
+  datafile$state[datafile$state == "massachussetts"] <-
+    "ma"
+  
+  datafile$state[datafile$state == "missisippi"] <-
+    "ms"
+  
+  datafile$state[datafile$state == "alaksa"] <-
+    "ak"
+  
+  datafile$state[datafile$state == "lousiana"] <-
+    "LA"
+  
+  datafile$state[datafile$state == "washington dc"] <-
+  "district of columbia"
+  
+  datafile$state[datafile$state == "west va"] <-
+    "wv"
+  
+  datafile$state[datafile$state == "south carolin"] <-
+    "sc"
+  
+datafile$city[datafile$state == "east lansing"] <-
+  "east lansing"
+datafile$state[datafile$state == "east lansing"] <-
+  "mi"
 
   datafile$inst <- gsub("[.]", "", datafile$inst)
   # datafile$inst[datafile$inst== "istituto per l¬¢ambiente marino costiero" ]<-"instituto per lambiente marino costiero"

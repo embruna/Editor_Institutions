@@ -3,7 +3,7 @@ PJ_OIKOS_corrections <- function(original_data) {
   library(tidyverse)
 
 
-  oikos_inst <- read_csv("./Data/Patrick_James_Data_Corrections/Complete/PJCorrections_OIKOS.csv", col_names = TRUE)
+  oikos_inst <- read_csv("./data_raw/Patrick_James_Data_Corrections/Complete/PJCorrections_OIKOS.csv", col_names = TRUE)
   oikos_inst<-oikos_inst %>%
     mutate(across(everything(), as.character))
   names(oikos_inst)
@@ -25,8 +25,16 @@ PJ_OIKOS_corrections <- function(original_data) {
   original_data <- original_data %>% filter(journal != "OIKOS")
 
   # INSERT THE CORRECTIONS TO OECOL AND FILL
-  OIKOS <- OIKOS %>% na_if("missing")
-  oikos_inst <- oikos_inst %>% na_if("missing")
+  
+  
+  
+  OIKOS<-OIKOS %>%
+    mutate(across(where(is.character), ~na_if(., "missing")))
+  
+  oikos_inst<-oikos_inst %>%
+    mutate(across(where(is.character), ~na_if(., "missing")))
+  
+  
 
 
   OIKOS$inst <- as.character(OIKOS$inst)
@@ -34,7 +42,7 @@ PJ_OIKOS_corrections <- function(original_data) {
   oikos_inst$editor_id <- as.character(oikos_inst$editor_id)
   OIKOS$editor_id <- as.character(OIKOS$editor_id)
   #
-  OIKOS <- full_join(OIKOS, oikos_inst, by = c("last_name", "first_name", "year"), all = T)
+  OIKOS <- full_join(OIKOS, oikos_inst, by = c("last_name", "first_name", "year"))
 
   OIKOS <- OIKOS %>%
     mutate(city.x = ifelse((is.na(city.x) | city.x == "missing"), city.y, city.x)) %>%

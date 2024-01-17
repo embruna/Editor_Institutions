@@ -8,33 +8,70 @@ editor_cleaner <- function(datafile) {
   datafile$middle_name <- tolower(datafile$middle_name)
   datafile$last_name <- tolower(datafile$last_name)
 
-  datafile$inst <- gsub("Universit\x8at", "universitat", datafile$inst)
-  datafile$inst <- gsub("L\x9fneburg", "lunenburg", datafile$inst)
+  
+  # 
+  # summary(as.factor(Encoding("\xca")))
+  # which(as.factor(Encoding(datafile$inst))=="UTF-8")
+  # stringi::stri_enc_list()
+  # datafile$inst[1365]
+  # stringi::stri_enc_toascii(datafile$inst[12376])
+  # foo<-str_conv(datafile$inst[12376], "ASCII")
+  # 
+  # 
+  # 
+  # foo<-iconv(c(datafile$inst),to="ASCII//TRANSLIT")  
+  # foo <- gsub("\\'", '', foo)
+  # foo<-as_tibble(unique(foo))
+  # str(foo)
+  # summary(as.factor(Encoding(foo$value)))
+
+  
+  
+  datafile <- datafile %>% 
+    mutate(inst2=(iconv(c(datafile$inst),to="ASCII//TRANSLIT")))  %>% 
+    mutate(inst2=gsub("\\'", '', inst2)) %>% 
+    mutate(inst_check=(inst==inst2)) %>% 
+    relocate(c(inst2,inst_check),.after="inst")
+  
+  # 
+  # 
+  # datafile$inst[21269]
+  # 
+    
+  
+  # foo<-which(as_tibble(datafile$inst==datafile$inst2)==FALSE)
+  
+  # foo<-as_tibble(stringi::stri_enc_toascii(datafile$inst))
+  # summary(as.factor(datafile$inst))
+  # summary(as.factor(foo$value))
+  # 
+  datafile$inst <- gsub("Universit\x8at", "universitat", datafile$inst,useBytes = TRUE)
+  datafile$inst <- gsub("L\x9fneburg", "lunenburg", datafile$inst,useBytes = TRUE)
   datafile$inst[datafile$inst == "\xa0Forestry and Forest Products Research Institute"] <- "forestry and forest products research institute"
-  datafile$inst <- gsub("G\xf6ttingen", "gottingen", datafile$inst)
+  datafile$inst <- gsub("G\xf6ttingen", "gottingen", datafile$inst,useBytes = TRUE)
   datafile$inst[datafile$inst == "Laboratoire Associe de Modelisation des Plantes\xa0(AMAP)"] <- "laboratoire associe de modelisation des plantes (amap)"
   datafile$inst[datafile$inst == "Universit\x84t Z\x81rich-Irchel"] <- "university of zurich irchel"
-  datafile$inst <- gsub("M\x82xico", "mexico", datafile$inst)
-  datafile$inst <- gsub("Universit\x82", "universite", datafile$inst)
-  datafile$inst <- gsub("Universit\xe9", "universite", datafile$inst)
-  datafile$inst <- gsub("Landscape\xa0Ecology", "landscape ecology", datafile$inst)
-  datafile$inst <- gsub("RWTH Aachen\xcaUniversity", "rwth aachen university", datafile$inst)
-  datafile$inst <- gsub("Research\xca", "research", datafile$inst)
-  datafile$inst <- gsub("Macquarie University \xca", "macquarie university", datafile$inst)
-  datafile$inst <- gsub("Universit\x8at", "universitat", datafile$inst)
-  datafile$inst <- gsub("Universit\x82", "universite", datafile$inst)
-  datafile$inst <- gsub("Aut\xfc\xbe\x8c\xa6\x84\xbcnoma", "autonoma", datafile$inst)
-  datafile$inst <- gsub("Montr\xfc\xbe\x8e\x96\x94\xbcal", "montreal", datafile$inst)
-  datafile$inst <- gsub("<a0>Universit<e9>", "universite", datafile$inst)
-  datafile$inst <- gsub("\xfc\xbe\x8c\x86\x84\xbc", "", datafile$inst)
+  datafile$inst <- gsub("M\x82xico", "mexico", datafile$inst,useBytes = TRUE)
+  datafile$inst <- gsub("Universit\x82", "universite", datafile$inst,useBytes = TRUE)
+  datafile$inst <- gsub("Universit\xe9", "universite", datafile$inst,useBytes = TRUE)
+  datafile$inst <- gsub("Landscape\xa0Ecology", "landscape ecology", datafile$inst,useBytes = TRUE)
+  datafile$inst <- gsub("RWTH Aachen\xcaUniversity", "rwth aachen university", datafile$inst,useBytes = TRUE)
+  datafile$inst <- gsub("Research\xca", "research", datafile$inst,useBytes = TRUE)
+  datafile$inst <- gsub("Macquarie University \xca", "macquarie university", datafile$inst,useBytes = TRUE)
+  datafile$inst <- gsub("Universit\x8at", "universitat", datafile$inst,useBytes = TRUE)
+  datafile$inst <- gsub("Universit\x82", "universite", datafile$inst,useBytes = TRUE)
+  datafile$inst <- gsub("Aut\xfc\xbe\x8c\xa6\x84\xbcnoma", "autonoma", datafile$inst,useBytes = TRUE)
+  datafile$inst <- gsub("Montr\xfc\xbe\x8e\x96\x94\xbcal", "montreal", datafile$inst,useBytes = TRUE)
+  datafile$inst <- gsub("<a0>Universit<e9>", "universite", datafile$inst,useBytes = TRUE)
+  datafile$inst <- gsub("\xfc\xbe\x8c\x86\x84\xbc", "", datafile$inst,useBytes = TRUE)
   datafile$inst[datafile$inst == "Universit\xfc\xbe\x8c\xa3\xa0\xbc Montpellier II"] <- "universite montpellier 2"
   datafile$inst[datafile$inst == "Universit\xfc\xbe\x8d\x83\xa0\xbct Z\xfc\xbe\x8c\x93\xa0\xbcrich Irchel"] <- "university of zurich irchel"
-  datafile$inst <- gsub("Landscape<a0>Ecology", "landscape ecology", datafile$inst)
-  datafile$inst <- gsub("Universit<8a>t", "universitat", datafile$inst)
+  datafile$inst <- gsub("Landscape<a0>Ecology", "landscape ecology", datafile$inst,useBytes = TRUE)
+  datafile$inst <- gsub("Universit<8a>t", "universitat", datafile$inst,useBytes = TRUE)
   datafile$inst <- gsub(
     "Leibniz Institute for Zoo and Wildlife Research\xfc\xbe\x98\x96\x8c\xbc",
     "leibniz institute for zoo and wildlife research", datafile$inst
-  )
+  ,useBytes = TRUE)
   datafile$inst[datafile$inst == "<a0>Universit<e9> Claude Bernard Lyon 1"] <- "universite claude bernard lyon 1"
   datafile$inst <- tolower(datafile$inst)
 
@@ -48,23 +85,30 @@ editor_cleaner <- function(datafile) {
   datafile$unit[datafile$unit == "Institut f<99>r Biologie (II)"] <- "institut fur biologie (ii)"
   datafile$unit <- tolower(datafile$unit)
 
-
+  datafile$city <- gsub("Z\x81rich", "zurich", datafile$city,useBytes = TRUE)
+  datafile$city <- gsub("W\x9frzburg", "wurzburg", datafile$city,useBytes = TRUE)
+  datafile$city <- gsub("K\x9aln", "cologne", datafile$city,useBytes = TRUE)
+  datafile$city <- gsub("G\x9attingen", "gottingen", datafile$city,useBytes = TRUE)
+  datafile$city <- gsub("M\x9fnchen", "munich", datafile$city,useBytes = TRUE)
+  datafile$city <- tolower(datafile$city)
+  
+  
+  datafile$state <- gsub("Z\x81rich", "zurich", datafile$state,useBytes = TRUE)
+  datafile$state <- tolower(datafile$state)
+  
+  datafile$country <- tolower(datafile$country)
+  
+  
+  
   datafile$unit[datafile$last_name == "fiala" &
     datafile$journal == "jte" &
     (datafile$year == 2014 | datafile$year == 2015)] <- "department of animal ecology and tropical biology (zoology iii)"
   datafile$city[datafile$last_name == "fiala" & datafile$journal == "jte" &
     (datafile$year == 2014 | datafile$year == 2015)] <- NA
-  datafile$city <- gsub("Z\x81rich", "zurich", datafile$city)
-  datafile$city <- gsub("W\x9frzburg", "wurzburg", datafile$city)
-  datafile$city <- gsub("K\x9aln", "cologne", datafile$city)
-  datafile$city <- gsub("G\x9attingen", "gottingen", datafile$city)
-  datafile$city <- gsub("M\x9fnchen", "munich", datafile$city)
-  datafile$city <- tolower(datafile$city)
+  
+  
+  
 
-  datafile$state <- gsub("Z\x81rich", "zurich", datafile$state)
-  datafile$state <- tolower(datafile$state)
-
-  datafile$country <- tolower(datafile$country)
 
 
   datafile$first_name <- trimws(datafile$first_name)
@@ -472,6 +516,20 @@ editor_cleaner <- function(datafile) {
   datafile$inst[datafile$last_name == "burgess"] <- "state university of new york college of environmental science and forestry"
   datafile$inst[datafile$last_name == "fragoso"] <- "state university of new york college of environmental science and forestry"
   datafile$inst[datafile$last_name == "yanai"] <- "state university of new york college of environmental science and forestry"
+  # 
+  # datafile$state[datafile$last_name == "cinner" &
+  #                 datafile$journal == "conbio" & 
+  #                datafile$inst == "columbia university"] <-"ny"
+  
+  # 
+  # datafile$country[datafile$last_name == "cinner" &
+  #                  datafile$journal == "conbio" & 
+  #                 datafile$inst == "columbia university"] <-"USA"
+  # # 
+  # datafile$city[datafile$last_name == "cinner" &
+  #                    datafile$journal == "conbio" & 
+  #                    datafile$inst == "james cook university"] <-"townsville"
+  
   datafile$inst[datafile$last_name == "hall" &
     datafile$first_name == "charles" &
     datafile$journal == "conbio"] <-
