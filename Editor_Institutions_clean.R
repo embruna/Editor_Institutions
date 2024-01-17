@@ -1238,7 +1238,7 @@ NamesDF <- NamesDF %>% select(index, Name1, Name2, Name_sim, Name_dist) # It's k
 NamesDF <- arrange(NamesDF, desc(Name_sim))
 head(NamesDF)
 # invoking the function
-source("./functions/namecompare.R")
+source("./functions_data_cleaning/namecompare.R")
 x <- editors$last_name
 y <- namecompare(x)
 

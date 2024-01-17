@@ -24,7 +24,7 @@ inst_all$counter<-seq_along(inst_all$inst)
 # inst<-inst_all %>% slice(301:700)
 # inst <- inst_all
 
-inst<-inst_all %>% slice(783:800)
+inst<-inst_all %>% slice(1:1182)
 uni_results_match<- data.frame(id=NA, 
                                display_name=NA, 
                                ror=NA, 
@@ -73,8 +73,19 @@ for(i in vec) {
 
 uni_results_no_match
 uni_results_match
-write_csv(uni_results_match, "./output_review/uni_results_match.csv")
-write_csv(uni_results_no_match, "./output_review/uni_results_no_match.csv")
+
+max(uni_results_no_match$counter, na.rm=TRUE)
+max(uni_results_match$counter, na.rm=TRUE)
+
+# 
+# 1-502
+# 503-699
+# 700-800
+# 801-932
+# 932-1182
+
+saveRDS(uni_results_match, "./output_review/uni_results_match_932-1182.rds")
+write_csv(uni_results_no_match, "./output_review/uni_results_no_match_932-1182.csv")
 
 #TODO: https://twitter.com/researchremix/status/1501682528184197121 wikipdata for carnegie
 # Notes -------------------------------------------------------------------

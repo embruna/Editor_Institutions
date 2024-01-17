@@ -1,10 +1,10 @@
 #FUNCTION TO Organize and Summarize the Carnegie CLassifications
 CarnegieCats <- function(carnegie_raw) {
-  # carnegie_raw<-read_csv("./Data/carnegie/CarnegCategories_2015.csv")
+  # carnegie_raw<-read_csv("./data_raw/carnegie/CarnegCategories_2015.csv")
   carnegie_raw<-carnegie_raw %>% select(Value,Label...4) %>% rename("basic2015"="Value", "classification"='Label...4')
   str(carnegie_raw)
   carnegie_raw<-as.data.frame(carnegie_raw)
-  CarnRanks<-read_csv("./Data/carnegie/CarnegRankings_2015_Reduced.csv") %>% rename("basic2015"="BASIC2015")
+  CarnRanks<-read_csv("./data_raw/carnegie/CarnegRankings_2015_Reduced.csv") %>% rename("basic2015"="BASIC2015")
   # CarnRanks<-CarnRanks %>% select(UNITID, NAME, CITY, STABBR,BASIC2015)
   str(CarnRanks)
   CarnRanks<-as.data.frame(CarnRanks)

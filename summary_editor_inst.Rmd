@@ -1,0 +1,1045 @@
+---
+title: "summary editor institutions"
+author: "Emilio M. Bruna"
+date: "3/7/2022"
+output: pdf_document
+bibliography: [refs.bib]
+
+---
+
+"Academic journals in the field of economics are heavily dominated by US institu- tions, but in terms of geographic distribution, there are more institutions in Europe than in North America. Surprisingly, we found that the diversity of editorial board members in terms of institution is negatively related to ABS ranking, but unrelated to the five-year impact factor and the eigenfactors. While when we removed the US journals from the sample, there was a significant positive impact between institutional diversity and the five-year impact factor."[@wu_does_2020].
+
+"In the social sciences, Columbia and Harvard editors-in-chief are significantly more likely than editors-in-chief with other doctorates to select graduates from Columbia or Harvard when making editorial appointments. In the physical and natural sciences, editors-in-chief with doctorates from schools other than Columbia and Harvard are just as likely as Columbia and Harvard editors-in-chief to select editorial appointees with Columbia or Harvard doctorates." [@yoels_structure_1974]
+
+"Our results appear to reject the argument that top journal editors exhibit undue favoritism in the publication process with regards to their former students."[@hilmer_editors_2011]
+
+- "NSF is committed to expanding efforts to increase participation from underrepresented groups and _diverse
+institutions_ throughout the United States in all NSF activities and programs." [emphasis added]  
+
+
+- The 2015-2016 report included suggestions and practices to ensure an accountability
+movement for broadening participation at three levels: grantees, _institutions_ of higher
+education and NSF. (CEOSE Report to Congress)
+
+The authors identify the following reasons for the issue: editorial favouritism, path dependent processes, and increasing language compatibility within the institutions. As observed by them, the editorial favouritism does not adequately explain the concentration. However, Laband and Piette (1994) find editorial favouritism as a significant determinant of citation.3 The second factor, ‘path dependence’, refers to the long survival of an institutional order, which has a few institutions at the top. If such a situation prevails, the journals may tend to show resistance to new ideas. Hodgson and Rothman (1999) reflect their concern about this issue:
+The danger with such a high degree of institutional concentration in the editors and authors of journals as is evidenced by the 1995 data is that it may be difficult for further change to take place. ‘Lock-in’ may occur, where specific institutions defend specific, and possibly outdated, ideas and approaches. In these circumstances, it would be quite difficult for alternative or innovative approaches to establish themselves. (p 182)
+
+```{r setup, include=FALSE, echo=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(kableExtra)
+```
+
+```{r data_loading, include=FALSE, echo=FALSE}
+
+editors<-read_csv("./data_clean/InstitutionData_clean.csv")
+colnames(editors)<-tolower(colnames(editors))
+glimpse(editors)
+editors<-editors %>% 
+  filter(!is.na(category)) %>% 
+  # mutate(across(everything(), as.character)) %>% 
+  mutate(across(everything(), as.factor)) %>% 
+  filter(!inst=="missing") %>% 
+  drop_na(inst) %>% 
+  select(-country_prior_class,
+         -geo.code,
+         # -geo.code_Prior_Class,
+         -gender, 
+         -notes,
+         -inst_check, 
+         -volume, 
+         -issue)
+
+editors<-droplevels(editors)
+names(editors)<-tolower(names(editors))
+names(editors)
+
+# upload and standardize carnegie 
+# carnegie_raw<-read_csv("./data_raw/carnegie/CarnegCategories_2015.csv")
+# source("carnegieCats.R")
+# carnegie<-carnegieCats(carnegie_raw)
+# rm(carnegie_raw)
+# upload and standardize carnegie by the 2021 classifications
+source("./functions_analysis/CarnegieCats_2021.R")
+carnegie<-CarnegieCats_2021("basic2021")
+
+
+
+##############################################################
+# ANALYSIS - GLOBAL
+# ##############################################################
+# editors<-editors %>%
+#   filter(!journal %in% c("najfm","agronomy","marecol","auk","condor"))
+
+editors<-editors %>%
+  filter(!journal %in% c("agronomy","marecol"))
+
+
+glimpse(editors)
+```  
+
+```{r years, include=FALSE, echo=FALSE}
+##############################################################
+first_year=1985
+last_year=2014
+editors$year<-as.numeric(as.character(editors$year))
+editors <- editors %>% filter(year>0|is.na(year)==FALSE) %>% filter(year>=first_year) %>% filter(year<=last_year)
+summary(editors$year)
+
+# HOW MANY journalS AND WHAT ARE THEY
+jrnls<-editors %>% summarise(n=n_distinct(journal))
+jrnls_list<-editors %>% 
+  group_by(journal) %>% 
+  summarize(n=n_distinct(journal))
+jrnls_list
+
+
+
+journals_table<-kable(jrnls_list,
+  digits = 2,
+  format = "latex",
+  align = "l",
+  row.names = FALSE,
+  booktabs = T,
+  linesep = "",
+  # longtable = TRUE,
+  caption = "Journals") %>%  kable_styling(position = "center")
+
+```
+## Journals 
+
+<!-- `r journals_table` -->
+`r jrnls_list$journal`
+
+```{r eds_counts, include=FALSE, echo=FALSE}
+# EDS - HOW MANY AND HOW MANY PER journal
+eds<-editors %>% summarise(n=n_distinct(editor_id))
+eds
+
+eds_per_jrnl<-editors %>% 
+  group_by(journal) %>% 
+  summarize(n_eds=n_distinct(editor_id)) %>% 
+  arrange(desc(n_eds))
+eds_per_jrnl
+
+
+```
+## Overview
+
+Number of Editors: `r eds$n`  
+
+```{r inst_counts, include=FALSE, echo=FALSE}
+# inst and No PER journal
+No_Inst<-editors %>% summarise(n=n_distinct(inst))
+No_Inst
+
+inst_per_jrnl<-editors %>% 
+  group_by(journal) %>% 
+  summarize(n_inst=n_distinct(inst)) %>% 
+  arrange(desc(n_inst))
+inst_per_jrnl
+
+
+# inst PER EDITOR
+inst_per_ed<-editors %>% 
+  group_by(journal) %>% 
+  summarize(n_eds=n_distinct(editor_id),n_inst=n_distinct(inst)) %>% 
+  mutate(inst_per_ed=n_inst/n_eds) %>% 
+  arrange((desc(n_eds)))
+inst_per_ed
+plot(inst_per_ed$n_eds,inst_per_ed$n_inst)
+
+```
+
+Number of Editor-Years: `r nrow(editors)`
+
+Number of Institutions: `r No_Inst$n`  
+
+
+
+```{r inst_per_yr, include=FALSE, echo=FALSE}
+
+# Total Number of Inst (all jrnls pooled)  vs. Year
+InstPerYr<-editors %>% 
+  group_by(year) %>% 
+  summarize(InstPerYear = n_distinct(inst))
+InstPerYr
+
+EdsPerYr<-editors %>% 
+  group_by(year) %>% 
+  summarize(EdsPerYear = n_distinct(editor_id))
+EdsPerYr
+
+# Total "Editorial Years" for each Inst
+EdsByInst<-editors %>% 
+  select(inst,editor_id) %>% 
+  count(inst) %>% 
+  arrange(desc(n)) %>% 
+  mutate(perc=n/sum(n)*100) %>% 
+  arrange(desc(perc))
+
+EdsByInst
+
+```
+
+```{r top_inst, include=FALSE, echo=TRUE}
+topX<-200
+EdsByInst_topX<-EdsByInst %>% 
+  slice(1:topX) %>% 
+  mutate(rank=rank(-n))
+EdsByInst_topX
+
+# topx_table<-EdsByInst_topX %>%
+#   kbl(booktabs = T,
+#       position = "left") %>%
+# kable_styling(latex_options = "striped")
+
+
+topx_table<-kable(EdsByInst_topX,
+  digits = 2,
+  format = "latex",
+  align = "l",
+  row.names = FALSE,
+  booktabs = T,
+  linesep = "",
+  # longtable = TRUE,
+  caption = "Top Institutions (Editor-Years)") %>%  kable_styling(position = "center")
+
+# Inst of individual editors (accross all years)
+Inst_by_Ed<-editors %>% 
+  select(inst,editor_id,country) %>% 
+  group_by(inst,country) %>% 
+  summarize(n=n_distinct(editor_id)) %>% 
+  arrange(desc(n)) %>% 
+  ungroup() %>% 
+  mutate(rank=rank(-n)) %>% 
+  mutate(perc=n/sum(n)*100) %>% 
+  mutate(cumPerc=cumsum(perc)) %>% 
+  arrange(desc(perc)) %>% 
+  slice(1:topX)
+
+
+Inst_by_Ed
+sum(Inst_by_Ed$n)
+
+topx_table2<-kable(
+      Inst_by_Ed, 
+      digits = 2,
+      format    = "latex", 
+      longtable = T,
+      linesep = "",
+      booktabs  = T, 
+      caption   = "Top Institutions (No. of Editors)"
+      ) %>%
+kable_styling(latex_options = c("repeat_header"),
+              repeat_header_continued = "\\textit{(Continued on Next Page...)}")
+
+# 
+# topx_table2<-kable(Inst_by_Ed,
+#   digits = 2,
+#   format = "latex",
+#   align = "l",
+#   row.names = FALSE,
+#   longtable=TRUE,
+#   booktabs = T,
+#   linesep = "",
+#   # longtable = TRUE,
+#   caption = "Top Institutions (No. of Editors)") %>%  kable_styling(position = "center") %>% 
+#   kable_styling(latex_options = c("repeat_header"))
+
+topY<-200
+Inst_by_Ed_topY<-Inst_by_Ed %>% 
+  slice(1:topY)
+Inst_by_Ed_topY
+```
+<!-- To `r topX` Institutions:  -->
+
+`r topx_table`  
+
+`r topx_table2`  
+
+
+```{r top_eds, include=FALSE, echo=FALSE}
+Ed_by_name<-editors %>% 
+  group_by(first_name) %>% 
+  summarize(n=n_distinct(editor_id)) %>% 
+  arrange(desc(n)) %>% 
+  mutate(cumulative=cumsum(n),cumper=cumulative/sum(n)*100) 
+Ed_by_name
+Ed_by_name_table<-Ed_by_name %>% slice(1:topX)
+topname_table1<-kable(Ed_by_name_table,
+  digits = 2,
+  format = "latex",
+  align = "l",
+  row.names = FALSE,
+  booktabs = T,
+  linesep = "",
+  # longtable = TRUE,
+  caption = "Top First Names (No. of Editors with that name)") %>%  kable_styling(position = "center")
+
+
+Ed_by_name_LAST<-editors %>% 
+  group_by(last_name) %>% 
+  summarize(n=n_distinct(editor_id)) %>% 
+  arrange(desc(n)) %>% 
+  mutate(cumulative=cumsum(n),cumper=cumulative/sum(n)*100) 
+Ed_by_name_LAST
+Ed_by_name_LAST_table<-Ed_by_name_LAST %>% ungroup() %>% select(last_name, n) %>% slice(1:topX)
+
+topname_table2<-kable(Ed_by_name_LAST_table,
+  digits = 2,
+  format = "latex",
+  align = "l",
+  row.names = FALSE,
+  booktabs = T,
+  linesep = "",
+  # longtable = TRUE,
+  caption = "Top Last Names (No. of Editors with that name)") %>%  kable_styling(position = "center")
+
+years_per_person<-editors %>% 
+  select(first_name,last_name,middle_name,editor_id) %>% 
+  group_by(editor_id) %>% 
+  summarize(yrs=n()) %>% 
+  left_join(editors) %>% 
+  group_by(editor_id) %>%
+  slice(1) %>% 
+  arrange(desc(yrs)) %>% 
+  select(editor_id, yrs, first_name, last_name, inst)
+
+years_per_person_table<-years_per_person %>% ungroup() %>% select(yrs, first_name, last_name, inst) %>% slice(1:topX)
+
+topname_table3<-kable(years_per_person_table,
+  digits = 2,
+  format = "latex",
+  align = "l",
+  row.names = FALSE,
+  booktabs = T,
+  linesep = "",
+  # longtable = TRUE,
+  caption = "Most Years of Editorial Service") %>%  kable_styling(position = "center")
+
+
+# years_per_person %>% 
+#   mutate(cumulative=cumsum(yrs),cumper=cumulative/sum(yrs)*100) 
+
+```
+
+`r topname_table1`
+`r topname_table2`
+`r topname_table3`
+
+
+```{r eds_by_country, include=FALSE , echo=FALSE}
+
+Ed_by_country<-editors %>% 
+  group_by(country) %>% 
+  summarize(n=n_distinct(editor_id)) %>% 
+  arrange(desc(n)) %>% 
+  mutate(cumulative=cumsum(n),cumper=cumulative/sum(n)*100) 
+Ed_by_country
+
+
+
+country_table1<-kable(select(Ed_by_country,c(country, n)) %>% slice(1:topX),
+  digits = 2,
+  format = "latex",
+  align = "l",
+  row.names = FALSE,
+  booktabs = T,
+  linesep = "",
+  # longtable = TRUE,
+  caption = "Countries with most editors") %>%  kable_styling(position = "center")
+
+
+
+##############################################################
+##############################################################
+
+# ANALYSIS - ADD country CODES AND WORLD BANK CATEGORIES
+
+##############################################################
+##############################################################
+
+source("./functions_analysis/country_codes.R")
+editors<-country_codes(editors)
+
+
+source("./functions_analysis/AddIncomeRegion.R")
+editors<-AddIncomeRegion(editors)
+
+```
+`r country_table1`
+
+```{r inst_cumulative, include=FALSE , echo=TRUE}
+##############################################################
+##############################################################
+#
+# ANALYSIS - RICHNESS AND DIVERSITY
+
+
+##############################################################
+##############################################################
+# Cumulative Institutional Richness: Cumulative Number of countries represented through year X
+# Used in Figure 1A
+# Use Rarefaction curves generated by vegan then convert back to tibble
+library(vegan)
+
+InstAcum<-editors %>% group_by(year,inst) %>% summarize(yr_tot = n_distinct(inst))
+InstAcum<-spread(InstAcum, inst,yr_tot)
+InstAcum[is.na(InstAcum)] <- 0
+InstAcum<-ungroup(InstAcum)
+InstAcum<-select(InstAcum,-year)
+InstAcum<-specaccum(InstAcum, "collector")
+InstAcum<-as_tibble(InstAcum$richness)
+names(InstAcum)[1] <- "CumulativeRichness"
+InstAcum$year<-seq(first_year,last_year,1)
+InstAcum
+```
+```{r inst_diversity, include=FALSE , echo=TRUE}
+##############################################################
+# Annual Institutional Richness: Number of countries represented in year X
+# Used in Figure ---
+instperYR<-editors %>% group_by(year) %>% summarize(AnnualRichness = n_distinct(inst))
+instperYR
+##############################################################
+
+##############################################################
+
+##############################################################
+# Institutional Diversity (all journals pooled)
+# Used in Figure --
+DivDataPooled<-editors %>% group_by(year, inst) %>% summarize(Total = n_distinct(editor_id))
+# DivDataPooled<-as.data.frame(EdsPerCountryPerJrnlPerYr.LONG)
+DivDataPooled<-DivDataPooled %>% group_by(year, inst) %>% summarise(Total_Eds=sum(Total))
+DivDataPooled<-spread(DivDataPooled, inst, Total_Eds)
+DivDataPooled[is.na(DivDataPooled)] <- 0
+DivDataPooled<-ungroup(DivDataPooled)
+# 4: Geo Diverisity using Inverse Simpson's Index (expressed as 1/D)
+IsimpDivTable <- diversity((DivDataPooled %>% select(-year)), index="invsimpson") #Need to strip away the journal and year columns for vegan to do the analysis
+# Table DIVERSITY with Results and Journals
+IsimpDivTable <- data.frame(IsimpDivTable)
+IsimpDivTable$year <-DivDataPooled$year #Add year as a column
+IsimpDivTable<-rename(IsimpDivTable, InvSimpson=IsimpDivTable) #rename the columns
+IsimpDivTable <- IsimpDivTable[c("year","InvSimpson")] #reorder the columns
+IsimpDivTable<-as_tibble(IsimpDivTable)
+
+# THIS CALCLULATES THE SIMPSONS INDEX (expressed as 1-D)
+simpDivTable <- diversity((DivDataPooled %>% select(-year)), index="simpson") #Need to strip away the journal and year columns for vegan to do the analysis
+# Table DIVERSITY with Results and Journals
+simpDivTable <- data.frame(simpDivTable)
+simpDivTable$year <-DivDataPooled$year #Add year as a column
+simpDivTable<-rename(simpDivTable, Simpson=simpDivTable) #rename the columns
+simpDivTable <- simpDivTable[c("year","Simpson")] #reorder the columns
+simpDivTable<-as_tibble(simpDivTable)
+
+IsimpDivTable<-full_join(instperYR,IsimpDivTable, by="year")
+IsimpDivTable<-full_join(IsimpDivTable,simpDivTable, by="year")
+rm(simpDivTable)
+```
+
+```{r inst_evenness, include=FALSE , echo=TRUE}
+
+# 4: Institutional Evenness (all journals pooled). We do not present results
+# for "Evenness" of the Institutions but it is straightforward to calculate.
+IsimpDivTable<-mutate(IsimpDivTable, Inst.Evenness = InvSimpson/AnnualRichness)
+IsimpDivTable
+```
+
+```{r plot1a , include=FALSE , echo=TRUE}
+##############################################################
+# Fig 1A: Total Number of Editors (all journals pooled)  vs. Year
+##############################################################
+
+plotTOTALedsYear<-ggplot(EdsPerYr, aes(x=year, y=EdsPerYear)) +
+  xlab("Year")+
+  ylab("N")+
+  geom_line(size=1, color="blue")+
+  ggtitle('(A) Number of Editors') +
+  geom_point(color="black", shape=1)+
+  scale_y_continuous(breaks=seq(0, 1500, 150))+
+  scale_x_continuous(breaks=seq(first_year, last_year+1, 5))
+
+plotTOTALedsYear<-plotTOTALedsYear+theme_classic()+
+  theme( axis.text=element_text(colour="black", size = 10),
+         legend.text = element_text(color="black", size=10),
+         legend.position = c(0.9,0.8),
+         legend.title = element_blank(),   #Removes the Legend title
+         plot.margin=unit(c(1,5,1,1),"lines"),
+         legend.background = element_rect(colour = 'black', size = 0.5, linetype='solid'))
+plotTOTALedsYear
+```
+
+```{r plot1b, include=FALSE , echo=TRUE} 
+
+##############################################################
+# Fig. 1B: Cumulative Inst Richness
+##############################################################
+# PUT THE NECESSARY DATA IN ONE DATAFRAME
+jointinstperYR<-instperYR
+jointedAccDF<-InstAcum
+
+jointInstperYR<-rename(jointinstperYR,Countries=AnnualRichness)
+jointRichness<-full_join(jointinstperYR, jointedAccDF, by = "year")
+jointRichness<-gather(jointRichness, "Richness","N", 2:3)
+jointRichness[jointRichness=="Countries"]<-"Annual"
+jointRichness[jointRichness=="CumulativeRichness"]<-"Cumulative"
+rm(jointInstperYR,jointedAccDF)
+
+#plot cumulative and annual richness same plot
+jointRichnessPlot<-ggplot(jointRichness, aes(x=year, y=N, group = Richness, colour = Richness)) +
+  geom_line(size=1) +
+  scale_color_manual(values=c("blue", "red"))+
+  geom_text(data = jointRichness[jointRichness$year=="2012" & jointRichness$Richness=="Annual",], aes(label = Richness), hjust = 1.0, vjust = 2.5, size=3.5) +
+  geom_text(data = jointRichness[jointRichness$year=="2012" & jointRichness$Richness=="Cumulative",], aes(label = Richness), hjust = 2.0, vjust = 1.35, size=3.5) +
+  xlab("Year")+
+  ylab("Richness")+
+  ggtitle('(B) Editor Instgraphic Richness')+
+  geom_point(color="black", shape=1)+
+  scale_y_continuous(limits = c(25, 1500))+
+  scale_x_continuous(breaks=seq(first_year, last_year+1, 5))
+
+jointRichnessPlot<-jointRichnessPlot+theme_classic()+
+  theme(axis.text=element_text(colour="black", size = 10),         #sets x axis title size, style, distance from axis #add , face = "bold" if you want bold
+        plot.margin=unit(c(1,5,1,1),"lines"),
+        legend.title = element_blank(),   #Removes the Legend title
+        legend.text = element_text(color="black", size=10),
+        legend.position = ("none"),
+        legend.background = element_rect(colour = 'black', size = 0.5, linetype='solid'))
+jointRichnessPlot
+
+```
+```{r plot1c, include=FALSE , echo=TRUE}
+
+##############################################################
+# Plot 1C: COMMunitY (POOLED journalS) LEVEL DIVERSITY
+##############################################################
+IsimpDivTable$year
+IsimpDivTable$InvSimpson
+plotPOOLinstimpdiv<-ggplot(IsimpDivTable, aes(x=year, y=InvSimpson)) +
+  geom_line(size=1, color="blue") + # Use hollow circles
+  xlab("Year")+
+  ylab(bquote('D'[2]))+
+  ggtitle('(C) Editor Institutional Diversity')+
+  geom_point(color="black", shape=1)+
+  scale_y_continuous(limits = c(0, 250))+
+  scale_x_continuous(breaks=seq(first_year, last_year+1, 5))
+
+plotPOOLinstimpdiv<-plotPOOLinstimpdiv+theme_classic()+
+  theme(axis.title.x=element_text(colour="black", size = 14, vjust=0),            #sets x axis title size, style, distance from axis #add , face = "bold" if you want bold
+        axis.text=element_text(colour="black", size = 10),
+        plot.margin=unit(c(1,5,1,1),"lines"),
+        legend.title = element_blank(),   #Removes the Legend title
+        legend.text = element_text(color="black", size=10),
+        legend.position = c(0.9,0.8),
+        legend.background = element_rect(colour = 'black', size = 0.5, linetype='solid'))
+plotPOOLinstimpdiv
+```
+```{r plot1, include=FALSE , echo=TRUE}
+
+######################################################
+# Binding these up to make Fig. 1
+######################################################
+
+
+
+##############################################################
+# Fig 2A: bar chart of countries with the most unique Institutions
+##############################################################
+
+##############################################################
+# Number and Pcnt of Editors from Each Country (all journals and years pooled)
+# Used for Fig 2A
+Editor.Inst<-editors %>%  group_by(inst) %>%
+  summarize(N_Inst = n_distinct(editor_id)) %>%
+  mutate(Pcnt_Inst= (N_Inst/sum(N_Inst)*100)) %>%
+  arrange(desc(Pcnt_Inst))
+Editor.Inst
+
+
+cutoff = 20 # This is how many countries you want on the chart, all the rest will be in "OTHER"
+editor.inst<-arrange(Editor.Inst, desc(Pcnt_Inst)) %>% select(inst,N_Inst,Pcnt_Inst)
+most.common.Institutions<-slice(Editor.Inst, 1:cutoff)
+least.common.Institutions<-slice(Editor.Inst, (cutoff+1):nrow(Editor.Inst))
+least.common.Institutions$inst<-"other"
+least.common.Institutions<-least.common.Institutions %>%
+  mutate(sum(N_Inst)) %>%
+  mutate(sum(Pcnt_Inst)) %>%
+  select(-N_Inst) %>%
+  select(-Pcnt_Inst) %>%
+  rename(N_Inst = `sum(N_Inst)`) %>%
+  rename(Pcnt_Inst = `sum(Pcnt_Inst)`) %>%
+  slice(1:1)
+most.common.Institutions<-bind_rows(most.common.Institutions, least.common.Institutions)
+# most.common.Institutions$inst<-as.factor(most.common.Institutions$inst)
+most.common.Institutions
+
+# This is needed to put them in order in the plot with OTHER at the end of the graph
+order<-seq(1:nrow(most.common.Institutions))
+most.common.Institutions$inst<- factor(most.common.Institutions$inst,most.common.Institutions$inst[levels = order])
+# levels(most.common.Institutions$geo.code)
+rm(order,editor.inst,least.common.Institutions)
+
+InstED<-arrange(most.common.Institutions) %>%  ggplot(aes(x=inst, y=Pcnt_Inst)) +
+  geom_bar(colour="black", stat="identity")+
+  coord_flip()+
+  ylab("Percent") +
+  xlab("Institution")+
+  ggtitle('(A) Editors by Institution')+
+  scale_y_continuous(breaks=seq(0, 70, 5))
+InstED<-InstED+theme_classic()+
+  theme(axis.title.x=element_text(colour="black", size = 14, vjust=0),            #sets x axis title size, style, distance from axis #add , face = "bold" if you want bold
+        axis.title.y=element_text(colour="black", size = 14, vjust=2),            #sets y axis title size, style, distance from axis #add , face = "bold" if you want bold
+        axis.text=element_text(colour="black", size = 10),                              #sets size and style of labels on axes
+        legend.title = element_blank(),   #Removes the Legend title
+        legend.text = element_text(color="black", size=10),
+        legend.position = c(0.9,0.8),
+        legend.background = element_rect(colour = 'black', size = 0.5, linetype='solid'))
+InstED
+# 
+```
+
+```{r yrs_with_editor, include=FALSE , echo=TRUE}
+# ###########################3
+# 
+# Second question
+years_with_an_editor<-editors %>% select(year,inst) %>%
+  distinct(year,inst) %>%
+  # Count how many observations had counts > 0 for each site
+  group_by(inst) %>%
+  summarize(years=n()) %>%
+  arrange(desc(years))
+years_with_an_editor
+```
+
+```{r US_INST, include=FALSE , echo=TRUE}
+# # ANALYSIS - US inst ONLY
+# 
+# 
+# levels(as.factor(USA_inst$state))
+# levels(as.factor(editors$state))
+# summary(editors$inst)
+# editors$state<-as.character(editors$state)
+# USA_inst<-editors %>% filter(geo.code=="USA"|state=="puerto rico") %>% 
+#   mutate(state = ifelse(is.na(state),"missing", state)) %>% 
+#   mutate(state_full = ifelse(nchar(state)>2,str_to_title(state), NA)) %>% 
+#   mutate(state_full=state.abb[match(state_full,state.name)]) %>% 
+#   mutate(state = ifelse(is.na(state_full),state, state_full)) %>% 
+#   select(-state_full) %>% 
+#   mutate(state=toupper(state)) 
+# USA_inst$state[USA_inst$state=="DISTRICT OF COLUMBIA"]<-"DC"
+# USA_inst$state[USA_inst$state=="PUERTO RICO"]<-"Puerto Rico"
+# USA_inst$state[USA_inst$state=="MISSING"]<-NA
+# levels(as.factor(USA_inst$state))
+# 
+# states<-rep(state.name, nrow(USA_inst)/50)
+# 
+# USA_inst <- USA_inst %>% 
+#   mutate(inst = str_to_title(inst))
+#   USA_inst$state_extracted<-str_extract(USA_inst$inst, states)
+#   mutate(state_extracted = 
+#   mutate(state_extracted=state.abb[match(state_extracted,state.name)]) %>% 
+#   mutate(state = ifelse(is.na(state),str_extract(inst,states), state)) %>%   
+# 
+
+
+# 
+# # USA_inst$state<-state.abb[grep(foo, state.name)]
+# # USA_inst$state
+# USA_inst$state[USA_inst$state=="Alabama"]<-"AL"
+# USA_inst$state[USA_inst$state=="Arizona"]<-"AZ"
+# USA_inst$state[USA_inst$state=="California"]<-"CA"
+# USA_inst$state[USA_inst$state=="Colorado"]<-"CO"
+# USA_inst$state[USA_inst$state=="Connecticut"]<-"CT"
+# USA_inst$state[USA_inst$state=="Washington DC"]<-"DC"
+# USA_inst$state[USA_inst$state=="Florida"]<-"FL"
+# USA_inst$state[USA_inst$state=="Idaho"]<-"ID"
+# USA_inst$state[USA_inst$state=="Illinois"]<-"IL"
+# USA_inst$state[USA_inst$state=="Kentucky"]<-"KY"
+# USA_inst$state[USA_inst$state=="Louisiana"]<-"LA"
+# USA_inst$state[USA_inst$state=="Lousiana"]<-"LA"
+# USA_inst$state[USA_inst$state=="South Dakota"]<-"SD"
+# USA_inst$state[USA_inst$state=="Michigan"]<-"MI"
+# USA_inst$state[USA_inst$state=="Maine"]<-"ME"
+# USA_inst$state[USA_inst$state=="Virginia"]<-"VA"
+# USA_inst$state[USA_inst$state=="New Jersey"]<-"NJ"
+# USA_inst$state[USA_inst$state=="Rhode Island"]<-"RI"
+# 
+# USA_inst$state[USA_inst$state=="Utah"]<-"UT"
+# USA_inst$state[USA_inst$state=="Texas"]<-"TX"
+# USA_inst$state[USA_inst$state=="Tennessee"]<-"TN"
+# USA_inst$state[USA_inst$state=="Wisconsin"]<-"WI"
+# USA_inst$state[USA_inst$state=="West Virginia"]<-"WV"
+# USA_inst$state[USA_inst$state=="VI"]<-"VA"
+# USA_inst$state[USA_inst$state=="West Virgina"]<-"WV"
+# USA_inst$state[USA_inst$state=="South Carolina"]<-"SC"
+# USA_inst$state[USA_inst$state=="Washington"]<-"WA"
+# USA_inst$state[USA_inst$state=="Washington "]<-"WA"
+# USA_inst$state[USA_inst$state=="Wyoming"]<-"WY"
+# USA_inst$state[USA_inst$state=="Maryland"]<-"MD"
+# USA_inst$state[USA_inst$state=="Massachusetts"]<-"MA"
+# USA_inst$state[USA_inst$state=="Mississippi"]<-"MS"
+# USA_inst$state[USA_inst$state=="PE"]<-"PA"
+# USA_inst$state[USA_inst$state=="Minnesota"]<-"MN"
+# USA_inst$state[USA_inst$state=="North Dakota"]<-"ND"
+# USA_inst$state[USA_inst$state=="North Carolina"]<-"NC"
+# USA_inst$state[USA_inst$state=="Nevada"]<-"NV"
+# USA_inst$state[USA_inst$state=="New Hampshire"]<-"NH"
+# USA_inst$state[USA_inst$state=="New Mexico"]<-"NM"
+# USA_inst$state[USA_inst$state=="New York"]<-"NY"
+# USA_inst$state[USA_inst$state=="Nebraska"]<-"NE"
+# USA_inst$state[USA_inst$state=="Montana"]<-"MT"
+# USA_inst$state[USA_inst$state=="Missouri"]<-"MO"
+# USA_inst$state[USA_inst$state=="Oregon"]<-"AL"
+# USA_inst$state[USA_inst$state=="NoState"]<-NA
+# USA_inst$state[USA_inst$state=="Pennsylvania"]<-"PA"
+# USA_inst$state[USA_inst$state=="Puerto Rico"]<-"PR"
+# USA_inst$state[USA_inst$state=="Alaksa"]<-"AK"
+# USA_inst$state[USA_inst$state=="Alaska"]<-"AK"
+# USA_inst$state[USA_inst$state=="District of Columbia"]<-"DC"
+# USA_inst$state[USA_inst$state=="Iowa"]<-"IA"
+# USA_inst$state[USA_inst$state=="Vermont"]<-"VT"
+# USA_inst$state[USA_inst$state=="Arkansa"]<-"AR"
+# USA_inst$state[USA_inst$state=="Arkansas"]<-"AR"
+# USA_inst$state[USA_inst$state=="Kansas"]<-"KS"
+# USA_inst$state[USA_inst$state=="Georgia"]<-"GA"
+# USA_inst$state[USA_inst$state=="Hawaii"]<-"HI"
+# USA_inst$state[USA_inst$state=="Oklahoma"]<-"OK"
+# USA_inst$state[USA_inst$state=="Indiana"]<-"IN"
+# USA_inst$state[USA_inst$state=="Ohio"]<-"OH"
+# USA_inst$state[USA_inst$state==""]<-NA
+# USA_inst$state<-as.factor(USA_inst$state)
+# USA_inst$state<-droplevels(USA_inst$state)
+# levels(USA_inst$state)
+# summary(USA_inst$state)
+```
+
+
+```{r US_INST2, include=FALSE , echo=TRUE}
+# # 
+# #Need to match up the names used in Carengie Classification with names used in editors
+# str(carnegie)
+# carnegie_names<-carnegie %>% select(name,city,stabbr,classification)
+# carnegie_names<-carnegie_names %>% filter(classification=="doctoral"|
+#                                             classification=="masters"|
+#                                             classification=="baccalaureate"|
+#                                             classification=="tribal")
+# carnegie_names$classification<-droplevels(carnegie_names$classification)
+# summary(carnegie_names)
+# 
+# str(USA_inst)
+# USA_inst_names<-USA_inst %>% select(inst,city,state)
+# USA_inst_names$state<-as.character(USA_inst_names$state)
+# str(USA_inst_names)
+# USA_inst_names<-distinct(USA_inst_names)
+# 
+# 
+# foo<-USA_inst_names$inst
+# foo2<-USA_inst_names$inst
+# foo3<- cbind.data.frame(foo,foo2)
+# str(foo3)
+# names(foo3)[1] <- "Name1"
+# names(foo3)[2] <- "Name2"
+# foo3$Name1<-as.character(foo3$Name1)
+# foo3$Name2<-as.character(foo3$Name2)
+# NamesList<-sapply(foo3$Name1,agrep,foo3$Name2, value=TRUE)
+# NamesDF<-data.frame(
+#   Name1 = rep(names(NamesList), lapply(NamesList, length)),
+#   Name2 = unlist(NamesList))
+# NamesDF<-na.omit(NamesDF)
+# NamesDF<-distinct(NamesDF)
+# str(NamesList)
+# 
+# NamesDF$match<-NA
+# NamesDF$match<-NamesDF$Name1==NamesDF$Name2
+# # match2<-ifelse(NamesDF$match=="TRUE",1,0) #convert TRUE/FALSEto 0/1
+# # NamesDF<-cbind(NamesDF,match2)
+# # head(NamesDF,40)
+# # str(NamesDF)
+# NamesDF<-arrange(NamesDF,Name1,Name2) #organize in alphabetica order
+# NamesDF<-filter(NamesDF, match==FALSE)  # THIS DELETES ALL NAMES THAT ARE 100% MATCH
+# head(NamesDF)
+# # Convert to chr
+# NamesDF$Name1<-as.character(NamesDF$Name1)
+# NamesDF$Name2<-as.character(NamesDF$Name2)
+# str(NamesDF)
+# 
+# NamesDF$Name_sim<-levenshteinSim(NamesDF$Name1, NamesDF$Name2)
+# NamesDF$Name_dist<-levenshteinDist(NamesDF$Name1, NamesDF$Name2)
+# 
+# 
+# # Because this does all pairwise comparisons, it results in redundancy: "e bruna vs emilio bruna" and "emilio bruna vs e bruna"
+# # are in different rows, even though they are the same "comparison". This deletes one of the two
+# NamesDF<-NamesDF[!duplicated(t(apply(NamesDF, 1, sort))),]
+# # this arranges them in order from most similar (1 change required) to least similar.
+# # look carefully at those with a few changes, as they are likely to be a tiny spelling mistake or difference in intials
+# 
+# 
+# NamesDF$index<-seq.int(nrow(NamesDF)) #adds a column with an index to make it easier to id which row you need'
+# NamesDF <- NamesDF %>% select(index, Name1, Name2, Name_sim,Name_dist) #It's kinda ugly, but this rearranges columns (and dumps the "FALSE")
+# NamesDF <- arrange(NamesDF, desc(Name_sim))
+# head(NamesDF)
+# #return(NamesDF)
+# write.csv(NamesDF, file="./data_raw/InstNameCheck_USA.csv", row.names = T) #export it as a csv file
+# 
+# 
+# 
+# USA_inst$editor_id<-as.factor(USA_inst$editor_id)
+# summary(USA_inst$editor_id)
+# USA_inst$inst<-as.character(USA_inst$inst)
+# # foo<-USA_inst$inst
+# names(USA_inst)<-tolower(names(USA_inst))
+# # USA_inst$name<-as.character(foo$NAME)
+# USA_inst$source<-"class"
+# str(USA_inst)
+# # foo<-foo %>% filter(NAME != "NA")
+# # foo <- foo %>% group_by(NAME) %>% filter(row_number(source) == 1) %>% arrange(NAME)
+# # USA_inst <-USA_inst %>% group_by(editor_id) %>% filter(row_number(source) == 1) %>% arrange(inst)
+# names(USA_inst_names)
+# USA_inst_names$source<-"class"
+# # foo<-as.data.frame(foo)
+# names(carnegie)
+# # carnegie$name<-as.character(carnegie$name)
+# carnegie_names<-carnegie_names %>% rename(inst=name)
+# carnegie
+# # foo2<-na.omit(as.data.frame(foo2))
+# # foo2<-foo2 %>% rename(NAME=foo2)
+# carnegie_names$source<-"carnegie"
+# # foo2<-unlist(foo2)
+# # foo2<-as.data.frame(foo2)
+# 
+# # 
+# # str(carnegie)
+# # names(carnegie)
+# # names(USA_inst)
+# # USA_inst<-USA_inst %>% 
+# #   ungroup() %>%
+# #   select(inst, source) %>% 
+# #   unique()
+# 
+# USA_inst_names$inst<-as.character(USA_inst_names$inst)
+# USA_inst_names$trim <- removeWords(USA_inst_names$inst, words = stopwords(kind = "en"))
+# carnegie_names$trim <- removeWords(carnegie_names$inst, words = stopwords(kind = "en")) 
+# carnegie_names$trim <- gsub("the ","",carnegie_names$trim)
+# foo3<-left_join(USA_inst_names,carnegie,by="trim")
+# 
+# foo3$editor_id<-as.numeric(foo3$editor_id)
+# foo3<-filter(foo3,editor_id>0)
+# write.csv(foo3,file="./data_raw/USA_Ed_Inst_Carneg.csv")
+```
+<!---- 
+# USA_ED_clean<-read_csv("./data_raw/ESA2018_USA_Ed_Inst_Carneg.csv", col_names=TRUE)
+# 
+# USA_ED_clean<-USA_ED_clean %>% filter(Classification != "NA")
+# USA_ED_clean<-USA_ED_clean %>% filter(Classification != "(Not classified)")
+# USA_ED_clean$NAME<-as.factor(USA_ED_clean$NAME)
+# USA_ED_clean$Classification<-as.factor(USA_ED_clean$Classification)
+# USA_ED_clean<-droplevels(USA_ED_clean)
+# levels(USA_ED_clean$NAME)
+# levels(USA_ED_clean$Classification)
+# summary(USA_ED_clean$Classification)
+# summary<-USA_ED_clean$Classification
+# summary(summary)
+# foo4<-foo3
+# str(foo4)
+# foo5<-stringdistmatrix(foo3$NAME,method="dl")
+# 
+# 
+# inst<-na.omit(inst)
+# inst<-as.data.frame(inst)
+# summary(inst)
+# str(inst)
+# inst$inst<-as.factor(inst$inst)
+# 
+# inst_names <- inst %>% group_by(inst) %>% filter(row_number(country) == 1) %>% arrange(inst)
+# write.csv(inst_names,file="inst_names_class.csv")
+# 
+# summary(foo4)
+# 
+# percents<-c(87.4,5.2,3.2,2.1,1.4,1.1,0.1)
+# lbls <- c("1-Doctoral Univ", "2-Fed Agency", "3-Garden/Museums/NGO/Private Inst.", "4-Baccalaureate Colleges", "5-Smithsonian", "6-Master's Colleges", "7-Industry")
+# data_barplot<-as.data.frame(cbind(percents,lbls))
+# data_barplot$percents<-as.numeric(as.character(data_barplot$percents))
+# # geom_bar is designed to make it easy to create bar charts that show
+# # counts (or sums of weights)
+# g <- ggplot(data_barplot, aes(lbls))+theme_bw()+theme(axis.text.x=element_text(angle = -45, hjust = 0))
+# plot<-g + geom_bar(aes(weight = percents), fill="darkblue",color="darkblue")
+# plot
+# str(data_barplot)
+# # Clear the environment 
+# rm(list=ls())
+# 
+# # Import list of world universities downloaded from this GitHub Repo: https://github.com/endSly/world-universities-csv
+# global_uni1 = read_csv("https://raw.githubusercontent.com/endSly/world-universities-csv/master/world-universities.csv", col_names=FALSE)
+# global_uni1<-global_uni1 %>% rename(ISO2=X1,uni.name=X2,website=X3)
+# global_uni1$uni.name<-as.factor(global_uni1$uni.name)
+# global_uni1$ISO2<-as.factor(global_uni1$ISO2)
+# global_uni1$website<-as.factor(global_uni1$website)
+# str(global_uni1)
+# summary(global_uni1)
+# 
+# 
+# # library("RSQLite")
+# # library("R.utils")
+# #download this sql: https://github.com/gedex/World-University-Names-Database/blob/master/world_university_names.sql
+# numLines <- R.utils::countLines("./data_raw/world_university_names.sql")
+# FullUniDB <- readLines("./data_raw/world_university_names.sql",n=numLines)
+# 
+# 
+# # CREATE THE DATABASE OF country CODES & NAMES
+# countries.df<-FullUniDB[34:279]
+# 
+# countries.df<-gsub("(", "", countries.df, fixed=TRUE)
+# countries.df<-gsub("'),", "", countries.df, fixed=TRUE)
+# countries.df<-gsub("'", "", countries.df, fixed=TRUE)
+# countries.df<-gsub(";", "", countries.df, fixed=TRUE)
+# countries.df<-gsub(")", "", countries.df, fixed=TRUE)
+# countries.df<-as.data.frame(countries.df)
+# countries.df$countries.df<-as.character(countries.df$countries.df)
+# countries.df<-separate(countries.df, countries.df, c("country.ID", "ISO2","ISO3","country","modifier"), sep = ", ", remove = FALSE, convert = FALSE, extra = "merge", fill = "right")
+# countries.df$country[countries.df$ISO3 == "VGB"]  <- "British Virgin Islands"
+# countries.df$country[countries.df$ISO3 == "PRK"]  <- "Democratic Peoples Republic of Korea (NK)"
+# countries.df$country[countries.df$ISO3 == "COD"]  <- "Democratic Republic of the Congo"
+# countries.df$country[countries.df$ISO3 == "FSM"]  <- "Federated States of Micronesia"
+# countries.df$country[countries.df$ISO3 == "VIR"]  <- "US Virgin Islands"
+# countries.df$country[countries.df$ISO3 == "KOR"]  <- "Republic of Korea (SK)"
+# countries.df$country[countries.df$ISO3 == "PSE"]  <- "Palestinian Territory, Occupied"
+# countries.df$country[countries.df$ISO3 == "IRN"]  <- "Iran, Islamic Republic of"
+# countries.df$country[countries.df$ISO3 == "TZA"]  <- "Tanzania, United Republic of"
+# countries.df<-countries.df %>% select(-countries.df,-modifier)
+# countries.df$country.ID<-as.factor(countries.df$country.ID)
+# countries.df<-countries.df %>% rename(ISO2=ISO2 ,ISO3=ISO3 ,country=country )
+# countries.df$ISO2<-as.factor(countries.df$ISO2)
+# countries.df$ISO3<-as.factor(countries.df$ISO3)
+# countries.df$country<-as.factor(countries.df$country)
+# 
+# 
+# 
+# # CREATE THE UNIVERSITY DATABASE #1
+# unis.df <-FullUniDB[300:9537]
+# # NB better to go in 1 comma, 1in one comma, in from last comma (URL and then the rest is inst name)
+# 
+# # Change to Split at first comma, then at second, then done.
+# unis.df<-gsub("(", "", unis.df, fixed=TRUE)
+# unis.df<-gsub("(", "", unis.df, fixed=TRUE)
+# unis.df<-gsub(")", "", unis.df, fixed=TRUE)
+# unis.df <-gsub(", '", ",", unis.df , fixed=TRUE)
+# unis.df <-gsub("''", "'", unis.df , fixed=TRUE)
+# unis.df <-gsub("',", ",", unis.df , fixed=TRUE)
+# unis.df <-gsub("'", "", unis.df , fixed=TRUE)
+# unis.df <-unis.df %>% str_split(",",simplify=TRUE) 
+# unis.df <-as.data.frame(unis.df)
+# unis.df <- sapply(unis.df[1:ncol(unis.df)],as.character)
+# unis.df <-as.data.frame(unis.df)
+# 
+# str(unis.df)
+# unis.df$V3<-trimws(unis.df$V3)
+# unis.df$V4<-trimws(unis.df$V4)
+# unis.df$V5<-trimws(unis.df$V5)
+# unis.df$V6<-trimws(unis.df$V6)
+# 
+# unis.df<-unis.df%>% unite_("uni.name", c("V3","V4","V5","V6"), sep=" ", remove=TRUE)
+# unis.df<-unis.df %>% rename(uni.ID=V1,country.ID=V2) %>% select(-uni.ID,-V7)
+# 
+# #Remove some extra spaces
+# unis.df$uni.name <-trimws(unis.df$uni.name, which = "right")
+# unis.df$uni.name<-gsub("  ", " ", unis.df$uni.name, fixed=TRUE)
+# #delete some prolematic rows
+# unis.df<-unis.df[-c(1024, 2061, 2958, 3953,5084,6156,7144,7895,8884),]
+# unis.df$country.ID<-droplevels(unis.df$country.ID)
+# unis.df$country.ID<-trimws(unis.df$country.ID)
+# 
+# ###################################################################
+# # CREATE THE UNIVERSITY DATABASE #2 (this one has the web addresses)
+# unis.web.df <-FullUniDB[9559:26356]
+# unis.web.df <-gsub("(", "", unis.web.df , fixed=TRUE)
+# unis.web.df <-gsub(", '", ",", unis.web.df , fixed=TRUE)
+# unis.web.df <-gsub("',", ",", unis.web.df , fixed=TRUE)
+# unis.web.df <-gsub("/'),", "", unis.web.df , fixed=TRUE)
+# unis.web.df <-gsub("''", "'", unis.web.df , fixed=TRUE)
+# unis.web.df <-gsub("  ", " ", unis.web.df , fixed=TRUE)
+# 
+# unis.web.df <-unis.web.df %>% str_split(",",n=3,simplify=TRUE) 
+# unis.web.df<-as.data.frame(unis.web.df)
+# unis.web.df$V3<-as.character(unis.web.df$V3)
+# str(unis.web.df)
+# unis.web.df[1:10,]
+# # https://stackoverflow.com/questions/24938616/string-split-on-last-comma-in-r
+# uniweb<-str_split(unis.web.df$V3, ",\\s*(?=[^,]+$)", simplify=TRUE)
+# uniweb<-as.data.frame(uniweb)
+# 
+# unis.web.df<-bind_cols(unis.web.df, uniweb)
+# unis.web.df<-unis.web.df %>% rename(uni.ID=V1,country.ID=V2,original=V3,uni.name=V11,website=V21)
+# unis.web.df<-unis.web.df %>% select(-original, -uni.ID)
+# rm(uniweb)
+# #Remove asterisk and some extra spaces
+# unis.web.df$uni.name <-gsub("*", "", unis.web.df$uni.name , fixed=TRUE)
+# unis.web.df$uni.name <-trimws(unis.web.df$uni.name, which = "right")
+# # add slash to match website in other df 
+# unis.web.df$website <- paste(unis.web.df$website, "/", sep="")
+# 
+# unis.web.df$country.ID<-as.factor(unis.web.df$country.ID)
+# 
+# 
+# unis.web.df<-unis.web.df[-c(682,1307, 1964, 2648, 3353, 4009, 4673, 5234, 5878, 6524, 7202, 7870, 8598, 9264,9900,10558,11144,11738,12379,13066,13770,14497,15216,15922,16617),]
+# unis.web.df$country.ID<-droplevels(unis.web.df$country.ID)
+# unis.web.df$country.ID<-trimws(unis.web.df$country.ID)
+# 
+# ## NOTE THAT SOME OF THE UNIVERSITIES HAVE WEBSOTES BUT NO UNINAMES!!!
+# 
+# 
+# 
+# ###################################
+# #add ISO2 and ISO3 to the uni databases
+# ####################################
+# # for global_uni1
+# global_uni1<-left_join(global_uni1,countries.df, by="ISO2")
+# global_uni1$ISO2<-as.factor(global_uni1$ISO2)
+# global_uni1<-global_uni1 %>% select(country.ID,country,ISO2,ISO3,uni.name,website)
+# 
+# # for unis.df
+# unis.df<-left_join(unis.df,countries.df, by="country.ID")
+# 
+# # for unis.web.df
+# unis.web.df<-left_join(unis.web.df,countries.df, by="country.ID")
+# unis.web.df<-unis.web.df %>% select(country.ID,country,ISO2,ISO3,uni.name,website)
+# 
+# # Consolidate the three
+# # First might be easiest to convert the diacritical marks / accents
+# # use stri_trans_general() from stringi library
+# unis.web.df$uni.name2<-stri_trans_general(unis.web.df$uni.name, "Latin-ASCII")
+# unis.df$uni.name2<-stri_trans_general(unis.df$uni.name, "Latin-ASCII")
+# global_uni1$uni.name2<-stri_trans_general(global_uni1$uni.name, "Latin-ASCII")
+# 
+# # The remove any hyphens or commas
+# unis.web.df$uni.name2<-gsub(", ", " ", unis.web.df$uni.name2, fixed=TRUE)
+# unis.df$uni.name2<-gsub(", ", " ", unis.df$uni.name2 , fixed=TRUE)
+# global_uni1$uni.name2<-gsub(", ", " ", global_uni1$uni.name2 , fixed=TRUE)
+# 
+# # Are there any in unis.df NOT in unis.web.df when searching by uni.name?
+# foo1<-anti_join(unis.df,unis.web.df,by="uni.name2") #6523 of the 9229 
+# #do similarity analyses of these with unis.web.df$names2 and after removing any similar add to the master list
+# 
+# # Are there any in global_uni1 NOT in unis.web.df when searching by uni.name?
+# foo2<-anti_join(global_uni1,unis.web.df,by="website")  
+# foo3<-anti_join(global_uni1,unis.web.df,by="uni.name2") 
+# foo4<-bind_rows(foo2,foo3) #put them together
+# foo5<-unique(foo4,by="uni.name2") #remove the duplicates
+# 
+# #put the two datafiles together 
+# foo6<-bind_rows(foo1,foo5)
+# foo7<-unique(foo6)
+# 
+# # Consolidate them with unis.web.df
+# Consolidated.uni.df<-rbind(foo7,unis.web.df)
+# Consolidated.uni.df$uni.ID<-1:nrow(Consolidated.uni.df)
+# rm(foo1,foo2,foo3,foo4,foo5,foo6,foo7,global_uni1,unis.df,unis.web.df)
+# 
+# Consolidated.uni.df<-Consolidated.uni.df %>% select(uni.ID,country.ID,ISO2,ISO3,country,uni.name,uni.name2,website)
+# # to get the initials of each uni I just deleted lower-case letters http://r.789695.n4.nabble.com/Extract-upper-case-letters-td4634664.html
+# Consolidated.uni.df$initials<-gsub("[^::A-Z::]","", Consolidated.uni.df$uni.name2)
+# Consolidated.uni.df$uni.code <- paste(Consolidated.uni.df$ISO3,"-",Consolidated.uni.df$initials,  sep="")
+# 
+# # Now do a similarity analysis of name remove the duplicates
+# # DO SOME ERROR CORRECTION:
+# # 1) SOME ARE MISSING UNI NAMES, EG, inst NAME IS "UNIVERSITY": COUNT CHARACTERS,SORT, AND LOOK AT ONES WITH LEAST CAHARACTERS
+--->

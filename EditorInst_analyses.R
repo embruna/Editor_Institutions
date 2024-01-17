@@ -22,7 +22,7 @@ analysis_data<-droplevels(analysis_data)
 ##############################################################
 ##############################################################
 # carnegie_raw<-read_csv("./Data/carnegie/CarnegCategories_2015.csv")
-source("CarnegieCats_2021.R")
+source("./functions_analysis/CarnegieCats_2021.R")
 carnegie<-CarnegieCats_2021("basic2021")
 
 
@@ -159,11 +159,9 @@ years_per_person<-analysis_data %>%
   summarize(yrs=n()) %>% 
   left_join(editors) %>% 
   group_by(editor_id) %>%
-  slice(n=1) %>% 
+  slice(1) %>% 
   arrange(desc(yrs))
-years_per_person
-  mutate(cumulative=cumsum(n),cumper=cumulative/sum(n)*100) 
-Ed_by_name_LAST
+
 
 
 
@@ -183,11 +181,11 @@ Ed_by_country
 ##############################################################
 ##############################################################
 names(analysis_data)
-analysis_data<-analysis_data %>% rename("country"="COUNTRY")
+
 source("./functions_analysis/country_codes.R")
 analysis_data<-country_codes(analysis_data)
 
-analysis_data<-analysis_data %>% rename("COUNTRY"="country")
+analysis_data<-analysis_data 
 source("./functions_analysis/AddIncomeRegion.R")
 analysis_data<-AddIncomeRegion(analysis_data)
 
@@ -444,7 +442,7 @@ years_with_an_editor
 
 
 
-summary(ALLDATA$inst)
+summary(analysis_data$inst)
 
 USA_inst<-analysis_data %>% filter(geo.code=="USA")
 USA_inst$inst<-as.factor(USA_inst$inst)
@@ -455,68 +453,71 @@ levels(USA_inst$state)
 USA_inst$state
 # USA_inst$state<-state.abb[grep(foo, state.name)]
 # USA_inst$state
-USA_inst$state[USA_inst$state=="Alabama"]<-"AL"
-USA_inst$state[USA_inst$state=="Arizona"]<-"AZ"
-USA_inst$state[USA_inst$state=="California"]<-"CA"
-USA_inst$state[USA_inst$state=="Colorado"]<-"CO"
-USA_inst$state[USA_inst$state=="Connecticut"]<-"CT"
-USA_inst$state[USA_inst$state=="Washington DC"]<-"DC"
-USA_inst$state[USA_inst$state=="Florida"]<-"FL"
-USA_inst$state[USA_inst$state=="Idaho"]<-"ID"
-USA_inst$state[USA_inst$state=="Illinois"]<-"IL"
-USA_inst$state[USA_inst$state=="Kentucky"]<-"KY"
-USA_inst$state[USA_inst$state=="Louisiana"]<-"LA"
-USA_inst$state[USA_inst$state=="Lousiana"]<-"LA"
-USA_inst$state[USA_inst$state=="South Dakota"]<-"SD"
-USA_inst$state[USA_inst$state=="Michigan"]<-"MI"
-USA_inst$state[USA_inst$state=="Maine"]<-"ME"
-USA_inst$state[USA_inst$state=="Virginia"]<-"VA"
-USA_inst$state[USA_inst$state=="New Jersey"]<-"NJ"
-USA_inst$state[USA_inst$state=="Rhode Island"]<-"RI"
+USA_inst$state[USA_inst$state=="alabama"]<-"AL"
+USA_inst$state[USA_inst$state=="arizona"]<-"AZ"
+USA_inst$state[USA_inst$state=="california"]<-"CA"
+USA_inst$state[USA_inst$state=="colorado"]<-"CO"
+USA_inst$state[USA_inst$state=="connecticut"]<-"CT"
+USA_inst$state[USA_inst$state=="washington dc"]<-"DC"
+USA_inst$state[USA_inst$state=="florida"]<-"FL"
+USA_inst$state[USA_inst$state=="idaho"]<-"ID"
+USA_inst$state[USA_inst$state=="illinois"]<-"IL"
+USA_inst$state[USA_inst$state=="kentucky"]<-"KY"
+USA_inst$state[USA_inst$state=="louisiana"]<-"LA"
+USA_inst$state[USA_inst$state=="lousiana"]<-"LA"
+USA_inst$state[USA_inst$state=="south dakota"]<-"SD"
+USA_inst$state[USA_inst$state=="michigan"]<-"MI"
+USA_inst$state[USA_inst$state=="maine"]<-"ME"
+USA_inst$state[USA_inst$state=="virginia"]<-"VA"
+USA_inst$state[USA_inst$state=="new jersey"]<-"NJ"
+USA_inst$state[USA_inst$state=="rhode island"]<-"RI"
 
-USA_inst$state[USA_inst$state=="Utah"]<-"UT"
-USA_inst$state[USA_inst$state=="Texas"]<-"TX"
-USA_inst$state[USA_inst$state=="Tennessee"]<-"TN"
-USA_inst$state[USA_inst$state=="Wisconsin"]<-"WI"
-USA_inst$state[USA_inst$state=="West Virginia"]<-"WV"
-USA_inst$state[USA_inst$state=="VI"]<-"VA"
-USA_inst$state[USA_inst$state=="West Virgina"]<-"WV"
-USA_inst$state[USA_inst$state=="South Carolina"]<-"SC"
-USA_inst$state[USA_inst$state=="Washington"]<-"WA"
-USA_inst$state[USA_inst$state=="Washington "]<-"WA"
-USA_inst$state[USA_inst$state=="Wyoming"]<-"WY"
-USA_inst$state[USA_inst$state=="Maryland"]<-"MD"
-USA_inst$state[USA_inst$state=="Massachusetts"]<-"MA"
-USA_inst$state[USA_inst$state=="Mississippi"]<-"MS"
-USA_inst$state[USA_inst$state=="PE"]<-"PA"
-USA_inst$state[USA_inst$state=="Minnesota"]<-"MN"
-USA_inst$state[USA_inst$state=="North Dakota"]<-"ND"
-USA_inst$state[USA_inst$state=="North Carolina"]<-"NC"
-USA_inst$state[USA_inst$state=="Nevada"]<-"NV"
-USA_inst$state[USA_inst$state=="New Hampshire"]<-"NH"
-USA_inst$state[USA_inst$state=="New Mexico"]<-"NM"
-USA_inst$state[USA_inst$state=="New York"]<-"NY"
-USA_inst$state[USA_inst$state=="Nebraska"]<-"NE"
-USA_inst$state[USA_inst$state=="Montana"]<-"MT"
-USA_inst$state[USA_inst$state=="Missouri"]<-"MO"
-USA_inst$state[USA_inst$state=="Oregon"]<-"AL"
-USA_inst$state[USA_inst$state=="NoState"]<-NA
-USA_inst$state[USA_inst$state=="Pennsylvania"]<-"PA"
-USA_inst$state[USA_inst$state=="Puerto Rico"]<-"PR"
-USA_inst$state[USA_inst$state=="Alaksa"]<-"AK"
-USA_inst$state[USA_inst$state=="Alaska"]<-"AK"
-USA_inst$state[USA_inst$state=="District of Columbia"]<-"DC"
-USA_inst$state[USA_inst$state=="Iowa"]<-"IA"
-USA_inst$state[USA_inst$state=="Vermont"]<-"VT"
-USA_inst$state[USA_inst$state=="Arkansa"]<-"AR"
-USA_inst$state[USA_inst$state=="Arkansas"]<-"AR"
-USA_inst$state[USA_inst$state=="Kansas"]<-"KS"
-USA_inst$state[USA_inst$state=="Georgia"]<-"GA"
-USA_inst$state[USA_inst$state=="Hawaii"]<-"HI"
-USA_inst$state[USA_inst$state=="Oklahoma"]<-"OK"
-USA_inst$state[USA_inst$state=="Indiana"]<-"IN"
-USA_inst$state[USA_inst$state=="Ohio"]<-"OH"
+USA_inst$state[USA_inst$state=="utah"]<-"UT"
+USA_inst$state[USA_inst$state=="texas"]<-"TX"
+USA_inst$state[USA_inst$state=="tennessee"]<-"TN"
+USA_inst$state[USA_inst$state=="wisconsin"]<-"WI"
+USA_inst$state[USA_inst$state=="west virginia"]<-"WV"
+USA_inst$state[USA_inst$state=="vi"]<-"VA"
+USA_inst$state[USA_inst$state=="west virgina"]<-"WV"
+USA_inst$state[USA_inst$state=="south carolina"]<-"SC"
+USA_inst$state[USA_inst$state=="washington"]<-"WA"
+USA_inst$state[USA_inst$state=="washington "]<-"WA"
+USA_inst$state[USA_inst$state=="wyoming"]<-"WY"
+USA_inst$state[USA_inst$state=="maryland"]<-"MD"
+USA_inst$state[USA_inst$state=="massachusetts"]<-"MA"
+USA_inst$state[USA_inst$state=="mississippi"]<-"MS"
+USA_inst$state[USA_inst$state=="pe"]<-"PA"
+USA_inst$state[USA_inst$state=="minnesota"]<-"MN"
+USA_inst$state[USA_inst$state=="north dakota"]<-"ND"
+USA_inst$state[USA_inst$state=="north carolina"]<-"NC"
+USA_inst$state[USA_inst$state=="nevada"]<-"NV"
+USA_inst$state[USA_inst$state=="new hampshire"]<-"NH"
+USA_inst$state[USA_inst$state=="new mexico"]<-"NM"
+USA_inst$state[USA_inst$state=="new york"]<-"NY"
+USA_inst$state[USA_inst$state=="nebraska"]<-"NE"
+USA_inst$state[USA_inst$state=="montana"]<-"MT"
+USA_inst$state[USA_inst$state=="missouri"]<-"MO"
+USA_inst$state[USA_inst$state=="oregon"]<-"AL"
+USA_inst$state[USA_inst$state=="nostate"]<-NA
+USA_inst$state[USA_inst$state=="pennsylvania"]<-"PA"
+USA_inst$state[USA_inst$state=="puerto rico"]<-"PR"
+USA_inst$state[USA_inst$state=="alaksa"]<-"AK"
+USA_inst$state[USA_inst$state=="alaska"]<-"AK"
+USA_inst$state[USA_inst$state=="district of columbia"]<-"DC"
+USA_inst$state[USA_inst$state=="iowa"]<-"IA"
+USA_inst$state[USA_inst$state=="vermont"]<-"VT"
+USA_inst$state[USA_inst$state=="arkansa"]<-"AR"
+USA_inst$state[USA_inst$state=="arkansas"]<-"AR"
+USA_inst$state[USA_inst$state=="kansas"]<-"KS"
+USA_inst$state[USA_inst$state=="georgia"]<-"GA"
+USA_inst$state[USA_inst$state=="hawaii"]<-"HI"
+USA_inst$state[USA_inst$state=="oklahoma"]<-"OK"
+USA_inst$state[USA_inst$state=="indiana"]<-"IN"
+USA_inst$state[USA_inst$state=="ohio"]<-"OH"
 USA_inst$state[USA_inst$state==""]<-NA
+USA_inst<-USA_inst %>% 
+  mutate(state=tolower(state))
+
 USA_inst$state<-as.factor(USA_inst$state)
 USA_inst$state<-droplevels(USA_inst$state)
 levels(USA_inst$state)
