@@ -1,0 +1,1294 @@
+inst,city,country,n
+usda us department of agriculture,,usa,52
+usda us department of agriculture,adams,usa,52
+usda us department of agriculture,akron,usa,52
+usda us department of agriculture,albany,usa,52
+usda us department of agriculture,amarillo,usa,52
+usda us department of agriculture,ames,usa,52
+usda us department of agriculture,auburn,usa,52
+usda us department of agriculture,baltimore,usa,52
+usda us department of agriculture,beltsville,usa,52
+usda us department of agriculture,big spring,usa,52
+usda us department of agriculture,bismarck,usa,52
+usda us department of agriculture,boise,usa,52
+usda us department of agriculture,bowling green,usa,52
+usda us department of agriculture,brookings,usa,52
+usda us department of agriculture,bushland,usa,52
+usda us department of agriculture,college station,usa,52
+usda us department of agriculture,columbia,usa,52
+usda us department of agriculture,columbus,usa,52
+usda us department of agriculture,corvallis,usa,52
+usda us department of agriculture,dawson,usa,52
+usda us department of agriculture,el reno,usa,52
+usda us department of agriculture,florence,usa,52
+usda us department of agriculture,fort collins,usa,52
+usda us department of agriculture,fort pierce,usa,52
+usda us department of agriculture,gainesville,usa,52
+usda us department of agriculture,greensboro,usa,52
+usda us department of agriculture,greenville,usa,52
+usda us department of agriculture,houma,usa,52
+usda us department of agriculture,kimberly,usa,52
+usda us department of agriculture,lincoln,usa,52
+usda us department of agriculture,lubbock,usa,52
+usda us department of agriculture,madison,usa,52
+usda us department of agriculture,mandan,usa,52
+usda us department of agriculture,maricopa,usa,52
+usda us department of agriculture,marshfield,usa,52
+usda us department of agriculture,martinsburg,usa,52
+usda us department of agriculture,moody,usa,52
+usda us department of agriculture,morris,usa,52
+usda us department of agriculture,myersville,usa,52
+usda us department of agriculture,oklahoma city,usa,52
+usda us department of agriculture,pendleton,usa,52
+usda us department of agriculture,prosser,usa,52
+usda us department of agriculture,sidney,usa,52
+usda us department of agriculture,stoneville,usa,52
+usda us department of agriculture,stuttgart,usa,52
+usda us department of agriculture,tifton,usa,52
+usda us department of agriculture,washington dc,usa,52
+usda us department of agriculture,watkinsville,usa,52
+usda us department of agriculture,wellington,usa,52
+usda us department of agriculture,weslaco,usa,52
+usda us department of agriculture,williamsburg,usa,52
+usda us department of agriculture,NA,usa,52
+NA,NA,australia,22
+NA,NA,canada,22
+NA,NA,france,22
+NA,NA,germany,22
+NA,NA,japan,22
+NA,mankato,philippines,22
+NA,NA,qatar,22
+NA,NA,singapore,22
+NA,NA,south africa,22
+NA,NA,switzerland,22
+NA,NA,united kingdom,22
+NA,argyle,usa,22
+NA,biggs,usa,22
+NA,bremerton,usa,22
+NA,logan,usa,22
+NA,madison,usa,22
+NA,minneapolis,usa,22
+NA,pike road,usa,22
+NA,st george,usa,22
+NA,watkinsville,usa,22
+NA,NA,usa,22
+NA,NA,NA,22
+unaffiliated,invergowrie,australia,11
+unaffiliated,toronto,canada,11
+unaffiliated,bussiere poitevine,france,11
+unaffiliated,NA,germany,11
+unaffiliated,groesbeek,netherlands,11
+unaffiliated,bussiere poitevine,united kingdom,11
+unaffiliated,cambridge,united kingdom,11
+unaffiliated,gloucester,united kingdom,11
+unaffiliated,lydney,united kingdom,11
+unaffiliated,peterborough,united kingdom,11
+unaffiliated,NA,united kingdom,11
+texas a and m university,beaumont,usa,10
+texas a and m university,college station,usa,10
+texas a and m university,el paso,usa,10
+texas a and m university,livingston,usa,10
+texas a and m university,lubbock,usa,10
+texas a and m university,overton,usa,10
+texas a and m university,stephenville,usa,10
+texas a and m university,temple,usa,10
+texas a and m university,vernon,usa,10
+texas a and m university,NA,usa,10
+university of florida,brooksville,usa,10
+university of florida,cairo,usa,10
+university of florida,fort pierce,usa,10
+university of florida,gainesville,usa,10
+university of florida,immokalee,usa,10
+university of florida,jay,usa,10
+university of florida,lake alfred,usa,10
+university of florida,ona,usa,10
+university of florida,quincy,usa,10
+university of florida,NA,usa,10
+institute of terrestrial ecology,abbots ripton,united kingdom,9
+institute of terrestrial ecology,banchory,united kingdom,9
+institute of terrestrial ecology,furzebrook,united kingdom,9
+institute of terrestrial ecology,huntingdon,united kingdom,9
+institute of terrestrial ecology,merlewood,united kingdom,9
+institute of terrestrial ecology,monks wood,united kingdom,9
+institute of terrestrial ecology,penicuik,united kingdom,9
+institute of terrestrial ecology,wareham,united kingdom,9
+institute of terrestrial ecology,NA,united kingdom,9
+agriculture and agri food canada,beaverlodge,canada,8
+agriculture and agri food canada,lacombe,canada,8
+agriculture and agri food canada,lethbridge,canada,8
+agriculture and agri food canada,ottawa,canada,8
+agriculture and agri food canada,quebec,canada,8
+agriculture and agri food canada,st jean sur richelieu,canada,8
+agriculture and agri food canada,summerland,canada,8
+agriculture and agri food canada,swifort c urrent,canada,8
+smithsonian tropical research institute,anton,usa,7
+smithsonian tropical research institute,balboa,usa,7
+smithsonian tropical research institute,miami,usa,7
+smithsonian tropical research institute,panama,usa,7
+smithsonian tropical research institute,panama city,usa,7
+smithsonian tropical research institute,washington dc,usa,7
+smithsonian tropical research institute,NA,usa,7
+university of melbourne,carlton,australia,6
+university of melbourne,creswick,australia,6
+university of melbourne,melbourne,australia,6
+university of melbourne,victoria,australia,6
+university of melbourne,ville,australia,6
+university of melbourne,NA,australia,6
+chinese academy of sciences,beijing,china,6
+chinese academy of sciences,guangzhou,china,6
+chinese academy of sciences,mengla,china,6
+chinese academy of sciences,menglun,china,6
+chinese academy of sciences,yunnan,china,6
+chinese academy of sciences,NA,china,6
+wildlife conservation society,bangalore,india,6
+nature conservancy,NA,indonesia,6
+wildlife conservation society,bamburi,kenya,6
+imperial college london,ascot,united kingdom,6
+imperial college london,berks,united kingdom,6
+imperial college london,london,united kingdom,6
+imperial college london,silwood,united kingdom,6
+imperial college london,sunninghill,united kingdom,6
+imperial college london,NA,united kingdom,6
+pennsylvania state university,newtonmore,united kingdom,6
+university of exeter,brighton,united kingdom,6
+university of exeter,cornwall,united kingdom,6
+university of exeter,exeter,united kingdom,6
+university of exeter,exter,united kingdom,6
+university of exeter,silwood,united kingdom,6
+university of exeter,NA,united kingdom,6
+colorado state university,fort collins,usa,6
+colorado state university,fort colllins,usa,6
+colorado state university,larchmont,usa,6
+colorado state university,spanish fork,usa,6
+colorado state university,windosr,usa,6
+colorado state university,NA,usa,6
+kansas state university,colby,usa,6
+kansas state university,garden city,usa,6
+kansas state university,manhattan,usa,6
+kansas state university,ons,usa,6
+kansas state university,tribune,usa,6
+kansas state university,NA,usa,6
+michigan state university,ada,usa,6
+michigan state university,east lansing,usa,6
+michigan state university,hickory corners,usa,6
+michigan state university,lansing,usa,6
+michigan state university,pittsburgh,usa,6
+michigan state university,NA,usa,6
+mississippi state university,,usa,6
+mississippi state university,poplarville,usa,6
+mississippi state university,raymond,usa,6
+mississippi state university,starkville,usa,6
+mississippi state university,stoneville,usa,6
+mississippi state university,NA,usa,6
+nature conservancy,arlington,usa,6
+nature conservancy,fort collins,usa,6
+nature conservancy,thomasville,usa,6
+nature conservancy,vienna,usa,6
+nature conservancy,NA,usa,6
+pennsylvania state university,hershey,usa,6
+pennsylvania state university,pennsylvania,usa,6
+pennsylvania state university,state college,usa,6
+pennsylvania state university,university,usa,6
+pennsylvania state university,NA,usa,6
+university of georgia,aiken,usa,6
+university of georgia,athens,usa,6
+university of georgia,griffin,usa,6
+university of georgia,tifton,usa,6
+university of georgia,watkinsville,usa,6
+university of georgia,NA,usa,6
+university of illinois,new york,usa,6
+university of illinois,urban,usa,6
+university of illinois,urbana-champaign,usa,6
+university of illinois,urbana-champaign-champaign,usa,6
+university of illinois,urbana-champaign-urbana-champaign-champaign,usa,6
+university of illinois,NA,usa,6
+university of minnesota twin cities,corvallis,usa,6
+university of minnesota twin cities,minneapolis,usa,6
+university of minnesota twin cities,minneapolis and st paul,usa,6
+university of minnesota twin cities,minneapolis-st paul,usa,6
+university of minnesota twin cities,st paul,usa,6
+university of minnesota twin cities,NA,usa,6
+usfs northern research station,delaware,usa,6
+usfs northern research station,durham,usa,6
+usfs northern research station,morgantown,usa,6
+usfs northern research station,rhinelander,usa,6
+usfs northern research station,washington dc,usa,6
+usfs northern research station,NA,usa,6
+wildlife conservation society,bronx,usa,6
+wildlife conservation society,land,usa,6
+wildlife conservation society,reno,usa,6
+wildlife conservation society,NA,usa,6
+csiro sustainable ecosystems,brisbane,australia,5
+csiro sustainable ecosystems,canberra,australia,5
+csiro sustainable ecosystems,dutton,australia,5
+csiro sustainable ecosystems,st lucia,australia,5
+csiro sustainable ecosystems,NA,australia,5
+csiro wildlife and ecology,canberra,australia,5
+csiro wildlife and ecology,h,australia,5
+csiro wildlife and ecology,lyneham,australia,5
+csiro wildlife and ecology,midland,australia,5
+csiro wildlife and ecology,NA,australia,5
+griffith university,brisbane,australia,5
+griffith university,bundoora ,australia,5
+griffith university,hobart,australia,5
+griffith university,nathan,australia,5
+griffith university,NA,australia,5
+monash university,clayton,australia,5
+monash university,melbourne,australia,5
+monash university,victoria,australia,5
+monash university,NA,australia,5
+monash university,NA,malaysia,5
+university of cape town,cape town,south africa,5
+university of cape town,elizabeth,south africa,5
+university of cape town,rondebosch,south africa,5
+university of cape town,stellenbosch,south africa,5
+university of cape town,NA,south africa,5
+centre for ecology and hydrology,abbots ripton,united kingdom,5
+centre for ecology and hydrology,huntingdon,united kingdom,5
+centre for ecology and hydrology,penicuik,united kingdom,5
+centre for ecology and hydrology,wallingford,united kingdom,5
+centre for ecology and hydrology,NA,united kingdom,5
+university of manchester,cornwall,united kingdom,5
+university of manchester,lancaster,united kingdom,5
+university of manchester,lexington,united kingdom,5
+university of manchester,manchester,united kingdom,5
+university of manchester,NA,united kingdom,5
+iowa state university,ames,usa,5
+iowa state university,armes,usa,5
+iowa state university,iowa city,usa,5
+iowa state university,unity,usa,5
+iowa state university,NA,usa,5
+louisiana state university,baton rouge,usa,5
+louisiana state university,crowley,usa,5
+louisiana state university,jeanerette,usa,5
+louisiana state university,st joseph,usa,5
+louisiana state university,NA,usa,5
+montana state university,bozeman,usa,5
+montana state university,havre,usa,5
+montana state university,moccasin,usa,5
+montana state university,sidney,usa,5
+montana state university,NA,usa,5
+university of idaho,a,usa,5
+university of idaho,kimberly,usa,5
+university of idaho,moscow,usa,5
+university of idaho,twin falls,usa,5
+university of idaho,NA,usa,5
+usfs southern research station,asheville,usa,5
+usfs southern research station,charleston,usa,5
+usfs southern research station,research triangle,usa,5
+usfs southern research station,stoneville,usa,5
+usfs southern research station,washington dc,usa,5
+washington state university,corvallis,usa,5
+washington state university,mount vernon,usa,5
+washington state university,prosser,usa,5
+washington state university,pullman,usa,5
+washington state university,NA,usa,5
+csiro ecosystem sciences,brisbane,australia,4
+csiro ecosystem sciences,canberra,australia,4
+csiro ecosystem sciences,NA,australia,4
+csiro forest research,canberra,australia,4
+csiro forest research,hobart,australia,4
+csiro forest research,mount gambier,australia,4
+csiro forest research,NA,australia,4
+university of queensland,brisbane,australia,4
+university of queensland,queensland,australia,4
+university of queensland,st lucia,australia,4
+university of queensland,NA,australia,4
+university of basel,basel,austria,4
+universidade de sao paulo,cicaba,brazil,4
+universidade de sao paulo,s?o paulo,brazil,4
+universidade de sao paulo,sao paulo,brazil,4
+universidade de sao paulo,NA,brazil,4
+university of toronto,brighton,canada,4
+university of toronto,knoxville,canada,4
+university of toronto,toronto,canada,4
+university of toronto,NA,canada,4
+york university,uk,canada,4
+york university,vancouver,canada,4
+york university,york,canada,4
+york university,NA,canada,4
+university of copenhagen,copenhagen,denmark,4
+university of copenhagen,helsingor,denmark,4
+university of copenhagen,taastrup,denmark,4
+university of copenhagen,NA,denmark,4
+csiro ecosystem sciences,montpellier,france,4
+station biologique de la tour du valat,arles,france,4
+station biologique de la tour du valat,saulxures sur moselotte,france,4
+station biologique de la tour du valat,selkirk,france,4
+station biologique de la tour du valat,thiefosse,france,4
+helmholtz centre for environmental research ufz,bad lauchstadt,germany,4
+helmholtz centre for environmental research ufz,halle,germany,4
+helmholtz centre for environmental research ufz,leipzig,germany,4
+helmholtz centre for environmental research ufz,NA,germany,4
+university of freiburg,breisgau,germany,4
+university of freiburg,freiburg,germany,4
+university of freiburg,schanzlestrasse,germany,4
+university of freiburg,NA,germany,4
+university of wurzburg,bayreuth,germany,4
+university of wurzburg,tharandt,germany,4
+university of wurzburg,wurzburg,germany,4
+university of wurzburg,NA,germany,4
+suny stony brook,NA,india,4
+stazione zoologica anton dohrn,ischia,italy,4
+stazione zoologica anton dohrn,ischia o,italy,4
+stazione zoologica anton dohrn,naples,italy,4
+stazione zoologica anton dohrn,NA,italy,4
+vrije universiteit amsterdam,amsterdam,netherlands,4
+vrije universiteit amsterdam,leersum,netherlands,4
+vrije universiteit amsterdam,zurich,netherlands,4
+vrije universiteit amsterdam,NA,netherlands,4
+wageningen university and research,heteren,netherlands,4
+wageningen university and research,nijmegen,netherlands,4
+wageningen university and research,wageningen,netherlands,4
+wageningen university and research,NA,netherlands,4
+usfs international institute of tropical forestry,rio piedras,puerto rico,4
+usfs international institute of tropical forestry,NA,puerto rico,4
+university of basel,basel,switzerland,4
+university of basel,zurich,switzerland,4
+university of basel,NA,switzerland,4
+university of bern,bern,switzerland,4
+university of bern,sterling,switzerland,4
+university of bern,zolikofen,switzerland,4
+university of bern,NA,switzerland,4
+university of aberdeen,aberdeen,united kingdom,4
+university of aberdeen,aberdeenshire,united kingdom,4
+university of aberdeen,edinburgh,united kingdom,4
+university of aberdeen,NA,united kingdom,4
+university of sheffield,exeter,united kingdom,4
+university of sheffield,oxford,united kingdom,4
+university of sheffield,sheffield,united kingdom,4
+university of sheffield,NA,united kingdom,4
+university of wales,aberystwyth,united kingdom,4
+university of wales,bangor,united kingdom,4
+university of wales,cardiff,united kingdom,4
+university of wales,NA,united kingdom,4
+clemson university,blackville,usa,4
+clemson university,clemson,usa,4
+clemson university,florence,usa,4
+clemson university,NA,usa,4
+cornell university,cornell,usa,4
+cornell university,geneva,usa,4
+cornell university,ithaca,usa,4
+cornell university,NA,usa,4
+purdue university,long beach,usa,4
+purdue university,monticello,usa,4
+purdue university,west lafayette,usa,4
+purdue university,NA,usa,4
+suny stony brook,ann arbor,usa,4
+suny stony brook,stony brook,usa,4
+suny stony brook,NA,usa,4
+university of california davis,berkeley,usa,4
+university of california davis,bodega bay,usa,4
+university of california davis,davis,usa,4
+university of california davis,NA,usa,4
+university of connecticut,connecticut,usa,4
+university of connecticut,mystic,usa,4
+university of connecticut,storrs,usa,4
+university of connecticut,NA,usa,4
+university of maryland,baltimore,usa,4
+university of maryland,college,usa,4
+university of maryland,frostburg,usa,4
+university of maryland,NA,usa,4
+university of montana,,usa,4
+university of montana,missoula,usa,4
+university of montana,polson,usa,4
+university of montana,NA,usa,4
+university of washington seattle,friday harbor,usa,4
+university of washington seattle,seattle,usa,4
+university of washington seattle,snohomish,usa,4
+university of washington seattle,NA,usa,4
+university of wisconsin madison,east lansing,usa,4
+university of wisconsin madison,madison,usa,4
+university of wisconsin madison,oak ridge,usa,4
+university of wisconsin madison,NA,usa,4
+usfs international institute of tropical forestry,rio piedras,usa,4
+usfs international institute of tropical forestry,san juan,usa,4
+usfs pacific southwest research station,albany,usa,4
+usfs pacific southwest research station,davis,usa,4
+usfs pacific southwest research station,redding,usa,4
+usfs pacific southwest research station,riveside,usa,4
+usfs rocky mountain research station,flagstaff,usa,4
+usfs rocky mountain research station,fort collins,usa,4
+usfs rocky mountain research station,missoula,usa,4
+usfs rocky mountain research station,NA,usa,4
+csiro land and water,canberra,australia,3
+csiro land and water,glen osmond,australia,3
+csiro land and water,NA,australia,3
+csiro plant industry,canberra,australia,3
+csiro plant industry,wembley,australia,3
+csiro plant industry,NA,australia,3
+la trobe university,bundoora,australia,3
+la trobe university,bundoora ,australia,3
+la trobe university,victoria,australia,3
+macquarie university,new south wales,australia,3
+macquarie university,sydney,australia,3
+macquarie university,NA,australia,3
+murdoch university,h,australia,3
+murdoch university,murdoch,australia,3
+murdoch university,NA,australia,3
+university of tasmania,hobart,australia,3
+university of tasmania,tas,australia,3
+university of tasmania,NA,australia,3
+victoria university of wellington,NA,australia,3
+western sydney university,penrith,australia,3
+western sydney university,NA,australia,3
+university of innsbruck,innsbruck,austria,3
+university of innsbruck,innsbruick,austria,3
+university of innsbruck,NA,austria,3
+university of vienna,vienna,austria,3
+university of vienna,wien,austria,3
+university of vienna,NA,austria,3
+university of leuven,heverlee,belgium,3
+university of leuven,louvain,belgium,3
+university of leuven,NA,belgium,3
+mcgill university,montreal,canada,3
+mcgill university,ste-anne-de-bellevue,canada,3
+mcgill university,NA,canada,3
+simon fraser university,burnaby,canada,3
+simon fraser university,vancouver,canada,3
+simon fraser university,NA,canada,3
+university of alberta,alberta,canada,3
+university of alberta,edmonton,canada,3
+university of alberta,NA,canada,3
+university of calgary,alberta,canada,3
+university of calgary,calgary,canada,3
+university of calgary,NA,canada,3
+university of guelph,guelph,canada,3
+university of guelph,mississauga,canada,3
+university of guelph,NA,canada,3
+university of saskatchewan,saskatchewan,canada,3
+university of saskatchewan,saskatoon,canada,3
+university of saskatchewan,NA,canada,3
+university of toronto mississauga,birmensdorf,canada,3
+university of toronto mississauga,mississauga,canada,3
+university of toronto mississauga,NA,canada,3
+center for tropical agricultural research and education,san jose,costa rica,3
+center for tropical agricultural research and education,turrialba,costa rica,3
+center for tropical agricultural research and education,NA,costa rica,3
+organization for tropical studies,durham,costa rica,3
+organization for tropical studies,palo verde national,costa rica,3
+organization for tropical studies,NA,costa rica,3
+aarhus university,,denmark,3
+aarhus university,aarhus,denmark,3
+aarhus university,NA,denmark,3
+royal veterinary and agricultural university,copenhagen,denmark,3
+royal veterinary and agricultural university,frederiksberg,denmark,3
+royal veterinary and agricultural university,NA,denmark,3
+inra national institute for agricultural research,rennes,france,3
+inra national institute for agricultural research,s,france,3
+national museum of natural history france,brunoy,france,3
+national museum of natural history france,s,france,3
+national museum of natural history france,NA,france,3
+universite joseph fourier,grenoble,france,3
+universite joseph fourier,montpellier,france,3
+universite joseph fourier,NA,france,3
+university of lausanne,lausanne,france,3
+inra national institute for agricultural research,NA,french guiana,3
+philipps university marburg,marburg,germany,3
+philipps university marburg,marburg/lahn,germany,3
+philipps university marburg,NA,germany,3
+universitat osnabruck,barbarastrasse,germany,3
+universitat osnabruck,osnabruck,germany,3
+universitat osnabruck,osnabruk,germany,3
+university of gottingen,darmstadt,germany,3
+university of gottingen,gottingen,germany,3
+university of gottingen,NA,germany,3
+university of hong kong,hong kong,hong kong,3
+university of hong kong,pokfulam,hong kong,3
+university of hong kong,NA,hong kong,3
+cifor center for international forestry research,bogor,indonesia,3
+cifor center for international forestry research,jakarta,indonesia,3
+cifor center for international forestry research,NA,indonesia,3
+hiroshima university,higashi-hiroshima,japan,3
+hiroshima university,hiroshima,japan,3
+hiroshima university,NA,japan,3
+hokkaido university,hokkaido,japan,3
+hokkaido university,sap,japan,3
+hokkaido university,NA,japan,3
+tohoku university,aoba,japan,3
+tohoku university,sendai,japan,3
+tohoku university,sendal,japan,3
+netherlands institute of ecology nioo knaw,heteren,netherlands,3
+netherlands institute of ecology nioo knaw,wageningen,netherlands,3
+netherlands institute of ecology nioo knaw,NA,netherlands,3
+university of groningen,groningen,netherlands,3
+university of groningen,haren,netherlands,3
+university of groningen,NA,netherlands,3
+lincoln university,canterbury,new zealand,3
+lincoln university,christchurch,new zealand,3
+lincoln university,lincoln,new zealand,3
+university of auckland,auckland,new zealand,3
+university of auckland,warkworth,new zealand,3
+university of auckland,NA,new zealand,3
+victoria university of wellington,wellington,new zealand,3
+victoria university of wellington,NA,new zealand,3
+polish academy of science,krakau,poland,3
+polish academy of science,poznan,poland,3
+polish academy of science,NA,poland,3
+center of biological and ecological sciences,NA,russia,3
+center of biological and ecological sciences,bratislava,slovakia,3
+center of biological and ecological sciences,NA,slovakia,3
+university of stellenbosch,pretoria,south africa,3
+university of stellenbosch,stellenbosch,south africa,3
+university of stellenbosch,NA,south africa,3
+csic donana biological station,sevilla,spain,3
+csic donana biological station,seville,spain,3
+csic donana biological station,NA,spain,3
+swedish university of agricultural sciences,umea,sweden,3
+swedish university of agricultural sciences,uppsala,sweden,3
+swedish university of agricultural sciences,NA,sweden,3
+university of lausanne,basel,switzerland,3
+university of lausanne,lausanne,switzerland,3
+aberystwyth university,aberystwyth,united kingdom,3
+aberystwyth university,ceredigion,united kingdom,3
+aberystwyth university,NA,united kingdom,3
+bangor university,bangor,united kingdom,3
+bangor university,bangor gwynedd,united kingdom,3
+bangor university,NA,united kingdom,3
+cardiff university,ascot,united kingdom,3
+cardiff university,cardiff,united kingdom,3
+cardiff university,NA,united kingdom,3
+cranfield university,bedford,united kingdom,3
+cranfield university,cranfield,united kingdom,3
+cranfield university,silsoe bedfordshire,united kingdom,3
+durham university,durham,united kingdom,3
+durham university,uk,united kingdom,3
+durham university,NA,united kingdom,3
+game conservancy,cambridge,united kingdom,3
+game conservancy,monks wood,united kingdom,3
+game conservancy,thetford,united kingdom,3
+macaulay land use research institute,aberdeen,united kingdom,3
+macaulay land use research institute,leeds,united kingdom,3
+macaulay land use research institute,NA,united kingdom,3
+marine biological association,devon,united kingdom,3
+marine biological association,plymouth,united kingdom,3
+marine biological association,sheffield,united kingdom,3
+natural history museum london,hereford,united kingdom,3
+natural history museum london,london,united kingdom,3
+natural history museum london,NA,united kingdom,3
+rothamsted research,harpenden,united kingdom,3
+rothamsted research,west common,united kingdom,3
+rothamsted research,NA,united kingdom,3
+royal botanic gardens kew,gambier,united kingdom,3
+royal botanic gardens kew,richmond,united kingdom,3
+royal botanic gardens kew,NA,united kingdom,3
+royal holloway university of london,london,united kingdom,3
+royal holloway university of london,royal holloway,united kingdom,3
+royal holloway university of london,NA,united kingdom,3
+university of bristol,bristol,united kingdom,3
+university of bristol,durham,united kingdom,3
+university of bristol,NA,united kingdom,3
+university of cambridge,cambridge,united kingdom,3
+university of cambridge,monks wood,united kingdom,3
+university of cambridge,NA,united kingdom,3
+university of essex,colchester,united kingdom,3
+university of essex,essex,united kingdom,3
+university of essex,NA,united kingdom,3
+university of glasgow,glasgow,united kingdom,3
+university of glasgow,lanark,united kingdom,3
+university of glasgow,NA,united kingdom,3
+university of oxford,cambridge,united kingdom,3
+university of oxford,oxford,united kingdom,3
+university of oxford,NA,united kingdom,3
+university of southampton,london,united kingdom,3
+university of southampton,southampton,united kingdom,3
+university of southampton,NA,united kingdom,3
+university of st andrews,fife,united kingdom,3
+university of st andrews,st andrews,united kingdom,3
+university of st andrews,NA,united kingdom,3
+university of stirling,sterling,united kingdom,3
+university of stirling,stirling,united kingdom,3
+university of stirling,NA,united kingdom,3
+university of sussex,brighton,united kingdom,3
+university of sussex,sussex,united kingdom,3
+university of sussex,NA,united kingdom,3
+arizona state university,phoenix,usa,3
+arizona state university,tempe,usa,3
+arizona state university,NA,usa,3
+auburn university,auburn,usa,3
+auburn university,leighton,usa,3
+auburn university,NA,usa,3
+dartmouth college,darmouth,usa,3
+dartmouth college,hanover,usa,3
+dartmouth college,NA,usa,3
+duke university,beaufort,usa,3
+duke university,durham,usa,3
+duke university,NA,usa,3
+florida state university,st teresa,usa,3
+florida state university,tallahassee,usa,3
+florida state university,NA,usa,3
+harvard university,cambridge,usa,3
+harvard university,petersham,usa,3
+harvard university,NA,usa,3
+illinois natural history survey,urbana-champaign-champaign,usa,3
+illinois natural history survey,urbana-champaign-urbana-champaign-champaign,usa,3
+illinois natural history survey,NA,usa,3
+indiana university bloomington,bloomington,usa,3
+indiana university bloomington,charlottesville,usa,3
+indiana university bloomington,NA,usa,3
+new mexico state university,las cruces,usa,3
+new mexico state university,los lunas,usa,3
+new mexico state university,NA,usa,3
+new york botanical garden,bronx,usa,3
+new york botanical garden,millbrook,usa,3
+new york botanical garden,NA,usa,3
+north carolina state university,plymouth,usa,3
+north carolina state university,raleigh,usa,3
+north carolina state university,NA,usa,3
+ohio state university,columbus,usa,3
+ohio state university,wooster,usa,3
+ohio state university,NA,usa,3
+oregon state university,adams,usa,3
+oregon state university,corvallis,usa,3
+oregon state university,NA,usa,3
+portland state university,durham,usa,3
+portland state university,land,usa,3
+portland state university,NA,usa,3
+south dakota state university,brookings,usa,3
+south dakota state university,rapid city,usa,3
+south dakota state university,NA,usa,3
+southern illinois university,carbondale,usa,3
+southern illinois university,edwardsville,usa,3
+southern illinois university,NA,usa,3
+stanford university,pacific grove,usa,3
+stanford university,stanford,usa,3
+stanford university,NA,usa,3
+university of california berkeley,berkeley,usa,3
+university of california berkeley,oakland,usa,3
+university of california berkeley,NA,usa,3
+university of california san diego,la jolla,usa,3
+university of california san diego,san diego,usa,3
+university of california san diego,NA,usa,3
+university of california santa cruz,santa clara,usa,3
+university of california santa cruz,santa cruz,usa,3
+university of california santa cruz,NA,usa,3
+university of colorado boulder,boulder,usa,3
+university of colorado boulder,denver,usa,3
+university of colorado boulder,NA,usa,3
+university of kentucky,lexington,usa,3
+university of kentucky,princeton,usa,3
+university of kentucky,NA,usa,3
+university of nebraska lincoln,lincoln,usa,3
+university of nebraska lincoln,scottsbluff,usa,3
+university of nebraska lincoln,NA,usa,3
+university of north carolina chapel hill,chapel hill,usa,3
+university of north carolina chapel hill,raleigh,usa,3
+university of north carolina chapel hill,NA,usa,3
+university of rhode island,kingston,usa,3
+university of rhode island,narragansett,usa,3
+university of rhode island,NA,usa,3
+university of tennessee,jackson,usa,3
+university of tennessee,knoxville,usa,3
+university of tennessee,NA,usa,3
+university of texas austin,aransas,usa,3
+university of texas austin,austin,usa,3
+university of texas austin,NA,usa,3
+university of vermont,burlingotn,usa,3
+university of vermont,burlington,usa,3
+university of vermont,NA,usa,3
+usepa environmental protection agency,corvallis,usa,3
+usepa environmental protection agency,research triangle,usa,3
+usepa environmental protection agency,NA,usa,3
+usfs pacific northwest research station,juneau,usa,3
+usfs pacific northwest research station,seattle,usa,3
+usfs pacific northwest research station,NA,usa,3
+usgs patuxent wildlife research center,laurel,usa,3
+usgs patuxent wildlife research center,NA,usa,3
+virginia polytechnic institute and state university,blacksburg,usa,3
+virginia polytechnic institute and state university,suffolk,usa,3
+virginia polytechnic institute and state university,NA,usa,3
+western sydney university,NA,usa,3
+instituto venezolano de investigaciones cientificas,altos de pipe,venezuela,3
+instituto venezolano de investigaciones cientificas,caracas,venezuela,3
+instituto venezolano de investigaciones cientificas,NA,venezuela,3
+usgs patuxent wildlife research center,NA,NA,3
+conicet cct mendoza,buenos aires,argentina,2
+conicet cct mendoza,mendoza,argentina,2
+universidad de buenos aires,buenos aires,argentina,2
+universidad de buenos aires,NA,argentina,2
+australian institute of marine science,cape ferguson,australia,2
+australian institute of marine science,NA,australia,2
+australian national university,canberra,australia,2
+australian national university,NA,australia,2
+charles darwin university,darwin,australia,2
+charles darwin university,NA,australia,2
+curtin university of technology,h,australia,2
+curtin university of technology,NA,australia,2
+deakin university,burwood,australia,2
+deakin university,NA,australia,2
+flinders university,flinders,australia,2
+james cook university brisbane,brisbane,australia,2
+james cook university brisbane,NA,australia,2
+james cook university townsville,townsville,australia,2
+james cook university townsville,NA,australia,2
+university of adelaide,adelaide,australia,2
+university of adelaide,NA,australia,2
+university of new england,armidale,australia,2
+university of new england,NA,australia,2
+university of sydney,sydney,australia,2
+university of sydney,NA,australia,2
+university of western australia,crawley,australia,2
+university of western australia,NA,australia,2
+university of wollongong,wollongong,australia,2
+university of wollongong,NA,australia,2
+university of antwerp,antwerp,belgium,2
+university of antwerp,NA,belgium,2
+university of ghent,ghent,belgium,2
+university of ghent,NA,belgium,2
+cirad usp esalq consortium,cicaba,brazil,2
+cirad usp esalq consortium,NA,brazil,2
+instituto nacional de pesquisas da amazonia,manaus,brazil,2
+instituto nacional de pesquisas da amazonia,NA,brazil,2
+universidade de brasilia,brasilia,brazil,2
+universidade de brasilia,NA,brazil,2
+universidade estadual paulista,bela vist rio claro,brazil,2
+universidade estadual paulista,NA,brazil,2
+universidade federal de goias,goias,brazil,2
+universidade federal de goias,NA,brazil,2
+canadian forest service,victoria,canada,2
+canadian forest service,NA,canada,2
+carleton university,ottowa,canada,2
+carleton university,NA,canada,2
+dalhousie university,halifax,canada,2
+dalhousie university,NA,canada,2
+mcmaster university,hamilton,canada,2
+memorial university of newfoundland,newfoundland,canada,2
+memorial university of newfoundland,NA,canada,2
+queens university,kingston,canada,2
+queens university,NA,canada,2
+trent university,trent,canada,2
+trent university,NA,canada,2
+university of british columbia okanagan,kelowna,canada,2
+university of british columbia okanagan,NA,canada,2
+university of british columbia vancouver,vancouver,canada,2
+university of british columbia vancouver,NA,canada,2
+university of manitoba,winnipeg,canada,2
+university of manitoba,NA,canada,2
+university of montreal,montreal,canada,2
+university of montreal,NA,canada,2
+university of new brunswick,fredericton,canada,2
+university of new brunswick,NA,canada,2
+university of ottawa,ottawa,canada,2
+university of ottawa,NA,canada,2
+university of regina,regina,canada,2
+university of regina,NA,canada,2
+university of sherbrooke,sherbrooke,canada,2
+university of sherbrooke,NA,canada,2
+university of victoria,victoria,canada,2
+university of victoria,NA,canada,2
+pontificia universidad catolica de chile,santiago,chile,2
+pontificia universidad catolica de chile,NA,chile,2
+universidad de chile,casilla,chile,2
+universidad de chile,santiago,chile,2
+beijing normal university,,china,2
+beijing normal university,beijing,china,2
+xishuangbanna tropical botanical garden,kunming,china,2
+xishuangbanna tropical botanical garden,NA,china,2
+universidad de los andes,bogota,colombia,2
+universidad de los andes,NA,colombia,2
+university of cost rica,san pedro,costa rica,2
+university of cost rica,NA,costa rica,2
+czech academy of sciences,ceske budejovice,czech republic,2
+czech academy of sciences,NA,czech republic,2
+neri national environmental research institute,neri,denmark,2
+neri national environmental research institute,roakslide,denmark,2
+roskilde university,roskilde,denmark,2
+roskilde university,NA,denmark,2
+university of tartu,tartu,estonia,2
+university of tartu,NA,estonia,2
+finnish forest research institute,helsinki,finland,2
+finnish forest research institute,vantaa,finland,2
+finnish game and fisheries research institute,joensuu,finland,2
+finnish game and fisheries research institute,oulu,finland,2
+university of helsinki,helsinki,finland,2
+university of helsinki,NA,finland,2
+university of jyvaskyla,helsinki,finland,2
+university of jyvaskyla,jyvaskyla,finland,2
+university of oulu,oulu,finland,2
+university of oulu,NA,finland,2
+university of turku,turku,finland,2
+university of turku,NA,finland,2
+cnrs centre decologie fonctionnelle et evolutive,montpellier,france,2
+cnrs centre decologie fonctionnelle et evolutive,NA,france,2
+cnrs centre delaboration de materiaux et detudes structurales,toulouse cedex,france,2
+cnrs centre delaboration de materiaux et detudes structurales,NA,france,2
+ecole normale superieure,s,france,2
+ecole normale superieure,NA,france,2
+engref french national school of forestry,lyon,france,2
+engref french national school of forestry,nancy,france,2
+ifremer,en bessin,france,2
+ifremer,NA,france,2
+new zealand research centre for urban ecology,s,france,2
+universite claude bernard lyon 1,lyon,france,2
+universite claude bernard lyon 1,NA,france,2
+universite de rennes 1,rennes,france,2
+universite de rennes 1,NA,france,2
+universite paris sud,orsay,france,2
+universite paris sud,NA,france,2
+universite pierre et marie curie,s,france,2
+universite pierre et marie curie,NA,france,2
+carl von ossietzky university oldenburg,oldenburg,germany,2
+carl von ossietzky university oldenburg,NA,germany,2
+federal research center for nature conservation and landscape ecology,bonn,germany,2
+helmholtz centre for environmental research ufz leipzig halle,leipzig,germany,2
+helmholtz centre for environmental research ufz leipzig halle,leipzig-halle,germany,2
+humboldt university of berlin,berlin,germany,2
+humboldt university of berlin,NA,germany,2
+leibniz institute for zoo and wildlife research,berlin,germany,2
+leibniz institute for zoo and wildlife research,NA,germany,2
+ludwig maximilian university of munich,munchen,germany,2
+ludwig maximilian university of munich,munich,germany,2
+technical university of berlin,berlin,germany,2
+technical university of berlin,wageningen,germany,2
+technical university of darmstadt,darmstadt,germany,2
+technical university of darmstadt,NA,germany,2
+technical university of munich,munich,germany,2
+technical university of munich,NA,germany,2
+ulm university,ulm,germany,2
+ulm university,NA,germany,2
+university of bonn,bonn,germany,2
+university of bonn,NA,germany,2
+university of cologne,cologne,germany,2
+university of cologne,NA,germany,2
+university of leipzig,johannisallee,germany,2
+university of leipzig,NA,germany,2
+university of munster,munster,germany,2
+university of munster,NA,germany,2
+university of potsdam,potsdam,germany,2
+university of tubingen,belfast,germany,2
+university of tubingen,tubingen,germany,2
+institute of marine biology of crete,iraklio,greece,2
+institute of marine biology of crete,NA,greece,2
+ashoka trust for research in ecology and environment,bangalore,india,2
+ashoka trust for research in ecology and environment,NA,india,2
+indian institute of science,bangalore,india,2
+indian institute of science,NA,india,2
+jawaharlal nehru university,new delhi,india,2
+jawaharlal nehru university,NA,india,2
+wildlife institute of india,uttaranchal,india,2
+wildlife institute of india,NA,india,2
+fauna and flora international,NA,indonesia,2
+university college cork,cork,ireland,2
+university college cork,NA,ireland,2
+university college dublin,dublin,ireland,2
+university college dublin,NA,ireland,2
+technion israel institute of technology,haifa,israel,2
+technion israel institute of technology,NA,israel,2
+tel aviv university,tel aviv,israel,2
+tel aviv university,NA,israel,2
+universita di genova,genova,italy,2
+universita di genova,NA,italy,2
+university of salento,lecce,italy,2
+university of salento,NA,italy,2
+world wildlife fund,rome,italy,2
+kyoto university,kyoto,japan,2
+kyoto university,NA,japan,2
+kyushu university,fukuoka,japan,2
+kyushu university,kumamoto,japan,2
+yokohama national university,yokohama,japan,2
+yokohama national university,NA,japan,2
+moi university,nairobi,kenya,2
+moi university,NA,kenya,2
+flinders university,NA,malaysia,2
+university of sains,george town,malaysia,2
+university of sains,NA,malaysia,2
+universidad nacional autonoma de mexico,mexico city,mexico,2
+universidad nacional autonoma de mexico,NA,mexico,2
+radboud university nijmegen,nijmegen,netherlands,2
+radboud university nijmegen,NA,netherlands,2
+research institute for nature management,leersum,netherlands,2
+research institute for nature management,NA,netherlands,2
+royal netherlands institute for sea research,nieuwersluis,netherlands,2
+royal netherlands institute for sea research,NA,netherlands,2
+university of amsterdam,amsterdam,netherlands,2
+university of amsterdam,NA,netherlands,2
+university of leiden,leiden,netherlands,2
+university of leiden,NA,netherlands,2
+utrecht university,utrecht,netherlands,2
+utrecht university,NA,netherlands,2
+wageningen environmental research (alterra),wageningen,netherlands,2
+wageningen environmental research (alterra),NA,netherlands,2
+agresearch,lincoln,new zealand,2
+agresearch,palmerston north,new zealand,2
+department of scientific and industrial research,auckland,new zealand,2
+department of scientific and industrial research,lower hutt,new zealand,2
+landcare research ltd,auckland,new zealand,2
+landcare research ltd,NA,new zealand,2
+manaaki whenua landcare research,lincoln,new zealand,2
+manaaki whenua landcare research,NA,new zealand,2
+massey university,auckland,new zealand,2
+massey university,NA,new zealand,2
+new zealand research centre for urban ecology,christchurch,new zealand,2
+university of canterbury,christchurch,new zealand,2
+university of canterbury,NA,new zealand,2
+university of otago,dunedin,new zealand,2
+university of otago,NA,new zealand,2
+university of waikato,hamilton,new zealand,2
+university of waikato,NA,new zealand,2
+paso pacifico,ticuantepe,nicaragua,2
+queens university belfast,belfast,northern ireland,2
+queens university belfast,NA,northern ireland,2
+agricultural university of norway,as,norway,2
+agricultural university of norway,as-nlh,norway,2
+norwegian institute for nature research,oslo,norway,2
+norwegian institute for nature research,trondheim,norway,2
+norwegian university of science and technology,trondheim,norway,2
+norwegian university of science and technology,NA,norway,2
+university of bergen,bergen,norway,2
+university of bergen,NA,norway,2
+university of oslo,oslo,norway,2
+university of oslo,NA,norway,2
+university of tromso,tromso,norway,2
+university of tromso,NA,norway,2
+jagiellonian university,jagiellonian,poland,2
+jagiellonian university,krakow,poland,2
+university of puerto rico,san juan,puerto rico,2
+university of puerto rico,NA,puerto rico,2
+national university of singapore,singa,singapore,2
+national university of singapore,NA,singapore,2
+percy fitzpatrick institute of african ornithology,cape town,south africa,2
+percy fitzpatrick institute of african ornithology,NA,south africa,2
+university of kwazulu natal,pietermaritzburg,south africa,2
+university of kwazulu natal,NA,south africa,2
+university of pretoria,pretoria,south africa,2
+university of pretoria,NA,south africa,2
+csic estacion experimental de zonas aridas,almeria,spain,2
+csic estacion experimental de zonas aridas,NA,spain,2
+csic mediterranean institute for advanced studies,eses,spain,2
+csic mediterranean institute for advanced studies,NA,spain,2
+ets ingenieros de montes,madrid,spain,2
+ets ingenieros de montes,NA,spain,2
+national museum of natural sciences,madrid,spain,2
+national museum of natural sciences,NA,spain,2
+universidad de alicante,alicante,spain,2
+universidad de alicante,NA,spain,2
+universidad politecnica de madrid,madrid,spain,2
+universidad politecnica de madrid,NA,spain,2
+lund university,lund,sweden,2
+lund university,NA,sweden,2
+university of stockholm,stockholm,sweden,2
+university of stockholm,NA,sweden,2
+university of umea,umea,sweden,2
+university of umea,NA,sweden,2
+university of uppsala,uppsala,sweden,2
+university of uppsala,NA,sweden,2
+eawag swiss federal institute of aquatic science and technology,dubendorf,switzerland,2
+eawag swiss federal institute of aquatic science and technology,NA,switzerland,2
+eth swiss federal institute of technology zurich,zurich,switzerland,2
+eth swiss federal institute of technology zurich,NA,switzerland,2
+university of potsdam,zurich,switzerland,2
+university of zurich,zurich,switzerland,2
+university of zurich,NA,switzerland,2
+wsl swiss federal institute for forest snow and landscape research birmensdorf,birmensdorf,switzerland,2
+wsl swiss federal institute for forest snow and landscape research birmensdorf,NA,switzerland,2
+wsl swiss federal institute for snow and avalanche research davos,davos,switzerland,2
+wsl swiss federal institute for snow and avalanche research davos,NA,switzerland,2
+afrc institute for grassland and animal production,aberystwyth,united kingdom,2
+afrc institute for grassland and animal production,NA,united kingdom,2
+british trust for ornithology,thetford,united kingdom,2
+british trust for ornithology,NA,united kingdom,2
+fauna and flora international,cambridge,united kingdom,2
+freshwater biological association,cumbria,united kingdom,2
+freshwater biological association,wareham,united kingdom,2
+imperial college silwood park,sunninghill,united kingdom,2
+imperial college silwood park,NA,united kingdom,2
+kings college london,london,united kingdom,2
+kings college london,NA,united kingdom,2
+lancaster university,lancaster,united kingdom,2
+lancaster university,NA,united kingdom,2
+liverpool john moores university,liverpool,united kingdom,2
+liverpool john moores university,NA,united kingdom,2
+monks wood experiment station,huntingdon,united kingdom,2
+monks wood experiment station,monks wood,united kingdom,2
+nerc british antarctic survey,cambridge,united kingdom,2
+nerc british antarctic survey,NA,united kingdom,2
+nerc centre for ecology and hydrology wallingford,cambridge,united kingdom,2
+nerc centre for ecology and hydrology wallingford,wallingford,united kingdom,2
+open university,milton keynes,united kingdom,2
+open university,NA,united kingdom,2
+oxford brookes university,oxford,united kingdom,2
+oxford brookes university,NA,united kingdom,2
+plymouth marine laboratory,playmouth,united kingdom,2
+plymouth marine laboratory,plymouth,united kingdom,2
+plymouth university,plymouth,united kingdom,2
+plymouth university,NA,united kingdom,2
+queen mary university of london,london,united kingdom,2
+queen mary university of london,NA,united kingdom,2
+royal society for protection of birds,bedfordshire,united kingdom,2
+royal society for protection of birds,edinburgh,united kingdom,2
+silsoe research institute,silsoe,united kingdom,2
+silsoe research institute,NA,united kingdom,2
+swansea university,swansea,united kingdom,2
+swansea university,NA,united kingdom,2
+university college london,london,united kingdom,2
+university college london,NA,united kingdom,2
+university of birmingham,birmingham,united kingdom,2
+university of birmingham,NA,united kingdom,2
+university of east anglia,norwich,united kingdom,2
+university of east anglia,NA,united kingdom,2
+university of edinburgh,edinburgh,united kingdom,2
+university of edinburgh,NA,united kingdom,2
+university of liverpool,liverpool,united kingdom,2
+university of liverpool,NA,united kingdom,2
+university of london,london,united kingdom,2
+university of london,NA,united kingdom,2
+university of nottingham,nottingham,united kingdom,2
+university of nottingham,NA,united kingdom,2
+university of reading,reading,united kingdom,2
+university of reading,NA,united kingdom,2
+university of strathclyde,strathclyde,united kingdom,2
+university of strathclyde,NA,united kingdom,2
+university of york,york,united kingdom,2
+university of york,NA,united kingdom,2
+zoological society of london,london,united kingdom,2
+zoological society of london,NA,united kingdom,2
+american museum of natural history,new york,usa,2
+american museum of natural history,NA,usa,2
+appalachian environmental laboratory,frostburg,usa,2
+appalachian environmental laboratory,NA,usa,2
+appalachian state university,boone,usa,2
+appalachian state university,NA,usa,2
+archbold biological station,lake placid,usa,2
+archbold biological station,NA,usa,2
+arizona state university west campus,phoenix,usa,2
+arizona state university west campus,NA,usa,2
+basf,cary,usa,2
+basf,NA,usa,2
+boise state university,ogden,usa,2
+boise state university,NA,usa,2
+boston university,boston,usa,2
+boston university,NA,usa,2
+brigham young university,provo,usa,2
+brigham young university,woodland hills,usa,2
+brown university,providence,usa,2
+brown university,NA,usa,2
+california state university dominguez hills,carson,usa,2
+california state university dominguez hills,NA,usa,2
+california state university fresno,fresno,usa,2
+california state university fresno,santa clara,usa,2
+carnegie institution of washington,washington dc,usa,2
+carnegie institution of washington,NA,usa,2
+cary institute of ecosystem studies,millbrook,usa,2
+cary institute of ecosystem studies,NA,usa,2
+college of atlantic,bar harbor,usa,2
+college of atlantic,NA,usa,2
+college of william and mary,williamsburg,usa,2
+college of william and mary,NA,usa,2
+columbia university,new york,usa,2
+columbia university,NA,usa,2
+consortium for conservation medicine,new york,usa,2
+consortium for conservation medicine,NA,usa,2
+cuny college of staten island,new york,usa,2
+cuny college of staten island,staten island,usa,2
+cuny hunter college,new york,usa,2
+cuny hunter college,NA,usa,2
+desert research institute,dise,usa,2
+desert research institute,reno,usa,2
+doe brookhaven national laboratory,upton,usa,2
+doe brookhaven national laboratory,NA,usa,2
+doe los alamos national laboratory,los alamos,usa,2
+doe los alamos national laboratory,NA,usa,2
+doe oak ridge national laboratory,oak ridge,usa,2
+doe oak ridge national laboratory,NA,usa,2
+east carolina university,greenville,usa,2
+east carolina university,NA,usa,2
+eastern illinois university,charleston,usa,2
+eastern illinois university,NA,usa,2
+federal research center for nature conservation and landscape ecology,santa barbara,usa,2
+field museum of natural history,chicago,usa,2
+field museum of natural history,NA,usa,2
+florida international university,tallahasee,usa,2
+florida international university,NA,usa,2
+franklin and marshall,lancaster,usa,2
+franklin and marshall,NA,usa,2
+georgia institute of technology,atlanta,usa,2
+georgia institute of technology,NA,usa,2
+idaho state university,moscow,usa,2
+idaho state university,pocatello,usa,2
+illinois state university,normal,usa,2
+illinois state university,NA,usa,2
+international plant nutrition institute,merced,usa,2
+international plant nutrition institute,owens cross roads,usa,2
+kenyon college,gambier,usa,2
+kenyon college,NA,usa,2
+mcmaster university,NA,usa,2
+miami university,oxford,usa,2
+miami university,NA,usa,2
+monsanto,chesterfield,usa,2
+monsanto,st louis,usa,2
+mount holyoke college,south hadley,usa,2
+mount holyoke college,NA,usa,2
+national audubon society,san francisco,usa,2
+national audubon society,NA,usa,2
+national marine fisheries service,la jolla,usa,2
+national marine fisheries service,seattle,usa,2
+north dakota state university,fargo,usa,2
+north dakota state university,NA,usa,2
+northeastern university,nahant,usa,2
+northeastern university,NA,usa,2
+northern arizona university,flagstaff,usa,2
+northern arizona university,NA,usa,2
+ohio university,athens,usa,2
+ohio university,NA,usa,2
+ohio wesleyan university,delaware,usa,2
+ohio wesleyan university,NA,usa,2
+oklahoma state university,stillwater,usa,2
+oklahoma state university,NA,usa,2
+paso pacifico,ventura,usa,2
+pepperdine university,malibu,usa,2
+pepperdine university,NA,usa,2
+princeton university,princeton,usa,2
+princeton university,NA,usa,2
+rice university,houston,usa,2
+rice university,NA,usa,2
+san diego state university,san diego,usa,2
+san diego state university,NA,usa,2
+smith college,northampton,usa,2
+smith college,NA,usa,2
+smithsonian institution national museum of natural history,washington dc,usa,2
+smithsonian institution national museum of natural history,NA,usa,2
+smithsonian national museum of natural history,washington dc,usa,2
+smithsonian national museum of natural history,NA,usa,2
+smithsonian national zoological park,washington dc,usa,2
+smithsonian national zoological park,NA,usa,2
+southwest texas state university,san marcos,usa,2
+southwest texas state university,NA,usa,2
+st louis university,st louis,usa,2
+st louis university,NA,usa,2
+suny binghamton,binghamton,usa,2
+suny binghamton,NA,usa,2
+suny college of environmental science and forestry,syracuse,usa,2
+suny college of environmental science and forestry,NA,usa,2
+syngenta crop protection inc,greensboro,usa,2
+syngenta crop protection inc,vero beach,usa,2
+syngenta seeds inc,greensboro,usa,2
+syngenta seeds inc,stanton,usa,2
+syracuse university,syracuse,usa,2
+syracuse university,NA,usa,2
+tall timbers research station,tallahassee,usa,2
+tall timbers research station,NA,usa,2
+texas state university,san marcos,usa,2
+texas state university,NA,usa,2
+texas tech university,lubbock,usa,2
+texas tech university,NA,usa,2
+tufts university,medford,usa,2
+tufts university,NA,usa,2
+tulane university,tulane,usa,2
+tulane university,NA,usa,2
+university of alabama,tuscaloosa,usa,2
+university of alabama,NA,usa,2
+university of alabama huntsville,huntsville,usa,2
+university of alabama huntsville,NA,usa,2
+university of alaska fairbanks,fairbanks,usa,2
+university of alaska fairbanks,NA,usa,2
+university of arizona,tucson,usa,2
+university of arizona,NA,usa,2
+university of california irvine,irvine,usa,2
+university of california irvine,NA,usa,2
+university of california los angeles,los angeles,usa,2
+university of california los angeles,NA,usa,2
+university of california riverside,riverside,usa,2
+university of california riverside,NA,usa,2
+university of california santa barbara,santa barbara,usa,2
+university of california santa barbara,NA,usa,2
+university of central florida,chuluota,usa,2
+university of central florida,orlando,usa,2
+university of chicago,chicago,usa,2
+university of chicago,NA,usa,2
+university of cincinnati,cincinnati,usa,2
+university of cincinnati,clifton,usa,2
+university of hawaii manoa,honolulu,usa,2
+university of hawaii manoa,NA,usa,2
+university of houston,houston,usa,2
+university of houston,NA,usa,2
+university of iowa,iowa city,usa,2
+university of iowa,NA,usa,2
+university of kansas,lawrence,usa,2
+university of kansas,NA,usa,2
+university of maine,orono,usa,2
+university of maine,NA,usa,2
+university of massachusetts,boston,usa,2
+university of massachusetts,north dartmouth,usa,2
+university of massachusetts boston,boston,usa,2
+university of massachusetts boston,NA,usa,2
+university of miami,coral gables,usa,2
+university of miami,NA,usa,2
+university of michigan,ann arbor,usa,2
+university of michigan,NA,usa,2
+university of minnesota duluth,duluth,usa,2
+university of minnesota duluth,NA,usa,2
+university of mississippi,oxford,usa,2
+university of mississippi,NA,usa,2
+university of missouri columbia,columbia,usa,2
+university of missouri columbia,NA,usa,2
+university of missouri st louis,st louis,usa,2
+university of missouri st louis,NA,usa,2
+university of nevada las vegas,las vegas,usa,2
+university of nevada las vegas,NA,usa,2
+university of nevada reno,reno,usa,2
+university of nevada reno,NA,usa,2
+university of new mexico,albuquerque,usa,2
+university of new mexico,NA,usa,2
+university of north dakota,grand forks,usa,2
+university of north dakota,NA,usa,2
+university of notre dame,london,usa,2
+university of notre dame,south bend,usa,2
+university of oklahoma,norman,usa,2
+university of oklahoma,NA,usa,2
+university of oregon,eugene,usa,2
+university of oregon,NA,usa,2
+university of pennsylvania,philadelphia,usa,2
+university of pennsylvania,NA,usa,2
+university of south carolina columbia,columbia,usa,2
+university of south carolina columbia,NA,usa,2
+university of south florida,tampa,usa,2
+university of south florida,NA,usa,2
+university of texas arlington,arlington,usa,2
+university of texas arlington,NA,usa,2
+university of utah,salt lake city,usa,2
+university of utah,NA,usa,2
+university of virginia,charlottesville,usa,2
+university of virginia,NA,usa,2
+university of wisconsin,brooklyn,usa,2
+university of wisconsin,NA,usa,2
+university of wisconsin milwaukee,milwaukee,usa,2
+university of wisconsin milwaukee,NA,usa,2
+university of wisconsin parkside,kenosha,usa,2
+university of wisconsin parkside,NA,usa,2
+university of wyoming,laramie,usa,2
+university of wyoming,NA,usa,2
+usda agricultural research service,logan,usa,2
+usda agricultural research service,NA,usa,2
+usfws united states fish and wildlife service,fort c ollins,usa,2
+usfws united states fish and wildlife service,NA,usa,2
+usgs alaska science center,NA,usa,2
+usgs fort collins science center,NA,usa,2
+usgs national wetlands research center,lafayette,usa,2
+usgs national wetlands research center,NA,usa,2
+usgs northern prairie wildlife research center,jamestown,usa,2
+usgs northern prairie wildlife research center,NA,usa,2
+utah state university,logan,usa,2
+utah state university,NA,usa,2
+vanderbilt university,nashville,usa,2
+vanderbilt university,NA,usa,2
+virginia commonwealth university,richmond,usa,2
+virginia commonwealth university,NA,usa,2
+washington university in st louis,st louis,usa,2
+washington university in st louis,NA,usa,2
+wesleyan university,middletown,usa,2
+wesleyan university,NA,usa,2
+west virginia university,morgantown,usa,2
+west virginia university,NA,usa,2
+western michigan university,kalamazoo,usa,2
+western michigan university,NA,usa,2
+wichita state university,wichita,usa,2
+wichita state university,NA,usa,2
+williams college,williams,usa,2
+williams college,williamston,usa,2
+woods hole oceanographic institution,woods hole,usa,2
+woods hole oceanographic institution,NA,usa,2
+world wildlife fund,washington dc,usa,2
+yale university,new haven,usa,2
+yale university,NA,usa,2
+usgs alaska science center,NA,NA,2
+usgs fort collins science center,NA,NA,2

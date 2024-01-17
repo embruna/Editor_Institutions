@@ -1,0 +1,1414 @@
+index,Name1,Name2,Name_sim,Name_dist
+1270,usfs pacific northwest research station,usfs pacific southwest research station,0.9487179487179487,2
+1041,university of maine,university of mainz,0.9473684210526316,1
+545,southeast missouri state university,southwest missouri state university,0.9428571428571428,2
+1269,usfs northern research station,usfs southern research station,0.9333333333333333,2
+440,north dakota state university,south dakota state university,0.9310344827586207,2
+442,northern illinois university,southern illinois university,0.9285714285714286,2
+115,eastern michigan university,western michigan university,0.9259259259259259,2
+1089,university of north dakota,university of south dakota,0.9230769230769231,2
+441,northeastern university,northwestern university,0.9130434782608696,2
+667,university of arkansas,university of kansas,0.9090909090909091,2
+760,university of bologna,university of cologne,0.9047619047619048,2
+1084,university of munster,university of ulster,0.9047619047619048,2
+633,universidade federal de alagoas,universidade federal de lavras,0.9032258064516129,3
+16,biological institute,zoological institute,0.9,2
+733,university of bergen,university of bern,0.9,2
+788,university of california danr,university of california davis,0.9,3
+809,university of essex,university of sussex,0.9,2
+1018,university of leiden,university of leuven,0.9,2
+717,university of bari,university of paris,0.8947368421052632,2
+820,university of ghent,university of kent,0.8947368421052632,2
+1048,university of maine,university of sains,0.8947368421052632,2
+1055,university of mainz,university of sains,0.8947368421052632,2
+1130,university of paris,university of pavia,0.8947368421052632,2
+1151,university of tartu,university of turku,0.8947368421052632,2
+14,beijing forestry university,nanjing forestry university,0.8888888888888888,3
+689,university of bari,university of bern,0.8888888888888888,2
+744,university of bern,university of bonn,0.8888888888888888,2
+839,university of hull,university of oulu,0.8888888888888888,2
+979,university of jena,university of kent,0.8888888888888888,2
+1104,university of oslo,university of oulu,0.8888888888888888,2
+9,bangor university,baylor university,0.8823529411764706,2
+381,michigan state university,wichita state university,0.88,3
+20,brock university,brown university,0.875,2
+426,national museum of natural sciences,csic national museum of natural sciences,0.875,5
+1015,university of lancaster,university of manchester,0.875,3
+1059,university of manchester,university of rochester,0.875,3
+129,florida institute of technology,georgia institute of technology,0.8709677419354839,4
+632,universidade federal de alagoas,universidade federal de goias,0.8709677419354839,4
+795,university of california davis,university of california irvine,0.8709677419354839,4
+22,canadian forest service,indian forest service,0.8695652173913043,3
+428,nerc centre for ecology and hydrology banchory,nerc centre for ecology and hydrology bailrigg,0.8695652173913043,6
+824,university of gottingen,university of groningen,0.8695652173913043,3
+1014,university of lancaster,university of leicester,0.8695652173913043,3
+177,idaho state university,utah state university,0.8636363636363636,3
+641,university of aberdeen,university of bergen,0.8636363636363636,3
+663,university of alberta,university of canberra,0.8636363636363636,3
+669,university of auckland,university of iceland,0.8636363636363636,3
+831,university of hamburg,university of salzburg,0.8636363636363636,3
+1013,university of konstanz,university of montana,0.8636363636363636,3
+1076,university of montana,university of montreal,0.8636363636363636,3
+1132,university of pretoria,university of victoria,0.8636363636363636,3
+1145,university of salzburg,university of wurzburg,0.8636363636363636,3
+546,southern illinois university,eastern illinois university,0.8571428571428572,4
+804,university of dresden,university of bremen,0.8571428571428572,3
+805,university of dresden,university of giessen,0.8571428571428572,3
+806,university of dresden,university of leiden,0.8571428571428572,3
+823,university of giessen,university of essex,0.8571428571428572,3
+1077,university of montana,university of ottawa,0.8571428571428572,3
+1136,university of reading,university of regina,0.8571428571428572,3
+1159,university of toronto,university of tromso,0.8571428571428572,3
+796,university of california irvine,university of california riverside,0.8529411764705882,5
+746,university of bern,university of bremen,0.85,3
+773,university of bonn,university of london,0.85,3
+1016,university of leeds,university of leiden,0.85,3
+1031,university of lyon,university of london,0.85,3
+1091,university of oregon,university of regina,0.85,3
+1119,university of otago,university of oregon,0.85,3
+797,university of california merced,university of california berkeley,0.8484848484848485,5
+832,university of hawaii hilo,university of hawaii manoa,0.8461538461538461,4
+686,university of bari,university of basel,0.8421052631578947,3
+718,university of bari,university of pavia,0.8421052631578947,3
+721,university of bari,university of tartu,0.8421052631578947,3
+798,university of california santa cruz,university of california santa barbara,0.8421052631578947,6
+840,university of hull,university of tulsa,0.8421052631578947,3
+1123,university of oulu,university of tulsa,0.8421052631578947,3
+1167,university of tours,university of tulsa,0.8421052631578947,3
+1168,university of tours,university of turku,0.8421052631578947,3
+1201,university of utah,university of idaho,0.8421052631578947,3
+1202,university of utah,university of otago,0.8421052631578947,3
+1264,university of york,university of turku,0.8421052631578947,3
+104,desert research institute,forest research institute,0.84,4
+136,florida state university,colorado state university,0.84,4
+28,china agricultural university,nanjing agricultural university,0.8387096774193549,5
+789,university of california danr,university of california irvine,0.8387096774193549,5
+427,nerc centre for ecology and hydrology bailrigg,nerc centre for ecology and hydrology wallingford,0.8367346938775511,8
+114,durham university,fordham university,0.8333333333333334,3
+168,idaho state university,indiana state university,0.8333333333333334,4
+180,indiana state university,montana state university,0.8333333333333334,4
+304,iowa state university,arizona state university,0.8333333333333334,4
+557,trent university,utrecht university,0.8333333333333334,3
+642,university of agricultural sciences,gorgan university of agricultural sciences,0.8333333333333334,7
+753,university of bern,university of jena,0.8333333333333334,3
+754,university of bern,university of kent,0.8333333333333334,3
+799,university of canberra,university of canterbury,0.8333333333333334,4
+825,university of gottingen,university of nottingham,0.8333333333333334,4
+899,university of ife,university of iowa,0.8333333333333334,3
+943,university of ife,university of umea,0.8333333333333334,3
+1025,university of lyon,university of bonn,0.8333333333333334,3
+1039,university of lyon,university of york,0.8333333333333334,3
+1199,university of umea,university of utah,0.8333333333333334,3
+459,ohio state university,moscow state university,0.8260869565217391,4
+464,ohio state university,oregon state university,0.8260869565217391,4
+548,texas state university,kansas state university,0.8260869565217391,4
+661,university of alabama,university of allahabad,0.8260869565217391,4
+1173,university of trieste,university of leicester,0.8260869565217391,4
+1300,utah state university,truman state university,0.8260869565217391,4
+124,field museum of natural history,british museum of natural history,0.8181818181818181,6
+173,idaho state university,ohio state university,0.8181818181818181,4
+306,iowa state university,boise state university,0.8181818181818181,4
+317,iowa state university,idaho state university,0.8181818181818181,4
+366,kent state university,wayne state university,0.8181818181818181,4
+367,kent state university,weber state university,0.8181818181818181,4
+446,ohio state university,boise state university,0.8181818181818181,4
+553,texas state university,utah state university,0.8181818181818181,4
+741,university of bern,university of aberdeen,0.8181818181818181,4
+833,university of houston,university of konstanz,0.8181818181818181,4
+846,university of iceland,university of adelaide,0.8181818181818181,4
+1002,university of kent,university of kentucky,0.8181818181818181,4
+1122,university of oulu,university of toulouse,0.8181818181818181,4
+1131,university of potsdam,university of botswana,0.8181818181818181,4
+1166,university of tours,university of toulouse,0.8181818181818181,4
+643,university of agricultural sciences,swedish university of agricultural sciences,0.813953488372093,8
+395,moi university,emory university,0.8125,3
+408,moi university,miami university,0.8125,3
+518,rice university,brock university,0.8125,3
+532,rice university,trier university,0.8125,3
+1402,york university,brock university,0.8125,3
+1404,york university,clark university,0.8125,3
+1405,york university,emory university,0.8125,3
+1408,york university,kyoto university,0.8125,3
+328,iowa state university,ohio state university,0.8095238095238095,4
+471,ohio state university,utah state university,0.8095238095238095,4
+653,university of akron,university of toronto,0.8095238095238095,4
+724,university of bari,university of warwick,0.8095238095238095,4
+759,university of bern,university of vermont,0.8095238095238095,4
+765,university of bonn,university of bologna,0.8095238095238095,4
+779,university of bonn,university of montana,0.8095238095238095,4
+807,university of dresden,university of reading,0.8095238095238095,4
+829,university of haifa,university of waikato,0.8095238095238095,4
+977,university of jena,university of joensuu,0.8095238095238095,4
+1038,university of lyon,university of wyoming,0.8095238095238095,4
+1153,university of tokyo,university of toronto,0.8095238095238095,4
+1170,university of trieste,university of bristol,0.8095238095238095,4
+1171,university of trieste,university of dresden,0.8095238095238095,4
+1172,university of trieste,university of giessen,0.8095238095238095,4
+1208,university of vermont,university of toronto,0.8095238095238095,4
+1216,university of wales,university of salento,0.8095238095238095,4
+1285,utah state university,iowa state university,0.8095238095238095,4
+1287,utah state university,kent state university,0.8095238095238095,4
+179,indiana state university,louisiana state university,0.8076923076923077,5
+647,university of agriculture,tokyo university of agriculture,0.8064516129032258,6
+790,university of california danr,university of california merced,0.8064516129032258,6
+379,mcmaster university,lancaster university,0.8,4
+414,moi university,ohio university,0.8,3
+578,ulm university,duke university,0.8,3
+592,ulm university,lund university,0.8,3
+620,ulm university,yale university,0.8,3
+635,universite de montpellier,universite montpellier 2,0.8,5
+636,university college cork,university college london,0.8,5
+688,university of bari,university of bergen,0.8,4
+725,university of bari,university of zurich,0.8,4
+794,university of california danr,university of california santa cruz,0.8,7
+835,university of hull,university of guelph,0.8,4
+906,university of ife,university of leiden,0.8,4
+956,university of iowa,university of ibadan,0.8,4
+974,university of jena,university of denver,0.8,4
+1000,university of kent,university of denver,0.8,4
+1001,university of kent,university of kansas,0.8,4
+1036,university of lyon,university of sydney,0.8,4
+1100,university of oslo,university of london,0.8,4
+1105,university of oslo,university of oxford,0.8,4
+1141,university of sains,university of kansas,0.8,4
+1176,university of tulsa,university of ulster,0.8,4
+123,field museum of natural history,american museum of natural history,0.7941176470588236,7
+125,field museum of natural history,carnegie museum of natural history,0.7941176470588236,7
+792,university of california danr,university of california san diego,0.7941176470588236,7
+1064,university of massachusetts,university of massachusetts boston,0.7941176470588236,7
+1152,university of texas austin,university of texas arlington,0.7931034482758621,6
+314,iowa state university,florida state university,0.7916666666666666,5
+315,iowa state university,georgia state university,0.7916666666666666,5
+319,iowa state university,indiana state university,0.7916666666666666,5
+323,iowa state university,montana state university,0.7916666666666666,5
+338,iowa state university,wichita state university,0.7916666666666666,5
+341,kansas state university,montana state university,0.7916666666666666,5
+355,kent state university,montana state university,0.7916666666666666,5
+444,ohio state university,arizona state university,0.7916666666666666,5
+454,ohio state university,florida state university,0.7916666666666666,5
+455,ohio state university,georgia state university,0.7916666666666666,5
+473,ohio state university,wichita state university,0.7916666666666666,5
+512,oregon state university,georgia state university,0.7916666666666666,5
+1290,utah state university,montana state university,0.7916666666666666,5
+1316,wesleyan university,ohio wesleyan university,0.7916666666666666,5
+8,australian national university,anutech australian national university,0.7894736842105263,8
+102,cornell university,bucknell university,0.7894736842105263,4
+378,massey university,mcmaster university,0.7894736842105263,4
+708,university of bari,university of haifa,0.7894736842105263,4
+711,university of bari,university of maine,0.7894736842105263,4
+712,university of bari,university of mainz,0.7894736842105263,4
+720,university of bari,university of sains,0.7894736842105263,4
+877,university of ife,university of essex,0.7894736842105263,4
+889,university of ife,university of ghent,0.7894736842105263,4
+895,university of ife,university of idaho,0.7894736842105263,4
+904,university of ife,university of leeds,0.7894736842105263,4
+957,university of iowa,university of idaho,0.7894736842105263,4
+960,university of iowa,university of otago,0.7894736842105263,4
+1066,university of miami,university of maine,0.7894736842105263,4
+1067,university of miami,university of mainz,0.7894736842105263,4
+1197,university of umea,university of miami,0.7894736842105263,4
+1203,university of utah,university of tartu,0.7894736842105263,4
+1260,university of york,university of tokyo,0.7894736842105263,4
+1409,york university,new york university,0.7894736842105263,4
+421,moi university,ulm university,0.7857142857142857,3
+324,iowa state university,moscow state university,0.782608695652174,5
+359,kent state university,oregon state university,0.782608695652174,5
+728,university of basel,university of barcelona,0.782608695652174,5
+830,university of hamburg,university of cambridge,0.782608695652174,5
+994,university of kansas,university of lancaster,0.782608695652174,5
+1017,university of leiden,university of leicester,0.782608695652174,5
+1144,university of salento,university of cape town,0.782608695652174,5
+1178,university of ulster,university of amsterdam,0.782608695652174,5
+1236,university of wyoming,university of groningen,0.782608695652174,5
+1286,utah state university,kansas state university,0.782608695652174,5
+139,forest research institute,kerala forest research institute,0.78125,7
+866,university of ife,university of bern,0.7777777777777778,4
+900,university of ife,university of jena,0.7777777777777778,4
+902,university of ife,university of kent,0.7777777777777778,4
+347,kent state university,boise state university,0.7727272727272727,5
+644,university of agricultural sciences,university of agricultural science bangalore,0.7727272727272727,10
+662,university of alberta,university of aberdeen,0.7727272727272727,5
+687,university of bari,university of bayreuth,0.7727272727272727,5
+767,university of bonn,university of botswana,0.7727272727272727,5
+772,university of bonn,university of konstanz,0.7727272727272727,5
+1003,university of kent,university of konstanz,0.7727272727272727,5
+1043,university of maine,university of manitoba,0.7727272727272727,5
+1050,university of mainz,university of manitoba,0.7727272727272727,5
+1069,university of miami,university of michigan,0.7727272727272727,5
+1083,university of munster,university of montreal,0.7727272727272727,5
+1103,university of oslo,university of oklahoma,0.7727272727272727,5
+1117,university of oslo,university of toulouse,0.7727272727272727,5
+1143,university of sains,university of sunshine,0.7727272727272727,5
+1156,university of tokyo,university of toulouse,0.7727272727272727,5
+1220,university of wales,university of waterloo,0.7727272727272727,5
+1307,wayne state university,iowa state university,0.7727272727272727,5
+1063,university of massachusetts,university of massachusetts amherst,0.7714285714285715,8
+148,helmholtz centre for environmental research ufz,helmholtz centre for environmental research ufz leipzig halle,0.7704918032786885,14
+639,university college of north wales,university college of north west bangor,0.7692307692307692,9
+1074,university of minnesota,university of minnesota duluth,0.7666666666666666,7
+111,duke university,purdue university,0.7647058823529411,4
+376,lund university,tulane university,0.7647058823529411,4
+484,open university,boston university,0.7647058823529411,4
+531,rice university,purdue university,0.7647058823529411,4
+579,ulm university,durham university,0.7647058823529411,4
+791,university of california danr,university of california riverside,0.7647058823529411,8
+1391,yale university,tulane university,0.7647058823529411,4
+1401,york university,baylor university,0.7647058823529411,4
+681,university of bari,university of arizona,0.7619047619047619,5
+694,university of bari,university of bristol,0.7619047619047619,5
+771,university of bonn,university of joensuu,0.7619047619047619,5
+890,university of ife,university of giessen,0.7619047619047619,5
+894,university of ife,university of iceland,0.7619047619047619,5
+986,university of jena,university of reading,0.7619047619047619,5
+1005,university of kent,university of montana,0.7619047619047619,5
+1095,university of oslo,university of bologna,0.7619047619047619,5
+1096,university of oslo,university of cologne,0.7619047619047619,5
+1127,university of paris,university of arizona,0.7619047619047619,5
+1128,university of paris,university of bristol,0.7619047619047619,5
+1161,university of tours,university of houston,0.7619047619047619,5
+1163,university of tours,university of toronto,0.7619047619047619,5
+1224,university of warwick,university of waikato,0.7619047619047619,5
+1261,university of york,university of toronto,0.7619047619047619,5
+18,boise state university,illinois state university,0.76,6
+165,idaho state university,colorado state university,0.76,6
+313,iowa state university,colorado state university,0.76,6
+318,iowa state university,illinois state university,0.76,6
+321,iowa state university,michigan state university,0.76,6
+329,iowa state university,oklahoma state university,0.76,6
+453,ohio state university,colorado state university,0.76,6
+457,ohio state university,illinois state university,0.76,6
+463,ohio state university,oklahoma state university,0.76,6
+511,oregon state university,colorado state university,0.76,6
+1294,utah state university,oklahoma state university,0.76,6
+1305,wayne state university,delaware state university,0.76,6
+1315,weber state university,delaware state university,0.76,6
+137,forest research institute,finnish forest research institute,0.7575757575757576,8
+787,university of california danr,university of california berkeley,0.7575757575757576,8
+181,inra national institute for agricultural research,inra national institute for agricultural research centre de nancy,0.7538461538461538,16
+17,boise state university,humbolt state university,0.75,6
+166,idaho state university,florida state university,0.75,6
+178,idaho state university,wichita state university,0.75,6
+316,iowa state university,humbolt state university,0.75,6
+339,kansas state university,indiana state university,0.75,6
+344,kent state university,arizona state university,0.75,6
+351,kent state university,humbolt state university,0.75,6
+352,kent state university,indiana state university,0.75,6
+380,michigan state university,appalachian state university,0.75,7
+406,moi university,kyoto university,0.75,4
+425,nancy university,henan university,0.75,4
+456,ohio state university,humbolt state university,0.75,6
+476,ohio university,kyoto university,0.75,4
+486,open university,brown university,0.75,4
+549,texas state university,montana state university,0.75,6
+664,university of antwerp,university of canterbury,0.75,6
+693,university of bari,university of bremen,0.75,5
+752,university of bern,university of denver,0.75,5
+815,university of georgia,university of georgia athens,0.75,7
+841,university of hull,university of ulster,0.75,5
+865,university of ife,university of bergen,0.75,5
+867,university of ife,university of bremen,0.75,5
+872,university of ife,university of denver,0.75,5
+879,university of ife,university of exeter,0.75,5
+891,university of ife,university of guelph,0.75,5
+893,university of ife,university of ibadan,0.75,5
+909,university of ife,university of leuven,0.75,5
+923,university of ife,university of oregon,0.75,5
+928,university of ife,university of quebec,0.75,5
+933,university of ife,university of regina,0.75,5
+946,university of ife,university of vienna,0.75,5
+1124,university of oulu,university of ulster,0.75,5
+1138,university of regina,university of regensburg,0.75,6
+1149,university of stirling,university of birmingham,0.75,6
+1200,university of utah,university of athens,0.75,5
+1225,university of washington,university of washington bothell,0.75,8
+1226,university of washington,university of washington seattle,0.75,8
+1235,university of wyoming,university of birmingham,0.75,6
+1237,university of wyoming,university of washington,0.75,6
+1258,university of york,university of oregon,0.75,5
+1283,utah state university,humbolt state university,0.75,6
+1284,utah state university,indiana state university,0.75,6
+1302,utah state university,wichita state university,0.75,6
+1306,wayne state university,indiana state university,0.75,6
+1310,wayne state university,montana state university,0.75,6
+1352,yale university,laval university,0.75,4
+537,royal botanic gardens kew,royal botanic gardens melbourne,0.7419354838709677,8
+1230,university of wisconsin,university of wisconsin madison,0.7419354838709677,8
+472,ohio state university,washington state university,0.7407407407407407,7
+813,university of exeter,university of exeter penryn,0.7407407407407407,7
+1268,university of zurich,university of zurich irchel,0.7407407407407407,7
+330,iowa state university,oregon state university,0.7391304347826086,6
+363,kent state university,truman state university,0.7391304347826086,6
+685,university of bari,university of barcelona,0.7391304347826086,6
+742,university of bern,university of barcelona,0.7391304347826086,6
+769,university of bonn,university of hong kong,0.7391304347826086,6
+1044,university of maine,university of minnesota,0.7391304347826086,6
+1080,university of munster,university of amsterdam,0.7391304347826086,6
+1135,university of reading,university of edinburgh,0.7391304347826086,6
+1160,university of toronto,university of trondheim,0.7391304347826086,6
+1228,university of windsor,university of innsbruck,0.7391304347826086,6
+1312,wayne state university,truman state university,0.7391304347826086,6
+156,henan university,wesleyan university,0.736842105263158,5
+793,university of california danr,university of california santa barbara,0.736842105263158,10
+878,university of ife,university of evora,0.736842105263158,5
+962,university of iowa,university of wales,0.736842105263158,5
+1185,university of umea,university of maine,0.736842105263158,5
+1186,university of umea,university of mainz,0.736842105263158,5
+1148,university of southern maine,university of southern mississippi,0.7352941176470589,9
+951,university of illinois,university of illinois chicago,0.7333333333333334,8
+169,idaho state university,louisiana state university,0.7307692307692308,7
+175,idaho state university,san diego state university,0.7307692307692308,7
+320,iowa state university,louisiana state university,0.7307692307692308,7
+340,kansas state university,louisiana state university,0.7307692307692308,7
+466,ohio state university,san diego state university,0.7307692307692308,7
+513,oregon state university,san diego state university,0.7307692307692308,7
+826,university of haifa,university of haifa oranim,0.7307692307692308,7
+1288,utah state university,louisiana state university,0.7307692307692308,7
+692,university of bari,university of bordeaux,0.7272727272727273,6
+713,university of bari,university of manitoba,0.7272727272727273,6
+714,university of bari,university of maryland,0.7272727272727273,6
+727,university of basel,university of adelaide,0.7272727272727273,6
+745,university of bern,university of bordeaux,0.7272727272727273,6
+766,university of bonn,university of bordeaux,0.7272727272727273,6
+780,university of bonn,university of montreal,0.7272727272727273,6
+786,university of calgary,university of malaysia,0.7272727272727273,6
+821,university of ghent,university of kentucky,0.7272727272727273,6
+836,university of hull,university of helsinki,0.7272727272727273,6
+864,university of ife,university of adelaide,0.7272727272727273,6
+973,university of jena,university of delaware,0.7272727272727273,6
+980,university of jena,university of kentucky,0.7272727272727273,6
+1006,university of kent,university of montreal,0.7272727272727273,6
+1068,university of miami,university of manitoba,0.7272727272727273,6
+1121,university of oulu,university of oklahoma,0.7272727272727273,6
+1245,university of york,university of bordeaux,0.7272727272727273,6
+1267,university of zurich,university of richmond,0.7272727272727273,6
+374,lund university,lincoln university,0.7222222222222222,5
+390,moi university,clemson university,0.7222222222222222,5
+400,moi university,hampton university,0.7222222222222222,5
+488,open university,clemson university,0.7222222222222222,5
+494,open university,hampton university,0.7222222222222222,5
+1334,yale university,colgate university,0.7222222222222222,5
+170,idaho state university,michigan state university,0.72,7
+349,kent state university,delaware state university,0.72,7
+360,kent state university,portland state university,0.72,7
+729,university of bergen,free university of berlin,0.72,7
+735,university of bern,free university of berlin,0.72,7
+1289,utah state university,michigan state university,0.72,7
+1311,wayne state university,portland state university,0.72,7
+1232,university of wisconsin,university of wisconsin parkside,0.71875,9
+649,university of agriculture,university of agricultural sciences,0.7142857142857143,10
+722,university of bari,university of trieste,0.7142857142857143,6
+723,university of bari,university of waikato,0.7142857142857143,6
+747,university of bern,university of bristol,0.7142857142857143,6
+873,university of ife,university of dresden,0.7142857142857143,6
+882,university of ife,university of florida,0.7142857142857143,6
+901,university of ife,university of joensuu,0.7142857142857143,6
+907,university of ife,university of leipzig,0.7142857142857143,6
+931,university of ife,university of reading,0.7142857142857143,6
+961,university of iowa,university of waikato,0.7142857142857143,6
+963,university of iowa,university of warwick,0.7142857142857143,6
+996,university of kent,university of antwerp,0.7142857142857143,6
+1034,university of lyon,university of montana,0.7142857142857143,6
+1099,university of oslo,university of florida,0.7142857142857143,6
+1198,university of umea,university of reading,0.7142857142857143,6
+1206,university of vermont,university of montana,0.7142857142857143,6
+1274,utah state university,austin peay state university,0.7142857142857143,8
+1072,university of michigan,university of michigan dearborn,0.7096774193548387,9
+167,idaho state university,georgia state university,0.7083333333333333,7
+555,texas state university,wichita state university,0.7083333333333333,7
+691,university of bari,university of birmingham,0.7083333333333333,7
+734,university of bergen,university of regensburg,0.7083333333333333,7
+743,university of bern,university of birmingham,0.7083333333333333,7
+757,university of bern,university of peradeniya,0.7083333333333333,7
+783,university of bremen,university of regensburg,0.7083333333333333,7
+985,university of jena,university of peradeniya,0.7083333333333333,7
+1042,university of maine,university of manchester,0.7083333333333333,7
+1065,university of miami,university of birmingham,0.7083333333333333,7
+1081,university of munster,university of canterbury,0.7083333333333333,7
+1090,university of oregon,university of regensburg,0.7083333333333333,7
+1102,university of oslo,university of louisville,0.7083333333333333,7
+1118,university of oslo,university of wollongong,0.7083333333333333,7
+1134,university of quebec,university of queensland,0.7083333333333333,7
+1162,university of tours,university of louisville,0.7083333333333333,7
+1272,utah state university,arizona state university,0.7083333333333333,7
+1281,utah state university,florida state university,0.7083333333333333,7
+1282,utah state university,georgia state university,0.7083333333333333,7
+29,christian albrechts universitat kiel,christian albrechts universitat zuniversity of kiel,0.7058823529411764,15
+138,forest research institute,forest research lnstitute malaysia,0.7058823529411764,10
+383,moi university,bangor university,0.7058823529411764,5
+384,moi university,baylor university,0.7058823529411764,5
+387,moi university,boston university,0.7058823529411764,5
+568,ulm university,auburn university,0.7058823529411764,5
+588,ulm university,kyushu university,0.7058823529411764,5
+594,ulm university,mcgill university,0.7058823529411764,5
+605,ulm university,purdue university,0.7058823529411764,5
+1400,york university,bangor university,0.7058823529411764,5
+365,kent state university,washington state university,0.7037037037037037,8
+460,ohio state university,new mexico state university,0.7037037037037037,8
+660,university of alabama,university of alaska museum,0.7037037037037037,8
+1366,yale university,newcastle university,0.7,6
+1073,university of minnesota,university of minnesota crookston,0.696969696969697,10
+1231,university of wisconsin,university of wisconsin milwaukee,0.696969696969697,10
+23,centre for ecology and hydrology,nerc centre for ecology and hydrology bailrigg,0.6956521739130435,14
+24,centre for ecology and hydrology,nerc centre for ecology and hydrology banchory,0.6956521739130435,14
+651,university of akron,university of groningen,0.6956521739130435,7
+656,university of akron,university of trondheim,0.6956521739130435,7
+690,university of bari,university of bialystok,0.6956521739130435,7
+758,university of bern,university of tennessee,0.6956521739130435,7
+775,university of bonn,university of minnesota,0.6956521739130435,7
+782,university of bonn,university of tennessee,0.6956521739130435,7
+905,university of ife,university of leicester,0.6956521739130435,7
+910,university of ife,university of liverpool,0.6956521739130435,7
+934,university of ife,university of sheffield,0.6956521739130435,7
+978,university of jena,university of jyvaskyla,0.6956521739130435,7
+987,university of jena,university of tennessee,0.6956521739130435,7
+1008,university of kent,university of tennessee,0.6956521739130435,7
+1027,university of lyon,university of groningen,0.6956521739130435,7
+1028,university of lyon,university of hong kong,0.6956521739130435,7
+1037,university of lyon,university of trondheim,0.6956521739130435,7
+1051,university of mainz,university of minnesota,0.6956521739130435,7
+1116,university of oslo,university of stockholm,0.6956521739130435,7
+1246,university of york,university of fort hare,0.6956521739130435,7
+332,iowa state university,san diego state university,0.6923076923076923,8
+353,kent state university,louisiana state university,0.6923076923076923,8
+361,kent state university,san diego state university,0.6923076923076923,8
+828,university of haifa,university of hawaii manoa,0.6923076923076923,8
+1211,university of waikato,university of haifa oranim,0.6923076923076923,8
+1212,university of waikato,university of saskatchewan,0.6923076923076923,8
+1308,wayne state university,louisiana state university,0.6923076923076923,8
+429,netherlands institute of technology,netherlands institute of ecology nioo knaw,0.6904761904761905,13
+342,kansas state university,pennsylvania state university,0.6896551724137931,9
+462,ohio state university,north dakota state university,0.6896551724137931,9
+468,ohio state university,south dakota state university,0.6896551724137931,9
+801,university of cologne,university of colorado denver,0.6896551724137931,9
+812,university of exeter,university of exeter cornwall,0.6896551724137931,9
+1296,utah state university,south dakota state university,0.6896551724137931,9
+105,desert research institute,kerala forest research institute,0.6875,10
+552,texas state university,southwest texas state university,0.6875,10
+590,ulm university,laval university,0.6875,5
+101,clark university,wrcoclaw university,0.6842105263157895,6
+112,duke university,roskilde university,0.6842105263157895,6
+113,duke university,syracuse university,0.6842105263157895,6
+151,henan university,lakehead university,0.6842105263157895,6
+391,moi university,columbia university,0.6842105263157895,6
+402,moi university,hokkaido university,0.6842105263157895,6
+474,ohio university,catholic university,0.6842105263157895,6
+480,ohio university,st louis university,0.6842105263157895,6
+487,open university,carleton university,0.6842105263157895,6
+524,rice university,la trobe university,0.6842105263157895,6
+526,rice university,makarere university,0.6842105263157895,6
+562,trier university,mcmaster university,0.6842105263157895,6
+573,ulm university,bucknell university,0.6842105263157895,6
+603,ulm university,plymouth university,0.6842105263157895,6
+1088,university of north dakota,university of north dakota grand forks,0.6842105263157895,12
+1354,yale university,marshall university,0.6842105263157895,6
+1397,yale university,wesleyan university,0.6842105263157895,6
+1411,york university,stanford university,0.6842105263157895,6
+652,university of akron,university of konstanz,0.6818181818181819,7
+682,university of bari,university of arkansas,0.6818181818181819,7
+755,university of bern,university of kentucky,0.6818181818181819,7
+837,university of hull,university of illinois,0.6818181818181819,7
+863,university of ife,university of aberdeen,0.6818181818181819,7
+871,university of ife,university of delaware,0.6818181818181819,7
+884,university of ife,university of freiburg,0.6818181818181819,7
+892,university of ife,university of helsinki,0.6818181818181819,7
+896,university of ife,university of illinois,0.6818181818181819,7
+926,university of ife,university of pretoria,0.6818181818181819,7
+1029,university of lyon,university of konstanz,0.6818181818181819,7
+1035,university of lyon,university of montreal,0.6818181818181819,7
+1187,university of umea,university of malaysia,0.6818181818181819,7
+1189,university of umea,university of manitoba,0.6818181818181819,7
+1190,university of umea,university of maryland,0.6818181818181819,7
+1204,university of utah,university of tasmania,0.6818181818181819,7
+1207,university of vermont,university of montreal,0.6818181818181819,7
+1242,university of york,university of arkansas,0.6818181818181819,7
+1256,university of york,university of oklahoma,0.6818181818181819,7
+25,centre for ecology and hydrology,nerc centre for ecology and hydrology edinburgh,0.6808510638297872,15
+354,kent state university,michigan state university,0.6799999999999999,8
+515,queens university,queens university belfast,0.6799999999999999,8
+516,rangeland ecosystem science center,usgs forest and rangeland ecosystem science center,0.6799999999999999,16
+634,universite de moncton,universite de montpellier,0.6799999999999999,8
+670,university of bari,free university of berlin,0.6799999999999999,8
+768,university of bonn,university of connecticut,0.6799999999999999,8
+827,university of haifa,university of hawaii hilo,0.6799999999999999,8
+1071,university of miami,university of mississippi,0.6799999999999999,8
+1309,wayne state university,michigan state university,0.6799999999999999,8
+158,idaho state university,appalachian state university,0.6785714285714286,9
+443,ohio state university,appalachian state university,0.6785714285714286,9
+547,texas state university,austin peay state university,0.6785714285714286,9
+1271,utah state university,appalachian state university,0.6785714285714286,9
+1304,wayne state university,austin peay state university,0.6785714285714286,9
+7,arizona state university,north carolina state university,0.6774193548387097,10
+803,university of dresden,technical university of dresden,0.6774193548387097,10
+147,goeuniversity frankfurt,jw goeuniversity frankfurt am main,0.6764705882352942,11
+6,arizona state university,arizona state university west campus,0.6666666666666667,12
+15,biological institute,biological institute helgoland,0.6666666666666667,10
+26,centre for ecology and hydrology,nerc centre for ecology and hydrology monks wood,0.6666666666666667,16
+103,desert research institute,finnish forest research institute,0.6666666666666667,11
+171,idaho state university,new mexico state university,0.6666666666666667,9
+325,iowa state university,new mexico state university,0.6666666666666667,9
+337,iowa state university,washington state university,0.6666666666666667,9
+392,moi university,denison university,0.6666666666666667,6
+396,moi university,fordham university,0.6666666666666667,6
+399,moi university,guangxi university,0.6666666666666667,6
+407,moi university,lanzhou university,0.6666666666666667,6
+489,open university,denison university,0.6666666666666667,6
+496,open university,lincoln university,0.6666666666666667,6
+510,oregon state university,bowling green state university,0.6666666666666667,10
+530,rice university,pepperdine university,0.6666666666666667,7
+536,royal botanic gardens kew,royal botanic garden edinburgh,0.6666666666666667,10
+575,ulm university,cornell university,0.6666666666666667,6
+582,ulm university,fordham university,0.6666666666666667,6
+591,ulm university,lincoln university,0.6666666666666667,6
+808,university of dresden,university of regensburg,0.6666666666666667,8
+843,university of hull,university of wollongong,0.6666666666666667,8
+845,university of iceland,national university of ireland,0.6666666666666667,10
+885,university of ife,university of georgia,0.6666666666666667,7
+908,university of ife,university of lethbridge,0.6666666666666667,8
+944,university of ife,university of vermont,0.6666666666666667,7
+997,university of kent,university of canterbury,0.6666666666666667,8
+1021,university of london,university of london westfield,0.6666666666666667,10
+1049,university of mainz,university of manchester,0.6666666666666667,8
+1217,university of wales,university of washington,0.6666666666666667,8
+1301,utah state university,washington state university,0.6666666666666667,9
+126,field museum of natural history,national museum of natural history france,0.6585365853658536,14
+1075,university of minnesota,university of minnesota twin cities,0.6571428571428571,12
+1233,university of wisconsin,university of wisconsin river falls,0.6571428571428571,12
+657,university of alabama,university of alabama huntsville,0.65625,11
+327,iowa state university,north dakota state university,0.6551724137931034,10
+334,iowa state university,south dakota state university,0.6551724137931034,10
+550,texas state university,north dakota state university,0.6551724137931034,10
+551,texas state university,south dakota state university,0.6551724137931034,10
+1293,utah state university,north dakota state university,0.6551724137931034,10
+668,university of athens,university of thessaloniki,0.6538461538461539,9
+709,university of bari,university of haifa oranim,0.6538461538461539,9
+984,university of jena,university of pennsylvania,0.6538461538461539,9
+1251,university of york,university of north dakota,0.6538461538461539,9
+27,centre for ecology and hydrology,nerc centre for ecology and hydrology wallingford,0.653061224489796,17
+770,university of bonn,university of innsbruck,0.6521739130434783,8
+834,university of hull,university of allahabad,0.6521739130434783,8
+876,university of ife,university of edinburgh,0.6521739130434783,8
+883,university of ife,university of fort hare,0.6521739130434783,8
+898,university of ife,university of innsbruck,0.6521739130434783,8
+911,university of ife,university of melbourne,0.6521739130434783,8
+914,university of ife,university of neuchatel,0.6521739130434783,8
+937,university of ife,university of tennessee,0.6521739130434783,8
+1030,university of lyon,university of lancaster,0.6521739130434783,8
+1196,university of umea,university of melbourne,0.6521739130434783,8
+5,agricultural research center,usda arid land agricultural research center,0.6511627906976745,15
+106,drexel university,mckendree university,0.65,7
+109,duke university,mckendree university,0.65,7
+372,lund university,cranfield university,0.65,7
+401,moi university,hiroshima university,0.65,7
+405,moi university,kagoshima university,0.65,7
+502,open university,princeton university,0.65,7
+525,rice university,macquarie university,0.65,7
+559,trier university,lancaster university,0.65,7
+560,trier university,macquarie university,0.65,7
+393,moi university,durham university,0.6470588235294117,6
+564,ulm university,aarhus university,0.6470588235294117,6
+577,ulm university,drexel university,0.6470588235294117,6
+617,ulm university,tohoku university,0.6470588235294117,6
+666,university of arkansas,university of arkansas little rock,0.6470588235294117,12
+461,ohio state university,north carolina state university,0.6451612903225806,11
+630,universidad autonoma,universidad autonoma de yucatan,0.6451612903225806,11
+1019,university of london,queen mary university of london,0.6451612903225806,11
+303,iowa state university,appalachian state university,0.6428571428571428,10
+322,iowa state university,mississippi state university,0.6428571428571428,10
+346,kent state university,austin peay state university,0.6428571428571428,10
+350,kent state university,fort valley state university,0.6428571428571428,10
+458,ohio state university,mississippi state university,0.6428571428571428,10
+1147,university of south florida,new college of university of south florida,0.6428571428571428,15
+1303,wayne state university,appalachian state university,0.6428571428571428,10
+680,university of bari,university of agriculture,0.64,9
+802,university of cologne,university of connecticut,0.64,9
+954,university of iowa,university of hawaii hilo,0.64,9
+975,university of jena,university of east anglia,0.64,9
+983,university of jena,university of nevada reno,0.64,9
+1111,university of oslo,university of southampton,0.64,9
+1253,university of york,university of north texas,0.64,9
+155,henan university,rwth aachen university,0.6363636363636364,8
+558,trent university,wake forest university,0.6363636363636364,8
+637,university college cork,university college of north wales,0.6363636363636364,12
+719,university of bari,university of richmond,0.6363636363636364,8
+903,university of ife,university of kentucky,0.6363636363636364,8
+967,university of iowa,university of waterloo,0.6363636363636364,8
+1157,university of toronto,university of toronto mississauga,0.6363636363636364,12
+1158,university of toronto,university of toronto scarborough,0.6363636363636364,12
+1227,university of washington,victoria university of wellington,0.6363636363636364,12
+1395,yale university,wayne state university,0.6363636363636364,8
+185,instituto boliviano de investigacion forestal,wageningen university and instituto boliviano de investigacion forestal,0.6338028169014085,26
+176,idaho state university,san francisco state university,0.6333333333333333,11
+424,moscow state university,san francisco state university,0.6333333333333333,11
+467,ohio state university,san francisco state university,0.6333333333333333,11
+658,university of alabama,university of alaska anchorage,0.6333333333333333,11
+659,university of alabama,university of alaska fairbanks,0.6333333333333333,11
+800,university of cologne,university of colorado boulder,0.6333333333333333,11
+1314,weber state university,bowling green state university,0.6333333333333333,11
+389,moi university,carleton university,0.631578947368421,7
+495,open university,la trobe university,0.631578947368421,7
+520,rice university,catholic university,0.631578947368421,7
+593,ulm university,marshall university,0.631578947368421,7
+608,ulm university,salzburg university,0.631578947368421,7
+610,ulm university,st louis university,0.631578947368421,7
+611,ulm university,syracuse university,0.631578947368421,7
+1146,university of south dakota,university of north dakota grand forks,0.631578947368421,14
+968,university of iowa,university of witwatersrand,0.6296296296296297,10
+1058,university of malaysia,university of alaska museum,0.6296296296296297,10
+1110,university of oslo,university of south florida,0.6296296296296297,10
+665,university of arkansas,university of arkansas fayetteville,0.6285714285714286,13
+154,henan university,ohio wesleyan university,0.625,9
+561,trier university,martin luther university,0.625,9
+920,university of ife,university of new mexico,0.625,9
+925,university of ife,university of peradeniya,0.625,9
+930,university of ife,university of queensland,0.625,9
+932,university of ife,university of regensburg,0.625,9
+935,university of ife,university of sherbrooke,0.625,9
+964,university of iowa,university of washington,0.625,9
+1004,university of kent,university of lethbridge,0.625,9
+1033,university of lyon,university of louisville,0.625,9
+1180,university of ulster,university of ulster jordanstown,0.625,12
+1188,university of umea,university of manchester,0.625,9
+1299,utah state university,southwest texas state university,0.625,12
+174,idaho state university,pennsylvania state university,0.6206896551724138,11
+331,iowa state university,pennsylvania state university,0.6206896551724138,11
+358,kent state university,north dakota state university,0.6206896551724138,11
+362,kent state university,south dakota state university,0.6206896551724138,11
+465,ohio state university,pennsylvania state university,0.6206896551724138,11
+731,university of bergen,humboldt university of berlin,0.6206896551724138,11
+739,university of bern,humboldt university of berlin,0.6206896551724138,11
+762,university of bologna,university of colorado denver,0.6206896551724138,11
+811,university of exeter,university of eastern finland,0.6206896551724138,11
+1079,university of montreal,university of central florida,0.6206896551724138,11
+1179,university of ulster,university of eastern finland,0.6206896551724138,11
+1182,university of ulster,university of western ontario,0.6206896551724138,11
+1295,utah state university,pennsylvania state university,0.6206896551724138,11
+110,duke university,pepperdine university,0.6190476190476191,8
+1348,yale university,iowa state university,0.6190476190476191,8
+1350,yale university,kent state university,0.6190476190476191,8
+1370,yale university,ohio state university,0.6190476190476191,8
+1392,yale university,utah state university,0.6190476190476191,8
+132,florida state university,california state university fresno,0.6176470588235294,13
+143,georgia state university,california state university fresno,0.6176470588235294,13
+756,university of bern,university of pennsylvania,0.6153846153846154,10
+781,university of bonn,university of pennsylvania,0.6153846153846154,10
+955,university of iowa,university of hawaii manoa,0.6153846153846154,10
+989,university of jena,university of texas austin,0.6153846153846154,10
+1007,university of kent,university of pennsylvania,0.6153846153846154,10
+1010,university of kent,university of west florida,0.6153846153846154,10
+1109,university of oslo,university of south dakota,0.6153846153846154,10
+1142,university of sains,university of saskatchewan,0.6153846153846154,10
+1221,university of wales,university of west florida,0.6153846153846154,10
+172,idaho state university,north carolina state university,0.6129032258064516,12
+326,iowa state university,north carolina state university,0.6129032258064516,12
+1234,university of wurzburg,leuphana university of luneburg,0.6129032258064516,12
+1292,utah state university,north carolina state university,0.6129032258064516,12
+589,ulm university,lanzhou university,0.6111111111111112,7
+492,open university,george mason university,0.6086956521739131,9
+505,open university,tokai gakuen university,0.6086956521739131,9
+343,kent state university,appalachian state university,0.6071428571428572,11
+1040,university of maine,university of kaiserslautern,0.6071428571428572,11
+1140,university of sains,university of kaiserslautern,0.6071428571428572,11
+333,iowa state university,san francisco state university,0.6,12
+348,kent state university,bowling green state university,0.6,12
+416,moi university,princeton university,0.6,8
+469,ohio state university,southeast missouri state university,0.6,14
+470,ohio state university,southwest missouri state university,0.6,14
+521,rice university,dalhousie university,0.6,8
+527,rice university,mckendree university,0.6,8
+576,ulm university,cranfield university,0.6,8
+601,ulm university,newcastle university,0.6,8
+732,university of bergen,technical university of berlin,0.6,12
+740,university of bern,technical university of berlin,0.6,12
+916,university of ife,university of nevada reno,0.6,10
+918,university of ife,university of new england,0.6,10
+921,university of ife,university of new orleans,0.6,10
+927,university of ife,university of puerto rico,0.6,10
+1026,university of lyon,university of connecticut,0.6,10
+1057,university of malaysia,university of alaska fairbanks,0.6,12
+1060,university of maryland,national university of ireland,0.6,12
+1078,university of montreal,university of central arkansas,0.6,12
+1183,university of umea,university of east anglia,0.6,10
+1266,university of zurich,technical university of munich,0.6,12
+1413,zoological institute,biological institute helgoland,0.6,12
+645,university of agriculture,gorgan university of agricultural sciences,0.5952380952380952,17
+183,institute of zoology,institute of geology and biology,0.59375,13
+707,university of bari,university of dar es salaam,0.5925925925925926,11
+726,university of bari,university of zurich irchel,0.5925925925925926,11
+919,university of ife,university of new hampshire,0.5925925925925926,11
+990,university of jena,university of texas el paso,0.5925925925925926,11
+1106,university of oslo,university of south bohemia,0.5925925925925926,11
+1193,university of umea,university of massachusetts,0.5925925925925926,11
+1215,university of wales,university of alaska museum,0.5925925925925926,11
+119,emory university,pondicherry university,0.5909090909090908,9
+491,open university,edith cowan university,0.5909090909090908,9
+503,open university,rwth aachen university,0.5909090909090908,9
+504,open university,sun yat sen university,0.5909090909090908,9
+571,ulm university,bournemouth university,0.5909090909090908,9
+1325,yale university,boise state university,0.5909090909090908,9
+1344,yale university,idaho state university,0.5909090909090908,9
+1389,yale university,texas state university,0.5909090909090908,9
+1396,yale university,weber state university,0.5909090909090908,9
+309,iowa state university,california state university fresno,0.5882352941176471,14
+993,university of kansas,university of arkansas little rock,0.5882352941176471,14
+128,field museum of natural history,smithsonian national museum of natural history,0.5869565217391304,19
+673,university of bari,humboldt university of berlin,0.5862068965517242,12
+698,university of bari,university of california danr,0.5862068965517242,12
+972,university of jena,university of central florida,0.5862068965517242,12
+976,university of jena,university of eastern finland,0.5862068965517242,12
+999,university of kent,university of central florida,0.5862068965517242,12
+1012,university of kent,university of western ontario,0.5862068965517242,12
+1082,university of munster,university of eastern finland,0.5862068965517242,12
+1087,university of munster,university of western ontario,0.5862068965517242,12
+1175,university of trieste,university of western ontario,0.5862068965517242,12
+153,henan university,ohio northern university,0.5833333333333333,10
+409,moi university,mount allison university,0.5833333333333333,10
+646,university of agriculture,swedish university of agricultural sciences,0.5813953488372092,18
+357,kent state university,north carolina state university,0.5806451612903225,13
+822,university of giessen,technical university of dresden,0.5806451612903225,13
+1174,university of trieste,university of western australia,0.5806451612903225,13
+1181,university of ulster,university of western australia,0.5806451612903225,13
+369,lgl ecological research associates,ecological research associates of new zealand,0.5777777777777777,19
+556,trent university,mount st vicent university,0.5769230769230769,11
+936,university of ife,university of stellenbosch,0.5769230769230769,11
+942,university of ife,university of thessaloniki,0.5769230769230769,11
+947,university of ife,university of west florida,0.5769230769230769,11
+1205,university of utah,university of thessaloniki,0.5769230769230769,11
+650,university of akron,university of akron wayne college,0.5757575757575757,14
+619,ulm university,vanderbilt university,0.5714285714285714,9
+710,university of bari,university of kaiserslautern,0.5714285714285714,12
+886,university of ife,university of georgia athens,0.5714285714285714,12
+992,university of kansas,university of arkansas fayetteville,0.5714285714285714,15
+1020,university of london,royal holloway university of london,0.5714285714285714,15
+1129,university of paris,university of kaiserslautern,0.5714285714285714,12
+1259,university of york,university of port elizabeth,0.5714285714285714,12
+1297,utah state university,southeast missouri state university,0.5714285714285714,15
+377,marine biological association,marine biological association of united kingdom lab,0.5686274509803921,22
+648,university of agriculture,university of agricultural science bangalore,0.5681818181818181,19
+675,university of bari,technical university of berlin,0.5666666666666667,13
+699,university of bari,university of california davis,0.5666666666666667,13
+750,university of bern,university of central arkansas,0.5666666666666667,13
+761,university of bologna,university of colorado boulder,0.5666666666666667,13
+774,university of bonn,university of london westfield,0.5666666666666667,13
+970,university of jena,hebrew university of jerusalem,0.5666666666666667,13
+971,university of jena,university of central arkansas,0.5666666666666667,13
+998,university of kent,university of central arkansas,0.5666666666666667,13
+1032,university of lyon,university of london westfield,0.5666666666666667,13
+1046,university of maine,university of minnesota duluth,0.5666666666666667,13
+1056,university of malaysia,university of alaska anchorage,0.5666666666666667,13
+1101,university of oslo,university of london westfield,0.5666666666666667,13
+397,moi university,george mason university,0.5652173913043479,10
+415,moi university,old dominion university,0.5652173913043479,10
+500,open university,old dominion university,0.5652173913043479,10
+625,unity college,university college cork,0.5652173913043479,10
+1349,yale university,kansas state university,0.5652173913043479,10
+1360,yale university,moscow state university,0.5652173913043479,10
+1373,yale university,oregon state university,0.5652173913043479,10
+1390,yale university,truman state university,0.5652173913043479,10
+1061,university of maryland,university of maryland baltimore county,0.5641025641025641,17
+1085,university of munster,university of ulster jordanstown,0.5625,14
+1238,university of wyoming,university of washington bothell,0.5625,14
+1239,university of wyoming,university of washington seattle,0.5625,14
+854,university of ife,free university of berlin,0.56,11
+874,university of ife,university of east anglia,0.56,11
+449,ohio state university,california state university fresno,0.5588235294117647,15
+116,emory university,beijing forestry university,0.5555555555555556,12
+149,henan university,eastern michigan university,0.5555555555555556,12
+157,henan university,western michigan university,0.5555555555555556,12
+305,iowa state university,arizona state university west campus,0.5555555555555556,16
+881,university of ife,university of exeter penryn,0.5555555555555556,12
+917,university of ife,university of new brunswick,0.5555555555555556,12
+940,university of ife,university of texas el paso,0.5555555555555556,12
+958,university of iowa,university of kwazulu natal,0.5555555555555556,12
+133,florida state university,california state university long beach,0.5526315789473684,17
+134,florida state university,california state university sacramento,0.5526315789473684,17
+135,florida state university,california state university san marcos,0.5526315789473684,17
+144,georgia state university,california state university long beach,0.5526315789473684,17
+145,georgia state university,california state university sacramento,0.5526315789473684,17
+146,georgia state university,california state university san marcos,0.5526315789473684,17
+817,university of georgia,university of georgia marine institute,0.5526315789473684,17
+751,university of bern,university of central florida,0.5517241379310345,13
+819,university of ghent,university of central florida,0.5517241379310345,13
+988,university of jena,university of texas arlington,0.5517241379310345,13
+1098,university of oslo,university of colorado denver,0.5517241379310345,13
+1184,university of umea,university of eastern finland,0.5517241379310345,13
+1223,university of wales,university of western ontario,0.5517241379310345,13
+700,university of bari,university of california irvine,0.5483870967741935,14
+702,university of bari,university of california merced,0.5483870967741935,14
+763,university of bonn,queen mary university of london,0.5483870967741935,14
+810,university of evora,university of orange free state,0.5483870967741935,14
+991,university of jena,university of texas san antonio,0.5483870967741935,14
+1011,university of kent,university of western australia,0.5483870967741935,14
+1023,university of lyon,queen mary university of london,0.5483870967741935,14
+1070,university of miami,university of michigan dearborn,0.5483870967741935,14
+1086,university of munster,university of western australia,0.5483870967741935,14
+1169,university of trieste,technical university of dresden,0.5483870967741935,14
+1222,university of wales,university of western australia,0.5483870967741935,14
+1137,university of reading,victoria university of wellington,0.5454545454545454,15
+1240,university of wyoming,victoria university of wellington,0.5454545454545454,15
+335,iowa state university,southeast missouri state university,0.5428571428571429,16
+336,iowa state university,southwest missouri state university,0.5428571428571429,16
+1047,university of maine,university of minnesota twin cities,0.5428571428571429,16
+1298,utah state university,southwest missouri state university,0.5428571428571429,16
+371,lund university,brigham young university,0.5416666666666667,11
+373,lund university,east carolina university,0.5416666666666667,11
+498,open university,mount allison university,0.5416666666666667,11
+1320,yale university,arizona state university,0.5416666666666667,11
+1339,yale university,florida state university,0.5416666666666667,11
+1341,yale university,georgia state university,0.5416666666666667,11
+1343,yale university,humbolt state university,0.5416666666666667,11
+1346,yale university,indiana state university,0.5416666666666667,11
+1359,yale university,montana state university,0.5416666666666667,11
+1371,yale university,ohio wesleyan university,0.5416666666666667,11
+1398,yale university,wichita state university,0.5416666666666667,11
+130,florida state university,california state university bakersfield,0.5384615384615384,18
+141,georgia state university,california state university bakersfield,0.5384615384615384,18
+478,ohio university,obafemi awolowo university,0.5384615384615384,12
+499,open university,national taipei university,0.5384615384615384,12
+638,university college cork,university college of north west bangor,0.5384615384615384,18
+924,university of ife,university of pennsylvania,0.5384615384615384,12
+939,university of ife,university of texas austin,0.5384615384615384,12
+477,ohio university,northern illinois university,0.5357142857142857,13
+479,ohio university,southern illinois university,0.5357142857142857,13
+1113,university of oslo,university of southern maine,0.5357142857142857,13
+737,university of bern,hebrew university of jerusalem,0.5333333333333333,14
+777,university of bonn,university of minnesota duluth,0.5333333333333333,14
+818,university of ghent,university of central arkansas,0.5333333333333333,14
+860,university of ife,national university of ireland,0.5333333333333333,14
+870,university of ife,university of ceske budejovice,0.5333333333333333,14
+953,university of iowa,national university of rosario,0.5333333333333333,14
+982,university of jena,university of nevada las vegas,0.5333333333333333,14
+1053,university of mainz,university of minnesota duluth,0.5333333333333333,14
+1097,university of oslo,university of colorado boulder,0.5333333333333333,14
+1213,university of wales,university of alaska anchorage,0.5333333333333333,14
+1214,university of wales,university of alaska fairbanks,0.5333333333333333,14
+19,boston university,boston university marine program,0.53125,15
+966,university of iowa,university of washington seattle,0.53125,15
+1177,university of tulsa,university of ulster jordanstown,0.53125,15
+1218,university of wales,university of washington bothell,0.53125,15
+1219,university of wales,university of washington seattle,0.53125,15
+161,idaho state university,california state university fresno,0.5294117647058824,16
+445,ohio state university,arizona state university west campus,0.5277777777777778,17
+310,iowa state university,california state university long beach,0.5263157894736843,18
+311,iowa state university,california state university sacramento,0.5263157894736843,18
+312,iowa state university,california state university san marcos,0.5263157894736843,18
+586,ulm university,john carroll university,0.5217391304347826,11
+618,ulm university,tokai gakuen university,0.5217391304347826,11
+501,open university,oxford brookes university,0.52,12
+609,ulm university,seoul national university,0.52,12
+626,unity college,university college dublin,0.52,12
+627,unity college,university college london,0.52,12
+1335,yale university,colorado state university,0.52,12
+1336,yale university,delaware state university,0.52,12
+1345,yale university,illinois state university,0.52,12
+1356,yale university,michigan state university,0.52,12
+1372,yale university,oklahoma state university,0.52,12
+1375,yale university,portland state university,0.52,12
+117,emory university,nanjing forestry university,0.5185185185185186,13
+150,henan university,georgia southern university,0.5185185185185186,13
+118,emory university,northern territory university,0.5172413793103448,14
+869,university of ife,university of central florida,0.5172413793103448,14
+875,university of ife,university of eastern finland,0.5172413793103448,14
+880,university of ife,university of exeter cornwall,0.5172413793103448,14
+922,university of ife,university of new south wales,0.5172413793103448,14
+938,university of ife,university of texas arlington,0.5172413793103448,14
+949,university of ife,university of western ontario,0.5172413793103448,14
+677,university of bari,tokyo university of agriculture,0.5161290322580645,15
+1093,university of oslo,queen mary university of london,0.5161290322580645,15
+1120,university of oulu,leuphana university of luneburg,0.5161290322580645,15
+1255,university of york,university of northern colorado,0.5161290322580645,15
+654,university of akron,university of toronto mississauga,0.5151515151515151,16
+655,university of akron,university of toronto scarborough,0.5151515151515151,16
+697,university of bari,university of california berkeley,0.5151515151515151,16
+814,university of exeter,university of veterinary medicine,0.5151515151515151,16
+952,university of iowa,agricultural university of norway,0.5151515151515151,16
+1045,university of maine,university of minnesota crookston,0.5151515151515151,16
+1112,university of oslo,university of southern california,0.5151515151515151,16
+1126,university of paris,technical university of darmstadt,0.5151515151515151,16
+1154,university of tokyo,university of toronto mississauga,0.5151515151515151,16
+1155,university of tokyo,university of toronto scarborough,0.5151515151515151,16
+1164,university of tours,university of toronto mississauga,0.5151515151515151,16
+1165,university of tours,university of toronto scarborough,0.5151515151515151,16
+1209,university of vermont,university of toronto mississauga,0.5151515151515151,16
+1210,university of vermont,university of toronto scarborough,0.5151515151515151,16
+1054,university of mainz,university of minnesota twin cities,0.5142857142857142,17
+307,iowa state university,california state university bakersfield,0.5128205128205128,19
+784,university of bristol,university of british columbia okanagan,0.5128205128205128,19
+816,university of georgia,university of georgia caes griffin campus,0.5121951219512195,20
+345,kent state university,arizona state university west campus,0.5,18
+410,moi university,national taipei university,0.5,13
+413,moi university,obafemi awolowo university,0.5,13
+450,ohio state university,california state university long beach,0.5,19
+451,ohio state university,california state university sacramento,0.5,19
+452,ohio state university,california state university san marcos,0.5,19
+493,open university,george washington university,0.5,14
+566,ulm university,alabama a and m university,0.5,13
+572,ulm university,brigham young university,0.5,12
+616,ulm university,texas a and m university,0.5,12
+703,university of bari,university of california riverside,0.5,17
+704,university of bari,university of california san diego,0.5,17
+785,university of bristol,university of british columbia vancouver,0.5,20
+838,university of hull,university of illinois chicago,0.5,15
+848,university of ife,ben gurion university of negev,0.5,15
+856,university of ife,hebrew university of jerusalem,0.5,15
+897,university of ife,university of illinois chicago,0.5,15
+912,university of ife,university of nebraska lincoln,0.5,15
+913,university of ife,university of nebraska omaha,0.5,14
+915,university of ife,university of nevada las vegas,0.5,15
+965,university of iowa,university of washington bothell,0.5,16
+1115,university of oslo,university of southwestern louisiana,0.5,18
+1139,university of sains,national university of singapore,0.5,16
+1229,university of wisconsin,university of wisconsin eauniversity of claire,0.5,23
+1277,utah state university,california state university fresno,0.5,17
+1319,yale university,appalachian state university,0.5,14
+1322,yale university,austin peay state university,0.5,14
+1340,yale university,fort valley state university,0.5,14
+1353,yale university,louisiana state university,0.5,13
+1378,yale university,san diego state university,0.5,13
+131,florida state university,california state university dominguez hills,0.4883720930232558,22
+142,georgia state university,california state university dominguez hills,0.4883720930232558,22
+356,kent state university,north carolina a and t state university,0.4871794871794872,20
+447,ohio state university,california state university bakersfield,0.4871794871794872,20
+535,rothamsted research,rothamsted research north wyke research,0.4871794871794872,20
+1291,utah state university,north carolina a and t state university,0.4871794871794872,20
+969,university of jena,friedrich schiller university of jena,0.4864864864864865,19
+706,university of bari,university of california santa cruz,0.48571428571428577,18
+764,university of bonn,royal holloway university of london,0.48571428571428577,18
+1024,university of lyon,royal holloway university of london,0.48571428571428577,18
+1194,university of umea,university of massachusetts amherst,0.48571428571428577,18
+676,university of bari,technical university of darmstadt,0.48484848484848486,17
+776,university of bonn,university of minnesota crookston,0.48484848484848486,17
+844,university of hull,victoria university of wellington,0.48484848484848486,17
+945,university of ife,university of veterinary medicine,0.48484848484848486,17
+1009,university of kent,university of veterinary medicine,0.48484848484848486,17
+1052,university of mainz,university of minnesota crookston,0.48484848484848486,17
+1241,university of york,agricultural university of norway,0.48484848484848486,17
+1262,university of york,university of toronto mississauga,0.48484848484848486,17
+1263,university of york,university of toronto scarborough,0.48484848484848486,17
+120,emory university,queen mary university of london,0.4838709677419355,16
+862,university of ife,technical university of dresden,0.4838709677419355,16
+948,university of ife,university of western australia,0.4838709677419355,16
+959,university of iowa,university of orange free state,0.4838709677419355,16
+1022,university of lyon,leuphana university of luneburg,0.4838709677419355,16
+1257,university of york,university of orange free state,0.4838709677419355,16
+858,university of ife,humboldt university of berlin,0.48275862068965514,15
+1374,yale university,pennsylvania state university,0.48275862068965514,15
+394,moi university,eastern illinois university,0.4814814814814815,14
+475,ohio university,eastern illinois university,0.4814814814814815,14
+1365,yale university,new mexico state university,0.4814814814814815,14
+1394,yale university,washington state university,0.4814814814814815,14
+385,moi university,beijing normal university,0.48,13
+522,rice university,free university of berlin,0.48,13
+570,ulm university,beijing normal university,0.48,13
+1324,yale university,beijing normal university,0.48,13
+1380,yale university,seoul national university,0.48,13
+631,universidad autonoma,universidad autonoma del estado de hidalgo,0.47619047619047616,22
+162,idaho state university,california state university long beach,0.4736842105263158,20
+163,idaho state university,california state university sacramento,0.4736842105263158,20
+164,idaho state university,california state university san marcos,0.4736842105263158,20
+1265,university of zurich,ludwig maximilian university of munich,0.4736842105263158,20
+701,university of bari,university of california los angeles,0.4722222222222222,19
+852,university of ife,estonian university of life sciences,0.4722222222222222,19
+1273,utah state university,arizona state university west campus,0.4722222222222222,19
+684,university of bari,university of arkansas little rock,0.47058823529411764,18
+1107,university of oslo,university of south carolina aiken,0.47058823529411764,18
+1114,university of oslo,university of southern mississippi,0.47058823529411764,18
+1195,university of umea,university of massachusetts boston,0.47058823529411764,18
+1244,university of york,university of arkansas little rock,0.47058823529411764,18
+842,university of hull,university of ulster jordanstown,0.46875,17
+1125,university of oulu,university of ulster jordanstown,0.46875,17
+861,university of ife,technical university of berlin,0.4666666666666667,16
+868,university of ife,university of central arkansas,0.4666666666666667,16
+127,field museum of natural history,smithsonian institution national museum of natural history,0.4655172413793104,31
+308,iowa state university,california state university dominguez hills,0.4651162790697675,23
+398,moi university,george washington university,0.4642857142857143,15
+412,moi university,northern illinois university,0.4642857142857143,15
+418,moi university,southern illinois university,0.4642857142857143,15
+534,rice university,vrije universiteit amsterdam,0.4642857142857143,15
+1358,yale university,mississippi state university,0.4642857142857143,15
+1399,yale university,yokohama national university,0.4642857142857143,15
+159,idaho state university,california state university bakersfield,0.46153846153846156,21
+382,moi university,alabama a and m university,0.46153846153846156,14
+417,moi university,shahid beheshti university,0.46153846153846156,14
+1108,university of oslo,university of south carolina columbia,0.45945945945945943,20
+419,moi university,texas a and m university,0.45833333333333337,13
+679,university of bari,university of agricultural sciences,0.4571428571428572,19
+683,university of bari,university of arkansas fayetteville,0.4571428571428572,19
+778,university of bonn,university of minnesota twin cities,0.4571428571428572,19
+1094,university of oslo,royal holloway university of london,0.4571428571428572,19
+950,university of ife,victoria university of wellington,0.4545454545454546,18
+152,henan university,leuphana university of luneburg,0.4516129032258065,17
+850,university of ife,curtin university of technology,0.4516129032258065,17
+941,university of ife,university of texas san antonio,0.4516129032258065,17
+1368,yale university,north carolina state university,0.4516129032258065,17
+509,open university,western washington university,0.4482758620689655,16
+574,ulm university,china agricultural university,0.4482758620689655,16
+1333,yale university,china agricultural university,0.4482758620689655,16
+1369,yale university,north dakota state university,0.4482758620689655,16
+1381,yale university,south dakota state university,0.4482758620689655,16
+1410,york university,northern territory university,0.4482758620689655,16
+705,university of bari,university of california santa barbara,0.4473684210526315,21
+1252,university of york,university of north dakota grand forks,0.4473684210526315,21
+1278,utah state university,california state university long beach,0.4473684210526315,21
+1279,utah state university,california state university sacramento,0.4473684210526315,21
+1280,utah state university,california state university san marcos,0.4473684210526315,21
+375,lund university,radboud university nijmegen,0.4444444444444444,15
+585,ulm university,jawaharlal nehru university,0.4444444444444444,15
+1133,university of quebec,university of quebec in abitibi temiscamingue,0.4444444444444444,25
+448,ohio state university,california state university dominguez hills,0.4418604651162791,24
+122,environment canada,environment canada wildlife research east,0.4390243902439024,23
+3,agricultural research center,cirad agricultural research centre for international development,0.4375,36
+851,university of ife,dresden university of technology,0.4375,18
+715,university of bari,university of maryland baltimore county,0.4358974358974359,22
+1275,utah state university,california state university bakersfield,0.4358974358974359,22
+13,bates college,evergreen state college,0.4347826086956522,13
+539,smith college,university college cork,0.4347826086956522,13
+21,brown university,hebrew university of jerusalem,0.43333333333333335,17
+403,moi university,james cook university brisbane,0.43333333333333335,17
+517,rice university,ben gurion university of negev,0.43333333333333335,17
+569,ulm university,australian national university,0.43333333333333335,17
+587,ulm university,kerala agricultural university,0.43333333333333335,17
+604,ulm university,punjab agricultural university,0.43333333333333335,17
+1323,yale university,australian national university,0.43333333333333335,17
+1326,yale university,bowling green state university,0.43333333333333335,17
+1351,yale university,kerala agricultural university,0.43333333333333335,17
+1376,yale university,punjab agricultural university,0.43333333333333335,17
+1379,yale university,san francisco state university,0.43333333333333335,17
+1403,york university,christopher newport university,0.43333333333333335,17
+1406,york university,james cook university brisbane,0.43333333333333335,17
+995,university of kent,friedrich schiller university of jena,0.43243243243243246,21
+184,institute of zoology,netherlands institute of ecology nioo knaw,0.4285714285714286,24
+621,ulm university,yokohama national university,0.4285714285714286,16
+730,university of bergen,humboldt universitat zuniversity of berlin,0.4285714285714286,24
+738,university of bern,humboldt universitat zuniversity of berlin,0.4285714285714286,24
+859,university of ife,memorial university of newfoundland,0.4285714285714286,20
+1243,university of york,university of arkansas fayetteville,0.4285714285714286,20
+370,lund university,auckland university of technology,0.4242424242424242,19
+847,university of ife,auckland university of technology,0.4242424242424242,19
+888,university of ife,university of georgia marine institute,0.42105263157894735,22
+1248,university of york,university of north carolina charlotte,0.42105263157894735,22
+481,ohio university,tokyo university of agriculture,0.4193548387096774,18
+519,rice university,case western reserve university,0.4193548387096774,18
+597,ulm university,nanjing agricultural university,0.4193548387096774,18
+1361,yale university,nanjing agricultural university,0.4193548387096774,18
+160,idaho state university,california state university dominguez hills,0.41860465116279066,25
+4,agricultural research center,inra national institute for agricultural research centre de nancy,0.41538461538461535,38
+423,moi university,western washington university,0.4137931034482759,17
+1313,wayne state university,virginia polytechnic institute and state university,0.4117647058823529,30
+1329,yale university,california state university fresno,0.4117647058823529,20
+695,university of bari,university of british columbia okanagan,0.41025641025641024,23
+748,university of bern,university of british columbia okanagan,0.41025641025641024,23
+1191,university of umea,university of maryland baltimore county,0.41025641025641024,23
+1249,university of york,university of north carolina greensboro,0.41025641025641024,23
+1250,university of york,university of north carolina wilmington,0.41025641025641024,23
+1254,university of york,university of northern british columbia,0.41025641025641024,23
+140,forestry commission,forestry comission northern research station,0.40909090909090906,26
+606,ulm university,radboud university nijmegen,0.40740740740740744,16
+404,moi university,james cook university townsville,0.40625,19
+485,open university,boston university marine program,0.40625,19
+490,open university,dresden university of technology,0.40625,19
+497,open university,liverpool john moores university,0.40625,19
+538,smith college,hobart and william smith college,0.40625,19
+1338,yale university,florida international university,0.40625,19
+1384,yale university,southwest texas state university,0.40625,19
+1407,york university,james cook university townsville,0.40625,19
+736,university of bern,friedrich schiller university of jena,0.4054054054054054,22
+672,university of bari,humboldt universitat zuniversity of berlin,0.40476190476190477,25
+1092,university of oslo,new college of university of south florida,0.40476190476190477,25
+386,moi university,ben gurion university of negev,0.4,18
+483,open university,ben gurion university of negev,0.4,18
+540,smith college,university college dublin,0.4,15
+541,smith college,university college london,0.4,15
+602,ulm university,nicholas copernicus university,0.4,18
+624,unity college,trinity college botanic garden,0.4,18
+696,university of bari,university of british columbia vancouver,0.4,24
+749,university of bern,university of british columbia vancouver,0.4,24
+1062,university of maryland,university of maryland center for environmental science,0.4,33
+1247,university of york,university of north carolina chapel hill,0.4,24
+1362,yale university,national university of ireland,0.4,18
+1363,yale university,national university of rosario,0.4,18
+1385,yale university,technical university of berlin,0.4,18
+1388,yale university,technical university of munich,0.4,18
+544,smithsonian institution,smithsonian institution national museum of natural history,0.39655172413793105,35
+1276,utah state university,california state university dominguez hills,0.39534883720930236,26
+482,ohio university,victoria university of wellington,0.3939393939393939,20
+533,rice university,victoria university of wellington,0.3939393939393939,20
+565,ulm university,agricultural university of norway,0.3939393939393939,20
+628,unity college,university college of north wales,0.3939393939393939,20
+1357,yale university,michigan technological university,0.3939393939393939,20
+364,kent state university,virginia polytechnic institute and state university,0.3921568627450981,31
+554,texas state university,virginia polytechnic institute and state university,0.3921568627450981,31
+887,university of ife,university of georgia caes griffin campus,0.3902439024390244,25
+563,trier university,national and kapodistrian university,0.38888888888888884,22
+368,kyoto university,tokyo university of agriculture,0.3870967741935484,19
+420,moi university,tokyo university of agriculture,0.3870967741935484,19
+1387,yale university,technical university of dresden,0.3870967741935484,19
+1412,york university,tokyo university of agriculture,0.3870967741935484,19
+678,university of bari,university of agricultural science bangalore,0.38636363636363635,27
+507,open university,wageningen university and research,0.38235294117647056,21
+671,university of bari,gorgan university of agricultural sciences,0.38095238095238093,26
+855,university of ife,friedrich schiller university of jena,0.3783783783783784,23
+388,moi university,boston university marine program,0.375,20
+581,ulm university,florida international university,0.375,20
+1347,yale university,international university brennen,0.375,20
+1364,yale university,national university of singapore,0.375,20
+182,institute of science and technology,national research institute of science and technology for environment and agriculture (irstea),0.37234042553191493,59
+674,university of bari,swedish university of agricultural sciences,0.37209302325581395,27
+528,rice university,memorial university of newfoundland,0.37142857142857144,22
+580,ulm university,estonian agricultultural university,0.37142857142857144,22
+1337,yale university,estonian agricultultural university,0.37142857142857144,22
+1382,yale university,southeast missouri state university,0.37142857142857144,22
+1383,yale university,southwest missouri state university,0.37142857142857144,22
+1330,yale university,california state university long beach,0.368421052631579,24
+1331,yale university,california state university sacramento,0.368421052631579,24
+1332,yale university,california state university san marcos,0.368421052631579,24
+598,ulm university,national university of ireland,0.3666666666666667,19
+599,ulm university,national university of rosario,0.3666666666666667,19
+612,ulm university,technical university of berlin,0.3666666666666667,19
+615,ulm university,technical university of munich,0.3666666666666667,19
+422,moi university,washington university in st louis,0.36363636363636365,21
+508,open university,washington university in st louis,0.36363636363636365,21
+596,ulm university,michigan technological university,0.36363636363636365,21
+1317,yale university,agricultural university of norway,0.36363636363636365,21
+1386,yale university,technical university of darmstadt,0.36363636363636365,21
+514,purdue university,indiana university/purdue university fort wayne,0.36170212765957444,30
+529,rice university,national and kapodistrian university,0.36111111111111116,23
+1321,yale university,arizona state university west campus,0.36111111111111116,23
+1327,yale university,california state university bakersfield,0.3589743589743589,25
+1367,yale university,north carolina a and t state university,0.3589743589743589,25
+929,university of ife,university of quebec in abitibi temiscamingue,0.3555555555555555,29
+614,ulm university,technical university of dresden,0.3548387096774194,20
+107,duke university,graduate university for advanced studies,0.35,26
+584,ulm university,international university brennen,0.34375,21
+600,ulm university,national university of singapore,0.34375,21
+595,ulm university,memorial university of newfoundland,0.34285714285714286,23
+1355,yale university,memorial university of newfoundland,0.34285714285714286,23
+567,ulm university,anutech australian national university,0.3421052631578947,25
+640,university lodz,california state university long beach,0.3421052631578947,25
+1318,yale university,anutech australian national university,0.3421052631578947,25
+1377,yale university,royal veterinary and agricultural university,0.34090909090909094,29
+121,environment canada,environment canada national hydrology research center,0.339622641509434,35
+613,ulm university,technical university of darmstadt,0.33333333333333337,22
+629,unity college,university college of north west bangor,0.33333333333333337,26
+857,university of ife,humboldt universitat zuniversity of berlin,0.33333333333333337,28
+1328,yale university,california state university dominguez hills,0.32558139534883723,29
+1342,yale university,graduate university for advanced studies,0.32499999999999996,27
+622,unity college,cuny college of staten island,0.31034482758620685,20
+716,university of bari,university of maryland center for environmental science,0.3090909090909091,38
+1192,university of umea,university of maryland center for environmental science,0.3090909090909091,38
+542,smith college,university college of north wales,0.303030303030303,23
+108,duke university,indiana university/purdue university fort wayne,0.2978723404255319,33
+523,rice university,indiana university/purdue university fort wayne,0.2978723404255319,33
+607,ulm university,royal veterinary and agricultural university,0.2954545454545454,31
+849,university of ife,christian albrechts universitat zuniversity of kiel,0.2941176470588235,36
+411,moi university,new college of university of south florida,0.2857142857142857,30
+1150,university of tartu,university of natural resources and applied life sciences vienna,0.28125,46
+1393,yale university,virginia polytechnic institute and state university,0.27450980392156865,37
+981,university of jena,university of natural resources and applied life sciences vienna,0.265625,47
+543,smith college,university college of north west bangor,0.2564102564102564,29
+583,ulm university,indiana university/purdue university fort wayne,0.25531914893617025,35
+220,inta,inta eea oliveros,0.23529411764705888,13
+216,inta,inra and cnrs,0.23076923076923073,10
+853,university of ife,florida dept of natural resources bureauniversity of of marine research,0.22535211267605637,55
+1,agresearch,leibniz institute for baltic sea research,0.2195121951219512,32
+2,agresearch,royal netherlands institute for sea research,0.20454545454545459,35
+189,inta,aves argentinas,0.19999999999999996,12
+237,inta,lts international ltd,0.19047619047619047,17
+281,inta,university of montana,0.19047619047619047,17
+51,ciep,dow agrosciences,0.1875,13
+506,open university,wageningen university and instituto boliviano de investigacion forestal,0.18309859154929575,58
+191,inta,birdlife international,0.18181818181818177,18
+623,unity college,suny college of environmental science and forestry,0.18000000000000005,41
+34,ciep,bayer cropscience,0.17647058823529416,14
+212,inta,hawk mountain sanctuary,0.17391304347826086,19
+250,inta,point blue conservation,0.17391304347826086,19
+265,inta,tropenbos international,0.17391304347826086,19
+95,ciep,wilderness society,0.16666666666666663,15
+255,inta,santa fe institute,0.16666666666666663,15
+257,inta,seconda universita,0.16666666666666663,15
+263,inta,syngenta seeds inc,0.16666666666666663,15
+271,inta,universita di pisa,0.16666666666666663,15
+74,ciep,plant sciences department,0.16000000000000003,21
+235,inta,justus liebig universitat,0.16000000000000003,21
+256,inta,scottish natural heritage,0.16000000000000003,21
+258,inta,singapore botanic gardens,0.16000000000000003,21
+11,basf,university of basel,0.1578947368421053,16
+53,ciep,ecoscience scotland,0.1578947368421053,16
+268,inta,universita camerino,0.1578947368421053,16
+201,inta,conservation international,0.15384615384615385,22
+208,inta,environmental defense fund,0.15384615384615385,22
+438,noaa,university of hawaii manoa,0.15384615384615385,22
+253,inta,royal ontario museum,0.15000000000000002,17
+264,inta,temple inland forest,0.15000000000000002,17
+270,inta,universita di genova,0.15000000000000002,17
+287,inta,university of regina,0.15000000000000002,17
+433,noaa,universidad autonoma,0.15000000000000002,17
+437,noaa,universita di genova,0.15000000000000002,17
+439,noaa,villanova university,0.15000000000000002,17
+206,inta,disteba universita di lecce,0.14814814814814814,23
+211,inta,franklin and marshall,0.1428571428571429,18
+274,inta,universitat osnabruck,0.1428571428571429,18
+302,inta,wsp environmental strategies,0.1428571428571429,24
+44,ciep,conservation science partners,0.13793103448275867,25
+195,inta,china agricultural university,0.13793103448275867,25
+209,inta,fauna and flora international,0.13793103448275867,25
+243,inta,nerc british antarctic survey,0.13793103448275867,25
+292,inta,university of western ontario,0.13793103448275867,25
+291,inta,university of virginia,0.13636363636363635,19
+100,cisro,san francisco state university,0.1333333333333333,26
+224,inta,international crane foundation,0.1333333333333333,26
+238,inta,lundy environmental consulting,0.1333333333333333,26
+79,ciep,science academy of ussr,0.13043478260869568,20
+246,inta,north carolina state university,0.12903225806451613,27
+434,noaa,universidad autonoma de yucatan,0.12903225806451613,27
+47,ciep,csiro ecosystem sciences,0.125,21
+65,ciep,national audubon society,0.125,21
+186,inta,africa plant seeds international,0.125,28
+204,inta,csic zaidin experimental station,0.125,28
+207,inta,east carolina university,0.125,21
+210,inta,florida international university,0.125,28
+230,inta,international university brennen,0.125,28
+240,inta,montana state university,0.125,21
+242,inta,national university of singapore,0.125,28
+249,inta,pioneer hi bred intl inc,0.125,21
+278,inta,university of cincinnati,0.125,21
+299,inta,west virginia university,0.125,21
+300,inta,wichita state university,0.125,21
+48,ciep,czech academy of sciences,0.12,22
+75,ciep,polish academy of science,0.12,22
+84,ciep,universidad de concepcion,0.12,22
+275,inta,universitat zurich irchel,0.12,22
+10,basf,obafemi awolowo university,0.11538461538461542,23
+38,ciep,central science laboratory,0.11538461538461542,23
+89,ciep,usgs alaska science center,0.11538461538461542,23
+273,inta,universitat des saarlandes,0.11538461538461542,23
+194,inta,centro de ciencias medioambientales,0.11428571428571432,31
+233,inta,james san jacinto mountains reserve,0.11428571428571432,31
+234,inta,joint nature conservation committee,0.11428571428571432,31
+277,inta,university of california santa cruz,0.11428571428571432,31
+40,ciep,chinese academy of sciences,0.11111111111111116,24
+56,ciep,indian institute of science,0.11111111111111116,24
+71,ciep,new york zoological society,0.11111111111111116,24
+187,inta,appalachian environmental laboratory,0.11111111111111116,32
+196,inta,christian albrechts universitat kiel,0.11111111111111116,32
+221,inta,intelligent solutions group,0.11111111111111116,24
+295,inta,usfs rocky mountain research station,0.11111111111111116,32
+77,ciep,royal society for protection of birds,0.10810810810810811,33
+247,inta,ontario ministry of natural resources,0.10810810810810811,33
+293,inta,usepa environmental protection agency,0.10810810810810811,33
+32,ciep,american society of agronomy,0.1071428571428571,25
+35,ciep,botanical society of america,0.1071428571428571,25
+98,ciep,zoological society of london,0.1071428571428571,25
+205,inta,csiro sustainable ecosystems,0.1071428571428571,25
+262,inta,syngenta crop protection inc,0.1071428571428571,25
+276,inta,university of california santa barbara,0.10526315789473684,34
+283,inta,university of north carolina charlotte,0.10526315789473684,34
+31,ciep,academy of sciences of russia,0.10344827586206895,26
+78,ciep,school of biological sciences,0.10344827586206895,26
+94,ciep,weizmann institute of science,0.10344827586206895,26
+96,ciep,wildlife conservation society,0.10344827586206895,26
+279,inta,university of eastern finland,0.10344827586206895,26
+30,ciep,academy of natural science philadelphia,0.10256410256410253,35
+228,inta,international plant nutrition institute,0.10256410256410253,35
+245,inta,north carolina a and t state university,0.10256410256410253,35
+284,inta,university of north carolina greensboro,0.10256410256410253,35
+285,inta,university of north carolina wilmington,0.10256410256410253,35
+432,noaa,noaa northeast fisheries science center,0.10256410256410253,35
+436,noaa,universidad nacional autonoma de mexico,0.10256410256410253,35
+36,ciep,california academy of sciences,0.09999999999999998,27
+267,inta,universidade estadual paulista,0.09999999999999998,27
+282,inta,university of north carolina chapel hill,0.09999999999999998,36
+219,inta,instituto de pesqus ambiental da amazonia,0.09756097560975607,37
+232,inta,istituto sperimentale per la selvicoltura,0.09756097560975607,37
+259,inta,smithsonian environmental research center,0.09756097560975607,37
+301,inta,wildlife preservation trust international,0.09756097560975607,37
+70,ciep,new england wild flower society,0.09677419354838712,28
+93,ciep,usgs great lakes science center,0.09677419354838712,28
+99,ciep,zoological society of san diego,0.09677419354838712,28
+202,inta,csic estacion experimental de zonas aridas,0.09523809523809523,38
+248,inta,people and nature consulting international,0.09523809523809523,38
+435,noaa,universidad autonoma del estado de hidalgo,0.09523809523809523,38
+92,ciep,usgs fort collins science center,0.09375,29
+269,inta,universita degli studi di padova,0.09375,29
+296,inta,virginia commonwealth university,0.09375,29
+430,noaa,manaaki whenua landcare research,0.09375,29
+188,inta,australian international development bureau,0.09302325581395354,39
+298,inta,wageningen environmental research (alterra),0.09302325581395354,39
+193,inta,center for energy and environmental research,0.09090909090909094,40
+254,inta,royal veterinary and agricultural university,0.09090909090909094,40
+266,inta,universidade estadual de campinas,0.09090909090909094,30
+290,inta,university of veterinary medicine,0.09090909090909094,30
+231,inta,interuniversity institute for marine sciences,0.0888888888888889,41
+286,inta,university of quebec in abitibi temiscamingue,0.0888888888888889,41
+69,ciep,nbs northern prarie science center,0.08823529411764708,31
+76,ciep,rangeland ecosystem science center,0.08823529411764708,31
+239,inta,manchester metropolitan university,0.08823529411764708,31
+272,inta,universita die napoli frederico ii,0.08823529411764708,31
+288,inta,university of south carolina aiken,0.08823529411764708,31
+192,inta,botanisches institat der universitat hohenheim,0.08695652173913049,42
+244,inta,neri national environmental research institute,0.08695652173913049,42
+39,ciep,centro de ciencias medioambientales,0.08571428571428574,32
+49,ciep,denver museum of nature and science,0.08571428571428574,32
+59,ciep,institute of science and technology,0.08571428571428574,32
+67,ciep,national museum of natural sciences,0.08571428571428574,32
+86,ciep,university of agricultural sciences,0.08571428571428574,32
+431,noaa,moline technology innovation center,0.08571428571428574,32
+63,ciep,laboratoire associe de modelisation des plantes,0.08510638297872342,43
+213,inta,helmholtz centre for environmental research ufz,0.08510638297872342,43
+227,inta,international institute of tropical agriculture,0.08510638297872342,43
+54,ciep,estonian university of life sciences,0.08333333333333337,33
+198,inta,cifor center for international forestry research,0.08333333333333337,44
+260,inta,stockholm international peace research institute,0.08333333333333337,44
+217,inta,inra national institute for agricultural research,0.08163265306122447,45
+222,inta,international center for research in agroforestry,0.08163265306122447,45
+294,inta,usfs international institute of tropical forestry,0.08163265306122447,45
+289,inta,university of south carolina columbia,0.08108108108108103,34
+261,inta,suny college of environmental science and forestry,0.07999999999999996,46
+12,basf,usgs florence bascom geoscience center,0.07894736842105265,35
+33,ciep,australian institute of marine science,0.07894736842105265,35
+81,ciep,siberian branch of academy of sciences,0.07894736842105265,35
+90,ciep,usgs florence bascom geoscience center,0.07894736842105265,35
+97,ciep,yucatan center for scientific research,0.07894736842105265,35
+252,inta,riverina college of advanced education,0.07894736842105265,35
+197,inta,christian albrechts universitat zuniversity of kiel,0.07843137254901966,47
+251,inta,riso dtu national laboratory for sustainable energy,0.07843137254901966,47
+297,inta,virginia polytechnic institute and state university,0.07843137254901966,47
+42,ciep,cnrs institut des sciences de levolution montpellier,0.07692307692307687,48
+66,ciep,national centre for biological sciences,0.07692307692307687,36
+72,ciep,noaa northeast fisheries science center,0.07692307692307687,36
+226,inta,international institute for applied systems analysis,0.07692307692307687,48
+223,inta,international centre of insect physiology and ecology,0.07547169811320753,49
+45,ciep,csic national museum of natural sciences,0.07499999999999996,37
+190,inta,beijer international institute of ecological economics,0.07407407407407407,50
+80,ciep,shandong academy of agricultural sciences,0.07317073170731703,38
+280,inta,university of maryland center for environmental science,0.07272727272727275,51
+55,ciep,gorgan university of agricultural sciences,0.0714285714285714,39
+200,inta,citadel military college of south carolina,0.0714285714285714,39
+215,inta,humboldt universitat zuniversity of berlin,0.0714285714285714,39
+83,ciep,swedish university of agricultural sciences,0.06976744186046513,40
+37,ciep,center of biological and ecological sciences,0.06818181818181823,41
+85,ciep,university of agricultural science bangalore,0.06818181818181823,41
+62,ciep,interuniversity institute for marine sciences,0.06666666666666665,42
+241,inta,national center for agriculture and veterinary biotechnology,0.06666666666666665,56
+214,inta,helmholtz centre for environmental research ufz leipzig halle,0.06557377049180324,57
+43,ciep,conicet austral center for scientific research,0.06521739130434778,43
+73,ciep,norwegian university of science and technology,0.06521739130434778,43
+64,ciep,ministry of technology environment and sciences,0.06382978723404253,44
+225,inta,international institute for aerospace survey and earth sciences,0.06349206349206349,59
+50,ciep,department of scientific and industrial research,0.0625,45
+199,inta,cirad agricultural research centre for international development,0.0625,60
+218,inta,inra national institute for agricultural research centre de nancy,0.06153846153846154,61
+41,ciep,cnrs centre national de la recherche scientifique,0.061224489795918324,46
+82,ciep,suny college of environmental science and forestry,0.06000000000000005,47
+91,ciep,usgs forest and rangeland ecosystem science center,0.06000000000000005,47
+60,ciep,instituto venezolano de investigaciones cientificas,0.05882352941176472,48
+229,inta,international union for conservation of nature and natural resources,0.05882352941176472,64
+203,inta,csic uv instituto de biología integrativa de sistemas,0.05660377358490565,50
+57,ciep,institut national scientifique et technnique d oceanographie et de peche,0.05555555555555558,68
+87,ciep,university of maryland center for environmental science,0.054545454545454564,52
+236,inta,laboratorio di geologia marina del cnr,0.052631578947368474,36
+58,ciep,institute for landscape ecology of slovak academy of sciences,0.049180327868852514,58
+52,ciep,eawag swiss federal institute of aquatic science and technology,0.04761904761904767,60
+61,ciep,international institute for aerospace survey and earth sciences,0.04761904761904767,60
+88,ciep,university of natural resources and applied life sciences vienna,0.046875,61
+46,ciep,csiro commonwealth scientific and industrial research organisation,0.045454545454545414,63
+68,ciep,national research institute of science and technology for environment and agriculture (irstea),0.03191489361702127,91
