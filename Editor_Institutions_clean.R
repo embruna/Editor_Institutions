@@ -10,6 +10,7 @@ library(stringr)
 library(stringi)
 library(stringdist)
 library(RecordLinkage)
+library(janitor)
 # library(vegan)
 # library(nlme)
 # library(MuMIn)
@@ -558,6 +559,26 @@ alldata$middle_name <- tolower(alldata$middle_name)
 
 # Add mising Editor IDs ---------------------------------------------------
 
+
+###############################
+# DELETE DUPLICATE ROWS BEFORE ADDDING editor_id
+# TODO: SEE WHICH ONES ARE BEING DROPPED
+
+dupe_rows<-alldata %>% get_dupes(journal, year, first_name, last_name, category, editor_id)
+
+
+alldata <- alldata %>% 
+  distinct(journal, last_name, first_name, year, category,editor_id, .keep_all = TRUE)
+###############################
+
+
+# remove empty rows and columns -------------------------------------------
+alldata <- alldata %>%
+  remove_empty(c("rows", "cols"))
+
+alldata<-alldata %>% filter(is.na(journal)!=TRUE)
+
+
 alldata$editor_id <- as.numeric(as.character(alldata$editor_id))
 max(na.omit(alldata$editor_id)) + 1
 
@@ -565,28 +586,59 @@ missing_edID <- alldata %>%
   filter(is.na(editor_id)) %>%
   select(last_name, first_name) %>%
   group_by(last_name, first_name) %>%
-  slice(1)
+  slice(1) %>% 
+  arrange(last_name, first_name) 
 
-no_edID <- inner_join(alldata, missing_edID) %>%
-  filter(is.na(editor_id)) %>%
-  select(journal, year, editor_id, first_name, middle_name, last_name, title, inst) %>%
-  group_by(first_name, middle_name, last_name) %>%
-  slice(1) %>%
-  arrange(last_name, first_name, middle_name) %>%
-  ungroup() %>%
-  select(last_name, first_name)
+
 start_no <- max(na.omit(alldata$editor_id)) + 1
-end_no <- max(start_no + nrow(no_edID)) - 1
-no_edID$editor_id <- seq(
+end_no <- max(start_no + nrow(missing_edID)) - 1
+missing_edID$editor_id <- seq(
   from = start_no,
   to = end_no,
   by = 1
 )
 
-alldata <- full_join(alldata, no_edID, by = c("last_name", "first_name")) %>%
+
+alldata <- full_join(alldata, missing_edID, by = c("last_name", "first_name")) %>%
   mutate(editor_id.x = ifelse(is.na(editor_id.x), editor_id.y, editor_id.x)) %>%
   rename(editor_id = editor_id.x) %>%
   select(-editor_id.y)
+
+# test to see if all with editor_id_now
+missing_edID <- alldata %>%
+  filter(is.na(editor_id))
+
+# 
+# missing_edID2 <- alldata %>%
+#   filter(is.na(editor_id)) %>%
+#   select(last_name, first_name, middle_name,journal) %>%
+#   group_by(last_name, first_name, middle_name,journal) %>%
+#   slice(1) %>% 
+#   group_by(last_name, first_name,journal) %>% 
+#   summarise(n=n()) %>% 
+#   filter(n>1) 
+#   arrange(last_name, first_name, middle_name) 
+# 
+# no_edID <- inner_join(alldata, missing_edID) %>%
+#   filter(is.na(editor_id)) %>%
+#   select(journal, year, editor_id, first_name, middle_name, last_name, title, inst) %>%
+#   group_by(first_name, middle_name, last_name) %>%
+#   slice(1) %>%
+#   arrange(last_name, first_name, middle_name) %>%
+#   ungroup() %>%
+#   select(last_name, first_name)
+# start_no <- max(na.omit(alldata$editor_id)) + 1
+# end_no <- max(start_no + nrow(no_edID)) - 1
+# no_edID$editor_id <- seq(
+#   from = start_no,
+#   to = end_no,
+#   by = 1
+# )
+# 
+# alldata <- full_join(alldata, no_edID, by = c("last_name", "first_name")) %>%
+#   mutate(editor_id.x = ifelse(is.na(editor_id.x), editor_id.y, editor_id.x)) %>%
+#   rename(editor_id = editor_id.x) %>%
+#   select(-editor_id.y)
 
 
 ##########################
@@ -675,12 +727,23 @@ alldata <- as_tibble(alldata)
 alldata <- alldata %>% drop_na(last_name, first_name)
 
 
+
+
+
+
 # save alldata df ---------------------------------------------------------
 
 
 write_csv(alldata, "./data_clean/alldata.csv")
 
 
+
+# add 2015+ data collected by AA ------------------------------------------
+# library(tidyverse)
+
+alldata<-read_csv("./data_clean/alldata.csv")
+source("functions_data_cleaning/AreiasData.R")
+alldata <- AreiasData(alldata)
 
 # reduce to editors only --------------------------------------------------
 
@@ -703,7 +766,8 @@ nrow(alldata)
             category == "ae" | 
             category == "special")
  
- levels(as.factor(alldata$category))
+ levels(as.factor(editors$category))
+ 
  
 ####################################
 # TODO: NEED TO CONVERT THE DIFFERENT CATEGORIES TO SHORTCUT titleS
@@ -718,21 +782,28 @@ JrnlYrs_10 <- editors %>%
   group_by(journal) %>%
   summarise(yrs_per_jrnl = n_distinct(journal, year)) %>%
   arrange(yrs_per_jrnl)
+JrnlYrs_10
 JrnlYrs_20 <- editors %>%
   filter(year >= 1985, year <= 2004) %>%
   group_by(journal) %>%
   summarise(yrs_per_jrnl = n_distinct(journal, year)) %>%
   arrange(yrs_per_jrnl)
+JrnlYrs_20
+
 JrnlYrs_30 <- editors %>%
   filter(year >= 1985, year <= 2014) %>%
   group_by(journal) %>%
   summarise(yrs_per_jrnl = n_distinct(journal, year)) %>%
   arrange(yrs_per_jrnl)
+JrnlYrs_30
+
 JrnlYrs_35 <- editors %>%
   filter(year >= 1985, year <= 2019) %>%
   group_by(journal) %>%
   summarise(yrs_per_jrnl = n_distinct(journal, year)) %>%
   arrange(yrs_per_jrnl)
+JrnlYrs_35
+
 head(JrnlYrs_30)
 
 # Continued Cleanup -------------------------------------------------------
@@ -754,25 +825,6 @@ editors$journal <- as.factor(editors$journal)
 summary(editors$journal)
 
 
-# Correcting or systematizing the name/speclling of an institution
-##############################################################
-
-
-
-
-# FOR SOME REASON SOME DIDN"T CHANGE< SO NEED TO DO MANUALLY
-
-##############################################################
-
-
-###############################
-# DELETE DUPLICATE ROWS
-# TODO: SEE WHICH ONES ARE BIENBG DROPPED
-
-foo <- editors %>% select(journal, year, first_name, last_name)
-foo<-foo[duplicated(foo[, 1:4]), ]
-editors <- distinct(editors, journal, last_name, first_name, year, title, .keep_all = TRUE)
-###############################
 
 ############################
 # TODO: missing an editor_ID
@@ -809,6 +861,17 @@ summary(as.factor(editors$inst))
 #
 editors_ORIG_FOR_TESTING <- editors
 
+names(editors)
+
+# gives you editors for last year of data collected so you can add new ones
+add_data_sheet<-editors %>% 
+  group_by(journal) %>% 
+  filter(year==max(year)) %>% 
+  select(journal,year,title,first_name,middle_name,last_name,inst,unit,city,state,country) 
+
+# %>% 
+#   mutate(across(everything(), ~replace_na(.x, "--")))
+write_csv(add_data_sheet, file = "./output_review/new_data_collection.csv") # export it as a csv file
 
 
 # REVIEW FOR FINAL CLEANING -----------------------------------------------
@@ -822,6 +885,25 @@ n_eds<-editors %>%
   count(editor_id) %>%  
   summarize(n=n())
 n_eds
+
+
+# how many per journal per year?
+yr1<-editors %>%
+  select(journal,year) %>% 
+  distinct() %>% 
+  group_by(journal) %>% 
+  slice_head(n=1)
+
+yrlast<-editors %>%
+  select(journal,year) %>% 
+  distinct() %>% 
+  group_by(journal) %>% 
+  slice_tail(n=1)
+
+jrnl_yrs<-full_join(yr1,yrlast,by="journal")
+write_csv(jrnl_yrs, "./output_review/jrnl_yrs.csv")
+
+
 
 
 # how many misisng INST? # what journals are these in?
@@ -1044,24 +1126,25 @@ write_csv(missing_inst, file = "./output_review/missing_inst.csv") # export it a
 
 ############################
 # peoplw with NA inst
-missing_inst_names <- editors %>%
-  select(journal, year, editor_id, first_name, middle_name, last_name, inst, notes) %>%
+authors_missing_inst_names <- editors %>%
+  select(journal, editor_id, first_name, last_name, inst) %>%
   filter(is.na(inst) | inst == "missing") %>%
-  group_by(journal, last_name, first_name) %>%
-  filter(row_number() == 1 | row_number() == n()) %>%
-  arrange(journal, last_name, first_name, year)
-write_csv(missing_inst_names, file = "./output_review/missing_inst_editor_names.csv") # export it as a csv file
+  group_by(journal, last_name, first_name, editor_id) %>%
+  arrange(journal, last_name, first_name, editor_id) %>% 
+  distinct()
+write_csv(authors_missing_inst_names, file = "./output_review/missing_inst_editor_names.csv") # export it as a csv file
 ############################
 
 ############################
 # peoplw with NA inst by journal
-missing_inst_names <- editors %>%
-  select(journal, year, editor_id, first_name, middle_name, last_name, inst, notes) %>%
+missing_inst_names_summary <- editors %>%
+  select(journal, editor_id, last_name, first_name, inst) %>%
   filter(is.na(inst) | inst == "missing") %>%
   group_by(journal, last_name, first_name) %>%
-  filter(row_number() == 1 | row_number() == n()) %>%
+  distinct() %>% 
   group_by(journal) %>% 
   summarize(n=n())
+missing_inst_names_summary
 # write_csv(missing_inst_names, file = "./output_review/missing_inst_editor_names.csv") # export it as a csv file
 ############################
 
@@ -1080,7 +1163,6 @@ multiple_inst <- editors %>%
   filter(n_inst > 1) %>%
   select(last_name, first_name, inst, year, journal) %>%
   arrange(last_name, first_name, year)
-
 multiple_inst
 write_csv(multiple_inst, file = "./output_review/eds_multiple_inst.csv") # export it as a csv file
 
@@ -1242,7 +1324,7 @@ source("./functions_data_cleaning/namecompare.R")
 x <- editors$last_name
 y <- namecompare(x)
 
-write_csv(UNI_LIST, file = "uniNameList_post_review.csv", row.names = T) # export it as a csv file
+write_csv(UNI_LIST, file = "uniNameList_post_review.csv") # export it as a csv file
 
 UNI_LIST <- as.factor(UNI_LIST)
 UNI_LIST[] <- lapply(UNI_LIST, as.character)

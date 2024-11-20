@@ -39,6 +39,7 @@ editors<-editors %>%
   filter(!is.na(category)) %>% 
   # mutate(across(everything(), as.character)) %>% 
   mutate(across(everything(), as.factor)) %>% 
+  filter(!journal %in% c("najfm","agronomy","marecol","auk","condor")) %>%
   filter(!inst=="missing") %>% 
   drop_na(inst) %>% 
   select(-country_prior_class,
@@ -46,7 +47,6 @@ editors<-editors %>%
          # -geo.code_Prior_Class,
          -gender, 
          -notes,
-         -inst_check, 
          -volume, 
          -issue)
 

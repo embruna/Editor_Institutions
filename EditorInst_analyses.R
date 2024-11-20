@@ -12,7 +12,10 @@ analysis_data<-analysis_data %>%
   drop_na(inst) %>% 
   select(-country_prior_class,-geo.code,
          # -geo.code_Prior_Class,
-         -gender, -notes,-inst_check)
+         -gender, -notes
+         # ,
+         # -inst_check
+         )
 
 
 analysis_data<-droplevels(analysis_data)
@@ -55,10 +58,12 @@ summary(analysis_data$year)
 
 # HOW MANY journalS AND WHAT ARE THEY
 jrnls<-analysis_data %>% summarise(n_distinct(journal))
-jrnls_list<-analysis_data %>% 
+
+yrs_per_jrl<-analysis_data %>% 
   group_by(journal) %>% 
-  summarize(n_distinct(journal))
-jrnls_list
+  summarize(n_distinct(year)) 
+  
+yrs_per_jrl
 
 # EDS - HOW MANY AND HOW MANY PER journal
 eds<-analysis_data %>% summarise(n_distinct(editor_id))
@@ -86,7 +91,7 @@ inst_per_ed<-analysis_data %>%
   group_by(journal) %>% 
   summarize(n_eds=n_distinct(editor_id),n_inst=n_distinct(inst)) %>% 
   mutate(inst_per_ed=n_inst/n_eds) %>% 
-  arrange((inst_per_ed))
+  arrange(desc(inst_per_ed))
 inst_per_ed
 
 
@@ -283,7 +288,7 @@ plotTOTALedsYear<-plotTOTALedsYear+theme_classic()+
          legend.position = c(0.9,0.8),
          legend.title = element_blank(),   #Removes the Legend title
          plot.margin=unit(c(1,5,1,1),"lines"),
-         legend.background = element_rect(colour = 'black', size = 0.5, linetype='solid'))
+         legend.background = element_rect(colour = 'black', linewidth = 0.5, linetype='solid'))
 plotTOTALedsYear
 
 
@@ -525,20 +530,41 @@ summary(USA_inst$state)
 # nlevels(USA_inst$state)
 
 #Need to match up the names used in Carengie Classification with names used in ALLDATA
-str(CarnData)
-CarnData_names<-CarnData %>% select(NAME,city,STABBR,Category)  
-CarnData_names<-CarnData_names %>% filter(Category=="Doctoral"|Category=="Masters"|Category=="Baccalaureate"|Category=="Tribal")
-CarnData_names$Category<-droplevels(CarnData_names$Category)
-summary(CarnData_names)
+str(carnegie)
+carnegie_names<-carnegie %>% select(name,city,stabbr,classification)  
+carnegie_names<-carnegie_names %>% 
+  filter(classification=="doctoral"|classification=="masters"|classification=="baccalaureate"|classification=="tribal") %>% 
+  rename("state"="stabbr",
+         "inst"="name") %>% 
+  mutate(inst=str_replace(inst, "-", " ")) %>% 
+  mutate(inst=str_replace(inst, "&", "and")) %>% 
+  mutate(inst=str_replace(inst, "the university of", "university of")) %>% 
+  mutate(inst=str_replace(inst, " campus", "")) 
+carnegie_names$classification<-droplevels(carnegie_names$classification)
+summary(carnegie_names)
+
+carnegie_names_inst<-carnegie_names %>% select(inst,classification)
+
 
 str(USA_inst)
-USA_inst_names<-USA_inst %>% select(inst,city,state)  
+USA_inst_names<-USA_inst %>% select(inst,city,state)
 USA_inst_names$state<-as.character(USA_inst_names$state)
 str(USA_inst_names)
 USA_inst_names<-distinct(USA_inst_names)
-foo<-USA_inst_names$inst
-foo2<-USA_inst_names$inst
-foo3<- cbind.data.frame(foo,foo2)
+
+USA_inst_names_only<-USA_inst_names %>% select(inst) %>% distinct()
+USA_inst_names<-left_join(USA_inst_names_only,carnegie_names_inst,by="inst") %>% 
+  arrange(inst) %>% arrange(classification)
+
+foo<-USA_inst_names %>% filter(is.na(classification))
+
+
+foo1<-USA_inst_names %>% filter(is.na(classification)) %>% select(inst)
+foo1$source<-"foo1"
+foo2<-as_tibble(carnegie_names_inst$inst) %>% rename("inst"="value")
+foo2$source<-"foo2"
+foo3<-full_join(foo1,foo2)
+foo3<- cbind.data.frame(foo3$inst,foo3$inst)
 str(foo3)
 names(foo3)[1] <- "Name1"
 names(foo3)[2] <- "Name2"
@@ -570,6 +596,8 @@ NamesDF$Name_sim<-levenshteinSim(NamesDF$Name1, NamesDF$Name2)
 NamesDF$Name_dist<-levenshteinDist(NamesDF$Name1, NamesDF$Name2)
 
 
+
+
 # Because this does all pairwise comparisons, it results in redundancy: "e bruna vs emilio bruna" and "emilio bruna vs e bruna"
 # are in different rows, even though they are the same "comparison". This deletes one of the two 
 NamesDF<-NamesDF[!duplicated(t(apply(NamesDF, 1, sort))),]
@@ -577,12 +605,19 @@ NamesDF<-NamesDF[!duplicated(t(apply(NamesDF, 1, sort))),]
 # look carefully at those with a few changes, as they are likely to be a tiny spelling mistake or difference in intials
 
 
+
+
 NamesDF$index<-seq.int(nrow(NamesDF)) #adds a column with an index to make it easier to id which row you need'
 NamesDF <- NamesDF %>% select(index, Name1, Name2, Name_sim,Name_dist) #It's kinda ugly, but this rearranges columns (and dumps the "FALSE")
 NamesDF <- arrange(NamesDF, desc(Name_sim))
 head(NamesDF)
 #return(NamesDF)
-write.csv(NamesDF, file="./Data/InstNameCheck_USA.csv", row.names = T) #export it as a csv file
+
+NamesDF_slim<-NamesDF %>% 
+  mutate(keep=(NamesDF$Name1 %in% foo$inst)) %>% 
+  filter(keep==TRUE)
+
+write.csv(NamesDF, file="./output_review/InstNameCheck_USA.csv", row.names = T) #export it as a csv file
 
 
 
@@ -593,27 +628,28 @@ USA_inst$inst<-as.character(USA_inst$inst)
 foo<-USA_inst
 
 foo<-as.data.frame(foo)
-foo<-foo %>% rename(NAME=inst)
-foo$NAME<-as.character(foo$NAME)
+foo<-foo %>% rename(name=inst)
+foo$name<-as.character(foo$name)
 foo$source<-"class"
 str(foo)
-# foo<-foo %>% filter(NAME != "NA")
-# foo <- foo %>% group_by(NAME) %>% filter(row_number(source) == 1) %>% arrange(NAME)
-foo <- foo %>% group_by(editor_id) %>% filter(row_number(source) == 1) %>% arrange(NAME)
+# foo<-foo %>% filter(name != "NA")
+# foo <- foo %>% group_by(name) %>% filter(row_number(source) == 1) %>% arrange(name)
+foo <- foo %>% group_by(editor_id) %>% filter(row_number(source) == 1) %>% arrange(name)
 
 # foo<-as.data.frame(foo)
 
-CarnData$NAME<-as.character(CarnData$NAME)
-foo2<-CarnData
+carnegie$name<-as.character(carnegie$name)
+foo2<-carnegie %>% select(-category)
 # foo2<-na.omit(as.data.frame(foo2))
-# foo2<-foo2 %>% rename(NAME=foo2)
+# foo2<-foo2 %>% rename(name=foo2)
 foo2$source<-"carnegie"
 # foo2<-unlist(foo2)
 # foo2<-as.data.frame(foo2)
 str(foo2)
-foo3<-full_join(foo,foo2,by="NAME", "Source")
+foo3<-full_join(foo,foo2,by="name", "Source")
 foo3$editor_id<-as.numeric(foo3$editor_id)
 foo3<-filter(foo3,editor_id>0)
+foo3 %>% select(classification,name) %>% ungroup() %>% select(-editor_id) %>% distinct()
 write.csv(foo3,file="./Data/ESA2018_USA_Ed_Inst_Carneg.csv")
 
 
@@ -621,17 +657,17 @@ USA_ED_clean<-read_csv("./Data/ESA2018_USA_Ed_Inst_Carneg.csv", col_names=TRUE)
 
 USA_ED_clean<-USA_ED_clean %>% filter(Classification != "NA")
 USA_ED_clean<-USA_ED_clean %>% filter(Classification != "(Not classified)")
-USA_ED_clean$NAME<-as.factor(USA_ED_clean$NAME)
+USA_ED_clean$name<-as.factor(USA_ED_clean$name)
 USA_ED_clean$Classification<-as.factor(USA_ED_clean$Classification)
 USA_ED_clean<-droplevels(USA_ED_clean)
-levels(USA_ED_clean$NAME)
+levels(USA_ED_clean$name)
 levels(USA_ED_clean$Classification)
 summary(USA_ED_clean$Classification)
 summary<-USA_ED_clean$Classification
 summary(summary)
 foo4<-foo3
 str(foo4)
-foo5<-stringdistmatrix(foo3$NAME,method="dl")
+foo5<-stringdistmatrix(foo3$name,method="dl")
 
 
 inst<-na.omit(inst)
@@ -831,4 +867,4 @@ Consolidated.uni.df$uni.code <- paste(Consolidated.uni.df$ISO3,"-",Consolidated.
 
 # Now do a similarity analysis of name remove the duplicates
 # DO SOME ERROR CORRECTION:
-# 1) SOME ARE MISSING UNI NAMES, EG, inst NAME IS "UNIVERSITY": COUNT CHARACTERS,SORT, AND LOOK AT ONES WITH LEAST CAHARACTERS
+# 1) SOME ARE MISSING UNI NAMES, EG, inst name IS "UNIVERSITY": COUNT CHARACTERS,SORT, AND LOOK AT ONES WITH LEAST CAHARACTERS
